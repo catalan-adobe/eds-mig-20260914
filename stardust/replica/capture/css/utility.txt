@@ -1,0 +1,51 @@
+stardust/replica/capture/pagelibs.css: 25 of 4808 rules match /pre-header|utility-nav-bar|topbar-lang|askSynopsys|\.vr\b/i
+L2003 html:not([lang^="en"]) #askSynopsys
+      display: none !important;
+L2004 .pre-header
+      display: none;
+L2005 .pre-header   @media(min-width:1130px)
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; min-height: 53px; padding: 0 24px; position: relative; z-index: 100000; background: #171917; border-bottom: 1px solid #373b37; color: #FFF;
+L2006 .pre-header div:first-child :is(img,svg)   @media(min-width:1130px)
+      height: 16px;
+L2007 .pre-header path   @media(min-width:1130px)
+      fill: #FFF;
+L2008 .pre-header .d-flex   @media(min-width:1130px)
+      -webkit-column-gap: 10px; -moz-column-gap: 10px; column-gap: 10px;
+L2009 .pre-header .vr   @media(min-width:1130px)
+      width: 1px; height: 14px; display: inline-block; vertical-align: middle; background: #5f625f;
+L2010 .pre-header .dropdown .dropdown-toggle   @media(min-width:1130px)
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; gap: 12px; min-height: 36px; padding: 0 14px; border-radius: 9999px; border: 2px solid transparent; background: 0; color: inherit; font-weight: 600; line-height: 1;
+L2011 .pre-header .dropdown .dropdown-toggle:after   @media(min-width:1130px)
+      display: none;
+L2012 .pre-header .dropdown .dropdown-toggle:before   @media(min-width:1130px)
+      content: ''; width: 16px; height: 16px; display: inline-block; background: center / cover no-repeat; -webkit-filter: brightness(0) invert(1); filter: brightness(0) invert(1); background-image: url("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0ic3ZnLWlubGluZS…;
+L2013 .pre-header .dropdown .dropdown-toggle:hover   @media(min-width:1130px)
+      background: #272a27; border-color: #272a27;
+L2014 .pre-header .dropdown .dropdown-toggle:is(:focus,:focus-visible,.active:focus)   @media(min-width:1130px)
+      outline: 0; background: #373b37; border-color: #373b37;
+L2015 .pre-header .dropdown.open>.btn-default.dropdown-toggle   @media(min-width:1130px)
+      border-color: #797c79; background: 0; color: #FFF;
+L2016 .pre-header .dropdown.open>.dropdown-menu   @media(min-width:1130px)
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; row-gap: 10px; min-width: 260px; margin-top: 8px; padding: 24px 20px 32px; right: -14px; left: auto; border-radius: 16px; font-size: 16px;
+L2017 .pre-header .dropdown-menu>li.title   @media(min-width:1130px)
+      padding: 0 8px; color: #111c24; font-size: 18px; font-weight: 600; line-height: 163%; cursor: default;
+L2018 .pre-header .dropdown-menu>li a   @media(min-width:1130px)
+      display: inline-block; padding: 2px 8px; line-height: 163%; -webkit-transition: all .3s; transition: all .3s;
+L2019 .pre-header .dropdown-menu>li>a:hover,.pre-header .dropdown-menu>li>a:focus,.pre-header .dropdown-menu>li.active a   @media(min-width:1130px)
+      background: #111c24; color: #FFF; border-radius: 4px;
+L2020 .pre-header #askSynopsys   @media(min-width:1130px)
+      position: relative; min-height: 36px; padding: 0 12px; border: 0; border-radius: 9999px; background: transparent; color: #FFF; font-size: 14px; font-weight: 600; cursor: pointer; overflow: hidden;
+L2021 .pre-header #askSynopsys span   @media(min-width:1130px)
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; gap: 8px;
+L2022 .pre-header #askSynopsys span:before   @media(min-width:1130px)
+      content: ''; width: 16px; height: 16px; -webkit-box-flex: 0; -webkit-flex: 0 0 16px; -ms-flex: 0 0 16px; flex: 0 0 16px; display: block; background: center / cover no-repeat; -webkit-filter: brightness(0) invert(1); filter: brightness(0) invert(1); background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy…;
+L2023 .pre-header #askSynopsys:before,.pre-header #askSynopsys:after   @media(min-width:1130px)
+      content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; background: -webkit-gradient(linear,right top,left top,from(#fdb71a),color-stop…; background: linear-gradient(270deg,#fdb71a 0,#ab714e 22.6%,#5a2a82 80.77%);
+L2024 .pre-header #askSynopsys:before   @media(min-width:1130px)
+      z-index: 1; padding: 2px; -webkit-mask: -webkit-gradient(linear,left top,left bottom,color-stop(0,#FFF)) …; -webkit-mask: linear-gradient(#FFF 0 0) content-box,linear-gradient(#FFF 0 0); -webkit-mask-composite: xor; mask-composite: exclude;
+L2025 .pre-header #askSynopsys:after   @media(min-width:1130px)
+      z-index: -1; opacity: 0; -webkit-transition: opacity .3s ease; transition: opacity .3s ease;
+L2026 .pre-header #askSynopsys:hover:after   @media(min-width:1130px)
+      opacity: 1;
+L2027 .pre-header #askSynopsys:focus-visible   @media(min-width:1130px)
+      box-shadow: 0 0 0 3px rgba(90,42,130,0.35);

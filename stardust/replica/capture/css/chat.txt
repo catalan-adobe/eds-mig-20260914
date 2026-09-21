@@ -1,0 +1,92 @@
+stardust/replica/capture/pagelibs.css: 10 of 4808 rules match /chat-bar|border-gradient-ask|floating-icon|sparkle|\.spin\b|chat-minimize/i
+L1018 .border-gradient-ask
+      --inner-bg: #171917; border: 4px solid transparent; border-radius: 9999px; background-image: linear-gradient(var(--inner-bg),var(--inner-bg)),conic-gradie…; background-image: -webkit-gradient(linear,left top,left bottom,from(var(--inner…; background-image: linear-gradient(var(--inner-bg),var(--inner-bg)),conic-gradie…; background-origin: border-box; background-clip: padding-box,border-box; color: #fff; padding: 12px 24px; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-transform: translateZ(0); transform: translateZ(0); -webkit-transition: background-image .3s ease,-webkit-transform .1s ease; transition: background-image .3s ease,-webkit-transform .1s ease; transition: background-image .3s ease,transform .1s ease; transition: background-image .3s ease,transform .1s ease,-webkit-transform .1s …;
+L1019 .border-gradient-ask.spin
+      -webkit-animation: rotate-border 4s linear infinite; animation: rotate-border 4s linear infinite;
+L1020 .border-gradient-ask.spin-pause
+      -webkit-animation: rotate-with-pause 4s ease-in-out infinite; animation: rotate-with-pause 4s ease-in-out infinite;
+L1021 .sparkleAnim
+      fill: #7e45af; opacity: 1; -webkit-transition: opacity .6s ease-in-out; transition: opacity .6s ease-in-out;
+L1022 .sparkleAnim:hover .star
+      -webkit-animation-name: sparkleHover; animation-name: sparkleHover; -webkit-animation-duration: 1.5s; animation-duration: 1.5s; -webkit-animation-iteration-count: 2; animation-iteration-count: 2; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out;
+L1023 .sparkleAnim:hover .star.star-1
+      -webkit-animation-delay: 0; animation-delay: 0;
+L1024 .sparkleAnim:hover .star.star-2
+      -webkit-animation-delay: .3s; animation-delay: .3s;
+L1025 .sparkleAnim:hover .star.star-3
+      -webkit-animation-delay: .6s; animation-delay: .6s;
+L1026 @-webkit-keyframes sparkleHover
+      0{opacity: 1} 50%{opacity:.5} 100%{opacity:1};
+L1030 @keyframes sparkleHover
+      0{opacity: 1} 50%{opacity:.5} 100%{opacity:1};
+stardust/replica/capture/concierge.css: 35 of 153 rules match /chat-bar|border-gradient-ask|floating-icon|sparkle|\.spin\b|chat-minimize/i
+L30 #chat-bar
+      position: fixed !important; z-index: 10000; bottom: 32px !important; left: 50% !important; transform: translateX(-50%); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+L39 #chat-bar .border-gradient-ask
+      padding: 10px 22px 10px 24px; box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.20);
+L44 #chat-minimize
+      width: 24px; height: 24px; background: #373B37; border: none; transition: all 0.2s ease-out; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #FFF; right: -36px; top: 50% !important; transform: translateY(-50%); position: absolute; border-radius: 9999px; border: 1px solid #797C79;
+L63 #chat-minimize:hover
+      background: #555; transition: all 0.1s ease-in;
+L68 #chat-minimize.chat-resuming .resuming
+      display: block;
+L72 #chat-minimize.chat-resuming .minus
+      display: none;
+L76 #chat-bar.bc-hidden
+      opacity: 0 !important; transform: translateX(-50%) translateY(20px); visibility: hidden !important; pointer-events: none;
+L214 .chat-bar__input-wrap
+      flex: 1; display: flex; align-items: center; border-radius: 0 10px 10px 0; width: 724px; border: none; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06); transition: box-shadow 0.2s;
+L237 .chat-bar-left
+      line-height: normal; padding: 0 10px 0 0; align-items: center; display: flex;
+L244 .chat-bar-left svg
+      width: 20px;
+L248 .chat-bar-left svg path
+      fill: #FFF;
+L252 #chat-bar-input
+      flex: 1; border: none; outline: none; background: transparent; padding: 0px 20px 0 0; overflow: hidden; color: #FFF; text-overflow: ellipsis; font-size: 16px; font-style: normal; font-weight: 400; line-height: 138%; background-size: 20px; transition: 0.1s ease-out;
+L269 #chat-bar-send:disabled
+      cursor: default;
+L273 #chat-bar-send:disabled svg path
+      fill: #C1C2C1;
+L277 #chat-bar-input::placeholder
+      color: #ffffff; opacity: 1;
+L282 #chat-bar-input:focus::placeholder
+      color: transparent;
+L289 #floating-icon
+      position: fixed; bottom: 50px; height: 54px; min-width: 54px; right: 20px; align-items: center; cursor: pointer; outline: none; user-select: none; z-index: 999 !important; display: flex; align-items: center; justify-content: center; transition: padding 0.4s ease-in-out, filter 0.4s ease-in-out; white-space: nowrap; padding: 0; opacity: 0; visibility: hidden;
+L310 #floating-icon svg
+      width: 24px;
+L314 #floating-icon .mobile
+      display: none;
+L318 #floating-icon .desktop
+      display: block;
+L322 #floating-icon.bc-visible
+      visibility: visible; opacity: 1; transition: all 0.3s ease-out;
+L328 #floating-icon span
+      color: #FFF; font-size: 18px; font-weight: 600; display: inline-block; max-width: 0; opacity: 0; margin-left: 0; overflow: hidden; transition: max-width 0.5s ease-in-out, opacity 0.3s ease-in-out, margin 0.5s e…;
+L340 #floating-icon:hover
+      padding: 14px 24px;
+L344 #floating-icon:hover span
+      line-height: 100%; opacity: 1; margin: 0 0 0 8px; max-width: 200px; margin-left: 12px; transition: max-width 0.7s ease-in-out, opacity 0.5s ease-in-out, margin 0.2s e…;
+L353 #floating-icon:hover .star
+      transition: all 0.1s ease-in; background-color: #5A2A82; padding-right: 24px;
+L477 #chat-modal .submit-button, #chat-bar-send
+      padding: 0; border: none; background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2…; width: 18.259px; opacity: 0.8; transition: all 0.5s ease-out; cursor: pointer; width: 34px; height: 26px; border: none; color: #1a1a1a; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+L497 #chat-bar-send
+      background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2…;
+L501 #chat-modal .submit-button:hover, #chat-bar-send:hover
+      opacity: 1; transition: all 0.1s ease-in;
+L507 #chat-modal .submit-button:focus, #chat-bar-send:focus, #chat-modal .submit-button:focus-visible, #chat-bar-send:focus-visible
+      outline: none; border: none;
+L815 #chat-bar   @media (max-width: 768px)
+      display: none;
+L819 #floating-icon   @media (max-width: 768px)
+      display: flex; display: flex; opacity: 1; visibility: visible; bottom: 20px;
+L827 #floating-icon .desktop   @media (max-width: 768px)
+      display: none;
+L831 #floating-icon .mobile   @media (max-width: 768px)
+      display: block;
+L840 .chat-bar__input-wrap   @media (max-width: 768px)
+      padding: 0 4px 0 12px;
+L1207 @keyframes sparkleHover
+      0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; };

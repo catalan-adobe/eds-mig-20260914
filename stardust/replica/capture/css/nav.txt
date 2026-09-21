@@ -1,0 +1,249 @@
+stardust/replica/capture/pagelibs.css: 124 of 4808 rules match /component-nav-top|nav-top-wrapper|main-nav|sticky-nav|overlapping|icon-search|navbar-toggler|nav-items-right|\.logo\b|cta-mobile-holder|utility-nav/i
+L1961 html:not(.aem-AuthorLayer-Edit) body[data-page-type="home-page"] .site-wrapper .component-nav-top
+      position: absolute;
+L1962 html:not(.aem-AuthorLayer-Edit) body[data-page-type="home-page"] .site-wrapper .component-nav-top:not(.overlapping):not(.mobile-menu-opened)
+      background: transparent; box-shadow: none; -webkit-transition: all .25s; transition: all .25s; -webkit-backdrop-filter: none; backdrop-filter: none;
+L1963 html:not(.aem-AuthorLayer-Edit) body[data-page-type="home-page"] .site-wrapper .component-nav-top:not(.overlapping):not(.mobile-menu-opened)[data-color-theme="…
+      fill: #FFF;
+L1964 html:not(.aem-AuthorLayer-Edit) body[data-page-type="home-page"] .site-wrapper .component-nav-top:not(.overlapping):not(.mobile-menu-opened)[data-color-theme="…
+      color: #FFF;
+L1965 html:not(.aem-AuthorLayer-Edit) body[data-page-type="home-page"] .site-wrapper .component-nav-top:not(.overlapping):not(.mobile-menu-opened)[data-color-theme="…
+      background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5v…;
+L1966 html:not(.aem-AuthorLayer-Edit) body[data-page-type="home-page"] .site-wrapper .component-nav-top:not(.overlapping):not(.mobile-menu-opened)[data-color-theme="…
+      color: #b3b4b3; text-decoration: none;
+L1967 html:not(.aem-AuthorLayer-Edit) body[data-page-type="home-page"] .site-wrapper .component-nav-top:not(.overlapping):not(.mobile-menu-opened)[data-color-theme="…
+      background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5v…;
+L1968 html:not(.aem-AuthorLayer-Edit) body[data-page-type="home-page"] .site-wrapper .component-nav-top:not(.overlapping):not(.mobile-menu-opened)[data-color-theme="…
+      background: #FFF; color: #111c24; font-weight: 400; font-size: 16px; line-height: 100%; text-align: center;
+L1969 html:not(.aem-AuthorLayer-Edit) body[data-page-type="home-page"] .site-wrapper .component-nav-top:not(.overlapping):not(.mobile-menu-opened)[data-color-theme="…
+      box-shadow: inset 0 0 0 99999px rgba(0,0,0,0.2);
+L1970 html:not(.aem-AuthorLayer-Edit) body[data-page-type="home-page"] .site-wrapper .component-nav-top:not(.overlapping):not(.mobile-menu-opened)[data-color-theme="…
+      color: #FFF;
+L1971 .sticky-nav
+      position: -webkit-sticky; position: sticky; z-index: 1000; top: 0;
+L1972 .component-nav-top
+      margin: 0 auto; background-color: rgba(255,255,255,0.8); box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); width: 100%; z-index: 1030; max-width: 1900px; -webkit-transition: all .25s; transition: all .25s;
+L1973 .component-nav-top .logo
+      top: 23px; position: fixed; z-index: 4; margin: 0 40px 0 24px;
+L1974 .component-nav-top .logo svg,.component-nav-top .logo img
+      width: auto; height: 24px;
+L1975 .component-nav-top .logo path,.component-nav-top .logo .cls-2
+      fill: #5a2a82;
+L1976 .component-nav-top .logo .cls-1
+      fill: #77787d;
+L1977 .component-nav-top .logo:focus svg
+      box-shadow: 0 0 0 1px #FFF,inset 0 0 0 2px #4d90fe;
+L1978 .component-nav-top #coveo-search-wrapper
+      display: none; background: #FFF; box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25); padding: 16px 24px; border-top: 1px solid #f4f4fa; top: 70px; position: fixed; width: 100%;
+L1979 .component-nav-top #coveo-search-wrapper.active
+      z-index: 1042; -webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); -webkit-transition: all .3s ease-in; transition: all .3s ease-in; visibility: visible; display: block; background: #FFF;
+L1980 .component-nav-top #coveo-search-wrapper .search-header,.component-nav-top #coveo-search-wrapper .popular-content-header
+      display: none;
+L1981 .component-nav-top #coveo-search-wrapper .popular-content-wrapper
+      display: none;
+L1982 .component-nav-top .nav-top-wrapper
+      width: 100%; padding: 0 8px; margin: 0 auto; position: relative; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; -ms-grid-row-align: center; align-items: center; height: 80px;
+L1983 .component-nav-top .nav-top-wrapper   @media screen and (min-width:992px) and (max-width:1250px)
+      padding: 0 24px; width: auto;
+L1984 .component-nav-top .nav-top-wrapper .main-nav ul   @media screen and (min-width:992px) and (max-width:1250px)
+      -webkit-column-gap: 20px; -moz-column-gap: 20px; column-gap: 20px;
+L1986 .component-nav-top .nav-top-wrapper .main-nav ul
+      list-style: none; padding: 0; margin: 0;
+L1987 .component-nav-top .nav-top-wrapper .main-nav ul li
+      color: #111c24; cursor: pointer; padding: 0; position: relative; font-size: 16px; font-weight: 400; line-height: 110%;
+L1988 .component-nav-top .nav-top-wrapper .main-nav ul li .main-nav-item-header
+      color: inherit; text-decoration: none;
+L1989 .component-nav-top .nav-top-wrapper .main-nav ul li .main-nav-item-header:focus
+      text-decoration: underline;
+L1990 .component-nav-top .nav-top-wrapper .cta-mobile
+      display: none;
+L1991 .component-nav-top .nav-items-right
+      margin-left: auto; -webkit-column-gap: 10px; -moz-column-gap: 10px; column-gap: 10px; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; -ms-grid-row-align: center; align-items: center; z-index: 5; min-height: 70px; margin-right: 24px; position: fixed; top: 0; right: 0;
+L1992 .component-nav-top .nav-items-right .icon-search
+      visibility: hidden; color: #111c24; border: 0; background: 0;
+L1993 .component-nav-top .nav-items-right .icon-search svg
+      width: 16px; height: 16px; padding: 2px 0; display: block;
+L1994 .component-nav-top .nav-items-right .cta,.component-nav-top .cta-mobile
+      -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; -ms-grid-row-align: center; align-items: center; background-color: #7e45af; color: #FFF; font-weight: 400; font-size: 16px; padding: 0 24px; min-height: 40px; display: none; line-height: 100%;
+L1995 .component-nav-top .nav-items-right .cta:hover,.component-nav-top .cta-mobile:hover
+      box-shadow: inset 0 0 0 99999px rgba(0,0,0,0.2); cursor: pointer; text-decoration: none;
+L1996 .component-nav-top .nav-items-right .cta
+      display: none;
+L1997 .component-nav-top .navbar-toggler
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; width: 32px; height: 24px; border-radius: 5px; background: rgba(196,196,196,0.8); -webkit-transition: all .3s ease-out; transition: all .3s ease-out; position: relative; z-index: 3;
+L1998 .component-nav-top .navbar-toggler path
+      fill: #FFF;
+L1999 .component-nav-top .navbar-toggler .svg-close
+      display: none; width: 22px; height: 16px; position: relative; right: -5px;
+L2000 .component-nav-top .navbar-toggler .svg-close path
+      fill: #000;
+L2001 .component-nav-top .cta-mobile-holder
+      display: none;
+L2002 .component-nav-top.no-transition *
+      -webkit-transition: none !important; transition: none !important;
+L2029 .component-nav-top   @media(max-width:1129px)
+      -webkit-backdrop-filter: unset; backdrop-filter: unset; top: 0;
+L2030 .component-nav-top .nav-top-wrapper   @media(max-width:1129px)
+      -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; height: 70px;
+L2031 .component-nav-top .nav-top-wrapper .main-nav   @media(max-width:1129px)
+      padding: 0; z-index: 3; width: 100%; background: #FFF; top: 0; left: 0; opacity: 0; visibility: hidden; -webkit-box-ordinal-group: 4; -webkit-order: 3; -ms-flex-order: 3; order: 3;
+L2032 .component-nav-top .nav-top-wrapper .main-nav ul   @media(max-width:1129px)
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; padding: 16px 0; border-top: 1px solid #f4f4fa;
+L2033 .component-nav-top .nav-top-wrapper .main-nav ul.utility-nav-enabled   @media(max-width:1129px)
+      padding: 0 0 8px 0; border-bottom: #c1c2c1 1px solid;
+L2034 .component-nav-top .nav-top-wrapper .main-nav ul.utility-nav-enabled li:last-child   @media(max-width:1129px)
+      border: 0;
+L2035 .component-nav-top .nav-top-wrapper .main-nav ul li   @media(max-width:1129px)
+      border-bottom: 1px solid #f4f4fa; padding: 24px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center;
+L2036 .component-nav-top .nav-top-wrapper .main-nav ul li::after   @media(max-width:1129px)
+      content: ' '; background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5v…; width: 10px; position: absolute; height: 12px; right: 14px; margin-top: 4px; rotate: -90deg;
+L2037 .component-nav-top .nav-top-wrapper .main-nav ul li[data-menu="Language Selector"],.component-nav-top .nav-top-wrapper .main-nav ul li[data-menu="AI Assistant"]   @media(max-width:1129px)
+      gap: 12px;
+L2038 .component-nav-top .nav-top-wrapper .main-nav ul li[data-menu="Language Selector"]::before,.component-nav-top .nav-top-wrapper .main-nav ul li[data-menu="AI As…   @media(max-width:1129px)
+      content: ''; width: 16px; height: 16px; background-repeat: no-repeat,no-repeat; background-position: center; background-size: cover; display: inline-block;
+L2039 .component-nav-top .nav-top-wrapper .main-nav ul li[data-menu="Language Selector"]   @media(max-width:1129px)
+      margin-top: 8px; padding-top: 24px;
+L2040 .component-nav-top .nav-top-wrapper .main-nav ul li[data-menu="Language Selector"]::before   @media(max-width:1129px)
+      background-image: url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0ic3ZnLWlubGluZS0…;
+L2041 .component-nav-top .nav-top-wrapper .main-nav ul li[data-menu="AI Assistant"]::before   @media(max-width:1129px)
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy…;
+L2042 .component-nav-top .nav-top-wrapper .main-nav ul li[data-menu="AI Assistant"]::after   @media(max-width:1129px)
+      display: none;
+L2043 .component-nav-top .nav-top-wrapper .main-nav .utility-nav   @media(max-width:1129px)
+      display: block; border: 0; padding: 0; border: 0;
+L2044 .component-nav-top .nav-top-wrapper .main-nav .utility-nav button   @media(max-width:1129px)
+      background: 0; border: 0;
+L2045 .component-nav-top .nav-top-wrapper .main-nav .utility-nav li   @media(max-width:1129px)
+      border: 0; padding-top: 20px; padding-bottom: 20px;
+L2046 .component-nav-top .nav-top-wrapper .main-nav .utility-nav li.language::before   @media(max-width:1129px)
+      content: ''; width: 16px; height: 16px; background-image: url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0ic3ZnLWlubGluZS0…; background-repeat: no-repeat,no-repeat; background-position: center; background-size: cover; display: inline-block; border: 0;
+L2047 .component-nav-top .icon-search   @media(max-width:1129px)
+      display: none;
+L2048 .component-nav-top.mobile-menu-opened   @media(max-width:1129px)
+      min-height: 100dvh; max-height: 100dvh; overflow-y: auto; overflow-x: hidden;
+L2049 .component-nav-top.mobile-menu-opened::after   @media(max-width:1129px)
+      position: fixed; content: ' '; top: 0; width: -webkit-calc(100% - 16px); width: calc(100% - 16px); height: 70px; z-index: 3; background: #FFF; border-bottom: #c1c2c1 1px solid; margin: 0 8px;
+L2050 .component-nav-top.mobile-menu-opened.active-dropdown   @media(max-width:1129px)
+      overflow: hidden;
+L2051 .component-nav-top.mobile-menu-opened .nav-top-wrapper   @media(max-width:1129px)
+      height: auto;
+L2052 .component-nav-top.mobile-menu-opened .nav-top-wrapper .main-nav   @media(max-width:1129px)
+      pointer-events: all; display: block; opacity: 1; -webkit-transition: all .5s ease-out; transition: all .5s ease-out; visibility: visible; padding-top: 70px;
+L2053 .component-nav-top.mobile-menu-opened .nav-top-wrapper .navbar-toggler   @media(max-width:1129px)
+      background: 0;
+L2054 .component-nav-top.mobile-menu-opened .nav-top-wrapper .navbar-toggler .svg-open   @media(max-width:1129px)
+      display: none;
+L2055 .component-nav-top.mobile-menu-opened .nav-top-wrapper .navbar-toggler .svg-close   @media(max-width:1129px)
+      display: block;
+L2056 .component-nav-top.mobile-menu-opened .cta-mobile-holder   @media(max-width:1129px)
+      text-align: center; width: 100%; z-index: 5; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; padding: 0 20px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; width: 100%; margin-top: 40px;
+L2057 .component-nav-top.mobile-menu-opened .cta-mobile   @media(max-width:1129px)
+      -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; min-height: 48px; width: 100%; margin: 0 0 16px 0; position: relative !important;
+L2058 .component-nav-top.mobile-menu-opened .utility-nav__promo-card-link   @media(max-width:1129px)
+      color: #111c24; text-decoration: none;
+L2059 .component-nav-top.mobile-menu-opened .utility-nav__promo-card   @media(max-width:1129px)
+      padding: 28px 36px; border: 2px solid #a3a5a3; margin: 20px 0 40px 0; row-gap: 16px; border-radius: 8px;
+L2060 .component-nav-top.mobile-menu-opened .utility-nav__promo-logo img   @media(max-width:1129px)
+      height: 32px;
+L2061 .component-nav-top.mobile-menu-opened .utility-nav__promo-divider   @media(max-width:1129px)
+      width: 1px; height: 24px; display: inline-block; vertical-align: middle; background: #5f625f; margin: 0 16px;
+L2062 .component-nav-top.mobile-menu-opened .utility-nav__promo-link-text   @media(max-width:1129px)
+      color: #111c24; font-weight: 700; font-size: 16px; line-height: 138%; letter-spacing: 0; gap: 7.33px;
+L2063 .component-nav-top.mobile-menu-opened .utility-nav__promo-link-text img,.component-nav-top.mobile-menu-opened .utility-nav__promo-link-text svg   @media(max-width:1129px)
+      width: 13.33px;
+L2064 .component-nav-top.mobile-menu-opened .utility-nav__promo-text p   @media(max-width:1129px)
+      line-height: 160%; letter-spacing: 0; text-align: left; margin: 0;
+L2065 .component-nav-top.mobile-menu-opened,.component-nav-top.search-opened   @media(max-width:1129px)
+      background: #FFF !important;
+L2066 .component-nav-top.mobile-menu-opened .icon-search,.component-nav-top.search-opened .icon-search   @media(max-width:1129px)
+      display: block; color: #111c24 !important; padding: 0;
+L2067 .component-nav-top.mobile-menu-opened .nav-top-wrapper .logo path,.component-nav-top.search-opened .nav-top-wrapper .logo path   @media(max-width:1129px)
+      fill: #5a2a82 !important;
+L2069 .component-nav-top .navbar-toggler   @media(min-width:1130px)
+      display: none;
+L2070 .component-nav-top ul.utility-nav   @media(min-width:1130px)
+      display: none !important;
+L2071 .component-nav-top .nav-top-wrapper   @media(min-width:1130px)
+      padding: 0 15px; max-width: 1170px;
+L2072 .component-nav-top .nav-top-wrapper .logo   @media(min-width:1130px)
+      margin-left: 0; position: relative; top: unset;
+L2073 .component-nav-top .nav-top-wrapper .logo svg,.component-nav-top .nav-top-wrapper .logo img   @media(min-width:1130px)
+      height: 34px;
+L2074 .component-nav-top .nav-top-wrapper .main-nav   @media(min-width:1130px)
+      list-style-type: none; margin: 0; padding: 25px 0; -webkit-column-gap: 24px; -moz-column-gap: 24px; column-gap: 24px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; opacity: 1;
+L2075 .component-nav-top .nav-top-wrapper .main-nav ul   @media(min-width:1130px)
+      -webkit-column-gap: 24px; -moz-column-gap: 24px; column-gap: 24px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; list-style: none;
+L2076 .component-nav-top .nav-top-wrapper .main-nav ul li   @media(min-width:1130px)
+      position: relative;
+L2077 .component-nav-top .nav-top-wrapper .main-nav ul li .main-nav-item-header   @media(min-width:1130px)
+      font-size: 16px; font-weight: 400; line-height: 140%;
+L2078 .component-nav-top .nav-top-wrapper .main-nav ul li .main-nav-item-header:focus   @media(min-width:1130px)
+      text-decoration: none;
+L2079 .component-nav-top .nav-top-wrapper .main-nav ul li .main-nav-item-header::after   @media(min-width:1130px)
+      content: ' '; display: inline-block; width: 8px; height: 12px; margin-left: 8px; background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5v…; -webkit-transition: none; transition: none;
+L2080 .component-nav-top .nav-top-wrapper .main-nav ul li .main-nav-item-header:hover,.component-nav-top .nav-top-wrapper .main-nav ul li .main-nav-item-header.active   @media(min-width:1130px)
+      color: #555; text-decoration: none;
+L2081 .component-nav-top .nav-top-wrapper .main-nav ul li .main-nav-item-header:hover::after,.component-nav-top .nav-top-wrapper .main-nav ul li .main-nav-item-heade…   @media(min-width:1130px)
+      background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5v…;
+L2082 .component-nav-top .nav-top-wrapper .main-nav ul li[data-menu="Language Selector"],.component-nav-top .nav-top-wrapper .main-nav ul li[data-menu="AI Assistant"]   @media(min-width:1130px)
+      display: none;
+L2083 .component-nav-top .nav-top-wrapper .main-nav ul li.active .main-nav-item-header::after   @media(min-width:1130px)
+      rotate: 180deg; -webkit-transition: all .1s ease-in; transition: all .1s ease-in;
+L2084 .component-nav-top .nav-top-wrapper .main-nav ul li.active   @media(min-width:1130px)
+      color: #111c24;
+L2085 .component-nav-top .nav-top-wrapper .nav-items-right   @media(min-width:1130px)
+      -webkit-column-gap: 40px; -moz-column-gap: 40px; column-gap: 40px; margin-right: 0; position: relative;
+L2086 .component-nav-top .nav-top-wrapper .nav-items-right>.cta   @media(min-width:1130px)
+      display: -webkit-box !important; display: -webkit-flex !important; display: -ms-flexbox !important; display: flex !important; line-height: 100%;
+L2087 .component-nav-top #search-wrapper   @media(min-width:1130px)
+      width: 100%; max-width: 1900px; position: absolute; margin: 0 auto; left: 0; right: 0; overflow: hidden; pointer-events: none;
+L2088 .component-nav-top #coveo-search-wrapper   @media(min-width:1130px)
+      pointer-events: all; color: #111c24; width: 644px; min-height: 191px; height: auto; padding: 24px; border-radius: 16px; top: 120px; right: 0; -webkit-transform: translateX(100%); -ms-transform: translateX(100%); transform: translateX(100%); opacity: 0; -webkit-transition: all .3s ease-out; transition: all .3s ease-out; visibility: hidden; display: block;
+L2089 .component-nav-top #coveo-search-wrapper.active   @media(min-width:1130px)
+      -webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); -webkit-transition: all .3s ease-in; transition: all .3s ease-in; visibility: visible; pointer-events: all; opacity: 1;
+L2090 .component-nav-top #coveo-search-wrapper .component-search   @media(min-width:1130px)
+      padding: 24px 0;
+L2091 .component-nav-top #coveo-search-wrapper .container,.component-nav-top #coveo-search-wrapper .atomicSearchbox,.component-nav-top #coveo-search-wrapper .carouse…   @media(min-width:1130px)
+      padding: 0; margin: 0; width: 100%;
+L2092 .component-nav-top #coveo-search-wrapper .container::before,.component-nav-top #coveo-search-wrapper .atomicSearchbox::before,.component-nav-top #coveo-search-…   @media(min-width:1130px)
+      display: none;
+L2093 .component-nav-top #coveo-search-wrapper .search-header   @media(min-width:1130px)
+      color: #111c24; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; font-size: 16px; font-weight: 400; line-height: 140%; margin: 0; padding: 0; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center;
+L2094 .component-nav-top #coveo-search-wrapper .search-header h5   @media(min-width:1130px)
+      color: #111c24; font-size: 16px; font-weight: 400; line-height: 140%;
+L2095 .component-nav-top #coveo-search-wrapper .search-header .close   @media(min-width:1130px)
+      color: #555; font-size: 12px; font-weight: 400; line-height: 100%; background: 0; opacity: 1; margin-left: auto;
+L2096 .component-nav-top #coveo-search-wrapper .popular-content-header   @media(min-width:1130px)
+      font-size: 16px; color: #111c24; font-weight: 400; line-height: 140%; margin: 0 0 16px 0; padding: 0; display: block;
+L2097 .component-nav-top #coveo-search-wrapper .popular-content-wrapper   @media(min-width:1130px)
+      display: block;
+L2098 .component-nav-top #coveo-search-wrapper .popular-content-wrapper>.aem-Grid   @media(min-width:1130px)
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; row-gap: 16px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
+L2099 .component-nav-top #coveo-search-wrapper .popular-content-wrapper>.aem-Grid .mediatext   @media(min-width:1130px)
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-column-gap: 24px; -moz-column-gap: 24px; column-gap: 24px; margin: 0;
+L2100 .component-nav-top #coveo-search-wrapper .popular-content-wrapper>.aem-Grid .mediatext::before,.component-nav-top #coveo-search-wrapper .popular-content-wrappe…   @media(min-width:1130px)
+      display: none;
+L2101 .component-nav-top #coveo-search-wrapper .popular-content-wrapper>.aem-Grid .mediatext .img-col   @media(min-width:1130px)
+      -webkit-box-flex: 0; -webkit-flex-grow: 0; -ms-flex-positive: 0; flex-grow: 0; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; width: 178px; height: 100px; padding: 0; border-radius: 8px; overflow: hidden; margin: 0;
+L2102 .component-nav-top #coveo-search-wrapper .popular-content-wrapper>.aem-Grid .mediatext .img-col img   @media(min-width:1130px)
+      aspect-ratio: 89/50; object-fit: cover;
+L2103 .component-nav-top #coveo-search-wrapper .popular-content-wrapper>.aem-Grid .mediatext .text-col   @media(min-width:1130px)
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; width: inherit; row-gap: 16px; margin: 0; padding: 0;
+L2104 .component-nav-top #coveo-search-wrapper .popular-content-wrapper>.aem-Grid .mediatext .text-col .title,.component-nav-top #coveo-search-wrapper .popular-conte…   @media(min-width:1130px)
+      font-size: 16px; margin: 0;
+L2105 .component-nav-top .cmp-video__player-container:hover .video-button-container   @media(min-width:1130px)
+      width: 59px; height: 59px; font-size: 24px;
+L2507 .site-footer .logo-bottom
+      margin-left: auto;
+L2508 .site-footer .logo-bottom img,.site-footer .logo-bottom svg
+      height: 28px; width: auto;
+L2509 .site-footer .logo-top
+      display: none;
+L2516 .site-footer .logo-top   @media(max-width:992px)
+      display: block; margin: 0 0 33px 16px;
+L2517 .site-footer .logo-top img   @media(max-width:992px)
+      height: 24px; width: auto;
+L2518 .site-footer .logo-bottom   @media(max-width:992px)
+      display: none;
+L4693 .cmp-logo-carousel .logo-carousel
+      overflow: hidden;

@@ -1,0 +1,54 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-09-21T13:13:20Z",
+    "stardustVersion": "0.10.0"
+  },
+  "site": {
+    "originUrl": "https://www.synopsys.com/",
+    "deployUrl": null,
+    "extractedAt": "2026-09-21T12:08:21.500Z",
+    "pageCap": 1,
+    "totalDiscovered": 1,
+    "crawled": 1
+  },
+  "direction": {
+    "resolvedAt": "2026-09-21T13:13:20Z",
+    "phrase": "same-design migration (replica, single URL, no deploy)",
+    "directionFile": "stardust/direction.md",
+    "iaFidelity": "verbatim"
+  },
+  "pages": [
+    {
+      "slug": "index",
+      "url": "https://www.synopsys.com/",
+      "title": "Synopsys | EDA Tools, Semiconductor IP and Application Security Solutions",
+      "type": "landing",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-21T12:08:21.500Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-21T13:13:20Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-21T13:13:20Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-21T13:13:20Z",
+          "approvedBy": "hands-off"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/index.json",
+      "prototypePath": "stardust/prototypes/index-proposed.html",
+      "migratedPath": null
+    }
+  ]
+}

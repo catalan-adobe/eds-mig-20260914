@@ -1,0 +1,162 @@
+stardust/replica/capture/pagelibs.css: 362 of 4808 rules match /componentSkinnyBanner|small-banner|desktop-wrapper|banner-img|cropped-img|text-overlay|content-wrapper|contentValignCenter/i, showing 80
+L1981 .component-nav-top #coveo-search-wrapper .popular-content-wrapper
+      display: none;
+L2097 .component-nav-top #coveo-search-wrapper .popular-content-wrapper   @media(min-width:1130px)
+      display: block;
+L2098 .component-nav-top #coveo-search-wrapper .popular-content-wrapper>.aem-Grid   @media(min-width:1130px)
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; row-gap: 16px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
+L2099 .component-nav-top #coveo-search-wrapper .popular-content-wrapper>.aem-Grid .mediatext   @media(min-width:1130px)
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-column-gap: 24px; -moz-column-gap: 24px; column-gap: 24px; margin: 0;
+L2100 .component-nav-top #coveo-search-wrapper .popular-content-wrapper>.aem-Grid .mediatext::before,.component-nav-top #coveo-search-wrapper .popular-content-wrappe…   @media(min-width:1130px)
+      display: none;
+L2101 .component-nav-top #coveo-search-wrapper .popular-content-wrapper>.aem-Grid .mediatext .img-col   @media(min-width:1130px)
+      -webkit-box-flex: 0; -webkit-flex-grow: 0; -ms-flex-positive: 0; flex-grow: 0; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; width: 178px; height: 100px; padding: 0; border-radius: 8px; overflow: hidden; margin: 0;
+L2102 .component-nav-top #coveo-search-wrapper .popular-content-wrapper>.aem-Grid .mediatext .img-col img   @media(min-width:1130px)
+      aspect-ratio: 89/50; object-fit: cover;
+L2103 .component-nav-top #coveo-search-wrapper .popular-content-wrapper>.aem-Grid .mediatext .text-col   @media(min-width:1130px)
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; width: inherit; row-gap: 16px; margin: 0; padding: 0;
+L2104 .component-nav-top #coveo-search-wrapper .popular-content-wrapper>.aem-Grid .mediatext .text-col .title,.component-nav-top #coveo-search-wrapper .popular-conte…   @media(min-width:1130px)
+      font-size: 16px; margin: 0;
+L2599 .component-banner .text-overlay,.component-video-banner .text-overlay
+      position: absolute; height: 100%; width: 100%; top: 0; left: 0; right: 0; margin: 0 auto; z-index: 102; padding: 0; border-left: 15px solid transparent; border-right: 15px solid transparent;
+L2600 .component-banner .text-overlay .contentValignCenter,.component-video-banner .text-overlay .contentValignCenter
+      top: 50%; -webkit-transform: translate(0,-50%); -ms-transform: translate(0,-50%); transform: translate(0,-50%); position: relative;
+L2601 .component-banner .text-overlay .component-text,.component-video-banner .text-overlay .component-text
+      color: #FFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-column-gap: 24px; -moz-column-gap: 24px; column-gap: 24px;
+L2602 .component-banner .text-overlay p,.component-video-banner .text-overlay p
+      color: #FFF; margin-bottom: 20px; font-size: inherit;
+L2603 .component-banner .text-overlay.text-align-left,.component-video-banner .text-overlay.text-align-left
+      text-align: left;
+L2604 .component-banner .text-overlay.text-align-left .component-text,.component-video-banner .text-overlay.text-align-left .component-text
+      -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: start; -webkit-align-items: start; -ms-flex-align: start; -ms-grid-row-align: start; align-items: start;
+L2605 .component-banner .text-overlay.text-align-right,.component-video-banner .text-overlay.text-align-right
+      text-align: right;
+L2606 .component-banner .text-overlay.text-align-right .component-text,.component-video-banner .text-overlay.text-align-right .component-text
+      -webkit-box-pack: end; -webkit-justify-content: flex-end; -ms-flex-pack: end; justify-content: flex-end; -webkit-box-align: end; -webkit-align-items: end; -ms-flex-align: end; -ms-grid-row-align: end; align-items: end;
+L2607 .component-banner .text-overlay.text-align-center,.component-video-banner .text-overlay.text-align-center
+      text-align: center;
+L2608 .component-banner .text-overlay.text-align-center .component-text,.component-video-banner .text-overlay.text-align-center .component-text
+      -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; -ms-grid-row-align: center; align-items: center;
+L2609 .component-banner .text-overlay.content-align-left,.component-video-banner .text-overlay.content-align-left
+      -webkit-box-pack: start; -ms-flex-pack: start; -webkit-justify-content: flex-start; justify-content: flex-start;
+L2610 .component-banner .text-overlay.content-align-right,.component-video-banner .text-overlay.content-align-right
+      -webkit-box-pack: end; -ms-flex-pack: end; -webkit-justify-content: flex-end; justify-content: flex-end;
+L2611 .component-banner .text-overlay.content-align-center,.component-video-banner .text-overlay.content-align-center
+      -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center;
+L2612 .component-banner .text-overlay .paddingSmall,.component-video-banner .text-overlay .paddingSmall
+      padding-left: 0; padding-right: 0;
+L2613 .component-banner .text-overlay .paddingMedium,.component-video-banner .text-overlay .paddingMedium
+      padding-right: 15px; padding-left: 15px;
+L2614 .component-banner .text-overlay .paddingLarge,.component-video-banner .text-overlay .paddingLarge
+      padding-right: 30px; padding-left: 30px;
+L2615 .component-banner .text-overlay .content-wrapper,.component-video-banner .text-overlay .content-wrapper
+      height: 100%; width: 100%; position: relative; z-index: 1; max-width: 1900px; max-width: auto;
+L2616 .component-banner .text-overlay .animation-element.slide-up,.component-video-banner .text-overlay .animation-element.slide-up
+      opacity: 0; -webkit-transform: translateY(20px); -ms-transform: translateY(20px); transform: translateY(20px);
+L2617 .component-banner .text-overlay .animation-element.slide-up.in-view,.component-video-banner .text-overlay .animation-element.slide-up.in-view
+      opacity: 1; -webkit-transform: translateY(5px); -ms-transform: translateY(5px); transform: translateY(5px); -webkit-transition: opacity ease 1.5s,-webkit-transform ease 1.5s; transition: opacity ease 1.5s,-webkit-transform ease 1.5s; transition: opacity ease 1.5s,transform ease 1.5s; transition: opacity ease 1.5s,transform ease 1.5s,-webkit-transform ease 1.5s;
+L2627 .component-banner .reg-banner.has-foreground-image .content-wrapper,.component-video-banner .reg-banner.has-foreground-image .content-wrapper   @media(max-width:730px)
+      position: absolute; top: 0; height: 65%; text-align: center;
+L2628 .component-banner .reg-banner.has-foreground-image .content-wrapper .component-text,.component-video-banner .reg-banner.has-foreground-image .content-wrapper .…   @media(max-width:730px)
+      -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; -ms-grid-row-align: center; align-items: center;
+L2645 .component-banner .small-banner .component-button .has-arrow .arrow-icon,.component-banner .small-banner .component-button-purple .has-arrow .arrow-icon,.compo…
+      margin: 4px 0 0 8px;
+L2646 .component-banner .small-banner .image-overlay,.component-video-banner .small-banner .image-overlay
+      height: 100%; width: 100%; max-width: 1900px; background-color: black; position: absolute; z-index: 2;
+L2647 .component-banner .small-banner .opacity-0,.component-video-banner .small-banner .opacity-0
+      opacity: 0;
+L2648 .component-banner .small-banner .opacity-30,.component-video-banner .small-banner .opacity-30
+      opacity: .3;
+L2649 .component-banner .small-banner .opacity-40,.component-video-banner .small-banner .opacity-40
+      opacity: .4;
+L2650 .component-banner .small-banner .opacity-50,.component-video-banner .small-banner .opacity-50
+      opacity: .5;
+L2651 .component-banner .small-banner .opacity-60,.component-video-banner .small-banner .opacity-60
+      opacity: .6;
+L2680 .component-banner .banner-img,.component-video-banner .banner-img
+      height: 500px;
+L2681 .component-banner .banner-img .component-image img,.component-video-banner .banner-img .component-image img
+      min-height: 500px; max-height: 500px; width: 100%; opacity: 1; object-fit: cover;
+L2682 .component-banner.componentSkinnyBanner .small-banner,.component-video-banner.componentSkinnyBanner .small-banner
+      height: 285px;
+L2683 .component-banner.componentSkinnyBanner .small-banner .title,.component-video-banner.componentSkinnyBanner .small-banner .title
+      font-weight: 800; line-height: 1;
+L2684 .component-banner.componentSkinnyBanner .small-banner .sub-title,.component-video-banner.componentSkinnyBanner .small-banner .sub-title
+      font-size: 22px; font-weight: 300; line-height: 1; margin-top: -22px; margin-bottom: 8px;
+L2685 .component-banner.componentSkinnyBanner .small-banner .component-text,.component-video-banner.componentSkinnyBanner .small-banner .component-text
+      font-size: 20px; font-weight: 300;
+L2686 .component-banner.componentSkinnyBanner .small-banner .contentValignCenter,.component-video-banner.componentSkinnyBanner .small-banner .contentValignCenter
+      -webkit-transform: translate(0,-43%); -ms-transform: translate(0,-43%); transform: translate(0,-43%);
+L2687 .component-banner.componentSkinnyBanner .small-banner img,.component-video-banner.componentSkinnyBanner .small-banner img
+      min-height: 285px; max-height: 285px; width: 100%; opacity: 1; object-fit: cover;
+L2694 .component-banner .cropped-img,.component-video-banner .cropped-img
+      background-size: cover; background-position: 50% 50%; background-repeat: no-repeat; position: absolute; width: 100%; height: 100%; top: 0; left: 0;
+L2695 .component-banner .desktop-wrapper,.component-video-banner .desktop-wrapper
+      position: relative; overflow: hidden;
+L2697 .component-banner .text-overlay .component-text   @media(max-width:729px)
+      -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
+L2705 .component-banner .has-fg-image .text-overlay div[class^="text-width-"]   @media(max-width:729px)
+      width: 100%;
+L2706 .component-banner .has-fg-image .text-overlay div[class^="foreground-width-"]   @media(max-width:729px)
+      width: 100%; z-index: 1;
+L2707 .component-banner.componentSkinnyBanner .small-banner .title   @media(max-width:729px)
+      font-size: 24px; line-height: 33.6px;
+L2708 .component-banner.componentSkinnyBanner .small-banner .sub-title   @media(max-width:729px)
+      font-size: 18px; margin-bottom: 16px;
+L2713 .component-banner[data-mobile-type~="stacked"] .reg-banner.breadcrumbTrue .content-wrapper   @media(max-width:729px)
+      top: -webkit-calc(222px + 24px); top: calc(222px + 24px);
+L2715 .component-banner[data-mobile-type~="stacked"] .reg-banner .text-overlay   @media(max-width:729px)
+      padding: 0 20px; border: 0;
+L2716 .component-banner[data-mobile-type~="stacked"] .reg-banner .text-overlay .contentValignCenter   @media(max-width:729px)
+      top: 70%;
+L2717 .component-banner[data-mobile-type~="stacked"] .reg-banner .content-wrapper   @media(max-width:729px)
+      padding: 0; top: 228px; -webkit-transform: none; -ms-transform: none; transform: none;
+L2718 .component-banner[data-mobile-type~="stacked"] .reg-banner .content-wrapper .text-wrapper   @media(max-width:729px)
+      top: 0; -webkit-transform: none; -ms-transform: none; transform: none;
+L2719 .component-banner[data-mobile-type~="stacked"] .reg-banner .content-wrapper .sub-title   @media(max-width:729px)
+      margin-bottom: 16px;
+L2720 .component-banner[data-mobile-type~="stacked"] .reg-banner .content-wrapper .sub-title p   @media(max-width:729px)
+      margin: 0;
+L2746 .component-banner .has-fg-image .text-overlay   @media(min-width:730px)
+      width: 100%;
+L2747 .component-banner .has-fg-image .text-overlay .foreground-width-75   @media(min-width:730px)
+      width: 75%; z-index: 1;
+L2748 .component-banner .has-fg-image .text-overlay .foreground-width-67   @media(min-width:730px)
+      width: 67%; z-index: 1;
+L2749 .component-banner .has-fg-image .text-overlay .foreground-width-50   @media(min-width:730px)
+      width: 50%; z-index: 1;
+L2750 .component-banner .has-fg-image .text-overlay .foreground-width-40   @media(min-width:730px)
+      width: 40%; z-index: 1;
+L2751 .component-banner .has-fg-image .text-overlay .foreground-width-20   @media(min-width:730px)
+      width: 20%; z-index: 1;
+L2752 .component-banner .has-fg-image .text-overlay.content-align-left .text-wrapper   @media(min-width:730px)
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: start; -webkit-align-items: start; -ms-flex-align: start; align-items: start;
+L2753 .component-banner .has-fg-image .text-overlay.content-align-right .text-wrapper   @media(min-width:730px)
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -webkit-justify-content: flex-end; -ms-flex-pack: end; justify-content: flex-end; -webkit-box-align: end; -webkit-align-items: end; -ms-flex-align: end; align-items: end;
+L2756 .component-banner .text-overlay   @media(min-width:730px)
+      width: 100%;
+L2757 .component-banner .text-overlay .text-width-25   @media(min-width:730px)
+      width: 25%;
+L2758 .component-banner .text-overlay .text-width-33   @media(min-width:730px)
+      width: 33%;
+L2759 .component-banner .text-overlay .text-width-50   @media(min-width:730px)
+      width: 50%;
+L2760 .component-banner .text-overlay .text-width-60   @media(min-width:730px)
+      width: 60%;
+L2761 .component-banner .text-overlay .text-width-80   @media(min-width:730px)
+      width: 80%;
+L2764 .component-banner .cropped-img   @media(min-width:730px)
+      min-width: 850px;
+L2780 .component-banner .text-overlay   @media(min-width:992px)
+      width: 970px;
+L2782 .component-banner .cropped-img   @media(min-width:1024px)
+      min-width: 1200px;
+L2783 .component-banner .text-overlay   @media(min-width:1024px)
+      width: 970px;
+L2785 .component-banner .text-overlay   @media(min-width:1200px)
+      width: 1170px;
+L2786 .component-banner .cropped-img   @media(min-width:1200px)
+      min-width: 1400px;
+L2788 .component-banner .cropped-img   @media(min-width:1600px)
+      min-width: 1800px;
+… 282 more — narrow the selector regex, add --media/--decl, or raise --max

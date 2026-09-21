@@ -1,0 +1,19 @@
+stardust/replica/capture/pagelibs.css: 9 of 4808 rules match /cmp-key-benefits/i
+L3965 .marketoFormsContainer:has(.two-column) .unpinned-content .image .component-image,.marketoFormsContainer:has(.two-column) .unpinned-content .cmp-table,.marketo…   @media only screen and (min-width:730px)
+      width: 50%;
+L3967 .marketoFormsContainer:not(:has(.two-column)) .unpinned-content .image .component-image,.marketoFormsContainer:not(:has(.two-column)) .unpinned-content .cmp-ta…   @media only screen and (min-width:730px)
+      width: 58.3333%;
+L4682 .keyBenefits .cmp-key-benefits__link
+      font-size: 20px; font-weight: 300; color: #111c24; text-decoration: none;
+L4683 .keyBenefits .cmp-key-benefits__link:not([href])
+      cursor: auto;
+L4684 .keyBenefits .cmp-key-benefits__img-text
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: row; -ms-flex-wrap: row; flex-wrap: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-column-gap: 16px; -moz-column-gap: 16px; column-gap: 16px; margin-bottom: 16px;
+L4685 .keyBenefits .cmp-key-benefits__title
+      font-size: 20px; font-weight: 300; line-height: 28px; color: #111c24; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+L4686 .keyBenefits .cmp-key-benefits__description
+      font-size: 16px; font-weight: 300; line-height: 25.6px; margin-bottom: 32px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+L4687 .keyBenefits .cmp-key-benefits__img-wrapper img,.keyBenefits .cmp-key-benefits__img-wrapper .component-image
+      height: 50px; width: 50px; overflow: hidden;
+L4688 .keyBenefits .cmp-key-benefits__description   @media(min-width:730px)
+      margin-bottom: 48px;

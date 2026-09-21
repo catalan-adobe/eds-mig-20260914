@@ -1,0 +1,184 @@
+/* stardust:replica — home archetype sections. Values lifted from synopsys-pagelibs.css and the
+   1440 / 360 computed-style captures (stardust/replica/capture/m-hero.json, m-mid*.json, m-bottom.json). */
+
+/* ── hero carousel (slick fade, frozen at slide 1) ─────────────────── */
+.carousel-holder { position: relative; }
+.carousel-holder .slick-list { position: relative; overflow: hidden; }
+.carousel-holder .slick-track { position: relative; }
+.hp-carousel .slick-track { display: grid; }
+.hp-carousel .slick-slide { grid-area: 1 / 1; position: relative; opacity: 0; z-index: 998; transition: opacity .2s; }
+.hp-carousel .slick-slide.slick-current { opacity: 1; z-index: 999; }
+.carousel-wrapper-hp { position: relative; overflow: hidden; height: 560px; }
+.carousel-wrapper-hp .image-overlay { position: absolute; inset: 0; max-width: 1900px; background: #000; z-index: 2; opacity: 0; }
+.carousel-wrapper-hp .image-overlay.opacity-40 { opacity: .4; }
+.carousel-wrapper-hp .image-overlay.opacity-50 { opacity: .5; }
+.carousel-wrapper-hp .bg-desktop { display: none; position: relative; height: 700px; }
+.carousel-wrapper-hp .bg-mobile { position: relative; height: 560px; }
+.dark-purple-gradient { background-image: var(--purple-gradient); }
+.black-gradient { background-image: linear-gradient(107.7deg, #000 0, #191c20 35%, #646e81 100%); }
+.carousel-wrapper-hp .dm-desktop { display: none; }
+.carousel-wrapper-hp .dm-mobile { display: block; position: absolute; top: 0; width: 100%; margin-top: 72px; padding: 0 32px; }
+.carousel-wrapper-hp .dm-mobile img { display: block; width: auto; max-width: 100%; height: 180px; margin: auto; object-fit: cover; object-position: center; overflow: hidden; }
+.carousel-wrapper-hp .center-wrapper { display: flex; position: absolute; top: 236px; left: 0; right: 0; gap: 80px; padding: 24px 32px 0; z-index: 2; }
+.carousel-wrapper-hp .text-wrapper { width: 100%; }
+.carousel-wrapper-hp .title { margin: 0 0 30px; color: #fff; font-size: 20px; font-weight: 300; line-height: 1.4; }
+.carousel-wrapper-hp .title p { margin: 0; text-align: left; }
+.carousel-wrapper-hp .title b { font-weight: 700; }
+.carousel-wrapper-hp .sub-title p { margin: 0; color: #fff; font-size: 16px; font-weight: 300; line-height: 1.6; }
+.carousel-wrapper-hp .cta-wrapper { display: flex; flex-direction: column; gap: 15px 24px; margin-top: 24px; }
+.carousel-wrapper-hp .cta-wrapper .component-button { width: 260px; margin: 0; justify-content: center; }
+.carousel-wrapper-hp .cta-wrapper > div:nth-child(2) { margin-top: 14px; }
+.carousel-wrapper-hp .foreground { display: none; }
+.hp-carousel .slick-dots { display: flex; position: absolute; left: 0; right: 0; bottom: 34px; gap: 16px; width: 100%; max-width: 100%; margin: 0 auto; padding: 0 74px 0 24px; list-style: none; font-size: 0; pointer-events: none; z-index: 3; }
+.hp-carousel .slick-dots li { position: relative; flex: 1; height: 2px; padding: 4px 0; margin: 0; color: transparent; overflow: inherit; pointer-events: all; }
+.hp-carousel .slick-dots li::before { content: ""; position: absolute; left: 0; top: 0; width: 100%; border-bottom: 2px solid #b3b4b3; }
+.hp-carousel .slick-dots li button { display: inline-block; width: 100%; padding: 0; border: 0; opacity: 0; background: #efefef; font-size: 0; }
+.hp-carousel .slick-dots li .slider-progress-bar { display: block; position: absolute; left: 0; top: 0; height: 2px; width: 0; background: #fff; z-index: 99; }
+.hp-carousel .slick-dots li.slick-active .slider-progress-bar { width: 25px; }
+.hp-carousel .slick-nav-container { display: none; }
+.hp-carousel .pause-btn { display: flex; align-items: center; justify-content: center; position: absolute; right: 24px; bottom: 29px; transform: translateX(-12px); width: 24px; height: 24px; padding: 1px 6px; border: 0; border-radius: 20px; background: rgba(0, 0, 0, .75); color: #fff; z-index: 2; }
+.hp-carousel .pause-btn svg { width: 4.375px; height: 7px; }
+@media (min-width: 730px) {
+  .carousel-wrapper-hp { height: 700px; max-height: 700px; }
+  .carousel-wrapper-hp .dm-desktop { display: block; position: absolute; top: 0; left: 0; width: 100%; z-index: 0; }
+  .carousel-wrapper-hp .dm-desktop img { display: block; width: 100%; height: 700px; max-width: 100%; object-fit: cover; }
+  .carousel-wrapper-hp .dm-mobile, .carousel-wrapper-hp .bg-mobile { display: none; }
+  .carousel-wrapper-hp .bg-desktop { display: block; }
+  .carousel-wrapper-hp .center-wrapper { top: 170px; gap: 60px; padding: 0 45px; }
+  .carousel-wrapper-hp .text-wrapper { width: 50%; }
+  .carousel-wrapper-hp .title { font-size: 32px; margin-bottom: 32px; }
+  .carousel-wrapper-hp .sub-title p { font-size: 20px; line-height: 1.4; }
+  .carousel-wrapper-hp .cta-wrapper { flex-direction: row; flex-wrap: wrap; margin-top: 32px; }
+  .carousel-wrapper-hp .cta-wrapper .component-button { width: auto; margin: 0 0 15px; }
+  .carousel-wrapper-hp .cta-wrapper > div:nth-child(2) { margin-top: 0; }
+  .carousel-wrapper-hp .foreground { display: block; flex-grow: 0; width: 45%; max-width: 630px; }
+  .carousel-wrapper-hp .foreground img { position: relative; right: 0; width: 100%; height: auto; max-height: 422px; }
+  .hp-carousel .slick-dots { justify-content: left; width: auto; gap: 20px; padding: 0 98px 0 24px; }
+  .hp-carousel .slick-dots li { flex: none; width: 252px; height: auto; }
+  .hp-carousel .pause-btn { width: 50px; height: 50px; right: 60px; bottom: 76px; border-radius: 60px; transform: translateX(-25px); }
+  .hp-carousel .pause-btn svg { width: 9.375px; height: 15px; }
+}
+@media (min-width: 992px) {
+  .hp-carousel .slick-dots { padding: 0 106px 0 24px; gap: 0 20px; }
+  .hp-carousel .slick-dots li { padding: 0 8px 10px; }
+  .hp-carousel .slick-dots li::before { border-color: #b3b4b3; }
+  .hp-carousel .slick-dots li button { display: -webkit-box; position: relative; padding-top: 14px; opacity: 1; background: transparent; color: #fff; font-size: 16px; font-weight: 400; line-height: 22.4px; text-align: left; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .hp-carousel .slick-dots li.slick-active .slider-progress-bar { width: 71px; }
+}
+@media (min-width: 1200px) { .hp-carousel .slick-dots { padding: 0 100px; gap: 40px; } }
+@media (min-width: 1400px) {
+  .carousel-wrapper-hp .center-wrapper { padding: 0 160px; gap: 160px; }
+  .carousel-wrapper-hp .title { font-size: 48px; line-height: 1.4; margin-bottom: 32px; }
+  .carousel-wrapper-hp .sub-title p { font-size: 20px; line-height: 1.6; }
+  .hp-carousel .slick-dots { padding: 0 160px; gap: 54px; }
+}
+
+/* ── solution cards ─────────────────────────────────────────────────── */
+.component-solutioncard { position: relative; max-width: 368px; margin: 0; overflow: hidden; border-radius: 5px; box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25); text-align: center; }
+.component-solutioncard a { display: block; color: var(--link); }
+.component-solutioncard .image { position: relative; height: 434px; border-radius: 5px; overflow: hidden; }
+.component-solutioncard .image img { position: absolute; top: 0; left: 50%; width: auto; height: 102%; transform: translateX(-50%); object-fit: cover; }
+.component-solutioncard .image .overlay { position: absolute; bottom: 0; width: 100%; height: 275px; z-index: 10; background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5) 28%, #000 100%); }
+.component-solutioncard .image .text-hover { position: absolute; left: 50%; bottom: -25px; width: 75%; min-height: 179px; transform: translate(-50%, 0); z-index: 15; color: #fff; font-weight: 400; text-shadow: 0 0 6px #474747; }
+.component-solutioncard .image .text-hover span { display: block; font-size: 24px; font-weight: 300; line-height: 1.4; text-shadow: 0 0 4px #474747; }
+.component-solutioncard .image .text-hover p { display: -webkit-box; margin: 16px 0 4px; font-size: 16px; font-weight: 300; line-height: 1.6; opacity: 0; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; }
+.component-solutioncard .image .text-hover .button { display: inline-block; margin: 4px; padding: 8px 25px; font-size: 16px; font-weight: 300; line-height: 1.6; opacity: 0; }
+.component-solutioncard .image .text-hover .button svg { width: 9px; height: 16px; margin-left: 8px; }
+@media (max-width: 729px) {
+  .component-solutioncard .image .text-hover { bottom: 15px; }
+  .component-solutioncard .image .text-hover span { display: -webkit-box; height: 68px; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .component-solutioncard .image .text-hover p, .component-solutioncard .image .text-hover .button { opacity: 1; }
+}
+@media (max-width: 729px) { .four + .four .component-solutioncard { margin-top: 32px; } }
+
+/* ── key benefits ───────────────────────────────────────────────────── */
+.cmp-key-benefits__link { display: inline; color: var(--ink); font-size: 20px; font-weight: 300; line-height: 1.6; }
+.cmp-key-benefits__img-text { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+.cmp-key-benefits__img-wrapper img { display: block; width: 50px; height: 50px; overflow: hidden; }
+.cmp-key-benefits__title { display: -webkit-box; font-size: 20px; font-weight: 300; line-height: 28px; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.cmp-key-benefits__description { display: -webkit-box; margin-bottom: 32px; font-size: 16px; font-weight: 300; line-height: 25.6px; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+@media (min-width: 730px) { .cmp-key-benefits__description { margin-bottom: 48px; } }
+.design-future .col-sm-6 .text .background-component { margin-top: 40px; padding-bottom: 30px; }
+@media (min-width: 730px) { .design-future .col-sm-6 .text .background-component { margin-top: 30px; } }
+
+/* ── logo carousel (marquee frozen at the captured offset) ──────────── */
+.cmp-logo-carousel { margin: 24px 0 48px; }
+.cmp-logo-carousel .logo-carousel { position: relative; overflow: hidden; }
+.cmp-logo-carousel .slick-track { display: flex; height: 80px; transform: translate3d(-359.334px, 0, 0); }
+.cmp-logo-carousel .slick-slide { display: flex; align-items: center; justify-content: center; flex: none; width: 86px; height: 80px; margin: 0 12px; }
+.cmp-logo-carousel .slick-slide a { display: block; width: 100%; height: 100%; }
+.cmp-logo-carousel .slick-slide img { display: block; width: 100%; height: 80px; margin: auto; }
+@media (min-width: 730px) {
+  .cmp-logo-carousel { margin: 40px 0 80px; }
+  .cmp-logo-carousel .slick-track { height: 100px; transform: translate3d(-1263.87px, 0, 0); }
+  .cmp-logo-carousel .slick-slide { width: 148px; height: 100px; margin: 0 40px; }
+  .cmp-logo-carousel .slick-slide img { height: 100px; }
+}
+
+/* ── What's New asset cards (3-up carousel frozen at page 1) ────────── */
+.news-carousel { position: relative; }
+.news-carousel .slick-list { overflow: hidden; }
+.news-carousel .slick-track { display: flex; transform: translate3d(-330px, 0, 0); }
+.component-assetcard { position: relative; flex: none; width: 320px; margin: 5px; background: #fff; box-shadow: 0 1px 7px 0 rgba(0, 0, 0, .15); overflow: hidden; }
+.component-assetcard .cmp-image img { display: block; width: 100%; height: 180px; object-fit: cover; }
+.component-assetcard .card-text { padding: 20px 32px 53px; }
+.component-assetcard .label-date-wrapper { display: flex; align-items: center; justify-content: space-between; }
+.component-assetcard .label-wrapper { display: inline; padding: 4px 8px; border-radius: 3px; background: var(--purple); color: #fff; font-size: 12px; font-weight: 400; line-height: 12px; text-transform: uppercase; }
+.component-assetcard .label-wrapper .label { display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
+.component-assetcard .date-time { margin-left: 16px; color: var(--grey-text); font-size: 14px; font-weight: 400; line-height: 16.5px; text-align: right; }
+.component-assetcard h4.heading { display: -webkit-box; margin: 20px 0; color: var(--ink); font-size: 20px; font-weight: 400; line-height: 23px; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.component-assetcard .heading-desc-wrapper { height: 158px; }
+.component-assetcard .heading-desc-wrapper p { display: -webkit-box; margin: 0 0 32px; font-size: 16px; font-weight: 300; line-height: 18px; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
+.component-assetcard .card-text > a { position: absolute; left: 32px; bottom: 32px; color: var(--link); font-size: 16px; font-weight: 400; line-height: 1; }
+.component-assetcard .card-text > a svg { display: inline-block; width: 7.5px; height: 12px; margin-left: 4px; font-size: 12px; }
+.news-carousel .slick-dots { display: flex; justify-content: center; position: relative; max-width: 342px; width: calc(100% - 112px); margin: 28px auto 0; padding: 0; list-style: none; font-size: 0; }
+.news-carousel .slick-dots li { position: relative; display: inline-block; flex: 1; height: 2px; margin: 0 8px 0 0; padding: 4px 0; cursor: pointer; }
+.news-carousel .slick-dots li:last-child { margin: 0; }
+.news-carousel .slick-dots li::before { content: ""; position: absolute; left: 0; bottom: 2.5px; width: 100%; border-bottom: 2px solid #e3e3e3; }
+.news-carousel .slick-dots li.slick-active::before { border-color: #555; }
+.news-carousel .slick-dots li button { width: 100%; padding: 0; border: 0; opacity: 0; background: #efefef; }
+.news-carousel .slick-nav-container { display: flex; position: relative; top: -16px; width: 100%; padding: 0 15px; }
+.news-carousel .slick-arrow { display: flex; align-items: center; justify-content: center; width: 24px; height: 24px; padding: 0; border: 1px solid #555; border-radius: 20px; background: #fff; color: #555; }
+.news-carousel .slick-next { margin-left: auto; }
+.news-carousel .slick-arrow svg { width: 11.25px; height: 18px; }
+@media (min-width: 730px) {
+  .news-carousel .slick-track { transform: translate3d(-1140px, 0, 0); }
+  .component-assetcard { width: 370px; }
+  .component-assetcard .cmp-image img { height: 208.125px; }
+  .news-carousel .slick-dots li { flex: none; width: 50px; }
+  .news-carousel .slick-dots li:nth-child(n+4) { display: none; }
+  .news-carousel .slick-nav-container { position: absolute; top: 50%; left: 50%; width: 100%; margin-top: -36px; padding: 0 15px; transform: translateX(-50%); }
+  .news-carousel .slick-arrow { position: absolute; width: 40px; height: 40px; }
+  .news-carousel .slick-prev { left: -80px; }
+  .news-carousel .slick-next { right: -80px; }
+  .news-carousel .slick-arrow svg { width: 12.5px; height: 20px; }
+}
+
+/* ── support & careers (divider row) ────────────────────────────────── */
+.divider-row .col-sm-6 h2.title { text-align: left; }
+.snps-col-divider { position: relative; }
+.snps-col-divider .vl { position: absolute; left: 50%; top: 0; height: 100%; width: 1px; margin-left: .5px; background: var(--grey-rule); }
+@media (max-width: 729px) { .divider-row .snps-col-divider { display: none; } }
+@media (min-width: 730px) {
+  .divider-row { display: flex; }
+  .divider-row .col-sm-6 { float: none; flex: 1; }
+  .divider-row .snps-col-divider { flex: 0 0 30px; }
+}
+
+/* ── skinny banner (Connect with Us) ────────────────────────────────── */
+.componentSkinnyBanner { position: relative; }
+.componentSkinnyBanner .desktop-wrapper { position: relative; height: 285px; overflow: hidden; }
+.componentSkinnyBanner .text-overlay { display: flex; align-items: center; position: absolute; inset: 0; text-align: center; }
+.componentSkinnyBanner .content-wrapper { position: relative; width: 100%; max-width: 1900px; padding: 0 15px; }
+.componentSkinnyBanner .title p { margin: 0; color: #fff; font-size: 19.2px; font-weight: 800; line-height: 1.75; }
+.componentSkinnyBanner .component-button { display: inline-flex; margin: 15px 0; }
+.componentSkinnyBanner .component-button a svg { margin-top: 4px; }
+@media (max-width: 729px) {
+  .componentSkinnyBanner .component-button { width: 260px; justify-content: center; }
+}
+@media (min-width: 730px) {
+  .componentSkinnyBanner .text-overlay { left: 50%; width: 1170px; transform: translateX(-50%); }
+  .componentSkinnyBanner .title p { font-size: 38.4px; line-height: 1; }
+  .componentSkinnyBanner .component-button { margin: 15px 0 0; }
+  .componentSkinnyBanner .title + .component-text { margin-top: 41px; }
+}

@@ -1,0 +1,302 @@
+stardust/replica/capture/pagelibs.css: 170 of 4808 rules match /component-button|darkButtonRollover|has-arrow|\.cta\b|cta-link|cta-text|arrow-icon|\.buttons/i, showing 150
+L1295 html.touch .component-podcasts .cta:hover
+      color: #646e81; text-decoration: none;
+L1296 html.touch .component-podcasts .cta:active
+      color: #646e81; text-decoration: underline;
+L1303 .component-podcasts .cta
+      background-color: #f7f7fa; display: block; text-align: center; color: #646e81; padding: 12px;
+L1306 .background-component.light-grey-bg .component-podcasts .cta
+      background-color: #FFF;
+L1504 .component-imageTextCta .mediatext .buttons
+      margin-bottom: 24px;
+L1508 .component-imageTextCta .mediatext .buttons   @media(min-width:730px)
+      margin-bottom: 0;
+L1635 .component-subnav[data-total-columns="five-column"] .d-flex .cta   @media(min-width:1130px) and (max-width:1600px)
+      position: absolute; bottom: 24px; right: 24px;
+L1642 .component-subnav .cta::after
+      content: ''; background-repeat: no-repeat; background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy5…; background-size: 100%; display: inline-block; width: 7px; height: 12px; margin-left: 8px; background-position: center;
+L1662 .component-nav-list .cta
+      font-size: 16px; font-weight: 400; line-height: 100%;
+L1864 .cmp-video__thumbnail.component-button,.cmp-video__thumbnail.component-button-purple,.cmp-video__thumbnail.component-button-synopsys_purple,.cmp-video__thumbna…
+      position: static;
+L1968 html:not(.aem-AuthorLayer-Edit) body[data-page-type="home-page"] .site-wrapper .component-nav-top:not(.overlapping):not(.mobile-menu-opened)[data-color-theme="…
+      background: #FFF; color: #111c24; font-weight: 400; font-size: 16px; line-height: 100%; text-align: center;
+L1969 html:not(.aem-AuthorLayer-Edit) body[data-page-type="home-page"] .site-wrapper .component-nav-top:not(.overlapping):not(.mobile-menu-opened)[data-color-theme="…
+      box-shadow: inset 0 0 0 99999px rgba(0,0,0,0.2);
+L1990 .component-nav-top .nav-top-wrapper .cta-mobile
+      display: none;
+L1994 .component-nav-top .nav-items-right .cta,.component-nav-top .cta-mobile
+      -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; -ms-grid-row-align: center; align-items: center; background-color: #7e45af; color: #FFF; font-weight: 400; font-size: 16px; padding: 0 24px; min-height: 40px; display: none; line-height: 100%;
+L1995 .component-nav-top .nav-items-right .cta:hover,.component-nav-top .cta-mobile:hover
+      box-shadow: inset 0 0 0 99999px rgba(0,0,0,0.2); cursor: pointer; text-decoration: none;
+L1996 .component-nav-top .nav-items-right .cta
+      display: none;
+L2001 .component-nav-top .cta-mobile-holder
+      display: none;
+L2056 .component-nav-top.mobile-menu-opened .cta-mobile-holder   @media(max-width:1129px)
+      text-align: center; width: 100%; z-index: 5; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; padding: 0 20px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; width: 100%; margin-top: 40px;
+L2057 .component-nav-top.mobile-menu-opened .cta-mobile   @media(max-width:1129px)
+      -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; min-height: 48px; width: 100%; margin: 0 0 16px 0; position: relative !important;
+L2086 .component-nav-top .nav-top-wrapper .nav-items-right>.cta   @media(min-width:1130px)
+      display: -webkit-box !important; display: -webkit-flex !important; display: -ms-flexbox !important; display: flex !important; line-height: 100%;
+L2120 #morph-dropdown-wrapper .component-subnav[data-total-columns="five-column"] .sub-nav-footer.cta   @media(min-width:1130px)
+      color: #111c24; font-weight: 400; font-size: 16px; line-height: 100%;
+L2149 #morph-dropdown-wrapper .component-subnav[data-total-columns="five-column"] .cta,#morph-dropdown-wrapper .component-subnav[data-total-columns="five-column"] .c…   @media(max-width:1129px)
+      display: none;
+L2160 #morph-dropdown-wrapper .component-subnav .component-topNavAd .component-image,#morph-dropdown-wrapper .component-subnav .component-topNavAd .description,#morp…   @media(max-width:1129px)
+      display: none;
+L2165 #morph-dropdown-wrapper .cta   @media(max-width:1129px)
+      display: block; position: fixed; bottom: 0;
+L2320 .component-textcomp .buttons,.component-imageTextCta .buttons
+      margin: 24px 0 0 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-column-gap: 24px; -moz-column-gap: 24px; column-gap: 24px; row-gap: 24px; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; -webkit-align-items: start; align-items: start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap;
+L2321 .component-textcomp .buttons .component-button,.component-textcomp .buttons .component-button-purple,.component-textcomp .buttons .component-button-synopsys_pu…
+      min-width: 140px; max-width: 300px; padding: 0 24px; margin: 0; min-height: 40px; height: auto; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; line-height: aut; font-weight: 400; background-color: #7e45af;
+L2322 .component-textcomp .buttons .component-button:hover,.component-textcomp .buttons .component-button-purple:hover,.component-textcomp .buttons .component-button…
+      color: #FFF; box-shadow: inset 0 0 0 99999px rgba(0,0,0,0.2); text-decoration: none;
+L2323 .component-textcomp .buttons .component-button.secondary,.component-textcomp .buttons .secondary.component-button-purple,.component-textcomp .buttons .secondar…
+      border: 2px solid #7e45af; background: 0; color: #7e45af;
+L2324 .component-textcomp .buttons .cta-link,.component-imageTextCta .buttons .cta-link
+      color: #111c24; font-size: 16px; font-weight: 400; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center;
+L2325 .component-textcomp .buttons .fa-chevron-right,.component-imageTextCta .buttons .fa-chevron-right
+      height: 12px; margin-left: 8px;
+L2326 .component-textcomp .buttons.align-center,.component-imageTextCta .buttons.align-center
+      -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; -ms-grid-row-align: center; align-items: center;
+L2327 .component-textcomp .buttons.align-right,.component-imageTextCta .buttons.align-right
+      -webkit-box-pack: right; -webkit-justify-content: right; -ms-flex-pack: right; justify-content: right; -webkit-box-align: end; -webkit-align-items: end; -ms-flex-align: end; -ms-grid-row-align: end; align-items: end;
+L2331 .component-textcomp .buttons,.component-imageTextCta .buttons   @media(min-width:480px)
+      -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row;
+L2337 .component-textcomp .buttons,.component-imageTextCta .buttons   @media(min-width:730px)
+      -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: start; -webkit-align-items: start; -ms-flex-align: start; -ms-grid-row-align: start; align-items: start;
+L2338 .component-textcomp .buttons .component-button,.component-textcomp .buttons .component-button-purple,.component-textcomp .buttons .component-button-synopsys_pu…   @media(min-width:730px)
+      font-size: 16px;
+L2439 .component-press-release .cta-wrapper
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center;
+L2440 .component-press-release .cta-wrapper .cta
+      color: #FFF; background-color: #80539c; width: 180px; border-radius: 5px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; text-align: center; padding: 10.5px 12px; position: relative; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center;
+L2441 .component-press-release .cta-wrapper .cta .arrow-icon
+      margin-left: 9px; line-height: 17px; margin-top: 2px;
+L2442 .component-press-release .cta-wrapper .cta .arrow-icon:after
+      content: '\203A'; font-size: 28px;
+L2474 html.touch .component-button a,html.touch .component-button-purple a,html.touch .component-button-synopsys_purple a,html.touch .component-button-white a,html.t…
+      color: #FFF;
+L2475 html.touch .component-button a:hover,html.touch .component-button-purple a:hover,html.touch .component-button-synopsys_purple a:hover,html.touch .component-but…
+      color: #FFF; text-decoration: none;
+L2476 html.touch .component-button a:active,html.touch .component-button-purple a:active,html.touch .component-button-synopsys_purple a:active,html.touch .component-…
+      color: #FFF; text-decoration: none;
+L2477 html.touch .lightButtonRollover:hover,html.touch .darkButtonRollover:hover
+      text-decoration: none;
+L2478 html.touch .component-button-purple:hover,html.touch .component-button-gray:hover,html.touch .component-button-orange:hover
+      text-decoration: none;
+L2479 .component-button,.component-button-purple,.component-button-synopsys_purple,.component-button-white,.component-button-gray,.component-button-orange
+      display: inline-block; padding: 10px 30px; border-radius: 5px; color: #FFF;
+L2480 .component-button a,.component-button-purple a,.component-button-synopsys_purple a,.component-button-white a,.component-button-gray a,.component-button-orange a
+      color: #FFF;
+L2482 .component-button-purple
+      background-color: #80539c;
+L2483 .component-button-purple:hover
+      box-shadow: inset 0 0 0 99999px rgba(0,0,0,0.2); cursor: pointer; text-decoration: underline;
+L2484 .component-button-synopsys_purple
+      color: #FFF; background-color: #5a2a82;
+L2485 .component-button-synopsys_purple:hover
+      box-shadow: inset 0 0 0 99999px rgba(0,0,0,0.2); cursor: pointer; text-decoration: none;
+L2486 .component-button-white
+      color: #111c24; background-color: #FFF;
+L2487 .component-button-white:hover
+      box-shadow: inset 0 0 0 99999px rgba(0,0,0,0.2); cursor: pointer; text-decoration: none;
+L2488 .component-button-gray
+      background-color: #646e81;
+L2489 .component-button-gray:hover
+      box-shadow: inset 0 0 0 99999px rgba(0,0,0,0.2); cursor: pointer; text-decoration: underline;
+L2490 .component-button-orange
+      background-color: #fcaf1a;
+L2491 .component-button-orange:hover
+      box-shadow: inset 0 0 0 99999px rgba(0,0,0,0.05); cursor: pointer; text-decoration: underline;
+L2579 .component-button .left-align-btn,.component-button-purple .left-align-btn,.component-button-synopsys_purple .left-align-btn,.component-button-white .left-alig…
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center;
+L2580 .component-button .left-align-btn .btn-text,.component-button-purple .left-align-btn .btn-text,.component-button-synopsys_purple .left-align-btn .btn-text,.com…
+      text-align: left;
+L2581 .component-button.secondary .left-align-btn,.secondary.component-button-purple .left-align-btn,.secondary.component-button-synopsys_purple .left-align-btn,.sec…
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center;
+L2582 .component-button.secondary .left-align-btn span,.secondary.component-button-purple .left-align-btn span,.secondary.component-button-synopsys_purple .left-alig…
+      text-align: left;
+L2597 .component-banner .component-button,.component-banner .component-button-purple,.component-banner .component-button-synopsys_purple,.component-banner .component…
+      padding: 5.21px 24px;
+L2598 .component-banner .component-button a,.component-banner .component-button-purple a,.component-banner .component-button-synopsys_purple a,.component-banner .com…
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center;
+L2636 .component-banner .reg-banner .component-button .has-arrow,.component-banner .reg-banner .component-button-purple .has-arrow,.component-banner .reg-banner .com…
+      -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; -ms-grid-row-align: center; align-items: center;
+L2637 .component-banner .reg-banner .component-button .has-arrow .download-icon,.component-banner .reg-banner .component-button-purple .has-arrow .download-icon,.com…
+      margin-top: 0;
+L2638 .component-banner .reg-banner .component-button .has-arrow .arrow-icon,.component-banner .reg-banner .component-button-purple .has-arrow .arrow-icon,.component…
+      margin: 0 0 0 8px;
+L2645 .component-banner .small-banner .component-button .has-arrow .arrow-icon,.component-banner .small-banner .component-button-purple .has-arrow .arrow-icon,.compo…
+      margin: 4px 0 0 8px;
+L2652 .component-banner .component-button,.component-banner .component-button-purple,.component-banner .component-button-synopsys_purple,.component-banner .component…
+      margin-bottom: 25px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: 400; box-shadow: none; -webkit-transition: .5s; transition: .5s; text-align: center;
+L2653 .component-banner .component-button:hover,.component-banner .component-button-purple:hover,.component-banner .component-button-synopsys_purple:hover,.component…
+      -webkit-transition: .2s; transition: .2s;
+L2654 .component-banner .component-button svg,.component-banner .component-button-purple svg,.component-banner .component-button-synopsys_purple svg,.component-banne…
+      width: 9px; margin-right: 10px; margin-top: 4.5px;
+L2655 .component-banner .component-button a:hover,.component-banner .component-button-purple a:hover,.component-banner .component-button-synopsys_purple a:hover,.com…
+      text-decoration: none;
+L2656 .component-banner .component-button.light.primary,.component-banner .light.primary.component-button-purple,.component-banner .light.primary.component-button-sy…
+      background: #7e45af; border: 2px solid #7e45af; color: #FFF;
+L2657 .component-banner .component-button.light.primary a,.component-banner .light.primary.component-button-purple a,.component-banner .light.primary.component-butto…
+      color: #FFF;
+L2658 .component-banner .component-button.light.primary:hover,.component-banner .light.primary.component-button-purple:hover,.component-banner .light.primary.compone…
+      border-color: #5a2a82; background: #5a2a82;
+L2659 .component-banner .component-button.light.secondary,.component-banner .light.secondary.component-button-purple,.component-banner .light.secondary.component-but…
+      border: 2px solid #7e45af;
+L2660 .component-banner .component-button.light.secondary a,.component-banner .light.secondary.component-button-purple a,.component-banner .light.secondary.component…
+      color: #7e45af;
+L2661 .component-banner .component-button.light.secondary:hover,.component-banner .light.secondary.component-button-purple:hover,.component-banner .light.secondary.c…
+      color: #5a2a82; background: #7E45AF33;
+L2662 .component-banner .component-button.dark.primary,.component-banner .dark.primary.component-button-purple,.component-banner .dark.primary.component-button-synop…
+      background: #FFF; border: 2px solid #FFF; color: #111c24;
+L2663 .component-banner .component-button.dark.primary a,.component-banner .dark.primary.component-button-purple a,.component-banner .dark.primary.component-button-s…
+      color: #111c24;
+L2664 .component-banner .component-button.dark.primary:hover,.component-banner .dark.primary.component-button-purple:hover,.component-banner .dark.primary.component-…
+      background: #e3e3e3; border-color: #e3e3e3;
+L2665 .component-banner .component-button.dark.primary:focus,.component-banner .dark.primary.component-button-purple:focus,.component-banner .dark.primary.component-…
+      background: #FFF; border-color: #FFF;
+L2666 .component-banner .component-button.dark.secondary,.component-banner .dark.secondary.component-button-purple,.component-banner .dark.secondary.component-button…
+      background: 0; border: 2px solid #FFF;
+L2667 .component-banner .component-button.dark.secondary a,.component-banner .dark.secondary.component-button-purple a,.component-banner .dark.secondary.component-bu…
+      color: #FFF;
+L2668 .component-banner .component-button.dark.secondary:hover,.component-banner .dark.secondary.component-button-purple:hover,.component-banner .dark.secondary.comp…
+      color: #555; background: rgba(85,85,85,0.5); border-color: #FFF;
+L2698 .component-banner .component-button,.component-banner .component-button-purple,.component-banner .component-button-synopsys_purple,.component-banner .component…   @media(max-width:729px)
+      width: 260px; margin: 0;
+L2699 .component-banner .component-button.secondary,.component-banner .secondary.component-button-purple,.component-banner .secondary.component-button-synopsys_purpl…   @media(max-width:729px)
+      margin-top: 14px;
+L2721 .component-banner[data-mobile-type~="stacked"] .reg-banner .component-button a,.component-banner[data-mobile-type~="stacked"] .reg-banner .component-button-pur…   @media(max-width:729px)
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center;
+L2722 .component-banner[data-mobile-type~="stacked"] .reg-banner .component-button svg,.component-banner[data-mobile-type~="stacked"] .reg-banner .component-button-p…   @media(max-width:729px)
+      margin-top: 0;
+L2727 .component-banner[data-mobile-type~="stacked"] .reg-banner .cmp-video-cta .component-button,.component-banner[data-mobile-type~="stacked"] .reg-banner .cmp-vid…   @media(max-width:729px)
+      padding: 6px 18px; font-size: 12px; margin: 0;
+L2728 .component-banner[data-mobile-type~="stacked"] .reg-banner .cmp-video-cta .component-button.cmp-video__thumbnail,.component-banner[data-mobile-type~="stacked"]…   @media(max-width:729px)
+      z-index: 2; width: 64px; height: 64px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-content: center; -ms-flex-line-pack: center; align-content: center; border-radius: 90px; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; font-size: 21px; border: 2px solid #000000BF; background: #000000BF; color: #FFF;
+L2729 .component-banner[data-mobile-type~="stacked"] .reg-banner .cmp-video-cta .component-button.cmp-video__thumbnail svg,.component-banner[data-mobile-type~="stack…   @media(max-width:729px)
+      width: 15.75px; height: 21px; margin: 0; color: #FFF;
+L2730 .component-banner[data-mobile-type~="stacked"] .reg-banner .cmp-video-cta .component-button.cmp-video__thumbnail a,.component-banner[data-mobile-type~="stacked…   @media(max-width:729px)
+      display: inherit;
+L2731 .component-banner[data-mobile-type~="stacked"] .reg-banner .cmp-video-cta .component-button.cmp-video__thumbnail .btn-text,.component-banner[data-mobile-type~=…   @media(max-width:729px)
+      display: none;
+L2742 .component-button,.component-button-purple,.component-button-synopsys_purple,.component-button-white,.component-button-gray,.component-button-orange   @media(min-width:730px)
+      margin: 15px 0 0 0;
+L2832 .component-video-banner .text-overlay .component-button,.component-video-banner .text-overlay .component-button-purple,.component-video-banner .text-overlay .c…
+      margin-bottom: 25px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: 400; box-shadow: none; -webkit-transition: .5s; transition: .5s; text-align: center; padding: 5.21px 24px;
+L2833 .component-video-banner .text-overlay .component-button a,.component-video-banner .text-overlay .component-button-purple a,.component-video-banner .text-overla…
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center;
+L2834 .component-video-banner .text-overlay .component-button:hover,.component-video-banner .text-overlay .component-button-purple:hover,.component-video-banner .tex…
+      -webkit-transition: .2s; transition: .2s;
+L2835 .component-video-banner .text-overlay .component-button svg,.component-video-banner .text-overlay .component-button-purple svg,.component-video-banner .text-ov…
+      width: 9px; margin-right: 10px; margin-top: 4.5px;
+L2836 .component-video-banner .text-overlay .component-button a:hover,.component-video-banner .text-overlay .component-button-purple a:hover,.component-video-banner …
+      text-decoration: none;
+L2837 .component-video-banner .text-overlay .component-button.light.primary,.component-video-banner .text-overlay .light.primary.component-button-purple,.component-v…
+      background: #7e45af; border: 2px solid #7e45af; color: #FFF;
+L2838 .component-video-banner .text-overlay .component-button.light.primary a,.component-video-banner .text-overlay .light.primary.component-button-purple a,.compone…
+      color: #FFF;
+L2839 .component-video-banner .text-overlay .component-button.light.primary:hover,.component-video-banner .text-overlay .light.primary.component-button-purple:hover,…
+      border-color: #5a2a82; background: #5a2a82;
+L2840 .component-video-banner .text-overlay .component-button.light.secondary,.component-video-banner .text-overlay .light.secondary.component-button-purple,.compone…
+      border: 2px solid #7e45af;
+L2841 .component-video-banner .text-overlay .component-button.light.secondary a,.component-video-banner .text-overlay .light.secondary.component-button-purple a,.com…
+      color: #7e45af;
+L2842 .component-video-banner .text-overlay .component-button.light.secondary:hover,.component-video-banner .text-overlay .light.secondary.component-button-purple:ho…
+      color: #5a2a82; background: #7E45AF33;
+L2843 .component-video-banner .text-overlay .component-button.dark.primary,.component-video-banner .text-overlay .dark.primary.component-button-purple,.component-vid…
+      background: #FFF; border: 2px solid #FFF; color: #111c24;
+L2844 .component-video-banner .text-overlay .component-button.dark.primary a,.component-video-banner .text-overlay .dark.primary.component-button-purple a,.component…
+      color: #111c24;
+L2845 .component-video-banner .text-overlay .component-button.dark.primary:hover,.component-video-banner .text-overlay .dark.primary.component-button-purple:hover,.c…
+      background: #e3e3e3; border-color: #e3e3e3;
+L2846 .component-video-banner .text-overlay .component-button.dark.primary:focus,.component-video-banner .text-overlay .dark.primary.component-button-purple:focus,.c…
+      background: #FFF; border-color: #FFF;
+L2847 .component-video-banner .text-overlay .component-button.dark.secondary,.component-video-banner .text-overlay .dark.secondary.component-button-purple,.component…
+      background: 0; border: 2px solid #FFF;
+L2848 .component-video-banner .text-overlay .component-button.dark.secondary a,.component-video-banner .text-overlay .dark.secondary.component-button-purple a,.compo…
+      color: #FFF;
+L2849 .component-video-banner .text-overlay .component-button.dark.secondary:hover,.component-video-banner .text-overlay .dark.secondary.component-button-purple:hove…
+      color: #555; background: rgba(85,85,85,0.5); border-color: #FFF;
+L2906 .component-video-banner .component-button .has-arrow .arrow-icon,.component-video-banner .component-button-purple .has-arrow .arrow-icon,.component-video-banne…
+      margin: 4px 0 0 8px;
+L2926 .component-video-banner .text-overlay .component-button,.component-video-banner .text-overlay .component-button-purple,.component-video-banner .text-overlay .c…   @media(max-width:729px)
+      width: 260px; margin: 0;
+L2927 .component-video-banner .text-overlay .component-button.secondary,.component-video-banner .text-overlay .secondary.component-button-purple,.component-video-ban…   @media(max-width:729px)
+      margin-top: 14px;
+L2928 .component-video-banner .text-overlay .component-button.padding-10,.component-video-banner .text-overlay .padding-10.component-button-purple,.component-video-b…   @media(max-width:729px)
+      margin-right: 10px;
+L2942 .component-video-banner .text-overlay .component-button,.component-video-banner .text-overlay .component-button-purple,.component-video-banner .text-overlay .c…   @media(min-width:730px)
+      margin: 15px 0 0 0;
+L2943 .component-video-banner .text-overlay .component-button.padding-10,.component-video-banner .text-overlay .padding-10.component-button-purple,.component-video-b…   @media(min-width:730px)
+      margin-right: 10px;
+L2972 .component-video-banner .text-overlay .component-button.padding-10,.component-video-banner .text-overlay .padding-10.component-button-purple,.component-video-b…   @media(min-width:1200px)
+      margin-right: 10px;
+L3039 .component-calltoaction .wrapper .buttons
+      text-align: center; margin: 10px 0 0 0;
+L3042 .component-calltoaction .buttons.align-left .btn   @media(max-width:729px)
+      margin-right: auto;
+L3043 .component-calltoaction .buttons.align-center .btn   @media(max-width:729px)
+      margin-left: auto; margin-right: auto;
+L3044 .component-calltoaction .buttons.align-right .btn   @media(max-width:729px)
+      margin-left: auto;
+L3050 .component-calltoaction .wrapper .buttons   @media(min-width:730px)
+      text-align: center; margin: 0;
+L3057 .component-calltoaction .wrapper .buttons.align-left   @media(min-width:730px)
+      text-align: left;
+L3058 .component-calltoaction .wrapper .buttons.align-center   @media(min-width:730px)
+      text-align: center;
+L3059 .component-calltoaction .wrapper .buttons.align-right   @media(min-width:730px)
+      text-align: right;
+L3200 .component-interactive-banner .text-overlay .component-button,.component-interactive-banner .text-overlay .component-button-purple,.component-interactive-banne…
+      margin-bottom: 25px;
+L3290 .component-interactive-banner .text-overlay .component-button,.component-interactive-banner .text-overlay .component-button-purple,.component-interactive-banne…   @media(max-width:729px)
+      margin: 10px 0; font-size: 14px; width: auto;
+L3291 .component-interactive-banner .text-overlay .component-button.padding-10,.component-interactive-banner .text-overlay .padding-10.component-button-purple,.compo…   @media(max-width:729px)
+      margin-right: 10px;
+L3312 .component-interactive-banner .text-overlay .component-button,.component-interactive-banner .text-overlay .component-button-purple,.component-interactive-banne…   @media(min-width:730px)
+      font-size: 1.1em;
+L3313 .component-interactive-banner .text-overlay .component-button.padding-10,.component-interactive-banner .text-overlay .padding-10.component-button-purple,.compo…   @media(min-width:730px)
+      margin-right: 10px;
+L3374 .component-interactive-banner .text-overlay .component-button,.component-interactive-banner .text-overlay .component-button-purple,.component-interactive-banne…   @media(min-width:1200px)
+      margin: 40px 0 0 0; padding: 10px 30px; font-size: 18px;
+L3375 .component-interactive-banner .text-overlay .component-button.padding-10,.component-interactive-banner .text-overlay .padding-10.component-button-purple,.compo…   @media(min-width:1200px)
+      margin-right: 10px;
+L3800 .blog-sub-nav-container .atomic-search-section .blog-title-cta-link
+      color: #111c24; font-size: 20px; margin-bottom: 16px;
+L3801 .blog-sub-nav-container .atomic-search-section .blog-title-cta-link   @media(min-width:730px)
+      font-size: inherit; margin-bottom: 0;
+L3894 .component-topNavAd a .cta
+      color: #111c24; text-decoration: none; line-height: 100%;
+L3895 .component-topNavAd a .cta:hover,.component-topNavAd a .cta:active,.component-topNavAd a .cta:focus
+      text-decoration: underline;
+L4245 .carousel-holder[carousel-type="banner-carousel"] .center-wrapper .component-button,.carousel-holder[carousel-type="banner-carousel"] .center-wrapper .componen…
+      margin: 0; width: auto;
+L4246 .carousel-holder[carousel-type="banner-carousel"] .center-wrapper .component-button,.carousel-holder[carousel-type="banner-carousel"] .center-wrapper .componen…   @media(max-width:729px)
+      width: 260px; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center;
+L4248 .carousel-holder[carousel-type="banner-carousel"] .center-wrapper .component-button.light,.carousel-holder[carousel-type="banner-carousel"] .center-wrapper .li…
+      background: #111c24; border-color: #111c24; color: #FFF;
+L4249 .carousel-holder[carousel-type="banner-carousel"] .center-wrapper .component-button.light:hover,.carousel-holder[carousel-type="banner-carousel"] .center-wrapp…
+      background: #555; border-color: #555;
+L4250 .carousel-holder[carousel-type="banner-carousel"] .center-wrapper .component-button.light .secondary a,.carousel-holder[carousel-type="banner-carousel"] .cente…
+      color: #FFF;
+L4251 .carousel-holder[carousel-type="banner-carousel"] .center-wrapper .component-button.light.secondary,.carousel-holder[carousel-type="banner-carousel"] .center-w…
+      background: 0;
+L4252 .carousel-holder[carousel-type="banner-carousel"] .center-wrapper .component-button.light.secondary a,.carousel-holder[carousel-type="banner-carousel"] .center…
+      color: #111c24;
+L4273 .carousel-holder[carousel-type="banner-carousel"] .component-button .has-arrow,.carousel-holder[carousel-type="banner-carousel"] .component-button-purple .has-…
+      -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; -ms-grid-row-align: center; align-items: center;
+L4274 .carousel-holder[carousel-type="banner-carousel"] .component-button .has-arrow .download-icon,.carousel-holder[carousel-type="banner-carousel"] .component-butt…
+      margin-top: 0;
+L4275 .carousel-holder[carousel-type="banner-carousel"] .component-button .has-arrow .arrow-icon,.carousel-holder[carousel-type="banner-carousel"] .component-button-…
+      margin: 0 0 0 8px;
+L4287 .carousel-holder[carousel-type="banner-carousel"] .component-video-banner .content-wrapper .component-button,.carousel-holder[carousel-type="banner-carousel"] …   @media(max-width:729px)
+      -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center;
+L4289 .carousel-holder[carousel-type="banner-carousel"] .component-video-banner .content-wrapper .component-button.light,.carousel-holder[carousel-type="banner-carou…
+      background: #111c24; border-color: #111c24; color: #FFF;
+L4290 .carousel-holder[carousel-type="banner-carousel"] .component-video-banner .content-wrapper .component-button.light:hover,.carousel-holder[carousel-type="banner…
+      background: #555; border-color: #555;
+… 20 more — narrow the selector regex, add --media/--decl, or raise --max

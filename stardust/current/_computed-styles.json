@@ -1,0 +1,2722 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-09-21T12:09:29.794Z",
+    "script": "style-census.mjs",
+    "readArtifacts": [
+      "https://www.synopsys.com/"
+    ],
+    "widths": [
+      1440,
+      360
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+    "synthesizedInputs": [],
+    "failed": []
+  },
+  "pages": {
+    "https://www.synopsys.com/": {
+      "360": {
+        "title": "Synopsys | EDA Tools, Semiconductor IP & Systems Verification",
+        "viewport": {
+          "width": 360,
+          "height": 900
+        },
+        "elements": {
+          "total": 2147,
+          "visible": 409
+        },
+        "occluders": [],
+        "headings": [
+          {
+            "tag": "h2",
+            "text": "Powering the Era of Pervasive Intellige…",
+            "selector": "div > div:nth-of-type(2) > div > div:nth-of-type(3) > div > div > section > h2",
+            "fontFamily": "Roboto",
+            "fontSize": "24px",
+            "fontWeight": "300",
+            "lineHeight": "26.4px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(17, 28, 36)"
+          },
+          {
+            "tag": "h2",
+            "text": "Design the Future Today with Synopsys",
+            "selector": "section > div > div > div:nth-of-type(1) > div > div > section > h2",
+            "fontFamily": "Roboto",
+            "fontSize": "24px",
+            "fontWeight": "300",
+            "lineHeight": "26.4px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(17, 28, 36)"
+          },
+          {
+            "tag": "h2",
+            "text": "Industry",
+            "selector": "section > div:nth-of-type(1) > div > div:nth-of-type(1) > div > div > section > h2",
+            "fontFamily": "Roboto",
+            "fontSize": "24px",
+            "fontWeight": "300",
+            "lineHeight": "26.4px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(17, 28, 36)"
+          },
+          {
+            "tag": "h2",
+            "text": "Technology",
+            "selector": "section > div:nth-of-type(2) > div > div:nth-of-type(1) > div > div > section > h2",
+            "fontFamily": "Roboto",
+            "fontSize": "24px",
+            "fontWeight": "300",
+            "lineHeight": "26.4px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(17, 28, 36)"
+          },
+          {
+            "tag": "h2",
+            "text": "Ecosystem Partners",
+            "selector": "#partnersBlock > div > div > div:nth-of-type(1) > div > div > section > h2",
+            "fontFamily": "Roboto",
+            "fontSize": "24px",
+            "fontWeight": "300",
+            "lineHeight": "26.4px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(17, 28, 36)"
+          },
+          {
+            "tag": "h2",
+            "text": "What's New",
+            "selector": "div > div:nth-of-type(2) > div > div:nth-of-type(9) > div > div > section > h2",
+            "fontFamily": "Roboto",
+            "fontSize": "24px",
+            "fontWeight": "300",
+            "lineHeight": "26.4px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(17, 28, 36)"
+          },
+          {
+            "tag": "h4",
+            "text": "Agentic AI in Chip Design: Four-Part Ex…",
+            "selector": "#slick-slide10 > div:nth-of-type(2) > div:nth-of-type(2) > h4",
+            "fontFamily": "Roboto",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "23px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(17, 28, 36)"
+          },
+          {
+            "tag": "h2",
+            "text": "Support & Services",
+            "selector": "#support-careers > div:nth-of-type(1) > div > div > div > section > h2",
+            "fontFamily": "Roboto",
+            "fontSize": "24px",
+            "fontWeight": "300",
+            "lineHeight": "26.4px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(17, 28, 36)"
+          },
+          {
+            "tag": "h2",
+            "text": "Careers",
+            "selector": "#support-careers > div:nth-of-type(3) > div > div > div > section > h2",
+            "fontFamily": "Roboto",
+            "fontSize": "24px",
+            "fontWeight": "300",
+            "lineHeight": "26.4px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(17, 28, 36)"
+          },
+          {
+            "tag": "h3",
+            "text": "Company",
+            "selector": "nav > h3",
+            "fontFamily": "Roboto",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "17.6px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "tag": "h3",
+            "text": "Resources",
+            "selector": "nav > h3",
+            "fontFamily": "Roboto",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "17.6px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "tag": "h3",
+            "text": "Trending",
+            "selector": "nav > h3",
+            "fontFamily": "Roboto",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "17.6px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "tag": "h3",
+            "text": "Learn",
+            "selector": "nav > h3",
+            "fontFamily": "Roboto",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "17.6px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(255, 255, 255)"
+          }
+        ],
+        "text": [
+          {
+            "tag": "p",
+            "text": "Physical AI Solutions",
+            "selector": "#slick-slide00 > div > section > div:nth-of-type(6) > div > div:nth-of-type(1) > p:nth-of-type(2)",
+            "fontFamily": "Roboto",
+            "fontSize": "20px",
+            "fontWeight": "300",
+            "lineHeight": "28px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "tag": "p",
+            "text": "Accelerate Physical AI development with…",
+            "selector": "#slick-slide00 > div > section > div:nth-of-type(6) > div > div:nth-of-type(2) > p",
+            "fontFamily": "Roboto",
+            "fontSize": "16px",
+            "fontWeight": "300",
+            "lineHeight": "25.6px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "tag": "p",
+            "text": "Supercharge Productivity • Conquer Comp…",
+            "selector": "div:nth-of-type(2) > div > div:nth-of-type(3) > div > div > section > div > p",
+            "fontFamily": "Roboto",
+            "fontSize": "16px",
+            "fontWeight": "300",
+            "lineHeight": "25.6px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(17, 28, 36)"
+          },
+          {
+            "tag": "p",
+            "text": "Award-winning, Industry Leading AI-powe…",
+            "selector": "div:nth-of-type(1) > div > div > section > a > div > div:nth-of-type(1) > p",
+            "fontFamily": "Roboto",
+            "fontSize": "16px",
+            "fontWeight": "300",
+            "lineHeight": "25.6px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "tag": "p",
+            "text": "#1 in Electronic Design Automation Solu…",
+            "selector": "div:nth-of-type(2) > div > div > section > a > div > div:nth-of-type(1) > p",
+            "fontFamily": "Roboto",
+            "fontSize": "16px",
+            "fontWeight": "300",
+            "lineHeight": "25.6px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "tag": "p",
+            "text": "Industry-Leading Hardware Assisted Veri…",
+            "selector": "div:nth-of-type(3) > div > div > section > a > div > div:nth-of-type(1) > p",
+            "fontFamily": "Roboto",
+            "fontSize": "16px",
+            "fontWeight": "300",
+            "lineHeight": "25.6px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "tag": "p",
+            "text": "#1 in Interface, Foundation, & Physical…",
+            "selector": "div:nth-of-type(4) > div > div > section > a > div > div:nth-of-type(1) > p",
+            "fontFamily": "Roboto",
+            "fontSize": "16px",
+            "fontWeight": "300",
+            "lineHeight": "25.6px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "tag": "p",
+            "text": "Explore the Synopsys Support Community!…",
+            "selector": "#support-careers > div:nth-of-type(1) > div > div > div > section > div:nth-of-type(1) > p",
+            "fontFamily": "Roboto",
+            "fontSize": "16px",
+            "fontWeight": "300",
+            "lineHeight": "25.6px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(17, 28, 36)"
+          },
+          {
+            "tag": "p",
+            "text": "Join Synopsys and build your career wit…",
+            "selector": "#support-careers > div:nth-of-type(3) > div > div > div > section > div:nth-of-type(1) > p",
+            "fontFamily": "Roboto",
+            "fontSize": "16px",
+            "fontWeight": "300",
+            "lineHeight": "25.6px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(17, 28, 36)"
+          }
+        ],
+        "buttons": [],
+        "links": [
+          {
+            "text": "Learn More",
+            "selector": "#slick-slide00 > div > section > div:nth-of-type(6) > div > div:nth-of-type(3) > div > a",
+            "count": 4,
+            "color": "rgb(17, 28, 36)",
+            "textDecoration": "none",
+            "fontWeight": "400",
+            "hover": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(17, 28, 36)",
+              "borderColor": "rgb(17, 28, 36)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          },
+          {
+            "text": "Synopsys.ai Award-winning, Industry Lea…",
+            "selector": "div > div > section > div:nth-of-type(1) > div > div > section > a",
+            "count": 4,
+            "color": "rgb(49, 106, 202)",
+            "textDecoration": "none",
+            "fontWeight": "300",
+            "hover": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(35, 82, 124)",
+              "borderColor": "rgb(35, 82, 124)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          },
+          {
+            "text": "AI Chip Development Achieve first-pass …",
+            "selector": "div:nth-of-type(2) > div > section > div:nth-of-type(1) > div > div:nth-of-type(2) > section > a",
+            "count": 12,
+            "color": "rgb(17, 28, 36)",
+            "textDecoration": "none",
+            "fontWeight": "300",
+            "hover": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(17, 28, 36)",
+              "borderColor": "rgb(17, 28, 36)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          },
+          {
+            "text": "Learn more",
+            "selector": "#slick-slide10 > div:nth-of-type(2) > a",
+            "count": 1,
+            "color": "rgb(49, 106, 202)",
+            "textDecoration": "none",
+            "fontWeight": "400",
+            "hover": null
+          },
+          {
+            "text": "Privacy",
+            "selector": "footer > div > div:nth-of-type(3) > a:nth-of-type(1)",
+            "count": 4,
+            "color": "rgb(255, 255, 255)",
+            "textDecoration": "none",
+            "fontWeight": "300",
+            "hover": null
+          }
+        ],
+        "surfaces": [
+          {
+            "matched": "nav",
+            "selector": "nav",
+            "rect": {
+              "x": 8,
+              "y": 6748,
+              "w": 344,
+              "h": 83
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(17, 28, 36)",
+            "padding": "32px 16px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "relative",
+            "fontFamily": "Roboto",
+            "fontSize": "15px"
+          },
+          {
+            "matched": "nav",
+            "selector": "nav",
+            "rect": {
+              "x": 8,
+              "y": 6830,
+              "w": 344,
+              "h": 83
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(17, 28, 36)",
+            "padding": "32px 16px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "relative",
+            "fontFamily": "Roboto",
+            "fontSize": "15px"
+          },
+          {
+            "matched": "nav",
+            "selector": "nav",
+            "rect": {
+              "x": 8,
+              "y": 6913,
+              "w": 344,
+              "h": 83
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(17, 28, 36)",
+            "padding": "32px 16px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "relative",
+            "fontFamily": "Roboto",
+            "fontSize": "15px"
+          },
+          {
+            "matched": "nav",
+            "selector": "nav",
+            "rect": {
+              "x": 8,
+              "y": 6996,
+              "w": 344,
+              "h": 83
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(17, 28, 36)",
+            "padding": "32px 16px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "relative",
+            "fontFamily": "Roboto",
+            "fontSize": "15px"
+          },
+          {
+            "matched": "footer",
+            "selector": "footer",
+            "rect": {
+              "x": 0,
+              "y": 6651,
+              "w": 360,
+              "h": 675
+            },
+            "backgroundColor": "rgb(17, 28, 36)",
+            "color": "rgb(17, 28, 36)",
+            "padding": "40px 8px",
+            "maxWidth": "1900px",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "Roboto",
+            "fontSize": "15px"
+          },
+          {
+            "matched": "[role=\"banner\"]",
+            "selector": "body > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div:nth-of-type(1) > section",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 360,
+              "h": 560
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(17, 28, 36)",
+            "padding": "0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "relative",
+            "fontFamily": "Roboto",
+            "fontSize": "15px"
+          }
+        ],
+        "radii": [
+          {
+            "value": "5px",
+            "count": 8,
+            "area": 600248,
+            "sources": [
+              "#topNav > div:nth-of-type(1) > div > button:nth-of-type(2)",
+              "#slick-slide00 > div > section > div:nth-of-type(6) > div > div:nth-of-type(3) > div",
+              "div > div > div > section > div:nth-of-type(1) > div > div > section"
+            ]
+          },
+          {
+            "value": "20px",
+            "count": 3,
+            "area": 1728,
+            "sources": [
+              "div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div:nth-of-type(1) > section > button",
+              "div > div:nth-of-type(2) > div > div:nth-of-type(10) > div > section > div:nth-of-type(2) > button:nth-of-type(1)",
+              "div > div:nth-of-type(2) > div > div:nth-of-type(10) > div > section > div:nth-of-type(2) > button:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "3px",
+            "count": 1,
+            "area": 920,
+            "sources": [
+              "#slick-slide10 > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1)"
+            ]
+          }
+        ],
+        "shadows": [
+          {
+            "value": "rgba(0, 0, 0, 0.25) 0px 4px 4px 0px",
+            "count": 4,
+            "sources": [
+              "div > div > div > section > div:nth-of-type(1) > div > div > section",
+              "div > div > div > section > div:nth-of-type(2) > div > div > section",
+              "div > div > div > section > div:nth-of-type(3) > div > div > section"
+            ]
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.02) 0px 0.30066px 0.30066px 0px",
+            "count": 1,
+            "sources": [
+              "#topNav"
+            ]
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.15) 0px 1px 7px 0px",
+            "count": 1,
+            "sources": [
+              "#slick-slide10"
+            ]
+          }
+        ],
+        "gradients": [
+          {
+            "value": "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 28%, rgb(0, 0, 0) 100%)",
+            "count": 4,
+            "area": 363000,
+            "sources": [
+              "section > div:nth-of-type(1) > div > div > section > a > div > div:nth-of-type(2)",
+              "section > div:nth-of-type(2) > div > div > section > a > div > div:nth-of-type(2)",
+              "section > div:nth-of-type(3) > div > div > section > a > div > div:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "linear-gradient(107.7deg, rgb(0, 0, 0) 0px, rgb(25, 28, 32) 35%, rgb(100, 110, 129) 100%)",
+            "count": 1,
+            "area": 201600,
+            "sources": [
+              "#slick-slide00 > div > section > div:nth-of-type(3)"
+            ]
+          },
+          {
+            "value": "linear-gradient(107.7deg, rgb(45, 21, 65) 0px, rgb(90, 42, 130) 50%, rgb(126, 69, 175) 100%)",
+            "count": 1,
+            "area": 102600,
+            "sources": [
+              "#CTAbottom > div > div > section > div"
+            ]
+          }
+        ],
+        "bgColors": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 9,
+            "area": 2833638,
+            "sources": [
+              "body > div:nth-of-type(2)",
+              "#morph-dropdown-wrapper > div:nth-of-type(1)",
+              "#slick-slide00 > div > section > div:nth-of-type(6) > div > div:nth-of-type(3) > div"
+            ]
+          },
+          {
+            "value": "rgb(247, 247, 250)",
+            "count": 3,
+            "area": 248828,
+            "sources": [
+              "body > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div:nth-of-type(8) > div",
+              "#partnersBlock > div > div > div:nth-of-type(1) > div",
+              "body > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div:nth-of-type(11) > div"
+            ]
+          },
+          {
+            "value": "rgb(230, 234, 237)",
+            "count": 1,
+            "area": 2637456,
+            "sources": [
+              "body"
+            ]
+          },
+          {
+            "value": "rgb(17, 28, 36)",
+            "count": 1,
+            "area": 243135,
+            "sources": [
+              "footer"
+            ]
+          },
+          {
+            "value": "rgba(255, 255, 255, 0.06)",
+            "count": 1,
+            "area": 25200,
+            "sources": [
+              "#topNav"
+            ]
+          },
+          {
+            "value": "rgb(126, 69, 175)",
+            "count": 1,
+            "area": 920,
+            "sources": [
+              "#slick-slide10 > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "rgba(196, 196, 196, 0.8)",
+            "count": 1,
+            "area": 768,
+            "sources": [
+              "#topNav > div:nth-of-type(1) > div > button:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.75)",
+            "count": 1,
+            "area": 576,
+            "sources": [
+              "div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div:nth-of-type(1) > section > button"
+            ]
+          }
+        ],
+        "textColors": [
+          {
+            "value": "rgb(17, 28, 36)",
+            "count": 41,
+            "sources": [
+              "#morph-dropdown-wrapper > div:nth-of-type(1) > button",
+              "#slick-slide00 > div > section > div:nth-of-type(6) > div > div:nth-of-type(3) > div > a",
+              "div > div:nth-of-type(2) > div > div:nth-of-type(3) > div > div > section > h2"
+            ]
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 28,
+            "sources": [
+              "#slick-slide00 > div > section > div:nth-of-type(6) > div > div:nth-of-type(1) > p:nth-of-type(1) > b",
+              "#slick-slide00 > div > section > div:nth-of-type(6) > div > div:nth-of-type(1) > p:nth-of-type(2) > b",
+              "#slick-slide00 > div > section > div:nth-of-type(6) > div > div:nth-of-type(2) > p"
+            ]
+          },
+          {
+            "value": "rgb(49, 106, 202)",
+            "count": 1,
+            "sources": [
+              "#slick-slide10 > div:nth-of-type(2) > a"
+            ]
+          },
+          {
+            "value": "rgb(85, 85, 85)",
+            "count": 1,
+            "sources": [
+              "#slick-slide10 > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2)"
+            ]
+          }
+        ],
+        "borderColors": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 6,
+            "sources": [
+              "#slick-slide00 > div > section > div:nth-of-type(6) > div > div:nth-of-type(3) > div",
+              "section > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div:nth-of-type(2)",
+              "nav"
+            ]
+          },
+          {
+            "value": "rgb(85, 85, 85)",
+            "count": 2,
+            "sources": [
+              "div > div:nth-of-type(2) > div > div:nth-of-type(10) > div > section > div:nth-of-type(2) > button:nth-of-type(1)",
+              "div > div:nth-of-type(2) > div > div:nth-of-type(10) > div > section > div:nth-of-type(2) > button:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "rgb(193, 194, 193)",
+            "count": 1,
+            "sources": [
+              "#morph-dropdown-wrapper > div:nth-of-type(1)"
+            ]
+          }
+        ],
+        "customProps": {
+          "--fa-font-solid": {
+            "declared": "normal 900 1em/1 \"Font Awesome 6 Solid\"",
+            "computed": "normal 900 1em/1 \"Font Awesome 6 Solid\""
+          },
+          "--fa-font-regular": {
+            "declared": "normal 400 1em/1 \"Font Awesome 6 Regular\"",
+            "computed": "normal 400 1em/1 \"Font Awesome 6 Regular\""
+          },
+          "--fa-font-light": {
+            "declared": "normal 300 1em/1 \"Font Awesome 6 Light\"",
+            "computed": "normal 300 1em/1 \"Font Awesome 6 Light\""
+          },
+          "--fa-font-thin": {
+            "declared": "normal 100 1em/1 \"Font Awesome 6 Thin\"",
+            "computed": "normal 100 1em/1 \"Font Awesome 6 Thin\""
+          },
+          "--fa-font-duotone": {
+            "declared": "normal 900 1em/1 \"Font Awesome 6 Duotone\"",
+            "computed": "normal 900 1em/1 \"Font Awesome 6 Duotone\""
+          },
+          "--fa-font-sharp-solid": {
+            "declared": "normal 900 1em/1 \"Font Awesome 6 Sharp\"",
+            "computed": "normal 900 1em/1 \"Font Awesome 6 Sharp\""
+          },
+          "--fa-font-sharp-regular": {
+            "declared": "normal 400 1em/1 \"Font Awesome 6 Sharp\"",
+            "computed": "normal 400 1em/1 \"Font Awesome 6 Sharp\""
+          },
+          "--fa-font-sharp-light": {
+            "declared": "normal 300 1em/1 \"Font Awesome 6 Sharp\"",
+            "computed": "normal 300 1em/1 \"Font Awesome 6 Sharp\""
+          },
+          "--fa-font-sharp-thin": {
+            "declared": "normal 100 1em/1 \"Font Awesome 6 Sharp\"",
+            "computed": "normal 100 1em/1 \"Font Awesome 6 Sharp\""
+          },
+          "--fa-font-brands": {
+            "declared": "normal 400 1em/1 \"Font Awesome 6 Brands\"",
+            "computed": "normal 400 1em/1 \"Font Awesome 6 Brands\""
+          },
+          "--atomic-border-radius-xl": {
+            "declared": "50%",
+            "computed": "1rem"
+          },
+          "--atomic-font-family": {
+            "declared": "'Roboto',Arial,sans-serif",
+            "computed": "'Roboto',Arial,sans-serif"
+          },
+          "--atomic-text-base": {
+            "declared": "1.4rem",
+            "computed": "1.4rem"
+          },
+          "--atomic-text-sm": {
+            "declared": "1.2rem",
+            "computed": "1.2rem"
+          },
+          "--atomic-text-lg": {
+            "declared": "1.6rem",
+            "computed": "1.6rem"
+          },
+          "--atomic-text-xl": {
+            "declared": "1.8rem",
+            "computed": "1.8rem"
+          },
+          "--atomic-text-2xl": {
+            "declared": "2.4rem",
+            "computed": "2.4rem"
+          },
+          "--atomic-line-height-ratio": {
+            "declared": "1.5",
+            "computed": "1.5"
+          },
+          "--atomic-primary": {
+            "declared": "#316aca",
+            "computed": "#316aca"
+          },
+          "--purple": {
+            "declared": "#7E45AF",
+            "computed": "#7E45AF"
+          },
+          "--purple-dark": {
+            "declared": "#5A2A82",
+            "computed": "#5A2A82"
+          },
+          "--text": {
+            "declared": "#111c24",
+            "computed": "#111c24"
+          },
+          "--grey": {
+            "declared": "#555",
+            "computed": "#555"
+          },
+          "--grey-light": {
+            "declared": "#B3B4B3",
+            "computed": "#B3B4B3"
+          },
+          "--bg-light": {
+            "declared": "#E3E3E3",
+            "computed": "#E3E3E3"
+          },
+          "--white": {
+            "declared": "#FFF",
+            "computed": "#FFF"
+          },
+          "--radius": {
+            "declared": "10px",
+            "computed": "10px"
+          }
+        },
+        "fonts": [
+          {
+            "family": "VideoJS",
+            "weight": "400",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "Roboto",
+            "weight": "700",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "Roboto",
+            "weight": "500",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "Roboto",
+            "weight": "400",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "Roboto",
+            "weight": "300",
+            "style": "normal",
+            "status": "loaded"
+          }
+        ],
+        "logoCandidates": [
+          {
+            "tag": "img",
+            "selector": "#slick-slide00 > div > section > div:nth-of-type(5) > img",
+            "src": "https://images.synopsys.com/is/image/synopsys/physical-ai-social-share?qlt=82&wid=375&ts=1783637872827&$responsive$&fit=constrain&dpr=off",
+            "inlineSvg": false,
+            "alt": "",
+            "ariaLabel": null,
+            "class": "img-responsive",
+            "id": null,
+            "href": null,
+            "inHomeLink": false,
+            "rect": {
+              "x": 32,
+              "y": 72,
+              "w": 296,
+              "h": 180
+            }
+          }
+        ],
+        "iconFont": {
+          "families": [],
+          "glyphs": [
+            {
+              "class": "vjs-share-control vjs-button",
+              "pseudo": "::before",
+              "codepoint": "U+F10F",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-icon-placeholder",
+              "pseudo": "::before",
+              "codepoint": "U+F101",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-icon-placeholder",
+              "pseudo": "::before",
+              "codepoint": "U+F107",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-volume-level",
+              "pseudo": "::before",
+              "codepoint": "U+F111",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-play-progress vjs-slider-bar",
+              "pseudo": "::before",
+              "codepoint": "U+F111",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-icon-placeholder",
+              "pseudo": "::before",
+              "codepoint": "U+F111",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-icon-placeholder",
+              "pseudo": "::before",
+              "codepoint": "U+F10E",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-icon-placeholder",
+              "pseudo": "::before",
+              "codepoint": "U+F11D",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-icon-placeholder",
+              "pseudo": "::before",
+              "codepoint": "U+F10D",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-icon-placeholder",
+              "pseudo": "::before",
+              "codepoint": "U+F11E",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-icon-placeholder",
+              "pseudo": "::before",
+              "codepoint": "U+F110",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-icon-placeholder",
+              "pseudo": "::before",
+              "codepoint": "U+F121",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-icon-placeholder",
+              "pseudo": "::before",
+              "codepoint": "U+F108",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-close-button vjs-control vjs-button vjs-icon-cancel",
+              "pseudo": "::before",
+              "codepoint": "U+F115",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-icon-placeholder",
+              "pseudo": "::before",
+              "codepoint": "U+F115",
+              "fontFamily": "VideoJS"
+            }
+          ]
+        },
+        "consent": {
+          "dismissed": "I Accept"
+        },
+        "finalUrl": "https://www.synopsys.com/"
+      },
+      "1440": {
+        "title": "Synopsys | EDA Tools, Semiconductor IP & Systems Verification",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "elements": {
+          "total": 2168,
+          "visible": 530
+        },
+        "occluders": [],
+        "headings": [
+          {
+            "tag": "h2",
+            "text": "Powering the Era of Pervasive Intellige…",
+            "selector": "div > div:nth-of-type(2) > div > div:nth-of-type(3) > div > div > section > h2",
+            "fontFamily": "Roboto",
+            "fontSize": "32px",
+            "fontWeight": "300",
+            "lineHeight": "35.2px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(17, 28, 36)"
+          },
+          {
+            "tag": "h2",
+            "text": "Design the Future Today with Synopsys",
+            "selector": "section > div > div > div:nth-of-type(1) > div > div > section > h2",
+            "fontFamily": "Roboto",
+            "fontSize": "32px",
+            "fontWeight": "300",
+            "lineHeight": "35.2px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(17, 28, 36)"
+          },
+          {
+            "tag": "h2",
+            "text": "Industry",
+            "selector": "section > div:nth-of-type(1) > div > div:nth-of-type(1) > div > div > section > h2",
+            "fontFamily": "Roboto",
+            "fontSize": "32px",
+            "fontWeight": "300",
+            "lineHeight": "35.2px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(17, 28, 36)"
+          },
+          {
+            "tag": "h2",
+            "text": "Technology",
+            "selector": "section > div:nth-of-type(2) > div > div:nth-of-type(1) > div > div > section > h2",
+            "fontFamily": "Roboto",
+            "fontSize": "32px",
+            "fontWeight": "300",
+            "lineHeight": "35.2px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(17, 28, 36)"
+          },
+          {
+            "tag": "h2",
+            "text": "Ecosystem Partners",
+            "selector": "#partnersBlock > div > div > div:nth-of-type(1) > div > div > section > h2",
+            "fontFamily": "Roboto",
+            "fontSize": "32px",
+            "fontWeight": "300",
+            "lineHeight": "35.2px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(17, 28, 36)"
+          },
+          {
+            "tag": "h2",
+            "text": "What's New",
+            "selector": "div > div:nth-of-type(2) > div > div:nth-of-type(9) > div > div > section > h2",
+            "fontFamily": "Roboto",
+            "fontSize": "32px",
+            "fontWeight": "300",
+            "lineHeight": "35.2px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(17, 28, 36)"
+          },
+          {
+            "tag": "h4",
+            "text": "Agentic AI in Chip Design: Four-Part Ex…",
+            "selector": "#slick-slide10 > div:nth-of-type(2) > div:nth-of-type(2) > h4",
+            "fontFamily": "Roboto",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "23px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(17, 28, 36)"
+          },
+          {
+            "tag": "h4",
+            "text": "Synopsys Posts Financial Results for Th…",
+            "selector": "#slick-slide11 > div:nth-of-type(2) > div:nth-of-type(2) > h4",
+            "fontFamily": "Roboto",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "23px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(17, 28, 36)"
+          },
+          {
+            "tag": "h4",
+            "text": "Synopsys CEO Sassine Ghazi Outlines the…",
+            "selector": "#slick-slide12 > div:nth-of-type(2) > div:nth-of-type(2) > h4",
+            "fontFamily": "Roboto",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "23px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(17, 28, 36)"
+          },
+          {
+            "tag": "h2",
+            "text": "Support & Services",
+            "selector": "#support-careers > div:nth-of-type(1) > div > div > div > section > h2",
+            "fontFamily": "Roboto",
+            "fontSize": "32px",
+            "fontWeight": "300",
+            "lineHeight": "35.2px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(17, 28, 36)"
+          },
+          {
+            "tag": "h2",
+            "text": "Careers",
+            "selector": "#support-careers > div:nth-of-type(3) > div > div > div > section > h2",
+            "fontFamily": "Roboto",
+            "fontSize": "32px",
+            "fontWeight": "300",
+            "lineHeight": "35.2px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(17, 28, 36)"
+          },
+          {
+            "tag": "h3",
+            "text": "Company",
+            "selector": "nav > h3",
+            "fontFamily": "Roboto",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "19.8px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "tag": "h3",
+            "text": "Resources",
+            "selector": "nav > h3",
+            "fontFamily": "Roboto",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "19.8px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "tag": "h3",
+            "text": "Trending",
+            "selector": "nav > h3",
+            "fontFamily": "Roboto",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "19.8px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "tag": "h3",
+            "text": "Learn",
+            "selector": "nav > h3",
+            "fontFamily": "Roboto",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "19.8px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(255, 255, 255)"
+          }
+        ],
+        "text": [
+          {
+            "tag": "p",
+            "text": "Physical AI Solutions",
+            "selector": "#slick-slide00 > div > section > div:nth-of-type(6) > div > div:nth-of-type(1) > p:nth-of-type(2)",
+            "fontFamily": "Roboto",
+            "fontSize": "48px",
+            "fontWeight": "300",
+            "lineHeight": "67.2px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "tag": "p",
+            "text": "Accelerate Physical AI development with…",
+            "selector": "#slick-slide00 > div > section > div:nth-of-type(6) > div > div:nth-of-type(2) > p",
+            "fontFamily": "Roboto",
+            "fontSize": "20px",
+            "fontWeight": "300",
+            "lineHeight": "32px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "tag": "p",
+            "text": "Supercharge Productivity • Conquer Comp…",
+            "selector": "div:nth-of-type(2) > div > div:nth-of-type(3) > div > div > section > div > p",
+            "fontFamily": "Roboto",
+            "fontSize": "20px",
+            "fontWeight": "300",
+            "lineHeight": "32px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(17, 28, 36)"
+          },
+          {
+            "tag": "p",
+            "text": "Explore the Synopsys Support Community!…",
+            "selector": "#support-careers > div:nth-of-type(1) > div > div > div > section > div:nth-of-type(1) > p",
+            "fontFamily": "Roboto",
+            "fontSize": "16px",
+            "fontWeight": "300",
+            "lineHeight": "25.6px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(17, 28, 36)"
+          },
+          {
+            "tag": "p",
+            "text": "Join Synopsys and build your career wit…",
+            "selector": "#support-careers > div:nth-of-type(3) > div > div > div > section > div:nth-of-type(1) > p",
+            "fontFamily": "Roboto",
+            "fontSize": "16px",
+            "fontWeight": "300",
+            "lineHeight": "25.6px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(17, 28, 36)"
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Contact Sales",
+            "selector": "#topNav > div:nth-of-type(1) > div > a",
+            "count": 1,
+            "backgroundColor": "rgb(255, 255, 255)",
+            "color": "rgb(17, 28, 36)",
+            "borderRadius": "5px",
+            "padding": "0px 24px",
+            "border": "0px none rgb(17, 28, 36)",
+            "borderColor": "rgb(17, 28, 36)",
+            "boxShadow": "none",
+            "fontFamily": "Roboto",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "textTransform": "none",
+            "letterSpacing": "normal",
+            "hover": {
+              "backgroundColor": "rgb(255, 255, 255)",
+              "color": "rgb(17, 28, 36)",
+              "borderColor": "rgb(17, 28, 36)",
+              "boxShadow": "rgba(0, 0, 0, 0.2) 0px 0px 0px 99999px inset",
+              "changed": true
+            }
+          }
+        ],
+        "links": [
+          {
+            "text": "Learn More",
+            "selector": "#slick-slide00 > div > section > div:nth-of-type(6) > div > div:nth-of-type(3) > div > a",
+            "count": 4,
+            "color": "rgb(17, 28, 36)",
+            "textDecoration": "none",
+            "fontWeight": "400",
+            "hover": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(17, 28, 36)",
+              "borderColor": "rgb(17, 28, 36)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          },
+          {
+            "text": "Synopsys.ai Award-winning, Industry Lea…",
+            "selector": "div > div > section > div:nth-of-type(1) > div > div > section > a",
+            "count": 4,
+            "color": "rgb(49, 106, 202)",
+            "textDecoration": "none",
+            "fontWeight": "300",
+            "hover": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(35, 82, 124)",
+              "borderColor": "rgb(35, 82, 124)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          },
+          {
+            "text": "AI Chip Development Achieve first-pass …",
+            "selector": "div:nth-of-type(2) > div > section > div:nth-of-type(1) > div > div:nth-of-type(2) > section > a",
+            "count": 12,
+            "color": "rgb(17, 28, 36)",
+            "textDecoration": "none",
+            "fontWeight": "300",
+            "hover": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(17, 28, 36)",
+              "borderColor": "rgb(17, 28, 36)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          },
+          {
+            "text": "Learn more",
+            "selector": "#slick-slide10 > div:nth-of-type(2) > a",
+            "count": 3,
+            "color": "rgb(49, 106, 202)",
+            "textDecoration": "none",
+            "fontWeight": "400",
+            "hover": null
+          },
+          {
+            "text": "About Us",
+            "selector": "nav > ul > li:nth-of-type(1) > a",
+            "count": 40,
+            "color": "rgb(255, 255, 255)",
+            "textDecoration": "none",
+            "fontWeight": "300",
+            "hover": null
+          }
+        ],
+        "surfaces": [
+          {
+            "matched": "nav",
+            "selector": "nav",
+            "rect": {
+              "x": 346,
+              "y": 57,
+              "w": 615,
+              "h": 72
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(17, 28, 36)",
+            "padding": "25px 0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "Roboto",
+            "fontSize": "18px"
+          },
+          {
+            "matched": "nav",
+            "selector": "nav",
+            "rect": {
+              "x": 0,
+              "y": 4302,
+              "w": 288,
+              "h": 393
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(17, 28, 36)",
+            "padding": "0px 15px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "relative",
+            "fontFamily": "Roboto",
+            "fontSize": "18px"
+          },
+          {
+            "matched": "nav",
+            "selector": "nav",
+            "rect": {
+              "x": 288,
+              "y": 4302,
+              "w": 288,
+              "h": 393
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(17, 28, 36)",
+            "padding": "0px 15px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "relative",
+            "fontFamily": "Roboto",
+            "fontSize": "18px"
+          },
+          {
+            "matched": "nav",
+            "selector": "nav",
+            "rect": {
+              "x": 576,
+              "y": 4302,
+              "w": 288,
+              "h": 399
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(17, 28, 36)",
+            "padding": "0px 15px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "relative",
+            "fontFamily": "Roboto",
+            "fontSize": "18px"
+          },
+          {
+            "matched": "footer",
+            "selector": "footer",
+            "rect": {
+              "x": 0,
+              "y": 4302,
+              "w": 1440,
+              "h": 575
+            },
+            "backgroundColor": "rgb(17, 28, 36)",
+            "color": "rgb(17, 28, 36)",
+            "padding": "0px 0px 40px",
+            "maxWidth": "1900px",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "Roboto",
+            "fontSize": "18px"
+          },
+          {
+            "matched": "[role=\"banner\"]",
+            "selector": "body > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div:nth-of-type(1) > section",
+            "rect": {
+              "x": 0,
+              "y": 53,
+              "w": 1440,
+              "h": 700
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(17, 28, 36)",
+            "padding": "0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "relative",
+            "fontFamily": "Roboto",
+            "fontSize": "18px"
+          }
+        ],
+        "radii": [
+          {
+            "value": "5px",
+            "count": 12,
+            "area": 935767,
+            "sources": [
+              "#topNav > div:nth-of-type(1) > div > a",
+              "#slick-slide00 > div > section > div:nth-of-type(6) > div > div:nth-of-type(3) > div",
+              "div > div > div > section > div:nth-of-type(1) > div > div > section"
+            ]
+          },
+          {
+            "value": "3px",
+            "count": 3,
+            "area": 3868,
+            "sources": [
+              "#slick-slide10 > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1)",
+              "#slick-slide11 > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1)",
+              "#slick-slide12 > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "9999px",
+            "count": 2,
+            "area": 6418,
+            "sources": [
+              "#utility-nav-bar > div:nth-of-type(2) > div > button",
+              "#askSynopsys"
+            ]
+          },
+          {
+            "value": "20px",
+            "count": 2,
+            "area": 3200,
+            "sources": [
+              "div > div:nth-of-type(2) > div > div:nth-of-type(10) > div > section > div:nth-of-type(2) > button:nth-of-type(1)",
+              "div > div:nth-of-type(2) > div > div:nth-of-type(10) > div > section > div:nth-of-type(2) > button:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "60px",
+            "count": 1,
+            "area": 2500,
+            "sources": [
+              "div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div:nth-of-type(1) > section > button"
+            ]
+          }
+        ],
+        "shadows": [
+          {
+            "value": "rgba(0, 0, 0, 0.25) 0px 4px 4px 0px",
+            "count": 4,
+            "sources": [
+              "div > div > div > section > div:nth-of-type(1) > div > div > section",
+              "div > div > div > section > div:nth-of-type(2) > div > div > section",
+              "div > div > div > section > div:nth-of-type(3) > div > div > section"
+            ]
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.15) 0px 1px 7px 0px",
+            "count": 3,
+            "sources": [
+              "#slick-slide10",
+              "#slick-slide11",
+              "#slick-slide12"
+            ]
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.02) 0px 0.301179px 0.301179px 0px",
+            "count": 1,
+            "sources": [
+              "#topNav"
+            ]
+          }
+        ],
+        "gradients": [
+          {
+            "value": "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 28%, rgb(0, 0, 0) 100%)",
+            "count": 4,
+            "area": 288752,
+            "sources": [
+              "section > div:nth-of-type(1) > div > div > section > a > div > div:nth-of-type(2)",
+              "section > div:nth-of-type(2) > div > div > section > a > div > div:nth-of-type(2)",
+              "section > div:nth-of-type(3) > div > div > section > a > div > div:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "linear-gradient(107.7deg, rgb(45, 21, 65) 0px, rgb(90, 42, 130) 50%, rgb(126, 69, 175) 100%)",
+            "count": 2,
+            "area": 1418400,
+            "sources": [
+              "#slick-slide00 > div > section > div:nth-of-type(2)",
+              "#CTAbottom > div > div > section > div"
+            ]
+          }
+        ],
+        "bgColors": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 11,
+            "area": 7505224,
+            "sources": [
+              "body > div:nth-of-type(2)",
+              "#topNav > div:nth-of-type(1) > div > a",
+              "#slick-slide00 > div > section > div:nth-of-type(6) > div > div:nth-of-type(3) > div"
+            ]
+          },
+          {
+            "value": "rgb(247, 247, 250)",
+            "count": 3,
+            "area": 965539,
+            "sources": [
+              "body > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div:nth-of-type(8) > div",
+              "#partnersBlock > div > div > div:nth-of-type(1) > div",
+              "body > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div:nth-of-type(11) > div"
+            ]
+          },
+          {
+            "value": "rgb(126, 69, 175)",
+            "count": 3,
+            "area": 3868,
+            "sources": [
+              "#slick-slide10 > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1)",
+              "#slick-slide11 > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1)",
+              "#slick-slide12 > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "rgb(230, 234, 237)",
+            "count": 1,
+            "area": 7022003,
+            "sources": [
+              "body"
+            ]
+          },
+          {
+            "value": "rgb(17, 28, 36)",
+            "count": 1,
+            "area": 827708,
+            "sources": [
+              "footer"
+            ]
+          },
+          {
+            "value": "rgba(255, 255, 255, 0.06)",
+            "count": 1,
+            "area": 115200,
+            "sources": [
+              "#topNav"
+            ]
+          },
+          {
+            "value": "rgb(23, 25, 23)",
+            "count": 1,
+            "area": 76320,
+            "sources": [
+              "#utility-nav-bar"
+            ]
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.75)",
+            "count": 1,
+            "area": 2500,
+            "sources": [
+              "div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div:nth-of-type(1) > section > button"
+            ]
+          }
+        ],
+        "textColors": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 70,
+            "sources": [
+              "#utility-nav-bar > div:nth-of-type(2) > div > button",
+              "#askSynopsys > span",
+              "nav > ul:nth-of-type(1) > li:nth-of-type(1) > span"
+            ]
+          },
+          {
+            "value": "rgb(17, 28, 36)",
+            "count": 43,
+            "sources": [
+              "#topNav > div:nth-of-type(1) > div > a",
+              "#slick-slide00 > div > section > div:nth-of-type(6) > div > div:nth-of-type(3) > div > a",
+              "div > div:nth-of-type(2) > div > div:nth-of-type(3) > div > div > section > h2"
+            ]
+          },
+          {
+            "value": "rgb(49, 106, 202)",
+            "count": 3,
+            "sources": [
+              "#slick-slide10 > div:nth-of-type(2) > a",
+              "#slick-slide11 > div:nth-of-type(2) > a",
+              "#slick-slide12 > div:nth-of-type(2) > a"
+            ]
+          },
+          {
+            "value": "rgb(85, 85, 85)",
+            "count": 3,
+            "sources": [
+              "#slick-slide10 > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2)",
+              "#slick-slide11 > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2)",
+              "#slick-slide12 > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2)"
+            ]
+          }
+        ],
+        "borderColors": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 3,
+            "sources": [
+              "#slick-slide00 > div > section > div:nth-of-type(6) > div > div:nth-of-type(3) > div",
+              "section > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div:nth-of-type(2)",
+              "footer > div > div:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "rgb(85, 85, 85)",
+            "count": 2,
+            "sources": [
+              "div > div:nth-of-type(2) > div > div:nth-of-type(10) > div > section > div:nth-of-type(2) > button:nth-of-type(1)",
+              "div > div:nth-of-type(2) > div > div:nth-of-type(10) > div > section > div:nth-of-type(2) > button:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "rgb(55, 59, 55)",
+            "count": 1,
+            "sources": [
+              "#utility-nav-bar"
+            ]
+          }
+        ],
+        "customProps": {
+          "--fa-font-solid": {
+            "declared": "normal 900 1em/1 \"Font Awesome 6 Solid\"",
+            "computed": "normal 900 1em/1 \"Font Awesome 6 Solid\""
+          },
+          "--fa-font-regular": {
+            "declared": "normal 400 1em/1 \"Font Awesome 6 Regular\"",
+            "computed": "normal 400 1em/1 \"Font Awesome 6 Regular\""
+          },
+          "--fa-font-light": {
+            "declared": "normal 300 1em/1 \"Font Awesome 6 Light\"",
+            "computed": "normal 300 1em/1 \"Font Awesome 6 Light\""
+          },
+          "--fa-font-thin": {
+            "declared": "normal 100 1em/1 \"Font Awesome 6 Thin\"",
+            "computed": "normal 100 1em/1 \"Font Awesome 6 Thin\""
+          },
+          "--fa-font-duotone": {
+            "declared": "normal 900 1em/1 \"Font Awesome 6 Duotone\"",
+            "computed": "normal 900 1em/1 \"Font Awesome 6 Duotone\""
+          },
+          "--fa-font-sharp-solid": {
+            "declared": "normal 900 1em/1 \"Font Awesome 6 Sharp\"",
+            "computed": "normal 900 1em/1 \"Font Awesome 6 Sharp\""
+          },
+          "--fa-font-sharp-regular": {
+            "declared": "normal 400 1em/1 \"Font Awesome 6 Sharp\"",
+            "computed": "normal 400 1em/1 \"Font Awesome 6 Sharp\""
+          },
+          "--fa-font-sharp-light": {
+            "declared": "normal 300 1em/1 \"Font Awesome 6 Sharp\"",
+            "computed": "normal 300 1em/1 \"Font Awesome 6 Sharp\""
+          },
+          "--fa-font-sharp-thin": {
+            "declared": "normal 100 1em/1 \"Font Awesome 6 Sharp\"",
+            "computed": "normal 100 1em/1 \"Font Awesome 6 Sharp\""
+          },
+          "--fa-font-brands": {
+            "declared": "normal 400 1em/1 \"Font Awesome 6 Brands\"",
+            "computed": "normal 400 1em/1 \"Font Awesome 6 Brands\""
+          },
+          "--atomic-border-radius-xl": {
+            "declared": "50%",
+            "computed": "1rem"
+          },
+          "--atomic-font-family": {
+            "declared": "'Roboto',Arial,sans-serif",
+            "computed": "'Roboto',Arial,sans-serif"
+          },
+          "--atomic-text-base": {
+            "declared": "1.4rem",
+            "computed": "1.4rem"
+          },
+          "--atomic-text-sm": {
+            "declared": "1.2rem",
+            "computed": "1.2rem"
+          },
+          "--atomic-text-lg": {
+            "declared": "1.6rem",
+            "computed": "1.6rem"
+          },
+          "--atomic-text-xl": {
+            "declared": "1.8rem",
+            "computed": "1.8rem"
+          },
+          "--atomic-text-2xl": {
+            "declared": "2.4rem",
+            "computed": "2.4rem"
+          },
+          "--atomic-line-height-ratio": {
+            "declared": "1.5",
+            "computed": "1.5"
+          },
+          "--atomic-primary": {
+            "declared": "#316aca",
+            "computed": "#316aca"
+          },
+          "--purple": {
+            "declared": "#7E45AF",
+            "computed": "#7E45AF"
+          },
+          "--purple-dark": {
+            "declared": "#5A2A82",
+            "computed": "#5A2A82"
+          },
+          "--text": {
+            "declared": "#111c24",
+            "computed": "#111c24"
+          },
+          "--grey": {
+            "declared": "#555",
+            "computed": "#555"
+          },
+          "--grey-light": {
+            "declared": "#B3B4B3",
+            "computed": "#B3B4B3"
+          },
+          "--bg-light": {
+            "declared": "#E3E3E3",
+            "computed": "#E3E3E3"
+          },
+          "--white": {
+            "declared": "#FFF",
+            "computed": "#FFF"
+          },
+          "--radius": {
+            "declared": "10px",
+            "computed": "10px"
+          }
+        },
+        "fonts": [
+          {
+            "family": "VideoJS",
+            "weight": "400",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "Roboto",
+            "weight": "700",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "Roboto",
+            "weight": "500",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "Roboto",
+            "weight": "400",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "Roboto",
+            "weight": "300",
+            "style": "normal",
+            "status": "loaded"
+          }
+        ],
+        "logoCandidates": [
+          {
+            "tag": "img",
+            "selector": "#slick-slide00 > div > section > div:nth-of-type(4) > img",
+            "src": "https://images.synopsys.com/is/image/synopsys/physical-ai-hero-banner-1900x700?qlt=82&wid=1900&ts=1783637872827&$responsive$&fit=constrain&dpr=off",
+            "inlineSvg": false,
+            "alt": "Synopsys Physical AI Solutions",
+            "ariaLabel": null,
+            "class": "img-responsive",
+            "id": null,
+            "href": null,
+            "inHomeLink": false,
+            "rect": {
+              "x": 0,
+              "y": 53,
+              "w": 1440,
+              "h": 700
+            }
+          }
+        ],
+        "iconFont": {
+          "families": [],
+          "glyphs": [
+            {
+              "class": "vjs-share-control vjs-button",
+              "pseudo": "::before",
+              "codepoint": "U+F10F",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-icon-placeholder",
+              "pseudo": "::before",
+              "codepoint": "U+F101",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-icon-placeholder",
+              "pseudo": "::before",
+              "codepoint": "U+F107",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-volume-level",
+              "pseudo": "::before",
+              "codepoint": "U+F111",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-play-progress vjs-slider-bar",
+              "pseudo": "::before",
+              "codepoint": "U+F111",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-icon-placeholder",
+              "pseudo": "::before",
+              "codepoint": "U+F111",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-icon-placeholder",
+              "pseudo": "::before",
+              "codepoint": "U+F10E",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-icon-placeholder",
+              "pseudo": "::before",
+              "codepoint": "U+F11D",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-icon-placeholder",
+              "pseudo": "::before",
+              "codepoint": "U+F10D",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-icon-placeholder",
+              "pseudo": "::before",
+              "codepoint": "U+F11E",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-icon-placeholder",
+              "pseudo": "::before",
+              "codepoint": "U+F110",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-icon-placeholder",
+              "pseudo": "::before",
+              "codepoint": "U+F121",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-icon-placeholder",
+              "pseudo": "::before",
+              "codepoint": "U+F108",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-close-button vjs-control vjs-button vjs-icon-cancel",
+              "pseudo": "::before",
+              "codepoint": "U+F115",
+              "fontFamily": "VideoJS"
+            },
+            {
+              "class": "vjs-icon-placeholder",
+              "pseudo": "::before",
+              "codepoint": "U+F115",
+              "fontFamily": "VideoJS"
+            }
+          ]
+        },
+        "consent": {
+          "dismissed": "I Accept"
+        },
+        "finalUrl": "https://www.synopsys.com/"
+      }
+    }
+  },
+  "aggregate": {
+    "counts": {
+      "pages": 1,
+      "widths": [
+        360,
+        1440
+      ],
+      "measurements": 2
+    },
+    "colors": [
+      {
+        "hex": "#ffffff",
+        "values": [
+          "rgb(255, 255, 255)",
+          "rgb(247, 247, 250)"
+        ],
+        "weight": 186,
+        "bgArea": 11553229,
+        "by": {
+          "text": 98,
+          "link": 44,
+          "background": 26,
+          "border": 9,
+          "button-background": 1,
+          "heading": 8
+        },
+        "roles": [
+          "background",
+          "text",
+          "border"
+        ],
+        "sources": [
+          {
+            "url": "https://www.synopsys.com/",
+            "selector": "#utility-nav-bar > div:nth-of-type(2) > div > button",
+            "prop": "text"
+          },
+          {
+            "url": "https://www.synopsys.com/",
+            "selector": "nav > ul > li:nth-of-type(1) > a",
+            "prop": "link"
+          },
+          {
+            "url": "https://www.synopsys.com/",
+            "selector": "#slick-slide00 > div > section > div:nth-of-type(6) > div > div:nth-of-type(1) > p:nth-of-type(1) > b",
+            "prop": "text"
+          },
+          {
+            "url": "https://www.synopsys.com/",
+            "selector": "body > div:nth-of-type(2)",
+            "prop": "background"
+          },
+          {
+            "url": "https://www.synopsys.com/",
+            "selector": "#slick-slide00 > div > section > div:nth-of-type(6) > div > div:nth-of-type(3) > div",
+            "prop": "border"
+          }
+        ]
+      },
+      {
+        "hex": "#111c24",
+        "values": [
+          "rgb(17, 28, 36)"
+        ],
+        "weight": 139,
+        "bgArea": 1070843,
+        "by": {
+          "text": 84,
+          "link": 32,
+          "background": 2,
+          "button-text": 1,
+          "heading": 20
+        },
+        "roles": [
+          "accent",
+          "heading"
+        ],
+        "sources": [
+          {
+            "url": "https://www.synopsys.com/",
+            "selector": "#topNav > div:nth-of-type(1) > div > a",
+            "prop": "text"
+          },
+          {
+            "url": "https://www.synopsys.com/",
+            "selector": "#morph-dropdown-wrapper > div:nth-of-type(1) > button",
+            "prop": "text"
+          },
+          {
+            "url": "https://www.synopsys.com/",
+            "selector": "div:nth-of-type(2) > div > section > div:nth-of-type(1) > div > div:nth-of-type(2) > section > a",
+            "prop": "link"
+          },
+          {
+            "url": "https://www.synopsys.com/",
+            "selector": "#slick-slide00 > div > section > div:nth-of-type(6) > div > div:nth-of-type(3) > div > a",
+            "prop": "link"
+          },
+          {
+            "url": "https://www.synopsys.com/",
+            "selector": "footer",
+            "prop": "background"
+          }
+        ]
+      },
+      {
+        "hex": "#e6eaed",
+        "values": [
+          "rgb(230, 234, 237)"
+        ],
+        "weight": 2,
+        "bgArea": 9659459,
+        "by": {
+          "background": 2
+        },
+        "roles": [
+          "surface"
+        ],
+        "sources": [
+          {
+            "url": "https://www.synopsys.com/",
+            "selector": "body",
+            "prop": "background"
+          }
+        ]
+      },
+      {
+        "hex": "#316aca",
+        "values": [
+          "rgb(49, 106, 202)"
+        ],
+        "weight": 16,
+        "by": {
+          "link": 12,
+          "text": 4
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://www.synopsys.com/",
+            "selector": "div > div > section > div:nth-of-type(1) > div > div > section > a",
+            "prop": "link"
+          },
+          {
+            "url": "https://www.synopsys.com/",
+            "selector": "#slick-slide10 > div:nth-of-type(2) > a",
+            "prop": "link"
+          },
+          {
+            "url": "https://www.synopsys.com/",
+            "selector": "#slick-slide10 > div:nth-of-type(2) > a",
+            "prop": "text"
+          }
+        ]
+      },
+      {
+        "hex": "#555555",
+        "values": [
+          "rgb(85, 85, 85)"
+        ],
+        "weight": 8,
+        "by": {
+          "text": 4,
+          "border": 4
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://www.synopsys.com/",
+            "selector": "#slick-slide10 > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2)",
+            "prop": "text"
+          },
+          {
+            "url": "https://www.synopsys.com/",
+            "selector": "div > div:nth-of-type(2) > div > div:nth-of-type(10) > div > section > div:nth-of-type(2) > button:nth-of-type(1)",
+            "prop": "border"
+          }
+        ]
+      },
+      {
+        "hex": "#7e45af",
+        "values": [
+          "rgb(126, 69, 175)"
+        ],
+        "weight": 4,
+        "bgArea": 4788,
+        "by": {
+          "background": 4
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://www.synopsys.com/",
+            "selector": "#slick-slide10 > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1)",
+            "prop": "background"
+          }
+        ]
+      },
+      {
+        "hex": "#000000bf",
+        "values": [
+          "rgba(0, 0, 0, 0.75)"
+        ],
+        "weight": 2,
+        "bgArea": 3076,
+        "by": {
+          "background": 2
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://www.synopsys.com/",
+            "selector": "div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div:nth-of-type(1) > section > button",
+            "prop": "background"
+          }
+        ]
+      },
+      {
+        "hex": "#ffffff0f",
+        "values": [
+          "rgba(255, 255, 255, 0.06)"
+        ],
+        "weight": 2,
+        "bgArea": 140400,
+        "by": {
+          "background": 2
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://www.synopsys.com/",
+            "selector": "#topNav",
+            "prop": "background"
+          }
+        ]
+      },
+      {
+        "hex": "#171917",
+        "values": [
+          "rgb(23, 25, 23)"
+        ],
+        "weight": 1,
+        "bgArea": 76320,
+        "by": {
+          "background": 1
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://www.synopsys.com/",
+            "selector": "#utility-nav-bar",
+            "prop": "background"
+          }
+        ]
+      },
+      {
+        "hex": "#373b37",
+        "values": [
+          "rgb(55, 59, 55)"
+        ],
+        "weight": 1,
+        "by": {
+          "border": 1
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://www.synopsys.com/",
+            "selector": "#utility-nav-bar",
+            "prop": "border"
+          }
+        ]
+      },
+      {
+        "hex": "#c1c2c1",
+        "values": [
+          "rgb(193, 194, 193)"
+        ],
+        "weight": 1,
+        "by": {
+          "border": 1
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://www.synopsys.com/",
+            "selector": "#morph-dropdown-wrapper > div:nth-of-type(1)",
+            "prop": "border"
+          }
+        ]
+      },
+      {
+        "hex": "#c4c4c4cc",
+        "values": [
+          "rgba(196, 196, 196, 0.8)"
+        ],
+        "weight": 1,
+        "bgArea": 768,
+        "by": {
+          "background": 1
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://www.synopsys.com/",
+            "selector": "#topNav > div:nth-of-type(1) > div > button:nth-of-type(2)",
+            "prop": "background"
+          }
+        ]
+      }
+    ],
+    "type": {
+      "families": [
+        {
+          "family": "Roboto",
+          "count": 43,
+          "headings": 28,
+          "text": 14,
+          "buttons": 1
+        }
+      ],
+      "headingFamily": "Roboto",
+      "bodyFamily": "Roboto",
+      "sizes": [
+        {
+          "px": 48,
+          "count": 1,
+          "headings": 0,
+          "text": 1,
+          "buttons": 0
+        },
+        {
+          "px": 32,
+          "count": 8,
+          "headings": 8,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 24,
+          "count": 8,
+          "headings": 8,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 20,
+          "count": 7,
+          "headings": 4,
+          "text": 3,
+          "buttons": 0
+        },
+        {
+          "px": 18,
+          "count": 4,
+          "headings": 4,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 16,
+          "count": 15,
+          "headings": 4,
+          "text": 10,
+          "buttons": 1
+        }
+      ],
+      "weights": [
+        {
+          "weight": "300",
+          "count": 30,
+          "headings": 16,
+          "text": 14,
+          "buttons": 0
+        },
+        {
+          "weight": "400",
+          "count": 13,
+          "headings": 12,
+          "text": 0,
+          "buttons": 1
+        }
+      ],
+      "levels": {
+        "h2": {
+          "fontSize": 32,
+          "fontWeight": "300",
+          "count": 8,
+          "score": 67.88
+        },
+        "h3": {
+          "fontSize": 18,
+          "fontWeight": "400",
+          "count": 4,
+          "score": 36
+        },
+        "h4": {
+          "fontSize": 20,
+          "fontWeight": "400",
+          "count": 4,
+          "score": 40
+        }
+      }
+    },
+    "motifs": {
+      "radius": {
+        "mode": "5px",
+        "areaMode": "5px",
+        "pill": "9999px",
+        "values": [
+          {
+            "value": "5px",
+            "count": 20,
+            "area": 1536015,
+            "sources": [
+              {
+                "url": "https://www.synopsys.com/",
+                "selector": "#topNav > div:nth-of-type(1) > div > button:nth-of-type(2)"
+              },
+              {
+                "url": "https://www.synopsys.com/",
+                "selector": "#slick-slide00 > div > section > div:nth-of-type(6) > div > div:nth-of-type(3) > div"
+              },
+              {
+                "url": "https://www.synopsys.com/",
+                "selector": "div > div > div > section > div:nth-of-type(1) > div > div > section"
+              },
+              {
+                "url": "https://www.synopsys.com/",
+                "selector": "#topNav > div:nth-of-type(1) > div > a"
+              }
+            ]
+          },
+          {
+            "value": "20px",
+            "count": 5,
+            "area": 4928,
+            "sources": [
+              {
+                "url": "https://www.synopsys.com/",
+                "selector": "div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div:nth-of-type(1) > section > button"
+              },
+              {
+                "url": "https://www.synopsys.com/",
+                "selector": "div > div:nth-of-type(2) > div > div:nth-of-type(10) > div > section > div:nth-of-type(2) > button:nth-of-type(1)"
+              },
+              {
+                "url": "https://www.synopsys.com/",
+                "selector": "div > div:nth-of-type(2) > div > div:nth-of-type(10) > div > section > div:nth-of-type(2) > button:nth-of-type(2)"
+              }
+            ]
+          },
+          {
+            "value": "3px",
+            "count": 4,
+            "area": 4788,
+            "sources": [
+              {
+                "url": "https://www.synopsys.com/",
+                "selector": "#slick-slide10 > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1)"
+              },
+              {
+                "url": "https://www.synopsys.com/",
+                "selector": "#slick-slide11 > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1)"
+              },
+              {
+                "url": "https://www.synopsys.com/",
+                "selector": "#slick-slide12 > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1)"
+              }
+            ]
+          },
+          {
+            "value": "9999px",
+            "count": 2,
+            "area": 6418,
+            "sources": [
+              {
+                "url": "https://www.synopsys.com/",
+                "selector": "#utility-nav-bar > div:nth-of-type(2) > div > button"
+              },
+              {
+                "url": "https://www.synopsys.com/",
+                "selector": "#askSynopsys"
+              }
+            ]
+          },
+          {
+            "value": "60px",
+            "count": 1,
+            "area": 2500,
+            "sources": [
+              {
+                "url": "https://www.synopsys.com/",
+                "selector": "div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div:nth-of-type(1) > section > button"
+              }
+            ]
+          }
+        ]
+      },
+      "shadows": [
+        {
+          "value": "rgba(0, 0, 0, 0.25) 0px 4px 4px 0px",
+          "count": 8,
+          "sources": [
+            {
+              "url": "https://www.synopsys.com/",
+              "selector": "div > div > div > section > div:nth-of-type(1) > div > div > section"
+            },
+            {
+              "url": "https://www.synopsys.com/",
+              "selector": "div > div > div > section > div:nth-of-type(2) > div > div > section"
+            },
+            {
+              "url": "https://www.synopsys.com/",
+              "selector": "div > div > div > section > div:nth-of-type(3) > div > div > section"
+            }
+          ]
+        },
+        {
+          "value": "rgba(0, 0, 0, 0.15) 0px 1px 7px 0px",
+          "count": 4,
+          "sources": [
+            {
+              "url": "https://www.synopsys.com/",
+              "selector": "#slick-slide10"
+            },
+            {
+              "url": "https://www.synopsys.com/",
+              "selector": "#slick-slide11"
+            },
+            {
+              "url": "https://www.synopsys.com/",
+              "selector": "#slick-slide12"
+            }
+          ]
+        },
+        {
+          "value": "rgba(0, 0, 0, 0.02) 0px 0.30066px 0.30066px 0px",
+          "count": 1,
+          "sources": [
+            {
+              "url": "https://www.synopsys.com/",
+              "selector": "#topNav"
+            }
+          ]
+        }
+      ],
+      "gradients": [
+        {
+          "value": "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 28%, rgb(0, 0, 0) 100%)",
+          "count": 8,
+          "area": 651752,
+          "sources": [
+            {
+              "url": "https://www.synopsys.com/",
+              "selector": "section > div:nth-of-type(1) > div > div > section > a > div > div:nth-of-type(2)"
+            },
+            {
+              "url": "https://www.synopsys.com/",
+              "selector": "section > div:nth-of-type(2) > div > div > section > a > div > div:nth-of-type(2)"
+            },
+            {
+              "url": "https://www.synopsys.com/",
+              "selector": "section > div:nth-of-type(3) > div > div > section > a > div > div:nth-of-type(2)"
+            }
+          ]
+        },
+        {
+          "value": "linear-gradient(107.7deg, rgb(45, 21, 65) 0px, rgb(90, 42, 130) 50%, rgb(126, 69, 175) 100%)",
+          "count": 3,
+          "area": 1521000,
+          "sources": [
+            {
+              "url": "https://www.synopsys.com/",
+              "selector": "#CTAbottom > div > div > section > div"
+            },
+            {
+              "url": "https://www.synopsys.com/",
+              "selector": "#slick-slide00 > div > section > div:nth-of-type(2)"
+            }
+          ]
+        },
+        {
+          "value": "linear-gradient(107.7deg, rgb(0, 0, 0) 0px, rgb(25, 28, 32) 35%, rgb(100, 110, 129) 100%)",
+          "count": 1,
+          "area": 201600,
+          "sources": [
+            {
+              "url": "https://www.synopsys.com/",
+              "selector": "#slick-slide00 > div > section > div:nth-of-type(3)"
+            }
+          ]
+        }
+      ]
+    },
+    "hover": [
+      {
+        "kind": "link",
+        "from": {
+          "color": "rgb(49, 106, 202)"
+        },
+        "to": {
+          "color": "rgb(35, 82, 124)"
+        },
+        "count": 2,
+        "sources": [
+          {
+            "url": "https://www.synopsys.com/",
+            "selector": "div > div > section > div:nth-of-type(1) > div > div > section > a"
+          },
+          {
+            "url": "https://www.synopsys.com/",
+            "selector": "div > div > section > div:nth-of-type(1) > div > div > section > a"
+          }
+        ]
+      },
+      {
+        "kind": "button",
+        "from": {
+          "boxShadow": "none"
+        },
+        "to": {
+          "boxShadow": "rgba(0, 0, 0, 0.2) 0px 0px 0px 99999px inset"
+        },
+        "count": 1,
+        "sources": [
+          {
+            "url": "https://www.synopsys.com/",
+            "selector": "#topNav > div:nth-of-type(1) > div > a"
+          }
+        ]
+      }
+    ],
+    "logo": {
+      "source": "none",
+      "url": null,
+      "selector": null
+    },
+    "iconFont": {
+      "families": [],
+      "glyphs": [
+        {
+          "class": "vjs-close-button vjs-control vjs-button vjs-icon-cancel",
+          "pseudo": "::before",
+          "codepoint": "U+F115",
+          "fontFamily": "VideoJS",
+          "count": 2,
+          "sources": [
+            "https://www.synopsys.com/",
+            "https://www.synopsys.com/"
+          ]
+        },
+        {
+          "class": "vjs-icon-placeholder",
+          "pseudo": "::before",
+          "codepoint": "U+F101",
+          "fontFamily": "VideoJS",
+          "count": 2,
+          "sources": [
+            "https://www.synopsys.com/",
+            "https://www.synopsys.com/"
+          ]
+        },
+        {
+          "class": "vjs-icon-placeholder",
+          "pseudo": "::before",
+          "codepoint": "U+F107",
+          "fontFamily": "VideoJS",
+          "count": 2,
+          "sources": [
+            "https://www.synopsys.com/",
+            "https://www.synopsys.com/"
+          ]
+        },
+        {
+          "class": "vjs-icon-placeholder",
+          "pseudo": "::before",
+          "codepoint": "U+F111",
+          "fontFamily": "VideoJS",
+          "count": 2,
+          "sources": [
+            "https://www.synopsys.com/",
+            "https://www.synopsys.com/"
+          ]
+        },
+        {
+          "class": "vjs-icon-placeholder",
+          "pseudo": "::before",
+          "codepoint": "U+F10E",
+          "fontFamily": "VideoJS",
+          "count": 2,
+          "sources": [
+            "https://www.synopsys.com/",
+            "https://www.synopsys.com/"
+          ]
+        },
+        {
+          "class": "vjs-icon-placeholder",
+          "pseudo": "::before",
+          "codepoint": "U+F11D",
+          "fontFamily": "VideoJS",
+          "count": 2,
+          "sources": [
+            "https://www.synopsys.com/",
+            "https://www.synopsys.com/"
+          ]
+        },
+        {
+          "class": "vjs-icon-placeholder",
+          "pseudo": "::before",
+          "codepoint": "U+F10D",
+          "fontFamily": "VideoJS",
+          "count": 2,
+          "sources": [
+            "https://www.synopsys.com/",
+            "https://www.synopsys.com/"
+          ]
+        },
+        {
+          "class": "vjs-icon-placeholder",
+          "pseudo": "::before",
+          "codepoint": "U+F11E",
+          "fontFamily": "VideoJS",
+          "count": 2,
+          "sources": [
+            "https://www.synopsys.com/",
+            "https://www.synopsys.com/"
+          ]
+        },
+        {
+          "class": "vjs-icon-placeholder",
+          "pseudo": "::before",
+          "codepoint": "U+F110",
+          "fontFamily": "VideoJS",
+          "count": 2,
+          "sources": [
+            "https://www.synopsys.com/",
+            "https://www.synopsys.com/"
+          ]
+        },
+        {
+          "class": "vjs-icon-placeholder",
+          "pseudo": "::before",
+          "codepoint": "U+F121",
+          "fontFamily": "VideoJS",
+          "count": 2,
+          "sources": [
+            "https://www.synopsys.com/",
+            "https://www.synopsys.com/"
+          ]
+        },
+        {
+          "class": "vjs-icon-placeholder",
+          "pseudo": "::before",
+          "codepoint": "U+F108",
+          "fontFamily": "VideoJS",
+          "count": 2,
+          "sources": [
+            "https://www.synopsys.com/",
+            "https://www.synopsys.com/"
+          ]
+        },
+        {
+          "class": "vjs-icon-placeholder",
+          "pseudo": "::before",
+          "codepoint": "U+F115",
+          "fontFamily": "VideoJS",
+          "count": 2,
+          "sources": [
+            "https://www.synopsys.com/",
+            "https://www.synopsys.com/"
+          ]
+        },
+        {
+          "class": "vjs-play-progress vjs-slider-bar",
+          "pseudo": "::before",
+          "codepoint": "U+F111",
+          "fontFamily": "VideoJS",
+          "count": 2,
+          "sources": [
+            "https://www.synopsys.com/",
+            "https://www.synopsys.com/"
+          ]
+        },
+        {
+          "class": "vjs-share-control vjs-button",
+          "pseudo": "::before",
+          "codepoint": "U+F10F",
+          "fontFamily": "VideoJS",
+          "count": 2,
+          "sources": [
+            "https://www.synopsys.com/",
+            "https://www.synopsys.com/"
+          ]
+        },
+        {
+          "class": "vjs-volume-level",
+          "pseudo": "::before",
+          "codepoint": "U+F111",
+          "fontFamily": "VideoJS",
+          "count": 2,
+          "sources": [
+            "https://www.synopsys.com/",
+            "https://www.synopsys.com/"
+          ]
+        }
+      ]
+    }
+  }
+}

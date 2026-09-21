@@ -1,0 +1,239 @@
+stardust/replica/capture/pagelibs.css: 119 of 4808 rules match /component-assetcard|card-text|label-date-wrapper|label-wrapper|\.label\b|date-time|heading-desc-wrapper|\.heading\b/i
+L59 .label   @media print
+      border: 1px solid #000;
+L1583 .component-railCard .label-new
+      color: #5a2a82; text-transform: uppercase; font-weight: bold;
+L1586 .component-railCard .component-text .heading   @media(min-width:730px)
+      font-size: 20px;
+L1589 .component-railCard .component-text .heading   @media(min-width:1200px)
+      font-size: 30px;
+L2290 .component-card-b .card-text
+      padding: 25px 25px 0 25px;
+L2291 .component-card-b .card-text .heading
+      margin: 0 0 15px 0; font-size: 22px; color: #5a2a82;
+L2292 .component-card-b .card-text p
+      color: #646e81; margin-bottom: 15px; text-overflow: clip;
+L2293 .component-card-b .card-text a
+      display: block; line-height: 1;
+L2294 .component-card-b .flag+.card-text
+      padding: 60px 25px 0 25px;
+L2302 .component-card-b .card-text .heading:last-child,.component-card-b .card-text p:last-child   @media(max-width:729px)
+      margin-bottom: 0;
+L2304 .component-card-b .card-text   @media(min-width:730px)
+      padding: 25px;
+L2305 .component-card-b .card-text .heading   @media(min-width:730px)
+      font-size: 20px;
+L2306 .component-card-b .flag+.card-text   @media(min-width:730px)
+      padding: 60px 25px 25px 25px;
+L2308 .component-card-b .card-text   @media(min-width:1200px)
+      padding: 25px;
+L2309 .component-card-b .card-text .heading   @media(min-width:1200px)
+      font-size: 30px;
+L2310 .component-card-b .flag+.card-text   @media(min-width:1200px)
+      padding: 60px 25px 25px 25px;
+L3004 .component-card-a .heading
+      margin-top: 0; font-size: 22px; color: #2e3c4d;
+L3016 .component-card-a .heading   @media(min-width:730px)
+      font-size: 20px;
+L3021 .component-card-a .heading   @media(min-width:1200px)
+      font-size: 26px;
+L3404 .component-splitcard .split-card-text
+      color: #5a2a82; font-size: 18px; padding: 26px 24px; min-height: 224px; line-height: 1.6; margin-top: 0;
+L3526 .component-splitcard .split-card-text   @media(min-width:730px)
+      min-height: 224px;
+L3539 .component-splitcard .split-card-text   @media(min-width:992px)
+      font-size: 22px; min-height: 254px;
+L3555 .component-splitcard .split-card-text   @media(min-width:1200px)
+      font-size: 27px; padding: 26px 24px; min-height: 270px;
+L3594 .three .component-assetcard,.col-sm-4 .component-assetcard
+      min-height: 283px;
+L3595 .two .component-assetcard,.col-sm-6 .component-assetcard
+      min-height: 283px;
+L3596 .four .component-assetcard,.col-sm-3 .component-assetcard,.carousel-list-holder[container-column-layout='4'] .component-assetcard
+      min-height: 215px;
+L3597 .four .component-assetcard:has(img),.col-sm-3 .component-assetcard:has(img),.carousel-list-holder[container-column-layout='4'] .component-assetcard:has(img)
+      min-height: 338px;
+L3598 .four .component-assetcard .card-text p,.four .component-assetcard .card-text .date-time,.col-sm-3 .component-assetcard .card-text p,.col-sm-3 .component-asset…   @media(min-width:730px)
+      display: none;
+L3600 .component-assetcard
+      position: relative; margin: 5px; background-color: #FFF; box-shadow: 0 1px 7px 0 rgba(0,0,0,0.15); overflow: hidden; height: auto;
+L3601 .component-assetcard .cmp-image img
+      aspect-ratio: 16 / 9; width: 100%; object-fit: cover; height: auto;
+L3602 .component-assetcard .label-date-wrapper
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center;
+L3603 .component-assetcard .label-wrapper
+      font-size: 12px; font-weight: 400; text-transform: uppercase; background-color: #7e45af; border-radius: 3px; padding: 4px 8px; line-height: 12px; color: #fff; display: inline;
+L3604 .component-assetcard .label-wrapper.invisible
+      visibility: hidden;
+L3605 .component-assetcard .label-wrapper .label
+      display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden;
+L3606 .component-assetcard .date-time
+      font-family: Roboto; font-size: 14px; font-weight: 400; line-height: 16.5px; text-align: right; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; margin-left: 16px; color: #555;
+L3607 .component-assetcard .card-text
+      padding: 32px 32px 53px 32px;
+L3608 .component-assetcard .card-text .heading-desc-wrapper
+      height: 158px;
+L3609 .component-assetcard .card-text .heading
+      font-size: 20px; font-weight: 400; line-height: 23px; margin: 20px 0; color: #111c24; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;
+L3610 .component-assetcard .card-text p
+      font-size: 16px; font-weight: 300; line-height: 18px; margin-bottom: 32px; color: #111c24; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+L3611 .component-assetcard .card-text p.hide-desc
+      display: none;
+L3612 .component-assetcard .card-text a
+      display: block; font-size: 16px; font-weight: 400; line-height: 16px; color: #316aca; position: absolute; bottom: 32px;
+L3613 .component-assetcard .card-text a:hover
+      color: #23527c;
+L3614 .component-assetcard .card-text a .fa-chevron-right
+      font-size: 12px;
+L3615 .component-assetcard .cmp-image+.card-text,.component-assetcard .cmp-video+.card-text
+      padding-top: 20px;
+L4505 .cmp-dynamiccards .component-card-b .card-text
+      padding: 20px 32px;
+L4506 .cmp-dynamiccards .component-card-b .card-text a
+      display: inline; color: #111c24;
+L4507 .cmp-dynamiccards .component-card-b .card-text a:hover
+      text-decoration: underline;
+L4508 .cmp-dynamiccards .component-card-b .card-text .label-date-wrapper
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; margin-bottom: 10px; height: 30px; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start;
+L4509 .cmp-dynamiccards .component-card-b .card-text .label-date-wrapper .label
+      font-size: 12px; font-weight: 400; text-transform: UPPERCASE; background-color: #7e45af; border-radius: 3px; padding: 4px 8px; line-height: 12px; color: #fff;
+L4510 .cmp-dynamiccards .component-card-b .card-text h4
+      font-size: 20px; font-weight: 400; color: #111c24; margin-bottom: 20px; height: 66px;
+L4511 .cmp-dynamiccards .component-card-b .card-text h4 span
+      display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.2;
+L4512 .cmp-dynamiccards .component-card-b .card-text .author-info
+      font-size: 16px; line-height: 17px; font-weight: 300; color: #111c24; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin-bottom: 32px; height: 36px;
+L4513 .cmp-dynamiccards .component-card-b .card-text .author-info .authors-links
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+L4514 .cmp-dynamiccards .component-card-b .card-text .author-info .profile-circle
+      position: relative; width: 36px; height: 36px; border-radius: 50px; overflow: hidden; -webkit-box-flex: 0; -webkit-flex: none; -ms-flex: none; flex: none; margin-right: 12px;
+L4515 .cmp-dynamiccards .component-card-b .card-text .author-info .profile-circle div
+      overflow: hidden; position: absolute; background-color: #c4c4c4;
+L4516 .cmp-dynamiccards .component-card-b .card-text .author-info .profile-circle img
+      position: relative; width: 100%;
+L4517 .cmp-dynamiccards .component-card-b .card-text .author-info .profile-circle span
+      position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%); font-size: 9px; color: #555;
+L4518 .cmp-dynamiccards .component-card-b .card-text .author-info .profile-circle.one div
+      width: 100%; height: 100%;
+L4519 .cmp-dynamiccards .component-card-b .card-text .author-info .profile-circle.one span
+      font-size: 12px;
+L4520 .cmp-dynamiccards .component-card-b .card-text .author-info .profile-circle.two div
+      width: 50%; top: 0;
+L4521 .cmp-dynamiccards .component-card-b .card-text .author-info .profile-circle.two img
+      left: -25%; height: 100%; width: auto;
+L4522 .cmp-dynamiccards .component-card-b .card-text .author-info .profile-circle.two div:first-child
+      left: 0; height: 100%;
+L4523 .cmp-dynamiccards .component-card-b .card-text .author-info .profile-circle.two div:nth-child(2)
+      left: 50%; height: 100%; border-left: 1px solid #FFF;
+L4524 .cmp-dynamiccards .component-card-b .card-text .author-info .profile-circle.two div:nth-child(2) img
+      left: -50%;
+L4525 .cmp-dynamiccards .component-card-b .card-text .author-info .profile-circle.three img
+      position: relative; height: 100%;
+L4526 .cmp-dynamiccards .component-card-b .card-text .author-info .profile-circle.three div:first-child
+      left: 0; top: 0; width: 36px; height: 100%;
+L4527 .cmp-dynamiccards .component-card-b .card-text .author-info .profile-circle.three div:first-child img
+      position: relative; left: -25%;
+L4528 .cmp-dynamiccards .component-card-b .card-text .author-info .profile-circle.three div:first-child span
+      left: 10px;
+L4529 .cmp-dynamiccards .component-card-b .card-text .author-info .profile-circle.three div:nth-child(2)
+      left: 50%; top: 0; border-left: 1px solid #FFF; width: 18px; height: 18px;
+L4530 .cmp-dynamiccards .component-card-b .card-text .author-info .profile-circle.three div:nth-child(3)
+      left: 50%; top: 18px; border-left: 1px solid #FFF; border-top: #fff 1px solid; width: 18px; height: 18px;
+L4531 .cmp-dynamiccards .component-card-b .card-text .event-loc-wrapper
+      font-size: 16px; line-height: 17px; font-weight: 300; color: #111c24; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin-bottom: 32px;
+L4532 .cmp-dynamiccards .component-card-b .card-text .event-loc-wrapper .icon
+      margin-right: 15px; height: 36px; font-size: 20px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; color: #555;
+L4533 .cmp-dynamiccards .component-card-b .card-text .event-loc-wrapper .location
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; height: 36px; display: -webkit-flex; display: -ms-flexbox; display: flex; display: -webkit-box;
+L4534 .cmp-dynamiccards .component-card-b .card-text .date-time
+      font-size: 14px; font-weight: 300; color: #555; margin-bottom: 0; line-height: 20px; padding-top: 2px; margin-left: 2px; text-align: right;
+L4535 .cmp-dynamiccards .component-card-b .card-text .date-time .slash
+      margin-left: 2px; margin-right: 2px;
+L4536 .cmp-dynamiccards .component-card-b .card-text .tag-holder
+      font-size: 14px; font-weight: bold; color: #555; font-weight: 500; height: 66px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+L4537 .cmp-dynamiccards .component-card-b .card-text .tag-holder   @media(max-width:992px)
+      height: 46px;
+L4539 .cmp-dynamiccards .component-card-b .card-text .tag-holder a
+      font-size: 14px; font-weight: 300; color: #555;
+L4540 .cmp-dynamiccards .component-card-b .card-text .cta
+      font-size: 16px; font-family: 'Roboto'; color: #316aca; line-height: 16px; margin-top: 32px; margin-bottom: 16px; height: 32px;
+L4541 .cmp-dynamiccards .component-card-b .card-text .cta a
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; line-height: normal;
+L4542 .cmp-dynamiccards .component-card-b .card-text .cta span
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+L4543 .cmp-dynamiccards .component-card-b .card-text .cta:hover
+      color: #23527c; text-decoration: underline;
+L4544 .cmp-dynamiccards .component-card-b .card-text .cta svg.fa-chevron-right
+      font-size: 12px; margin-left: 8px;
+L4554 .cmp-dynamiccards .cmp-hybridcard--container .component-card-b .card-text
+      padding-left: 0; padding-right: 0; padding-top: 24px;
+L4555 .cmp-dynamiccards .cmp-hybridcard--container .component-card-b .card-text   @media(max-width:730px)
+      padding-top: 10px; padding-bottom: 0;
+L4557 .cmp-dynamiccards .cmp-hybridcard--container .component-card-b .card-text h4
+      height: unset; margin-bottom: 24px;
+L4558 .cmp-dynamiccards .cmp-hybridcard--container .component-card-b .card-text h4 span
+      line-height: 1.1; -webkit-line-clamp: 2;
+L4559 .cmp-dynamiccards .cmp-hybridcard--container .component-card-b .card-text h4   @media(max-width:730px)
+      margin-bottom: 10px;
+L4561 .cmp-dynamiccards .cmp-hybridcard--container .component-card-b .card-text h4   @media(max-width:992px)
+      font-size: 18px;
+L4563 .cmp-dynamiccards .cmp-hybridcard--container .component-card-b .card-text h4 a:hover
+      text-decoration: underline;
+L4564 .cmp-dynamiccards .cmp-hybridcard--container .component-card-b .card-text .author-info
+      margin-bottom: 24px;
+L4565 .cmp-dynamiccards .cmp-hybridcard--container .component-card-b .card-text .author-info   @media(max-width:730px)
+      margin-bottom: 10px;
+L4567 .cmp-dynamiccards .cmp-hybridcard--container .component-card-b .card-text .author-info .authors-links
+      line-height: 1.1;
+L4568 .cmp-dynamiccards .cmp-hybridcard--container .component-card-b .card-text .date-time
+      margin-bottom: 16px; color: #111c24; margin-left: 0; text-align: left;
+L4569 .cmp-dynamiccards .cmp-hybridcard--container .component-card-b .card-text .date-time.visible-xs-block
+      text-align: left; margin-bottom: 10px;
+L4570 .cmp-dynamiccards .cmp-hybridcard--container .component-card-b .card-text .date-time .slash
+      padding-left: 2px; padding-right: 2px;
+L4571 .cmp-dynamiccards .cmp-hybridcard--container .component-card-b .card-text .tag-holder
+      overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; font-weight: 400;
+L4574 .cmp-dynamiccards .cmp-hybridcard--container .cmp-blogsdev .cmp-blogsdev__mra-container .cmp-blogsdev__mra-item-container .cmp-blogsdev__mra-left .cmp-blogsdev…
+      color: #111c24; font-weight: 300; line-height: 1.1; margin-top: 16px; text-align: left;
+L4575 .cmp-dynamiccards .cmp-hybridcard--container .cmp-blogsdev .cmp-blogsdev__mra-container .cmp-blogsdev__mra-item-container .cmp-blogsdev__mra-left .cmp-blogsdev…
+      padding-right: 2px; padding-left: 2px;
+L4605 .content-snapshot .date-time
+      margin: 8px 0 0 0; font-size: 14px; font-style: normal; font-weight: 300; line-height: 100%;
+L4641 .cmp-dynamiccards .component-card-b .card-text h4   @media(min-width:730px) and (max-width:992px)
+      font-size: 18px;
+L4642 .cmp-dynamiccards .component-card-b .card-text .author-info,.cmp-dynamiccards .component-card-b .card-text .date-time   @media(min-width:730px) and (max-width:992px)
+      font-size: 14px; line-height: 15px;
+L4643 .cmp-dynamiccards .component-content-carousel[data-slides-to-show="3"] .component-text.card-text   @media(min-width:730px) and (max-width:992px)
+      padding: 20px 16px;
+L4648 .cmp-dynamiccards .component-card-b .card-text h4   @media(max-width:730px)
+      height: 42px;
+L4649 .cmp-dynamiccards .component-card-b .card-text h4 span   @media(max-width:730px)
+      -webkit-line-clamp: 2;
+L4785 .blogBanner .cmp-blogbanner[data-blog-banner-variant="article"] .text-overlay.landing .title,.blogBanner .cmp-blogbanner[data-blog-banner-variant="article"] .t…
+      text-align: left;
+L4806 .blogBanner .cmp-blogbanner[data-blog-banner-variant="article"] .title,.blogBanner .cmp-blogbanner[data-blog-banner-variant="article"] .authors,.blogBanner .cm…
+      font-size: 14px; font-weight: 400; color: #FFF; text-align: center; margin: 0; padding-top: 20px; line-height: normal; margin: 0 auto; max-width: 1170px; width: 100%;
+L4807 .blogBanner .cmp-blogbanner[data-blog-banner-variant="article"] .title,.blogBanner .cmp-blogbanner[data-blog-banner-variant="article"] .authors,.blogBanner .cm…   @media(min-width:992px) and (max-width:1200px)
+      width: 970px;
+L4848 .blogBanner .cmp-blogbanner[data-blog-banner-variant="landing"] .title,.blogBanner .cmp-blogbanner[data-blog-banner-variant="landing"] .authors,.blogBanner .cm…
+      font-size: 16px; font-weight: 300; color: #FFF; line-height: normal; width: 100%; margin: 10px 0 0 0;
+L4849 .blogBanner .cmp-blogbanner[data-blog-banner-variant="landing"] .title,.blogBanner .cmp-blogbanner[data-blog-banner-variant="landing"] .authors,.blogBanner .cm…   @media(max-width:729px)
+      color: #111c24;
+L4888 .blogBanner .cmp-blogbanner[data-blog-banner-variant="article"] .title,.blogBanner .cmp-blogbanner[data-blog-banner-variant="article"] .authors,.blogBanner .cm…   @media(min-width:730px)
+      font-size: 16px; padding-top: 30px;
+L4896 .blogBanner .cmp-blogbanner[data-blog-banner-variant="article"] .title,.blogBanner .cmp-blogbanner[data-blog-banner-variant="article"] .authors,.blogBanner .cm…   @media(min-width:1200px)
+      font-size: 20px;
+L4904 .cmp-featured-blogbanner .date-time
+      margin: 8px 0 0 0; font-size: 14px; font-style: normal; font-weight: 300; line-height: 100%;
+L4967 .cmp-blogsdev .cmp-blogsdev__mra-container .cmp-blogsdev__mra-item-container .cmp-blogsdev__mra-left .label
+      display: none;
+L4968 .cmp-blogsdev .cmp-blogsdev__mra-container .cmp-blogsdev__mra-item-container .cmp-blogsdev__mra-left .label   @media(max-width:730px)
+      display: block;
+L4970 .cmp-blogsdev .cmp-blogsdev__mra-container .cmp-blogsdev__mra-item-container .cmp-blogsdev__mra-left .cmp-blogsdev__mra-date-time
+      font-size: 14px; font-weight: 300; color: #111c24; line-height: 16.5px; margin: 0;
+L4971 .cmp-blogsdev .cmp-blogsdev__mra-container .cmp-blogsdev__mra-item-container .cmp-blogsdev__mra-left .cmp-blogsdev__mra-date-time   @media(max-width:730px)
+      margin-left: auto;
+L4976 .cmp-blogsdev .cmp-blogsdev__mra-container .cmp-blogsdev__mra-item-container .label
+      font-size: 12px; font-weight: 500; text-transform: uppercase; background-color: #7e45af; border-radius: 3px; padding: 4px 8px; line-height: 12px; color: #fff; margin: 0 16px 16px 0; -webkit-align-self: flex-start; -ms-flex-item-align: start; align-self: flex-start;
+L4978 .cmp-blogsdev .cmp-blogsdev__mra-container .cmp-blogsdev__mra-item-container .cmp-blogsdev__mra-right .label   @media(max-width:730px)
+      display: none;

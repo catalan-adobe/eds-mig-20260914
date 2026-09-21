@@ -1,0 +1,1388 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics detect",
+  "writtenAt": "2026-09-21T12:10:24.226Z",
+  "settleMs": 5000,
+  "width": 1440,
+  "urls": [
+   "https://www.synopsys.com/"
+  ],
+  "reachSource": "stardust/current/pages"
+ },
+ "pages": {
+  "/": {
+   "url": "https://www.synopsys.com/",
+   "status": 200,
+   "host": "www.synopsys.com",
+   "title": "Synopsys | EDA Tools, Semiconductor IP & Systems Verification",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "Filter Button",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "button",
+      "heading": "",
+      "textLen": 13,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    }
+   ],
+   "dialogs": [
+    {
+     "role": "dialog",
+     "heading": "",
+     "textLen": 23,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "p",
+     "heading": "",
+     "textLen": 23,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "dialog",
+     "heading": "",
+     "textLen": 638,
+     "hasForm": true,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "p",
+     "heading": "",
+     "textLen": 68,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "document",
+     "heading": "",
+     "textLen": 531,
+     "hasForm": true,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "dialog",
+     "heading": "",
+     "textLen": 125,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "p",
+     "heading": "",
+     "textLen": 107,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "dialog",
+     "heading": "",
+     "textLen": 125,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "p",
+     "heading": "",
+     "textLen": 107,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "div",
+     "heading": "",
+     "textLen": 1,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "dialog",
+     "heading": "",
+     "textLen": 1,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "div",
+     "heading": "",
+     "textLen": 1,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    }
+   ],
+   "dialogCount": 24,
+   "media": [
+    {
+     "tag": "div",
+     "src": "",
+     "account": null,
+     "player": null,
+     "videoId": "6358098178112",
+     "inDialog": false
+    },
+    {
+     "tag": "div",
+     "src": "",
+     "account": "5748441669001",
+     "player": "rka4xWwYG",
+     "videoId": "6358098178112",
+     "inDialog": false
+    },
+    {
+     "tag": "video",
+     "src": "blob:https://www.synopsys.com/6fdf49e8-93f7-4cfa-8714-861a0138b3da",
+     "account": "5748441669001",
+     "player": "rka4xWwYG",
+     "videoId": "6358098178112",
+     "inDialog": false
+    },
+    {
+     "tag": "iframe",
+     "src": "https://insight.adsrvr.org/track/cei?advertiser_id=oruz32j&cookie_sync=1&upv=3.0.0&upid=opsf1w6&ref=https%3A%2F%2Fwww.synopsys.com%2F",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    },
+    {
+     "tag": "iframe",
+     "src": "https://10373687.fls.doubleclick.net/activityi;u1=https%3A%2F%2Fwww.synopsys.com%2F;cat=jg_sy0;src=10373687;type=pagev0?",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    },
+    {
+     "tag": "iframe",
+     "src": "https://10373687.fls.doubleclick.net/activityi;u1=https%3A%2F%2Fwww.synopsys.com%2F;cat=jg_sy0;src=10373687;type=pagev0?",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": null,
+     "title": null,
+     "w": 1,
+     "h": 1
+    },
+    {
+     "src": null,
+     "title": "onetrust-text-resize",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": "https://insight.adsrvr.org/track/cei?advertiser_id=oruz32j&cookie_sync=1&upv=3.0.0&upid=opsf1w6&ref=https%3A%2F%2Fwww.synopsys.com%2F",
+     "title": "TTD Universal Pixel",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": "https://10373687.fls.doubleclick.net/activityi;u1=https%3A%2F%2Fwww.synopsys.com%2F;cat=jg_sy0;src=10373687;type=pagev0?",
+     "title": null,
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": "https://10373687.fls.doubleclick.net/activityi;u1=https%3A%2F%2Fwww.synopsys.com%2F;cat=jg_sy0;src=10373687;type=pagev0?",
+     "title": null,
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [
+     "de-de",
+     "en-us",
+     "zh-tw",
+     "ko-kr",
+     "zh-cn",
+     "ja-jp",
+     "x-default"
+    ],
+    "switcher": [
+     "https://www.synopsys.com/ai/ai-chip-development.html",
+     "https://www.synopsys.com/ai/physical-ai.html",
+     "https://www.synopsys.com/ai/ai-powered-eda.html",
+     "https://www.synopsys.com/ai/ai-powered-eda.html",
+     "https://www.synopsys.com/ai/ai-powered-eda.html"
+    ]
+   },
+   "cms": {
+    "digitalData": [
+     "forms"
+    ],
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "11",
+     "12",
+     "13",
+     "14",
+     "15",
+     "16",
+     "17",
+     "18",
+     "19",
+     "20",
+     "21",
+     "22",
+     "23",
+     "24",
+     "25",
+     "26",
+     "push"
+    ],
+    "adobeDataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "11",
+     "12",
+     "13",
+     "14",
+     "15",
+     "16",
+     "17",
+     "18",
+     "19",
+     "20",
+     "21",
+     "22",
+     "23",
+     "24",
+     "25",
+     "26",
+     "27",
+     "28",
+     "29"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "adobe",
+    "_satellite",
+    "OneTrust",
+    "Optanon",
+    "google_tag_manager",
+    "gtag",
+    "Munchkin",
+    "videojs",
+    "bc",
+    "YT"
+   ],
+   "clientRendered": [
+    {
+     "cls": "embed-responsive-item video-js vjs-play-button-shape-rectangle",
+     "attrs": [],
+     "text": "The Era of Pervasive Intelligence Powered by SynopsysDiscove"
+    },
+    {
+     "cls": "vjs-dock-text",
+     "attrs": [],
+     "text": "The Era of Pervasive Intelligence Powered by SynopsysDiscove"
+    },
+    {
+     "cls": "vjs-loading-spinner",
+     "attrs": [],
+     "text": "Video Player is loading."
+    },
+    {
+     "cls": "vjs-control-bar",
+     "attrs": [],
+     "text": "PlayMuteCurrent Time 0:00/Duration 1:11Loaded: 13.95%0:00Str"
+    },
+    {
+     "cls": "vjs-seek-to-live-control vjs-control",
+     "attrs": [],
+     "text": "Seek to live, currently behind liveLIVE"
+    },
+    {
+     "cls": "vjs-descriptions-button vjs-menu-button vjs-menu-button-popup",
+     "attrs": [],
+     "text": "Descriptionsdescriptions off, selected"
+    },
+    {
+     "cls": "vjs-menu",
+     "attrs": [],
+     "text": "descriptions off, selected"
+    },
+    {
+     "cls": "vjs-menu-content",
+     "attrs": [],
+     "text": "descriptions off, selected"
+    },
+    {
+     "cls": "vjs-menu-item vjs-selected",
+     "attrs": [],
+     "text": "descriptions off, selected"
+    },
+    {
+     "cls": "vjs-subs-caps-button vjs-menu-button vjs-menu-button-popup",
+     "attrs": [],
+     "text": "Captionscaptions settings, opens captions settings dialogcap"
+    },
+    {
+     "cls": "vjs-menu",
+     "attrs": [],
+     "text": "captions settings, opens captions settings dialogcaptions of"
+    },
+    {
+     "cls": "vjs-menu-content",
+     "attrs": [],
+     "text": "captions settings, opens captions settings dialogcaptions of"
+    }
+   ],
+   "listingCandidates": [],
+   "inlineScripts": 50,
+   "inlineFetch": true,
+   "mainText": 6559,
+   "domAddedAfterLoad": 156,
+   "hosts": {
+    "www.synopsys.com": 62,
+    "static.cloudflareinsights.com": 1,
+    "assets.adobedtm.com": 28,
+    "kit.fontawesome.com": 1,
+    "experience.adobe.net": 1,
+    "images.synopsys.com": 22,
+    "cdn.cookielaw.org": 7,
+    "ka-p.fontawesome.com": 14,
+    "static.cloud.coveo.com": 36,
+    "geolocation.onetrust.com": 1,
+    "players.brightcove.net": 1,
+    "vjs.zencdn.net": 1,
+    "edge.api.brightcove.com": 1,
+    "metrics.brightcove.com": 5,
+    "cf-images.us-east-1.prod.boltdns.net": 1,
+    "manifest.prod.boltdns.net": 3,
+    "fastly-signed-us-east-1-prod.brightcovecdn.com": 4,
+    "privacyportal.onetrust.com": 1,
+    "adobedc.demdex.net": 2,
+    "analytics.newscred.com": 1,
+    "js.adsrvr.org": 2,
+    "www.youtube.com": 2,
+    "insight.adsrvr.org": 3,
+    "match.adsrvr.org": 1,
+    "munchkin.marketo.net": 2,
+    "www.googletagmanager.com": 6,
+    "cdn.bttrack.com": 2,
+    "snippet.maze.co": 2,
+    "10373687.fls.doubleclick.net": 4,
+    "snap.licdn.com": 1,
+    "px.ads.linkedin.com": 2,
+    "bttrack.com": 7,
+    "paapi3112.d41.co": 2,
+    "v2.d41.co": 1,
+    "www.google.com": 14,
+    "367-mrv-360.mktoresp.com": 1,
+    "ad.doubleclick.net": 1,
+    "googleads.g.doubleclick.net": 4,
+    "www.google.ch": 4,
+    "tracking.intentsify.io": 2,
+    "smetrics.synopsys.com": 9,
+    "tags.srv.stackadapt.com": 4,
+    "prompts.maze.co": 1,
+    "bzrcdn.openai.com": 2,
+    "a.usbrowserspeed.com": 2,
+    "region1.google-analytics.com": 1,
+    "bzr.openai.com": 1
+   },
+   "thirdPartyHosts": [
+    "static.cloudflareinsights.com",
+    "assets.adobedtm.com",
+    "kit.fontawesome.com",
+    "experience.adobe.net",
+    "cdn.cookielaw.org",
+    "ka-p.fontawesome.com",
+    "static.cloud.coveo.com",
+    "geolocation.onetrust.com",
+    "players.brightcove.net",
+    "vjs.zencdn.net",
+    "edge.api.brightcove.com",
+    "metrics.brightcove.com",
+    "cf-images.us-east-1.prod.boltdns.net",
+    "manifest.prod.boltdns.net",
+    "fastly-signed-us-east-1-prod.brightcovecdn.com",
+    "privacyportal.onetrust.com",
+    "adobedc.demdex.net",
+    "analytics.newscred.com",
+    "js.adsrvr.org",
+    "www.youtube.com",
+    "insight.adsrvr.org",
+    "match.adsrvr.org",
+    "munchkin.marketo.net",
+    "www.googletagmanager.com",
+    "cdn.bttrack.com",
+    "snippet.maze.co",
+    "10373687.fls.doubleclick.net",
+    "snap.licdn.com",
+    "px.ads.linkedin.com",
+    "bttrack.com",
+    "paapi3112.d41.co",
+    "v2.d41.co",
+    "www.google.com",
+    "367-mrv-360.mktoresp.com",
+    "ad.doubleclick.net",
+    "googleads.g.doubleclick.net",
+    "www.google.ch",
+    "tracking.intentsify.io",
+    "tags.srv.stackadapt.com",
+    "prompts.maze.co",
+    "bzrcdn.openai.com",
+    "a.usbrowserspeed.com",
+    "region1.google-analytics.com",
+    "bzr.openai.com"
+   ],
+   "scripts": [
+    "https://www.synopsys.com/etc.clientlibs/synopsys/clientlibs/footnote.min.a4814b3ec1d358e065ceb35ea5c95dee.js",
+    "https://www.synopsys.com/etc.clientlibs/synopsys/clientlibs/synopsys-headlibs.min.bb95fb3b5c67e9691f13d3633788ea51.js",
+    "https://www.synopsys.com/content/dam/synopsys/util/gdpr/ot_banner_v1.js",
+    "https://www.synopsys.com/etc.clientlibs/synopsys/clientlibs/custom-jquery.min.9892f1198f0d15717d27595999e1bd04.js",
+    "https://www.synopsys.com/etc.clientlibs/core/wcm/components/commons/datalayer/v1/clientlibs/core.wcm.components.commons.datalayer.v1.min.70264651675213ed7f7cc5a02a00f621.js",
+    "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495",
+    "https://www.synopsys.com/content/dam/synopsys/util/brand-concierge/brand_concierge_script.js",
+    "https://www.synopsys.com/etc.clientlibs/synopsys/clientlibs/synopsys-pagelibs.min.501664f45a1d13fcfa998877823fe965.js",
+    "https://assets.adobedtm.com/79b3942b8dfa/604ce2434de1/launch-2396cdda8e60.min.js",
+    "https://kit.fontawesome.com/6e227b4cd8.js",
+    "https://experience.adobe.net/solutions/experience-platform-brand-concierge-web-agent/static-assets/main.js",
+    "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+    "https://assets.adobedtm.com/79b3942b8dfa/604ce2434de1/dce0446f780a/RCc9a8fd16673a4d2f9c43606e2da1b8cc-source.min.js",
+    "https://static.cloud.coveo.com/atomic/v2/atomic.esm.js",
+    "https://www.synopsys.com/cdn-cgi/challenge-platform/scripts/jsd/main.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-e1255160.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-5925f187.js",
+    "https://www.synopsys.com/cdn-cgi/challenge-platform/h/g/scripts/jsd/330e41bb475c/main.js?",
+    "https://assets.adobedtm.com/79b3942b8dfa/604ce2434de1/dce0446f780a/RCca586f03e8ad43b0b430baa32b1fa214-source.min.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-4eb90395.entry.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-a895cb6f.entry.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-83c33f4e.entry.js",
+    "https://players.brightcove.net/5748441669001/rka4xWwYG_default/index.min.js",
+    "https://assets.adobedtm.com/79b3942b8dfa/604ce2434de1/dce0446f780a/RCaf0c25c499f74301b22077b774a1f32b-source.min.js",
+    "https://cdn.cookielaw.org/scripttemplates/6.27.0/otBannerSdk.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-833161c3.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-0943c4bd.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-570efa10.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-3699e07e.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-3ebf74ce.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-95434156.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-87788a99.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-83080773.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-e9c4f463.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-37511f39.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-5544eaf5.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-44779695.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-76cdb4e5.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-9c7dbbdf.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-1580513b.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-fa8bcc43.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-ff7c46a2.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-c86021c8.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-a56bfec6.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-04f800cd.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-d83eaf95.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-cfb3c589.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-8fcdce6d.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-e48090a7.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-7598e7d5.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-4dcb66f1.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-b0ede3ce.js",
+    "https://assets.adobedtm.com/79b3942b8dfa/604ce2434de1/dce0446f780a/RCea5d9678b5914bbb87938a77f206030b-source.min.js",
+    "https://static.cloud.coveo.com/atomic/v2/p-80dbf9c6.entry.js",
+    "https://vjs.zencdn.net/vttjs/0.15.3/vtt.global.min.js",
+    "https://assets.adobedtm.com/79b3942b8dfa/604ce2434de1/dce0446f780a/RCf8c5d1a1af1649f19713632b07f66da6-source.min.js",
+    "https://assets.adobedtm.com/79b3942b8dfa/604ce2434de1/dce0446f780a/RC87573e5c95d54a6da5d912e96cfd197e-source.min.js",
+    "https://assets.adobedtm.com/79b3942b8dfa/604ce2434de1/dce0446f780a/RC46ea8b5a5252407c9c20583439eec1fc-source.min.js",
+    "https://assets.adobedtm.com/79b3942b8dfa/604ce2434de1/dce0446f780a/RCff00312a8d24463b96643e437bbf1478-source.min.js",
+    "https://assets.adobedtm.com/79b3942b8dfa/604ce2434de1/dce0446f780a/RC43d52578f09745c8a57f2af855eb993c-source.min.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.synopsys.com",
+     "path": "/bin/cs-info.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.synopsys.com/bin/cs-info.json"
+    },
+    {
+     "method": "POST",
+     "host": "www.synopsys.com",
+     "path": "/cdn-cgi/challenge-platform/h/g/jsd/oneshot/330e41bb475c/0.6179001999995779:1789989012:KvQU37APQ5RxXUDLEY8MnwZQJB_7lYygLYRvr6MK4Ks/{hash}",
+     "query": [],
+     "status": 200,
+     "contentType": "text/plain",
+     "example": "https://www.synopsys.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/330e41bb475c/0.6179001999995779:1789989012:KvQU37APQ5RxXUDLEY8MnwZQJB_7lYygLYRvr6MK4Ks/a3e8f76f5860d14a"
+    },
+    {
+     "method": "POST",
+     "host": "www.synopsys.com",
+     "path": "/cdn-cgi/rum",
+     "query": [],
+     "status": 204,
+     "contentType": "text/plain",
+     "example": "https://www.synopsys.com/cdn-cgi/rum"
+    },
+    {
+     "method": "POST",
+     "host": "smetrics.synopsys.com",
+     "path": "/ee/or2/v1/privacy/set-consent",
+     "query": [
+      "configId",
+      "requestId"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://smetrics.synopsys.com/ee/or2/v1/privacy/set-consent"
+    },
+    {
+     "method": "POST",
+     "host": "smetrics.synopsys.com",
+     "path": "/ee/or2/v1/interact",
+     "query": [
+      "configId",
+      "requestId"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://smetrics.synopsys.com/ee/or2/v1/interact"
+    }
+   ],
+   "thirdPartyXhr": [
+    "GET ka-p.fontawesome.com/releases/v6.5.2/js/pro.min.js",
+    "GET cdn.cookielaw.org/consent/c3922e14-e9c5-45ad-af19-28880fac108e/c3922e14-e9c5-45ad-af19-28880fac10",
+    "GET geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
+    "GET ka-p.fontawesome.com/releases/v6.5.2/svgs/solid/play.svg",
+    "GET ka-p.fontawesome.com/releases/v6.5.2/svgs/light/chevron-left.svg",
+    "GET ka-p.fontawesome.com/releases/v6.5.2/svgs/regular/arrow-up-right-from-square.svg",
+    "GET ka-p.fontawesome.com/releases/v6.5.2/svgs/regular/magnifying-glass.svg",
+    "GET ka-p.fontawesome.com/releases/v6.5.2/svgs/light/chevron-right.svg",
+    "GET ka-p.fontawesome.com/releases/v6.5.2/svgs/solid/pause.svg",
+    "GET ka-p.fontawesome.com/releases/v6.5.2/svgs/brands/youtube.svg",
+    "GET ka-p.fontawesome.com/releases/v6.5.2/svgs/regular/chevron-right.svg",
+    "GET ka-p.fontawesome.com/releases/v6.5.2/svgs/brands/x-twitter.svg",
+    "GET ka-p.fontawesome.com/releases/v6.5.2/svgs/brands/linkedin-in.svg",
+    "GET ka-p.fontawesome.com/releases/v6.5.2/svgs/brands/instagram.svg",
+    "GET ka-p.fontawesome.com/releases/v6.5.2/svgs/brands/facebook.svg",
+    "GET ka-p.fontawesome.com/releases/v6.5.2/svgs/solid/xmark.svg",
+    "GET cdn.cookielaw.org/consent/c3922e14-e9c5-45ad-af19-28880fac108e/019fd83f-7563-7c25-89b4-b09757f662",
+    "GET static.cloud.coveo.com/atomic/v2/lang/en.json",
+    "GET cdn.cookielaw.org/scripttemplates/6.27.0/assets/otCenterRounded.json",
+    "GET cdn.cookielaw.org/scripttemplates/6.27.0/assets/v2/otPcTab.json",
+    "GET cdn.cookielaw.org/scripttemplates/6.27.0/assets/otCommonStyles.css",
+    "GET edge.api.brightcove.com/playback/v1/accounts/5748441669001/videos/6358098178112",
+    "GET manifest.prod.boltdns.net/manifest/v2/hls/v7/clear/avc1_mp4a/5748441669001/ab945a00-6495-4d25-9486-050c69",
+    "GET manifest.prod.boltdns.net/manifest/v2/hls/v7/fmp4/clear/5748441669001/ab945a00-6495-4d25-9486-050c693046f",
+    "GET fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/hls/v7/clear/5748441669001/ab945a00-6495-4d25-9486-050c693046ff/9710d8",
+    "GET fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/hls/v7/clear/5748441669001/ab945a00-6495-4d25-9486-050c693046ff/7e684e",
+    "POST privacyportal.onetrust.com/request/v1/consentreceipts",
+    "POST adobedc.demdex.net/ee/v1/interact",
+    "POST adobedc.demdex.net/ee/v1/privacy/set-consent",
+    "POST px.ads.linkedin.com/wa/",
+    "GET paapi3112.d41.co/api",
+    "GET bttrack.com/engagement/event",
+    "GET bttrack.com/engagement/getpixels",
+    "POST insight.adsrvr.org/track/realtimeconversion",
+    "POST www.google.com/ccm/collect",
+    "POST www.google.com/rmkt/collect/362796362/",
+    "POST ad.doubleclick.net/ccm/s/collect",
+    "POST www.google.com/rmkt/collect/870498136/",
+    "POST www.google.com/rmkt/collect/10901130790/",
+    "POST www.google.com/rmkt/collect/10895973972/"
+   ],
+   "postBodies": [
+    {
+     "url": "https://www.synopsys.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/330e41bb475c/0.6179001999995779:1789989012:KvQU37APQ5RxXUDLEY8MnwZQJB_7lYygLYRvr6MK4Ks/a3e8f76f5860d14a",
+     "body": "O181VOV-VpsBeIHjh6JGdFwDTSyRwxIGzT$LIUR21wFHUhTuOv+90Qat5kP3Mo216SAPSWyWj72bZBpPBd3sYhyg$azYhQIqs+UE0oiN9OfWCksjz0j0M+Gz2eiAGWjTWNpr1zZTojI+KpXvhLNEk0wYEEKmP4oyE7duU5WMbkFL+f2Mf38Ot5gicjvEPXWCMOz+F0JBoWsc4mA2NUx+Fye6t4sF+OVF3TM4$-qKCAq4baVCYLbcpM7Zfy4yD03ggMRPE-vPPYfBz+9EIfvMJOYEF+DpY21A1upJA6$Ze$71$3PHWf1v21dAkg2nnS8wZcHMf+rvVT84M1oXB0ref2eJyBdswCIM3qrM2ODPxS3FvvjHZExq2M5FR3pqEoey08jDJIcNt+wNP+$Z"
+    },
+    {
+     "url": "https://adobedc.demdex.net/ee/v1/privacy/set-consent?configId=2176cf9f-2ff5-45aa-9dae-6a6d24efd275&requestId=cab9c6dc-9102-4779-897d-16ac53ff7aad",
+     "body": "{\"consent\":[{\"value\":{\"collect\":{\"val\":\"n\"},\"personalize\":{\"content\":{\"val\":\"n\"}},\"marketing\":{\"preferred\":\"email\",\"any\":{\"val\":\"n\"}},\"share\":{\"val\":\"n\"},\"adID\":{\"idType\":\"GAID\",\"val\":\"n\"},\"metadata\":{\"time\":\"2026-09-21T12:10:25.324Z\"}},\"version\":\"2.0\",\"standard\":\"Adobe\"}],\"query\":{\"identity\":{\"fetch\":[\"ECID\",\"CORE\"]}},\"meta\":{\"state\":{\"domain\":\"synopsys.com\",\"cookiesEnabled\":true}}}"
+    },
+    {
+     "url": "https://adobedc.demdex.net/ee/v1/interact?configId=2342caeb-a1ab-4234-9542-c72a6e975d7a&requestId=ad31737f-20cc-4675-b4f9-9acb8d22bfc7",
+     "body": "{\"events\":[{\"xdm\":{\"eventType\":\"web.webinteraction.linkClicks\",\"web\":{\"webInteraction\":{\"name\":\"I Accept\",\"region\":\"onetrust-button-group\",\"type\":\"other\",\"URL\":\"https://www.synopsys.com/\",\"linkClicks\":{\"value\":1}},\"webPageDetails\":{\"URL\":\"https://www.synopsys.com/\"},\"webReferrer\":{\"URL\":\"\"}},\"device\":{\"screenHeight\":900,\"screenWidth\":1440,\"screenOrientation\":\"landscape\"},\"environment\":{\"type\":\"bro"
+    },
+    {
+     "url": "https://privacyportal.onetrust.com/request/v1/consentreceipts",
+     "body": "{\"requestInformation\":\"eyJhbGciOiJSUzUxMiJ9.eyJvdEp3dFZlcnNpb24iOjEsInByb2Nlc3NJZCI6ImYzMmFhNjNjLTY0NzYtNGE4OC04ZDY2LWY5MGRlOGVkNTNlMyIsInByb2Nlc3NWZXJzaW9uIjo0LCJpYXQiOiIyMDI1LTEyLTAxVDE3OjQxOjMwLjE0NyIsIm1vYyI6IkNPT0tJRSIsInBvbGljeV91cmkiOiJzeW5vcHN5cy5jb20iLCJzdWIiOiJDb29raWUgVW5pcXVlIElkIiwiaXNzIjpudWxsLCJ0ZW5hbnRJZCI6IjlhYTgzZGQ5LWJjZDUtNDIzOC05NzdjLTI3ZjM0NmQ4NjI5MCIsImRlc2NyaXB0aW9uIjoiVGhp"
+    },
+    {
+     "url": "https://www.synopsys.com/cdn-cgi/rum?",
+     "body": "{\"startTime\":1789992624268,\"pageloadId\":\"0b9d763f-488d-4a5b-8bd3-e90a6f3ae412\",\"eventType\":1,\"nt\":\"navigate\",\"location\":\"https://www.synopsys.com/\",\"versions\":{\"fl\":\"2024.11.0\",\"js\":\"2026.9.1\",\"timings\":2},\"bi\":{\"be\":\"Blink\",\"bev\":\"153\",\"bv\":\"153\",\"ov\":\"26.6\"},\"memory\":{\"totalJSHeapSize\":29400000,\"usedJSHeapSize\":21700000,\"jsHeapSizeLimit\":3760000000},\"firstPaint\":320,\"firstContentfulPaint\":320,\"t"
+    },
+    {
+     "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+     "body": "H4sIAAAAAAAAE02QwWrcMBCGX8XMoSepK9uyZOu20DQYcgi12UspRSuNElFbdj1aypLm3Ys3IfT4M8w3/3wvsEZPYL7LpmoEK7VUpWh+MCC3xTWfcKO4JDClEEJUkkGOM4Ipddt1XaUq1daCgV9mGxMYoGtaVrrSZ7fMwOCyTWDgOeeVzOHw//AADP7gmWLGIT4lO33D3xek3HswgJ0StfOOtyIILp20vNSh5bXSstR11QRsgMFqn/Bhsf62I5SqsKxKjl0buLSt4l1lHZdYSqeFdt47YBBp3GyiyWb0YIKdCBlM8at9uwx7uI825bcwR3JgXmCl85BtRjBcvu6Uh5h+oe/TcV0/MHufMeYJwcDw/mvxt7j7cizGZZmIFQPO0S3JX1xetqJ/LD4V"
+    },
+    {
+     "url": "https://insight.adsrvr.org/track/realtimeconversion",
+     "body": "{\"data\":[{\"adv\":\"oruz32j\",\"pixel_ids\":[\"opsf1w6\"],\"referrer_url\":\"https://www.synopsys.com/\",\"data_processing_option\":null,\"privacy_settings\":[]}]}"
+    },
+    {
+     "url": "https://smetrics.synopsys.com/ee/or2/v1/privacy/set-consent?configId=2176cf9f-2ff5-45aa-9dae-6a6d24efd275&requestId=80c18e9f-2484-44db-9b31-9a0771bc340d",
+     "body": "{\"consent\":[{\"value\":{\"collect\":{\"val\":\"y\"},\"personalize\":{\"content\":{\"val\":\"y\"}},\"marketing\":{\"preferred\":\"email\",\"any\":{\"val\":\"y\"}},\"share\":{\"val\":\"y\"},\"adID\":{\"idType\":\"GAID\",\"val\":\"y\"},\"metadata\":{\"time\":\"2026-09-21T12:10:27.341Z\"}},\"version\":\"2.0\",\"standard\":\"Adobe\"}],\"query\":{\"identity\":{\"fetch\":[\"ECID\",\"CORE\"]}},\"meta\":{\"state\":{\"domain\":\"synopsys.com\",\"cookiesEnabled\":true}}}"
+    },
+    {
+     "url": "https://www.google.com/rmkt/collect/362796362/?random=1789992627432&cv=11&fst=1789992627432&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be69g1v9117834461za200zd9117834461xecxf1&gcd=13l3l3l3l1",
+     "body": ""
+    },
+    {
+     "url": "https://www.google.com/ccm/collect?rcb=5&frm=0&apvc=1&auid=1985205772.1789992627&dt=Synopsys%20%7C%20EDA%20Tools%2C%20Semiconductor%20IP%20%26%20Systems%20Verification&tid=AW-362796362&en=page_view&dl",
+     "body": ""
+    },
+    {
+     "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1985205772.1789992627&gtm=45be69g1v9117834461za200zd9117834461xecxf1&fmt=8",
+     "body": ""
+    },
+    {
+     "url": "https://prompts.maze.co/api/widgets",
+     "body": "{\"apiKey\":\"3ee8f91f-efaa-4e80-a63a-aee2587aac11\",\"snippetSrc\":\"contextual-widget\",\"correlationId\":\"1789992626555-1596.861513947262\"}"
+    }
+   ],
+   "textAtLoad": 5665,
+   "mainEmptyAtLoad": false
+  }
+ },
+ "findings": [
+  {
+   "id": "a-unknown-third-party-host-px-ads-linkedin-com",
+   "class": "A",
+   "feature": "unknown third-party host px.ads.linkedin.com",
+   "hint": "inspect",
+   "evidence": [
+    "px.ads.linkedin.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-unknown-third-party-host-bttrack-com",
+   "class": "A",
+   "feature": "unknown third-party host bttrack.com",
+   "hint": "inspect",
+   "evidence": [
+    "bttrack.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-unknown-third-party-host-paapi3112-d41-co",
+   "class": "A",
+   "feature": "unknown third-party host paapi3112.d41.co",
+   "hint": "inspect",
+   "evidence": [
+    "paapi3112.d41.co"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-unknown-third-party-host-www-google-com",
+   "class": "A",
+   "feature": "unknown third-party host www.google.com",
+   "hint": "inspect",
+   "evidence": [
+    "www.google.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-post-ee-or2-v1-privacy-set-consent",
+   "class": "A",
+   "feature": "first-party API POST /ee/or2/v1/privacy/set-consent",
+   "api": {
+    "method": "POST",
+    "path": "/ee/or2/v1/privacy/set-consent"
+   },
+   "hint": "api",
+   "evidence": [
+    "POST /ee/or2/v1/privacy/set-consent?configId,requestId → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-post-ee-or2-v1-interact",
+   "class": "A",
+   "feature": "first-party API POST /ee/or2/v1/interact",
+   "api": {
+    "method": "POST",
+    "path": "/ee/or2/v1/interact"
+   },
+   "hint": "api",
+   "evidence": [
+    "POST /ee/or2/v1/interact?configId,requestId → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-cms-app-settings-object-digitaldata",
+   "class": "A",
+   "feature": "CMS / app settings object digitalData",
+   "hint": "settings",
+   "evidence": [
+    "forms"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-cms-app-settings-object-datalayer",
+   "class": "A",
+   "feature": "CMS / app settings object dataLayer",
+   "hint": "settings",
+   "evidence": [],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-cms-app-settings-object-adobedatalayer",
+   "class": "A",
+   "feature": "CMS / app settings object adobeDataLayer",
+   "hint": "settings",
+   "evidence": [],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-embed-responsive-item-video-js-vjs-p",
+   "class": "CR",
+   "feature": "client-rendered slot embed-responsive-item video-js vjs-play-button-shape-rectangle",
+   "hint": "client-rendered",
+   "evidence": [
+    "The Era of Pervasive Intelligence Powered by SynopsysDiscove"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-vjs-dock-text",
+   "class": "CR",
+   "feature": "client-rendered slot vjs-dock-text",
+   "hint": "client-rendered",
+   "evidence": [
+    "The Era of Pervasive Intelligence Powered by SynopsysDiscove"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-vjs-loading-spinner",
+   "class": "CR",
+   "feature": "client-rendered slot vjs-loading-spinner",
+   "hint": "client-rendered",
+   "evidence": [
+    "Video Player is loading."
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-vjs-control-bar",
+   "class": "CR",
+   "feature": "client-rendered slot vjs-control-bar",
+   "hint": "client-rendered",
+   "evidence": [
+    "PlayMuteCurrent Time 0:00/Duration 1:11Loaded: 13.95%0:00Str"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-vjs-seek-to-live-control-vjs-control",
+   "class": "CR",
+   "feature": "client-rendered slot vjs-seek-to-live-control vjs-control",
+   "hint": "client-rendered",
+   "evidence": [
+    "Seek to live, currently behind liveLIVE"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-vjs-descriptions-button-vjs-menu-but",
+   "class": "CR",
+   "feature": "client-rendered slot vjs-descriptions-button vjs-menu-button vjs-menu-button-popup",
+   "hint": "client-rendered",
+   "evidence": [
+    "Descriptionsdescriptions off, selected"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-vjs-menu",
+   "class": "CR",
+   "feature": "client-rendered slot vjs-menu",
+   "hint": "client-rendered",
+   "evidence": [
+    "descriptions off, selected",
+    "captions settings, opens captions settings dialogcaptions of"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-vjs-menu-content",
+   "class": "CR",
+   "feature": "client-rendered slot vjs-menu-content",
+   "hint": "client-rendered",
+   "evidence": [
+    "descriptions off, selected",
+    "captions settings, opens captions settings dialogcaptions of"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-vjs-menu-item-vjs-selected",
+   "class": "CR",
+   "feature": "client-rendered slot vjs-menu-item vjs-selected",
+   "hint": "client-rendered",
+   "evidence": [
+    "descriptions off, selected"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-vjs-subs-caps-button-vjs-menu-button",
+   "class": "CR",
+   "feature": "client-rendered slot vjs-subs-caps-button vjs-menu-button vjs-menu-button-popup",
+   "hint": "client-rendered",
+   "evidence": [
+    "Captionscaptions settings, opens captions settings dialogcap"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "d-first-party-data-file-get-bin-cs-info-json",
+   "class": "D",
+   "feature": "first-party data file GET /bin/cs-info.json",
+   "api": {
+    "method": "GET",
+    "path": "/bin/cs-info.json"
+   },
+   "hint": "data",
+   "evidence": [
+    "GET /bin/cs-info.json → 200"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "i18n-locale-variants-de-de-en-us-zh-tw-ko-kr-zh-cn-ja-jp-x-d",
+   "class": "I18N",
+   "feature": "locale variants de-de,en-us,zh-tw,ko-kr,zh-cn,ja-jp,x-default",
+   "hint": "locale",
+   "evidence": [
+    "https://www.synopsys.com/ai/ai-chip-development.html",
+    "https://www.synopsys.com/ai/physical-ai.html",
+    "https://www.synopsys.com/ai/ai-powered-eda.html"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "m-modal-trigger-aria-haspopup-chrome-only-button-content",
+   "class": "M",
+   "feature": "modal trigger aria-haspopup (chrome only) → button:content",
+   "hint": "chrome-interaction",
+   "evidence": [
+    "Filter Button"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "s-search-hosted-search-service",
+   "class": "S",
+   "feature": "search: hosted search service",
+   "role": "search: hosted search service",
+   "hint": "search",
+   "evidence": [
+    "static.cloud.coveo.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-static-cloudflareinsights-com",
+   "class": "T",
+   "feature": "unknown third-party host static.cloudflareinsights.com",
+   "hint": "inspect",
+   "evidence": [
+    "static.cloudflareinsights.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-tag-manager-adobe-launch",
+   "class": "T",
+   "feature": "tag manager: Adobe Launch",
+   "role": "tag manager: Adobe Launch",
+   "hint": "tags",
+   "evidence": [
+    "assets.adobedtm.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-experience-adobe-net",
+   "class": "T",
+   "feature": "unknown third-party host experience.adobe.net",
+   "hint": "inspect",
+   "evidence": [
+    "experience.adobe.net"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-consent-onetrust",
+   "class": "T",
+   "feature": "consent: OneTrust",
+   "role": "consent: OneTrust",
+   "hint": "tags",
+   "evidence": [
+    "cdn.cookielaw.org",
+    "geolocation.onetrust.com",
+    "privacyportal.onetrust.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-vjs-zencdn-net",
+   "class": "T",
+   "feature": "unknown third-party host vjs.zencdn.net",
+   "hint": "inspect",
+   "evidence": [
+    "vjs.zencdn.net"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-analytics-adobe-analytics-experience-cloud-id",
+   "class": "T",
+   "feature": "analytics: Adobe Analytics / Experience Cloud ID",
+   "role": "analytics: Adobe Analytics / Experience Cloud ID",
+   "hint": "tags",
+   "evidence": [
+    "adobedc.demdex.net"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-analytics-newscred-com",
+   "class": "T",
+   "feature": "unknown third-party host analytics.newscred.com",
+   "hint": "inspect",
+   "evidence": [
+    "analytics.newscred.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-marketing-ad-retargeting-pixel",
+   "class": "T",
+   "feature": "marketing: ad / retargeting pixel",
+   "role": "marketing: ad / retargeting pixel",
+   "hint": "tags",
+   "evidence": [
+    "js.adsrvr.org",
+    "insight.adsrvr.org",
+    "match.adsrvr.org",
+    "10373687.fls.doubleclick.net",
+    "snap.licdn.com",
+    "ad.doubleclick.net",
+    "googleads.g.doubleclick.net"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-marketing-marketo-munchkin",
+   "class": "T",
+   "feature": "marketing: Marketo Munchkin",
+   "role": "marketing: Marketo Munchkin",
+   "hint": "tags",
+   "evidence": [
+    "munchkin.marketo.net",
+    "367-mrv-360.mktoresp.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-tag-manager-google-tag-manager",
+   "class": "T",
+   "feature": "tag manager: Google Tag Manager",
+   "role": "tag manager: Google Tag Manager",
+   "hint": "tags",
+   "evidence": [
+    "www.googletagmanager.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-cdn-bttrack-com",
+   "class": "T",
+   "feature": "unknown third-party host cdn.bttrack.com",
+   "hint": "inspect",
+   "evidence": [
+    "cdn.bttrack.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-snippet-maze-co",
+   "class": "T",
+   "feature": "unknown third-party host snippet.maze.co",
+   "hint": "inspect",
+   "evidence": [
+    "snippet.maze.co"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-v2-d41-co",
+   "class": "T",
+   "feature": "unknown third-party host v2.d41.co",
+   "hint": "inspect",
+   "evidence": [
+    "v2.d41.co"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-www-google-ch",
+   "class": "T",
+   "feature": "unknown third-party host www.google.ch",
+   "hint": "inspect",
+   "evidence": [
+    "www.google.ch"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-tracking-intentsify-io",
+   "class": "T",
+   "feature": "unknown third-party host tracking.intentsify.io",
+   "hint": "inspect",
+   "evidence": [
+    "tracking.intentsify.io"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-analytics-adobe-analytics-experience-cloud-id-first-party-",
+   "class": "T",
+   "feature": "analytics: Adobe Analytics / Experience Cloud ID (first-party subdomain — needs a CNAME on the new host)",
+   "hint": "tags",
+   "evidence": [
+    "smetrics.synopsys.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-tags-srv-stackadapt-com",
+   "class": "T",
+   "feature": "unknown third-party host tags.srv.stackadapt.com",
+   "hint": "inspect",
+   "evidence": [
+    "tags.srv.stackadapt.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-prompts-maze-co",
+   "class": "T",
+   "feature": "unknown third-party host prompts.maze.co",
+   "hint": "inspect",
+   "evidence": [
+    "prompts.maze.co"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-bzrcdn-openai-com",
+   "class": "T",
+   "feature": "unknown third-party host bzrcdn.openai.com",
+   "hint": "inspect",
+   "evidence": [
+    "bzrcdn.openai.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-a-usbrowserspeed-com",
+   "class": "T",
+   "feature": "unknown third-party host a.usbrowserspeed.com",
+   "hint": "inspect",
+   "evidence": [
+    "a.usbrowserspeed.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-analytics-google-analytics-ads",
+   "class": "T",
+   "feature": "analytics: Google Analytics / Ads",
+   "role": "analytics: Google Analytics / Ads",
+   "hint": "tags",
+   "evidence": [
+    "region1.google-analytics.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-bzr-openai-com",
+   "class": "T",
+   "feature": "unknown third-party host bzr.openai.com",
+   "hint": "inspect",
+   "evidence": [
+    "bzr.openai.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "v-video-brightcove",
+   "class": "V",
+   "feature": "video: Brightcove",
+   "role": "video: Brightcove",
+   "hint": "media",
+   "evidence": [
+    "players.brightcove.net",
+    "edge.api.brightcove.com",
+    "metrics.brightcove.com",
+    "cf-images.us-east-1.prod.boltdns.net",
+    "manifest.prod.boltdns.net",
+    "fastly-signed-us-east-1-prod.brightcovecdn.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "v-video-youtube",
+   "class": "V",
+   "feature": "video: YouTube",
+   "role": "video: YouTube",
+   "hint": "media",
+   "evidence": [
+    "www.youtube.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "v-player-element-div",
+   "class": "V",
+   "feature": "player element <div>",
+   "hint": "media",
+   "evidence": [
+    "?/default/6358098178112",
+    "5748441669001/rka4xWwYG/6358098178112"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "v-player-element-video",
+   "class": "V",
+   "feature": "player element <video>",
+   "hint": "media",
+   "evidence": [
+    "5748441669001/rka4xWwYG/6358098178112"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "v-iframe-without-src-runtime-injected-embed",
+   "class": "V",
+   "feature": "iframe without src (runtime-injected embed)",
+   "hint": "embed-runtime",
+   "evidence": [
+    "1×1",
+    "onetrust-text-resize"
+   ],
+   "pages": [
+    "/"
+   ]
+  }
+ ],
+ "reach": {
+  "pagesWithEvidence": 1,
+  "of": 1,
+  "endpoints": {
+   "GET ka-p.fontawesome.com/releases/v6.5.2/js/pro.min.js": 1,
+   "GET ka-p.fontawesome.com/releases/v6.5.2/svgs/regular/magnifying-glass.svg": 1,
+   "GET ka-p.fontawesome.com/releases/v6.5.2/svgs/regular/arrow-up-right-from-square.svg": 1,
+   "GET ka-p.fontawesome.com/releases/v6.5.2/svgs/regular/chevron-right.svg": 1,
+   "GET ka-p.fontawesome.com/releases/v6.5.2/svgs/solid/play.svg": 1,
+   "GET ka-p.fontawesome.com/releases/v6.5.2/svgs/light/chevron-right.svg": 1,
+   "GET ka-p.fontawesome.com/releases/v6.5.2/svgs/solid/pause.svg": 1,
+   "GET ka-p.fontawesome.com/releases/v6.5.2/svgs/brands/x-twitter.svg": 1,
+   "GET ka-p.fontawesome.com/releases/v6.5.2/svgs/brands/youtube.svg": 1,
+   "GET ka-p.fontawesome.com/releases/v6.5.2/svgs/brands/linkedin-in.svg": 1,
+   "GET ka-p.fontawesome.com/releases/v6.5.2/svgs/brands/instagram.svg": 1,
+   "GET ka-p.fontawesome.com/releases/v6.5.2/svgs/brands/facebook.svg": 1,
+   "GET ka-p.fontawesome.com/releases/v6.5.2/svgs/light/chevron-left.svg": 1,
+   "GET ka-p.fontawesome.com/releases/v6.5.2/svgs/solid/xmark.svg": 1,
+   "POST www.synopsys.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/330e41bb475c/0.6179001999995779:1789989012:KvQU37APQ5RxXUDLEY8MnwZQJB_7lYygLYRvr6MK4Ks/{hash}": 1,
+   "GET www.synopsys.com/bin/cs-info.json": 1,
+   "GET cdn.cookielaw.org/consent/{uuid}/{uuid}.json": 1,
+   "GET geolocation.onetrust.com/cookieconsentpub/v1/geo/location": 1,
+   "GET static.cloud.coveo.com/atomic/v2/lang/en.json": 1,
+   "GET cdn.cookielaw.org/consent/{uuid}/{uuid}/en.json": 1,
+   "GET edge.api.brightcove.com/playback/v1/accounts/{n}/videos/{n}": 1,
+   "GET cdn.cookielaw.org/scripttemplates/6.27.0/assets/otCommonStyles.css": 1,
+   "GET cdn.cookielaw.org/scripttemplates/6.27.0/assets/v2/otPcTab.json": 1,
+   "GET cdn.cookielaw.org/scripttemplates/6.27.0/assets/otCenterRounded.json": 1,
+   "GET manifest.prod.boltdns.net/manifest/v2/hls/v7/clear/avc1_mp4a/{n}/{uuid}/10s/master.m3u8": 1,
+   "GET manifest.prod.boltdns.net/manifest/v2/hls/v7/fmp4/clear/{n}/{uuid}/{uuid}/10s/rendition.m3u8": 1,
+   "GET fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/hls/v7/clear/{n}/{uuid}/{uuid}/init.m4f": 1,
+   "GET fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/hls/v7/clear/{n}/{uuid}/{uuid}/5x/segment0.m4f": 1,
+   "POST www.synopsys.com/cdn-cgi/rum": 1,
+   "POST adobedc.demdex.net/ee/v1/privacy/set-consent": 1,
+   "GET bzrcdn.openai.com/pixel-config/v1/QGy75EpffKaSsF64XSgYj7.json": 1,
+   "POST bzr.openai.com/v1/sdk/events": 1
+  },
+  "searchFormPages": 0,
+  "formPages": 0,
+  "triggerPages": {
+   "vjs-menu-button-popup": 6,
+   "aria-haspopup": 1
+  }
+ }
+}

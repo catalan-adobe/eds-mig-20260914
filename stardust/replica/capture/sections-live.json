@@ -1,0 +1,1006 @@
+{
+  "_provenance": {
+    "writtenBy": "skills/replica/scripts/measure.mjs",
+    "writtenAt": "2026-09-21T12:14:23.128Z",
+    "urls": [
+      "https://www.synopsys.com/"
+    ],
+    "widths": [
+      1440,
+      360
+    ],
+    "selectors": [
+      "#utility-nav-bar",
+      ".sticky-nav",
+      ".main-nav",
+      ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(1)",
+      ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(2)",
+      ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(3)",
+      ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(4)",
+      ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(5)",
+      ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(6)",
+      ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(7)",
+      ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(8)",
+      ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(9)",
+      ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(10)",
+      ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(11)",
+      ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(12)",
+      ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(13)",
+      ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(14)",
+      ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(15)",
+      "footer.site-footer",
+      "#chat-bar",
+      "#floating-icon"
+    ],
+    "props": [
+      "position",
+      "backgroundColor",
+      "paddingTop",
+      "paddingBottom",
+      "marginTop",
+      "marginBottom"
+    ],
+    "allMatches": false,
+    "failed": [],
+    "warnings": []
+  },
+  "widths": [
+    1440,
+    360
+  ],
+  "selectors": [
+    "#utility-nav-bar",
+    ".sticky-nav",
+    ".main-nav",
+    ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(1)",
+    ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(2)",
+    ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(3)",
+    ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(4)",
+    ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(5)",
+    ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(6)",
+    ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(7)",
+    ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(8)",
+    ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(9)",
+    ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(10)",
+    ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(11)",
+    ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(12)",
+    ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(13)",
+    ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(14)",
+    ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(15)",
+    "footer.site-footer",
+    "#chat-bar",
+    "#floating-icon"
+  ],
+  "pages": {
+    "https://www.synopsys.com/": {
+      "360": {
+        "#utility-nav-bar": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "English Language English 日本語 简体中文 繁體中文 …",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".sticky-nav": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 360,
+              "h": 0
+            },
+            "visible": true,
+            "text": "Back",
+            "props": {
+              "position": "sticky",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".main-nav": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 8,
+              "y": 0,
+              "w": 344,
+              "h": 471
+            },
+            "visible": false,
+            "text": "",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(1)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 360,
+              "h": 560
+            },
+            "visible": true,
+            "text": "Introducing Synopsys Physical AI Soluti…",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(2)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 600,
+              "w": 360,
+              "h": 0
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(3)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 640,
+              "w": 360,
+              "h": 200
+            },
+            "visible": true,
+            "text": "Powering the Era of Pervasive Intellige…",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(4)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 840,
+              "w": 360,
+              "h": 1932
+            },
+            "visible": true,
+            "text": "Synopsys.ai Award-winning, Industry Lea…",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(5)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 2812,
+              "w": 360,
+              "h": 30
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(6)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 2842,
+              "w": 360,
+              "h": 2106
+            },
+            "visible": true,
+            "text": "Design the Future Today with Synopsys I…",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(7)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 4988,
+              "w": 360,
+              "h": 30
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(8)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 5018,
+              "w": 360,
+              "h": 218
+            },
+            "visible": true,
+            "text": "Ecosystem Partners",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(9)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 5277,
+              "w": 360,
+              "h": 56
+            },
+            "visible": true,
+            "text": "What's New",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(10)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 5373,
+              "w": 360,
+              "h": 581
+            },
+            "visible": true,
+            "text": "NEWS RELEASE May 28, 2026 Synopsys Adva…",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(11)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 5954,
+              "w": 360,
+              "h": 412
+            },
+            "visible": true,
+            "text": "Support & Services Explore the Synopsys…",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(12)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 6366,
+              "w": 360,
+              "h": 285
+            },
+            "visible": true,
+            "text": "Connect with Us Connect with Us Contact…",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(13)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 6651,
+              "w": 360,
+              "h": 0
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(14)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 6651,
+              "w": 360,
+              "h": 0
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(15)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 6651,
+              "w": 360,
+              "h": 0
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        "footer.site-footer": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 6651,
+              "w": 360,
+              "h": 675
+            },
+            "visible": true,
+            "text": "Company Resources Trending Learn Englis…",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgb(17, 28, 36)",
+              "paddingTop": "40px",
+              "paddingBottom": "40px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        "#chat-bar": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "",
+            "props": {
+              "position": "fixed",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        "#floating-icon": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 286,
+              "y": 826,
+              "w": 54,
+              "h": 54
+            },
+            "visible": true,
+            "text": "Ask a Question",
+            "props": {
+              "position": "fixed",
+              "backgroundColor": "rgb(239, 239, 239)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ]
+      },
+      "1440": {
+        "#utility-nav-bar": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 1440,
+              "h": 53
+            },
+            "visible": true,
+            "text": "English Ask",
+            "props": {
+              "position": "relative",
+              "backgroundColor": "rgb(23, 25, 23)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".sticky-nav": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 53,
+              "w": 1440,
+              "h": 0
+            },
+            "visible": true,
+            "text": "Why Synopsys Solutions Products Support…",
+            "props": {
+              "position": "sticky",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".main-nav": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 346,
+              "y": 57,
+              "w": 615,
+              "h": 72
+            },
+            "visible": true,
+            "text": "Why Synopsys Solutions Products Support…",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "25px",
+              "paddingBottom": "25px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(1)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 53,
+              "w": 1440,
+              "h": 700
+            },
+            "visible": true,
+            "text": "Introducing Synopsys Physical AI Soluti…",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(2)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 783,
+              "w": 1440,
+              "h": 0
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(3)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 843,
+              "w": 1440,
+              "h": 121
+            },
+            "visible": true,
+            "text": "Powering the Era of Pervasive Intellige…",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(4)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 964,
+              "w": 1440,
+              "h": 554
+            },
+            "visible": true,
+            "text": "Synopsys.ai Award-winning, Industry Lea…",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(5)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 1548,
+              "w": 1440,
+              "h": 30
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(6)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 1578,
+              "w": 1440,
+              "h": 1058
+            },
+            "visible": true,
+            "text": "Design the Future Today with Synopsys I…",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(7)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 2666,
+              "w": 1440,
+              "h": 30
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(8)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 2696,
+              "w": 1440,
+              "h": 315
+            },
+            "visible": true,
+            "text": "Ecosystem Partners",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(9)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 3071,
+              "w": 1440,
+              "h": 65
+            },
+            "visible": true,
+            "text": "What's New",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(10)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 3152,
+              "w": 1440,
+              "h": 585
+            },
+            "visible": true,
+            "text": "BLOG July 8, 2026 Securing Physical AI …",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(11)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 3737,
+              "w": 1440,
+              "h": 280
+            },
+            "visible": true,
+            "text": "Support & Services Explore the Synopsys…",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(12)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 4017,
+              "w": 1440,
+              "h": 285
+            },
+            "visible": true,
+            "text": "Connect with Us Connect with Us Contact…",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(13)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 4302,
+              "w": 1440,
+              "h": 0
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(14)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 4302,
+              "w": 1440,
+              "h": 0
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        ".root > .aem-Grid > .synopsysContainer > .aem-Grid > :nth-child(15)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 4302,
+              "w": 1440,
+              "h": 0
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        "footer.site-footer": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 4302,
+              "w": 1440,
+              "h": 575
+            },
+            "visible": true,
+            "text": "Company About Us Careers Corporate Gove…",
+            "props": {
+              "position": "static",
+              "backgroundColor": "rgb(17, 28, 36)",
+              "paddingTop": "0px",
+              "paddingBottom": "40px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        "#chat-bar": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 316,
+              "y": 814,
+              "w": 808,
+              "h": 54
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "fixed",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ],
+        "#floating-icon": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 1366,
+              "y": 796,
+              "w": 54,
+              "h": 54
+            },
+            "visible": false,
+            "text": "",
+            "props": {
+              "position": "fixed",
+              "backgroundColor": "rgb(239, 239, 239)",
+              "paddingTop": "0px",
+              "paddingBottom": "0px",
+              "marginTop": "0px",
+              "marginBottom": "0px"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

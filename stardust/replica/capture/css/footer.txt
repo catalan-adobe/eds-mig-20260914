@@ -1,0 +1,111 @@
+stardust/replica/capture/pagelibs.css: 55 of 4808 rules match /site-footer|links-wrapper|social-icons|copyright|logo-top|logo-bottom|global-footer-dropdown|global-nav-link-select/i
+L976 .site-footer .vert-pad-bottom-md   @media(max-width:730px)
+      padding-top: 10px; padding-bottom: 30px;
+L1102 .site-wrapper,.site-header,.site-footer,.content-section
+      width: 100%; padding: 0; margin: 0 auto; display: block; overflow: hidden;
+L1103 .site-footer,.site-wrapper
+      max-width: 1900px;
+L1475 .component-socialLinks ul.social-icons
+      line-height: 1; margin: 0; padding: 0; list-style-type: none;
+L1476 .component-socialLinks ul.social-icons.align-left
+      text-align: left;
+L1477 .component-socialLinks ul.social-icons.align-center
+      text-align: center;
+L1478 .component-socialLinks ul.social-icons.align-right
+      text-align: right;
+L1479 .component-socialLinks ul.social-icons li
+      display: inline-block;
+L1480 .component-socialLinks ul.social-icons a
+      text-decoration: none; padding: 0 10px 0 10px; display: inline-block;
+L1481 .component-socialLinks ul.social-icons a:first-child
+      padding-left: 0;
+L1482 .component-socialLinks ul.social-icons a:hover
+      -webkit-transition: ease-out .5s; transition: ease-out .5s;
+L1483 .component-socialLinks ul.social-icons a:hover path
+      color: #555;
+L1484 .component-socialLinks ul.social-icons svg
+      -webkit-transition: ease-in .1s; transition: ease-in .1s; font-size: 28px;
+L1485 .component-socialLinks ul.social-icons svg path
+      fill: #555;
+L2492 .site-footer
+      background: #111c24; padding: 0 0 40px 0;
+L2493 .site-footer .container,.site-footer .atomicSearchbox,.site-footer .carousel-holder.image-carousel
+      max-width: 1660px; width: 100%;
+L2494 .site-footer .container,.site-footer .atomicSearchbox,.site-footer .carousel-holder.image-carousel   @media screen and (min-width:992px) and (max-width:1250px)
+      width: auto;
+L2496 .site-footer a
+      color: #FFF; font-size: 14px; font-weight: 300; line-height: 100%;
+L2497 .site-footer a:focus
+      outline: 1px dashed #2e3c4d; outline-offset: 5px; text-decoration: underline;
+L2498 .site-footer a:hover
+      color: #FFF;
+L2499 .site-footer h3
+      color: #FFF; font-size: 18px; margin: 67px 0 22px 0; text-transform: initial; font-weight: 400;
+L2500 .site-footer .links-wrapper ul
+      list-style: none; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; color: #FFF; row-gap: 16px; font-size: 14px; font-weight: 300; line-height: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;
+L2501 .site-footer .global-footer-dropdown
+      text-align: right; margin-top: 67px;
+L2502 .site-footer .global-footer-dropdown .global-nav-link-select
+      -webkit-appearance: none; -moz-appearance: none; appearance: none; height: 40px; color: #111c24; padding: 0 24px 0 48px; border: 0; outline: 0; border-radius: 5px; font-size: 16px; overflow: hidden; text-align: left; width: 145px; font-weight: 400; background-image: url("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0ic3ZnLWlubGluZS…; background-repeat: no-repeat,no-repeat; background-position: 24px center,right 19px center; background-size: 16px,18px;
+L2503 .site-footer .social-icons-wrapper
+      -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; border-top: 1px solid #FFF; padding: 24px 0 0 0; margin: 45px 0 24px 0; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; -ms-grid-row-align: center; align-items: center;
+L2504 .site-footer .social-icons-wrapper ul
+      list-style: none; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-column-gap: 16px; -moz-column-gap: 16px; column-gap: 16px; font-size: 14px; font-weight: 300;
+L2505 .site-footer .social-icons-wrapper ul svg
+      height: 16px; -webkit-transition: all .1s; transition: all .1s; color: #FFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row;
+L2506 .site-footer .social-icons-wrapper ul svg:hover
+      color: #b3b4b3; -webkit-transition: all .2s; transition: all .2s;
+L2507 .site-footer .logo-bottom
+      margin-left: auto;
+L2508 .site-footer .logo-bottom img,.site-footer .logo-bottom svg
+      height: 28px; width: auto;
+L2509 .site-footer .logo-top
+      display: none;
+L2510 .site-footer .copyright
+      color: #FFF; font-size: 14px; font-weight: 300; line-height: 17px; line-height: 100%;
+L2511 .site-footer .copyright a
+      padding: 0 8px;
+L2512 .site-footer .copyright span
+      padding: 0 8px 0 0;
+L2513 .site-footer   @media(max-width:992px)
+      padding: 40px 8px; margin: 0;
+L2514 .site-footer .container,.site-footer .atomicSearchbox,.site-footer .carousel-holder.image-carousel   @media(max-width:992px)
+      padding: 0; width: 100%;
+L2515 .site-footer .container .row,.site-footer .atomicSearchbox .row,.site-footer .carousel-holder.image-carousel .row   @media(max-width:992px)
+      margin: 0;
+L2516 .site-footer .logo-top   @media(max-width:992px)
+      display: block; margin: 0 0 33px 16px;
+L2517 .site-footer .logo-top img   @media(max-width:992px)
+      height: 24px; width: auto;
+L2518 .site-footer .logo-bottom   @media(max-width:992px)
+      display: none;
+L2519 .site-footer .global-footer-dropdown   @media(max-width:992px)
+      margin: 0; text-align: left;
+L2520 .site-footer .links-wrapper   @media(max-width:992px)
+      padding: 0;
+L2521 .site-footer .links-wrapper nav   @media(max-width:992px)
+      width: 100%; text-align: left; border-top: 1px solid #FFF; padding: 32px 16px;
+L2522 .site-footer .links-wrapper nav h3   @media(max-width:992px)
+      margin: 0; font-size: 16px; cursor: pointer;
+L2523 .site-footer .links-wrapper nav h3::before   @media(max-width:992px)
+      content: ' '; background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5v…; position: absolute; right: 16px; width: 8px; height: 12px; background-repeat: no-repeat; background-size: cover; top: 35px;
+L2524 .site-footer .links-wrapper nav ul   @media(max-width:992px)
+      display: none;
+L2525 .site-footer .links-wrapper nav.active ul   @media(max-width:992px)
+      display: block;
+L2526 .site-footer .links-wrapper nav.active ul li   @media(max-width:992px)
+      padding: 0 0 0 16px; margin-top: 16px; font-size: 14px; line-height: 100%;
+L2527 .site-footer .links-wrapper nav.active h3::before   @media(max-width:992px)
+      rotate: 180deg;
+L2528 .site-footer .col-xs-12   @media(max-width:992px)
+      padding: 0;
+L2529 .site-footer .social-icons-wrapper   @media(max-width:992px)
+      border: 0; margin: 38px 16px 40px 16px; padding: 0;
+L2530 .site-footer .copyright   @media(max-width:992px)
+      margin: 0 16px; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; row-gap: 16px;
+L3177 .site-footer .cn-qrcode
+      display: none; max-width: 152px; width: 100%; float: right; margin-top: 45px;
+L3178 .site-footer .cn-qrcode   @media(min-width:992px)
+      display: block;
+L5292 .template-form .site-footer ul li a
+      font-size: 18px; text-transform: uppercase;

@@ -1,3 +1,5 @@
+/* stylelint-disable no-descending-specificity -- variant-scoped block rules are ordered by variant, not by specificity */
+
 /*
  * Copyright 2020 Adobe. All rights reserved.
  * This file is licensed to you under the Apache License, Version 2.0 (the "License");
@@ -10,64 +12,85 @@
  * governing permissions and limitations under the License.
  */
 
+/* Brand tokens lifted from www.synopsys.com (stardust/replica capture — DESIGN.json) */
 :root {
   /* colors */
-  --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  --background-color: #fff;
+  --light-color: #f7f7fa;
+  --dark-color: #171917;
+  --text-color: #111c24;
+  --link-color: #316aca;
+  --link-hover-color: #1d4fa3;
+  --purple: #7e45af;
+  --purple-deep: #5a2a82;
+  --grey-text: #555;
+  --grey-rule: #c1c2c1;
+  --footer-color: #111c24;
+  --purple-gradient: linear-gradient(107.7deg, #2d1541 0, #5a2a82 50%, #7e45af 100%);
+  --black-gradient: linear-gradient(107.7deg, #000 0, #191c20 35%, #646e81 100%);
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --body-font-family: roboto, roboto-fallback, arial, sans-serif;
+  --heading-font-family: roboto, roboto-fallback, arial, sans-serif;
 
   /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 19px;
-  --body-font-size-xs: 17px;
+  --body-font-size-m: 15px;
+  --body-font-size-s: 16px;
+  --body-font-size-xs: 14px;
 
   /* heading sizes */
-  --heading-font-size-xxl: 55px;
-  --heading-font-size-xl: 44px;
-  --heading-font-size-l: 34px;
-  --heading-font-size-m: 27px;
-  --heading-font-size-s: 24px;
-  --heading-font-size-xs: 22px;
+  --heading-font-size-xxl: 20px;
+  --heading-font-size-xl: 24px;
+  --heading-font-size-l: 20px;
+  --heading-font-size-m: 20px;
+  --heading-font-size-s: 16px;
+  --heading-font-size-xs: 14px;
 
-  /* nav height */
-  --nav-height: 64px;
+  /* layout */
+  --container-width: 1170px;
+  --gutter: 15px;
+
+  /* nav: only the utility bar (53px, desktop) is in flow; the nav row floats over the hero (#108) */
+  --nav-height: 0;
 }
 
 /* fallback fonts */
-@font-face {
-  font-family: roboto-condensed-fallback;
-  size-adjust: 88.82%;
-  src: local('Arial');
-}
-
 @font-face {
   font-family: roboto-fallback;
   size-adjust: 99.529%;
   src: local('Arial');
 }
 
-@media (width >= 900px) {
+@media (width >= 730px) {
   :root {
-    /* body sizes */
-    --body-font-size-m: 18px;
-    --body-font-size-s: 16px;
-    --body-font-size-xs: 14px;
-
-    /* heading sizes */
-    --heading-font-size-xxl: 45px;
-    --heading-font-size-xl: 36px;
-    --heading-font-size-l: 28px;
-    --heading-font-size-m: 22px;
-    --heading-font-size-s: 20px;
-    --heading-font-size-xs: 18px;
+    --body-font-size-m: 14px;
+    --heading-font-size-xxl: 32px;
+    --heading-font-size-xl: 32px;
   }
+}
+
+@media (width >= 1130px) {
+  :root {
+    --nav-height: 53px;
+  }
+}
+
+@media (width >= 1200px) {
+  :root {
+    --body-font-size-m: 18px;
+  }
+}
+
+@media (width >= 1400px) {
+  :root {
+    --heading-font-size-xxl: 48px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
@@ -77,7 +100,9 @@ body {
   color: var(--text-color);
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
+  font-weight: 300;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 body.appear {
@@ -85,7 +110,10 @@ body.appear {
 }
 
 header {
+  position: relative;
+  z-index: 1000;
   height: var(--nav-height);
+  background: var(--dark-color);
 }
 
 header .header,
@@ -104,11 +132,11 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
+  margin-top: 0;
+  margin-bottom: 0;
   font-family: var(--heading-font-family);
-  font-weight: 600;
-  line-height: 1.25;
+  font-weight: 300;
+  line-height: 1.1;
   scroll-margin: 40px;
 }
 
@@ -125,8 +153,8 @@ ol,
 ul,
 pre,
 blockquote {
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 code,
@@ -165,9 +193,12 @@ a:hover {
   text-decoration: underline;
 }
 
-/* buttons */
+/* buttons — synopsys .component-button: 40px, 0 24px, 2px border, 5px radius, 16px/400 */
 p.button-wrapper {
-  margin: 12px 0;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
 }
 
 a.button:any-link,
@@ -176,19 +207,31 @@ button.button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  min-height: 40px;
   max-width: 100%;
   margin: 0;
-  border: 2px solid transparent;
-  border-radius: 2.4em;
-  padding: 0.5em 1.2em;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 0 24px;
   font: inherit;
-  font-weight: 500;
-  line-height: 1.25;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+a.button::after,
+button.button::after {
+  content: "";
+  width: 9px;
+  height: 16px;
+  margin-left: 8px;
+  background: currentcolor;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3Cpath d='M305 239c9.4 9.4 9.4 24.6 0 33.9L113 465c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l175-175L79 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L305 239z'/%3E%3C/svg%3E") center / contain no-repeat;
 }
 
 a.button[aria-disabled="true"],
@@ -199,83 +242,106 @@ button.button:disabled {
 
 a.button.primary,
 button.button.primary {
-  border-color: var(--text-color);
-  background-color: var(--text-color);
-  color: var(--background-color);
+  border-color: #fff;
+  background-color: #fff;
+  color: var(--text-color);
 }
 
 a.button.primary:hover,
 a.button.primary:focus-visible,
 button.button.primary:hover,
 button.button.primary:focus-visible {
-  border-color: var(--dark-color);
-  background-color: var(--dark-color);
-  color: var(--light-color);
-}
-
-a.button.primary[aria-disabled="true"],
-a.button.primary[aria-disabled="true"]:hover,
-a.button.primary[aria-disabled="true"]:focus-visible,
-button.button.primary:disabled,
-button.button.primary:disabled:hover,
-button.button.primary:disabled:focus-visible {
-  background-color: var(--light-color);
-  border-color: var(--light-color);
-  color: var(--dark-color);
+  box-shadow: inset 0 0 0 99999px rgb(0 0 0 / 20%);
+  color: var(--text-color);
+  text-decoration: none;
 }
 
 a.button.secondary,
 button.button.secondary {
-  border-color: var(--text-color);
+  border-color: #fff;
   background-color: transparent;
-  color: var(--text-color);
+  color: #fff;
 }
 
 a.button.secondary:hover,
 a.button.secondary:focus-visible,
 button.button.secondary:hover,
 button.button.secondary:focus-visible {
-  border-color: var(--dark-color);
-  background-color: var(--light-color);
-  color: var(--dark-color);
+  background-color: rgb(255 255 255 / 15%);
+  color: #fff;
+  text-decoration: none;
 }
 
-a.button.secondary[aria-disabled="true"],
-a.button.secondary[aria-disabled="true"]:hover,
-a.button.secondary[aria-disabled="true"]:focus-visible,
-button.button.secondary:disabled,
-button.button.secondary:disabled:hover,
-button.button.secondary:disabled:focus-visible {
-  background-color: var(--light-color);
-  border-color: var(--light-color);
-  color: var(--dark-color);
+/* on light surfaces the outline button is ink */
+main .section:not(.cta-band, .carousel-container) a.button.secondary {
+  border-color: var(--text-color);
+  color: var(--text-color);
 }
 
-/* high-impact call-to-action */
 a.button.accent,
 button.button.accent {
-  border-color: var(--link-color);
-  background-color: var(--link-color);
-  color: var(--background-color);
+  border-color: var(--purple);
+  background-color: var(--purple);
+  color: #fff;
 }
 
 a.button.accent:hover,
 a.button.accent:focus-visible,
 button.button.accent:hover,
 button.button.accent:focus-visible {
-  border-color: var(--link-hover-color);
-  background-color: var(--link-hover-color);
+  box-shadow: inset 0 0 0 99999px rgb(0 0 0 / 20%);
+  color: #fff;
+  text-decoration: none;
 }
 
-a.button.accent[aria-disabled="true"],
-a.button.accent[aria-disabled="true"]:hover,
-a.button.accent[aria-disabled="true"]:focus-visible,
-button.button.accent:disabled,
-button.button.accent:disabled:hover,
-button.button.accent:disabled:focus-visible {
-  background-color: var(--light-color);
-  border-color: var(--light-color);
-  color: var(--dark-color);
+@media (width <= 729px) {
+  main .section a.button:any-link {
+    width: 260px;
+  }
+}
+
+/* Experience Workspace edit mode: repaint CTAs from their authored marks */
+.prosemirror-editor p > :is(strong, em) > a:any-link,
+.prosemirror-editor p > a:any-link:has(> :is(strong, em):only-child) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 24px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.prosemirror-editor p > a:any-link > :is(strong, em) {
+  font-weight: inherit;
+  font-style: inherit;
+}
+
+.prosemirror-editor p > strong > a:any-link,
+.prosemirror-editor p > a:any-link:has(> strong:only-child) {
+  background: #fff;
+  color: var(--text-color);
+}
+
+.prosemirror-editor p > em > a:any-link,
+.prosemirror-editor p > a:any-link:has(> em:only-child) {
+  background: transparent;
+  color: #fff;
+}
+
+a .prosemirror-editor a:any-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 main img {
@@ -295,31 +361,139 @@ main img {
   width: 100%;
 }
 
-/* sections */
+/* sections — synopsys .background-component rhythm: 40px top on mobile; 15/30/60 desktop */
 main > .section {
-  margin: 40px 0;
+  margin: 40px 0 0;
 }
 
 main > .section > div {
-  max-width: 1200px;
+  max-width: var(--container-width);
   margin: auto;
-  padding: 0 24px;
+  padding: 0 var(--gutter);
 }
 
 main > .section:first-of-type {
   margin-top: 0;
 }
 
-@media (width >= 900px) {
-  main > .section > div {
-    padding: 0 32px;
+main .section:empty {
+  display: none;
+}
+
+/* the metadata block leaves an empty first section: the carousel is then the first painted one */
+main > .section:empty + .section {
+  margin-top: 0;
+}
+
+/* default-content section titles (synopsys .component-textcomp .title, centered) */
+main .section .default-content-wrapper h2 {
+  color: var(--text-color);
+  font-size: var(--heading-font-size-xl);
+  font-weight: 300;
+  line-height: 1.1;
+  text-align: center;
+}
+
+main .section .default-content-wrapper h2 + p {
+  margin-top: 16px;
+}
+
+main .section .default-content-wrapper p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+@media (width >= 730px) {
+  main .section .default-content-wrapper h2 + p {
+    margin-top: 24px;
   }
 }
 
-/* section metadata */
-main .section.light,
-main .section.highlight {
+/* section metadata: style values used by default-content sections */
+
+/* statement — "Powering the Era …": 60px top (40 mobile), 30px bottom, 20px lede */
+main .section.statement {
+  margin-top: 40px;
+  padding-bottom: 30px;
+}
+
+main .section.statement .default-content-wrapper p {
+  margin-bottom: 24px;
+}
+
+@media (width >= 730px) {
+  main .section.statement {
+    margin-top: 90px;
+  }
+
+  main .section.statement .default-content-wrapper p {
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+}
+
+/* light — grey ground bands (partners, support) */
+main .section.light {
+  margin-top: 30px;
+  padding: 40px 0 0;
   background-color: var(--light-color);
-  margin: 0;
-  padding: 40px 0;
+}
+
+main .section.light.columns-container {
+  padding-bottom: 60px;
+}
+
+@media (width >= 730px) {
+  main .section.light {
+    padding-top: 60px;
+  }
+}
+
+/* cta-band — "Connect with Us": purple gradient, 285px, centered white text + white button */
+main .section.cta-band {
+  display: flex;
+  align-items: center;
+  min-height: 285px;
+  margin-top: 0;
+  padding: 0;
+  background-image: var(--purple-gradient);
+  color: #fff;
+  text-align: center;
+}
+
+main .section.cta-band > div {
+  width: 100%;
+}
+
+main .section.cta-band .default-content-wrapper h2 {
+  color: #fff;
+  font-size: 19.2px;
+  font-weight: 800;
+  line-height: 1.75;
+}
+
+main .section.cta-band .default-content-wrapper p {
+  margin: 24px 0 0;
+}
+
+main .section.cta-band .default-content-wrapper p.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@media (width >= 730px) {
+  main .section.cta-band .default-content-wrapper h2 {
+    font-size: 38.4px;
+    line-height: 1;
+  }
+
+  main .section.cta-band .default-content-wrapper p {
+    margin-top: 56px;
+  }
+}
+
+/* on-dark edit-mode repaint — must stay LAST */
+main .section.cta-band .prosemirror-editor p > em > a:any-link {
+  color: #fff;
 }

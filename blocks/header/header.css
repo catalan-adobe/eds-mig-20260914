@@ -1,272 +1,400 @@
-/* header and nav layout */
-header .nav-wrapper {
-  background-color: var(--background-color);
-  width: 100%;
-  z-index: 2;
-  position: fixed;
+/* stylelint-disable no-descending-specificity -- variant-scoped block rules are ordered by variant, not by specificity */
+
+/* header — synopsys.com chrome. Values lifted from synopsys-pagelibs.css / computed styles
+   (stardust/replica/capture/m-header.json). Overlay chrome: nothing in flow (#108). */
+
+header .header {
+  --nav-top: 53px;
+
+  color: #fff;
 }
 
-header nav {
-  box-sizing: border-box;
-  display: grid;
-  grid-template:
-    'hamburger brand tools' var(--nav-height)
-    'sections sections sections' 1fr / auto 1fr auto;
+/* utility bar: 53px, #171917, desktop only */
+header .utility-bar {
+  display: none;
   align-items: center;
-  gap: 0 24px;
-  margin: auto;
-  max-width: 1248px;
-  height: var(--nav-height);
+  height: 53px;
   padding: 0 24px;
-  font-family: var(--body-font-family);
+  background: var(--dark-color);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
 }
 
-header nav[aria-expanded='true'] {
-  grid-template:
-    'hamburger brand' var(--nav-height)
-    'sections sections' 1fr
-    'tools tools' var(--nav-height) / auto 1fr;
-  overflow-y: auto;
-  min-height: 100dvh;
-}
-
-@media (width >= 900px) {
-  header .nav-wrapper {
-    position: relative;
-  }
-
-  header nav {
-    display: flex;
-    justify-content: space-between;
-    gap: 0 32px;
-    max-width: 1264px;
-    padding: 0 32px;
-  }
-
-  header nav[aria-expanded='true'] {
-    min-height: 0;
-    overflow: visible;
-  }
-}
-
-header nav p {
+header .utility-bar .default-content-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
   margin: 0;
-  line-height: 1;
+  padding: 0;
 }
 
-header nav a:any-link {
-  color: currentcolor;
+header .utility-bar p {
+  display: flex;
+  align-items: center;
+  margin: 0;
 }
 
-/* hamburger */
-header nav .nav-hamburger {
-  grid-area: hamburger;
-  height: 22px;
+/* logos row: synopsys | ansys with a 1px rule between */
+header .utility-bar p:has(.icon-synopsys-logo) {
+  gap: 10px;
+}
+
+header .utility-bar p:has(.icon-synopsys-logo) a {
   display: flex;
   align-items: center;
 }
 
-header nav .nav-hamburger button {
-  height: 22px;
-  margin: 0;
-  border: 0;
-  border-radius: 0;
-  padding: 0;
-  background-color: var(--background-color);
-  color: inherit;
-  overflow: initial;
-  text-overflow: initial;
-  white-space: initial;
-}
-
-header nav .nav-hamburger-icon,
-header nav .nav-hamburger-icon::before,
-header nav .nav-hamburger-icon::after {
-  box-sizing: border-box;
-  display: block;
+header .utility-bar p:has(.icon-synopsys-logo) a + a {
   position: relative;
-  width: 20px;
+  margin-left: 10px;
 }
 
-header nav .nav-hamburger-icon::before,
-header nav .nav-hamburger-icon::after {
-  content: '';
+header .utility-bar p:has(.icon-synopsys-logo) a + a::before {
+  content: "";
   position: absolute;
+  left: -10px;
+  width: 1px;
+  height: 14px;
+  background: #5f625f;
+}
+
+header .utility-bar .icon {
+  display: block;
+  width: auto;
+  height: 16px;
   background: currentcolor;
 }
 
-header nav[aria-expanded='false'] .nav-hamburger-icon,
-header nav[aria-expanded='false'] .nav-hamburger-icon::before,
-header nav[aria-expanded='false'] .nav-hamburger-icon::after {
-  height: 2px;
-  border-radius: 2px;
+header .utility-bar .icon img {
+  display: none;
+}
+
+header .utility-bar .icon-synopsys-logo {
+  width: 73.5px;
+  mask: url("/icons/synopsys-logo.svg") center / contain no-repeat;
+}
+
+header .utility-bar .icon-ansys-logo {
+  width: 51px;
+  mask: url("/icons/ansys-logo.svg") center / contain no-repeat;
+}
+
+/* language + Ask pills (non-functional chrome; owner decision — dynamic-features.md) */
+header .utility-bar p:nth-of-type(2) {
+  margin-left: auto;
+  gap: 12px;
+  min-height: 36px;
+  padding: 0 14px;
+  border: 2px solid transparent;
+  border-radius: 9999px;
+  line-height: 1;
+}
+
+header .utility-bar p:nth-of-type(2)::before {
+  content: "";
+  width: 16px;
+  height: 16px;
   background: currentcolor;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M256 0a256 256 0 1 0 0 512 256 256 0 1 0 0-512zm0 32c20 0 45 31 62 82 5 15 9 31 12 48H182c3-17 7-33 12-48 17-51 42-82 62-82zm-98 47a353 353 0 0 0-21 83H67a225 225 0 0 1 91-83zm196 0a225 225 0 0 1 91 83h-70a353 353 0 0 0-21-83zM55 194h77a532 532 0 0 0 0 124H55a224 224 0 0 1 0-124zm109 0h184a500 500 0 0 1 0 124H164a500 500 0 0 1 0-124zm216 0h77a224 224 0 0 1 0 124h-77a532 532 0 0 0 0-124zM67 350h70a353 353 0 0 0 21 83 225 225 0 0 1-91-83zm115 0h148c-3 17-7 33-12 48-17 51-42 82-62 82s-45-31-62-82c-5-15-9-31-12-48zm180 0h70a225 225 0 0 1-91 83 353 353 0 0 0 21-83z'/%3E%3C/svg%3E") center / contain no-repeat;
 }
 
-header nav[aria-expanded='false'] .nav-hamburger-icon::before {
-  top: -6px;
+header .utility-bar p:nth-of-type(2)::after {
+  content: "";
+  width: 10px;
+  height: 6px;
+  background: currentcolor;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23000' stroke-width='1.5' fill='none'/%3E%3C/svg%3E") center no-repeat;
 }
 
-header nav[aria-expanded='false'] .nav-hamburger-icon::after {
-  top: 6px;
+header .utility-bar p:nth-of-type(3) {
+  position: relative;
+  gap: 8px;
+  min-height: 36px;
+  margin-left: 10px;
+  padding: 0 12px;
+  border-radius: 9999px;
+  overflow: hidden;
 }
 
-header nav[aria-expanded='true'] .nav-hamburger-icon {
-  height: 22px;
+header .utility-bar p:nth-of-type(3)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: inherit;
+  background: linear-gradient(270deg, #fdb71a 0, #ab714e 22.6%, #5a2a82 80.77%);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
 }
 
-header nav[aria-expanded='true'] .nav-hamburger-icon::before,
-header nav[aria-expanded='true'] .nav-hamburger-icon::after {
-  top: 3px;
-  left: 1px;
-  transform: rotate(45deg);
-  transform-origin: 2px 1px;
-  width: 24px;
-  height: 2px;
-  border-radius: 2px;
+header .utility-bar p:nth-of-type(3)::after {
+  content: "";
+  order: -1;
+  width: 16px;
+  height: 16px;
+  background: currentcolor;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2l2.2 6.8L21 11l-6.8 2.2L12 20l-2.2-6.8L3 11l6.8-2.2z'/%3E%3C/svg%3E") center / contain no-repeat;
 }
 
-header nav[aria-expanded='true'] .nav-hamburger-icon::after {
-  top: unset;
-  bottom: 3px;
-  transform: rotate(-45deg);
+/* nav row: 80px transparent bar over the hero, frosted once scrolled */
+header .nav-wrapper {
+  position: fixed;
+  top: var(--nav-top);
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  width: 100%;
+  max-width: 1900px;
+  margin: 0 auto;
+  background: transparent;
+  box-shadow: none;
+  transition: all 0.25s;
 }
 
-@media (width >= 900px) {
-  header nav .nav-hamburger {
-    display: none;
-    visibility: hidden;
-  }
+header nav#nav.overlapping {
+  background-color: rgb(255 255 255 / 80%);
+  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+  backdrop-filter: blur(4px);
+  color: var(--text-color);
+}
+
+header nav#nav {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  color: #fff;
+}
+
+header nav#nav .default-content-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+header nav#nav p,
+header nav#nav ul {
+  margin: 0;
 }
 
 /* brand */
 header .nav-brand {
-  grid-area: brand;
-  flex-basis: 128px;
-  font-size: var(--heading-font-size-s);
-  font-weight: 700;
-  line-height: 1;
+  margin-right: 40px;
 }
 
-header nav .nav-brand img {
-  width: 128px;
-  height: auto;
+header .nav-brand p {
+  display: flex;
 }
 
-/* sections */
-header nav .nav-sections {
-  grid-area: sections;
-  flex: 1 1 auto;
-  display: none;
-  visibility: hidden;
-}
-
-header nav[aria-expanded='true'] .nav-sections {
+header .nav-brand .icon {
   display: block;
-  visibility: visible;
-  align-self: start;
+  width: 156px;
+  height: 34px;
+  background: currentcolor;
+  mask: url("/icons/synopsys-logo.svg") center / contain no-repeat;
 }
 
-header nav .nav-sections ul {
+header nav#nav.overlapping .nav-brand .icon {
+  background: var(--purple-deep);
+}
+
+header .nav-brand .icon img {
+  display: none;
+}
+
+/* nav items */
+header .nav-sections {
+  display: none;
+  padding: 25px 0;
+}
+
+header .nav-sections ul {
+  display: flex;
+  gap: 24px;
+  padding: 0;
   list-style: none;
-  padding-left: 0;
-  font-size: var(--body-font-size-s);
-}
-
-header nav .nav-sections ul > li {
-  font-weight: 500;
-}
-
-header nav .nav-sections ul > li > ul {
-  margin-top: 0;
-}
-
-header nav .nav-sections ul > li > ul > li {
+  font-size: 16px;
   font-weight: 400;
+  line-height: 1.4;
 }
 
-@media (width >= 900px) {
-  header nav .nav-sections {
+header .nav-sections li {
+  cursor: pointer;
+}
+
+header .nav-sections li::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 12px;
+  margin-left: 8px;
+  background: currentcolor;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3Cpath d='M305 239c9.4 9.4 9.4 24.6 0 33.9L113 465c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l175-175L79 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L305 239z'/%3E%3C/svg%3E") center / contain no-repeat;
+  rotate: 90deg;
+}
+
+/* tools: search icon + Contact Sales */
+header .nav-tools {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  min-height: 70px;
+  margin-left: auto;
+}
+
+header .nav-tools .default-content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+header .nav-tools .icon-search {
+  display: none;
+  width: 16px;
+  height: 20px;
+  margin: 0 6px;
+  background: currentcolor;
+  mask: url("/icons/search.svg") center / 16px 16px no-repeat;
+}
+
+header .nav-tools .icon img {
+  display: none;
+}
+
+header .nav-tools a.button:any-link {
+  display: none;
+  border: 0;
+  background: #fff;
+  color: var(--text-color);
+}
+
+header .nav-tools a.button::after {
+  display: none;
+}
+
+header nav#nav.overlapping .nav-tools a.button:any-link {
+  background: var(--purple);
+  color: #fff;
+}
+
+/* hamburger (mobile): 32×24 grey pill */
+header .nav-hamburger {
+  margin-left: auto;
+}
+
+header .nav-hamburger button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  border-radius: 5px;
+  background: rgb(196 196 196 / 80%);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+header .nav-hamburger-icon {
+  display: block;
+  width: 14px;
+  height: 16px;
+  background: currentcolor;
+  mask: url("/icons/menu.svg") center / contain no-repeat;
+}
+
+header nav[aria-expanded="true"] .nav-hamburger-icon {
+  width: 10px;
+  height: 10px;
+  mask: url("/icons/close.svg") center / contain no-repeat;
+}
+
+@media (width <= 1129px) {
+  header nav#nav {
+    height: 70px;
+    padding: 0 24px;
+  }
+
+  header .nav-brand {
+    margin-right: 0;
+  }
+
+  header .nav-brand .icon {
+    width: 110px;
+    height: 24px;
+  }
+
+  header .nav-tools {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+  header .nav-tools .default-content-wrapper {
+    gap: 10px;
+  }
+
+  header nav[aria-expanded="true"] {
+    background: #fff;
+    color: var(--text-color);
+  }
+
+  header nav[aria-expanded="true"] .nav-brand .icon {
+    background: var(--purple-deep);
+  }
+
+  header nav[aria-expanded="true"] .nav-sections {
     display: block;
-    visibility: visible;
-    white-space: nowrap;
+    position: fixed;
+    inset: 70px 8px 0;
+    padding: 0;
+    background: #fff;
+    color: var(--text-color);
+    overflow-y: auto;
   }
 
-  header nav[aria-expanded='true'] .nav-sections {
-    align-self: unset;
+  header nav[aria-expanded="true"] .nav-sections ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 0 0 8px;
+    border-top: 1px solid var(--grey-rule);
+    border-bottom: 1px solid var(--grey-rule);
   }
 
-  header nav .nav-sections .nav-drop {
-    position: relative;
-    padding-right: 16px;
-    cursor: pointer;
-  }
-
-  header nav .nav-sections .nav-drop::after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 0.5em;
-    right: 2px;
-    transform: rotate(135deg);
-    width: 6px;
-    height: 6px;
-    border: 2px solid currentcolor;
-    border-radius: 0 1px 0 0;
-    border-width: 2px 2px 0 0;
-  }
-
-  header nav .nav-sections .nav-drop[aria-expanded='true']::after {
-    top: unset;
-    bottom: 0.5em;
-    transform: rotate(315deg);
-  }
-
-  header nav .nav-sections ul {
+  header nav[aria-expanded="true"] .nav-sections li {
     display: flex;
-    gap: 24px;
-    margin: 0;
+    align-items: center;
+    padding: 24px;
+    border-bottom: 1px solid #f4f4fa;
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li {
-    flex: 0 1 auto;
-    position: relative;
-  }
-
-  header nav .nav-sections .default-content-wrapper > ul > li > ul {
-    display: none;
-    position: relative;
-  }
-
-  header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul {
-    display: block;
-    position: absolute;
-    left: -24px;
-    width: 200px;
-    top: 150%;
-    padding: 16px;
-    background-color: var(--light-color);
-    white-space: initial;
-  }
-
-  header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
-    content: '';
-    position: absolute;
-    top: -8px;
-    left: 16px;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid var(--light-color);
-  }
-
-  header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
-    padding: 8px 0;
+  header nav[aria-expanded="true"] .nav-sections li::after {
+    margin-left: auto;
+    rotate: 0deg;
   }
 }
 
-/* tools */
-header nav .nav-tools {
-  grid-area: tools;
+@media (width >= 1130px) {
+  header .utility-bar {
+    display: flex;
+  }
+
+  header .nav-sections {
+    display: block;
+  }
+
+  header .nav-tools .icon-search {
+    display: block;
+  }
+
+  header .nav-tools a.button:any-link {
+    display: inline-flex;
+  }
+
+  header .nav-hamburger {
+    display: none;
+  }
 }

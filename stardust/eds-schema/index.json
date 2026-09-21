@@ -1,0 +1,947 @@
+{
+ "source": "http://localhost:8793/index-proposed.html",
+ "width": 1280,
+ "profile": "generic",
+ "sections": [
+  {
+   "section": "cmp-carousel",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Introducing Synopsys Physical AI Solutions"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Introducing Synopsys"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Physical AI Solutions"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "Accelerate Physical AI development with trusted simulation"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Learn More",
+     "href": "/ai/physical-ai.html"
+    },
+    {
+     "role": "heading",
+     "order": 5,
+     "text": "Synopsys Multiphysics Fusion Solutions Available Now"
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "Synopsys Multiphysics Fusion Solutions Available Now"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "Market Leaders Including Cisco, MediaTek, NVIDIA, and Samsung Foundry Demonstrate Measurable Impact, Advancing the Shift from Overdesign to Co-design"
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Learn More",
+     "href": "/solutions/multiphysics-fusion.html"
+    },
+    {
+     "role": "heading",
+     "order": 9,
+     "text": "Introducing Hardware-Assisted Verification for the AI Era"
+    },
+    {
+     "role": "body",
+     "order": 10,
+     "text": "Introducing Hardware-Assisted Verification"
+    },
+    {
+     "role": "body",
+     "order": 11,
+     "text": "for the AI Era"
+    },
+    {
+     "role": "body",
+     "order": 12,
+     "text": "New Hardware Platforms and Capabilities"
+    },
+    {
+     "role": "cta",
+     "order": 13,
+     "text": "Press Release",
+     "href": "https://news.synopsys.com/2026-03-11-Synopsys-Introduces-Software-Defined-Hardware-Assisted-Verification-for-the-AI-Era"
+    },
+    {
+     "role": "cta",
+     "order": 14,
+     "text": "Learn More",
+     "href": "/verification/emulation-prototyping.html"
+    },
+    {
+     "role": "heading",
+     "order": 15,
+     "text": "Synopsys Electronics Digital Twin Platform"
+    },
+    {
+     "role": "body",
+     "order": 16,
+     "text": "Synopsys"
+    },
+    {
+     "role": "body",
+     "order": 17,
+     "text": "Electronics"
+    },
+    {
+     "role": "body",
+     "order": 18,
+     "text": "Digital Twin Platform"
+    },
+    {
+     "role": "body",
+     "order": 19,
+     "text": "Accelerate SDV Development"
+    },
+    {
+     "role": "cta",
+     "order": 20,
+     "text": "Press Release",
+     "href": "https://news.synopsys.com/2026-03-10-Synopsys-Launches-Electronics-Digital-Twin-Platform"
+    },
+    {
+     "role": "cta",
+     "order": 21,
+     "text": "Learn More",
+     "href": "/solutions/electronics-digital-twin.html"
+    },
+    {
+     "role": "heading",
+     "order": 22,
+     "text": "NVIDIA and Synopsys Announce Strategic Partnership"
+    },
+    {
+     "role": "body",
+     "order": 23,
+     "text": "NVIDIA and Synopsys Announce Strategic Partnership"
+    },
+    {
+     "role": "cta",
+     "order": 24,
+     "text": "Read Press Release",
+     "href": "https://news.synopsys.com/2025-12-01-NVIDIA-and-Synopsys-Announce-Strategic-Partnership"
+    },
+    {
+     "role": "cta",
+     "order": 25,
+     "text": "Learn More",
+     "href": "/partners/nvidia.html"
+    },
+    {
+     "role": "body",
+     "order": 26,
+     "text": "Introducing Synopsys Physical AI Solutions"
+    },
+    {
+     "role": "body",
+     "order": 27,
+     "text": "Synopsys Multiphysics Fusion Solutions Available Now"
+    },
+    {
+     "role": "body",
+     "order": 28,
+     "text": "Introducing HAV for the AI Era"
+    },
+    {
+     "role": "body",
+     "order": 29,
+     "text": "Synopsys Electronics Digital Twin Platform"
+    },
+    {
+     "role": "body",
+     "order": 30,
+     "text": "NVIDIA and Synopsys Announce Strategic Partnership"
+    }
+   ],
+   "imgCount": 10,
+   "editableTexts": 17,
+   "repeats": [
+    {
+     "unitSelector": "DIV.cmp-carousel__item",
+     "count": 5,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 2,
+      "textRuns": 5
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "LI.",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "component-textcomp",
+   "items": [],
+   "imgCount": 0,
+   "editableTexts": 0,
+   "repeats": []
+  },
+  {
+   "section": "component-textcomp",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Powering the Era of Pervasive Intelligence from Silicon to Systems"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Supercharge Productivity • Conquer Complexity • Accelerate Time-to-Market"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 2,
+   "repeats": []
+  },
+  {
+   "section": "component-column",
+   "items": [],
+   "imgCount": 4,
+   "editableTexts": 4,
+   "repeats": [
+    {
+     "unitSelector": "DIV.col-xs-12",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 1,
+      "textRuns": 3
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "component-textcomp",
+   "items": [],
+   "imgCount": 0,
+   "editableTexts": 0,
+   "repeats": []
+  },
+  {
+   "section": "component-column",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Design the Future Today with Synopsys"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "Industry"
+    },
+    {
+     "role": "heading",
+     "order": 2,
+     "text": "Technology"
+    }
+   ],
+   "imgCount": 12,
+   "editableTexts": 3,
+   "repeats": [
+    {
+     "unitSelector": "DIV.col-xs-12",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 6,
+      "textRuns": 13
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.keyBenefits",
+     "count": 6,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 1,
+      "textRuns": 2
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.keyBenefits",
+     "count": 6,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 1,
+      "textRuns": 2
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "component-textcomp",
+   "items": [],
+   "imgCount": 0,
+   "editableTexts": 0,
+   "repeats": []
+  },
+  {
+   "section": "component-column",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Ecosystem Partners"
+    }
+   ],
+   "imgCount": 25,
+   "editableTexts": 1,
+   "repeats": [
+    {
+     "unitSelector": "DIV.slick-slide",
+     "count": 25,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 1,
+      "textRuns": 0
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "component-textcomp",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "What's New"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 1,
+   "repeats": []
+  },
+  {
+   "section": "cmp-carousel",
+   "items": [
+    {
+     "role": "eyebrow",
+     "order": 0,
+     "text": "Blog"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "July 8, 2026"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Securing Physical AI Systems for Safe Deployment"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Learn more",
+     "href": "/blogs/chip-design/securing-physical-ai-systems.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 4,
+     "text": "News Release"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "June 17, 2026"
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "Synopsys Announces Availability of the First Wave of Multiphysics Fusion Solutions"
+    },
+    {
+     "role": "cta",
+     "order": 7,
+     "text": "Learn more",
+     "href": "https://news.synopsys.com/2026-06-17-Synopsys-Announces-Availability-of-the-First-Wave-of-Multiphysics-Fusion-Solutions"
+    },
+    {
+     "role": "eyebrow",
+     "order": 8,
+     "text": "News Release"
+    },
+    {
+     "role": "body",
+     "order": 9,
+     "text": "May 28, 2026"
+    },
+    {
+     "role": "body",
+     "order": 10,
+     "text": "Synopsys Advances Power and Performance for AI and Multi-Die Designs on Latest Samsung Foundry Processes at SAFE Forum 2026"
+    },
+    {
+     "role": "cta",
+     "order": 11,
+     "text": "Learn more",
+     "href": "https://news.synopsys.com/2026-05-28-Synopsys-Advances-Power-and-Performance-for-AI-and-Multi-Die-Designs-on-Latest-Samsung-Foundry-Processe"
+    },
+    {
+     "role": "eyebrow",
+     "order": 12,
+     "text": "Blog"
+    },
+    {
+     "role": "body",
+     "order": 13,
+     "text": "September 15, 2026"
+    },
+    {
+     "role": "body",
+     "order": 14,
+     "text": "Agentic AI in Chip Design: Four-Part Executive Series"
+    },
+    {
+     "role": "cta",
+     "order": 15,
+     "text": "Learn more",
+     "href": "/blogs/chip-design/agentic-ai-chip-design-series.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 16,
+     "text": "News Release"
+    },
+    {
+     "role": "body",
+     "order": 17,
+     "text": "August 26, 2026"
+    },
+    {
+     "role": "body",
+     "order": 18,
+     "text": "Synopsys Posts Financial Results for Third Quarter Fiscal Year 2026"
+    },
+    {
+     "role": "cta",
+     "order": 19,
+     "text": "Learn more",
+     "href": "https://news.synopsys.com/2026-08-26-Synopsys-Posts-Financial-Results-for-Third-Quarter-Fiscal-Year-2026"
+    },
+    {
+     "role": "eyebrow",
+     "order": 20,
+     "text": "Blog"
+    },
+    {
+     "role": "body",
+     "order": 21,
+     "text": "August 13, 2026"
+    },
+    {
+     "role": "body",
+     "order": 22,
+     "text": "Synopsys CEO Sassine Ghazi Outlines the Future of Technology Engineering"
+    },
+    {
+     "role": "cta",
+     "order": 23,
+     "text": "Learn more",
+     "href": "/blogs/chip-design/synopsys-ceo-sassine-ghazi-future.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 24,
+     "text": "Blog"
+    },
+    {
+     "role": "body",
+     "order": 25,
+     "text": "July 29, 2026"
+    },
+    {
+     "role": "body",
+     "order": 26,
+     "text": "Multi-Die, Multiphysics, and the New Rules of Chip Design"
+    },
+    {
+     "role": "cta",
+     "order": 27,
+     "text": "Learn more",
+     "href": "/blogs/chip-design/multi-die-multiphysics-co-design.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 28,
+     "text": "News Release"
+    },
+    {
+     "role": "body",
+     "order": 29,
+     "text": "July 27, 2026"
+    },
+    {
+     "role": "body",
+     "order": 30,
+     "text": "Synopsys Demonstrates Leadership in AI-Powered Engineering at 2026 DAC Chips to Systems Conference"
+    },
+    {
+     "role": "cta",
+     "order": 31,
+     "text": "Learn more",
+     "href": "https://news.synopsys.com/2026-07-27-Synopsys-Demonstrates-Leadership-in-AI-Powered-Engineering-at-2026-DAC-Chips-to-Systems-Conference"
+    },
+    {
+     "role": "eyebrow",
+     "order": 32,
+     "text": "Blog"
+    },
+    {
+     "role": "body",
+     "order": 33,
+     "text": "July 22, 2026"
+    },
+    {
+     "role": "body",
+     "order": 34,
+     "text": "Silicon Meets Reality: Why Physics Is Now a First-Order Design Constraint for Chips"
+    },
+    {
+     "role": "cta",
+     "order": 35,
+     "text": "Learn more",
+     "href": "/blogs/chip-design/physics-chip-design-constraint.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 36,
+     "text": "Blog"
+    },
+    {
+     "role": "body",
+     "order": 37,
+     "text": "July 8, 2026"
+    },
+    {
+     "role": "body",
+     "order": 38,
+     "text": "Securing Physical AI Systems for Safe Deployment"
+    },
+    {
+     "role": "cta",
+     "order": 39,
+     "text": "Learn more",
+     "href": "/blogs/chip-design/securing-physical-ai-systems.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 40,
+     "text": "News Release"
+    },
+    {
+     "role": "body",
+     "order": 41,
+     "text": "June 17, 2026"
+    },
+    {
+     "role": "body",
+     "order": 42,
+     "text": "Synopsys Announces Availability of the First Wave of Multiphysics Fusion Solutions"
+    },
+    {
+     "role": "cta",
+     "order": 43,
+     "text": "Learn more",
+     "href": "https://news.synopsys.com/2026-06-17-Synopsys-Announces-Availability-of-the-First-Wave-of-Multiphysics-Fusion-Solutions"
+    },
+    {
+     "role": "eyebrow",
+     "order": 44,
+     "text": "News Release"
+    },
+    {
+     "role": "body",
+     "order": 45,
+     "text": "May 28, 2026"
+    },
+    {
+     "role": "body",
+     "order": 46,
+     "text": "Synopsys Advances Power and Performance for AI and Multi-Die Designs on Latest Samsung Foundry Processes at SAFE Forum 2026"
+    },
+    {
+     "role": "cta",
+     "order": 47,
+     "text": "Learn more",
+     "href": "https://news.synopsys.com/2026-05-28-Synopsys-Advances-Power-and-Performance-for-AI-and-Multi-Die-Designs-on-Latest-Samsung-Foundry-Processe"
+    },
+    {
+     "role": "eyebrow",
+     "order": 48,
+     "text": "Blog"
+    },
+    {
+     "role": "body",
+     "order": 49,
+     "text": "September 15, 2026"
+    },
+    {
+     "role": "body",
+     "order": 50,
+     "text": "Agentic AI in Chip Design: Four-Part Executive Series"
+    },
+    {
+     "role": "cta",
+     "order": 51,
+     "text": "Learn more",
+     "href": "/blogs/chip-design/agentic-ai-chip-design-series.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 52,
+     "text": "News Release"
+    },
+    {
+     "role": "body",
+     "order": 53,
+     "text": "August 26, 2026"
+    },
+    {
+     "role": "body",
+     "order": 54,
+     "text": "Synopsys Posts Financial Results for Third Quarter Fiscal Year 2026"
+    },
+    {
+     "role": "cta",
+     "order": 55,
+     "text": "Learn more",
+     "href": "https://news.synopsys.com/2026-08-26-Synopsys-Posts-Financial-Results-for-Third-Quarter-Fiscal-Year-2026"
+    },
+    {
+     "role": "eyebrow",
+     "order": 56,
+     "text": "Blog"
+    },
+    {
+     "role": "body",
+     "order": 57,
+     "text": "August 13, 2026"
+    },
+    {
+     "role": "body",
+     "order": 58,
+     "text": "Synopsys CEO Sassine Ghazi Outlines the Future of Technology Engineering"
+    },
+    {
+     "role": "cta",
+     "order": 59,
+     "text": "Learn more",
+     "href": "/blogs/chip-design/synopsys-ceo-sassine-ghazi-future.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 60,
+     "text": "Blog"
+    },
+    {
+     "role": "body",
+     "order": 61,
+     "text": "July 29, 2026"
+    },
+    {
+     "role": "body",
+     "order": 62,
+     "text": "Multi-Die, Multiphysics, and the New Rules of Chip Design"
+    },
+    {
+     "role": "cta",
+     "order": 63,
+     "text": "Learn more",
+     "href": "/blogs/chip-design/multi-die-multiphysics-co-design.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 64,
+     "text": "News Release"
+    },
+    {
+     "role": "body",
+     "order": 65,
+     "text": "July 27, 2026"
+    },
+    {
+     "role": "body",
+     "order": 66,
+     "text": "Synopsys Demonstrates Leadership in AI-Powered Engineering at 2026 DAC Chips to Systems Conference"
+    },
+    {
+     "role": "cta",
+     "order": 67,
+     "text": "Learn more",
+     "href": "https://news.synopsys.com/2026-07-27-Synopsys-Demonstrates-Leadership-in-AI-Powered-Engineering-at-2026-DAC-Chips-to-Systems-Conference"
+    },
+    {
+     "role": "eyebrow",
+     "order": 68,
+     "text": "Blog"
+    },
+    {
+     "role": "body",
+     "order": 69,
+     "text": "July 22, 2026"
+    },
+    {
+     "role": "body",
+     "order": 70,
+     "text": "Silicon Meets Reality: Why Physics Is Now a First-Order Design Constraint for Chips"
+    },
+    {
+     "role": "cta",
+     "order": 71,
+     "text": "Learn more",
+     "href": "/blogs/chip-design/physics-chip-design-constraint.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 72,
+     "text": "Blog"
+    },
+    {
+     "role": "body",
+     "order": 73,
+     "text": "July 8, 2026"
+    },
+    {
+     "role": "body",
+     "order": 74,
+     "text": "Securing Physical AI Systems for Safe Deployment"
+    },
+    {
+     "role": "cta",
+     "order": 75,
+     "text": "Learn more",
+     "href": "/blogs/chip-design/securing-physical-ai-systems.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 76,
+     "text": "News Release"
+    },
+    {
+     "role": "body",
+     "order": 77,
+     "text": "June 17, 2026"
+    },
+    {
+     "role": "body",
+     "order": 78,
+     "text": "Synopsys Announces Availability of the First Wave of Multiphysics Fusion Solutions"
+    },
+    {
+     "role": "cta",
+     "order": 79,
+     "text": "Learn more",
+     "href": "https://news.synopsys.com/2026-06-17-Synopsys-Announces-Availability-of-the-First-Wave-of-Multiphysics-Fusion-Solutions"
+    },
+    {
+     "role": "eyebrow",
+     "order": 80,
+     "text": "News Release"
+    },
+    {
+     "role": "body",
+     "order": 81,
+     "text": "May 28, 2026"
+    },
+    {
+     "role": "body",
+     "order": 82,
+     "text": "Synopsys Advances Power and Performance for AI and Multi-Die Designs on Latest Samsung Foundry Processes at SAFE Forum 2026"
+    },
+    {
+     "role": "cta",
+     "order": 83,
+     "text": "Learn more",
+     "href": "https://news.synopsys.com/2026-05-28-Synopsys-Advances-Power-and-Performance-for-AI-and-Multi-Die-Designs-on-Latest-Samsung-Foundry-Processe"
+    },
+    {
+     "role": "body",
+     "order": 84,
+     "text": "1"
+    },
+    {
+     "role": "body",
+     "order": 85,
+     "text": "2"
+    },
+    {
+     "role": "body",
+     "order": 86,
+     "text": "3"
+    },
+    {
+     "role": "body",
+     "order": 87,
+     "text": "4"
+    },
+    {
+     "role": "body",
+     "order": 88,
+     "text": "5"
+    },
+    {
+     "role": "body",
+     "order": 89,
+     "text": "6"
+    },
+    {
+     "role": "body",
+     "order": 90,
+     "text": "7"
+    },
+    {
+     "role": "body",
+     "order": 91,
+     "text": "8"
+    },
+    {
+     "role": "body",
+     "order": 92,
+     "text": "9"
+    }
+   ],
+   "imgCount": 21,
+   "editableTexts": 22,
+   "repeats": [
+    {
+     "unitSelector": "SECTION.component-assetcard",
+     "count": 21,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 1,
+      "textRuns": 4
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "LI.",
+     "count": 8,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "component-column",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Support & Services"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Explore the Synopsys Support Community! Login is required. View our service offerings as well."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "View Support & Services",
+     "href": "/support.html"
+    },
+    {
+     "role": "heading",
+     "order": 3,
+     "text": "Careers"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Join Synopsys and build your career with a world-class team of technology professionals."
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "View Careers",
+     "href": "https://careers.synopsys.com/"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 4,
+   "repeats": [
+    {
+     "unitSelector": "DIV.col-xs-12",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "componentSkinnyBanner",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Connect with Us"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Connect with Us"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Contact Sales",
+     "href": "/contact-sales.html"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 2,
+   "repeats": []
+  }
+ ]
+}

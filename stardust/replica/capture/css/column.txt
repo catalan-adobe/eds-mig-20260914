@@ -1,0 +1,161 @@
+stardust/replica/capture/pagelibs.css: 80 of 4808 rules match /component-column|divider-row|snps-col-divider|\.vl\b|divider-spacing|\.four\b/i
+L2344 .component-column .col-custom
+      display: block; padding-top: 0; padding-left: 10px; padding-right: 10px;
+L2345 .component-column .col-custom-154
+      width: 100%;
+L2346 .component-column .col-custom-1
+      width: 100%;
+L2347 .component-column .col-custom-spacer
+      display: none;
+L2348 .component-column .snps-col-divider,.component-column .snps-col-divider.three11154
+      display: none; position: relative;
+L2349 .component-column .vl
+      border-left: 1px solid #c4c4c4; height: 100%; position: absolute; left: 50%; margin-left: .5px; top: 0;
+L2350 .component-column .col-custom   @media(min-width:730px)
+      padding-left: 15px; padding-right: 15px;
+L2351 .component-column.divider-row.row   @media(min-width:730px)
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;
+L2352 .component-column.divider-row.row .col.snps-col-divider   @media(min-width:730px)
+      display: block;
+L2353 .component-column.divider-row.row .divider-spacing-xs-20.col-sm-6   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 6) - 5px); width: calc((100% / 12 * 6) - 5px);
+L2354 .component-column.divider-row.row .divider-spacing-xs-20.col-sm-3   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 3) - 5px); width: calc((100% / 12 * 3) - 5px);
+L2355 .component-column.divider-row.row .divider-spacing-xs-20.col-sm-3.four   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 3) -(5px * 3 / 2)); width: calc((100% / 12 * 3) -(5px * 3 / 2));
+L2356 .component-column.divider-row.row .divider-spacing-xs-20.col-sm-4   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 4) - 5px); width: calc((100% / 12 * 4) - 5px);
+L2357 .component-column.divider-row.row .divider-spacing-xs-20.col-sm-4.three   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 4) -(5px * 4 / 3)); width: calc((100% / 12 * 4) -(5px * 4 / 3));
+L2358 .component-column.divider-row.row .divider-spacing-xs-20.col-sm-8   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 8) - 5px); width: calc((100% / 12 * 8) - 5px);
+L2359 .component-column.divider-row.row .divider-spacing-xs-20.col-sm-9   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 9) - 5px); width: calc((100% / 12 * 9) - 5px);
+L2360 .component-column.divider-row.row .divider-spacing-xs-20.snps-col-divider.col.snps-col-divider   @media(min-width:730px)
+      width: -webkit-calc(5px * 2); width: calc(5px * 2);
+L2361 .component-column.divider-row.row .divider-spacing-small-30.col-sm-6   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 6) - 15px); width: calc((100% / 12 * 6) - 15px);
+L2362 .component-column.divider-row.row .divider-spacing-small-30.col-sm-3   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 3) - 15px); width: calc((100% / 12 * 3) - 15px);
+L2363 .component-column.divider-row.row .divider-spacing-small-30.col-sm-3.four   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 3) -(15px * 3 / 2)); width: calc((100% / 12 * 3) -(15px * 3 / 2));
+L2364 .component-column.divider-row.row .divider-spacing-small-30.col-sm-4   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 4) - 15px); width: calc((100% / 12 * 4) - 15px);
+L2365 .component-column.divider-row.row .divider-spacing-small-30.col-sm-4.three   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 4) -(15px * 4 / 3)); width: calc((100% / 12 * 4) -(15px * 4 / 3));
+L2366 .component-column.divider-row.row .divider-spacing-small-30.col-sm-8   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 8) - 15px); width: calc((100% / 12 * 8) - 15px);
+L2367 .component-column.divider-row.row .divider-spacing-small-30.col-sm-9   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 9) - 15px); width: calc((100% / 12 * 9) - 15px);
+L2368 .component-column.divider-row.row .divider-spacing-small-30.snps-col-divider.col.snps-col-divider   @media(min-width:730px)
+      width: -webkit-calc(15px * 2); width: calc(15px * 2);
+L2369 .component-column.divider-row.row .divider-spacing-medium-40.col-sm-6   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 6) - 25px); width: calc((100% / 12 * 6) - 25px);
+L2370 .component-column.divider-row.row .divider-spacing-medium-40.col-sm-3   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 3) - 25px); width: calc((100% / 12 * 3) - 25px);
+L2371 .component-column.divider-row.row .divider-spacing-medium-40.col-sm-3.four   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 3) -(25px * 3 / 2)); width: calc((100% / 12 * 3) -(25px * 3 / 2));
+L2372 .component-column.divider-row.row .divider-spacing-medium-40.col-sm-4   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 4) - 25px); width: calc((100% / 12 * 4) - 25px);
+L2373 .component-column.divider-row.row .divider-spacing-medium-40.col-sm-4.three   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 4) -(25px * 4 / 3)); width: calc((100% / 12 * 4) -(25px * 4 / 3));
+L2374 .component-column.divider-row.row .divider-spacing-medium-40.col-sm-8   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 8) - 25px); width: calc((100% / 12 * 8) - 25px);
+L2375 .component-column.divider-row.row .divider-spacing-medium-40.col-sm-9   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 9) - 25px); width: calc((100% / 12 * 9) - 25px);
+L2376 .component-column.divider-row.row .divider-spacing-medium-40.snps-col-divider.col.snps-col-divider   @media(min-width:730px)
+      width: -webkit-calc(25px * 2); width: calc(25px * 2);
+L2377 .component-column.divider-row.row .divider-spacing-large-50.col-sm-6   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 6) - 35px); width: calc((100% / 12 * 6) - 35px);
+L2378 .component-column.divider-row.row .divider-spacing-large-50.col-sm-3   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 3) - 35px); width: calc((100% / 12 * 3) - 35px);
+L2379 .component-column.divider-row.row .divider-spacing-large-50.col-sm-3.four   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 3) -(35px * 3 / 2)); width: calc((100% / 12 * 3) -(35px * 3 / 2));
+L2380 .component-column.divider-row.row .divider-spacing-large-50.col-sm-4   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 4) - 35px); width: calc((100% / 12 * 4) - 35px);
+L2381 .component-column.divider-row.row .divider-spacing-large-50.col-sm-4.three   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 4) -(35px * 4 / 3)); width: calc((100% / 12 * 4) -(35px * 4 / 3));
+L2382 .component-column.divider-row.row .divider-spacing-large-50.col-sm-8   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 8) - 35px); width: calc((100% / 12 * 8) - 35px);
+L2383 .component-column.divider-row.row .divider-spacing-large-50.col-sm-9   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 9) - 35px); width: calc((100% / 12 * 9) - 35px);
+L2384 .component-column.divider-row.row .divider-spacing-large-50.snps-col-divider.col.snps-col-divider   @media(min-width:730px)
+      width: -webkit-calc(35px * 2); width: calc(35px * 2);
+L2385 .component-column.divider-row.row .divider-spacing-xl-60.col-sm-6   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 6) - 45px); width: calc((100% / 12 * 6) - 45px);
+L2386 .component-column.divider-row.row .divider-spacing-xl-60.col-sm-3   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 3) - 45px); width: calc((100% / 12 * 3) - 45px);
+L2387 .component-column.divider-row.row .divider-spacing-xl-60.col-sm-3.four   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 3) -(45px * 3 / 2)); width: calc((100% / 12 * 3) -(45px * 3 / 2));
+L2388 .component-column.divider-row.row .divider-spacing-xl-60.col-sm-4   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 4) - 45px); width: calc((100% / 12 * 4) - 45px);
+L2389 .component-column.divider-row.row .divider-spacing-xl-60.col-sm-4.three   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 4) -(45px * 4 / 3)); width: calc((100% / 12 * 4) -(45px * 4 / 3));
+L2390 .component-column.divider-row.row .divider-spacing-xl-60.col-sm-8   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 8) - 45px); width: calc((100% / 12 * 8) - 45px);
+L2391 .component-column.divider-row.row .divider-spacing-xl-60.col-sm-9   @media(min-width:730px)
+      width: -webkit-calc((100% / 12 * 9) - 45px); width: calc((100% / 12 * 9) - 45px);
+L2392 .component-column.divider-row.row .divider-spacing-xl-60.snps-col-divider.col.snps-col-divider   @media(min-width:730px)
+      width: -webkit-calc(45px * 2); width: calc(45px * 2);
+L2393 .component-column .two3366PinnedLeft,.component-column .two2575PinnedLeft   @media(min-width:730px)
+      position: -webkit-sticky; position: sticky; top: 128px; width: 33.333333%; z-index: 1;
+L2394 .component-column .two3366PinnedLeft:has(.subscriptionForm),.component-column .two2575PinnedLeft:has(.subscriptionForm)   @media(min-width:730px)
+      padding-right: 48px;
+L2395 .component-column .two3366PinnedLeft.scrollable:not(.cq-Editable-dom),.component-column .two2575PinnedLeft.scrollable:not(.cq-Editable-dom)   @media(min-width:730px)
+      height: -webkit-calc(100vh - 128px); height: calc(100vh - 128px); overflow-y: auto;
+L2396 .component-column .two2575PinnedLeft   @media(min-width:730px)
+      width: 25%;
+L2398 .component-column .col-custom   @media(min-width:730px) and (min-width:992px)
+      display: inline-block; padding-top: 0; padding-left: 0; padding-right: 0;
+L2399 .component-column .col-custom-154   @media(min-width:730px) and (min-width:992px)
+      width: 45%;
+L2400 .component-column .col-custom-1   @media(min-width:730px) and (min-width:992px)
+      width: 26%;
+L2401 .component-column .col-custom-spacer   @media(min-width:730px) and (min-width:992px)
+      width: 1.5%;
+L2402 .component-column .two3366PinnedLeft>div   @media(min-width:730px) and (min-width:992px)
+      max-width: -webkit-calc(1 / 3 * 940px); max-width: calc(1 / 3 * 940px);
+L2403 .component-column .two2575PinnedLeft>div   @media(min-width:730px) and (min-width:992px)
+      max-width: -webkit-calc(1 / 4 * 940px); max-width: calc(1 / 4 * 940px);
+L2405 .divider-spacing-xs-20.three15411.col-custom-1,.divider-spacing-xs-20.three11154.col-custom-1   @media(min-width:730px) and (min-width:992px)
+      width: -webkit-calc(26% - (5px * 4 / 3)); width: calc(26% - (5px * 4 / 3));
+L2406 .divider-spacing-xs-20.three15411.col-custom-154,.divider-spacing-xs-20.three11154.col-custom-154   @media(min-width:730px) and (min-width:992px)
+      width: -webkit-calc(45% - (5px * 4 / 3)); width: calc(45% - (5px * 4 / 3));
+L2407 .divider-spacing-small-30.three15411.col-custom-1,.divider-spacing-small-30.three11154.col-custom-1   @media(min-width:730px) and (min-width:992px)
+      width: -webkit-calc(26% - (15px * 4 / 3)); width: calc(26% - (15px * 4 / 3));
+L2408 .divider-spacing-small-30.three15411.col-custom-154,.divider-spacing-small-30.three11154.col-custom-154   @media(min-width:730px) and (min-width:992px)
+      width: -webkit-calc(45% - (15px * 4 / 3)); width: calc(45% - (15px * 4 / 3));
+L2409 .divider-spacing-medium-40.three15411.col-custom-1,.divider-spacing-medium-40.three11154.col-custom-1   @media(min-width:730px) and (min-width:992px)
+      width: -webkit-calc(26% - (25px * 4 / 3)); width: calc(26% - (25px * 4 / 3));
+L2410 .divider-spacing-medium-40.three15411.col-custom-154,.divider-spacing-medium-40.three11154.col-custom-154   @media(min-width:730px) and (min-width:992px)
+      width: -webkit-calc(45% - (25px * 4 / 3)); width: calc(45% - (25px * 4 / 3));
+L2411 .divider-spacing-large-50.three15411.col-custom-1,.divider-spacing-large-50.three11154.col-custom-1   @media(min-width:730px) and (min-width:992px)
+      width: -webkit-calc(26% - (35px * 4 / 3)); width: calc(26% - (35px * 4 / 3));
+L2412 .divider-spacing-large-50.three15411.col-custom-154,.divider-spacing-large-50.three11154.col-custom-154   @media(min-width:730px) and (min-width:992px)
+      width: -webkit-calc(45% - (35px * 4 / 3)); width: calc(45% - (35px * 4 / 3));
+L2413 .divider-spacing-xl-60.three15411.col-custom-1,.divider-spacing-xl-60.three11154.col-custom-1   @media(min-width:730px) and (min-width:992px)
+      width: -webkit-calc(26% - (45px * 4 / 3)); width: calc(26% - (45px * 4 / 3));
+L2414 .divider-spacing-xl-60.three15411.col-custom-154,.divider-spacing-xl-60.three11154.col-custom-154   @media(min-width:730px) and (min-width:992px)
+      width: -webkit-calc(45% - (45px * 4 / 3)); width: calc(45% - (45px * 4 / 3));
+L2416 .component-column.custom-col-44-28-28,.component-column.custom-col-28-28-44   @media(min-width:1200px)
+      padding-top: 9px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;
+L2417 .component-column .two3366PinnedLeft>div   @media(min-width:1200px)
+      max-width: -webkit-calc(1 / 3 * 1170px); max-width: calc(1 / 3 * 1170px);
+L2418 .component-column .two2575PinnedLeft>div   @media(min-width:1200px)
+      max-width: -webkit-calc(1 / 4 * 1170px); max-width: calc(1 / 4 * 1170px);
+L3535 .column .component-column>div.three:not(:last-child) .component-solutioncard   @media(min-width:730px)
+      margin-right: 2px;
+L3548 .column .component-column>div.three11154:not(:last-child) .component-solutioncard,.column .component-column>div.three15411:not(:last-child) .component-solution…   @media(min-width:992px)
+      margin-right: 18px;
+L3559 .column .component-column>div.three11154:not(:last-child) .component-solutioncard,.column .component-column>div.three15411:not(:last-child) .component-solution…   @media(min-width:1200px)
+      margin-right: 15px;
+L3577 .column .component-column>div:not(:first-child) .component-solutioncard   @media(max-width:730px)
+      margin-top: 32px;
+L3596 .four .component-assetcard,.col-sm-3 .component-assetcard,.carousel-list-holder[container-column-layout='4'] .component-assetcard
+      min-height: 215px;
+L3597 .four .component-assetcard:has(img),.col-sm-3 .component-assetcard:has(img),.carousel-list-holder[container-column-layout='4'] .component-assetcard:has(img)
+      min-height: 338px;
+L3598 .four .component-assetcard .card-text p,.four .component-assetcard .card-text .date-time,.col-sm-3 .component-assetcard .card-text p,.col-sm-3 .component-asset…   @media(min-width:730px)
+      display: none;
+L4062 .component-column.row:has(.snps-aem-mktoForm form.mktoForm)   @media only screen and (max-width:729px)
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: reverse; -webkit-flex-direction: column-reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse;

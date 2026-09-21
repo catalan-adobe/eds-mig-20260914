@@ -1,0 +1,157 @@
+stardust/replica/capture/pagelibs.css: 78 of 4808 rules match /^h[1-6]|\.h[1-6]|^p$|^a$|^a:|^ul|^li|^b$|^strong|^img|^button|^svg|svg-inline--fa|\.fa-/i
+L12 a
+      background-color: transparent;
+L13 a:active,a:hover
+      outline: 0;
+L17 h1
+      font-size: 2em; margin: .67em 0;
+L23 img
+      border: 0;
+L24 svg:not(:root)
+      overflow: hidden;
+L29 button,input,optgroup,select,textarea
+      color: inherit; font: inherit; margin: 0;
+L30 button
+      overflow: visible;
+L31 button,select
+      text-transform: none;
+L32 button,html input[type="button"],input[type="reset"],input[type="submit"]
+      -webkit-appearance: button; cursor: pointer;
+L33 button[disabled],html input[disabled]
+      cursor: default;
+L34 button::-moz-focus-inner,input::-moz-focus-inner
+      border: 0; padding: 0;
+L54 img   @media print
+      max-width: 100% !important;
+L56 h2,h3   @media print
+      page-break-after: avoid;
+L69 a
+      color: #e51b24; text-decoration: none;
+L70 a:hover,a:focus
+      color: #23527c; text-decoration: none;
+L71 a:focus
+      outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px;
+L73 img
+      vertical-align: middle;
+L82 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-weight: 700; line-height: 1.1; color: inherit;
+L83 h1 small,h1 .small,h2 small,h2 .small,h3 small,h3 .small,h4 small,h4 .small,h5 small,h5 .small,h6 small,h6 .small,.h1 small,.h1 .small,.h2 small,.h2 .small,.h3…
+      font-weight: normal; line-height: 1; color: #777;
+L84 h1,.h1,h2,.h2,h3,.h3
+      margin-top: 20px; margin-bottom: 10px;
+L85 h1 small,h1 .small,.h1 small,.h1 .small,h2 small,h2 .small,.h2 small,.h2 .small,h3 small,h3 .small,.h3 small,.h3 .small
+      font-size: 65%;
+L86 h4,.h4,h5,.h5,h6,.h6
+      margin-top: 10px; margin-bottom: 10px;
+L87 h4 small,h4 .small,.h4 small,.h4 .small,h5 small,h5 .small,.h5 small,.h5 .small,h6 small,h6 .small,.h6 small,.h6 .small
+      font-size: 75%;
+L88 h1,.h1
+      font-size: 36px;
+L89 h2,.h2
+      font-size: 30px;
+L90 h3,.h3
+      font-size: 24px;
+L91 h4,.h4
+      font-size: 18px;
+L92 h5,.h5
+      font-size: 14px;
+L93 h6,.h6
+      font-size: 12px;
+L94 p
+      margin: 0 0 10px;
+L131 ul,ol
+      margin-top: 0; margin-bottom: 10px;
+L132 ul ul,ul ol,ol ul,ol ol
+      margin-bottom: 0;
+L841 button.close
+      padding: 0; cursor: pointer; background: transparent; border: 0; -webkit-appearance: none;
+L962 img[src*='pd.sharethis.com']
+      display: none;
+L1049 h1,h2,h3,h4,h5,h6
+      font-family: inherit; font-weight: 300; color: #5a2a82; margin: 15px 0 15px 0;
+L1050 h1
+      font-size: 35px;
+L1051 h2
+      font-size: 30px;
+L1052 h3
+      font-size: 26px;
+L1053 h4
+      font-size: 22px;
+L1054 h5
+      font-size: 20px;
+L1055 h6
+      font-size: 20px;
+L1058 a
+      color: #316aca; text-decoration: none;
+L1059 a:hover,a:active
+      color: #23527c; text-decoration: underline; cursor: pointer;
+L1060 a:focus
+      color: #23527c; outline: 0; outline-offset: 0; text-decoration: underline;
+L1078 h1   @media(min-width:730px)
+      font-size: 44px;
+L1079 h2   @media(min-width:730px)
+      font-size: 38px;
+L1080 h3   @media(min-width:730px)
+      font-size: 22px;
+L1081 h4   @media(min-width:730px)
+      font-size: 20px;
+L1082 h5   @media(min-width:730px)
+      font-size: 20px;
+L1083 h6   @media(min-width:730px)
+      font-size: 20px;
+L1087 h1   @media(min-width:1200px)
+      font-size: 60px;
+L1088 h2   @media(min-width:1200px)
+      font-size: 44px;
+L1089 h3   @media(min-width:1200px)
+      font-size: 34px;
+L1090 h4   @media(min-width:1200px)
+      font-size: 30px;
+L1091 h5   @media(min-width:1200px)
+      font-size: 26px;
+L1092 h6   @media(min-width:1200px)
+      font-size: 22px;
+L1451 ul.pageLinks
+      list-style: none; position: relative; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; padding-left: 0; margin-top: 15px; margin-bottom: 0;
+L1452 ul.pageLinks .three-column
+      -webkit-column-count: 3; -moz-column-count: 3; column-count: 3; -webkit-column-gap: 20px; -moz-column-gap: 20px; column-gap: 20px; max-width: 460px;
+L1453 ul.pageLinks .two-column
+      -webkit-column-count: 2; -moz-column-count: 2; column-count: 2; -webkit-column-gap: 60px; -moz-column-gap: 60px; column-gap: 60px; max-width: 460px;
+L1454 ul.pageLinks .one-column
+      -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; -webkit-column-gap: 20px; -moz-column-gap: 20px; column-gap: 20px; max-width: 460px;
+L1455 ul.pageLinks li
+      position: relative;
+L1456 ul.pageLinks li a
+      display: block; padding-top: 0; font-size: 16px;
+L1457 ul.pageLinks li:hover a .pageLink-dropdown,ul.pageLinks li.active a .pageLink-dropdown
+      display: block;
+L1464 ul.pageLinks .three-column   @media(max-width:729px)
+      -webkit-column-count: 2; -moz-column-count: 2; column-count: 2; -webkit-column-gap: 20px; -moz-column-gap: 20px; column-gap: 20px;
+L2325 .component-textcomp .buttons .fa-chevron-right,.component-imageTextCta .buttons .fa-chevron-right
+      height: 12px; margin-left: 8px;
+L2574 .zoom-container .zoom-instructions .fa-magnifying-glass-plus   @media(min-width:730px)
+      margin-right: 3px;
+L3099 .component-floating-tabs.vertical-tabs .tabs-nav .tab-nav-item .tab-nav-item-anchor .fa-chevron-right   @media(min-width:730px)
+      font-weight: 400; position: absolute; right: 15px; width: 10px;
+L3408 .component-splitcard .split-card-btn .fa-arrow-right
+      color: #FFF; font-size: 26px;
+L3430 .component-solutioncard .button .fa-chevron-right
+      font-size: 10px; margin-left: 8px;
+L3614 .component-assetcard .card-text a .fa-chevron-right
+      font-size: 12px;
+L3806 .blog-sub-nav-container .atomic-search-section .browse-blog-topics .fa-caret-down,.blog-sub-nav-container .atomic-search-section .browse-blog-topics .fa-caret-…
+      font-size: 16px; margin-left: 8px;
+L4493 .cmp-separator .fa-arrow-right
+      color: #111c24; font-size: 18.3px; position: relative; top: 2px; margin-left: 8px;
+L4544 .cmp-dynamiccards .component-card-b .card-text .cta svg.fa-chevron-right
+      font-size: 12px; margin-left: 8px;
+L4740 .component-faq .accordion-list .item.open .title .fa-caret-up
+      display: block;
+L4741 .component-faq .accordion-list .item.open .title .fa-caret-down
+      display: none;
+L4745 .component-faq .accordion-list .item .title .fa-caret-up,.component-faq .accordion-list .item .title .fa-caret-down
+      display: none; position: absolute; right: 8px; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); color: #111c24; font-size: 16.01px;
+L4746 .component-faq .accordion-list .item .title .fa-caret-down
+      display: block;
+L4752 .component-faq .accordion-list .item .title .fa-caret-down,.component-faq .accordion-list .item .title .fa-caret-up   @media(max-width:730px)
+      right: 24px;

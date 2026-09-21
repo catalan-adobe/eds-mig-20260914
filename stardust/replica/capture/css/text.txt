@@ -1,0 +1,302 @@
+stardust/replica/capture/pagelibs.css: 196 of 4808 rules match /background-component|vert-pad|light-grey-bg|component-textcomp|text-size-normal|text-size-smaller|component-text\b|text-align-center|changeSize/i, showing 150
+L971 .site-content .vert-pad-bottom-md   @media(max-width:730px)
+      padding-bottom: 10px;
+L972 .site-content .vert-pad-bottom-sm   @media(max-width:730px)
+      padding-bottom: 0;
+L976 .site-footer .vert-pad-bottom-md   @media(max-width:730px)
+      padding-top: 10px; padding-bottom: 30px;
+L1074 .text-size-smaller
+      font-size: .8em;
+L1075 .text-size-normal
+      font-size: 1em;
+L1197 .vert-pad-top-xs
+      padding-top: 0; margin-top: 15px;
+L1198 .vert-pad-top-xs[class*="-bg"]
+      padding-top: 15px; margin-top: 0;
+L1199 .vert-pad-top-xs>[class*="-bg"]
+      margin-top: 0;
+L1200 .vert-pad-top-sm
+      padding-top: 0; margin-top: 30px;
+L1201 .vert-pad-top-sm[class*="-bg"]
+      padding-top: 30px; margin-top: 0;
+L1202 .vert-pad-top-sm>[class*="-bg"]
+      margin-top: 0;
+L1203 .vert-pad-top-md
+      padding-top: 0; margin-top: 60px;
+L1204 .vert-pad-top-md[class*="-bg"]
+      padding-top: 60px; margin-top: 0;
+L1205 .vert-pad-top-md>[class*="-bg"]
+      margin-top: 0;
+L1206 .vert-pad-top-lg
+      padding-top: 0; margin-top: 60px;
+L1207 .vert-pad-top-lg[class*="-bg"]
+      padding-top: 60px; margin-top: 0;
+L1208 .vert-pad-top-lg>[class*="-bg"]
+      margin-top: 0;
+L1209 .vert-pad-top-xl
+      padding-top: 0; margin-top: 90px;
+L1210 .vert-pad-top-xl[class*="-bg"]
+      padding-top: 90px; margin-top: 0;
+L1211 .vert-pad-top-xl>[class*="-bg"]
+      margin-top: 0;
+L1212 .vert-pad-bottom-xs
+      padding-bottom: 0; margin-bottom: 15px; padding-bottom: 15px; margin-bottom: 0;
+L1213 .vert-pad-bottom-xs>[class*="-bg"]
+      margin-bottom: 0;
+L1214 .vert-pad-bottom-sm
+      padding-bottom: 0; margin-bottom: 30px; padding-bottom: 30px; margin-bottom: 0;
+L1215 .vert-pad-bottom-sm>[class*="-bg"]
+      margin-bottom: 0;
+L1216 .vert-pad-bottom-md
+      padding-bottom: 0; margin-bottom: 60px; padding-bottom: 60px; margin-bottom: 0;
+L1217 .vert-pad-bottom-md>[class*="-bg"]
+      margin-bottom: 0;
+L1218 .vert-pad-bottom-lg
+      padding-bottom: 0; margin-bottom: 60px; padding-bottom: 60px; margin-bottom: 0;
+L1219 .vert-pad-bottom-lg>[class*="-bg"]
+      margin-bottom: 0;
+L1220 .vert-pad-bottom-xl
+      padding-bottom: 0; margin-bottom: 90px; padding-bottom: 90px; margin-bottom: 0;
+L1221 .vert-pad-bottom-xl>[class*="-bg"]
+      margin-bottom: 0;
+L1225 .vert-pad-top-xs   @media(max-width:729px)
+      padding-top: 0; margin-top: 40px;
+L1226 .vert-pad-top-xs[class*="-bg"]   @media(max-width:729px)
+      padding-top: 40px; margin-top: 0;
+L1227 .vert-pad-top-xs>[class*="-bg"]   @media(max-width:729px)
+      margin-top: 0;
+L1228 .vert-pad-top-sm   @media(max-width:729px)
+      padding-top: 0; margin-top: 40px;
+L1229 .vert-pad-top-sm[class*="-bg"]   @media(max-width:729px)
+      padding-top: 40px; margin-top: 0;
+L1230 .vert-pad-top-sm>[class*="-bg"]   @media(max-width:729px)
+      margin-top: 0;
+L1231 .vert-pad-top-md   @media(max-width:729px)
+      padding-top: 0; margin-top: 40px;
+L1232 .vert-pad-top-md[class*="-bg"]   @media(max-width:729px)
+      padding-top: 40px; margin-top: 0;
+L1233 .vert-pad-top-md>[class*="-bg"]   @media(max-width:729px)
+      margin-top: 0;
+L1306 .background-component.light-grey-bg .component-podcasts .cta
+      background-color: #FFF;
+L1315 .component-mosaicHeadline .component-text p   @media(max-width:730px)
+      position: absolute; padding-right: 15px; top: 7px;
+L1316 .component-mosaicHeadline .component-text .text-size-smaller   @media(max-width:730px)
+      display: block; margin-top: -.12em; font-size: 1em !important;
+L1317 .component-mosaicHeadline .component-text .text-size-normal   @media(max-width:730px)
+      display: block; margin-top: -.15em; font-size: 1.2em !important;
+L1318 .component-mosaicHeadline .component-text .text-size-larger   @media(max-width:730px)
+      display: block; margin-top: -.15em; font-size: 1.5em !important;
+L1323 .component-mosaicHeadline .component-text p   @media(min-width:730px)
+      position: absolute; top: 7px; padding-right: 15px;
+L1324 .component-mosaicHeadline .component-text .text-size-smaller   @media(min-width:730px)
+      display: block; margin-top: -.12em; font-size: 1.5em !important;
+L1325 .component-mosaicHeadline .component-text .text-size-normal   @media(min-width:730px)
+      display: block; margin-top: -.15em; font-size: 1.8em !important;
+L1326 .component-mosaicHeadline .component-text .text-size-larger   @media(min-width:730px)
+      display: block; margin-top: -.15em; font-size: 2em !important;
+L1332 .component-mosaicHeadline .text-size-smaller   @media(min-width:1200px)
+      display: block; margin-top: -.12em; font-size: 1.5em !important;
+L1333 .component-mosaicHeadline .text-size-normal   @media(min-width:1200px)
+      display: block; margin-top: -.15em; font-size: 1.8em !important;
+L1547 .boxLink .vert-pad-top-xs,.boxLink .vert-pad-bottom-xs,.boxLink .vert-pad-top-sm,.boxLink .vert-pad-bottom-sm,.boxLink .vert-pad-top-md,.boxLink .vert-pad-bott…   @media(max-width:480px)
+      margin: 0;
+L1552 .site-content .imageAndLinks .background-component[class*="vert-pad"]   @media(max-width:730px)
+      margin-top: 15px; padding-top: 0 !important; padding-bottom: 0; margin-bottom: 15px;
+L1553 .site-content .imageAndLinks .background-component[class*="vert-pad"][class*="light-grey-bg"]   @media(max-width:730px)
+      margin-top: 15px; padding-top: 15px !important; padding-bottom: 15px;
+L1573 html.touch .component-railCard .component-text p a:hover
+      color: #646e81;
+L1574 html.touch .component-railCard .component-text p a:active
+      color: #21252b;
+L1576 .component-railCard .component-text p
+      color: #646e81; margin-top: 0; margin-bottom: 25px; text-overflow: clip;
+L1577 .component-railCard .component-text p a
+      color: #646e81;
+L1578 .component-railCard .component-text p a:hover
+      color: #21252b;
+L1579 .component-railCard .component-text p:last-of-type
+      margin-bottom: 0;
+L1580 .component-railCard .component-text:last-of-type
+      margin-bottom: -webkit-calc(30px - .45em); margin-bottom: calc(30px - .45em);
+L1586 .component-railCard .component-text .heading   @media(min-width:730px)
+      font-size: 20px;
+L1589 .component-railCard .component-text .heading   @media(min-width:1200px)
+      font-size: 30px;
+L1596 .component-quote .component-text
+      font-weight: 300; font-size: 16px; line-height: 160%; color: #111c24; margin-bottom: 16px;
+L1597 .component-quote .component-text .quote-text
+      display: -webkit-box; -webkit-line-clamp: 7; -webkit-box-orient: vertical; overflow: hidden;
+L1598 .component-quote .component-text .quote-text::before
+      content: ' '; width: 28px; height: 24px; margin-right: 6px; background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDciIGhlaWdodD…; display: inline-block; background-size: contain; background-repeat: no-repeat; background-position: bottom;
+L1599 .component-quote .component-text .quote-text.quote-japanese::before,.component-quote .component-text .quote-text.quote-chinese-simplified::before,.component-qu…
+      background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbm…; width: 21px;
+L1607 .component-quote .component-text   @media(min-width:730px)
+      font-size: 16px; line-height: 1.6; margin-bottom: 24px;
+L1608 .component-quote .component-text .quote-text   @media(min-width:730px)
+      display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden;
+L1609 .component-quote .component-text .quote-text::before   @media(min-width:730px)
+      width: 46px; height: 40px; margin-right: 8px;
+L1620 .component-subnav .col:first-child,.component-subnav .col.light-grey-bg
+      border-left: 0; padding: 24px; margin: 0;
+L1621 .component-subnav .col.light-grey-bg
+      display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;
+L1622 .component-subnav .col.light-grey-bg .aem-Grid
+      width: 100%;
+L1628 .component-subnav[data-total-columns="five-column"] .light-grey-bg
+      border-radius: 16px;
+L1629 .component-subnav[data-total-columns="five-column"] .light-grey-bg .col
+      margin: 24px 0;
+L1630 .component-subnav[data-total-columns="five-column"] .light-grey-bg .col:first-child
+      margin: 0;
+L1639 .component-subnav[data-total-columns="five-column"] .light-grey-bg .col:first-child   @media screen and (max-height:768px) and (min-width:1130px) and (max-width:1600px)
+      padding-top: 16px;
+L1640 .component-subnav[data-total-columns="five-column"] .light-grey-bg .col   @media screen and (max-height:768px) and (min-width:1130px) and (max-width:1600px)
+      margin: 16px 0;
+L1643 .component-subnav .light-grey-bg
+      margin: 24px;
+L1644 .component-subnav .light-grey-bg ul.nav-list
+      row-gap: 4px;
+L1645 .component-subnav .light-grey-bg a:hover
+      background: #FFF;
+L1731 .component-mosaicCardSplitColor .component-text   @media(max-width:730px)
+      padding: 15px;
+L1742 .component-mosaicCardSplitColor .component-text   @media(min-width:730px)
+      padding: 12px 15px;
+L1754 .component-mosaicCardSplitColor .component-text   @media(min-width:1200px)
+      padding: 20px;
+L1764 .component-mosaicCardVideoImage .component-text
+      padding: 15px;
+L1771 .component-mosaicCardVideoImage .component-text   @media(max-width:730px)
+      padding: 10px 15px;
+L1776 .component-mosaicCardVideoImage .component-text   @media(min-width:730px)
+      padding: 5px 15px;
+L1782 .component-mosaicCardVideoImage .component-text   @media(min-width:1200px)
+      padding: 5px 20px;
+L1811 .component-mosaicCardFullImage .component-text
+      background-color: rgba(255,255,255,0.9); position: absolute; bottom: 0; width: 100%;
+L1822 .component-mosaicCardFullImage .component-text   @media(max-width:730px)
+      background-color: rgba(255,255,255,0.95); position: absolute; bottom: 0; width: 100%; padding: 15px;
+L1830 .component-mosaicCardFullImage .component-text   @media(min-width:730px) and (max-width:1200px)
+      padding: 15px;
+L1841 .component-mosaicCardFullImage .component-text   @media(min-width:1200px)
+      padding: 20px;
+L2141 #morph-dropdown-wrapper .component-subnav .light-grey-bg   @media(max-width:1129px)
+      background: 0; margin: 0;
+L2194 .background-component.light-grey-bg .component-contentType .fullWidthButton
+      background-color: #FFF;
+L2275 .breadcrumbBG.light-grey-bg,.breadcrumbBG.white-bg   @media(min-width:480px)
+      background-color: inherit;
+L2312 .component-textcomp,.component-imageTextCta
+      text-align: left;
+L2313 .component-textcomp .title,.component-imageTextCta .title
+      font-size: 24px; margin: 0; color: #111c24;
+L2314 .component-textcomp .title.text-size-smaller,.component-imageTextCta .title.text-size-smaller
+      font-size: 24px;
+L2315 .component-textcomp .title.text-size-larger,.component-imageTextCta .title.text-size-larger
+      font-size: 32px;
+L2316 .component-textcomp .component-text,.component-imageTextCta .component-text
+      margin: 16px 0 24px 0; color: #111c24; font-size: 16px; font-weight: 300; line-height: 160%;
+L2317 .component-textcomp .component-text h1,.component-textcomp .component-text h2,.component-textcomp .component-text h3,.component-textcomp .component-text h4,.co…
+      color: inherit;
+L2318 .component-textcomp .component-text p:not(.footnote),.component-imageTextCta .component-text p:not(.footnote)
+      font-size: inherit;
+L2319 .component-textcomp .component-text ul:last-child,.component-textcomp .component-text ol:last-child,.component-textcomp .component-text p:last-child,.component…
+      margin-bottom: 0;
+L2320 .component-textcomp .buttons,.component-imageTextCta .buttons
+      margin: 24px 0 0 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-column-gap: 24px; -moz-column-gap: 24px; column-gap: 24px; row-gap: 24px; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; -webkit-align-items: start; align-items: start; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap;
+L2321 .component-textcomp .buttons .component-button,.component-textcomp .buttons .component-button-purple,.component-textcomp .buttons .component-button-synopsys_pu…
+      min-width: 140px; max-width: 300px; padding: 0 24px; margin: 0; min-height: 40px; height: auto; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; line-height: aut; font-weight: 400; background-color: #7e45af;
+L2322 .component-textcomp .buttons .component-button:hover,.component-textcomp .buttons .component-button-purple:hover,.component-textcomp .buttons .component-button…
+      color: #FFF; box-shadow: inset 0 0 0 99999px rgba(0,0,0,0.2); text-decoration: none;
+L2323 .component-textcomp .buttons .component-button.secondary,.component-textcomp .buttons .secondary.component-button-purple,.component-textcomp .buttons .secondar…
+      border: 2px solid #7e45af; background: 0; color: #7e45af;
+L2324 .component-textcomp .buttons .cta-link,.component-imageTextCta .buttons .cta-link
+      color: #111c24; font-size: 16px; font-weight: 400; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center;
+L2325 .component-textcomp .buttons .fa-chevron-right,.component-imageTextCta .buttons .fa-chevron-right
+      height: 12px; margin-left: 8px;
+L2326 .component-textcomp .buttons.align-center,.component-imageTextCta .buttons.align-center
+      -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; -ms-grid-row-align: center; align-items: center;
+L2327 .component-textcomp .buttons.align-right,.component-imageTextCta .buttons.align-right
+      -webkit-box-pack: right; -webkit-justify-content: right; -ms-flex-pack: right; justify-content: right; -webkit-box-align: end; -webkit-align-items: end; -ms-flex-align: end; -ms-grid-row-align: end; align-items: end;
+L2328 .component-textcomp.text-align-center,.component-imageTextCta.text-align-center
+      text-align: center;
+L2329 .component-textcomp.text-align-right,.component-imageTextCta.text-align-right
+      text-align: right;
+L2330 .component-textcomp hr.separator,.component-imageTextCta hr.separator
+      border: 0; height: 1px; color: #c4c4c4; background-color: #c4c4c4; margin: 20px 0;
+L2331 .component-textcomp .buttons,.component-imageTextCta .buttons   @media(min-width:480px)
+      -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row;
+L2333 .component-textcomp .component-text,.component-imageTextCta .component-text   @media(min-width:730px)
+      margin: 24px 0 0 0;
+L2334 .component-textcomp .title,.component-imageTextCta .title   @media(min-width:730px)
+      font-size: 32px;
+L2335 .component-textcomp .title.text-size-smaller,.component-imageTextCta .title.text-size-smaller   @media(min-width:730px)
+      font-size: 24px;
+L2336 .component-textcomp .title.text-size-larger,.component-imageTextCta .title.text-size-larger   @media(min-width:730px)
+      font-size: 40px;
+L2337 .component-textcomp .buttons,.component-imageTextCta .buttons   @media(min-width:730px)
+      -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: start; -webkit-align-items: start; -ms-flex-align: start; -ms-grid-row-align: start; align-items: start;
+L2338 .component-textcomp .buttons .component-button,.component-textcomp .buttons .component-button-purple,.component-textcomp .buttons .component-button-synopsys_pu…   @media(min-width:730px)
+      font-size: 16px;
+L2340 body[data-template="dw-content-page"] .component-textcomp img:not([hspace])   @media(max-width:729px)
+      display: block; max-width: 100%; width: 100%; height: auto;
+L2341 body[data-template="dw-content-page"] .component-textcomp table   @media(max-width:729px)
+      max-width: 100%;
+L2342 body[data-template="dw-content-page"] .component-textcomp iframe   @media(max-width:729px)
+      max-width: 100%;
+L2420 .component-text-image-2-column h4
+      margin-top: 0;
+L2421 .component-text-image-2-column .img-col
+      position: relative;
+L2422 .component-text-image-2-column .component-text p,.component-text-image-2-column .component-text h4
+      margin: 0;
+L2423 .component-text-image-2-column .component-text:nth-of-type(1)
+      margin-bottom: 15px;
+L2424 .component-text-image-2-column .component-text:nth-of-type(2)
+      margin-top: 15px;
+L2425 .component-text-image-2-column .component-text:nth-of-type(3)
+      margin-top: 15px; margin-bottom: 15px;
+L2426 .textImage2Column>.background-component   @media(max-width:730px)
+      margin-top: 0; padding-bottom: 0; padding-top: 0;
+L2427 .component-text-image-2-column   @media(max-width:730px)
+      padding-top: 30px; padding-bottom: 15px;
+L2428 .component-text-image-2-column .component-image   @media(max-width:730px)
+      margin-bottom: 15px;
+L2430 .component-text-image-2-column h4 .text-size-smaller   @media(min-width:730px)
+      display: block; margin-top: -.12em;
+L2431 .component-text-image-2-column h4 .text-size-normal   @media(min-width:730px)
+      display: block; margin-top: -.15em;
+L2432 .component-text-image-2-column h4 .text-size-larger   @media(min-width:730px)
+      display: block; margin-top: -.15em;
+L2433 .component-text-image-2-column p.no-title   @media(min-width:730px)
+      margin-top: -.3em;
+L2534 .light-grey-bg
+      background-color: #f7f7fa;
+L2601 .component-banner .text-overlay .component-text,.component-video-banner .text-overlay .component-text
+      color: #FFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-column-gap: 24px; -moz-column-gap: 24px; column-gap: 24px;
+L2604 .component-banner .text-overlay.text-align-left .component-text,.component-video-banner .text-overlay.text-align-left .component-text
+      -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: start; -webkit-align-items: start; -ms-flex-align: start; -ms-grid-row-align: start; align-items: start;
+L2606 .component-banner .text-overlay.text-align-right .component-text,.component-video-banner .text-overlay.text-align-right .component-text
+      -webkit-box-pack: end; -webkit-justify-content: flex-end; -ms-flex-pack: end; justify-content: flex-end; -webkit-box-align: end; -webkit-align-items: end; -ms-flex-align: end; -ms-grid-row-align: end; align-items: end;
+L2607 .component-banner .text-overlay.text-align-center,.component-video-banner .text-overlay.text-align-center
+      text-align: center;
+L2608 .component-banner .text-overlay.text-align-center .component-text,.component-video-banner .text-overlay.text-align-center .component-text
+      -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; -ms-grid-row-align: center; align-items: center;
+L2628 .component-banner .reg-banner.has-foreground-image .content-wrapper .component-text,.component-video-banner .reg-banner.has-foreground-image .content-wrapper .…   @media(max-width:730px)
+      -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; -ms-grid-row-align: center; align-items: center;
+L2685 .component-banner.componentSkinnyBanner .small-banner .component-text,.component-video-banner.componentSkinnyBanner .small-banner .component-text
+      font-size: 20px; font-weight: 300;
+L2697 .component-banner .text-overlay .component-text   @media(max-width:729px)
+      -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
+L2827 .component-video-banner .text-overlay .component-text
+      color: #FFF; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-column-gap: 24px; -moz-column-gap: 24px; column-gap: 24px;
+L2828 .component-video-banner .text-overlay .component-text .sub-title
+      font-weight: 300; width: 100%;
+L2851 .component-video-banner .text-overlay.text-align-left .component-text
+      -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: start; -webkit-align-items: start; -ms-flex-align: start; -ms-grid-row-align: start; align-items: start;
+L2853 .component-video-banner .text-overlay.text-align-right .component-text
+      -webkit-box-pack: end; -webkit-justify-content: flex-end; -ms-flex-pack: end; justify-content: flex-end; -webkit-box-align: end; -webkit-align-items: end; -ms-flex-align: end; -ms-grid-row-align: end; align-items: end;
+L2854 .component-video-banner .text-overlay.text-align-center
+      text-align: center;
+… 46 more — narrow the selector regex, add --media/--decl, or raise --max

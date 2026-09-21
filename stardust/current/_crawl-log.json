@@ -1,0 +1,603 @@
+{
+  "discovery": {
+    "fetchTechnique": "headless",
+    "count": 1,
+    "concurrency": 4
+  },
+  "consent": {
+    "method": "auto"
+  },
+  "favicon": {
+    "url": "https://www.synopsys.com/etc.clientlibs/synopsys/clientlibs/synopsys-pagelibs/resources/images/favicon.ico",
+    "file": "assets/favicon.ico"
+  },
+  "crawl": {
+    "failures": []
+  },
+  "dynamicSurface": {
+    "pages": 1,
+    "pagesWithSameSiteData": 1,
+    "pagesWithSearchForm": 0,
+    "pagesHydrated": 1,
+    "truncatedPages": 0,
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "ka-p.fontawesome.com",
+        "path": "/releases/v6.5.2/js/pro.min.js",
+        "query": [
+          "token"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/javascript",
+        "sameSite": false,
+        "example": "https://ka-p.fontawesome.com/releases/v6.5.2/js/pro.min.js",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "ka-p.fontawesome.com",
+        "path": "/releases/v6.5.2/svgs/regular/magnifying-glass.svg",
+        "query": [
+          "token"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/svg+xml",
+        "sameSite": false,
+        "example": "https://ka-p.fontawesome.com/releases/v6.5.2/svgs/regular/magnifying-glass.svg",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "ka-p.fontawesome.com",
+        "path": "/releases/v6.5.2/svgs/regular/arrow-up-right-from-square.svg",
+        "query": [
+          "token"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/svg+xml",
+        "sameSite": false,
+        "example": "https://ka-p.fontawesome.com/releases/v6.5.2/svgs/regular/arrow-up-right-from-square.svg",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "ka-p.fontawesome.com",
+        "path": "/releases/v6.5.2/svgs/regular/chevron-right.svg",
+        "query": [
+          "token"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/svg+xml",
+        "sameSite": false,
+        "example": "https://ka-p.fontawesome.com/releases/v6.5.2/svgs/regular/chevron-right.svg",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "ka-p.fontawesome.com",
+        "path": "/releases/v6.5.2/svgs/solid/play.svg",
+        "query": [
+          "token"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/svg+xml",
+        "sameSite": false,
+        "example": "https://ka-p.fontawesome.com/releases/v6.5.2/svgs/solid/play.svg",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "ka-p.fontawesome.com",
+        "path": "/releases/v6.5.2/svgs/light/chevron-right.svg",
+        "query": [
+          "token"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/svg+xml",
+        "sameSite": false,
+        "example": "https://ka-p.fontawesome.com/releases/v6.5.2/svgs/light/chevron-right.svg",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "ka-p.fontawesome.com",
+        "path": "/releases/v6.5.2/svgs/solid/pause.svg",
+        "query": [
+          "token"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/svg+xml",
+        "sameSite": false,
+        "example": "https://ka-p.fontawesome.com/releases/v6.5.2/svgs/solid/pause.svg",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "ka-p.fontawesome.com",
+        "path": "/releases/v6.5.2/svgs/brands/x-twitter.svg",
+        "query": [
+          "token"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/svg+xml",
+        "sameSite": false,
+        "example": "https://ka-p.fontawesome.com/releases/v6.5.2/svgs/brands/x-twitter.svg",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "ka-p.fontawesome.com",
+        "path": "/releases/v6.5.2/svgs/brands/youtube.svg",
+        "query": [
+          "token"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/svg+xml",
+        "sameSite": false,
+        "example": "https://ka-p.fontawesome.com/releases/v6.5.2/svgs/brands/youtube.svg",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "ka-p.fontawesome.com",
+        "path": "/releases/v6.5.2/svgs/brands/linkedin-in.svg",
+        "query": [
+          "token"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/svg+xml",
+        "sameSite": false,
+        "example": "https://ka-p.fontawesome.com/releases/v6.5.2/svgs/brands/linkedin-in.svg",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "ka-p.fontawesome.com",
+        "path": "/releases/v6.5.2/svgs/brands/instagram.svg",
+        "query": [
+          "token"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/svg+xml",
+        "sameSite": false,
+        "example": "https://ka-p.fontawesome.com/releases/v6.5.2/svgs/brands/instagram.svg",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "ka-p.fontawesome.com",
+        "path": "/releases/v6.5.2/svgs/brands/facebook.svg",
+        "query": [
+          "token"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/svg+xml",
+        "sameSite": false,
+        "example": "https://ka-p.fontawesome.com/releases/v6.5.2/svgs/brands/facebook.svg",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "ka-p.fontawesome.com",
+        "path": "/releases/v6.5.2/svgs/light/chevron-left.svg",
+        "query": [
+          "token"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/svg+xml",
+        "sameSite": false,
+        "example": "https://ka-p.fontawesome.com/releases/v6.5.2/svgs/light/chevron-left.svg",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "ka-p.fontawesome.com",
+        "path": "/releases/v6.5.2/svgs/solid/xmark.svg",
+        "query": [
+          "token"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/svg+xml",
+        "sameSite": false,
+        "example": "https://ka-p.fontawesome.com/releases/v6.5.2/svgs/solid/xmark.svg",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.synopsys.com",
+        "path": "/cdn-cgi/challenge-platform/h/g/jsd/oneshot/330e41bb475c/0.6179001999995779:1789989012:KvQU37APQ5RxXUDLEY8MnwZQJB_7lYygLYRvr6MK4Ks/{hash}",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "text/plain",
+        "sameSite": true,
+        "example": "https://www.synopsys.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/330e41bb475c/0.6179001999995779:1789989012:KvQU37APQ5RxXUDLEY8MnwZQJB_7lYygLYRvr6MK4Ks/a3e8f44b4859709b",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.synopsys.com",
+        "path": "/bin/cs-info.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.synopsys.com/bin/cs-info.json",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "cdn.cookielaw.org",
+        "path": "/consent/{uuid}/{uuid}.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://cdn.cookielaw.org/consent/c3922e14-e9c5-45ad-af19-28880fac108e/c3922e14-e9c5-45ad-af19-28880fac108e.json",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "geolocation.onetrust.com",
+        "path": "/cookieconsentpub/v1/geo/location",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "static.cloud.coveo.com",
+        "path": "/atomic/v2/lang/en.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://static.cloud.coveo.com/atomic/v2/lang/en.json",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "cdn.cookielaw.org",
+        "path": "/consent/{uuid}/{uuid}/en.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://cdn.cookielaw.org/consent/c3922e14-e9c5-45ad-af19-28880fac108e/019fd83f-7563-7c25-89b4-b09757f66214/en.json",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "edge.api.brightcove.com",
+        "path": "/playback/v1/accounts/{n}/videos/{n}",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://edge.api.brightcove.com/playback/v1/accounts/5748441669001/videos/6358098178112",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "cdn.cookielaw.org",
+        "path": "/scripttemplates/6.27.0/assets/otCommonStyles.css",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/css",
+        "sameSite": false,
+        "example": "https://cdn.cookielaw.org/scripttemplates/6.27.0/assets/otCommonStyles.css",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "cdn.cookielaw.org",
+        "path": "/scripttemplates/6.27.0/assets/v2/otPcTab.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://cdn.cookielaw.org/scripttemplates/6.27.0/assets/v2/otPcTab.json",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "cdn.cookielaw.org",
+        "path": "/scripttemplates/6.27.0/assets/otCenterRounded.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://cdn.cookielaw.org/scripttemplates/6.27.0/assets/otCenterRounded.json",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "manifest.prod.boltdns.net",
+        "path": "/manifest/v2/hls/v7/clear/avc1_mp4a/{n}/{uuid}/10s/master.m3u8",
+        "query": [
+          "fastly_token"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/x-mpegurl",
+        "sameSite": false,
+        "example": "https://manifest.prod.boltdns.net/manifest/v2/hls/v7/clear/avc1_mp4a/5748441669001/ab945a00-6495-4d25-9486-050c693046ff/10s/master.m3u8",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "manifest.prod.boltdns.net",
+        "path": "/manifest/v2/hls/v7/fmp4/clear/{n}/{uuid}/{uuid}/10s/rendition.m3u8",
+        "query": [
+          "fastly_token"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/x-mpegurl",
+        "sameSite": false,
+        "example": "https://manifest.prod.boltdns.net/manifest/v2/hls/v7/fmp4/clear/5748441669001/ab945a00-6495-4d25-9486-050c693046ff/9710d8cd-cd0e-4320-8ae1-2deeb0319d54/10s/rendition.m3u8",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "fastly-signed-us-east-1-prod.brightcovecdn.com",
+        "path": "/media/v1/hls/v7/clear/{n}/{uuid}/{uuid}/init.m4f",
+        "query": [
+          "fastly_token"
+        ],
+        "resourceType": "xhr",
+        "contentType": "audio/mp4",
+        "sameSite": false,
+        "example": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/hls/v7/clear/5748441669001/ab945a00-6495-4d25-9486-050c693046ff/7e684e8a-442c-4f11-9850-209a5952c0f5/init.m4f",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "fastly-signed-us-east-1-prod.brightcovecdn.com",
+        "path": "/media/v1/hls/v7/clear/{n}/{uuid}/{uuid}/5x/segment0.m4f",
+        "query": [
+          "fastly_token"
+        ],
+        "resourceType": "xhr",
+        "contentType": "audio/mp4",
+        "sameSite": false,
+        "example": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/hls/v7/clear/5748441669001/ab945a00-6495-4d25-9486-050c693046ff/7e684e8a-442c-4f11-9850-209a5952c0f5/5x/segment0.m4f",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.synopsys.com",
+        "path": "/cdn-cgi/rum",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "text/plain",
+        "sameSite": true,
+        "example": "https://www.synopsys.com/cdn-cgi/rum",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "adobedc.demdex.net",
+        "path": "/ee/v1/privacy/set-consent",
+        "query": [
+          "configId",
+          "requestId"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://adobedc.demdex.net/ee/v1/privacy/set-consent",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "bzrcdn.openai.com",
+        "path": "/pixel-config/v1/QGy75EpffKaSsF64XSgYj7.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://bzrcdn.openai.com/pixel-config/v1/QGy75EpffKaSsF64XSgYj7.json",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "bzr.openai.com",
+        "path": "/v1/sdk/events",
+        "query": [
+          "ec",
+          "pid",
+          "st",
+          "sv",
+          "t"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "sameSite": false,
+        "example": "https://bzr.openai.com/v1/sdk/events",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "static.cloud.coveo.com",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "host": "assets.adobedtm.com",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "host": "cdn.cookielaw.org",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "host": "static.cloudflareinsights.com",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "host": "kit.fontawesome.com",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "host": "experience.adobe.net",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "host": "players.brightcove.net",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "host": "vjs.zencdn.net",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "host": "bzrcdn.openai.com",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      }
+    ],
+    "frameworkHints": [
+      {
+        "hint": "aem-sites",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      }
+    ],
+    "globalState": [
+      {
+        "name": "dataLayer",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      }
+    ],
+    "formTargets": []
+  }
+}

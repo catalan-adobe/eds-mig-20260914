@@ -1,0 +1,12 @@
+{
+  "runtime": "vanilla-eds",
+  "probedFrom": ["scripts/scripts.js", "scripts/aem.js"],
+  "blockWrapperClass": "block",
+  "blockWrapper": "div.<name>-wrapper around div.<name>.block[data-block-name]; section gains .<name>-container",
+  "buttonClasses": ".button / .button.primary (strong) / .button.secondary (em) / .button.accent (strong+em), in p.button-wrapper",
+  "buttonization": "formatted-only",
+  "fragmentScriptPolicy": "inert-innerHTML",
+  "emptySectionCollapse": true,
+  "autoBlocks": ["a[href*=\"/fragments/\"]", "buildWidgetAutoBlocks"],
+  "chrome": "header/footer blocks fetch /nav and /footer fragments; header expects nav-brand / nav-sections / nav-tools sections"
+}

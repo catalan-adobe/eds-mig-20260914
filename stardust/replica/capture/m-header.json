@@ -1,0 +1,1850 @@
+{
+  "_provenance": {
+    "writtenBy": "skills/replica/scripts/measure.mjs",
+    "writtenAt": "2026-09-21T12:19:24.870Z",
+    "urls": [
+      "https://www.synopsys.com/"
+    ],
+    "widths": [
+      1440,
+      360
+    ],
+    "selectors": [
+      "#utility-nav-bar",
+      "#utility-nav-bar > .d-flex > a",
+      "#utility-nav-bar svg",
+      "#utility-nav-bar .vr",
+      "#utility-nav-bar .ms-auto",
+      ".topbar-lang",
+      "#askSynopsys",
+      "#askSynopsys span",
+      ".sticky-nav",
+      ".component-nav-top",
+      ".nav-top-wrapper",
+      ".nav-top-wrapper > a.logo",
+      ".nav-top-wrapper > a.logo svg",
+      ".main-nav",
+      ".main-nav > ul.utility-nav-enabled",
+      ".main-nav-item",
+      ".main-nav-item-header",
+      ".nav-items-right",
+      ".icon-search",
+      ".icon-search svg",
+      ".nav-items-right a.cta",
+      ".navbar-toggler",
+      ".navbar-toggler svg"
+    ],
+    "props": [
+      "display",
+      "position",
+      "width",
+      "height",
+      "maxWidth",
+      "margin",
+      "padding",
+      "gap",
+      "backgroundColor",
+      "color",
+      "fontFamily",
+      "fontSize",
+      "fontWeight",
+      "lineHeight",
+      "letterSpacing",
+      "textTransform",
+      "textAlign",
+      "borderRadius",
+      "border",
+      "boxShadow",
+      "opacity",
+      "objectFit"
+    ],
+    "allMatches": false,
+    "failed": [],
+    "warnings": []
+  },
+  "widths": [
+    1440,
+    360
+  ],
+  "selectors": [
+    "#utility-nav-bar",
+    "#utility-nav-bar > .d-flex > a",
+    "#utility-nav-bar svg",
+    "#utility-nav-bar .vr",
+    "#utility-nav-bar .ms-auto",
+    ".topbar-lang",
+    "#askSynopsys",
+    "#askSynopsys span",
+    ".sticky-nav",
+    ".component-nav-top",
+    ".nav-top-wrapper",
+    ".nav-top-wrapper > a.logo",
+    ".nav-top-wrapper > a.logo svg",
+    ".main-nav",
+    ".main-nav > ul.utility-nav-enabled",
+    ".main-nav-item",
+    ".main-nav-item-header",
+    ".nav-items-right",
+    ".icon-search",
+    ".icon-search svg",
+    ".nav-items-right a.cta",
+    ".navbar-toggler",
+    ".navbar-toggler svg"
+  ],
+  "pages": {
+    "https://www.synopsys.com/": {
+      "360": {
+        "#utility-nav-bar": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "English Language English 日本語 简体中文 繁體中文 …",
+            "props": {
+              "display": "none",
+              "position": "static",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px 15px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(17, 28, 36)",
+              "fontFamily": "Roboto",
+              "fontSize": "15px",
+              "fontWeight": "300",
+              "lineHeight": "24px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(17, 28, 36)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#utility-nav-bar > .d-flex > a": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(49, 106, 202)",
+              "fontFamily": "Roboto",
+              "fontSize": "15px",
+              "fontWeight": "300",
+              "lineHeight": "24px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(49, 106, 202)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#utility-nav-bar svg": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(49, 106, 202)",
+              "fontFamily": "Roboto",
+              "fontSize": "15px",
+              "fontWeight": "300",
+              "lineHeight": "24px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(49, 106, 202)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#utility-nav-bar .vr": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(17, 28, 36)",
+              "fontFamily": "Roboto",
+              "fontSize": "15px",
+              "fontWeight": "300",
+              "lineHeight": "24px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(17, 28, 36)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#utility-nav-bar .ms-auto": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "English Language English 日本語 简体中文 繁體中文 …",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px 0px 0px auto",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(17, 28, 36)",
+              "fontFamily": "Roboto",
+              "fontSize": "15px",
+              "fontWeight": "300",
+              "lineHeight": "24px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(17, 28, 36)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".topbar-lang": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "English",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "6px 12px",
+              "gap": "normal",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "color": "rgb(51, 51, 51)",
+              "fontFamily": "Roboto",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "20px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "4px",
+              "border": "1px solid rgb(204, 204, 204)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#askSynopsys": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "Ask",
+            "props": {
+              "display": "flex",
+              "position": "relative",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "1px 6px",
+              "gap": "normal",
+              "backgroundColor": "rgb(239, 239, 239)",
+              "color": "rgb(17, 28, 36)",
+              "fontFamily": "Roboto",
+              "fontSize": "15px",
+              "fontWeight": "300",
+              "lineHeight": "24px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "2px outset rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#askSynopsys span": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "Ask",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(17, 28, 36)",
+              "fontFamily": "Roboto",
+              "fontSize": "15px",
+              "fontWeight": "300",
+              "lineHeight": "24px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "0px none rgb(17, 28, 36)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".sticky-nav": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 360,
+              "h": 0
+            },
+            "visible": true,
+            "text": "Back",
+            "props": {
+              "display": "block",
+              "position": "sticky",
+              "width": "360px",
+              "height": "0px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(17, 28, 36)",
+              "fontFamily": "Roboto",
+              "fontSize": "15px",
+              "fontWeight": "300",
+              "lineHeight": "24px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(17, 28, 36)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".component-nav-top": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 360,
+              "h": 70
+            },
+            "visible": true,
+            "text": "Back",
+            "props": {
+              "display": "block",
+              "position": "absolute",
+              "width": "360px",
+              "height": "70px",
+              "maxWidth": "1900px",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(17, 28, 36)",
+              "fontFamily": "Roboto",
+              "fontSize": "15px",
+              "fontWeight": "300",
+              "lineHeight": "24px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(17, 28, 36)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".nav-top-wrapper": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 360,
+              "h": 70
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "flex",
+              "position": "relative",
+              "width": "360px",
+              "height": "70px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px 8px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(17, 28, 36)",
+              "fontFamily": "Roboto",
+              "fontSize": "15px",
+              "fontWeight": "300",
+              "lineHeight": "24px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(17, 28, 36)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".nav-top-wrapper > a.logo": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 32,
+              "y": 23,
+              "w": 110,
+              "h": 24
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "fixed",
+              "width": "110.281px",
+              "height": "24px",
+              "maxWidth": "none",
+              "margin": "0px 40px 0px 24px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(49, 106, 202)",
+              "fontFamily": "Roboto",
+              "fontSize": "15px",
+              "fontWeight": "300",
+              "lineHeight": "24px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(49, 106, 202)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".nav-top-wrapper > a.logo svg": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 32,
+              "y": 23,
+              "w": 110,
+              "h": 24
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "width": "110.281px",
+              "height": "24px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(49, 106, 202)",
+              "fontFamily": "Roboto",
+              "fontSize": "15px",
+              "fontWeight": "300",
+              "lineHeight": "24px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(49, 106, 202)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".main-nav": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 8,
+              "y": 0,
+              "w": 344,
+              "h": 471
+            },
+            "visible": false,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "width": "344px",
+              "height": "471.156px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "color": "rgb(17, 28, 36)",
+              "fontFamily": "Roboto",
+              "fontSize": "15px",
+              "fontWeight": "300",
+              "lineHeight": "24px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(17, 28, 36)",
+              "boxShadow": "none",
+              "opacity": "0",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".main-nav > ul.utility-nav-enabled": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 8,
+              "y": 0,
+              "w": 344,
+              "h": 342
+            },
+            "visible": false,
+            "text": "",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "width": "344px",
+              "height": "341.969px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px 0px 8px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(17, 28, 36)",
+              "fontFamily": "Roboto",
+              "fontSize": "15px",
+              "fontWeight": "300",
+              "lineHeight": "24px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".main-nav-item": [
+          {
+            "index": 0,
+            "of": 6,
+            "rect": {
+              "x": 8,
+              "y": 1,
+              "w": 344,
+              "h": 67
+            },
+            "visible": false,
+            "text": "",
+            "props": {
+              "display": "flex",
+              "position": "relative",
+              "width": "344px",
+              "height": "66.5938px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "24px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(17, 28, 36)",
+              "fontFamily": "Roboto",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "17.6px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".main-nav-item-header": [
+          {
+            "index": 0,
+            "of": 6,
+            "rect": {
+              "x": 32,
+              "y": 25,
+              "w": 103,
+              "h": 18
+            },
+            "visible": false,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "width": "102.609px",
+              "height": "17.5938px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "Roboto",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "17.6px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(255, 255, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".nav-items-right": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 304,
+              "y": 0,
+              "w": 32,
+              "h": 70
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "flex",
+              "position": "fixed",
+              "width": "32px",
+              "height": "70px",
+              "maxWidth": "none",
+              "margin": "0px 24px 0px 0px",
+              "padding": "0px",
+              "gap": "normal 10px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(17, 28, 36)",
+              "fontFamily": "Roboto",
+              "fontSize": "15px",
+              "fontWeight": "300",
+              "lineHeight": "24px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(17, 28, 36)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".icon-search": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "Search Synopsys.com",
+            "props": {
+              "display": "none",
+              "position": "static",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "1px 6px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "Roboto",
+              "fontSize": "15px",
+              "fontWeight": "300",
+              "lineHeight": "24px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "0px none rgb(255, 255, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".icon-search svg": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "width": "16px",
+              "height": "16px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "2px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "Roboto",
+              "fontSize": "15px",
+              "fontWeight": "300",
+              "lineHeight": "24px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "0px none rgb(255, 255, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".nav-items-right a.cta": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "Contact Sales",
+            "props": {
+              "display": "none",
+              "position": "static",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px 24px",
+              "gap": "normal",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "color": "rgb(17, 28, 36)",
+              "fontFamily": "Roboto",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "16px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "5px",
+              "border": "0px none rgb(17, 28, 36)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".navbar-toggler": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 304,
+              "y": 23,
+              "w": 32,
+              "h": 24
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "flex",
+              "position": "relative",
+              "width": "32px",
+              "height": "24px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "1px 6px",
+              "gap": "normal",
+              "backgroundColor": "rgba(196, 196, 196, 0.8)",
+              "color": "rgb(17, 28, 36)",
+              "fontFamily": "Roboto",
+              "fontSize": "15px",
+              "fontWeight": "300",
+              "lineHeight": "24px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "5px",
+              "border": "0px none rgb(17, 28, 36)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".navbar-toggler svg": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 313,
+              "y": 27,
+              "w": 14,
+              "h": 16
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "width": "14px",
+              "height": "16px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(17, 28, 36)",
+              "fontFamily": "Roboto",
+              "fontSize": "15px",
+              "fontWeight": "300",
+              "lineHeight": "24px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "0px none rgb(17, 28, 36)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ]
+      },
+      "1440": {
+        "#utility-nav-bar": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 1440,
+              "h": 53
+            },
+            "visible": true,
+            "text": "English Ask",
+            "props": {
+              "display": "flex",
+              "position": "relative",
+              "width": "1440px",
+              "height": "53px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px 24px",
+              "gap": "normal",
+              "backgroundColor": "rgb(23, 25, 23)",
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "Roboto",
+              "fontSize": "18px",
+              "fontWeight": "300",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#utility-nav-bar > .d-flex > a": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 24,
+              "y": 18,
+              "w": 74,
+              "h": 16
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "width": "73.5156px",
+              "height": "16px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal 10px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(49, 106, 202)",
+              "fontFamily": "Roboto",
+              "fontSize": "18px",
+              "fontWeight": "300",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(49, 106, 202)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#utility-nav-bar svg": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 24,
+              "y": 18,
+              "w": 74,
+              "h": 16
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "width": "73.5156px",
+              "height": "16px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(49, 106, 202)",
+              "fontFamily": "Roboto",
+              "fontSize": "18px",
+              "fontWeight": "300",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(49, 106, 202)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#utility-nav-bar .vr": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 108,
+              "y": 18,
+              "w": 1,
+              "h": 14
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "width": "1px",
+              "height": "14px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgb(95, 98, 95)",
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "Roboto",
+              "fontSize": "18px",
+              "fontWeight": "300",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(255, 255, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#utility-nav-bar .ms-auto": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 1228,
+              "y": 8,
+              "w": 188,
+              "h": 36
+            },
+            "visible": true,
+            "text": "English Ask",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "width": "188.281px",
+              "height": "36px",
+              "maxWidth": "none",
+              "margin": "0px 0px 0px 1058.2px",
+              "padding": "0px",
+              "gap": "normal 10px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "Roboto",
+              "fontSize": "18px",
+              "fontWeight": "300",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(255, 255, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".topbar-lang": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 1228,
+              "y": 8,
+              "w": 106,
+              "h": 36
+            },
+            "visible": true,
+            "text": "English",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "width": "106.172px",
+              "height": "36px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px 14px",
+              "gap": "12px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "Roboto",
+              "fontSize": "14px",
+              "fontWeight": "600",
+              "lineHeight": "14px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "9999px",
+              "border": "2px solid rgba(0, 0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#askSynopsys": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 1344,
+              "y": 8,
+              "w": 72,
+              "h": 36
+            },
+            "visible": true,
+            "text": "Ask",
+            "props": {
+              "display": "flex",
+              "position": "relative",
+              "width": "72.1094px",
+              "height": "36px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px 12px",
+              "gap": "normal 10px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "Roboto",
+              "fontSize": "14px",
+              "fontWeight": "600",
+              "lineHeight": "22.4px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "9999px",
+              "border": "0px none rgb(255, 255, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#askSynopsys span": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 1356,
+              "y": 15,
+              "w": 48,
+              "h": 22
+            },
+            "visible": true,
+            "text": "Ask",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "width": "48.1094px",
+              "height": "22.3906px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "8px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "Roboto",
+              "fontSize": "14px",
+              "fontWeight": "600",
+              "lineHeight": "22.4px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "0px none rgb(255, 255, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".sticky-nav": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 53,
+              "w": 1440,
+              "h": 0
+            },
+            "visible": true,
+            "text": "Why Synopsys Solutions Products Support…",
+            "props": {
+              "display": "block",
+              "position": "sticky",
+              "width": "1440px",
+              "height": "0px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(17, 28, 36)",
+              "fontFamily": "Roboto",
+              "fontSize": "18px",
+              "fontWeight": "300",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(17, 28, 36)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".component-nav-top": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 53,
+              "w": 1440,
+              "h": 80
+            },
+            "visible": true,
+            "text": "Why Synopsys Solutions Products Support…",
+            "props": {
+              "display": "block",
+              "position": "absolute",
+              "width": "1440px",
+              "height": "80px",
+              "maxWidth": "1900px",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(17, 28, 36)",
+              "fontFamily": "Roboto",
+              "fontSize": "18px",
+              "fontWeight": "300",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(17, 28, 36)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".nav-top-wrapper": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 135,
+              "y": 53,
+              "w": 1170,
+              "h": 80
+            },
+            "visible": true,
+            "text": "Why Synopsys Solutions Products Support…",
+            "props": {
+              "display": "flex",
+              "position": "relative",
+              "width": "1170px",
+              "height": "80px",
+              "maxWidth": "1170px",
+              "margin": "0px 135px",
+              "padding": "0px 15px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(17, 28, 36)",
+              "fontFamily": "Roboto",
+              "fontSize": "18px",
+              "fontWeight": "300",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(17, 28, 36)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".nav-top-wrapper > a.logo": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 150,
+              "y": 76,
+              "w": 156,
+              "h": 34
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "relative",
+              "width": "156.234px",
+              "height": "34px",
+              "maxWidth": "none",
+              "margin": "0px 40px 0px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(49, 106, 202)",
+              "fontFamily": "Roboto",
+              "fontSize": "18px",
+              "fontWeight": "300",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(49, 106, 202)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".nav-top-wrapper > a.logo svg": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 150,
+              "y": 76,
+              "w": 156,
+              "h": 34
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "width": "156.234px",
+              "height": "34px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(49, 106, 202)",
+              "fontFamily": "Roboto",
+              "fontSize": "18px",
+              "fontWeight": "300",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(49, 106, 202)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".main-nav": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 346,
+              "y": 57,
+              "w": 615,
+              "h": 72
+            },
+            "visible": true,
+            "text": "Why Synopsys Solutions Products Support…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "width": "615.453px",
+              "height": "72.4062px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "25px 0px",
+              "gap": "normal 24px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(17, 28, 36)",
+              "fontFamily": "Roboto",
+              "fontSize": "18px",
+              "fontWeight": "300",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(17, 28, 36)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".main-nav > ul.utility-nav-enabled": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 346,
+              "y": 82,
+              "w": 615,
+              "h": 22
+            },
+            "visible": true,
+            "text": "Why Synopsys Solutions Products Support…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "width": "615.453px",
+              "height": "22.4062px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal 24px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(17, 28, 36)",
+              "fontFamily": "Roboto",
+              "fontSize": "16px",
+              "fontWeight": "300",
+              "lineHeight": "25.6px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(17, 28, 36)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".main-nav-item": [
+          {
+            "index": 0,
+            "of": 6,
+            "rect": {
+              "x": 346,
+              "y": 82,
+              "w": 119,
+              "h": 22
+            },
+            "visible": true,
+            "text": "Why Synopsys",
+            "props": {
+              "display": "list-item",
+              "position": "relative",
+              "width": "118.609px",
+              "height": "22.4062px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(17, 28, 36)",
+              "fontFamily": "Roboto",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "17.6px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(17, 28, 36)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".main-nav-item-header": [
+          {
+            "index": 0,
+            "of": 6,
+            "rect": {
+              "x": 346,
+              "y": 83,
+              "w": 119,
+              "h": 19
+            },
+            "visible": true,
+            "text": "Why Synopsys",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "Roboto",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "22.4px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(255, 255, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".nav-items-right": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 1075,
+              "y": 58,
+              "w": 215,
+              "h": 70
+            },
+            "visible": true,
+            "text": "Search Synopsys.com Contact Sales",
+            "props": {
+              "display": "flex",
+              "position": "relative",
+              "width": "214.672px",
+              "height": "70px",
+              "maxWidth": "none",
+              "margin": "0px 0px 0px 113.641px",
+              "padding": "0px",
+              "gap": "normal 40px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(17, 28, 36)",
+              "fontFamily": "Roboto",
+              "fontSize": "18px",
+              "fontWeight": "300",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(17, 28, 36)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".icon-search": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 1075,
+              "y": 82,
+              "w": 28,
+              "h": 22
+            },
+            "visible": true,
+            "text": "Search Synopsys.com",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "width": "28px",
+              "height": "22px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "1px 6px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "Roboto",
+              "fontSize": "18px",
+              "fontWeight": "300",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "0px none rgb(255, 255, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".icon-search svg": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 1081,
+              "y": 83,
+              "w": 16,
+              "h": 20
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "width": "16px",
+              "height": "16px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "2px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "Roboto",
+              "fontSize": "18px",
+              "fontWeight": "300",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "0px none rgb(255, 255, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".nav-items-right a.cta": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 1143,
+              "y": 73,
+              "w": 147,
+              "h": 40
+            },
+            "visible": true,
+            "text": "Contact Sales",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "width": "146.672px",
+              "height": "40px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px 24px",
+              "gap": "normal",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "color": "rgb(17, 28, 36)",
+              "fontFamily": "Roboto",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "16px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "5px",
+              "border": "0px none rgb(17, 28, 36)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".navbar-toggler": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "",
+            "props": {
+              "display": "none",
+              "position": "relative",
+              "width": "32px",
+              "height": "24px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "1px 6px",
+              "gap": "normal",
+              "backgroundColor": "rgba(196, 196, 196, 0.8)",
+              "color": "rgb(17, 28, 36)",
+              "fontFamily": "Roboto",
+              "fontSize": "18px",
+              "fontWeight": "300",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "5px",
+              "border": "0px none rgb(17, 28, 36)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".navbar-toggler svg": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "width": "14px",
+              "height": "16px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(17, 28, 36)",
+              "fontFamily": "Roboto",
+              "fontSize": "18px",
+              "fontWeight": "300",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "0px none rgb(17, 28, 36)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

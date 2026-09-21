@@ -1,33 +1,173 @@
+/* columns — synopsys.com two-column bands (stardust/replica/capture/m-mid1.json, m-bottom.json) */
+
 .columns > div {
   display: flex;
   flex-direction: column;
 }
 
-.columns img {
-  width: 100%;
+.columns .columns-col p {
+  margin: 0;
 }
 
-.columns > div > div {
-  order: 1;
-}
-
-.columns > div > .columns-img-col {
-  order: 0;
-}
-
-.columns > div > .columns-img-col img {
-  display: block;
-}
-
-@media (width >= 900px) {
+@media (width >= 730px) {
   .columns > div {
-    align-items: center;
-    flex-direction: unset;
-    gap: 24px;
+    flex-direction: row;
+    gap: 30px;
   }
 
-  .columns > div > div {
+  .columns .columns-col {
     flex: 1;
-    order: unset;
+    min-width: 0;
+  }
+}
+
+/* ── key-benefits: "Industry" / "Technology" icon lists ── */
+main .section:has(> .columns-wrapper > .columns.key-benefits) {
+  margin-top: 40px;
+  padding-bottom: 30px;
+}
+
+main .section:has(> .columns-wrapper > .columns.key-benefits) .default-content-wrapper {
+  padding-bottom: 30px;
+}
+
+.columns.key-benefits .columns-col h3 {
+  margin: 40px 0 30px;
+  color: var(--text-color);
+  font-size: var(--heading-font-size-xl);
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+.columns.key-benefits .columns-benefit {
+  display: block;
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.columns.key-benefits .columns-benefit:hover {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.columns.key-benefits .columns-benefit-icon {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin: 0 16px 0 0;
+}
+
+.columns.key-benefits .columns-benefit-icon p {
+  line-height: 0;
+}
+
+.columns.key-benefits .columns-benefit-icon picture,
+.columns.key-benefits .columns-benefit-icon img {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.columns.key-benefits .columns-benefit-title p {
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.columns.key-benefits .columns-benefit-text {
+  clear: both;
+}
+
+.columns.key-benefits .columns-benefit-text p {
+  display: -webkit-box;
+  margin-bottom: 32px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25.6px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (width >= 730px) {
+  main .section:has(> .columns-wrapper > .columns.key-benefits) {
+    margin-top: 60px;
+  }
+
+  .columns.key-benefits .columns-col h3 {
+    margin-top: 30px;
+  }
+
+  .columns.key-benefits .columns-benefit-text {
+    margin-bottom: 48px;
+  }
+}
+
+/* ── divider: Support & Services | Careers ── */
+main .section.light:has(> .columns-wrapper > .columns.divider) {
+  margin-top: 0;
+  padding: 40px 0 60px;
+}
+
+.columns.divider .columns-col h2 {
+  color: var(--text-color);
+  font-size: var(--heading-font-size-xl);
+  font-weight: 300;
+  line-height: 1.1;
+  text-align: left;
+}
+
+.columns.divider .columns-col p {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.columns.divider .columns-col p:has(> a:only-child) {
+  margin-top: 24px;
+  font-weight: 400;
+}
+
+.columns.divider .columns-col p:has(> a:only-child) a {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text-color);
+}
+
+.columns.divider .columns-col p:has(> a:only-child) a::after {
+  content: "";
+  width: 7.5px;
+  height: 12px;
+  margin-left: 8px;
+  background: currentcolor;
+  mask: url("/icons/chevron-right.svg") center / contain no-repeat;
+}
+
+@media (width >= 730px) {
+  main .section.light:has(> .columns-wrapper > .columns.divider) {
+    padding: 60px 0;
+  }
+
+  .columns.divider > div {
+    gap: 0;
+  }
+
+  .columns.divider .columns-col {
+    padding-right: 15px;
+  }
+
+  .columns.divider .columns-col + .columns-col {
+    padding-left: 15px;
+    border-left: 1px solid var(--grey-rule);
+  }
+
+  .columns.divider .columns-col p {
+    margin-top: 24px;
   }
 }

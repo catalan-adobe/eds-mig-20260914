@@ -1,0 +1,561 @@
+{
+  "_provenance": {
+    "writtenBy": "skills/replica/scripts/measure.mjs",
+    "writtenAt": "2026-09-21T12:24:32.666Z",
+    "urls": [
+      "https://www.synopsys.com/"
+    ],
+    "widths": [
+      1440
+    ],
+    "selectors": [
+      "#hp-carousel-090824 .slick-slide:nth-child(3) .component-button.primary",
+      "#hp-carousel-090824 .slick-slide:nth-child(3) .component-button.secondary",
+      "#hp-carousel-090824 .slick-slide:nth-child(3) .component-button.secondary a",
+      "#hp-carousel-090824 .slick-slide:nth-child(3) .cta-wrapper",
+      "#hp-carousel-090824 .slick-slide:nth-child(5) .foreground",
+      "#hp-carousel-090824 .slick-slide:nth-child(5) .foreground img",
+      "#hp-carousel-090824 .slick-slide:nth-child(5) .center-wrapper",
+      "#hp-carousel-090824 .slick-slide:nth-child(5) .text-wrapper",
+      ".site-wrapper",
+      ".root",
+      ".slick-dots li:before",
+      ".component-solutioncard .text-hover hr",
+      ".cmp-key-benefits__link:hover",
+      ".component-nav-top .main-nav-item:nth-child(2)"
+    ],
+    "props": [
+      "display",
+      "position",
+      "width",
+      "height",
+      "maxWidth",
+      "margin",
+      "padding",
+      "gap",
+      "backgroundColor",
+      "backgroundImage",
+      "color",
+      "fontSize",
+      "fontWeight",
+      "lineHeight",
+      "textAlign",
+      "borderRadius",
+      "border",
+      "opacity",
+      "top",
+      "left",
+      "right",
+      "bottom",
+      "flexDirection",
+      "alignItems",
+      "justifyContent",
+      "textShadow",
+      "overflow"
+    ],
+    "allMatches": false,
+    "failed": [],
+    "warnings": []
+  },
+  "widths": [
+    1440
+  ],
+  "selectors": [
+    "#hp-carousel-090824 .slick-slide:nth-child(3) .component-button.primary",
+    "#hp-carousel-090824 .slick-slide:nth-child(3) .component-button.secondary",
+    "#hp-carousel-090824 .slick-slide:nth-child(3) .component-button.secondary a",
+    "#hp-carousel-090824 .slick-slide:nth-child(3) .cta-wrapper",
+    "#hp-carousel-090824 .slick-slide:nth-child(5) .foreground",
+    "#hp-carousel-090824 .slick-slide:nth-child(5) .foreground img",
+    "#hp-carousel-090824 .slick-slide:nth-child(5) .center-wrapper",
+    "#hp-carousel-090824 .slick-slide:nth-child(5) .text-wrapper",
+    ".site-wrapper",
+    ".root",
+    ".slick-dots li:before",
+    ".component-solutioncard .text-hover hr",
+    ".cmp-key-benefits__link:hover",
+    ".component-nav-top .main-nav-item:nth-child(2)"
+  ],
+  "pages": {
+    "https://www.synopsys.com/": {
+      "1440": {
+        "#hp-carousel-090824 .slick-slide:nth-child(3) .component-button.primary": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 160,
+              "y": 521,
+              "w": 169,
+              "h": 40
+            },
+            "visible": true,
+            "text": "Press Release",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "width": "169.422px",
+              "height": "40px",
+              "maxWidth": "none",
+              "margin": "0px 0px 15px",
+              "padding": "0px 24px",
+              "gap": "normal",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "color": "rgb(17, 28, 36)",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "25.6px",
+              "textAlign": "center",
+              "borderRadius": "5px",
+              "border": "2px solid rgb(255, 255, 255)",
+              "opacity": "1",
+              "top": "auto",
+              "left": "auto",
+              "right": "auto",
+              "bottom": "auto",
+              "flexDirection": "row",
+              "alignItems": "center",
+              "justifyContent": "normal",
+              "textShadow": "none",
+              "overflow": "visible"
+            }
+          }
+        ],
+        "#hp-carousel-090824 .slick-slide:nth-child(3) .component-button.secondary": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 353,
+              "y": 521,
+              "w": 150,
+              "h": 40
+            },
+            "visible": true,
+            "text": "Learn More",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "width": "149.828px",
+              "height": "40px",
+              "maxWidth": "none",
+              "margin": "0px 0px 15px",
+              "padding": "0px 24px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(255, 255, 255)",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "25.6px",
+              "textAlign": "center",
+              "borderRadius": "5px",
+              "border": "2px solid rgb(255, 255, 255)",
+              "opacity": "1",
+              "top": "auto",
+              "left": "auto",
+              "right": "auto",
+              "bottom": "auto",
+              "flexDirection": "row",
+              "alignItems": "center",
+              "justifyContent": "normal",
+              "textShadow": "none",
+              "overflow": "visible"
+            }
+          }
+        ],
+        "#hp-carousel-090824 .slick-slide:nth-child(3) .component-button.secondary a": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 379,
+              "y": 533,
+              "w": 98,
+              "h": 16
+            },
+            "visible": true,
+            "text": "Learn More",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "width": "97.8281px",
+              "height": "16px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(255, 255, 255)",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "16px",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "0px none rgb(255, 255, 255)",
+              "opacity": "1",
+              "top": "auto",
+              "left": "auto",
+              "right": "auto",
+              "bottom": "auto",
+              "flexDirection": "row",
+              "alignItems": "center",
+              "justifyContent": "center",
+              "textShadow": "none",
+              "overflow": "visible"
+            }
+          }
+        ],
+        "#hp-carousel-090824 .slick-slide:nth-child(3) .cta-wrapper": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 160,
+              "y": 521,
+              "w": 560,
+              "h": 55
+            },
+            "visible": true,
+            "text": "Press Release Learn More",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "width": "560px",
+              "height": "55px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "15px 24px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(17, 28, 36)",
+              "fontSize": "18px",
+              "fontWeight": "300",
+              "lineHeight": "28.8px",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(17, 28, 36)",
+              "opacity": "1",
+              "top": "auto",
+              "left": "auto",
+              "right": "auto",
+              "bottom": "auto",
+              "flexDirection": "row",
+              "alignItems": "normal",
+              "justifyContent": "normal",
+              "textShadow": "none",
+              "overflow": "visible"
+            }
+          }
+        ],
+        "#hp-carousel-090824 .slick-slide:nth-child(5) .foreground": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 825,
+              "y": 223,
+              "w": 455,
+              "h": 289
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "width": "454.734px",
+              "height": "288.609px",
+              "maxWidth": "630px",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(17, 28, 36)",
+              "fontSize": "18px",
+              "fontWeight": "300",
+              "lineHeight": "28.8px",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(17, 28, 36)",
+              "opacity": "1",
+              "top": "auto",
+              "left": "auto",
+              "right": "auto",
+              "bottom": "auto",
+              "flexDirection": "row",
+              "alignItems": "normal",
+              "justifyContent": "normal",
+              "textShadow": "none",
+              "overflow": "visible"
+            }
+          }
+        ],
+        "#hp-carousel-090824 .slick-slide:nth-child(5) .foreground img": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 825,
+              "y": 223,
+              "w": 455,
+              "h": 153
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "relative",
+              "width": "454.734px",
+              "height": "152.875px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(17, 28, 36)",
+              "fontSize": "18px",
+              "fontWeight": "300",
+              "lineHeight": "28.8px",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(17, 28, 36)",
+              "opacity": "1",
+              "top": "0px",
+              "left": "0px",
+              "right": "0px",
+              "bottom": "0px",
+              "flexDirection": "row",
+              "alignItems": "normal",
+              "justifyContent": "normal",
+              "textShadow": "none",
+              "overflow": "clip"
+            }
+          }
+        ],
+        "#hp-carousel-090824 .slick-slide:nth-child(5) .center-wrapper": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 223,
+              "w": 1440,
+              "h": 289
+            },
+            "visible": true,
+            "text": "NVIDIA and Synopsys Announce Strategic …",
+            "props": {
+              "display": "flex",
+              "position": "absolute",
+              "width": "1440px",
+              "height": "288.609px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px 160px",
+              "gap": "160px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(17, 28, 36)",
+              "fontSize": "18px",
+              "fontWeight": "300",
+              "lineHeight": "28.8px",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(17, 28, 36)",
+              "opacity": "1",
+              "top": "170px",
+              "left": "0px",
+              "right": "0px",
+              "bottom": "241.391px",
+              "flexDirection": "row",
+              "alignItems": "normal",
+              "justifyContent": "normal",
+              "textShadow": "none",
+              "overflow": "visible"
+            }
+          }
+        ],
+        "#hp-carousel-090824 .slick-slide:nth-child(5) .text-wrapper": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 160,
+              "y": 223,
+              "w": 505,
+              "h": 289
+            },
+            "visible": true,
+            "text": "NVIDIA and Synopsys Announce Strategic …",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "width": "505.266px",
+              "height": "288.609px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(17, 28, 36)",
+              "fontSize": "18px",
+              "fontWeight": "300",
+              "lineHeight": "28.8px",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(17, 28, 36)",
+              "opacity": "1",
+              "top": "auto",
+              "left": "auto",
+              "right": "auto",
+              "bottom": "auto",
+              "flexDirection": "row",
+              "alignItems": "normal",
+              "justifyContent": "normal",
+              "textShadow": "none",
+              "overflow": "visible"
+            }
+          }
+        ],
+        ".site-wrapper": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 53,
+              "w": 1440,
+              "h": 4823
+            },
+            "visible": true,
+            "text": "Why Synopsys Solutions Products Support…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "width": "1440px",
+              "height": "4823.39px",
+              "maxWidth": "1900px",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "color": "rgb(17, 28, 36)",
+              "fontSize": "18px",
+              "fontWeight": "300",
+              "lineHeight": "28.8px",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(17, 28, 36)",
+              "opacity": "1",
+              "top": "auto",
+              "left": "auto",
+              "right": "auto",
+              "bottom": "auto",
+              "flexDirection": "row",
+              "alignItems": "normal",
+              "justifyContent": "normal",
+              "textShadow": "none",
+              "overflow": "clip visible"
+            }
+          }
+        ],
+        ".root": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 53,
+              "w": 1440,
+              "h": 4823
+            },
+            "visible": true,
+            "text": "Why Synopsys Solutions Products Support…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "width": "1440px",
+              "height": "4823.39px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(17, 28, 36)",
+              "fontSize": "18px",
+              "fontWeight": "300",
+              "lineHeight": "28.8px",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(17, 28, 36)",
+              "opacity": "1",
+              "top": "auto",
+              "left": "auto",
+              "right": "auto",
+              "bottom": "auto",
+              "flexDirection": "row",
+              "alignItems": "normal",
+              "justifyContent": "normal",
+              "textShadow": "none",
+              "overflow": "visible"
+            }
+          }
+        ],
+        ".slick-dots li:before": [],
+        ".component-solutioncard .text-hover hr": [],
+        ".cmp-key-benefits__link:hover": [],
+        ".component-nav-top .main-nav-item:nth-child(2)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 489,
+              "y": 82,
+              "w": 83,
+              "h": 22
+            },
+            "visible": true,
+            "text": "Solutions",
+            "props": {
+              "display": "list-item",
+              "position": "relative",
+              "width": "82.6406px",
+              "height": "22.4062px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(17, 28, 36)",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "17.6px",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(17, 28, 36)",
+              "opacity": "1",
+              "top": "0px",
+              "left": "0px",
+              "right": "0px",
+              "bottom": "0px",
+              "flexDirection": "row",
+              "alignItems": "normal",
+              "justifyContent": "normal",
+              "textShadow": "none",
+              "overflow": "visible"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

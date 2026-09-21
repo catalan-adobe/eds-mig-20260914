@@ -1,0 +1,77 @@
+{
+  "url": "http://localhost:8793/index-proposed.html",
+  "width": 1440,
+  "headerTimeline": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "widgetSamples": [],
+  "hoverSamples": [],
+  "events": {
+    "animations": [],
+    "transitions": [
+      {
+        "prop": "backdrop-filter",
+        "el": "div.site-wrapper > div.root.synopsysContainer.responsivegrid > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.experiencefragment.sticky-nav > div.component-nav-top.overlapping",
+        "y": 400,
+        "dur": "0.25s"
+      },
+      {
+        "prop": "box-shadow",
+        "el": "div.site-wrapper > div.root.synopsysContainer.responsivegrid > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.experiencefragment.sticky-nav > div.component-nav-top.overlapping",
+        "y": 400,
+        "dur": "0.25s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.site-wrapper > div.root.synopsysContainer.responsivegrid > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.experiencefragment.sticky-nav > div.component-nav-top.overlapping",
+        "y": 400,
+        "dur": "0.25s"
+      },
+      {
+        "prop": "backdrop-filter",
+        "el": "div.site-wrapper > div.root.synopsysContainer.responsivegrid > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.experiencefragment.sticky-nav > div.component-nav-top",
+        "y": 60,
+        "dur": "0.25s"
+      },
+      {
+        "prop": "box-shadow",
+        "el": "div.site-wrapper > div.root.synopsysContainer.responsivegrid > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.experiencefragment.sticky-nav > div.component-nav-top",
+        "y": 60,
+        "dur": "0.25s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.site-wrapper > div.root.synopsysContainer.responsivegrid > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.experiencefragment.sticky-nav > div.component-nav-top",
+        "y": 60,
+        "dur": "0.25s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "overlapping"
+        ],
+        "el": "div.site-wrapper > div.root.synopsysContainer.responsivegrid > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.experiencefragment.sticky-nav > div.component-nav-top.overlapping",
+        "y": 400
+      }
+    ]
+  }
+}

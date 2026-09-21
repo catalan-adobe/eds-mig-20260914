@@ -1,20 +1,27 @@
 import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 
-// media query match that indicates mobile/tablet width
-const isDesktop = window.matchMedia('(min-width: 900px)');
+/**
+ * header — synopsys.com chrome: utility bar (Synopsys | Ansys, language, Ask) above a
+ * transparent nav that floats over the hero and turns frosted (`.overlapping`) once the
+ * page is scrolled past 80px (threshold lifted from synopsys-headlibs.js).
+ *
+ * /nav sections (template-slotted, EW1): 1 brand link · 2 nav item list · 3 tools
+ * (search icon, Contact Sales CTA) · 4 utility bar (logos, language, Ask).
+ * @ew-exempt none — every authored node is moved, never rebuilt.
+ */
+
+// media query match that indicates mobile/tablet width (synopsys collapses the nav < 1130)
+const isDesktop = window.matchMedia('(min-width: 1130px)');
+const OVERLAP_AT = 80;
+const UTILITY_HEIGHT = 53;
 
 function closeOnEscape(e) {
   if (e.code === 'Escape') {
     const nav = document.getElementById('nav');
     const navSections = nav.querySelector('.nav-sections');
     if (!navSections) return;
-    const navSectionExpanded = navSections.querySelector('[aria-expanded="true"]');
-    if (navSectionExpanded && isDesktop.matches) {
-      // eslint-disable-next-line no-use-before-define
-      toggleAllNavSections(navSections);
-      navSectionExpanded.focus();
-    } else if (!isDesktop.matches) {
+    if (!isDesktop.matches) {
       // eslint-disable-next-line no-use-before-define
       toggleMenu(nav, navSections);
       nav.querySelector('button').focus();
@@ -24,45 +31,11 @@ function closeOnEscape(e) {
 
 function closeOnFocusLost(e) {
   const nav = e.currentTarget;
-  if (!nav.contains(e.relatedTarget)) {
+  if (!nav.contains(e.relatedTarget) && !isDesktop.matches) {
     const navSections = nav.querySelector('.nav-sections');
-    if (!navSections) return;
-    const navSectionExpanded = navSections.querySelector('[aria-expanded="true"]');
-    if (navSectionExpanded && isDesktop.matches) {
-      // eslint-disable-next-line no-use-before-define
-      toggleAllNavSections(navSections, false);
-    } else if (!isDesktop.matches) {
-      // eslint-disable-next-line no-use-before-define
-      toggleMenu(nav, navSections, false);
-    }
-  }
-}
-
-function openOnKeydown(e) {
-  const focused = document.activeElement;
-  const isNavDrop = focused.className === 'nav-drop';
-  if (isNavDrop && (e.code === 'Enter' || e.code === 'Space')) {
-    const dropExpanded = focused.getAttribute('aria-expanded') === 'true';
     // eslint-disable-next-line no-use-before-define
-    toggleAllNavSections(focused.closest('.nav-sections'));
-    focused.setAttribute('aria-expanded', dropExpanded ? 'false' : 'true');
+    toggleMenu(nav, navSections, false);
   }
-}
-
-function focusNavSection() {
-  document.activeElement.addEventListener('keydown', openOnKeydown);
-}
-
-/**
- * Toggles all nav sections
- * @param {Element} sections The container element
- * @param {Boolean} expanded Whether the element should be expanded or collapsed
- */
-function toggleAllNavSections(sections, expanded = false) {
-  if (!sections) return;
-  sections.querySelectorAll('.nav-sections .default-content-wrapper > ul > li').forEach((section) => {
-    section.setAttribute('aria-expanded', expanded);
-  });
 }
 
 /**
@@ -76,31 +49,9 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
   const button = nav.querySelector('.nav-hamburger button');
   document.body.style.overflowY = (expanded || isDesktop.matches) ? '' : 'hidden';
   nav.setAttribute('aria-expanded', expanded ? 'false' : 'true');
-  toggleAllNavSections(navSections, expanded || isDesktop.matches ? 'false' : 'true');
   button.setAttribute('aria-label', expanded ? 'Open navigation' : 'Close navigation');
-  // enable nav dropdown keyboard accessibility
-  if (navSections) {
-    const navDrops = navSections.querySelectorAll('.nav-drop');
-    if (isDesktop.matches) {
-      navDrops.forEach((drop) => {
-        if (!drop.hasAttribute('tabindex')) {
-          drop.setAttribute('tabindex', 0);
-          drop.addEventListener('focus', focusNavSection);
-        }
-      });
-    } else {
-      navDrops.forEach((drop) => {
-        drop.removeAttribute('tabindex');
-        drop.removeEventListener('focus', focusNavSection);
-      });
-    }
-  }
-
-  // enable menu collapse on escape keypress
   if (!expanded || isDesktop.matches) {
-    // collapse menu on escape press
     window.addEventListener('keydown', closeOnEscape);
-    // collapse menu on focus lost
     nav.addEventListener('focusout', closeOnFocusLost);
   } else {
     window.removeEventListener('keydown', closeOnEscape);
@@ -108,47 +59,46 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
   }
 }
 
+/** scroll-state chrome: nav sticks under the utility bar, frosted past OVERLAP_AT */
+function trackScroll(header, nav) {
+  const sync = () => {
+    const y = window.scrollY || document.documentElement.scrollTop;
+    nav.classList.toggle('overlapping', y > OVERLAP_AT);
+    const util = header.querySelector('.utility-bar');
+    const top = util && isDesktop.matches ? Math.max(0, UTILITY_HEIGHT - y) : 0;
+    header.style.setProperty('--nav-top', `${top}px`);
+  };
+  window.addEventListener('scroll', sync, { passive: true });
+  isDesktop.addEventListener('change', sync);
+  sync();
+}
+
 /**
  * loads and decorates the header, mainly the nav
  * @param {Element} block The header block element
  */
 export default async function decorate(block) {
-  // load nav as fragment
   const navMeta = getMetadata('nav');
   const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
   const fragment = await loadFragment(navPath);
 
-  // decorate nav DOM
   block.textContent = '';
   const nav = document.createElement('nav');
   nav.id = 'nav';
-  while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
+  const sections = [...fragment.children];
+  const [brand, links, tools, utility] = sections;
 
-  const classes = ['brand', 'sections', 'tools'];
-  classes.forEach((c, i) => {
-    const section = nav.children[i];
-    if (section) section.classList.add(`nav-${c}`);
-  });
-
-  const navBrand = nav.querySelector('.nav-brand');
-  const brandLink = navBrand.querySelector('.button');
-  if (brandLink) {
-    brandLink.className = '';
-    brandLink.closest('.button-container').className = '';
+  if (brand) {
+    brand.className = 'nav-brand';
+    nav.append(brand);
   }
-
-  const navSections = nav.querySelector('.nav-sections');
-  if (navSections) {
-    navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
-      if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');
-      navSection.addEventListener('click', () => {
-        if (isDesktop.matches) {
-          const expanded = navSection.getAttribute('aria-expanded') === 'true';
-          toggleAllNavSections(navSections);
-          navSection.setAttribute('aria-expanded', expanded ? 'false' : 'true');
-        }
-      });
-    });
+  if (links) {
+    links.className = 'nav-sections';
+    nav.append(links);
+  }
+  if (tools) {
+    tools.className = 'nav-tools';
+    nav.append(tools);
   }
 
   // hamburger for mobile
@@ -157,15 +107,20 @@ export default async function decorate(block) {
   hamburger.innerHTML = `<button type="button" aria-controls="nav" aria-label="Open navigation">
       <span class="nav-hamburger-icon"></span>
     </button>`;
-  hamburger.addEventListener('click', () => toggleMenu(nav, navSections));
-  nav.prepend(hamburger);
+  hamburger.addEventListener('click', () => toggleMenu(nav, links));
+  nav.append(hamburger);
   nav.setAttribute('aria-expanded', 'false');
-  // prevent mobile nav behavior on window resize
-  toggleMenu(nav, navSections, isDesktop.matches);
-  isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
+  toggleMenu(nav, links, isDesktop.matches);
+  isDesktop.addEventListener('change', () => toggleMenu(nav, links, isDesktop.matches));
 
+  if (utility) {
+    utility.className = 'utility-bar';
+    block.append(utility);
+  }
   const navWrapper = document.createElement('div');
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
   block.append(navWrapper);
+
+  trackScroll(block, nav);
 }

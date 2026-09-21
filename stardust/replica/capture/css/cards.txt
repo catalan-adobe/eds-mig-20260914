@@ -1,0 +1,155 @@
+stardust/replica/capture/pagelibs.css: 77 of 4808 rules match /component-solutioncard|text-hover|\.overlay\b|cmp-image|img-responsive/i
+L1 .cmp-image__image
+      width: 100%;
+L74 .img-responsive
+      display: block; max-width: 100%; height: auto;
+L959 .img-responsive
+      display: block; max-width: 100%; width: 100%; height: auto;
+L960 .img-responsive.svg   @media(max-width:730px)
+      height: 140px; width: auto; margin: 0 auto;
+L2298 .component-card-b .image-wrapper .card-img .component-image .cmp-image
+      height: 100%;
+L2299 .component-card-b .image-wrapper .card-img .component-image .cmp-image img
+      height: 100%; object-fit: cover;
+L2542 .component-image .zoom-container.cmp-image.infographic-image img.img-responsive
+      height: 75vh; width: auto; margin: 0 auto;
+L2543 .component-image .zoom-container.cmp-image.infographic-image .zoom-instructions
+      display: block; margin-top: 10px; margin-bottom: 30px;
+L2544 .infographic-image .embed-responsive-item .cmp-image img
+      height: auto !important; max-width: 1000px !important; width: 100% !important;
+L2631 .component-banner .reg-banner.has-foreground-image .imageOverlayLeft .foreground-image-inner .cmp-image,.component-banner .reg-banner.has-foreground-image .ima…   @media(max-width:730px)
+      position: relative; height: 100%; width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center;
+L2696 .component-banner .img-responsive   @media(max-width:729px)
+      display: block;
+L2745 .component-banner .img-responsive   @media(min-width:730px)
+      display: block;
+L2768 .component-banner .foreground-image-inner .cmp-image   @media(min-width:730px)
+      height: 100%;
+L2922 .component-video-banner .img-responsive   @media(max-width:729px)
+      display: block;
+L2937 .component-video-banner .img-responsive   @media(min-width:730px)
+      display: block;
+L3286 .component-interactive-banner .img-responsive   @media(max-width:729px)
+      display: block;
+L3306 .component-interactive-banner .img-responsive   @media(min-width:730px)
+      display: block;
+L3418 .component-solutioncard
+      overflow: hidden; position: relative; -webkit-transition: all .8s cubic-bezier(0.2,0.8,0.2,1) 0; transition: all .8s cubic-bezier(0.2,0.8,0.2,1) 0; margin-top: 15px; margin-left: 5px; margin-right: 5px; box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25); border-radius: 5px;
+L3419 .component-solutioncard .cmp-image
+      height: 100%;
+L3420 .component-solutioncard .image
+      height: 434px;
+L3421 .component-solutioncard .image img
+      position: relative; width: 100%; height: auto; -webkit-transition: -webkit-transform 1.5s,-webkit-filter 1.5s linear; transition: -webkit-transform 1.5s,-webkit-filter 1.5s linear; transition: transform 1.5s,filter 1.5s linear; transition: transform 1.5s,filter 1.5s linear,-webkit-transform 1.5s,-webkit-fi…; -webkit-transform-origin: center; -ms-transform-origin: center; transform-origin: center; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); height: 100%; object-fit: cover; object-position: center;
+L3422 .component-solutioncard .image .overlay
+      position: absolute; height: 275px; width: 100%; background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0)),co…; background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.5) 28%,black 1…; z-index: 10; bottom: 0;
+L3423 .component-solutioncard .image .text-hover
+      position: absolute; top: unset; bottom: -25px; min-height: 179px; width: 75%; z-index: 15; text-shadow: 0 0 6px #474747; color: white; font-weight: 400; -webkit-transition: 1s; transition: 1s; left: 50%; -webkit-transform: translate(-50%,0); -ms-transform: translate(-50%,0); transform: translate(-50%,0);
+L3424 .component-solutioncard .image .text-hover span
+      font-size: 24px; font-weight: 300; text-shadow: 0 0 4px #474747; -webkit-transition: .3s; transition: .3s; line-height: 1.4; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; height: 68px;
+L3425 .component-solutioncard .image .text-hover p
+      font-size: 16px; font-weight: 300; line-height: 1.6; margin-top: 16px; margin-bottom: 4px; opacity: 0; -webkit-transition: .3s; transition: .3s; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; height: 77px;
+L3426 .component-solutioncard .image:hover .text-hover
+      top: unset; bottom: 15px; -webkit-transition: 1s; transition: 1s;
+L3427 .component-solutioncard .image:hover .text-hover p,.component-solutioncard .image:hover .text-hover .button
+      opacity: 1; -webkit-transition: 1s; transition: 1s;
+L3428 .component-solutioncard .text
+      position: absolute; margin-top: 0; font-size: 26px; font-weight: 500; line-height: 1.3; color: white; top: 50%; left: 50%; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 80%; z-index: 15; text-align: center; text-shadow: 0 0 6px #474747;
+L3429 .component-solutioncard .button
+      text-align: center; display: inline-block; font-size: 16px; font-weight: 300; line-height: 1.6; color: white; padding: 8px 25px 8px 25px; margin: 4px; opacity: 0; -webkit-transition: .3s; transition: .3s;
+L3430 .component-solutioncard .button .fa-chevron-right
+      font-size: 10px; margin-left: 8px;
+L3431 .component-solutioncard .button:hover
+      text-decoration: underline;
+L3432 .col-sm-4 .component-solutioncard
+      margin-left: 0; margin-right: 0;
+L3505 .component-solutioncard .image img   @media(max-width:374px)
+      width: auto; height: 102%; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); position: absolute; top: 0;
+L3506 .component-solutioncard .cmp-image   @media(max-width:374px)
+      height: auto;
+L3507 .component-solutioncard .cmp-image:hover   @media(max-width:374px)
+      -webkit-transform: translate(0,-20%); -ms-transform: translate(0,-20%); transform: translate(0,-20%);
+L3528 .component-solutioncard   @media(min-width:730px)
+      margin-left: 0; margin-right: 0;
+L3529 .component-solutioncard .text-hover hr   @media(min-width:730px)
+      margin: 10px 0;
+L3530 .component-solutioncard .image   @media(min-width:730px)
+      height: 434px;
+L3531 .component-solutioncard .button   @media(min-width:730px)
+      font-size: 16px; margin-top: 4px;
+L3532 .component-card-container .card-col:not(:last-child).col-sm-4 .component-solutioncard   @media(min-width:730px)
+      margin-right: 12px;
+L3533 .component-card-container .card-col:not(:last-child).col-sm-6 .component-solutioncard   @media(min-width:730px)
+      margin-right: 12px;
+L3534 .component-card-container .card-col:not(:last-child).col-sm-3 .component-solutioncard   @media(min-width:730px)
+      margin-right: 12px;
+L3535 .column .component-column>div.three:not(:last-child) .component-solutioncard   @media(min-width:730px)
+      margin-right: 2px;
+L3537 .col-sm-4 .component-solutioncard .image img.mobile   @media(min-width:730px) and (max-width:1199px)
+      height: 102%; width: auto;
+L3541 .component-solutioncard   @media(min-width:992px)
+      margin-top: 0;
+L3542 .component-solutioncard .image   @media(min-width:992px)
+      height: 434px; border-radius: 5px;
+L3543 .component-solutioncard .image img   @media(min-width:992px)
+      width: auto; height: 102%; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); position: absolute; top: 0;
+L3544 .component-solutioncard .image .text-hover span   @media(min-width:992px)
+      font-weight: 300; font-size: 24px; display: block; height: auto;
+L3545 .component-solutioncard .image:hover   @media(min-width:992px)
+      top: 48%; -webkit-transition: all 1s; transition: all 1s;
+L3546 .component-solutioncard .image:hover .text   @media(min-width:992px)
+      display: none;
+L3547 .component-solutioncard .image:hover .text-hover   @media(min-width:992px)
+      display: block;
+L3548 .column .component-column>div.three11154:not(:last-child) .component-solutioncard,.column .component-column>div.three15411:not(:last-child) .component-solution…   @media(min-width:992px)
+      margin-right: 18px;
+L3550 .component-solutioncard .button   @media only screen and (min-width:730px) and (max-width:1024px)
+      padding-left: 0; padding-right: 0;
+L3551 .component-solutioncard .image .text-hover   @media only screen and (min-width:730px) and (max-width:1024px)
+      top: unset; bottom: 15px;
+L3552 .component-solutioncard .image .text-hover span   @media only screen and (min-width:730px) and (max-width:1024px)
+      font-size: 24px; height: 68px;
+L3553 .component-solutioncard .image .text-hover p,.component-solutioncard .image .text-hover .button   @media only screen and (min-width:730px) and (max-width:1024px)
+      opacity: 1;
+L3558 .component-solutioncard .image   @media(min-width:1200px)
+      height: 434px; position: relative;
+L3559 .column .component-column>div.three11154:not(:last-child) .component-solutioncard,.column .component-column>div.three15411:not(:last-child) .component-solution…   @media(min-width:1200px)
+      margin-right: 15px;
+L3561 .component-solutioncard .image:hover .overlay   @media all and (-ms-high-contrast:none),(-ms-high-contrast:active)
+      opacity: .5;
+L3569 .component-quicktask .topTasksIcon .img-responsive
+      height: 100px; margin: auto;
+L3576 .component-card-container .card-col:not(:first-child).col-sm-4 .component-solutioncard   @media(max-width:730px)
+      margin-top: 17px;
+L3577 .column .component-column>div:not(:first-child) .component-solutioncard   @media(max-width:730px)
+      margin-top: 32px;
+L3578 .col-sm-4 .component-solutioncard   @media(max-width:730px)
+      margin-left: auto; margin-right: auto;
+L3579 .component-solutioncard   @media(max-width:730px)
+      overflow: hidden; margin: 0 auto; max-width: 368px; position: relative;
+L3580 .component-solutioncard .image .text-hover   @media(max-width:730px)
+      top: unset; bottom: 15px;
+L3581 .component-solutioncard .image .text-hover span   @media(max-width:730px)
+      font-size: 24px;
+L3582 .component-solutioncard .image .text-hover p,.component-solutioncard .image .text-hover .button   @media(max-width:730px)
+      opacity: 1;
+L3601 .component-assetcard .cmp-image img
+      aspect-ratio: 16 / 9; width: 100%; object-fit: cover; height: auto;
+L3615 .component-assetcard .cmp-image+.card-text,.component-assetcard .cmp-video+.card-text
+      padding-top: 20px;
+L3620 .component-eventcard div.cmp-image img
+      object-fit: cover; width: 96px; height: 100px; border-radius: 5px;
+L3621 .component-eventcard div.cmp-image img   @media(min-width:992px)
+      width: 214px; height: 222px;
+L4319 .image__title,.carousel-holder.image-carousel .cmp-image__title,#carouselImageModal .cmp-image__title
+      position: absolute; bottom: 0; color: #FFF; width: 100%; background: rgba(0,0,0,0.5); height: 100px; border: 16px solid transparent; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-size: 14px; font-weight: 300; line-height: 18px;
+L4320 .image__title,.carousel-holder.image-carousel .cmp-image__title,#carouselImageModal .cmp-image__title   @media(min-width:729px)
+      font-size: 16px; line-height: 25.6px; border: 24px solid transparent;
+L4322 .image__title,.carousel-holder.image-carousel .cmp-image__title,#carouselImageModal .cmp-image__title   @media(max-width:729px)
+      height: auto; font-size: 12px; line-height: 16px; -webkit-line-clamp: 1;
+L4324 .image__title[itemprop='caption'],.carousel-holder.image-carousel .cmp-image__title[itemprop='caption'],#carouselImageModal .cmp-image__title[itemprop='caption…
+      display: block; display: -webkit-box;
+L4337 .carousel-holder.image-carousel .img-responsive
+      display: inline; aspect-ratio: 16 / 9; object-fit: cover; height: auto;
+L4346 .carousel-holder.image-carousel .image-thumbnail .cmp-image__title[itemprop='caption']
+      display: none !important;

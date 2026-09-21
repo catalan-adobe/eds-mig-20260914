@@ -1,0 +1,48 @@
+{
+  "_provenance": { "writtenBy": "stardust:replica", "writtenAt": "2026-09-21T13:10:00Z", "againstInput": "https://www.synopsys.com/", "entry": "bounded-single (--single), no deploy" },
+  "pageTypes": {
+    "landing": {
+      "archetype": "index",
+      "liveUrl": "https://www.synopsys.com/",
+      "prototype": "stardust/prototypes/index-proposed.html",
+      "source": "stardust/prototypes/src/index.template.html + build.mjs (SVG/srcset/repeat groups injected verbatim from stardust/replica/capture/harvest.json and the captured section slices)",
+      "css": ["stardust/prototypes/css/canon.css", "stardust/prototypes/css/index.css", "stardust/prototypes/css/lifted.css"],
+      "contentRoot": "div.root > div.aem-Grid > div.synopsysContainer",
+      "iterations": { "1440": 3, "360": 7 },
+      "iterationCapNote": "360 exceeded the 3-iteration cap (7 pixel rounds): mobile bg-desktop/bg-mobile swap, spacer rhythm (all 40px at mobile), changeSize 24px bottom margin, card text-hover state — each fix came off measure.mjs --against, none off eyeballing",
+      "gate": {
+        "1440": { "pixel": "0.41%", "heightDelta": 0, "hotBands": [], "contentDiff": { "structural": 0, "advisory": 11 }, "visualDiff": 4, "chromeParity": "footer parity 47/47; header (#topNav region) texts 7/7 paired, 1 icon-count advisory", "label": "final4", "verdict": "PASS" },
+        "360":  { "pixel": "2.78%", "heightDelta": 0, "hotBands": [], "contentDiff": { "structural": 0, "advisory": 13 }, "visualDiff": 5, "chromeParity": "footer parity 11/11; header: 1 MISSING (hidden mobile submenu 'Back' button)", "label": "final4", "verdict": "PASS" }
+      },
+      "residuals": [
+        { "kind": "permanent", "what": "hero carousel autoplay (slick fade, ~7s) and slide progress bar width; logo marquee (5s linear transform) — frozen at the captured t=0 state per recreation-procedure § Carousels; live re-captures may show a different slide/offset", "evidence": "stardust/replica/motion/index.json events.transitions[3,4,8]" },
+        { "kind": "permanent", "what": "Ask bar conic-gradient ring rotates on live (--angle animation); frozen at 0deg / 34.5deg", "evidence": "pagelibs.css .border-gradient-ask.spin" },
+        { "kind": "advisory", "what": "content-diff 🟡: live inline <style>/<script> text inventoried as body (5); What's New dot labels 4–9 exist in the DOM for the 1-up mobile carousel and are display:none ≥730 (6 EXTRA at 1440)", "evidence": "stardust/replica/gates/index-1440/content-diff-final4.txt" },
+        { "kind": "advisory", "what": "visual-diff STRETCHED IMAGE on hero renditions — live uses the same object-fit:cover crop (intentional)", "evidence": "stardust/replica/gates/index-1440/visual-diff-final4.txt" },
+        { "kind": "advisory", "what": "content-diff 🟠 EXTRA cta 'Learn more' ×2 at 360 — clone-card links: live inventory sees 19 of 21, build 21 (slick clone geometry at 1-up)", "evidence": "stardust/replica/gates/index-360/content-diff-final4.txt" },
+        { "kind": "deferred", "what": "mega-nav dropdown panels (5 menus, ~47k chars of hidden content), mobile menu drawer with 'Back' button, search overlay + 'Popular Content' tiles, language dropdown menu — hidden chrome not recreated; needed for interaction parity if hover/click pokes are added at rollout", "evidence": "stardust/replica/capture/sections/00-nav.html" },
+        { "kind": "note", "what": "Contact Sales nav CTA renders 4px wider than live (151 vs 147) — text metrics; within pixel bar", "evidence": "chrome-final2 log" }
+      ],
+      "portation": [
+        { "file": "stardust/prototypes/css/lifted.css", "rules": 9, "why": "icon data-URIs (language globe, Ask sparkle, footer select icons, nav caret, chat send) and the Ask ring gradient are not recoverable from computed styles — verbatim single rules, never page-level" },
+        { "file": "stardust/prototypes/index-proposed.html (inline script)", "why": "scroll-state chrome: #topNav.overlapping at scrollTop > 80, lifted from synopsys-headlibs.js (§ Fixed and sticky chrome)" }
+      ],
+      "fonts": { "policy": "self-hosted", "family": "Roboto (Apache-2.0)", "files": "stardust/prototypes/assets/fonts/Roboto-{Light,Regular,Medium,Bold}.ttf from the source clientlib" },
+      "captureState": [
+        "OneTrust consent banner: not recreated; gate runs --dismiss on both sides (dynamic-features.md row 10)",
+        "Ask bar (brand concierge): replicated as captured, non-functional (row 5)",
+        "hero slide 5 foreground SVG loaded from the source origin (/_jcr_content/...); all photos from images.synopsys.com Scene7 with the captured srcset"
+      ],
+      "motion": {
+        "observed": 8,
+        "implemented": 4,
+        "parity": ["transition backdrop-filter", "transition background-color", "transition box-shadow", "class overlapping"],
+        "frozen": ["transition opacity (hero slick fade autoplay)", "transition transform (logo marquee 5s)", "class slick-active churn", "class slick-current churn"],
+        "dead": [],
+        "evidence": ["stardust/replica/motion/index.json", "stardust/replica/motion/index-build.json"],
+        "compareVerdict": "4 parity / 4 missing on build — the 4 missing are autoplay carousel behaviours frozen per the carousel freeze policy; implement as block behaviour (carousel autoplay + marquee) at deploy"
+      },
+      "approvedBy": "hands-off"
+    }
+  }
+}

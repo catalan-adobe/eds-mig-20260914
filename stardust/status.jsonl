@@ -1,0 +1,11 @@
+{"ts":"2026-09-21T12:08:13Z","skill":"stardust:stardust","phase":"setup","event":"end","detail":"replica run, single URL https://www.synopsys.com/, no deploy"}
+{"ts":"2026-09-21T12:08:13Z","skill":"stardust:replica","phase":"extract","event":"start","detail":"extract --single --dynamics"}
+{"ts":"2026-09-21T12:09:47Z","skill":"stardust:replica","phase":"extract","event":"end","detail":"bounded --single crawl: pages/index.json, index.html, screenshot 1440x4876, _computed-styles.json @1440,360; consent=OneTrust (undismissed in crawl screenshot)"}
+{"ts":"2026-09-21T12:11:56Z","skill":"stardust:replica","phase":"preserve-direction","event":"start","detail":"bounded-single branch; dynamics triage curated (12 rows, all dispositioned); register empty"}
+{"ts":"2026-09-21T12:35:06Z","skill":"stardust:replica","phase":"recreate","event":"end","detail":"index-proposed.html built from template + capture (canon.css, index.css, lifted.css 7 ported rules); fonts self-hosted Roboto TTF"}
+{"ts":"2026-09-21T12:35:06Z","skill":"stardust:replica","phase":"source-fidelity-gate","event":"start"}
+{"ts":"2026-09-21T13:14:49Z","skill":"stardust:replica","phase":"preserve-direction","event":"end","detail":"bounded-single spec written: PRODUCT.md, DESIGN.md, DESIGN.json, stardust/direction.md; register empty"}
+{"ts":"2026-09-21T13:14:49Z","skill":"stardust:replica","phase":"source-fidelity-gate","event":"end","detail":"index @1440: 0.41% px, Δh 0, 0 structural 🔴, chrome footer parity (final4, 3 iters); @360: 2.78% px, Δh 0, 0 structural 🔴, chrome footer parity (final4, 7 iters — cap exceeded, logged); motion 4/8 parity, 4 autoplay behaviours frozen","artifact":"stardust/replica/progress.json"}
+{"ts":"2026-09-21T13:14:49Z","skill":"stardust:replica","phase":"handoff","event":"blocked","detail":"user asked for no deploy — Phase 5 (migrate/deploy/rollout) not started"}
+{"ts":"2026-09-21T13:26:50Z","skill":"stardust:replica","phase":"handoff","event":"start","detail":"deploy skill on index-proposed.html (single page)"}
+{"ts":"2026-09-21T13:26:50Z","skill":"stardust:deploy","phase":"runtime-probe","event":"end","artifact":"stardust/runtime-contract.json"}
