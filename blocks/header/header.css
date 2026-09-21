@@ -63,7 +63,7 @@ header .utility-bar .icon {
   display: block;
   width: auto;
   height: 16px;
-  background: currentcolor;
+  background: #fff;
 }
 
 header .utility-bar .icon img {
@@ -99,13 +99,6 @@ header .utility-bar p:nth-of-type(2)::before {
   mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M256 0a256 256 0 1 0 0 512 256 256 0 1 0 0-512zm0 32c20 0 45 31 62 82 5 15 9 31 12 48H182c3-17 7-33 12-48 17-51 42-82 62-82zm-98 47a353 353 0 0 0-21 83H67a225 225 0 0 1 91-83zm196 0a225 225 0 0 1 91 83h-70a353 353 0 0 0-21-83zM55 194h77a532 532 0 0 0 0 124H55a224 224 0 0 1 0-124zm109 0h184a500 500 0 0 1 0 124H164a500 500 0 0 1 0-124zm216 0h77a224 224 0 0 1 0 124h-77a532 532 0 0 0 0-124zM67 350h70a353 353 0 0 0 21 83 225 225 0 0 1-91-83zm115 0h148c-3 17-7 33-12 48-17 51-42 82-62 82s-45-31-62-82c-5-15-9-31-12-48zm180 0h70a225 225 0 0 1-91 83 353 353 0 0 0 21-83z'/%3E%3C/svg%3E") center / contain no-repeat;
 }
 
-header .utility-bar p:nth-of-type(2)::after {
-  content: "";
-  width: 10px;
-  height: 6px;
-  background: currentcolor;
-  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23000' stroke-width='1.5' fill='none'/%3E%3C/svg%3E") center no-repeat;
-}
 
 header .utility-bar p:nth-of-type(3) {
   position: relative;
@@ -193,7 +186,7 @@ header .nav-brand .icon {
   display: block;
   width: 156px;
   height: 34px;
-  background: currentcolor;
+  background: #fff;
   mask: url("/icons/synopsys-logo.svg") center / contain no-repeat;
 }
 
@@ -231,9 +224,12 @@ header .nav-sections li::after {
   width: 8px;
   height: 12px;
   margin-left: 8px;
-  background: currentcolor;
-  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3Cpath d='M305 239c9.4 9.4 9.4 24.6 0 33.9L113 465c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l175-175L79 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L305 239z'/%3E%3C/svg%3E") center / contain no-repeat;
-  rotate: 90deg;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzODQgNTEyIj48IS0tIUZvbnQgQXdlc29tZSBGcmVlIHY3LjAuMSBieSBAZm9udGF3ZXNvbWUgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbSBMaWNlbnNlIC0gaHR0cHM6Ly9mb250YXdlc29tZS5jb20vbGljZW5zZS9mcmVlIENvcHlyaWdodCAyMDI1IEZvbnRpY29ucywgSW5jLi0tPjxwYXRoIGZpbGw9IndoaXRlIiBkPSJNMzUyIDE2MGMxMi45IDAgMjQuNiA3LjggMjkuNiAxOS44czIuMiAyNS43LTYuOSAzNC45bC0xNjAgMTYwYy0xMi41IDEyLjUtMzIuOCAxMi41LTQ1LjMgMGwtMTYwLTE2MGMtOS4yLTkuMi0xMS45LTIyLjktNi45LTM0LjlTMTkuMSAxNjAgMzIgMTYwbDMyMCAweiIvPjwvc3ZnPg==") no-repeat center;
+  vertical-align: middle;
+}
+
+header nav#nav.overlapping .nav-sections li::after {
+  filter: brightness(0.07);
 }
 
 /* tools: search icon + Contact Sales */
@@ -373,7 +369,8 @@ header nav[aria-expanded="true"] .nav-hamburger-icon {
 
   header nav[aria-expanded="true"] .nav-sections li::after {
     margin-left: auto;
-    rotate: 0deg;
+    rotate: -90deg;
+    filter: brightness(0.07);
   }
 }
 
