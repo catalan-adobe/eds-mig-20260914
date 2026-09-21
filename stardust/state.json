@@ -1,7 +1,7 @@
 {
   "_provenance": {
-    "writtenBy": "stardust:replica",
-    "writtenAt": "2026-09-21T13:13:20Z",
+    "writtenBy": "stardust:deploy",
+    "writtenAt": "2026-09-21T14:16:09Z",
     "stardustVersion": "0.10.0"
   },
   "site": {
@@ -24,7 +24,7 @@
       "url": "https://www.synopsys.com/",
       "title": "Synopsys | EDA Tools, Semiconductor IP and Application Security Solutions",
       "type": "landing",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -42,13 +42,17 @@
           "status": "approved",
           "at": "2026-09-21T13:13:20Z",
           "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-21T14:16:09Z"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/index.json",
       "prototypePath": "stardust/prototypes/index-proposed.html",
-      "migratedPath": null
+      "migratedPath": "content/index.html"
     }
   ]
 }

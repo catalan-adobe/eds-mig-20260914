@@ -38,3 +38,13 @@ Publish decision: **preview-only** (`--no-publish`) until the owner confirms.
 - `ew-editability-probe.mjs --simulate-editor` — authored 104 / editable 104 / dead 0. Reported "drift" on CTA `<p>`s (40 → 16 px) is a probe artefact: the probe's runtime mimic buttonizes bare links (`bare-links-too`); this target's `scripts.js` is `formatted-only` (runtime-contract.json), so plain text links are never 40 px tall on the real page.
 - Computed-layout guard: `.cards.solutions > ul` grid · `.columns > div` flex · `.cards.news > ul` flex · carousel track grid; 0 zero-width images; document scrollWidth 1440.
 - Deferred: mobile-specific hero renditions (one authorable image per slide; the desktop photo is cover-cropped at 180 px on mobile), slick dots/arrows on What's New (scroll-snap rail instead), hero pause control.
+
+### Deployed (preview origin, 2026-09-21) — `https://replica-home--eds-mig-20260914--catalan-adobe.aem.page/`
+- Code: branch `replica-home` (commits a9acddc → a774201), Code Sync forced via `POST /code/…/*` (202).
+- Content: `deploy-batch.mjs --no-publish` → `/index`, `/nav`, `/footer` PUT 201 + previewed; **not published to live** (owner decision pending).
+- `.plain.html`: 200 · one `<h1>` · 0 `about:error` · 0 `/img/` · 40 `<img>` (5 hero + 4 solutions + 12 icons + 10 logos + 9 news) · title/description from the metadata block.
+- `ai-readability.mjs`: strict 100 / code 100 (gate ≥ 98).
+- Computed-style guard: 8 blocks `loaded`, solutions `grid`, columns/news `flex`, carousel track `grid`, 0 broken / 0 zero-width images, 0 pageerror, scrollWidth 1440; section-metadata styles rendered server-side (`statement`, `light`, `cta-band`).
+- **Published-origin source-fidelity gate** (live www.synopsys.com vs preview, `--marker Synopsys`): **1440 → 3.96 % / Δh 0** (pub3) · **360 → 2.94 % / Δh 0** (pub4). Crops: header 1440 1.33 %, footer 1440 1.62 %, header 360 0.29 %, footer 360 1.74 % — all ≤ 2 %.
+- CLS (deployed URL, woff2 + nav/footer fetches delayed 1.5 s): 0.0002 @1440, 0.005 @360.
+- Residuals: hero autoplay/pause/mobile renditions, What's New dots/arrows (scroll-snap rail), Ask bar / OneTrust / mega-nav panels / search overlay not delivered (dynamic-features.md decision batch); media still served from the source CDN (`da-media-upload.mjs --manifest` rehost pending an owner scope for `/media`).

@@ -10,3 +10,6 @@
 {"ts":"2026-09-21T13:26:50Z","skill":"stardust:replica","phase":"handoff","event":"start","detail":"deploy skill on index-proposed.html (single page)"}
 {"ts":"2026-09-21T13:26:50Z","skill":"stardust:deploy","phase":"runtime-probe","event":"end","artifact":"stardust/runtime-contract.json"}
 {"ts":"2026-09-21T13:53:21Z","skill":"stardust:deploy","phase":"9-content","event":"start","detail":"PUT index, nav, footer (preview-only)"}
+{"ts":"2026-09-21T14:16:09Z","skill":"stardust:deploy","phase":"9-content","event":"end","detail":"index, nav, footer previewed on replica-home (no publish)"}
+{"ts":"2026-09-21T14:16:09Z","skill":"stardust:deploy","phase":"10-reconcile","event":"end","detail":"published-origin gate 1440 3.96%/Δ0, 360 2.94%/Δ0; chrome crops ≤2%; ai-readability 100; CLS 0.0002/0.005"}
+{"ts":"2026-09-21T14:16:09Z","skill":"stardust:replica","phase":"handoff","event":"end","detail":"1 page delivered to preview; published-origin gate PASS both breakpoints; live publish pending owner decision","artifact":"stardust/eds-conversion-log.md"}
