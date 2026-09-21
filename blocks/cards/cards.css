@@ -9,9 +9,18 @@
   list-style: none;
 }
 
+.cards .cards-card-image p,
 .cards .cards-card-image picture,
 .cards .cards-card-image img {
   display: block;
+  margin: 0;
+  line-height: 0;
+}
+
+.cards .cards-track ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .cards .cards-card-body p {
@@ -134,6 +143,10 @@ main .section:has(> .cards-wrapper > .cards.solutions) {
 }
 
 @media (width >= 730px) {
+  main .section:has(> .cards-wrapper > .cards.solutions) {
+    margin-top: 60px;
+  }
+
   .cards.solutions > ul {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -233,14 +246,14 @@ main .section.light > .cards-wrapper:has(.cards.logos) {
 
 /* ── news: 3-up card rail (scroll-snap stands in for the slick carousel) ── */
 main .section > .cards-wrapper:has(.cards.news) {
-  margin-top: 45px;
+  margin-top: 70px;
   padding-bottom: 60px;
 }
 
 .cards.news > ul {
   display: flex;
   gap: 0;
-  padding: 0 0 8px;
+  padding: 0 0 60px; /* the source dot rail (36px) + mobile arrow row (24px) sit here */
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scrollbar-width: thin;
@@ -274,8 +287,13 @@ main .section > .cards-wrapper:has(.cards.news) {
   justify-content: space-between;
 }
 
+.cards.news .cards-card-label,
+.cards.news .cards-card-date {
+  line-height: 0;
+}
+
 .cards.news .cards-card-label p {
-  display: inline;
+  display: inline-block;
   padding: 4px 8px;
   border-radius: 3px;
   background: var(--purple);
@@ -332,6 +350,18 @@ main .section > .cards-wrapper:has(.cards.news) {
 }
 
 @media (width >= 730px) {
+  main .section > .cards-wrapper:has(.cards.news) {
+    margin-top: 45px;
+  }
+
+  .cards.news > ul {
+    padding-bottom: 36px;
+  }
+
+  main .section:has(> .cards-wrapper > .cards.news) {
+    margin-top: 60px;
+  }
+
   .cards.news .cards-card {
     width: 370px;
   }

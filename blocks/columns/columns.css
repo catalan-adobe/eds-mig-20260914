@@ -23,8 +23,7 @@
 
 /* ── key-benefits: "Industry" / "Technology" icon lists ── */
 main .section:has(> .columns-wrapper > .columns.key-benefits) {
-  margin-top: 40px;
-  padding-bottom: 30px;
+  margin-top: 110px;
 }
 
 main .section:has(> .columns-wrapper > .columns.key-benefits) .default-content-wrapper {
@@ -97,7 +96,7 @@ main .section:has(> .columns-wrapper > .columns.key-benefits) .default-content-w
 
 @media (width >= 730px) {
   main .section:has(> .columns-wrapper > .columns.key-benefits) {
-    margin-top: 60px;
+    margin-top: 120px;
   }
 
   .columns.key-benefits .columns-col h3 {

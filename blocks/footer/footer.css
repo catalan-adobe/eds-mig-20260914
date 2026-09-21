@@ -102,9 +102,13 @@ footer .footer-language select {
 }
 
 footer .footer-social {
+  margin: 38px 16px 40px;
+}
+
+footer .footer-social .default-content-wrapper {
   display: flex;
   align-items: center;
-  margin: 38px 16px 40px;
+  width: 100%;
 }
 
 footer .footer-social ul {

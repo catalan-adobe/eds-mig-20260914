@@ -414,7 +414,7 @@ main .section .default-content-wrapper p {
 
 /* statement — "Powering the Era …": 60px top (40 mobile), 30px bottom, 20px lede */
 main .section.statement {
-  margin-top: 40px;
+  margin-top: 80px;
   padding-bottom: 30px;
 }
 
@@ -435,7 +435,7 @@ main .section.statement .default-content-wrapper p {
 
 /* light — grey ground bands (partners, support) */
 main .section.light {
-  margin-top: 30px;
+  margin-top: 70px;
   padding: 40px 0 0;
   background-color: var(--light-color);
 }
@@ -446,6 +446,7 @@ main .section.light.columns-container {
 
 @media (width >= 730px) {
   main .section.light {
+    margin-top: 60px;
     padding-top: 60px;
   }
 }
