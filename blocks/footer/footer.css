@@ -1,10 +1,12 @@
-footer .footer {
-  --color-gray-500: #999;
-
+body > footer {
   padding-block: var(--space-3xl);
   border-top: 4px solid var(--color-amber);
   background: var(--color-black);
   color: var(--color-white);
+}
+
+footer .footer {
+  --color-gray-500: #999;
 }
 
 .footer :focus-visible {
