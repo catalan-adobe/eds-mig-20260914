@@ -1,0 +1,694 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/plan",
+    "writtenAt": "2026-09-23T12:31:05.471Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-23T12:31:05.471Z",
+  "fragments": [],
+  "deliveryOrder": [
+    "about-html",
+    "adventures-html",
+    "basecamp-html",
+    "blog-alpine-cycling-html",
+    "blog-desert-survival-guide-html",
+    "blog-kayaking-norway-html",
+    "blog-mountain-photography-html",
+    "blog-patagonia-trek-html",
+    "blog-surfing-costa-rica-html",
+    "blog-ultralight-backpacking-html",
+    "blog-wild-swimming-guide-html",
+    "blog-winter-mountaineering-html",
+    "blog-yosemite-rock-climbing-html",
+    "community-html",
+    "destinations-html",
+    "expeditions-html",
+    "faq-html",
+    "field-notes-html",
+    "gear-html",
+    "index",
+    "sustainability-html"
+  ],
+  "steps": [
+    {
+      "slug": "about-html",
+      "path": "/about",
+      "templateId": "about-html",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "cards",
+          "edsBlockName": "cards"
+        },
+        {
+          "id": "columns",
+          "edsBlockName": "columns"
+        },
+        {
+          "id": "hero",
+          "edsBlockName": "hero"
+        },
+        {
+          "id": "panels",
+          "edsBlockName": "panels"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs"
+        }
+      ],
+      "reuse": []
+    },
+    {
+      "slug": "adventures-html",
+      "path": "/adventures",
+      "templateId": "adventures-html",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "editorial-index",
+          "edsBlockName": "editorial-index"
+        },
+        {
+          "id": "featured",
+          "edsBlockName": "featured"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "cards",
+          "edsBlockName": "cards",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "panels",
+          "edsBlockName": "panels",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "about-html"
+        }
+      ]
+    },
+    {
+      "slug": "basecamp-html",
+      "path": "/basecamp",
+      "templateId": "basecamp-html",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "accordion",
+          "edsBlockName": "accordion"
+        },
+        {
+          "id": "ticker",
+          "edsBlockName": "ticker"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "about-html"
+        }
+      ]
+    },
+    {
+      "slug": "blog-alpine-cycling-html",
+      "path": "/blog/alpine-cycling",
+      "templateId": "blog-alpine-cycling-html",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "article-aside",
+          "edsBlockName": "article-aside"
+        },
+        {
+          "id": "gallery",
+          "edsBlockName": "gallery"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "cards",
+          "edsBlockName": "cards",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "about-html"
+        }
+      ]
+    },
+    {
+      "slug": "blog-desert-survival-guide-html",
+      "path": "/blog/desert-survival-guide",
+      "templateId": "blog-desert-survival-guide-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "article-aside",
+          "edsBlockName": "article-aside",
+          "convertedBy": "blog-alpine-cycling-html"
+        },
+        {
+          "id": "cards",
+          "edsBlockName": "cards",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "gallery",
+          "edsBlockName": "gallery",
+          "convertedBy": "blog-alpine-cycling-html"
+        },
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "about-html"
+        }
+      ]
+    },
+    {
+      "slug": "blog-kayaking-norway-html",
+      "path": "/blog/kayaking-norway",
+      "templateId": "blog-kayaking-norway-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "article-aside",
+          "edsBlockName": "article-aside",
+          "convertedBy": "blog-alpine-cycling-html"
+        },
+        {
+          "id": "cards",
+          "edsBlockName": "cards",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "gallery",
+          "edsBlockName": "gallery",
+          "convertedBy": "blog-alpine-cycling-html"
+        },
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "about-html"
+        }
+      ]
+    },
+    {
+      "slug": "blog-mountain-photography-html",
+      "path": "/blog/mountain-photography",
+      "templateId": "blog-mountain-photography-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "article-aside",
+          "edsBlockName": "article-aside",
+          "convertedBy": "blog-alpine-cycling-html"
+        },
+        {
+          "id": "cards",
+          "edsBlockName": "cards",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "gallery",
+          "edsBlockName": "gallery",
+          "convertedBy": "blog-alpine-cycling-html"
+        },
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "about-html"
+        }
+      ]
+    },
+    {
+      "slug": "blog-patagonia-trek-html",
+      "path": "/blog/patagonia-trek",
+      "templateId": "blog-patagonia-trek-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "article-aside",
+          "edsBlockName": "article-aside",
+          "convertedBy": "blog-alpine-cycling-html"
+        },
+        {
+          "id": "cards",
+          "edsBlockName": "cards",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "gallery",
+          "edsBlockName": "gallery",
+          "convertedBy": "blog-alpine-cycling-html"
+        },
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "about-html"
+        }
+      ]
+    },
+    {
+      "slug": "blog-surfing-costa-rica-html",
+      "path": "/blog/surfing-costa-rica",
+      "templateId": "blog-surfing-costa-rica-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "article-aside",
+          "edsBlockName": "article-aside",
+          "convertedBy": "blog-alpine-cycling-html"
+        },
+        {
+          "id": "cards",
+          "edsBlockName": "cards",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "gallery",
+          "edsBlockName": "gallery",
+          "convertedBy": "blog-alpine-cycling-html"
+        },
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "about-html"
+        }
+      ]
+    },
+    {
+      "slug": "blog-ultralight-backpacking-html",
+      "path": "/blog/ultralight-backpacking",
+      "templateId": "blog-ultralight-backpacking-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "article-aside",
+          "edsBlockName": "article-aside",
+          "convertedBy": "blog-alpine-cycling-html"
+        },
+        {
+          "id": "cards",
+          "edsBlockName": "cards",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "gallery",
+          "edsBlockName": "gallery",
+          "convertedBy": "blog-alpine-cycling-html"
+        },
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "about-html"
+        }
+      ]
+    },
+    {
+      "slug": "blog-wild-swimming-guide-html",
+      "path": "/blog/wild-swimming-guide",
+      "templateId": "blog-wild-swimming-guide-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "article-aside",
+          "edsBlockName": "article-aside",
+          "convertedBy": "blog-alpine-cycling-html"
+        },
+        {
+          "id": "cards",
+          "edsBlockName": "cards",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "gallery",
+          "edsBlockName": "gallery",
+          "convertedBy": "blog-alpine-cycling-html"
+        },
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "about-html"
+        }
+      ]
+    },
+    {
+      "slug": "blog-winter-mountaineering-html",
+      "path": "/blog/winter-mountaineering",
+      "templateId": "blog-winter-mountaineering-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "article-aside",
+          "edsBlockName": "article-aside",
+          "convertedBy": "blog-alpine-cycling-html"
+        },
+        {
+          "id": "cards",
+          "edsBlockName": "cards",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "gallery",
+          "edsBlockName": "gallery",
+          "convertedBy": "blog-alpine-cycling-html"
+        },
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "about-html"
+        }
+      ]
+    },
+    {
+      "slug": "blog-yosemite-rock-climbing-html",
+      "path": "/blog/yosemite-rock-climbing",
+      "templateId": "blog-yosemite-rock-climbing-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "article-aside",
+          "edsBlockName": "article-aside",
+          "convertedBy": "blog-alpine-cycling-html"
+        },
+        {
+          "id": "cards",
+          "edsBlockName": "cards",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "gallery",
+          "edsBlockName": "gallery",
+          "convertedBy": "blog-alpine-cycling-html"
+        },
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "about-html"
+        }
+      ]
+    },
+    {
+      "slug": "community-html",
+      "path": "/community",
+      "templateId": "community-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "accordion",
+          "edsBlockName": "accordion",
+          "convertedBy": "basecamp-html"
+        },
+        {
+          "id": "cards",
+          "edsBlockName": "cards",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "editorial-index",
+          "edsBlockName": "editorial-index",
+          "convertedBy": "adventures-html"
+        },
+        {
+          "id": "featured",
+          "edsBlockName": "featured",
+          "convertedBy": "adventures-html"
+        },
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "about-html"
+        }
+      ]
+    },
+    {
+      "slug": "destinations-html",
+      "path": "/destinations",
+      "templateId": "destinations-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "cards",
+          "edsBlockName": "cards",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "featured",
+          "edsBlockName": "featured",
+          "convertedBy": "adventures-html"
+        },
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "panels",
+          "edsBlockName": "panels",
+          "convertedBy": "about-html"
+        }
+      ]
+    },
+    {
+      "slug": "expeditions-html",
+      "path": "/expeditions",
+      "templateId": "expeditions-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "cards",
+          "edsBlockName": "cards",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "editorial-index",
+          "edsBlockName": "editorial-index",
+          "convertedBy": "adventures-html"
+        },
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "about-html"
+        }
+      ]
+    },
+    {
+      "slug": "faq-html",
+      "path": "/faq",
+      "templateId": "faq-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "accordion",
+          "edsBlockName": "accordion",
+          "convertedBy": "basecamp-html"
+        },
+        {
+          "id": "cards",
+          "edsBlockName": "cards",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "about-html"
+        }
+      ]
+    },
+    {
+      "slug": "field-notes-html",
+      "path": "/field-notes",
+      "templateId": "field-notes-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "cards",
+          "edsBlockName": "cards",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "featured",
+          "edsBlockName": "featured",
+          "convertedBy": "adventures-html"
+        },
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "about-html"
+        }
+      ]
+    },
+    {
+      "slug": "gear-html",
+      "path": "/gear",
+      "templateId": "gear-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "editorial-index",
+          "edsBlockName": "editorial-index",
+          "convertedBy": "adventures-html"
+        },
+        {
+          "id": "featured",
+          "edsBlockName": "featured",
+          "convertedBy": "adventures-html"
+        },
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "panels",
+          "edsBlockName": "panels",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "about-html"
+        }
+      ]
+    },
+    {
+      "slug": "index",
+      "path": "/",
+      "templateId": "index",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "accordion",
+          "edsBlockName": "accordion",
+          "convertedBy": "basecamp-html"
+        },
+        {
+          "id": "editorial-index",
+          "edsBlockName": "editorial-index",
+          "convertedBy": "adventures-html"
+        },
+        {
+          "id": "featured",
+          "edsBlockName": "featured",
+          "convertedBy": "adventures-html"
+        },
+        {
+          "id": "gallery",
+          "edsBlockName": "gallery",
+          "convertedBy": "blog-alpine-cycling-html"
+        },
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "ticker",
+          "edsBlockName": "ticker",
+          "convertedBy": "basecamp-html"
+        }
+      ]
+    },
+    {
+      "slug": "sustainability-html",
+      "path": "/sustainability",
+      "templateId": "sustainability-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "cards",
+          "edsBlockName": "cards",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "editorial-index",
+          "edsBlockName": "editorial-index",
+          "convertedBy": "adventures-html"
+        },
+        {
+          "id": "featured",
+          "edsBlockName": "featured",
+          "convertedBy": "adventures-html"
+        },
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "about-html"
+        },
+        {
+          "id": "panels",
+          "edsBlockName": "panels",
+          "convertedBy": "about-html"
+        }
+      ]
+    }
+  ]
+}

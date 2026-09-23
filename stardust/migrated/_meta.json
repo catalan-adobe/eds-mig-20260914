@@ -3,7 +3,15 @@
   "type": "landing",
   "renderBranch": "A",
   "template": null,
-  "modules": [],
+  "modules": [
+    "accordion",
+    "editorial-index",
+    "featured",
+    "gallery",
+    "hero",
+    "tabs",
+    "ticker"
+  ],
   "slotsFilled": [
     "hero",
     "section",

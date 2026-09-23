@@ -1,0 +1,452 @@
+{
+  "generatedAt": "2026-09-23T12:39:11.603Z",
+  "target": "aem-eds",
+  "site": {
+    "sourceUrl": "https://wknd-adventures.com/",
+    "liveHost": null
+  },
+  "stageCount": {
+    "identified": 21,
+    "prototyped": 21,
+    "deployed": 21,
+    "optimised": 21
+  },
+  "stageExclusive": {
+    "identified": 0,
+    "prototyped": 0,
+    "deployed": 0,
+    "optimised": 21
+  },
+  "pages": [
+    {
+      "slug": "index",
+      "path": "/",
+      "stage": "optimised",
+      "templateId": "index",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "about-html",
+      "path": "/about",
+      "stage": "optimised",
+      "templateId": "about-html",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "adventures-html",
+      "path": "/adventures",
+      "stage": "optimised",
+      "templateId": "adventures-html",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "basecamp-html",
+      "path": "/basecamp",
+      "stage": "optimised",
+      "templateId": "basecamp-html",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "blog-alpine-cycling-html",
+      "path": "/blog/alpine-cycling",
+      "stage": "optimised",
+      "templateId": "blog-alpine-cycling-html",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "blog-desert-survival-guide-html",
+      "path": "/blog/desert-survival-guide",
+      "stage": "optimised",
+      "templateId": "blog-desert-survival-guide-html",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "blog-kayaking-norway-html",
+      "path": "/blog/kayaking-norway",
+      "stage": "optimised",
+      "templateId": "blog-kayaking-norway-html",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "blog-mountain-photography-html",
+      "path": "/blog/mountain-photography",
+      "stage": "optimised",
+      "templateId": "blog-mountain-photography-html",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "blog-patagonia-trek-html",
+      "path": "/blog/patagonia-trek",
+      "stage": "optimised",
+      "templateId": "blog-patagonia-trek-html",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "blog-surfing-costa-rica-html",
+      "path": "/blog/surfing-costa-rica",
+      "stage": "optimised",
+      "templateId": "blog-surfing-costa-rica-html",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "blog-ultralight-backpacking-html",
+      "path": "/blog/ultralight-backpacking",
+      "stage": "optimised",
+      "templateId": "blog-ultralight-backpacking-html",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "blog-wild-swimming-guide-html",
+      "path": "/blog/wild-swimming-guide",
+      "stage": "optimised",
+      "templateId": "blog-wild-swimming-guide-html",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "blog-winter-mountaineering-html",
+      "path": "/blog/winter-mountaineering",
+      "stage": "optimised",
+      "templateId": "blog-winter-mountaineering-html",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "blog-yosemite-rock-climbing-html",
+      "path": "/blog/yosemite-rock-climbing",
+      "stage": "optimised",
+      "templateId": "blog-yosemite-rock-climbing-html",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "community-html",
+      "path": "/community",
+      "stage": "optimised",
+      "templateId": "community-html",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "destinations-html",
+      "path": "/destinations",
+      "stage": "optimised",
+      "templateId": "destinations-html",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "expeditions-html",
+      "path": "/expeditions",
+      "stage": "optimised",
+      "templateId": "expeditions-html",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "faq-html",
+      "path": "/faq",
+      "stage": "optimised",
+      "templateId": "faq-html",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "field-notes-html",
+      "path": "/field-notes",
+      "stage": "optimised",
+      "templateId": "field-notes-html",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "gear-html",
+      "path": "/gear",
+      "stage": "optimised",
+      "templateId": "gear-html",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "sustainability-html",
+      "path": "/sustainability",
+      "stage": "optimised",
+      "templateId": "sustainability-html",
+      "isTemplate": true,
+      "openFindings": 0
+    }
+  ],
+  "templates": [
+    {
+      "id": "about-html",
+      "archetype": "about-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 1
+      }
+    },
+    {
+      "id": "adventures-html",
+      "archetype": "adventures-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 1
+      }
+    },
+    {
+      "id": "basecamp-html",
+      "archetype": "basecamp-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 1
+      }
+    },
+    {
+      "id": "blog-alpine-cycling-html",
+      "archetype": "blog-alpine-cycling-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 1
+      }
+    },
+    {
+      "id": "blog-desert-survival-guide-html",
+      "archetype": "blog-desert-survival-guide-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 1
+      }
+    },
+    {
+      "id": "blog-kayaking-norway-html",
+      "archetype": "blog-kayaking-norway-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 1
+      }
+    },
+    {
+      "id": "blog-mountain-photography-html",
+      "archetype": "blog-mountain-photography-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 1
+      }
+    },
+    {
+      "id": "blog-patagonia-trek-html",
+      "archetype": "blog-patagonia-trek-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 1
+      }
+    },
+    {
+      "id": "blog-surfing-costa-rica-html",
+      "archetype": "blog-surfing-costa-rica-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 1
+      }
+    },
+    {
+      "id": "blog-ultralight-backpacking-html",
+      "archetype": "blog-ultralight-backpacking-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 1
+      }
+    },
+    {
+      "id": "blog-wild-swimming-guide-html",
+      "archetype": "blog-wild-swimming-guide-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 1
+      }
+    },
+    {
+      "id": "blog-winter-mountaineering-html",
+      "archetype": "blog-winter-mountaineering-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 1
+      }
+    },
+    {
+      "id": "blog-yosemite-rock-climbing-html",
+      "archetype": "blog-yosemite-rock-climbing-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 1
+      }
+    },
+    {
+      "id": "community-html",
+      "archetype": "community-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 1
+      }
+    },
+    {
+      "id": "destinations-html",
+      "archetype": "destinations-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 1
+      }
+    },
+    {
+      "id": "expeditions-html",
+      "archetype": "expeditions-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 1
+      }
+    },
+    {
+      "id": "faq-html",
+      "archetype": "faq-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 1
+      }
+    },
+    {
+      "id": "field-notes-html",
+      "archetype": "field-notes-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 1
+      }
+    },
+    {
+      "id": "gear-html",
+      "archetype": "gear-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 1
+      }
+    },
+    {
+      "id": "index",
+      "archetype": "index",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 1
+      }
+    },
+    {
+      "id": "sustainability-html",
+      "archetype": "sustainability-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 1
+      }
+    }
+  ],
+  "blocks": {
+    "total": 11,
+    "converted": 0
+  },
+  "quality": {
+    "overall": 100,
+    "dimensions": {
+      "brand-tensions": null,
+      "design-ux": null,
+      "accessibility": null,
+      "seo": 100,
+      "content-conversion": null,
+      "ai-search": 100,
+      "cross-page": null
+    },
+    "severity": {
+      "P1": 0,
+      "P2": 0,
+      "P3": 0
+    },
+    "history": [
+      43,
+      100
+    ]
+  },
+  "findings": {
+    "byFixability": {},
+    "byAutofix": {}
+  }
+}

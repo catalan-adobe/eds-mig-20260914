@@ -3,7 +3,13 @@
   "type": "listing",
   "renderBranch": "A'",
   "template": "adventures-html",
-  "modules": [],
+  "modules": [
+    "editorial-index",
+    "featured",
+    "hero",
+    "panels",
+    "tabs"
+  ],
   "slotsFilled": [
     "hero",
     "section",

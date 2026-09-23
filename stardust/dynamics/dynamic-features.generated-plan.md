@@ -1,4 +1,4 @@
-<!-- stardust provenance: skill=stardust:dynamics · phase=plan draft · 2026-09-23T10:54:52.229Z · input stardust/current/_dynamics.json (5 pages, 1 findings) -->
+<!-- stardust provenance: skill=stardust:dynamics · phase=plan draft · 2026-09-23T12:32:53.574Z · input stardust/current/_dynamics.json (5 pages, 1 findings) · target probe https://stardust-replica-migration--eds-mig-20260914--catalan-adobe.aem.page -->
 # Dynamic features — draft inventory (curate into `stardust/dynamic-features.md`)
 
 One row per detected finding. Merge duplicates, drop noise, keep every axis honest. Columns: disposition = what we do · reproducibility = what it needs · status = where it stands (reference/triage.md).

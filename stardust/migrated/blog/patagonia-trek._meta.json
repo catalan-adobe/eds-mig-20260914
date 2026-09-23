@@ -3,7 +3,12 @@
   "type": "article",
   "renderBranch": "A",
   "template": null,
-  "modules": [],
+  "modules": [
+    "article-aside",
+    "cards",
+    "gallery",
+    "hero"
+  ],
   "slotsFilled": [
     "hero",
     "section",

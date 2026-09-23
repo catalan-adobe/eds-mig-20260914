@@ -1,0 +1,30 @@
+{
+  "frozenAt": "2026-09-23T12:38:34.170Z",
+  "root": ".",
+  "paths": [
+    "styles/",
+    "fonts/",
+    "blocks/header/",
+    "blocks/footer/",
+    "head.html",
+    "scripts/"
+  ],
+  "files": {
+    "blocks/footer/footer.css": "ff04e890bcd5eeac8af8bed2ee735b93e9d55845e864976362d10e756a9b54e3",
+    "blocks/footer/footer.js": "4c562f4c60a8f0c62db64d6ee5a83831b21b6eaf7562b30d0754cd069a4670ef",
+    "blocks/header/header.css": "9b1cdd2577ffcd0642476fc0aa27b63962e1be676ae006b8ad588f97ade31cd7",
+    "blocks/header/header.js": "71439d9eea3609fb768753285456e9237c120ada7aa023d2d02b7011d3c31dd5",
+    "fonts/instrument-sans-latin.woff2": "6219bc4bfdfc5d9b2201dcdf046218b122a758f932e25ed5f168f929b7ca2311",
+    "fonts/syncopate-400-latin.woff2": "1fddf428333ba0ba73810a20cdf4614d90528aff3a8df9e33dec32e897751a26",
+    "fonts/syncopate-700-latin.woff2": "371cfc398e762b5e5467764c6a524f2ef97e5f1f1c314f47849141ca7584b6d7",
+    "head.html": "f3dc4521d58280a9cdc2fb510342468afd6f03e48daa69fedcdc1b207cdfd6b3",
+    "scripts/aem.js": "014479db98bd56d25c248ff45aa705752d871a9eff0484c5620f00cf58b42ae6",
+    "scripts/article-card.js": "6372870c98b8c49235f5dac590c80dd4704258899df121a13dc0237f6c786af3",
+    "scripts/consent-check.js": "ac21f825288cfc82c52a6acd9c57bbb76a2017ee1b06319d493244f32751249a",
+    "scripts/consented.js": "8a0ec7239cfab36c9bbfd8e7cde178c6c9061f68da8539879411ee9fa09b18ab",
+    "scripts/scripts.js": "4305b7fd8f5049a668df2f23b8b49b0ac4265859e77b171203113298a0d92c72",
+    "styles/fonts.css": "506fbf8eabfcb871c2e9bfd44678c1fd6d68ce6ed3ef134f364af3410b7f51d5",
+    "styles/lazy-styles.css": "391d6721991eb169fa04d7c71d9b597361d76c24ab8a3d5f1dcb47457d8ca2d6",
+    "styles/styles.css": "8a0490d73f4bd6b2d91bc2245af3a8dcdd7d2645419d2f4bb0aa1b00fa50b1ec"
+  }
+}

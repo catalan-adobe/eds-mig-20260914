@@ -1,0 +1,29 @@
+{
+  "/footer": {
+    "status": "previewed",
+    "attempts": 2,
+    "ts": "2026-09-23T11:58:12.991Z",
+    "put": 200,
+    "preview": 200,
+    "lastError": "preview 404 ",
+    "verify": "ok"
+  },
+  "/index": {
+    "status": "previewed",
+    "attempts": 2,
+    "ts": "2026-09-23T11:58:12.992Z",
+    "put": 200,
+    "preview": 200,
+    "lastError": "preview 404 ",
+    "verify": "ok"
+  },
+  "/nav": {
+    "status": "previewed",
+    "attempts": 2,
+    "ts": "2026-09-23T11:58:17.275Z",
+    "put": 200,
+    "preview": 200,
+    "lastError": "preview 404 ",
+    "verify": "ok"
+  }
+}

@@ -5,3 +5,27 @@
 {"ts":"2026-09-23T11:16:11Z","skill":"stardust:replica","phase":"source-fidelity-gate","event":"end","detail":"4/4 archetypes pass 1440+360: index 0.00/0.01, article 0.00/0.00, adventures 0.00/0.00, about 0.00/0.00(settle); Δh 0; 0 structural red"}
 {"ts":"2026-09-23T11:35:32Z","skill":"stardust:migrate","phase":"render","event":"start"}
 {"ts":"2026-09-23T11:37:24Z","skill":"stardust:migrate","phase":"render","event":"end","detail":"21/21 rendered, 0 broken links, content-count identical, sibling pixel ≤0.28%"}
+{"ts":"2026-09-23T12:30:33Z","skill":"stardust:replica","phase":"handoff","event":"start"}
+{"ts":"2026-09-23T12:30:33Z","skill":"stardust:rollout","phase":"A-inventory","event":"start"}
+{"ts":"2026-09-23T12:30:54Z","skill":"stardust:rollout","phase":"A-inventory","event":"end","detail":"21 pages","artifact":"stardust/rollout/coverage/pages.json"}
+{"ts":"2026-09-23T12:32:53Z","skill":"stardust:rollout","phase":"B-block","event":"start"}
+{"ts":"2026-09-23T12:32:53Z","skill":"stardust:rollout","phase":"B-block","event":"end","detail":"11 distinct blocks, 91 instances","artifact":"stardust/rollout/coverage/blocks.json"}
+{"ts":"2026-09-23T12:32:53Z","skill":"stardust:rollout","phase":"B2-dynamic","event":"start"}
+{"ts":"2026-09-23T12:32:53Z","skill":"stardust:rollout","phase":"B2-dynamic","event":"end","detail":"5 rows self (megamenu, mobile nav, tabs, faq, ticker); 0 host-bound","artifact":"stardust/dynamic-features.md"}
+{"ts":"2026-09-23T12:39:25Z","skill":"stardust:rollout","phase":"C-deliver","event":"start"}
+{"ts":"2026-09-23T12:39:25Z","skill":"stardust:rollout","phase":"C-deliver","event":"end","detail":"21/21 previewed; published gate all pages both widths ≤1.92%"}
+{"ts":"2026-09-23T12:39:26Z","skill":"stardust:rollout","phase":"D-site","event":"start"}
+{"ts":"2026-09-23T12:39:26Z","skill":"stardust:rollout","phase":"E-full-site","event":"start"}
+{"ts":"2026-09-23T12:39:26Z","skill":"stardust:rollout","phase":"E2-link-audit","event":"start"}
+{"ts":"2026-09-23T12:39:26Z","skill":"stardust:rollout","phase":"F-optimize","event":"start"}
+{"ts":"2026-09-23T12:39:26Z","skill":"stardust:rollout","phase":"G-aem","event":"start"}
+{"ts":"2026-09-23T12:39:26Z","skill":"stardust:rollout","phase":"H-report","event":"start"}
+{"ts":"2026-09-23T12:39:26Z","skill":"stardust:rollout","phase":"D-site","event":"end","detail":"redirects.json 21 rows; / 200"}
+{"ts":"2026-09-23T12:39:26Z","skill":"stardust:rollout","phase":"E-full-site","event":"end","detail":"21/21 verified"}
+{"ts":"2026-09-23T12:39:26Z","skill":"stardust:rollout","phase":"E2-link-audit","event":"end","detail":"21 internal hrefs 200"}
+{"ts":"2026-09-23T12:39:26Z","skill":"stardust:rollout","phase":"F-optimize","event":"end","detail":"0 open P1; 22 P2 + 1 P3 accepted"}
+{"ts":"2026-09-23T12:39:26Z","skill":"stardust:rollout","phase":"G-aem","event":"end","detail":"no platform autofix needed"}
+{"ts":"2026-09-23T12:39:26Z","skill":"stardust:rollout","phase":"H-report","event":"end"}
+{"ts":"2026-09-23T12:39:26Z","skill":"stardust:rollout","phase":"I-dashboard","event":"start"}
+{"ts":"2026-09-23T12:39:26Z","skill":"stardust:rollout","phase":"I-dashboard","event":"end","artifact":"stardust/rollout/dashboard/index.html"}
+{"ts":"2026-09-23T12:39:26Z","skill":"stardust:replica","phase":"handoff","event":"end","detail":"21 pages delivered (preview); published-origin gate pass","artifact":"stardust/rollout/"}

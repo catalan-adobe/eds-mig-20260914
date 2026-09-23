@@ -3,7 +3,14 @@
   "type": "listing",
   "renderBranch": "A",
   "template": null,
-  "modules": [],
+  "modules": [
+    "cards",
+    "editorial-index",
+    "featured",
+    "hero",
+    "panels",
+    "tabs"
+  ],
   "slotsFilled": [
     "hero",
     "section",

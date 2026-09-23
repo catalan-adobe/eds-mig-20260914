@@ -1,0 +1,525 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-09-23T12:31:05.352Z",
+    "readArtifacts": [
+      "stardust/migrated",
+      "stardust/state.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-23T12:38:35.252Z",
+  "pages": [
+    {
+      "slug": "about-html",
+      "path": "/about",
+      "title": "About — WKND Adventures",
+      "templateId": "about-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/about.html",
+        "metaJson": "stardust/migrated/about._meta.json",
+        "sourceHash": "sha256:ea205499f6faa846981d11200d4e740b59c53a50e78d1146dc4583597699d0d9"
+      },
+      "blocks": [
+        "cards",
+        "columns",
+        "hero",
+        "panels",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://stardust-replica-migration--eds-mig-20260914--catalan-adobe.aem.page/about",
+        "deployedAt": "2026-09-23T12:38:34.207Z",
+        "verifiedAt": "2026-09-23T12:38:35.252Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "adventures-html",
+      "path": "/adventures",
+      "title": "Adventures — WKND Adventures",
+      "templateId": "adventures-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/adventures.html",
+        "metaJson": "stardust/migrated/adventures._meta.json",
+        "sourceHash": "sha256:7d65cfadcf6699e91a8161cb8b9d71036445978b4eeadc34980bf64c6be796cc"
+      },
+      "blocks": [
+        "cards",
+        "editorial-index",
+        "featured",
+        "hero",
+        "panels",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://stardust-replica-migration--eds-mig-20260914--catalan-adobe.aem.page/adventures",
+        "deployedAt": "2026-09-23T12:38:34.247Z",
+        "verifiedAt": "2026-09-23T12:38:35.252Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "basecamp-html",
+      "path": "/basecamp",
+      "title": "Basecamp — WKND Adventures",
+      "templateId": "basecamp-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/basecamp.html",
+        "metaJson": "stardust/migrated/basecamp._meta.json",
+        "sourceHash": "sha256:81e30ad0c537534b5d105d67ffe208bc8cafcb856fb07bcf3bc1d010c58bb769"
+      },
+      "blocks": [
+        "accordion",
+        "hero",
+        "tabs",
+        "ticker"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://stardust-replica-migration--eds-mig-20260914--catalan-adobe.aem.page/basecamp",
+        "deployedAt": "2026-09-23T12:38:34.354Z",
+        "verifiedAt": "2026-09-23T12:38:35.252Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "blog-alpine-cycling-html",
+      "path": "/blog/alpine-cycling",
+      "title": "Six Days Through the High Alps — WKND Adventures",
+      "templateId": "blog-alpine-cycling-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/blog/alpine-cycling.html",
+        "metaJson": "stardust/migrated/blog/alpine-cycling._meta.json",
+        "sourceHash": "sha256:00b3c0fdadef8ca7f49e049fbee89ca65a0cb67ba685f44972bd005876dc68bd"
+      },
+      "blocks": [
+        "article-aside",
+        "cards",
+        "gallery",
+        "hero"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://stardust-replica-migration--eds-mig-20260914--catalan-adobe.aem.page/blog/alpine-cycling",
+        "deployedAt": "2026-09-23T12:38:34.395Z",
+        "verifiedAt": "2026-09-23T12:38:35.252Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "blog-desert-survival-guide-html",
+      "path": "/blog/desert-survival-guide",
+      "title": "48 Hours in the Sonoran: A Field Guide — WKND Adventures",
+      "templateId": "blog-desert-survival-guide-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/blog/desert-survival-guide.html",
+        "metaJson": "stardust/migrated/blog/desert-survival-guide._meta.json",
+        "sourceHash": "sha256:0a5345e7ed5c40b920f444c6447a48dc45beea7881751b931a86a7341415d9b0"
+      },
+      "blocks": [
+        "article-aside",
+        "cards",
+        "gallery",
+        "hero"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://stardust-replica-migration--eds-mig-20260914--catalan-adobe.aem.page/blog/desert-survival-guide",
+        "deployedAt": "2026-09-23T12:38:34.432Z",
+        "verifiedAt": "2026-09-23T12:38:35.252Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "blog-kayaking-norway-html",
+      "path": "/blog/kayaking-norway",
+      "title": "Lofoten Islands: Arctic Surfing at the Top of the World — WKND Adventures",
+      "templateId": "blog-kayaking-norway-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/blog/kayaking-norway.html",
+        "metaJson": "stardust/migrated/blog/kayaking-norway._meta.json",
+        "sourceHash": "sha256:2549faa69b5cf017655d78d36443f5ad3100c2c3271423623d0285dad00f8095"
+      },
+      "blocks": [
+        "article-aside",
+        "cards",
+        "gallery",
+        "hero"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://stardust-replica-migration--eds-mig-20260914--catalan-adobe.aem.page/blog/kayaking-norway",
+        "deployedAt": "2026-09-23T12:38:34.471Z",
+        "verifiedAt": "2026-09-23T12:38:35.252Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "blog-mountain-photography-html",
+      "path": "/blog/mountain-photography",
+      "title": "The Camera on Your Back — WKND Adventures",
+      "templateId": "blog-mountain-photography-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/blog/mountain-photography.html",
+        "metaJson": "stardust/migrated/blog/mountain-photography._meta.json",
+        "sourceHash": "sha256:66ffafab3a4553b016b54f15e93606616dc4302ea56f17fb008404670aeed0e4"
+      },
+      "blocks": [
+        "article-aside",
+        "cards",
+        "gallery",
+        "hero"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://stardust-replica-migration--eds-mig-20260914--catalan-adobe.aem.page/blog/mountain-photography",
+        "deployedAt": "2026-09-23T12:38:34.509Z",
+        "verifiedAt": "2026-09-23T12:38:35.252Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "blog-patagonia-trek-html",
+      "path": "/blog/patagonia-trek",
+      "title": "W Circuit: 9 Days, 115 km — WKND Adventures",
+      "templateId": "blog-patagonia-trek-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/blog/patagonia-trek.html",
+        "metaJson": "stardust/migrated/blog/patagonia-trek._meta.json",
+        "sourceHash": "sha256:705bd1011f714ba055d519d10bca962f08e2ebef05a87b66e248c971e776233d"
+      },
+      "blocks": [
+        "article-aside",
+        "cards",
+        "gallery",
+        "hero"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://stardust-replica-migration--eds-mig-20260914--catalan-adobe.aem.page/blog/patagonia-trek",
+        "deployedAt": "2026-09-23T12:38:34.549Z",
+        "verifiedAt": "2026-09-23T12:38:35.252Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "blog-surfing-costa-rica-html",
+      "path": "/blog/surfing-costa-rica",
+      "title": "Pavones and Playa Negra: Costa Rica Surf Guide — WKND Adventures",
+      "templateId": "blog-surfing-costa-rica-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/blog/surfing-costa-rica.html",
+        "metaJson": "stardust/migrated/blog/surfing-costa-rica._meta.json",
+        "sourceHash": "sha256:f096a2a15b895ba4ab858bb5576af0c7f4699f48d5bd8b90d144caa8e53b2e0e"
+      },
+      "blocks": [
+        "article-aside",
+        "cards",
+        "gallery",
+        "hero"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://stardust-replica-migration--eds-mig-20260914--catalan-adobe.aem.page/blog/surfing-costa-rica",
+        "deployedAt": "2026-09-23T12:38:34.589Z",
+        "verifiedAt": "2026-09-23T12:38:35.252Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "blog-ultralight-backpacking-html",
+      "path": "/blog/ultralight-backpacking",
+      "title": "Sub-10 lb: What to Cut, What to Keep — WKND Adventures",
+      "templateId": "blog-ultralight-backpacking-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/blog/ultralight-backpacking.html",
+        "metaJson": "stardust/migrated/blog/ultralight-backpacking._meta.json",
+        "sourceHash": "sha256:270af4cf891cff375a9ca11bcf2b9fdd721c5085359a7c8b9a362e4716191a60"
+      },
+      "blocks": [
+        "article-aside",
+        "cards",
+        "gallery",
+        "hero"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://stardust-replica-migration--eds-mig-20260914--catalan-adobe.aem.page/blog/ultralight-backpacking",
+        "deployedAt": "2026-09-23T12:38:34.634Z",
+        "verifiedAt": "2026-09-23T12:38:35.252Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "blog-wild-swimming-guide-html",
+      "path": "/blog/wild-swimming-guide",
+      "title": "Reading a River: The Wild Swimming Guide — WKND Adventures",
+      "templateId": "blog-wild-swimming-guide-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/blog/wild-swimming-guide.html",
+        "metaJson": "stardust/migrated/blog/wild-swimming-guide._meta.json",
+        "sourceHash": "sha256:8a545ddd72cf220eb280690a75a995d57a64d639bc1b0ddd7391135a0419d2a2"
+      },
+      "blocks": [
+        "article-aside",
+        "cards",
+        "gallery",
+        "hero"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://stardust-replica-migration--eds-mig-20260914--catalan-adobe.aem.page/blog/wild-swimming-guide",
+        "deployedAt": "2026-09-23T12:38:34.675Z",
+        "verifiedAt": "2026-09-23T12:38:35.252Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "blog-winter-mountaineering-html",
+      "path": "/blog/winter-mountaineering",
+      "title": "Why Cold Routes Demand Warm Minds — WKND Adventures",
+      "templateId": "blog-winter-mountaineering-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/blog/winter-mountaineering.html",
+        "metaJson": "stardust/migrated/blog/winter-mountaineering._meta.json",
+        "sourceHash": "sha256:ee318d5fee808ee005394d076b71aa78ab47b7619da8bead0caff5b59df7c80f"
+      },
+      "blocks": [
+        "article-aside",
+        "cards",
+        "gallery",
+        "hero"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://stardust-replica-migration--eds-mig-20260914--catalan-adobe.aem.page/blog/winter-mountaineering",
+        "deployedAt": "2026-09-23T12:38:34.715Z",
+        "verifiedAt": "2026-09-23T12:38:35.252Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "blog-yosemite-rock-climbing-html",
+      "path": "/blog/yosemite-rock-climbing",
+      "title": "First Light on the Valley — WKND Adventures",
+      "templateId": "blog-yosemite-rock-climbing-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/blog/yosemite-rock-climbing.html",
+        "metaJson": "stardust/migrated/blog/yosemite-rock-climbing._meta.json",
+        "sourceHash": "sha256:a8b0215fdde18e8a95f9e578863991322b259240ff5b849e7e5197ee0608288f"
+      },
+      "blocks": [
+        "article-aside",
+        "cards",
+        "gallery",
+        "hero"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://stardust-replica-migration--eds-mig-20260914--catalan-adobe.aem.page/blog/yosemite-rock-climbing",
+        "deployedAt": "2026-09-23T12:38:34.753Z",
+        "verifiedAt": "2026-09-23T12:38:35.252Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "community-html",
+      "path": "/community",
+      "title": "Community — WKND Adventures",
+      "templateId": "community-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/community.html",
+        "metaJson": "stardust/migrated/community._meta.json",
+        "sourceHash": "sha256:e58f39b53fd600351a719206ccb776343fa6f50621a09a2f6dd8f9b0b05d4914"
+      },
+      "blocks": [
+        "accordion",
+        "cards",
+        "editorial-index",
+        "featured",
+        "hero"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://stardust-replica-migration--eds-mig-20260914--catalan-adobe.aem.page/community",
+        "deployedAt": "2026-09-23T12:38:34.796Z",
+        "verifiedAt": "2026-09-23T12:38:35.252Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "destinations-html",
+      "path": "/destinations",
+      "title": "Destinations — WKND Adventures",
+      "templateId": "destinations-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/destinations.html",
+        "metaJson": "stardust/migrated/destinations._meta.json",
+        "sourceHash": "sha256:2b54a223e54f5b34923c42c9f9b1f478f91823210e7600086eca019b73130f1d"
+      },
+      "blocks": [
+        "cards",
+        "featured",
+        "hero",
+        "panels"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://stardust-replica-migration--eds-mig-20260914--catalan-adobe.aem.page/destinations",
+        "deployedAt": "2026-09-23T12:38:34.837Z",
+        "verifiedAt": "2026-09-23T12:38:35.252Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "expeditions-html",
+      "path": "/expeditions",
+      "title": "Expeditions — WKND Adventures",
+      "templateId": "expeditions-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/expeditions.html",
+        "metaJson": "stardust/migrated/expeditions._meta.json",
+        "sourceHash": "sha256:6a80bc846beb14c8b05a24f14fdc5a324432aebc73a9579f141362549f8958be"
+      },
+      "blocks": [
+        "cards",
+        "editorial-index",
+        "hero",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://stardust-replica-migration--eds-mig-20260914--catalan-adobe.aem.page/expeditions",
+        "deployedAt": "2026-09-23T12:38:34.877Z",
+        "verifiedAt": "2026-09-23T12:38:35.252Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "faq-html",
+      "path": "/faq",
+      "title": "FAQ — WKND Adventures",
+      "templateId": "faq-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/faq.html",
+        "metaJson": "stardust/migrated/faq._meta.json",
+        "sourceHash": "sha256:0daad2fdc6b2d977539cd1b6450e0f629fc607c9f221416a7ff5143c87507a80"
+      },
+      "blocks": [
+        "accordion",
+        "cards",
+        "hero"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://stardust-replica-migration--eds-mig-20260914--catalan-adobe.aem.page/faq",
+        "deployedAt": "2026-09-23T12:38:34.914Z",
+        "verifiedAt": "2026-09-23T12:38:35.252Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "field-notes-html",
+      "path": "/field-notes",
+      "title": "Field Notes — WKND Adventures",
+      "templateId": "field-notes-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/field-notes.html",
+        "metaJson": "stardust/migrated/field-notes._meta.json",
+        "sourceHash": "sha256:3e932c88d738679d14863dff07116d46b48365559686320cb3a73d2143c2e1d4"
+      },
+      "blocks": [
+        "cards",
+        "featured",
+        "hero"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://stardust-replica-migration--eds-mig-20260914--catalan-adobe.aem.page/field-notes",
+        "deployedAt": "2026-09-23T12:38:34.956Z",
+        "verifiedAt": "2026-09-23T12:38:35.252Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "gear-html",
+      "path": "/gear",
+      "title": "Gear — WKND Adventures",
+      "templateId": "gear-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/gear.html",
+        "metaJson": "stardust/migrated/gear._meta.json",
+        "sourceHash": "sha256:caefa2f4689a006d4ccdbc32d9d26190f43941ea5a7219ccad96cefc0a49936b"
+      },
+      "blocks": [
+        "editorial-index",
+        "featured",
+        "hero",
+        "panels",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://stardust-replica-migration--eds-mig-20260914--catalan-adobe.aem.page/gear",
+        "deployedAt": "2026-09-23T12:38:34.995Z",
+        "verifiedAt": "2026-09-23T12:38:35.252Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "index",
+      "path": "/",
+      "title": "WKND Adventures — Bold Stories. Real Life. Wild Places.",
+      "templateId": "index",
+      "source": {
+        "migratedHtml": "stardust/migrated/index.html",
+        "metaJson": "stardust/migrated/_meta.json",
+        "sourceHash": "sha256:41a721e13af11b5151c3e3c9e728f0bd081259ef4f3925ece638f19fd24cbc7d"
+      },
+      "blocks": [
+        "accordion",
+        "editorial-index",
+        "featured",
+        "gallery",
+        "hero",
+        "tabs",
+        "ticker"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://stardust-replica-migration--eds-mig-20260914--catalan-adobe.aem.page/",
+        "deployedAt": "2026-09-23T12:38:35.037Z",
+        "verifiedAt": "2026-09-23T12:38:35.252Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "sustainability-html",
+      "path": "/sustainability",
+      "title": "Sustainability — WKND Adventures",
+      "templateId": "sustainability-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/sustainability.html",
+        "metaJson": "stardust/migrated/sustainability._meta.json",
+        "sourceHash": "sha256:751af7c768b1714031c62ec8ab9675dda980fe06a2a1a9e4518e9cc171ea5447"
+      },
+      "blocks": [
+        "cards",
+        "editorial-index",
+        "featured",
+        "hero",
+        "panels"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://stardust-replica-migration--eds-mig-20260914--catalan-adobe.aem.page/sustainability",
+        "deployedAt": "2026-09-23T12:38:35.076Z",
+        "verifiedAt": "2026-09-23T12:38:35.252Z",
+        "error": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,393 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/blocks",
+    "writtenAt": "2026-09-23T12:31:05.413Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage/pages.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-23T12:31:05.413Z",
+  "blocks": [
+    {
+      "id": "accordion",
+      "label": "accordion",
+      "kind": "module",
+      "signature": "module:accordion",
+      "source": null,
+      "usedByTemplates": [
+        "basecamp-html",
+        "community-html",
+        "faq-html",
+        "index"
+      ],
+      "usedByPages": [
+        "basecamp-html",
+        "community-html",
+        "faq-html",
+        "index"
+      ],
+      "instanceCount": 4,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "accordion",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "article-aside",
+      "label": "article-aside",
+      "kind": "module",
+      "signature": "module:article-aside",
+      "source": null,
+      "usedByTemplates": [
+        "blog-alpine-cycling-html",
+        "blog-desert-survival-guide-html",
+        "blog-kayaking-norway-html",
+        "blog-mountain-photography-html",
+        "blog-patagonia-trek-html",
+        "blog-surfing-costa-rica-html",
+        "blog-ultralight-backpacking-html",
+        "blog-wild-swimming-guide-html",
+        "blog-winter-mountaineering-html",
+        "blog-yosemite-rock-climbing-html"
+      ],
+      "usedByPages": [
+        "blog-alpine-cycling-html",
+        "blog-desert-survival-guide-html",
+        "blog-kayaking-norway-html",
+        "blog-mountain-photography-html",
+        "blog-patagonia-trek-html",
+        "blog-surfing-costa-rica-html",
+        "blog-ultralight-backpacking-html",
+        "blog-wild-swimming-guide-html",
+        "blog-winter-mountaineering-html",
+        "blog-yosemite-rock-climbing-html"
+      ],
+      "instanceCount": 10,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "article-aside",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "cards",
+      "label": "cards",
+      "kind": "module",
+      "signature": "module:cards",
+      "source": null,
+      "usedByTemplates": [
+        "about-html",
+        "adventures-html",
+        "blog-alpine-cycling-html",
+        "blog-desert-survival-guide-html",
+        "blog-kayaking-norway-html",
+        "blog-mountain-photography-html",
+        "blog-patagonia-trek-html",
+        "blog-surfing-costa-rica-html",
+        "blog-ultralight-backpacking-html",
+        "blog-wild-swimming-guide-html",
+        "blog-winter-mountaineering-html",
+        "blog-yosemite-rock-climbing-html",
+        "community-html",
+        "destinations-html",
+        "expeditions-html",
+        "faq-html",
+        "field-notes-html",
+        "sustainability-html"
+      ],
+      "usedByPages": [
+        "about-html",
+        "adventures-html",
+        "blog-alpine-cycling-html",
+        "blog-desert-survival-guide-html",
+        "blog-kayaking-norway-html",
+        "blog-mountain-photography-html",
+        "blog-patagonia-trek-html",
+        "blog-surfing-costa-rica-html",
+        "blog-ultralight-backpacking-html",
+        "blog-wild-swimming-guide-html",
+        "blog-winter-mountaineering-html",
+        "blog-yosemite-rock-climbing-html",
+        "community-html",
+        "destinations-html",
+        "expeditions-html",
+        "faq-html",
+        "field-notes-html",
+        "sustainability-html"
+      ],
+      "instanceCount": 18,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "cards",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "columns",
+      "label": "columns",
+      "kind": "module",
+      "signature": "module:columns",
+      "source": null,
+      "usedByTemplates": [
+        "about-html"
+      ],
+      "usedByPages": [
+        "about-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "columns",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "editorial-index",
+      "label": "editorial-index",
+      "kind": "module",
+      "signature": "module:editorial-index",
+      "source": null,
+      "usedByTemplates": [
+        "adventures-html",
+        "community-html",
+        "expeditions-html",
+        "gear-html",
+        "index",
+        "sustainability-html"
+      ],
+      "usedByPages": [
+        "adventures-html",
+        "community-html",
+        "expeditions-html",
+        "gear-html",
+        "index",
+        "sustainability-html"
+      ],
+      "instanceCount": 6,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "editorial-index",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "featured",
+      "label": "featured",
+      "kind": "module",
+      "signature": "module:featured",
+      "source": null,
+      "usedByTemplates": [
+        "adventures-html",
+        "community-html",
+        "destinations-html",
+        "field-notes-html",
+        "gear-html",
+        "index",
+        "sustainability-html"
+      ],
+      "usedByPages": [
+        "adventures-html",
+        "community-html",
+        "destinations-html",
+        "field-notes-html",
+        "gear-html",
+        "index",
+        "sustainability-html"
+      ],
+      "instanceCount": 7,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "featured",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "gallery",
+      "label": "gallery",
+      "kind": "module",
+      "signature": "module:gallery",
+      "source": null,
+      "usedByTemplates": [
+        "blog-alpine-cycling-html",
+        "blog-desert-survival-guide-html",
+        "blog-kayaking-norway-html",
+        "blog-mountain-photography-html",
+        "blog-patagonia-trek-html",
+        "blog-surfing-costa-rica-html",
+        "blog-ultralight-backpacking-html",
+        "blog-wild-swimming-guide-html",
+        "blog-winter-mountaineering-html",
+        "blog-yosemite-rock-climbing-html",
+        "index"
+      ],
+      "usedByPages": [
+        "blog-alpine-cycling-html",
+        "blog-desert-survival-guide-html",
+        "blog-kayaking-norway-html",
+        "blog-mountain-photography-html",
+        "blog-patagonia-trek-html",
+        "blog-surfing-costa-rica-html",
+        "blog-ultralight-backpacking-html",
+        "blog-wild-swimming-guide-html",
+        "blog-winter-mountaineering-html",
+        "blog-yosemite-rock-climbing-html",
+        "index"
+      ],
+      "instanceCount": 11,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "gallery",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "hero",
+      "label": "hero",
+      "kind": "module",
+      "signature": "module:hero",
+      "source": null,
+      "usedByTemplates": [
+        "about-html",
+        "adventures-html",
+        "basecamp-html",
+        "blog-alpine-cycling-html",
+        "blog-desert-survival-guide-html",
+        "blog-kayaking-norway-html",
+        "blog-mountain-photography-html",
+        "blog-patagonia-trek-html",
+        "blog-surfing-costa-rica-html",
+        "blog-ultralight-backpacking-html",
+        "blog-wild-swimming-guide-html",
+        "blog-winter-mountaineering-html",
+        "blog-yosemite-rock-climbing-html",
+        "community-html",
+        "destinations-html",
+        "expeditions-html",
+        "faq-html",
+        "field-notes-html",
+        "gear-html",
+        "index",
+        "sustainability-html"
+      ],
+      "usedByPages": [
+        "about-html",
+        "adventures-html",
+        "basecamp-html",
+        "blog-alpine-cycling-html",
+        "blog-desert-survival-guide-html",
+        "blog-kayaking-norway-html",
+        "blog-mountain-photography-html",
+        "blog-patagonia-trek-html",
+        "blog-surfing-costa-rica-html",
+        "blog-ultralight-backpacking-html",
+        "blog-wild-swimming-guide-html",
+        "blog-winter-mountaineering-html",
+        "blog-yosemite-rock-climbing-html",
+        "community-html",
+        "destinations-html",
+        "expeditions-html",
+        "faq-html",
+        "field-notes-html",
+        "gear-html",
+        "index",
+        "sustainability-html"
+      ],
+      "instanceCount": 21,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "hero",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "panels",
+      "label": "panels",
+      "kind": "module",
+      "signature": "module:panels",
+      "source": null,
+      "usedByTemplates": [
+        "about-html",
+        "adventures-html",
+        "destinations-html",
+        "gear-html",
+        "sustainability-html"
+      ],
+      "usedByPages": [
+        "about-html",
+        "adventures-html",
+        "destinations-html",
+        "gear-html",
+        "sustainability-html"
+      ],
+      "instanceCount": 5,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "panels",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "tabs",
+      "label": "tabs",
+      "kind": "module",
+      "signature": "module:tabs",
+      "source": null,
+      "usedByTemplates": [
+        "about-html",
+        "adventures-html",
+        "basecamp-html",
+        "expeditions-html",
+        "gear-html",
+        "index"
+      ],
+      "usedByPages": [
+        "about-html",
+        "adventures-html",
+        "basecamp-html",
+        "expeditions-html",
+        "gear-html",
+        "index"
+      ],
+      "instanceCount": 6,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "tabs",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "ticker",
+      "label": "ticker",
+      "kind": "module",
+      "signature": "module:ticker",
+      "source": null,
+      "usedByTemplates": [
+        "basecamp-html",
+        "index"
+      ],
+      "usedByPages": [
+        "basecamp-html",
+        "index"
+      ],
+      "instanceCount": 2,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "ticker",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    }
+  ]
+}

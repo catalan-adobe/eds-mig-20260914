@@ -3,7 +3,13 @@
   "type": "static",
   "renderBranch": "A'",
   "template": "about-html",
-  "modules": [],
+  "modules": [
+    "cards",
+    "editorial-index",
+    "featured",
+    "hero",
+    "panels"
+  ],
   "slotsFilled": [
     "hero",
     "section",

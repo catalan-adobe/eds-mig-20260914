@@ -28,3 +28,23 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 - stardust/direction.md, stardust/replica/inconsistency-register.md, stardust/dynamic-features*.md — created
 - stardust/prototypes/{canon.css,canon.js,compose.py,article.py,assemble.py,*-proposed.html} — created
 - stardust/replica/progress.json, gates/, motion/ — created
+
+## 2026-09-23T12:39:36Z — replica Phase 5: EDS delivery of all 21 pages (preview)
+
+**Prompt:** Approve archetypes; capture DA token; continue the migration.
+
+**Decisions:**
+- DA token captured from a headed da.live session (adobeIMS) into .env; never printed.
+- Siblings composed from the same module templates; 34 sibling rounds ≤0.28%.
+- EDS content model: 11 blocks + 10 section styles; importer stardust/eds/import.py.
+- Push via the repo owner's gh token per call (active gh account lacks write access).
+- Published-origin gate: 21 pages × 2 widths, worst 1.92%, |Δh| ≤1px; header/footer bands ≤0.12%.
+- Preview-only; publish (.aem.live) and merge to main left to the owner.
+
+**Open questions:**
+- Publish to live + merge PR? Sitemap config in tools.aem.live?
+
+**Artifacts touched:**
+- blocks/*, styles/*, scripts/scripts.js, scripts/article-card.js, fonts/, icons/, head.html — created/updated
+- content/*.html (23 DA docs), stardust/redirects.tsv, DA /redirects.json — created
+- stardust/rollout/**, stardust/eds-conversion-log.md, stardust/deploy/*.json — created

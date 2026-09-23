@@ -35,3 +35,10 @@ Fidelity: ia verbatim · design verbatim · content verbatim.
 - gate (about-html @360): gate.sh stitches without `--settle`; a lazy image loads mid-stitch
   on the live side only (Δ219px). Evidence re-taken with `stitch-shot.mjs --settle` on BOTH
   sides + `pixel-compare.mjs` → 0.00%, Δ0 (stardust/replica/gates/about-html-360/diff-settle.png).
+- handoff C-deliver: run inline by the main agent (no subagent fan-out) — the harness allows
+  multi-agent workflows only on explicit user opt-in. Units still recorded in
+  stardust/rollout/progress.json; foundation frozen after C0.
+- handoff import: `stardust/eds/import.py` maps captured pages → DA documents (verbatim text,
+  module → block). migrate.mjs produced the static tree (stardust/migrated/) as the contract
+  requires; the DA importer reads the capture directly because the block mapping is keyed on
+  the source module classes, which the migrated canon markup renames.

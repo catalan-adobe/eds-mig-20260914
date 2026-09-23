@@ -1,0 +1,441 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-09-23T12:31:05.352Z",
+    "readArtifacts": [
+      "stardust/migrated",
+      "stardust/state.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-23T12:38:35.252Z",
+  "templates": [
+    {
+      "id": "about-html",
+      "representativeSlug": "about-html",
+      "pages": [
+        "about-html"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "cards",
+        "columns",
+        "hero",
+        "panels",
+        "tabs"
+      ],
+      "delivery": {
+        "verified": 1,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 0
+      }
+    },
+    {
+      "id": "adventures-html",
+      "representativeSlug": "adventures-html",
+      "pages": [
+        "adventures-html"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "cards",
+        "editorial-index",
+        "featured",
+        "hero",
+        "panels",
+        "tabs"
+      ],
+      "delivery": {
+        "verified": 1,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 0
+      }
+    },
+    {
+      "id": "basecamp-html",
+      "representativeSlug": "basecamp-html",
+      "pages": [
+        "basecamp-html"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "accordion",
+        "hero",
+        "tabs",
+        "ticker"
+      ],
+      "delivery": {
+        "verified": 1,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 0
+      }
+    },
+    {
+      "id": "blog-alpine-cycling-html",
+      "representativeSlug": "blog-alpine-cycling-html",
+      "pages": [
+        "blog-alpine-cycling-html"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "article-aside",
+        "cards",
+        "gallery",
+        "hero"
+      ],
+      "delivery": {
+        "verified": 1,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 0
+      }
+    },
+    {
+      "id": "blog-desert-survival-guide-html",
+      "representativeSlug": "blog-desert-survival-guide-html",
+      "pages": [
+        "blog-desert-survival-guide-html"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "article-aside",
+        "cards",
+        "gallery",
+        "hero"
+      ],
+      "delivery": {
+        "verified": 1,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 0
+      }
+    },
+    {
+      "id": "blog-kayaking-norway-html",
+      "representativeSlug": "blog-kayaking-norway-html",
+      "pages": [
+        "blog-kayaking-norway-html"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "article-aside",
+        "cards",
+        "gallery",
+        "hero"
+      ],
+      "delivery": {
+        "verified": 1,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 0
+      }
+    },
+    {
+      "id": "blog-mountain-photography-html",
+      "representativeSlug": "blog-mountain-photography-html",
+      "pages": [
+        "blog-mountain-photography-html"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "article-aside",
+        "cards",
+        "gallery",
+        "hero"
+      ],
+      "delivery": {
+        "verified": 1,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 0
+      }
+    },
+    {
+      "id": "blog-patagonia-trek-html",
+      "representativeSlug": "blog-patagonia-trek-html",
+      "pages": [
+        "blog-patagonia-trek-html"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "article-aside",
+        "cards",
+        "gallery",
+        "hero"
+      ],
+      "delivery": {
+        "verified": 1,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 0
+      }
+    },
+    {
+      "id": "blog-surfing-costa-rica-html",
+      "representativeSlug": "blog-surfing-costa-rica-html",
+      "pages": [
+        "blog-surfing-costa-rica-html"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "article-aside",
+        "cards",
+        "gallery",
+        "hero"
+      ],
+      "delivery": {
+        "verified": 1,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 0
+      }
+    },
+    {
+      "id": "blog-ultralight-backpacking-html",
+      "representativeSlug": "blog-ultralight-backpacking-html",
+      "pages": [
+        "blog-ultralight-backpacking-html"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "article-aside",
+        "cards",
+        "gallery",
+        "hero"
+      ],
+      "delivery": {
+        "verified": 1,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 0
+      }
+    },
+    {
+      "id": "blog-wild-swimming-guide-html",
+      "representativeSlug": "blog-wild-swimming-guide-html",
+      "pages": [
+        "blog-wild-swimming-guide-html"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "article-aside",
+        "cards",
+        "gallery",
+        "hero"
+      ],
+      "delivery": {
+        "verified": 1,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 0
+      }
+    },
+    {
+      "id": "blog-winter-mountaineering-html",
+      "representativeSlug": "blog-winter-mountaineering-html",
+      "pages": [
+        "blog-winter-mountaineering-html"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "article-aside",
+        "cards",
+        "gallery",
+        "hero"
+      ],
+      "delivery": {
+        "verified": 1,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 0
+      }
+    },
+    {
+      "id": "blog-yosemite-rock-climbing-html",
+      "representativeSlug": "blog-yosemite-rock-climbing-html",
+      "pages": [
+        "blog-yosemite-rock-climbing-html"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "article-aside",
+        "cards",
+        "gallery",
+        "hero"
+      ],
+      "delivery": {
+        "verified": 1,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 0
+      }
+    },
+    {
+      "id": "community-html",
+      "representativeSlug": "community-html",
+      "pages": [
+        "community-html"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "accordion",
+        "cards",
+        "editorial-index",
+        "featured",
+        "hero"
+      ],
+      "delivery": {
+        "verified": 1,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 0
+      }
+    },
+    {
+      "id": "destinations-html",
+      "representativeSlug": "destinations-html",
+      "pages": [
+        "destinations-html"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "cards",
+        "featured",
+        "hero",
+        "panels"
+      ],
+      "delivery": {
+        "verified": 1,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 0
+      }
+    },
+    {
+      "id": "expeditions-html",
+      "representativeSlug": "expeditions-html",
+      "pages": [
+        "expeditions-html"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "cards",
+        "editorial-index",
+        "hero",
+        "tabs"
+      ],
+      "delivery": {
+        "verified": 1,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 0
+      }
+    },
+    {
+      "id": "faq-html",
+      "representativeSlug": "faq-html",
+      "pages": [
+        "faq-html"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "accordion",
+        "cards",
+        "hero"
+      ],
+      "delivery": {
+        "verified": 1,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 0
+      }
+    },
+    {
+      "id": "field-notes-html",
+      "representativeSlug": "field-notes-html",
+      "pages": [
+        "field-notes-html"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "cards",
+        "featured",
+        "hero"
+      ],
+      "delivery": {
+        "verified": 1,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 0
+      }
+    },
+    {
+      "id": "gear-html",
+      "representativeSlug": "gear-html",
+      "pages": [
+        "gear-html"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "editorial-index",
+        "featured",
+        "hero",
+        "panels",
+        "tabs"
+      ],
+      "delivery": {
+        "verified": 1,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 0
+      }
+    },
+    {
+      "id": "index",
+      "representativeSlug": "index",
+      "pages": [
+        "index"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "accordion",
+        "editorial-index",
+        "featured",
+        "gallery",
+        "hero",
+        "tabs",
+        "ticker"
+      ],
+      "delivery": {
+        "verified": 1,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 0
+      }
+    },
+    {
+      "id": "sustainability-html",
+      "representativeSlug": "sustainability-html",
+      "pages": [
+        "sustainability-html"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "cards",
+        "editorial-index",
+        "featured",
+        "hero",
+        "panels"
+      ],
+      "delivery": {
+        "verified": 1,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 0
+      }
+    }
+  ]
+}

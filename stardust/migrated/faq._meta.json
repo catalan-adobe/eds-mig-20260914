@@ -3,7 +3,11 @@
   "type": "static",
   "renderBranch": "A'",
   "template": "about-html",
-  "modules": [],
+  "modules": [
+    "accordion",
+    "cards",
+    "hero"
+  ],
   "slotsFilled": [
     "hero",
     "section",

@@ -3,7 +3,12 @@
   "type": "listing",
   "renderBranch": "A'",
   "template": "adventures-html",
-  "modules": [],
+  "modules": [
+    "accordion",
+    "hero",
+    "tabs",
+    "ticker"
+  ],
   "slotsFilled": [
     "hero",
     "ticker",

@@ -3,7 +3,13 @@
   "type": "static",
   "renderBranch": "A",
   "template": null,
-  "modules": [],
+  "modules": [
+    "cards",
+    "columns",
+    "hero",
+    "panels",
+    "tabs"
+  ],
   "slotsFilled": [
     "hero",
     "section",

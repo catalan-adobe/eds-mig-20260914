@@ -3,7 +3,12 @@
   "type": "article",
   "renderBranch": "A'",
   "template": "blog-patagonia-trek-html",
-  "modules": [],
+  "modules": [
+    "article-aside",
+    "cards",
+    "gallery",
+    "hero"
+  ],
   "slotsFilled": [
     "hero",
     "section",
