@@ -1,7 +1,7 @@
 {
   "_provenance": {
-    "writtenBy": "stardust:replica",
-    "writtenAt": "2026-09-23T11:20:22Z",
+    "writtenBy": "stardust:migrate",
+    "writtenAt": "2026-09-23T11:37:24Z",
     "stardustVersion": "0.10.0"
   },
   "site": {
@@ -22,7 +22,7 @@
       "url": "https://wknd-adventures.com/about.html",
       "title": "About — WKND Adventures",
       "type": "static",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -36,6 +36,10 @@
           "status": "approved",
           "at": "2026-09-23T11:20:22Z",
           "approvedBy": "user"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-23T11:37:24Z"
         }
       ],
       "stale": false,
@@ -49,7 +53,7 @@
       "url": "https://wknd-adventures.com/adventures.html",
       "title": "Adventures — WKND Adventures",
       "type": "listing",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -63,6 +67,10 @@
           "status": "approved",
           "at": "2026-09-23T11:20:22Z",
           "approvedBy": "user"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-23T11:37:24Z"
         }
       ],
       "stale": false,
@@ -76,11 +84,19 @@
       "url": "https://wknd-adventures.com/basecamp.html",
       "title": "Basecamp — WKND Adventures",
       "type": "listing",
-      "status": "extracted",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-23T10:49:00.674Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-23T11:35:32Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-23T11:37:24Z"
         }
       ],
       "stale": false,
@@ -94,11 +110,19 @@
       "url": "https://wknd-adventures.com/blog/alpine-cycling.html",
       "title": "Six Days Through the High Alps — WKND Adventures",
       "type": "article",
-      "status": "extracted",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-23T10:49:13.485Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-23T11:35:32Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-23T11:37:24Z"
         }
       ],
       "stale": false,
@@ -112,11 +136,19 @@
       "url": "https://wknd-adventures.com/blog/desert-survival-guide.html",
       "title": "48 Hours in the Sonoran: A Field Guide — WKND Adventures",
       "type": "article",
-      "status": "extracted",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-23T10:49:20.612Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-23T11:35:32Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-23T11:37:24Z"
         }
       ],
       "stale": false,
@@ -130,11 +162,19 @@
       "url": "https://wknd-adventures.com/blog/kayaking-norway.html",
       "title": "Lofoten Islands: Arctic Surfing at the Top of the World — WKND Adventures",
       "type": "article",
-      "status": "extracted",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-23T10:49:20.615Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-23T11:35:32Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-23T11:37:24Z"
         }
       ],
       "stale": false,
@@ -148,11 +188,19 @@
       "url": "https://wknd-adventures.com/blog/mountain-photography.html",
       "title": "The Camera on Your Back — WKND Adventures",
       "type": "article",
-      "status": "extracted",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-23T10:49:20.611Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-23T11:35:32Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-23T11:37:24Z"
         }
       ],
       "stale": false,
@@ -166,7 +214,7 @@
       "url": "https://wknd-adventures.com/blog/patagonia-trek.html",
       "title": "W Circuit: 9 Days, 115 km — WKND Adventures",
       "type": "article",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -180,6 +228,10 @@
           "status": "approved",
           "at": "2026-09-23T11:20:22Z",
           "approvedBy": "user"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-23T11:37:24Z"
         }
       ],
       "stale": false,
@@ -193,11 +245,19 @@
       "url": "https://wknd-adventures.com/blog/surfing-costa-rica.html",
       "title": "Pavones and Playa Negra: Costa Rica Surf Guide — WKND Adventures",
       "type": "article",
-      "status": "extracted",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-23T10:49:27.663Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-23T11:35:32Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-23T11:37:24Z"
         }
       ],
       "stale": false,
@@ -211,11 +271,19 @@
       "url": "https://wknd-adventures.com/blog/ultralight-backpacking.html",
       "title": "Sub-10 lb: What to Cut, What to Keep — WKND Adventures",
       "type": "article",
-      "status": "extracted",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-23T10:49:27.663Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-23T11:35:32Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-23T11:37:24Z"
         }
       ],
       "stale": false,
@@ -229,11 +297,19 @@
       "url": "https://wknd-adventures.com/blog/wild-swimming-guide.html",
       "title": "Reading a River: The Wild Swimming Guide — WKND Adventures",
       "type": "article",
-      "status": "extracted",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-23T10:49:27.663Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-23T11:35:32Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-23T11:37:24Z"
         }
       ],
       "stale": false,
@@ -247,11 +323,19 @@
       "url": "https://wknd-adventures.com/blog/winter-mountaineering.html",
       "title": "Why Cold Routes Demand Warm Minds — WKND Adventures",
       "type": "article",
-      "status": "extracted",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-23T10:49:27.663Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-23T11:35:32Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-23T11:37:24Z"
         }
       ],
       "stale": false,
@@ -265,11 +349,19 @@
       "url": "https://wknd-adventures.com/blog/yosemite-rock-climbing.html",
       "title": "First Light on the Valley — WKND Adventures",
       "type": "article",
-      "status": "extracted",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-23T10:49:33.161Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-23T11:35:32Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-23T11:37:24Z"
         }
       ],
       "stale": false,
@@ -283,11 +375,19 @@
       "url": "https://wknd-adventures.com/community.html",
       "title": "Community — WKND Adventures",
       "type": "listing",
-      "status": "extracted",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-23T10:49:06.953Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-23T11:35:32Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-23T11:37:24Z"
         }
       ],
       "stale": false,
@@ -301,11 +401,19 @@
       "url": "https://wknd-adventures.com/destinations.html",
       "title": "Destinations — WKND Adventures",
       "type": "listing",
-      "status": "extracted",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-23T10:49:06.956Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-23T11:35:32Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-23T11:37:24Z"
         }
       ],
       "stale": false,
@@ -319,11 +427,19 @@
       "url": "https://wknd-adventures.com/expeditions.html",
       "title": "Expeditions — WKND Adventures",
       "type": "listing",
-      "status": "extracted",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-23T10:49:06.952Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-23T11:35:32Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-23T11:37:24Z"
         }
       ],
       "stale": false,
@@ -337,11 +453,19 @@
       "url": "https://wknd-adventures.com/faq.html",
       "title": "FAQ — WKND Adventures",
       "type": "static",
-      "status": "extracted",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-23T10:49:06.951Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-23T11:35:32Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-23T11:37:24Z"
         }
       ],
       "stale": false,
@@ -355,11 +479,19 @@
       "url": "https://wknd-adventures.com/field-notes.html",
       "title": "Field Notes — WKND Adventures",
       "type": "listing",
-      "status": "extracted",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-23T10:49:13.484Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-23T11:35:32Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-23T11:37:24Z"
         }
       ],
       "stale": false,
@@ -373,11 +505,19 @@
       "url": "https://wknd-adventures.com/gear.html",
       "title": "Gear — WKND Adventures",
       "type": "listing",
-      "status": "extracted",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-23T10:49:13.484Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-23T11:35:32Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-23T11:37:24Z"
         }
       ],
       "stale": false,
@@ -391,7 +531,7 @@
       "url": "https://wknd-adventures.com/",
       "title": "WKND Adventures — Bold Stories. Real Life. Wild Places.",
       "type": "landing",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -405,6 +545,10 @@
           "status": "approved",
           "at": "2026-09-23T11:20:22Z",
           "approvedBy": "user"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-23T11:37:24Z"
         }
       ],
       "stale": false,
@@ -418,11 +562,19 @@
       "url": "https://wknd-adventures.com/sustainability.html",
       "title": "Sustainability — WKND Adventures",
       "type": "static",
-      "status": "extracted",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-23T10:49:13.484Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-23T11:35:32Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-23T11:37:24Z"
         }
       ],
       "stale": false,
@@ -431,5 +583,284 @@
       "prototypePath": null,
       "migratedPath": null
     }
-  ]
+  ],
+  "migrate": {
+    "at": "2026-09-23T11:35:55Z",
+    "outputDir": "stardust/migrated/",
+    "selfContained": true,
+    "pageMap": [
+      {
+        "sourceUrl": "/about.html",
+        "outputPath": "about.html",
+        "slug": "about-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/adventures.html",
+        "outputPath": "adventures.html",
+        "slug": "adventures-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/basecamp.html",
+        "outputPath": "basecamp.html",
+        "slug": "basecamp-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/blog/alpine-cycling.html",
+        "outputPath": "blog/alpine-cycling.html",
+        "slug": "blog-alpine-cycling-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/blog/desert-survival-guide.html",
+        "outputPath": "blog/desert-survival-guide.html",
+        "slug": "blog-desert-survival-guide-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/blog/kayaking-norway.html",
+        "outputPath": "blog/kayaking-norway.html",
+        "slug": "blog-kayaking-norway-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/blog/mountain-photography.html",
+        "outputPath": "blog/mountain-photography.html",
+        "slug": "blog-mountain-photography-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/blog/patagonia-trek.html",
+        "outputPath": "blog/patagonia-trek.html",
+        "slug": "blog-patagonia-trek-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/blog/surfing-costa-rica.html",
+        "outputPath": "blog/surfing-costa-rica.html",
+        "slug": "blog-surfing-costa-rica-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/blog/ultralight-backpacking.html",
+        "outputPath": "blog/ultralight-backpacking.html",
+        "slug": "blog-ultralight-backpacking-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/blog/wild-swimming-guide.html",
+        "outputPath": "blog/wild-swimming-guide.html",
+        "slug": "blog-wild-swimming-guide-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/blog/winter-mountaineering.html",
+        "outputPath": "blog/winter-mountaineering.html",
+        "slug": "blog-winter-mountaineering-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/blog/yosemite-rock-climbing.html",
+        "outputPath": "blog/yosemite-rock-climbing.html",
+        "slug": "blog-yosemite-rock-climbing-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/community.html",
+        "outputPath": "community.html",
+        "slug": "community-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/destinations.html",
+        "outputPath": "destinations.html",
+        "slug": "destinations-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/expeditions.html",
+        "outputPath": "expeditions.html",
+        "slug": "expeditions-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/faq.html",
+        "outputPath": "faq.html",
+        "slug": "faq-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/field-notes.html",
+        "outputPath": "field-notes.html",
+        "slug": "field-notes-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/gear.html",
+        "outputPath": "gear.html",
+        "slug": "gear-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/",
+        "outputPath": "index.html",
+        "slug": "index",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/sustainability.html",
+        "outputPath": "sustainability.html",
+        "slug": "sustainability-html",
+        "outputPathDefault": null
+      }
+    ],
+    "totalAssetsBundled": 5,
+    "bundledAssets": [
+      "canon.css",
+      "canon.js",
+      "fonts/instrument-sans-latin.woff2",
+      "fonts/syncopate-400-latin.woff2",
+      "fonts/syncopate-700-latin.woff2"
+    ],
+    "pages": [
+      {
+        "slug": "about-html",
+        "file": "stardust/migrated/about.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "adventures-html",
+        "file": "stardust/migrated/adventures.html",
+        "assetsBundled": 2
+      },
+      {
+        "slug": "basecamp-html",
+        "file": "stardust/migrated/basecamp.html",
+        "assetsBundled": 2
+      },
+      {
+        "slug": "blog-alpine-cycling-html",
+        "file": "stardust/migrated/blog/alpine-cycling.html",
+        "assetsBundled": 2
+      },
+      {
+        "slug": "blog-desert-survival-guide-html",
+        "file": "stardust/migrated/blog/desert-survival-guide.html",
+        "assetsBundled": 2
+      },
+      {
+        "slug": "blog-kayaking-norway-html",
+        "file": "stardust/migrated/blog/kayaking-norway.html",
+        "assetsBundled": 2
+      },
+      {
+        "slug": "blog-mountain-photography-html",
+        "file": "stardust/migrated/blog/mountain-photography.html",
+        "assetsBundled": 2
+      },
+      {
+        "slug": "blog-patagonia-trek-html",
+        "file": "stardust/migrated/blog/patagonia-trek.html",
+        "assetsBundled": 2
+      },
+      {
+        "slug": "blog-surfing-costa-rica-html",
+        "file": "stardust/migrated/blog/surfing-costa-rica.html",
+        "assetsBundled": 2
+      },
+      {
+        "slug": "blog-ultralight-backpacking-html",
+        "file": "stardust/migrated/blog/ultralight-backpacking.html",
+        "assetsBundled": 2
+      },
+      {
+        "slug": "blog-wild-swimming-guide-html",
+        "file": "stardust/migrated/blog/wild-swimming-guide.html",
+        "assetsBundled": 2
+      },
+      {
+        "slug": "blog-winter-mountaineering-html",
+        "file": "stardust/migrated/blog/winter-mountaineering.html",
+        "assetsBundled": 2
+      },
+      {
+        "slug": "blog-yosemite-rock-climbing-html",
+        "file": "stardust/migrated/blog/yosemite-rock-climbing.html",
+        "assetsBundled": 2
+      },
+      {
+        "slug": "community-html",
+        "file": "stardust/migrated/community.html",
+        "assetsBundled": 2
+      },
+      {
+        "slug": "destinations-html",
+        "file": "stardust/migrated/destinations.html",
+        "assetsBundled": 2
+      },
+      {
+        "slug": "expeditions-html",
+        "file": "stardust/migrated/expeditions.html",
+        "assetsBundled": 2
+      },
+      {
+        "slug": "faq-html",
+        "file": "stardust/migrated/faq.html",
+        "assetsBundled": 2
+      },
+      {
+        "slug": "field-notes-html",
+        "file": "stardust/migrated/field-notes.html",
+        "assetsBundled": 2
+      },
+      {
+        "slug": "gear-html",
+        "file": "stardust/migrated/gear.html",
+        "assetsBundled": 2
+      },
+      {
+        "slug": "index",
+        "file": "stardust/migrated/index.html",
+        "assetsBundled": 2
+      },
+      {
+        "slug": "sustainability-html",
+        "file": "stardust/migrated/sustainability.html",
+        "assetsBundled": 2
+      }
+    ],
+    "missingAssets": [],
+    "cleanedAssets": [],
+    "lastRun": {
+      "at": "2026-09-23T11:35:55Z",
+      "rendered": [
+        "about-html",
+        "adventures-html",
+        "basecamp-html",
+        "blog-alpine-cycling-html",
+        "blog-desert-survival-guide-html",
+        "blog-kayaking-norway-html",
+        "blog-mountain-photography-html",
+        "blog-patagonia-trek-html",
+        "blog-surfing-costa-rica-html",
+        "blog-ultralight-backpacking-html",
+        "blog-wild-swimming-guide-html",
+        "blog-winter-mountaineering-html",
+        "blog-yosemite-rock-climbing-html",
+        "community-html",
+        "destinations-html",
+        "expeditions-html",
+        "faq-html",
+        "field-notes-html",
+        "gear-html",
+        "index",
+        "sustainability-html"
+      ],
+      "unchanged": [],
+      "refused": [],
+      "passthrough": []
+    }
+  }
 }

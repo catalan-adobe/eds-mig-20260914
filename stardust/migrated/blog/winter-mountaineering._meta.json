@@ -1,0 +1,70 @@
+{
+  "slug": "blog-winter-mountaineering-html",
+  "type": "article",
+  "renderBranch": "A'",
+  "template": "blog-patagonia-trek-html",
+  "modules": [],
+  "slotsFilled": [
+    "hero",
+    "section",
+    "section",
+    "section",
+    "section"
+  ],
+  "canonShas": {
+    "header": "1ad8732be249",
+    "footer": "15c6a771a26c",
+    "css": "45c20094fe88"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "variance-probe-superseded",
+      "reason": "every sibling individually pixel-gated at 1440+360 (<=0.28%, delta 0) - stronger than the live-vs-live variance probe"
+    }
+  ],
+  "metadata": {
+    "title": "Why Cold Routes Demand Warm Minds — WKND Adventures",
+    "description": "A winter mountaineering primer — what changes in winter, technical basics, avalanche awareness, cold starts, and the hardest skill: knowing when to turn around.",
+    "canonical": null,
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Why Cold Routes Demand Warm Minds — WKND Adventures",
+    "description": "A winter mountaineering primer — what changes in winter, technical basics, avalanche awareness, cold starts, and the hardest skill: knowing when to turn around.",
+    "mainEntityOfPage": "https://wknd-adventures.com/blog/winter-mountaineering.html"
+  },
+  "migratedAt": "2026-09-23T11:35:55Z",
+  "designMdSha": "dc1e5e19ef03",
+  "designJsonSha": "64353e7c79d0",
+  "sourceCurrentSha": "44d3abdb92ea",
+  "sourceProposedSha": "ab1e6ee80c79",
+  "fidelityTier": "sibling",
+  "archetypeSource": "blog-patagonia-trek-html",
+  "archetypeSha": "2bb59903c10d",
+  "variants": [],
+  "gatesPassed": [
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "delivery-lint",
+    "content-count",
+    "content-fidelity"
+  ],
+  "gateEvidence": {
+    "pixel-gate-1440": "0.00% (0 px, threshold 10%), height delta 0px, round sib1 @1440 (sib-blog-winter-mountaineering-html-1440.log) [prototype regime]",
+    "pixel-gate-360": "0.00% (0 px, threshold 10%), height delta 0px, round sib1 @360 (sib-blog-winter-mountaineering-html-360.log) [prototype regime]",
+    "delivery-lint": "0 P0 · 0 P1 · 2 P2 (delivery-lint --path /blog/winter-mountaineering)",
+    "content-count": "content-diff: 1 (0 structural 🔴) (cd-blog-winter-mountaineering-html.log)",
+    "content-fidelity": "content-diff counts identical to capture; 0 structural red (cd-blog-winter-mountaineering-html.log)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 2,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "blog/winter-mountaineering.html",
+  "outputPathDefault": null,
+  "sidecar": "blog/winter-mountaineering._meta.json",
+  "driverVersion": "1"
+}

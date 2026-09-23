@@ -1,0 +1,113 @@
+#!/usr/bin/env node
+/**
+ * rollout/update-coverage.mjs — deterministic state-writer for the delivery loop.
+ *
+ * The per-page delivery itself is the LLM-driven `deploy` methodology; this helper
+ * just records the outcome so the loop stays honest and resumable. Call it after
+ * each page's deploy step, and after each block converts.
+ *
+ * Page:   node update-coverage.mjs <slug>  --status <s> [--url <deployedUrl>] [--error <msg>]
+ * Block:  node update-coverage.mjs --block <id> --status <s> [--eds-name <name>]
+ *   page  <status>: pending | converting | deployed | verified | stale | failed
+ *   block <status>: pending | converted | deployed | verified | failed
+ *   A module mapped to EDS default content (no block needed) is recorded
+ *   `--block <id> --status converted --eds-name default-content`; it is never counted pending.
+ *
+ * Re-derives templates.json + rollout.json roll-ups after every write.
+ *
+ * Safe under a fan-out: the whole read-modify-write (pages or blocks, then the roll-ups) runs
+ * under one cross-process lock, `<out>/.coverage.lock`, and every file is written through a
+ * tmp + rename, so several cluster subagents recording rows at once never lose one and a reader
+ * never sees a half-written file. A lock older than 60 s (a crashed writer) is reclaimed; waiting
+ * longer than 30 s for one is an error (exit 1) naming the owner.
+ *
+ * Writes (under --out, default stardust/rollout): coverage/pages.json (page form) or
+ * coverage/blocks.json (block form), then coverage/templates.json and rollout.json when
+ * they exist. One result line on stdout.
+ */
+import { join } from 'node:path';
+import { readJSON, writeJSON, rollupTemplates, rollupConfig, acquireLock } from './lib.mjs';
+import { readFileSync } from 'node:fs';
+
+// --help prints this file's usage header, so an agent never reads the source to learn the flags.
+if (process.argv.includes('--help') || process.argv.includes('-h')) {
+  const src = readFileSync(new URL(import.meta.url), 'utf8');
+  const header = src.match(/\/\*\*[\s\S]*?\*\//);
+  console.log(header ? header[0].replace(/^\/\*\*\s*|\s*\*\/$/g, '').replace(/^\s*\* ?/gm, '').trim() : 'no usage header');
+  process.exit(0);
+}
+
+function arg(name, fallback) {
+  const i = process.argv.indexOf(`--${name}`);
+  return i !== -1 && process.argv[i + 1] ? process.argv[i + 1] : fallback;
+}
+
+const OUT = arg('out', 'stardust/rollout');
+const status = arg('status', null);
+const blockId = arg('block', null);
+const slug = process.argv[2] && !process.argv[2].startsWith('--') ? process.argv[2] : null;
+
+const pagesPath = join(OUT, 'coverage', 'pages.json');
+const blocksPath = join(OUT, 'coverage', 'blocks.json');
+const templatesPath = join(OUT, 'coverage', 'templates.json');
+const configPath = join(OUT, 'rollout.json');
+const now = new Date().toISOString();
+
+// One lock for the four files: taken BEFORE the first read, released at exit (every path below
+// ends in process.exit or falls off the end). The reads that follow therefore see the latest write.
+try { acquireLock(join(OUT, '.coverage')); } catch (e) { console.error(`rollout: ${e.message}`); process.exit(1); }
+
+function reRoll() {
+  const pagesDoc = readJSON(pagesPath);
+  const blocksDoc = readJSON(blocksPath);
+  const tDoc = readJSON(templatesPath);
+  const config = readJSON(configPath);
+  const pages = (pagesDoc && pagesDoc.pages) || [];
+  if (tDoc) { rollupTemplates(tDoc, pages); tDoc.generatedAt = now; writeJSON(templatesPath, tDoc); }
+  if (config) { rollupConfig(config, pages, blocksDoc && blocksDoc.blocks, now); writeJSON(configPath, config); }
+}
+
+if (blockId) {
+  const STATUSES = ['pending', 'converted', 'deployed', 'verified', 'failed'];
+  if (!status || !STATUSES.includes(status)) { console.error(`block status must be one of ${STATUSES.join('|')}`); process.exit(2); }
+  const doc = readJSON(blocksPath);
+  if (!doc) { console.error(`rollout: ${blocksPath} not found — run blocks.mjs first.`); process.exit(1); }
+  const b = (doc.blocks || []).find((x) => x.id === blockId);
+  if (!b) { console.error(`rollout: no block "${blockId}".`); process.exit(1); }
+  b.delivery = b.delivery || {};
+  b.delivery.status = status;
+  const edsNameArg = arg('eds-name', null);
+  if (edsNameArg) b.delivery.edsBlockName = edsNameArg;
+  if (status === 'converted') b.delivery.convertedAt = now;
+  doc.generatedAt = now;
+  writeJSON(blocksPath, doc);
+  reRoll();
+  console.log(`block ${blockId} → ${status}`);
+  process.exit(0);
+}
+
+// Page update
+const STATUSES = ['pending', 'converting', 'deployed', 'verified', 'content-pending', 'stale', 'failed'];
+if (!slug || !status || !STATUSES.includes(status)) {
+  console.error(`usage: update-coverage.mjs <slug> --status <${STATUSES.join('|')}> [--url <u>] [--error <m>]`);
+  console.error('   or: update-coverage.mjs --block <id> --status <pending|converted|deployed|verified|failed> [--eds-name <n>]');
+  process.exit(2);
+}
+const doc = readJSON(pagesPath);
+if (!doc) { console.error(`rollout: ${pagesPath} not found — run inventory.mjs first.`); process.exit(1); }
+const page = (doc.pages || []).find((p) => p.slug === slug);
+if (!page) { console.error(`rollout: no page with slug "${slug}".`); process.exit(1); }
+
+const url = arg('url', null);
+page.delivery = page.delivery || {};
+page.delivery.status = status;
+if (status === 'deployed') { page.delivery.deployedAt = now; if (url) page.delivery.deployedUrl = url; }
+if (status === 'verified') { page.delivery.verifiedAt = now; if (url) page.delivery.deployedUrl = url; }
+page.delivery.error = status === 'failed' ? (arg('error', 'unspecified')) : null;
+doc.generatedAt = now;
+writeJSON(pagesPath, doc);
+reRoll();
+
+const config = readJSON(configPath);
+const c = config && config.lastRun && config.lastRun.pages;
+console.log(`${slug} → ${status}${c ? `   (${c.verified} verified / ${c.deployed} deployed / ${c.pending + c.stale} remaining of ${c.total})` : ''}`);

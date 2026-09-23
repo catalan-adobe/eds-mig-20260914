@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- stardust:migrate
+  writtenBy:        stardust:migrate
+  writtenAt:        2026-09-23T11:35:55Z
+  page:             Destinations — WKND Adventures
+  slug:             destinations-html
+  pagePath:         migrated/destinations.html
+  renderBranch:     A'
+  template:         adventures-html
+  archetypePath:    stardust/prototypes/adventures-html-proposed.html
+  archetypeSha:     4b26da5626f6
+  sourceCurrent:    stardust/current/pages/destinations-html.json
+  againstDirection: stardust/direction.md (Active)
+  designMd:         DESIGN.md (sha: dc1e5e19ef03)
+  designJson:       DESIGN.json (sha: 64353e7c79d0)
+  canonShas:        header:1ad8732be249 footer:15c6a771a26c css:45c20094fe88
+  decisionTrace:    destinations._meta.json
+  brokenInternalLinks: 0
+  stardustVersion:  local
+-->
+<style>
+:root {
+  --color-white: #fff;
+  --color-black: #0f1a14;
+  --color-amber: #e8651a;
+  --color-cream: #f5f0e8;
+  --color-gray-100: #f0ece4;
+  --color-gray-200: #ddd8cf;
+  --color-gray-300: #c8c2b8;
+  --color-gray-500: #7a8a80;
+  --color-gray-700: #3d4f45;
+  --font-heading: "Syncopate", sans-serif;
+  --font-body: "Instrument Sans", sans-serif;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.5rem;
+  --text-5xl: 3.5rem;
+  --leading-tight: 1.1;
+  --leading-snug: 1.3;
+  --leading-normal: 1.6;
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 5rem;
+  --container-max: 1200px;
+  --container-narrow: 48rem;
+  --container-padding: 1.5rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-card: 1.25rem;
+  --radius-full: 9999px;
+  --transition-fast: 0.15s ease;
+}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Destinations — WKND Adventures","description":"Curated regions for outdoor adventure around the world.","url":"https://wknd-adventures.com/destinations.html"}</script>
+<meta charset="utf-8">
+<meta name="stardust-slug" content="destinations-html">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Destinations — WKND Adventures</title>
+<meta name="description" content="Curated regions for outdoor adventure around the world.">
+<link rel="icon" type="image/svg+xml" href="https://wknd-adventures.com/favicon.svg">
+<link rel="stylesheet" href="./assets/canon.css">
+<script src="./assets/canon.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <div class="container nav-inner">
+    <a class="logo" href="./index.html" aria-label="WKND Adventures home">
+      <svg viewBox="0 0 33 33" aria-hidden="true"><path d="M28,0H5C2.24,0,0,2.24,0,5v23c0,2.76,2.24,5,5,5h23c2.76,0,5-2.24,5-5V5c0-2.76-2.24-5-5-5ZM29,17c-6.63,0-12,5.37-12,12h-1c0-6.63-5.37-12-12-12v-1c6.63,0,12-5.37,12-12h1c0,6.63,5.37,12,12,12v1Z" fill="currentColor"/></svg>
+      <span class="logo-text">WKND<br>Adventures</span>
+    </a>
+    <nav class="nav-menu" id="nav-menu" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <button class="nav-trigger" aria-expanded="false"><span>Explore</span><span class="nav-caret"></span></button>
+          <div class="nav-panel"><div class="container nav-grid">
+            <a class="nav-link" href="./adventures.html"><strong>Adventures</strong><span>Hiking, climbing, surfing, cycling. Browse all activities and find your next route.</span></a>
+            <a class="nav-link" href="./expeditions.html"><strong>Expeditions</strong><span>Multi-day journeys documented in full — day-by-day accounts from Patagonia to the Lofoten Islands.</span></a>
+            <a class="nav-link" href="./destinations.html"><strong>Destinations</strong><span>Wild places worth going to. Permit details, conditions, and what to expect on the ground.</span></a>
+            <a class="nav-link" href="./basecamp.html"><strong>Basecamp</strong><span>New here? Pick an activity, find a route, and get moving — your starting point for everything.</span></a>
+          </div></div>
+        </li>
+        <li class="nav-item">
+          <button class="nav-trigger" aria-expanded="false"><span>Stories</span><span class="nav-caret"></span></button>
+          <div class="nav-panel"><div class="container nav-stories">
+            <div class="nav-stories-pages">
+              <a class="nav-link" href="./field-notes.html"><strong>Field Notes</strong><span>Essays, photographs, and dispatches from the wild. Slower stories for people who go further.</span></a>
+              <a class="nav-link" href="./community.html"><strong>Community</strong><span>Reader submissions, contributor dispatches, and the people behind the routes.</span></a>
+            </div>
+            <div>
+              <p class="nav-label">Recent from the Field</p>
+              <div class="nav-articles">
+                <a class="nav-link" href="./blog/patagonia-trek.html"><strong>W Circuit: 9 Days, 115 km</strong><span>A full account of Torres del Paine — permits, camps, and the weather that shaped every decision.</span></a>
+                <a class="nav-link" href="./blog/kayaking-norway.html"><strong>Lofoten Islands: Arctic Surfing</strong><span>Seven days on the water between Lofoten peaks — tidal planning and the surf break at Unstad.</span></a>
+                <a class="nav-link" href="./blog/alpine-cycling.html"><strong>Six Days Through the High Alps by Bike</strong><span>Galibier, Izoard, Mortirolo — a self-supported traverse of the highest Alpine passes.</span></a>
+                <a class="nav-link" href="./blog/mountain-photography.html"><strong>The Camera on Your Back</strong><span>Practical and philosophical. How to shoot in the mountains without compromising your movement.</span></a>
+              </div>
+            </div>
+          </div></div>
+        </li>
+        <li class="nav-item">
+          <button class="nav-trigger" aria-expanded="false"><span>Info</span><span class="nav-caret"></span></button>
+          <div class="nav-panel"><div class="container nav-grid">
+            <a class="nav-link" href="./gear.html"><strong>Gear</strong><span>What to carry and why. Equipment reviews from the people who actually use it in the field.</span></a>
+            <a class="nav-link" href="./sustainability.html"><strong>Sustainability</strong><span>Our wild ethics. How we think about adventure, access, and the land it happens on.</span></a>
+            <a class="nav-link" href="./about.html"><strong>About</strong><span>Who we are, how we work, and what we believe about adventure writing.</span></a>
+            <a class="nav-link" href="./faq.html"><strong>FAQ</strong><span>Permits, access, conditions, and common practical questions, answered in full.</span></a>
+          </div></div>
+        </li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <a class="button" href="./community.html">Subscribe</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <svg class="icon-open" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="2" fill="currentColor"/><rect x="3" y="11" width="18" height="2" fill="currentColor"/><rect x="3" y="16" width="18" height="2" fill="currentColor"/></svg>
+        <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 5L19 19M19 5L5 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main-content" data-template="adventures-html"> <section class="hero hero--full" data-section="1"> <div class="hero-bg"> <img src="https://wknd-adventures.com/images/adventures/adobestock-59459597.jpeg" alt="Torres del Paine peaks and glacial plains, Patagonia" fetchpriority="high">  </div> <div class="container hero-content"> <div class="hero-inner"> <p class="tag">WKND Adventures</p> <h1 class="mb-lg">Destinations</h1> <p class="p-xl hero-lead">From Patagonian valleys to Norwegian fjords — where will you go next?</p> <div class="button-group"> <a class="button" href="#americas">Americas</a> <a class="button" href="#europe">Europe</a> </div> </div> </div> </section> <section class="section section--accent" data-section="2"> <div class="container center"> <h2 class="mb-lg">Explore by Region</h2> <p class="p-lg">Yosemite. Patagonia. Sonoran. Costa Rica. From Valley granite to Patagonian wind, the Americas reward ambition at every scale. The Alps. Lofoten. Scotland. The Pyrenees. Old terrain, endlessly new. Europe's wild edges run deeper than most maps suggest. Coming 2026 Expeditions in planning. We're building routes in the Himalayan foothills, New Zealand's South Island, and the Japanese Alps. Subscribe for the first dispatches.</p> </div> </section> <section class="section section--secondary" data-section="3"> <div class="container"> <div class="featured"> <a class="featured-image" href="./blog/patagonia-trek.html"> <img src="https://wknd-adventures.com/images/adventures/adobestock-231698835.jpg" alt="W Circuit, Torres del Paine, Patagonia" loading="lazy"> </a> <div> <h2>W Circuit, Torres del Paine</h2> <p class="p-lg muted">South America's defining long-distance trail — the W Circuit in Torres del Paine, Chile. Nine days across wind-scoured pampas, glacial moraine, and the surreal blue ice of the Grey Glacier. The granite towers that give the park its name come into view only at the end, after you've earned the approach.</p> <div class="featured-footer"> <a class="button" href="./blog/patagonia-trek.html">Read the Full Report</a> </div> </div> </div> </div> </section> <section class="section" data-section="4"> <div class="container"> <div class="section-heading"> <h2>Americas</h2> </div> <div class="grid grid--3 gap-lg"> <a class="article-card" href="./blog/mountain-photography.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/adventures/adobestock-277768563.jpeg" alt="Mountain Photography" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Essay</div> </div> <h3 class="h5 mb-sm">Mountain Photography</h3> <p class="p-sm muted">The camera as creative tool and physical burden. Alex R.'s landmark essay on shooting in the high mountains.</p> </div> </a><a class="article-card" href="./blog/ultralight-backpacking.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/adventures/adobestock-257541512.jpeg" alt="Ultralight Backpacking" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Gear Guide</div> </div> <h3 class="h5 mb-sm">Ultralight Backpacking</h3> <p class="p-sm muted">What to cut, what to keep, and what the ultralight obsession reveals about how we think about wilderness.</p> </div> </a><a class="article-card" href="./blog/desert-survival-guide.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/adventures/adobestock-185324648.jpg" alt="Desert Survival Guide" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Desert</div> </div> <h3 class="h5 mb-sm">Desert Survival Guide</h3> <p class="p-sm muted">From Taylor B., after three weeks in the Sonoran: the real lessons from moving through extreme heat.</p> </div> </a> </div> </div> </section> <section class="section section--secondary" data-section="5"> <div class="container"> <div class="section-heading"> <h2>Europe</h2> </div> <p class="p-lg muted">Planning by Season</p> <div class="grid grid--3 gap-lg"> <a class="article-card" href="./blog/patagonia-trek.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/adventures/adobestock-231698835.jpg" alt="Torres del Paine massif under dramatic Patagonian sky" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Americas</div> </div> <h3 class="h5 mb-sm">W Circuit: 9 Days, 115 km</h3> <p class="p-sm muted">A full account of the W Circuit in Torres del Paine — permit strategy, daily stage breakdowns, refugio conditions, and the one weather window that made it worth every hour of planning.</p> </div> </a><a class="article-card" href="./blog/kayaking-norway.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/magazine/surfer-wave-02.jpg" alt="Cold Atlantic swell, Lofoten Islands, Norway" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Europe</div> </div> <h3 class="h5 mb-sm">Lofoten Islands: Arctic Surfing and Swell</h3> <p class="p-sm muted">Seven days surfing between the Lofoten peaks — swell windows, cold-water preparation, and why Unstad produces some of the best Arctic waves in Europe.</p> </div> </a><a class="article-card" href="./blog/alpine-cycling.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/adventures/adobestock-261097343.jpeg" alt="Alpine cycling through the high passes" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Europe</div> </div> <h3 class="h5 mb-sm">Six Days Through the High Alps by Bike</h3> <p class="p-sm muted">Stelvio, Gavia, Mortirolo, Gavia again — a self-supported traverse of the highest road passes in the Alps with notes on resupply, surface conditions, and which climbs to ride at dawn.</p> </div> </a> </div> </div> </section> <section class="section section--inverse" data-section="6"> <div class="container container--narrow"> <h2 class="mb-lg">Permits &amp; Logistics</h2> <p class="p-lg mb-lg">The permit systems at the world's most celebrated destinations have become genuinely complicated — and ignoring them doesn't make them go away. Torres del Paine operates a mandatory reservation system through CONAF, Chile's national parks service. Refugio and camping spots on the W Circuit sell out in peak season (December–February) up to six months in advance. The park limits daily entries to specific zones, so "booking late and hoping" is a strategy that ends in Puerto Natales, not on the trail. The WKND Patagonia report includes direct links to the CONAF system and a timeline for when each allocation typically opens.</p><p class="p-lg mb-lg">Yosemite's wilderness permit system is different in structure but equally unforgiving. The Half Dome cables day-hike permit is a lottery drawn two days before the intended date — plus a daily walk-up quota that fills within minutes at the trailhead. Multi-day wilderness permits into the backcountry require advance reservation through Recreation.gov from late March. For El Capitan routes on the big walls, there's no permit required for climbing, but bivy sites on the wall are unregulated and specific approach trails have their own seasonal restrictions. The current rules change regularly — always check the NPS Yosemite site directly rather than relying on guidebook editions more than two years old.</p><p class="p-lg mb-lg">In the Dolomites, the Alta Via networks are unregulated for hiking, but the network of private rifugios that makes multi-day traverses viable books up entirely in July and August. Most rifugios open bookings in March via their own systems — there's no central booking platform. Our Dolomites destination reports list each hut's booking contact individually, with notes on which ones have waiting list systems worth getting onto. The Italian alpine club (CAI) membership card earns a meaningful discount at affiliated rifugios and is worth the annual fee for anyone spending more than a week in the system.</p><p class="p-lg">Every WKND trip report includes a dedicated Logistics section covering: trailhead access and nearest public transport, permit requirements with direct links to the official booking system, typical booking lead times by season, and any recent changes to access rules we've been notified about. We update these sections when contributors file corrections. If you find the information has changed, use the report's feedback form — verified corrections are incorporated within 48 hours and credited to the submitter.</p> </div> </section> <section class="section section--secondary" data-section="7"> <div class="container container--narrow"> <div class="section-heading"> <h2>Regional Editors</h2> </div> <p class="p-lg muted mb-xl">Jordan has been writing about the Americas for WKND since the first issue — from the granite of Yosemite to the wind-scraped pampa of Torres del Paine. His reports are known for their logistical precision: he counts the kilometres, checks the forecast, and still finds time to notice the light on the mountains at hour eight. Alex covers the Alps, the Atlantic coast, and the quieter corners of northern Europe that most travel writing ignores. A former alpine guide with a preference for routes that involve some elevation gain and no crowds, his destination deep dives are the most-read pieces in WKND's archive. Asia-Pacific Taylor is building WKND's Asia-Pacific coverage from scratch — and doing it with the rigour the region deserves. Currently embedded in New Zealand's South Island for the 2026 season, Taylor's first destination reports from the Himalayan foothills and the Japanese Alps are in editing now. Going multi-day? Our expedition reports go deep: daily stage breakdowns, logistics, resupply, accommodation, and honest accounts of conditions. If you're planning more than an overnight, start in the Expeditions section. Before you pack Every destination has its own gear demands — Patagonian wind is not the same problem as Lofoten rain or Sonoran heat. Our gear guides are sorted by terrain and tested in the field.</p> <div class="button-group"> <a class="button button--accent" href="#reports">Read their reports</a> <a class="button button--ghost" href="./expeditions.html">Read the Expeditions</a> </div> </div> </section> <section class="section section--inverse" data-section="8"> <div class="container center"> <h2 class="mb-lg">Every destination starts with a good briefing.</h2> <p class="p-lg mb-xl">Know the terrain, the weather windows, the access routes, and the stories of people who went before you. The Adventures section covers all of it — from day trips to multi-week expeditions, across every activity we write about.</p> <div class="button-group button-group--centered"> <a class="button" href="./adventures.html">Browse All Adventures</a> </div> </div> </section> <section class="section section--inverse" data-section="9"> <div class="container"> <div class="section-heading"> <h2>Planning by Season</h2> </div> <div class="grid grid--3 gap-lg"> <div class="card card-body"> <h3 class="h4">Winter in the Alps</h3> <p class="p-lg muted">December through March locks in the ski touring calendar — high passes are buried under 2–4 metres of consolidated snow and access to summer routes closes completely. Hut-to-hut ski touring, ice climbing on frozen waterfalls, and winter mountaineering on the lower 4000ers are what winter in the Alps actually offers.</p> </div> <div class="card card-body"> <h3 class="h4">Spring in Patagonia</h3> <p class="p-lg muted">October and November in the southern hemisphere are Patagonia's best trekking months — the crowds haven't arrived, the refugios are freshly stocked, and the weather windows are longer than high summer. The W Circuit in spring means solitude on the trail and the Torres at golden hour with no queue at the viewpoint.</p> </div> <div class="card card-body"> <h3 class="h4">Summer in Scandinavia</h3> <p class="p-lg muted">June through August is the midnight-sun window for the Lofoten Islands — low swell but extraordinary light for hiking Norway's exposed coastal ranges and surfing the occasional late-summer storm swell. Midnight sun extends your activity window to near-24 hours, but it also means navigating by instinct rather than daylight cues — your body clock will drift within three days.</p> </div> </div> </div> </section> </main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">
+          <svg viewBox="0 0 33 33" aria-hidden="true"><path d="M28,0H5C2.24,0,0,2.24,0,5v23c0,2.76,2.24,5,5,5h23c2.76,0,5-2.24,5-5V5c0-2.76-2.24-5-5-5ZM29,17c-6.63,0-12,5.37-12,12h-1c0-6.63-5.37-12-12-12v-1c6.63,0,12-5.37,12-12h1c0,6.63,5.37,12,12,12v1Z" fill="currentColor"/></svg>
+          <span class="logo-text">WKND<br>Adventures</span>
+        </div>
+        <p class="p-sm footer-tagline">Bold Stories. Real Life. Wild Places. Published weekly from somewhere with no Wi-Fi.</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">Explore</h4>
+        <ul>
+          <li><a class="footer-link" href="./adventures.html">Adventures</a></li>
+          <li><a class="footer-link" href="./expeditions.html">Expeditions</a></li>
+          <li><a class="footer-link" href="./field-notes.html">Field Notes</a></li>
+          <li><a class="footer-link" href="./destinations.html">Destinations</a></li>
+          <li><a class="footer-link" href="./basecamp.html">Basecamp</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Recent Stories</h4>
+        <ul>
+          <li><a class="footer-link" href="./blog/patagonia-trek.html">W Circuit, Patagonia</a></li>
+          <li><a class="footer-link" href="./blog/kayaking-norway.html">Lofoten Islands</a></li>
+          <li><a class="footer-link" href="./blog/alpine-cycling.html">High Alps by Bike</a></li>
+          <li><a class="footer-link" href="./blog/yosemite-rock-climbing.html">Yosemite Climbing</a></li>
+          <li><a class="footer-link" href="./blog/mountain-photography.html">Mountain Photography</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Info</h4>
+        <ul>
+          <li><a class="footer-link" href="./gear.html">Gear</a></li>
+          <li><a class="footer-link" href="./sustainability.html">Sustainability</a></li>
+          <li><a class="footer-link" href="./about.html">About</a></li>
+          <li><a class="footer-link" href="./community.html">Community</a></li>
+          <li><a class="footer-link" href="./faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="p-sm footer-tagline">© 2026 WKND Adventures. All rights reserved.</p>
+      <p class="p-sm footer-tagline">Made for the people who go.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

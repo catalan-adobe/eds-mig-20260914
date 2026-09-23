@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- stardust:migrate
+  writtenBy:        stardust:migrate
+  writtenAt:        2026-09-23T11:35:55Z
+  page:             About — WKND Adventures
+  slug:             about-html
+  pagePath:         migrated/about.html
+  renderBranch:     A
+  sourceProposed:   stardust/prototypes/about-html-proposed.html
+  sourceCurrent:    stardust/current/pages/about-html.json
+  againstDirection: stardust/direction.md (Active)
+  designMd:         DESIGN.md (sha: dc1e5e19ef03)
+  designJson:       DESIGN.json (sha: 64353e7c79d0)
+  canonShas:        header:1ad8732be249 footer:15c6a771a26c css:45c20094fe88
+  decisionTrace:    about._meta.json
+  brokenInternalLinks: 0
+  stardustVersion:  local
+-->
+<style>
+:root {
+  --color-white: #fff;
+  --color-black: #0f1a14;
+  --color-amber: #e8651a;
+  --color-cream: #f5f0e8;
+  --color-gray-100: #f0ece4;
+  --color-gray-200: #ddd8cf;
+  --color-gray-300: #c8c2b8;
+  --color-gray-500: #7a8a80;
+  --color-gray-700: #3d4f45;
+  --font-heading: "Syncopate", sans-serif;
+  --font-body: "Instrument Sans", sans-serif;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.5rem;
+  --text-5xl: 3.5rem;
+  --leading-tight: 1.1;
+  --leading-snug: 1.3;
+  --leading-normal: 1.6;
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 5rem;
+  --container-max: 1200px;
+  --container-narrow: 48rem;
+  --container-padding: 1.5rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-card: 1.25rem;
+  --radius-full: 9999px;
+  --transition-fast: 0.15s ease;
+}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"About — WKND Adventures","description":"A small editorial team that goes to wild places and writes honestly about what we find.","url":"https://wknd-adventures.com/about.html"}</script>
+<meta charset="utf-8">
+<meta name="stardust-slug" content="about-html">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — WKND Adventures</title>
+<meta name="description" content="A small editorial team that goes to wild places and writes honestly about what we find.">
+<link rel="icon" type="image/svg+xml" href="https://wknd-adventures.com/favicon.svg">
+<link rel="stylesheet" href="./assets/canon.css">
+<script src="./assets/canon.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <div class="container nav-inner">
+    <a class="logo" href="./index.html" aria-label="WKND Adventures home">
+      <svg viewBox="0 0 33 33" aria-hidden="true"><path d="M28,0H5C2.24,0,0,2.24,0,5v23c0,2.76,2.24,5,5,5h23c2.76,0,5-2.24,5-5V5c0-2.76-2.24-5-5-5ZM29,17c-6.63,0-12,5.37-12,12h-1c0-6.63-5.37-12-12-12v-1c6.63,0,12-5.37,12-12h1c0,6.63,5.37,12,12,12v1Z" fill="currentColor"/></svg>
+      <span class="logo-text">WKND<br>Adventures</span>
+    </a>
+    <nav class="nav-menu" id="nav-menu" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <button class="nav-trigger" aria-expanded="false"><span>Explore</span><span class="nav-caret"></span></button>
+          <div class="nav-panel"><div class="container nav-grid">
+            <a class="nav-link" href="./adventures.html"><strong>Adventures</strong><span>Hiking, climbing, surfing, cycling. Browse all activities and find your next route.</span></a>
+            <a class="nav-link" href="./expeditions.html"><strong>Expeditions</strong><span>Multi-day journeys documented in full — day-by-day accounts from Patagonia to the Lofoten Islands.</span></a>
+            <a class="nav-link" href="./destinations.html"><strong>Destinations</strong><span>Wild places worth going to. Permit details, conditions, and what to expect on the ground.</span></a>
+            <a class="nav-link" href="./basecamp.html"><strong>Basecamp</strong><span>New here? Pick an activity, find a route, and get moving — your starting point for everything.</span></a>
+          </div></div>
+        </li>
+        <li class="nav-item">
+          <button class="nav-trigger" aria-expanded="false"><span>Stories</span><span class="nav-caret"></span></button>
+          <div class="nav-panel"><div class="container nav-stories">
+            <div class="nav-stories-pages">
+              <a class="nav-link" href="./field-notes.html"><strong>Field Notes</strong><span>Essays, photographs, and dispatches from the wild. Slower stories for people who go further.</span></a>
+              <a class="nav-link" href="./community.html"><strong>Community</strong><span>Reader submissions, contributor dispatches, and the people behind the routes.</span></a>
+            </div>
+            <div>
+              <p class="nav-label">Recent from the Field</p>
+              <div class="nav-articles">
+                <a class="nav-link" href="./blog/patagonia-trek.html"><strong>W Circuit: 9 Days, 115 km</strong><span>A full account of Torres del Paine — permits, camps, and the weather that shaped every decision.</span></a>
+                <a class="nav-link" href="./blog/kayaking-norway.html"><strong>Lofoten Islands: Arctic Surfing</strong><span>Seven days on the water between Lofoten peaks — tidal planning and the surf break at Unstad.</span></a>
+                <a class="nav-link" href="./blog/alpine-cycling.html"><strong>Six Days Through the High Alps by Bike</strong><span>Galibier, Izoard, Mortirolo — a self-supported traverse of the highest Alpine passes.</span></a>
+                <a class="nav-link" href="./blog/mountain-photography.html"><strong>The Camera on Your Back</strong><span>Practical and philosophical. How to shoot in the mountains without compromising your movement.</span></a>
+              </div>
+            </div>
+          </div></div>
+        </li>
+        <li class="nav-item">
+          <button class="nav-trigger" aria-expanded="false"><span>Info</span><span class="nav-caret"></span></button>
+          <div class="nav-panel"><div class="container nav-grid">
+            <a class="nav-link" href="./gear.html"><strong>Gear</strong><span>What to carry and why. Equipment reviews from the people who actually use it in the field.</span></a>
+            <a class="nav-link" href="./sustainability.html"><strong>Sustainability</strong><span>Our wild ethics. How we think about adventure, access, and the land it happens on.</span></a>
+            <a class="nav-link" href="./about.html"><strong>About</strong><span>Who we are, how we work, and what we believe about adventure writing.</span></a>
+            <a class="nav-link" href="./faq.html"><strong>FAQ</strong><span>Permits, access, conditions, and common practical questions, answered in full.</span></a>
+          </div></div>
+        </li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <a class="button" href="./community.html">Subscribe</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <svg class="icon-open" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="2" fill="currentColor"/><rect x="3" y="11" width="18" height="2" fill="currentColor"/><rect x="3" y="16" width="18" height="2" fill="currentColor"/></svg>
+        <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 5L19 19M19 5L5 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main-content" data-template="about-html"> <section class="hero hero--full" data-section="1"> <div class="hero-bg"> <img src="https://wknd-adventures.com/images/magazine/adobe-waadobe-wa-mg-3094.jpg" alt="The WKND team gathered around a table in the field" fetchpriority="high">  </div> <div class="container hero-content"> <div class="hero-inner"> <p class="tag">About</p> <h1 class="mb-lg">About WKND</h1> <p class="p-xl hero-lead">We are a small editorial team that goes to wild places and writes honestly about what we find.</p> <div class="button-group"> <a class="button" href="#work">Our Work</a> </div> </div> </div> </section> <section class="section section--accent" data-section="2"> <div class="container center"> <h2 class="mb-lg">No brand deals. No desk research. No shortcuts.</h2> <p class="p-lg">Every route published here has been walked by someone on this team before a word was written for public consumption.</p> </div> </section> <section class="section" data-section="3"> <div class="container"> <div class="grid"> <div> <div class="section-heading"> <h2>How it started</h2> </div> <p class="p-lg muted">WKND Adventures started as a weekly email from the trail in 2019 — Jordan writing field dispatches to forty friends who'd asked to stay in the loop. No website, no brand, no plan. Just honest writing from wherever Jordan happened to be that week. As more contributors joined — Alex for photography, Morgan for water routes, Taylor for gear deep-dives — the email became a proper publication. More voices, better photography, deeper coverage. The format changed; the editorial principle didn't. We are still independently run, still editor-owned, still answerable only to the people who read us. No brand deals, no affiliate links, no algorithmic content strategy. What you read here is what we actually think.</p> </div> <img class="gallery-img gallery-img--wide" src="https://wknd-adventures.com/images/contributors/jacob-wester.jpg" alt="WKND Adventures editorial team in the field" loading="lazy"> </div> </div> </section> <section class="section section--inverse" data-section="4"> <div class="container"> <div class="section-heading"> <h2>What we believe</h2> </div> <div class="grid grid--3 gap-lg"> <div class="card card-body"> <h3 class="h4">Authenticity</h3> <p class="p-lg muted">We publish the hard days, not just the summits. The bad weather, the route that didn't go, the gear that failed. Adventure is honest or it isn't adventure.</p> </div> <div class="card card-body"> <h3 class="h4">Access</h3> <p class="p-lg muted">Adventure should be for everyone, not just the equipped. We write for beginners and veterans alike, and we fight for the kind of public access that makes it possible to get out at all.</p> </div> <div class="card card-body"> <h3 class="h4">Accountability</h3> <p class="p-lg muted">We follow our own wild ethics on every trip, no exceptions. If we write about a place, we are responsible for how we left it.</p> </div> </div> </div> </section> <section class="section tabs" data-section="5"> <div class="container"> <div class="section-heading"> <h2>The team</h2> </div> <div class="tab-menu" role="tablist" role="tablist"> <button class="tab-link" role="tab" role="tab" aria-selected="true" aria-controls="tab-jordan">Jordan</button> <button class="tab-link" role="tab" role="tab" aria-selected="false" aria-controls="tab-alex">Alex</button> <button class="tab-link" role="tab" role="tab" aria-selected="false" aria-controls="tab-morgan">Morgan</button> <button class="tab-link" role="tab" role="tab" aria-selected="false" aria-controls="tab-taylor">Taylor</button> </div> <div class="tab-pane tab-pane--padded" id="tab-jordan" role="tabpanel" role="tabpanel"> <div class="team-profile-grid"> <div class="team-profile-row"> <div class="team-profile-spacer"></div> <div class="team-profile-col"> <div class="profile-circle"> <img class="cover-image" src="https://wknd-adventures.com/images/contributors/alex-iby-343837.jpg" alt="Jordan M." loading="lazy"> </div> <div> <p class="h5 profile-name">Jordan M.</p> </div> </div> <div class="team-profile-bio"> <p class="p-lg muted mb-lg">Jordan is the founder and editor of WKND Adventures. A climber for twenty years, Jordan has been guiding in Yosemite since 2015 and has completed routes on every major face in the valley. The Patagonia piece was Jordan's most personal article to date — a two-year ambition, finally realised in the shoulder season. Day-to-day, Jordan runs route research, commissions stories, and writes the weekly dispatch that goes to subscribers every Friday from wherever the trail leads.</p><p class="p-lg muted mb-xl">Jordan still reads most reader pitches, fusses over safety wording in anything technical, and won't let a route go live until someone on the team has actually touched the trail or the rock. Off the clock you'll find Jordan on low-key valley circuits, insisting they count as recovery.</p> </div> </div> </div> </div> <div class="tab-pane tab-pane--padded" id="tab-alex" role="tabpanel" role="tabpanel" hidden> <div class="team-profile-grid"> <div class="team-profile-row"> <div class="team-profile-spacer"></div> <div class="team-profile-col"> <div class="profile-circle"> <img class="cover-image" src="https://wknd-adventures.com/images/contributors/ian-provo.jpg" alt="Alex R." loading="lazy"> </div> <div> <p class="h5 profile-name">Alex R.</p> <p class="p-sm muted">Photographer &amp; Cyclist</p> </div> </div> <div class="team-profile-bio"> <p class="p-lg muted mb-lg">Alex is the lead photographer and cycling correspondent for WKND Adventures. He has shot three major expeditions for the publication — Patagonia, Lofoten, and the Alps — and has a philosophy about camera gear that is either brilliant or maddening, depending on who you ask. Alpine Cycling was Alex's idea: a route he'd been planning for four years before finally committing. The resulting article is one of our most-read pieces, and the photographs are why.</p><p class="p-lg muted mb-xl">In the field he packs like a one-person production crew — lenses where others store socks, a tripod in the pack, batteries everywhere. He has been known to hike an extra three kilometres to catch light on a particular col. We've stopped asking if it's worth it, because his answer is always yes, and the photographs always prove him right.</p> </div> </div> </div> </div> <div class="tab-pane tab-pane--padded" id="tab-morgan" role="tabpanel" role="tabpanel" hidden> <div class="team-profile-grid"> <div class="team-profile-row"> <div class="team-profile-spacer"></div> <div class="team-profile-col"> <div class="profile-circle"> <img class="cover-image" src="https://wknd-adventures.com/images/contributors/ayo-ogunseinde-237739.jpg" alt="Morgan L." loading="lazy"> </div> <div> <p class="h5 profile-name">Morgan L.</p> <p class="p-sm muted">Water Editor</p> </div> </div> <div class="team-profile-bio"> <p class="p-lg muted mb-lg">Morgan is the water editor at WKND Adventures: cold-water surfer, wild swim advocate, expedition kayaker, and the first person we call when a route involves a shoreline. She has written the most detailed water-access pieces in the archive — permission frameworks, tide calculations, hazard assessments — because she believes that good information about cold water saves lives.</p><p class="p-lg muted mb-xl">When a shoreline is technically public but practically hostile, Morgan is the one who figures out how to make it actually accessible. She has mapped access routes for every major UK wild swimming destination, consulted on water safety for three guided expeditions, and has the rare distinction of having attempted three different M-classified rock routes before breakfast and somehow made all of them.</p> </div> </div> </div> </div> <div class="tab-pane tab-pane--padded" id="tab-taylor" role="tabpanel" role="tabpanel" hidden> <div class="team-profile-grid"> <div class="team-profile-row"> <div class="team-profile-spacer"></div> <div class="team-profile-col"> <div class="profile-circle"> <img class="cover-image" src="https://wknd-adventures.com/images/contributors/justin-barr.jpg" alt="Taylor B." loading="lazy"> </div> <div> <p class="h5 profile-name">Taylor B.</p> <p class="p-sm muted">Gear Editor</p> </div> </div> <div class="team-profile-bio"> <p class="p-lg muted mb-lg">Taylor is the gear editor — an ultralight obsessive, desert rat, and the only person on the team who has submitted serious rock in February. Taylor's gear reviews are legendary for their specificity: weight counts, failure modes matter, and the question "would you take it on a real trip?" is the only one that matters. Serious kit reviews here are built on failures as much as wins — if it didn't misfire in the actual conditions described in the article, the review doesn't run.</p><p class="p-lg muted mb-xl">Taylor has completed the most desert expeditions of anyone on the team, which is why desert routes get the deepest coverage. In the high mountains, Taylor's ultralight philosophy meets its match, which is exactly why the contradiction exists in the archive: sometimes weight matters more than comfort. Taylor's job is to describe exactly when and why, and to test enough that those assertions are bulletproof.</p> </div> </div> </div> </div> </div> </section> <section class="section section--secondary" data-section="6"> <div class="container container--narrow"> <div class="section-heading"> <h2>The Editorial Standard</h2> </div> <p class="p-lg muted mb-lg">Every piece of content published on WKND Adventures passes through the same verification process, regardless of who wrote it or how experienced the contributor is. The standard is simple in principle and demanding in practice: if we cannot confirm it from the field, we don't publish it. This means contributors complete every route they cover. It means gear is tested over multiple trips in the conditions the review describes — not handed to us by a brand rep in an office, not evaluated on a single weekend outing. A jacket reviewed for alpine use has been worn in alpine conditions. A boot reviewed for winter mountaineering has been used on snow and ice, at altitude, over enough days to reveal its actual failure modes.</p><p class="p-lg muted mb-lg">First-person fieldwork is not optional. We do not commission writers to synthesise other people's experiences into a polished summary. We send people into the field, or we don't cover the route. This creates constraints — we can't cover everything, and we publish slowly by the standards of digital media. That's a deliberate editorial choice. A smaller archive of verified, useful information is worth more than a large archive of aggregated content that may or may not be accurate in the conditions you encounter.</p><p class="p-lg muted mb-lg">Our gear testing methodology is documented and consistent. We test each piece of equipment across a minimum of three separate outings before rating it. We note the specific conditions — temperature range, terrain type, duration of use, load carried. We include failure modes: what the gear didn't do well, where it underperformed against its specification, and what we'd use instead if we had to make the choice again. The question we always ask is: would I trust this review with my safety on an unfamiliar route? If the answer is no, it doesn't run.</p><p class="p-lg muted mb-lg">On sponsored trips and commercial relationships: we have a categorical policy. We do not accept sponsored travel. Brands do not determine where we go, what we cover, or how we assess their products. If a contributor has received gear from a brand for testing purposes, that relationship is disclosed in the piece — clearly, at the top, not buried in a footer note. We have turned down significant sponsorship offers to maintain this standard. We will continue to do so. The alternative — editorial independence that bends when the money is large enough — is not editorial independence at all.</p><figure><img src="https://wknd-adventures.com/images/adventures/adobestock-196967522.jpg" alt="Contributor on a mountain peak above a wide valley" loading="lazy"><figcaption>Field verification means someone stood here before the words did.</figcaption></figure> </div> </section> <section class="section section--inverse" data-section="7"> <div class="container container--narrow"> <div class="section-heading"> <h2>How We Fund Our Work</h2> </div> <p class="p-lg muted mb-lg">WKND Adventures is independently funded through reader subscriptions and a small number of carefully vetted affiliate gear links. The subscription model is straightforward: readers who find the publication useful pay a modest annual fee that covers our operating costs and the real-world expenses of field work — travel, permits, accommodation, equipment. No investor capital, no advertising revenue, no brand deals. The financial model exists to serve the editorial model, not to override it.</p><p class="p-lg muted mb-lg">The affiliate links require more explanation, because the outdoor media industry has a poor record on this. When a reader clicks a link to purchase gear we've reviewed and makes a purchase, we receive a small commission from the retailer. We want to be direct about how this works and where it does and doesn't influence our coverage. The commission structure is identical across all retailers we link to — we don't receive a higher rate for directing readers toward one brand over another. We don't have preferred partner arrangements. The gear we link to is the gear we actually used and assessed. If the best option in a category is from a brand that pays lower affiliate rates, we link to it anyway. Our reviews are written before we consider where the gear can be purchased. The purchase links are added at the end of the editorial process, not the beginning.</p><p class="p-lg muted">There is no advertorial content on WKND Adventures. No native advertising. No brand-produced content given an editorial wrapper to make it look like journalism. The distinction matters: advertorial content, however well-designed, is paid-for messaging that serves the brand's interests. It is not journalism, and we don't want readers to have to wonder which category any given piece falls into. Everything on this site was written by our editorial team or by community contributors under our editorial guidelines. Nothing was written by a brand or commissioned by a brand. If that ever changes — it won't, but if it does — we'll tell you first.</p> </div> </section> <section class="section" data-section="8"> <div class="container"> <div class="section-heading"> <h2>From Our Editors</h2> </div> <div class="grid grid--3 gap-lg"> <a class="article-card" href="./blog/mountain-photography.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/adventures/adobestock-277768563.jpeg" alt="Mountain Photography" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Essay</div> </div> <h3 class="h5 mb-sm">Mountain Photography</h3> <p class="p-sm muted">The camera as creative tool and physical burden. Alex R.'s landmark essay on shooting in the high mountains.</p> </div> </a><a class="article-card" href="./blog/ultralight-backpacking.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/adventures/adobestock-257541512.jpeg" alt="Ultralight Backpacking" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Gear Guide</div> </div> <h3 class="h5 mb-sm">Ultralight Backpacking</h3> <p class="p-sm muted">What to cut, what to keep, and what the ultralight obsession reveals about how we think about wilderness.</p> </div> </a><a class="article-card" href="./blog/desert-survival-guide.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/adventures/adobestock-185324648.jpg" alt="Desert Survival Guide" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Desert</div> </div> <h3 class="h5 mb-sm">Desert Survival Guide</h3> <p class="p-sm muted">From Taylor B., after three weeks in the Sonoran: the real lessons from moving through extreme heat.</p> </div> </a> </div> </div> </section> <section class="section section--accent" data-section="9"> <div class="container center"> <h2 class="mb-lg">Your adventure belongs here too.</h2> <p class="p-lg mb-xl">WKND Adventures publishes one reader story per month.</p> <div class="button-group button-group--centered"> <a class="button" href="./community.html">Community</a> <a class="button button--ghost" href="./community.html">Submit a Story</a> </div> </div> </section> </main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">
+          <svg viewBox="0 0 33 33" aria-hidden="true"><path d="M28,0H5C2.24,0,0,2.24,0,5v23c0,2.76,2.24,5,5,5h23c2.76,0,5-2.24,5-5V5c0-2.76-2.24-5-5-5ZM29,17c-6.63,0-12,5.37-12,12h-1c0-6.63-5.37-12-12-12v-1c6.63,0,12-5.37,12-12h1c0,6.63,5.37,12,12,12v1Z" fill="currentColor"/></svg>
+          <span class="logo-text">WKND<br>Adventures</span>
+        </div>
+        <p class="p-sm footer-tagline">Bold Stories. Real Life. Wild Places. Published weekly from somewhere with no Wi-Fi.</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">Explore</h4>
+        <ul>
+          <li><a class="footer-link" href="./adventures.html">Adventures</a></li>
+          <li><a class="footer-link" href="./expeditions.html">Expeditions</a></li>
+          <li><a class="footer-link" href="./field-notes.html">Field Notes</a></li>
+          <li><a class="footer-link" href="./destinations.html">Destinations</a></li>
+          <li><a class="footer-link" href="./basecamp.html">Basecamp</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Recent Stories</h4>
+        <ul>
+          <li><a class="footer-link" href="./blog/patagonia-trek.html">W Circuit, Patagonia</a></li>
+          <li><a class="footer-link" href="./blog/kayaking-norway.html">Lofoten Islands</a></li>
+          <li><a class="footer-link" href="./blog/alpine-cycling.html">High Alps by Bike</a></li>
+          <li><a class="footer-link" href="./blog/yosemite-rock-climbing.html">Yosemite Climbing</a></li>
+          <li><a class="footer-link" href="./blog/mountain-photography.html">Mountain Photography</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Info</h4>
+        <ul>
+          <li><a class="footer-link" href="./gear.html">Gear</a></li>
+          <li><a class="footer-link" href="./sustainability.html">Sustainability</a></li>
+          <li><a class="footer-link" href="./about.html">About</a></li>
+          <li><a class="footer-link" href="./community.html">Community</a></li>
+          <li><a class="footer-link" href="./faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="p-sm footer-tagline">© 2026 WKND Adventures. All rights reserved.</p>
+      <p class="p-sm footer-tagline">Made for the people who go.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

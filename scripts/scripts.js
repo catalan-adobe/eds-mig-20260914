@@ -104,6 +104,25 @@ function buildAutoBlocks(main) {
 }
 
 /**
+ * Moves each run of adjacent button paragraphs into one div.button-group.
+ * @param {HTMLElement} main The main container element
+ */
+function groupButtons(main) {
+  main.querySelectorAll('p.button-wrapper').forEach((p) => {
+    if (p.parentElement.classList.contains('button-group')) return;
+    const group = document.createElement('div');
+    group.className = 'button-group';
+    p.before(group);
+    let next = p;
+    while (next?.classList.contains('button-wrapper')) {
+      const after = next.nextElementSibling;
+      group.append(next);
+      next = after;
+    }
+  });
+}
+
+/**
  * Decorates formatted links to style them as buttons.
  * @param {HTMLElement} main The main container element
  */
@@ -140,6 +159,7 @@ function decorateButtons(main) {
       em.replaceWith(a);
     }
   });
+  groupButtons(main);
 }
 
 /**

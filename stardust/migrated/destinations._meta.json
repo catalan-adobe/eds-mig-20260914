@@ -1,0 +1,74 @@
+{
+  "slug": "destinations-html",
+  "type": "listing",
+  "renderBranch": "A'",
+  "template": "adventures-html",
+  "modules": [],
+  "slotsFilled": [
+    "hero",
+    "section",
+    "section",
+    "section",
+    "section",
+    "section",
+    "section",
+    "section",
+    "section"
+  ],
+  "canonShas": {
+    "header": "1ad8732be249",
+    "footer": "15c6a771a26c",
+    "css": "45c20094fe88"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "variance-probe-superseded",
+      "reason": "every sibling individually pixel-gated at 1440+360 (<=0.28%, delta 0) - stronger than the live-vs-live variance probe"
+    }
+  ],
+  "metadata": {
+    "title": "Destinations — WKND Adventures",
+    "description": "Curated regions for outdoor adventure around the world.",
+    "canonical": null,
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Destinations — WKND Adventures",
+    "description": "Curated regions for outdoor adventure around the world.",
+    "url": "https://wknd-adventures.com/destinations.html"
+  },
+  "migratedAt": "2026-09-23T11:35:55Z",
+  "designMdSha": "dc1e5e19ef03",
+  "designJsonSha": "64353e7c79d0",
+  "sourceCurrentSha": "deda0679a04c",
+  "sourceProposedSha": "36f4ef6f8962",
+  "fidelityTier": "sibling",
+  "archetypeSource": "adventures-html",
+  "archetypeSha": "4b26da5626f6",
+  "variants": [],
+  "gatesPassed": [
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "delivery-lint",
+    "content-count",
+    "content-fidelity"
+  ],
+  "gateEvidence": {
+    "pixel-gate-1440": "0.00% (0 px, threshold 10%), height delta 0px, round sib1 @1440 (sib-destinations-html-1440.log) [prototype regime]",
+    "pixel-gate-360": "0.00% (0 px, threshold 10%), height delta 0px, round sib1 @360 (sib-destinations-html-360.log) [prototype regime]",
+    "delivery-lint": "0 P0 · 0 P1 · 2 P2 (delivery-lint --path /destinations)",
+    "content-count": "content-diff: 1 (0 structural 🔴) (cd-destinations-html.log)",
+    "content-fidelity": "content-diff counts identical to capture; 0 structural red (cd-destinations-html.log)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 2,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "destinations.html",
+  "outputPathDefault": null,
+  "sidecar": "destinations._meta.json",
+  "driverVersion": "1"
+}

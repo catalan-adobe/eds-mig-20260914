@@ -1,0 +1,74 @@
+{
+  "slug": "index",
+  "type": "landing",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [],
+  "slotsFilled": [
+    "hero",
+    "section",
+    "section",
+    "ticker",
+    "section",
+    "section",
+    "section",
+    "section",
+    "section"
+  ],
+  "canonShas": {
+    "header": "1ad8732be249",
+    "footer": "15c6a771a26c",
+    "css": "45c20094fe88"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "variance-probe-superseded",
+      "reason": "every sibling individually pixel-gated at 1440+360 (<=0.28%, delta 0) - stronger than the live-vs-live variance probe"
+    }
+  ],
+  "metadata": {
+    "title": "WKND Adventures — Bold Stories. Real Life. Wild Places.",
+    "description": "Bold Stories. Real Life. Wild Places. WKND Adventures documents the people, routes, and moments that make the outdoors worth protecting.",
+    "canonical": null,
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "WKND Adventures — Bold Stories. Real Life. Wild Places.",
+    "description": "Bold Stories. Real Life. Wild Places. WKND Adventures documents the people, routes, and moments that make the outdoors worth protecting.",
+    "url": "https://wknd-adventures.com/"
+  },
+  "migratedAt": "2026-09-23T11:35:55Z",
+  "designMdSha": "dc1e5e19ef03",
+  "designJsonSha": "64353e7c79d0",
+  "sourceCurrentSha": "7d9c8ff9cbd7",
+  "sourceProposedSha": "ac1ab8733eff",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "content-count",
+    "delivery-lint",
+    "content-fidelity"
+  ],
+  "gateEvidence": {
+    "pixel-gate-1440": "0.00% (0 px, threshold 10%), height delta 0px, round iter4 @1440 (index-1440-iter4.log) [prototype regime]",
+    "pixel-gate-360": "0.01% (354 px, threshold 10%), height delta 0px, round iter4 @360 (index-360-iter4.log) [prototype regime]",
+    "content-count": "content-diff: 1 (0 structural 🔴) (cd-index.log)",
+    "delivery-lint": "0 P0 · 0 P1 · 2 P2 (delivery-lint --path /)",
+    "content-fidelity": "content-diff counts identical to capture; 0 structural red (cd-index.log)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 2,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "index.html",
+  "outputPathDefault": null,
+  "sidecar": "_meta.json",
+  "driverVersion": "1"
+}

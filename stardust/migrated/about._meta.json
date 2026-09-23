@@ -1,0 +1,73 @@
+{
+  "slug": "about-html",
+  "type": "static",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [],
+  "slotsFilled": [
+    "hero",
+    "section",
+    "section",
+    "section",
+    "section",
+    "section",
+    "section",
+    "section",
+    "section"
+  ],
+  "canonShas": {
+    "header": "1ad8732be249",
+    "footer": "15c6a771a26c",
+    "css": "45c20094fe88"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "variance-probe-superseded",
+      "reason": "every sibling individually pixel-gated at 1440+360 (<=0.28%, delta 0) - stronger than the live-vs-live variance probe"
+    }
+  ],
+  "metadata": {
+    "title": "About — WKND Adventures",
+    "description": "A small editorial team that goes to wild places and writes honestly about what we find.",
+    "canonical": null,
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "About — WKND Adventures",
+    "description": "A small editorial team that goes to wild places and writes honestly about what we find.",
+    "url": "https://wknd-adventures.com/about.html"
+  },
+  "migratedAt": "2026-09-23T11:35:55Z",
+  "designMdSha": "dc1e5e19ef03",
+  "designJsonSha": "64353e7c79d0",
+  "sourceCurrentSha": "1fe342a5c9ce",
+  "sourceProposedSha": "9dc8d665dcbd",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "pixel-gate-1440",
+    "content-count",
+    "delivery-lint",
+    "content-fidelity"
+  ],
+  "gateEvidence": {
+    "pixel-gate-1440": "0.00% (0 px, threshold 10%), height delta 0px, round iter2 @1440 (about-1440-iter2.log) [prototype regime]",
+    "pixel-gate-360": "FAIL: |height delta| > 8px tolerance — 0.89% (35770 px, threshold 10%), height delta 219px, round iter4 @360 (about-360-iter4.log) [prototype regime]",
+    "content-count": "content-diff: 1 (0 structural 🔴) (cd-about-html.log)",
+    "delivery-lint": "0 P0 · 0 P1 · 2 P2 (delivery-lint --path /about)",
+    "content-fidelity": "content-diff counts identical to capture; 0 structural red (cd-about-html.log)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 5,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "about.html",
+  "outputPathDefault": null,
+  "sidecar": "about._meta.json",
+  "driverVersion": "1"
+}

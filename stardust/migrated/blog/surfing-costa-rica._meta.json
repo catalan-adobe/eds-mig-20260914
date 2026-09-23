@@ -1,0 +1,70 @@
+{
+  "slug": "blog-surfing-costa-rica-html",
+  "type": "article",
+  "renderBranch": "A'",
+  "template": "blog-patagonia-trek-html",
+  "modules": [],
+  "slotsFilled": [
+    "hero",
+    "section",
+    "section",
+    "section",
+    "section"
+  ],
+  "canonShas": {
+    "header": "1ad8732be249",
+    "footer": "15c6a771a26c",
+    "css": "45c20094fe88"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "variance-probe-superseded",
+      "reason": "every sibling individually pixel-gated at 1440+360 (<=0.28%, delta 0) - stronger than the live-vs-live variance probe"
+    }
+  ],
+  "metadata": {
+    "title": "Pavones and Playa Negra: Costa Rica Surf Guide — WKND Adventures",
+    "description": "A guide to surfing Pavones and Playa Negra on Costa Rica",
+    "canonical": null,
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Pavones and Playa Negra: Costa Rica Surf Guide — WKND Adventures",
+    "description": "A guide to surfing Pavones and Playa Negra on Costa Rica",
+    "mainEntityOfPage": "https://wknd-adventures.com/blog/surfing-costa-rica.html"
+  },
+  "migratedAt": "2026-09-23T11:35:55Z",
+  "designMdSha": "dc1e5e19ef03",
+  "designJsonSha": "64353e7c79d0",
+  "sourceCurrentSha": "4ab0823e30a3",
+  "sourceProposedSha": "7a42d68b9d21",
+  "fidelityTier": "sibling",
+  "archetypeSource": "blog-patagonia-trek-html",
+  "archetypeSha": "2bb59903c10d",
+  "variants": [],
+  "gatesPassed": [
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "delivery-lint",
+    "content-count",
+    "content-fidelity"
+  ],
+  "gateEvidence": {
+    "pixel-gate-1440": "0.00% (0 px, threshold 10%), height delta 0px, round sib1 @1440 (sib-blog-surfing-costa-rica-html-1440.log) [prototype regime]",
+    "pixel-gate-360": "0.00% (0 px, threshold 10%), height delta 0px, round sib1 @360 (sib-blog-surfing-costa-rica-html-360.log) [prototype regime]",
+    "delivery-lint": "0 P0 · 0 P1 · 2 P2 (delivery-lint --path /blog/surfing-costa-rica)",
+    "content-count": "content-diff: none — content + roles match (cd-blog-surfing-costa-rica-html.log)",
+    "content-fidelity": "content-diff counts identical to capture; 0 structural red (cd-blog-surfing-costa-rica-html.log)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 2,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "blog/surfing-costa-rica.html",
+  "outputPathDefault": null,
+  "sidecar": "blog/surfing-costa-rica._meta.json",
+  "driverVersion": "1"
+}

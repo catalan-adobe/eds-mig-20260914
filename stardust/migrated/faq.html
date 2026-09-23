@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- stardust:migrate
+  writtenBy:        stardust:migrate
+  writtenAt:        2026-09-23T11:35:55Z
+  page:             FAQ — WKND Adventures
+  slug:             faq-html
+  pagePath:         migrated/faq.html
+  renderBranch:     A'
+  template:         about-html
+  archetypePath:    stardust/prototypes/about-html-proposed.html
+  archetypeSha:     9dc8d665dcbd
+  sourceCurrent:    stardust/current/pages/faq-html.json
+  againstDirection: stardust/direction.md (Active)
+  designMd:         DESIGN.md (sha: dc1e5e19ef03)
+  designJson:       DESIGN.json (sha: 64353e7c79d0)
+  canonShas:        header:1ad8732be249 footer:15c6a771a26c css:45c20094fe88
+  decisionTrace:    faq._meta.json
+  brokenInternalLinks: 0
+  stardustVersion:  local
+-->
+<style>
+:root {
+  --color-white: #fff;
+  --color-black: #0f1a14;
+  --color-amber: #e8651a;
+  --color-cream: #f5f0e8;
+  --color-gray-100: #f0ece4;
+  --color-gray-200: #ddd8cf;
+  --color-gray-300: #c8c2b8;
+  --color-gray-500: #7a8a80;
+  --color-gray-700: #3d4f45;
+  --font-heading: "Syncopate", sans-serif;
+  --font-body: "Instrument Sans", sans-serif;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.5rem;
+  --text-5xl: 3.5rem;
+  --leading-tight: 1.1;
+  --leading-snug: 1.3;
+  --leading-normal: 1.6;
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 5rem;
+  --container-max: 1200px;
+  --container-narrow: 48rem;
+  --container-padding: 1.5rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-card: 1.25rem;
+  --radius-full: 9999px;
+  --transition-fast: 0.15s ease;
+}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"FAQ — WKND Adventures","description":"Questions about WKND Adventures, planning trips, submitting stories, and more.","url":"https://wknd-adventures.com/faq.html"}</script>
+<meta charset="utf-8">
+<meta name="stardust-slug" content="faq-html">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ — WKND Adventures</title>
+<meta name="description" content="Questions about WKND Adventures, planning trips, submitting stories, and more.">
+<link rel="icon" type="image/svg+xml" href="https://wknd-adventures.com/favicon.svg">
+<link rel="stylesheet" href="./assets/canon.css">
+<script src="./assets/canon.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <div class="container nav-inner">
+    <a class="logo" href="./index.html" aria-label="WKND Adventures home">
+      <svg viewBox="0 0 33 33" aria-hidden="true"><path d="M28,0H5C2.24,0,0,2.24,0,5v23c0,2.76,2.24,5,5,5h23c2.76,0,5-2.24,5-5V5c0-2.76-2.24-5-5-5ZM29,17c-6.63,0-12,5.37-12,12h-1c0-6.63-5.37-12-12-12v-1c6.63,0,12-5.37,12-12h1c0,6.63,5.37,12,12,12v1Z" fill="currentColor"/></svg>
+      <span class="logo-text">WKND<br>Adventures</span>
+    </a>
+    <nav class="nav-menu" id="nav-menu" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <button class="nav-trigger" aria-expanded="false"><span>Explore</span><span class="nav-caret"></span></button>
+          <div class="nav-panel"><div class="container nav-grid">
+            <a class="nav-link" href="./adventures.html"><strong>Adventures</strong><span>Hiking, climbing, surfing, cycling. Browse all activities and find your next route.</span></a>
+            <a class="nav-link" href="./expeditions.html"><strong>Expeditions</strong><span>Multi-day journeys documented in full — day-by-day accounts from Patagonia to the Lofoten Islands.</span></a>
+            <a class="nav-link" href="./destinations.html"><strong>Destinations</strong><span>Wild places worth going to. Permit details, conditions, and what to expect on the ground.</span></a>
+            <a class="nav-link" href="./basecamp.html"><strong>Basecamp</strong><span>New here? Pick an activity, find a route, and get moving — your starting point for everything.</span></a>
+          </div></div>
+        </li>
+        <li class="nav-item">
+          <button class="nav-trigger" aria-expanded="false"><span>Stories</span><span class="nav-caret"></span></button>
+          <div class="nav-panel"><div class="container nav-stories">
+            <div class="nav-stories-pages">
+              <a class="nav-link" href="./field-notes.html"><strong>Field Notes</strong><span>Essays, photographs, and dispatches from the wild. Slower stories for people who go further.</span></a>
+              <a class="nav-link" href="./community.html"><strong>Community</strong><span>Reader submissions, contributor dispatches, and the people behind the routes.</span></a>
+            </div>
+            <div>
+              <p class="nav-label">Recent from the Field</p>
+              <div class="nav-articles">
+                <a class="nav-link" href="./blog/patagonia-trek.html"><strong>W Circuit: 9 Days, 115 km</strong><span>A full account of Torres del Paine — permits, camps, and the weather that shaped every decision.</span></a>
+                <a class="nav-link" href="./blog/kayaking-norway.html"><strong>Lofoten Islands: Arctic Surfing</strong><span>Seven days on the water between Lofoten peaks — tidal planning and the surf break at Unstad.</span></a>
+                <a class="nav-link" href="./blog/alpine-cycling.html"><strong>Six Days Through the High Alps by Bike</strong><span>Galibier, Izoard, Mortirolo — a self-supported traverse of the highest Alpine passes.</span></a>
+                <a class="nav-link" href="./blog/mountain-photography.html"><strong>The Camera on Your Back</strong><span>Practical and philosophical. How to shoot in the mountains without compromising your movement.</span></a>
+              </div>
+            </div>
+          </div></div>
+        </li>
+        <li class="nav-item">
+          <button class="nav-trigger" aria-expanded="false"><span>Info</span><span class="nav-caret"></span></button>
+          <div class="nav-panel"><div class="container nav-grid">
+            <a class="nav-link" href="./gear.html"><strong>Gear</strong><span>What to carry and why. Equipment reviews from the people who actually use it in the field.</span></a>
+            <a class="nav-link" href="./sustainability.html"><strong>Sustainability</strong><span>Our wild ethics. How we think about adventure, access, and the land it happens on.</span></a>
+            <a class="nav-link" href="./about.html"><strong>About</strong><span>Who we are, how we work, and what we believe about adventure writing.</span></a>
+            <a class="nav-link" href="./faq.html"><strong>FAQ</strong><span>Permits, access, conditions, and common practical questions, answered in full.</span></a>
+          </div></div>
+        </li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <a class="button" href="./community.html">Subscribe</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <svg class="icon-open" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="2" fill="currentColor"/><rect x="3" y="11" width="18" height="2" fill="currentColor"/><rect x="3" y="16" width="18" height="2" fill="currentColor"/></svg>
+        <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 5L19 19M19 5L5 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main-content" data-template="about-html"> <section class="hero hero--full" data-section="1"> <div class="hero-bg"> <img src="https://wknd-adventures.com/images/adventures/adobestock-257501643.jpeg" alt="A trail disappearing into mountain mist" fetchpriority="high">  </div> <div class="container hero-content"> <div class="hero-inner"> <p class="tag">Questions</p> <h1 class="mb-lg">Questions</h1> <p class="p-xl hero-lead">Everything you want to know before heading out — or before hitting send on a story.</p> <div class="button-group"> <a class="button" href="#planning">Planning a Trip</a> <a class="button" href="#stories">Contributing a Story</a> </div> </div> </div> </section> <section class="section section--accent" data-section="2"> <div class="container center"> <h2 class="mb-lg">Planning &amp; Adventures</h2> <p class="p-lg">Route conditions, fitness levels, solo travel, logistics. Submissions, rights, review timeline, what we look for.</p> </div> </section> <section class="section" id="planning" data-section="3"> <div class="container"> <div class="section-heading"> <h2>Planning &amp; Adventures</h2> </div> <div class="faq"> <div class="faq-item"> <button class="faq-question" aria-expanded="false"> <span>What fitness level do your adventures assume? (Be honest — I skip leg day.)</span> <span class="faq-icon"></span> </button> <div class="faq-answer">It varies wildly, and we refuse to pretend "moderate" means the same thing on a Patagonian haul as on a Sunday stroll with a latte. Each author says what the route actually felt like in their body — lungs, knees, ego, the whole package. Read the intro; if they mention "we bonked at hour four," that's a feature, not a typo.</div> </div> <div class="faq-item"> <button class="faq-question" aria-expanded="false"> <span>Can I do these routes alone, or will my mum worry?</span> <span class="faq-icon"></span> </button> <div class="faq-answer">Your mum will worry regardless — that's her job. Ours is to flag when solo is a genuinely bad idea (crevasses, tide races, things that go "whoosh" in the night). Many pieces are solo-friendly; others basically say "bring a friend who knows what they're doing." We spell it out so you can text your mum something reassuring and still be honest with yourself.</div> </div> <div class="faq-item"> <button class="faq-question" aria-expanded="false"> <span>How fresh is this intel? Snow melts, opinions don't.</span> <span class="faq-icon"></span> </button> <div class="faq-answer">Trip dates sit loud and proud in the byline. Nature, meanwhile, enjoys changing its mind without updating the website. For snow, surf, and anything involving the word "alpine," double-check the official source before you pack the wrong jacket and blame us in a one-star review. We refresh pieces when readers send credible "actually, the bridge is gone" notes.</div> </div> <div class="faq-item"> <button class="faq-question" aria-expanded="false"> <span>Where's the gear? I need an excuse to buy something orange.</span> <span class="faq-icon"></span> </button> <div class="faq-answer">The Gear section is sorted by activity so you can justify that orange thing honestly. No affiliate links — we make zero cents when you click, which is either noble or foolish depending on your accountant. Articles usually tuck a kit list into the route notes for people who read the fine print.</div> </div> <div class="faq-item"> <button class="faq-question" aria-expanded="false"> <span>Do you run guided trips? I'll bring snacks.</span> <span class="faq-icon"></span> </button> <div class="faq-answer">We love snacks; we still won't guide you. WKND is a magazine, not a tour company — no matching fleeces, no walkie-talkie choreography. Use Expeditions for big-trip inspiration, then plan it yourself like the beautifully chaotic adult you are.</div> </div> <div class="faq-item"> <button class="faq-question" aria-expanded="false"> <span>How do I find something close to my couch?</span> <span class="faq-icon"></span> </button> <div class="faq-answer">The Destinations page is your map of "farther than the couch, but you choose how much." We've got depth in Patagonia, Scandinavia, the Alps, California, and Southeast Asia — and oddballs everywhere else. Don't see your backyard? Tell us. Worst case we daydream; best case we commission someone to go suffer for art.</div> </div> </div> </div> </section> <section class="section section--secondary" id="stories" data-section="4"> <div class="container"> <div class="section-heading"> <h2>Contributing Stories</h2> </div> <div class="faq"> <div class="faq-item"> <button class="faq-question" aria-expanded="false"> <span>How do I submit a reader story without summoning a PDF demon?</span> <span class="faq-icon"></span> </button> <div class="faq-answer">Email stories@wknd-adventures.com with the subject Reader Submission: [route name]. Attach Word, Google Doc link, or plain text — we're not precious. Add at least one photo (blurry summit selfies welcome if the story slaps) and a one-line bio so we know you're human. That's the whole ritual.</div> </div> <div class="faq-item"> <button class="faq-question" aria-expanded="false"> <span>What makes a story publishable vs. "cool trip, bro"?</span> <span class="faq-icon"></span> </button> <div class="faq-answer">We want the version you tell after the third coffee when your friend says "wait, then what happened?" A specific screw-up, a real decision, a detail that couldn't be invented in an office. Polished prose is optional; verifiable chaos is not. If you climbed Everest in perfect weather with zero feelings, we'll nap politely.</div> </div> <div class="faq-item"> <button class="faq-question" aria-expanded="false"> <span>Do you pay contributors? (Asking for my landlord.)</span> <span class="faq-icon"></span> </button> <div class="faq-answer">Not yet — we're small, indie, and funded like a very committed hobby. You get credit, a bio, and us yelling about your piece on the internet. No free boots in exchange for your soul, either. When we can pay properly, we'll shout it from a mountain; until then, blame capitalism, not your editor.</div> </div> <div class="faq-item"> <button class="faq-question" aria-expanded="false"> <span>Can I send only photos and vibes?</span> <span class="faq-icon"></span> </button> <div class="faq-answer">Vibes don't rasterize well. Send the images plus 300–400 words on what we're looking at and why it mattered. If the frames are absurdly good, we'll help you shape the words — we're editors, not monsters. Photo essays need ~6 bangers and one clear idea, not sixty near-duplicates of the same ridge.</div> </div> <div class="faq-item"> <button class="faq-question" aria-expanded="false"> <span>How long until I hear back? I've refreshed my inbox 400 times.</span> <span class="faq-icon"></span> </button> <div class="faq-answer">We batch-read once a month; aim for an answer within six weeks — yes, no, or "not quite, here's why." We don't ghost; we're just slow in a charming, artisanal way. Past eight weeks? Nudge us. We probably buried your email under a pile of "RE: RE: tent warranty."</div> </div> <div class="faq-item"> <button class="faq-question" aria-expanded="false"> <span>Can I repost my piece on my blog that three people read?</span> <span class="faq-icon"></span> </button> <div class="faq-answer">After six months, yes — anywhere you like, with a line that it ran here first. We keep it on our site because the internet is forever and we're sentimental. You still own your words; we just asked for a respectful head start, like letting someone finish their sandwich before you steal a fry.</div> </div> </div> </div> </section> <section class="section" data-section="5"> <div class="container"> <div class="section-heading"> <h2>Planning Your Trip</h2> </div> <div class="faq"> <div class="faq-item"> <button class="faq-question" aria-expanded="false"> <span>Is this route "within my ability" or main-character syndrome?</span> <span class="faq-icon"></span> </button> <div class="faq-answer">Ignore the average daydream — find the spiciest bit of the route (one scary pitch, one whiteout nav leg, one "why is this wet") and ask if you've done that flavour of spicy before, for real, not on YouTube. Grades assume you already speak the language: Scottish winter III assumes crampons aren't a fashion statement. Read recent trip reports; trust the grumpy ones slightly more than the Instagram captions.</div> </div> <div class="faq-item"> <button class="faq-question" aria-expanded="false"> <span>Solo overnight: what do I actually need besides optimism?</span> <span class="faq-icon"></span> </button> <div class="faq-answer">Shelter and sleep stuff rated for weather one notch worse than the forecast (forecasts lie; you knew that). Map, compass, offline map on something charged, water treatment, food plus an extra meal for when you miss the trail so hard you invent new swear words, basic first aid + foil blanket, and a PLB or satellite messenger — because "I'll have signal" is not a plan, it's a punchline. Optimism packs lighter than a tent; bring the tent anyway.</div> </div> <div class="faq-item"> <button class="faq-question" aria-expanded="false"> <span>Hot-ticket permits: do I need five alarms and a spreadsheet?</span> <span class="faq-icon"></span> </button> <div class="faq-answer">Yes. Famous routes open bookings like concert tickets — set a calendar alert, caffeinate responsibly, and click at go-time. Lotteries: use every legal entry you're allowed. Missed the window? Shoulder season is often prettier, cheaper, and less crowded, and rangers sometimes have walk-up fairy dust. Your spreadsheet can be named "Dreams.xlsx" if it helps emotionally.</div> </div> <div class="faq-item"> <button class="faq-question" aria-expanded="false"> <span>The weather turned. Do I push through like a movie montage?</span> <span class="faq-icon"></span> </button> <div class="faq-answer">Montages skip the boring part where someone gets hypothermia. Before you leave, pick concrete turn-around triggers — wind over X, snowfall rate Y, "if we're not at the col by Z o'clock." Decisions made in a warm kitchen beat decisions made while hangry above the treeline. The mountain will still be there; your knees prefer you sensible.</div> </div> <div class="faq-item"> <button class="faq-question" aria-expanded="false"> <span>Why hire a local guide when I watched a 12-minute tutorial?</span> <span class="faq-icon"></span> </button> <div class="faq-answer">Because the tutorial doesn't know today's serac mood, which bush the trail hides behind after the storm, or how to not be a jerk on someone else's land. Hiring locally isn't admitting defeat — it's buying decades of "we don't talk about that gully" knowledge. Look up IFMGA / AMGA / NZMGA (or your country's equivalent) and pick a human, not an algorithm.</div> </div> </div> </div> </section> <section class="section section--secondary" data-section="6"> <div class="container"> <div class="section-heading"> <h2>About WKND Content</h2> </div> <div class="faq"> <div class="faq-item"> <button class="faq-question" aria-expanded="false"> <span>How do you pick difficulty — dartboard, vibes, or science?</span> <span class="faq-icon"></span> </button> <div class="faq-answer">We use real systems — UIAA, French grades, Scottish adjectives, ski-touring codes — because inventing "WKND Level 7 spicy" helps nobody. When guidebooks disagree (they love that), we say so and add what the grade feels like in human verbs: "lots of front-pointing," "runouts that encourage philosophy." A number without context is just typography.</div> </div> <div class="faq-item"> <button class="faq-question" aria-expanded="false"> <span>How often do you update routes — every full moon?</span> <span class="faq-icon"></span> </button> <div class="faq-answer">We patch things when someone credible emails "the bridge is now a concept" or similar. Article headers show original date plus last refresh. Seasonal routes get a nudge toward official condition pages because we're writers, not wizards. If a piece is old enough to drive in some countries, verify the beta yourself before you blame us for your soggy socks.</div> </div> <div class="faq-item"> <button class="faq-question" aria-expanded="false"> <span>Are these gear links secretly funding your espresso habit?</span> <span class="faq-icon"></span> </button> <div class="faq-answer">Nope — zero affiliate links, zero "buy this and we get three cents." Espresso is funded the old-fashioned way: denial and hope. If we ever flipped that policy, we'd announce it loudly so you could throw popcorn. Recommendations come from use in the field, not from a brand deck.</div> </div> <div class="faq-item"> <button class="faq-question" aria-expanded="false"> <span>What does "contributor-verified" mean — they pinky-swore?</span> <span class="faq-icon"></span> </button> <div class="faq-answer">It means a named human stood on the route within ~18 months and checked the boring stuff — huts, permits, "is that trail still there" — against reality, not a photocopied guide from 1997. It is not a guarantee the glacier didn't move overnight; it is a promise someone put their reputation on the line for that date stamp.</div> </div> </div> </div> </section> <section class="section" data-section="7"> <div class="container"> <div class="section-heading"> <h2>Contributing &amp; Community</h2> </div> <div class="faq"> <div class="faq-item"> <button class="faq-question" aria-expanded="false"> <span>I write like a text message — is that disqualifying?</span> <span class="faq-icon"></span> </button> <div class="faq-answer">Most of us are route nerds first, comma negotiators second. If you were there and you're honest about the mud, we can help with the semicolons. We can't invent your experience from thin air; we can absolutely sand the rough edges off how you tell it. Send the messy draft — perfection is overrated and suspicious.</div> </div> <div class="faq-item"> <button class="faq-question" aria-expanded="false"> <span>Paycheck or exposure bucks?</span> <span class="faq-icon"></span> </button> <div class="faq-answer">Right now: real bylines, real audience, imaginary dollars. No sneaky "we'll pay you in headlamps" deals either. When we can pay real money, we'll make noise about it — think less "quiet policy update," more "we bought cake." Until then, thanks for feeding the culture anyway.</div> </div> <div class="faq-item"> <button class="faq-question" aria-expanded="false"> <span>My trip was a beautiful disaster — still a story?</span> <span class="faq-icon"></span> </button> <div class="faq-answer">That's the good stuff. Wrong valley, thunderstorm tantrum, summit that stayed hypothetical — readers learn more from your bad day than from another hero shot. Give us the moment you knew, what you knew (and didn't), and what you'd pack differently besides regret. Comedy optional; humility appreciated.</div> </div> <div class="faq-item"> <button class="faq-question" aria-expanded="false"> <span>Pictures-only pitch — like a silent film but with JPEGs?</span> <span class="faq-icon"></span> </button> <div class="faq-answer">For Field Notes photo essays we want eight+ frames that sequence like a story, plus 200–300 words so we're not guessing your plot. Send five samples and a teaser; if it's magic, we'll nag you gently for the rest. Random pretty clouds: lovely, not a narrative.</div> </div> </div> </div> </section> <section class="section section--secondary" data-section="8"> <div class="container"> <div class="section-heading"> <h2>Most popular starting points</h2> </div> <div class="grid grid--3 gap-lg"> <a class="article-card" href="./blog/patagonia-trek.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/adventures/adobestock-231698835.jpg" alt="Torres del Paine massif under dramatic Patagonian sky" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Americas</div> </div> <h3 class="h5 mb-sm">W Circuit: 9 Days, 115 km</h3> <p class="p-sm muted">A full account of the W Circuit in Torres del Paine — permit strategy, daily stage breakdowns, refugio conditions, and the one weather window that made it worth every hour of planning.</p> </div> </a><a class="article-card" href="./blog/kayaking-norway.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/magazine/surfer-wave-02.jpg" alt="Cold Atlantic swell, Lofoten Islands, Norway" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Europe</div> </div> <h3 class="h5 mb-sm">Lofoten Islands: Arctic Surfing and Swell</h3> <p class="p-sm muted">Seven days surfing between the Lofoten peaks — swell windows, cold-water preparation, and why Unstad produces some of the best Arctic waves in Europe.</p> </div> </a><a class="article-card" href="./blog/alpine-cycling.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/adventures/adobestock-261097343.jpeg" alt="Alpine cycling through the high passes" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Europe</div> </div> <h3 class="h5 mb-sm">Six Days Through the High Alps by Bike</h3> <p class="p-sm muted">Stelvio, Gavia, Mortirolo, Gavia again — a self-supported traverse of the highest road passes in the Alps with notes on resupply, surface conditions, and which climbs to ride at dawn.</p> </div> </a> </div> </div> </section> <section class="section section--inverse" data-section="9"> <div class="container center"> <h2 class="mb-lg">Still stuck?</h2> <p class="p-lg mb-xl">Write to us. We read every message.</p> <div class="button-group button-group--centered"> <a class="button" href="mailto:hello@wknd-adventures.com">Get in touch</a> <a class="button" href="./adventures.html">Browse Adventures</a> </div> </div> </section> </main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">
+          <svg viewBox="0 0 33 33" aria-hidden="true"><path d="M28,0H5C2.24,0,0,2.24,0,5v23c0,2.76,2.24,5,5,5h23c2.76,0,5-2.24,5-5V5c0-2.76-2.24-5-5-5ZM29,17c-6.63,0-12,5.37-12,12h-1c0-6.63-5.37-12-12-12v-1c6.63,0,12-5.37,12-12h1c0,6.63,5.37,12,12,12v1Z" fill="currentColor"/></svg>
+          <span class="logo-text">WKND<br>Adventures</span>
+        </div>
+        <p class="p-sm footer-tagline">Bold Stories. Real Life. Wild Places. Published weekly from somewhere with no Wi-Fi.</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">Explore</h4>
+        <ul>
+          <li><a class="footer-link" href="./adventures.html">Adventures</a></li>
+          <li><a class="footer-link" href="./expeditions.html">Expeditions</a></li>
+          <li><a class="footer-link" href="./field-notes.html">Field Notes</a></li>
+          <li><a class="footer-link" href="./destinations.html">Destinations</a></li>
+          <li><a class="footer-link" href="./basecamp.html">Basecamp</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Recent Stories</h4>
+        <ul>
+          <li><a class="footer-link" href="./blog/patagonia-trek.html">W Circuit, Patagonia</a></li>
+          <li><a class="footer-link" href="./blog/kayaking-norway.html">Lofoten Islands</a></li>
+          <li><a class="footer-link" href="./blog/alpine-cycling.html">High Alps by Bike</a></li>
+          <li><a class="footer-link" href="./blog/yosemite-rock-climbing.html">Yosemite Climbing</a></li>
+          <li><a class="footer-link" href="./blog/mountain-photography.html">Mountain Photography</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Info</h4>
+        <ul>
+          <li><a class="footer-link" href="./gear.html">Gear</a></li>
+          <li><a class="footer-link" href="./sustainability.html">Sustainability</a></li>
+          <li><a class="footer-link" href="./about.html">About</a></li>
+          <li><a class="footer-link" href="./community.html">Community</a></li>
+          <li><a class="footer-link" href="./faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="p-sm footer-tagline">© 2026 WKND Adventures. All rights reserved.</p>
+      <p class="p-sm footer-tagline">Made for the people who go.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

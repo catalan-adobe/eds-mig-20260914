@@ -3,3 +3,5 @@
 {"ts":"2026-09-23T10:53:27Z","skill":"stardust:extract","phase":"prep","event":"end","detail":"21/21 live; types landing1 article10 listing7 static3; 11 module candidates"}
 {"ts":"2026-09-23T10:55:03Z","skill":"stardust:replica","phase":"preserve-direction","event":"end","detail":"verbatim promotion; register empty; dynamics 5 rows all self"}
 {"ts":"2026-09-23T11:16:11Z","skill":"stardust:replica","phase":"source-fidelity-gate","event":"end","detail":"4/4 archetypes pass 1440+360: index 0.00/0.01, article 0.00/0.00, adventures 0.00/0.00, about 0.00/0.00(settle); Δh 0; 0 structural red"}
+{"ts":"2026-09-23T11:35:32Z","skill":"stardust:migrate","phase":"render","event":"start"}
+{"ts":"2026-09-23T11:37:24Z","skill":"stardust:migrate","phase":"render","event":"end","detail":"21/21 rendered, 0 broken links, content-count identical, sibling pixel ≤0.28%"}

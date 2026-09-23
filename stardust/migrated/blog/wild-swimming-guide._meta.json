@@ -1,0 +1,70 @@
+{
+  "slug": "blog-wild-swimming-guide-html",
+  "type": "article",
+  "renderBranch": "A'",
+  "template": "blog-patagonia-trek-html",
+  "modules": [],
+  "slotsFilled": [
+    "hero",
+    "section",
+    "section",
+    "section",
+    "section"
+  ],
+  "canonShas": {
+    "header": "1ad8732be249",
+    "footer": "15c6a771a26c",
+    "css": "45c20094fe88"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "variance-probe-superseded",
+      "reason": "every sibling individually pixel-gated at 1440+360 (<=0.28%, delta 0) - stronger than the live-vs-live variance probe"
+    }
+  ],
+  "metadata": {
+    "title": "Reading a River: The Wild Swimming Guide — WKND Adventures",
+    "description": "A hybrid guide-essay on wild swimming — how to read rivers, understand access and ethics, manage the cold, and find the joy of water that isn",
+    "canonical": null,
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Reading a River: The Wild Swimming Guide — WKND Adventures",
+    "description": "A hybrid guide-essay on wild swimming — how to read rivers, understand access and ethics, manage the cold, and find the joy of water that isn",
+    "mainEntityOfPage": "https://wknd-adventures.com/blog/wild-swimming-guide.html"
+  },
+  "migratedAt": "2026-09-23T11:35:55Z",
+  "designMdSha": "dc1e5e19ef03",
+  "designJsonSha": "64353e7c79d0",
+  "sourceCurrentSha": "90857a4069f1",
+  "sourceProposedSha": "cfdeb352bff4",
+  "fidelityTier": "sibling",
+  "archetypeSource": "blog-patagonia-trek-html",
+  "archetypeSha": "2bb59903c10d",
+  "variants": [],
+  "gatesPassed": [
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "delivery-lint",
+    "content-count",
+    "content-fidelity"
+  ],
+  "gateEvidence": {
+    "pixel-gate-1440": "0.00% (0 px, threshold 10%), height delta 0px, round sib1 @1440 (sib-blog-wild-swimming-guide-html-1440.log) [prototype regime]",
+    "pixel-gate-360": "0.00% (0 px, threshold 10%), height delta 0px, round sib1 @360 (sib-blog-wild-swimming-guide-html-360.log) [prototype regime]",
+    "delivery-lint": "0 P0 · 0 P1 · 2 P2 (delivery-lint --path /blog/wild-swimming-guide)",
+    "content-count": "content-diff: 1 (0 structural 🔴) (cd-blog-wild-swimming-guide-html.log)",
+    "content-fidelity": "content-diff counts identical to capture; 0 structural red (cd-blog-wild-swimming-guide-html.log)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 2,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "blog/wild-swimming-guide.html",
+  "outputPathDefault": null,
+  "sidecar": "blog/wild-swimming-guide._meta.json",
+  "driverVersion": "1"
+}

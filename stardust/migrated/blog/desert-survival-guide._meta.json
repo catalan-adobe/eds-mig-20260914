@@ -1,0 +1,70 @@
+{
+  "slug": "blog-desert-survival-guide-html",
+  "type": "article",
+  "renderBranch": "A'",
+  "template": "blog-patagonia-trek-html",
+  "modules": [],
+  "slotsFilled": [
+    "hero",
+    "section",
+    "section",
+    "section",
+    "section"
+  ],
+  "canonShas": {
+    "header": "1ad8732be249",
+    "footer": "15c6a771a26c",
+    "css": "45c20094fe88"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "variance-probe-superseded",
+      "reason": "every sibling individually pixel-gated at 1440+360 (<=0.28%, delta 0) - stronger than the live-vs-live variance probe"
+    }
+  ],
+  "metadata": {
+    "title": "48 Hours in the Sonoran: A Field Guide — WKND Adventures",
+    "description": "A field guide to 48 hours in the Sonoran Desert — water, heat management, navigation, wildlife, and the night desert.",
+    "canonical": null,
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "48 Hours in the Sonoran: A Field Guide — WKND Adventures",
+    "description": "A field guide to 48 hours in the Sonoran Desert — water, heat management, navigation, wildlife, and the night desert.",
+    "mainEntityOfPage": "https://wknd-adventures.com/blog/desert-survival-guide.html"
+  },
+  "migratedAt": "2026-09-23T11:35:55Z",
+  "designMdSha": "dc1e5e19ef03",
+  "designJsonSha": "64353e7c79d0",
+  "sourceCurrentSha": "e7d53f3ea3df",
+  "sourceProposedSha": "cbf0d62ad796",
+  "fidelityTier": "sibling",
+  "archetypeSource": "blog-patagonia-trek-html",
+  "archetypeSha": "2bb59903c10d",
+  "variants": [],
+  "gatesPassed": [
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "delivery-lint",
+    "content-count",
+    "content-fidelity"
+  ],
+  "gateEvidence": {
+    "pixel-gate-1440": "0.00% (0 px, threshold 10%), height delta 0px, round sib1 @1440 (sib-blog-desert-survival-guide-html-1440.log) [prototype regime]",
+    "pixel-gate-360": "0.00% (0 px, threshold 10%), height delta 0px, round sib1 @360 (sib-blog-desert-survival-guide-html-360.log) [prototype regime]",
+    "delivery-lint": "0 P0 · 0 P1 · 2 P2 (delivery-lint --path /blog/desert-survival-guide)",
+    "content-count": "content-diff: 1 (0 structural 🔴) (cd-blog-desert-survival-guide-html.log)",
+    "content-fidelity": "content-diff counts identical to capture; 0 structural red (cd-blog-desert-survival-guide-html.log)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 2,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "blog/desert-survival-guide.html",
+  "outputPathDefault": null,
+  "sidecar": "blog/desert-survival-guide._meta.json",
+  "driverVersion": "1"
+}

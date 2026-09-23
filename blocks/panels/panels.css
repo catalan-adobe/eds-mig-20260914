@@ -1,0 +1,75 @@
+/* stylelint-disable no-descending-specificity -- rule order mirrors the source stylesheet; outcomes are decided by specificity */
+.panels {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+.panels.promo {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.panels .panel {
+  overflow: hidden;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-card);
+  background: var(--color-white);
+}
+
+main .section.inverse .panels .panel {
+  border-color: rgb(255 255 255 / 12%);
+  background: rgb(255 255 255 / 6%);
+  color: var(--color-white);
+}
+
+.panels .panel > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: var(--space-lg);
+}
+
+.panels .panel p:has(> strong:only-child) {
+  align-self: flex-start;
+}
+
+main .section .panels .panel p:has(> strong:only-child) + :is(h3, h4) {
+  margin-top: 0;
+}
+
+main .section .panels h3 {
+  font-size: var(--text-2xl);
+}
+
+main .section .panels.promo h3 {
+  font-size: var(--text-3xl);
+}
+
+.panels .panel p {
+  font-size: var(--text-lg);
+  line-height: var(--leading-normal);
+}
+
+.panels:not(.promo) .panel p {
+  color: var(--color-gray-500);
+}
+
+main .section.inverse .panels:not(.promo) .panel p {
+  color: rgb(255 255 255 / 55%);
+}
+
+.panels .button-group {
+  display: block;
+  margin-top: 0;
+}
+
+.panels .button-group a.button {
+  display: flex;
+}
+
+@media (width <= 768px) {
+  .panels,
+  .panels.promo {
+    grid-template-columns: 1fr;
+  }
+}

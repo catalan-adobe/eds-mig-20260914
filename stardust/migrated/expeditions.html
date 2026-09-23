@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- stardust:migrate
+  writtenBy:        stardust:migrate
+  writtenAt:        2026-09-23T11:35:55Z
+  page:             Expeditions — WKND Adventures
+  slug:             expeditions-html
+  pagePath:         migrated/expeditions.html
+  renderBranch:     A'
+  template:         adventures-html
+  archetypePath:    stardust/prototypes/adventures-html-proposed.html
+  archetypeSha:     4b26da5626f6
+  sourceCurrent:    stardust/current/pages/expeditions-html.json
+  againstDirection: stardust/direction.md (Active)
+  designMd:         DESIGN.md (sha: dc1e5e19ef03)
+  designJson:       DESIGN.json (sha: 64353e7c79d0)
+  canonShas:        header:1ad8732be249 footer:15c6a771a26c css:45c20094fe88
+  decisionTrace:    expeditions._meta.json
+  brokenInternalLinks: 0
+  stardustVersion:  local
+-->
+<style>
+:root {
+  --color-white: #fff;
+  --color-black: #0f1a14;
+  --color-amber: #e8651a;
+  --color-cream: #f5f0e8;
+  --color-gray-100: #f0ece4;
+  --color-gray-200: #ddd8cf;
+  --color-gray-300: #c8c2b8;
+  --color-gray-500: #7a8a80;
+  --color-gray-700: #3d4f45;
+  --font-heading: "Syncopate", sans-serif;
+  --font-body: "Instrument Sans", sans-serif;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.5rem;
+  --text-5xl: 3.5rem;
+  --leading-tight: 1.1;
+  --leading-snug: 1.3;
+  --leading-normal: 1.6;
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 5rem;
+  --container-max: 1200px;
+  --container-narrow: 48rem;
+  --container-padding: 1.5rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-card: 1.25rem;
+  --radius-full: 9999px;
+  --transition-fast: 0.15s ease;
+}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Expeditions — WKND Adventures","description":"Multi-day journeys, big summits, and epic adventures.","url":"https://wknd-adventures.com/expeditions.html"}</script>
+<meta charset="utf-8">
+<meta name="stardust-slug" content="expeditions-html">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Expeditions — WKND Adventures</title>
+<meta name="description" content="Multi-day journeys, big summits, and epic adventures.">
+<link rel="icon" type="image/svg+xml" href="https://wknd-adventures.com/favicon.svg">
+<link rel="stylesheet" href="./assets/canon.css">
+<script src="./assets/canon.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <div class="container nav-inner">
+    <a class="logo" href="./index.html" aria-label="WKND Adventures home">
+      <svg viewBox="0 0 33 33" aria-hidden="true"><path d="M28,0H5C2.24,0,0,2.24,0,5v23c0,2.76,2.24,5,5,5h23c2.76,0,5-2.24,5-5V5c0-2.76-2.24-5-5-5ZM29,17c-6.63,0-12,5.37-12,12h-1c0-6.63-5.37-12-12-12v-1c6.63,0,12-5.37,12-12h1c0,6.63,5.37,12,12,12v1Z" fill="currentColor"/></svg>
+      <span class="logo-text">WKND<br>Adventures</span>
+    </a>
+    <nav class="nav-menu" id="nav-menu" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <button class="nav-trigger" aria-expanded="false"><span>Explore</span><span class="nav-caret"></span></button>
+          <div class="nav-panel"><div class="container nav-grid">
+            <a class="nav-link" href="./adventures.html"><strong>Adventures</strong><span>Hiking, climbing, surfing, cycling. Browse all activities and find your next route.</span></a>
+            <a class="nav-link" href="./expeditions.html"><strong>Expeditions</strong><span>Multi-day journeys documented in full — day-by-day accounts from Patagonia to the Lofoten Islands.</span></a>
+            <a class="nav-link" href="./destinations.html"><strong>Destinations</strong><span>Wild places worth going to. Permit details, conditions, and what to expect on the ground.</span></a>
+            <a class="nav-link" href="./basecamp.html"><strong>Basecamp</strong><span>New here? Pick an activity, find a route, and get moving — your starting point for everything.</span></a>
+          </div></div>
+        </li>
+        <li class="nav-item">
+          <button class="nav-trigger" aria-expanded="false"><span>Stories</span><span class="nav-caret"></span></button>
+          <div class="nav-panel"><div class="container nav-stories">
+            <div class="nav-stories-pages">
+              <a class="nav-link" href="./field-notes.html"><strong>Field Notes</strong><span>Essays, photographs, and dispatches from the wild. Slower stories for people who go further.</span></a>
+              <a class="nav-link" href="./community.html"><strong>Community</strong><span>Reader submissions, contributor dispatches, and the people behind the routes.</span></a>
+            </div>
+            <div>
+              <p class="nav-label">Recent from the Field</p>
+              <div class="nav-articles">
+                <a class="nav-link" href="./blog/patagonia-trek.html"><strong>W Circuit: 9 Days, 115 km</strong><span>A full account of Torres del Paine — permits, camps, and the weather that shaped every decision.</span></a>
+                <a class="nav-link" href="./blog/kayaking-norway.html"><strong>Lofoten Islands: Arctic Surfing</strong><span>Seven days on the water between Lofoten peaks — tidal planning and the surf break at Unstad.</span></a>
+                <a class="nav-link" href="./blog/alpine-cycling.html"><strong>Six Days Through the High Alps by Bike</strong><span>Galibier, Izoard, Mortirolo — a self-supported traverse of the highest Alpine passes.</span></a>
+                <a class="nav-link" href="./blog/mountain-photography.html"><strong>The Camera on Your Back</strong><span>Practical and philosophical. How to shoot in the mountains without compromising your movement.</span></a>
+              </div>
+            </div>
+          </div></div>
+        </li>
+        <li class="nav-item">
+          <button class="nav-trigger" aria-expanded="false"><span>Info</span><span class="nav-caret"></span></button>
+          <div class="nav-panel"><div class="container nav-grid">
+            <a class="nav-link" href="./gear.html"><strong>Gear</strong><span>What to carry and why. Equipment reviews from the people who actually use it in the field.</span></a>
+            <a class="nav-link" href="./sustainability.html"><strong>Sustainability</strong><span>Our wild ethics. How we think about adventure, access, and the land it happens on.</span></a>
+            <a class="nav-link" href="./about.html"><strong>About</strong><span>Who we are, how we work, and what we believe about adventure writing.</span></a>
+            <a class="nav-link" href="./faq.html"><strong>FAQ</strong><span>Permits, access, conditions, and common practical questions, answered in full.</span></a>
+          </div></div>
+        </li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <a class="button" href="./community.html">Subscribe</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <svg class="icon-open" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="2" fill="currentColor"/><rect x="3" y="11" width="18" height="2" fill="currentColor"/><rect x="3" y="16" width="18" height="2" fill="currentColor"/></svg>
+        <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 5L19 19M19 5L5 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main-content" data-template="adventures-html"> <section class="hero hero--full" data-section="1"> <div class="hero-bg"> <img src="https://wknd-adventures.com/images/adventures/adobestock-201222633.jpg" alt="Patagonia expedition landscape" fetchpriority="high">  </div> <div class="container hero-content"> <div class="hero-inner"> <p class="tag">WKND Adventures</p> <h1 class="mb-lg">Expeditions</h1> <p class="p-xl hero-lead">Three continents. Forty-three days on the trail. These are the journeys we can't stop thinking about.</p> <div class="button-group"> <a class="button button--accent" href="./blog/patagonia-trek.html">Read Patagonia</a> <a class="button button--ghost" href="./destinations.html">See Destinations</a> </div> </div> </div> </section> <section class="section section--accent" data-section="2"> <div class="container container--narrow"> <h2 class="mb-lg">W Circuit: 9 Days, 115 km, One Life-Changing Walk</h2> <p class="p-lg mb-lg">Torres del Paine is not a place you visit. It's a place that works on you — slowly, relentlessly, through wind and weather and the sheer scale of its granite towers.</p><p class="p-lg mb-lg">The W Circuit covers the park's most iconic terrain: Los Cuernos, the French Valley, the Mirador Las Torres. Over nine days and 115 kilometres, we documented every camp, every weather window, every lesson the trail had to teach.</p><p class="p-lg mb-xl">Jordan M. and Morgan L. completed the route in late austral summer, carrying full packs and splitting the writing. This is the definitive WKND account of South America's greatest trail. Gear lists, daily breakdowns, honest assessments of what the guidebooks won't tell you.</p> <div class="button-group"> <a class="button" href="./blog/patagonia-trek.html">Read the Full Story</a> </div> </div> </section> <section class="section" data-section="3"> <div class="container"> <div class="section-heading"> <h2>Our Expeditions</h2> </div> <div class="grid grid--3 gap-lg"> <a class="article-card" href="./blog/patagonia-trek.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/adventures/adobestock-231698835.jpg" alt="Torres del Paine massif under dramatic Patagonian sky" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Americas</div> </div> <h3 class="h5 mb-sm">W Circuit: 9 Days, 115 km</h3> <p class="p-sm muted">A full account of the W Circuit in Torres del Paine — permit strategy, daily stage breakdowns, refugio conditions, and the one weather window that made it worth every hour of planning.</p> </div> </a><a class="article-card" href="./blog/kayaking-norway.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/magazine/surfer-wave-02.jpg" alt="Cold Atlantic swell, Lofoten Islands, Norway" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Europe</div> </div> <h3 class="h5 mb-sm">Lofoten Islands: Arctic Surfing and Swell</h3> <p class="p-sm muted">Seven days surfing between the Lofoten peaks — swell windows, cold-water preparation, and why Unstad produces some of the best Arctic waves in Europe.</p> </div> </a><a class="article-card" href="./blog/alpine-cycling.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/adventures/adobestock-261097343.jpeg" alt="Alpine cycling through the high passes" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Europe</div> </div> <h3 class="h5 mb-sm">Six Days Through the High Alps by Bike</h3> <p class="p-sm muted">Stelvio, Gavia, Mortirolo, Gavia again — a self-supported traverse of the highest road passes in the Alps with notes on resupply, surface conditions, and which climbs to ride at dawn.</p> </div> </a> </div> </div> </section> <section class="section section--secondary" data-section="4"> <div class="container container--narrow"> <div class="section-heading"> <h2>What an Expedition Demands</h2> </div> <p class="p-lg mb-md">WKND uses the word expedition deliberately, because it has been emptied of meaning by the travel industry. For us, an expedition requires a minimum of three consecutive days in terrain where access to outside assistance is genuinely limited — not just inconvenient. It requires camp-to-camp movement under load, meaning you carry what you sleep in and what you eat, and the weight compounds the difficulty of the terrain in ways that a day hike never does. It requires the physical capacity to sustain output across multiple days of accumulated fatigue, which is a different kind of fitness than the kind that gets you up a steep hill on a single morning.</p><p class="p-lg mb-md">Base weight is a proxy for competence on a long route. Every extra kilogram you carry on day one is a kilogram you'll resent on day four, when your feet are already worn and the pass is still above you. WKND contributors typically carry between 12 and 18 kilograms fully loaded on multi-day expeditions, depending on the terrain and season. That number includes shelter, sleep system, food, water treatment, first aid, navigation equipment, emergency signalling, and clothing for expected and unexpected conditions. It does not include casual camera kits that photographers insist on carrying. The 18 kg figure includes those too.</p><p class="p-lg mb-md">There's a meaningful difference between a guided tour and a self-supported expedition — and both have genuine value. A guided tour provides professional risk management, local knowledge, logistical infrastructure, and the freedom to focus on the experience rather than the decision-making. A self-supported expedition transfers all of those responsibilities to the party. It demands stronger navigation, better judgment about weather and terrain, the ability to make sound decisions under fatigue, and the psychological resilience to sit with uncertainty. Neither is superior; they are different activities that share the same landscape.</p><p class="p-lg mb-md">WKND contributors prepare for major expeditions over a minimum of 12 weeks. That preparation includes loaded hiking at target pack weight, regular overnight and multi-day shakedown trips, gear testing in realistic conditions, and active work on the specific technical skills the route demands. It also includes honest conversation with expedition partners about each person's fitness, fears, and likely responses to hardship — because the party that talks before departure deals with far fewer problems on the trail than the one that doesn't.</p><p class="p-lg">WKND's expedition reports document failure as thoroughly as success. Weather retreats, navigational errors, gear failures, summit turns — they're all in the account because they're where the useful information lives. The expedition that turns around 400 metres below the summit because of deteriorating conditions is not a failed expedition. It's a well-executed one, and the detailed account of why the decision was made and what the descent looked like is exactly the kind of information that helps the next party make a better-informed call. We are not interested in accounts that edit out the hard days.</p> </div> </section> <section class="section section--secondary" data-section="5"> <div class="container"> <div class="section-heading"> <h2>What makes an expedition?</h2> </div> <div class="editorial-index"> <div class="editorial-item"> <span class="editorial-number">01</span> <div> <h3 class="h4 mb-md">Multi-day, remote</h3> <p class="p-lg muted">An expedition isn't a day hike with ambition. It demands consecutive days in terrain that punishes mistakes — and rewards genuine commitment. You sleep where you stop, and you carry what you need.</p> </div> </div> <div class="editorial-item"> <span class="editorial-number">02</span> <div> <h3 class="h4 mb-md">Documented honestly</h3> <p class="p-lg muted">We don't edit out the hard days. The blisters, the navigational errors, the moment someone cried at camp — it's all in the story. The honest account is the useful one, and it's the only kind we publish.</p> </div> </div> <div class="editorial-item"> <span class="editorial-number">03</span> <div> <h3 class="h4 mb-md">Leave it wilder</h3> <p class="p-lg muted">Every route we document comes with a responsibility. Pack out more than you pack in. Learn the local leave-no-trace protocols. Read our full <a class="text-button" href="./sustainability.html">sustainability commitments</a> before you plan your trip.</p> </div> </div> </div> </div> </section> <section class="section" data-section="6"> <div class="container"> <div class="section-heading"> <h2>Full Accounts</h2> </div> <div class="tabs"> <div class="tab-menu" role="tablist"> <button class="tab-link" role="tab" role="tab" aria-selected="true" aria-controls="tab-climbing">Climbing</button> <button class="tab-link" role="tab" role="tab" aria-selected="false" aria-controls="tab-water">Water</button> <button class="tab-link" role="tab" role="tab" aria-selected="false" aria-controls="tab-cycling">Cycling</button> <button class="tab-link" role="tab" role="tab" aria-selected="false" aria-controls="tab-hiking">Hiking</button> </div> <div class="tab-panels"> <div class="tab-pane" id="tab-climbing" role="tabpanel" role="tabpanel"> <div class="grid grid--3 gap-md"> <a class="article-card" href="./blog/winter-mountaineering.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/activities/ice-climbing.jpg" alt="Winter mountaineering on steep snow slope" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Winter</div> </div> <h3 class="h6 mb-sm">Why Cold Routes Demand Warm Minds</h3> <p class="p-sm muted">Winter mountaineering primer</p> </div> </a><a class="article-card" href="./blog/patagonia-trek.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/adventures/adobestock-231698835.jpg" alt="W Circuit Patagonia" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Expedition</div> </div> <h3 class="h6 mb-sm">W Circuit, Patagonia</h3> <p class="p-sm muted">9 days, 115 km in Torres del Paine</p> </div> </a><a class="article-card" href="./blog/yosemite-rock-climbing.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/activities/sport-climbing.jpg" alt="Yosemite rock climbing" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Climbing</div> </div> <h3 class="h6 mb-sm">First Light on the Valley</h3> <p class="p-sm muted">Yosemite beginner guide</p> </div> </a> </div> </div> <div class="tab-pane" id="tab-water" role="tabpanel" role="tabpanel" hidden> <div class="grid grid--3 gap-md"> <a class="article-card" href="./blog/wild-swimming-guide.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/magazine/beach-walking.jpg" alt="Wild swimming in a mountain pool" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Water</div> </div> <h3 class="h6 mb-sm">Reading a River</h3> <p class="p-sm muted">Wild swimming guide</p> </div> </a><a class="article-card" href="./blog/kayaking-norway.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/magazine/surfer-wave-02.jpg" alt="Cold Atlantic swell, Lofoten Islands, Norway" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Surf</div> </div> <h3 class="h6 mb-sm">Lofoten Islands</h3> <p class="p-sm muted">Arctic surf expedition, Norway</p> </div> </a><a class="article-card" href="./blog/surfing-costa-rica.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/adventures/adobestock-278302117.jpeg" alt="Surfing Costa Rica" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Surf</div> </div> <h3 class="h6 mb-sm">Pavones &amp; Playa Negra</h3> <p class="p-sm muted">Costa Rica break guide</p> </div> </a> </div> </div> <div class="tab-pane" id="tab-cycling" role="tabpanel" role="tabpanel" hidden> <div class="grid grid--3 gap-md"> <a class="article-card" href="./blog/alpine-cycling.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/adventures/adobestock-261097343.jpeg" alt="Road cyclists riding hard through the high passes" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Cycling</div> </div> <h3 class="h6 mb-sm">Galibier, Izoard, Telegraphe</h3> <p class="p-sm muted">Six days through the High Alps by bike</p> </div> </a><a class="article-card" href="./blog/mountain-photography.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/adventures/adobestock-277768563.jpeg" alt="Mountain photography at alpenglow" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Essay</div> </div> <h3 class="h6 mb-sm">The Camera on Your Back</h3> <p class="p-sm muted">Mountain photography guide</p> </div> </a><a class="article-card" href="./blog/ultralight-backpacking.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/adventures/adobestock-257541512.jpeg" alt="Ultralight backpacking gear" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Gear</div> </div> <h3 class="h6 mb-sm">Sub-10 lb: What to Cut</h3> <p class="p-sm muted">Ultralight backpacking guide</p> </div> </a> </div> </div> <div class="tab-pane" id="tab-hiking" role="tabpanel" role="tabpanel" hidden> <div class="grid grid--3 gap-md"> <a class="article-card" href="./blog/patagonia-trek.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/adventures/adobestock-231698835.jpg" alt="Patagonia W Circuit" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Expedition</div> </div> <h3 class="h6 mb-sm">W Circuit, Patagonia</h3> <p class="p-sm muted">9 days, 115 km</p> </div> </a><a class="article-card" href="./blog/ultralight-backpacking.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/adventures/adobestock-257541512.jpeg" alt="Ultralight backpacking gear laid out" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Gear</div> </div> <h3 class="h6 mb-sm">Sub-10 lb: What to Cut</h3> <p class="p-sm muted">Ultralight backpacking guide</p> </div> </a><a class="article-card" href="./blog/desert-survival-guide.html"> <div class="article-card-image"> <img src="https://wknd-adventures.com/images/adventures/adobestock-185324648.jpg" alt="Desert landscape at golden hour" loading="lazy"> </div> <div class="article-card-body"> <div class="article-card-meta"> <div class="tag">Desert</div> </div> <h3 class="h6 mb-sm">48 Hours in the Sonoran</h3> <p class="p-sm muted">A field guide to desert survival</p> </div> </a> </div> </div> </div> </div> </div> </section> <section class="section section--secondary" data-section="7"> <div class="container"> <div class="section-heading"> <h2>The Gear You'll Actually Need</h2> </div> <div class="editorial-index"> <div class="editorial-item"> <span class="editorial-number">01</span> <div> <h3 class="h4 mb-md">Navigation &amp; Safety</h3> <p class="p-lg muted">A handheld GPS unit — Garmin inReach Mini 2 is the current standard in WKND kit lists — serves two roles: navigation and emergency signalling via satellite SOS. A printed topo map is not optional, because battery failure is a real event. Every expedition party should carry a PLB (personal locator beacon) as a separate backup to any two-way satellite communicator. Emergency protocols — who calls for rescue, what information to transmit, what to do while waiting — should be discussed and agreed before departure, not worked out at the moment they're needed.</p> </div> </div> <div class="editorial-item"> <span class="editorial-number">02</span> <div> <h3 class="h4 mb-md">Sleep Systems</h3> <p class="p-lg muted">For alpine conditions (overnight temperatures regularly below 0°C), your shelter needs a minimum 3-season rating and ideally a geodesic or semi-geodesic structure that handles wind load without collapsing. Sleeping bag temperature ratings should be treated as lower-comfort limits, not the temperature you'll sleep well at — add 5–7°C of margin. Sleeping mat R-value is non-negotiable: anything below R3 on glacier or snowpack terrain is inadequate regardless of your sleeping bag's rating. We use an R5+ mat for anything above 2500 metres in winter or shoulder season.</p> </div> </div> <div class="editorial-item"> <span class="editorial-number">03</span> <div> <h3 class="h4 mb-md">Food &amp; Water</h3> <p class="p-lg muted">The calorie target for a loaded multi-day expedition is 3,500–4,500 kcal per day depending on terrain, pack weight, and individual metabolism — significantly above daily maintenance needs. Food weight should sit at approximately 800–900 g per person per day when using dehydrated meals. For water treatment, a Sawyer Squeeze filter handles most backcountry sources efficiently; in high alpine terrain above human activity, a UV SteriPen is faster and lighter. At altitude or in cold conditions, a chemical treatment backup (Aquatabs) adds negligible weight and covers the scenarios where filter performance drops.</p> </div> </div> </div> </div> </section> <section class="section section--accent" data-section="8"> <div class="container container--narrow"> <div class="section-heading"> <h2>The WKND Pre-Departure Checklist</h2> </div> <ul class="gear-list mb-lg"><li>Permit confirmed and physical or digital copy carried</li><li>Emergency contact filed with name, route plan, and expected return date</li><li>Weather window checked within 48 hours of departure</li><li>First-aid kit contents reviewed and restocked to full inventory</li><li>GPS device loaded with correct route and waypoints; batteries fresh</li><li>Satellite communicator tested and registered with rescue authority</li><li>All food weighed and portioned for exact number of days plus one buffer day</li><li>Water treatment equipment tested and backup method packed</li><li>Shelter pitched at home to check for any broken poles, torn fabric, or faulty zips</li><li>Leave-no-trace protocols reviewed for specific terrain type (alpine, coastal, desert)</li><li>Team medical and dietary requirements confirmed with all party members</li><li>Exit strategy and bailout points identified on map for each day of the route</li></ul> <div class="button-group"> <a class="button" href="#">Download the full checklist</a> </div> </div> </section> <section class="section section--inverse" data-section="9"> <div class="container container--narrow"> <h2 class="mb-lg">What's next</h2> <p class="p-lg mb-xl">In planning We're currently in the planning stages for two major new expeditions. The first: a traverse of the Montana Rockies — 28 days, remote resupply, no trail for long stretches. The second: Iceland's lava fields from Reykjavik to the Westfjords, timed for late summer midnight sun. Both are planned for 2026–2027. Subscribe to get the full dispatches as they happen.</p> <div class="button-group"> <a class="button" href="#">Subscribe for Updates</a> </div> </div> </section> </main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">
+          <svg viewBox="0 0 33 33" aria-hidden="true"><path d="M28,0H5C2.24,0,0,2.24,0,5v23c0,2.76,2.24,5,5,5h23c2.76,0,5-2.24,5-5V5c0-2.76-2.24-5-5-5ZM29,17c-6.63,0-12,5.37-12,12h-1c0-6.63-5.37-12-12-12v-1c6.63,0,12-5.37,12-12h1c0,6.63,5.37,12,12,12v1Z" fill="currentColor"/></svg>
+          <span class="logo-text">WKND<br>Adventures</span>
+        </div>
+        <p class="p-sm footer-tagline">Bold Stories. Real Life. Wild Places. Published weekly from somewhere with no Wi-Fi.</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">Explore</h4>
+        <ul>
+          <li><a class="footer-link" href="./adventures.html">Adventures</a></li>
+          <li><a class="footer-link" href="./expeditions.html">Expeditions</a></li>
+          <li><a class="footer-link" href="./field-notes.html">Field Notes</a></li>
+          <li><a class="footer-link" href="./destinations.html">Destinations</a></li>
+          <li><a class="footer-link" href="./basecamp.html">Basecamp</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Recent Stories</h4>
+        <ul>
+          <li><a class="footer-link" href="./blog/patagonia-trek.html">W Circuit, Patagonia</a></li>
+          <li><a class="footer-link" href="./blog/kayaking-norway.html">Lofoten Islands</a></li>
+          <li><a class="footer-link" href="./blog/alpine-cycling.html">High Alps by Bike</a></li>
+          <li><a class="footer-link" href="./blog/yosemite-rock-climbing.html">Yosemite Climbing</a></li>
+          <li><a class="footer-link" href="./blog/mountain-photography.html">Mountain Photography</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Info</h4>
+        <ul>
+          <li><a class="footer-link" href="./gear.html">Gear</a></li>
+          <li><a class="footer-link" href="./sustainability.html">Sustainability</a></li>
+          <li><a class="footer-link" href="./about.html">About</a></li>
+          <li><a class="footer-link" href="./community.html">Community</a></li>
+          <li><a class="footer-link" href="./faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="p-sm footer-tagline">© 2026 WKND Adventures. All rights reserved.</p>
+      <p class="p-sm footer-tagline">Made for the people who go.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

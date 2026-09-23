@@ -1,0 +1,177 @@
+/* stylelint-disable no-descending-specificity -- rule order mirrors the source stylesheet; outcomes are decided by specificity */
+.tabs .tab-menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: var(--space-sm);
+  border-top: 2px solid var(--color-black);
+}
+
+.tabs .tab-link {
+  padding: var(--space-xs) var(--space-xl) var(--space-xs) 0;
+  border-bottom: 4px solid transparent;
+  color: var(--color-gray-300);
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    color var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.tabs .tab-link:hover {
+  color: var(--color-gray-500);
+}
+
+.tabs .tab-link[aria-selected="true"] {
+  border-bottom-color: var(--color-amber);
+  color: var(--color-black);
+}
+
+.tabs .tab-panels {
+  margin-top: var(--space-2xl);
+}
+
+.tabs .tab-pane[hidden] {
+  display: none;
+}
+
+/* article-card panes */
+.tabs:not(.team) .tab-pane {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.tabs:not(.team) .tab-pane > div {
+  display: contents;
+}
+
+main .section .tabs .article-card-body > h3 {
+  margin: 0 0 var(--space-sm);
+  font-size: var(--text-sm);
+  letter-spacing: 0.05em;
+}
+
+/* team panes */
+.tabs.team .tab-panels {
+  margin-top: var(--space-xl);
+}
+
+.tabs.team .team-profile-row {
+  --team-profile-col-width: 11rem;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  gap: var(--space-md);
+  width: 100%;
+}
+
+.tabs.team .team-profile-spacer {
+  flex: 0 0 auto;
+  width: max(0px, calc((100% - min(100%, var(--container-narrow))) / 2 - var(--team-profile-col-width) - var(--space-md)));
+  min-height: 1px;
+  pointer-events: none;
+}
+
+.tabs.team .team-profile-col {
+  display: flex;
+  flex: 0 0 var(--team-profile-col-width);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-md);
+  width: var(--team-profile-col-width);
+  text-align: left;
+}
+
+.tabs.team .profile-circle {
+  width: 8rem;
+  height: 8rem;
+  overflow: hidden;
+  border: 3px solid var(--color-amber);
+  border-radius: 50%;
+}
+
+.tabs.team .profile-circle p,
+.tabs.team .profile-circle picture,
+.tabs.team .profile-circle img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+}
+
+.tabs.team .team-profile-col p:has(> strong:only-child) {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+}
+
+.tabs.team .team-profile-col p:has(> strong:only-child) > strong {
+  font-weight: inherit;
+}
+
+.tabs.team .team-profile-col p:has(> em:only-child) {
+  color: var(--color-gray-500);
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+}
+
+.tabs.team .team-profile-col p > em {
+  font-style: normal;
+}
+
+.tabs.team .team-profile-bio {
+  flex: 1 1 min(var(--container-narrow), 100%);
+  min-width: 0;
+  max-width: min(var(--container-narrow), 100%);
+}
+
+.tabs.team .team-profile-bio p {
+  color: var(--color-gray-500);
+  font-size: var(--text-lg);
+  line-height: var(--leading-normal);
+}
+
+@media (width <= 768px) {
+  .tabs .tab-menu {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .tabs .tab-link {
+    flex-shrink: 0;
+    padding-right: var(--space-lg);
+    font-size: var(--text-lg);
+  }
+
+  .tabs:not(.team) .tab-pane {
+    grid-template-columns: 1fr;
+  }
+
+  .tabs.team .team-profile-row {
+    flex-flow: column wrap;
+  }
+
+  .tabs.team .team-profile-spacer {
+    display: none;
+  }
+
+  .tabs.team .team-profile-col {
+    flex: none;
+    width: auto;
+    max-width: var(--team-profile-col-width);
+  }
+
+  .tabs.team .team-profile-bio {
+    flex: none;
+    width: 100%;
+    max-width: none;
+  }
+}

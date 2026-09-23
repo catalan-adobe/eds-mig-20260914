@@ -1,0 +1,71 @@
+{
+  "slug": "field-notes-html",
+  "type": "listing",
+  "renderBranch": "A'",
+  "template": "adventures-html",
+  "modules": [],
+  "slotsFilled": [
+    "hero",
+    "section",
+    "section",
+    "section",
+    "section",
+    "section"
+  ],
+  "canonShas": {
+    "header": "1ad8732be249",
+    "footer": "15c6a771a26c",
+    "css": "45c20094fe88"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "variance-probe-superseded",
+      "reason": "every sibling individually pixel-gated at 1440+360 (<=0.28%, delta 0) - stronger than the live-vs-live variance probe"
+    }
+  ],
+  "metadata": {
+    "title": "Field Notes — WKND Adventures",
+    "description": "Photo essays and dispatches from the field.",
+    "canonical": null,
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Field Notes — WKND Adventures",
+    "description": "Photo essays and dispatches from the field.",
+    "url": "https://wknd-adventures.com/field-notes.html"
+  },
+  "migratedAt": "2026-09-23T11:35:55Z",
+  "designMdSha": "dc1e5e19ef03",
+  "designJsonSha": "64353e7c79d0",
+  "sourceCurrentSha": "9d458cc5f1bf",
+  "sourceProposedSha": "24afcd6424a5",
+  "fidelityTier": "sibling",
+  "archetypeSource": "adventures-html",
+  "archetypeSha": "4b26da5626f6",
+  "variants": [],
+  "gatesPassed": [
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "delivery-lint",
+    "content-count",
+    "content-fidelity"
+  ],
+  "gateEvidence": {
+    "pixel-gate-1440": "0.00% (0 px, threshold 10%), height delta 0px, round sib1 @1440 (sib-field-notes-html-1440.log) [prototype regime]",
+    "pixel-gate-360": "0.00% (0 px, threshold 10%), height delta 0px, round sib1 @360 (sib-field-notes-html-360.log) [prototype regime]",
+    "delivery-lint": "0 P0 · 0 P1 · 2 P2 (delivery-lint --path /field-notes)",
+    "content-count": "content-diff: 1 (0 structural 🔴) (cd-field-notes-html.log)",
+    "content-fidelity": "content-diff counts identical to capture; 0 structural red (cd-field-notes-html.log)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 2,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "field-notes.html",
+  "outputPathDefault": null,
+  "sidecar": "field-notes._meta.json",
+  "driverVersion": "1"
+}
