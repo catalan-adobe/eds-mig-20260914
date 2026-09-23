@@ -255,6 +255,13 @@ def styles(sec, cont):
     s += ['narrow'] if 'container--narrow' in ccls else []
     s += ['center'] if 'utility-text-align-center' in ccls else []
     s += ['heading-link'] if cont.select(':scope > .section-heading > .text-button') else []
+    head = cont.select_one(':scope > .section-heading')
+    after = head.find_next_sibling() if head else None
+    if after is not None and after.name in ('p', 'ul', 'ol', 'h3', 'figure', 'div') and not (
+            after.get('class') and set(after.get('class')) & {'grid-layout', 'tab-container', 'editorial-index',
+                                                               'faq-list', 'featured-article', 'button-group', 'tab-menu'}) \
+            and not after.select('.faq-item, .grid-layout, .article-card'):
+        s.append('heading-gap')
     ps = cont.select(':scope > p:not(.tag), :scope > .section-heading ~ p')
     s += ['muted'] if ps and all('utility-text-secondary' in p.get('class', []) for p in ps) else []
     return s
@@ -267,8 +274,8 @@ def section_divs(sec, base):
         return [ticker(sec, base)]
     conts = sec.select(':scope > .container') or [sec]
     out = []
-    for cont in conts:
-        st = styles(sec, cont)
+    for n, cont in enumerate(conts):
+        st = styles(sec, cont) + (['continued'] if n else [])
         if sec.has_attr('data-tabs'):  # tabs on the <section> itself (about/team)
             body = default(cont.select_one('.section-heading'), base) + tabs(sec, base)
         else:

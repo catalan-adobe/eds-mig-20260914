@@ -602,3 +602,15 @@ main .section.article .default-content-wrapper p:has(> picture) + p:has(> em:onl
     height: 260px;
   }
 }
+
+/* a section heading followed by plain content keeps the source .section-heading gap */
+main .section.heading-gap .default-content-wrapper > h2:first-child {
+  margin-bottom: var(--space-xl);
+}
+
+/* second container of one source section: the source gap is a fixed 8rem */
+@media (width <= 768px) {
+  main > .section.continued {
+    padding-top: 6rem;
+  }
+}
