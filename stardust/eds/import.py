@@ -262,6 +262,7 @@ def styles(sec, cont):
                                                                'faq-list', 'featured-article', 'button-group', 'tab-menu'}) \
             and not after.select('.faq-item, .grid-layout, .article-card'):
         s.append('heading-gap')
+    s += ['lists-xl'] if cont.select(':scope > ul.utility-margin-bottom-xl') else []
     ps = cont.select(':scope > p:not(.tag), :scope > .section-heading ~ p')
     s += ['muted'] if ps and all('utility-text-secondary' in p.get('class', []) for p in ps) else []
     return s

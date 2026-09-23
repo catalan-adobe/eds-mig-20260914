@@ -49,3 +49,21 @@ main .section .editorial-index h3 {
 main .section .editorial-index .editorial-number p {
   margin: 0;
 }
+
+.editorial-index p a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-family: var(--font-heading);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  transition: opacity var(--transition-fast);
+}
+
+.editorial-index p a:hover {
+  opacity: 0.65;
+}
