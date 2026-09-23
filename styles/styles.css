@@ -616,16 +616,13 @@ main .section.heading-gap .default-content-wrapper > h2:first-child {
   }
 }
 
-/* figure outside articles: source img.gallery-img--wide + unstyled figcaption */
+/* figure outside articles: source plain <figure><img><figcaption> */
 main .section:not(.article) .default-content-wrapper p:has(> picture) {
   margin-bottom: 0;
 }
 
 main .section:not(.article) .default-content-wrapper p:has(> picture) img {
   width: 100%;
-  height: 360px;
-  border-radius: var(--radius-card);
-  object-fit: cover;
 }
 
 main .section:not(.article) .default-content-wrapper p:has(> picture) + p:has(> em:only-child) {
