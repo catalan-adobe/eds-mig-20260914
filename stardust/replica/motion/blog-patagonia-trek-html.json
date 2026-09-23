@@ -1,0 +1,157 @@
+{
+  "url": "https://wknd-adventures.com/blog/patagonia-trek.html",
+  "width": 1440,
+  "headerTimeline": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "widgetSamples": [],
+  "hoverSamples": [
+    {
+      "sel": ".nav-megamenu-item:nth-child(3)",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(15, 26, 20)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": [
+          {
+            "el": "a.nav-megamenu-link",
+            "transform": "none",
+            "color": "rgb(15, 26, 20)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "background-color 0.15s"
+          },
+          {
+            "el": "a.nav-megamenu-link",
+            "transform": "none",
+            "color": "rgb(15, 26, 20)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "background-color 0.15s"
+          },
+          {
+            "el": "a.nav-megamenu-link",
+            "transform": "none",
+            "color": "rgb(15, 26, 20)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "background-color 0.15s"
+          },
+          {
+            "el": "a.nav-megamenu-link",
+            "transform": "none",
+            "color": "rgb(15, 26, 20)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "background-color 0.15s"
+          }
+        ]
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(15, 26, 20)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": [
+          {
+            "el": "a.nav-megamenu-link",
+            "transform": "none",
+            "color": "rgb(15, 26, 20)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "background-color 0.15s"
+          },
+          {
+            "el": "a.nav-megamenu-link",
+            "transform": "none",
+            "color": "rgb(15, 26, 20)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "background-color 0.15s"
+          },
+          {
+            "el": "a.nav-megamenu-link",
+            "transform": "none",
+            "color": "rgb(15, 26, 20)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "background-color 0.15s"
+          },
+          {
+            "el": "a.nav-megamenu-link",
+            "transform": "none",
+            "color": "rgb(15, 26, 20)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "background-color 0.15s"
+          }
+        ]
+      }
+    }
+  ],
+  "events": {
+    "animations": [],
+    "transitions": [
+      {
+        "prop": "background-color",
+        "el": "div.nav-inner > nav.nav-menu > ul.nav-menu-list > li.nav-menu-list-item.nav-megamenu-item.mega-open > button.nav-link.nav-megamenu-trigger",
+        "y": 0,
+        "dur": "0.15s"
+      },
+      {
+        "prop": "transform",
+        "el": "nav.nav-menu > ul.nav-menu-list > li.nav-menu-list-item.nav-megamenu-item.mega-open > button.nav-link.nav-megamenu-trigger > span.nav-caret",
+        "y": 0,
+        "dur": "0.15s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "mega-open"
+        ],
+        "el": "div.container > div.nav-inner > nav.nav-menu > ul.nav-menu-list > li.nav-menu-list-item.nav-megamenu-item.mega-open",
+        "y": 0
+      }
+    ]
+  }
+}

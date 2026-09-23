@@ -1,0 +1,435 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-09-23T11:20:22Z",
+    "stardustVersion": "0.10.0"
+  },
+  "site": {
+    "originUrl": "https://wknd-adventures.com/",
+    "deployUrl": null,
+    "extractedAt": "2026-09-23T10:53:11.154Z",
+    "pageCap": 0,
+    "totalDiscovered": 21,
+    "crawled": 21
+  },
+  "direction": null,
+  "flow": "replica",
+  "flowChosenAt": "2026-09-23T10:48:22Z",
+  "flowSource": "question",
+  "pages": [
+    {
+      "slug": "about-html",
+      "url": "https://wknd-adventures.com/about.html",
+      "title": "About — WKND Adventures",
+      "type": "static",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-23T10:49:00.678Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-23T11:16:11Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-23T11:20:22Z",
+          "approvedBy": "user"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/about-html.json",
+      "prototypePath": "stardust/prototypes/about-html-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "adventures-html",
+      "url": "https://wknd-adventures.com/adventures.html",
+      "title": "Adventures — WKND Adventures",
+      "type": "listing",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-23T10:49:00.676Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-23T11:16:11Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-23T11:20:22Z",
+          "approvedBy": "user"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/adventures-html.json",
+      "prototypePath": "stardust/prototypes/adventures-html-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "basecamp-html",
+      "url": "https://wknd-adventures.com/basecamp.html",
+      "title": "Basecamp — WKND Adventures",
+      "type": "listing",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-23T10:49:00.674Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/basecamp-html.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "blog-alpine-cycling-html",
+      "url": "https://wknd-adventures.com/blog/alpine-cycling.html",
+      "title": "Six Days Through the High Alps — WKND Adventures",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-23T10:49:13.485Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/blog-alpine-cycling-html.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "blog-desert-survival-guide-html",
+      "url": "https://wknd-adventures.com/blog/desert-survival-guide.html",
+      "title": "48 Hours in the Sonoran: A Field Guide — WKND Adventures",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-23T10:49:20.612Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/blog-desert-survival-guide-html.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "blog-kayaking-norway-html",
+      "url": "https://wknd-adventures.com/blog/kayaking-norway.html",
+      "title": "Lofoten Islands: Arctic Surfing at the Top of the World — WKND Adventures",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-23T10:49:20.615Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/blog-kayaking-norway-html.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "blog-mountain-photography-html",
+      "url": "https://wknd-adventures.com/blog/mountain-photography.html",
+      "title": "The Camera on Your Back — WKND Adventures",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-23T10:49:20.611Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/blog-mountain-photography-html.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "blog-patagonia-trek-html",
+      "url": "https://wknd-adventures.com/blog/patagonia-trek.html",
+      "title": "W Circuit: 9 Days, 115 km — WKND Adventures",
+      "type": "article",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-23T10:49:20.612Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-23T11:05:13Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-23T11:20:22Z",
+          "approvedBy": "user"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/blog-patagonia-trek-html.json",
+      "prototypePath": "stardust/prototypes/blog-patagonia-trek-html-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "blog-surfing-costa-rica-html",
+      "url": "https://wknd-adventures.com/blog/surfing-costa-rica.html",
+      "title": "Pavones and Playa Negra: Costa Rica Surf Guide — WKND Adventures",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-23T10:49:27.663Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/blog-surfing-costa-rica-html.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "blog-ultralight-backpacking-html",
+      "url": "https://wknd-adventures.com/blog/ultralight-backpacking.html",
+      "title": "Sub-10 lb: What to Cut, What to Keep — WKND Adventures",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-23T10:49:27.663Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/blog-ultralight-backpacking-html.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "blog-wild-swimming-guide-html",
+      "url": "https://wknd-adventures.com/blog/wild-swimming-guide.html",
+      "title": "Reading a River: The Wild Swimming Guide — WKND Adventures",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-23T10:49:27.663Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/blog-wild-swimming-guide-html.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "blog-winter-mountaineering-html",
+      "url": "https://wknd-adventures.com/blog/winter-mountaineering.html",
+      "title": "Why Cold Routes Demand Warm Minds — WKND Adventures",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-23T10:49:27.663Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/blog-winter-mountaineering-html.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "blog-yosemite-rock-climbing-html",
+      "url": "https://wknd-adventures.com/blog/yosemite-rock-climbing.html",
+      "title": "First Light on the Valley — WKND Adventures",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-23T10:49:33.161Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/blog-yosemite-rock-climbing-html.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "community-html",
+      "url": "https://wknd-adventures.com/community.html",
+      "title": "Community — WKND Adventures",
+      "type": "listing",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-23T10:49:06.953Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/community-html.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "destinations-html",
+      "url": "https://wknd-adventures.com/destinations.html",
+      "title": "Destinations — WKND Adventures",
+      "type": "listing",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-23T10:49:06.956Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/destinations-html.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "expeditions-html",
+      "url": "https://wknd-adventures.com/expeditions.html",
+      "title": "Expeditions — WKND Adventures",
+      "type": "listing",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-23T10:49:06.952Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/expeditions-html.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "faq-html",
+      "url": "https://wknd-adventures.com/faq.html",
+      "title": "FAQ — WKND Adventures",
+      "type": "static",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-23T10:49:06.951Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/faq-html.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "field-notes-html",
+      "url": "https://wknd-adventures.com/field-notes.html",
+      "title": "Field Notes — WKND Adventures",
+      "type": "listing",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-23T10:49:13.484Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/field-notes-html.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "gear-html",
+      "url": "https://wknd-adventures.com/gear.html",
+      "title": "Gear — WKND Adventures",
+      "type": "listing",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-23T10:49:13.484Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/gear-html.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "index",
+      "url": "https://wknd-adventures.com/",
+      "title": "WKND Adventures — Bold Stories. Real Life. Wild Places.",
+      "type": "landing",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-23T10:49:00.676Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-23T11:02:42Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-23T11:20:22Z",
+          "approvedBy": "user"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/index.json",
+      "prototypePath": "stardust/prototypes/index-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "sustainability-html",
+      "url": "https://wknd-adventures.com/sustainability.html",
+      "title": "Sustainability — WKND Adventures",
+      "type": "static",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-23T10:49:13.484Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/sustainability-html.json",
+      "prototypePath": null,
+      "migratedPath": null
+    }
+  ]
+}

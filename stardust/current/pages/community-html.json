@@ -1,0 +1,421 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-09-23T10:49:06.953Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "community-html",
+  "url": "https://wknd-adventures.com/community.html",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-09-23T10:49:06.953Z",
+  "finalUrl": "https://wknd-adventures.com/community.html",
+  "title": "Community — WKND Adventures",
+  "description": "Join the WKND Adventures community and submit your own stories.",
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null,
+    "type": null
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Community"
+    },
+    {
+      "tag": "h2",
+      "text": "One story a month. Chosen by the editors. Written by you."
+    },
+    {
+      "tag": "h2",
+      "text": "Traversing the Rochefort Ridge: Two Days on Skis Above Chamonix"
+    },
+    {
+      "tag": "h2",
+      "text": "How to Submit"
+    },
+    {
+      "tag": "h3",
+      "text": "Write your dispatch"
+    },
+    {
+      "tag": "h3",
+      "text": "Gather your evidence"
+    },
+    {
+      "tag": "h3",
+      "text": "Send it in"
+    },
+    {
+      "tag": "h2",
+      "text": "From the Wild"
+    },
+    {
+      "tag": "h3",
+      "text": "W Circuit: 9 Days, 115 km"
+    },
+    {
+      "tag": "h3",
+      "text": "Lofoten Islands: Arctic Surfing and Swell"
+    },
+    {
+      "tag": "h3",
+      "text": "Six Days Through the High Alps by Bike"
+    },
+    {
+      "tag": "h2",
+      "text": "Reader Dispatches"
+    },
+    {
+      "tag": "h2",
+      "text": "Join in"
+    },
+    {
+      "tag": "h2",
+      "text": "Submission FAQ"
+    },
+    {
+      "tag": "h2",
+      "text": "Start reading."
+    },
+    {
+      "tag": "h4",
+      "text": "Explore"
+    },
+    {
+      "tag": "h4",
+      "text": "Recent Stories"
+    },
+    {
+      "tag": "h4",
+      "text": "Info"
+    }
+  ],
+  "body": [
+    "Community",
+    "Real adventures from real readers. One story a month — chosen by the editors.",
+    "Not polished. Not perfect. True — and specific enough that only someone who was there could have written it.",
+    "Alex C. from Brisbane had been planning the Rochefort Ridge for three seasons. A classic ski mountaineering traverse in the Mont Blanc massif — approached from the Helbronner cable car on the Italian side, moving across the high ridge above the Mer de Glace with glacier travel, mixed terrain, and the kind of exposure that narrows the whole world to the next placement. He sent us his account two weeks after returning and we read it in one sitting.",
+    "A WKND dispatch is a first-person account of a specific route on specific dates. It should include: the full route name and location, the dates you travelled, your experience level and party size, the conditions you encountered (weather, snow, river levels — whatever was relevant), the gear you relied on, and an honest assessment of difficulty. Write about what happened, not what you planned. If the route went sideways, write about that. If you turned around, write about why. We're not interested in summary; we want the experience from the inside. 1,000–1,500 words is the target length.",
+    "Include at least one photograph — ideally several. They don't need to be professional; they need to be honest and, where possible, informative. Images showing the terrain, conditions, camp locations, and key decision points on the route are more useful than posed summit shots, though we'll take both. If you have a GPX track, include it — we'll use it to verify and supplement the route description. A gear list is strongly encouraged: brand, model, and a one-line note on performance. The more evidence you provide, the stronger your submission and the more useful it becomes for readers planning the same route.",
+    "Email your submission to stories@wknd-adventures.com with the subject line formatted as: [SUBMISSION] Route Name, Location, Month Year. Attach photos as JPEGs (minimum 1800px on the long edge) and your GPX file if you have one. Paste your text in the body of the email — don't send a Google Doc link as your only copy. We review submissions monthly and respond to every one within six weeks, regardless of the outcome. If we decline, we'll tell you why. If we're interested but need revisions, we'll work with you on them.",
+    "A full account of the W Circuit in Torres del Paine — permit strategy, daily stage breakdowns, refugio conditions, and the one weather window that made it worth every hour of planning.",
+    "Seven days surfing between the Lofoten peaks — swell windows, cold-water preparation, and why Unstad produces some of the best Arctic waves in Europe.",
+    "Stelvio, Gavia, Mortirolo, Gavia again — a self-supported traverse of the highest road passes in the Alps with notes on resupply, surface conditions, and which climbs to ride at dawn.",
+    "When Morgan published the Lofoten Arctic surfing article in November, we weren't prepared for the response. Dozens of reader emails, three international surf trip inquiries, and more than a few people who said they'd already booked flights to Bodø. The lesson the article kept teaching — and that readers kept writing back about — was that surfing in the Arctic is not about toughness. It's about the right equipment, the right timing, and patience for the swell. The ocean has its own schedule.",
+    "1,200 words max. One route, one honest account. No fluff. Weekly dispatches from the trail. New stories, route updates, gear notes — no spam, unsubscribe any time."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Skip to main content",
+      "href": "#main-content"
+    },
+    {
+      "label": "WKNDAdventures",
+      "href": "index.html"
+    },
+    {
+      "label": "Explore",
+      "href": null
+    },
+    {
+      "label": "Stories",
+      "href": null
+    },
+    {
+      "label": "Info",
+      "href": null
+    },
+    {
+      "label": "Subscribe",
+      "href": "community.html"
+    },
+    {
+      "label": "Submit Your Story",
+      "href": "#submit"
+    },
+    {
+      "label": "Read Alex's Story",
+      "href": "blog/winter-mountaineering.html"
+    },
+    {
+      "label": "Americas W Circuit: 9 Days, 115 km A full account of the W Circuit in Torres del Paine — permit strategy, daily stage breakdowns, refugio conditions, and the one weather window that made it worth every hour of planning.",
+      "href": "/blog/patagonia-trek.html"
+    },
+    {
+      "label": "Europe Lofoten Islands: Arctic Surfing and Swell Seven days surfing between the Lofoten peaks — swell windows, cold-water preparation, and why Unstad produces some of the best Arctic waves in Europe.",
+      "href": "/blog/kayaking-norway.html"
+    },
+    {
+      "label": "Europe Six Days Through the High Alps by Bike Stelvio, Gavia, Mortirolo, Gavia again — a self-supported traverse of the highest road passes in the Alps with notes on resupply, surface conditions, and which climbs to ride at dawn.",
+      "href": "/blog/alpine-cycling.html"
+    },
+    {
+      "label": "Read the Story",
+      "href": "blog/kayaking-norway.html"
+    },
+    {
+      "label": "Submit via email",
+      "href": "mailto:stories@wknd-adventures.com"
+    },
+    {
+      "label": "Subscribe",
+      "href": "#subscribe"
+    },
+    {
+      "label": "How long should my story be?",
+      "href": null
+    },
+    {
+      "label": "Do I need professional photos?",
+      "href": null
+    },
+    {
+      "label": "Do you pay contributors?",
+      "href": null
+    },
+    {
+      "label": "Can I write about an adventure that didn't go to plan?",
+      "href": null
+    },
+    {
+      "label": "How long does review take?",
+      "href": null
+    },
+    {
+      "label": "Can I submit something I've already published?",
+      "href": null
+    },
+    {
+      "label": "Adventures",
+      "href": "adventures.html"
+    },
+    {
+      "label": "Field Notes",
+      "href": "field-notes.html"
+    },
+    {
+      "label": "Adventures",
+      "href": "adventures.html"
+    },
+    {
+      "label": "Expeditions",
+      "href": "expeditions.html"
+    },
+    {
+      "label": "Field Notes",
+      "href": "field-notes.html"
+    },
+    {
+      "label": "Destinations",
+      "href": "destinations.html"
+    },
+    {
+      "label": "Basecamp",
+      "href": "basecamp.html"
+    },
+    {
+      "label": "W Circuit, Patagonia",
+      "href": "blog/patagonia-trek.html"
+    },
+    {
+      "label": "Lofoten Islands",
+      "href": "blog/kayaking-norway.html"
+    },
+    {
+      "label": "High Alps by Bike",
+      "href": "blog/alpine-cycling.html"
+    },
+    {
+      "label": "Yosemite Climbing",
+      "href": "blog/yosemite-rock-climbing.html"
+    },
+    {
+      "label": "Mountain Photography",
+      "href": "blog/mountain-photography.html"
+    },
+    {
+      "label": "Gear",
+      "href": "gear.html"
+    },
+    {
+      "label": "Sustainability",
+      "href": "sustainability.html"
+    },
+    {
+      "label": "About",
+      "href": "about.html"
+    },
+    {
+      "label": "Community",
+      "href": "community.html"
+    },
+    {
+      "label": "FAQ",
+      "href": "faq.html"
+    }
+  ],
+  "links": [
+    "https://wknd-adventures.com/community.html#main-content",
+    "https://wknd-adventures.com/index.html",
+    "https://wknd-adventures.com/adventures.html",
+    "https://wknd-adventures.com/expeditions.html",
+    "https://wknd-adventures.com/destinations.html",
+    "https://wknd-adventures.com/basecamp.html",
+    "https://wknd-adventures.com/field-notes.html",
+    "https://wknd-adventures.com/community.html",
+    "https://wknd-adventures.com/blog/patagonia-trek.html",
+    "https://wknd-adventures.com/blog/kayaking-norway.html",
+    "https://wknd-adventures.com/blog/alpine-cycling.html",
+    "https://wknd-adventures.com/blog/mountain-photography.html",
+    "https://wknd-adventures.com/gear.html",
+    "https://wknd-adventures.com/sustainability.html",
+    "https://wknd-adventures.com/about.html",
+    "https://wknd-adventures.com/faq.html",
+    "https://wknd-adventures.com/community.html#submit",
+    "https://wknd-adventures.com/blog/winter-mountaineering.html",
+    "mailto:stories@wknd-adventures.com",
+    "https://wknd-adventures.com/community.html#subscribe",
+    "https://wknd-adventures.com/blog/yosemite-rock-climbing.html"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://wknd-adventures.com/images/adventures/adobestock-238491803.jpeg",
+        "alt": "Adventurers gathered around a campfire in the field",
+        "w": 1447,
+        "h": 964
+      },
+      {
+        "src": "https://wknd-adventures.com/images/activities/ice-climbing.jpg",
+        "alt": "Two alpinists on the Rochefort Ridge above Chamonix, France",
+        "w": 1620,
+        "h": 1080
+      },
+      {
+        "src": "https://wknd-adventures.com/images/adventures/adobestock-231698835.jpg",
+        "alt": "Torres del Paine massif under dramatic Patagonian sky",
+        "w": 1600,
+        "h": 886
+      },
+      {
+        "src": "https://wknd-adventures.com/images/magazine/surfer-wave-02.jpg",
+        "alt": "Cold Atlantic swell, Lofoten Islands, Norway",
+        "w": 1279,
+        "h": 853
+      },
+      {
+        "src": "https://wknd-adventures.com/images/adventures/adobestock-261097343.jpeg",
+        "alt": "Alpine cycling through the high passes",
+        "w": 1381,
+        "h": 920
+      },
+      {
+        "src": "https://wknd-adventures.com/images/activities/ice-climbing.jpg",
+        "alt": "Two alpinists on the Rochefort Ridge above Chamonix, France",
+        "w": 1620,
+        "h": 1080
+      }
+    ],
+    "allImgCount": 6,
+    "cssBackgrounds": [],
+    "modals": [],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {
+    "--color-white": "#fff",
+    "--color-black": "#0f1a14",
+    "--color-amber": "#e8651a",
+    "--color-cream": "#f5f0e8",
+    "--color-gray-100": "#f0ece4",
+    "--color-gray-200": "#ddd8cf",
+    "--color-gray-300": "#c8c2b8",
+    "--color-gray-500": "#7a8a80",
+    "--color-gray-700": "#3d4f45",
+    "--font-heading": "\"Syncopate\",sans-serif",
+    "--font-body": "\"Instrument Sans\",sans-serif",
+    "--text-xs": "0.75rem",
+    "--text-sm": "0.875rem",
+    "--text-base": "1rem",
+    "--text-lg": "1.125rem",
+    "--text-xl": "1.25rem",
+    "--text-2xl": "1.5rem",
+    "--text-3xl": "2rem",
+    "--text-4xl": "2.5rem",
+    "--text-5xl": "3.5rem",
+    "--leading-tight": "1.1",
+    "--leading-snug": "1.3",
+    "--leading-normal": "1.6",
+    "--space-xxs": "0.25rem",
+    "--space-xs": "0.5rem",
+    "--space-sm": "0.75rem",
+    "--space-md": "1rem",
+    "--space-lg": "1.5rem",
+    "--space-xl": "2rem",
+    "--space-2xl": "3rem",
+    "--space-3xl": "4rem",
+    "--space-4xl": "5rem",
+    "--section-gap": "3rem",
+    "--container-max": "1200px",
+    "--container-narrow": "48rem",
+    "--container-padding": "1.5rem",
+    "--radius-md": "0.5rem",
+    "--radius-lg": "1rem",
+    "--radius-card": "1.25rem",
+    "--radius-full": "9999px",
+    "--shadow-button": "4px 4px 0 0 #0f1a14",
+    "--transition-fast": "0.15s ease",
+    "--focus-ring-color": "#0f1a14",
+    "--focus-ring-width": "2px",
+    "--focus-ring-offset": "2px"
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 18,
+    "mainTextLen": 5375,
+    "realImageCount": 6,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [],
+    "thirdPartyScriptHosts": [],
+    "truncated": false,
+    "inlineData": [],
+    "globalState": [],
+    "frameworkHints": [],
+    "forms": [],
+    "ariaLiveRegions": 0,
+    "triggers": [
+      {
+        "marker": "aria-haspopup",
+        "href": null
+      },
+      {
+        "marker": "aria-haspopup",
+        "href": null
+      },
+      {
+        "marker": "aria-haspopup",
+        "href": null
+      }
+    ],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 0,
+      "thirdPartyEndpoints": 0,
+      "thirdPartyScriptHosts": 0,
+      "inlineDataBlobs": 0,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": false
+    }
+  },
+  "screenshot": "assets/screenshots/community-html.png",
+  "renderedHtml": "pages/community-html.html"
+}

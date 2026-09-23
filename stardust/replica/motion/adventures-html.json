@@ -1,0 +1,263 @@
+{
+  "url": "https://wknd-adventures.com/adventures.html",
+  "width": 1440,
+  "headerTimeline": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "widgetSamples": [
+    {
+      "sel": ".tab-menu-link:nth-child(3)",
+      "frames": [
+        {
+          "t": 15183.699999988079,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 15386.699999988079,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 15588.800000011921,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 15790.800000011921,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    }
+  ],
+  "hoverSamples": [
+    {
+      "sel": ".nav-megamenu-item:nth-child(2)",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(15, 26, 20)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": [
+          {
+            "el": "a.nav-megamenu-link",
+            "transform": "none",
+            "color": "rgb(15, 26, 20)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "background-color 0.15s"
+          },
+          {
+            "el": "a.nav-megamenu-link",
+            "transform": "none",
+            "color": "rgb(15, 26, 20)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "background-color 0.15s"
+          },
+          {
+            "el": "a.nav-megamenu-article",
+            "transform": "none",
+            "color": "rgb(15, 26, 20)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "background-color 0.15s"
+          },
+          {
+            "el": "a.nav-megamenu-article",
+            "transform": "none",
+            "color": "rgb(15, 26, 20)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "background-color 0.15s"
+          },
+          {
+            "el": "a.nav-megamenu-article",
+            "transform": "none",
+            "color": "rgb(15, 26, 20)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "background-color 0.15s"
+          }
+        ]
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(15, 26, 20)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": [
+          {
+            "el": "a.nav-megamenu-link",
+            "transform": "none",
+            "color": "rgb(15, 26, 20)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "background-color 0.15s"
+          },
+          {
+            "el": "a.nav-megamenu-link",
+            "transform": "none",
+            "color": "rgb(15, 26, 20)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "background-color 0.15s"
+          },
+          {
+            "el": "a.nav-megamenu-article",
+            "transform": "none",
+            "color": "rgb(15, 26, 20)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "background-color 0.15s"
+          },
+          {
+            "el": "a.nav-megamenu-article",
+            "transform": "none",
+            "color": "rgb(15, 26, 20)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "background-color 0.15s"
+          },
+          {
+            "el": "a.nav-megamenu-article",
+            "transform": "none",
+            "color": "rgb(15, 26, 20)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "background-color 0.15s"
+          }
+        ]
+      }
+    }
+  ],
+  "events": {
+    "animations": [],
+    "transitions": [
+      {
+        "prop": "border-bottom-color",
+        "el": "section.section > div.container > div.tab-container.tab-container--wide > div.tab-menu > button.tab-menu-link",
+        "y": 1314,
+        "dur": "0.15s, 0.15s"
+      },
+      {
+        "prop": "color",
+        "el": "section.section > div.container > div.tab-container.tab-container--wide > div.tab-menu > button.tab-menu-link",
+        "y": 1314,
+        "dur": "0.15s, 0.15s"
+      },
+      {
+        "prop": "border-bottom-color",
+        "el": "section.section > div.container > div.tab-container.tab-container--wide > div.tab-menu > button.tab-menu-link.is-active",
+        "y": 1314,
+        "dur": "0.15s, 0.15s"
+      },
+      {
+        "prop": "color",
+        "el": "section.section > div.container > div.tab-container.tab-container--wide > div.tab-menu > button.tab-menu-link.is-active",
+        "y": 1314,
+        "dur": "0.15s, 0.15s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.nav-inner > nav.nav-menu > ul.nav-menu-list > li.nav-menu-list-item.nav-megamenu-item.mega-open > button.nav-link.nav-megamenu-trigger",
+        "y": 901,
+        "dur": "0.15s"
+      },
+      {
+        "prop": "transform",
+        "el": "nav.nav-menu > ul.nav-menu-list > li.nav-menu-list-item.nav-megamenu-item.mega-open > button.nav-link.nav-megamenu-trigger > span.nav-caret",
+        "y": 901,
+        "dur": "0.15s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "is-active"
+        ],
+        "el": "section.section > div.container > div.tab-container.tab-container--wide > div.tab-menu > button.tab-menu-link.is-active",
+        "y": 1314
+      },
+      {
+        "added": [
+          "is-active"
+        ],
+        "el": "section.section > div.container > div.tab-container.tab-container--wide > div > div.tab-pane.is-active",
+        "y": 1314
+      },
+      {
+        "added": [
+          "is-active"
+        ],
+        "el": "section.section > div.container > div.tab-container.tab-container--wide > div.tab-menu > button.tab-menu-link.is-active",
+        "y": 1314
+      },
+      {
+        "added": [
+          "is-active"
+        ],
+        "el": "section.section > div.container > div.tab-container.tab-container--wide > div > div.tab-pane.is-active",
+        "y": 1314
+      },
+      {
+        "added": [
+          "mega-open"
+        ],
+        "el": "div.container > div.nav-inner > nav.nav-menu > ul.nav-menu-list > li.nav-menu-list-item.nav-megamenu-item.mega-open",
+        "y": 901
+      }
+    ]
+  }
+}

@@ -1,0 +1,416 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics detect",
+  "writtenAt": "2026-09-23T10:53:54.848Z",
+  "settleMs": 5000,
+  "width": 1440,
+  "urls": [
+   "https://wknd-adventures.com/",
+   "https://wknd-adventures.com/adventures.html",
+   "https://wknd-adventures.com/about.html",
+   "https://wknd-adventures.com/blog/patagonia-trek.html",
+   "https://wknd-adventures.com/faq.html"
+  ],
+  "reachSource": "stardust/current/pages"
+ },
+ "pages": {
+  "/": {
+   "url": "https://wknd-adventures.com/",
+   "status": 200,
+   "host": "wknd-adventures.com",
+   "title": "WKND Adventures — Bold Stories. Real Life. Wild Places.",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "Explore",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Stories",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Info",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [],
+   "iframes": [],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [],
+    "switcher": []
+   },
+   "cms": {},
+   "framework": null,
+   "globals": [],
+   "clientRendered": [],
+   "listingCandidates": [
+    {
+     "cls": "div",
+     "cards": 4,
+     "sameSite": 4,
+     "hasDate": false
+    }
+   ],
+   "inlineScripts": 0,
+   "inlineFetch": false,
+   "mainText": 3883,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "wknd-adventures.com": 14
+   },
+   "thirdPartyHosts": [],
+   "scripts": [
+    "https://wknd-adventures.com/js/site.js"
+   ],
+   "firstPartyApi": [],
+   "thirdPartyXhr": [],
+   "postBodies": [],
+   "textAtLoad": 3883,
+   "mainEmptyAtLoad": false
+  },
+  "/adventures.html": {
+   "url": "https://wknd-adventures.com/adventures.html",
+   "status": 200,
+   "host": "wknd-adventures.com",
+   "title": "Adventures — WKND Adventures",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "Explore",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Stories",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Info",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [],
+   "iframes": [],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [],
+    "switcher": []
+   },
+   "cms": {},
+   "framework": null,
+   "globals": [],
+   "clientRendered": [],
+   "listingCandidates": [
+    {
+     "cls": "div",
+     "cards": 4,
+     "sameSite": 4,
+     "hasDate": false
+    }
+   ],
+   "inlineScripts": 0,
+   "inlineFetch": false,
+   "mainText": 5810,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "wknd-adventures.com": 11
+   },
+   "thirdPartyHosts": [],
+   "scripts": [
+    "https://wknd-adventures.com/js/site.js"
+   ],
+   "firstPartyApi": [],
+   "thirdPartyXhr": [],
+   "postBodies": [],
+   "textAtLoad": 5810,
+   "mainEmptyAtLoad": false
+  },
+  "/about.html": {
+   "url": "https://wknd-adventures.com/about.html",
+   "status": 200,
+   "host": "wknd-adventures.com",
+   "title": "About — WKND Adventures",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "Explore",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Stories",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Info",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [],
+   "iframes": [],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [],
+    "switcher": []
+   },
+   "cms": {},
+   "framework": null,
+   "globals": [],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 0,
+   "inlineFetch": false,
+   "mainText": 7371,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "wknd-adventures.com": 12
+   },
+   "thirdPartyHosts": [],
+   "scripts": [
+    "https://wknd-adventures.com/js/site.js"
+   ],
+   "firstPartyApi": [],
+   "thirdPartyXhr": [],
+   "postBodies": [],
+   "textAtLoad": 7371,
+   "mainEmptyAtLoad": false
+  },
+  "/blog/patagonia-trek.html": {
+   "url": "https://wknd-adventures.com/blog/patagonia-trek.html",
+   "status": 200,
+   "host": "wknd-adventures.com",
+   "title": "W Circuit: 9 Days, 115 km — WKND Adventures",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "Explore",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Stories",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Info",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [],
+   "iframes": [],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [],
+    "switcher": []
+   },
+   "cms": {},
+   "framework": null,
+   "globals": [],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 0,
+   "inlineFetch": false,
+   "mainText": 9702,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "wknd-adventures.com": 17
+   },
+   "thirdPartyHosts": [],
+   "scripts": [
+    "https://wknd-adventures.com/js/site.js"
+   ],
+   "firstPartyApi": [],
+   "thirdPartyXhr": [],
+   "postBodies": [],
+   "textAtLoad": 9702,
+   "mainEmptyAtLoad": false
+  },
+  "/faq.html": {
+   "url": "https://wknd-adventures.com/faq.html",
+   "status": 200,
+   "host": "wknd-adventures.com",
+   "title": "FAQ — WKND Adventures",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "Explore",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Stories",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Info",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [],
+   "iframes": [],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [],
+    "switcher": []
+   },
+   "cms": {},
+   "framework": null,
+   "globals": [],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 0,
+   "inlineFetch": false,
+   "mainText": 10549,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "wknd-adventures.com": 9
+   },
+   "thirdPartyHosts": [],
+   "scripts": [
+    "https://wknd-adventures.com/js/site.js"
+   ],
+   "firstPartyApi": [],
+   "thirdPartyXhr": [],
+   "postBodies": [],
+   "textAtLoad": 10549,
+   "mainEmptyAtLoad": false
+  }
+ },
+ "findings": [
+  {
+   "id": "m-modal-trigger-aria-haspopup-chrome-only-target-outside-dom",
+   "class": "M",
+   "feature": "modal trigger aria-haspopup (chrome only) → target outside DOM at capture",
+   "hint": "chrome-interaction",
+   "evidence": [
+    "Explore",
+    "Stories",
+    "Info"
+   ],
+   "pages": [
+    "/",
+    "/adventures.html",
+    "/about.html",
+    "/blog/patagonia-trek.html",
+    "/faq.html"
+   ],
+   "reach": {
+    "pages": 63,
+    "of": 21
+   }
+  }
+ ],
+ "reach": {
+  "pagesWithEvidence": 21,
+  "of": 21,
+  "endpoints": {},
+  "searchFormPages": 0,
+  "formPages": 0,
+  "triggerPages": {
+   "aria-haspopup": 63
+  }
+ }
+}

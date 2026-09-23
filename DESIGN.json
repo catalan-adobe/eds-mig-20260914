@@ -1,0 +1,135 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-09-23T10:53:27.266Z",
+    "input": "https://wknd-adventures.com/",
+    "synthesized": "descriptive-from-capture",
+    "read": [
+      "stardust/current/source-css/styles.css",
+      "stardust/current/_computed-styles.json",
+      "stardust/current/pages/*.html"
+    ]
+  },
+  "name": "WKND Adventures",
+  "colors": {
+    "ink": "#0f1a14",
+    "white": "#ffffff",
+    "amber": "#e8651a",
+    "cream": "#f5f0e8",
+    "gray-100": "#f0ece4",
+    "gray-200": "#ddd8cf",
+    "gray-300": "#c8c2b8",
+    "gray-500": "#7a8a80",
+    "gray-700": "#3d4f45"
+  },
+  "typography": {
+    "heading": "Syncopate",
+    "body": "Instrument Sans",
+    "fonts": [
+      "assets/fonts/instrument-sans-latin.woff2",
+      "assets/fonts/syncopate-400-latin.woff2",
+      "assets/fonts/syncopate-700-latin.woff2"
+    ],
+    "license": "OFL (Google Fonts) — self-hostable"
+  },
+  "extensions": {
+    "container": {
+      "max": "1200px",
+      "narrow": "48rem",
+      "padding": "1.5rem / 1rem ≤768px"
+    },
+    "breakpoints": [
+      768,
+      1024
+    ],
+    "motifs": {
+      "buttonShadow": "3px 3px 0 0 (amber|ink|white) → 5px on hover, translate(-2px,-2px)",
+      "radius": {
+        "card": "20px",
+        "pill": "9999px"
+      },
+      "scrim": "linear-gradient(0deg,rgba(0,0,0,.75) 0,rgba(0,0,0,.45) 40%,rgba(0,0,0,.25))",
+      "footerTopBorder": "4px amber"
+    },
+    "voice": {
+      "heroHeadline": "Bold Stories. Real Life. Wild Places.",
+      "ctas": [
+        "Explore Adventures",
+        "Read Field Notes",
+        "Find a destination"
+      ]
+    },
+    "systemComponents": [
+      "navbar (sticky, 3 megamenus, Subscribe)",
+      "inverse-footer (4 cols, bottom bar)"
+    ],
+    "modules": [
+      {
+        "id": "hero",
+        "selector": "hero-section",
+        "pages": 21,
+        "status": "candidate"
+      },
+      {
+        "id": "featured-article",
+        "selector": "featured-article",
+        "pages": 9,
+        "status": "candidate"
+      },
+      {
+        "id": "activity-tabs",
+        "selector": "tab-container [data-tabs]",
+        "pages": 4,
+        "status": "candidate"
+      },
+      {
+        "id": "article-cards",
+        "selector": "grid-layout > article-card",
+        "pages": 21,
+        "status": "candidate"
+      },
+      {
+        "id": "ticker",
+        "selector": "ticker-strip",
+        "pages": 2,
+        "status": "candidate"
+      },
+      {
+        "id": "editorial-index",
+        "selector": "editorial-index",
+        "pages": 7,
+        "status": "candidate"
+      },
+      {
+        "id": "faq",
+        "selector": "faq-item",
+        "pages": 4,
+        "status": "candidate"
+      },
+      {
+        "id": "gallery",
+        "selector": "gallery-img",
+        "pages": 11,
+        "status": "candidate"
+      },
+      {
+        "id": "pull-quote",
+        "selector": "pull-quote",
+        "pages": 10,
+        "status": "candidate"
+      },
+      {
+        "id": "team-profiles",
+        "selector": "team-profile-grid",
+        "pages": 1,
+        "status": "candidate"
+      },
+      {
+        "id": "cta-band",
+        "selector": "accent-section / inverse-section button-group",
+        "pages": 18,
+        "status": "candidate"
+      }
+    ]
+  }
+}
