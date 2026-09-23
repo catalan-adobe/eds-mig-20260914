@@ -67,3 +67,7 @@ main .section .accordion .accordion-answer p {
 .accordion .accordion-item.is-open .accordion-icon {
   transform: rotate(45deg);
 }
+
+main .section .accordion .accordion-question p {
+  margin: 0;
+}

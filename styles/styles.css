@@ -236,7 +236,7 @@ main .section.inverse :focus-visible {
 }
 
 /* default content: paragraphs are the source .paragraph-lg */
-.default-content-wrapper p {
+main .default-content-wrapper p {
   font-size: var(--text-lg);
   line-height: var(--leading-normal);
 }
@@ -249,13 +249,13 @@ main .section.inverse.muted .default-content-wrapper p {
   color: rgb(255 255 255 / 55%);
 }
 
-.default-content-wrapper ul {
+main .default-content-wrapper ul {
   margin-bottom: var(--space-lg);
   padding-left: var(--space-lg);
   list-style: disc;
 }
 
-.default-content-wrapper li {
+main .default-content-wrapper li {
   margin-bottom: var(--space-xs);
 }
 
@@ -555,7 +555,7 @@ main .section.article .default-content-wrapper :is(ul, ol) {
   padding-left: var(--space-lg);
 }
 
-main .section.article .default-content-wrapper li {
+main .section.article main .default-content-wrapper li {
   margin-bottom: var(--space-xs);
   list-style: disc;
 }

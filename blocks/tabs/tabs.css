@@ -35,7 +35,7 @@
   margin-top: var(--space-2xl);
 }
 
-.tabs .tab-pane[hidden] {
+.tabs .tab-panels > .tab-pane[hidden] {
   display: none;
 }
 
@@ -174,4 +174,8 @@ main .section .tabs .article-card-body > h3 {
     width: 100%;
     max-width: none;
   }
+}
+
+main .section .tabs .tab-link p {
+  margin: 0;
 }
