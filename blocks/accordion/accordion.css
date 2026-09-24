@@ -144,6 +144,13 @@ main .section.accordion-container > .accordion-wrapper {
   padding: 0 14px;
 }
 
+/* cmp-image: the source img is INLINE in its column (7px margins that never collapse with
+   the h1 above + the line box's descender below); the foundation's block img loses both */
+main .section.accordion-container
+  > .default-content-wrapper:has(~ .accordion-wrapper) picture img {
+  display: inline;
+}
+
 /* cmp-title--underline on the page title (the aside h3 stays plain) */
 main .section.accordion-container h1::after {
   content: '';
@@ -151,6 +158,13 @@ main .section.accordion-container h1::after {
   width: 84px;
   padding-top: 8px;
   border-bottom: 2px solid var(--color-accent);
+}
+
+/* the aside opens with a hidden separator--space-small (margin 1em = 18px around a
+   zero-height hr whose UA overflow: hidden keeps its margins apart) — 18px above the h3's
+   own 27px; authored <hr> is banned, so the wrapper carries the height */
+main .section.accordion-container > .accordion-wrapper ~ .default-content-wrapper {
+  padding-top: 18px;
 }
 
 /* cmp-text--font-small on the aside copy; the source paragraph carries an inline
