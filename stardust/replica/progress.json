@@ -2,8 +2,17 @@
   "_provenance": {
     "writtenBy": "stardust:replica",
     "writtenAt": "2026-09-24T07:20:59.365Z",
-    "phase": "preserve-direction",
-    "againstInput": "https://wknd.site/us/en"
+    "phase": "source-fidelity-gate",
+    "againstInput": "https://wknd.site/us/en",
+    "updatedBy": "stardust:replica",
+    "updatedAt": "2026-09-24T08:36:13.491Z",
+    "canonChangesApplied": 0,
+    "canonRequests": {
+      "received": 1,
+      "applied": 0,
+      "reverted": 1,
+      "log": "stardust/replica/canon-requests.applied.md"
+    }
   },
   "mainSelectorRationale": "header + main — the outer AEM <main class=\"container responsivegrid …\"> directly follows the single <header>; nested layout <main>s make bare main ambiguous (A-PD4)",
   "archetypes": [
@@ -14,10 +23,137 @@
       "liveUrl": "https://wknd.site/us/en.html",
       "mainSelector": "header + main",
       "siblings": [],
-      "status": "pending",
-      "iterations": 0,
-      "breakpoints": {},
-      "motion": null
+      "status": "approved",
+      "iterations": 3,
+      "breakpoints": {
+        "360": {
+          "iterations": 3,
+          "confirmation": {
+            "round": "conf",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "chromeParity": "ok"
+          },
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "advisory STRETCHED IMAGE, justified (live object-fit cover crop)",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "overflow": false,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE",
+              "why": "visual-diff advisory STRETCHED IMAGE (11 @1440, 8 @360): object-fit:cover crops identical to live — justified (pixel 0.00%)"
+            }
+          ],
+          "residuals": [
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "visual-diff advisory STRETCHED IMAGE (11 @1440, 8 @360): object-fit:cover crops identical to live — justified (pixel 0.00%)",
+              "flaggedFor": "user"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "footer-nav / language-menu text-decoration hovers and mobile-nav hover colour are lifted from live CSS but unobservable by motion-observe (probe blind to text-decoration; panel hidden) — kept, logged A-RC6",
+              "flaggedFor": "user"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "images reference live wknd.site renditions (no captured media dir) — rehost at delivery (capture-state policy)",
+              "flaggedFor": "delivery"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "ledger: source-fidelity-gate start written after its rounds began (interleaved with recreate fixes)",
+              "flaggedFor": "user"
+            }
+          ]
+        },
+        "1440": {
+          "iterations": 3,
+          "confirmation": {
+            "round": "conf",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "chromeParity": "ok"
+          },
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "advisory STRETCHED IMAGE, justified (live object-fit cover crop)",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "overflow": false,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE",
+              "why": "visual-diff advisory STRETCHED IMAGE (11 @1440, 8 @360): object-fit:cover crops identical to live — justified (pixel 0.00%)"
+            }
+          ],
+          "residuals": [
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "visual-diff advisory STRETCHED IMAGE (11 @1440, 8 @360): object-fit:cover crops identical to live — justified (pixel 0.00%)",
+              "flaggedFor": "user"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "footer-nav / language-menu text-decoration hovers and mobile-nav hover colour are lifted from live CSS but unobservable by motion-observe (probe blind to text-decoration; panel hidden) — kept, logged A-RC6",
+              "flaggedFor": "user"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "images reference live wknd.site renditions (no captured media dir) — rehost at delivery (capture-state policy)",
+              "flaggedFor": "delivery"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "ledger: source-fidelity-gate start written after its rounds began (interleaved with recreate fixes)",
+              "flaggedFor": "user"
+            }
+          ]
+        }
+      },
+      "motion": {
+        "observed": 6,
+        "implemented": 6,
+        "dead": [
+          "hover main a[href=\"/us/en/adventures.html\"] (hero CTA)",
+          "hover main article a (image-list cards)",
+          "hover a[aria-label=\"read our articles\"] (primary button)",
+          "hover a[aria-label=\"Facebook WKND Button\"] (social buttons)",
+          "hover footer nav a (probe-visible props)"
+        ],
+        "implementedList": [
+          "body.scrolly header morph @ scrollTop>15 (.5s padding)",
+          "carousel prev/next/indicator active swap",
+          "carousel slide fadeIn .5s",
+          "language menu showMenu/open toggle + outside-click close",
+          "mobile panel body.navPanel-visible (transform .5s)",
+          "primary-nav hover background #ffea00"
+        ]
+      },
+      "approvedBy": "hands-off",
+      "prototype": "stardust/prototypes/us-en-html-proposed.html",
+      "fonts": "Same public source, self-hosted: Asar 400 + Source Sans Pro 300/400/600 (+italics) from the Google Fonts latin woff2 files named by the captured google-fonts.css (stardust/current/assets/fonts/gf/*, SIL OFL) — the extract's own woff2 captures were a different font version (4–7% wider glyphs) and are not used; wknd-icon-font (Apache-2.0, aem-guides-wknd) self-hosted from the capture. No substitutes, no licensed kits.",
+      "canonRequests": 0
     },
     {
       "pageType": "listing",
@@ -28,10 +164,67 @@
       "siblings": [
         "us-en-magazine-html"
       ],
-      "status": "pending",
-      "iterations": 0,
-      "breakpoints": {},
-      "motion": null
+      "status": "approved",
+      "iterations": 1,
+      "breakpoints": {
+        "360": {
+          "iterations": 1,
+          "confirmation": {
+            "round": "conf",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "chromeParity": "ok"
+          },
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "none",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "overflow": false,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [],
+          "residuals": []
+        },
+        "1440": {
+          "iterations": 1,
+          "confirmation": {
+            "round": "conf",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "chromeParity": "ok"
+          },
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "none",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "overflow": false,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [],
+          "residuals": []
+        }
+      },
+      "motion": {
+        "observed": 3,
+        "implemented": 3,
+        "dead": [
+          ".cmp-tabs__tab hover",
+          ".cmp-image-list__item-title-link hover",
+          ".cmp-image-list__item-image-link hover",
+          ".cmp-navigation__item-link hover",
+          ".cmp-teaser__title hover"
+        ]
+      },
+      "approvedBy": "hands-off",
+      "prototype": "stardust/prototypes/us-en-adventures-html-proposed.html",
+      "fonts": "canon: Asar + Source Sans Pro self-hosted Google Fonts woff2 (stardust/current/assets/fonts/gf), wknd-icon-font from the site; no licensed kit, no substitution",
+      "canonRequests": 0
     },
     {
       "pageType": "program",
@@ -56,10 +249,130 @@
         "us-en-adventures-whistler-mountain-biking-html",
         "us-en-adventures-yosemite-backpacking-html"
       ],
-      "status": "pending",
-      "iterations": 0,
-      "breakpoints": {},
-      "motion": null
+      "status": "approved",
+      "iterations": 1,
+      "breakpoints": {
+        "360": {
+          "iterations": 1,
+          "confirmation": {
+            "round": "conf",
+            "pixelPct": 0.04,
+            "heightDelta": 0,
+            "chromeParity": "ok"
+          },
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "advisory STRETCHED IMAGE, justified (live object-fit cover crop)",
+            "pixelPct": 0.04,
+            "heightDelta": 0,
+            "overflow": false,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE",
+              "why": "visual-diff advisory STRETCHED IMAGE on mini-carousel slide sport-climbing.jpeg — identical to the live object-fit cover crop (height 25pc); zero pixel delta in that band (direction.md A-CNZ-2)"
+            }
+          ],
+          "residuals": [
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "visual-diff advisory STRETCHED IMAGE on mini-carousel slide sport-climbing.jpeg — identical to the live object-fit cover crop (height 25pc); zero pixel delta in that band (direction.md A-CNZ-2)",
+              "flaggedFor": "user"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "Images referenced by live wknd.site src + rebuilt coreimg srcset (no captured media dir) — capture-state policy (A-CNZ-1); rehost at delivery",
+              "flaggedFor": "delivery"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "Sharing widgets (.fb-share-button, empty Pinterest anchor) replicated as captured 0 px — third-party scripts never hydrate headless (A-CNZ-6); flag for delivery",
+              "flaggedFor": "delivery"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "motion-compare: 4 MISSING/4 advisory lines are class-name mappings (cmp-*--active ↔ clean *--active) with identical add counts — treated as parity (A-CNZ-4)",
+              "flaggedFor": "user"
+            }
+          ]
+        },
+        "1440": {
+          "iterations": 1,
+          "confirmation": {
+            "round": "conf",
+            "pixelPct": 0.02,
+            "heightDelta": 0,
+            "chromeParity": "ok"
+          },
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "advisory STRETCHED IMAGE, justified (live object-fit cover crop)",
+            "pixelPct": 0.02,
+            "heightDelta": 0,
+            "overflow": false,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE",
+              "why": "visual-diff advisory STRETCHED IMAGE on mini-carousel slide sport-climbing.jpeg — identical to the live object-fit cover crop (height 25pc); zero pixel delta in that band (direction.md A-CNZ-2)"
+            }
+          ],
+          "residuals": [
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "visual-diff advisory STRETCHED IMAGE on mini-carousel slide sport-climbing.jpeg — identical to the live object-fit cover crop (height 25pc); zero pixel delta in that band (direction.md A-CNZ-2)",
+              "flaggedFor": "user"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "Images referenced by live wknd.site src + rebuilt coreimg srcset (no captured media dir) — capture-state policy (A-CNZ-1); rehost at delivery",
+              "flaggedFor": "delivery"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "Sharing widgets (.fb-share-button, empty Pinterest anchor) replicated as captured 0 px — third-party scripts never hydrate headless (A-CNZ-6); flag for delivery",
+              "flaggedFor": "delivery"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "motion-compare: 4 MISSING/4 advisory lines are class-name mappings (cmp-*--active ↔ clean *--active) with identical add counts — treated as parity (A-CNZ-4)",
+              "flaggedFor": "user"
+            }
+          ]
+        }
+      },
+      "motion": {
+        "observed": 6,
+        "implemented": 6,
+        "dead": [
+          "hover .cmp-breadcrumb__item-link",
+          "hover .cmp-tabs__tab (inactive)",
+          "hover .cmp-carousel__action--next",
+          "hover a[aria-label=\"Facebook WKND Button\"]",
+          "hover footer nav a[href$=\"magazine.html\"]"
+        ],
+        "implementedList": "fired: body.scrolly + header padding 0.5s (canon), carousel --active swap + fadeIn .5s (canon), language menu open/showMenu (canon), mobile navPanel-visible at 360 (canon), header nav link hover background (canon), tabs --active swap (new: us-en-adventures-climbing-new-zealand-html.js)"
+      },
+      "approvedBy": "hands-off",
+      "prototype": "stardust/prototypes/us-en-adventures-climbing-new-zealand-html-proposed.html",
+      "fonts": "Asar 400 + Source Sans Pro 300/400/600 (+italics) self-hosted from stardust/current/assets/fonts via canon.css @font-face (Google Fonts, open licence); wknd-icon-font.ttf self-hosted for breadcrumb chevron / list bullet (U+EA1C) and carousel arrows. No licensed kit, no substitution.",
+      "canonRequests": 0
     },
     {
       "pageType": "article",
@@ -73,10 +386,118 @@
         "us-en-magazine-ski-touring-html",
         "us-en-magazine-western-australia-html"
       ],
-      "status": "pending",
-      "iterations": 0,
-      "breakpoints": {},
-      "motion": null
+      "status": "approved",
+      "iterations": 1,
+      "breakpoints": {
+        "360": {
+          "iterations": 1,
+          "confirmation": {
+            "round": "conf",
+            "pixelPct": 0.02,
+            "heightDelta": 0,
+            "chromeParity": "ok"
+          },
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "advisory STRETCHED IMAGE, justified (live object-fit cover crop)",
+            "pixelPct": 0.02,
+            "heightDelta": 0,
+            "overflow": false,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE",
+              "why": "visual-diff advisory STRETCHED IMAGE on justin-barr.jpeg (672x1008 → 60x60): identical live object-fit cover crop lifted from .cmp-byline__image — justified (direction.md A-SDS-4)"
+            }
+          ],
+          "residuals": [
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "visual-diff advisory STRETCHED IMAGE on justin-barr.jpeg (672x1008 → 60x60): identical live object-fit cover crop lifted from .cmp-byline__image — justified (direction.md A-SDS-4)",
+              "flaggedFor": "user"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "Empty .fb-share-button div and Pinterest anchor render 0 px on live (third-party scripts never hydrate headless); replicated as captured (A-SDS-7)",
+              "flaggedFor": "user"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "ledger.mjs warned that the source-fidelity-gate end had no open start — a parallel agent's end line consumed it in the shared status.jsonl; this archetype's start (08:12:31Z) and end (08:18:18Z) both carry the slug",
+              "flaggedFor": "user"
+            }
+          ]
+        },
+        "1440": {
+          "iterations": 1,
+          "confirmation": {
+            "round": "conf",
+            "pixelPct": 0.14,
+            "heightDelta": 2,
+            "chromeParity": "ok"
+          },
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "advisory STRETCHED IMAGE, justified (live object-fit cover crop)",
+            "pixelPct": 0.14,
+            "heightDelta": 2,
+            "overflow": false,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE",
+              "why": "visual-diff advisory STRETCHED IMAGE on justin-barr.jpeg (672x1008 → 60x60): identical live object-fit cover crop lifted from .cmp-byline__image — justified (direction.md A-SDS-4)"
+            }
+          ],
+          "residuals": [
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "visual-diff advisory STRETCHED IMAGE on justin-barr.jpeg (672x1008 → 60x60): identical live object-fit cover crop lifted from .cmp-byline__image — justified (direction.md A-SDS-4)",
+              "flaggedFor": "user"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "Empty .fb-share-button div and Pinterest anchor render 0 px on live (third-party scripts never hydrate headless); replicated as captured (A-SDS-7)",
+              "flaggedFor": "user"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "ledger.mjs warned that the source-fidelity-gate end had no open start — a parallel agent's end line consumed it in the shared status.jsonl; this archetype's start (08:12:31Z) and end (08:18:18Z) both carry the slug",
+              "flaggedFor": "user"
+            }
+          ]
+        }
+      },
+      "motion": {
+        "observed": 4,
+        "implemented": 4,
+        "dead": [
+          "hover main nav a[href$=\"magazine.html\"] (breadcrumb link)",
+          "hover main a[aria-label=\"Facebook\"] (contributor icon button)",
+          "hover main a[aria-label=\"Twitter\"] (contributor icon button)",
+          "hover footer nav a[href$=\"adventures.html\"]",
+          "hover a[aria-label=\"Facebook WKND Button\"] (footer social)",
+          "hover main aside li a at 360 (touch viewport)"
+        ]
+      },
+      "approvedBy": "hands-off",
+      "prototype": "stardust/prototypes/us-en-magazine-san-diego-surf-html-proposed.html",
+      "fonts": "Canon @font-face: Asar 400 + Source Sans Pro 300/400/600 (+italics) self-hosted woff2 from stardust/current/assets/fonts (Google Fonts, open licence) and wknd-icon-font woff/ttf from the site. No licensed kit, no metric substitute needed.",
+      "canonRequests": 0
     },
     {
       "pageType": "static",
@@ -85,10 +506,67 @@
       "liveUrl": "https://wknd.site/us/en/about-us.html",
       "mainSelector": "header + main",
       "siblings": [],
-      "status": "pending",
-      "iterations": 0,
-      "breakpoints": {},
-      "motion": null
+      "status": "approved",
+      "iterations": 1,
+      "breakpoints": {
+        "360": {
+          "iterations": 1,
+          "confirmation": {
+            "round": "conf",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "chromeParity": "ok"
+          },
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "none",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "overflow": false,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [],
+          "residuals": []
+        },
+        "1440": {
+          "iterations": 1,
+          "confirmation": {
+            "round": "conf",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "chromeParity": "ok"
+          },
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "none",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "overflow": false,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [],
+          "residuals": []
+        }
+      },
+      "motion": {
+        "observed": 4,
+        "implemented": 4,
+        "dead": [
+          "contributor social icon buttons hover (Facebook/Twitter)",
+          "contributor name h3 hover",
+          "contributor portrait hover",
+          "footer nav link hover",
+          "footer social button hover"
+        ]
+      },
+      "approvedBy": "hands-off",
+      "prototype": "stardust/prototypes/us-en-about-us-html-proposed.html",
+      "fonts": "canon.css @font-face: Asar 400 + Source Sans Pro 300/400/600 (+italics) self-hosted Google Fonts woff2 from stardust/current/assets/fonts, wknd-icon-font from the site; no licensed kit, no substitution",
+      "canonRequests": 0
     },
     {
       "pageType": "unique",
@@ -97,10 +575,80 @@
       "liveUrl": "https://wknd.site/us/en/faqs.html",
       "mainSelector": "header + main",
       "siblings": [],
-      "status": "pending",
-      "iterations": 0,
-      "breakpoints": {},
-      "motion": null
+      "status": "approved",
+      "iterations": 1,
+      "breakpoints": {
+        "360": {
+          "iterations": 1,
+          "confirmation": {
+            "round": "conf",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "chromeParity": "ok"
+          },
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "none",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "overflow": false,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [],
+          "residuals": [
+            {
+              "band": "n/a (canon back-port reverted)",
+              "pct": 0,
+              "cause": "canon-request .separator hr margin (live: UA default 0.5em) reverted — in the prototypes' flex/grid columns the hr margin does not collapse through .separator, so every other separator grew +18px on all six archetypes (height Δ −18…−54px); FAQ keeps the page-scoped .page-faqs .faq-aside .separator hr { margin: 9px 0 } compensation (A-GC1)",
+              "flaggedFor": "user"
+            }
+          ]
+        },
+        "1440": {
+          "iterations": 1,
+          "confirmation": {
+            "round": "conf",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "chromeParity": "ok"
+          },
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "none",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "overflow": false,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [],
+          "residuals": [
+            {
+              "band": "n/a (canon back-port reverted)",
+              "pct": 0,
+              "cause": "canon-request .separator hr margin (live: UA default 0.5em) reverted — in the prototypes' flex/grid columns the hr margin does not collapse through .separator, so every other separator grew +18px on all six archetypes (height Δ −18…−54px); FAQ keeps the page-scoped .page-faqs .faq-aside .separator hr { margin: 9px 0 } compensation (A-GC1)",
+              "flaggedFor": "user"
+            }
+          ]
+        }
+      },
+      "motion": {
+        "observed": 5,
+        "implemented": 5,
+        "dead": [
+          "accordion button hover",
+          "aside # links hover",
+          "footer nav link hover",
+          "footer Facebook button hover"
+        ]
+      },
+      "approvedBy": "hands-off",
+      "prototype": "stardust/prototypes/us-en-faqs-html-proposed.html",
+      "fonts": "canon: Asar + Source Sans Pro self-hosted Google Fonts woff2 (stardust/current/assets/fonts) + wknd-icon-font (site's own, Apache-2.0); no licensed kit, no substitution",
+      "canonRequests": 1
     }
   ]
 }

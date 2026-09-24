@@ -1,0 +1,3016 @@
+{
+  "_provenance": {
+    "writtenBy": "skills/replica/scripts/measure.mjs",
+    "writtenAt": "2026-09-24T08:04:49.269Z",
+    "urls": [
+      "https://wknd.site/us/en/magazine/san-diego-surf.html",
+      "http://localhost:8803/prototypes/us-en-magazine-san-diego-surf-html-proposed.html"
+    ],
+    "widths": [
+      1440,
+      360
+    ],
+    "selectors": [
+      "header",
+      "main",
+      "footer",
+      "main img",
+      "main nav",
+      "main nav li",
+      "h1",
+      "h4",
+      "main article",
+      "main article h2",
+      "main article p",
+      "main article img",
+      "main aside",
+      "main aside h5",
+      "main aside ul",
+      "main aside li a",
+      "main hr",
+      "main h2",
+      "main article ~ * a"
+    ],
+    "props": [
+      "display",
+      "width",
+      "height",
+      "margin",
+      "padding",
+      "fontSize",
+      "lineHeight",
+      "fontFamily",
+      "float"
+    ],
+    "allMatches": false,
+    "failed": [],
+    "warnings": []
+  },
+  "widths": [
+    1440,
+    360
+  ],
+  "selectors": [
+    "header",
+    "main",
+    "footer",
+    "main img",
+    "main nav",
+    "main nav li",
+    "h1",
+    "h4",
+    "main article",
+    "main article h2",
+    "main article p",
+    "main article img",
+    "main aside",
+    "main aside h5",
+    "main aside ul",
+    "main aside li a",
+    "main hr",
+    "main h2",
+    "main article ~ * a"
+  ],
+  "root": {
+    "https://wknd.site/us/en/magazine/san-diego-surf.html": {
+      "360": {
+        "viewport": 360,
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "scrollHeight": 6256,
+        "overflowX": 0
+      },
+      "1440": {
+        "viewport": 1440,
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "scrollHeight": 5524,
+        "overflowX": 0
+      }
+    },
+    "http://localhost:8803/prototypes/us-en-magazine-san-diego-surf-html-proposed.html": {
+      "360": {
+        "viewport": 360,
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "scrollHeight": 6314,
+        "overflowX": 0
+      },
+      "1440": {
+        "viewport": 1440,
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "scrollHeight": 5349,
+        "overflowX": 0
+      }
+    }
+  },
+  "pages": {
+    "https://wknd.site/us/en/magazine/san-diego-surf.html": {
+      "360": {
+        "header": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 360,
+              "h": 117
+            },
+            "visible": true,
+            "text": "SIGN IN EN-US",
+            "props": {
+              "display": "block",
+              "width": "360px",
+              "height": "116.719px",
+              "margin": "0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 0,
+              "y": 130,
+              "w": 360,
+              "h": 5484
+            },
+            "visible": true,
+            "text": "MAGAZINE SAN DIEGO SURF SPOTS San Diego…",
+            "props": {
+              "display": "block",
+              "width": "360px",
+              "height": "5483.95px",
+              "margin": "0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "left"
+            }
+          }
+        ],
+        "footer": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 5662,
+              "w": 360,
+              "h": 593
+            },
+            "visible": true,
+            "text": "MAGAZINE ADVENTURES FAQS ABOUT US FOLLO…",
+            "props": {
+              "display": "block",
+              "width": "360px",
+              "height": "593.031px",
+              "margin": "48px 0px 0px",
+              "padding": "16px 0px 24px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "left"
+            }
+          }
+        ],
+        "main img": [
+          {
+            "index": 0,
+            "of": 6,
+            "rect": {
+              "x": 14,
+              "y": 137,
+              "w": 332,
+              "h": 205
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "width": "332px",
+              "height": "205.156px",
+              "margin": "7px 0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            },
+            "img": {
+              "naturalWidth": 328,
+              "naturalHeight": 202,
+              "currentSrc": "https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/image.coreimg.60.1600.jpeg/1660323822923/beach-walking.jpeg"
+            }
+          }
+        ],
+        "main nav": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 14,
+              "y": 356,
+              "w": 223,
+              "h": 50
+            },
+            "visible": true,
+            "text": "MAGAZINE SAN DIEGO SURF SPOTS",
+            "props": {
+              "display": "inline-block",
+              "width": "222.922px",
+              "height": "50px",
+              "margin": "0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main nav li": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 14,
+              "y": 368,
+              "w": 59,
+              "h": 38
+            },
+            "visible": true,
+            "text": "MAGAZINE",
+            "props": {
+              "display": "inline-block",
+              "width": "53.8125px",
+              "height": "18px",
+              "margin": "0px",
+              "padding": "10px 5px 10px 0px",
+              "fontSize": "12px",
+              "lineHeight": "18px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "h1": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 433,
+              "w": 360,
+              "h": 60
+            },
+            "visible": true,
+            "text": "San Diego Surf Spots",
+            "props": {
+              "display": "block",
+              "width": "360px",
+              "height": "60px",
+              "margin": "27px 0px 13.5px",
+              "padding": "0px",
+              "fontSize": "40px",
+              "lineHeight": "60px",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "float": "none"
+            }
+          }
+        ],
+        "h4": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 0,
+              "y": 514,
+              "w": 360,
+              "h": 24
+            },
+            "visible": true,
+            "text": "BY JUSTIN BARR",
+            "props": {
+              "display": "block",
+              "width": "360px",
+              "height": "24px",
+              "margin": "21.28px 0px",
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main article": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 0,
+              "y": 560,
+              "w": 360,
+              "h": 3843
+            },
+            "visible": true,
+            "text": "San Diego's 70 miles of open ocean coas…",
+            "props": {
+              "display": "block",
+              "width": "360px",
+              "height": "3843.02px",
+              "margin": "0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main article h2": [
+          {
+            "index": 0,
+            "of": 6,
+            "rect": {
+              "x": 0,
+              "y": 1310,
+              "w": 360,
+              "h": 54
+            },
+            "visible": true,
+            "text": "Swami's",
+            "props": {
+              "display": "block",
+              "width": "360px",
+              "height": "54px",
+              "margin": "27px 0px 13.5px",
+              "padding": "0px",
+              "fontSize": "36px",
+              "lineHeight": "54px",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main article p": [
+          {
+            "index": 0,
+            "of": 7,
+            "rect": {
+              "x": 0,
+              "y": 560,
+              "w": 360,
+              "h": 450
+            },
+            "visible": true,
+            "text": "San Diego's 70 miles of open ocean coas…",
+            "props": {
+              "display": "block",
+              "width": "360px",
+              "height": "450px",
+              "margin": "0px 0px 13.5px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "45px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main article img": [
+          {
+            "index": 0,
+            "of": 4,
+            "rect": {
+              "x": 14,
+              "y": 1030,
+              "w": 332,
+              "h": 221
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "width": "332px",
+              "height": "221.234px",
+              "margin": "7px 0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            },
+            "img": {
+              "naturalWidth": 288,
+              "naturalHeight": 191,
+              "currentSrc": "https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1600.jpeg/1660323790169/adobestock-164735399.jpeg"
+            }
+          }
+        ],
+        "main aside": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 4672,
+              "w": 360,
+              "h": 942
+            },
+            "visible": true,
+            "text": "SHARE THIS STORY ULTIMATE GUIDE TO LA S…",
+            "props": {
+              "display": "block",
+              "width": "360px",
+              "height": "941.75px",
+              "margin": "0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "left"
+            }
+          }
+        ],
+        "main aside h5": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 14,
+              "y": 4696,
+              "w": 332,
+              "h": 21
+            },
+            "visible": true,
+            "text": "SHARE THIS STORY",
+            "props": {
+              "display": "block",
+              "width": "332px",
+              "height": "21px",
+              "margin": "23.38px 0px",
+              "padding": "0px",
+              "fontSize": "14px",
+              "lineHeight": "21px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main aside ul": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 14,
+              "y": 4826,
+              "w": 332,
+              "h": 770
+            },
+            "visible": true,
+            "text": "ULTIMATE GUIDE TO LA SKATEPARKS WEDNESD…",
+            "props": {
+              "display": "block",
+              "width": "332px",
+              "height": "770px",
+              "margin": "18px 0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "left"
+            }
+          }
+        ],
+        "main aside li a": [
+          {
+            "index": 0,
+            "of": 5,
+            "rect": {
+              "x": 14,
+              "y": 4826,
+              "w": 332,
+              "h": 136
+            },
+            "visible": true,
+            "text": "ULTIMATE GUIDE TO LA SKATEPARKS WEDNESD…",
+            "props": {
+              "display": "block",
+              "width": "295px",
+              "height": "120px",
+              "margin": "0px",
+              "padding": "8px 16px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "left"
+            }
+          }
+        ],
+        "main hr": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 14,
+              "y": 4467,
+              "w": 332,
+              "h": 2
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "width": "330px",
+              "height": "0px",
+              "margin": "9px 0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main h2": [
+          {
+            "index": 0,
+            "of": 7,
+            "rect": {
+              "x": 0,
+              "y": 1310,
+              "w": 360,
+              "h": 54
+            },
+            "visible": true,
+            "text": "Swami's",
+            "props": {
+              "display": "block",
+              "width": "360px",
+              "height": "54px",
+              "margin": "27px 0px 13.5px",
+              "padding": "0px",
+              "fontSize": "36px",
+              "lineHeight": "54px",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main article ~ * a": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 14,
+              "y": 4624,
+              "w": 48,
+              "h": 48
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "width": "48px",
+              "height": "48px",
+              "margin": "0px",
+              "padding": "0px",
+              "fontSize": "14px",
+              "lineHeight": "14px",
+              "fontFamily": "wknd-icon-font",
+              "float": "left"
+            }
+          }
+        ]
+      },
+      "1440": {
+        "header": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 1440,
+              "h": 194
+            },
+            "visible": true,
+            "text": "SIGN IN EN-US MAGAZINE ADVENTURES FAQS …",
+            "props": {
+              "display": "block",
+              "width": "1440px",
+              "height": "193.641px",
+              "margin": "0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 138,
+              "y": 200,
+              "w": 1164,
+              "h": 5016
+            },
+            "visible": true,
+            "text": "MAGAZINE SAN DIEGO SURF SPOTS San Diego…",
+            "props": {
+              "display": "block",
+              "width": "1164px",
+              "height": "5015.62px",
+              "margin": "0px 138px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "footer": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 5264,
+              "w": 1440,
+              "h": 260
+            },
+            "visible": true,
+            "text": "MAGAZINE ADVENTURES FAQS ABOUT US FOLLO…",
+            "props": {
+              "display": "block",
+              "width": "1440px",
+              "height": "260.188px",
+              "margin": "48px 0px 0px",
+              "padding": "16px 0px 24px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "left"
+            }
+          }
+        ],
+        "main img": [
+          {
+            "index": 0,
+            "of": 6,
+            "rect": {
+              "x": 152,
+              "y": 207,
+              "w": 1136,
+              "h": 702
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "width": "1136px",
+              "height": "702px",
+              "margin": "7px 0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            },
+            "img": {
+              "naturalWidth": 1312,
+              "naturalHeight": 810,
+              "currentSrc": "https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/image.coreimg.60.1600.jpeg/1660323822923/beach-walking.jpeg"
+            }
+          }
+        ],
+        "main nav": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 152,
+              "y": 923,
+              "w": 255,
+              "h": 67
+            },
+            "visible": true,
+            "text": "MAGAZINE SAN DIEGO SURF SPOTS",
+            "props": {
+              "display": "inline-block",
+              "width": "254.75px",
+              "height": "67px",
+              "margin": "0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main nav li": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 152,
+              "y": 949,
+              "w": 68,
+              "h": 41
+            },
+            "visible": true,
+            "text": "MAGAZINE",
+            "props": {
+              "display": "inline-block",
+              "width": "62.7812px",
+              "height": "21px",
+              "margin": "0px",
+              "padding": "10px 5px 10px 0px",
+              "fontSize": "14px",
+              "lineHeight": "21px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "h1": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 138,
+              "y": 1017,
+              "w": 776,
+              "h": 60
+            },
+            "visible": true,
+            "text": "San Diego Surf Spots",
+            "props": {
+              "display": "block",
+              "width": "776px",
+              "height": "60px",
+              "margin": "27px 0px 13.5px",
+              "padding": "0px",
+              "fontSize": "40px",
+              "lineHeight": "60px",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "float": "none"
+            }
+          }
+        ],
+        "h4": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 138,
+              "y": 1098,
+              "w": 776,
+              "h": 24
+            },
+            "visible": true,
+            "text": "BY JUSTIN BARR",
+            "props": {
+              "display": "block",
+              "width": "776px",
+              "height": "24px",
+              "margin": "21.28px 0px",
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main article": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 138,
+              "y": 1144,
+              "w": 776,
+              "h": 3851
+            },
+            "visible": true,
+            "text": "San Diego's 70 miles of open ocean coas…",
+            "props": {
+              "display": "block",
+              "width": "776px",
+              "height": "3850.59px",
+              "margin": "0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main article h2": [
+          {
+            "index": 0,
+            "of": 6,
+            "rect": {
+              "x": 138,
+              "y": 1946,
+              "w": 776,
+              "h": 54
+            },
+            "visible": true,
+            "text": "Swami's",
+            "props": {
+              "display": "block",
+              "width": "776px",
+              "height": "54px",
+              "margin": "27px 0px 13.5px",
+              "padding": "0px",
+              "fontSize": "36px",
+              "lineHeight": "54px",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main article p": [
+          {
+            "index": 0,
+            "of": 7,
+            "rect": {
+              "x": 138,
+              "y": 1144,
+              "w": 776,
+              "h": 225
+            },
+            "visible": true,
+            "text": "San Diego's 70 miles of open ocean coas…",
+            "props": {
+              "display": "block",
+              "width": "776px",
+              "height": "225px",
+              "margin": "0px 0px 13.5px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "45px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main article img": [
+          {
+            "index": 0,
+            "of": 4,
+            "rect": {
+              "x": 152,
+              "y": 1389,
+              "w": 748,
+              "h": 498
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "width": "748px",
+              "height": "498.469px",
+              "margin": "7px 0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            },
+            "img": {
+              "naturalWidth": 1152,
+              "naturalHeight": 767,
+              "currentSrc": "https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1600.jpeg/1660323790169/adobestock-164735399.jpeg"
+            }
+          }
+        ],
+        "main aside": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 1011,
+              "y": 990,
+              "w": 291,
+              "h": 942
+            },
+            "visible": true,
+            "text": "SHARE THIS STORY ULTIMATE GUIDE TO LA S…",
+            "props": {
+              "display": "block",
+              "width": "291px",
+              "height": "941.75px",
+              "margin": "0px 0px 0px 97px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "left"
+            }
+          }
+        ],
+        "main aside h5": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 1025,
+              "y": 1013,
+              "w": 263,
+              "h": 21
+            },
+            "visible": true,
+            "text": "SHARE THIS STORY",
+            "props": {
+              "display": "block",
+              "width": "263px",
+              "height": "21px",
+              "margin": "23.38px 0px",
+              "padding": "0px",
+              "fontSize": "14px",
+              "lineHeight": "21px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main aside ul": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 1025,
+              "y": 1144,
+              "w": 263,
+              "h": 770
+            },
+            "visible": true,
+            "text": "ULTIMATE GUIDE TO LA SKATEPARKS WEDNESD…",
+            "props": {
+              "display": "block",
+              "width": "263px",
+              "height": "770px",
+              "margin": "18px 0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "left"
+            }
+          }
+        ],
+        "main aside li a": [
+          {
+            "index": 0,
+            "of": 5,
+            "rect": {
+              "x": 1025,
+              "y": 1144,
+              "w": 263,
+              "h": 136
+            },
+            "visible": true,
+            "text": "ULTIMATE GUIDE TO LA SKATEPARKS WEDNESD…",
+            "props": {
+              "display": "block",
+              "width": "226px",
+              "height": "120px",
+              "margin": "0px",
+              "padding": "8px 16px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "left"
+            }
+          }
+        ],
+        "main hr": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 152,
+              "y": 5058,
+              "w": 748,
+              "h": 2
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "width": "746px",
+              "height": "0px",
+              "margin": "9px 0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main h2": [
+          {
+            "index": 0,
+            "of": 7,
+            "rect": {
+              "x": 138,
+              "y": 1946,
+              "w": 776,
+              "h": 54
+            },
+            "visible": true,
+            "text": "Swami's",
+            "props": {
+              "display": "block",
+              "width": "776px",
+              "height": "54px",
+              "margin": "27px 0px 13.5px",
+              "padding": "0px",
+              "fontSize": "36px",
+              "lineHeight": "54px",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main article ~ * a": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 720,
+              "y": 5124,
+              "w": 48,
+              "h": 48
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "width": "48px",
+              "height": "48px",
+              "margin": "0px",
+              "padding": "0px",
+              "fontSize": "14px",
+              "lineHeight": "14px",
+              "fontFamily": "wknd-icon-font",
+              "float": "left"
+            }
+          }
+        ]
+      }
+    },
+    "http://localhost:8803/prototypes/us-en-magazine-san-diego-surf-html-proposed.html": {
+      "360": {
+        "header": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 360,
+              "h": 117
+            },
+            "visible": true,
+            "text": "SIGN IN EN-US",
+            "props": {
+              "display": "block",
+              "width": "360px",
+              "height": "116.719px",
+              "margin": "0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 130,
+              "w": 360,
+              "h": 5542
+            },
+            "visible": true,
+            "text": "MAGAZINE SAN DIEGO SURF SPOTS San Diego…",
+            "props": {
+              "display": "block",
+              "width": "360px",
+              "height": "5542px",
+              "margin": "0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "left"
+            }
+          }
+        ],
+        "footer": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 5720,
+              "w": 360,
+              "h": 593
+            },
+            "visible": true,
+            "text": "MAGAZINE ADVENTURES FAQS ABOUT US FOLLO…",
+            "props": {
+              "display": "block",
+              "width": "360px",
+              "height": "593.031px",
+              "margin": "48px 0px 0px",
+              "padding": "16px 0px 24px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "left"
+            }
+          }
+        ],
+        "main img": [
+          {
+            "index": 0,
+            "of": 6,
+            "rect": {
+              "x": 28,
+              "y": 137,
+              "w": 304,
+              "h": 188
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "width": "304px",
+              "height": "187.859px",
+              "margin": "7px 0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            },
+            "img": {
+              "naturalWidth": 328,
+              "naturalHeight": 202,
+              "currentSrc": "https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/image.coreimg.60.1600.jpeg/1660323822923/beach-walking.jpeg"
+            }
+          }
+        ],
+        "main nav": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 14,
+              "y": 339,
+              "w": 332,
+              "h": 50
+            },
+            "visible": true,
+            "text": "MAGAZINE SAN DIEGO SURF SPOTS",
+            "props": {
+              "display": "block",
+              "width": "332px",
+              "height": "50px",
+              "margin": "0px",
+              "padding": "0px 14px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "left"
+            }
+          }
+        ],
+        "main nav li": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 28,
+              "y": 351,
+              "w": 59,
+              "h": 38
+            },
+            "visible": true,
+            "text": "MAGAZINE",
+            "props": {
+              "display": "inline-block",
+              "width": "53.8125px",
+              "height": "18px",
+              "margin": "0px",
+              "padding": "10px 5px 10px 0px",
+              "fontSize": "12px",
+              "lineHeight": "18px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "h1": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 28,
+              "y": 416,
+              "w": 304,
+              "h": 120
+            },
+            "visible": true,
+            "text": "San Diego Surf Spots",
+            "props": {
+              "display": "block",
+              "width": "304px",
+              "height": "120px",
+              "margin": "27px 0px 13.5px",
+              "padding": "0px",
+              "fontSize": "40px",
+              "lineHeight": "60px",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "float": "none"
+            }
+          }
+        ],
+        "h4": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 28,
+              "y": 557,
+              "w": 304,
+              "h": 24
+            },
+            "visible": true,
+            "text": "BY JUSTIN BARR",
+            "props": {
+              "display": "block",
+              "width": "304px",
+              "height": "24px",
+              "margin": "21.28px 0px",
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main article": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 28,
+              "y": 602,
+              "w": 304,
+              "h": 3896
+            },
+            "visible": true,
+            "text": "San Diego's 70 miles of open ocean coas…",
+            "props": {
+              "display": "block",
+              "width": "304px",
+              "height": "3896.36px",
+              "margin": "0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main article h2": [
+          {
+            "index": 0,
+            "of": 6,
+            "rect": {
+              "x": 28,
+              "y": 1124,
+              "w": 304,
+              "h": 263
+            },
+            "visible": true,
+            "text": "Swami's",
+            "props": {
+              "display": "block",
+              "width": "304px",
+              "height": "262.922px",
+              "margin": "27px 0px 13.5px",
+              "padding": "0px",
+              "fontSize": "36px",
+              "lineHeight": "54px",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main article p": [
+          {
+            "index": 0,
+            "of": 7,
+            "rect": {
+              "x": 28,
+              "y": 602,
+              "w": 304,
+              "h": 495
+            },
+            "visible": true,
+            "text": "San Diego's 70 miles of open ocean coas…",
+            "props": {
+              "display": "block",
+              "width": "304px",
+              "height": "495px",
+              "margin": "0px 0px 13.5px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "45px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main article img": [
+          {
+            "index": 0,
+            "of": 4,
+            "rect": {
+              "x": 42,
+              "y": 1118,
+              "w": 276,
+              "h": 184
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "width": "276px",
+              "height": "183.922px",
+              "margin": "7px 0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            },
+            "img": {
+              "naturalWidth": 288,
+              "naturalHeight": 191,
+              "currentSrc": "https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1600.jpeg/1660323790169/adobestock-164735399.jpeg"
+            }
+          }
+        ],
+        "main aside": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 14,
+              "y": 4798,
+              "w": 332,
+              "h": 874
+            },
+            "visible": true,
+            "text": "SHARE THIS STORY ULTIMATE GUIDE TO LA S…",
+            "props": {
+              "display": "block",
+              "width": "332px",
+              "height": "873.75px",
+              "margin": "0px",
+              "padding": "0px 14px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "left"
+            }
+          }
+        ],
+        "main aside h5": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 42,
+              "y": 4822,
+              "w": 276,
+              "h": 21
+            },
+            "visible": true,
+            "text": "SHARE THIS STORY",
+            "props": {
+              "display": "block",
+              "width": "276px",
+              "height": "21px",
+              "margin": "23.38px 0px",
+              "padding": "0px",
+              "fontSize": "14px",
+              "lineHeight": "21px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main aside ul": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 42,
+              "y": 4902,
+              "w": 276,
+              "h": 770
+            },
+            "visible": true,
+            "text": "ULTIMATE GUIDE TO LA SKATEPARKS WEDNESD…",
+            "props": {
+              "display": "block",
+              "width": "276px",
+              "height": "770px",
+              "margin": "0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "left"
+            }
+          }
+        ],
+        "main aside li a": [
+          {
+            "index": 0,
+            "of": 5,
+            "rect": {
+              "x": 42,
+              "y": 4902,
+              "w": 276,
+              "h": 136
+            },
+            "visible": true,
+            "text": "ULTIMATE GUIDE TO LA SKATEPARKS WEDNESD…",
+            "props": {
+              "display": "block",
+              "width": "239px",
+              "height": "120px",
+              "margin": "0px",
+              "padding": "8px 16px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "left"
+            }
+          }
+        ],
+        "main hr": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 28,
+              "y": 4563,
+              "w": 304,
+              "h": 2
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "width": "302px",
+              "height": "0px",
+              "margin": "0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main h2": [
+          {
+            "index": 0,
+            "of": 7,
+            "rect": {
+              "x": 28,
+              "y": 1124,
+              "w": 304,
+              "h": 263
+            },
+            "visible": true,
+            "text": "Swami's",
+            "props": {
+              "display": "block",
+              "width": "304px",
+              "height": "262.922px",
+              "margin": "27px 0px 13.5px",
+              "padding": "0px",
+              "fontSize": "36px",
+              "lineHeight": "54px",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main article ~ * a": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 42,
+              "y": 4750,
+              "w": 48,
+              "h": 48
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "width": "48px",
+              "height": "48px",
+              "margin": "0px",
+              "padding": "0px",
+              "fontSize": "14px",
+              "lineHeight": "21px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "left"
+            }
+          }
+        ]
+      },
+      "1440": {
+        "header": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 1440,
+              "h": 194
+            },
+            "visible": true,
+            "text": "SIGN IN EN-US MAGAZINE ADVENTURES FAQS …",
+            "props": {
+              "display": "block",
+              "width": "1440px",
+              "height": "193.641px",
+              "margin": "0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 200,
+              "w": 1440,
+              "h": 4841
+            },
+            "visible": true,
+            "text": "MAGAZINE SAN DIEGO SURF SPOTS San Diego…",
+            "props": {
+              "display": "block",
+              "width": "1440px",
+              "height": "4841.25px",
+              "margin": "0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "left"
+            }
+          }
+        ],
+        "footer": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 5089,
+              "w": 1440,
+              "h": 260
+            },
+            "visible": true,
+            "text": "MAGAZINE ADVENTURES FAQS ABOUT US FOLLO…",
+            "props": {
+              "display": "block",
+              "width": "1440px",
+              "height": "260.188px",
+              "margin": "48px 0px 0px",
+              "padding": "16px 0px 24px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "left"
+            }
+          }
+        ],
+        "main img": [
+          {
+            "index": 0,
+            "of": 6,
+            "rect": {
+              "x": 166,
+              "y": 207,
+              "w": 1108,
+              "h": 685
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "width": "1108px",
+              "height": "684.703px",
+              "margin": "7px 0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            },
+            "img": {
+              "naturalWidth": 1312,
+              "naturalHeight": 810,
+              "currentSrc": "https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/image.coreimg.60.1600.jpeg/1660323822923/beach-walking.jpeg"
+            }
+          }
+        ],
+        "main nav": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 152,
+              "y": 906,
+              "w": 1136,
+              "h": 53
+            },
+            "visible": true,
+            "text": "MAGAZINE SAN DIEGO SURF SPOTS",
+            "props": {
+              "display": "block",
+              "width": "1136px",
+              "height": "53px",
+              "margin": "0px",
+              "padding": "0px 14px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "left"
+            }
+          }
+        ],
+        "main nav li": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 166,
+              "y": 918,
+              "w": 68,
+              "h": 41
+            },
+            "visible": true,
+            "text": "MAGAZINE",
+            "props": {
+              "display": "inline-block",
+              "width": "62.7812px",
+              "height": "21px",
+              "margin": "0px",
+              "padding": "10px 5px 10px 0px",
+              "fontSize": "14px",
+              "lineHeight": "21px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "h1": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 166,
+              "y": 986,
+              "w": 729,
+              "h": 60
+            },
+            "visible": true,
+            "text": "San Diego Surf Spots",
+            "props": {
+              "display": "block",
+              "width": "729.328px",
+              "height": "60px",
+              "margin": "27px 0px 13.5px",
+              "padding": "0px",
+              "fontSize": "40px",
+              "lineHeight": "60px",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "float": "none"
+            }
+          }
+        ],
+        "h4": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 166,
+              "y": 1067,
+              "w": 729,
+              "h": 24
+            },
+            "visible": true,
+            "text": "BY JUSTIN BARR",
+            "props": {
+              "display": "block",
+              "width": "729.328px",
+              "height": "24px",
+              "margin": "21.28px 0px",
+              "padding": "0px",
+              "fontSize": "16px",
+              "lineHeight": "24px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main article": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 166,
+              "y": 1112,
+              "w": 729,
+              "h": 3660
+            },
+            "visible": true,
+            "text": "San Diego's 70 miles of open ocean coas…",
+            "props": {
+              "display": "block",
+              "width": "729.328px",
+              "height": "3659.52px",
+              "margin": "0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main article h2": [
+          {
+            "index": 0,
+            "of": 6,
+            "rect": {
+              "x": 166,
+              "y": 1364,
+              "w": 729,
+              "h": 546
+            },
+            "visible": true,
+            "text": "Swami's",
+            "props": {
+              "display": "block",
+              "width": "729.328px",
+              "height": "546.359px",
+              "margin": "27px 0px 13.5px",
+              "padding": "0px",
+              "fontSize": "36px",
+              "lineHeight": "54px",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main article p": [
+          {
+            "index": 0,
+            "of": 7,
+            "rect": {
+              "x": 166,
+              "y": 1112,
+              "w": 729,
+              "h": 225
+            },
+            "visible": true,
+            "text": "San Diego's 70 miles of open ocean coas…",
+            "props": {
+              "display": "block",
+              "width": "729.328px",
+              "height": "225px",
+              "margin": "0px 0px 13.5px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "45px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main article img": [
+          {
+            "index": 0,
+            "of": 4,
+            "rect": {
+              "x": 180,
+              "y": 1358,
+              "w": 701,
+              "h": 467
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "width": "701.328px",
+              "height": "467.359px",
+              "margin": "7px 0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            },
+            "img": {
+              "naturalWidth": 1152,
+              "naturalHeight": 767,
+              "currentSrc": "https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1600.jpeg/1660323790169/adobestock-164735399.jpeg"
+            }
+          }
+        ],
+        "main aside": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 1004,
+              "y": 959,
+              "w": 284,
+              "h": 874
+            },
+            "visible": true,
+            "text": "SHARE THIS STORY ULTIMATE GUIDE TO LA S…",
+            "props": {
+              "display": "block",
+              "width": "284px",
+              "height": "873.75px",
+              "margin": "0px 0px 0px 94.6562px",
+              "padding": "0px 14px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "left"
+            }
+          }
+        ],
+        "main aside h5": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 1032,
+              "y": 982,
+              "w": 228,
+              "h": 21
+            },
+            "visible": true,
+            "text": "SHARE THIS STORY",
+            "props": {
+              "display": "block",
+              "width": "228px",
+              "height": "21px",
+              "margin": "23.38px 0px",
+              "padding": "0px",
+              "fontSize": "14px",
+              "lineHeight": "21px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main aside ul": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 1032,
+              "y": 1062,
+              "w": 228,
+              "h": 770
+            },
+            "visible": true,
+            "text": "ULTIMATE GUIDE TO LA SKATEPARKS WEDNESD…",
+            "props": {
+              "display": "block",
+              "width": "228px",
+              "height": "770px",
+              "margin": "0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "left"
+            }
+          }
+        ],
+        "main aside li a": [
+          {
+            "index": 0,
+            "of": 5,
+            "rect": {
+              "x": 1032,
+              "y": 1062,
+              "w": 228,
+              "h": 136
+            },
+            "visible": true,
+            "text": "ULTIMATE GUIDE TO LA SKATEPARKS WEDNESD…",
+            "props": {
+              "display": "block",
+              "width": "191px",
+              "height": "120px",
+              "margin": "0px",
+              "padding": "8px 16px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "left"
+            }
+          }
+        ],
+        "main hr": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 166,
+              "y": 4836,
+              "w": 729,
+              "h": 2
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "width": "727.328px",
+              "height": "0px",
+              "margin": "0px",
+              "padding": "0px",
+              "fontSize": "18px",
+              "lineHeight": "27px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main h2": [
+          {
+            "index": 0,
+            "of": 7,
+            "rect": {
+              "x": 166,
+              "y": 1364,
+              "w": 729,
+              "h": 546
+            },
+            "visible": true,
+            "text": "Swami's",
+            "props": {
+              "display": "block",
+              "width": "729.328px",
+              "height": "546.359px",
+              "margin": "27px 0px 13.5px",
+              "padding": "0px",
+              "fontSize": "36px",
+              "lineHeight": "54px",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "float": "none"
+            }
+          }
+        ],
+        "main article ~ * a": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 180,
+              "y": 4993,
+              "w": 48,
+              "h": 48
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "width": "48px",
+              "height": "48px",
+              "margin": "0px",
+              "padding": "0px",
+              "fontSize": "14px",
+              "lineHeight": "21px",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "float": "left"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "deltas": {
+    "360": {
+      "header": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "main": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 58
+            },
+            "props": {
+              "height": [
+                "5483.95px",
+                "5542px"
+              ]
+            }
+          }
+        ]
+      },
+      "footer": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 58,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "main img": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 14,
+              "dy": 0,
+              "dw": -28,
+              "dh": -17
+            },
+            "props": {
+              "width": [
+                "332px",
+                "304px"
+              ],
+              "height": [
+                "205.156px",
+                "187.859px"
+              ]
+            }
+          }
+        ]
+      },
+      "main nav": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": -17,
+              "dw": 109,
+              "dh": 0
+            },
+            "props": {
+              "display": [
+                "inline-block",
+                "block"
+              ],
+              "width": [
+                "222.922px",
+                "332px"
+              ],
+              "padding": [
+                "0px",
+                "0px 14px"
+              ],
+              "float": [
+                "none",
+                "left"
+              ]
+            }
+          }
+        ]
+      },
+      "main nav li": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 14,
+              "dy": -17,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "h1": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 28,
+              "dy": -17,
+              "dw": -56,
+              "dh": 60
+            },
+            "props": {
+              "width": [
+                "360px",
+                "304px"
+              ],
+              "height": [
+                "60px",
+                "120px"
+              ]
+            }
+          }
+        ]
+      },
+      "h4": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 28,
+              "dy": 43,
+              "dw": -56,
+              "dh": 0
+            },
+            "props": {
+              "width": [
+                "360px",
+                "304px"
+              ]
+            }
+          }
+        ]
+      },
+      "main article": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 28,
+              "dy": 42,
+              "dw": -56,
+              "dh": 53
+            },
+            "props": {
+              "width": [
+                "360px",
+                "304px"
+              ],
+              "height": [
+                "3843.02px",
+                "3896.36px"
+              ]
+            }
+          }
+        ]
+      },
+      "main article h2": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 28,
+              "dy": -186,
+              "dw": -56,
+              "dh": 209
+            },
+            "props": {
+              "width": [
+                "360px",
+                "304px"
+              ],
+              "height": [
+                "54px",
+                "262.922px"
+              ]
+            }
+          }
+        ]
+      },
+      "main article p": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 28,
+              "dy": 42,
+              "dw": -56,
+              "dh": 45
+            },
+            "props": {
+              "width": [
+                "360px",
+                "304px"
+              ],
+              "height": [
+                "450px",
+                "495px"
+              ]
+            }
+          }
+        ]
+      },
+      "main article img": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 28,
+              "dy": 88,
+              "dw": -56,
+              "dh": -37
+            },
+            "props": {
+              "width": [
+                "332px",
+                "276px"
+              ],
+              "height": [
+                "221.234px",
+                "183.922px"
+              ]
+            }
+          }
+        ]
+      },
+      "main aside": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 14,
+              "dy": 126,
+              "dw": -28,
+              "dh": -68
+            },
+            "props": {
+              "width": [
+                "360px",
+                "332px"
+              ],
+              "height": [
+                "941.75px",
+                "873.75px"
+              ],
+              "padding": [
+                "0px",
+                "0px 14px"
+              ]
+            }
+          }
+        ]
+      },
+      "main aside h5": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 28,
+              "dy": 126,
+              "dw": -56,
+              "dh": 0
+            },
+            "props": {
+              "width": [
+                "332px",
+                "276px"
+              ]
+            }
+          }
+        ]
+      },
+      "main aside ul": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 28,
+              "dy": 76,
+              "dw": -56,
+              "dh": 0
+            },
+            "props": {
+              "width": [
+                "332px",
+                "276px"
+              ],
+              "margin": [
+                "18px 0px",
+                "0px"
+              ]
+            }
+          }
+        ]
+      },
+      "main aside li a": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 28,
+              "dy": 76,
+              "dw": -56,
+              "dh": 0
+            },
+            "props": {
+              "width": [
+                "295px",
+                "239px"
+              ]
+            }
+          }
+        ]
+      },
+      "main hr": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 14,
+              "dy": 96,
+              "dw": -28,
+              "dh": 0
+            },
+            "props": {
+              "width": [
+                "330px",
+                "302px"
+              ],
+              "margin": [
+                "9px 0px",
+                "0px"
+              ]
+            }
+          }
+        ]
+      },
+      "main h2": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 28,
+              "dy": -186,
+              "dw": -56,
+              "dh": 209
+            },
+            "props": {
+              "width": [
+                "360px",
+                "304px"
+              ],
+              "height": [
+                "54px",
+                "262.922px"
+              ]
+            }
+          }
+        ]
+      },
+      "main article ~ * a": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 28,
+              "dy": 126,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "lineHeight": [
+                "14px",
+                "21px"
+              ],
+              "fontFamily": [
+                "wknd-icon-font",
+                "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "1440": {
+      "header": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "main": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": -138,
+              "dy": 0,
+              "dw": 276,
+              "dh": -175
+            },
+            "props": {
+              "width": [
+                "1164px",
+                "1440px"
+              ],
+              "height": [
+                "5015.62px",
+                "4841.25px"
+              ],
+              "margin": [
+                "0px 138px",
+                "0px"
+              ],
+              "float": [
+                "none",
+                "left"
+              ]
+            }
+          }
+        ]
+      },
+      "footer": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": -175,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "main img": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 14,
+              "dy": 0,
+              "dw": -28,
+              "dh": -17
+            },
+            "props": {
+              "width": [
+                "1136px",
+                "1108px"
+              ],
+              "height": [
+                "702px",
+                "684.703px"
+              ]
+            }
+          }
+        ]
+      },
+      "main nav": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": -17,
+              "dw": 881,
+              "dh": -14
+            },
+            "props": {
+              "display": [
+                "inline-block",
+                "block"
+              ],
+              "width": [
+                "254.75px",
+                "1136px"
+              ],
+              "height": [
+                "67px",
+                "53px"
+              ],
+              "padding": [
+                "0px",
+                "0px 14px"
+              ],
+              "float": [
+                "none",
+                "left"
+              ]
+            }
+          }
+        ]
+      },
+      "main nav li": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 14,
+              "dy": -31,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "h1": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 28,
+              "dy": -31,
+              "dw": -47,
+              "dh": 0
+            },
+            "props": {
+              "width": [
+                "776px",
+                "729.328px"
+              ]
+            }
+          }
+        ]
+      },
+      "h4": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 28,
+              "dy": -31,
+              "dw": -47,
+              "dh": 0
+            },
+            "props": {
+              "width": [
+                "776px",
+                "729.328px"
+              ]
+            }
+          }
+        ]
+      },
+      "main article": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 28,
+              "dy": -32,
+              "dw": -47,
+              "dh": -191
+            },
+            "props": {
+              "width": [
+                "776px",
+                "729.328px"
+              ],
+              "height": [
+                "3850.59px",
+                "3659.52px"
+              ]
+            }
+          }
+        ]
+      },
+      "main article h2": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 28,
+              "dy": -582,
+              "dw": -47,
+              "dh": 492
+            },
+            "props": {
+              "width": [
+                "776px",
+                "729.328px"
+              ],
+              "height": [
+                "54px",
+                "546.359px"
+              ]
+            }
+          }
+        ]
+      },
+      "main article p": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 28,
+              "dy": -32,
+              "dw": -47,
+              "dh": 0
+            },
+            "props": {
+              "width": [
+                "776px",
+                "729.328px"
+              ]
+            }
+          }
+        ]
+      },
+      "main article img": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 28,
+              "dy": -31,
+              "dw": -47,
+              "dh": -31
+            },
+            "props": {
+              "width": [
+                "748px",
+                "701.328px"
+              ],
+              "height": [
+                "498.469px",
+                "467.359px"
+              ]
+            }
+          }
+        ]
+      },
+      "main aside": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": -7,
+              "dy": -31,
+              "dw": -7,
+              "dh": -68
+            },
+            "props": {
+              "width": [
+                "291px",
+                "284px"
+              ],
+              "height": [
+                "941.75px",
+                "873.75px"
+              ],
+              "margin": [
+                "0px 0px 0px 97px",
+                "0px 0px 0px 94.6562px"
+              ],
+              "padding": [
+                "0px",
+                "0px 14px"
+              ]
+            }
+          }
+        ]
+      },
+      "main aside h5": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 7,
+              "dy": -31,
+              "dw": -35,
+              "dh": 0
+            },
+            "props": {
+              "width": [
+                "263px",
+                "228px"
+              ]
+            }
+          }
+        ]
+      },
+      "main aside ul": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 7,
+              "dy": -82,
+              "dw": -35,
+              "dh": 0
+            },
+            "props": {
+              "width": [
+                "263px",
+                "228px"
+              ],
+              "margin": [
+                "18px 0px",
+                "0px"
+              ]
+            }
+          }
+        ]
+      },
+      "main aside li a": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 7,
+              "dy": -82,
+              "dw": -35,
+              "dh": 0
+            },
+            "props": {
+              "width": [
+                "226px",
+                "191px"
+              ]
+            }
+          }
+        ]
+      },
+      "main hr": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 14,
+              "dy": -222,
+              "dw": -19,
+              "dh": 0
+            },
+            "props": {
+              "width": [
+                "746px",
+                "727.328px"
+              ],
+              "margin": [
+                "9px 0px",
+                "0px"
+              ]
+            }
+          }
+        ]
+      },
+      "main h2": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 28,
+              "dy": -582,
+              "dw": -47,
+              "dh": 492
+            },
+            "props": {
+              "width": [
+                "776px",
+                "729.328px"
+              ],
+              "height": [
+                "54px",
+                "546.359px"
+              ]
+            }
+          }
+        ]
+      },
+      "main article ~ * a": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": -540,
+              "dy": -131,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "lineHeight": [
+                "14px",
+                "21px"
+              ],
+              "fontFamily": [
+                "wknd-icon-font",
+                "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rootDeltas": {
+    "360": {
+      "scrollWidth": 0,
+      "scrollHeight": 58
+    },
+    "1440": {
+      "scrollWidth": 0,
+      "scrollHeight": -175
+    }
+  }
+}

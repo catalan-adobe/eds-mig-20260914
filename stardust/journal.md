@@ -71,3 +71,146 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 **Next:** replica Phase 3 — recreate the landing archetype (`us-en-html`, canon chrome) first, then the five other archetypes, each as clean HTML/CSS under `stardust/prototypes/`, gated with `header + main` as the main selector.
 
 ---
+
+## Recreate — us-en-html landing archetype recreated as clean HTML/CSS + canon authored (2026-09-24)
+
+**Prompt:** Phase 3 recreate of the landing archetype `us-en-html` (https://wknd.site/us/en.html) as the canon author, hands-off, no design deltas.
+
+**Decisions:**
+- Canon split: `stardust/prototypes/canon.css` (tokens per token contract, @font-face, header/utility bar/language menu/mobile nav, footer, shared modules: button, title, separator, image list, teaser hero/featured, carousel), `canon.js` (fired behaviours only), `us-en-html.css` (empty — every module on the page is canon).
+- Values lifted from `clientlib-site.min.css` via css-rules.mjs, models confirmed with measure.mjs on live at 1440/360 (float grid with 14 px column padding, no padding on the main fixed container, footer container padded, fixed header + `body .root` padding-top 200/130, hero flex column-reverse with `flex:1` content sizing).
+- Images reference the live renditions (same `src`/`srcset`, no captured media dir — capture-state policy); fonts self-hosted from the Google latin files named by the captured `google-fonts.css` (A-RC1).
+- Structural vocabulary: `data-template="landing"`, `data-section/intent/layout` per section, `data-module` + `data-slot` (hero, featured, recent-articles, cta, next-adventures, destinations, logo, primary-nav, footer-nav, social, legal), `data-canon` on header/footer, `data-nav-collapse="hamburger"`.
+
+**Artifacts touched:**
+- `stardust/prototypes/us-en-html-proposed.html`, `us-en-html.css`, `canon.css`, `canon.js` — created
+- `stardust/current/assets/fonts/gf/*.woff2`, `stardust/current/assets/flags/*.svg` — harvested
+- `stardust/replica/lift/*` — lifted tables (computed styles, image tags, icon URIs)
+- `stardust/direction.md` — assumptions A-RC1…A-RC7 appended
+
+**Findings worth flagging:**
+- The extract's woff2 fonts are a different version of Source Sans Pro/Asar (4–7 % wider glyphs) — every archetype must use `fonts/gf/` through canon.css or every nav/text width drifts.
+- `header + main` must be literal siblings for the symmetric `--main` selector; `main` needs a BFC (live: float column) or visual-diff reads it as blank.
+- A trailing `separator` (130 px) follows the "All Trips" button — html-slice truncation hid it; always read the tail of `main`.
+
+**Open questions:**
+- none
+
+**Next:** source-fidelity gate for us-en-html (below); siblings import canon.css + canon.js as is.
+
+---
+
+## Source-fidelity gate — us-en-html passes 0.00 % at 1440 and 360, motion parity (2026-09-24)
+
+**Prompt:** Phase 4 gate for `us-en-html` vs https://wknd.site/us/en.html, `--main "header + main"`, both breakpoints, then interaction parity.
+
+**Decisions:**
+- iter1 (`--full`): 19.6 % / Δ-72 px @1440, 23.6 % / Δ-260 px @360; 4 structural 🔴 (hidden Welcome/Sign Out/Home nodes), chrome-parity 20/15 deltas (font widths +7 %), visual-diff BLANK RENDER (main had no BFC). Fixes off the instruments: Google latin font files (A-RC1), hidden nodes (A-RC2), `header + main` siblings, `main`/containers float model, footer container padding, hr margin model, `.card-list .image img` specificity, missing trailing separator.
+- iter2 (pixel): 0.06 % / Δ0 @1440, 0.09 % / Δ0 @360. iter3 (`--full`): content-diff none, chrome-parity quiet; crop-compare footer 0.51 % @1440 → social-buttons column padding 0 (live), 0.65 % @360 header → US flag on the language toggle (A-RC3); then 0.00 % both widths, chrome header/footer crops 100 % at both widths.
+- Confirmation `--full` round: pixel 0.00 % / Δ0 / overflow ok / content-diff none / chrome-parity quiet at 1440 and 360. visual-diff advisory STRETCHED IMAGE ×11/×8 = `object-fit: cover` crops identical to live (pixel 0.00 %) — justified.
+- Interaction parity: live observed (1440: 3 fadeIn, 4 padding transitions, scrolly/active/showMenu/open; 360: navPanel-visible + transform transitions). Implemented in canon.js/css: scroll-morph, carousel active swap + fadeIn, language menu, mobile panel, nav hover bg. motion-compare: 8 parity + 5 parity; the 2 MISSING/2 advisory lines are the same carousel behaviour under the clean class names (`carousel__item--active` vs `cmp-carousel__item--active`, 3× each) — resolved as naming. Dead on live (not implemented): hover on hero CTA, article cards, primary button, social buttons, footer nav (probe-visible props). Final pixel round after canon.js: 0.00 % both widths.
+
+**Artifacts touched:**
+- `stardust/replica/gates/us-en-html-{1440,360}/` — captures, iter1/iter2/iter3/confirm/final evidence, chrome-*-diff.png
+- `stardust/replica/motion/us-en-html{,-360}{,-build}.json` — observations
+- `stardust/prototypes/canon.css`, `canon.js`, `us-en-html-proposed.html` — updated
+
+**Findings worth flagging:**
+- Ledger note: the gate phase `start` was written after its rounds began (rounds interleaved with recreate fixes); timings in status.jsonl for this phase are therefore compressed.
+
+**Open questions:**
+- none
+
+**Next:** coordinator advances `us-en-html` to approved (hands-off) and records progress.json from the returned JSON; siblings fork from `us-en-html-proposed.html` (data-slot vocabulary) and import canon.css + canon.js unchanged.
+
+---
+
+## Recreate — us-en-adventures-html (listing) authored as sibling archetype on frozen canon (2026-09-24)
+
+- Prototype `stardust/prototypes/us-en-adventures-html-proposed.html` generated from the capture by `stardust/replica/lift/us-en-adventures-html-build.mjs` (text, hrefs, alt/title, srcset/width/height verbatim; clean BEM markup, 32 cards in 6 tab panels, hero teaser, h1, underline title, trailing separator).
+- New modules lifted from `clientlib-site.min.css`: `.cmp-tabs` (14px uppercase tabs, .5rem 1rem, active #202020/#fff, hidden inactive panels) and `.cmp-layout-container--fixed` (computes to canon `.container`). Everything else is canon.
+- `measure.mjs` live vs proto: every measured box equal at 1440 and 360; root scrollHeight 2769/2769 and 6497/6497 after adding the separator missed in the first count reconciliation (−130 px).
+- `chrome-parity.mjs` header+footer: parity at 1440 and 360 — no page-level compensation, zero canon requests.
+- Fonts: canon (Asar + Source Sans Pro self-hosted Google Fonts woff2, wknd-icon-font from the site); no licensed kit.
+
+## Source-fidelity gate — us-en-adventures-html passes at 1440 and 360 in one iteration (2026-09-24)
+
+- Round 1 (`gate.sh --full`, main `header + main`): 1440 → pixel 0.00 %, Δh 0 px (2769/2769), 0 structural 🔴, no overflow, chrome parity; 360 → 0.00 %, Δh 0 px (6497/6497), 0 🔴, no overflow, chrome parity. Header/footer crop bands 0.00 % at both widths.
+- visual-diff advisory: STRETCHED IMAGE flags on object-fit: cover images — same rules live, justified (direction.md A-adv-1).
+- Interaction parity: `motion-observe.mjs` live → `stardust/replica/motion/us-en-adventures-html.json` (0 animations, header padding transitions, 10 class mutations: scrolly ×2, tab/panel --active ×3 each, showMenu/open). Implemented the tabs class swap (inline script in the prototype); build observation → `us-en-adventures-html-build.json`; `motion-compare.mjs`: 6 parity, the 2 MISSING + 2 advisory lines are the renamed tab classes (A-adv-2); 5 hover families dead on live → not implemented.
+- Confirmation round (`--full`) after the script: 0.00 % / Δh 0 at both widths — gated number unchanged.
+- Iterations used: 1 of 3 per breakpoint. Residuals: none. Canon requests: 0.
+
+## Recreate — us-en-adventures-climbing-new-zealand-html (program archetype) authored as sibling of the landing canon (2026-09-24)
+
+- Prototype `stardust/prototypes/us-en-adventures-climbing-new-zealand-html-proposed.html` + `us-en-adventures-climbing-new-zealand-html.css` (+ `.js` stub); links frozen `canon.css`/`canon.js`; `data-template="program"`, slots breadcrumb / gallery / program-headline / facts / cta-band / tabs.
+- Content verbatim from `current/pages/us-en-adventures-climbing-new-zealand-html.{json,html}`; images referenced by live src + rebuilt coreimg srcset (no captured media dir — capture-state policy).
+- Values lifted with `css-rules.mjs` (cmp-breadcrumb, cmp-carousel--mini, cmp-contentfragment--elements, cmp-tabs, aem-Grid) and `measure.mjs` box tables (saved under `stardust/replica/lift/us-en-adventures-climbing-new-zealand-html-*.txt`).
+- Chrome parity vs canon: only page-state deltas (active "Adventures" nav item in header/footer) → `is-active` class already in canon; no canon compensation needed.
+- Two geometry fixes off measure.mjs: `.program-body` clears the gallery float at ≥1025 (+8px), and a `.program-facts__inner` wrapper restores the live margin-collapse chain (+23px in the facts rail). Box table now matches live at 1440 and 360 (scrollHeight 3030 / 3930).
+
+## Source-fidelity gate — us-en-adventures-climbing-new-zealand-html passes iteration 1 at both breakpoints (2026-09-24)
+
+- 1440: pixel 0.02 % (755/4 363 200 px), height Δ 0 px (3030/3030), 0 structural 🔴 (main + chrome), no overflow (scrollWidth 1440), chrome-parity quiet, header/footer crop bands 100.00 %.
+- 360: pixel 0.04 % (581/1 414 440 px), height Δ 0 px (3929/3929), 0 structural 🔴, no overflow (360), chrome-parity quiet, header/footer crop bands 100.00 %.
+- Only visual-diff advisory: STRETCHED IMAGE on the mini-carousel slide — the live object-fit cover crop (direction.md A-CNZ-2).
+- Interaction parity: motion-observe on live (1440 + 360) recorded body.scrolly + header padding 0.5 s transition, carousel --active swap with fadeIn, language-menu open/showMenu, mobile navPanel-visible (all canon.js/canon.css) and the tabs --active class swap (new; implemented in `us-en-adventures-climbing-new-zealand-html.js`). Hover fired only on the header nav link (canon rule). 4 MISSING/4 advisory lines in motion-compare are class-name mappings with equal counts (A-CNZ-4).
+- Confirmation round (iter2 --full) after the JS addition returned the gated numbers exactly: 0.02 % / 0.04 %, Δ 0, 0 red.
+
+## Recreate — us-en-magazine-san-diego-surf-html (article archetype) authored as sibling of the landing canon (2026-09-24)
+
+- Prototype `stardust/prototypes/us-en-magazine-san-diego-surf-html-proposed.html` + `us-en-magazine-san-diego-surf-html.css`; links frozen `canon.css`/`canon.js`; `<body class="anonymous page-article" data-template="article">`, slots leadImage / breadcrumb / headline / byline / body / author / share / related.
+- Content verbatim from `current/pages/us-en-magazine-san-diego-surf-html.{json,html}` (7 paragraphs, 6 h2, image caption span, byline, 5 up-next items with dates); img tags lifted to `stardust/replica/lift/us-en-magazine-san-diego-surf-html-imgtags.txt` and absolutised (capture-state policy, no media dir).
+- Values lifted with `css-rules.mjs` from `clientlib-site.min.css`: cmp-layout-container--fixed, aem-Grid 12/3 columns + offset, `.responsivegrid.aem-GridColumn` zero padding, cmp-breadcrumb (chevron `\ea1c`, 1em list margin above 1024), cmp-image__title, cmp-byline, cmp-buildingblock--btn-list, cmp-list--upnext, cmp-separator modifiers.
+- Three measure.mjs-driven fixes: container/column padding model (A-SDS-1), image rows wrapped in self-clearing `.grid` + column-flex body so p→h2 margins do not collapse (A-SDS-2), `.column` specificity on byline/buttons/upnext widths and padding. Removed a wrong hr-margin compensation once the footer measured +18 px from it. Final box table equal at 1440 and 360 (scrollHeight 5524/5522 and 6254/6254).
+- `chrome-parity.mjs` header+footer: parity at 1440 and 360 — no page compensation, zero canon requests.
+- Fonts: canon (Asar + Source Sans Pro self-hosted Google Fonts woff2, wknd-icon-font from the site); no licensed kit, no substitution.
+
+## Source-fidelity gate — us-en-magazine-san-diego-surf-html passes iteration 1 at both breakpoints (2026-09-24)
+
+- 1440 (`gate.sh --full`, main `header + main`): pixel 0.14 % (11 030 / 7 951 680), height Δ 2 px (5524/5522), 0 structural 🔴 (main + chrome), no overflow (scrollWidth 1440), chrome-parity quiet, no hot band.
+- 360: pixel 0.02 % (540 / 2 251 440), height Δ 0 px (6254/6254), 0 structural 🔴, no overflow (360), chrome-parity quiet, no hot band.
+- visual-diff advisory: STRETCHED IMAGE on the 60×60 byline avatar — the live object-fit cover crop (A-SDS-4).
+- Interaction parity: `motion-observe.mjs` live 1440 → `stardust/replica/motion/us-en-magazine-san-diego-surf-html.json` (body.scrolly ×2 + header padding 0.5 s transitions, language menu open/showMenu, header nav hover background) plus a re-probe file `…-hover2.json` (up-next link hover → #ffea00, A-SDS-5); 360 → `…-360.json` (navPanel-visible + transform transitions, open/showMenu, scrolly). Build observed identically → `…-build.json`, `…-hover2-build.json`, `…-360-build.json`; `motion-compare.mjs`: 7 + 5 + 5 parity, 0 MISSING, 0 EXTRA. Observed 4 behaviours, implemented 4 (3 canon.js/canon.css, 1 page hover rule); dead on live: breadcrumb, contributor social buttons, footer nav/social hovers.
+- Confirmation pixel round (iter2) after the motion pass: 0.14 % / Δ 2 px and 0.02 % / Δ 0 px — gated numbers unchanged. Iterations used: 1 of 3 per breakpoint. Residuals: none. Canon requests: 0.
+
+## Recreate — us-en-about-us-html (static archetype, sibling) authored from capture + lifted CSS (2026-09-24)
+
+- `stardust/prototypes/us-en-about-us-html-proposed.html` (240 lines, `data-template="static"`, slots headline / section-title / section-intro / person{name, role, social}) + `us-en-about-us-html.css` (38 lines, scoped under `body.page-about`); canon.css linked untouched. Content verbatim from `current/pages/us-en-about-us-html.html` via `html-slice.mjs`: h1, two underlined h2, two italic `cmp-text--font-small` intros, seven contributor cards (portrait, h3, h5, three icon buttons with the live hrefs, aria-labels and the Kumar Selveraj Facebook/Instagram/Twitter order).
+- Values lifted with `css-rules.mjs` from `clientlib-site.min.css`: `.cmp-experience-fragment--contributor` (flex centred, padding .5em/1em), aem-Grid 3/12 · 6/12 · 12/12 columns, 164 px circular `object-fit: cover` portrait, `.cmp-title__text` margins, `.cmp-buildingblock--btn-list` (padding-top 1em, flex-centred, `width: unset` buttons), `.cmp-title--black`, `.cmp-text--font-small`.
+- `measure.mjs --against` (1440 + 360, all matches): Δ 0 on main h1/h2/p, every contributor section, portrait, h3, h5 and button; one fix off the instrument — portraits switched from the 1200 rendition to the live `src` + 300w–1200w srcset (natural 1440 vs 1200 fork).
+- `chrome-parity.mjs` header+footer: parity at 1440 and 360 — no page compensation, zero canon requests.
+- Fonts: canon (Asar + Source Sans Pro self-hosted Google Fonts woff2, wknd-icon-font from the site); no licensed kit, no substitution.
+
+## Source-fidelity gate — us-en-about-us-html passes iteration 1 at both breakpoints (2026-09-24)
+
+- 1440 (`gate.sh --full`, main `header + main`): pixel 0.00 % (0 / 2 309 760), height Δ 0 px (1604/1604), 0 structural 🔴 (main + chrome: 40/40 text nodes, 21/21 attributes, 21/21 icons), no overflow (scrollWidth 1440), chrome-parity quiet, no hot band.
+- 360: pixel 0.00 % (0 / 1 330 200), height Δ 0 px (3695/3695), 0 structural 🔴, no overflow (360), chrome-parity quiet, no hot band.
+- live.png/build.png byte-identical at both widths; confirmed as a real comparison (independent visual-diff captures agree, DOMs differ under measure.mjs, row-profile shows the rendered page) — A-AU-7.
+- visual-diff advisory: STRETCHED IMAGE ×5 on the 164×164 contributor portraits — the live object-fit cover crop (A-AU-5).
+- Interaction parity: `motion-observe.mjs` live 1440 → `stardust/replica/motion/us-en-about-us-html.json` (body.scrolly ×2 + header padding 0.5 s transitions, language menu open/showMenu, header nav hover background); 360 → `…-360.json` (navPanel-visible + transform transitions, scrolly). Build observed identically → `…-build.json`, `…-360-build.json`; `motion-compare.mjs`: 7 + 3 parity, 0 MISSING, 0 EXTRA. Observed 4 behaviours, implemented 4 (all canon.js/canon.css); dead on live: contributor social buttons, contributor name/portrait, footer nav/social hovers (A-AU-6).
+- Confirmation pixel round (iter2) after the motion pass: 0.00 % / Δ 0 px at both widths — gated numbers unchanged. Iterations used: 1 of 3 per breakpoint. Residuals: none. Canon requests: 0.
+
+## Recreate — us-en-faqs-html (unique archetype, sibling) authored from capture + lifted CSS (2026-09-24)
+
+- `stardust/prototypes/us-en-faqs-html-proposed.html` (208 lines, `data-template="unique"`, slots headline / image / intro / accordion / aside{aside-title, aside-text}, module `accordion`) + `us-en-faqs-html.css` (scoped under `body.page-faqs`) + `us-en-faqs-html.js` (accordion toggle); canon.css linked untouched. Content verbatim from `current/pages/us-en-faqs-html.html` via `html-slice.mjs`: underlined h1, hero image with srcset, intro paragraph, seven accordion items (h3 > button > title span + icon span, hidden panels incl. the authored empty `<h3>&nbsp;</h3>`), aside separator, "Need more help?" h3 and the contact paragraph with its inline `text-align: left`.
+- Values lifted with `css-rules.mjs` from `clientlib-site.min.css`: `.cmp-layout-container--fixed`, aem-Grid 12 → content 8/12 + aside 3/12 offset 1 (tablet/phone 12/12; image 8/12 at tablet and phone), `.responsivegrid.aem-GridColumn` zero padding, `.cmp-accordion` (button border-bottom 2px #ebebeb, padding 1em, title 16px/600 uppercase padding-left .5em, panel 14px/1.75 fadeIn .5s, icon glyphs `\e911`/`\e910`), `[class*=__icon]` sizing, `.cmp-text--font-small`, `.cmp-separator--space-small`.
+- Two measure.mjs-driven fixes: button font reverted to the UA default the live site keeps (A-FQ-2, −37 px per item), aside hr margin 9px 0 (A-FQ-4, canon request). After them scrollHeight 1672/1672 at 1440 and 2017/2017 at 360, every `main img/button/span/h3/hr/p` box Δ 0.
+- `chrome-parity.mjs` header+footer at 1440: parity once main height matched; one canon request (separator hr margin) recorded in `stardust/replica/canon-requests.md`.
+- Fonts: canon (Asar + Source Sans Pro self-hosted Google Fonts woff2, wknd-icon-font from the site); no licensed kit, no substitution.
+
+## Source-fidelity gate — us-en-faqs-html passes iteration 1 at both breakpoints (2026-09-24)
+
+- 1440 (`gate.sh --full`, main `header + main`): pixel 0.00 % (0 / 2 407 680), height Δ 0 px (1672/1672), 0 structural 🔴 (main + chrome), no overflow (scrollWidth 1440), chrome-parity quiet, no hot band; crop-compare header y0+200 and footer y1412+260 both 0 px (pass bar item 5).
+- 360: pixel 0.00 % (0 / 726 120), height Δ 0 px (2017/2017), 0 structural 🔴, no overflow (360), chrome-parity quiet, no hot band.
+- visual-diff advisory: none at either width.
+- Interaction parity: `motion-observe.mjs` live 1440 → `stardust/replica/motion/us-en-faqs-html.json` (clicks: accordion item 1, item 2, language toggle; hovers: header nav, accordion button, aside links, footer nav, footer Facebook) — body.scrolly ×3 + header padding 0.5 s transitions, language menu open/showMenu, header nav hover background, accordion expanded classes added 2× with fadeIn on 2 panels (multi-expansion, A-FQ-8); 360 → `…-360.json` (navPanel-visible + transform transitions, scrolly, accordion 1×). Build observed identically → `…-build.json`, `…-360-build.json`; `motion-compare.mjs`: 8 + 4 parity, the 2 + 2 MISSING/EXTRA lines are the accordion class rename with identical counts (A-FQ-9). Observed 5 behaviours (scroll-morph, language menu, nav hover, mobile nav, accordion), implemented 5 (4 canon.js/canon.css, 1 page `us-en-faqs-html.js`); dead on live: accordion button hover, aside links, footer nav/social hovers (A-FQ-10).
+- Confirmation `--full` round (iter2) after the motion pass: 0.00 % / Δ 0 px at both widths — gated numbers unchanged. Iterations used: 1 of 3 per breakpoint. Residuals: none. Canon requests: 1 (separator hr margin, `stardust/replica/canon-requests.md`).
+
+## Source-fidelity gate — consolidation: canon request reverted, six archetypes approved (2026-09-24)
+
+- Applied the one canon request (`.separator hr` margin, us-en-faqs-html; live sets none → UA 0.5em) to `stardust/prototypes/canon.css` and removed the FAQ compensation; ran 12 confirmation `gate.sh --full` rounds (6 archetypes × 1440/360) through run-bg.
+- Every round failed the height bar (Δ −18/−36/−54 px, one 18 px per separator; chrome-parity footer Δy +18 px): the hr margin does not collapse through `.separator` in the prototypes' columns as it does in live's float grid. Reverted the canon line, restored `.page-faqs .faq-aside .separator hr { margin: 9px 0 }`, moved the request to `stardust/replica/canon-requests.applied.md`, logged residual A-GC1 (direction.md). Canon changes applied: 0.
+- Re-ran the 12 confirmation rounds on the restored state: us-en-html 0.00 %/Δ0 · 0.00 %/Δ0; us-en-adventures-html 0.00/Δ0 · 0.00/Δ0; us-en-adventures-climbing-new-zealand-html 0.02/Δ0 · 0.04/Δ0; us-en-magazine-san-diego-surf-html 0.14/Δ2 · 0.02/Δ0; us-en-about-us-html 0.00/Δ0 · 0.00/Δ0; us-en-faqs-html 0.00/Δ0 · 0.00/Δ0 (1440 · 360). All exit 0, content-diff 0 🔴, no overflow, chrome-parity quiet.
+- `stardust/replica/progress.json` merged over the Phase 2 roster: per archetype status, iterations, per-breakpoint result/justified/residuals, motion {observed, implemented, dead}, fonts, siblings.
+- `state.mjs advance` → prototyped → approved (`--by hands-off`, prototype path set) for all six archetypes; none prototyped-only.

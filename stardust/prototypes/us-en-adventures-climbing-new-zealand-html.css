@@ -1,0 +1,76 @@
+/* Program (adventure detail) archetype — us-en-adventures-climbing-new-zealand-html.
+   Values lifted from clientlib-site.min.css (cmp-breadcrumb, cmp-carousel--mini,
+   cmp-contentfragment--elements, cmp-tabs, aem-Grid); canon.css supplies chrome + shared modules. */
+
+/* AEM responsive grid row (aem-Grid): clearfix via table pseudo-elements */
+.grid { display: block; width: 100%; }
+.grid::before, .grid::after { content: " "; display: table; }
+.grid::after { clear: both; }
+
+/* Breadcrumb (cmp-breadcrumb--fixed) */
+.breadcrumb { margin: 0 auto; max-width: var(--max-width); padding: 0 14px; }
+.breadcrumb__nav { display: inline-block; list-style: none; padding: 0; }
+.breadcrumb__list { border-radius: 0; font-size: var(--body-sm); list-style: none; margin: 0; padding: 0 12px 0 0; }
+@media (max-width: 767px) { .breadcrumb__list { font-size: var(--body-xs); } }
+.breadcrumb__item { display: inline-block; padding: 10px 5px; text-transform: uppercase; vertical-align: top; }
+.breadcrumb__item::before {
+  speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+  color: var(--color-accent); content: "\ea1c"; font-family: var(--icon-font-family) !important;
+  font-size: 1em; font-style: normal; font-variant: normal; font-weight: 400; line-height: 1;
+  padding-right: 5px; text-transform: none;
+}
+.breadcrumb__item:first-child { padding-left: 0; }
+.breadcrumb__item:first-child::before { content: none; }
+.breadcrumb__link { color: var(--color-fg); font-weight: var(--font-weight-bold); text-decoration: none; }
+
+/* Mini carousel (cmp-carousel--mini): full-bleed 400px gallery */
+.carousel--mini { padding-left: 0 !important; padding-right: 0 !important; }
+.carousel--mini .carousel { width: 100%; }
+.carousel--mini .image img { height: 400px; min-height: 400px; object-fit: cover; object-position: center; }
+
+/* Fixed layout container (cmp-layout-container--fixed) */
+.program-body { display: block; margin: 0 auto; max-width: var(--max-width); padding: 0 14px; }
+
+/* Grid columns: title 12/12, facts 3/12, tabs 9/12; both 12/12 at ≤1024 */
+.program-facts { box-sizing: border-box; clear: none; float: left; padding: 0; width: 25%; }
+.program-tabs { box-sizing: border-box; clear: none; float: left; padding: 0 14px; width: 75%; }
+@media (max-width: 1024px) { .program-facts, .program-tabs { width: 100%; } }
+
+/* Content fragment: title hidden on the live site; element list (cmp-contentfragment--elements) */
+.fragment__title { display: none; }
+.facts { display: block; float: left; margin: 1em 0; width: 100%; }
+.facts__item {
+  border-left: 5px solid var(--color-third); float: left; font-family: var(--body-font-family); height: 84px;
+  margin-bottom: 1.25em; padding-left: 1em; padding-right: 1em; text-transform: uppercase; width: 100%;
+}
+.facts__label { color: var(--color-muted); font-size: var(--body-xs); padding-top: 1em; }
+.facts__value { font-size: var(--body-sm); font-weight: var(--font-weight-bold); margin-inline-start: 0; padding-top: .5em; }
+@media (max-width: 1024px) {
+  .facts__item { border-left: none; padding-left: 0; padding-right: 2em; width: unset; }
+}
+
+/* Tabs (cmp-tabs) */
+.tabs__list { display: flex; flex-wrap: wrap; list-style: none; margin: 1em 0; padding-left: 0; }
+.tabs__tab {
+  border-bottom: 1px solid transparent; box-sizing: border-box; cursor: pointer; font-size: var(--body-sm);
+  max-height: var(--button-size); min-width: var(--button-size); padding: .5rem 1rem; text-transform: uppercase;
+}
+.tabs__tab:focus { outline: none; }
+.tabs__tab--active { background-color: #202020; border: none; border-color: inherit; color: #fff; }
+.tabs__panel { display: none; }
+.tabs__panel--active { display: block; }
+.tabs__panel .column { padding-left: 0; padding-right: 0; }
+
+/* Content fragment prose (cmp-contentfragment ul/li) */
+.fragment ul { display: block; list-style-type: none; margin: 1em 0; padding-inline-start: 0; }
+.fragment ul li { padding-left: 12px; }
+.fragment ul li::before {
+  speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+  content: "\ea1c"; font-family: var(--icon-font-family) !important; font-size: .55em; font-style: normal;
+  font-variant: normal; font-weight: 400; left: -.75em; line-height: 1; position: relative;
+  text-transform: none; top: -.25em;
+}
+.fragment li { display: list-item; line-height: 2; text-align: -webkit-match-parent; }
+
+/* The fixed container clears the gallery's floated actions at desktop (container rule ≥1025) */
+@media (min-width: 1025px) { .program-body { clear: both; } }

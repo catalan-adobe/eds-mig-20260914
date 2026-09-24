@@ -1,0 +1,100 @@
+measure  http://localhost:8803/prototypes/us-en-adventures-climbing-new-zealand-html-proposed.html
+  widths 1440, 360 · 23 selector(s) · 6 props · first match
+
+@ 1440px
+  root  scrollWidth  1440  viewport 1440  scrollHeight   3022
+  .breadcrumb
+       x   124  y    200  w  1192  h    46  vis  "ADVENTURES CLIMBING NEW ZEALAND"
+  .breadcrumb__list
+       x   138  y    205  w   276  h    41  vis  "ADVENTURES CLIMBING NEW ZEALAND"
+  .carousel--mini
+       x     0  y    246  w  1440  h   440  vis  ""
+  .carousel--mini .carousel__item--active
+       x     0  y    246  w  1440  h   421  vis  ""
+  .carousel--mini .carousel__actions
+       x  1358  y    667  w    82  h    27  vis  ""
+  .carousel--mini .carousel__indicators
+       x     0  y    676  w  1358  h    10  vis  ""
+  .program-body
+       x   124  y    686  w  1192  h  2027  vis  "Climbing New Zealand ACTIVITY ROCK CLIM…"
+  .section-title--underline
+       x   138  y    686  w  1164  h   111  vis  "Climbing New Zealand"
+  .section-title--underline h1
+       x   152  y    713  w  1136  h    70  vis  "Climbing New Zealand"
+  .program-facts
+       x   138  y    797  w   291  h   719  vis  "ACTIVITY ROCK CLIMBING ADVENTURE TYPE O…"
+  .facts
+       x   138  y    815  w   291  h   639  vis  "ACTIVITY ROCK CLIMBING ADVENTURE TYPE O…"
+  .facts__item [1 of 6]
+       x   138  y    815  w   332  h    84  vis  "ACTIVITY ROCK CLIMBING"
+  h5.section-title__text
+       x   138  y    820  w   291  h   673  vis  "SHARE THIS ADVENTURE"
+  .program-tabs
+       x   429  y    797  w   873  h  1917  vis  "OVERVIEW ITINERARY WHAT TO BRING Let us…"
+  .tabs__list
+       x   443  y    815  w   845  h    38  vis  "OVERVIEW ITINERARY WHAT TO BRING"
+  .tabs__tab [1 of 3]
+       x   443  y    815  w    93  h    38  vis  "OVERVIEW"
+  .tabs__panel--active
+       x   443  y    871  w   845  h  1843  vis  "Let us take you on a spectacular climbi…"
+  .tabs__panel--active h2
+       x   443  y    898  w   845  h   108  vis  "Let us take you on a spectacular climbi…"
+  .tabs__panel--active .image [1 of 2]
+       x   443  y   1019  w   845  h   584  vis  ""
+  .tabs__panel--active .image img [1 of 2]
+       x   443  y   1026  w   845  h   563  vis  ""  img 1242×828 …/adobestock-277948178.jpeg
+  .tabs__panel--active p [1 of 2]
+       x   443  y   1603  w   845  h   360  vis  "Feel the raw adventure and excitement o…"
+  .tabs__panel--active ul
+       x   443  y   2623  w   845  h    72  vis  "Colorado Rock Climbing Yosemite Backpac…"
+  .tabs__panel--active li [1 of 2]
+       x   443  y   2623  w   845  h    36  vis  "Colorado Rock Climbing"
+
+@ 360px
+  root  scrollWidth   360  viewport 360  scrollHeight   3906
+  .breadcrumb
+       x     0  y    130  w   360  h    45  vis  "ADVENTURES CLIMBING NEW ZEALAND"
+  .breadcrumb__list
+       x    14  y    137  w   241  h    38  vis  "ADVENTURES CLIMBING NEW ZEALAND"
+  .carousel--mini
+       x     0  y    175  w   360  h   440  vis  ""
+  .carousel--mini .carousel__item--active
+       x     0  y    175  w   360  h   421  vis  ""
+  .carousel--mini .carousel__actions
+       x   278  y    596  w    82  h    27  vis  ""
+  .carousel--mini .carousel__indicators
+       x     0  y    605  w   278  h    10  vis  ""
+  .program-body
+       x     0  y    615  w   360  h  2649  vis  "Climbing New Zealand ACTIVITY ROCK CLIM…"
+  .section-title--underline
+       x    14  y    623  w   332  h   171  vis  "Climbing New Zealand"
+  .section-title--underline h1
+       x    28  y    650  w   304  h   130  vis  "Climbing New Zealand"
+  .program-facts
+       x    14  y    794  w   332  h   400  vis  "ACTIVITY ROCK CLIMBING ADVENTURE TYPE O…"
+  .facts
+       x    14  y    812  w   332  h   320  vis  "ACTIVITY ROCK CLIMBING ADVENTURE TYPE O…"
+  .facts__item [1 of 6]
+       x    14  y    812  w   133  h    84  vis  "ACTIVITY ROCK CLIMBING"
+  h5.section-title__text
+       x    14  y    817  w   332  h   353  vis  "SHARE THIS ADVENTURE"
+  .program-tabs
+       x    14  y   1193  w   332  h  2071  vis  "OVERVIEW ITINERARY WHAT TO BRING Let us…"
+  .tabs__list
+       x    28  y   1211  w   304  h    76  vis  "OVERVIEW ITINERARY WHAT TO BRING"
+  .tabs__tab [1 of 3]
+       x    28  y   1211  w    93  h    38  vis  "OVERVIEW"
+  .tabs__panel--active
+       x    28  y   1305  w   304  h  1959  vis  "Let us take you on a spectacular climbi…"
+  .tabs__panel--active h2
+       x    28  y   1332  w   304  h   270  vis  "Let us take you on a spectacular climbi…"
+  .tabs__panel--active .image [1 of 2]
+       x    28  y   1616  w   304  h   224  vis  ""
+  .tabs__panel--active .image img [1 of 2]
+       x    28  y   1623  w   304  h   203  vis  ""  img 310×207 …/adobestock-277948178.jpeg
+  .tabs__panel--active p [1 of 2]
+       x    28  y   1839  w   304  h  1035  vis  "Feel the raw adventure and excitement o…"
+  .tabs__panel--active ul
+       x    28  y   3174  w   304  h    72  vis  "Colorado Rock Climbing Yosemite Backpac…"
+  .tabs__panel--active li [1 of 2]
+       x    28  y   3174  w   304  h    36  vis  "Colorado Rock Climbing"

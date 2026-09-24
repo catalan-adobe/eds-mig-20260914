@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us</title>
+<meta name="description" content="WKND is a collective of outdoors, music, crafts, adventure sports, and travel enthusiasts that want to share our experiences, connections, and expertise with the world. ">
+<meta name="stardust-prototype" content="us-en-about-us-html">
+<link rel="icon" href="../current/assets/favicon.png">
+<link rel="stylesheet" href="canon.css">
+<link rel="stylesheet" href="us-en-about-us-html.css">
+</head>
+<body class="anonymous page-about" data-template="static">
+<div class="page-root">
+<header class="site-header" data-canon data-section="site-header" data-intent="global navigation" data-layout="edge-to-edge" data-nav-collapse="hamburger">
+  <div class="utility-bar">
+    <div class="utility-bar__inner">
+      <div class="utility-bar__account">
+        <div class="account-links">
+          <span class="account-links__greeting" id="wkndGreetingLabel">Welcome</span>
+          <a class="account-links__link account-links__link--sign-in" href="#sign-in">Sign In</a>
+          <a class="account-links__link account-links__link--sign-out" href="#sign-out">Sign Out</a>
+        </div>
+      </div>
+      <div class="language-nav">
+        <div class="language-nav__toggle"><a id="langNavToggleHeader" href="#langNavToggle" aria-label="Toggle Language en-US">en-US</a></div>
+        <nav class="language-menu" role="navigation">
+          <ul>
+            <li class="language-menu__country language-menu__country--US"><span class="language-menu__country-title" lang="en-US">United States</span>
+              <ul>
+                <li class="language-menu__locale language-menu__locale--active"><a href="/us/en.html" hreflang="en-US" lang="en-US" rel="alternate" title="WKND Adventures and Travel">en-US</a></li>
+                <li class="language-menu__locale"><a href="/us/es.html" hreflang="es-US" lang="es-US" rel="alternate" title="Español">es-US</a></li>
+              </ul>
+            </li>
+            <li class="language-menu__country language-menu__country--CA"><span class="language-menu__country-title" lang="en-CA">Canada</span>
+              <ul>
+                <li class="language-menu__locale"><a href="/ca/en.html" hreflang="en-CA" lang="en-CA" rel="alternate" title="WKND Adventures and Travel">en-CA</a></li>
+                <li class="language-menu__locale"><a href="/ca/fr.html" hreflang="fr-CA" lang="fr-CA" rel="alternate" title="Français">fr-CA</a></li>
+              </ul>
+            </li>
+            <li class="language-menu__country language-menu__country--CH"><span class="language-menu__country-title" lang="de-CH">Switzerland</span>
+              <ul>
+                <li class="language-menu__locale"><a href="/ch/de.html" hreflang="de-CH" lang="de-CH" rel="alternate" title="Deutsch">de-CH</a></li>
+                <li class="language-menu__locale"><a href="/ch/fr.html" hreflang="fr-CH" lang="fr-CH" rel="alternate" title="Français">fr-CH</a></li>
+                <li class="language-menu__locale"><a href="/ch/it.html" hreflang="it-CH" lang="it-CH" rel="alternate" title="Italiano">it-CH</a></li>
+              </ul>
+            </li>
+            <li class="language-menu__country language-menu__country--DE"><span class="language-menu__country-title" lang="de-DE">Germany</span>
+              <ul><li class="language-menu__locale"><a href="/de/de.html" hreflang="de-DE" lang="de-DE" rel="alternate" title="Deutsch">de-DE</a></li></ul>
+            </li>
+            <li class="language-menu__country language-menu__country--FR"><span class="language-menu__country-title" lang="fr-FR">France</span>
+              <ul><li class="language-menu__locale"><a href="/fr/fr.html" hreflang="fr-FR" lang="fr-FR" rel="alternate" title="Français">fr-FR</a></li></ul>
+            </li>
+            <li class="language-menu__country language-menu__country--ES"><span class="language-menu__country-title" lang="es-ES">Spain</span>
+              <ul><li class="language-menu__locale"><a href="/es/es.html" hreflang="es-ES" lang="es-ES" rel="alternate" title="Español">es-ES</a></li></ul>
+            </li>
+            <li class="language-menu__country language-menu__country--IT"><span class="language-menu__country-title" lang="it-IT">Italy</span>
+              <ul><li class="language-menu__locale"><a href="/it/it.html" hreflang="it-IT" lang="it-IT" rel="alternate" title="Italiano">it-IT</a></li></ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="masthead">
+    <div class="masthead__inner">
+      <div class="logo image" data-slot="logo"><a href="/us/en.html"><img src="https://wknd.site/content/experience-fragments/wknd/language-masters/en/site/header/master/_jcr_content/root/container/container_1195249223/image.coreimg.svg/1594412560447/wknd-logo-dk.svg" loading="lazy" alt="WKND Logo"></a></div>
+      <nav class="primary-nav" role="navigation" data-slot="primary-nav">
+        <ul class="primary-nav__list">
+          <li class="is-home"><a href="/us/en.html">Home</a></li>
+          <li><a href="/us/en/magazine.html">Magazine</a></li>
+          <li><a href="/us/en/adventures.html">Adventures</a></li>
+          <li><a href="/us/en/faqs.html">FAQs</a></li>
+          <li class="is-active"><a href="/us/en/about-us.html">About Us</a></li>
+        </ul>
+      </nav>
+      <section class="site-search" role="search">
+        <form class="site-search__form">
+          <div class="site-search__field">
+            <i class="site-search__icon"></i>
+            <input class="site-search__input" type="text" name="fulltext" placeholder="Search" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" aria-owns="site-search-results">
+            <button class="site-search__clear" type="button" aria-label="Clear"><i class="site-search__clear-icon"></i></button>
+          </div>
+        </form>
+        <div class="site-search__results" id="site-search-results" role="listbox" aria-label="Search results" aria-multiselectable="false"></div>
+        <script type="x-template">
+    <a class="cmp-search__item" data-cmp-hook-search="item" role="option" aria-selected="false">
+        <span class="cmp-search__item-title" data-cmp-hook-search="itemTitle"></span>
+    </a>
+</script>
+      </section>
+    </div>
+  </div>
+</header>
+<main class="page-main" data-template="static">
+  <div class="container container--fixed">
+    <div class="grid">
+      <div class="column title" data-section="headline" data-intent="explain mechanic" data-layout="contained">
+        <h1 class="page-title" data-slot="headline">About Us</h1>
+      </div>
+      <div class="column title section-title section-title--underline" data-section="contributors" data-intent="build trust" data-layout="contained">
+        <h2 class="section-title__text" data-slot="section-title">Our Contributors</h2>
+      </div>
+      <div class="column text text--font-small" data-slot="section-intro">
+        <p><i>Meet the outstanding individuals responsible for bringing you the most compelling stories across the globe.</i></p>
+      </div>
+      <section class="column contributor contributor--stacey-roswells" data-module="contributor-card" data-slot="person">
+        <div class="contributor__inner">
+          <div class="image contributor__image"><img src="https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/stacey-roswells/master/_jcr_content/root/container/image.coreimg.jpeg/1660323785093/stacey-roswells.jpeg" srcset="https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/stacey-roswells/master/_jcr_content/root/container/image.coreimg.75.300.jpeg/1660323785093/stacey-roswells.jpeg 300w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/stacey-roswells/master/_jcr_content/root/container/image.coreimg.75.400.jpeg/1660323785093/stacey-roswells.jpeg 400w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/stacey-roswells/master/_jcr_content/root/container/image.coreimg.75.500.jpeg/1660323785093/stacey-roswells.jpeg 500w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/stacey-roswells/master/_jcr_content/root/container/image.coreimg.75.600.jpeg/1660323785093/stacey-roswells.jpeg 600w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/stacey-roswells/master/_jcr_content/root/container/image.coreimg.75.700.jpeg/1660323785093/stacey-roswells.jpeg 700w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/stacey-roswells/master/_jcr_content/root/container/image.coreimg.75.800.jpeg/1660323785093/stacey-roswells.jpeg 800w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/stacey-roswells/master/_jcr_content/root/container/image.coreimg.75.900.jpeg/1660323785093/stacey-roswells.jpeg 900w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/stacey-roswells/master/_jcr_content/root/container/image.coreimg.75.1000.jpeg/1660323785093/stacey-roswells.jpeg 1000w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/stacey-roswells/master/_jcr_content/root/container/image.coreimg.75.1100.jpeg/1660323785093/stacey-roswells.jpeg 1100w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/stacey-roswells/master/_jcr_content/root/container/image.coreimg.75.1200.jpeg/1660323785093/stacey-roswells.jpeg 1200w" loading="lazy" alt=""></div>
+          <h3 class="contributor__name" data-slot="name">Stacey Roswells</h3>
+          <h5 class="contributor__role contributor__role--black" data-slot="role">Artist | Photographer | Traveler</h5>
+          <div class="btn-list contributor__buttons" data-slot="social">
+            <div class="button button--secondary button--icon"><a href="#facebook-staceyroswell" aria-label="Facebook Social Media"><span class="icon icon--facebook"></span><span>Facebook</span></a></div>
+            <div class="button button--secondary button--icon"><a href="#twitter-staceyroswells" aria-label="Twitter Social Media"><span class="icon icon--twitter"></span><span>Twitter</span></a></div>
+            <div class="button button--secondary button--icon"><a href="#insta-staceyroswells" aria-label="Instagram Social Media"><span class="icon icon--instagram"></span><span>Instagram</span></a></div>
+          </div>
+        </div>
+      </section>
+      <section class="column contributor contributor--jake-hammer" data-module="contributor-card" data-slot="person">
+        <div class="contributor__inner">
+          <div class="image contributor__image"><img src="https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/jake-hammer/master/_jcr_content/root/container/image.coreimg.jpeg/1660323785595/alex-iby-343837.jpeg" srcset="https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/jake-hammer/master/_jcr_content/root/container/image.coreimg.75.300.jpeg/1660323785595/alex-iby-343837.jpeg 300w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/jake-hammer/master/_jcr_content/root/container/image.coreimg.75.400.jpeg/1660323785595/alex-iby-343837.jpeg 400w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/jake-hammer/master/_jcr_content/root/container/image.coreimg.75.500.jpeg/1660323785595/alex-iby-343837.jpeg 500w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/jake-hammer/master/_jcr_content/root/container/image.coreimg.75.600.jpeg/1660323785595/alex-iby-343837.jpeg 600w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/jake-hammer/master/_jcr_content/root/container/image.coreimg.75.700.jpeg/1660323785595/alex-iby-343837.jpeg 700w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/jake-hammer/master/_jcr_content/root/container/image.coreimg.75.800.jpeg/1660323785595/alex-iby-343837.jpeg 800w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/jake-hammer/master/_jcr_content/root/container/image.coreimg.75.900.jpeg/1660323785595/alex-iby-343837.jpeg 900w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/jake-hammer/master/_jcr_content/root/container/image.coreimg.75.1000.jpeg/1660323785595/alex-iby-343837.jpeg 1000w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/jake-hammer/master/_jcr_content/root/container/image.coreimg.75.1100.jpeg/1660323785595/alex-iby-343837.jpeg 1100w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/jake-hammer/master/_jcr_content/root/container/image.coreimg.75.1200.jpeg/1660323785595/alex-iby-343837.jpeg 1200w" loading="lazy" alt=""></div>
+          <h3 class="contributor__name" data-slot="name">Jake Hammer</h3>
+          <h5 class="contributor__role" data-slot="role">Influencer | Writer</h5>
+          <div class="btn-list contributor__buttons" data-slot="social">
+            <div class="button button--secondary button--icon"><a href="#facebook-jakehammer" aria-label="Facebook jakehammer"><span class="icon icon--facebook"></span><span>Facebook</span></a></div>
+            <div class="button button--secondary button--icon"><a href="#twitter-jakehammer" aria-label="Twitter"><span class="icon icon--twitter"></span><span>Twitter</span></a></div>
+            <div class="button button--secondary button--icon"><a href="#instagram-jakehammer" aria-label="instagram jakehammer"><span class="icon icon--instagram"></span><span>Instagram</span></a></div>
+          </div>
+        </div>
+      </section>
+      <section class="column contributor contributor--ian-provo" data-module="contributor-card" data-slot="person">
+        <div class="contributor__inner">
+          <div class="image contributor__image"><img src="https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/ian-provo/master/_jcr_content/root/container/image.coreimg.jpeg/1660323783653/ian-provo.jpeg" srcset="https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/ian-provo/master/_jcr_content/root/container/image.coreimg.75.300.jpeg/1660323783653/ian-provo.jpeg 300w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/ian-provo/master/_jcr_content/root/container/image.coreimg.75.400.jpeg/1660323783653/ian-provo.jpeg 400w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/ian-provo/master/_jcr_content/root/container/image.coreimg.75.500.jpeg/1660323783653/ian-provo.jpeg 500w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/ian-provo/master/_jcr_content/root/container/image.coreimg.75.600.jpeg/1660323783653/ian-provo.jpeg 600w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/ian-provo/master/_jcr_content/root/container/image.coreimg.75.700.jpeg/1660323783653/ian-provo.jpeg 700w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/ian-provo/master/_jcr_content/root/container/image.coreimg.75.800.jpeg/1660323783653/ian-provo.jpeg 800w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/ian-provo/master/_jcr_content/root/container/image.coreimg.75.900.jpeg/1660323783653/ian-provo.jpeg 900w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/ian-provo/master/_jcr_content/root/container/image.coreimg.75.1000.jpeg/1660323783653/ian-provo.jpeg 1000w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/ian-provo/master/_jcr_content/root/container/image.coreimg.75.1100.jpeg/1660323783653/ian-provo.jpeg 1100w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/ian-provo/master/_jcr_content/root/container/image.coreimg.75.1200.jpeg/1660323783653/ian-provo.jpeg 1200w" loading="lazy" alt=""></div>
+          <h3 class="contributor__name" data-slot="name">Ian Provo</h3>
+          <h5 class="contributor__role" data-slot="role">Photographer</h5>
+          <div class="btn-list contributor__buttons" data-slot="social">
+            <div class="button button--secondary button--icon"><a href="#facebook-ianprovo" aria-label="Facebook Ian provo"><span class="icon icon--facebook"></span><span>Facebook</span></a></div>
+            <div class="button button--secondary button--icon"><a href="#twitter-ianprovo" aria-label="Twitter Ian provo"><span class="icon icon--twitter"></span><span>Twitter</span></a></div>
+            <div class="button button--secondary button--icon"><a href="#instagram-ianprovo" aria-label="instagram Ian provo"><span class="icon icon--instagram"></span><span>Instagram</span></a></div>
+          </div>
+        </div>
+      </section>
+      <section class="column contributor contributor--jacob-wester" data-module="contributor-card" data-slot="person">
+        <div class="contributor__inner">
+          <div class="image contributor__image"><img src="https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/jacob-wester/master/_jcr_content/root/container/image.coreimg.jpeg/1660323792237/jacob-wester.jpeg" srcset="https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/jacob-wester/master/_jcr_content/root/container/image.coreimg.75.300.jpeg/1660323792237/jacob-wester.jpeg 300w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/jacob-wester/master/_jcr_content/root/container/image.coreimg.75.400.jpeg/1660323792237/jacob-wester.jpeg 400w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/jacob-wester/master/_jcr_content/root/container/image.coreimg.75.500.jpeg/1660323792237/jacob-wester.jpeg 500w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/jacob-wester/master/_jcr_content/root/container/image.coreimg.75.600.jpeg/1660323792237/jacob-wester.jpeg 600w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/jacob-wester/master/_jcr_content/root/container/image.coreimg.75.700.jpeg/1660323792237/jacob-wester.jpeg 700w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/jacob-wester/master/_jcr_content/root/container/image.coreimg.75.800.jpeg/1660323792237/jacob-wester.jpeg 800w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/jacob-wester/master/_jcr_content/root/container/image.coreimg.75.900.jpeg/1660323792237/jacob-wester.jpeg 900w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/jacob-wester/master/_jcr_content/root/container/image.coreimg.75.1000.jpeg/1660323792237/jacob-wester.jpeg 1000w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/jacob-wester/master/_jcr_content/root/container/image.coreimg.75.1100.jpeg/1660323792237/jacob-wester.jpeg 1100w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/jacob-wester/master/_jcr_content/root/container/image.coreimg.75.1200.jpeg/1660323792237/jacob-wester.jpeg 1200w" loading="lazy" alt=""></div>
+          <h3 class="contributor__name" data-slot="name">Jacob Wester</h3>
+          <h5 class="contributor__role" data-slot="role">Skater | Writer</h5>
+          <div class="btn-list contributor__buttons" data-slot="social">
+            <div class="button button--secondary button--icon"><a href="#jacob-wester" aria-label="Facebook"><span class="icon icon--facebook"></span><span>Facebook</span></a></div>
+            <div class="button button--secondary button--icon"><a href="#jacob-wester" aria-label="Twitter"><span class="icon icon--twitter"></span><span>Twitter</span></a></div>
+            <div class="button button--secondary button--icon"><a href="#jacob-wester" aria-label="instagram"><span class="icon icon--instagram"></span><span>Instagram</span></a></div>
+          </div>
+        </div>
+      </section>
+      <div class="column title section-title section-title--underline" data-section="guides" data-intent="build trust" data-layout="contained">
+        <h2 class="section-title__text" data-slot="section-title">WKND Guides</h2>
+      </div>
+      <div class="column text text--font-small" data-slot="section-intro">
+        <p><i>Meet our extraordinary travel guides. When you travel with a certified WKND guide you gain access to attractions and perspectives not found on the pages of a guide book.</i></p>
+      </div>
+      <section class="column contributor contributor--sofia-sjoeberg" data-module="contributor-card" data-slot="person">
+        <div class="contributor__inner">
+          <div class="image contributor__image"><img src="https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/container/image.coreimg.jpeg/1660323785351/ayo-ogunseinde-237739.jpeg" srcset="https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/container/image.coreimg.75.300.jpeg/1660323785351/ayo-ogunseinde-237739.jpeg 300w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/container/image.coreimg.75.400.jpeg/1660323785351/ayo-ogunseinde-237739.jpeg 400w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/container/image.coreimg.75.500.jpeg/1660323785351/ayo-ogunseinde-237739.jpeg 500w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/container/image.coreimg.75.600.jpeg/1660323785351/ayo-ogunseinde-237739.jpeg 600w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/container/image.coreimg.75.700.jpeg/1660323785351/ayo-ogunseinde-237739.jpeg 700w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/container/image.coreimg.75.800.jpeg/1660323785351/ayo-ogunseinde-237739.jpeg 800w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/container/image.coreimg.75.900.jpeg/1660323785351/ayo-ogunseinde-237739.jpeg 900w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/container/image.coreimg.75.1000.jpeg/1660323785351/ayo-ogunseinde-237739.jpeg 1000w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/container/image.coreimg.75.1100.jpeg/1660323785351/ayo-ogunseinde-237739.jpeg 1100w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/container/image.coreimg.75.1200.jpeg/1660323785351/ayo-ogunseinde-237739.jpeg 1200w" loading="lazy" alt=""></div>
+          <h3 class="contributor__name" data-slot="name">Sofia Sjöberg</h3>
+          <h5 class="contributor__role" data-slot="role">Photographer | Youtuber</h5>
+          <div class="btn-list contributor__buttons" data-slot="social">
+            <div class="button button--secondary button--icon"><a href="#" aria-label="Facebook"><span class="icon icon--facebook"></span><span>Facebook</span></a></div>
+            <div class="button button--secondary button--icon"><a href="#" aria-label="Twitter"><span class="icon icon--twitter"></span><span>Twitter</span></a></div>
+            <div class="button button--secondary button--icon"><a href="#" aria-label="instagram"><span class="icon icon--instagram"></span><span>Instagram</span></a></div>
+          </div>
+        </div>
+      </section>
+      <section class="column contributor contributor--justin-barr" data-module="contributor-card" data-slot="person">
+        <div class="contributor__inner">
+          <div class="image contributor__image"><img src="https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/justin-barr/master/_jcr_content/root/container/image.coreimg.jpeg/1660323786548/justin-barr.jpeg" srcset="https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/justin-barr/master/_jcr_content/root/container/image.coreimg.75.300.jpeg/1660323786548/justin-barr.jpeg 300w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/justin-barr/master/_jcr_content/root/container/image.coreimg.75.400.jpeg/1660323786548/justin-barr.jpeg 400w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/justin-barr/master/_jcr_content/root/container/image.coreimg.75.500.jpeg/1660323786548/justin-barr.jpeg 500w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/justin-barr/master/_jcr_content/root/container/image.coreimg.75.600.jpeg/1660323786548/justin-barr.jpeg 600w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/justin-barr/master/_jcr_content/root/container/image.coreimg.75.700.jpeg/1660323786548/justin-barr.jpeg 700w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/justin-barr/master/_jcr_content/root/container/image.coreimg.75.800.jpeg/1660323786548/justin-barr.jpeg 800w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/justin-barr/master/_jcr_content/root/container/image.coreimg.75.900.jpeg/1660323786548/justin-barr.jpeg 900w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/justin-barr/master/_jcr_content/root/container/image.coreimg.75.1000.jpeg/1660323786548/justin-barr.jpeg 1000w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/justin-barr/master/_jcr_content/root/container/image.coreimg.75.1100.jpeg/1660323786548/justin-barr.jpeg 1100w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/justin-barr/master/_jcr_content/root/container/image.coreimg.75.1200.jpeg/1660323786548/justin-barr.jpeg 1200w" loading="lazy" alt=""></div>
+          <h3 class="contributor__name" data-slot="name">Justin Barr</h3>
+          <h5 class="contributor__role" data-slot="role">Artist | Rock Climber</h5>
+          <div class="btn-list contributor__buttons" data-slot="social">
+            <div class="button button--secondary button--icon"><a href="#" aria-label="Facebook"><span class="icon icon--facebook"></span><span>Facebook</span></a></div>
+            <div class="button button--secondary button--icon"><a href="#" aria-label="Twitter"><span class="icon icon--twitter"></span><span>Twitter</span></a></div>
+            <div class="button button--secondary button--icon"><a href="#" aria-label="instagram"><span class="icon icon--instagram"></span><span>Instagram</span></a></div>
+          </div>
+        </div>
+      </section>
+      <section class="column contributor contributor--kumar-selveraj" data-module="contributor-card" data-slot="person">
+        <div class="contributor__inner">
+          <div class="image contributor__image"><img src="https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/kumar-selveraj/master/_jcr_content/root/container/image.coreimg.jpeg/1660323783843/kumar-selvaraj.jpeg" srcset="https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/kumar-selveraj/master/_jcr_content/root/container/image.coreimg.75.300.jpeg/1660323783843/kumar-selvaraj.jpeg 300w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/kumar-selveraj/master/_jcr_content/root/container/image.coreimg.75.400.jpeg/1660323783843/kumar-selvaraj.jpeg 400w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/kumar-selveraj/master/_jcr_content/root/container/image.coreimg.75.500.jpeg/1660323783843/kumar-selvaraj.jpeg 500w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/kumar-selveraj/master/_jcr_content/root/container/image.coreimg.75.600.jpeg/1660323783843/kumar-selvaraj.jpeg 600w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/kumar-selveraj/master/_jcr_content/root/container/image.coreimg.75.700.jpeg/1660323783843/kumar-selvaraj.jpeg 700w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/kumar-selveraj/master/_jcr_content/root/container/image.coreimg.75.800.jpeg/1660323783843/kumar-selvaraj.jpeg 800w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/kumar-selveraj/master/_jcr_content/root/container/image.coreimg.75.900.jpeg/1660323783843/kumar-selvaraj.jpeg 900w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/kumar-selveraj/master/_jcr_content/root/container/image.coreimg.75.1000.jpeg/1660323783843/kumar-selvaraj.jpeg 1000w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/kumar-selveraj/master/_jcr_content/root/container/image.coreimg.75.1100.jpeg/1660323783843/kumar-selvaraj.jpeg 1100w,https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/kumar-selveraj/master/_jcr_content/root/container/image.coreimg.75.1200.jpeg/1660323783843/kumar-selvaraj.jpeg 1200w" loading="lazy" alt=""></div>
+          <h3 class="contributor__name" data-slot="name">Kumar Selveraj</h3>
+          <h5 class="contributor__role" data-slot="role">Photographer | Surfer</h5>
+          <div class="btn-list contributor__buttons" data-slot="social">
+            <div class="button button--secondary button--icon"><a href="#selveraj" aria-label="Facebook"><span class="icon icon--facebook"></span><span>Facebook</span></a></div>
+            <div class="button button--secondary button--icon"><a href="#selveraj" aria-label="instagram"><span class="icon icon--instagram"></span><span>Instagram</span></a></div>
+            <div class="button button--secondary button--icon"><a href="#selveraj" aria-label="Twitter"><span class="icon icon--twitter"></span><span>Twitter</span></a></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
+<footer class="site-footer" data-canon data-section="site-footer" data-intent="build trust" data-layout="contained">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="logo image" data-slot="logo"><a href="/us/en.html"><img src="https://wknd.site/content/experience-fragments/wknd/language-masters/en/site/footer/master/_jcr_content/root/container/container/image.coreimg.svg/1594412963641/wknd-logo-light.svg" loading="lazy" alt="WKND Logo"></a></div>
+      <nav class="footer-nav" role="navigation" aria-label="Footer navigation" data-slot="footer-nav">
+        <ul class="footer-nav__list">
+          <li class="is-home"><a href="/us/en.html">Home</a></li>
+          <li><a href="/us/en/magazine.html">Magazine</a></li>
+          <li><a href="/us/en/adventures.html">Adventures</a></li>
+          <li><a href="/us/en/faqs.html">FAQs</a></li>
+          <li class="is-active"><a href="/us/en/about-us.html">About Us</a></li>
+        </ul>
+      </nav>
+      <div class="footer-follow"><h4>Follow Us</h4></div>
+      <div class="social-buttons" data-slot="social">
+        <div class="social-buttons__list">
+          <div class="button button--icon"><a href="#facebookwknd" aria-label="Facebook WKND Button"><span class="icon icon--facebook"></span><span>Facebook</span></a></div>
+          <div class="button button--icon"><a href="#twitterWKND" aria-label="Twitter WKND Button"><span class="icon icon--twitter"></span><span>Twitter</span></a></div>
+          <div class="button button--icon"><a href="#instagramwknd" aria-label="Instagram WKND"><span class="icon icon--instagram"></span><span>Instagram</span></a></div>
+        </div>
+      </div>
+      <div class="separator separator--hidden separator--space-small"><hr></div>
+      <div class="footer-text" data-slot="legal">
+<p>Ⓒ 2019,&nbsp;&nbsp;WKND Site.</p>
+<p>WKND is a fictitious adventure and travel website created by Adobe to demonstrate how anyone can use Adobe Experience Manager to build a beautiful, feature-rich website over a single weekend. This site is built entirely with Adobe Experience Manager&nbsp;<a href="https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html">Core Components</a>&nbsp;and&nbsp;<a href="https://github.com/adobe/aem-project-archetype">Archetype</a>&nbsp;that are available as open source code to the public. The entire&nbsp;<a href="https://github.com/adobe/aem-guides-wknd/">site source code</a>&nbsp;is available as open source as well and is accompanied with a&nbsp;<a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">detailed tutorial</a>&nbsp;on how to recreate the site.</p>
+<p>Many of the beautiful images in the WKND site are available for purchase via&nbsp;<a href="https://stock.adobe.com/">Adobe Stock</a>.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+<div class="nav-toggle"><a href="#mobileNav" aria-label="Open hidden mobile navigation" class="toggle"><i class="icon icon--menu" aria-hidden="true"></i></a></div>
+<div class="mobile-nav" id="mobileNav"><nav>
+  <ul>
+    <li><a href="/us/en/magazine.html">Magazine</a></li>
+    <li><a href="/us/en/adventures.html">Adventures</a></li>
+    <li><a href="/us/en/faqs.html">FAQs</a></li>
+    <li class="is-active"><a href="/us/en/about-us.html">About Us</a></li>
+  </ul>
+</nav></div>
+<script src="canon.js"></script>
+</body>

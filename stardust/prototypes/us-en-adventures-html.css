@@ -1,0 +1,21 @@
+/* us-en-adventures-html (listing archetype) — page-specific CSS.
+   Values lifted from clientlib-site.min.css / clientlib-base.min.css (wknd.site):
+   .cmp-layout-container--fixed, .cmp-tabs, .cmp-title. Chrome + hero teaser + image list come from canon.css. */
+
+/* Fixed layout container (cmp-layout-container--fixed): live computes padding 0, box-sizing border-box,
+   max-width 1164px at >=1025 — identical to canon .container; the class is a template marker only. */
+.container--fixed { box-sizing: border-box; }
+
+/* Page title (cmp-title h1) — inherits canon h1: Asar 40px, margin 27px 0 13.5px */
+.page-title { margin: 27px 0 13.5px; }
+
+/* Tabs (cmp-tabs) */
+.tabs__list { display: flex; flex-wrap: wrap; list-style: none; margin: 1em 0; padding-left: 0; }
+.tabs__tab {
+  border-bottom: 1px solid transparent; box-sizing: border-box; cursor: pointer; font-size: var(--body-sm);
+  max-height: var(--button-size); min-width: var(--button-size); padding: .5rem 1rem; text-transform: uppercase;
+}
+.tabs__tab:focus { outline: none; }
+.tabs__tab--active { background-color: #202020; border: none; border-color: inherit; color: #fff; }
+.tabs__panel { display: none; }
+.tabs__panel--active { display: block; }

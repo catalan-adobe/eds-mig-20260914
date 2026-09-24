@@ -1,7 +1,7 @@
 {
   "_provenance": {
-    "writtenBy": "stardust:extract",
-    "writtenAt": "2026-09-24T07:06:16.219Z",
+    "writtenBy": "stardust:prototype",
+    "writtenAt": "2026-09-24T08:36:19Z",
     "stardustVersion": "0.10.0"
   },
   "site": {
@@ -25,17 +25,26 @@
       "url": "https://wknd.site/us/en/about-us.html",
       "title": "About Us",
       "type": "static",
-      "status": "extracted",
+      "status": "approved",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-24T06:55:10.951Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-24T08:36:19Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-24T08:36:19Z",
+          "approvedBy": "hands-off"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-about-us-html.json",
-      "prototypePath": null,
+      "prototypePath": "stardust/prototypes/us-en-about-us-html-proposed.html",
       "migratedPath": null
     },
     {
@@ -79,17 +88,26 @@
       "url": "https://wknd.site/us/en/adventures/climbing-new-zealand.html",
       "title": "Climbing New Zealand",
       "type": "program",
-      "status": "extracted",
+      "status": "approved",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-24T06:55:17.425Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-24T08:36:19Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-24T08:36:19Z",
+          "approvedBy": "hands-off"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-adventures-climbing-new-zealand-html.json",
-      "prototypePath": null,
+      "prototypePath": "stardust/prototypes/us-en-adventures-climbing-new-zealand-html-proposed.html",
       "migratedPath": null
     },
     {
@@ -187,17 +205,26 @@
       "url": "https://wknd.site/us/en/adventures.html",
       "title": "Adventures",
       "type": "listing",
-      "status": "extracted",
+      "status": "approved",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-24T06:55:05.676Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-24T08:36:19Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-24T08:36:19Z",
+          "approvedBy": "hands-off"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-adventures-html.json",
-      "prototypePath": null,
+      "prototypePath": "stardust/prototypes/us-en-adventures-html-proposed.html",
       "migratedPath": null
     },
     {
@@ -349,17 +376,26 @@
       "url": "https://wknd.site/us/en/faqs.html",
       "title": "FAQs",
       "type": "unique",
-      "status": "extracted",
+      "status": "approved",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-24T06:55:05.141Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-24T08:36:19Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-24T08:36:19Z",
+          "approvedBy": "hands-off"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-faqs-html.json",
-      "prototypePath": null,
+      "prototypePath": "stardust/prototypes/us-en-faqs-html-proposed.html",
       "migratedPath": null
     },
     {
@@ -367,17 +403,26 @@
       "url": "https://wknd.site/us/en.html",
       "title": "WKND Adventures and Travel",
       "type": "landing",
-      "status": "extracted",
+      "status": "approved",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-24T06:55:05.676Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-24T08:36:19Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-24T08:36:19Z",
+          "approvedBy": "hands-off"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-html.json",
-      "prototypePath": null,
+      "prototypePath": "stardust/prototypes/us-en-html-proposed.html",
       "migratedPath": null
     },
     {
@@ -439,17 +484,26 @@
       "url": "https://wknd.site/us/en/magazine/san-diego-surf.html",
       "title": "San Diego Surf Spots",
       "type": "article",
-      "status": "extracted",
+      "status": "approved",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-24T06:55:10.952Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-24T08:36:19Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-24T08:36:19Z",
+          "approvedBy": "hands-off"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-magazine-san-diego-surf-html.json",
-      "prototypePath": null,
+      "prototypePath": "stardust/prototypes/us-en-magazine-san-diego-surf-html-proposed.html",
       "migratedPath": null
     },
     {

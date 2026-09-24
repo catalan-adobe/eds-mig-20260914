@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>San Diego Surf Spots</title>
+<meta name="description" content="From the hippie beaches of Ocean Beach to the ritzy shores of La Jolla and everywhere in between. Discover the San Diego surf scene.">
+<meta name="stardust-prototype" content="us-en-magazine-san-diego-surf-html">
+<link rel="icon" href="../current/assets/favicon.png">
+<link rel="stylesheet" href="canon.css">
+<link rel="stylesheet" href="us-en-magazine-san-diego-surf-html.css">
+</head>
+<body class="anonymous page-article" data-template="article">
+<div class="page-root">
+<header class="site-header" data-canon data-section="site-header" data-intent="global navigation" data-layout="edge-to-edge" data-nav-collapse="hamburger">
+  <div class="utility-bar">
+    <div class="utility-bar__inner">
+      <div class="utility-bar__account">
+        <div class="account-links">
+          <span class="account-links__greeting" id="wkndGreetingLabel">Welcome</span>
+          <a class="account-links__link account-links__link--sign-in" href="#sign-in">Sign In</a>
+          <a class="account-links__link account-links__link--sign-out" href="#sign-out">Sign Out</a>
+        </div>
+      </div>
+      <div class="language-nav">
+        <div class="language-nav__toggle"><a id="langNavToggleHeader" href="#langNavToggle" aria-label="Toggle Language en-US">en-US</a></div>
+        <nav class="language-menu" role="navigation">
+          <ul>
+            <li class="language-menu__country language-menu__country--US"><span class="language-menu__country-title" lang="en-US">United States</span>
+              <ul>
+                <li class="language-menu__locale language-menu__locale--active"><a href="/us/en.html" hreflang="en-US" lang="en-US" rel="alternate" title="WKND Adventures and Travel">en-US</a></li>
+                <li class="language-menu__locale"><a href="/us/es.html" hreflang="es-US" lang="es-US" rel="alternate" title="Español">es-US</a></li>
+              </ul>
+            </li>
+            <li class="language-menu__country language-menu__country--CA"><span class="language-menu__country-title" lang="en-CA">Canada</span>
+              <ul>
+                <li class="language-menu__locale"><a href="/ca/en.html" hreflang="en-CA" lang="en-CA" rel="alternate" title="WKND Adventures and Travel">en-CA</a></li>
+                <li class="language-menu__locale"><a href="/ca/fr.html" hreflang="fr-CA" lang="fr-CA" rel="alternate" title="Français">fr-CA</a></li>
+              </ul>
+            </li>
+            <li class="language-menu__country language-menu__country--CH"><span class="language-menu__country-title" lang="de-CH">Switzerland</span>
+              <ul>
+                <li class="language-menu__locale"><a href="/ch/de.html" hreflang="de-CH" lang="de-CH" rel="alternate" title="Deutsch">de-CH</a></li>
+                <li class="language-menu__locale"><a href="/ch/fr.html" hreflang="fr-CH" lang="fr-CH" rel="alternate" title="Français">fr-CH</a></li>
+                <li class="language-menu__locale"><a href="/ch/it.html" hreflang="it-CH" lang="it-CH" rel="alternate" title="Italiano">it-CH</a></li>
+              </ul>
+            </li>
+            <li class="language-menu__country language-menu__country--DE"><span class="language-menu__country-title" lang="de-DE">Germany</span>
+              <ul><li class="language-menu__locale"><a href="/de/de.html" hreflang="de-DE" lang="de-DE" rel="alternate" title="Deutsch">de-DE</a></li></ul>
+            </li>
+            <li class="language-menu__country language-menu__country--FR"><span class="language-menu__country-title" lang="fr-FR">France</span>
+              <ul><li class="language-menu__locale"><a href="/fr/fr.html" hreflang="fr-FR" lang="fr-FR" rel="alternate" title="Français">fr-FR</a></li></ul>
+            </li>
+            <li class="language-menu__country language-menu__country--ES"><span class="language-menu__country-title" lang="es-ES">Spain</span>
+              <ul><li class="language-menu__locale"><a href="/es/es.html" hreflang="es-ES" lang="es-ES" rel="alternate" title="Español">es-ES</a></li></ul>
+            </li>
+            <li class="language-menu__country language-menu__country--IT"><span class="language-menu__country-title" lang="it-IT">Italy</span>
+              <ul><li class="language-menu__locale"><a href="/it/it.html" hreflang="it-IT" lang="it-IT" rel="alternate" title="Italiano">it-IT</a></li></ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="masthead">
+    <div class="masthead__inner">
+      <div class="logo image" data-slot="logo"><a href="/us/en.html"><img src="https://wknd.site/content/experience-fragments/wknd/language-masters/en/site/header/master/_jcr_content/root/container/container_1195249223/image.coreimg.svg/1594412560447/wknd-logo-dk.svg" loading="lazy" alt="WKND Logo"></a></div>
+      <nav class="primary-nav" role="navigation" data-slot="primary-nav">
+        <ul class="primary-nav__list">
+          <li class="is-home"><a href="/us/en.html">Home</a></li>
+          <li class="is-active"><a href="/us/en/magazine.html">Magazine</a></li>
+          <li><a href="/us/en/adventures.html">Adventures</a></li>
+          <li><a href="/us/en/faqs.html">FAQs</a></li>
+          <li><a href="/us/en/about-us.html">About Us</a></li>
+        </ul>
+      </nav>
+      <section class="site-search" role="search">
+        <form class="site-search__form">
+          <div class="site-search__field">
+            <i class="site-search__icon"></i>
+            <input class="site-search__input" type="text" name="fulltext" placeholder="Search" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" aria-owns="site-search-results">
+            <button class="site-search__clear" type="button" aria-label="Clear"><i class="site-search__clear-icon"></i></button>
+          </div>
+        </form>
+        <div class="site-search__results" id="site-search-results" role="listbox" aria-label="Search results" aria-multiselectable="false"></div>
+        <script type="x-template">
+    <a class="cmp-search__item" data-cmp-hook-search="item" role="option" aria-selected="false">
+        <span class="cmp-search__item-title" data-cmp-hook-search="itemTitle"></span>
+    </a>
+</script>
+      </section>
+    </div>
+  </div>
+</header>
+<main class="page-main article-layout" data-template="article">
+  <div class="fixed-container">
+    <div class="grid">
+      <section class="column image lead-image" data-section="lead-image" data-intent="emotional hook" data-layout="contained" data-slot="leadImage">
+        <div class="image"><img src="https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/image.coreimg.jpeg/1660323822923/beach-walking.jpeg" srcset="https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/image.coreimg.60.100.jpeg/1660323822923/beach-walking.jpeg 100w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/image.coreimg.60.200.jpeg/1660323822923/beach-walking.jpeg 200w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/image.coreimg.60.300.jpeg/1660323822923/beach-walking.jpeg 300w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/image.coreimg.60.400.jpeg/1660323822923/beach-walking.jpeg 400w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/image.coreimg.60.500.jpeg/1660323822923/beach-walking.jpeg 500w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/image.coreimg.60.600.jpeg/1660323822923/beach-walking.jpeg 600w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/image.coreimg.60.700.jpeg/1660323822923/beach-walking.jpeg 700w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/image.coreimg.60.800.jpeg/1660323822923/beach-walking.jpeg 800w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/image.coreimg.60.900.jpeg/1660323822923/beach-walking.jpeg 900w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/image.coreimg.60.1000.jpeg/1660323822923/beach-walking.jpeg 1000w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/image.coreimg.60.1100.jpeg/1660323822923/beach-walking.jpeg 1100w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/image.coreimg.60.1200.jpeg/1660323822923/beach-walking.jpeg 1200w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/image.coreimg.60.1600.jpeg/1660323822923/beach-walking.jpeg 1600w" loading="lazy" width="1620" height="1080" alt="Young lady with surfboard going to the ocean at surf spot" title="Beach Walking"></div>
+      </section>
+      <div class="column breadcrumb" data-section="breadcrumb" data-intent="explain mechanic" data-layout="contained" data-slot="breadcrumb">
+        <nav class="breadcrumb__nav" role="navigation" aria-label="Breadcrumb">
+          <ol class="breadcrumb__list">
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="/us/en/magazine.html"><span>Magazine</span></a></li>
+            <li class="breadcrumb__item breadcrumb__item--active"><span>San Diego Surf Spots</span></li>
+          </ol>
+        </nav>
+      </div>
+      <div class="article-main" data-section="article" data-intent="inform" data-layout="side-rail">
+        <h1 class="article-title" data-slot="headline">San Diego Surf Spots</h1>
+        <h4 class="article-byline" data-slot="byline">By Justin Barr</h4>
+        <article class="article-body" data-module="content-fragment" data-slot="body">
+          <h3 class="article-body__title">San Diego Surfspots</h3>
+          <div class="article-body__elements">
+<p>San Diego's 70 miles of open ocean coastline cannot be beat for surfers of all ages and ability levels. Whether you are a beginner (kook) with your first WaveStorm from Costco or a grizzled veteran with a quiver of boards there is a surf spot for you. Always check the tide and conditions. San Diego waves tend to be best at mid-tide and early in the morning or late in the evening (sunset surf!) Below are some of our favorites!</p>
+<div class="grid"><div class="column image article-image"><div class="image"><img src="https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.jpeg/1660323790169/adobestock-164735399.jpeg" srcset="https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.100.jpeg/1660323790169/adobestock-164735399.jpeg 100w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.200.jpeg/1660323790169/adobestock-164735399.jpeg 200w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.300.jpeg/1660323790169/adobestock-164735399.jpeg 300w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.400.jpeg/1660323790169/adobestock-164735399.jpeg 400w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.500.jpeg/1660323790169/adobestock-164735399.jpeg 500w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.600.jpeg/1660323790169/adobestock-164735399.jpeg 600w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.700.jpeg/1660323790169/adobestock-164735399.jpeg 700w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.800.jpeg/1660323790169/adobestock-164735399.jpeg 800w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.900.jpeg/1660323790169/adobestock-164735399.jpeg 900w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1000.jpeg/1660323790169/adobestock-164735399.jpeg 1000w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1100.jpeg/1660323790169/adobestock-164735399.jpeg 1100w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1200.jpeg/1660323790169/adobestock-164735399.jpeg 1200w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1600.jpeg/1660323790169/adobestock-164735399.jpeg 1600w" loading="lazy" width="1280" height="853" alt="Longboarding"><span class="image__title">Gorgeous beach point breaks</span></div></div></div>
+<h2>Swami's</h2>
+<div class="grid"><div class="column image article-image"><div class="image"><img src="https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.jpeg/1660323785861/adobestock-166388792.jpeg" srcset="https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.100.jpeg/1660323785861/adobestock-166388792.jpeg 100w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.200.jpeg/1660323785861/adobestock-166388792.jpeg 200w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.300.jpeg/1660323785861/adobestock-166388792.jpeg 300w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.400.jpeg/1660323785861/adobestock-166388792.jpeg 400w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.500.jpeg/1660323785861/adobestock-166388792.jpeg 500w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.600.jpeg/1660323785861/adobestock-166388792.jpeg 600w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.700.jpeg/1660323785861/adobestock-166388792.jpeg 700w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.800.jpeg/1660323785861/adobestock-166388792.jpeg 800w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.900.jpeg/1660323785861/adobestock-166388792.jpeg 900w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.1000.jpeg/1660323785861/adobestock-166388792.jpeg 1000w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.1100.jpeg/1660323785861/adobestock-166388792.jpeg 1100w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.1200.jpeg/1660323785861/adobestock-166388792.jpeg 1200w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.1600.jpeg/1660323785861/adobestock-166388792.jpeg 1600w" loading="lazy" width="955" height="716" alt="Famous bay for surf on Nicaragua aerial drone view on sunset time" title="1251191 Famous bay for surf on Nicaragua"></div></div></div>
+<p>Swami's is named for a self-realization temple on the bluff overlooking the ocean and beach. Swamis is a point break with a long right-hander. On big days, Swami's can hold the swell and expect a large crowd. Bring a big long board if you want to catch any waves, as the crowd can be pretty competitive.</p>
+<h2>Cardiff by the Sea</h2>
+<div class="grid"><div class="column image article-image"><div class="image"><img src="https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par4/image.coreimg.jpeg/1660323789400/adobestock-266406767.jpeg" srcset="https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par4/image.coreimg.60.100.jpeg/1660323789400/adobestock-266406767.jpeg 100w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par4/image.coreimg.60.200.jpeg/1660323789400/adobestock-266406767.jpeg 200w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par4/image.coreimg.60.300.jpeg/1660323789400/adobestock-266406767.jpeg 300w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par4/image.coreimg.60.400.jpeg/1660323789400/adobestock-266406767.jpeg 400w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par4/image.coreimg.60.500.jpeg/1660323789400/adobestock-266406767.jpeg 500w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par4/image.coreimg.60.600.jpeg/1660323789400/adobestock-266406767.jpeg 600w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par4/image.coreimg.60.700.jpeg/1660323789400/adobestock-266406767.jpeg 700w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par4/image.coreimg.60.800.jpeg/1660323789400/adobestock-266406767.jpeg 800w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par4/image.coreimg.60.900.jpeg/1660323789400/adobestock-266406767.jpeg 900w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par4/image.coreimg.60.1000.jpeg/1660323789400/adobestock-266406767.jpeg 1000w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par4/image.coreimg.60.1100.jpeg/1660323789400/adobestock-266406767.jpeg 1100w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par4/image.coreimg.60.1200.jpeg/1660323789400/adobestock-266406767.jpeg 1200w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par4/image.coreimg.60.1600.jpeg/1660323789400/adobestock-266406767.jpeg 1600w" loading="lazy" width="1228" height="818" alt="Guy surfing in Costa Rica" title="Guy surfing in Costa Rica"></div></div></div>
+<p>Cardiff / San Elijo Beach is a short cobblestone beach just south of Swami's. It has a small reef with fun should-high&nbsp;waves. Home to famous pros like Rob Machado. Great for a long board or fish. Both right and left breaks can be found.&nbsp;</p>
+<div class="grid"><div class="column image article-image"><div class="image"><img src="https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par5/image.coreimg.jpeg/1660323790890/adobestock-272184938.jpeg" srcset="https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par5/image.coreimg.60.100.jpeg/1660323790890/adobestock-272184938.jpeg 100w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par5/image.coreimg.60.200.jpeg/1660323790890/adobestock-272184938.jpeg 200w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par5/image.coreimg.60.300.jpeg/1660323790890/adobestock-272184938.jpeg 300w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par5/image.coreimg.60.400.jpeg/1660323790890/adobestock-272184938.jpeg 400w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par5/image.coreimg.60.500.jpeg/1660323790890/adobestock-272184938.jpeg 500w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par5/image.coreimg.60.600.jpeg/1660323790890/adobestock-272184938.jpeg 600w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par5/image.coreimg.60.700.jpeg/1660323790890/adobestock-272184938.jpeg 700w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par5/image.coreimg.60.800.jpeg/1660323790890/adobestock-272184938.jpeg 800w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par5/image.coreimg.60.900.jpeg/1660323790890/adobestock-272184938.jpeg 900w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par5/image.coreimg.60.1000.jpeg/1660323790890/adobestock-272184938.jpeg 1000w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par5/image.coreimg.60.1100.jpeg/1660323790890/adobestock-272184938.jpeg 1100w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par5/image.coreimg.60.1200.jpeg/1660323790890/adobestock-272184938.jpeg 1200w,https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par5/image.coreimg.60.1600.jpeg/1660323790890/adobestock-272184938.jpeg 1600w" loading="lazy" width="3056" height="2024" alt="beach and sea" title="beach and sea"></div></div></div>
+<h2>Del Mar</h2>
+<p>Del Mar (sometimes called the new Malibu) is one of the more reliable spots in San Diego. It has a good mix of reef and sand breaks. Expect a big crowd at the main peaks but you can typically fan out and find something for yourself.&nbsp;</p>
+<h2>Black's Beach</h2>
+<p>Black's is often considered San Diego's best wave. The best conditions and swell will always be found here. Even on smaller days, Black's will be better than surrounding breaks. A&nbsp;subterranean trench runs offshore and creates huge peaks with high energy. There is a very long hike down a steep cliff, which thins out weekend warriors but not the best surfers in the area.</p>
+<h2>La Jolla Shores</h2>
+<p>La Jolla shores is one of the most popular beaches in San Diego. This is a great spot for beginners to learn. On the weekends you will see countless surf schools teaching aspiring surfers. Can get very crowded but most people are out there just to have a good time.</p>
+<h2>Old Man's at Tourmaline</h2>
+<p>Named Old Man's because many of the older surfers come here. The wave tends to roll in a little slower, giving beginners (and older surfers) plenty of time to get to their feet and hang 10.</p>
+          </div>
+        </article>
+        <section class="contributor" data-section="contributor" data-intent="build trust" data-layout="contained" data-module="contributor-byline" data-slot="author">
+          <div class="column separator"><hr></div>
+          <div class="grid">
+            <div class="column contributor__byline">
+              <div class="byline">
+                <div class="byline__image"><div class="image"><img src="https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/justin-barr/byline/_jcr_content/root/container/byline_copy.coreimg.jpeg/1660323786548/justin-barr.jpeg" alt=""></div></div>
+                <h2 class="byline__name">Justin Barr</h2>
+                <p class="byline__occupations">Ceramic Artist, Rock Climber, Writer</p>
+              </div>
+            </div>
+            <div class="column contributor__buttons">
+              <div class="btn-list">
+                <div class="button button--secondary button--icon"><a href="#jbarr" aria-label="Facebook"><span class="icon icon--facebook"></span><span>Facebook</span></a></div>
+                <div class="button button--secondary button--icon"><a href="#jbarr" aria-label="Twitter"><span class="icon icon--twitter"></span><span>Twitter</span></a></div>
+                <div class="button button--secondary button--icon"><a href="#jbarr" aria-label="instagram"><span class="icon icon--instagram"></span><span>Instagram</span></a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <aside class="article-sidebar" data-section="sidebar" data-intent="drive action" data-layout="side-rail">
+        <div class="sidebar"><div class="grid">
+        <div class="column sidebar-title" data-slot="share"><h5 class="sidebar-title__text">SHARE THIS STORY</h5></div>
+        <div class="column sharing"><div class="fb-share-button"></div> <a href="https://www.pinterest.com/pin/create/button/"></a></div>
+        <div class="column separator separator--hidden separator--space-small"><hr></div>
+        <div class="column upnext" data-module="upnext-list" data-slot="related">
+          <ul class="upnext__list">
+          <li class="upnext__item"><a class="upnext__link" href="/us/en/magazine/guide-la-skateparks.html"><span class="upnext__title">Ultimate Guide to LA Skateparks</span> <span class="upnext__date">Wednesday, 30 Sep 2020</span></a></li>
+          <li class="upnext__item"><a class="upnext__link" href="/us/en/magazine/ski-touring.html"><span class="upnext__title">Ski Touring</span> <span class="upnext__date">Wednesday, 30 Sep 2020</span></a></li>
+          <li class="upnext__item"><a class="upnext__link" href="/us/en/magazine/western-australia.html"><span class="upnext__title">Western Australia</span> <span class="upnext__date">Thursday, 9 Jul 2020</span></a></li>
+          <li class="upnext__item"><a class="upnext__link" href="/us/en/magazine/san-diego-surf.html"><span class="upnext__title">San Diego Surf Spots</span> <span class="upnext__date">Thursday, 9 Jul 2020</span></a></li>
+          <li class="upnext__item"><a class="upnext__link" href="/us/en/magazine/arctic-surfing.html"><span class="upnext__title">Arctic Surfing</span> <span class="upnext__date">Thursday, 9 Jul 2020</span></a></li>
+          </ul>
+        </div>
+        </div></div>
+      </aside>
+    </div>
+  </div>
+</main>
+<footer class="site-footer" data-canon data-section="site-footer" data-intent="build trust" data-layout="contained">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="logo image" data-slot="logo"><a href="/us/en.html"><img src="https://wknd.site/content/experience-fragments/wknd/language-masters/en/site/footer/master/_jcr_content/root/container/container/image.coreimg.svg/1594412963641/wknd-logo-light.svg" loading="lazy" alt="WKND Logo"></a></div>
+      <nav class="footer-nav" role="navigation" aria-label="Footer navigation" data-slot="footer-nav">
+        <ul class="footer-nav__list">
+          <li class="is-home"><a href="/us/en.html">Home</a></li>
+          <li class="is-active"><a href="/us/en/magazine.html">Magazine</a></li>
+          <li><a href="/us/en/adventures.html">Adventures</a></li>
+          <li><a href="/us/en/faqs.html">FAQs</a></li>
+          <li><a href="/us/en/about-us.html">About Us</a></li>
+        </ul>
+      </nav>
+      <div class="footer-follow"><h4>Follow Us</h4></div>
+      <div class="social-buttons" data-slot="social">
+        <div class="social-buttons__list">
+          <div class="button button--icon"><a href="#facebookwknd" aria-label="Facebook WKND Button"><span class="icon icon--facebook"></span><span>Facebook</span></a></div>
+          <div class="button button--icon"><a href="#twitterWKND" aria-label="Twitter WKND Button"><span class="icon icon--twitter"></span><span>Twitter</span></a></div>
+          <div class="button button--icon"><a href="#instagramwknd" aria-label="Instagram WKND"><span class="icon icon--instagram"></span><span>Instagram</span></a></div>
+        </div>
+      </div>
+      <div class="separator separator--hidden separator--space-small"><hr></div>
+      <div class="footer-text" data-slot="legal">
+<p>Ⓒ 2019,&nbsp;&nbsp;WKND Site.</p>
+<p>WKND is a fictitious adventure and travel website created by Adobe to demonstrate how anyone can use Adobe Experience Manager to build a beautiful, feature-rich website over a single weekend. This site is built entirely with Adobe Experience Manager&nbsp;<a href="https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html">Core Components</a>&nbsp;and&nbsp;<a href="https://github.com/adobe/aem-project-archetype">Archetype</a>&nbsp;that are available as open source code to the public. The entire&nbsp;<a href="https://github.com/adobe/aem-guides-wknd/">site source code</a>&nbsp;is available as open source as well and is accompanied with a&nbsp;<a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">detailed tutorial</a>&nbsp;on how to recreate the site.</p>
+<p>Many of the beautiful images in the WKND site are available for purchase via&nbsp;<a href="https://stock.adobe.com/">Adobe Stock</a>.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+<div class="nav-toggle"><a href="#mobileNav" aria-label="Open hidden mobile navigation" class="toggle"><i class="icon icon--menu" aria-hidden="true"></i></a></div>
+<div class="mobile-nav" id="mobileNav"><nav>
+  <ul>
+    <li><a href="/us/en/magazine.html">Magazine</a></li>
+    <li><a href="/us/en/adventures.html">Adventures</a></li>
+    <li><a href="/us/en/faqs.html">FAQs</a></li>
+    <li><a href="/us/en/about-us.html">About Us</a></li>
+  </ul>
+</nav></div>
+<script src="canon.js"></script>
+</body>
+</html>
