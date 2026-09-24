@@ -1,0 +1,18 @@
+{
+  "/ca/en/about-us": {
+    "status": "previewed",
+    "attempts": 1,
+    "ts": "2026-09-24T14:22:18.653Z",
+    "put": 201,
+    "preview": 200,
+    "verify": "ok"
+  },
+  "/us/en/about-us": {
+    "status": "previewed",
+    "attempts": 1,
+    "ts": "2026-09-24T14:22:18.654Z",
+    "put": 200,
+    "preview": 200,
+    "verify": "ok"
+  }
+}
