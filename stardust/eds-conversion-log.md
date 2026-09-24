@@ -210,6 +210,54 @@ grid/flex-child heuristic cannot see — the round-trip proves 3/3 CTAs per inst
 
 ## Unique cluster — appended by its subagent
 
+Page `us-en-faqs-html` → `/us/en/faqs` (archetype, template us-en-faqs-html, the only page of
+the cluster). Schema `stardust/eds-schema/us-en-faqs-html.json` (2 sections: faq — h1, image,
+intro, 7 × `DIV.accordion__item`; need-more-help — h3 + small text with two `#` links). Media:
+the FAQ image (`adobestock-277768563.jpeg`, 1447×964) is byte-identical to the program
+cluster's carousel upload (`cmp` against `stardust/.work/deploy/media/program/…`, 93 276 B) —
+the existing `media/wknd/adobestock-277768563.jpeg` ledger URL is authored, no second upload.
+Publish decision: publish (the landing unit's decision, unchanged).
+
+| section (schema) | authored as | block | decode tier |
+|---|---|---|---|
+| faq head (h1 / image / intro) | default content in the SAME section, before the block | — (D1) | — |
+| faq items × 7 | ONE block, one row per item: question `<p>` \| answer `<p>`(s) — `<b>` → `<strong>` | `accordion` | reconstructive (D5 accordion shape; single-cell rows segment on headings, extra cells fold into the panel) |
+| need-more-help (aside) | default content in the SAME section, after the block: h3 + `<p>` with `<br>`s | — (D1) | — |
+
+Layout: the section carries style `article-layout` (the foundation's 2/3 + 1/12 gap + 1/4 grid
+above 1024px, the same aem-Grid 8 / offset-1 / 3 model as the source); the block CSS places
+the wrapper AFTER the accordion (the aside) in grid column 2 (`.accordion-wrapper ~
+.default-content-wrapper`), gives the head elements and the block wrapper the source's
+0 14px `.column` gutters (the aside has none on the source), draws the h1 underline
+(cmp-title--underline) and paints the aside copy `font-small` + `text-align: left` (the
+source paragraph's inline style, which DA strips). Both default-content wrappers are
+`flow-root` (the source columns are floats). Tablet / phone widths (image 8/12, intro 8/12 on
+tablet) ride `p:has(picture)` / descendant `p` rules on the head wrapper.
+
+Accordion decode (EW7): the question moves into `div.accordion-title` (inline, `role="heading"
+aria-level="3"` — the source's `h3.accordion__header > button > span`), the header row takes
+the click, a chevron-only `<button>` (`aria-labelledby` the title, `aria-controls` the panel)
+floats right; panels use `hidden` + the source's `fadeIn .5s`. The header keeps the source's
+UA button box (Arial 13.333px strut, `padding: 1em` → 13.3333px, black) so the 16px uppercase
+question sits in the same line box. The block is a single-column grid (`minmax(0, 1fr)`), one
+grid child per item.
+
+Decisions: (1) questions authored as `<p>`, not `<h3>` — the shared role classifier reads the
+source question as an eyebrow (uppercase 16px span), an authored `<h3>` reads as a heading and
+the round-trip reports 7 ROLE SWAPs; the wrapper's ARIA heading role keeps the outline for AT.
+(2) The source's empty `<h3>&nbsp;</h3>` at the end of panel 2 is dropped (whitespace-only
+content never survives the pipeline; the panel is collapsed at rest — the expanded panel 2 is
+one empty heading line shorter than live). (3) `href="#"` phone / e-mail links kept verbatim.
+
+Gates (harness, structural): `localize-links --check` PASS; `davids-model-lint` 0 🔴 / 0 🟡;
+`delivery-lint` 0 P0 · 0 P1 · 0 P2; `media-reconcile` 1 hosted; `sanitise` 2 chars;
+`block-roundtrip --ew --map 'accordion=main .container--fixed'` (the section = both prototype
+data-sections) closed — proto 22 / EDS 22 text nodes, 2 headings, 7 eyebrows, 2 CTAs, 11 body,
+1 img each side, EW 18/18 editable, 0 dead, 0 duplicated; `qa-gate` 12 ok / 1 fail — the fail is
+the 2 frozen chrome logos on the auth-gated `preview.da.live` host (anonymous harness), listed
+by `stardust/.work/deploy/probes/broken-images.mjs`; units 7/7 rendered. Lint: `eslint
+blocks/accordion` + `stylelint` 0 hits.
+
 ## Lint environment (prepare finding, 2026-09-24)
 
 - `npm run lint:css` passes on the stock tree. `npm run lint:js` (`eslint .`) could not load

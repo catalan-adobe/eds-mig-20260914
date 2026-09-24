@@ -1,0 +1,184 @@
+/* accordion — values lifted from stardust/prototypes/us-en-faqs-html.css (cmp-accordion:
+   .accordion__header/.accordion__button/.accordion__title/.accordion__icon/.accordion__panel,
+   the aem-Grid 8/12 + 3/12 (offset 1) faq layout, .cmp-title--underline, .cmp-text--font-small)
+   and canon.css (.column gutters, h1/h3/p type) */
+
+.accordion {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.accordion .accordion-item {
+  display: flow-root;
+}
+
+/* h3.accordion__header { margin: 0 } > button.accordion__button: the live site leaves the
+   UA button font in place (Arial 13.333px, black, line-height normal) and pads 1em against it;
+   the question renders as an inline span inside that line box */
+.accordion .accordion-header {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 13.3333px;
+  border: none;
+  border-bottom: 2px solid var(--color-third);
+  background: none;
+  color: #000;
+  font: 13.3333px arial, sans-serif;
+  line-height: normal;
+  text-align: left;
+  cursor: pointer;
+}
+
+.accordion .accordion-item.expanded .accordion-header {
+  border: none;
+}
+
+.accordion .accordion-title {
+  display: inline;
+}
+
+/* span.accordion__title — the authored heading keeps its tag, the wrapper carries the paint */
+.accordion .accordion-title :is(h2, h3, h4, p) {
+  display: inline;
+  margin: 0;
+  padding-left: 0.5em;
+  color: inherit;
+  font-family: var(--body-font-family);
+  font-size: var(--heading-md);
+  font-weight: var(--font-weight-bold);
+  line-height: normal;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* span.accordion__icon — a chevron-only toggle (EW7) floated right like the source glyph */
+.accordion .accordion-toggle {
+  float: right;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.accordion .accordion-toggle:focus {
+  outline: none;
+}
+
+.accordion .accordion-toggle:focus-visible {
+  outline: 2px solid var(--color-link);
+}
+
+.accordion .accordion-icon {
+  display: block;
+  font-family: var(--icon-font-family) !important;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.accordion .accordion-icon::before {
+  content: '\e911';
+}
+
+.accordion .accordion-item.expanded .accordion-icon::before {
+  content: '\e910';
+}
+
+/* div.accordion__panel (hidden at rest, fades in when expanded) */
+.accordion .accordion-panel {
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+  font-size: var(--body-sm);
+  animation: accordion-fade-in 0.5s both;
+}
+
+.accordion .accordion-panel[hidden] {
+  display: none;
+}
+
+.accordion .accordion-panel p {
+  font-size: var(--body-sm);
+  line-height: 1.75;
+}
+
+@keyframes accordion-fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .accordion .accordion-panel {
+    animation: none;
+  }
+}
+
+/* faq page layout (section style `article-layout` + this block)
+   source: .container--fixed > .grid--12 > .faq-content (8/12, floated .column--group,
+   padding 0; its inner .grid--8 columns carry the 0 14px gutters) + aside.faq-aside (3/12,
+   offset 1/12, no gutters). The head (h1 / image / intro) is the default-content wrapper
+   BEFORE the block, the aside (h3 / small text) the one AFTER it — placed in grid column 2
+   above 1024px by the rule below (article-layout only knows the upnext-list sidebar). */
+main .section.accordion-container > .default-content-wrapper {
+  display: flow-root;
+}
+
+main .section.accordion-container > .default-content-wrapper:has(~ .accordion-wrapper) :is(h1, p),
+main .section.accordion-container > .accordion-wrapper {
+  box-sizing: border-box;
+  padding: 0 14px;
+}
+
+/* cmp-title--underline on the page title (the aside h3 stays plain) */
+main .section.accordion-container h1::after {
+  content: '';
+  display: block;
+  width: 84px;
+  padding-top: 8px;
+  border-bottom: 2px solid var(--color-accent);
+}
+
+/* cmp-text--font-small on the aside copy; the source paragraph carries an inline
+   text-align: left (DA strips it) */
+main .section.accordion-container > .accordion-wrapper ~ .default-content-wrapper p {
+  font-size: var(--body-sm);
+  text-align: left;
+}
+
+@media (width >= 1025px) {
+  main .section.article-layout.accordion-container
+    > .accordion-wrapper ~ .default-content-wrapper {
+    grid-column: 2;
+    grid-row: 1 / span 20;
+  }
+}
+
+/* tablet 768–1024: both containers 12/12; image and intro columns 8/12 of the inner grid */
+@media (width >= 768px) and (width <= 1024px) {
+  main .section.accordion-container > .default-content-wrapper:has(~ .accordion-wrapper) p {
+    width: 66.6667%;
+  }
+}
+
+/* phone ≤767: image column 8/12, everything else 12/12 */
+@media (width <= 767px) {
+  main .section.accordion-container
+    > .default-content-wrapper:has(~ .accordion-wrapper) p:has(picture) {
+    width: 66.6667%;
+  }
+}

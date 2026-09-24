@@ -365,3 +365,21 @@ hands-off judgments made at each gate as named assumptions.
   printed). Nothing global was switched.
 - **A-PR-6 (trailing `<br>`):** source `<p>Day 1<br></p>` / `<h2>…<br></h2>` trailing breaks
   render no line box and the pipeline drops them — stripped at authoring; in-line `<br>` kept.
+
+## Assumptions — C-deliver unit `unique` (2026-09-24)
+
+- **A-CU-1 (question tag):** the FAQ questions are authored as `<p>` inside the accordion
+  row, not `<h3>`: the shared role classifier reads the source's uppercase 16px span as an
+  eyebrow, so an authored heading fails the round-trip with 7 ROLE SWAPs. The generated title
+  wrapper carries `role="heading" aria-level="3"`, matching the source's `h3.accordion__header`
+  for assistive technology. An authored `<h3>` decodes identically.
+- **A-CU-2 (layout via `article-layout`):** the FAQ page reuses the foundation's
+  `article-layout` section style (2/3 + 1/12 gap + 1/4 grid above 1024px — the source's
+  aem-Grid 8 / offset 1 / 3 model); the aside is the default-content wrapper after the block,
+  placed in grid column 2 by the block CSS. No frozen file touched; no new section style.
+- **A-CU-3 (empty heading dropped):** the source's `<h3>&nbsp;</h3>` closing panel 2 is a
+  whitespace-only authoring artefact the pipeline would drop; omitted, panel collapsed at rest.
+- **A-CU-4 (media reuse):** the FAQ image is byte-identical to the program cluster's
+  `media/wknd/adobestock-277768563.jpeg` (cmp, 93 276 B) — its ledger URL is authored, no
+  duplicate upload.
+- **A-CU-5 (publish):** publish = yes, the landing unit's decision, applied unchanged.
