@@ -7,7 +7,7 @@
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-09-24T14:19:23.590Z",
+  "generatedAt": "2026-09-24T14:22:48.881Z",
   "blocks": [
     {
       "id": "accordion",
@@ -88,7 +88,7 @@
       ],
       "instanceCount": 44,
       "delivery": {
-        "status": "converted",
+        "status": "verified",
         "edsBlockName": "breadcrumb",
         "blockPath": null,
         "convertedAt": "2026-09-24T13:00:00.019Z"
@@ -222,7 +222,7 @@
       ],
       "instanceCount": 32,
       "delivery": {
-        "status": "converted",
+        "status": "verified",
         "edsBlockName": "content-fragment-elements",
         "blockPath": null,
         "convertedAt": "2026-09-24T13:00:00.239Z"
@@ -429,7 +429,7 @@
       ],
       "instanceCount": 32,
       "delivery": {
-        "status": "converted",
+        "status": "verified",
         "edsBlockName": "mini-carousel",
         "blockPath": null,
         "convertedAt": "2026-09-24T13:00:00.450Z"
@@ -514,7 +514,7 @@
       ],
       "instanceCount": 34,
       "delivery": {
-        "status": "converted",
+        "status": "verified",
         "edsBlockName": "tabs",
         "blockPath": null,
         "convertedAt": "2026-09-24T13:00:00.514Z"

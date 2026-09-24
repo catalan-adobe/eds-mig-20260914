@@ -7,7 +7,7 @@
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-09-24T14:19:23.590Z",
+  "generatedAt": "2026-09-24T14:22:48.881Z",
   "templates": [
     {
       "id": "ca-en-magazine-members-only-html",
@@ -114,10 +114,10 @@
         "title"
       ],
       "delivery": {
-        "verified": 0,
-        "deployed": 0,
+        "verified": 2,
+        "deployed": 30,
         "contentPending": 0,
-        "pending": 32
+        "pending": 0
       }
     },
     {
