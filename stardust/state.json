@@ -1,7 +1,7 @@
 {
   "_provenance": {
     "writtenBy": "stardust:replica",
-    "writtenAt": "2026-09-24T09:23:47Z",
+    "writtenAt": "2026-09-24T09:25:19Z",
     "stardustVersion": "0.10.0"
   },
   "site": {
@@ -282,11 +282,15 @@
       "url": "https://wknd.site/us/en/adventures/riverside-camping-australia.html",
       "title": "Riverside Camping",
       "type": "program",
-      "status": "extracted",
+      "status": "directed",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-24T06:55:34.174Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:25:19Z"
         }
       ],
       "stale": false,
@@ -300,11 +304,15 @@
       "url": "https://wknd.site/us/en/adventures/ski-touring-mont-blanc.html",
       "title": "Ski Touring Mont Blanc",
       "type": "program",
-      "status": "extracted",
+      "status": "directed",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-24T06:55:39.412Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:25:19Z"
         }
       ],
       "stale": false,
@@ -318,11 +326,15 @@
       "url": "https://wknd.site/us/en/adventures/surf-camp-costa-rica.html",
       "title": "Surf Camp in Costa Rica",
       "type": "program",
-      "status": "extracted",
+      "status": "directed",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-24T06:55:39.411Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:25:19Z"
         }
       ],
       "stale": false,
@@ -336,11 +348,15 @@
       "url": "https://wknd.site/us/en/adventures/tahoe-skiing.html",
       "title": "Tahoe Skiing",
       "type": "program",
-      "status": "extracted",
+      "status": "directed",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-24T06:55:22.994Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:25:19Z"
         }
       ],
       "stale": false,
@@ -354,11 +370,15 @@
       "url": "https://wknd.site/us/en/adventures/west-coast-cycling.html",
       "title": "West Coast Cycling",
       "type": "program",
-      "status": "extracted",
+      "status": "directed",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-24T06:55:22.818Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:25:19Z"
         }
       ],
       "stale": false,
@@ -372,11 +392,15 @@
       "url": "https://wknd.site/us/en/adventures/whistler-mountain-biking.html",
       "title": "Whistler Mountain Biking",
       "type": "program",
-      "status": "extracted",
+      "status": "directed",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-24T06:55:22.820Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:25:19Z"
         }
       ],
       "stale": false,
@@ -390,11 +414,15 @@
       "url": "https://wknd.site/us/en/adventures/yosemite-backpacking.html",
       "title": "Yosemite Backpacking",
       "type": "program",
-      "status": "extracted",
+      "status": "directed",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-24T06:55:22.819Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:25:19Z"
         }
       ],
       "stale": false,
@@ -580,7 +608,7 @@
     }
   ],
   "migrate": {
-    "at": "2026-09-24T09:23:47Z",
+    "at": "2026-09-24T09:25:20Z",
     "outputDir": "stardust/migrated/",
     "selfContained": true,
     "pageMap": [
@@ -846,21 +874,55 @@
         "slug": "us-en-adventures-napa-wine-tasting-html",
         "file": "stardust/migrated/us/en/adventures/napa-wine-tasting.html",
         "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-adventures-riverside-camping-australia-html",
+        "file": "stardust/migrated/us/en/adventures/riverside-camping-australia.html",
+        "assetsBundled": 21
+      },
+      {
+        "slug": "us-en-adventures-ski-touring-mont-blanc-html",
+        "file": "stardust/migrated/us/en/adventures/ski-touring-mont-blanc.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-adventures-surf-camp-costa-rica-html",
+        "file": "stardust/migrated/us/en/adventures/surf-camp-costa-rica.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-adventures-tahoe-skiing-html",
+        "file": "stardust/migrated/us/en/adventures/tahoe-skiing.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-adventures-west-coast-cycling-html",
+        "file": "stardust/migrated/us/en/adventures/west-coast-cycling.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-adventures-whistler-mountain-biking-html",
+        "file": "stardust/migrated/us/en/adventures/whistler-mountain-biking.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-adventures-yosemite-backpacking-html",
+        "file": "stardust/migrated/us/en/adventures/yosemite-backpacking.html",
+        "assetsBundled": 5
       }
     ],
     "missingAssets": [],
     "cleanedAssets": [],
     "lastRun": {
-      "at": "2026-09-24T09:23:47Z",
+      "at": "2026-09-24T09:25:20Z",
       "rendered": [
-        "us-en-adventures-bali-surf-camp-html",
-        "us-en-adventures-beervana-portland-html",
-        "us-en-adventures-colorado-rock-climbing-html",
-        "us-en-adventures-cycling-southern-utah-html",
-        "us-en-adventures-cycling-tuscany-html",
-        "us-en-adventures-downhill-skiing-wyoming-html",
-        "us-en-adventures-gastronomic-marais-tour-html",
-        "us-en-adventures-napa-wine-tasting-html"
+        "us-en-adventures-riverside-camping-australia-html",
+        "us-en-adventures-ski-touring-mont-blanc-html",
+        "us-en-adventures-surf-camp-costa-rica-html",
+        "us-en-adventures-tahoe-skiing-html",
+        "us-en-adventures-west-coast-cycling-html",
+        "us-en-adventures-whistler-mountain-biking-html",
+        "us-en-adventures-yosemite-backpacking-html"
       ],
       "unchanged": [],
       "refused": [],

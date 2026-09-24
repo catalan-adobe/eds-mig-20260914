@@ -1007,6 +1007,277 @@
         "variance-probe"
       ],
       "migrated": "stardust/migrated/us/en/adventures/napa-wine-tasting.html"
+    },
+    "us-en-adventures-riverside-camping-australia-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "content-length"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0.05,
+          "px": 467,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.02,
+          "px": 644,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/riverside-camping-australia.html"
+    },
+    "us-en-adventures-ski-touring-mont-blanc-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "content-length"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0.06,
+          "px": 684,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.02,
+          "px": 836,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/ski-touring-mont-blanc.html"
+    },
+    "us-en-adventures-surf-camp-costa-rica-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "image--captioned"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0.06,
+          "px": 590,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.03,
+          "px": 796,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/surf-camp-costa-rica.html"
+    },
+    "us-en-adventures-tahoe-skiing-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "program-body--flush",
+        "program-facts--split",
+        "image--captioned"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0.04,
+          "px": 367,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.03,
+          "px": 942,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/tahoe-skiing.html"
+    },
+    "us-en-adventures-west-coast-cycling-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "program-body--flush",
+        "program-facts--split"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0.05,
+          "px": 487,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.04,
+          "px": 1060,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/west-coast-cycling.html"
+    },
+    "us-en-adventures-whistler-mountain-biking-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "content-length"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0.07,
+          "px": 749,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.03,
+          "px": 982,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/whistler-mountain-biking.html"
+    },
+    "us-en-adventures-yosemite-backpacking-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "program-body--flush",
+        "program-facts--split",
+        "image--captioned"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0.05,
+          "px": 570,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.04,
+          "px": 1187,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/yosemite-backpacking.html"
     }
   }
 }

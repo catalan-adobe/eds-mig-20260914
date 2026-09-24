@@ -1,0 +1,112 @@
+{
+  "slug": "us-en-adventures-riverside-camping-australia-html",
+  "type": "program",
+  "renderBranch": "A'",
+  "template": "us-en-adventures-climbing-new-zealand-html",
+  "modules": [
+    "mini-carousel",
+    "trip-facts",
+    "sharing",
+    "tabs"
+  ],
+  "slotsFilled": [
+    "program"
+  ],
+  "canonShas": {
+    "header": "654179cfad1c",
+    "footer": "c970115fcea3",
+    "css": "bd936aef89b6"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Riverside Camping",
+    "description": "Learn how to pitch a tent by the Siegel River, catch local cod, and spot unique Australian wildlife on this retreat. Or, you can sit back in the shade with a cool beverage and a book until it's too dark to read, then tell stories around a campfire. ",
+    "canonical": null,
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Riverside Camping",
+    "description": "Learn how to pitch a tent by the Siegel River, catch local cod, and spot unique Australian wildlife on this retreat. Or, you can sit back in the shade with a cool beverage and a book until it's too dark to read, then tell stories around a campfire. ",
+    "url": "https://wknd.site/us/en/adventures/riverside-camping-australia.html"
+  },
+  "migratedAt": "2026-09-24T09:25:19Z",
+  "designMdSha": "720637eadd96",
+  "designJsonSha": "a627c03a4224",
+  "sourceCurrentSha": "d3b0443c1802",
+  "sourceProposedSha": "29af09a4b85a",
+  "fidelityTier": "sibling",
+  "archetypeSource": "us-en-adventures-climbing-new-zealand-html",
+  "archetypeSha": "32c46dcfad9f",
+  "variants": [
+    "content-length"
+  ],
+  "gatesPassed": [
+    "content-fidelity",
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "content-count",
+    "delivery-lint",
+    "variance-probe"
+  ],
+  "gateEvidence": {
+    "content-fidelity": "verbatim from stardust/current/pages/us-en-adventures-riverside-camping-australia-html.html; content-diff: main 39/39 text nodes (6h/16e/1cta/16b), 9/9 img; header 28/28; footer 17/17; deviations logged in contentDeviations[]",
+    "pixel-gate-1440": "0.02% (644 px, threshold 10%), height delta 0px, round sib1 @1440 (us-en-adventures-riverside-camping-australia-html-1440.log) [prototype regime]",
+    "pixel-gate-360": "0.05% (467 px, threshold 10%), height delta 0px, round sib1 @360 (us-en-adventures-riverside-camping-australia-html-360.log) [prototype regime]",
+    "content-count": "content-diff: none — content + roles match (us-en-adventures-riverside-camping-australia-html-cdiff.log)",
+    "media-reconcile": "n/a: no delivered content file yet (content/us/en/adventures/riverside-camping-australia.html) — media-reconcile runs in the delivery chain (row C)",
+    "delivery-lint": "0 P0 · 0 P1 · 1 P2 (delivery-lint --path /us/en/adventures/riverside-camping-australia)",
+    "variance-probe": "■ https://wknd.site/us/en/adventures/riverside-camping-australia.html: 2 delta(s) — variants [content-length] (variance-program.log)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 21,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/us/es.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ca/en.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ca/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/de.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/it.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/de/de.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/es/es.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/it/it.html",
+      "reason": "not-in-inventory"
+    }
+  ],
+  "outputPath": "us/en/adventures/riverside-camping-australia.html",
+  "outputPathDefault": null,
+  "sidecar": "us/en/adventures/riverside-camping-australia._meta.json",
+  "driverVersion": "1"
+}

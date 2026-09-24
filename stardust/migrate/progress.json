@@ -1,7 +1,7 @@
 {
   "flow": "replica",
   "phase": "migrate",
-  "updatedAt": "2026-09-24T09:25:19Z",
+  "updatedAt": "2026-09-24T09:25:40Z",
   "units": {
     "plan": {
       "status": "done",
@@ -66,7 +66,7 @@
       "verdict": "rendered 8, unchanged 0, refused 0, passthrough 0 (A' siblings; 6 gates each, media-reconcile n/a until delivery)"
     },
     "us-en-adventures-climbing-new-zealand-html-2": {
-      "status": "pending",
+      "status": "done",
       "kind": "render",
       "templates": [
         "us-en-adventures-climbing-new-zealand-html"
@@ -84,9 +84,9 @@
       "pages": 7,
       "variance": "stardust/migrate/variance/us-en-adventures-climbing-new-zealand-html.json",
       "variants": [],
-      "startedAt": null,
-      "endedAt": null,
-      "verdict": null
+      "startedAt": "2026-09-24T09:25:19Z",
+      "endedAt": "2026-09-24T09:25:40Z",
+      "verdict": "rendered 7, unchanged 0, refused 0, passthrough 0 (A' siblings; 6 gates each, media-reconcile n/a until delivery)"
     },
     "us-en-magazine-san-diego-surf-html": {
       "status": "pending",
