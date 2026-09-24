@@ -338,3 +338,8 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 - Advanced the six archetypes `approved → migrated`. 26/26 pages migrated.
 - Open for run 2 (deploy): `us/en.html` fails delivery-lint P0 `h1` — the live home page has no `<h1>` either (carousel headings are `<h2>`). Resolving it is a design delta and needs an inconsistency-register entry before the PUT.
 - `crop-diff.png` had leaked to the project root (write boundary) — trashed.
+
+## Preserve direction — register entry R-01 applied (2026-09-24)
+
+- User decision (option 1): the home page's first carousel slide title becomes the page `<h1>`, rendered at the h2 size. Register entry R-01 written; prototype + `us-en-html.css` edited; gate.sh rounds `r01` at 1440 and 360 both 0.00 % / Δ0 / no overflow; `stardust/migrated/us/en.html` re-placed and now lints 0 P0 / 0 P1.
+- DA token obtained through the `da-auth` skill (`da-auth-helper token`, browser IMS login), stored in `.env` (gitignored), valid to 2026-09-25T09:40Z; `admin.da.live/list` → 200.
