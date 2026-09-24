@@ -552,3 +552,25 @@ external `<img>` (wknd.site URL) the pipeline does not wrap in `<picture>`, so
 `da-media-upload.mjs` rehosts it (A-F-2). `foundation-freeze.mjs freeze` re-taken (66 files).
 Coverage: 17 blocks → `converted` via `update-coverage.mjs`; page rows stay `pending` (nothing PUT —
 A-F-3: no `deployed` row without a preview URL). Ledger: `rollout C-deliver blocked`.
+
+## C-deliver unit `landing` — published (2026-09-24, DA catalan-adobe/eds-mig-20260914, preview only)
+
+**PUT:** /ca/en 201 + preview 200; /us/en re-PUT with `--force` (200) — a sibling benchmark run
+(`stardust-25-pi-opus-5-5-0003`, same DA site, branch `replica-wknd`) had overwritten and published
+its own /us/en at 13:54:10Z (blocks featured-teaser / cards / hero-teaser); DA content is site-wide,
+so every US path of this run is exposed to that collision. Ledger `stardust/deploy/ledger-landing.json`.
+`.plain.html` both: 200, 1 h1, 13 img, 0 about:error, blocks hero-carousel / teaser-featured /
+image-list ×2 / teaser-hero imagebottom / separator ×2. media-reconcile 13 keep (both).
+
+**Published-origin gate** (gate.sh `--full --marker WKND`, us-en-html lpub1–lpub3, ca-en-html pub1–pub2):
+us-en 1440 0.26% Δh 0 · 360 0.42% Δh 0; ca-en 1440 0.26% Δh 0 · 360 0.79% Δh −1; overflow ok at
+every round; crop-compare header 0.09–0.59% / footer 0.00–0.87% (bar 2%) at both widths, both pages;
+chrome-parity on the chrome elements ✓ us-en both widths, ca-en 1 footer text Δw −2px (queued).
+lpub1 at 360 measured the foreign /us/en (42.15%, Δh −2333) — not a fidelity round.
+**Fix (iteration 2→3):** hero-carousel indicators now carry the slide heading text as a hidden text
+node (source Core Components + gated prototype do) — content-diff 🔴 5 → 3 on both pages;
+block-roundtrip `--ew` 27/27 editable, 0 dead/duplicated; qa-gate 25/25 both harness pages.
+**Residuals (3 🔴, both pages):** 2 MISSING ARIA-LABEL on default-content buttons (pipeline drops
+`aria-label`, keeps `title` — foundation request, scripts.js) · 1 header ICON DIFF clear.svg file vs
+source data-URI (byte-identical, registered by C0). Coverage: us-en-html, ca-en-html `deployed`;
+blocks hero-carousel, teaser-featured `deployed`. Publish decision unchanged: preview only.

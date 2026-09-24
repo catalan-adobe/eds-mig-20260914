@@ -7,7 +7,7 @@
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-09-24T14:10:50.889Z",
+  "generatedAt": "2026-09-24T14:19:23.477Z",
   "pages": [
     {
       "slug": "ca-en-about-us-html",
@@ -496,9 +496,9 @@
         "teaser-hero"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://sd-25-fable-replica--eds-mig-20260914--catalan-adobe.aem.page/ca/en",
+        "deployedAt": "2026-09-24T14:19:23.477Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1403,7 +1403,7 @@
       "delivery": {
         "status": "deployed",
         "deployedUrl": "https://sd-25-fable-replica--eds-mig-20260914--catalan-adobe.aem.page/us/en",
-        "deployedAt": "2026-09-24T13:49:07.324Z",
+        "deployedAt": "2026-09-24T14:19:23.437Z",
         "verifiedAt": null,
         "error": null
       }
