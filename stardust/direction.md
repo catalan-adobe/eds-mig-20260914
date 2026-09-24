@@ -329,3 +329,7 @@ hands-off judgments made at each gate as named assumptions.
   links carry the source label as `title`, and the visible link text (hidden by CSS) stays the
   accessible name.
 - A-CS-4 (publish): publish = yes, the landing unit's decision, applied unchanged.
+- A-CS-5 (current-page nav marker): the frozen header/footer do not highlight the current page
+  ("About Us" yellow item / underlined footer link on live). Filed as a foundation request with
+  the chrome-parity evidence; no override from the block CSS — a nav state belongs to the chrome
+  JS (`aria-current`), and the 1440 header band passes at 1.56 % without it.

@@ -415,3 +415,23 @@ Foundation-first gate on the published shell
 Verdict: PASS. `foundation-freeze.mjs freeze` → 39 files (styles, fonts, blocks/header,
 blocks/footer, head.html, scripts, favicon.*, icons, runtime-contract.json, content/nav.html,
 content/footer.html); `check` → unchanged. progress.json `units.foundation` → done.
+
+## C-deliver unit static — /us/en/about-us live, contributor-card, gate 1440 0.40 % / 360 0.24 % (2026-09-24)
+
+- Template us-en-about-us-html (archetype only, 1 page). Block `contributor-card` authored
+  template-slotted: ONE block per contributor, several per section; the section carries the
+  1164px grid, the block wrapper the floated 25 % / 50 % / 100 % column (block-scoped rules).
+- 7 portraits rehosted to `media/wknd/`; default content h1 / h2 + `<p><em>` intros with section
+  styles `underline, font-small`.
+- Harness: davids-model 0 🔴, delivery-lint 0/0/0, media-reconcile 7 hosted, block-roundtrip 7/7
+  closed (EW 21/21), qa-gate 8 explained fails (chrome logos auth-gated on the harness; the
+  schema's 3-button unit is a nested flex `ul`).
+- Deployed + published. pub1 @1440 failed (decorated icon `<img>` classified as a portrait →
+  duplicate card, dropped list) — fixed in the block, code-synced; pub2 @1440 0.40 % Δh 0,
+  pub1 @360 0.24 % Δh 1, 0 overflow; crop bands 1440 1.56 % / 0.02 %, 360 0.48 % / 0.04 %;
+  computed-style guard 24/24 on the preview; ai-readability 100 %.
+- Foundation requests filed: cross-section default-content margin collapse (`main` +
+  `.default-content-wrapper` flow-root — overridden in the block CSS, scoped `body.static`) and
+  the missing current-page nav marker in header/footer (no block override).
+- Git push needed the `catalan-adobe` gh credential (the keychain default `catalan_adobe` is
+  denied 403 on the repo) — pushed via a per-command credential helper, nothing global changed.

@@ -195,3 +195,28 @@ grid/flex-child heuristic cannot see — the round-trip proves 3/3 CTAs per inst
   `breadcrumb`, `article-layout`, `program-layout`. Template body classes: `landing`, `article`,
   `program`, `static`, `unique`, `listing` (metadata `template`).
 - Lint: `npm run lint` (with the `.work/lint-babel` NODE_PATH) 0 hits; `stardust/` ignored.
+
+### Static cluster — published-origin gates (2026-09-24)
+
+`/us/en/about-us` PUT → preview → live (`deploy-batch.mjs`, ledger `stardust/deploy/ledger-static.json`,
+publish = yes). `.plain.html` 200, 1 h1, 0 about:error, 0 /img/, 7 `<picture>` + 7 alt, 21 icon
+spans, 7 `contributor-card` tables, section metadata folded (`underline font-small`).
+`ai-readability` strict 100 % / code 100 %. pub1 @1440 FAILED (26.47 %, Δh −292px): on the
+published origin `decorateIcons` turns the social `:facebook:` spans into `<img>`, so the
+`isMedia()` classifier took each `<ul>` for a portrait — a second card per block and the list
+dropped (invisible on the harness, where icons stay spans). Fix: an icon `<img>` (`.closest('.icon')`)
+is never media and lists are never media; lists are slotted before media. **pub2 @1440: 0.40 %,
+Δh 0, overflow 0 → PASS; pub1 @360: 0.24 %, Δh 1px, overflow 0 → PASS.** `measure.mjs` live vs
+build @1440: h1 / h2 / intro p / column (138,454 291×345) / portrait (202,470 164×164) / h3 / h5 /
+button list (714, h66) / 48px buttons / 23×36 icon boxes identical. Crop bands: 1440 header
+1.56 % / footer 0.02 %, 360 header 0.48 % / footer 0.04 % (bar 2 %). chrome-parity 13 @1440 /
+16 @360 — the foundation's set (fixed header, "Sign In" colour, logo signatures, footer
+social-link names) plus the current-page nav marker (header "About Us" accent background,
+footer underline) → foundation request filed. `content-diff` 51 🔴 = the 21 icon links
+(build text hidden by `font-size: 0`, live by `display: none` — classifier does not see the
+build text; hrefs verified present 1:1 in `.plain.html`) + chrome; `visual-diff` STRETCHED
+IMAGE × 5 = the round `object-fit: cover` portraits (known false-positive class). Computed-style
+guard on the preview (`qa-gate.mjs` without schema): 24 ok / 0 fail — booted, 1 h1, 6 sections,
+9 blocks loaded non-empty, 0 pageerror, 0 broken images; `data-block-name` on 7, button list
+computes `flex`. Coverage: page deployed, block `contributor-card` deployed. No sibling (the
+template has one page).
