@@ -116,3 +116,18 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 - Register `program-grid` + the program/article CSS additions in the canon/variant registry at rollout C0 together with the deferred module promotions.
 
 **Artifacts touched:** stardust/migrated/** (64 html + 64 _meta.json + assets/) · stardust/prototypes/us-en-adventures-riverside-camping-australia-html.css · stardust/prototypes/us-en-magazine-western-australia-html.css · stardust/state.json · stardust/status.jsonl · stardust/journal.md · stardust/replica/gates/<slug>-<w>/ (sibling rounds) · stardust/.work/migrate/** (cluster builders, probes, state copies)
+
+## A-inventory — delivery coverage built from stardust/migrated (2026-09-24)
+
+`inventory.mjs --site-url https://wknd.site` (no `--state`: all 64 pages individually migrated; the
+`--state` archetypes-only mode split the tree into 64 singleton templates and was re-run without).
+64 pages pending, 9 templates. `rollout.json.site.da.*` / `liveHost` left null — no DA org/repo/token
+available anywhere (assumption recorded in `stardust/rollout/plan.md`).
+
+## B-block — block dedup + representative-first plan (2026-09-24)
+
+`blocks.mjs`: 21 distinct modules, 306 instances. `title`/`text`/`image`/`button` mapped to
+`default-content` (deploy D1) via `update-coverage.mjs`; 17 blocks convert once site-wide.
+`plan.mjs`: 64 steps, 9 template clusters, per-page convert/reuse. Header/footer are the C0
+foundation (not in sidecar `modules[]`). Waves, tier bias and the no-DA constraint (C-deliver stops
+before PUT) in `stardust/rollout/plan.md`.

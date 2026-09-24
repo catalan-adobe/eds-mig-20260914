@@ -1,0 +1,38 @@
+{
+  "units": {
+    "foundation": {
+      "status": "done-local",
+      "kind": "foundation",
+      "templates": [
+        "landing",
+        "program",
+        "locale-landing",
+        "about",
+        "faqs",
+        "article",
+        "listing",
+        "magazine-hub",
+        "members-only"
+      ],
+      "pages": 0,
+      "blocks": 2,
+      "gates": {
+        "360": {
+          "header": "harness boxes = live lift (117px; logo 60,52 96x36; search 186,50)",
+          "footer": "harness 593px = live lift"
+        },
+        "1440": {
+          "header": "harness boxes = live lift (194px; logo 152,82 128x48; nav 726,90; search 1122,85)",
+          "footer": "harness 260px = live lift"
+        },
+        "crop": "pending — published origin only (no DA target)",
+        "chrome": "pending — published origin only (no DA target)",
+        "local": "qa-gate 10/10; chrome EW 14/14 editable + 3 exempt, 0 dead/dup; drive 15/15; npm run lint clean; delivery-lint 22/22 fragments clean; davids-model-lint PASS"
+      },
+      "startedAt": "2026-09-24T11:01:59Z",
+      "endedAt": "2026-09-24T11:32:35.442Z",
+      "verdict": "foundation: styles + fonts + favicon + header/footer blocks + 22 locale chrome docs authored, lint pass, local asserts pass; PUT pending: no DA target",
+      "putPending": "no DA org/repo/DA_TOKEN — rollout.json.site.da.* null"
+    }
+  }
+}

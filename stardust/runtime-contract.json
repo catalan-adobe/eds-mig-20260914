@@ -1,0 +1,22 @@
+{
+  "runtime": "vanilla-eds",
+  "source": "scripts/aem.js + scripts/scripts.js read 2026-09-24 (aem-boilerplate 1.3.0 clone)",
+  "blockWrapperClass": "block",
+  "blockWrapper": "div.<name>-wrapper inside main .section.<name>-container; block carries .block + data-block-name",
+  "buttonClasses": ".button / .button.primary (strong) / .button.secondary (em) / .button.accent (strong+em), in p.button-wrapper",
+  "buttonization": "formatted-only",
+  "buttonizationNote": "decorateButtons() requires an authored <strong>/<em> around the link, the link alone in its <p>, no <img> inside, and a text that is not the URL itself",
+  "fragmentScriptPolicy": "inert-innerHTML",
+  "emptySectionCollapse": true,
+  "sectionMetadata": "server-side (style -> section classes, other keys -> data-*); scripts/aem.js decorateSections still folds a client-side section-metadata block when present",
+  "iconConvention": ":name: -> span.icon.icon-name -> decorateIcons() -> img src=/icons/name.svg",
+  "chrome": {
+    "header": "loadHeader() -> blocks/header (block reads nav metadata, else /<country>/<lang>/nav from the pathname, else /us/en/nav)",
+    "footer": "loadFooter() -> blocks/footer (same resolution with footer metadata / <locale>/footer)",
+    "navHeight": "--nav-height 200px (>=1025px) / 130px (<=1024px): the fixed header's rendered height, the in-flow reservation replaces the source's .root padding-top"
+  },
+  "autoBlocks": ["fragment (a[href*=\"/fragments/\"])", "widget (a[href*=\"/widgets/\"])"],
+  "fontsLoading": "loadFonts() loads styles/fonts.css after first paint (desktop or fonts-loaded session flag eagerly, else in loadLazy)",
+  "lazyStyles": "styles/lazy-styles.css loaded in loadLazy",
+  "templateAndTheme": "decorateTemplateAndTheme(): template/theme metadata -> body classes"
+}

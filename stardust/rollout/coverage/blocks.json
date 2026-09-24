@@ -1,0 +1,734 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/blocks",
+    "writtenAt": "2026-09-24T10:52:09.055Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage/pages.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-24T10:53:51.367Z",
+  "blocks": [
+    {
+      "id": "accordion",
+      "label": "accordion",
+      "kind": "module",
+      "signature": "module:accordion",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-faqs-html"
+      ],
+      "usedByPages": [
+        "ca-en-faqs-html",
+        "us-en-faqs-html"
+      ],
+      "instanceCount": 2,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "accordion",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "breadcrumb",
+      "label": "breadcrumb",
+      "kind": "module",
+      "signature": "module:breadcrumb",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-adventures-riverside-camping-australia-html",
+        "us-en-magazine-western-australia-html"
+      ],
+      "usedByPages": [
+        "ca-en-adventures-bali-surf-camp-html",
+        "ca-en-adventures-beervana-portland-html",
+        "ca-en-adventures-climbing-new-zealand-html",
+        "ca-en-adventures-colorado-rock-climbing-html",
+        "ca-en-adventures-cycling-southern-utah-html",
+        "ca-en-adventures-cycling-tuscany-html",
+        "ca-en-adventures-downhill-skiing-wyoming-html",
+        "ca-en-adventures-gastronomic-marais-tour-html",
+        "ca-en-adventures-napa-wine-tasting-html",
+        "ca-en-adventures-riverside-camping-australia-html",
+        "ca-en-adventures-ski-touring-mont-blanc-html",
+        "ca-en-adventures-surf-camp-costa-rica-html",
+        "ca-en-adventures-tahoe-skiing-html",
+        "ca-en-adventures-west-coast-cycling-html",
+        "ca-en-adventures-whistler-mountain-biking-html",
+        "ca-en-adventures-yosemite-backpacking-html",
+        "ca-en-magazine-arctic-surfing-html",
+        "ca-en-magazine-guide-la-skateparks-html",
+        "ca-en-magazine-members-only-alaskan-adventure-html",
+        "ca-en-magazine-members-only-fly-fishing-the-amazon-html",
+        "ca-en-magazine-san-diego-surf-html",
+        "ca-en-magazine-ski-touring-html",
+        "ca-en-magazine-western-australia-html",
+        "us-en-adventures-bali-surf-camp-html",
+        "us-en-adventures-beervana-portland-html",
+        "us-en-adventures-climbing-new-zealand-html",
+        "us-en-adventures-colorado-rock-climbing-html",
+        "us-en-adventures-cycling-southern-utah-html",
+        "us-en-adventures-cycling-tuscany-html",
+        "us-en-adventures-downhill-skiing-wyoming-html",
+        "us-en-adventures-gastronomic-marais-tour-html",
+        "us-en-adventures-napa-wine-tasting-html",
+        "us-en-adventures-riverside-camping-australia-html",
+        "us-en-adventures-ski-touring-mont-blanc-html",
+        "us-en-adventures-surf-camp-costa-rica-html",
+        "us-en-adventures-tahoe-skiing-html",
+        "us-en-adventures-west-coast-cycling-html",
+        "us-en-adventures-whistler-mountain-biking-html",
+        "us-en-adventures-yosemite-backpacking-html",
+        "us-en-magazine-arctic-surfing-html",
+        "us-en-magazine-guide-la-skateparks-html",
+        "us-en-magazine-san-diego-surf-html",
+        "us-en-magazine-ski-touring-html",
+        "us-en-magazine-western-australia-html"
+      ],
+      "instanceCount": 44,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "breadcrumb",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "button",
+      "label": "button",
+      "kind": "module",
+      "signature": "module:button",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-html"
+      ],
+      "usedByPages": [
+        "ca-en-html",
+        "us-en-html"
+      ],
+      "instanceCount": 2,
+      "delivery": {
+        "status": "converted",
+        "edsBlockName": "default-content",
+        "blockPath": null,
+        "convertedAt": "2026-09-24T10:53:51.367Z"
+      }
+    },
+    {
+      "id": "byline",
+      "label": "byline",
+      "kind": "module",
+      "signature": "module:byline",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-magazine-western-australia-html"
+      ],
+      "usedByPages": [
+        "ca-en-magazine-arctic-surfing-html",
+        "ca-en-magazine-guide-la-skateparks-html",
+        "ca-en-magazine-members-only-alaskan-adventure-html",
+        "ca-en-magazine-members-only-fly-fishing-the-amazon-html",
+        "ca-en-magazine-san-diego-surf-html",
+        "ca-en-magazine-ski-touring-html",
+        "ca-en-magazine-western-australia-html",
+        "us-en-magazine-arctic-surfing-html",
+        "us-en-magazine-guide-la-skateparks-html",
+        "us-en-magazine-san-diego-surf-html",
+        "us-en-magazine-ski-touring-html",
+        "us-en-magazine-western-australia-html"
+      ],
+      "instanceCount": 12,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "byline",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "content-fragment",
+      "label": "content-fragment",
+      "kind": "module",
+      "signature": "module:content-fragment",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-magazine-western-australia-html"
+      ],
+      "usedByPages": [
+        "ca-en-magazine-arctic-surfing-html",
+        "ca-en-magazine-guide-la-skateparks-html",
+        "ca-en-magazine-members-only-alaskan-adventure-html",
+        "ca-en-magazine-members-only-fly-fishing-the-amazon-html",
+        "ca-en-magazine-san-diego-surf-html",
+        "ca-en-magazine-ski-touring-html",
+        "ca-en-magazine-western-australia-html",
+        "us-en-magazine-arctic-surfing-html",
+        "us-en-magazine-guide-la-skateparks-html",
+        "us-en-magazine-san-diego-surf-html",
+        "us-en-magazine-ski-touring-html",
+        "us-en-magazine-western-australia-html"
+      ],
+      "instanceCount": 12,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "content-fragment",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "content-fragment-elements",
+      "label": "content-fragment-elements",
+      "kind": "module",
+      "signature": "module:content-fragment-elements",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-adventures-riverside-camping-australia-html"
+      ],
+      "usedByPages": [
+        "ca-en-adventures-bali-surf-camp-html",
+        "ca-en-adventures-beervana-portland-html",
+        "ca-en-adventures-climbing-new-zealand-html",
+        "ca-en-adventures-colorado-rock-climbing-html",
+        "ca-en-adventures-cycling-southern-utah-html",
+        "ca-en-adventures-cycling-tuscany-html",
+        "ca-en-adventures-downhill-skiing-wyoming-html",
+        "ca-en-adventures-gastronomic-marais-tour-html",
+        "ca-en-adventures-napa-wine-tasting-html",
+        "ca-en-adventures-riverside-camping-australia-html",
+        "ca-en-adventures-ski-touring-mont-blanc-html",
+        "ca-en-adventures-surf-camp-costa-rica-html",
+        "ca-en-adventures-tahoe-skiing-html",
+        "ca-en-adventures-west-coast-cycling-html",
+        "ca-en-adventures-whistler-mountain-biking-html",
+        "ca-en-adventures-yosemite-backpacking-html",
+        "us-en-adventures-bali-surf-camp-html",
+        "us-en-adventures-beervana-portland-html",
+        "us-en-adventures-climbing-new-zealand-html",
+        "us-en-adventures-colorado-rock-climbing-html",
+        "us-en-adventures-cycling-southern-utah-html",
+        "us-en-adventures-cycling-tuscany-html",
+        "us-en-adventures-downhill-skiing-wyoming-html",
+        "us-en-adventures-gastronomic-marais-tour-html",
+        "us-en-adventures-napa-wine-tasting-html",
+        "us-en-adventures-riverside-camping-australia-html",
+        "us-en-adventures-ski-touring-mont-blanc-html",
+        "us-en-adventures-surf-camp-costa-rica-html",
+        "us-en-adventures-tahoe-skiing-html",
+        "us-en-adventures-west-coast-cycling-html",
+        "us-en-adventures-whistler-mountain-biking-html",
+        "us-en-adventures-yosemite-backpacking-html"
+      ],
+      "instanceCount": 32,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "content-fragment-elements",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "contributor",
+      "label": "contributor",
+      "kind": "module",
+      "signature": "module:contributor",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-about-us-html"
+      ],
+      "usedByPages": [
+        "ca-en-about-us-html",
+        "us-en-about-us-html"
+      ],
+      "instanceCount": 2,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "contributor",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "download",
+      "label": "download",
+      "kind": "module",
+      "signature": "module:download",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-magazine-western-australia-html"
+      ],
+      "usedByPages": [
+        "ca-en-magazine-guide-la-skateparks-html",
+        "ca-en-magazine-western-australia-html",
+        "us-en-magazine-guide-la-skateparks-html",
+        "us-en-magazine-western-australia-html"
+      ],
+      "instanceCount": 4,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "download",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "hero-carousel",
+      "label": "hero-carousel",
+      "kind": "module",
+      "signature": "module:hero-carousel",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-html"
+      ],
+      "usedByPages": [
+        "ca-en-html",
+        "us-en-html"
+      ],
+      "instanceCount": 2,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "hero-carousel",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "image",
+      "label": "image",
+      "kind": "module",
+      "signature": "module:image",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-magazine-western-australia-html"
+      ],
+      "usedByPages": [
+        "ca-en-magazine-arctic-surfing-html",
+        "ca-en-magazine-guide-la-skateparks-html",
+        "ca-en-magazine-members-only-alaskan-adventure-html",
+        "ca-en-magazine-members-only-fly-fishing-the-amazon-html",
+        "ca-en-magazine-san-diego-surf-html",
+        "ca-en-magazine-ski-touring-html",
+        "ca-en-magazine-western-australia-html",
+        "us-en-magazine-arctic-surfing-html",
+        "us-en-magazine-guide-la-skateparks-html",
+        "us-en-magazine-san-diego-surf-html",
+        "us-en-magazine-ski-touring-html",
+        "us-en-magazine-western-australia-html"
+      ],
+      "instanceCount": 12,
+      "delivery": {
+        "status": "converted",
+        "edsBlockName": "default-content",
+        "blockPath": null,
+        "convertedAt": "2026-09-24T10:53:51.331Z"
+      }
+    },
+    {
+      "id": "image-list",
+      "label": "image-list",
+      "kind": "module",
+      "signature": "module:image-list",
+      "source": null,
+      "usedByTemplates": [
+        "ca-en-magazine-members-only-html",
+        "us-en-adventures-html",
+        "us-en-html",
+        "us-en-magazine-html"
+      ],
+      "usedByPages": [
+        "ca-en-adventures-html",
+        "ca-en-html",
+        "ca-en-magazine-html",
+        "ca-en-magazine-members-only-html",
+        "us-en-adventures-html",
+        "us-en-html",
+        "us-en-magazine-html"
+      ],
+      "instanceCount": 7,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "image-list",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "list-upnext",
+      "label": "list-upnext",
+      "kind": "module",
+      "signature": "module:list-upnext",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-magazine-western-australia-html"
+      ],
+      "usedByPages": [
+        "ca-en-magazine-arctic-surfing-html",
+        "ca-en-magazine-guide-la-skateparks-html",
+        "ca-en-magazine-members-only-alaskan-adventure-html",
+        "ca-en-magazine-members-only-fly-fishing-the-amazon-html",
+        "ca-en-magazine-san-diego-surf-html",
+        "ca-en-magazine-ski-touring-html",
+        "ca-en-magazine-western-australia-html",
+        "us-en-magazine-arctic-surfing-html",
+        "us-en-magazine-guide-la-skateparks-html",
+        "us-en-magazine-san-diego-surf-html",
+        "us-en-magazine-ski-touring-html",
+        "us-en-magazine-western-australia-html"
+      ],
+      "instanceCount": 12,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "list-upnext",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "mini-carousel",
+      "label": "mini-carousel",
+      "kind": "module",
+      "signature": "module:mini-carousel",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-adventures-riverside-camping-australia-html"
+      ],
+      "usedByPages": [
+        "ca-en-adventures-bali-surf-camp-html",
+        "ca-en-adventures-beervana-portland-html",
+        "ca-en-adventures-climbing-new-zealand-html",
+        "ca-en-adventures-colorado-rock-climbing-html",
+        "ca-en-adventures-cycling-southern-utah-html",
+        "ca-en-adventures-cycling-tuscany-html",
+        "ca-en-adventures-downhill-skiing-wyoming-html",
+        "ca-en-adventures-gastronomic-marais-tour-html",
+        "ca-en-adventures-napa-wine-tasting-html",
+        "ca-en-adventures-riverside-camping-australia-html",
+        "ca-en-adventures-ski-touring-mont-blanc-html",
+        "ca-en-adventures-surf-camp-costa-rica-html",
+        "ca-en-adventures-tahoe-skiing-html",
+        "ca-en-adventures-west-coast-cycling-html",
+        "ca-en-adventures-whistler-mountain-biking-html",
+        "ca-en-adventures-yosemite-backpacking-html",
+        "us-en-adventures-bali-surf-camp-html",
+        "us-en-adventures-beervana-portland-html",
+        "us-en-adventures-climbing-new-zealand-html",
+        "us-en-adventures-colorado-rock-climbing-html",
+        "us-en-adventures-cycling-southern-utah-html",
+        "us-en-adventures-cycling-tuscany-html",
+        "us-en-adventures-downhill-skiing-wyoming-html",
+        "us-en-adventures-gastronomic-marais-tour-html",
+        "us-en-adventures-napa-wine-tasting-html",
+        "us-en-adventures-riverside-camping-australia-html",
+        "us-en-adventures-ski-touring-mont-blanc-html",
+        "us-en-adventures-surf-camp-costa-rica-html",
+        "us-en-adventures-tahoe-skiing-html",
+        "us-en-adventures-west-coast-cycling-html",
+        "us-en-adventures-whistler-mountain-biking-html",
+        "us-en-adventures-yosemite-backpacking-html"
+      ],
+      "instanceCount": 32,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "mini-carousel",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "sharing",
+      "label": "sharing",
+      "kind": "module",
+      "signature": "module:sharing",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-magazine-western-australia-html"
+      ],
+      "usedByPages": [
+        "ca-en-magazine-arctic-surfing-html",
+        "ca-en-magazine-guide-la-skateparks-html",
+        "ca-en-magazine-members-only-alaskan-adventure-html",
+        "ca-en-magazine-members-only-fly-fishing-the-amazon-html",
+        "ca-en-magazine-san-diego-surf-html",
+        "ca-en-magazine-ski-touring-html",
+        "ca-en-magazine-western-australia-html",
+        "us-en-magazine-arctic-surfing-html",
+        "us-en-magazine-guide-la-skateparks-html",
+        "us-en-magazine-san-diego-surf-html",
+        "us-en-magazine-ski-touring-html",
+        "us-en-magazine-western-australia-html"
+      ],
+      "instanceCount": 12,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "sharing",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "tabs",
+      "label": "tabs",
+      "kind": "module",
+      "signature": "module:tabs",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-adventures-html",
+        "us-en-adventures-riverside-camping-australia-html"
+      ],
+      "usedByPages": [
+        "ca-en-adventures-bali-surf-camp-html",
+        "ca-en-adventures-beervana-portland-html",
+        "ca-en-adventures-climbing-new-zealand-html",
+        "ca-en-adventures-colorado-rock-climbing-html",
+        "ca-en-adventures-cycling-southern-utah-html",
+        "ca-en-adventures-cycling-tuscany-html",
+        "ca-en-adventures-downhill-skiing-wyoming-html",
+        "ca-en-adventures-gastronomic-marais-tour-html",
+        "ca-en-adventures-html",
+        "ca-en-adventures-napa-wine-tasting-html",
+        "ca-en-adventures-riverside-camping-australia-html",
+        "ca-en-adventures-ski-touring-mont-blanc-html",
+        "ca-en-adventures-surf-camp-costa-rica-html",
+        "ca-en-adventures-tahoe-skiing-html",
+        "ca-en-adventures-west-coast-cycling-html",
+        "ca-en-adventures-whistler-mountain-biking-html",
+        "ca-en-adventures-yosemite-backpacking-html",
+        "us-en-adventures-bali-surf-camp-html",
+        "us-en-adventures-beervana-portland-html",
+        "us-en-adventures-climbing-new-zealand-html",
+        "us-en-adventures-colorado-rock-climbing-html",
+        "us-en-adventures-cycling-southern-utah-html",
+        "us-en-adventures-cycling-tuscany-html",
+        "us-en-adventures-downhill-skiing-wyoming-html",
+        "us-en-adventures-gastronomic-marais-tour-html",
+        "us-en-adventures-html",
+        "us-en-adventures-napa-wine-tasting-html",
+        "us-en-adventures-riverside-camping-australia-html",
+        "us-en-adventures-ski-touring-mont-blanc-html",
+        "us-en-adventures-surf-camp-costa-rica-html",
+        "us-en-adventures-tahoe-skiing-html",
+        "us-en-adventures-west-coast-cycling-html",
+        "us-en-adventures-whistler-mountain-biking-html",
+        "us-en-adventures-yosemite-backpacking-html"
+      ],
+      "instanceCount": 34,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "tabs",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "teaser-featured",
+      "label": "teaser-featured",
+      "kind": "module",
+      "signature": "module:teaser-featured",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-html",
+        "us-en-magazine-html"
+      ],
+      "usedByPages": [
+        "ca-en-html",
+        "ca-en-magazine-html",
+        "us-en-html",
+        "us-en-magazine-html"
+      ],
+      "instanceCount": 4,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "teaser-featured",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "teaser-hero",
+      "label": "teaser-hero",
+      "kind": "module",
+      "signature": "module:teaser-hero",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-adventures-html",
+        "us-en-html",
+        "us-es-html"
+      ],
+      "usedByPages": [
+        "ca-en-adventures-html",
+        "ca-en-html",
+        "ca-fr-html",
+        "ch-de-html",
+        "ch-fr-html",
+        "ch-it-html",
+        "de-de-html",
+        "es-es-html",
+        "fr-fr-html",
+        "it-it-html",
+        "us-en-adventures-html",
+        "us-en-html",
+        "us-es-html"
+      ],
+      "instanceCount": 13,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "teaser-hero",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "teaser-list",
+      "label": "teaser-list",
+      "kind": "module",
+      "signature": "module:teaser-list",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-magazine-html"
+      ],
+      "usedByPages": [
+        "ca-en-magazine-html",
+        "us-en-magazine-html"
+      ],
+      "instanceCount": 2,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "teaser-list",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "text",
+      "label": "text",
+      "kind": "module",
+      "signature": "module:text",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-about-us-html",
+        "us-en-magazine-html",
+        "us-en-magazine-western-australia-html"
+      ],
+      "usedByPages": [
+        "ca-en-about-us-html",
+        "ca-en-magazine-arctic-surfing-html",
+        "ca-en-magazine-html",
+        "us-en-about-us-html",
+        "us-en-magazine-arctic-surfing-html",
+        "us-en-magazine-html"
+      ],
+      "instanceCount": 6,
+      "delivery": {
+        "status": "converted",
+        "edsBlockName": "default-content",
+        "blockPath": null,
+        "convertedAt": "2026-09-24T10:53:51.274Z"
+      }
+    },
+    {
+      "id": "text-quote",
+      "label": "text-quote",
+      "kind": "module",
+      "signature": "module:text-quote",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-magazine-western-australia-html"
+      ],
+      "usedByPages": [
+        "ca-en-magazine-guide-la-skateparks-html",
+        "ca-en-magazine-members-only-alaskan-adventure-html",
+        "ca-en-magazine-ski-touring-html",
+        "ca-en-magazine-western-australia-html",
+        "us-en-magazine-guide-la-skateparks-html",
+        "us-en-magazine-ski-touring-html",
+        "us-en-magazine-western-australia-html"
+      ],
+      "instanceCount": 7,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "text-quote",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "title",
+      "label": "title",
+      "kind": "module",
+      "signature": "module:title",
+      "source": null,
+      "usedByTemplates": [
+        "ca-en-magazine-members-only-html",
+        "us-en-about-us-html",
+        "us-en-adventures-html",
+        "us-en-adventures-riverside-camping-australia-html",
+        "us-en-html",
+        "us-en-magazine-html",
+        "us-en-magazine-western-australia-html"
+      ],
+      "usedByPages": [
+        "ca-en-about-us-html",
+        "ca-en-adventures-bali-surf-camp-html",
+        "ca-en-adventures-beervana-portland-html",
+        "ca-en-adventures-climbing-new-zealand-html",
+        "ca-en-adventures-colorado-rock-climbing-html",
+        "ca-en-adventures-cycling-southern-utah-html",
+        "ca-en-adventures-cycling-tuscany-html",
+        "ca-en-adventures-downhill-skiing-wyoming-html",
+        "ca-en-adventures-gastronomic-marais-tour-html",
+        "ca-en-adventures-html",
+        "ca-en-adventures-napa-wine-tasting-html",
+        "ca-en-adventures-riverside-camping-australia-html",
+        "ca-en-adventures-ski-touring-mont-blanc-html",
+        "ca-en-adventures-surf-camp-costa-rica-html",
+        "ca-en-adventures-tahoe-skiing-html",
+        "ca-en-adventures-west-coast-cycling-html",
+        "ca-en-adventures-whistler-mountain-biking-html",
+        "ca-en-adventures-yosemite-backpacking-html",
+        "ca-en-html",
+        "ca-en-magazine-arctic-surfing-html",
+        "ca-en-magazine-guide-la-skateparks-html",
+        "ca-en-magazine-html",
+        "ca-en-magazine-members-only-alaskan-adventure-html",
+        "ca-en-magazine-members-only-fly-fishing-the-amazon-html",
+        "ca-en-magazine-members-only-html",
+        "ca-en-magazine-san-diego-surf-html",
+        "ca-en-magazine-ski-touring-html",
+        "ca-en-magazine-western-australia-html",
+        "us-en-about-us-html",
+        "us-en-adventures-bali-surf-camp-html",
+        "us-en-adventures-beervana-portland-html",
+        "us-en-adventures-climbing-new-zealand-html",
+        "us-en-adventures-colorado-rock-climbing-html",
+        "us-en-adventures-cycling-southern-utah-html",
+        "us-en-adventures-cycling-tuscany-html",
+        "us-en-adventures-downhill-skiing-wyoming-html",
+        "us-en-adventures-gastronomic-marais-tour-html",
+        "us-en-adventures-html",
+        "us-en-adventures-napa-wine-tasting-html",
+        "us-en-adventures-riverside-camping-australia-html",
+        "us-en-adventures-ski-touring-mont-blanc-html",
+        "us-en-adventures-surf-camp-costa-rica-html",
+        "us-en-adventures-tahoe-skiing-html",
+        "us-en-adventures-west-coast-cycling-html",
+        "us-en-adventures-whistler-mountain-biking-html",
+        "us-en-adventures-yosemite-backpacking-html",
+        "us-en-html",
+        "us-en-magazine-arctic-surfing-html",
+        "us-en-magazine-guide-la-skateparks-html",
+        "us-en-magazine-html",
+        "us-en-magazine-san-diego-surf-html",
+        "us-en-magazine-ski-touring-html",
+        "us-en-magazine-western-australia-html"
+      ],
+      "instanceCount": 53,
+      "delivery": {
+        "status": "converted",
+        "edsBlockName": "default-content",
+        "blockPath": null,
+        "convertedAt": "2026-09-24T10:53:51.234Z"
+      }
+    }
+  ]
+}

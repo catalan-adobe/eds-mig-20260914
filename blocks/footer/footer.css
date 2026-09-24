@@ -1,20 +1,238 @@
-footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+/* WKND footer — values lifted from the gated canon (stardust/prototypes/canon.css) */
+
+/* stylelint-disable no-descending-specificity -- rules are grouped by footer region
+   (logo, nav, follow, social, text) in the lifted cascade order */
+
+.footer .site-footer {
+  background-color: #202020;
+  box-sizing: border-box;
+  color: #ebebeb;
+  margin-top: 3rem;
+  padding: 1rem 0 1.5rem;
 }
 
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+.footer .site-footer-inner {
+  background-color: #202020;
+  color: #f7f7f7;
 }
 
-footer .footer p {
+.footer .grid-inner {
+  margin: 0 auto;
+  max-width: var(--max-width);
+  padding: 0 var(--spacing-md);
+}
+
+.footer .grid-inner::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer .col {
+  box-sizing: border-box;
+  clear: both;
+  display: flow-root;
+  padding: 0 var(--spacing-md);
+}
+
+.footer ul {
+  list-style: none;
   margin: 0;
+  padding: 0;
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+/* chrome text sits in pipeline <p> wrappers: no prose rhythm here */
+.footer .logo p,
+.footer .nav p {
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  text-align: left;
+}
+
+/* ---- logo ---- */
+.footer .site-footer-logo {
+  clear: none;
+  float: left;
+  width: 16.6667%;
+}
+
+.footer .logo a:any-link {
+  border: none;
+}
+
+.footer .logo .icon {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.footer .logo img {
+  height: auto;
+  margin-bottom: 7px;
+  margin-top: 7px;
+  max-width: 8rem;
+  width: 100%;
+}
+
+/* ---- nav: root item hidden, children inline ---- */
+.footer .site-footer-nav {
+  clear: none;
+  float: left;
+  width: 50%;
+}
+
+.footer .nav {
+  padding-top: 15px;
+}
+
+.footer .nav li {
+  display: block;
+  float: left;
+}
+
+.footer .nav a:any-link {
+  color: #ebebeb;
+  display: none;
+  font-size: var(--body-sm);
+  padding: 15px 17px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer .nav ul ul a:any-link {
+  display: inline;
+}
+
+.footer .nav a:hover,
+.footer .nav a:focus {
+  background-color: unset;
+  text-decoration: underline;
+}
+
+.footer .nav ul ul li.nav-item-active > a:any-link {
+  background-color: unset;
+  color: #f7f7f7;
+  text-decoration: underline;
+}
+
+/* ---- follow us ---- */
+.footer .site-footer-follow {
+  clear: none;
+  float: left;
+  width: 16.6667%;
+}
+
+.footer .site-footer-follow .title {
+  text-align: right;
+}
+
+.footer .site-footer-follow .title :is(h1, h2, h3, h4, h5, h6) {
+  color: var(--color-fg-inverse);
+  margin: 21.28px 0;
+}
+
+/* ---- social: icon-only buttons, glyphs from the site icon font ---- */
+.footer .site-footer-social {
+  clear: none;
+  float: left;
+  padding: 0;
+  width: 16.6667%;
+}
+
+.footer .button-list::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer .site-footer-social li {
+  clear: none;
+  float: left;
+}
+
+.footer .site-footer-social a:any-link {
+  background-color: var(--color-third);
+  border-radius: var(--radius);
+  box-sizing: border-box;
+  color: #202020;
+  display: block;
+  font-size: 0;
+  height: var(--button-size);
+  width: var(--button-size);
+}
+
+.footer .site-footer-social a::before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: block;
+  float: left;
+  font-family: wknd-icon-font, sans-serif;
+  font-size: 17.5px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  padding-left: 14px;
+  padding-top: 18px;
+}
+
+.footer .social-facebook a::before { content: "\e902"; }
+.footer .social-twitter a::before { content: "\e901"; }
+.footer .social-instagram a::before { content: "\e903"; }
+
+/* ---- hidden separator (space-small): the source's 1em margins + the 9px rule margins,
+   the rule box (a BFC) kept them from collapsing through — 36px of empty band ---- */
+.footer .separator {
+  padding: 1em 0;
+}
+
+/* ---- text ---- */
+.footer .site-footer-text p {
+  color: #f7f7f7;
+  font-size: var(--body-xs);
+  line-height: 1.25;
+}
+
+.footer .site-footer-text a:any-link {
+  color: #f7f7f7;
+  text-decoration: underline;
+}
+
+@media (width <= 1024px) {
+  .footer .site-footer-logo {
+    width: 33.3333%;
+  }
+
+  .footer .site-footer-nav {
+    width: 66.6667%;
+  }
+
+  .footer .site-footer-follow,
+  .footer .site-footer-social {
+    width: 100%;
+  }
+
+  .footer .site-footer-follow .title {
+    text-align: unset;
+  }
+
+  .footer .site-footer-social {
+    padding: 0 var(--spacing-md);
+  }
+
+  .footer .site-footer-nav .nav {
+    padding-top: 10px;
+  }
+
+  .footer .site-footer-nav ul {
+    float: left;
+    width: 100%;
+  }
+
+  .footer .site-footer-nav li {
+    width: 100%;
+  }
+
+  .footer .site-footer-nav ul ul li {
+    margin-bottom: 1rem;
   }
 }

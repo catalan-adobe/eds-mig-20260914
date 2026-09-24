@@ -1,0 +1,2235 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/plan",
+    "writtenAt": "2026-09-24T10:53:51.406Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-24T10:53:51.406Z",
+  "fragments": [],
+  "deliveryOrder": [
+    "us-en-adventures-riverside-camping-australia-html",
+    "ca-en-adventures-bali-surf-camp-html",
+    "ca-en-adventures-beervana-portland-html",
+    "ca-en-adventures-climbing-new-zealand-html",
+    "ca-en-adventures-colorado-rock-climbing-html",
+    "ca-en-adventures-cycling-southern-utah-html",
+    "ca-en-adventures-cycling-tuscany-html",
+    "ca-en-adventures-downhill-skiing-wyoming-html",
+    "ca-en-adventures-gastronomic-marais-tour-html",
+    "ca-en-adventures-napa-wine-tasting-html",
+    "ca-en-adventures-riverside-camping-australia-html",
+    "ca-en-adventures-ski-touring-mont-blanc-html",
+    "ca-en-adventures-surf-camp-costa-rica-html",
+    "ca-en-adventures-tahoe-skiing-html",
+    "ca-en-adventures-west-coast-cycling-html",
+    "ca-en-adventures-whistler-mountain-biking-html",
+    "ca-en-adventures-yosemite-backpacking-html",
+    "us-en-adventures-bali-surf-camp-html",
+    "us-en-adventures-beervana-portland-html",
+    "us-en-adventures-climbing-new-zealand-html",
+    "us-en-adventures-colorado-rock-climbing-html",
+    "us-en-adventures-cycling-southern-utah-html",
+    "us-en-adventures-cycling-tuscany-html",
+    "us-en-adventures-downhill-skiing-wyoming-html",
+    "us-en-adventures-gastronomic-marais-tour-html",
+    "us-en-adventures-napa-wine-tasting-html",
+    "us-en-adventures-ski-touring-mont-blanc-html",
+    "us-en-adventures-surf-camp-costa-rica-html",
+    "us-en-adventures-tahoe-skiing-html",
+    "us-en-adventures-west-coast-cycling-html",
+    "us-en-adventures-whistler-mountain-biking-html",
+    "us-en-adventures-yosemite-backpacking-html",
+    "us-en-magazine-western-australia-html",
+    "ca-en-magazine-arctic-surfing-html",
+    "ca-en-magazine-guide-la-skateparks-html",
+    "ca-en-magazine-members-only-alaskan-adventure-html",
+    "ca-en-magazine-members-only-fly-fishing-the-amazon-html",
+    "ca-en-magazine-san-diego-surf-html",
+    "ca-en-magazine-ski-touring-html",
+    "ca-en-magazine-western-australia-html",
+    "us-en-magazine-arctic-surfing-html",
+    "us-en-magazine-guide-la-skateparks-html",
+    "us-en-magazine-san-diego-surf-html",
+    "us-en-magazine-ski-touring-html",
+    "us-es-html",
+    "ca-fr-html",
+    "ch-de-html",
+    "ch-fr-html",
+    "ch-it-html",
+    "de-de-html",
+    "es-es-html",
+    "fr-fr-html",
+    "it-it-html",
+    "us-en-about-us-html",
+    "ca-en-about-us-html",
+    "us-en-adventures-html",
+    "ca-en-adventures-html",
+    "us-en-faqs-html",
+    "ca-en-faqs-html",
+    "us-en-html",
+    "ca-en-html",
+    "us-en-magazine-html",
+    "ca-en-magazine-html",
+    "ca-en-magazine-members-only-html"
+  ],
+  "steps": [
+    {
+      "slug": "us-en-adventures-riverside-camping-australia-html",
+      "path": "/us/en/adventures/riverside-camping-australia",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs"
+        }
+      ],
+      "reuse": []
+    },
+    {
+      "slug": "ca-en-adventures-bali-surf-camp-html",
+      "path": "/ca/en/adventures/bali-surf-camp",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-adventures-beervana-portland-html",
+      "path": "/ca/en/adventures/beervana-portland",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-adventures-climbing-new-zealand-html",
+      "path": "/ca/en/adventures/climbing-new-zealand",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-adventures-colorado-rock-climbing-html",
+      "path": "/ca/en/adventures/colorado-rock-climbing",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-adventures-cycling-southern-utah-html",
+      "path": "/ca/en/adventures/cycling-southern-utah",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-adventures-cycling-tuscany-html",
+      "path": "/ca/en/adventures/cycling-tuscany",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-adventures-downhill-skiing-wyoming-html",
+      "path": "/ca/en/adventures/downhill-skiing-wyoming",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-adventures-gastronomic-marais-tour-html",
+      "path": "/ca/en/adventures/gastronomic-marais-tour",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-adventures-napa-wine-tasting-html",
+      "path": "/ca/en/adventures/napa-wine-tasting",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-adventures-riverside-camping-australia-html",
+      "path": "/ca/en/adventures/riverside-camping-australia",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-adventures-ski-touring-mont-blanc-html",
+      "path": "/ca/en/adventures/ski-touring-mont-blanc",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-adventures-surf-camp-costa-rica-html",
+      "path": "/ca/en/adventures/surf-camp-costa-rica",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-adventures-tahoe-skiing-html",
+      "path": "/ca/en/adventures/tahoe-skiing",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-adventures-west-coast-cycling-html",
+      "path": "/ca/en/adventures/west-coast-cycling",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-adventures-whistler-mountain-biking-html",
+      "path": "/ca/en/adventures/whistler-mountain-biking",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-adventures-yosemite-backpacking-html",
+      "path": "/ca/en/adventures/yosemite-backpacking",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-bali-surf-camp-html",
+      "path": "/us/en/adventures/bali-surf-camp",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-beervana-portland-html",
+      "path": "/us/en/adventures/beervana-portland",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-climbing-new-zealand-html",
+      "path": "/us/en/adventures/climbing-new-zealand",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-colorado-rock-climbing-html",
+      "path": "/us/en/adventures/colorado-rock-climbing",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-cycling-southern-utah-html",
+      "path": "/us/en/adventures/cycling-southern-utah",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-cycling-tuscany-html",
+      "path": "/us/en/adventures/cycling-tuscany",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-downhill-skiing-wyoming-html",
+      "path": "/us/en/adventures/downhill-skiing-wyoming",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-gastronomic-marais-tour-html",
+      "path": "/us/en/adventures/gastronomic-marais-tour",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-napa-wine-tasting-html",
+      "path": "/us/en/adventures/napa-wine-tasting",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-ski-touring-mont-blanc-html",
+      "path": "/us/en/adventures/ski-touring-mont-blanc",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-surf-camp-costa-rica-html",
+      "path": "/us/en/adventures/surf-camp-costa-rica",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-tahoe-skiing-html",
+      "path": "/us/en/adventures/tahoe-skiing",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-west-coast-cycling-html",
+      "path": "/us/en/adventures/west-coast-cycling",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-whistler-mountain-biking-html",
+      "path": "/us/en/adventures/whistler-mountain-biking",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-yosemite-backpacking-html",
+      "path": "/us/en/adventures/yosemite-backpacking",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment-elements",
+          "edsBlockName": "content-fragment-elements",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-magazine-western-australia-html",
+      "path": "/us/en/magazine/western-australia",
+      "templateId": "us-en-magazine-western-australia-html",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "image",
+          "edsBlockName": "default-content"
+        },
+        {
+          "id": "content-fragment",
+          "edsBlockName": "content-fragment"
+        },
+        {
+          "id": "text-quote",
+          "edsBlockName": "text-quote"
+        },
+        {
+          "id": "byline",
+          "edsBlockName": "byline"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "sharing"
+        },
+        {
+          "id": "download",
+          "edsBlockName": "download"
+        },
+        {
+          "id": "list-upnext",
+          "edsBlockName": "list-upnext"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-magazine-arctic-surfing-html",
+      "path": "/ca/en/magazine/arctic-surfing",
+      "templateId": "us-en-magazine-western-australia-html",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "text",
+          "edsBlockName": "default-content"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "image",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment",
+          "edsBlockName": "content-fragment",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "byline",
+          "edsBlockName": "byline",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "sharing",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "list-upnext",
+          "edsBlockName": "list-upnext",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-magazine-guide-la-skateparks-html",
+      "path": "/ca/en/magazine/guide-la-skateparks",
+      "templateId": "us-en-magazine-western-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "image",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment",
+          "edsBlockName": "content-fragment",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "text-quote",
+          "edsBlockName": "text-quote",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "byline",
+          "edsBlockName": "byline",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "sharing",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "download",
+          "edsBlockName": "download",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "list-upnext",
+          "edsBlockName": "list-upnext",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-magazine-members-only-alaskan-adventure-html",
+      "path": "/ca/en/magazine/members-only/alaskan-adventure",
+      "templateId": "us-en-magazine-western-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "image",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment",
+          "edsBlockName": "content-fragment",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "text-quote",
+          "edsBlockName": "text-quote",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "byline",
+          "edsBlockName": "byline",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "sharing",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "list-upnext",
+          "edsBlockName": "list-upnext",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-magazine-members-only-fly-fishing-the-amazon-html",
+      "path": "/ca/en/magazine/members-only/fly-fishing-the-amazon",
+      "templateId": "us-en-magazine-western-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "image",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment",
+          "edsBlockName": "content-fragment",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "byline",
+          "edsBlockName": "byline",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "sharing",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "list-upnext",
+          "edsBlockName": "list-upnext",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-magazine-san-diego-surf-html",
+      "path": "/ca/en/magazine/san-diego-surf",
+      "templateId": "us-en-magazine-western-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "image",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment",
+          "edsBlockName": "content-fragment",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "byline",
+          "edsBlockName": "byline",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "sharing",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "list-upnext",
+          "edsBlockName": "list-upnext",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-magazine-ski-touring-html",
+      "path": "/ca/en/magazine/ski-touring",
+      "templateId": "us-en-magazine-western-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "image",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment",
+          "edsBlockName": "content-fragment",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "text-quote",
+          "edsBlockName": "text-quote",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "byline",
+          "edsBlockName": "byline",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "sharing",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "list-upnext",
+          "edsBlockName": "list-upnext",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-magazine-western-australia-html",
+      "path": "/ca/en/magazine/western-australia",
+      "templateId": "us-en-magazine-western-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "image",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment",
+          "edsBlockName": "content-fragment",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "text-quote",
+          "edsBlockName": "text-quote",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "byline",
+          "edsBlockName": "byline",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "sharing",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "download",
+          "edsBlockName": "download",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "list-upnext",
+          "edsBlockName": "list-upnext",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-magazine-arctic-surfing-html",
+      "path": "/us/en/magazine/arctic-surfing",
+      "templateId": "us-en-magazine-western-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "image",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment",
+          "edsBlockName": "content-fragment",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "text",
+          "edsBlockName": "default-content",
+          "convertedBy": "ca-en-magazine-arctic-surfing-html"
+        },
+        {
+          "id": "byline",
+          "edsBlockName": "byline",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "sharing",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "list-upnext",
+          "edsBlockName": "list-upnext",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-magazine-guide-la-skateparks-html",
+      "path": "/us/en/magazine/guide-la-skateparks",
+      "templateId": "us-en-magazine-western-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "image",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment",
+          "edsBlockName": "content-fragment",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "text-quote",
+          "edsBlockName": "text-quote",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "byline",
+          "edsBlockName": "byline",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "sharing",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "download",
+          "edsBlockName": "download",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "list-upnext",
+          "edsBlockName": "list-upnext",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-magazine-san-diego-surf-html",
+      "path": "/us/en/magazine/san-diego-surf",
+      "templateId": "us-en-magazine-western-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "image",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment",
+          "edsBlockName": "content-fragment",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "byline",
+          "edsBlockName": "byline",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "sharing",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "list-upnext",
+          "edsBlockName": "list-upnext",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-magazine-ski-touring-html",
+      "path": "/us/en/magazine/ski-touring",
+      "templateId": "us-en-magazine-western-australia-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "image",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "content-fragment",
+          "edsBlockName": "content-fragment",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "text-quote",
+          "edsBlockName": "text-quote",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "byline",
+          "edsBlockName": "byline",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "sharing",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        },
+        {
+          "id": "list-upnext",
+          "edsBlockName": "list-upnext",
+          "convertedBy": "us-en-magazine-western-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-es-html",
+      "path": "/us/es",
+      "templateId": "us-es-html",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "teaser-hero",
+          "edsBlockName": "teaser-hero"
+        }
+      ],
+      "reuse": []
+    },
+    {
+      "slug": "ca-fr-html",
+      "path": "/ca/fr",
+      "templateId": "us-es-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "teaser-hero",
+          "edsBlockName": "teaser-hero",
+          "convertedBy": "us-es-html"
+        }
+      ]
+    },
+    {
+      "slug": "ch-de-html",
+      "path": "/ch/de",
+      "templateId": "us-es-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "teaser-hero",
+          "edsBlockName": "teaser-hero",
+          "convertedBy": "us-es-html"
+        }
+      ]
+    },
+    {
+      "slug": "ch-fr-html",
+      "path": "/ch/fr",
+      "templateId": "us-es-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "teaser-hero",
+          "edsBlockName": "teaser-hero",
+          "convertedBy": "us-es-html"
+        }
+      ]
+    },
+    {
+      "slug": "ch-it-html",
+      "path": "/ch/it",
+      "templateId": "us-es-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "teaser-hero",
+          "edsBlockName": "teaser-hero",
+          "convertedBy": "us-es-html"
+        }
+      ]
+    },
+    {
+      "slug": "de-de-html",
+      "path": "/de/de",
+      "templateId": "us-es-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "teaser-hero",
+          "edsBlockName": "teaser-hero",
+          "convertedBy": "us-es-html"
+        }
+      ]
+    },
+    {
+      "slug": "es-es-html",
+      "path": "/es/es",
+      "templateId": "us-es-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "teaser-hero",
+          "edsBlockName": "teaser-hero",
+          "convertedBy": "us-es-html"
+        }
+      ]
+    },
+    {
+      "slug": "fr-fr-html",
+      "path": "/fr/fr",
+      "templateId": "us-es-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "teaser-hero",
+          "edsBlockName": "teaser-hero",
+          "convertedBy": "us-es-html"
+        }
+      ]
+    },
+    {
+      "slug": "it-it-html",
+      "path": "/it/it",
+      "templateId": "us-es-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "teaser-hero",
+          "edsBlockName": "teaser-hero",
+          "convertedBy": "us-es-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-about-us-html",
+      "path": "/us/en/about-us",
+      "templateId": "us-en-about-us-html",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "contributor",
+          "edsBlockName": "contributor"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "text",
+          "edsBlockName": "default-content",
+          "convertedBy": "ca-en-magazine-arctic-surfing-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-about-us-html",
+      "path": "/ca/en/about-us",
+      "templateId": "us-en-about-us-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "text",
+          "edsBlockName": "default-content",
+          "convertedBy": "ca-en-magazine-arctic-surfing-html"
+        },
+        {
+          "id": "contributor",
+          "edsBlockName": "contributor",
+          "convertedBy": "us-en-about-us-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-html",
+      "path": "/us/en/adventures",
+      "templateId": "us-en-adventures-html",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "image-list",
+          "edsBlockName": "image-list"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "teaser-hero",
+          "edsBlockName": "teaser-hero",
+          "convertedBy": "us-es-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-adventures-html",
+      "path": "/ca/en/adventures",
+      "templateId": "us-en-adventures-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "teaser-hero",
+          "edsBlockName": "teaser-hero",
+          "convertedBy": "us-es-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "image-list",
+          "edsBlockName": "image-list",
+          "convertedBy": "us-en-adventures-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-faqs-html",
+      "path": "/us/en/faqs",
+      "templateId": "us-en-faqs-html",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "accordion",
+          "edsBlockName": "accordion"
+        }
+      ],
+      "reuse": []
+    },
+    {
+      "slug": "ca-en-faqs-html",
+      "path": "/ca/en/faqs",
+      "templateId": "us-en-faqs-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "accordion",
+          "edsBlockName": "accordion",
+          "convertedBy": "us-en-faqs-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-html",
+      "path": "/us/en",
+      "templateId": "us-en-html",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "hero-carousel",
+          "edsBlockName": "hero-carousel"
+        },
+        {
+          "id": "teaser-featured",
+          "edsBlockName": "teaser-featured"
+        },
+        {
+          "id": "button",
+          "edsBlockName": "default-content"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "image-list",
+          "edsBlockName": "image-list",
+          "convertedBy": "us-en-adventures-html"
+        },
+        {
+          "id": "teaser-hero",
+          "edsBlockName": "teaser-hero",
+          "convertedBy": "us-es-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-html",
+      "path": "/ca/en",
+      "templateId": "us-en-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "hero-carousel",
+          "edsBlockName": "hero-carousel",
+          "convertedBy": "us-en-html"
+        },
+        {
+          "id": "teaser-featured",
+          "edsBlockName": "teaser-featured",
+          "convertedBy": "us-en-html"
+        },
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "image-list",
+          "edsBlockName": "image-list",
+          "convertedBy": "us-en-adventures-html"
+        },
+        {
+          "id": "button",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-html"
+        },
+        {
+          "id": "teaser-hero",
+          "edsBlockName": "teaser-hero",
+          "convertedBy": "us-es-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-magazine-html",
+      "path": "/us/en/magazine",
+      "templateId": "us-en-magazine-html",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "teaser-list",
+          "edsBlockName": "teaser-list"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "teaser-featured",
+          "edsBlockName": "teaser-featured",
+          "convertedBy": "us-en-html"
+        },
+        {
+          "id": "image-list",
+          "edsBlockName": "image-list",
+          "convertedBy": "us-en-adventures-html"
+        },
+        {
+          "id": "text",
+          "edsBlockName": "default-content",
+          "convertedBy": "ca-en-magazine-arctic-surfing-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-magazine-html",
+      "path": "/ca/en/magazine",
+      "templateId": "us-en-magazine-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "teaser-featured",
+          "edsBlockName": "teaser-featured",
+          "convertedBy": "us-en-html"
+        },
+        {
+          "id": "image-list",
+          "edsBlockName": "image-list",
+          "convertedBy": "us-en-adventures-html"
+        },
+        {
+          "id": "text",
+          "edsBlockName": "default-content",
+          "convertedBy": "ca-en-magazine-arctic-surfing-html"
+        },
+        {
+          "id": "teaser-list",
+          "edsBlockName": "teaser-list",
+          "convertedBy": "us-en-magazine-html"
+        }
+      ]
+    },
+    {
+      "slug": "ca-en-magazine-members-only-html",
+      "path": "/ca/en/magazine/members-only",
+      "templateId": "ca-en-magazine-members-only-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "title",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-riverside-camping-australia-html"
+        },
+        {
+          "id": "image-list",
+          "edsBlockName": "image-list",
+          "convertedBy": "us-en-adventures-html"
+        }
+      ]
+    }
+  ]
+}

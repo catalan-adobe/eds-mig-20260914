@@ -1,0 +1,35 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-09-24T10:51:40.247Z",
+    "stardustVersion": "0.0.0"
+  },
+  "target": "aem-eds",
+  "site": {
+    "sourceUrl": "https://wknd.site",
+    "da": {
+      "org": "",
+      "site": "",
+      "ref": "main"
+    },
+    "liveHost": null
+  },
+  "lastRun": {
+    "at": "2026-09-24T10:53:51.367Z",
+    "pages": {
+      "total": 64,
+      "verified": 0,
+      "deployed": 0,
+      "pending": 64,
+      "contentPending": 0,
+      "stale": 0,
+      "failed": 0
+    },
+    "blocks": {
+      "total": 21,
+      "converted": 4,
+      "pending": 17
+    },
+    "verifyFailures": 0
+  }
+}

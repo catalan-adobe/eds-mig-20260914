@@ -1,0 +1,1599 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-09-24T10:51:40.247Z",
+    "readArtifacts": [
+      "stardust/migrated"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-24T10:51:40.247Z",
+  "pages": [
+    {
+      "slug": "ca-en-about-us-html",
+      "path": "/ca/en/about-us",
+      "title": "About Us",
+      "templateId": "us-en-about-us-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/about-us.html",
+        "metaJson": "stardust/migrated/ca/en/about-us._meta.json",
+        "sourceHash": "sha256:f8b48562a214792b28dd922d01dc8318eac4b5b852c862c564295d6e547bcd0d"
+      },
+      "blocks": [
+        "title",
+        "text",
+        "contributor"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-adventures-bali-surf-camp-html",
+      "path": "/ca/en/adventures/bali-surf-camp",
+      "title": "Bali Surf Camp",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/adventures/bali-surf-camp.html",
+        "metaJson": "stardust/migrated/ca/en/adventures/bali-surf-camp._meta.json",
+        "sourceHash": "sha256:67c6ecafb277b1b675343e9b1f57d60ed301aed72b0d2969cb8e517f67906d28"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-adventures-beervana-portland-html",
+      "path": "/ca/en/adventures/beervana-portland",
+      "title": "Beervana in Portland",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/adventures/beervana-portland.html",
+        "metaJson": "stardust/migrated/ca/en/adventures/beervana-portland._meta.json",
+        "sourceHash": "sha256:ce37ef5630689c0541d9a7d9285f6677e51234216f1527dac647c168565295f5"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-adventures-climbing-new-zealand-html",
+      "path": "/ca/en/adventures/climbing-new-zealand",
+      "title": "Climbing New Zealand",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/adventures/climbing-new-zealand.html",
+        "metaJson": "stardust/migrated/ca/en/adventures/climbing-new-zealand._meta.json",
+        "sourceHash": "sha256:93682c50dabfc0d37c6b539c7598800f340c37e6536e56bb4ab2d840a9715aec"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-adventures-colorado-rock-climbing-html",
+      "path": "/ca/en/adventures/colorado-rock-climbing",
+      "title": "Colorado Rock Climbing",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/adventures/colorado-rock-climbing.html",
+        "metaJson": "stardust/migrated/ca/en/adventures/colorado-rock-climbing._meta.json",
+        "sourceHash": "sha256:9b3a8ed3d067a3ce474042dca4def090435a15098b40432a46ff8d82c61a00b7"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-adventures-cycling-southern-utah-html",
+      "path": "/ca/en/adventures/cycling-southern-utah",
+      "title": "Cycling Southern Utah",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/adventures/cycling-southern-utah.html",
+        "metaJson": "stardust/migrated/ca/en/adventures/cycling-southern-utah._meta.json",
+        "sourceHash": "sha256:4c6338deeb647287cf69891ab2db3e90461e0c0c7b3be931c17c6d9efcafddd9"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-adventures-cycling-tuscany-html",
+      "path": "/ca/en/adventures/cycling-tuscany",
+      "title": "Cycling Tuscany",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/adventures/cycling-tuscany.html",
+        "metaJson": "stardust/migrated/ca/en/adventures/cycling-tuscany._meta.json",
+        "sourceHash": "sha256:787b95f867c8f28404c09fdbbefb00042a63fa3aed0a23e635d0011d893944d3"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-adventures-downhill-skiing-wyoming-html",
+      "path": "/ca/en/adventures/downhill-skiing-wyoming",
+      "title": "Downhill Skiing Wyoming",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/adventures/downhill-skiing-wyoming.html",
+        "metaJson": "stardust/migrated/ca/en/adventures/downhill-skiing-wyoming._meta.json",
+        "sourceHash": "sha256:7e9c5419a064ac1799d56bd03260f8dbe24deae0f24555ebeafb3d36931a79f0"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-adventures-gastronomic-marais-tour-html",
+      "path": "/ca/en/adventures/gastronomic-marais-tour",
+      "title": "Gastronomic Marais Tour",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/adventures/gastronomic-marais-tour.html",
+        "metaJson": "stardust/migrated/ca/en/adventures/gastronomic-marais-tour._meta.json",
+        "sourceHash": "sha256:162cbdac671535edbc0248c3ce9332b2f975eb75c5222f91b8bdf39415782710"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-adventures-html",
+      "path": "/ca/en/adventures",
+      "title": "Adventures",
+      "templateId": "us-en-adventures-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/adventures.html",
+        "metaJson": "stardust/migrated/ca/en/adventures._meta.json",
+        "sourceHash": "sha256:570e9c29fdbf099a8cfbd4e4d343acf565f8c4780c4dc01a89f2ca3995627d53"
+      },
+      "blocks": [
+        "title",
+        "teaser-hero",
+        "tabs",
+        "image-list"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-adventures-napa-wine-tasting-html",
+      "path": "/ca/en/adventures/napa-wine-tasting",
+      "title": "Napa Wine Tasting",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/adventures/napa-wine-tasting.html",
+        "metaJson": "stardust/migrated/ca/en/adventures/napa-wine-tasting._meta.json",
+        "sourceHash": "sha256:746240d7234ab3cdde2897ab99b543e23d6b63df5eda7b202812bab62d540680"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-adventures-riverside-camping-australia-html",
+      "path": "/ca/en/adventures/riverside-camping-australia",
+      "title": "Riverside Camping",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/adventures/riverside-camping-australia.html",
+        "metaJson": "stardust/migrated/ca/en/adventures/riverside-camping-australia._meta.json",
+        "sourceHash": "sha256:064a47cd777622d271c05b94b7cf02181b72c146e1f99b99db26dd55bf794da8"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-adventures-ski-touring-mont-blanc-html",
+      "path": "/ca/en/adventures/ski-touring-mont-blanc",
+      "title": "Ski Touring Mont Blanc",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/adventures/ski-touring-mont-blanc.html",
+        "metaJson": "stardust/migrated/ca/en/adventures/ski-touring-mont-blanc._meta.json",
+        "sourceHash": "sha256:c7f2fca735fa5c78ae649ba62d04ad2e5ee61939315bf7be8acec1a6cbe2067b"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-adventures-surf-camp-costa-rica-html",
+      "path": "/ca/en/adventures/surf-camp-costa-rica",
+      "title": "Surf Camp in Costa Rica",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/adventures/surf-camp-costa-rica.html",
+        "metaJson": "stardust/migrated/ca/en/adventures/surf-camp-costa-rica._meta.json",
+        "sourceHash": "sha256:7c261411f027ba84859b29867f381598a5949bbda271102ffdc39dbae98943ba"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-adventures-tahoe-skiing-html",
+      "path": "/ca/en/adventures/tahoe-skiing",
+      "title": "Tahoe Skiing",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/adventures/tahoe-skiing.html",
+        "metaJson": "stardust/migrated/ca/en/adventures/tahoe-skiing._meta.json",
+        "sourceHash": "sha256:bf1c291a6c8cb53b0dd2b4a8c9368ccb727c8bee1ecb7741429787d3bc30f07a"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-adventures-west-coast-cycling-html",
+      "path": "/ca/en/adventures/west-coast-cycling",
+      "title": "West Coast Cycling",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/adventures/west-coast-cycling.html",
+        "metaJson": "stardust/migrated/ca/en/adventures/west-coast-cycling._meta.json",
+        "sourceHash": "sha256:579a5fc2016475a3c51ee7bee89667d8f0c6f1ab99d509571d0629840697ea7b"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-adventures-whistler-mountain-biking-html",
+      "path": "/ca/en/adventures/whistler-mountain-biking",
+      "title": "Whistler Mountain Biking",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/adventures/whistler-mountain-biking.html",
+        "metaJson": "stardust/migrated/ca/en/adventures/whistler-mountain-biking._meta.json",
+        "sourceHash": "sha256:a0514245cf757c30910f7d82d697d3d415da89491c63b4968d7b195eac2a2703"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-adventures-yosemite-backpacking-html",
+      "path": "/ca/en/adventures/yosemite-backpacking",
+      "title": "Yosemite Backpacking",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/adventures/yosemite-backpacking.html",
+        "metaJson": "stardust/migrated/ca/en/adventures/yosemite-backpacking._meta.json",
+        "sourceHash": "sha256:930841695f95af400baae67c24f6800d0bae45010a25f648aba56083f4b267ee"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-faqs-html",
+      "path": "/ca/en/faqs",
+      "title": "FAQs",
+      "templateId": "us-en-faqs-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/faqs.html",
+        "metaJson": "stardust/migrated/ca/en/faqs._meta.json",
+        "sourceHash": "sha256:48617e6e2a6f509f7d209cbfb2318fd0fcf8a92208a4b12aa177a6cb7fac21d5"
+      },
+      "blocks": [
+        "accordion"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-html",
+      "path": "/ca/en",
+      "title": "WKND Adventures and Travel",
+      "templateId": "us-en-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en.html",
+        "metaJson": "stardust/migrated/ca/en._meta.json",
+        "sourceHash": "sha256:d95675c67bce53dfc88fc944f709de2c73359ce7d2bfb3d50222acdf94bd782f"
+      },
+      "blocks": [
+        "hero-carousel",
+        "teaser-featured",
+        "title",
+        "image-list",
+        "button",
+        "teaser-hero"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-magazine-arctic-surfing-html",
+      "path": "/ca/en/magazine/arctic-surfing",
+      "title": "Arctic Surfing",
+      "templateId": "us-en-magazine-western-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/magazine/arctic-surfing.html",
+        "metaJson": "stardust/migrated/ca/en/magazine/arctic-surfing._meta.json",
+        "sourceHash": "sha256:c59cda2d14340e44f5d5c65f1922500ec7fb2f2b84e0fa18126f169ebdd64458"
+      },
+      "blocks": [
+        "image",
+        "breadcrumb",
+        "title",
+        "content-fragment",
+        "text",
+        "byline",
+        "sharing",
+        "list-upnext"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-magazine-guide-la-skateparks-html",
+      "path": "/ca/en/magazine/guide-la-skateparks",
+      "title": "Ultimate Guide to LA Skateparks",
+      "templateId": "us-en-magazine-western-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/magazine/guide-la-skateparks.html",
+        "metaJson": "stardust/migrated/ca/en/magazine/guide-la-skateparks._meta.json",
+        "sourceHash": "sha256:f5cdb1d5e722924ea6d259fed34ed303eee398a16a88c17c33a514b233c0105e"
+      },
+      "blocks": [
+        "image",
+        "breadcrumb",
+        "title",
+        "content-fragment",
+        "text-quote",
+        "byline",
+        "sharing",
+        "download",
+        "list-upnext"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-magazine-html",
+      "path": "/ca/en/magazine",
+      "title": "Magazine",
+      "templateId": "us-en-magazine-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/magazine.html",
+        "metaJson": "stardust/migrated/ca/en/magazine._meta.json",
+        "sourceHash": "sha256:b3b3de1e85051fe52e9109707e9879e960869003e6b6711f9885b0630131a8ff"
+      },
+      "blocks": [
+        "title",
+        "teaser-featured",
+        "image-list",
+        "text",
+        "teaser-list"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-magazine-members-only-alaskan-adventure-html",
+      "path": "/ca/en/magazine/members-only/alaskan-adventure",
+      "title": "Alaskan Adventure",
+      "templateId": "us-en-magazine-western-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/magazine/members-only/alaskan-adventure.html",
+        "metaJson": "stardust/migrated/ca/en/magazine/members-only/alaskan-adventure._meta.json",
+        "sourceHash": "sha256:e6be3a12ecbd89cb0985efedb75cfdc8c2959a1afdb52ff3f69636880134e02c"
+      },
+      "blocks": [
+        "image",
+        "breadcrumb",
+        "title",
+        "content-fragment",
+        "text-quote",
+        "byline",
+        "sharing",
+        "list-upnext"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-magazine-members-only-fly-fishing-the-amazon-html",
+      "path": "/ca/en/magazine/members-only/fly-fishing-the-amazon",
+      "title": "Fly Fishing the Amazon",
+      "templateId": "us-en-magazine-western-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/magazine/members-only/fly-fishing-the-amazon.html",
+        "metaJson": "stardust/migrated/ca/en/magazine/members-only/fly-fishing-the-amazon._meta.json",
+        "sourceHash": "sha256:4f2340dd65dacf932635c372628a52d3786c2406caeaa03c658b25a9dd88437e"
+      },
+      "blocks": [
+        "image",
+        "breadcrumb",
+        "title",
+        "content-fragment",
+        "byline",
+        "sharing",
+        "list-upnext"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-magazine-members-only-html",
+      "path": "/ca/en/magazine/members-only",
+      "title": "Members Only",
+      "templateId": "ca-en-magazine-members-only-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/magazine/members-only.html",
+        "metaJson": "stardust/migrated/ca/en/magazine/members-only._meta.json",
+        "sourceHash": "sha256:54a98a9bfcaaa22d3a77d0b8669c250f749ece3020972f252923cdc152a36ec6"
+      },
+      "blocks": [
+        "title",
+        "image-list"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-magazine-san-diego-surf-html",
+      "path": "/ca/en/magazine/san-diego-surf",
+      "title": "San Diego Surf Spots",
+      "templateId": "us-en-magazine-western-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/magazine/san-diego-surf.html",
+        "metaJson": "stardust/migrated/ca/en/magazine/san-diego-surf._meta.json",
+        "sourceHash": "sha256:30c88cbf8cf0bf856037949125a32d01bdb756ba0a01078cc795a30fce9f1901"
+      },
+      "blocks": [
+        "image",
+        "breadcrumb",
+        "title",
+        "content-fragment",
+        "byline",
+        "sharing",
+        "list-upnext"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-magazine-ski-touring-html",
+      "path": "/ca/en/magazine/ski-touring",
+      "title": "Ski Touring",
+      "templateId": "us-en-magazine-western-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/magazine/ski-touring.html",
+        "metaJson": "stardust/migrated/ca/en/magazine/ski-touring._meta.json",
+        "sourceHash": "sha256:1105af30f28d55f30d013c7e4c65d4da1f0bc6c37ddb3005532a3cf40013d9e9"
+      },
+      "blocks": [
+        "image",
+        "breadcrumb",
+        "title",
+        "content-fragment",
+        "text-quote",
+        "byline",
+        "sharing",
+        "list-upnext"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-en-magazine-western-australia-html",
+      "path": "/ca/en/magazine/western-australia",
+      "title": "Western Australia",
+      "templateId": "us-en-magazine-western-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/en/magazine/western-australia.html",
+        "metaJson": "stardust/migrated/ca/en/magazine/western-australia._meta.json",
+        "sourceHash": "sha256:cb68a8ea1e37878e4d201bd53ec9828b6f2d259a7fa94b6b78ce95ed06966e8d"
+      },
+      "blocks": [
+        "image",
+        "breadcrumb",
+        "title",
+        "content-fragment",
+        "text-quote",
+        "byline",
+        "sharing",
+        "download",
+        "list-upnext"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ca-fr-html",
+      "path": "/ca/fr",
+      "title": "Français",
+      "templateId": "us-es-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ca/fr.html",
+        "metaJson": "stardust/migrated/ca/fr._meta.json",
+        "sourceHash": "sha256:6d6dcd3a93e9cac5d56575fdfba89787336ef9903ab17e55117ab08e79259e4e"
+      },
+      "blocks": [
+        "teaser-hero"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ch-de-html",
+      "path": "/ch/de",
+      "title": "Deutsch",
+      "templateId": "us-es-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ch/de.html",
+        "metaJson": "stardust/migrated/ch/de._meta.json",
+        "sourceHash": "sha256:3ff37073ed732b0ef1c4d4c235a920e87d83a2c6331e032bb8e2587d90712481"
+      },
+      "blocks": [
+        "teaser-hero"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ch-fr-html",
+      "path": "/ch/fr",
+      "title": "Français",
+      "templateId": "us-es-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ch/fr.html",
+        "metaJson": "stardust/migrated/ch/fr._meta.json",
+        "sourceHash": "sha256:5664c4a4e1bc350bd2e69468f24aa7a93d74ca072920b23b9f3671275522582a"
+      },
+      "blocks": [
+        "teaser-hero"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "ch-it-html",
+      "path": "/ch/it",
+      "title": "Italiano",
+      "templateId": "us-es-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/ch/it.html",
+        "metaJson": "stardust/migrated/ch/it._meta.json",
+        "sourceHash": "sha256:5d06953da0cda963049d277f69f0cf7ef2eeff4181dc02c148eb09477dd8d92b"
+      },
+      "blocks": [
+        "teaser-hero"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "de-de-html",
+      "path": "/de/de",
+      "title": "Deutsch",
+      "templateId": "us-es-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/de/de.html",
+        "metaJson": "stardust/migrated/de/de._meta.json",
+        "sourceHash": "sha256:fa4e189ee92d55ddbaa5db3988f79f73103aafea11a1ceea6d8cfd25f35b05b8"
+      },
+      "blocks": [
+        "teaser-hero"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "es-es-html",
+      "path": "/es/es",
+      "title": "Español",
+      "templateId": "us-es-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/es/es.html",
+        "metaJson": "stardust/migrated/es/es._meta.json",
+        "sourceHash": "sha256:b01ad1ca66abab1b2bce1779a1d09aa0a0694374ee0f1a0533ec33977e48ff87"
+      },
+      "blocks": [
+        "teaser-hero"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "fr-fr-html",
+      "path": "/fr/fr",
+      "title": "Français",
+      "templateId": "us-es-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/fr/fr.html",
+        "metaJson": "stardust/migrated/fr/fr._meta.json",
+        "sourceHash": "sha256:f8b9e633be6f10648e4c3b96e4e9cfcf3d1eb4b105d2bdec5a77f19839f297a8"
+      },
+      "blocks": [
+        "teaser-hero"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "it-it-html",
+      "path": "/it/it",
+      "title": "Italiano",
+      "templateId": "us-es-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/it/it.html",
+        "metaJson": "stardust/migrated/it/it._meta.json",
+        "sourceHash": "sha256:6065f6e11cbb96594a2595eb5b9fd488d8c46ab7fed62c117f660f69f1a55228"
+      },
+      "blocks": [
+        "teaser-hero"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-en-about-us-html",
+      "path": "/us/en/about-us",
+      "title": "About Us",
+      "templateId": "us-en-about-us-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/en/about-us.html",
+        "metaJson": "stardust/migrated/us/en/about-us._meta.json",
+        "sourceHash": "sha256:d06034a8ff6c564ee0110f49de97bb6168dd723533a22e20affda0db5507ac24"
+      },
+      "blocks": [
+        "title",
+        "text",
+        "contributor"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-en-adventures-bali-surf-camp-html",
+      "path": "/us/en/adventures/bali-surf-camp",
+      "title": "Bali Surf Camp",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/en/adventures/bali-surf-camp.html",
+        "metaJson": "stardust/migrated/us/en/adventures/bali-surf-camp._meta.json",
+        "sourceHash": "sha256:628a6ecd1bac2d6bcd1d5d9ecd54d7ba6c53a7a4b24d009026bbe2c86c8126f1"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-en-adventures-beervana-portland-html",
+      "path": "/us/en/adventures/beervana-portland",
+      "title": "Beervana in Portland",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/en/adventures/beervana-portland.html",
+        "metaJson": "stardust/migrated/us/en/adventures/beervana-portland._meta.json",
+        "sourceHash": "sha256:68829d68f75277ac7c2f4dfdfcdb128e21fad562c7488b1ac26c0ea4a1e195ad"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-en-adventures-climbing-new-zealand-html",
+      "path": "/us/en/adventures/climbing-new-zealand",
+      "title": "Climbing New Zealand",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/en/adventures/climbing-new-zealand.html",
+        "metaJson": "stardust/migrated/us/en/adventures/climbing-new-zealand._meta.json",
+        "sourceHash": "sha256:595f62e341ecca5fd557747d31225e5efa8000daf1b4732e7361dc6e923060b0"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-en-adventures-colorado-rock-climbing-html",
+      "path": "/us/en/adventures/colorado-rock-climbing",
+      "title": "Colorado Rock Climbing",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/en/adventures/colorado-rock-climbing.html",
+        "metaJson": "stardust/migrated/us/en/adventures/colorado-rock-climbing._meta.json",
+        "sourceHash": "sha256:e5b9598244da695ec0681fc329a15ea957feea5a535f3e10f873bed6d92ac327"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-en-adventures-cycling-southern-utah-html",
+      "path": "/us/en/adventures/cycling-southern-utah",
+      "title": "Cycling Southern Utah",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/en/adventures/cycling-southern-utah.html",
+        "metaJson": "stardust/migrated/us/en/adventures/cycling-southern-utah._meta.json",
+        "sourceHash": "sha256:6792ced9b95c12142328a4d606c4586f1e6daf7d21872bb95d9b373c8282627b"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-en-adventures-cycling-tuscany-html",
+      "path": "/us/en/adventures/cycling-tuscany",
+      "title": "Cycling Tuscany",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/en/adventures/cycling-tuscany.html",
+        "metaJson": "stardust/migrated/us/en/adventures/cycling-tuscany._meta.json",
+        "sourceHash": "sha256:d788b3e8617c6336be9feaa3d06ffa99eab04471b73e7be67e6cb8bb1e6bf378"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-en-adventures-downhill-skiing-wyoming-html",
+      "path": "/us/en/adventures/downhill-skiing-wyoming",
+      "title": "Downhill Skiing Wyoming",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/en/adventures/downhill-skiing-wyoming.html",
+        "metaJson": "stardust/migrated/us/en/adventures/downhill-skiing-wyoming._meta.json",
+        "sourceHash": "sha256:c2a70bd6d99d613759f22e32234451af0e567a0dcb2fa7da92fb21b8c0a60afc"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-en-adventures-gastronomic-marais-tour-html",
+      "path": "/us/en/adventures/gastronomic-marais-tour",
+      "title": "Gastronomic Marais Tour",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/en/adventures/gastronomic-marais-tour.html",
+        "metaJson": "stardust/migrated/us/en/adventures/gastronomic-marais-tour._meta.json",
+        "sourceHash": "sha256:680d4960dc0e88e5bb816bb365093148db81951f387a15a17c332401af28a2d7"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-en-adventures-html",
+      "path": "/us/en/adventures",
+      "title": "Adventures",
+      "templateId": "us-en-adventures-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/en/adventures.html",
+        "metaJson": "stardust/migrated/us/en/adventures._meta.json",
+        "sourceHash": "sha256:05adcc979dc09d25faa47db520c66c78645c813182837416da84f92a463195e4"
+      },
+      "blocks": [
+        "title",
+        "teaser-hero",
+        "tabs",
+        "image-list"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-en-adventures-napa-wine-tasting-html",
+      "path": "/us/en/adventures/napa-wine-tasting",
+      "title": "Napa Wine Tasting",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/en/adventures/napa-wine-tasting.html",
+        "metaJson": "stardust/migrated/us/en/adventures/napa-wine-tasting._meta.json",
+        "sourceHash": "sha256:67bee2b71ea04f33308d3d88f51d7a7b13b68f68dc6fa2b6291d3ac744118be9"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-en-adventures-riverside-camping-australia-html",
+      "path": "/us/en/adventures/riverside-camping-australia",
+      "title": "Riverside Camping",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/en/adventures/riverside-camping-australia.html",
+        "metaJson": "stardust/migrated/us/en/adventures/riverside-camping-australia._meta.json",
+        "sourceHash": "sha256:a66f378eca177618288e6ccc536ba386ea44cb895a391b6a412d53aa54e7ea1f"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-en-adventures-ski-touring-mont-blanc-html",
+      "path": "/us/en/adventures/ski-touring-mont-blanc",
+      "title": "Ski Touring Mont Blanc",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/en/adventures/ski-touring-mont-blanc.html",
+        "metaJson": "stardust/migrated/us/en/adventures/ski-touring-mont-blanc._meta.json",
+        "sourceHash": "sha256:c7dd29a56e75de8439a0e26f08fad146490cbcc6b43e2527f843b25dbefd94c7"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-en-adventures-surf-camp-costa-rica-html",
+      "path": "/us/en/adventures/surf-camp-costa-rica",
+      "title": "Surf Camp in Costa Rica",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/en/adventures/surf-camp-costa-rica.html",
+        "metaJson": "stardust/migrated/us/en/adventures/surf-camp-costa-rica._meta.json",
+        "sourceHash": "sha256:df60471aad86d0ca3d44a25aeec04fb7abac4fdfdb6a527af3224ac4688806e2"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-en-adventures-tahoe-skiing-html",
+      "path": "/us/en/adventures/tahoe-skiing",
+      "title": "Tahoe Skiing",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/en/adventures/tahoe-skiing.html",
+        "metaJson": "stardust/migrated/us/en/adventures/tahoe-skiing._meta.json",
+        "sourceHash": "sha256:0a12c5cdf29df07fdb659ff2e1e4bff700b58c628acf23e3de6c2dad0af02910"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-en-adventures-west-coast-cycling-html",
+      "path": "/us/en/adventures/west-coast-cycling",
+      "title": "West Coast Cycling",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/en/adventures/west-coast-cycling.html",
+        "metaJson": "stardust/migrated/us/en/adventures/west-coast-cycling._meta.json",
+        "sourceHash": "sha256:8053b49ca53e776da2dd78e2d6a8dda61d9cc24c22ae39516274075463016a21"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-en-adventures-whistler-mountain-biking-html",
+      "path": "/us/en/adventures/whistler-mountain-biking",
+      "title": "Whistler Mountain Biking",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/en/adventures/whistler-mountain-biking.html",
+        "metaJson": "stardust/migrated/us/en/adventures/whistler-mountain-biking._meta.json",
+        "sourceHash": "sha256:340f7b044b794d1be70a5885d7ac695430a119e0c40e82ca3755d00bb8057bf6"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-en-adventures-yosemite-backpacking-html",
+      "path": "/us/en/adventures/yosemite-backpacking",
+      "title": "Yosemite Backpacking",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/en/adventures/yosemite-backpacking.html",
+        "metaJson": "stardust/migrated/us/en/adventures/yosemite-backpacking._meta.json",
+        "sourceHash": "sha256:3bd10ea83998f243ade08262baea81b13a3ef1ae764274ca0514e0686af34d3d"
+      },
+      "blocks": [
+        "breadcrumb",
+        "mini-carousel",
+        "title",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-en-faqs-html",
+      "path": "/us/en/faqs",
+      "title": "FAQs",
+      "templateId": "us-en-faqs-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/en/faqs.html",
+        "metaJson": "stardust/migrated/us/en/faqs._meta.json",
+        "sourceHash": "sha256:3d7fcab57699d6f83a3ecc61a57cb0ea1103c77f04f02a108aaac387162bcb39"
+      },
+      "blocks": [
+        "accordion"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-en-html",
+      "path": "/us/en",
+      "title": "WKND Adventures and Travel",
+      "templateId": "us-en-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/en.html",
+        "metaJson": "stardust/migrated/us/en._meta.json",
+        "sourceHash": "sha256:f9b11bf0008386f81a736b8a2cbbc3284fb56a5f4ac8e6871cdd6e368bc51be2"
+      },
+      "blocks": [
+        "hero-carousel",
+        "teaser-featured",
+        "title",
+        "image-list",
+        "button",
+        "teaser-hero"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-en-magazine-arctic-surfing-html",
+      "path": "/us/en/magazine/arctic-surfing",
+      "title": "Arctic Surfing",
+      "templateId": "us-en-magazine-western-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/en/magazine/arctic-surfing.html",
+        "metaJson": "stardust/migrated/us/en/magazine/arctic-surfing._meta.json",
+        "sourceHash": "sha256:c7f3a1cc66798411787ef8461101f0ecd10e1be8a9c5671dafc6b5705546d26d"
+      },
+      "blocks": [
+        "image",
+        "breadcrumb",
+        "title",
+        "content-fragment",
+        "text",
+        "byline",
+        "sharing",
+        "list-upnext"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-en-magazine-guide-la-skateparks-html",
+      "path": "/us/en/magazine/guide-la-skateparks",
+      "title": "Ultimate Guide to LA Skateparks",
+      "templateId": "us-en-magazine-western-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/en/magazine/guide-la-skateparks.html",
+        "metaJson": "stardust/migrated/us/en/magazine/guide-la-skateparks._meta.json",
+        "sourceHash": "sha256:8959f64ce65d8882c5401bde8a0394655f577a1ec23fb2a2589ec91f0f904cdd"
+      },
+      "blocks": [
+        "image",
+        "breadcrumb",
+        "title",
+        "content-fragment",
+        "text-quote",
+        "byline",
+        "sharing",
+        "download",
+        "list-upnext"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-en-magazine-html",
+      "path": "/us/en/magazine",
+      "title": "Magazine",
+      "templateId": "us-en-magazine-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/en/magazine.html",
+        "metaJson": "stardust/migrated/us/en/magazine._meta.json",
+        "sourceHash": "sha256:4cb575572af2d608653ec5c0447162b2221de26401b26462a9f99377d4d48c1e"
+      },
+      "blocks": [
+        "title",
+        "teaser-featured",
+        "image-list",
+        "text",
+        "teaser-list"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-en-magazine-san-diego-surf-html",
+      "path": "/us/en/magazine/san-diego-surf",
+      "title": "San Diego Surf Spots",
+      "templateId": "us-en-magazine-western-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/en/magazine/san-diego-surf.html",
+        "metaJson": "stardust/migrated/us/en/magazine/san-diego-surf._meta.json",
+        "sourceHash": "sha256:d18b50733129dcea1ff94115acdd012f5674bdb79b44a01b0d88e81e21516fdd"
+      },
+      "blocks": [
+        "image",
+        "breadcrumb",
+        "title",
+        "content-fragment",
+        "byline",
+        "sharing",
+        "list-upnext"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-en-magazine-ski-touring-html",
+      "path": "/us/en/magazine/ski-touring",
+      "title": "Ski Touring",
+      "templateId": "us-en-magazine-western-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/en/magazine/ski-touring.html",
+        "metaJson": "stardust/migrated/us/en/magazine/ski-touring._meta.json",
+        "sourceHash": "sha256:ecc84bf10d60aff909e8f92b1854bb452945aa1c42a3eb84fcb1f0045f279198"
+      },
+      "blocks": [
+        "image",
+        "breadcrumb",
+        "title",
+        "content-fragment",
+        "text-quote",
+        "byline",
+        "sharing",
+        "list-upnext"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-en-magazine-western-australia-html",
+      "path": "/us/en/magazine/western-australia",
+      "title": "Western Australia",
+      "templateId": "us-en-magazine-western-australia-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/en/magazine/western-australia.html",
+        "metaJson": "stardust/migrated/us/en/magazine/western-australia._meta.json",
+        "sourceHash": "sha256:103511545feb2147d68a96cc3902840522c7f1bbc494e4192607362fb5a8da6e"
+      },
+      "blocks": [
+        "image",
+        "breadcrumb",
+        "title",
+        "content-fragment",
+        "text-quote",
+        "byline",
+        "sharing",
+        "download",
+        "list-upnext"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "us-es-html",
+      "path": "/us/es",
+      "title": "Español",
+      "templateId": "us-es-html",
+      "source": {
+        "migratedHtml": "stardust/migrated/us/es.html",
+        "metaJson": "stardust/migrated/us/es._meta.json",
+        "sourceHash": "sha256:3d4ad4b64604e84b1c38f4d8ebd6be6187d13666e5aee5930c424864768f3d3a"
+      },
+      "blocks": [
+        "teaser-hero"
+      ],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    }
+  ]
+}

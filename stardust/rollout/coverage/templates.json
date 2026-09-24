@@ -1,0 +1,249 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-09-24T10:51:40.247Z",
+    "readArtifacts": [
+      "stardust/migrated"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-24T10:53:51.367Z",
+  "templates": [
+    {
+      "id": "ca-en-magazine-members-only-html",
+      "representativeSlug": "ca-en-magazine-members-only-html",
+      "pages": [
+        "ca-en-magazine-members-only-html"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "image-list",
+        "title"
+      ],
+      "delivery": {
+        "verified": 0,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 1
+      }
+    },
+    {
+      "id": "us-en-about-us-html",
+      "representativeSlug": "us-en-about-us-html",
+      "pages": [
+        "ca-en-about-us-html",
+        "us-en-about-us-html"
+      ],
+      "pageCount": 2,
+      "blocks": [
+        "contributor",
+        "text",
+        "title"
+      ],
+      "delivery": {
+        "verified": 0,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 2
+      }
+    },
+    {
+      "id": "us-en-adventures-html",
+      "representativeSlug": "us-en-adventures-html",
+      "pages": [
+        "ca-en-adventures-html",
+        "us-en-adventures-html"
+      ],
+      "pageCount": 2,
+      "blocks": [
+        "image-list",
+        "tabs",
+        "teaser-hero",
+        "title"
+      ],
+      "delivery": {
+        "verified": 0,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 2
+      }
+    },
+    {
+      "id": "us-en-adventures-riverside-camping-australia-html",
+      "representativeSlug": "us-en-adventures-riverside-camping-australia-html",
+      "pages": [
+        "ca-en-adventures-bali-surf-camp-html",
+        "ca-en-adventures-beervana-portland-html",
+        "ca-en-adventures-climbing-new-zealand-html",
+        "ca-en-adventures-colorado-rock-climbing-html",
+        "ca-en-adventures-cycling-southern-utah-html",
+        "ca-en-adventures-cycling-tuscany-html",
+        "ca-en-adventures-downhill-skiing-wyoming-html",
+        "ca-en-adventures-gastronomic-marais-tour-html",
+        "ca-en-adventures-napa-wine-tasting-html",
+        "ca-en-adventures-riverside-camping-australia-html",
+        "ca-en-adventures-ski-touring-mont-blanc-html",
+        "ca-en-adventures-surf-camp-costa-rica-html",
+        "ca-en-adventures-tahoe-skiing-html",
+        "ca-en-adventures-west-coast-cycling-html",
+        "ca-en-adventures-whistler-mountain-biking-html",
+        "ca-en-adventures-yosemite-backpacking-html",
+        "us-en-adventures-bali-surf-camp-html",
+        "us-en-adventures-beervana-portland-html",
+        "us-en-adventures-climbing-new-zealand-html",
+        "us-en-adventures-colorado-rock-climbing-html",
+        "us-en-adventures-cycling-southern-utah-html",
+        "us-en-adventures-cycling-tuscany-html",
+        "us-en-adventures-downhill-skiing-wyoming-html",
+        "us-en-adventures-gastronomic-marais-tour-html",
+        "us-en-adventures-napa-wine-tasting-html",
+        "us-en-adventures-riverside-camping-australia-html",
+        "us-en-adventures-ski-touring-mont-blanc-html",
+        "us-en-adventures-surf-camp-costa-rica-html",
+        "us-en-adventures-tahoe-skiing-html",
+        "us-en-adventures-west-coast-cycling-html",
+        "us-en-adventures-whistler-mountain-biking-html",
+        "us-en-adventures-yosemite-backpacking-html"
+      ],
+      "pageCount": 32,
+      "blocks": [
+        "breadcrumb",
+        "content-fragment-elements",
+        "mini-carousel",
+        "tabs",
+        "title"
+      ],
+      "delivery": {
+        "verified": 0,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 32
+      }
+    },
+    {
+      "id": "us-en-faqs-html",
+      "representativeSlug": "us-en-faqs-html",
+      "pages": [
+        "ca-en-faqs-html",
+        "us-en-faqs-html"
+      ],
+      "pageCount": 2,
+      "blocks": [
+        "accordion"
+      ],
+      "delivery": {
+        "verified": 0,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 2
+      }
+    },
+    {
+      "id": "us-en-html",
+      "representativeSlug": "us-en-html",
+      "pages": [
+        "ca-en-html",
+        "us-en-html"
+      ],
+      "pageCount": 2,
+      "blocks": [
+        "button",
+        "hero-carousel",
+        "image-list",
+        "teaser-featured",
+        "teaser-hero",
+        "title"
+      ],
+      "delivery": {
+        "verified": 0,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 2
+      }
+    },
+    {
+      "id": "us-en-magazine-html",
+      "representativeSlug": "us-en-magazine-html",
+      "pages": [
+        "ca-en-magazine-html",
+        "us-en-magazine-html"
+      ],
+      "pageCount": 2,
+      "blocks": [
+        "image-list",
+        "teaser-featured",
+        "teaser-list",
+        "text",
+        "title"
+      ],
+      "delivery": {
+        "verified": 0,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 2
+      }
+    },
+    {
+      "id": "us-en-magazine-western-australia-html",
+      "representativeSlug": "us-en-magazine-western-australia-html",
+      "pages": [
+        "ca-en-magazine-arctic-surfing-html",
+        "ca-en-magazine-guide-la-skateparks-html",
+        "ca-en-magazine-members-only-alaskan-adventure-html",
+        "ca-en-magazine-members-only-fly-fishing-the-amazon-html",
+        "ca-en-magazine-san-diego-surf-html",
+        "ca-en-magazine-ski-touring-html",
+        "ca-en-magazine-western-australia-html",
+        "us-en-magazine-arctic-surfing-html",
+        "us-en-magazine-guide-la-skateparks-html",
+        "us-en-magazine-san-diego-surf-html",
+        "us-en-magazine-ski-touring-html",
+        "us-en-magazine-western-australia-html"
+      ],
+      "pageCount": 12,
+      "blocks": [
+        "breadcrumb",
+        "byline",
+        "content-fragment",
+        "download",
+        "image",
+        "list-upnext",
+        "sharing",
+        "text",
+        "text-quote",
+        "title"
+      ],
+      "delivery": {
+        "verified": 0,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 12
+      }
+    },
+    {
+      "id": "us-es-html",
+      "representativeSlug": "us-es-html",
+      "pages": [
+        "ca-fr-html",
+        "ch-de-html",
+        "ch-fr-html",
+        "ch-it-html",
+        "de-de-html",
+        "es-es-html",
+        "fr-fr-html",
+        "it-it-html",
+        "us-es-html"
+      ],
+      "pageCount": 9,
+      "blocks": [
+        "teaser-hero"
+      ],
+      "delivery": {
+        "verified": 0,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 9
+      }
+    }
+  ]
+}
