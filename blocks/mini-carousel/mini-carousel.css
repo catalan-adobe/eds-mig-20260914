@@ -9,6 +9,19 @@ body.program main .section.breadcrumb :is(ol, ul) {
   display: inline-block;
 }
 
+/* Scoped override (foundation request filed): live marks the current section in
+   both navs (cmp-navigation__item--active) — header item on the accent ground,
+   footer item underlined in the strong inverse colour. Every program page lives
+   under /us/en/adventures. */
+body.program header .primary-nav a[href='/us/en/adventures'] {
+  background-color: var(--color-accent);
+}
+
+body.program footer .footer-nav a[href='/us/en/adventures'] {
+  color: var(--color-fg-inverse-strong);
+  text-decoration: underline;
+}
+
 /* contains the floated controls: on live the following floated .column is pushed
    below them at every width (clear: both ≥ 1025, float stacking below) */
 .mini-carousel {
