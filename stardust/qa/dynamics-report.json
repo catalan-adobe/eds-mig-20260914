@@ -1,0 +1,154 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics check",
+  "writtenAt": "2026-09-24T13:55:55.251Z",
+  "origin": "https://replica-wknd--eds-mig-20260914--catalan-adobe.aem.live",
+  "parity": "stardust/dynamics/parity.json"
+ },
+ "results": [
+  {
+   "feature": "header search (typeahead)",
+   "id": "DF-01",
+   "class": "F/S",
+   "status": "delivered (D2: config-service query index /us/en/query-index.json, 26 rows; header typeahead)",
+   "type": "fetch-json",
+   "pass": true,
+   "detail": "200 · 26 rows · keys columns,data,offset,limit,total,:type",
+   "thirdParty": "",
+   "ms": 2484,
+   "environmentLimit": null
+  },
+  {
+   "feature": "header search (typeahead)",
+   "id": "DF-01",
+   "class": "F/S",
+   "status": "delivered (D2: config-service query index /us/en/query-index.json, 26 rows; header typeahead)",
+   "type": "search-query",
+   "pass": true,
+   "detail": "3 results (source 3) · first: bali surf camp · matches the source",
+   "thirdParty": "",
+   "ms": 2241,
+   "environmentLimit": null
+  },
+  {
+   "feature": "language navigation",
+   "id": "DF-03",
+   "class": "I18N",
+   "status": "interim",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "11 × header .language-menu a (min 10)",
+   "thirdParty": "",
+   "ms": 1798,
+   "environmentLimit": null
+  },
+  {
+   "feature": "listings (adventures 16, home 6, magazine 5)",
+   "id": "DF-04",
+   "class": "L",
+   "status": "interim",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "32 × .cards .card (min 16)",
+   "thirdParty": "",
+   "ms": 2041,
+   "environmentLimit": null
+  },
+  {
+   "feature": "listings (adventures 16, home 6, magazine 5)",
+   "id": "DF-04",
+   "class": "L",
+   "status": "interim",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "8 × .cards .card (min 6)",
+   "thirdParty": "",
+   "ms": 1790,
+   "environmentLimit": null
+  },
+  {
+   "feature": "listings (adventures 16, home 6, magazine 5)",
+   "id": "DF-04",
+   "class": "L",
+   "status": "interim",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "5 × .cards .card (min 5)",
+   "thirdParty": "",
+   "ms": 1889,
+   "environmentLimit": null
+  },
+  {
+   "feature": "tags (Adobe Launch, Analytics/ECID, 2o7, retargeting pixel)",
+   "id": "DF-07",
+   "class": "T/A",
+   "status": "scaffolded-awaiting-owner (scripts/site-config.js tags.enabled=false, A-DY7)",
+   "type": "consent-gate",
+   "pass": true,
+   "detail": "no request to 3 gated host pattern(s) before consent",
+   "thirdParty": "",
+   "ms": 5783,
+   "environmentLimit": null
+  },
+  {
+   "feature": "tabs (listing filter, adventure detail)",
+   "id": "DF-08",
+   "class": "CR",
+   "status": "delivered (Phase A block, C-deliver)",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "6 × [role=tab] (min 3)",
+   "thirdParty": "",
+   "ms": 2003,
+   "environmentLimit": null
+  },
+  {
+   "feature": "tabs (listing filter, adventure detail)",
+   "id": "DF-08",
+   "class": "CR",
+   "status": "delivered (Phase A block, C-deliver)",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "6 × [role=tab] (min 2)",
+   "thirdParty": "",
+   "ms": 1781,
+   "environmentLimit": null
+  },
+  {
+   "feature": "carousels (home hero, adventure mini)",
+   "id": "DF-09",
+   "class": "CR",
+   "status": "delivered (Phase A block, C-deliver)",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "3 × .hero-carousel .hero-carousel-item[role=tabpanel] (min 3)",
+   "thirdParty": "",
+   "ms": 1792,
+   "environmentLimit": null
+  },
+  {
+   "feature": "FAQ accordion",
+   "id": "DF-10",
+   "class": "CR",
+   "status": "delivered (Phase A block, C-deliver)",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "7 × .accordion [role=button], .accordion button (min 3)",
+   "thirdParty": "",
+   "ms": 1886,
+   "environmentLimit": null
+  },
+  {
+   "feature": "header search toggle + mobile nav toggle",
+   "id": "DF-11",
+   "class": "M",
+   "status": "delivered (Phase A block, C-deliver)",
+   "type": "no-page-errors",
+   "pass": true,
+   "detail": "none on 6 page(s)",
+   "thirdParty": "",
+   "ms": 11211,
+   "environmentLimit": null
+  }
+ ]
+}

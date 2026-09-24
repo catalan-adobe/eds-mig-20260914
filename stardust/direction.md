@@ -475,3 +475,30 @@ hands-off judgments made at each gate as named assumptions.
 - **A-CF-7 (shell page):** `/us/en/shell-check` deleted from DA (204), unpreviewed (204), never
   published (live DELETE 404), file removed from `content/`; `ledger-foundation.json` keeps its
   historical row.
+- **A-D-1 (redirects sheet scope):** path-safety never emitted `stardust/redirects.tsv` (every DA
+  path was already safe), so the file is authored at D-site with 28 rows — `/` and `/index.html`
+  → `/us/en` (the source root itself 301s to `/us/en.html`, so no root `index` document) plus a
+  `<path>.html → <path>` alias for each of the 26 delivered pages, because every source URL on
+  wknd.site carries `.html` and EDS serves extensionless documents only. Hands-off judgment:
+  original inbound URLs must not 404 (rollout § Phase D); locale roots outside `/us/en` are not
+  aliased — they were never captured (A-EX1) and are repointed at E2.
+- **A-D2-1 (index via the config service):** `helix-query.yaml` in the code branch is not
+  consumed by this config-service-backed site (site config v6, DA markup source; AGENTS.md lists
+  the file as retired) — 10 polls at 404 after push + Code Sync + republish. The migration token
+  could read the site config, so the same YAML was POSTed to
+  `admin.hlx.page/config/.../content/query.yaml` (204) and the index built on bulk republish.
+  The YAML stays in the repo as the version-controlled record of that config.
+- **A-D2-2 (search semantics):** whole-word matching reproduces the source's recorded probe
+  (`surf` → 3, `ski` → 3, `camp` → 2); Oak stemming (`surfing` → 4 on the source) is not
+  reproduced — the dropdown shows 2. Cap 10 = the core search component's default resultsSize.
+- **A-D2-3 (frozen-file edits at D2):** the plan's Phase B deliverables live in `blocks/header/`
+  and `scripts/` (frozen set); edited after C-final as the phase prescribes, lint 0, re-frozen.
+- **A-D2-4 (shared DA repo — owner decision):** two runs write one DA content root; this run
+  re-PUT its 28 documents and proceeds, but the live origin is only as fresh as the last writer.
+  Fix outside this run's authority: one DA repo per run, or serialize the runs.
+- **A-E2-1 (other-locale targets → source, scope debt):** the header language menu's 10 locale
+  roots (`/us/es`, `/it/it`, `/fr/fr`, `/es/es`, `/de/de`, `/ch/it`, `/ch/fr`, `/ch/de`,
+  `/ca/fr`, `/ca/en`) were never captured (A-EX1; no `stardust/state.json` row, 404 on the live
+  tree) and are repointed to `https://wknd.site/<locale>.html` — never left as 404s. They remain
+  scope debt for rollout D3-multilingual; when an owner scopes the locale trees they are crawled
+  (capture → migrate → gate) and the hrefs return to root-relative via `localize-links.mjs`.

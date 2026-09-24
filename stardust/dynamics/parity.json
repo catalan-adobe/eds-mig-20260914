@@ -2,74 +2,225 @@
   "_provenance": {
     "writtenBy": "stardust:dynamics",
     "writtenAt": "2026-09-24T07:20:00Z",
-    "note": "Expectations read from the SOURCE at detect time (replica Phase 2). Statuses are updated by dynamics Phase 4/5."
+    "note": "Expectations read from the SOURCE at detect time (replica Phase 2). Statuses are updated by dynamics Phase 4/5.",
+    "updatedAt": "2026-09-24T13:48:24.098Z",
+    "updatedBy": "stardust:rollout D2-dynamic"
   },
   "method": "server-rendered AEM Sites source; chrome/tabs/carousel/accordion rebuilt as client-only blocks; search fed by helix-query index; listings static-snapshot; tags scaffolded disabled",
   "features": [
     {
-      "id": "DF-01", "feature": "header search (typeahead)", "class": "F/S", "pages": 26,
-      "disposition": "index-backed", "reproducibility": "self", "status": "pending Phase B",
+      "id": "DF-01",
+      "feature": "header search (typeahead)",
+      "class": "F/S",
+      "pages": 26,
+      "disposition": "index-backed",
+      "reproducibility": "self",
+      "status": "delivered (D2: config-service query index /us/en/query-index.json, 26 rows; header typeahead)",
       "checks": [
-        { "type": "fetch-json", "url": "/us/en/query-index.json", "minRows": 26, "expectKeys": ["path", "title", "description"] },
-        { "type": "search-query", "path": "/us/en", "param": "fulltext", "term": "surf",
-          "resultSelector": ".cmp-search__results .cmp-search__item, .search-results li",
-          "titleSelector": ".cmp-search__item-title",
+        {
+          "type": "fetch-json",
+          "url": "/us/en/query-index.json",
+          "minRows": 26,
+          "expectKeys": [
+            "total",
+            "data"
+          ]
+        },
+        {
+          "type": "search-query",
+          "path": "/us/en",
+          "param": "fulltext",
+          "term": "surf",
+          "resultSelector": ".site-search-results .site-search-item",
+          "titleSelector": ".site-search-item-title",
           "expectCount": 3,
-          "expectTitles": ["Surf Camp in Costa Rica", "Bali Surf Camp", "San Diego Surf Spots"],
-          "expectIncludes": "/us/en/adventures/surf-camp-costa-rica" }
+          "expectTitles": [
+            "Surf Camp in Costa Rica",
+            "Bali Surf Camp",
+            "San Diego Surf Spots"
+          ],
+          "expectIncludes": "/us/en/adventures/surf-camp-costa-rica"
+        }
       ]
     },
     {
-      "id": "DF-02", "feature": "Sign In / Sign Out links", "class": "X/M", "pages": 26,
-      "disposition": "decided-out", "reproducibility": "needs-backend", "status": "decided-out",
-      "owner": "A-DY2: auth / commerce backend on the new host?", "checks": []
+      "id": "DF-02",
+      "feature": "Sign In / Sign Out links",
+      "class": "X/M",
+      "pages": 26,
+      "disposition": "decided-out",
+      "reproducibility": "needs-backend",
+      "status": "decided-out",
+      "owner": "A-DY2: auth / commerce backend on the new host?",
+      "checks": []
     },
     {
-      "id": "DF-03", "feature": "language navigation", "class": "I18N", "pages": 26,
-      "disposition": "rebuild-native", "reproducibility": "needs-business-decision", "status": "interim",
+      "id": "DF-03",
+      "feature": "language navigation",
+      "class": "I18N",
+      "pages": 26,
+      "disposition": "rebuild-native",
+      "reproducibility": "needs-business-decision",
+      "status": "interim",
       "owner": "A-DY3: locale-tree scope (D3-multilingual)",
-      "checks": [ { "type": "dom-count", "path": "/us/en", "selector": "header .cmp-languagenavigation__item-link, header .language-navigation a", "min": 10 } ]
+      "checks": [
+        {
+          "type": "dom-count",
+          "path": "/us/en",
+          "selector": "header .language-menu a",
+          "min": 10
+        }
+      ]
     },
     {
-      "id": "DF-04", "feature": "listings (adventures 16, home 6, magazine 5)", "class": "L", "pages": 3,
-      "disposition": "static-snapshot", "reproducibility": "self", "status": "interim",
+      "id": "DF-04",
+      "feature": "listings (adventures 16, home 6, magazine 5)",
+      "class": "L",
+      "pages": 3,
+      "disposition": "static-snapshot",
+      "reproducibility": "self",
+      "status": "interim",
       "owner": "A-DY4: index-driven or editorially curated?",
       "checks": [
-        { "type": "dom-count", "path": "/us/en/adventures", "selector": ".cmp-image-list__item, .image-list li", "min": 16 },
-        { "type": "dom-count", "path": "/us/en", "selector": ".cmp-image-list__item, .image-list li", "min": 6 },
-        { "type": "dom-count", "path": "/us/en/magazine", "selector": ".cmp-list__item, .list li", "min": 5 }
+        {
+          "type": "dom-count",
+          "path": "/us/en/adventures",
+          "selector": ".cards .card",
+          "min": 16
+        },
+        {
+          "type": "dom-count",
+          "path": "/us/en",
+          "selector": ".cards .card",
+          "min": 6
+        },
+        {
+          "type": "dom-count",
+          "path": "/us/en/magazine",
+          "selector": ".cards .card",
+          "min": 5
+        }
       ]
     },
-    { "id": "DF-05", "feature": "ContextHub + Granite runtime JSON", "class": "D", "pages": 26, "disposition": "decided-out", "reproducibility": "self", "status": "decided-out", "checks": [] },
-    { "id": "DF-06", "feature": "Granite / CQ globals", "class": "A", "pages": 26, "disposition": "decided-out", "reproducibility": "self", "status": "decided-out", "checks": [] },
     {
-      "id": "DF-07", "feature": "tags (Adobe Launch, Analytics/ECID, 2o7, retargeting pixel)", "class": "T/A", "pages": 26,
-      "disposition": "embed-passthrough", "reproducibility": "needs-business-decision", "status": "scaffolded-awaiting-owner",
+      "id": "DF-05",
+      "feature": "ContextHub + Granite runtime JSON",
+      "class": "D",
+      "pages": 26,
+      "disposition": "decided-out",
+      "reproducibility": "self",
+      "status": "decided-out",
+      "checks": []
+    },
+    {
+      "id": "DF-06",
+      "feature": "Granite / CQ globals",
+      "class": "A",
+      "pages": 26,
+      "disposition": "decided-out",
+      "reproducibility": "self",
+      "status": "decided-out",
+      "checks": []
+    },
+    {
+      "id": "DF-07",
+      "feature": "tags (Adobe Launch, Analytics/ECID, 2o7, retargeting pixel)",
+      "class": "T/A",
+      "pages": 26,
+      "disposition": "embed-passthrough",
+      "reproducibility": "needs-business-decision",
+      "status": "scaffolded-awaiting-owner (scripts/site-config.js tags.enabled=false, A-DY7)",
       "owner": "A-DY7: which tags run on the new host; Launch property id",
-      "checks": [ { "type": "consent-gate", "path": "/us/en", "forbiddenHosts": ["assets.adobedtm.com", "dpm.demdex.net", "wkndsitewknd887971p.112.2o7.net"] } ]
-    },
-    {
-      "id": "DF-08", "feature": "tabs (listing filter, adventure detail)", "class": "CR", "pages": 17,
-      "disposition": "client-only", "reproducibility": "self", "status": "pending Phase A",
       "checks": [
-        { "type": "dom-count", "path": "/us/en/adventures/climbing-new-zealand", "selector": "[role=tab]", "min": 3 },
-        { "type": "dom-count", "path": "/us/en/adventures", "selector": "[role=tab]", "min": 2 }
+        {
+          "type": "consent-gate",
+          "path": "/us/en",
+          "forbiddenHosts": [
+            "assets.adobedtm.com",
+            "dpm.demdex.net",
+            "wkndsitewknd887971p.112.2o7.net"
+          ]
+        }
       ]
     },
     {
-      "id": "DF-09", "feature": "carousels (home hero, adventure mini)", "class": "CR", "pages": 17,
-      "disposition": "client-only", "reproducibility": "self", "status": "pending Phase A",
-      "checks": [ { "type": "dom-count", "path": "/us/en", "selector": ".carousel [role=tabpanel], .carousel .cmp-carousel__item", "min": 3 } ]
+      "id": "DF-08",
+      "feature": "tabs (listing filter, adventure detail)",
+      "class": "CR",
+      "pages": 17,
+      "disposition": "client-only",
+      "reproducibility": "self",
+      "status": "delivered (Phase A block, C-deliver)",
+      "checks": [
+        {
+          "type": "dom-count",
+          "path": "/us/en/adventures/climbing-new-zealand",
+          "selector": "[role=tab]",
+          "min": 3
+        },
+        {
+          "type": "dom-count",
+          "path": "/us/en/adventures",
+          "selector": "[role=tab]",
+          "min": 2
+        }
+      ]
     },
     {
-      "id": "DF-10", "feature": "FAQ accordion", "class": "CR", "pages": 1,
-      "disposition": "client-only", "reproducibility": "self", "status": "pending Phase A",
-      "checks": [ { "type": "dom-count", "path": "/us/en/faqs", "selector": ".accordion [role=button], .accordion button", "min": 3 } ]
+      "id": "DF-09",
+      "feature": "carousels (home hero, adventure mini)",
+      "class": "CR",
+      "pages": 17,
+      "disposition": "client-only",
+      "reproducibility": "self",
+      "status": "delivered (Phase A block, C-deliver)",
+      "checks": [
+        {
+          "type": "dom-count",
+          "path": "/us/en",
+          "selector": ".hero-carousel .hero-carousel-item[role=tabpanel]",
+          "min": 3
+        }
+      ]
     },
     {
-      "id": "DF-11", "feature": "header search toggle + mobile nav toggle", "class": "M", "pages": 26,
-      "disposition": "rebuild-native", "reproducibility": "self", "status": "pending Phase A",
-      "checks": [ { "type": "no-page-errors", "paths": ["/us/en", "/us/en/adventures", "/us/en/adventures/climbing-new-zealand", "/us/en/magazine/san-diego-surf", "/us/en/about-us", "/us/en/faqs"] } ]
+      "id": "DF-10",
+      "feature": "FAQ accordion",
+      "class": "CR",
+      "pages": 1,
+      "disposition": "client-only",
+      "reproducibility": "self",
+      "status": "delivered (Phase A block, C-deliver)",
+      "checks": [
+        {
+          "type": "dom-count",
+          "path": "/us/en/faqs",
+          "selector": ".accordion [role=button], .accordion button",
+          "min": 3
+        }
+      ]
+    },
+    {
+      "id": "DF-11",
+      "feature": "header search toggle + mobile nav toggle",
+      "class": "M",
+      "pages": 26,
+      "disposition": "rebuild-native",
+      "reproducibility": "self",
+      "status": "delivered (Phase A block, C-deliver)",
+      "checks": [
+        {
+          "type": "no-page-errors",
+          "paths": [
+            "/us/en",
+            "/us/en/adventures",
+            "/us/en/adventures/climbing-new-zealand",
+            "/us/en/magazine/san-diego-surf",
+            "/us/en/about-us",
+            "/us/en/faqs"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -489,3 +489,79 @@ content/footer.html); `check` → unchanged. progress.json `units.foundation` �
   candidate R-02); sub-pixel Δh 1 at 360 on landing/static/unique/adventures; content-diff 🔴
   counts are the documented classifier blind spots (hidden carousel text, font-size:0 icon
   labels, DA-stripped aria-labels) and the chrome set.
+
+## D-site — site assembly: redirects wired, served sitemap 26 = assembled 26, / 200 (2026-09-24)
+
+- `assemble.mjs` → `stardust/rollout/site/{sitemap.xml,robots.txt,manifest.json}`, 26 expected
+  urls, 0 fragments (chrome documents `/nav` + `/footer` already carry `Robots | noindex` and
+  are published live — the served sitemap held exactly the 26 pages before this phase).
+- Source root `https://wknd.site/` 301s to `/us/en.html`, so the sheet carries `/` and
+  `/index.html` → `/us/en` (no root `index` document). `stardust/redirects.tsv` authored with
+  28 rows: the two root rows plus one `<path>.html → <path>` alias per delivered page so the
+  original inbound wknd URLs land instead of 404ing (`/us/en.html`, `/us/en/adventures.html`
+  and `/index.html` all answered 404 before). PUT `/redirects.json` (200, 28 rows), preview 200,
+  live 200 via `stardust/.work/rollout/probes/put-redirects-sheet.mjs`.
+- Verified: `/` 301 → `/us/en` 200 on both `.aem.live` and `.aem.page`; `.html` aliases 301.
+- `assemble.mjs --verify-origin` exit 0: served sitemap 26 urls, extra 0, missing 0
+  (`site/manifest.json.servedSitemap.match = true`). Decision A-D-1 in direction.md.
+
+## D2-dynamic — query index, header typeahead, tags scaffold; parity 12/12 PASS (2026-09-24)
+
+- `helix-query.yaml` authored (index `us-en`: `/us/en` + `/us/en/**` → `/us/en/query-index.json`;
+  title/description/image/template/lastModified/robots), committed + pushed (72e200c), Code Sync
+  202, two pages re-published: the index stayed 404 for 10 polls — this site is config-service
+  backed (site config v6, DA markup source; AGENTS.md: `helix-query.yaml` retired). The config
+  service answered GET 200 / `content/query.yaml` 404 with the migration token, so the same YAML
+  was POSTed there (204); the index appeared at `total 2` after 25 s, bulk `/live/*` publish of
+  the 26 paths (202) → `total 26` after 25 s. Decision A-D2-1.
+- Header search (DF-01): `blocks/header/search.js` — whole-word matching (the source's
+  semantics: `surf` → 3, "Arctic Surfing" excluded), title-first, description below the cap,
+  dedupe, cap 10; dropdown CSS lifted from `.cmp-search--header .cmp-search__results/__item/
+  __item-mark`; `?fulltext=` prefill. Offline rank vs the live index: surf 3 = source, ski 3 =
+  source, camp 2 = source, surfing 2 (source 4 — stemming not reproduced, A-D2-2).
+- Tags (DF-07): `scripts/site-config.js` (`tags.enabled=false`, `launchUrl` empty) read by
+  `scripts/consented.js` after consent — nothing loads until the owner sets A-DY7.
+- `dynamics-check.mjs --origin live`: 12 checks / 11 features, pass 12, fail 0
+  (`stardust/qa/dynamics-report.md`). `parity.json` dom-count selectors repointed from the
+  source's class names to the delivered blocks (`header .language-menu a`, `.cards .card`,
+  `.hero-carousel .hero-carousel-item[role=tabpanel]`); DF-01/08/09/10/11 `delivered`, DF-03/04
+  `interim`, DF-07 `scaffolded-awaiting-owner`, DF-02/05/06 `decided-out`.
+- Foundation re-frozen after the sanctioned D2 edits (header.js/css, search.js, consented.js,
+  site-config.js) — A-D2-3.
+- **Collision found (not a defect of this run):** sibling run `sd-25-pi-opus-5-5-0004` (code
+  branch `sd-25-fable-replica`) deploys to the SAME DA repo `catalan-adobe/eds-mig-20260914`
+  and the same `/us/en/**` paths; DA content is shared across code branches. Its `/us/en`
+  (13:32:39Z; blocks `teaser-featured`, `title-underline` — 404 on `replica-wknd`) was what the
+  bulk publish shipped; `/us/en/adventures` was overwritten again at 13:51:01Z. All 28
+  documents (26 pages + nav + footer) re-PUT + published with `deploy-batch --force`
+  (28 ok, 0 failed) before the parity replay; every verification below is valid only until the
+  sibling's next PUT. Owner decision A-D2-4.
+
+## E-full-site — verify.mjs 26 verified / 0 failed; render check 7/7 (2026-09-24)
+
+- `verify.mjs --base <live> --all`: checked 26 · 26 verified · 0 failed (HTTP 200, no
+  `about:error`, internal hrefs resolve to delivered paths); coverage rows flipped `verified`.
+- Headless render check on the first page of each template (`stardust/.work/rollout/probes/
+  render-check.mjs`, 1440): landing, listing adventures, program, listing magazine, article,
+  static about-us, static faqs — every page `body.appear`, sections > 0, blocks decorated
+  (`data-block-status=loaded`), 0 pageerrors, 0 broken images, 0 zero-width rendered images.
+- Ran after the 28-document re-PUT (A-D2-4); valid until the sibling run's next PUT.
+
+## E2-link-audit — 42/42 live hrefs 200; 10 locale roots repointed to wknd.site (2026-09-24)
+
+- `localize-links.mjs --source-host wknd.site --content content --redirects stardust/redirects.tsv`:
+  28 pages, 29 map entries, 0 to localize, 0 to normalize; `--check` PASS (every internal href
+  already root-relative + extensionless, no trailing slash).
+- Authored-tree href census (63 distinct): 26 `/us/en…` pages, `/media/wknd/…pdf`, 5 external
+  (stock.adobe.com, github ×2, docs.adobe.com ×2), 21 in-page `#` anchors (sign-in/out,
+  language, social icon placeholders), 10 locale roots.
+- Locale roots `/us/es /it/it /fr/fr /es/es /de/de /ch/it /ch/fr /ch/de /ca/fr /ca/en` answered
+  404 on the live tree — never captured (state.json: 26 rows, all `/us/en`; A-EX1) → repointed
+  in `content/nav.html` to `https://wknd.site/<locale>.html` (each 200 on the source);
+  `/nav` re-PUT + published (`deploy-batch --force`, 1 ok), `.plain.html` carries the 10
+  absolutes; `header.js` `localePath()` keeps the flag/active logic on absolutes. Decision
+  A-E2-1; foundation re-frozen (nav.html is in the frozen set).
+- Live GET audit over the 28 delivered documents' `.plain.html`: 42 distinct hrefs — 27
+  internal (26 pages + the PDF) all 200, 15 external all 200 (-L). No 404 remains.
+- Nav + footer documents published (D-site); every nav/footer/landing target is in the 26
+  verified rows (E).

@@ -7,7 +7,7 @@
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-09-24T13:28:06.832Z",
+  "generatedAt": "2026-09-24T13:56:56.654Z",
   "templates": [
     {
       "id": "us-en-about-us-html",
@@ -20,8 +20,8 @@
         "contributor-card"
       ],
       "delivery": {
-        "verified": 0,
-        "deployed": 1,
+        "verified": 1,
+        "deployed": 0,
         "contentPending": 0,
         "pending": 0
       }
@@ -55,8 +55,8 @@
         "trip-facts"
       ],
       "delivery": {
-        "verified": 0,
-        "deployed": 16,
+        "verified": 16,
+        "deployed": 0,
         "contentPending": 0,
         "pending": 0
       }
@@ -77,8 +77,8 @@
         "tabs"
       ],
       "delivery": {
-        "verified": 0,
-        "deployed": 2,
+        "verified": 2,
+        "deployed": 0,
         "contentPending": 0,
         "pending": 0
       }
@@ -94,8 +94,8 @@
         "accordion"
       ],
       "delivery": {
-        "verified": 0,
-        "deployed": 1,
+        "verified": 1,
+        "deployed": 0,
         "contentPending": 0,
         "pending": 0
       }
@@ -114,8 +114,8 @@
         "image-list"
       ],
       "delivery": {
-        "verified": 0,
-        "deployed": 1,
+        "verified": 1,
+        "deployed": 0,
         "contentPending": 0,
         "pending": 0
       }
@@ -138,8 +138,8 @@
         "upnext-list"
       ],
       "delivery": {
-        "verified": 0,
-        "deployed": 5,
+        "verified": 5,
+        "deployed": 0,
         "contentPending": 0,
         "pending": 0
       }
