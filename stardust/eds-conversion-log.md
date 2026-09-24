@@ -368,3 +368,30 @@ guard on the preview (`qa-gate.mjs` without schema): 24 ok / 0 fail — booted, 
 9 blocks loaded non-empty, 0 pageerror, 0 broken images; `data-block-name` on 7, button list
 computes `flex`. Coverage: page deployed, block `contributor-card` deployed. No sibling (the
 template has one page).
+
+### Unique cluster — published-origin gates (2026-09-24)
+
+`/us/en/faqs` PUT → preview → live (`deploy-batch.mjs`, ledger `stardust/deploy/ledger-unique.json`,
+publish = yes). `.plain.html` 200, 1 h1, 0 about:error, 0 /img/, 1 `<picture>` + 1 alt, 7 accordion
+rows (DA delivers the single-`<p>` cells as bare text; the runtime's `wrapTextNodes` re-wraps them
+and the decode moves the wrapped node), `<strong>` runs kept, section metadata folded
+(`article-layout`). `ai-readability` strict 100 % / code 100 %. pub1 @1440 measured Δy +7 on
+the image (the foundation's block `img` collapsed the source's inline 7px margin into the h1
+margin) and Δy +18 on the aside h3 (the hidden `separator--space-small` keeps 18px above the
+h3 — the UA `hr { overflow: hidden }` stops its margins collapsing); both scoped into
+`blocks/accordion/accordion.css` (inline `picture img`, `padding-top: 18px` on the aside
+wrapper). **pub1 @1440: 0.27 %, Δh 0, overflow 0 → PASS; pub1 @360: 1.22 %, Δh 1px (sub-pixel
+main rounding, footer y/h identical), overflow 0 → PASS.** `measure.mjs` build vs prototype:
+h1, image (152,318 748×498), accordion (152,1023 748×341), header row 49px, title / icon boxes,
+aside h3 (1011,245 291×36), aside p — identical at 1440 and 360. Crop bands: 1440 header 1.10 % /
+footer 0.02 %, 360 header 0.48 % / footer 0.06 % (full 593px footer band; bar 2 %). chrome-parity
+13 @1440 / 16 @360 — the foundation's recorded set (fixed header "Sign In" colour, the
+current-page nav marker "FAQs", footer social-link names), all already queued in
+`stardust/rollout/foundation-requests.md`; no new request from this unit. `content-diff` 9 🔴 all
+chrome (header eyebrow / aria-labels / footer social CTAs), 0 in main. Computed-style guard on
+the preview (`qa-gate.mjs` without schema): 12 ok / 0 fail — booted, 1 h1, 2 sections, accordion
+loaded 7 kids, 0 pageerror, 0 broken images; `.accordion[data-block-name]` computes `grid`,
+image clientWidth 748 / 212. Behaviour drive (`stardust/.work/deploy/probes/accordion-drive.mjs`):
+header click expands item 2 alone (panel 56px, border-bottom 0, aria-expanded true, glyph
+swap), the chevron toggle collapses it, 0 pageerrors. Coverage: page deployed, block `accordion`
+deployed. No sibling (the template has one page).
