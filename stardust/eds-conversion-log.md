@@ -574,3 +574,21 @@ block-roundtrip `--ew` 27/27 editable, 0 dead/duplicated; qa-gate 25/25 both har
 `aria-label`, keeps `title` — foundation request, scripts.js) · 1 header ICON DIFF clear.svg file vs
 source data-URI (byte-identical, registered by C0). Coverage: us-en-html, ca-en-html `deployed`;
 blocks hero-carousel, teaser-featured `deployed`. Publish decision unchanged: preview only.
+
+## C-deliver unit `members-only` — PUT + published-origin gate (2026-09-24)
+
+`content/ca/en/magazine/members-only.html`: 2 editorial `<img src>` rewritten from the wknd.site
+coreimg URLs to the foundation's `content.da.live/…/media/wknd-sd25/` URLs (media ledger, probe
+`stardust/.work/rollout/members-only/probes/rehost-src.mjs`, copy of article's); media-reconcile
+2 hosted · delivery-lint 0/0/0 · davids-model-lint 0 🔴 · sanitise unchanged. deploy-batch 1/1
+previewed (`--no-publish`, ledger `stardust/deploy/ledger-members-only.json`); `.plain.html` 200,
+1 `<h1>`, `image-list` present, 2 `<img>`, 0 about:error.
+**Published-origin gate** (gate.sh `--full --marker "Members Only"` — the served page carries no
+"WKND" string; pub1 both widths, no iteration): 1440 0.04% Δh 0 · 360 0.14% Δh 0; overflow ok;
+crop-compare header 0.19% / 0.59%, footer 0.00% / 0.00% (bar 2%); chrome-parity on the chrome
+elements header ✓ both widths, footer the known CA "localization features…" Δw −2px (queued by
+listing/landing). measure.mjs @360 h1, card image links, title link, img all Δ0. Advisories are
+source parity: STRETCHED IMAGE = the source's own 260×200 cover crop; FLUSH-LEFT TEXT @360 = the
+source's `container-flush` (h1 x 0 both sides); the title `<a>` colour delta (build #202020 vs live
+`rgb(0,69,255)`) is unrendered — the live title span computes `rgb(32,32,32)`. Residual 1 🔴 header
+ICON DIFF clear.svg (C0-registered). Coverage: ca-en-magazine-members-only-html `verified`.
