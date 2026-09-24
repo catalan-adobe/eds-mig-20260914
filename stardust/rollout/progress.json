@@ -59,7 +59,7 @@
       "verdict": "foundation: files 39, nav+footer live, shell previewed; gate 1440 header 0.09% / footer 0.02%, 360 header 0.53% / footer 0.84%, chrome Δ25/Δ29 justified, 0 pageerror, 0 overflow; frozen 39 files"
     },
     "landing": {
-      "status": "pending",
+      "status": "done",
       "kind": "cluster",
       "order": 1,
       "templates": [
@@ -80,10 +80,39 @@
         "hero-teaser",
         "cards"
       ],
-      "blocksToReuse": []
+      "blocksToReuse": [],
+      "pagesLive": 1,
+      "blocksConverted": [
+        "hero-carousel",
+        "featured-teaser",
+        "hero-teaser",
+        "cards"
+      ],
+      "foundationRequests": 3,
+      "gates": {
+        "360": {
+          "archetype": 2.41,
+          "sibling": null,
+          "heightDelta": 3,
+          "overflow": 0,
+          "crop": "hdr 0.48% ftr 0.89%",
+          "chrome": 25
+        },
+        "1440": {
+          "archetype": 2,
+          "sibling": null,
+          "heightDelta": 2,
+          "overflow": 0,
+          "crop": "hdr 0.09% ftr 0.02%",
+          "chrome": 25
+        }
+      },
+      "startedAt": "2026-09-24T10:59:03.762Z",
+      "endedAt": "2026-09-24T13:06:56.239Z",
+      "verdict": "landing: pages 1/1 live, blocks 4, gate 1440 2.00% / 360 2.41%, requests 3"
     },
     "program": {
-      "status": "pending",
+      "status": "done",
       "kind": "cluster",
       "order": 2,
       "templates": [
@@ -133,10 +162,34 @@
         "trip-facts",
         "tabs"
       ],
-      "blocksToReuse": []
+      "blocksToReuse": [],
+      "pagesLive": 16,
+      "blocksConverted": [
+        "mini-carousel",
+        "trip-facts",
+        "tabs"
+      ],
+      "foundationRequests": 2,
+      "gates": {
+        "360": {
+          "archetype": 2.32,
+          "sibling": 0.48,
+          "crop": "hdr 0.53% ftr 0.01%",
+          "chrome": 15
+        },
+        "1440": {
+          "archetype": 0.8,
+          "sibling": 0.06,
+          "crop": "hdr 0.09% ftr 0.31%",
+          "chrome": 11
+        }
+      },
+      "startedAt": "2026-09-24T10:59:03.762Z",
+      "endedAt": "2026-09-24T13:06:56.239Z",
+      "verdict": "program: pages 16/16 live, blocks 3, gate 1440 0.80% / 360 2.32%, requests 2"
     },
     "article": {
-      "status": "pending",
+      "status": "done",
       "kind": "cluster",
       "order": 2,
       "templates": [
@@ -165,10 +218,48 @@
         "upnext-list",
         "download"
       ],
-      "blocksToReuse": []
+      "blocksToReuse": [],
+      "pagesLive": 5,
+      "blocksConverted": [
+        "article-body",
+        "contributor-byline",
+        "upnext-list",
+        "download"
+      ],
+      "foundationRequests": 1,
+      "gates": {
+        "360": {
+          "archetype": 2.89,
+          "sibling": 2.84,
+          "crop": "hdr 0.48% ftr 0.09%",
+          "chrome": 28,
+          "heightDelta": {
+            "archetype": -1,
+            "sibling": -1
+          },
+          "siblingSlug": "us-en-magazine-western-australia-html"
+        },
+        "1440": {
+          "archetype": 0.7,
+          "sibling": 0.4,
+          "crop": "hdr 1.56% ftr 0.41%",
+          "chrome": 13,
+          "heightDelta": {
+            "archetype": 0,
+            "sibling": 0
+          },
+          "siblingSlug": "us-en-magazine-guide-la-skateparks-html"
+        },
+        "overflow": 0,
+        "computedStyleGuard": "PASS 1440+360",
+        "aiReadability": "strict 100% / code 100% x5"
+      },
+      "startedAt": "2026-09-24T10:59:03.762Z",
+      "endedAt": "2026-09-24T13:06:56.239Z",
+      "verdict": "article: pages 5/5 live, blocks 4, gate 1440 0.70% / 360 2.89%, requests 1"
     },
     "static": {
-      "status": "pending",
+      "status": "done",
       "kind": "cluster",
       "order": 2,
       "templates": [
@@ -186,10 +277,36 @@
       "blocksToConvert": [
         "contributor-card"
       ],
-      "blocksToReuse": []
+      "blocksToReuse": [],
+      "pagesLive": 1,
+      "blocksConverted": [
+        "contributor-card"
+      ],
+      "foundationRequests": 2,
+      "gates": {
+        "360": {
+          "archetype": 0.24,
+          "sibling": null,
+          "crop": "hdr 0.48% ftr 0.04%",
+          "chrome": 16,
+          "heightDelta": 1,
+          "overflow": 0
+        },
+        "1440": {
+          "archetype": 0.4,
+          "sibling": null,
+          "crop": "hdr 1.56% ftr 0.02%",
+          "chrome": 13,
+          "heightDelta": 0,
+          "overflow": 0
+        }
+      },
+      "startedAt": "2026-09-24T10:59:03.762Z",
+      "endedAt": "2026-09-24T13:06:56.239Z",
+      "verdict": "static: pages 1/1 live, blocks 1, gate 1440 0.40% / 360 0.24%, requests 2"
     },
     "unique": {
-      "status": "pending",
+      "status": "done",
       "kind": "cluster",
       "order": 2,
       "templates": [
@@ -207,10 +324,32 @@
       "blocksToConvert": [
         "accordion"
       ],
-      "blocksToReuse": []
+      "blocksToReuse": [],
+      "pagesLive": 1,
+      "blocksConverted": [
+        "accordion"
+      ],
+      "foundationRequests": 0,
+      "gates": {
+        "360": {
+          "archetype": 1.22,
+          "sibling": null,
+          "crop": "hdr 0.48% ftr 0.06%",
+          "chrome": 16
+        },
+        "1440": {
+          "archetype": 0.27,
+          "sibling": null,
+          "crop": "hdr 1.10% ftr 0.02%",
+          "chrome": 13
+        }
+      },
+      "startedAt": "2026-09-24T10:59:03.762Z",
+      "endedAt": "2026-09-24T13:06:56.239Z",
+      "verdict": "unique: pages 1/1 live, blocks 1, gate 1440 0.27% / 360 1.22%, requests 0"
     },
     "listing": {
-      "status": "pending",
+      "status": "done",
       "kind": "cluster",
       "order": 3,
       "templates": [
@@ -235,10 +374,40 @@
         "hero-teaser",
         "cards",
         "tabs"
-      ]
+      ],
+      "pagesLive": 2,
+      "blocksConverted": [
+        "list-teaser"
+      ],
+      "foundationRequests": 2,
+      "gates": {
+        "360": {
+          "archetype": 1.15,
+          "sibling": 3.83,
+          "crop": "hdr 0.48% ftr 0.05%",
+          "chrome": 16,
+          "heightDelta": {
+            "archetype": 2,
+            "sibling": 13
+          }
+        },
+        "1440": {
+          "archetype": 1,
+          "sibling": 1.64,
+          "crop": "hdr 1.82% ftr 0.04%",
+          "chrome": 13,
+          "heightDelta": {
+            "archetype": 1,
+            "sibling": 0
+          }
+        }
+      },
+      "startedAt": "2026-09-24T10:59:03.762Z",
+      "endedAt": "2026-09-24T13:06:56.239Z",
+      "verdict": "listing: pages 2/2 live, blocks 1, gate 1440 1.00% / 360 1.15%, requests 2"
     },
     "final": {
-      "status": "pending",
+      "status": "running",
       "kind": "final",
       "templates": [
         "us-en-html",
@@ -250,7 +419,8 @@
       ],
       "pages": 26,
       "blocks": 0,
-      "order": 4
+      "order": 4,
+      "startedAt": "2026-09-24T13:07:05.875Z"
     }
   }
 }
