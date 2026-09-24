@@ -1,0 +1,323 @@
+{
+  "source": "file:///Users/catalan/repos/ai/migration-tests/stardust-benchmark/sd-25-pi-opus-5-5-0004/stardust/.work/rollout/program/schema-src/us-en-adventures-ski-touring-mont-blanc-html.html",
+  "width": 1280,
+  "profile": "eds",
+  "sections": [
+    {
+      "section": "breadcrumb",
+      "items": [
+        {
+          "role": "cta",
+          "order": 0,
+          "text": "Adventures",
+          "href": "../../../us/en/adventures.html"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Ski Touring Mont Blanc"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": [
+        {
+          "unitSelector": "LI.breadcrumb__item",
+          "count": 2,
+          "unit": {
+            "headings": 0,
+            "ctas": 1,
+            "imgs": 0,
+            "textRuns": 1
+          },
+          "uniform": false
+        }
+      ]
+    },
+    {
+      "section": "adventure-gallery",
+      "items": [
+        {
+          "role": "body",
+          "order": 0,
+          "text": "Previous"
+        },
+        {
+          "role": "body",
+          "order": 1,
+          "text": "Next"
+        }
+      ],
+      "imgCount": 3,
+      "editableTexts": 0,
+      "repeats": [
+        {
+          "unitSelector": "DIV.carousel__item",
+          "count": 3,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 1,
+            "textRuns": 0
+          },
+          "uniform": true
+        },
+        {
+          "unitSelector": "BUTTON.carousel__action",
+          "count": 2,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 0,
+            "textRuns": 1
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "adventure-title",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "Ski Touring Mont Blanc"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": [],
+      "defaultContent": true
+    },
+    {
+      "section": "adventure-facts",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "Ski Touring Mont Blanc"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Activity"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "Skiing"
+        },
+        {
+          "role": "eyebrow",
+          "order": 3,
+          "text": "Adventure Type"
+        },
+        {
+          "role": "eyebrow",
+          "order": 4,
+          "text": "Overnight Trip"
+        },
+        {
+          "role": "eyebrow",
+          "order": 5,
+          "text": "Trip Length"
+        },
+        {
+          "role": "eyebrow",
+          "order": 6,
+          "text": "5 Days"
+        },
+        {
+          "role": "eyebrow",
+          "order": 7,
+          "text": "Group Size"
+        },
+        {
+          "role": "eyebrow",
+          "order": 8,
+          "text": "4"
+        },
+        {
+          "role": "eyebrow",
+          "order": 9,
+          "text": "Difficulty"
+        },
+        {
+          "role": "eyebrow",
+          "order": 10,
+          "text": "Advanced"
+        },
+        {
+          "role": "eyebrow",
+          "order": 11,
+          "text": "Price"
+        },
+        {
+          "role": "eyebrow",
+          "order": 12,
+          "text": "2600.0"
+        },
+        {
+          "role": "heading",
+          "order": 13,
+          "text": "Share this Adventure"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 2,
+      "repeats": [
+        {
+          "unitSelector": "DIV.facts__item",
+          "count": 6,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 0,
+            "textRuns": 2
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "adventure-details",
+      "items": [
+        {
+          "role": "eyebrow",
+          "order": 0,
+          "text": "Overview"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Itinerary"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "What to Bring"
+        },
+        {
+          "role": "heading",
+          "order": 3,
+          "text": "Ski Touring Mont Blanc"
+        },
+        {
+          "role": "body",
+          "order": 4,
+          "text": "If you’re a slopes enthusiast, you know that one run in the backcountry is worth ten in the front country. This adventure includes 5 days of ski touring topped off with the ascent of Mont Blanc, the highest point in Western Europe. An acclimatization phase of the trip will prepare the team physically and mentally for a two-day summit attempt. During this phase, some of the classic routes around Chamonix will be explored. The final two days we’ll take the summit of Mont Blanc via the Arete Royal and Dome Du Goute."
+        },
+        {
+          "role": "heading",
+          "order": 5,
+          "text": "Ski Touring Mont Blanc"
+        },
+        {
+          "role": "body",
+          "order": 6,
+          "text": "Day 1"
+        },
+        {
+          "role": "body",
+          "order": 7,
+          "text": "Arrive in Chamonix and meet up with our group at the chalet in the afternoon. Your guides will take you through the plan for the week and will discuss logistics, equipment, conditions and guidelines."
+        },
+        {
+          "role": "body",
+          "order": 8,
+          "text": "Day 2"
+        },
+        {
+          "role": "body",
+          "order": 9,
+          "text": "Our first ski day is usually at the Grands Montets where there are some excellent runs from the top lift station. During the afternoon your guide will do a short ski tour and run a mountain awareness session on avalanche rescue."
+        },
+        {
+          "role": "body",
+          "order": 10,
+          "text": "Day 3"
+        },
+        {
+          "role": "body",
+          "order": 11,
+          "text": "A second day ski tour from the Argentiere hut typically you will head to the Col du Tour Noir on the Glacier des Amethystes, usually a 4 hour run. Then we’ll return to the hut for a second night."
+        },
+        {
+          "role": "body",
+          "order": 12,
+          "text": "Day 4"
+        },
+        {
+          "role": "body",
+          "order": 13,
+          "text": "Starting from the hut you will ski tour the Col du Passon and enjoy a long ski descent to the village of Le Tour. Return to the chalet for a well deserved shower and dinner."
+        },
+        {
+          "role": "body",
+          "order": 14,
+          "text": "Day 5"
+        },
+        {
+          "role": "body",
+          "order": 15,
+          "text": "Summit ascent. A leisurely start before the Aiguille du Midi cable car and ascent to the Grand Mulets Refuge. This is a 3hr ski tour to the hut where you stay overnight."
+        },
+        {
+          "role": "heading",
+          "order": 16,
+          "text": "Ski Touring Mont Blanc"
+        },
+        {
+          "role": "body",
+          "order": 17,
+          "text": "When choosing clothing for ski touring you want to think light, warm, and versatile. Weather can change from warm and sunny in the afternoon to frigid bone-chilling temperatures in the evening. Be prepared to switch from carrying most of your clothes and gear in your rucksack to avoid the heat to wearing nearly everything you have to keep warm! Preparing for the unpredictable conditions is definitely part of the adventure!"
+        },
+        {
+          "role": "body",
+          "order": 18,
+          "text": "Headwear: warm hat, sun-cap, or wide-brim hat for sun protection, ski helmet, snow cap/beanie."
+        },
+        {
+          "role": "body",
+          "order": 19,
+          "text": "An outer shell jacket made of waterproof and breathable material like Gore-Tex. One with a hood is preferable to avoid letting snow inside."
+        },
+        {
+          "role": "body",
+          "order": 20,
+          "text": "Multiple layers of thin fleece - rather than a single thick layer. Multiple layers allow for easy adding or removing of layers depending on the temperature and activity."
+        },
+        {
+          "role": "body",
+          "order": 21,
+          "text": "Insulation layer like a down or Primaloft jacket is a good item to have ready to wear in the event of cold weather, it can live in your rucksack as a spare layer and can come in very handy for sudden changes in the weather."
+        },
+        {
+          "role": "body",
+          "order": 22,
+          "text": "A pair of thermal base layer pants under a shell."
+        },
+        {
+          "role": "body",
+          "order": 23,
+          "text": "As with all ski touring trips, you’ll want to go with all-mountain/freeride skis, ski touring boots and ski touring bindings. Dedicated ski touring boots or hybrid freeride boots are required for all touring trips to make it easier and more comfortable to walk uphill."
+        }
+      ],
+      "imgCount": 7,
+      "editableTexts": 18,
+      "repeats": [
+        {
+          "unitSelector": "DIV.tabs__tabpanel",
+          "count": 3,
+          "unit": {
+            "headings": 1,
+            "ctas": 0,
+            "imgs": 2,
+            "textRuns": 2
+          },
+          "uniform": false
+        }
+      ]
+    }
+  ]
+}

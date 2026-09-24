@@ -1,0 +1,227 @@
+{
+  "source": "file:///Users/catalan/repos/ai/migration-tests/stardust-benchmark/sd-25-pi-opus-5-5-0004/stardust/.work/rollout/program/schema-src/ca-en-adventures-gastronomic-marais-tour-html.html",
+  "width": 1280,
+  "profile": "eds",
+  "sections": [
+    {
+      "section": "breadcrumb",
+      "items": [
+        {
+          "role": "cta",
+          "order": 0,
+          "text": "Adventures",
+          "href": "../../../ca/en/adventures.html"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Gastronomic Marais Tour"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": [
+        {
+          "unitSelector": "LI.breadcrumb__item",
+          "count": 2,
+          "unit": {
+            "headings": 0,
+            "ctas": 1,
+            "imgs": 0,
+            "textRuns": 1
+          },
+          "uniform": false
+        }
+      ]
+    },
+    {
+      "section": "adventure-gallery",
+      "items": [
+        {
+          "role": "body",
+          "order": 0,
+          "text": "Previous"
+        },
+        {
+          "role": "body",
+          "order": 1,
+          "text": "Next"
+        }
+      ],
+      "imgCount": 1,
+      "editableTexts": 0,
+      "repeats": []
+    },
+    {
+      "section": "adventure-facts",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "Gastronomic Marais Tour"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Activity"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "Social"
+        },
+        {
+          "role": "eyebrow",
+          "order": 3,
+          "text": "Adventure Type"
+        },
+        {
+          "role": "eyebrow",
+          "order": 4,
+          "text": "Day Trip"
+        },
+        {
+          "role": "eyebrow",
+          "order": 5,
+          "text": "Trip Length"
+        },
+        {
+          "role": "eyebrow",
+          "order": 6,
+          "text": "1 Day"
+        },
+        {
+          "role": "eyebrow",
+          "order": 7,
+          "text": "Group Size"
+        },
+        {
+          "role": "eyebrow",
+          "order": 8,
+          "text": "6"
+        },
+        {
+          "role": "eyebrow",
+          "order": 9,
+          "text": "Difficulty"
+        },
+        {
+          "role": "eyebrow",
+          "order": 10,
+          "text": "Beginner"
+        },
+        {
+          "role": "eyebrow",
+          "order": 11,
+          "text": "Price"
+        },
+        {
+          "role": "eyebrow",
+          "order": 12,
+          "text": "95.0"
+        },
+        {
+          "role": "heading",
+          "order": 13,
+          "text": "Share this Adventure"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 2,
+      "repeats": [
+        {
+          "unitSelector": "DIV.facts__item",
+          "count": 6,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 0,
+            "textRuns": 2
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "adventure-details",
+      "items": [
+        {
+          "role": "eyebrow",
+          "order": 0,
+          "text": "Overview"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Itinerary"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "What to Bring"
+        },
+        {
+          "role": "heading",
+          "order": 3,
+          "text": "Gastronomic Marais Tour"
+        },
+        {
+          "role": "body",
+          "order": 4,
+          "text": "Duck legs confit, just one of the incredible dishes on the tour"
+        },
+        {
+          "role": "body",
+          "order": 5,
+          "text": "Take a VIP gastronomic tour through the vibrant Marais, one of the oldest, colorful and historical areas of Paris. Our Marais expert, Marie Bernard will take food lovers to the top food shops, patisseries and chocolate shops as you take in Marais' unique atmosphere."
+        },
+        {
+          "role": "heading",
+          "order": 6,
+          "text": "Gastronomic Marais Tour"
+        },
+        {
+          "role": "body",
+          "order": 7,
+          "text": "Meet your guide and small group (maximum 6 people) in the center of the Le Marais district. Learn from Marie about the artisanal French cuisine and culinary specialties from surrounding countries that make this one of the most fascinating and delicious destinations in Paris. Walk from shop to shop and experience the trendy district while sampling regional wines and cheese and, of course, patisseries. Continue past top neighborhood sights like the Maison de Victor Hugo and Place des Vosges, and browse Merci for vintage clothing and homeware accessories, gifts and stationary. Along the tour you’ll sample cured meats, craft cocktails, locally sourced foods and, of course, French wines. This tour offers convenient afternoon and evening start times, and includes all food and wine tastings and beverages.."
+        },
+        {
+          "role": "heading",
+          "order": 8,
+          "text": "Gastronomic Marais Tour"
+        },
+        {
+          "role": "body",
+          "order": 9,
+          "text": "Comfortable walking shoes"
+        },
+        {
+          "role": "body",
+          "order": 10,
+          "text": "Camera"
+        },
+        {
+          "role": "body",
+          "order": 11,
+          "text": "Extra bag for shopping purchases"
+        }
+      ],
+      "imgCount": 1,
+      "editableTexts": 7,
+      "repeats": [
+        {
+          "unitSelector": "DIV.tabs__tabpanel",
+          "count": 3,
+          "unit": {
+            "headings": 1,
+            "ctas": 0,
+            "imgs": 1,
+            "textRuns": 3
+          },
+          "uniform": false
+        }
+      ]
+    }
+  ],
+  "_note": "qa-gate view: default-content sections and BUTTON control repeats removed"
+}

@@ -1,0 +1,272 @@
+{
+  "source": "file:///Users/catalan/repos/ai/migration-tests/stardust-benchmark/sd-25-pi-opus-5-5-0004/stardust/.work/rollout/program/schema-src/us-en-adventures-west-coast-cycling-html.html",
+  "width": 1280,
+  "profile": "eds",
+  "sections": [
+    {
+      "section": "breadcrumb",
+      "items": [
+        {
+          "role": "cta",
+          "order": 0,
+          "text": "Adventures",
+          "href": "../../../us/en/adventures.html"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "West Coast Cycling"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": [
+        {
+          "unitSelector": "LI.breadcrumb__item",
+          "count": 2,
+          "unit": {
+            "headings": 0,
+            "ctas": 1,
+            "imgs": 0,
+            "textRuns": 1
+          },
+          "uniform": false
+        }
+      ]
+    },
+    {
+      "section": "adventure-gallery",
+      "items": [
+        {
+          "role": "body",
+          "order": 0,
+          "text": "Previous"
+        },
+        {
+          "role": "body",
+          "order": 1,
+          "text": "Next"
+        }
+      ],
+      "imgCount": 1,
+      "editableTexts": 0,
+      "repeats": [
+        {
+          "unitSelector": "BUTTON.carousel__action",
+          "count": 2,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 0,
+            "textRuns": 1
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "adventure-title",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "West Coast Cycling"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": [],
+      "defaultContent": true
+    },
+    {
+      "section": "adventure-facts",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "West Coast Cycling"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Activity"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "Cycling"
+        },
+        {
+          "role": "eyebrow",
+          "order": 3,
+          "text": "Adventure Type"
+        },
+        {
+          "role": "eyebrow",
+          "order": 4,
+          "text": "Overnight Trip"
+        },
+        {
+          "role": "eyebrow",
+          "order": 5,
+          "text": "Trip Length"
+        },
+        {
+          "role": "eyebrow",
+          "order": 6,
+          "text": "5 days"
+        },
+        {
+          "role": "eyebrow",
+          "order": 7,
+          "text": "Group Size"
+        },
+        {
+          "role": "eyebrow",
+          "order": 8,
+          "text": "12"
+        },
+        {
+          "role": "eyebrow",
+          "order": 9,
+          "text": "Difficulty"
+        },
+        {
+          "role": "eyebrow",
+          "order": 10,
+          "text": "Intermediate"
+        },
+        {
+          "role": "eyebrow",
+          "order": 11,
+          "text": "Price"
+        },
+        {
+          "role": "eyebrow",
+          "order": 12,
+          "text": "4500.0"
+        },
+        {
+          "role": "heading",
+          "order": 13,
+          "text": "Share this Adventure"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 2,
+      "repeats": [
+        {
+          "unitSelector": "DIV.facts__item",
+          "count": 6,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 0,
+            "textRuns": 2
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "adventure-details",
+      "items": [
+        {
+          "role": "eyebrow",
+          "order": 0,
+          "text": "Overview"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Itinerary"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "What to Bring"
+        },
+        {
+          "role": "heading",
+          "order": 3,
+          "text": "West Coast Cycling"
+        },
+        {
+          "role": "body",
+          "order": 4,
+          "text": "Join us for this once in a lifetime bike trip traveling from San Francisco to Portland cycling along the Pacific Coast. Experience world class terrain as we head north through redwood forests, state parks, the Columbia river and the Pacific ocean."
+        },
+        {
+          "role": "heading",
+          "order": 5,
+          "text": "West Coast Cycling"
+        },
+        {
+          "role": "heading",
+          "order": 6,
+          "text": "San Francisco to Eureka"
+        },
+        {
+          "role": "body",
+          "order": 7,
+          "text": "Start the tour by cycling across the iconic Golden Gate Bridge and then making our way to the coast to ride up Highway One where we'll go through Point Reyes National Seashore and the gorgeous Sonoma coast."
+        },
+        {
+          "role": "heading",
+          "order": 8,
+          "text": "Eureka to Bandon"
+        },
+        {
+          "role": "body",
+          "order": 9,
+          "text": "Be prepared for giant trees over 2,000 years old and over 300 feet tall as we start the day in Eureka. On our way to Bandon we'll visit quintessential quaint towns offering saltwater taffy shops, lovable harbors and the best clam chowder in the Pacific Northwest."
+        },
+        {
+          "role": "heading",
+          "order": 10,
+          "text": "Bandon to Portland"
+        },
+        {
+          "role": "body",
+          "order": 11,
+          "text": "For the golfers amongst us, we'll have some downtime to fit in golf at one of the top golf resorts in the country. We'll start our final leg along the Columbia River. After lunch in historic Astoria, we'll continue along a route featuring resort towns including Seaside and Cannon Beach."
+        },
+        {
+          "role": "heading",
+          "order": 12,
+          "text": "West Coast Cycling"
+        },
+        {
+          "role": "body",
+          "order": 13,
+          "text": "Bike"
+        },
+        {
+          "role": "body",
+          "order": 14,
+          "text": "Cycling clothes"
+        },
+        {
+          "role": "body",
+          "order": 15,
+          "text": "Water bottles"
+        }
+      ],
+      "imgCount": 1,
+      "editableTexts": 12,
+      "repeats": [
+        {
+          "unitSelector": "DIV.tabs__tabpanel",
+          "count": 3,
+          "unit": {
+            "headings": 1,
+            "ctas": 0,
+            "imgs": 1,
+            "textRuns": 2
+          },
+          "uniform": false
+        }
+      ]
+    }
+  ]
+}

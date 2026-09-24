@@ -1,0 +1,118 @@
+/* image-list — .cmp-image-list inside .cmp-tabs, lifted from the gated listing prototype
+   (stardust/prototypes/us-en-adventures-html.css § tabs, § image-list). */
+
+/* the block is the source's flow-root column */
+.image-list {
+  display: flow-root;
+}
+
+.image-list p {
+  font-size: inherit;
+  line-height: var(--line-height-body);
+  margin: 0;
+  text-align: left;
+}
+
+/* tab strip — the source .cmp-tabs__tablist */
+.image-list .tablist {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 1em 0;
+  padding-left: 0;
+}
+
+.image-list .tab {
+  border-bottom: 1px solid transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: var(--body-sm);
+  max-height: var(--button-size);
+  min-width: var(--button-size);
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+}
+
+.image-list .tab:focus {
+  outline: none;
+}
+
+.image-list .tab-active {
+  background-color: var(--color-secondary);
+  border: none;
+  color: #fff;
+}
+
+.image-list .panel {
+  display: none;
+}
+
+.image-list .panel-active {
+  display: block;
+}
+
+/* the list — the source .cmp-image-list (flex-wrap, 260px cards + 14px gutter) */
+.image-list .items {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: normal;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.image-list .item {
+  flex-basis: 260px;
+  margin: 0 0 2rem;
+  padding-right: 14px;
+}
+
+.image-list .image-link {
+  color: inherit;
+}
+
+.image-list .item img {
+  height: 200px;
+  margin: 0;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* the source .cmp-image-list__title (inline bold uppercase link text) */
+.image-list .title a:any-link {
+  color: var(--color-fg);
+  font-family: var(--body-font-family);
+  font-size: var(--body);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+}
+
+/* the source .cmp-image-list__description (one clipped line) */
+.image-list .description {
+  margin-top: 1rem;
+}
+
+.image-list .description p {
+  color: dimgray;
+  font-size: var(--body-sm);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 260px;
+}
+
+@media (width <= 767px) {
+  .image-list .items {
+    justify-content: space-between;
+  }
+
+  .image-list .item {
+    padding-right: 0;
+  }
+}
+

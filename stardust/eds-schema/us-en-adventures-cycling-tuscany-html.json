@@ -1,0 +1,333 @@
+{
+  "source": "file:///Users/catalan/repos/ai/migration-tests/stardust-benchmark/sd-25-pi-opus-5-5-0004/stardust/.work/rollout/program/schema-src/us-en-adventures-cycling-tuscany-html.html",
+  "width": 1280,
+  "profile": "eds",
+  "sections": [
+    {
+      "section": "breadcrumb",
+      "items": [
+        {
+          "role": "cta",
+          "order": 0,
+          "text": "Adventures",
+          "href": "../../../us/en/adventures.html"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Cycling Tuscany"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": [
+        {
+          "unitSelector": "LI.breadcrumb__item",
+          "count": 2,
+          "unit": {
+            "headings": 0,
+            "ctas": 1,
+            "imgs": 0,
+            "textRuns": 1
+          },
+          "uniform": false
+        }
+      ]
+    },
+    {
+      "section": "adventure-gallery",
+      "items": [
+        {
+          "role": "body",
+          "order": 0,
+          "text": "Previous"
+        },
+        {
+          "role": "body",
+          "order": 1,
+          "text": "Next"
+        }
+      ],
+      "imgCount": 3,
+      "editableTexts": 0,
+      "repeats": [
+        {
+          "unitSelector": "DIV.carousel__item",
+          "count": 3,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 1,
+            "textRuns": 0
+          },
+          "uniform": true
+        },
+        {
+          "unitSelector": "BUTTON.carousel__action",
+          "count": 2,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 0,
+            "textRuns": 1
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "adventure-title",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "Cycling Tuscany"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": [],
+      "defaultContent": true
+    },
+    {
+      "section": "adventure-facts",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "Cycling Tuscany"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Activity"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "Cycling"
+        },
+        {
+          "role": "eyebrow",
+          "order": 3,
+          "text": "Adventure Type"
+        },
+        {
+          "role": "eyebrow",
+          "order": 4,
+          "text": "Overnight Trip"
+        },
+        {
+          "role": "eyebrow",
+          "order": 5,
+          "text": "Trip Length"
+        },
+        {
+          "role": "eyebrow",
+          "order": 6,
+          "text": "4 Days"
+        },
+        {
+          "role": "eyebrow",
+          "order": 7,
+          "text": "Group Size"
+        },
+        {
+          "role": "eyebrow",
+          "order": 8,
+          "text": "4"
+        },
+        {
+          "role": "eyebrow",
+          "order": 9,
+          "text": "Difficulty"
+        },
+        {
+          "role": "eyebrow",
+          "order": 10,
+          "text": "Intermediate"
+        },
+        {
+          "role": "eyebrow",
+          "order": 11,
+          "text": "Price"
+        },
+        {
+          "role": "eyebrow",
+          "order": 12,
+          "text": "4500.0"
+        },
+        {
+          "role": "heading",
+          "order": 13,
+          "text": "Share this Adventure"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 2,
+      "repeats": [
+        {
+          "unitSelector": "DIV.facts__item",
+          "count": 6,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 0,
+            "textRuns": 2
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "adventure-details",
+      "items": [
+        {
+          "role": "eyebrow",
+          "order": 0,
+          "text": "Overview"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Itinerary"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "What to Bring"
+        },
+        {
+          "role": "heading",
+          "order": 3,
+          "text": "Cycling Tuscany"
+        },
+        {
+          "role": "body",
+          "order": 4,
+          "text": "Experience Tuscany by Bicycle"
+        },
+        {
+          "role": "body",
+          "order": 5,
+          "text": "Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms. Your efforts on the climbs of Italy's rolling hills during this tour will be rewarded with sunny Mediterranean landscapes and unmatched Italian hospitality. Tuscany’s natural wonders have always been a well of inspiration for arts and culture. Find out why as you explore the Italian countryside and coastline on bicycle."
+        },
+        {
+          "role": "heading",
+          "order": 6,
+          "text": "Cycling Tuscany"
+        },
+        {
+          "role": "body",
+          "order": 7,
+          "text": "Day 1: Radda to Siena"
+        },
+        {
+          "role": "body",
+          "order": 8,
+          "text": "On the first day, we’ll cycle from Radda to the medieval city of Siena, a beautiful Tuscan city distinguished by its medieval brick buildings. En-route, we’ll stop for lunch and a wine tasting at the Felsina Vineyard. The central piazza, known as Il Campo, is famous for the Palio run, a horse race run around the piazza two times every summer."
+        },
+        {
+          "role": "body",
+          "order": 9,
+          "text": "Day 2: Siena & Monteriggioni Loop"
+        },
+        {
+          "role": "body",
+          "order": 10,
+          "text": "Take a quick ride out of Siena to the medieval town of Monteriggioni in the morning. In the afternoon, we'll join a local family-owned vineyard for lunch. You’ll learn how to make pasta and pizza from scratch and enjoy their family's best wine. To really make your stay memorable, live, traditional Tuscan folk music will join after lunch for a small celebration."
+        },
+        {
+          "role": "body",
+          "order": 11,
+          "text": "Day 3: Chianti"
+        },
+        {
+          "role": "body",
+          "order": 12,
+          "text": "On day 3, we explore the Chianti region of Italy on the Amendola road. If you love beautiful architechture, it's a real treat to cycle around it's cobblestone streets. This is a rural region of Tuscany in the provinces of Florence, Siena and Arezzo, composed mainly of hills and mountains, so there may be some more climbing through this region. Let's put some work in today!"
+        },
+        {
+          "role": "body",
+          "order": 13,
+          "text": "Day 4: Arrivederci!"
+        },
+        {
+          "role": "body",
+          "order": 14,
+          "text": "After breakfast at 9 am we offer a 45-min group shuttle to the nearest train station. From there, you can connect to Florence or Rome in less than 2 hours."
+        },
+        {
+          "role": "heading",
+          "order": 15,
+          "text": "Cycling Tuscany"
+        },
+        {
+          "role": "body",
+          "order": 16,
+          "text": "We recommend being prepared for all weather conditions to stay warm and keep cool. This includes bringing lots of layers! Start with a breathable synthetic shirt to layer under a vest, windbreaker, or jacket and avoid cotton fabrics while exercising – the absorbent qualities prevent wicking and insulate poorly when wet."
+        },
+        {
+          "role": "body",
+          "order": 17,
+          "text": "Water bottle or hydration pack"
+        },
+        {
+          "role": "body",
+          "order": 18,
+          "text": "Smartphone, GPS or route map"
+        },
+        {
+          "role": "body",
+          "order": 19,
+          "text": "Sunglasses or clear lenses"
+        },
+        {
+          "role": "body",
+          "order": 20,
+          "text": "Sunscreen"
+        },
+        {
+          "role": "body",
+          "order": 21,
+          "text": "Emergency contact info"
+        },
+        {
+          "role": "body",
+          "order": 22,
+          "text": "Electrolyte powder"
+        },
+        {
+          "role": "body",
+          "order": 23,
+          "text": "Energy bars"
+        },
+        {
+          "role": "body",
+          "order": 24,
+          "text": "Nuts"
+        },
+        {
+          "role": "body",
+          "order": 25,
+          "text": "Fresh fruit"
+        }
+      ],
+      "imgCount": 3,
+      "editableTexts": 15,
+      "repeats": [
+        {
+          "unitSelector": "DIV.tabs__tabpanel",
+          "count": 3,
+          "unit": {
+            "headings": 2,
+            "ctas": 0,
+            "imgs": 1,
+            "textRuns": 3
+          },
+          "uniform": false
+        }
+      ]
+    }
+  ]
+}

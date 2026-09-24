@@ -131,3 +131,29 @@ available anywhere (assumption recorded in `stardust/rollout/plan.md`).
 `plan.mjs`: 64 steps, 9 template clusters, per-page convert/reuse. Header/footer are the C0
 foundation (not in sidecar `modules[]`). Waves, tier bias and the no-DA constraint (C-deliver stops
 before PUT) in `stardust/rollout/plan.md`.
+
+## C-deliver — foundation + 9 cluster units, local only (2026-09-24)
+
+C0 foundation (commit d2ea721): styles, 47 self-hosted font files, favicon, header + footer blocks,
+22 per-locale nav/footer documents; frozen (66 files). Nine cluster subagents ran concurrently on
+disjoint blocks + pages and authored 64/64 pages under `content/` with 17 blocks (program 32 · article
+12 · locale-landing 9 · landing 2 · listing 2 · magazine-hub 2 · about 2 · faqs 2 · members-only 1),
+every page through delivery-lint → media-reconcile → davids-model-lint → sanitise → qa-gate →
+block-roundtrip --ew, all green; measure.mjs harness vs gated prototype Δ 0 on probed boxes at
+1440 + 360. Every unit stopped before PUT: no DA org/repo/DA_TOKEN. Eight foundation-request lines
+queued (scoped overrides shipped inside block CSS). Per-unit records: `stardust/eds-conversion-log.md`,
+`stardust/rollout/units/*.md`, `progress.json` units `done-local`.
+
+## Run report — C-final + report, C-deliver blocked on DA credentials (2026-09-24)
+
+C-final: `foundation-freeze check` unchanged; the 8 request lines applied ONCE to `styles/styles.css`
+(7 applied — separator `:empty` exclusion + collapsed margins, `separator-space-medium`,
+`container-flush`, `container-padded`, `faq-*` page grid; 1 deferred — `scripts/scripts.js` `lang`,
+outside the write boundary) and the matching block overrides removed; `npm run lint` clean; qa-gate
+PASS on the 7 affected archetypes' aem-cli renders; measure.mjs Δ 0 except the magazine-hub 360
+−14 px (register R-1, A-F-4) and faqs −8/−9 px (external `<img>` not picture-wrapped until rehost,
+A-F-2); freeze re-taken. Coverage: 17 blocks `converted`, page rows `pending` (A-F-3). Ledger:
+`rollout C-deliver blocked` — DA org/repo and DA_TOKEN not provided. `stardust/learnings.md` 6
+pending entries. Report: `stardust/rollout/REPORT.md` (gate table, coverage, blocks, dynamics,
+fonts, open items, exact next commands). Totals: 64 extracted · 9 archetypes approved · 64 migrated ·
+64 authored · 0 PUT.

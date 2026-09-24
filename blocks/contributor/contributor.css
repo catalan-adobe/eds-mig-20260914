@@ -1,0 +1,123 @@
+/* contributor — values lifted from the gated about-us archetype
+   (stardust/migrated/assets/us-en-about-us-html.css + canon.css .button rules):
+   .aem-GridColumn--default--3 / --tablet--6 / --phone--12 cells inside a
+   padding-less .cmp-layout-container--fixed, icon-only secondary buttons. */
+
+/* the source grid row has no gutter of its own: the 14px live on each cell */
+.contributor {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0 calc(-1 * var(--spacing-md));
+}
+
+@media (width >= 768px) and (width <= 1024px) {
+  .contributor {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (width <= 767px) {
+  .contributor {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.contributor .contributor-card {
+  box-sizing: border-box;
+  display: flow-root;
+  padding: 0.5em var(--spacing-md) 1em;
+  text-align: center;
+}
+
+.contributor .contributor-body {
+  box-sizing: border-box;
+  padding: 0 var(--spacing-md);
+}
+
+.contributor .contributor-image p {
+  line-height: var(--line-height-body);
+  margin: 0;
+  text-align: center;
+}
+
+.contributor .contributor-image img {
+  border-radius: 50%;
+  height: 164px;
+  margin: 7px 0;
+  object-fit: cover;
+  width: 164px;
+}
+
+.contributor :is(.contributor-name, .contributor-role) :is(h1, h2, h3, h4, h5, h6) {
+  margin: 0 0 0.25em;
+}
+
+.contributor .contributor-text p {
+  text-align: center;
+}
+
+.contributor .contributor-links {
+  padding-top: 1em;
+}
+
+@media (width <= 1024px) {
+  .contributor .contributor-links {
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+  }
+}
+
+.contributor .contributor-links-grid {
+  display: flex;
+  justify-content: center;
+}
+
+.contributor .contributor-link p {
+  display: flex;
+  line-height: 1;
+  margin: 0;
+}
+
+/* icon-only secondary button (.cmp-button--secondary + .cmp-button--icononly);
+   the authored label stays in the anchor for the editor, the glyph paints */
+.contributor .contributor-link a:any-link {
+  background-color: var(--color-fg);
+  border-radius: var(--radius);
+  box-sizing: border-box;
+  color: var(--color-fg-inverse);
+  display: block;
+  font-size: 0;
+  height: var(--button-size);
+  line-height: 1;
+  min-width: 0;
+  padding: 0;
+  text-align: left;
+  width: var(--button-size);
+}
+
+.contributor .contributor-link a::before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  display: block;
+  font-family: wknd-icon-font, sans-serif;
+  font-size: 17.5px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  padding: 18px 0 0 14px;
+  text-transform: none;
+}
+
+.contributor .contributor-link-facebook a::before {
+  content: "\e902";
+}
+
+.contributor .contributor-link-twitter a::before {
+  content: "\e901";
+}
+
+.contributor .contributor-link-instagram a::before {
+  content: "\e903";
+}

@@ -1,0 +1,138 @@
+/* Byline — .cmp-byline + the contributor .aem-Grid (separator, byline default--9, secondary
+   icon-only button list default--3), lifted from the gated article prototype
+   (stardust/prototypes/us-en-magazine-western-australia-html.css § byline, § social button
+   list; canon.css .separator, .button, .button--icononly, .icon). */
+
+.byline {
+  display: flow-root;
+}
+
+/* the separator column: .separator 4rem margins around a 1px #ebebeb rule (2px tall) */
+.byline::before {
+  border: 1px solid var(--color-third);
+  content: "";
+  display: block;
+  margin: 4rem var(--spacing-md);
+}
+
+.byline .byline-row {
+  display: flow-root;
+}
+
+.byline .byline-row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.byline .byline-author {
+  box-sizing: border-box;
+  display: flow-root;
+  padding: 0 var(--spacing-md);
+}
+
+.byline .byline-buttons {
+  box-sizing: border-box;
+  display: flow-root;
+  padding: 0;
+}
+
+@media (width >= 1025px) {
+  .byline .byline-author {
+    float: left;
+    width: 75%;
+  }
+
+  .byline .byline-buttons {
+    float: left;
+    width: 25%;
+  }
+}
+
+@media (width <= 1024px) {
+  .byline .byline-buttons {
+    padding: 0 var(--spacing-md);
+  }
+}
+
+.byline .byline-image {
+  float: left;
+}
+
+.byline .byline-image img {
+  border-radius: 30px;
+  height: 60px;
+  margin: 7px 0;
+  object-fit: cover;
+  width: 60px;
+}
+
+.byline .byline-name :is(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-lg);
+  font-weight: normal;
+  margin: 0 0 0.25rem 85px;
+  padding-top: 0.5rem;
+  text-transform: none;
+}
+
+.byline .byline-occupations p {
+  color: var(--color-muted);
+  font-size: var(--body-xs);
+  margin-left: 85px;
+  text-transform: uppercase;
+}
+
+/* icon-only secondary buttons (.cmp-button--secondary + .cmp-button--icononly); the authored
+   label stays in the anchor for the editor, the glyph paints on ::before */
+.byline .byline-button {
+  float: left;
+}
+
+.byline .byline-button p {
+  display: flex;
+  line-height: 1;
+  margin: 0;
+}
+
+.byline .byline-button a:any-link {
+  background-color: var(--color-secondary);
+  border-radius: var(--radius);
+  box-sizing: border-box;
+  color: var(--color-fg-inverse);
+  display: block;
+  font-size: 0;
+  height: var(--button-size);
+  line-height: 1;
+  min-width: 0;
+  padding: 0;
+  text-align: left;
+  width: var(--button-size);
+}
+
+.byline .byline-button a::before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  display: block;
+  font-family: wknd-icon-font, sans-serif;
+  font-size: 17.5px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  padding: 18px 0 0 14px;
+  text-transform: none;
+}
+
+.byline .byline-button-facebook a::before {
+  content: "\e902";
+}
+
+.byline .byline-button-twitter a::before {
+  content: "\e901";
+}
+
+.byline .byline-button-instagram a::before {
+  content: "\e903";
+}

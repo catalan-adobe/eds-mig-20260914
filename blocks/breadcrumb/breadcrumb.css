@@ -1,0 +1,95 @@
+/* Breadcrumb — .cmp-breadcrumb--fixed, lifted from the gated program prototype
+   (stardust/prototypes/us-en-adventures-riverside-camping-australia-html.css § breadcrumb).
+   The section is full-bleed (foundation .breadcrumb-container); the block is the centred rail. */
+
+.breadcrumb {
+  box-sizing: content-box;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  padding: 0 var(--spacing-md);
+}
+
+/* program-grid variant: the rail is an AEM grid column (border-box) */
+.breadcrumb.program-grid {
+  box-sizing: border-box;
+}
+
+.breadcrumb .trail {
+  display: inline-block;
+  padding: 0;
+}
+
+.breadcrumb .trail :is(ol, ul) {
+  font-size: var(--body-sm);
+  list-style: none;
+  margin: 0;
+  padding: 0 12px 0 0;
+}
+
+.breadcrumb .trail li {
+  display: inline-block;
+  padding: 10px 5px;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+
+/* the inter-item whitespace text node of the source's inline-block list */
+.breadcrumb .trail li + li {
+  margin-left: 3px;
+}
+
+/* separator glyph; the 3px margin mirrors the whitespace text node the source keeps
+   between the icon and the label */
+.breadcrumb .trail li::before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--color-accent);
+  content: "\ea1c";
+  font-family: wknd-icon-font, sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  margin-right: 3px;
+  padding-right: 5px;
+  text-transform: none;
+}
+
+.breadcrumb .trail li:first-child {
+  padding-left: 0;
+}
+
+.breadcrumb .trail li:first-child::before {
+  content: none;
+}
+
+.breadcrumb .trail a {
+  color: var(--color-fg);
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+}
+
+@media (width <= 767px) {
+  .breadcrumb .trail :is(ol, ul) {
+    font-size: var(--body-xs);
+  }
+}
+
+/* article variant: the magazine article trail sits in an AEM grid column (border-box rail,
+   canon .col) and its list keeps the source's 1em top margin + 12px top padding
+   (stardust/prototypes/us-en-magazine-western-australia-html.css § breadcrumb) */
+.breadcrumb.article {
+  box-sizing: border-box;
+}
+
+.breadcrumb.article .trail :is(ol, ul) {
+  margin-top: 1em;
+  padding-top: 12px;
+}
+
+@media (width <= 1024px) {
+  .breadcrumb.article .trail :is(ol, ul) {
+    margin-top: 0;
+  }
+}

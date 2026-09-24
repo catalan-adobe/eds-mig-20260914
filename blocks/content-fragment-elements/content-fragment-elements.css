@@ -1,0 +1,130 @@
+/* Content fragment elements — .cmp-contentfragment--elements (adventure facts), lifted from the
+   gated program prototype (stardust/prototypes/us-en-adventures-riverside-camping-australia-html.css
+   § adventure facts, § VARIANT program-grid). */
+
+/* col-3: the AEM default--3 column (25% of the 1164 container, padding 0) beside tabs.col-9.
+   The section is border-box 1164 with 14px padding, so the column starts at the padding edge. */
+@media (width >= 1025px) {
+  .content-fragment-elements-wrapper:has(> .col-3) {
+    float: left;
+    margin-left: calc(-1 * var(--spacing-md));
+    width: calc(25% + var(--spacing-md) / 2);
+  }
+}
+
+/* below 1025px the column stacks at 100%, padding 0 — one gutter narrower than the section */
+@media (width <= 1024px) {
+  .content-fragment-elements-wrapper:has(> .col-3) {
+    margin: 0 calc(-1 * var(--spacing-md));
+  }
+}
+
+/* the block is the source's flow-root column: the share title's 1.67em top margin collapses
+   to the column edge (pushing the facts down 23px), never out into the neighbouring h1 */
+.content-fragment-elements {
+  display: flow-root;
+}
+
+/* the source's display:none content-fragment title, kept for parity */
+.content-fragment-elements .cf-title {
+  display: none;
+}
+
+/* the source floats each item; a wrapping flex row is the same geometry (items keep their
+   content-box overflow — flex-shrink 0) and exposes the fact count as flex children */
+.content-fragment-elements .facts-list {
+  align-items: flex-start;
+  box-sizing: content-box;
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  margin: 1em 0;
+  width: 100%;
+}
+
+.content-fragment-elements .facts-item {
+  border-left: 5px solid var(--color-third);
+  box-sizing: content-box;
+  flex: 0 0 auto;
+  font-family: var(--body-font-family);
+  height: 84px;
+  margin: 0 0 1.25em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.content-fragment-elements .facts-label {
+  color: var(--color-muted);
+  font-size: var(--body-xs);
+  padding-top: 1em;
+}
+
+.content-fragment-elements .facts-value {
+  font-size: var(--body-sm);
+  font-weight: var(--font-weight-bold);
+  margin-inline-start: 0;
+  padding-top: 0.5em;
+}
+
+/* the authored label / value paragraphs take the dt / dd type */
+.content-fragment-elements :is(.facts-label, .facts-value) p {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  text-align: inherit;
+}
+
+.content-fragment-elements .title-share :is(h1, h2, h3, h4, h5, h6) {
+  margin: 1.67em 0;
+}
+
+@media (width <= 1024px) {
+  .content-fragment-elements .facts-item {
+    border-left: none;
+    padding-left: 0;
+    padding-right: 2em;
+    width: auto;
+  }
+}
+
+/* ---- program-grid variant: facts and share title are AEM grid columns (14px gutters);
+   below 1025px the share title sits beside the facts (tablet 9/3, phone 7/5) ---- */
+.content-fragment-elements.program-grid :is(.facts, .title-share) {
+  box-sizing: border-box;
+  padding: 0 var(--spacing-md);
+}
+
+.content-fragment-elements.program-grid .facts {
+  display: flow-root;
+}
+
+@media (width <= 1024px) {
+  .content-fragment-elements.program-grid .facts-body::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  .content-fragment-elements.program-grid .facts {
+    float: left;
+    width: 75%;
+  }
+
+  .content-fragment-elements.program-grid .title-share {
+    float: left;
+    width: 25%;
+  }
+}
+
+@media (width <= 767px) {
+  .content-fragment-elements.program-grid .facts {
+    width: 58.3333%;
+  }
+
+  .content-fragment-elements.program-grid .title-share {
+    width: 41.6667%;
+  }
+}

@@ -1,0 +1,17 @@
+/* Sharing — .sharing column, lifted from the gated article prototype
+   (stardust/prototypes/us-en-magazine-western-australia-html.css § sidebar). The SDK-drawn
+   buttons are absent from the captured source, so the hosts render at zero height. */
+
+.sharing {
+  display: flow-root;
+}
+
+.sharing a {
+  display: inline;
+}
+
+/* spaced: the hidden .cmp-separator--space-small that follows the widget on the source
+   page — a border-less rule whose 1em margins swallow the 9px hr margins (36px in all) */
+.sharing.spaced {
+  margin-bottom: 2em;
+}

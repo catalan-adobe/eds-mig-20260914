@@ -1,0 +1,288 @@
+{
+  "source": "file:///Users/catalan/repos/ai/migration-tests/stardust-benchmark/sd-25-pi-opus-5-5-0004/stardust/.work/rollout/program/schema-src/ca-en-adventures-climbing-new-zealand-html.html",
+  "width": 1280,
+  "profile": "eds",
+  "sections": [
+    {
+      "section": "breadcrumb",
+      "items": [
+        {
+          "role": "cta",
+          "order": 0,
+          "text": "Adventures",
+          "href": "../../../ca/en/adventures.html"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Climbing New Zealand"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": [
+        {
+          "unitSelector": "LI.breadcrumb__item",
+          "count": 2,
+          "unit": {
+            "headings": 0,
+            "ctas": 1,
+            "imgs": 0,
+            "textRuns": 1
+          },
+          "uniform": false
+        }
+      ]
+    },
+    {
+      "section": "adventure-gallery",
+      "items": [
+        {
+          "role": "body",
+          "order": 0,
+          "text": "Previous"
+        },
+        {
+          "role": "body",
+          "order": 1,
+          "text": "Next"
+        }
+      ],
+      "imgCount": 3,
+      "editableTexts": 0,
+      "repeats": [
+        {
+          "unitSelector": "DIV.carousel__item",
+          "count": 3,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 1,
+            "textRuns": 0
+          },
+          "uniform": true
+        },
+        {
+          "unitSelector": "BUTTON.carousel__action",
+          "count": 2,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 0,
+            "textRuns": 1
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "adventure-title",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "Climbing New Zealand"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": [],
+      "defaultContent": true
+    },
+    {
+      "section": "adventure-facts",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "Climbing New Zealand"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Activity"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "Rock Climbing"
+        },
+        {
+          "role": "eyebrow",
+          "order": 3,
+          "text": "Adventure Type"
+        },
+        {
+          "role": "eyebrow",
+          "order": 4,
+          "text": "Overnight Trip"
+        },
+        {
+          "role": "eyebrow",
+          "order": 5,
+          "text": "Trip Length"
+        },
+        {
+          "role": "eyebrow",
+          "order": 6,
+          "text": "2 Days"
+        },
+        {
+          "role": "eyebrow",
+          "order": 7,
+          "text": "Group Size"
+        },
+        {
+          "role": "eyebrow",
+          "order": 8,
+          "text": "3"
+        },
+        {
+          "role": "eyebrow",
+          "order": 9,
+          "text": "Difficulty"
+        },
+        {
+          "role": "eyebrow",
+          "order": 10,
+          "text": "Intermediate"
+        },
+        {
+          "role": "eyebrow",
+          "order": 11,
+          "text": "Price"
+        },
+        {
+          "role": "eyebrow",
+          "order": 12,
+          "text": "900.0"
+        },
+        {
+          "role": "heading",
+          "order": 13,
+          "text": "Share this Adventure"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 2,
+      "repeats": [
+        {
+          "unitSelector": "DIV.facts__item",
+          "count": 6,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 0,
+            "textRuns": 2
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "adventure-details",
+      "items": [
+        {
+          "role": "eyebrow",
+          "order": 0,
+          "text": "Overview"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Itinerary"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "What to Bring"
+        },
+        {
+          "role": "heading",
+          "order": 3,
+          "text": "Climbing New Zealand"
+        },
+        {
+          "role": "body",
+          "order": 4,
+          "text": "Let us take you on a spectacular climbing experience unique to New Zealand"
+        },
+        {
+          "role": "body",
+          "order": 5,
+          "text": "Feel the raw adventure and excitement of our guided rock climbing experience. Reach new heights under our professional instruction and feel your body and mind work together in harmony. Come join us for a guided rock climbing adventure in the mountains that trained Sir Edmund Hilary. Whether it is your first time thinking of putting on climbing shoes or you are an old hand looking for some new challenges, our guides can make your climbing adventure a trip you won’t soon forget. New Zealand has countless climbing routes to choose from and is known as one of the premiere climbing destinations in the world. With so many different routes and areas to choose from our guides can tailor each trip to your exact specifications. Let us help you make your New Zealand climbing vacation a memory you will cherish forever!"
+        },
+        {
+          "role": "body",
+          "order": 6,
+          "text": "Related trips:"
+        },
+        {
+          "role": "body",
+          "order": 7,
+          "text": "Colorado Rock Climbing"
+        },
+        {
+          "role": "body",
+          "order": 8,
+          "text": "Yosemite Backpacking"
+        },
+        {
+          "role": "heading",
+          "order": 9,
+          "text": "Climbing New Zealand"
+        },
+        {
+          "role": "body",
+          "order": 10,
+          "text": "Day 1 - It's climb time"
+        },
+        {
+          "role": "body",
+          "order": 11,
+          "text": "We depart and end from a central meeting spot in the town of Fauchere. From there we'll be driving 30-50 minutes to the climbing site. On our way there, we'll go over important safety and climbing procedures. After arriving at trailhead, we will confirm all safety and personal climbing equipment (shoes, harness, helmets, belay devises, and more). Our hike to the climbing area will be between 5 minutes to an hour based on where we decide to climb and the desires of the group. On the rock, we will spend about 6 hours climbing. We'll go over different bouldering and climbing techniques first, fundamentals of setting anchors, belay systems and hardware,. Then, we'll make our way to the top. Once we get there, you'll find the view to be spectactular and the sense of accomplishment even better. But as they say, what goes up must come down. We now face another challenge - rappelling back down. But after a day of learning and applying our skills, we will be very comfortable on the mountain and with our abilities."
+        },
+        {
+          "role": "body",
+          "order": 12,
+          "text": "Day 2 - Up the world's highest waterfall climb"
+        },
+        {
+          "role": "body",
+          "order": 13,
+          "text": "Now it's time to satiate your inner-adrenaline junkie. We're going up behind a 60m waterfall to the top of Wanaka. You’ll be pushed to reach the highest point, both mentally and physically, with overhangs to get you there. Enjoy the incredible views of surrounding lakes and mountains once you reach summit."
+        },
+        {
+          "role": "heading",
+          "order": 14,
+          "text": "Climbing New Zealand"
+        },
+        {
+          "role": "body",
+          "order": 15,
+          "text": "We will provide all technical equipment for the course including rock shoes."
+        },
+        {
+          "role": "body",
+          "order": 16,
+          "text": "Please bring appropriate clothing for the weather on each of the days, waterproofs, a warm layer, drinks and lunch for the day."
+        }
+      ],
+      "imgCount": 5,
+      "editableTexts": 14,
+      "repeats": [
+        {
+          "unitSelector": "DIV.tabs__tabpanel",
+          "count": 3,
+          "unit": {
+            "headings": 2,
+            "ctas": 0,
+            "imgs": 2,
+            "textRuns": 6
+          },
+          "uniform": false
+        }
+      ]
+    }
+  ]
+}

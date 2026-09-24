@@ -1,0 +1,96 @@
+/* teaser-featured — .cmp-teaser--featured, lifted from the gated landing prototype
+   (stardust/prototypes/us-en-html.css § teaser, § teaser--featured). The block sits in the
+   source's fixed-container column (the foundation's 1164px section, 14px gutters). */
+
+.teaser-featured .teaser {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.teaser-featured .teaser-image {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+}
+
+.teaser-featured .teaser-image .image {
+  height: 100%;
+  width: 100%;
+}
+
+.teaser-featured .teaser-image img {
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+}
+
+.teaser-featured .teaser-content {
+  background-color: var(--color-third);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 3.5em 2em 2em;
+}
+
+/* the source .cmp-teaser__pretitle: the body paragraph, bold */
+.teaser-featured .teaser-pretitle p {
+  font-weight: 700;
+}
+
+.teaser-featured .teaser-content :is(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-xl);
+  margin: 0.5em 0;
+}
+
+/* the source .cmp-teaser__description: 14px / 1.75, no margins */
+.teaser-featured .teaser-description,
+.teaser-featured .teaser-description p {
+  font-size: var(--body-sm);
+  line-height: 1.75;
+  margin: 0;
+  text-align: left;
+}
+
+/* the source .cmp-teaser__actions / .cmp-teaser__action (accent pill, not the .button) */
+.teaser-featured .teaser-actions {
+  margin: 1em 0;
+}
+
+.teaser-featured .teaser-actions p {
+  display: flow-root;
+  font-size: var(--body-sm);
+  line-height: var(--line-height-body);
+  margin: 0;
+}
+
+.teaser-featured .teaser-actions a:any-link {
+  background-color: var(--color-accent);
+  border-radius: var(--radius);
+  color: var(--color-fg);
+  float: left;
+  font-size: var(--body-sm);
+  font-weight: var(--font-weight-bold);
+  padding: 1em 2.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (width <= 767px) {
+  .teaser-featured .teaser {
+    flex-direction: column;
+  }
+
+  .teaser-featured .teaser-image {
+    flex: 1;
+  }
+
+  .teaser-featured .teaser-content {
+    flex: 1;
+    margin-top: -1em;
+  }
+}

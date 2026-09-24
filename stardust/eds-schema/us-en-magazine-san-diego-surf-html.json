@@ -1,0 +1,255 @@
+{
+  "source": "http://localhost:3000/stardust/migrated/us/en/magazine/san-diego-surf.html",
+  "width": 1280,
+  "profile": "eds",
+  "sections": [
+    {
+      "section": "breadcrumb",
+      "block": "breadcrumb",
+      "items": [
+        {
+          "role": "cta",
+          "order": 0,
+          "text": "Magazine",
+          "href": "../../../us/en/magazine.html"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "San Diego Surf Spots"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 2,
+      "repeats": []
+    },
+    {
+      "section": "content-fragment",
+      "block": "content-fragment",
+      "items": [
+        {
+          "role": "heading",
+          "order": 4,
+          "text": "San Diego Surfspots"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": []
+    },
+    {
+      "section": "byline",
+      "block": "byline",
+      "items": [
+        {
+          "role": "heading",
+          "order": 19,
+          "text": "Justin Barr"
+        },
+        {
+          "role": "eyebrow",
+          "order": 20,
+          "text": "Ceramic Artist, Rock Climber, Writer"
+        },
+        {
+          "role": "cta",
+          "order": 21,
+          "text": "Facebook",
+          "href": "#jbarr"
+        },
+        {
+          "role": "cta",
+          "order": 22,
+          "text": "Twitter",
+          "href": "#jbarr"
+        },
+        {
+          "role": "cta",
+          "order": 23,
+          "text": "Instagram",
+          "href": "#jbarr"
+        }
+      ],
+      "imgCount": 1,
+      "editableTexts": 5,
+      "repeats": []
+    },
+    {
+      "section": "sharing",
+      "block": "sharing",
+      "items": [
+        {
+          "role": "heading",
+          "order": 24,
+          "text": "SHARE THIS STORY"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": []
+    },
+    {
+      "section": "list-upnext",
+      "block": "list-upnext",
+      "items": [
+        {
+          "role": "cta",
+          "order": 25,
+          "text": "Ultimate Guide to LA Skateparks Wednesday, 30 Sep 2020",
+          "href": "../../../us/en/magazine/guide-la-skateparks.html"
+        },
+        {
+          "role": "cta",
+          "order": 26,
+          "text": "Ski Touring Wednesday, 30 Sep 2020",
+          "href": "../../../us/en/magazine/ski-touring.html"
+        },
+        {
+          "role": "cta",
+          "order": 27,
+          "text": "Western Australia Thursday, 9 Jul 2020",
+          "href": "../../../us/en/magazine/western-australia.html"
+        },
+        {
+          "role": "cta",
+          "order": 28,
+          "text": "San Diego Surf Spots Thursday, 9 Jul 2020",
+          "href": "../../../us/en/magazine/san-diego-surf.html"
+        },
+        {
+          "role": "cta",
+          "order": 29,
+          "text": "Arctic Surfing Thursday, 9 Jul 2020",
+          "href": "../../../us/en/magazine/arctic-surfing.html"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 5,
+      "repeats": [
+        {
+          "unitSelector": "LI.upnext__item",
+          "count": 5,
+          "uniform": true,
+          "unit": {
+            "headings": 0,
+            "ctas": 1,
+            "imgs": 0,
+            "textRuns": 1
+          }
+        }
+      ]
+    }
+  ],
+  "defaultContentSections": [
+    {
+      "section": "hero-image",
+      "defaultContent": true,
+      "style": "",
+      "items": [],
+      "imgCount": 1,
+      "editableTexts": 0,
+      "repeats": []
+    },
+    {
+      "section": "article-head",
+      "defaultContent": true,
+      "style": "title-underline",
+      "items": [
+        {
+          "role": "heading",
+          "order": 2,
+          "text": "San Diego Surf Spots"
+        },
+        {
+          "role": "heading",
+          "order": 3,
+          "text": "By Justin Barr"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 2,
+      "repeats": []
+    },
+    {
+      "section": "article-body",
+      "defaultContent": true,
+      "style": "title-underline",
+      "items": [
+        {
+          "role": "body",
+          "order": 5,
+          "text": "San Diego's 70 miles of open ocean coastline cannot be beat for surfers of all ages and ability levels. Whether you are a beginner (kook) with your first WaveStorm from Costco or a grizzled veteran with a quiver of boards there is a surf spot for you. Always check the tide and conditions. San Diego waves tend to be best at mid-tide and early in the morning or late in the evening (sunset surf!) Below are some of our favorites!"
+        },
+        {
+          "role": "eyebrow",
+          "order": 6,
+          "text": "Gorgeous beach point breaks"
+        },
+        {
+          "role": "heading",
+          "order": 7,
+          "text": "Swami's"
+        },
+        {
+          "role": "body",
+          "order": 8,
+          "text": "Swami's is named for a self-realization temple on the bluff overlooking the ocean and beach. Swamis is a point break with a long right-hander. On big days, Swami's can hold the swell and expect a large crowd. Bring a big long board if you want to catch any waves, as the crowd can be pretty competitive."
+        },
+        {
+          "role": "heading",
+          "order": 9,
+          "text": "Cardiff by the Sea"
+        },
+        {
+          "role": "body",
+          "order": 10,
+          "text": "Cardiff / San Elijo Beach is a short cobblestone beach just south of Swami's. It has a small reef with fun should-high waves. Home to famous pros like Rob Machado. Great for a long board or fish. Both right and left breaks can be found."
+        },
+        {
+          "role": "heading",
+          "order": 11,
+          "text": "Del Mar"
+        },
+        {
+          "role": "body",
+          "order": 12,
+          "text": "Del Mar (sometimes called the new Malibu) is one of the more reliable spots in San Diego. It has a good mix of reef and sand breaks. Expect a big crowd at the main peaks but you can typically fan out and find something for yourself."
+        },
+        {
+          "role": "heading",
+          "order": 13,
+          "text": "Black's Beach"
+        },
+        {
+          "role": "body",
+          "order": 14,
+          "text": "Black's is often considered San Diego's best wave. The best conditions and swell will always be found here. Even on smaller days, Black's will be better than surrounding breaks. A subterranean trench runs offshore and creates huge peaks with high energy. There is a very long hike down a steep cliff, which thins out weekend warriors but not the best surfers in the area."
+        },
+        {
+          "role": "heading",
+          "order": 15,
+          "text": "La Jolla Shores"
+        },
+        {
+          "role": "body",
+          "order": 16,
+          "text": "La Jolla shores is one of the most popular beaches in San Diego. This is a great spot for beginners to learn. On the weekends you will see countless surf schools teaching aspiring surfers. Can get very crowded but most people are out there just to have a good time."
+        },
+        {
+          "role": "heading",
+          "order": 17,
+          "text": "Old Man's at Tourmaline"
+        },
+        {
+          "role": "body",
+          "order": 18,
+          "text": "Named Old Man's because many of the older surfers come here. The wave tends to roll in a little slower, giving beginners (and older surfers) plenty of time to get to their feet and hang 10."
+        }
+      ],
+      "imgCount": 3,
+      "editableTexts": 14,
+      "repeats": []
+    }
+  ],
+  "resectioned": "stardust/.work/rollout/article/probes/resection-schema.mjs — canon .container-fixed is one section; `section` = block name in page order"
+}

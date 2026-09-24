@@ -1,0 +1,193 @@
+/* hero-carousel — .cmp-carousel + .cmp-teaser--hero slides, lifted from the gated landing
+   prototype (stardust/prototypes/us-en-html.css § carousel, § teaser--hero). The section is
+   full-bleed (foundation .hero-carousel-container). */
+
+.hero-carousel {
+  margin-bottom: 4em;
+  width: 100%;
+}
+
+.hero-carousel .content {
+  position: relative;
+}
+
+.hero-carousel .slide {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: hero-fade-in;
+  display: none;
+}
+
+.hero-carousel .slide-active {
+  display: block;
+}
+
+@keyframes hero-fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* the slide teaser — .cmp-teaser--hero */
+.hero-carousel .teaser {
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+
+.hero-carousel .teaser-content {
+  flex: 1;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+/* the slide title: the live h2 (36px asar); the first slide's is authored as the page h1 */
+.hero-carousel .teaser-content :is(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-xl);
+  margin: 0.5em 0 0;
+}
+
+/* the source .cmp-teaser__description: 18px / 1.75, no bottom margin */
+.hero-carousel .teaser-description,
+.hero-carousel .teaser-description p {
+  font-size: 18px;
+  line-height: 1.75;
+  margin: 0;
+  text-align: left;
+}
+
+/* the source .cmp-teaser__actions / .cmp-teaser__action (accent pill, not the .button) */
+.hero-carousel .teaser-actions {
+  float: left;
+  margin: 1em 0;
+}
+
+.hero-carousel .teaser-actions p {
+  float: left;
+  font-size: var(--body-sm);
+  line-height: var(--line-height-body);
+  margin: 0;
+}
+
+.hero-carousel .teaser-actions a:any-link {
+  background-color: var(--color-accent);
+  border-radius: var(--radius);
+  color: var(--color-fg);
+  float: left;
+  font-size: var(--body-sm);
+  font-weight: var(--font-weight-bold);
+  padding: 1em 2.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hero-carousel .teaser-image {
+  flex: 1;
+  height: 400px;
+  max-height: 400px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.hero-carousel .teaser-image .image {
+  height: 100%;
+  width: 100%;
+}
+
+.hero-carousel .teaser-image img {
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+@media (width >= 1165px) {
+  .hero-carousel .teaser-image,
+  .hero-carousel .teaser-image .image {
+    height: 640px;
+    max-height: 640px;
+  }
+
+  .hero-carousel .teaser-content {
+    background-color: var(--color-bg);
+    height: 180px;
+    margin-top: -180px;
+    min-height: 180px;
+    padding: 0 28px;
+    position: relative;
+    width: 1136px;
+  }
+}
+
+/* controls — .cmp-carousel__actions / __indicators */
+.hero-carousel .actions {
+  float: right;
+  margin-top: 0;
+}
+
+.hero-carousel .action {
+  appearance: none;
+  background: none;
+  border: none;
+  font: 13.3333px arial, sans-serif;
+  margin-right: 1em;
+  padding-right: 0;
+}
+
+.hero-carousel .action-text {
+  display: none;
+}
+
+.hero-carousel .action-icon {
+  cursor: pointer;
+}
+
+.hero-carousel .action-previous .action-icon::before {
+  content: "\e90f";
+}
+
+.hero-carousel .action-next .action-icon::before {
+  content: "\e90e";
+}
+
+.hero-carousel .indicators {
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0.5em 0 0;
+  padding: 0;
+}
+
+.hero-carousel .indicator {
+  background-color: #afafaf;
+  border-radius: 50%;
+  flex: 0 1 auto;
+  font-size: 0;
+  height: 10px;
+  margin: 0 7px;
+  position: relative;
+  text-indent: -3000px;
+  width: 10px;
+}
+
+.hero-carousel .indicator-active {
+  background-color: rgb(0 0 0 / 80%);
+}
+
+@media (width <= 767px) {
+  .hero-carousel .indicators {
+    float: left;
+    padding-left: 14px;
+    padding-top: 14px;
+  }
+}
+

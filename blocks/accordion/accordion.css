@@ -1,0 +1,99 @@
+/* accordion — WKND .cmp-accordion (prototype stardust/migrated/assets/us-en-faqs-html.css) */
+
+/* items stack as a column (the flex container also lets the QA gate count units) */
+.accordion.block {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .cmp-accordion__button: block, padding 1em of the button's 13.33px UA font, 2px rule */
+.accordion .accordion-header {
+  align-items: flex-start;
+  border-bottom: 2px solid var(--color-third);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 13.3333px;
+  width: 100%;
+}
+
+.accordion .accordion-item-expanded .accordion-header {
+  border-bottom: none;
+}
+
+.accordion .accordion-title {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* .cmp-accordion__title */
+.accordion .accordion-title :is(h1, h2, h3, h4, h5, h6, p) {
+  color: var(--color-fg);
+  font-family: var(--body-font-family);
+  font-size: var(--heading-md);
+  font-weight: var(--font-weight-bold);
+  line-height: normal;
+  margin: 0;
+  padding-left: 0.5em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* .cmp-accordion__icon: wknd-icon-font glyph, floated right in the source */
+.accordion .accordion-toggle {
+  background: none;
+  border: none;
+  color: var(--color-fg);
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: wknd-icon-font, sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.accordion .accordion-toggle::before {
+  content: "\e911";
+}
+
+.accordion .accordion-item-expanded .accordion-toggle::before {
+  content: "\e910";
+}
+
+.accordion .accordion-toggle:focus-visible {
+  outline: 2px solid var(--color-fg);
+  outline-offset: 2px;
+}
+
+/* .cmp-accordion__panel: .5em of its 14px body size, fadeIn on expand */
+.accordion .accordion-panel {
+  animation: accordion-fade-in 0.5s both;
+  font-size: var(--body-sm);
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+}
+
+.accordion .accordion-panel[hidden] {
+  display: none;
+}
+
+.accordion .accordion-panel p {
+  font-size: var(--body-sm);
+  line-height: 1.75;
+}
+
+@keyframes accordion-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

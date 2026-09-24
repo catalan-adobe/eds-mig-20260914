@@ -1,0 +1,116 @@
+/* Mini carousel — .cmp-carousel--mini, lifted from the gated program prototype
+   (stardust/prototypes/us-en-adventures-riverside-camping-australia-html.css § mini carousel).
+   The section is full-bleed (foundation .mini-carousel-container). */
+
+.mini-carousel {
+  width: 100%;
+}
+
+.mini-carousel .content {
+  position: relative;
+}
+
+.mini-carousel .slide {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: fade-in;
+  display: none;
+}
+
+.mini-carousel .slide-active {
+  display: block;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* the authored image paragraph: line box of the inline image (source .cmp-image) */
+.mini-carousel .image p {
+  line-height: var(--line-height-body);
+  margin: 0;
+  text-align: left;
+}
+
+.mini-carousel .image img {
+  height: 400px;
+  margin: 7px 0;
+  min-height: 400px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.mini-carousel .image-title p {
+  font-family: var(--body-font-family);
+  font-size: var(--body-sm);
+  font-weight: var(--font-weight-bold);
+  margin: -0.25em 0 0;
+  text-transform: uppercase;
+}
+
+.mini-carousel .image-title em {
+  font-style: normal;
+}
+
+.mini-carousel .indicators {
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0.5em 0 0;
+  padding: 0;
+}
+
+.mini-carousel .indicator {
+  background-color: #afafaf;
+  border-radius: 50%;
+  flex: 0 1 auto;
+  font-size: 0;
+  height: 10px;
+  margin: 0 7px;
+  position: relative;
+  text-indent: -3000px;
+  width: 10px;
+}
+
+.mini-carousel .indicator-active {
+  background-color: rgb(0 0 0 / 80%);
+}
+
+.mini-carousel .actions {
+  float: right;
+  margin-top: 0;
+}
+
+.mini-carousel .action {
+  appearance: none;
+  background: none;
+  border: none;
+  font: 13.3333px arial, sans-serif;
+  margin-right: 1em;
+  padding-right: 0;
+}
+
+.mini-carousel .action-text {
+  display: none;
+}
+
+.mini-carousel .action-icon {
+  cursor: pointer;
+}
+
+.mini-carousel .action-previous .action-icon::before {
+  content: "\e90f";
+}
+
+.mini-carousel .action-next .action-icon::before {
+  content: "\e90e";
+}

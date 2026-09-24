@@ -1,0 +1,277 @@
+{
+  "source": "file:///Users/catalan/repos/ai/migration-tests/stardust-benchmark/sd-25-pi-opus-5-5-0004/stardust/.work/rollout/program/schema-src/ca-en-adventures-cycling-southern-utah-html.html",
+  "width": 1280,
+  "profile": "eds",
+  "sections": [
+    {
+      "section": "breadcrumb",
+      "items": [
+        {
+          "role": "cta",
+          "order": 0,
+          "text": "Adventures",
+          "href": "../../../ca/en/adventures.html"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Cycling Southern Utah"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": [
+        {
+          "unitSelector": "LI.breadcrumb__item",
+          "count": 2,
+          "unit": {
+            "headings": 0,
+            "ctas": 1,
+            "imgs": 0,
+            "textRuns": 1
+          },
+          "uniform": false
+        }
+      ]
+    },
+    {
+      "section": "adventure-gallery",
+      "items": [
+        {
+          "role": "body",
+          "order": 0,
+          "text": "Previous"
+        },
+        {
+          "role": "body",
+          "order": 1,
+          "text": "Next"
+        }
+      ],
+      "imgCount": 1,
+      "editableTexts": 0,
+      "repeats": [
+        {
+          "unitSelector": "BUTTON.carousel__action",
+          "count": 2,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 0,
+            "textRuns": 1
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "adventure-title",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "Cycling Southern Utah"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": [],
+      "defaultContent": true
+    },
+    {
+      "section": "adventure-facts",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "Cycling Southern Utah"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Activity"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "Cycling"
+        },
+        {
+          "role": "eyebrow",
+          "order": 3,
+          "text": "Adventure Type"
+        },
+        {
+          "role": "eyebrow",
+          "order": 4,
+          "text": "Overnight Trip"
+        },
+        {
+          "role": "eyebrow",
+          "order": 5,
+          "text": "Trip Length"
+        },
+        {
+          "role": "eyebrow",
+          "order": 6,
+          "text": "5 Days"
+        },
+        {
+          "role": "eyebrow",
+          "order": 7,
+          "text": "Group Size"
+        },
+        {
+          "role": "eyebrow",
+          "order": 8,
+          "text": "14"
+        },
+        {
+          "role": "eyebrow",
+          "order": 9,
+          "text": "Difficulty"
+        },
+        {
+          "role": "eyebrow",
+          "order": 10,
+          "text": "Advanced"
+        },
+        {
+          "role": "eyebrow",
+          "order": 11,
+          "text": "Price"
+        },
+        {
+          "role": "eyebrow",
+          "order": 12,
+          "text": "3000.0"
+        },
+        {
+          "role": "heading",
+          "order": 13,
+          "text": "Share this Adventure"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 2,
+      "repeats": [
+        {
+          "unitSelector": "DIV.facts__item",
+          "count": 6,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 0,
+            "textRuns": 2
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "adventure-details",
+      "items": [
+        {
+          "role": "eyebrow",
+          "order": 0,
+          "text": "Overview"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Itinerary"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "What to Bring"
+        },
+        {
+          "role": "heading",
+          "order": 3,
+          "text": "Cycling Southern Utah"
+        },
+        {
+          "role": "body",
+          "order": 4,
+          "text": "Join us as we explore the rugged, stunningly gorgeous landscape of southern Utah. Touch your soul as we ride through red rock canyons and sandstone cliffs in Bryce Canyon and Zion National Park, two of Utah's iconic national parks. These parks provide a stunning backdrop for a once in a lifetime cycling vacation."
+        },
+        {
+          "role": "body",
+          "order": 5,
+          "text": "A Young Mountain Biking Couple Takes A Minute To Take In The Scenery"
+        },
+        {
+          "role": "heading",
+          "order": 6,
+          "text": "Cycling Southern Utah"
+        },
+        {
+          "role": "heading",
+          "order": 7,
+          "text": "Welcome to Utah"
+        },
+        {
+          "role": "body",
+          "order": 8,
+          "text": "After a beautiful 2 hour shuttle ride to the Ridge Lodge, we'll have a delicious lunch at the Roundabout Saloon where we'll make introductions and discuss bike riding in a national park. Our first ride will be amongst the sandstone cliffs in Bryce Canyon."
+        },
+        {
+          "role": "heading",
+          "order": 9,
+          "text": "Bryce Canyon"
+        },
+        {
+          "role": "body",
+          "order": 10,
+          "text": "Ride along one of the most scenic byways in the world as you'll encounter views which stretch in every direction. Enjoy lunch amongst the red rock formations where you'll be able to hop off your bike and explore."
+        },
+        {
+          "role": "heading",
+          "order": 11,
+          "text": "Zion National Park"
+        },
+        {
+          "role": "body",
+          "order": 12,
+          "text": "Follow the route where ancient native people and pioneers walked while gazing at the steep red cliffs that Zion National Park is known for. Experience one of the highlights of Zion as we visit a 2000 feet deep canyon with opportunities to hike in an area known as the Narrows."
+        },
+        {
+          "role": "heading",
+          "order": 13,
+          "text": "Cycling Southern Utah"
+        },
+        {
+          "role": "body",
+          "order": 14,
+          "text": "Bicycle"
+        },
+        {
+          "role": "body",
+          "order": 15,
+          "text": "Cycling clothing"
+        },
+        {
+          "role": "body",
+          "order": 16,
+          "text": "Hiking shoes"
+        }
+      ],
+      "imgCount": 1,
+      "editableTexts": 12,
+      "repeats": [
+        {
+          "unitSelector": "DIV.tabs__tabpanel",
+          "count": 3,
+          "unit": {
+            "headings": 1,
+            "ctas": 0,
+            "imgs": 1,
+            "textRuns": 3
+          },
+          "uniform": false
+        }
+      ]
+    }
+  ]
+}

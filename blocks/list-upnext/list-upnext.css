@@ -1,0 +1,61 @@
+/* List up next — .cmp-list--upnext, lifted from the gated article prototype
+   (stardust/prototypes/us-en-magazine-western-australia-html.css § up next list). The block
+   is the sidebar .col.upnext; the 14px gutter comes from the article-sidebar column. */
+
+.list-upnext {
+  display: flow-root;
+  padding-top: 2rem;
+}
+
+.list-upnext .upnext-list {
+  display: flow-root;
+  margin: 1em 0;
+  padding-left: 0;
+}
+
+.list-upnext .upnext-item {
+  float: left;
+  list-style: none;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.list-upnext .upnext-link:any-link {
+  border-left: 5px solid var(--color-third);
+  box-sizing: content-box;
+  color: var(--color-link);
+  display: block;
+  font-weight: 400;
+  height: 120px;
+  padding: 0.5rem 1rem;
+}
+
+.list-upnext .upnext-link:any-link:hover {
+  background: var(--color-accent);
+  border-color: var(--color-fg);
+}
+
+.list-upnext .upnext-title,
+.list-upnext .upnext-date {
+  box-sizing: content-box;
+  float: left;
+  padding: 5px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.list-upnext .upnext-title {
+  color: var(--color-fg);
+}
+
+.list-upnext .upnext-date {
+  color: var(--color-muted);
+  font-size: var(--body-xs);
+}
+
+.list-upnext .upnext-link p {
+  font-size: inherit;
+  line-height: var(--line-height-body);
+  margin: 0;
+  text-align: left;
+}

@@ -1,0 +1,359 @@
+{
+  "source": "file:///Users/catalan/repos/ai/migration-tests/stardust-benchmark/sd-25-pi-opus-5-5-0004/stardust/.work/rollout/program/schema-src/ca-en-adventures-surf-camp-costa-rica-html.html",
+  "width": 1280,
+  "profile": "eds",
+  "sections": [
+    {
+      "section": "breadcrumb",
+      "items": [
+        {
+          "role": "cta",
+          "order": 0,
+          "text": "Adventures",
+          "href": "../../../ca/en/adventures.html"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Surf Camp in Costa Rica"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": [
+        {
+          "unitSelector": "LI.breadcrumb__item",
+          "count": 2,
+          "unit": {
+            "headings": 0,
+            "ctas": 1,
+            "imgs": 0,
+            "textRuns": 1
+          },
+          "uniform": false
+        }
+      ]
+    },
+    {
+      "section": "adventure-gallery",
+      "items": [
+        {
+          "role": "body",
+          "order": 0,
+          "text": "Previous"
+        },
+        {
+          "role": "body",
+          "order": 1,
+          "text": "Next"
+        }
+      ],
+      "imgCount": 3,
+      "editableTexts": 0,
+      "repeats": [
+        {
+          "unitSelector": "DIV.carousel__item",
+          "count": 3,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 1,
+            "textRuns": 0
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "adventure-facts",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "Surf Camp Costa Rica"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Activity"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "Surfing"
+        },
+        {
+          "role": "eyebrow",
+          "order": 3,
+          "text": "Adventure Type"
+        },
+        {
+          "role": "eyebrow",
+          "order": 4,
+          "text": "Overnight Trip"
+        },
+        {
+          "role": "eyebrow",
+          "order": 5,
+          "text": "Trip Length"
+        },
+        {
+          "role": "eyebrow",
+          "order": 6,
+          "text": "5 Days"
+        },
+        {
+          "role": "eyebrow",
+          "order": 7,
+          "text": "Group Size"
+        },
+        {
+          "role": "eyebrow",
+          "order": 8,
+          "text": "6"
+        },
+        {
+          "role": "eyebrow",
+          "order": 9,
+          "text": "Difficulty"
+        },
+        {
+          "role": "eyebrow",
+          "order": 10,
+          "text": "Beginner"
+        },
+        {
+          "role": "eyebrow",
+          "order": 11,
+          "text": "Price"
+        },
+        {
+          "role": "eyebrow",
+          "order": 12,
+          "text": "3400.0"
+        },
+        {
+          "role": "heading",
+          "order": 13,
+          "text": "Share this Adventure"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 2,
+      "repeats": [
+        {
+          "unitSelector": "DIV.facts__item",
+          "count": 6,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 0,
+            "textRuns": 2
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "adventure-details",
+      "items": [
+        {
+          "role": "eyebrow",
+          "order": 0,
+          "text": "Overview"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Itinerary"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "What to Bring"
+        },
+        {
+          "role": "heading",
+          "order": 3,
+          "text": "Surf Camp Costa Rica"
+        },
+        {
+          "role": "body",
+          "order": 4,
+          "text": "Experience Surfer's Paradise in Costa Rica"
+        },
+        {
+          "role": "body",
+          "order": 5,
+          "text": "Experienced local surf guides will take care of all the logistics and find the best spots for you to experience the best surfing Costa Rica has to offer. If you are a novice, we can take you to the right spot for your skill and preference. Costa Rica is the ideal location for a first surf trip. It is a safe place to travel and the locals are quite friendly and happy to see other surfers. Costa Rica is home to some incredible waves like Witch’s Rock, Ollies Point, Pavones, Playa Negra, Playa Hermosa, Salsa Brava and tons of lesser known world class waves."
+        },
+        {
+          "role": "heading",
+          "order": 6,
+          "text": "Surf Camp Costa Rica"
+        },
+        {
+          "role": "body",
+          "order": 7,
+          "text": "Day 1"
+        },
+        {
+          "role": "body",
+          "order": 8,
+          "text": "After arriving and settling in, take a minute to admire how lucky we are to be in this paradise for the next 6 days. Ok, once you're ready, it’s time for your very first lesson. Don’t worry, even if this is your first time surfing, we've instructed hundreds of beginners that are now surfing enthusiasts. After some training on-land, we'll head to some smaller waves and work closely with you to make sure you're comfortable in the water and on your board."
+        },
+        {
+          "role": "eyebrow",
+          "order": 9,
+          "text": "Life at Costa Rica Hotel"
+        },
+        {
+          "role": "body",
+          "order": 10,
+          "text": "Day 2"
+        },
+        {
+          "role": "body",
+          "order": 11,
+          "text": "Get up bright and early for a full day of surfing the world-famous breaks that make Costa Rica a surfing paradise. We'll provide food and refreshments throughout the day so that you can concentrate on enjoying yourself and improving your skills."
+        },
+        {
+          "role": "body",
+          "order": 12,
+          "text": "A student hangs 10 in Costa Rica's famous surf breaks"
+        },
+        {
+          "role": "body",
+          "order": 13,
+          "text": "Day 3"
+        },
+        {
+          "role": "body",
+          "order": 14,
+          "text": "Day 3 will be a short detour from the surf. We'll head into the rain forests of Costa Rica! This stunning forests and wildlife are one of Costa Rica’s top attractions. You can enjoy bird watching, canoeing, horseback riding, or participate in a hiking trail to find the park’s secret beaches."
+        },
+        {
+          "role": "body",
+          "order": 15,
+          "text": "Day 4"
+        },
+        {
+          "role": "body",
+          "order": 16,
+          "text": "Back into the water and catching breaks. Now that you're more comfortable in the water and on your surfboard, it’s time to take it to the next level. After customized lessons based on your growth from the previous days from your surf coach, get back into the water and enjoy yourself."
+        },
+        {
+          "role": "body",
+          "order": 17,
+          "text": "Day 5"
+        },
+        {
+          "role": "body",
+          "order": 18,
+          "text": "Time for a day of relaxation and refreshing your spirit. After a yoga session on the beach, you can stretch and revive your tired muscles with a deep tissue massage. Then explore the city and culture of Costa Rica."
+        },
+        {
+          "role": "body",
+          "order": 19,
+          "text": "Day 6"
+        },
+        {
+          "role": "body",
+          "order": 20,
+          "text": "You can choose to get in another full day of surfing or take time out to explore the estuaries and pristine coastal waterways of Costa Rica."
+        },
+        {
+          "role": "heading",
+          "order": 21,
+          "text": "Surf Camp Costa Rica"
+        },
+        {
+          "role": "heading",
+          "order": 22,
+          "text": "The Essentials"
+        },
+        {
+          "role": "body",
+          "order": 23,
+          "text": "Passport"
+        },
+        {
+          "role": "body",
+          "order": 24,
+          "text": "Cash – Colones or US Dollars"
+        },
+        {
+          "role": "body",
+          "order": 25,
+          "text": "Credit Card"
+        },
+        {
+          "role": "body",
+          "order": 26,
+          "text": "Swim Suit"
+        },
+        {
+          "role": "body",
+          "order": 27,
+          "text": "Rash Guard"
+        },
+        {
+          "role": "body",
+          "order": 28,
+          "text": "Sunscreen"
+        },
+        {
+          "role": "body",
+          "order": 29,
+          "text": "Hat"
+        },
+        {
+          "role": "body",
+          "order": 30,
+          "text": "Sunglasses"
+        },
+        {
+          "role": "body",
+          "order": 31,
+          "text": "Flashlight"
+        },
+        {
+          "role": "body",
+          "order": 32,
+          "text": "Insect Repellent"
+        },
+        {
+          "role": "body",
+          "order": 33,
+          "text": "Beach towel"
+        },
+        {
+          "role": "body",
+          "order": 34,
+          "text": "GoPro"
+        },
+        {
+          "role": "body",
+          "order": 35,
+          "text": "Spanish Dictionary"
+        }
+      ],
+      "imgCount": 5,
+      "editableTexts": 20,
+      "repeats": [
+        {
+          "unitSelector": "DIV.tabs__tabpanel",
+          "count": 3,
+          "unit": {
+            "headings": 2,
+            "ctas": 0,
+            "imgs": 1,
+            "textRuns": 3
+          },
+          "uniform": false
+        }
+      ]
+    }
+  ],
+  "_note": "qa-gate view: default-content sections and BUTTON control repeats removed"
+}

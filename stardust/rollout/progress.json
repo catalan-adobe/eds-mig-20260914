@@ -33,6 +33,283 @@
       "endedAt": "2026-09-24T11:32:35.442Z",
       "verdict": "foundation: styles + fonts + favicon + header/footer blocks + 22 locale chrome docs authored, lint pass, local asserts pass; PUT pending: no DA target",
       "putPending": "no DA org/repo/DA_TOKEN — rollout.json.site.da.* null"
+    },
+    "program": {
+      "status": "done-local",
+      "kind": "cluster",
+      "templates": [
+        "program"
+      ],
+      "pages": 32,
+      "pagesTotal": 32,
+      "blocks": 4,
+      "blocksAuthored": [
+        "breadcrumb",
+        "mini-carousel",
+        "content-fragment-elements",
+        "tabs"
+      ],
+      "blocksReused": [],
+      "foundationRequests": 1,
+      "gates": {
+        "360": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
+        "1440": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
+        "crop": "pending — published origin only (no DA target)",
+        "chrome": "pending — published origin only (no DA target)",
+        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed"
+      },
+      "endedAt": "2026-09-24T13:00:32.060Z",
+      "verdict": "program: pages 32/32 authored locally, blocks 4 (+0 reused), gate pending (no DA target), requests 1",
+      "putPending": "no DA org/repo/DA_TOKEN — rollout.json.site.da.* null",
+      "paths": "stardust/rollout/units/program.paths"
+    },
+    "locale-landing": {
+      "status": "done-local",
+      "kind": "cluster",
+      "templates": [
+        "locale-landing"
+      ],
+      "pages": 9,
+      "pagesTotal": 9,
+      "blocks": 1,
+      "blocksAuthored": [
+        "teaser-hero"
+      ],
+      "blocksReused": [],
+      "foundationRequests": 2,
+      "gates": {
+        "360": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
+        "1440": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
+        "crop": "pending — published origin only (no DA target)",
+        "chrome": "pending — published origin only (no DA target)",
+        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed"
+      },
+      "endedAt": "2026-09-24T13:00:32.060Z",
+      "verdict": "locale-landing: pages 9/9 authored locally, blocks 1 (+0 reused), gate pending (no DA target), requests 2",
+      "putPending": "no DA org/repo/DA_TOKEN — rollout.json.site.da.* null",
+      "paths": "stardust/rollout/units/locale-landing.paths"
+    },
+    "about": {
+      "status": "done-local",
+      "kind": "cluster",
+      "templates": [
+        "about"
+      ],
+      "pages": 2,
+      "pagesTotal": 2,
+      "blocks": 1,
+      "blocksAuthored": [
+        "contributor"
+      ],
+      "blocksReused": [],
+      "foundationRequests": 1,
+      "gates": {
+        "360": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
+        "1440": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
+        "crop": "pending — published origin only (no DA target)",
+        "chrome": "pending — published origin only (no DA target)",
+        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed"
+      },
+      "endedAt": "2026-09-24T13:00:32.060Z",
+      "verdict": "about: pages 2/2 authored locally, blocks 1 (+0 reused), gate pending (no DA target), requests 1",
+      "putPending": "no DA org/repo/DA_TOKEN — rollout.json.site.da.* null",
+      "paths": "stardust/rollout/units/about.paths"
+    },
+    "faqs": {
+      "status": "done-local",
+      "kind": "cluster",
+      "templates": [
+        "faqs"
+      ],
+      "pages": 2,
+      "pagesTotal": 2,
+      "blocks": 1,
+      "blocksAuthored": [
+        "accordion"
+      ],
+      "blocksReused": [],
+      "foundationRequests": 1,
+      "gates": {
+        "360": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
+        "1440": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
+        "crop": "pending — published origin only (no DA target)",
+        "chrome": "pending — published origin only (no DA target)",
+        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed"
+      },
+      "endedAt": "2026-09-24T13:00:32.060Z",
+      "verdict": "faqs: pages 2/2 authored locally, blocks 1 (+0 reused), gate pending (no DA target), requests 1",
+      "putPending": "no DA org/repo/DA_TOKEN — rollout.json.site.da.* null",
+      "paths": "stardust/rollout/units/faqs.paths"
+    },
+    "article": {
+      "status": "done-local",
+      "kind": "cluster",
+      "templates": [
+        "article"
+      ],
+      "pages": 12,
+      "pagesTotal": 12,
+      "blocks": 6,
+      "blocksAuthored": [
+        "content-fragment",
+        "text-quote",
+        "byline",
+        "sharing",
+        "download",
+        "list-upnext"
+      ],
+      "blocksReused": [
+        "breadcrumb"
+      ],
+      "foundationRequests": 0,
+      "gates": {
+        "360": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
+        "1440": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
+        "crop": "pending — published origin only (no DA target)",
+        "chrome": "pending — published origin only (no DA target)",
+        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed"
+      },
+      "endedAt": "2026-09-24T13:00:32.060Z",
+      "verdict": "article: pages 12/12 authored locally, blocks 6 (+1 reused), gate pending (no DA target), requests 0",
+      "putPending": "no DA org/repo/DA_TOKEN — rollout.json.site.da.* null",
+      "paths": "stardust/rollout/units/article.paths"
+    },
+    "listing": {
+      "status": "done-local",
+      "kind": "cluster",
+      "templates": [
+        "listing"
+      ],
+      "pages": 2,
+      "pagesTotal": 2,
+      "blocks": 1,
+      "blocksAuthored": [
+        "image-list"
+      ],
+      "blocksReused": [
+        "teaser-hero"
+      ],
+      "foundationRequests": 1,
+      "gates": {
+        "360": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
+        "1440": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
+        "crop": "pending — published origin only (no DA target)",
+        "chrome": "pending — published origin only (no DA target)",
+        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed"
+      },
+      "endedAt": "2026-09-24T13:00:32.060Z",
+      "verdict": "listing: pages 2/2 authored locally, blocks 1 (+1 reused), gate pending (no DA target), requests 1",
+      "putPending": "no DA org/repo/DA_TOKEN — rollout.json.site.da.* null",
+      "paths": "stardust/rollout/units/listing.paths"
+    },
+    "landing": {
+      "status": "done-local",
+      "kind": "cluster",
+      "templates": [
+        "landing"
+      ],
+      "pages": 2,
+      "pagesTotal": 2,
+      "blocks": 2,
+      "blocksAuthored": [
+        "hero-carousel",
+        "teaser-featured"
+      ],
+      "blocksReused": [
+        "image-list",
+        "teaser-hero"
+      ],
+      "foundationRequests": 0,
+      "gates": {
+        "360": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
+        "1440": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
+        "crop": "pending — published origin only (no DA target)",
+        "chrome": "pending — published origin only (no DA target)",
+        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed"
+      },
+      "endedAt": "2026-09-24T13:00:32.060Z",
+      "verdict": "landing: pages 2/2 authored locally, blocks 2 (+2 reused), gate pending (no DA target), requests 0",
+      "putPending": "no DA org/repo/DA_TOKEN — rollout.json.site.da.* null",
+      "paths": "stardust/rollout/units/landing.paths"
+    },
+    "magazine-hub": {
+      "status": "done-local",
+      "kind": "cluster",
+      "templates": [
+        "magazine-hub"
+      ],
+      "pages": 2,
+      "pagesTotal": 2,
+      "blocks": 1,
+      "blocksAuthored": [
+        "teaser-list"
+      ],
+      "blocksReused": [
+        "teaser-featured",
+        "image-list"
+      ],
+      "foundationRequests": 1,
+      "gates": {
+        "360": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
+        "1440": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
+        "crop": "pending — published origin only (no DA target)",
+        "chrome": "pending — published origin only (no DA target)",
+        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed"
+      },
+      "endedAt": "2026-09-24T13:00:32.060Z",
+      "verdict": "magazine-hub: pages 2/2 authored locally, blocks 1 (+2 reused), gate pending (no DA target), requests 1",
+      "putPending": "no DA org/repo/DA_TOKEN — rollout.json.site.da.* null",
+      "paths": "stardust/rollout/units/magazine-hub.paths"
+    },
+    "members-only": {
+      "status": "done-local",
+      "kind": "cluster",
+      "templates": [
+        "members-only"
+      ],
+      "pages": 1,
+      "pagesTotal": 1,
+      "blocks": 0,
+      "blocksAuthored": [],
+      "blocksReused": [
+        "image-list"
+      ],
+      "foundationRequests": 1,
+      "gates": {
+        "360": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
+        "1440": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
+        "crop": "pending — published origin only (no DA target)",
+        "chrome": "pending — published origin only (no DA target)",
+        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed"
+      },
+      "endedAt": "2026-09-24T13:00:32.060Z",
+      "verdict": "members-only: pages 1/1 authored locally, blocks 0 (+1 reused), gate pending (no DA target), requests 1",
+      "putPending": "no DA org/repo/DA_TOKEN — rollout.json.site.da.* null",
+      "paths": "stardust/rollout/units/members-only.paths"
+    },
+    "final": {
+      "status": "done-local",
+      "kind": "final",
+      "templates": [
+        "program",
+        "locale-landing",
+        "about",
+        "faqs",
+        "article",
+        "listing",
+        "landing",
+        "magazine-hub",
+        "members-only"
+      ],
+      "pages": 64,
+      "blocks": 17,
+      "gates": {
+        "local": "foundation-requests applied to styles/styles.css (8 lines, 7 applied, 1 deferred: scripts/scripts.js lang); npm run lint clean; qa-gate PASS on 7 affected archetypes; measure.mjs harness vs prototype Δ0 (magazine 360 −14 register candidate, faqs −9 pre-existing external-img margin)",
+        "published": "pending — PUT → preview → published-origin gate.sh pub1 round"
+      },
+      "startedAt": "2026-09-24T13:00:32.060Z",
+      "endedAt": "2026-09-24T13:00:32.060Z",
+      "verdict": "final: requests applied once, freeze re-taken, coverage blocks 17 converted; C-deliver blocked on DA credentials"
     }
   }
 }

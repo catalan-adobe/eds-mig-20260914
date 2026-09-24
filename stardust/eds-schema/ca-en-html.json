@@ -1,0 +1,373 @@
+{
+ "source": "file:///Users/catalan/repos/ai/migration-tests/stardust-benchmark/sd-25-pi-opus-5-5-0004/stardust/.work/rollout/landing/schema-src/ca-en-html.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "hero-carousel",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "WKND Adventures"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Join us on one of our next adventures. Browse our list of curated experiences and sign up for one when you're ready to explore with us."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "View Trips",
+     "href": "../ca/en/adventures.html"
+    },
+    {
+     "role": "heading",
+     "order": 3,
+     "text": "San Diego Surf Spots"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "From the hippie beaches of Ocean Beach to the ritzy shores of La Jolla and everywhere in between. Discover the San Diego surf scene."
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Full Article",
+     "href": "https://wknd.site/ca/en/magazine/san-diego-surf.html"
+    },
+    {
+     "role": "heading",
+     "order": 6,
+     "text": "Downhill Skiing Wyoming"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "A skiers paradise far from crowds and close to nature with terrain so vast it appears uncharted."
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "View Trip",
+     "href": "https://wknd.site/ca/en/adventures/downhill-skiing-wyoming.html"
+    },
+    {
+     "role": "body",
+     "order": 9,
+     "text": "Previous"
+    },
+    {
+     "role": "body",
+     "order": 10,
+     "text": "Next"
+    },
+    {
+     "role": "body",
+     "order": 11,
+     "text": "WKND Adventures"
+    },
+    {
+     "role": "body",
+     "order": 12,
+     "text": "San Diego Surf Spots"
+    },
+    {
+     "role": "body",
+     "order": 13,
+     "text": "Downhill Skiing Wyoming"
+    }
+   ],
+   "imgCount": 3,
+   "editableTexts": 5,
+   "repeats": [
+    {
+     "unitSelector": "DIV.carousel__item",
+     "count": 3,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 1,
+      "textRuns": 3
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "BUTTON.carousel__action",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "featured-article",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Featured Article"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "Camping in Western Australia"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "The Australian West coast is a camper’s heaven. Endless miles of desert roads leading to secret beaches, vast canyons and crystal clear rivers, and the very few people you are likely to meet on your journey will be some of the most easy-going characters you’ll find anywhere in the world."
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Full Article",
+     "href": "https://wknd.site/ca/en/magazine/western-australia.html"
+    }
+   ],
+   "imgCount": 1,
+   "editableTexts": 2,
+   "repeats": []
+  },
+  {
+   "section": "recent-articles-title",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Recent Articles"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 1,
+   "repeats": []
+  },
+  {
+   "section": "recent-articles",
+   "items": [
+    {
+     "role": "cta",
+     "order": 0,
+     "text": "Ultimate Guide to LA Skateparks",
+     "href": "https://wknd.site/ca/en/magazine/guide-la-skateparks.html"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Breaking down the top skate destinations in all of Los Angeles. You don't want to miss this!"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Ski Touring",
+     "href": "https://wknd.site/ca/en/magazine/ski-touring.html"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "Learn about our ski touring experience and how it differs from traditional downhill skiing and even backcountry skiing."
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Arctic Surfing",
+     "href": "https://wknd.site/ca/en/magazine/arctic-surfing.html"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "We traveled to Northern Norway to document the joy of surfing in extreme, but breathtakingly beautiful conditions."
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "San Diego Surf Spots",
+     "href": "https://wknd.site/ca/en/magazine/san-diego-surf.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 7,
+     "text": "Best beach breaks"
+    }
+   ],
+   "imgCount": 4,
+   "editableTexts": 1,
+   "repeats": [
+    {
+     "unitSelector": "LI.image-list__item",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 1,
+      "textRuns": 2
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "all-articles-cta",
+   "items": [
+    {
+     "role": "cta",
+     "order": 0,
+     "text": "All Articles",
+     "href": "https://wknd.site/ca/en/magazine.html"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 0,
+   "repeats": []
+  },
+  {
+   "section": "separator",
+   "items": [],
+   "imgCount": 0,
+   "editableTexts": 0,
+   "repeats": []
+  },
+  {
+   "section": "next-adventures-title",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Next Adventures"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 1,
+   "repeats": []
+  },
+  {
+   "section": "climbing-new-zealand",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Climbing New Zealand"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Let us help you make your New Zealand climbing vacation a memory you will cherish forever! Come join us for a guided rock climbing adventure in the mountains that trained Sir Edmund Hilary."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "See Trip",
+     "href": "https://wknd.site/ca/en/adventures/climbing-new-zealand.html"
+    }
+   ],
+   "imgCount": 1,
+   "editableTexts": 1,
+   "repeats": []
+  },
+  {
+   "section": "where-title",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Where do you want to go?"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 1,
+   "repeats": []
+  },
+  {
+   "section": "next-adventures",
+   "items": [
+    {
+     "role": "cta",
+     "order": 0,
+     "text": "Yosemite Backpacking",
+     "href": "https://wknd.site/ca/en/adventures/yosemite-backpacking.html"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Yosemite National Park, designated a World Heritage Site in 1984, is best known for its granite cliffs, waterfalls and giant sequoias, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, glaciers and lakes. The majority of visitors spend their time in the Yosemite Valley, which we'll also explore, but on this trip we'll take you to the backcountry that inspired John Muir to lead a movement to have Congress establish Yosemite as we know it today."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Whistler Mountain Biking",
+     "href": "https://wknd.site/ca/en/adventures/whistler-mountain-biking.html"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "Whistler is often considered North America’s preeminent mountain bike destination. Let us show you why."
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "West Coast Cycling",
+     "href": "https://wknd.site/ca/en/adventures/west-coast-cycling.html"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "Join us for this once in a lifetime bike trip traveling from San Francisco to Portland cycling along the Pacific Coast. Experience world class terrain as we head north through redwood forests, state parks, the Columbia river and the Pacific ocean."
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Tahoe Skiing",
+     "href": "https://wknd.site/ca/en/adventures/tahoe-skiing.html"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "Great weather, crystal clear lake water, and a relaxed California attitude make Lake Tahoe one of the most desirable ski destinations in the world. Few ski areas rival Lake Tahoe for its excellent snow conditions, challenging terrain and state-of-the-art lift chairs. Lake Tahoe is home to dozens of resorts and we'll be your guide for the best of them."
+    }
+   ],
+   "imgCount": 4,
+   "editableTexts": 1,
+   "repeats": [
+    {
+     "unitSelector": "LI.image-list__item",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 1,
+      "textRuns": 2
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "all-trips-cta",
+   "items": [
+    {
+     "role": "cta",
+     "order": 0,
+     "text": "All Trips",
+     "href": "../ca/en/adventures.html"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 0,
+   "repeats": []
+  },
+  {
+   "section": "separator",
+   "items": [],
+   "imgCount": 0,
+   "editableTexts": 0,
+   "repeats": []
+  }
+ ]
+}

@@ -1,0 +1,221 @@
+{
+ "source": "http://localhost:3000/stardust/.work/rollout/magazine-hub/schema-src/us/en/magazine.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "page-title",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Magazine"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 1,
+   "repeats": []
+  },
+  {
+   "section": "featured-article",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Featured Article"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "Camping in Western Australia"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "The Australian West coast is a camper’s heaven. Endless miles of desert roads leading to secret beaches, vast canyons and crystal clear rivers, and the very few people you are likely to meet on your journey will be some of the most easy-going characters you’ll find anywhere in the world."
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Read More",
+     "href": "https://wknd.site/us/en/magazine/western-australia.html"
+    }
+   ],
+   "imgCount": 1,
+   "editableTexts": 2,
+   "repeats": []
+  },
+  {
+   "section": "all-articles-title",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "All Articles"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 1,
+   "repeats": []
+  },
+  {
+   "section": "all-articles",
+   "items": [
+    {
+     "role": "cta",
+     "order": 0,
+     "text": "Arctic Surfing",
+     "href": "https://wknd.site/us/en/magazine/arctic-surfing.html"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "We traveled to Northern Norway to document the joy of surfing in extreme, but breathtakingly beautiful conditions."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "San Diego Surf Spots",
+     "href": "https://wknd.site/us/en/magazine/san-diego-surf.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 3,
+     "text": "Best beach breaks"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Ski Touring",
+     "href": "https://wknd.site/us/en/magazine/ski-touring.html"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "Learn about our ski touring experience and how it differs from traditional downhill skiing and even backcountry skiing."
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Ultimate Guide to LA Skateparks",
+     "href": "https://wknd.site/us/en/magazine/guide-la-skateparks.html"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "Breaking down the top skate destinations in all of Los Angeles. You don't want to miss this!"
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Western Australia",
+     "href": "https://wknd.site/us/en/magazine/western-australia.html"
+    },
+    {
+     "role": "body",
+     "order": 9,
+     "text": "The Australian West coast is a camper’s heaven. Endless miles of desert roads leading to secret beaches, vast canyons and crystal clear rivers, and the very few people you are likely to meet on your journey will be some of the most easy-going characters you’ll find anywhere in the world."
+    }
+   ],
+   "imgCount": 5,
+   "editableTexts": 1,
+   "repeats": [
+    {
+     "unitSelector": "LI.image-list__item",
+     "count": 5,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 1,
+      "textRuns": 2
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "members-only-title",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Members Only"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 1,
+   "repeats": []
+  },
+  {
+   "section": "members-only-text",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "to un-lock exclusive content for WKND members only!"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Sign in"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 1,
+   "repeats": []
+  },
+  {
+   "section": "separator",
+   "items": [],
+   "imgCount": 0,
+   "editableTexts": 0,
+   "repeats": []
+  },
+  {
+   "section": "alaskan-adventure",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Alaskan Adventure"
+    },
+    {
+     "role": "eyebrow",
+     "order": 1,
+     "text": "Discover the 49th state"
+    },
+    {
+     "role": "eyebrow",
+     "order": 2,
+     "text": "Read More"
+    }
+   ],
+   "imgCount": 1,
+   "editableTexts": 2,
+   "repeats": []
+  },
+  {
+   "section": "fly-fishing-the-amazon",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Fly Fishing the Amazon"
+    },
+    {
+     "role": "eyebrow",
+     "order": 1,
+     "text": "Experience the Amazon like never before"
+    },
+    {
+     "role": "eyebrow",
+     "order": 2,
+     "text": "Read More"
+    }
+   ],
+   "imgCount": 1,
+   "editableTexts": 1,
+   "repeats": []
+  }
+ ]
+}

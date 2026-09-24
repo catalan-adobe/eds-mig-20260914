@@ -1,0 +1,42 @@
+/* Text quote — .cmp-text--quote, lifted from the gated article prototype
+   (stardust/prototypes/us-en-magazine-western-australia-html.css § pull quote; canon.css .col).
+   The block is the .col.text--quote: grey band, 14px gutter, 1em outer margin. */
+
+.text-quote {
+  background-color: var(--color-third);
+  box-sizing: border-box;
+  display: flow-root;
+  margin: 1em 0;
+  padding: 0 var(--spacing-md);
+}
+
+.text-quote .text {
+  padding: 1em;
+}
+
+.text-quote blockquote {
+  border: none;
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-xl);
+  margin: 0 0 0.5em;
+  padding: 14px;
+}
+
+.text-quote blockquote::after {
+  border-bottom: 2px solid var(--color-accent);
+  content: "";
+  display: block;
+  position: relative;
+  top: 0.25em;
+  width: 80px;
+}
+
+.text-quote u {
+  font-family: var(--body-font-family);
+  text-decoration: none;
+}
+
+/* the source .grid is a BFC: the band's 1em margins never collapse with the prose */
+.text-quote-wrapper {
+  display: flow-root;
+}

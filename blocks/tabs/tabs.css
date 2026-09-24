@@ -1,0 +1,136 @@
+/* Tabs — .cmp-tabs + content-fragment rich text, lifted from the gated program prototype
+   (stardust/prototypes/us-en-adventures-riverside-camping-australia-html.css § tabs,
+   § content fragment title / rich text, § shared image primitive). */
+
+/* col-9: the AEM default--9 column (75%, padding 0 14px) beside content-fragment-elements.col-3.
+   A flow-root beside the floated facts column takes the remaining width; the section's own
+   14px right padding is the column's right gutter. */
+@media (width >= 1025px) {
+  .tabs-wrapper:has(> .col-9) {
+    display: flow-root;
+    padding-left: var(--spacing-md);
+  }
+}
+
+/* the block is the source's flow-root column: the tab list's 1em margin stays inside it */
+.tabs {
+  display: flow-root;
+}
+
+.tabs .tablist {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 1em 0;
+  padding-left: 0;
+}
+
+.tabs .tab {
+  border-bottom: 1px solid transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: var(--body-sm);
+  max-height: var(--button-size);
+  min-width: var(--button-size);
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+}
+
+/* the authored label paragraph takes the tab's type */
+.tabs .tab p {
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  text-align: inherit;
+}
+
+.tabs .tab:focus {
+  outline: none;
+}
+
+.tabs .tab-active {
+  background-color: var(--color-secondary);
+  border: none;
+  color: #fff;
+}
+
+.tabs .panel {
+  display: none;
+}
+
+.tabs .panel-active {
+  display: block;
+}
+
+/* the source panel ends with an (empty) .aem-Grid clearfix */
+.tabs .panel::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* the source's display:none content-fragment title, kept for parity */
+.tabs .cf-title {
+  display: none;
+}
+
+/* the fragment body's own grid keeps its first / last child's margin inside the body */
+.tabs .cf-body {
+  display: flow-root;
+}
+
+/* shared image primitive (.cmp-image): inline image in its own line box, 7px gutters */
+.tabs .image p {
+  line-height: var(--line-height-body);
+  margin: 0;
+  text-align: left;
+}
+
+.tabs .image img {
+  height: auto;
+  margin: 7px 0;
+  width: 100%;
+}
+
+/* .cmp-image__title — the authored caption under the image */
+.tabs .image-title p {
+  font-family: var(--body-font-family);
+  font-size: var(--body-sm);
+  font-weight: var(--font-weight-bold);
+  margin: -0.25em 0 0;
+  text-transform: uppercase;
+}
+
+.tabs .image-title em {
+  font-style: normal;
+}
+
+/* content-fragment rich text lists */
+.tabs .cf ul {
+  display: block;
+  list-style-type: none;
+  margin: 1em 0;
+  padding-inline-start: 0;
+}
+
+.tabs .cf li {
+  display: list-item;
+  line-height: 2;
+  padding-left: 12px;
+}
+
+.tabs .cf li::before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\ea1c";
+  font-family: wknd-icon-font, sans-serif;
+  font-size: 0.55em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  left: -0.75em;
+  line-height: 1;
+  position: relative;
+  text-transform: none;
+  top: -0.25em;
+}

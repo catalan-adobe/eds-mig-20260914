@@ -1,0 +1,322 @@
+{
+  "source": "file:///Users/catalan/repos/ai/migration-tests/stardust-benchmark/sd-25-pi-opus-5-5-0004/stardust/.work/rollout/program/schema-src/ca-en-adventures-yosemite-backpacking-html.html",
+  "width": 1280,
+  "profile": "eds",
+  "sections": [
+    {
+      "section": "breadcrumb",
+      "items": [
+        {
+          "role": "cta",
+          "order": 0,
+          "text": "Adventures",
+          "href": "../../../ca/en/adventures.html"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Yosemite Backpacking"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": [
+        {
+          "unitSelector": "LI.breadcrumb__item",
+          "count": 2,
+          "unit": {
+            "headings": 0,
+            "ctas": 1,
+            "imgs": 0,
+            "textRuns": 1
+          },
+          "uniform": false
+        }
+      ]
+    },
+    {
+      "section": "adventure-gallery",
+      "items": [
+        {
+          "role": "body",
+          "order": 0,
+          "text": "Previous"
+        },
+        {
+          "role": "body",
+          "order": 1,
+          "text": "Next"
+        }
+      ],
+      "imgCount": 1,
+      "editableTexts": 0,
+      "repeats": [
+        {
+          "unitSelector": "BUTTON.carousel__action",
+          "count": 2,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 0,
+            "textRuns": 1
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "adventure-title",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "Yosemite Backpacking"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": [],
+      "defaultContent": true
+    },
+    {
+      "section": "adventure-facts",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "Yosemite Backpacking"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Activity"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "Camping"
+        },
+        {
+          "role": "eyebrow",
+          "order": 3,
+          "text": "Adventure Type"
+        },
+        {
+          "role": "eyebrow",
+          "order": 4,
+          "text": "Overnight Trip"
+        },
+        {
+          "role": "eyebrow",
+          "order": 5,
+          "text": "Trip Length"
+        },
+        {
+          "role": "eyebrow",
+          "order": 6,
+          "text": "5 Days"
+        },
+        {
+          "role": "eyebrow",
+          "order": 7,
+          "text": "Group Size"
+        },
+        {
+          "role": "eyebrow",
+          "order": 8,
+          "text": "12"
+        },
+        {
+          "role": "eyebrow",
+          "order": 9,
+          "text": "Difficulty"
+        },
+        {
+          "role": "eyebrow",
+          "order": 10,
+          "text": "Intermediate"
+        },
+        {
+          "role": "eyebrow",
+          "order": 11,
+          "text": "Price"
+        },
+        {
+          "role": "eyebrow",
+          "order": 12,
+          "text": "1500.0"
+        },
+        {
+          "role": "heading",
+          "order": 13,
+          "text": "Share this Adventure"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 2,
+      "repeats": [
+        {
+          "unitSelector": "DIV.facts__item",
+          "count": 6,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 0,
+            "textRuns": 2
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "adventure-details",
+      "items": [
+        {
+          "role": "eyebrow",
+          "order": 0,
+          "text": "Overview"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Itinerary"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "What to Bring"
+        },
+        {
+          "role": "heading",
+          "order": 3,
+          "text": "Yosemite Backpacking"
+        },
+        {
+          "role": "eyebrow",
+          "order": 4,
+          "text": "Yosemite is a great family friendly adventure"
+        },
+        {
+          "role": "body",
+          "order": 5,
+          "text": "Yosemite National Park, designated a World Heritage Site in 1984, is best known for its granite cliffs, waterfalls and giant sequoias, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, glaciers and lakes. The majority of visitors spend their time in the Yosemite Valley, which we'll also explore, but on this trip we'll take you to the backcountry that inspired John Muir to lead a movement to have Congress establish Yosemite as we know it today."
+        },
+        {
+          "role": "heading",
+          "order": 6,
+          "text": "Yosemite Backpacking"
+        },
+        {
+          "role": "body",
+          "order": 7,
+          "text": "Day 1"
+        },
+        {
+          "role": "body",
+          "order": 8,
+          "text": "Our trip begins with introductions in the Curry Village at 9am. Look for your guide with the red flag in lot D. After the orientation meeting we'll distribute equipment for the next 5 days. Our first night will be in the Yosemite Valley."
+        },
+        {
+          "role": "body",
+          "order": 9,
+          "text": "Day 2"
+        },
+        {
+          "role": "body",
+          "order": 10,
+          "text": "Today will feature 5 miles of hiking with 1000 feet of elevation. We'll depart the Ahwahnee Lodge and head along the Merced River as we climb to our first campsite at 4500 feet."
+        },
+        {
+          "role": "body",
+          "order": 11,
+          "text": "Day 3"
+        },
+        {
+          "role": "body",
+          "order": 12,
+          "text": "Our longest day of hiking will feature 8 miles of hiking with 2500 feet of elevation as we make our way to Inspiration Point. At the summit you'll be treated to gorgeous views of El Capitan and Half Dome. The first half of the trail is steep but the second half is more of a gentle incline."
+        },
+        {
+          "role": "body",
+          "order": 13,
+          "text": "Day 4"
+        },
+        {
+          "role": "body",
+          "order": 14,
+          "text": "Our shortest hike of the trip will feature 3 miles of hiking with 500 feet of elevation. As we make our way to Panorama Point you'll get once in a lifetime views of Half Dome, North and Basket Domes and the Royal Arches."
+        },
+        {
+          "role": "body",
+          "order": 15,
+          "text": "Day 5"
+        },
+        {
+          "role": "body",
+          "order": 16,
+          "text": "A 6 mile hike back to the Yosemite Valley where we'll see the Cascades, a 600 foot waterfall, and stop at Glacier Point where you'll have unsurpassed views of Vernal Falls and Half Dome."
+        },
+        {
+          "role": "heading",
+          "order": 17,
+          "text": "Yosemite Backpacking"
+        },
+        {
+          "role": "body",
+          "order": 18,
+          "text": "Hiking shoes"
+        },
+        {
+          "role": "body",
+          "order": 19,
+          "text": "Hat"
+        },
+        {
+          "role": "body",
+          "order": 20,
+          "text": "Water purifier"
+        },
+        {
+          "role": "body",
+          "order": 21,
+          "text": "Shorts"
+        },
+        {
+          "role": "body",
+          "order": 22,
+          "text": "Pants"
+        },
+        {
+          "role": "body",
+          "order": 23,
+          "text": "Jacket"
+        },
+        {
+          "role": "body",
+          "order": 24,
+          "text": "Thernals"
+        },
+        {
+          "role": "body",
+          "order": 25,
+          "text": "Sunscreen"
+        }
+      ],
+      "imgCount": 1,
+      "editableTexts": 16,
+      "repeats": [
+        {
+          "unitSelector": "DIV.tabs__tabpanel",
+          "count": 3,
+          "unit": {
+            "headings": 1,
+            "ctas": 0,
+            "imgs": 1,
+            "textRuns": 3
+          },
+          "uniform": false
+        }
+      ]
+    }
+  ]
+}

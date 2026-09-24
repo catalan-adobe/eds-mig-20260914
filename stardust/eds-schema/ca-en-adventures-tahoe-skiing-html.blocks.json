@@ -1,0 +1,282 @@
+{
+  "source": "file:///Users/catalan/repos/ai/migration-tests/stardust-benchmark/sd-25-pi-opus-5-5-0004/stardust/.work/rollout/program/schema-src/ca-en-adventures-tahoe-skiing-html.html",
+  "width": 1280,
+  "profile": "eds",
+  "sections": [
+    {
+      "section": "breadcrumb",
+      "items": [
+        {
+          "role": "cta",
+          "order": 0,
+          "text": "Adventures",
+          "href": "../../../ca/en/adventures.html"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Tahoe Skiing"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": [
+        {
+          "unitSelector": "LI.breadcrumb__item",
+          "count": 2,
+          "unit": {
+            "headings": 0,
+            "ctas": 1,
+            "imgs": 0,
+            "textRuns": 1
+          },
+          "uniform": false
+        }
+      ]
+    },
+    {
+      "section": "adventure-gallery",
+      "items": [
+        {
+          "role": "body",
+          "order": 0,
+          "text": "Previous"
+        },
+        {
+          "role": "body",
+          "order": 1,
+          "text": "Next"
+        }
+      ],
+      "imgCount": 1,
+      "editableTexts": 0,
+      "repeats": []
+    },
+    {
+      "section": "adventure-facts",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "Tahoe Skiing"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Activity"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "Skiing"
+        },
+        {
+          "role": "eyebrow",
+          "order": 3,
+          "text": "Adventure Type"
+        },
+        {
+          "role": "eyebrow",
+          "order": 4,
+          "text": "Overnight Trip"
+        },
+        {
+          "role": "eyebrow",
+          "order": 5,
+          "text": "Trip Length"
+        },
+        {
+          "role": "eyebrow",
+          "order": 6,
+          "text": "3-4 days"
+        },
+        {
+          "role": "eyebrow",
+          "order": 7,
+          "text": "Group Size"
+        },
+        {
+          "role": "eyebrow",
+          "order": 8,
+          "text": "8"
+        },
+        {
+          "role": "eyebrow",
+          "order": 9,
+          "text": "Difficulty"
+        },
+        {
+          "role": "eyebrow",
+          "order": 10,
+          "text": "Advanced"
+        },
+        {
+          "role": "eyebrow",
+          "order": 11,
+          "text": "Price"
+        },
+        {
+          "role": "eyebrow",
+          "order": 12,
+          "text": "1500.0"
+        },
+        {
+          "role": "heading",
+          "order": 13,
+          "text": "Share this Adventure"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 2,
+      "repeats": [
+        {
+          "unitSelector": "DIV.facts__item",
+          "count": 6,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 0,
+            "textRuns": 2
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "adventure-details",
+      "items": [
+        {
+          "role": "eyebrow",
+          "order": 0,
+          "text": "Overview"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Itinerary"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "What to Bring"
+        },
+        {
+          "role": "heading",
+          "order": 3,
+          "text": "Tahoe Skiing"
+        },
+        {
+          "role": "eyebrow",
+          "order": 4,
+          "text": "Crystalline water at Sand Harbor in Lake Tahoe"
+        },
+        {
+          "role": "body",
+          "order": 5,
+          "text": "Great weather, crystal clear lake water, and a relaxed California attitude make Lake Tahoe one of the most desirable ski destinations in the world. Few ski areas rival Lake Tahoe for its excellent snow conditions, challenging terrain and state-of-the-art lift chairs. Lake Tahoe is home to dozens of resorts and we'll be your guide for the best of them."
+        },
+        {
+          "role": "heading",
+          "order": 6,
+          "text": "Tahoe Skiing"
+        },
+        {
+          "role": "heading",
+          "order": 7,
+          "text": "Mountain Springs Resort"
+        },
+        {
+          "role": "body",
+          "order": 8,
+          "text": "A world-renowned ski resort, Mountain Springs offers some of the best runs in Tahoe with gorgeous lake views. The resort offers 4,000 acres of skiable terrain, 40 ski lifts and more than 200 trails. A top-notch board park will satisfy the daredevils amongst us."
+        },
+        {
+          "role": "heading",
+          "order": 9,
+          "text": "Treeline Resort"
+        },
+        {
+          "role": "body",
+          "order": 10,
+          "text": "Treeline is the largest ski resort in Lake Tahoe with 5,000 acres of terrain including 150 trails accessed by 40 lifts. The resort offers wide-open, well groomed slopes for those learning to ski yet also offers double-black diamond runs for advanced skiers. Enjoy an après ski cocktail at the world famous Tips Up Lounge."
+        },
+        {
+          "role": "heading",
+          "order": 11,
+          "text": "Steeps"
+        },
+        {
+          "role": "body",
+          "order": 12,
+          "text": "Steeps is known for it's challenging terrain but also has 15% beginner runs and 25% intermediate runs. Steeps is also known for it's award winning terrain park with jumps and a half pipe. One of the highlights of Steeps is the village where there is an abundance of shops, restaurants and spas."
+        },
+        {
+          "role": "heading",
+          "order": 13,
+          "text": "Tahoe Skiing"
+        },
+        {
+          "role": "body",
+          "order": 14,
+          "text": "Ski or snowboard equipment"
+        },
+        {
+          "role": "body",
+          "order": 15,
+          "text": "Jacket"
+        },
+        {
+          "role": "body",
+          "order": 16,
+          "text": "Pants"
+        },
+        {
+          "role": "body",
+          "order": 17,
+          "text": "Base layers"
+        },
+        {
+          "role": "body",
+          "order": 18,
+          "text": "Goggles"
+        },
+        {
+          "role": "body",
+          "order": 19,
+          "text": "Hat"
+        },
+        {
+          "role": "body",
+          "order": 20,
+          "text": "Helmet"
+        },
+        {
+          "role": "body",
+          "order": 21,
+          "text": "Gloves"
+        },
+        {
+          "role": "body",
+          "order": 22,
+          "text": "Sweater"
+        }
+      ],
+      "imgCount": 1,
+      "editableTexts": 12,
+      "repeats": [
+        {
+          "unitSelector": "DIV.tabs__tabpanel",
+          "count": 3,
+          "unit": {
+            "headings": 1,
+            "ctas": 0,
+            "imgs": 1,
+            "textRuns": 3
+          },
+          "uniform": false
+        }
+      ]
+    }
+  ],
+  "_note": "qa-gate view: default-content sections and BUTTON control repeats removed"
+}

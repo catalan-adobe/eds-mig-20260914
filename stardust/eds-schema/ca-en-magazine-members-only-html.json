@@ -1,0 +1,54 @@
+{
+ "source": "http://127.0.0.1:3000/stardust/migrated/ca/en/magazine/members-only.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "1",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Members Only"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": "Alaskan Adventure",
+     "href": "../../../ca/en/magazine/members-only/alaskan-adventure.html"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "My brother and I had an amazing Alaskan adventure. Read about how we lived on glaciers for 18 days."
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Fly Fishing the Amazon",
+     "href": "../../../ca/en/magazine/members-only/fly-fishing-the-amazon.html"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Deep within the heart of the Amazon we had an unforgettable cultural experience with spectacular wildlife, all in a remote, beautiful setting with strange fish of all shapes and sizes."
+    }
+   ],
+   "imgCount": 2,
+   "editableTexts": 2,
+   "repeats": [
+    {
+     "unitSelector": "SECTION.",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,319 @@
+{
+  "source": "file:///Users/catalan/repos/ai/migration-tests/stardust-benchmark/sd-25-pi-opus-5-5-0004/stardust/.work/rollout/program/schema-src/us-en-adventures-downhill-skiing-wyoming-html.html",
+  "width": 1280,
+  "profile": "eds",
+  "sections": [
+    {
+      "section": "breadcrumb",
+      "items": [
+        {
+          "role": "cta",
+          "order": 0,
+          "text": "Adventures",
+          "href": "../../../us/en/adventures.html"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Downhill Skiing Wyoming"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": [
+        {
+          "unitSelector": "LI.breadcrumb__item",
+          "count": 2,
+          "unit": {
+            "headings": 0,
+            "ctas": 1,
+            "imgs": 0,
+            "textRuns": 1
+          },
+          "uniform": false
+        }
+      ]
+    },
+    {
+      "section": "adventure-gallery",
+      "items": [
+        {
+          "role": "body",
+          "order": 0,
+          "text": "Previous"
+        },
+        {
+          "role": "body",
+          "order": 1,
+          "text": "Next"
+        }
+      ],
+      "imgCount": 3,
+      "editableTexts": 0,
+      "repeats": [
+        {
+          "unitSelector": "DIV.carousel__item",
+          "count": 3,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 1,
+            "textRuns": 0
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "adventure-facts",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "Downhill Skiing Wyoming"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Activity"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "Skiing"
+        },
+        {
+          "role": "eyebrow",
+          "order": 3,
+          "text": "Adventure Type"
+        },
+        {
+          "role": "eyebrow",
+          "order": 4,
+          "text": "Overnight Trip"
+        },
+        {
+          "role": "eyebrow",
+          "order": 5,
+          "text": "Trip Length"
+        },
+        {
+          "role": "eyebrow",
+          "order": 6,
+          "text": "2-3 days"
+        },
+        {
+          "role": "eyebrow",
+          "order": 7,
+          "text": "Group Size"
+        },
+        {
+          "role": "eyebrow",
+          "order": 8,
+          "text": "4"
+        },
+        {
+          "role": "eyebrow",
+          "order": 9,
+          "text": "Difficulty"
+        },
+        {
+          "role": "eyebrow",
+          "order": 10,
+          "text": "Intermediate"
+        },
+        {
+          "role": "eyebrow",
+          "order": 11,
+          "text": "Price"
+        },
+        {
+          "role": "eyebrow",
+          "order": 12,
+          "text": "400.0"
+        },
+        {
+          "role": "heading",
+          "order": 13,
+          "text": "Share this Adventure"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 2,
+      "repeats": [
+        {
+          "unitSelector": "DIV.facts__item",
+          "count": 6,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 0,
+            "textRuns": 2
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "adventure-details",
+      "items": [
+        {
+          "role": "eyebrow",
+          "order": 0,
+          "text": "Overview"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Itinerary"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "What to Bring"
+        },
+        {
+          "role": "heading",
+          "order": 3,
+          "text": "Downhill Skiing Wyoming"
+        },
+        {
+          "role": "heading",
+          "order": 4,
+          "text": "Experience wild untamed, rolling, wide-open terrain of Wyoming in the winter."
+        },
+        {
+          "role": "body",
+          "order": 5,
+          "text": "The spectacular Tetons of Wyoming provide a wonderous backdrop for your Jackson Hole ski vacation. Jackson Hole is unlike anywhere else in the US. A skiers paradise far from crowds and close to nature with terrain so vast it appears uncharted. With 2,500 acres of legendary terrain, unmatched levels of snowfall each winter, and unparalleled backcountry access, Jackson Hole offers a truly unique skiing experience."
+        },
+        {
+          "role": "heading",
+          "order": 6,
+          "text": "Downhill Skiing Wyoming"
+        },
+        {
+          "role": "heading",
+          "order": 7,
+          "text": "Day 1 - Hit the Slopes"
+        },
+        {
+          "role": "body",
+          "order": 8,
+          "text": "We get going bright and early in Wyoming. The lifts at Jackson Hole Mountain Resort start running at 8 am and we intend to be among the first up the slopes! With more than 2,500 acres of inbounds terrain and a nice blend of beginner, intermediate and expert-level terrain, there's so much to explore on the mountain. Once you're ready to call it a day, check out one of the cozy apres ski spots in Jackson."
+        },
+        {
+          "role": "body",
+          "order": 9,
+          "text": "Day 2 - Keep it Going"
+        },
+        {
+          "role": "body",
+          "order": 10,
+          "text": "Now that you're acclimated to the glorious ski conditions of Northwestern Wyoming, let's really get after it. Spend the day skiing the world renowned steeps and deeps at Knoblach Mountain Resort. Find out why this place is known as the birthplace of big-mountain freeskiing and home to many of the pioneers of the sport."
+        },
+        {
+          "role": "body",
+          "order": 11,
+          "text": "Day 3 - Snowmobile Tour"
+        },
+        {
+          "role": "body",
+          "order": 12,
+          "text": "Take a day off from skiing and head to Taneja Pass, just northeast of Jackson, to enjow a day on snowmobiles. It's a great way to enjoy views of the Tetons and explore the terrain on a sunny day. Weather permitting, we can make a trip to Granite Hot Spring and soak in all the goodness."
+        },
+        {
+          "role": "heading",
+          "order": 13,
+          "text": "Downhill Skiing Wyoming"
+        },
+        {
+          "role": "body",
+          "order": 14,
+          "text": "We'll provide the ski gear, but feel free to bring your own."
+        },
+        {
+          "role": "body",
+          "order": 15,
+          "text": "Ski & Snowboard Clothing"
+        },
+        {
+          "role": "body",
+          "order": 16,
+          "text": "Jacket – 1 – 3 waterproof ski jackets"
+        },
+        {
+          "role": "body",
+          "order": 17,
+          "text": "Pants – 1 – 3 waterproof ski pants"
+        },
+        {
+          "role": "body",
+          "order": 18,
+          "text": "Snowsuits – 1 – 2 waterproof snowsuits"
+        },
+        {
+          "role": "body",
+          "order": 19,
+          "text": "Additional insulation – down or fleece vest"
+        },
+        {
+          "role": "body",
+          "order": 20,
+          "text": "Base Layer Tops – 1 -4 non-cotton base layer tops"
+        },
+        {
+          "role": "body",
+          "order": 21,
+          "text": "Base Layer Bottoms – 1 – 4 non-cotton base layer bottoms"
+        },
+        {
+          "role": "body",
+          "order": 22,
+          "text": "Gloves & Mittens – waterproof and insulated ski gloves or mittens"
+        },
+        {
+          "role": "body",
+          "order": 23,
+          "text": "Sweaters – 1 – 4 fleece or wool sweaters"
+        },
+        {
+          "role": "body",
+          "order": 24,
+          "text": "Warm winter hat"
+        },
+        {
+          "role": "body",
+          "order": 25,
+          "text": "Socks – 3 – 4 wool ski socks"
+        },
+        {
+          "role": "body",
+          "order": 26,
+          "text": "Neck Gaiter – non-cotton balaclava or ski mask"
+        },
+        {
+          "role": "body",
+          "order": 27,
+          "text": "Tip: Remember to pack lots of warm layers, as the weather conditions on the mountains can change quickly and dramatically."
+        }
+      ],
+      "imgCount": 3,
+      "editableTexts": 16,
+      "repeats": [
+        {
+          "unitSelector": "DIV.tabs__tabpanel",
+          "count": 3,
+          "unit": {
+            "headings": 2,
+            "ctas": 0,
+            "imgs": 1,
+            "textRuns": 3
+          },
+          "uniform": false
+        }
+      ]
+    }
+  ],
+  "_note": "qa-gate view: default-content sections and BUTTON control repeats removed"
+}

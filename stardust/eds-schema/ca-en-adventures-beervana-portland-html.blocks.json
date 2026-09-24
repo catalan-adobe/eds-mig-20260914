@@ -1,0 +1,279 @@
+{
+  "source": "file:///Users/catalan/repos/ai/migration-tests/stardust-benchmark/sd-25-pi-opus-5-5-0004/stardust/.work/rollout/program/schema-src/ca-en-adventures-beervana-portland-html.html",
+  "width": 1280,
+  "profile": "eds",
+  "sections": [
+    {
+      "section": "breadcrumb",
+      "items": [
+        {
+          "role": "cta",
+          "order": 0,
+          "text": "Adventures",
+          "href": "../../../ca/en/adventures.html"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Beervana in Portland"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": [
+        {
+          "unitSelector": "LI.breadcrumb__item",
+          "count": 2,
+          "unit": {
+            "headings": 0,
+            "ctas": 1,
+            "imgs": 0,
+            "textRuns": 1
+          },
+          "uniform": false
+        }
+      ]
+    },
+    {
+      "section": "adventure-gallery",
+      "items": [
+        {
+          "role": "body",
+          "order": 0,
+          "text": "Previous"
+        },
+        {
+          "role": "body",
+          "order": 1,
+          "text": "Next"
+        }
+      ],
+      "imgCount": 2,
+      "editableTexts": 0,
+      "repeats": [
+        {
+          "unitSelector": "DIV.carousel__item",
+          "count": 2,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 1,
+            "textRuns": 0
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "adventure-facts",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "Beervana in Portland"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Activity"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "Social"
+        },
+        {
+          "role": "eyebrow",
+          "order": 3,
+          "text": "Adventure Type"
+        },
+        {
+          "role": "eyebrow",
+          "order": 4,
+          "text": "Day Trip"
+        },
+        {
+          "role": "eyebrow",
+          "order": 5,
+          "text": "Trip Length"
+        },
+        {
+          "role": "eyebrow",
+          "order": 6,
+          "text": "1 Day"
+        },
+        {
+          "role": "eyebrow",
+          "order": 7,
+          "text": "Group Size"
+        },
+        {
+          "role": "eyebrow",
+          "order": 8,
+          "text": "8"
+        },
+        {
+          "role": "eyebrow",
+          "order": 9,
+          "text": "Difficulty"
+        },
+        {
+          "role": "eyebrow",
+          "order": 10,
+          "text": "Beginner"
+        },
+        {
+          "role": "eyebrow",
+          "order": 11,
+          "text": "Price"
+        },
+        {
+          "role": "eyebrow",
+          "order": 12,
+          "text": "300.0"
+        },
+        {
+          "role": "heading",
+          "order": 13,
+          "text": "Share this Adventure"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 2,
+      "repeats": [
+        {
+          "unitSelector": "DIV.facts__item",
+          "count": 6,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 0,
+            "textRuns": 2
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "adventure-details",
+      "items": [
+        {
+          "role": "eyebrow",
+          "order": 0,
+          "text": "Overview"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Itinerary"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "What to Bring"
+        },
+        {
+          "role": "heading",
+          "order": 3,
+          "text": "Beervana in Portland"
+        },
+        {
+          "role": "heading",
+          "order": 4,
+          "text": "Experience the best craft breweries in the Pacific Northwest."
+        },
+        {
+          "role": "body",
+          "order": 5,
+          "text": "Portland is often referred to as Beervana, and it’s easy to understand why once you get a sip of their delicious ales. This adventure will provide insider access to spectacular local breweries that define the taste and experience of Oregon beer culture and tradition. Our Brewery Tour takes you on a beer tasting adventure in hip and trendy Pearl District through Historic Old Town District in Portland, Oregon. Experience Portland’s vibrant history while you sample the best brews the city has to offer."
+        },
+        {
+          "role": "body",
+          "order": 6,
+          "text": "Looking for an overseas adventure? Checkout this amazing foodie experience: Gastronomic Marais Tour"
+        },
+        {
+          "role": "heading",
+          "order": 7,
+          "text": "Beervana in Portland"
+        },
+        {
+          "role": "body",
+          "order": 8,
+          "text": "We will start with the education first and introduce you to the ingredients in beer and how they've contributed to the rise of craft beer in the Pacific Northwest. We'll walk you through the tasting process so you can better enjoy beers and explore new styles."
+        },
+        {
+          "role": "heading",
+          "order": 9,
+          "text": "Walt Brewing and Barrel House"
+        },
+        {
+          "role": "body",
+          "order": 10,
+          "text": "Our first stop for a tour and lunch will be Walt Brewing and Barrel House Walt Brewing and Barrel House has become Oregon's premier Belgian-style brewpub and one of the fastest growing craft breweries in the country. Walt Brewing and Barrel House is growing by leaps and bounds, with six pubs located throughout the Pacific Northwest, and an impressive brand new production facility in Seattle."
+        },
+        {
+          "role": "body",
+          "order": 11,
+          "text": "."
+        },
+        {
+          "role": "heading",
+          "order": 12,
+          "text": "Amendola Brewing Company"
+        },
+        {
+          "role": "body",
+          "order": 13,
+          "text": "On our next stop in the hip Pearl District location on Portland, you'll get VIP access behind the scenes to see the brewing process and how the ingredients work together to produce the liquid love at Amendola Brewing Company. Amendola's is known for it's tasty full-bodied stouts and porters that feel like a feast in and of itself."
+        },
+        {
+          "role": "heading",
+          "order": 14,
+          "text": "Gordon's Hop and Scotch"
+        },
+        {
+          "role": "body",
+          "order": 15,
+          "text": "By the 3rd stop, let's get ready for some eats! Food paired with beer is the best way to enjoy both food and beer. Gordon's Hops and Scotch will be a great venue where you can connect with your new beer connoisseur friends, play some cornhole and bocce ball, all while sipping on some of the city's finest suds and snacks."
+        },
+        {
+          "role": "heading",
+          "order": 16,
+          "text": "Beervana in Portland"
+        },
+        {
+          "role": "body",
+          "order": 17,
+          "text": "First and foremost, bring your thirst! (Both for beer and for knowledge about the history and craft of beermaking)"
+        },
+        {
+          "role": "body",
+          "order": 18,
+          "text": "Depending on the time of year, it may get chilly and/or wet so dress accordingly."
+        },
+        {
+          "role": "body",
+          "order": 19,
+          "text": "Camera to capture great memories"
+        }
+      ],
+      "imgCount": 2,
+      "editableTexts": 15,
+      "repeats": [
+        {
+          "unitSelector": "DIV.tabs__tabpanel",
+          "count": 3,
+          "unit": {
+            "headings": 2,
+            "ctas": 0,
+            "imgs": 1,
+            "textRuns": 4
+          },
+          "uniform": false
+        }
+      ]
+    }
+  ],
+  "_note": "qa-gate view: default-content sections and BUTTON control repeats removed"
+}

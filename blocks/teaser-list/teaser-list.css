@@ -1,0 +1,132 @@
+/* teaser-list — .cmp-teaser--list in .aem-GridColumn--default--4 cells, lifted from the gated
+   magazine prototype (stardust/prototypes/us-en-magazine-html.css § teaser, § col--4,
+   § teaser--list, § secure teaser). The block spans the section's 14px gutters so each teaser
+   is its own source grid column (border-box, 14px gutters, 1/3 of the fixed container). */
+
+.teaser-list {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 calc(-1 * var(--spacing-md));
+}
+
+/* the source .col.col--4 */
+.teaser-list .teaser-item {
+  box-sizing: border-box;
+  display: flow-root;
+  padding: 0 var(--spacing-md);
+  width: 33.3333%;
+}
+
+.teaser-list .teaser-content {
+  float: left;
+}
+
+/* the source .cmp-teaser--list .cmp-teaser__title (body face, bold, uppercase) */
+.teaser-list .teaser-content :is(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--body-font-family);
+  font-size: var(--body);
+  font-weight: var(--font-weight-bold);
+  margin: 0.5em 0;
+  text-transform: uppercase;
+}
+
+/* the source .cmp-teaser__description (dimgray, small, uppercase, 1.75) */
+.teaser-list .teaser-description {
+  color: dimgray;
+  font-size: var(--body-sm);
+  line-height: 1.75;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.teaser-list .teaser-description p {
+  font-size: var(--body-sm);
+  line-height: 1.75;
+  text-align: left;
+}
+
+/* the source .cmp-teaser__actions (a left float; its paragraph is the bare action text) */
+.teaser-list .teaser-actions {
+  float: left;
+  margin: 1em 0;
+}
+
+.teaser-list .teaser-actions p {
+  display: flow-root;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  text-align: left;
+}
+
+/* the source .cmp-teaser__action (accent pill) */
+.teaser-list .teaser-actions a:any-link {
+  background-color: var(--color-accent);
+  border-radius: var(--radius);
+  color: var(--color-fg);
+  float: left;
+  font-size: var(--body-sm);
+  font-weight: var(--font-weight-bold);
+  padding: 1em 2.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* the source .cmp-teaser__image img + .cmp-teaser--list max-height */
+.teaser-list .teaser-image img {
+  height: auto;
+  margin: 7px 0;
+  max-height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* ---- variant `secure`: body.anonymous .cmp-teaser--secure (signed-out state) ---- */
+.teaser-list.secure .teaser-item::before {
+  background: linear-gradient(
+    to top left,
+    hsl(0deg 0% 100% / 0%) 0,
+    hsl(0deg 0% 100% / 0%) 50%,
+    var(--color-accent) 50%,
+    var(--color-accent) 100%
+  );
+  color: #000;
+  content: "\e98f";
+  font-family: wknd-icon-font, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  padding: 9pt;
+  position: relative;
+  text-transform: none;
+  top: 49px;
+  z-index: 2;
+}
+
+.teaser-list.secure .teaser {
+  opacity: 0.65;
+}
+
+.teaser-list.secure .teaser-actions {
+  background-color: var(--color-third);
+  color: dimgray;
+  font-size: var(--body-sm);
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+}
+
+@media (768px <= width <= 1024px) {
+  .teaser-list .teaser-item {
+    width: 50%;
+  }
+}
+
+@media (width <= 767px) {
+  .teaser-list .teaser-item {
+    width: 100%;
+  }
+}
+

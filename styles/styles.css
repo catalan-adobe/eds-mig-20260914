@@ -257,8 +257,22 @@ main > .section:where(.full-bleed, .hero-carousel-container, .mini-carousel-cont
   padding: 0;
 }
 
-main > .section:empty {
+/* separator sections are empty once the pipeline folds their metadata — keep them */
+main > .section:empty:not(.separator, .separator-space-small, .separator-space-medium) {
   display: none;
+}
+
+/* section style container-flush: a fixed-container title/list without a grid column (no gutter) */
+main > .section.container-flush {
+  padding: 0;
+}
+
+/* section style container-padded: a fixed container stacked on a column below the desktop
+   breakpoint (14px + 14px) */
+@media (width <= 1024px) {
+  main .section.container-padded {
+    padding: 0 calc(2 * var(--spacing-md));
+  }
 }
 
 /* ---- default content (D1: title, text, image, button, separator) ---- */
@@ -301,16 +315,69 @@ main .section.text-font-small .default-content-wrapper p {
   font-size: var(--body-sm);
 }
 
+/* the live .separator / hr margins collapse (4rem ⊃ 9px → 64px; 1em; 2em) */
 main .section.separator::before,
-main .section.separator-space-small::before {
+main .section.separator-space-small::before,
+main .section.separator-space-medium::before {
   border: 1px solid var(--color-third);
   content: "";
   display: block;
-  margin: calc(4rem + 9px) 0;
+  margin: 4rem 0;
 }
 
 main .section.separator-space-small::before {
-  margin: calc(1em + 9px) 0;
+  margin: 1em 0;
+}
+
+main .section.separator-space-medium::before {
+  margin: 2em 0;
+}
+
+/* FAQ page grid — the source's default--8 main column (title / image / intro / accordion
+   sections) beside the offset--1 default--3 contact aside (section style faq-aside) */
+main .section.faq-aside {
+  padding: 1em 0 0;
+}
+
+main .section.faq-aside .default-content-wrapper p {
+  text-align: left;
+}
+
+@media (width <= 1024px) {
+  main .section.faq-image {
+    margin: 0;
+    width: 66.6667%;
+  }
+}
+
+@media (width >= 768px) and (width <= 1024px) {
+  main .section.faq-intro {
+    margin: 0;
+    width: 66.6667%;
+  }
+}
+
+@media (width >= 1025px) {
+  main:has(> .section.faq-aside) {
+    align-items: start;
+    display: grid;
+    grid-template-columns:
+      minmax(0, 1fr)
+      repeat(12, minmax(0, calc(var(--max-width) / 12)))
+      minmax(0, 1fr);
+    grid-template-rows: repeat(7, auto) minmax(0, 1fr);
+  }
+
+  main:has(> .section.faq-aside) > .section {
+    grid-column: 2 / span 8;
+    margin: 0;
+    max-width: none;
+  }
+
+  main:has(> .section.faq-aside) > .section.faq-aside {
+    grid-column: 11 / span 3;
+    grid-row: 1 / span 8;
+  }
 }
 
 /* ---- buttons (.cmp-button): strong = primary (accent), em = secondary (third) ---- */

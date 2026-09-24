@@ -1,0 +1,147 @@
+{
+ "source": "http://localhost:3000/stardust/migrated/us/en/faqs.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "faq-main",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "FAQs"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "WKND is a collective of outdoors, music, crafts, adventure sports, and travel enthusiasts that want to share our experiences, connections, and expertise with the world. Our objective is create a community to help like-minded adventure seekers find fun, engaging, and responsible ways to to enjoy life and create lasting memories."
+    },
+    {
+     "role": "eyebrow",
+     "order": 2,
+     "text": "Who is WKND's intended audience?"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "We believe the best adventures and activities are those that are accessible to everyone. WKND is designed to be inclusive of all age ranges, abilities, and budget-levels. We strive to cater to the thrill-seeking adrenaline junkie BASE-jumpers as well as novices that have a spare weekend and interest in trying something new."
+    },
+    {
+     "role": "eyebrow",
+     "order": 4,
+     "text": "How does WKND pay for itself?"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "WKND charges a small fee for local promoters that want to sponsor their adventures and events on the WKND site. Sponsored Adventures may get sorted to more prominent positions in our Adventures listings pages."
+    },
+    {
+     "role": "eyebrow",
+     "order": 6,
+     "text": "Can I contribute to WKND?"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "Yes! If you have the expertise and experiences to share, we’ll provide the platform to spread it. As a Guest Writer, you will play an integral role in helping people find fun and cool things to do in your community."
+    },
+    {
+     "role": "eyebrow",
+     "order": 8,
+     "text": "How often is WKDN updated?"
+    },
+    {
+     "role": "body",
+     "order": 9,
+     "text": "WKND is updated daily to provide you with the latest in-depth articles on fun activities that we’ve recently exploring and new adventures that are available for you to discover. Come back often to see the latest or subscribe to our social feeds."
+    },
+    {
+     "role": "eyebrow",
+     "order": 10,
+     "text": "When was WKND founded?"
+    },
+    {
+     "role": "body",
+     "order": 11,
+     "text": "WKND was created in 2015 when our founders, Daniel and Kilian, realized that their friends and family were constantly using them as resources to find fun things to do while they were in Los Angeles. They loved sharing ideas about fun events and activities they knew of, but wanted to be able to do it at larger scale across communities. They decided to start WKND as a way to share their insights and experiences with as many people as possible."
+    },
+    {
+     "role": "eyebrow",
+     "order": 12,
+     "text": "Is a hot dog a sandwich?"
+    },
+    {
+     "role": "body",
+     "order": 13,
+     "text": "While it may be described as meat between two pieces of bread, a hot dog is just a sandwich in the same way Michael Jordan was just a basketball player or William Shakespeare was just a playwright. Technically true, but vastly understated."
+    },
+    {
+     "role": "eyebrow",
+     "order": 14,
+     "text": "Is WKND a real company?"
+    },
+    {
+     "role": "body",
+     "order": 15,
+     "text": "No. The WKND is a fictional online magazine and adventure company that focuses on outdoor activities and trips across the globe. The WKND site is designed to demonstrate functionality for Adobe Experience Manager. There is also a corresponding tutorial that walks a developer through the development. Special thanks to and who created the beautiful design for the WKND site."
+    },
+    {
+     "role": "body",
+     "order": 16,
+     "text": "Lorenzo Buosi"
+    },
+    {
+     "role": "body",
+     "order": 17,
+     "text": "Kilian Amendola"
+    }
+   ],
+   "imgCount": 1,
+   "editableTexts": 16,
+   "repeats": [
+    {
+     "unitSelector": "SECTION.col",
+     "count": 4,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "need-more-help",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Need more help?"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Give us a call at . E-mail us at info We love to talk adventures!"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "1-800-800-0000",
+     "href": "#"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "@wknd.com",
+     "href": "#"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 2,
+   "repeats": []
+  }
+ ]
+}

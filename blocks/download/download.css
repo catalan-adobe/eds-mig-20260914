@@ -1,0 +1,86 @@
+/* Download — .cmp-download (download--pdf), lifted from the gated article prototype
+   (stardust/prototypes/us-en-magazine-western-australia-html.css § download--pdf). The block
+   is the sidebar .col.download; the 14px gutter comes from the article-sidebar column. */
+
+.download {
+  display: flow-root;
+}
+
+.download .download-inner {
+  line-height: 1;
+}
+
+.download .download-title :is(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--body-font-family);
+  font-size: var(--body-sm);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 0;
+  margin-top: 0.5em;
+  text-transform: uppercase;
+}
+
+.download .download-description p {
+  font-size: var(--heading-md);
+  font-weight: var(--font-weight-bold);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* .download__properties: a floated dl whose labels are hidden — one float per value */
+.download .download-properties :is(ul, ol) {
+  display: flow-root;
+  margin: 0.25em 0 1em;
+  padding: 0;
+  width: 100%;
+}
+
+.download .download-properties li {
+  color: var(--color-muted);
+  float: left;
+  font-size: var(--body-xs);
+  list-style: none;
+  margin-right: 1em;
+  text-transform: uppercase;
+}
+
+/* .download__property-label: the property name is in the DOM, never rendered */
+.download .download-properties li > strong {
+  display: none;
+}
+
+/* .download__action: secondary button with the download glyph */
+.download .download-action p {
+  display: flow-root;
+  line-height: 1;
+  margin: 0;
+  text-align: left;
+}
+
+.download .download-action a:any-link {
+  background-color: var(--color-secondary);
+  box-sizing: border-box;
+  color: #fff;
+  float: left;
+  font-size: var(--body-sm);
+  height: var(--button-size);
+  line-height: 1;
+  padding: 16px 2.5em 0 2.25em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.download .download-action a::before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e907";
+  float: left;
+  font-family: wknd-icon-font, sans-serif;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  margin-top: -0.1em;
+  padding-right: 0.5em;
+  text-transform: none;
+}

@@ -1,0 +1,322 @@
+{
+  "source": "file:///Users/catalan/repos/ai/migration-tests/stardust-benchmark/sd-25-pi-opus-5-5-0004/stardust/migrated/us/en/about-us.html",
+  "width": 1280,
+  "profile": "eds",
+  "sections": [
+    {
+      "section": "4",
+      "block": "contributor",
+      "items": [
+        {
+          "role": "heading",
+          "order": 3,
+          "text": "Stacey Roswells"
+        },
+        {
+          "role": "heading",
+          "order": 4,
+          "text": "Artist | Photographer | Traveler"
+        },
+        {
+          "role": "cta",
+          "order": 5,
+          "text": "Facebook",
+          "href": "#facebook-staceyroswell"
+        },
+        {
+          "role": "cta",
+          "order": 6,
+          "text": "Twitter",
+          "href": "#twitter-staceyroswells"
+        },
+        {
+          "role": "cta",
+          "order": 7,
+          "text": "Instagram",
+          "href": "#insta-staceyroswells"
+        },
+        {
+          "role": "heading",
+          "order": 8,
+          "text": "Jake Hammer"
+        },
+        {
+          "role": "heading",
+          "order": 9,
+          "text": "Influencer | Writer"
+        },
+        {
+          "role": "cta",
+          "order": 10,
+          "text": "Facebook",
+          "href": "#facebook-jakehammer"
+        },
+        {
+          "role": "cta",
+          "order": 11,
+          "text": "Twitter",
+          "href": "#twitter-jakehammer"
+        },
+        {
+          "role": "cta",
+          "order": 12,
+          "text": "Instagram",
+          "href": "#instagram-jakehammer"
+        },
+        {
+          "role": "heading",
+          "order": 13,
+          "text": "Ian Provo"
+        },
+        {
+          "role": "heading",
+          "order": 14,
+          "text": "Photographer"
+        },
+        {
+          "role": "cta",
+          "order": 15,
+          "text": "Facebook",
+          "href": "#facebook-ianprovo"
+        },
+        {
+          "role": "cta",
+          "order": 16,
+          "text": "Twitter",
+          "href": "#twitter-ianprovo"
+        },
+        {
+          "role": "cta",
+          "order": 17,
+          "text": "Instagram",
+          "href": "#instagram-ianprovo"
+        },
+        {
+          "role": "heading",
+          "order": 18,
+          "text": "Jacob Wester"
+        },
+        {
+          "role": "heading",
+          "order": 19,
+          "text": "Skater | Writer"
+        },
+        {
+          "role": "cta",
+          "order": 20,
+          "text": "Facebook",
+          "href": "#jacob-wester"
+        },
+        {
+          "role": "cta",
+          "order": 21,
+          "text": "Twitter",
+          "href": "#jacob-wester"
+        },
+        {
+          "role": "cta",
+          "order": 22,
+          "text": "Instagram",
+          "href": "#jacob-wester"
+        }
+      ],
+      "imgCount": 4,
+      "editableTexts": 20,
+      "repeats": [
+        {
+          "unitSelector": "SECTION.contributor",
+          "count": 4,
+          "unit": {
+            "headings": 2,
+            "ctas": 3,
+            "imgs": 1,
+            "textRuns": 2
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "7",
+      "block": "contributor",
+      "items": [
+        {
+          "role": "heading",
+          "order": 25,
+          "text": "Sofia Sjöberg"
+        },
+        {
+          "role": "heading",
+          "order": 26,
+          "text": "Photographer | Youtuber"
+        },
+        {
+          "role": "cta",
+          "order": 27,
+          "text": "Facebook",
+          "href": "#"
+        },
+        {
+          "role": "cta",
+          "order": 28,
+          "text": "Twitter",
+          "href": "#"
+        },
+        {
+          "role": "cta",
+          "order": 29,
+          "text": "Instagram",
+          "href": "#"
+        },
+        {
+          "role": "heading",
+          "order": 30,
+          "text": "Justin Barr"
+        },
+        {
+          "role": "heading",
+          "order": 31,
+          "text": "Artist | Rock Climber"
+        },
+        {
+          "role": "cta",
+          "order": 32,
+          "text": "Facebook",
+          "href": "#"
+        },
+        {
+          "role": "cta",
+          "order": 33,
+          "text": "Twitter",
+          "href": "#"
+        },
+        {
+          "role": "cta",
+          "order": 34,
+          "text": "Instagram",
+          "href": "#"
+        },
+        {
+          "role": "heading",
+          "order": 35,
+          "text": "Kumar Selveraj"
+        },
+        {
+          "role": "heading",
+          "order": 36,
+          "text": "Photographer | Surfer"
+        },
+        {
+          "role": "cta",
+          "order": 37,
+          "text": "Facebook",
+          "href": "#selveraj"
+        },
+        {
+          "role": "cta",
+          "order": 38,
+          "text": "Instagram",
+          "href": "#selveraj"
+        },
+        {
+          "role": "cta",
+          "order": 39,
+          "text": "Twitter",
+          "href": "#selveraj"
+        }
+      ],
+      "imgCount": 3,
+      "editableTexts": 15,
+      "repeats": [
+        {
+          "unitSelector": "SECTION.contributor",
+          "count": 3,
+          "unit": {
+            "headings": 2,
+            "ctas": 3,
+            "imgs": 1,
+            "textRuns": 2
+          },
+          "uniform": true
+        }
+      ]
+    }
+  ],
+  "defaultContentSections": [
+    {
+      "section": "1",
+      "defaultContent": true,
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "About Us"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": []
+    },
+    {
+      "section": "2",
+      "defaultContent": true,
+      "style": "title-underline",
+      "items": [
+        {
+          "role": "heading",
+          "order": 1,
+          "text": "Our Contributors"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": []
+    },
+    {
+      "section": "3",
+      "defaultContent": true,
+      "style": "text-font-small",
+      "items": [
+        {
+          "role": "body",
+          "order": 2,
+          "text": "Meet the outstanding individuals responsible for bringing you the most compelling stories across the globe."
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": []
+    },
+    {
+      "section": "5",
+      "defaultContent": true,
+      "style": "title-underline",
+      "items": [
+        {
+          "role": "heading",
+          "order": 23,
+          "text": "WKND Guides"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": []
+    },
+    {
+      "section": "6",
+      "defaultContent": true,
+      "style": "text-font-small",
+      "items": [
+        {
+          "role": "body",
+          "order": 24,
+          "text": "Meet our extraordinary travel guides. When you travel with a certified WKND guide you gain access to attractions and perspectives not found on the pages of a guide book."
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": []
+    }
+  ],
+  "resectioned": "stardust/.work/rollout/about/probes/resection-schema.mjs — canon <section class=col> is a grid cell; `section` = position in <main>"
+}

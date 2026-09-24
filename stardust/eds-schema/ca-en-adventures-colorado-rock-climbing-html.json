@@ -1,0 +1,287 @@
+{
+  "source": "file:///Users/catalan/repos/ai/migration-tests/stardust-benchmark/sd-25-pi-opus-5-5-0004/stardust/.work/rollout/program/schema-src/ca-en-adventures-colorado-rock-climbing-html.html",
+  "width": 1280,
+  "profile": "eds",
+  "sections": [
+    {
+      "section": "breadcrumb",
+      "items": [
+        {
+          "role": "cta",
+          "order": 0,
+          "text": "Adventures",
+          "href": "../../../ca/en/adventures.html"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Colorado Rock Climbing"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": [
+        {
+          "unitSelector": "LI.breadcrumb__item",
+          "count": 2,
+          "unit": {
+            "headings": 0,
+            "ctas": 1,
+            "imgs": 0,
+            "textRuns": 1
+          },
+          "uniform": false
+        }
+      ]
+    },
+    {
+      "section": "adventure-gallery",
+      "items": [
+        {
+          "role": "body",
+          "order": 0,
+          "text": "Previous"
+        },
+        {
+          "role": "body",
+          "order": 1,
+          "text": "Next"
+        }
+      ],
+      "imgCount": 1,
+      "editableTexts": 0,
+      "repeats": [
+        {
+          "unitSelector": "BUTTON.carousel__action",
+          "count": 2,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 0,
+            "textRuns": 1
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "adventure-title",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "Colorado Rock Climbing"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": [],
+      "defaultContent": true
+    },
+    {
+      "section": "adventure-facts",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "Colorado Rock Climbing"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Activity"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "Rock Climbing"
+        },
+        {
+          "role": "eyebrow",
+          "order": 3,
+          "text": "Adventure Type"
+        },
+        {
+          "role": "eyebrow",
+          "order": 4,
+          "text": "Overnight Trip"
+        },
+        {
+          "role": "eyebrow",
+          "order": 5,
+          "text": "Trip Length"
+        },
+        {
+          "role": "eyebrow",
+          "order": 6,
+          "text": "3 Days"
+        },
+        {
+          "role": "eyebrow",
+          "order": 7,
+          "text": "Group Size"
+        },
+        {
+          "role": "eyebrow",
+          "order": 8,
+          "text": "8"
+        },
+        {
+          "role": "eyebrow",
+          "order": 9,
+          "text": "Difficulty"
+        },
+        {
+          "role": "eyebrow",
+          "order": 10,
+          "text": "Advanced"
+        },
+        {
+          "role": "eyebrow",
+          "order": 11,
+          "text": "Price"
+        },
+        {
+          "role": "eyebrow",
+          "order": 12,
+          "text": "1000.0"
+        },
+        {
+          "role": "heading",
+          "order": 13,
+          "text": "Share this Adventure"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 2,
+      "repeats": [
+        {
+          "unitSelector": "DIV.facts__item",
+          "count": 6,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 0,
+            "textRuns": 2
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "adventure-details",
+      "items": [
+        {
+          "role": "eyebrow",
+          "order": 0,
+          "text": "Overview"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Itinerary"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "What to Bring"
+        },
+        {
+          "role": "heading",
+          "order": 3,
+          "text": "Colorado Rock Climbing"
+        },
+        {
+          "role": "body",
+          "order": 4,
+          "text": "With all of Colorado's beautiful peaks, rock formations and gorgeous mountain views, it's not hard for rock climbers to find a little slice of climbing paradise nearly everywhere they go. On this tour we'll take you to the top parks in Colorado so you can experience the diverse climbing landscape that has made Colorado a goto destination for rock climbers from around the world."
+        },
+        {
+          "role": "heading",
+          "order": 5,
+          "text": "Colorado Rock Climbing"
+        },
+        {
+          "role": "heading",
+          "order": 6,
+          "text": "Garden of the Gods"
+        },
+        {
+          "role": "body",
+          "order": 7,
+          "text": "A local favorite close to Colorado Springs, the Garden of the Gods features paved hiking trails that wind through a natural rock garden of red sandstone formed by 300 million years of geological activity.."
+        },
+        {
+          "role": "heading",
+          "order": 8,
+          "text": "Rocky Mountain National Park"
+        },
+        {
+          "role": "body",
+          "order": 9,
+          "text": "Rocky Mountain National Park encompasses 415 square miles containing 300 miles of hiking trails, wildlife, alpine worlds and of course world class rock climbing. Keep an eye out for elk, bighorn sheep, moose and mule deer."
+        },
+        {
+          "role": "heading",
+          "order": 10,
+          "text": "Castlewood Canyon State Park"
+        },
+        {
+          "role": "body",
+          "order": 11,
+          "text": "This park offers something for all skill levels from 20 feet to 60 feet. The routes are short but we'll be able to get multiple climbs for the day. We'll enjoy a picnic at the Bridge Canyon Overlook."
+        },
+        {
+          "role": "heading",
+          "order": 12,
+          "text": "Colorado Rock Climbing"
+        },
+        {
+          "role": "body",
+          "order": 13,
+          "text": "Climbing shoes"
+        },
+        {
+          "role": "body",
+          "order": 14,
+          "text": "Sleeping bag"
+        },
+        {
+          "role": "body",
+          "order": 15,
+          "text": "Pants"
+        },
+        {
+          "role": "body",
+          "order": 16,
+          "text": "Shorts"
+        },
+        {
+          "role": "body",
+          "order": 17,
+          "text": "Jacket"
+        },
+        {
+          "role": "body",
+          "order": 18,
+          "text": "Hat"
+        }
+      ],
+      "imgCount": 1,
+      "editableTexts": 12,
+      "repeats": [
+        {
+          "unitSelector": "DIV.tabs__tabpanel",
+          "count": 3,
+          "unit": {
+            "headings": 1,
+            "ctas": 0,
+            "imgs": 1,
+            "textRuns": 2
+          },
+          "uniform": false
+        }
+      ]
+    }
+  ]
+}

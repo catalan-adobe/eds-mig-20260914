@@ -1,0 +1,299 @@
+{
+  "source": "file:///Users/catalan/repos/ai/migration-tests/stardust-benchmark/sd-25-pi-opus-5-5-0004/stardust/.work/rollout/program/schema-src/us-en-adventures-whistler-mountain-biking-html.html",
+  "width": 1280,
+  "profile": "eds",
+  "sections": [
+    {
+      "section": "breadcrumb",
+      "items": [
+        {
+          "role": "cta",
+          "order": 0,
+          "text": "Adventures",
+          "href": "../../../us/en/adventures.html"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Whistler Mountain Biking"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": [
+        {
+          "unitSelector": "LI.breadcrumb__item",
+          "count": 2,
+          "unit": {
+            "headings": 0,
+            "ctas": 1,
+            "imgs": 0,
+            "textRuns": 1
+          },
+          "uniform": false
+        }
+      ]
+    },
+    {
+      "section": "adventure-gallery",
+      "items": [
+        {
+          "role": "body",
+          "order": 0,
+          "text": "Previous"
+        },
+        {
+          "role": "body",
+          "order": 1,
+          "text": "Next"
+        }
+      ],
+      "imgCount": 3,
+      "editableTexts": 0,
+      "repeats": [
+        {
+          "unitSelector": "DIV.carousel__item",
+          "count": 3,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 1,
+            "textRuns": 0
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "adventure-facts",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "Whistler Mountain Biking"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Activity"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "Cycling"
+        },
+        {
+          "role": "eyebrow",
+          "order": 3,
+          "text": "Adventure Type"
+        },
+        {
+          "role": "eyebrow",
+          "order": 4,
+          "text": "Overnight Trip"
+        },
+        {
+          "role": "eyebrow",
+          "order": 5,
+          "text": "Trip Length"
+        },
+        {
+          "role": "eyebrow",
+          "order": 6,
+          "text": "2 Days"
+        },
+        {
+          "role": "eyebrow",
+          "order": 7,
+          "text": "Group Size"
+        },
+        {
+          "role": "eyebrow",
+          "order": 8,
+          "text": "3"
+        },
+        {
+          "role": "eyebrow",
+          "order": 9,
+          "text": "Difficulty"
+        },
+        {
+          "role": "eyebrow",
+          "order": 10,
+          "text": "Advanced"
+        },
+        {
+          "role": "eyebrow",
+          "order": 11,
+          "text": "Price"
+        },
+        {
+          "role": "eyebrow",
+          "order": 12,
+          "text": "1500.0"
+        },
+        {
+          "role": "heading",
+          "order": 13,
+          "text": "Share this Adventure"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 2,
+      "repeats": [
+        {
+          "unitSelector": "DIV.facts__item",
+          "count": 6,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 0,
+            "textRuns": 2
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "adventure-details",
+      "items": [
+        {
+          "role": "eyebrow",
+          "order": 0,
+          "text": "Overview"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Itinerary"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "What to Bring"
+        },
+        {
+          "role": "heading",
+          "order": 3,
+          "text": "Whistler Mountain Biking"
+        },
+        {
+          "role": "body",
+          "order": 4,
+          "text": "Explore Whistler's Epic Singletrack Trails"
+        },
+        {
+          "role": "body",
+          "order": 5,
+          "text": "Whistler is often considered North America’s preeminent mountain bike destination. Let us show you why Whistler has earned that designation by guiding you through the hidden spider web of the most epic single-track you've ever conquered. Our tours are primarily for hardcore moutain biking enthusiasts but can be specialized to the interests and abilities of each group. Ride fast rolling trails or attempt some of the world famous logs and ladders."
+        },
+        {
+          "role": "heading",
+          "order": 6,
+          "text": "Whistler Mountain Biking"
+        },
+        {
+          "role": "body",
+          "order": 7,
+          "text": "Day 1 - Beginning on Lost Lake and Westside trails"
+        },
+        {
+          "role": "body",
+          "order": 8,
+          "text": "We get right into the epic trails by beginning our adventure on Whistler's Lost Lake Trails, some of the most famous single track in the world. There will be rocks and roots throughout the terrain so be alert and welcome the challenge. Leave it to our experts to build a plan that will cover the best trails based on the conditions at the time of the tour. Remember to stop every once in awhile and soak up the views and take a few pictures to bring home for bragging rights! We'll make our way to the Westside trails by the late afternoon."
+        },
+        {
+          "role": "body",
+          "order": 9,
+          "text": "Day 2 - Experience the Incredibly Scenic Valley Trail"
+        },
+        {
+          "role": "body",
+          "order": 10,
+          "text": "On the second day, we'll get to enjoy another aspect of what separates Whistler from other moutain biking destinations: incredible vistas. The unmatched scenery of the Valley Trail is awe-inspiring. Put in work to get through some pretty tough climbs into some remote areas and you'll quickly understand why it'll all be worth it once you reach the summit: the views from the top are world-class."
+        },
+        {
+          "role": "heading",
+          "order": 11,
+          "text": "Whistler Mountain Biking"
+        },
+        {
+          "role": "body",
+          "order": 12,
+          "text": "We recommend being prepared for all weather conditions to stay warm and keep cool. This includes bringing lots of layers! Start with a breathable synthetic shirt to layer under a vest, windbreaker, or jacket and avoid cotton fabrics while exercising – the absorbent qualities prevent wicking and insulate poorly when wet."
+        },
+        {
+          "role": "body",
+          "order": 13,
+          "text": "Helmet"
+        },
+        {
+          "role": "body",
+          "order": 14,
+          "text": "Saddle"
+        },
+        {
+          "role": "body",
+          "order": 15,
+          "text": "Bike shorts"
+        },
+        {
+          "role": "body",
+          "order": 16,
+          "text": "Cycling jerseys"
+        },
+        {
+          "role": "body",
+          "order": 17,
+          "text": "Biking gloves"
+        },
+        {
+          "role": "body",
+          "order": 18,
+          "text": "Lightweight Jacket"
+        },
+        {
+          "role": "body",
+          "order": 19,
+          "text": "Arm/Leg Warmers"
+        },
+        {
+          "role": "body",
+          "order": 20,
+          "text": "Sunglasses"
+        },
+        {
+          "role": "body",
+          "order": 21,
+          "text": "Chamois Cream"
+        },
+        {
+          "role": "body",
+          "order": 22,
+          "text": "Elbow and Knee pads"
+        },
+        {
+          "role": "body",
+          "order": 23,
+          "text": "Hydration pack"
+        }
+      ],
+      "imgCount": 7,
+      "editableTexts": 12,
+      "repeats": [
+        {
+          "unitSelector": "DIV.tabs__tabpanel",
+          "count": 3,
+          "unit": {
+            "headings": 2,
+            "ctas": 0,
+            "imgs": 2,
+            "textRuns": 3
+          },
+          "uniform": false
+        }
+      ]
+    }
+  ],
+  "_note": "qa-gate view: default-content sections and BUTTON control repeats removed"
+}

@@ -1,0 +1,98 @@
+/* WKND teaser-hero — values lifted from the gated stub archetype
+   (stardust/migrated/assets/us-es-html.css, .cmp-teaser / .cmp-teaser--hero) */
+
+.teaser-hero .teaser {
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+
+.teaser-hero .teaser-content {
+  flex: 1;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.teaser-hero .teaser-content :is(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-xl);
+  margin: 0.5em 0 0;
+}
+
+/* the source .cmp-teaser__description (listing template): 18px / 1.75, no margins */
+.teaser-hero .teaser-description p {
+  font-size: 18px;
+  line-height: 1.75;
+  margin: 0;
+  text-align: left;
+}
+
+.teaser-hero .teaser-image {
+  flex: 1;
+  height: 400px;
+  max-height: 400px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.teaser-hero .teaser-image .image {
+  height: 100%;
+  width: 100%;
+}
+
+.teaser-hero .teaser-image img {
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+@media (width >= 1165px) {
+  .teaser-hero .teaser-image,
+  .teaser-hero .teaser-image .image {
+    height: 640px;
+    max-height: 640px;
+  }
+
+  .teaser-hero .teaser-content {
+    background-color: var(--color-bg);
+    height: 180px;
+    margin-top: -180px;
+    min-height: 180px;
+    padding: 0 28px;
+    position: relative;
+    width: 1136px;
+  }
+}
+
+/* landing template — the source .cmp-teaser__actions / .cmp-teaser__action (accent pill) */
+.teaser-hero .teaser-actions {
+  float: left;
+  margin: 1em 0;
+}
+
+.teaser-hero .teaser-actions p {
+  float: left;
+  font-size: var(--body-sm);
+  line-height: var(--line-height-body);
+  margin: 0;
+}
+
+.teaser-hero .teaser-actions a:any-link {
+  background-color: var(--color-accent);
+  border-radius: var(--radius);
+  color: var(--color-fg);
+  float: left;
+  font-size: var(--body-sm);
+  font-weight: var(--font-weight-bold);
+  padding: 1em 2.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* variant imagebottom — .cmp-teaser--imagebottom */
+.teaser-hero.imagebottom .teaser-image img {
+  object-position: bottom;
+}

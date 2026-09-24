@@ -1,0 +1,94 @@
+/* Content fragment — article shell, lifted from the gated article prototype
+   (stardust/prototypes/us-en-magazine-western-australia-html.css § grid, § content fragment
+   title, § shared image primitive; canon.css .col / .container-fixed / .title--underline).
+   The block hides the fragment title and hosts the two-column layout its decorate() composes
+   from the section's wrappers: .content-fragment > .article-layout > article.article-column +
+   aside.article-sidebar (the AEM .cmp-layoutcontainer default--8 | default--3 offset--1 row). */
+
+/* the source's display:none .cmp-contentfragment__title, kept in the DOM for parity */
+.content-fragment .cf-title {
+  display: none;
+}
+
+/* .container-fixed: padding-less 1164 row inside the 14px-padded section */
+.content-fragment .article-layout {
+  display: flow-root;
+  margin: 0 calc(-1 * var(--spacing-md));
+}
+
+.content-fragment .article-layout::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.content-fragment .article-column,
+.content-fragment .article-sidebar {
+  box-sizing: border-box;
+  display: flow-root;
+  padding: 0;
+}
+
+@media (width >= 1025px) {
+  .content-fragment .article-column {
+    float: left;
+    width: calc(100% * 2 / 3);
+  }
+
+  .content-fragment .article-sidebar {
+    float: left;
+    margin-left: calc(100% / 12);
+    width: 25%;
+  }
+}
+
+/* sidebar components are AEM grid columns (.col: 14px gutter) */
+.content-fragment .article-sidebar > div {
+  box-sizing: border-box;
+  padding: 0 var(--spacing-md);
+}
+
+/* body images sit in a .grid > .col (14px gutter, a BFC that contains the caption float) —
+   the img primitive is the foundation's */
+.content-fragment .article-column .default-content-wrapper p:has(> picture) {
+  display: flow-root;
+  padding: 0 var(--spacing-md);
+}
+
+/* image--captioned: the caption is the bold run authored after the picture (.cmp-image__title) */
+.content-fragment .article-column .default-content-wrapper p:has(> picture) > strong {
+  float: left;
+  font-family: var(--body-font-family);
+  font-size: var(--body-sm);
+  font-weight: var(--font-weight-bold);
+  margin-top: -0.25em;
+  text-transform: uppercase;
+}
+
+/* a plain text component holding a quote (.cmp-text > blockquote): UA margins inside the
+   .col gutter; the col is a BFC, so the 1em margins never collapse with the prose — padding */
+.content-fragment .article-column .default-content-wrapper blockquote {
+  margin: 0 calc(40px + var(--spacing-md));
+  padding: 1em 0;
+}
+
+/* body h2s never share a margin with the prose: title components (.cmp-title--underline) sit
+   in a .grid > .col BFC, rich-text h2s follow the content fragment's empty paragraph-split
+   grid (a BFC too) — the 27px top margin becomes padding; the titles also take the gutter */
+.content-fragment .article-column .default-content-wrapper h2 {
+  margin-top: 0;
+  padding-top: 27px;
+}
+
+main .section.title-underline .article-column .default-content-wrapper h2 {
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+}
+
+/* the article head (h1, author h4) and any sidebar heading carry no underline */
+main .section.title-underline .article-column .default-content-wrapper
+  :is(h1, h3, h4, h5, h6)::after,
+main .section.title-underline .article-sidebar .default-content-wrapper
+  :is(h1, h2, h3, h4, h5, h6)::after {
+  content: none;
+}

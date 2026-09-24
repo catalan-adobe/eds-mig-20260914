@@ -1,0 +1,324 @@
+{
+  "source": "http://localhost:3000/stardust/migrated/ca/en/magazine/guide-la-skateparks.html",
+  "width": 1280,
+  "profile": "eds",
+  "sections": [
+    {
+      "section": "breadcrumb",
+      "block": "breadcrumb",
+      "items": [
+        {
+          "role": "cta",
+          "order": 0,
+          "text": "Magazine",
+          "href": "../../../ca/en/magazine.html"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Ultimate Guide to LA Skateparks"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 2,
+      "repeats": []
+    },
+    {
+      "section": "content-fragment",
+      "block": "content-fragment",
+      "items": [
+        {
+          "role": "heading",
+          "order": 4,
+          "text": "Ultimate Guide to LA Skateparks"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": []
+    },
+    {
+      "section": "text-quote",
+      "block": "text-quote",
+      "items": [
+        {
+          "role": "body",
+          "order": 7,
+          "text": "\"There is no better place to shred then Los Angeles\""
+        },
+        {
+          "role": "body",
+          "order": 8,
+          "text": "Jacob Wester - Pro Skater"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 2,
+      "repeats": []
+    },
+    {
+      "section": "byline",
+      "block": "byline",
+      "items": [
+        {
+          "role": "heading",
+          "order": 21,
+          "text": "Stacey Roswells"
+        },
+        {
+          "role": "eyebrow",
+          "order": 22,
+          "text": "Artist, Photographer, Traveler"
+        },
+        {
+          "role": "cta",
+          "order": 23,
+          "text": "Facebook",
+          "href": "#facebook-staceyroswell"
+        },
+        {
+          "role": "cta",
+          "order": 24,
+          "text": "Twitter",
+          "href": "#twitter-staceyroswells"
+        },
+        {
+          "role": "cta",
+          "order": 25,
+          "text": "Instagram",
+          "href": "#insta-staceyroswells"
+        }
+      ],
+      "imgCount": 1,
+      "editableTexts": 5,
+      "repeats": []
+    },
+    {
+      "section": "sharing",
+      "block": "sharing",
+      "items": [
+        {
+          "role": "heading",
+          "order": 26,
+          "text": "SHARE THIS STORY"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": []
+    },
+    {
+      "section": "download",
+      "block": "download",
+      "items": [
+        {
+          "role": "cta",
+          "order": 27,
+          "text": "Download PDF",
+          "href": "../../../content/dam/wknd-shared/en/magazine/la-skateparks/ultimateguidetolaskateparks.pdf.coredownload.pdf"
+        },
+        {
+          "role": "eyebrow",
+          "order": 28,
+          "text": "Get the Full Story"
+        },
+        {
+          "role": "eyebrow",
+          "order": 29,
+          "text": "Filename"
+        },
+        {
+          "role": "eyebrow",
+          "order": 30,
+          "text": "ultimateguidetolaskateparks.pdf"
+        },
+        {
+          "role": "eyebrow",
+          "order": 31,
+          "text": "Size"
+        },
+        {
+          "role": "eyebrow",
+          "order": 32,
+          "text": "139 KB"
+        },
+        {
+          "role": "eyebrow",
+          "order": 33,
+          "text": "Format"
+        },
+        {
+          "role": "eyebrow",
+          "order": 34,
+          "text": "application/pdf"
+        },
+        {
+          "role": "cta",
+          "order": 35,
+          "text": "Download PDF",
+          "href": "../../../content/dam/wknd-shared/en/magazine/la-skateparks/ultimateguidetolaskateparks.pdf.coredownload.pdf"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 9,
+      "repeats": []
+    },
+    {
+      "section": "list-upnext",
+      "block": "list-upnext",
+      "items": [
+        {
+          "role": "cta",
+          "order": 36,
+          "text": "Ultimate Guide to LA Skateparks Wednesday, 30 Sep 2020",
+          "href": "../../../ca/en/magazine/guide-la-skateparks.html"
+        },
+        {
+          "role": "cta",
+          "order": 37,
+          "text": "Ski Touring Wednesday, 30 Sep 2020",
+          "href": "../../../ca/en/magazine/ski-touring.html"
+        },
+        {
+          "role": "cta",
+          "order": 38,
+          "text": "Western Australia Thursday, 9 Jul 2020",
+          "href": "../../../ca/en/magazine/western-australia.html"
+        },
+        {
+          "role": "cta",
+          "order": 39,
+          "text": "San Diego Surf Spots Thursday, 9 Jul 2020",
+          "href": "../../../ca/en/magazine/san-diego-surf.html"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 4,
+      "repeats": [
+        {
+          "unitSelector": "LI.upnext__item",
+          "count": 4,
+          "uniform": true,
+          "unit": {
+            "headings": 0,
+            "ctas": 1,
+            "imgs": 0,
+            "textRuns": 1
+          }
+        }
+      ]
+    }
+  ],
+  "defaultContentSections": [
+    {
+      "section": "hero-image",
+      "defaultContent": true,
+      "style": "",
+      "items": [],
+      "imgCount": 1,
+      "editableTexts": 0,
+      "repeats": []
+    },
+    {
+      "section": "article-head",
+      "defaultContent": true,
+      "style": "title-underline",
+      "items": [
+        {
+          "role": "heading",
+          "order": 2,
+          "text": "Ultimate Guide to LA Skateparks"
+        },
+        {
+          "role": "heading",
+          "order": 3,
+          "text": "By Stacey Roswells"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 2,
+      "repeats": []
+    },
+    {
+      "section": "article-body",
+      "defaultContent": true,
+      "style": "title-underline",
+      "items": [
+        {
+          "role": "body",
+          "order": 5,
+          "text": "Contrary to popular belief skateboarding, the sport as we know it was not invented by Marty McFly as depicted in the box office hit It is widely considered that the sport was invented in California by surfers who wanted something to do when the ocean waves went \"flat\" or in non-surfer terms when there were no waves in the early 1950s. This was termed \"sidewalk surfing\" as a never ending wave that surfers could drop in on, unless it was raining. Los Angeles is long considered the epicenter of this alternative sport. The sport grew slowly, mostly on the west coast, finally becoming mainstream into the 1980s. In the summer of 2020 skateboarding will make its debut in the Olympics. In honor of this historic achievment we tracked down the top skate spots in greater Los Angeles."
+        },
+        {
+          "role": "body",
+          "order": 6,
+          "text": "Back to the Future."
+        },
+        {
+          "role": "heading",
+          "order": 9,
+          "text": "Vans Off the Wall Skatepark"
+        },
+        {
+          "role": "body",
+          "order": 10,
+          "text": "located in Orange County, Vans Huntington Beach is a skate park paradise. With a cool ocean breeze and always sunny weather makes this destination a good time, anytime. The layout includes an enormous street skating area with something for everyone. There are multiple connecting bowls, easily 15 feet deep which contain top of the line concrete and is well maintained. Multiple stairs, rails, and ramps complete this great skatepark. Whether your an amateur, still attempting your first kick flip or an experience pro, polishing off that back-side 900 Vans H.B. will have something for you."
+        },
+        {
+          "role": "body",
+          "order": 11,
+          "text": "Vans off the Wall Skatepark, Huntington Beach"
+        },
+        {
+          "role": "body",
+          "order": 12,
+          "text": "7471 Center Avenue Huntington Beach, CA 92647"
+        },
+        {
+          "role": "heading",
+          "order": 13,
+          "text": "Moorpark skate park"
+        },
+        {
+          "role": "body",
+          "order": 14,
+          "text": "located in Ventura County, Moorpark is considered the area's premier skatepark. Moorpark skate park, \"M.P.\" for short, offers a wide variety of challenges and terrain for different skill sets. An isolated beginner area features low walls for beginners just getting their feet wet and ensures a safe space for learning progression. M.P. also includes an incredible bowl that was specifically designed to look like a backyard pool. Nearby you can also visit the Skateboarding Hall of Fame Museum, featuring a great collection of historic skateboarding memorabilia."
+        },
+        {
+          "role": "body",
+          "order": 15,
+          "text": "Moorpark Skate Park"
+        },
+        {
+          "role": "body",
+          "order": 16,
+          "text": "500 Poindexter ave. , Moorpark CA 93021"
+        },
+        {
+          "role": "heading",
+          "order": 17,
+          "text": "Venice Beach Skatepark"
+        },
+        {
+          "role": "body",
+          "order": 18,
+          "text": "we may have saved the best for last. Probably considered the quintessential skate area in all of LA, perhaps the world, is the Venice Beach skatepark. Located just a stones throw away from the Venice beach boardwalk, there is no better place to strut your stuff then Venice Beach. Here you'll see not only incredible skating, but also incredible styles, skaters in gorilla suits, suits and ties, tutus. Ocean breezes and a view of the water attracts skaters and tourists a like at this wildly popular skatepark. The skateparks is expertly designed with a wide variety of street features and bowls. This place has an incredible vibe, the locals are friendly and welcoming to experts and beginners alike. If you can only choose one skatepark to visit, Venice beach is tough to beat."
+        },
+        {
+          "role": "body",
+          "order": 19,
+          "text": "Venice Beach Skate Park,"
+        },
+        {
+          "role": "body",
+          "order": 20,
+          "text": "1800 Ocean Front Walk Venice, 90291"
+        }
+      ],
+      "imgCount": 3,
+      "editableTexts": 14,
+      "repeats": []
+    }
+  ],
+  "resectioned": "stardust/.work/rollout/article/probes/resection-schema.mjs — canon .container-fixed is one section; `section` = block name in page order"
+}

@@ -1,0 +1,303 @@
+{
+  "source": "file:///Users/catalan/repos/ai/migration-tests/stardust-benchmark/sd-25-pi-opus-5-5-0004/stardust/.work/rollout/program/schema-src/ca-en-adventures-napa-wine-tasting-html.html",
+  "width": 1280,
+  "profile": "eds",
+  "sections": [
+    {
+      "section": "breadcrumb",
+      "items": [
+        {
+          "role": "cta",
+          "order": 0,
+          "text": "Adventures",
+          "href": "../../../ca/en/adventures.html"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Napa Wine Tasting"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": [
+        {
+          "unitSelector": "LI.breadcrumb__item",
+          "count": 2,
+          "unit": {
+            "headings": 0,
+            "ctas": 1,
+            "imgs": 0,
+            "textRuns": 1
+          },
+          "uniform": false
+        }
+      ]
+    },
+    {
+      "section": "adventure-gallery",
+      "items": [
+        {
+          "role": "body",
+          "order": 0,
+          "text": "Previous"
+        },
+        {
+          "role": "body",
+          "order": 1,
+          "text": "Next"
+        },
+        {
+          "role": "body",
+          "order": 2,
+          "text": "Napa Wine Valley"
+        },
+        {
+          "role": "body",
+          "order": 3,
+          "text": "wine glasses"
+        }
+      ],
+      "imgCount": 2,
+      "editableTexts": 1,
+      "repeats": [
+        {
+          "unitSelector": "DIV.carousel__item",
+          "count": 2,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 1,
+            "textRuns": 0
+          },
+          "uniform": true
+        },
+        {
+          "unitSelector": "BUTTON.carousel__action",
+          "count": 2,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 0,
+            "textRuns": 1
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "adventure-title",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "Napa Wine Tasting"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 1,
+      "repeats": [],
+      "defaultContent": true
+    },
+    {
+      "section": "adventure-facts",
+      "items": [
+        {
+          "role": "heading",
+          "order": 0,
+          "text": "Napa Wine Tasting"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Activity"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "Social"
+        },
+        {
+          "role": "eyebrow",
+          "order": 3,
+          "text": "Adventure Type"
+        },
+        {
+          "role": "eyebrow",
+          "order": 4,
+          "text": "Day Trip"
+        },
+        {
+          "role": "eyebrow",
+          "order": 5,
+          "text": "Trip Length"
+        },
+        {
+          "role": "eyebrow",
+          "order": 6,
+          "text": "1 Day"
+        },
+        {
+          "role": "eyebrow",
+          "order": 7,
+          "text": "Group Size"
+        },
+        {
+          "role": "eyebrow",
+          "order": 8,
+          "text": "8"
+        },
+        {
+          "role": "eyebrow",
+          "order": 9,
+          "text": "Difficulty"
+        },
+        {
+          "role": "eyebrow",
+          "order": 10,
+          "text": "Beginner"
+        },
+        {
+          "role": "eyebrow",
+          "order": 11,
+          "text": "Price"
+        },
+        {
+          "role": "eyebrow",
+          "order": 12,
+          "text": "152.59"
+        },
+        {
+          "role": "heading",
+          "order": 13,
+          "text": "Share this Adventure"
+        }
+      ],
+      "imgCount": 0,
+      "editableTexts": 2,
+      "repeats": [
+        {
+          "unitSelector": "DIV.facts__item",
+          "count": 6,
+          "unit": {
+            "headings": 0,
+            "ctas": 0,
+            "imgs": 0,
+            "textRuns": 2
+          },
+          "uniform": true
+        }
+      ]
+    },
+    {
+      "section": "adventure-details",
+      "items": [
+        {
+          "role": "eyebrow",
+          "order": 0,
+          "text": "Overview"
+        },
+        {
+          "role": "eyebrow",
+          "order": 1,
+          "text": "Itinerary"
+        },
+        {
+          "role": "eyebrow",
+          "order": 2,
+          "text": "What to Bring"
+        },
+        {
+          "role": "heading",
+          "order": 3,
+          "text": "Napa Wine Tasting"
+        },
+        {
+          "role": "heading",
+          "order": 4,
+          "text": "Enjoy spectacular wine tasting in the Napa Valley"
+        },
+        {
+          "role": "eyebrow",
+          "order": 5,
+          "text": "Enjoy a sample of both white and red wines"
+        },
+        {
+          "role": "body",
+          "order": 6,
+          "text": "Napa Valley is one of the most famous wine regions in the world. Located an hour north of San Francisco, Napa is renowned for their wine, pleasant temperatures and world class restaurants. This tasting will provide insider access to spectacular wineries and restaurants in Yountville, Calistoga and St. Helena."
+        },
+        {
+          "role": "heading",
+          "order": 7,
+          "text": "Napa Wine Tasting"
+        },
+        {
+          "role": "heading",
+          "order": 8,
+          "text": "Dog's Bark Winery"
+        },
+        {
+          "role": "body",
+          "order": 9,
+          "text": "Our first stop will be at the family owned Dog's Bark Winery where you'll get a behind the scenes peak at the wine making process. Dog's Bark is one of Napa's first wineries, founded in 1875 by Pierre Martin an immigrant from Bordeaux."
+        },
+        {
+          "role": "heading",
+          "order": 10,
+          "text": "Spring Winery"
+        },
+        {
+          "role": "body",
+          "order": 11,
+          "text": "Since 1959, Spring Winery has been producing world-class wines that pair best with great food and great company. Their wines reflect the personality of their wine makers and the surrounding vineyards in the heart of Napa Valley"
+        },
+        {
+          "role": "heading",
+          "order": 12,
+          "text": "Mountain Creek Winery"
+        },
+        {
+          "role": "body",
+          "order": 13,
+          "text": "For over 35 years, Mountain Creek Winery has produced award winning wines using organically grown grapes and traditional winemaking techniques. You won't just be tasting the wine, you'll get an inside look at the way wine is made — from the way the land is farmed to where the wine is made."
+        },
+        {
+          "role": "heading",
+          "order": 14,
+          "text": "Napa Wine Tasting"
+        },
+        {
+          "role": "body",
+          "order": 15,
+          "text": "Money for purchasing wine to take home"
+        },
+        {
+          "role": "body",
+          "order": 16,
+          "text": "Comfortable shoes for standing"
+        },
+        {
+          "role": "body",
+          "order": 17,
+          "text": "A healthy appetite for lunch"
+        }
+      ],
+      "imgCount": 1,
+      "editableTexts": 13,
+      "repeats": [
+        {
+          "unitSelector": "DIV.tabs__tabpanel",
+          "count": 3,
+          "unit": {
+            "headings": 2,
+            "ctas": 0,
+            "imgs": 1,
+            "textRuns": 4
+          },
+          "uniform": false
+        }
+      ]
+    }
+  ]
+}
