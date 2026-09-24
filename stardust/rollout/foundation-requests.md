@@ -1,0 +1,1 @@
+- foundation | header "Sign In" colour rgb(247,247,247) → live rgb(235,235,235) | chrome-parity.mjs 1440+360 PAIR "Sign In" color delta; crop bands pass (0.09 % / 0.53 %) | all templates

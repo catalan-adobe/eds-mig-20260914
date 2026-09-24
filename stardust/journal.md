@@ -399,3 +399,19 @@ See `skills/stardust/reference/journal-format.md` for entry format.
   lift `box-sizing` together with any width + padding rule (see A-C0-1). `article-layout` puts every
   wrapper in the main column and `.upnext-list-wrapper` in the sidebar; `program-layout` spans the
   default-content title, then `.trip-facts-wrapper` (1/4) beside `.tabs-wrapper` (3/4).
+
+## C-deliver — foundation gated and frozen (2026-09-24)
+
+Foundation-first gate on the published shell
+`https://replica-wknd--eds-mig-20260914--catalan-adobe.aem.page/us/en/shell-check` vs
+`https://wknd.site/us/en.html` (live side from the cached chrome/anchor probes of the day):
+- `crop-compare.mjs` (bar ≤ 2 % per band): 1440 header 0.09 % (194 px), footer 0.02 % (260 px,
+  live y 3469 / build y 293); 360 header 0.53 % (117 px), footer 0.84 % (593 px, live y 5256 /
+  build y 223). Evidence: `stardust/replica/gates/us-en-html-<w>/{shell.png,chrome-*-diff-shell.png}`.
+- `chrome-parity.mjs`: Δ25 @1440, Δ29 @360 — judged non-defects, pixels confirm (direction.md
+  A-C0-8); one residual ("Sign In" colour) queued in `stardust/rollout/foundation-requests.md`.
+- Guard (`stardust/.work/rollout/probes/shell-guard.mjs`): header/footer `data-block-status=loaded`,
+  0 pageerror, 5/5 visible images with clientWidth > 0, scrollWidth 1440/1440 and 360/360.
+Verdict: PASS. `foundation-freeze.mjs freeze` → 39 files (styles, fonts, blocks/header,
+blocks/footer, head.html, scripts, favicon.*, icons, runtime-contract.json, content/nav.html,
+content/footer.html); `check` → unchanged. progress.json `units.foundation` → done.

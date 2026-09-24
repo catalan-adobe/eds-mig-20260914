@@ -7,7 +7,7 @@
   "phase": "C-deliver",
   "units": {
     "foundation": {
-      "status": "pending",
+      "status": "done",
       "kind": "foundation",
       "templates": [
         "us-en-html",
@@ -17,7 +17,7 @@
         "us-en-faqs-html",
         "us-en-adventures-html"
       ],
-      "pages": 0,
+      "pages": 3,
       "blocks": 2,
       "order": 0,
       "scope": [
@@ -33,7 +33,30 @@
         "blocks/footer/",
         "/nav",
         "/footer"
-      ]
+      ],
+      "startedAt": "2026-09-24T07:50:00.000Z",
+      "endedAt": "2026-09-24T10:59:03.762Z",
+      "gates": {
+        "360": {
+          "page": "/us/en/shell-check",
+          "header": "0.53%",
+          "footer": "0.84%",
+          "chromeDeltas": 29,
+          "pageerrors": 0,
+          "scrollWidth": 360
+        },
+        "1440": {
+          "page": "/us/en/shell-check",
+          "header": "0.09%",
+          "footer": "0.02%",
+          "chromeDeltas": 25,
+          "pageerrors": 0,
+          "scrollWidth": 1440
+        },
+        "crop": "1440 header 0.09% footer 0.02%; 360 header 0.53% footer 0.84% (bar 2%)",
+        "chrome": "1440 Δ25 / 360 Δ29 — all region-level (header reserve wrapper vs live fixed header, footer y on short shell page), pipeline media-hash icon signatures, a11y text of icon links, off-canvas mobile nav; pixels confirm (A-C0-8)"
+      },
+      "verdict": "foundation: files 39, nav+footer live, shell previewed; gate 1440 header 0.09% / footer 0.02%, 360 header 0.53% / footer 0.84%, chrome Δ25/Δ29 justified, 0 pageerror, 0 overflow; frozen 39 files"
     },
     "landing": {
       "status": "pending",

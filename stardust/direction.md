@@ -282,3 +282,13 @@ hands-off judgments made at each gate as named assumptions.
   Sign Out are static `#sign-in` / `#sign-out` anchors in the anonymous state (DF-02).
 - **A-C0-7:** The shell page `/us/en/shell-check` is preview-only, has no `<h1>` by design, and is
   deleted at C-final.
+- **A-C0-8 (C0 gate, coordinator):** `chrome-parity.mjs` against the published shell reports
+  Δ25 (1440) / Δ29 (360) while every crop band passes (1440 header 0.09 % / footer 0.02 %,
+  360 header 0.53 % / footer 0.84 %, bar 2 %). The deltas are judged non-defects and the gate
+  is decided on the pixel bar (gate doc § Pass bar item 5, "styles diagnose, pixels confirm"):
+  the outer `<header>` is the boilerplate's 200/130 px static white reserve, the fixed
+  transparent `.header.block` inside it is 194/117 px = live; footer Δy is the short shell
+  page's length, not chrome; icon signatures are the pipeline's `/media_<hash>` rewrite;
+  "Facebook/Twitter/Instagram" EXTRA texts are the icon links' accessible names; the four
+  360 nav EXTRA links are the off-canvas menu. One true residual is carried: "Sign In"
+  colour rgb(235,235,235) → rgb(247,247,247), sub-pixel-band, queued for C-final.
