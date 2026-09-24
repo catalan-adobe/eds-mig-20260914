@@ -231,6 +231,57 @@ Published (deploy-batch 5 ok, aem.live 200 ×5).
 
 ## Listing cluster — appended by its subagent
 
+Pages `us-en-adventures-html` → `/us/en/adventures` (archetype, template us-en-adventures-html)
+and `us-en-magazine-html` → `/us/en/magazine` (sibling, render branch A'). Schema
+`stardust/eds-schema/us-en-adventures-html.json` (4 sections: index-headline, hero,
+current-adventures-title, current-adventures — 6 × `DIV.tabs__panel`, uniform: false = the
+active tab). Style fingerprint: one variation group, `LI.tabs__tab` (active vs rest). Media:
+2 new editorial images rehosted (`alaskan-grizzly.jpeg`, `amazon-river-02.jpeg`, source fetch
+200); the hero (`adobestock-216674449.jpeg`) and featured (`adobestock-156407519.jpeg`) images are
+the same DAM renditions (same asset timestamp) the program / article units uploaded — their
+ledger URLs are authored, no second upload; all 16 card images reuse the program carousel uploads.
+Publish decision: publish (the landing unit's decision, unchanged).
+
+| section (schema / live) | authored as | block | decode tier |
+|---|---|---|---|
+| index-headline (`h1.page-title` directly in `.container--fixed`) | default content h1, section style `page-title` (no 14px gutter — override scoped in tabs.css / list-teaser.css, foundation request filed) | — (D1) | — |
+| hero (`teaser--hero`) | 1 row: image \| h2 + p; section style `flush` | `hero-teaser` (reuse) | template-slotted |
+| current-adventures-title | default content h2, style `underline` | — (D1) | — |
+| current-adventures (`tabs` with a `card-list` per panel) | `tabs cards` block, one single-cell row per tab title; then ONE section per tab holding a `cards` block (16/2/3/3/2/6 rows) with section-metadata `tab \| <title>` → `data-tab`, adopted by the tabs block at decorate time (D2 — no nested block) | `tabs` (reuse, variant `cards` CSS added) + `cards` (reuse) | reconstructive (tabs: one tab per row; cards: one card per row) |
+| trailing separator | empty section, style `separator` | — (D1) | — |
+| magazine: featured (`teaser--featured`) | 1 row: image \| `<p><strong>` eyebrow + h2 + p + `<strong><a>` CTA | `featured-teaser` (reuse) | template-slotted |
+| magazine: All Articles / Members Only titles | default content h2, style `underline` | — (D1) | — |
+| magazine: `image-list` | 5 rows: image \| `<p><a>` title + p | `cards` (reuse) | reconstructive |
+| magazine: `text` | default content `<p><strong>Sign in&nbsp;</strong>to un-lock…</p>` | — (D1) | — |
+| magazine: `separator--space-medium` | empty section, style `separator`; the 2em margins + 2px rule scoped in list-teaser.css (`main .section.separator:has(+ .section.list-teaser-container)::after`), foundation request filed | — (D1) | — |
+| magazine: 2 × `column--third teaser--list teaser--secure` | ONE `list-teaser secure` block, one row per teaser: image \| h2 + description p \| action label p | `list-teaser` (NEW) | reconstructive (one teaser per row; ≤ 3 cells, cell 3 optional) |
+
+Shared-block edit: `blocks/tabs/tabs.css` gained the `cards` variant rules its JSDoc already
+declared (the content-fragment `ul`/`li::before`/`picture img` rules would otherwise restyle the
+adopted card list: `display: block`, a glyph bullet, `height: auto` images) plus the two
+listing-template overrides (`page-title` gutter, `main` flow-root for the trailing separator, the
+same fix hero-carousel.css carries). Program pages (variant `fragment`) are untouched by them.
+
+Gates (harness, structural): `davids-model-lint` 0 🔴 / 0 🟡 both pages; `delivery-lint` 0 P0 ·
+0 P1 (16 / 5 P2 cross-origin-optimize advisories on the reuse `cards` block); `media-reconcile`
+17 / 8 hosted; `localize-links --check` PASS; `block-roundtrip --ew` adventures (maps
+`hero-teaser=section.teaser--hero`, `tabs=.tabs__list`, `cards=.tabs__panel`) 0 🔴, EW 72/72
+editable, 0 dead, 0 duplicated — the six `cards` instances 32/4/6/6/4/12 texts each; magazine
+(against the gated migrated render, maps `featured-teaser=section.teaser--featured`,
+`cards=section.image-list`, `list-teaser=section.teaser--list`) 0 🔴, EW 20/20 editable
+(the 1-block-vs-2-sections instance note is the D2 fold: one block, two rows). `qa-gate`
+adventures 20 ok / 1 warn / 7 fail, all explained: 2 "broken images" = the frozen chrome logos on
+`content.da.live` (auth-gated for the anonymous harness, as every cluster), 5 × `cards` h=0 =
+the inactive tab panels (`display: none` by design), "units ≥6 rendered 2" = the schema's
+6-panel repeat paired with a `cards` block by order (the tabs block holds 6 panels — probe:
+tabs 6, panels 16/2/3/3/2/6 cards, click "Climbing" → 2 visible cards, 0 leftover `data-tab`
+sections); magazine 15 ok / 1 warn / 1 fail (the 2 chrome logos; the archetype schema is not
+the sibling's). `measure.mjs` harness vs prototype / migrated @1440 + @360: h1, hero, title,
+tabs list, active panel, cards, featured, separator, list-teaser item/teaser/content/title/
+description/actions/img boxes identical (adventures footer y 2508 vs 2509 = the 1px separator
+request). Lint: eslint 0, stylelint 0 on `blocks/list-teaser`, `blocks/tabs`.
+
+
 ## Static cluster — appended by its subagent
 
 Page `us-en-about-us-html` → `/us/en/about-us` (archetype, template us-en-about-us-html, the

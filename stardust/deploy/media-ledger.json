@@ -1246,5 +1246,29 @@
     "httpStatus": 201,
     "attempts": 1,
     "ts": "2026-09-24T11:55:30.392Z"
+  },
+  "media/wknd/alaskan-grizzly.jpeg": {
+    "status": "uploaded",
+    "file": "stardust/.work/deploy/media/listing/alaskan-grizzly.jpeg",
+    "size": 299604,
+    "sha256": "50908c26dc7326234340adeb6610ee8a531e549dd6d791f4ae30e318796ba6ab",
+    "contentType": "image/jpeg",
+    "source": "https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser.coreimg.jpeg/1660323786175/alaskan-grizzly.jpeg",
+    "contentUrl": "https://content.da.live/catalan-adobe/eds-mig-20260914/media/wknd/alaskan-grizzly.jpeg",
+    "httpStatus": 201,
+    "attempts": 1,
+    "ts": "2026-09-24T12:36:19.774Z"
+  },
+  "media/wknd/amazon-river-02.jpeg": {
+    "status": "uploaded",
+    "file": "stardust/.work/deploy/media/listing/amazon-river-02.jpeg",
+    "size": 343663,
+    "sha256": "2d00c7c4128ea3c7c99c41d0c425c211c3d41fa49147548b0c365a55636c5808",
+    "contentType": "image/jpeg",
+    "source": "https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_copy.coreimg.jpeg/1660323790791/amazon-river-02.jpeg",
+    "contentUrl": "https://content.da.live/catalan-adobe/eds-mig-20260914/media/wknd/amazon-river-02.jpeg",
+    "httpStatus": 201,
+    "attempts": 1,
+    "ts": "2026-09-24T12:36:21.180Z"
   }
 }

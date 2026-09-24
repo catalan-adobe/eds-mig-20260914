@@ -1,0 +1,453 @@
+{
+ "source": "http://localhost:8803/prototypes/us-en-adventures-html-proposed.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "index-headline",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Adventures"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 1,
+   "repeats": []
+  },
+  {
+   "section": "hero",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Experience the world with us"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "With WKND Adventures, you don't just see the world -- you experience its cultures, flavors and wonders."
+    }
+   ],
+   "imgCount": 1,
+   "editableTexts": 2,
+   "repeats": []
+  },
+  {
+   "section": "current-adventures-title",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Current Adventures"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 1,
+   "repeats": []
+  },
+  {
+   "section": "current-adventures",
+   "items": [
+    {
+     "role": "eyebrow",
+     "order": 0,
+     "text": "All"
+    },
+    {
+     "role": "eyebrow",
+     "order": 1,
+     "text": "Climbing"
+    },
+    {
+     "role": "eyebrow",
+     "order": 2,
+     "text": "Cycling"
+    },
+    {
+     "role": "eyebrow",
+     "order": 3,
+     "text": "Skiing"
+    },
+    {
+     "role": "eyebrow",
+     "order": 4,
+     "text": "Surfing"
+    },
+    {
+     "role": "eyebrow",
+     "order": 5,
+     "text": "Travel"
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Bali Surf Camp",
+     "href": "/us/en/adventures/bali-surf-camp.html"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "Surfing in Bali is on the bucket list of every surfer - whether you're a beginner or someone who's been surfing for decades, there will be a break to cater to your ability. Bali offers warm water, tropical vibes, awesome breaks and low cost expenses."
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Beervana in Portland",
+     "href": "/us/en/adventures/beervana-portland.html"
+    },
+    {
+     "role": "body",
+     "order": 9,
+     "text": "This adventure will provide insider access to spectacular local breweries that define the taste and experience of Oregon beer culture and tradition."
+    },
+    {
+     "role": "cta",
+     "order": 10,
+     "text": "Climbing New Zealand",
+     "href": "/us/en/adventures/climbing-new-zealand.html"
+    },
+    {
+     "role": "body",
+     "order": 11,
+     "text": "Let us help you make your New Zealand climbing vacation a memory you will cherish forever! Come join us for a guided rock climbing adventure in the mountains that trained Sir Edmund Hilary."
+    },
+    {
+     "role": "cta",
+     "order": 12,
+     "text": "Colorado Rock Climbing",
+     "href": "/us/en/adventures/colorado-rock-climbing.html"
+    },
+    {
+     "role": "body",
+     "order": 13,
+     "text": "With all of Colorado's beautiful peaks, rock formations and gorgeous mountain views, it's not hard for rock climbers to find a little slice of climbing paradise nearly everywhere they go. On this tour we'll take you to the top parks in Colorado so you can experience the diverse climbing landscape that has made Colorado a goto destination for rock climbers from around the world."
+    },
+    {
+     "role": "cta",
+     "order": 14,
+     "text": "Cycling Southern Utah",
+     "href": "/us/en/adventures/cycling-southern-utah.html"
+    },
+    {
+     "role": "body",
+     "order": 15,
+     "text": "Join us as we explore the rugged, stunningly gorgeous landscape of southern Utah. Touch your soul as we ride through red rock canyons and sandstone cliffs in Bryce Canyon and Zion National Park, two of Utah's iconic national parks. These parks provide a stunning backdrop for a once in a lifetime cycling vacation."
+    },
+    {
+     "role": "cta",
+     "order": 16,
+     "text": "Cycling Tuscany",
+     "href": "/us/en/adventures/cycling-tuscany.html"
+    },
+    {
+     "role": "body",
+     "order": 17,
+     "text": "Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms."
+    },
+    {
+     "role": "cta",
+     "order": 18,
+     "text": "Downhill Skiing Wyoming",
+     "href": "/us/en/adventures/downhill-skiing-wyoming.html"
+    },
+    {
+     "role": "body",
+     "order": 19,
+     "text": "A skiers paradise far from crowds and close to nature with terrain so vast it appears uncharted. With 2,500 acres of legendary terrain, unmatched levels of snowfall each winter, and unparalleled backcountry access, Jackson Hole offers a truly unique skiing experience."
+    },
+    {
+     "role": "cta",
+     "order": 20,
+     "text": "Gastronomic Marais Tour",
+     "href": "/us/en/adventures/gastronomic-marais-tour.html"
+    },
+    {
+     "role": "body",
+     "order": 21,
+     "text": "Take a VIP gastronomic tour through the vibrant Marais, one of the oldest, colorful and historical areas of Paris. Our Marais expert, Marie Bernard will take food lovers to the top food shops, patisseries and chocolate shops as you take in Marais' unique atmosphere."
+    },
+    {
+     "role": "cta",
+     "order": 22,
+     "text": "Napa Wine Tasting",
+     "href": "/us/en/adventures/napa-wine-tasting.html"
+    },
+    {
+     "role": "body",
+     "order": 23,
+     "text": "Enjoy spectacular wine tasting in the Napa Valley."
+    },
+    {
+     "role": "cta",
+     "order": 24,
+     "text": "Riverside Camping",
+     "href": "/us/en/adventures/riverside-camping-australia.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 25,
+     "text": "Siegel River Australia"
+    },
+    {
+     "role": "cta",
+     "order": 26,
+     "text": "Ski Touring Mont Blanc",
+     "href": "/us/en/adventures/ski-touring-mont-blanc.html"
+    },
+    {
+     "role": "body",
+     "order": 27,
+     "text": "This adventure includes 5 days of ski touring topped off with the ascent of Mont Blanc, the highest point in Western Europe."
+    },
+    {
+     "role": "cta",
+     "order": 28,
+     "text": "Surf Camp in Costa Rica",
+     "href": "/us/en/adventures/surf-camp-costa-rica.html"
+    },
+    {
+     "role": "body",
+     "order": 29,
+     "text": "Costa Rica is the ideal location for a first surf trip. It is a safe place to travel and the locals are quite friendly and happy to see other surfers."
+    },
+    {
+     "role": "cta",
+     "order": 30,
+     "text": "Tahoe Skiing",
+     "href": "/us/en/adventures/tahoe-skiing.html"
+    },
+    {
+     "role": "body",
+     "order": 31,
+     "text": "Great weather, crystal clear lake water, and a relaxed California attitude make Lake Tahoe one of the most desirable ski destinations in the world. Few ski areas rival Lake Tahoe for its excellent snow conditions, challenging terrain and state-of-the-art lift chairs. Lake Tahoe is home to dozens of resorts and we'll be your guide for the best of them."
+    },
+    {
+     "role": "cta",
+     "order": 32,
+     "text": "West Coast Cycling",
+     "href": "/us/en/adventures/west-coast-cycling.html"
+    },
+    {
+     "role": "body",
+     "order": 33,
+     "text": "Join us for this once in a lifetime bike trip traveling from San Francisco to Portland cycling along the Pacific Coast. Experience world class terrain as we head north through redwood forests, state parks, the Columbia river and the Pacific ocean."
+    },
+    {
+     "role": "cta",
+     "order": 34,
+     "text": "Whistler Mountain Biking",
+     "href": "/us/en/adventures/whistler-mountain-biking.html"
+    },
+    {
+     "role": "body",
+     "order": 35,
+     "text": "Whistler is often considered North America’s preeminent mountain bike destination. Let us show you why."
+    },
+    {
+     "role": "cta",
+     "order": 36,
+     "text": "Yosemite Backpacking",
+     "href": "/us/en/adventures/yosemite-backpacking.html"
+    },
+    {
+     "role": "body",
+     "order": 37,
+     "text": "Yosemite National Park, designated a World Heritage Site in 1984, is best known for its granite cliffs, waterfalls and giant sequoias, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, glaciers and lakes. The majority of visitors spend their time in the Yosemite Valley, which we'll also explore, but on this trip we'll take you to the backcountry that inspired John Muir to lead a movement to have Congress establish Yosemite as we know it today."
+    },
+    {
+     "role": "cta",
+     "order": 38,
+     "text": "Climbing New Zealand",
+     "href": "/us/en/adventures/climbing-new-zealand.html"
+    },
+    {
+     "role": "body",
+     "order": 39,
+     "text": "Let us help you make your New Zealand climbing vacation a memory you will cherish forever! Come join us for a guided rock climbing adventure in the mountains that trained Sir Edmund Hilary."
+    },
+    {
+     "role": "cta",
+     "order": 40,
+     "text": "Colorado Rock Climbing",
+     "href": "/us/en/adventures/colorado-rock-climbing.html"
+    },
+    {
+     "role": "body",
+     "order": 41,
+     "text": "With all of Colorado's beautiful peaks, rock formations and gorgeous mountain views, it's not hard for rock climbers to find a little slice of climbing paradise nearly everywhere they go. On this tour we'll take you to the top parks in Colorado so you can experience the diverse climbing landscape that has made Colorado a goto destination for rock climbers from around the world."
+    },
+    {
+     "role": "cta",
+     "order": 42,
+     "text": "Whistler Mountain Biking",
+     "href": "/us/en/adventures/whistler-mountain-biking.html"
+    },
+    {
+     "role": "body",
+     "order": 43,
+     "text": "Whistler is often considered North America’s preeminent mountain bike destination. Let us show you why."
+    },
+    {
+     "role": "cta",
+     "order": 44,
+     "text": "Cycling Tuscany",
+     "href": "/us/en/adventures/cycling-tuscany.html"
+    },
+    {
+     "role": "body",
+     "order": 45,
+     "text": "Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms."
+    },
+    {
+     "role": "cta",
+     "order": 46,
+     "text": "West Coast Cycling",
+     "href": "/us/en/adventures/west-coast-cycling.html"
+    },
+    {
+     "role": "body",
+     "order": 47,
+     "text": "Join us for this once in a lifetime bike trip traveling from San Francisco to Portland cycling along the Pacific Coast. Experience world class terrain as we head north through redwood forests, state parks, the Columbia river and the Pacific ocean."
+    },
+    {
+     "role": "cta",
+     "order": 48,
+     "text": "Downhill Skiing Wyoming",
+     "href": "/us/en/adventures/downhill-skiing-wyoming.html"
+    },
+    {
+     "role": "body",
+     "order": 49,
+     "text": "A skiers paradise far from crowds and close to nature with terrain so vast it appears uncharted. With 2,500 acres of legendary terrain, unmatched levels of snowfall each winter, and unparalleled backcountry access, Jackson Hole offers a truly unique skiing experience."
+    },
+    {
+     "role": "cta",
+     "order": 50,
+     "text": "Ski Touring Mont Blanc",
+     "href": "/us/en/adventures/ski-touring-mont-blanc.html"
+    },
+    {
+     "role": "body",
+     "order": 51,
+     "text": "This adventure includes 5 days of ski touring topped off with the ascent of Mont Blanc, the highest point in Western Europe."
+    },
+    {
+     "role": "cta",
+     "order": 52,
+     "text": "Tahoe Skiing",
+     "href": "/us/en/adventures/tahoe-skiing.html"
+    },
+    {
+     "role": "body",
+     "order": 53,
+     "text": "Great weather, crystal clear lake water, and a relaxed California attitude make Lake Tahoe one of the most desirable ski destinations in the world. Few ski areas rival Lake Tahoe for its excellent snow conditions, challenging terrain and state-of-the-art lift chairs. Lake Tahoe is home to dozens of resorts and we'll be your guide for the best of them."
+    },
+    {
+     "role": "cta",
+     "order": 54,
+     "text": "Bali Surf Camp",
+     "href": "/us/en/adventures/bali-surf-camp.html"
+    },
+    {
+     "role": "body",
+     "order": 55,
+     "text": "Surfing in Bali is on the bucket list of every surfer - whether you're a beginner or someone who's been surfing for decades, there will be a break to cater to your ability. Bali offers warm water, tropical vibes, awesome breaks and low cost expenses."
+    },
+    {
+     "role": "cta",
+     "order": 56,
+     "text": "Surf Camp in Costa Rica",
+     "href": "/us/en/adventures/surf-camp-costa-rica.html"
+    },
+    {
+     "role": "body",
+     "order": 57,
+     "text": "Costa Rica is the ideal location for a first surf trip. It is a safe place to travel and the locals are quite friendly and happy to see other surfers."
+    },
+    {
+     "role": "cta",
+     "order": 58,
+     "text": "Beervana in Portland",
+     "href": "/us/en/adventures/beervana-portland.html"
+    },
+    {
+     "role": "body",
+     "order": 59,
+     "text": "This adventure will provide insider access to spectacular local breweries that define the taste and experience of Oregon beer culture and tradition."
+    },
+    {
+     "role": "cta",
+     "order": 60,
+     "text": "Cycling Tuscany",
+     "href": "/us/en/adventures/cycling-tuscany.html"
+    },
+    {
+     "role": "body",
+     "order": 61,
+     "text": "Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms."
+    },
+    {
+     "role": "cta",
+     "order": 62,
+     "text": "Gastronomic Marais Tour",
+     "href": "/us/en/adventures/gastronomic-marais-tour.html"
+    },
+    {
+     "role": "body",
+     "order": 63,
+     "text": "Take a VIP gastronomic tour through the vibrant Marais, one of the oldest, colorful and historical areas of Paris. Our Marais expert, Marie Bernard will take food lovers to the top food shops, patisseries and chocolate shops as you take in Marais' unique atmosphere."
+    },
+    {
+     "role": "cta",
+     "order": 64,
+     "text": "Napa Wine Tasting",
+     "href": "/us/en/adventures/napa-wine-tasting.html"
+    },
+    {
+     "role": "body",
+     "order": 65,
+     "text": "Enjoy spectacular wine tasting in the Napa Valley."
+    },
+    {
+     "role": "cta",
+     "order": 66,
+     "text": "Riverside Camping",
+     "href": "/us/en/adventures/riverside-camping-australia.html"
+    },
+    {
+     "role": "eyebrow",
+     "order": 67,
+     "text": "Siegel River Australia"
+    },
+    {
+     "role": "cta",
+     "order": 68,
+     "text": "Yosemite Backpacking",
+     "href": "/us/en/adventures/yosemite-backpacking.html"
+    },
+    {
+     "role": "body",
+     "order": 69,
+     "text": "Yosemite National Park, designated a World Heritage Site in 1984, is best known for its granite cliffs, waterfalls and giant sequoias, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, glaciers and lakes. The majority of visitors spend their time in the Yosemite Valley, which we'll also explore, but on this trip we'll take you to the backcountry that inspired John Muir to lead a movement to have Congress establish Yosemite as we know it today."
+    }
+   ],
+   "imgCount": 32,
+   "editableTexts": 7,
+   "repeats": [
+    {
+     "unitSelector": "DIV.tabs__panel",
+     "count": 6,
+     "unit": {
+      "headings": 0,
+      "ctas": 16,
+      "imgs": 16,
+      "textRuns": 32
+     },
+     "uniform": false
+    }
+   ]
+  }
+ ]
+}
