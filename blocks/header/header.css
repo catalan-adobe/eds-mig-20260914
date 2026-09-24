@@ -262,6 +262,46 @@ header .site-search-clear-icon {
 
 header .site-search-results {
   display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 999999;
+  width: 20rem;
+  margin-top: 0.75em;
+  border: 1px solid #ccc;
+  background: var(--color-fg);
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 25%);
+}
+
+header .site-search-results.is-open {
+  display: block;
+}
+
+header a.site-search-item:any-link {
+  display: block;
+  overflow: hidden;
+  height: 50px;
+  margin-top: 0.25em;
+  padding: 0.5em;
+  color: var(--color-fg-inverse);
+  font-size: var(--body-sm);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+header a.site-search-item:hover {
+  text-decoration: underline;
+}
+
+header .site-search-item-mark {
+  background-color: var(--color-fg-inverse-strong);
+  color: var(--color-fg);
+}
+
+@media (width <= 1024px) {
+  header .site-search-results {
+    right: 0.75rem;
+  }
 }
 
 /* mobile panel + toggle (hidden on desktop) */

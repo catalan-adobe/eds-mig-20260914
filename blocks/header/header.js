@@ -1,5 +1,6 @@
 import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
+import wireIndexSearch from './search.js';
 
 /**
  * header — WKND chrome: a fixed utility bar (account links + language menu) over the
@@ -180,8 +181,10 @@ function wireSearch(root) {
   clear.addEventListener('click', () => {
     input.value = '';
     field.classList.remove('has-value');
+    input.dispatchEvent(new Event('input'));
     input.focus();
   });
+  wireIndexSearch(root.querySelector('.site-search'));
 }
 
 function wireScroll() {
