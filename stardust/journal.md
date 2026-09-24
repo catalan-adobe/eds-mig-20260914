@@ -435,3 +435,26 @@ content/footer.html); `check` → unchanged. progress.json `units.foundation` �
   the missing current-page nav marker in header/footer (no block override).
 - Git push needed the `catalan-adobe` gh credential (the keychain default `catalan_adobe` is
   denied 403 on the repo) — pushed via a per-command credential helper, nothing global changed.
+
+## C-deliver unit `listing` — /us/en/adventures + /us/en/magazine live (2026-09-24)
+
+- Blocks: `list-teaser` (new — one row per members-only teaser, variant `secure`, reconstructive);
+  `tabs` gained the `cards` variant CSS its JSDoc declared (adopted `data-tab` card sections are
+  the D2 split of the adventures tab panels) plus two listing-template scoped overrides
+  (`page-title` gutter on adventures, `main` flow-root for the trailing separator); reuse of
+  `hero-teaser`, `featured-teaser`, `cards`. Media: 2 new uploads (`alaskan-grizzly`,
+  `amazon-river-02`), 18 ledger URLs reused.
+- Structural gates green on the harness (`davids-model-lint` 0/0, `delivery-lint` 0 P0/P1,
+  `media-reconcile` 25 hosted, `block-roundtrip --ew` 0 🔴 / 92 editable / 0 dead, `qa-gate`
+  fails all explained: chrome logos on the anonymous harness, inactive tab panels h=0, the
+  6-panel schema paired with a `cards` block by order).
+- Published-origin gates: adventures 1440 1.00 % Δh 1 / 360 1.15 % Δh 2 PASS; magazine 1440
+  1.64 % Δh 0 PASS, 360 3.83 % Δh +13 = pixel pass, height residual (source richtext
+  inconsistency between the two teasers — A-CL-3, flagged for user, register candidate R-02).
+  Crop bands 1440 1.82 % / 0.04 %, 360 0.48 % / 0.05 %; chrome-parity 13 / 16 (foundation set);
+  computed-style guard 4/4 runs green; `ai-readability` 100 %.
+- Live finding: the two live listing pages disagree on the page-title gutter (adventures flush,
+  magazine guttered); the archetype prototype + migrated sibling render both flush. Delivered per
+  live page (A-CL-4). Foundation requests: `page-title` section style; `separator space-medium`.
+- Coverage: 2 pages `deployed`, block `list-teaser` `deployed`. Push via the `catalan-adobe`
+  credential helper (keychain default 403s, as the static unit recorded).

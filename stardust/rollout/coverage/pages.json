@@ -7,7 +7,7 @@
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-09-24T12:36:02.014Z",
+  "generatedAt": "2026-09-24T13:04:35.206Z",
   "pages": [
     {
       "slug": "us-en-about-us-html",
@@ -237,9 +237,9 @@
         "tabs"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://replica-wknd--eds-mig-20260914--catalan-adobe.aem.live/us/en/adventures",
+        "deployedAt": "2026-09-24T13:04:35.162Z",
         "verifiedAt": null,
         "error": null
       }
@@ -544,9 +544,9 @@
         "list-teaser"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://replica-wknd--eds-mig-20260914--catalan-adobe.aem.live/us/en/magazine",
+        "deployedAt": "2026-09-24T13:04:35.206Z",
         "verifiedAt": null,
         "error": null
       }

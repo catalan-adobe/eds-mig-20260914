@@ -7,7 +7,7 @@
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-09-24T12:36:02.066Z",
+  "generatedAt": "2026-09-24T13:04:35.240Z",
   "blocks": [
     {
       "id": "accordion",
@@ -217,7 +217,7 @@
       ],
       "instanceCount": 1,
       "delivery": {
-        "status": "pending",
+        "status": "deployed",
         "edsBlockName": "list-teaser",
         "blockPath": null,
         "convertedAt": null

@@ -282,6 +282,36 @@ description/actions/img boxes identical (adventures footer y 2508 vs 2509 = the 
 request). Lint: eslint 0, stylelint 0 on `blocks/list-teaser`, `blocks/tabs`.
 
 
+### Listing cluster — published-origin gates (2026-09-24)
+
+Deploy: `deploy-batch.mjs` 2/2 OK (PUT → preview → live, publish = yes); magazine re-PUT once
+(`--force`) after the title gutter fix. `.plain.html`: both 200, 1 h1, 0 `about:error`, 0 `/img/`,
+33 / 8 `<picture>` + alt, section metadata folded (`page-title`, `flush`, `underline`,
+`separator`, `data-tab="…"` × 6). `ai-readability` strict 100 % / code 100 % both pages.
+Computed-style guard (preview, 1440 + 360, both pages): every block `loaded` + `data-block-name`,
+`.card-list` flex, `.list-teaser` flow-root with floated items, 17 / 8 visible images loaded,
+1 h1, 0 pageerror; tabs driven: click "Climbing" → 1 active panel, 2 visible cards, 0 leftover
+`data-tab` sections. Code Sync: the admin POST answers 401 anonymously; the GitHub push had
+already built the branch (`list-teaser.js` 200 on the first poll).
+
+`gate.sh --full` (live capture, main `header + main`): **adventures pub1 1440 1.00 % Δh 1px,
+360 1.15 % Δh 2px, 0 overflow → PASS**; content-diff 9 🔴 = the chrome set (header "Welcome"
+role, language-toggle aria-label, clear icon, footer social names/aria-labels — foundation),
+0 🔴 in main; chrome-parity 13 @1440 / 16 @360 = the foundation's set ("Sign In" colour,
+current-section marker on "Adventures", fixed header region, footer icon names). Crop bands
+(template, once): 1440 header 1.82 % (200 px) / footer 0.04 % (258 px, `--y 2509 --y-b 2508`),
+360 header 0.48 % (130 px) / footer 0.05 % (590 px, `--y 5904 --y-b 5903`) — bar 2 %.
+**magazine pub2 1440 1.64 % Δh 0 → PASS; 360 3.83 % Δh +13px → pixel PASS, height RESIDUAL
+(bar 8).** Cause, measured: live authors the second members-only teaser's description as bare
+text (no `<p>`: no 13.5px paragraph margin) and the first as a rich-text `<p>`; DA delivers every
+cell text as `<p>`, so both render the paragraph form — at 1440 the row takes the first column's
+height (Δh 0), at 360 the stacked second column is 13px taller (hot band y 3500–4000 20.3 %,
+footer Δy +14). Not fixable in block CSS without a per-instance author marker for an authoring
+artifact; recorded as residual `flaggedFor: user` (A-CL-3 in direction.md) with the candidate
+register entry: "R-02 — magazine members-only teaser 2 description is plain text while teaser 1
+is a paragraph; normalise both to paragraphs (+13px at ≤ 767px)". Every other magazine box
+(h1 gutter, featured, cards, separator, teaser 1 title/description/action/image) is Δ0 vs live.
+
 ## Static cluster — appended by its subagent
 
 Page `us-en-about-us-html` → `/us/en/about-us` (archetype, template us-en-about-us-html, the

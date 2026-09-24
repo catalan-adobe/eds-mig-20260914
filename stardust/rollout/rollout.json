@@ -15,20 +15,20 @@
     "liveHost": "replica-wknd--eds-mig-20260914--catalan-adobe.aem.live"
   },
   "lastRun": {
-    "at": "2026-09-24T12:36:02.066Z",
+    "at": "2026-09-24T13:04:35.240Z",
     "pages": {
       "total": 26,
       "verified": 0,
-      "deployed": 24,
-      "pending": 2,
+      "deployed": 26,
+      "pending": 0,
       "contentPending": 0,
       "stale": 0,
       "failed": 0
     },
     "blocks": {
       "total": 15,
-      "converted": 14,
-      "pending": 1
+      "converted": 15,
+      "pending": 0
     },
     "verifyFailures": 0
   }
