@@ -1,11 +1,22 @@
 /* hero-carousel — lifted from stardust/prototypes/canon.css
    (.carousel, .carousel--hero, .teaser--hero, .teaser__*; R-01 h1 at --heading-xl) */
 
-/* live: .carousel--hero .carousel { margin-bottom: 4em } — padding here so the
-   gap cannot collapse through the section wrapper (live .column is a float BFC) */
+/* The block is the live .column (a float, so a BFC): flow-root contains the
+   inner margin and the floated controls exactly the way the float did. On the
+   landing template it also stands in for .page-main { float: left } — main's
+   last section margin must not collapse into the footer's margin-top
+   (foundation request filed; the rule is inert once main is flow-root). */
 .hero-carousel {
   display: flow-root;
-  padding-bottom: 4em;
+}
+
+main:has(> .section.hero-carousel-container) {
+  display: flow-root;
+}
+
+/* live: .carousel--hero .carousel { margin-bottom: 4em } */
+.hero-carousel .hero-carousel-inner {
+  margin-bottom: 4em;
 }
 
 .hero-carousel .hero-carousel-content {
@@ -55,14 +66,9 @@
   overflow: hidden;
 }
 
-.hero-carousel .teaser .image picture {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
+/* the image stays inline (live is a bare inline <img>): its line box adds the
+   baseline descender the live layout has, and the flex item sizes from it */
 .hero-carousel .teaser .image img {
-  display: block;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -116,11 +122,15 @@
   margin-top: 0;
 }
 
+/* live buttons keep the UA font (13.333px, line-height normal, padding 1px 6px);
+   the foundation's button { font: inherit } would grow them to 29px */
 .hero-carousel .hero-carousel-action {
   margin-right: 1em;
-  padding-right: 0;
+  padding: 1px 0 1px 6px;
   border: none;
   background: none;
+  font-size: 13.3333px;
+  line-height: normal;
   appearance: none;
   cursor: pointer;
 }
@@ -179,12 +189,8 @@
 }
 
 @media (width >= 1165px) {
-  .hero-carousel .teaser .image,
-  .hero-carousel .teaser .image picture {
-    height: 640px;
-  }
-
   .hero-carousel .teaser .image {
+    height: 640px;
     max-height: 640px;
   }
 

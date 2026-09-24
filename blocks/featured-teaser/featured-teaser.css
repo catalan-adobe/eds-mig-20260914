@@ -26,14 +26,8 @@
   flex-direction: column;
 }
 
-.featured-teaser .teaser .image picture {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
+/* inline <img> as on live (baseline descender included in the flex item size) */
 .featured-teaser .teaser .image img {
-  display: block;
   width: 100%;
   height: 100%;
   margin: 0;

@@ -20,14 +20,9 @@
   overflow: hidden;
 }
 
-.hero-teaser .teaser .image picture {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
+/* inline <img> as on live: the line box adds the baseline descender the live
+   layout has, and the flex item sizes from it */
 .hero-teaser .teaser .image img {
-  display: block;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -101,12 +96,8 @@ main .section.hero-teaser-container .hero-teaser .headline :is(h1, h2, h3)::afte
 }
 
 @media (width >= 1165px) {
-  .hero-teaser .teaser .image,
-  .hero-teaser .teaser .image picture {
-    height: 640px;
-  }
-
   .hero-teaser .teaser .image {
+    height: 640px;
     max-height: 640px;
   }
 

@@ -156,7 +156,7 @@ function buildIndicators(count) {
 }
 
 export default async function decorate(block) {
-  if (block.querySelector(':scope > .hero-carousel-content')) return; // EW9 re-entrant
+  if (block.querySelector(':scope > .hero-carousel-inner')) return; // EW9 re-entrant
   const slides = collectSlides(block);
   if (!slides.length) return;
 
@@ -170,7 +170,8 @@ export default async function decorate(block) {
   actions.className = 'hero-carousel-actions';
   const prev = buildAction('previous');
   const next = buildAction('next');
-  actions.append(prev, next);
+  // the inline-block buttons are separated by a space on live (a 4px gap)
+  actions.append(prev, document.createTextNode(' '), next);
   const indicators = buildIndicators(items.length);
   const dots = [...indicators.children];
 
@@ -191,5 +192,10 @@ export default async function decorate(block) {
   next.addEventListener('click', () => show(current() + 1));
   dots.forEach((dot, k) => dot.addEventListener('click', () => show(k)));
 
-  block.replaceChildren(carousel, actions, indicators);
+  // live: .column (BFC) > .carousel { margin-bottom: 4em } — the floated
+  // controls hang below the inner box without extending it
+  const inner = document.createElement('div');
+  inner.className = 'hero-carousel-inner';
+  inner.append(carousel, actions, indicators);
+  block.replaceChildren(inner);
 }
