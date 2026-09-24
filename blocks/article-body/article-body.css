@@ -18,6 +18,14 @@
   display: none;
 }
 
+/* the pipeline wraps the quote text in a <p>: it must read as the blockquote's own text */
+.article-body blockquote p {
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+  text-align: inherit;
+}
+
 /* images: .grid > .column.image.article-image (0 14px gutters), inline img in a block box */
 .article-body .image {
   display: flow-root;
