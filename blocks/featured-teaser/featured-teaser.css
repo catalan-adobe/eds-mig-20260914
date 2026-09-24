@@ -26,7 +26,14 @@
   flex-direction: column;
 }
 
-/* inline <img> as on live (baseline descender included in the flex item size) */
+/* <picture> plays the live div.image (a block, height 100%); the <img> inside it
+   stays inline so the line box carries the live baseline descender */
+.featured-teaser .teaser .image picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .featured-teaser .teaser .image img {
   width: 100%;
   height: 100%;

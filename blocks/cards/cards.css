@@ -27,8 +27,12 @@
   display: block;
 }
 
-/* inline <img> as on live: the 200px image sits on the baseline, so the line
-   box is 207px tall exactly as the live card's .image div */
+/* <picture> plays the live div.image block; the 200px <img> stays inline on its
+   baseline, so the line box is 207px tall exactly as the live card */
+.cards .card-image picture {
+  display: block;
+}
+
 .cards .card-image img {
   width: 100%;
   height: 200px;

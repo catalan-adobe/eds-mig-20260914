@@ -66,8 +66,14 @@ main:has(> .section.hero-carousel-container) {
   overflow: hidden;
 }
 
-/* the image stays inline (live is a bare inline <img>): its line box adds the
-   baseline descender the live layout has, and the flex item sizes from it */
+/* <picture> plays the live div.image (a block, height 100%); the <img> inside it
+   stays inline so the line box carries the live baseline descender */
+.hero-carousel .teaser .image picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .hero-carousel .teaser .image img {
   width: 100%;
   height: 100%;
