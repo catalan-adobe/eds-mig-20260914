@@ -83,7 +83,9 @@ function buildSocial(socialDiv) {
       if (!a) return;
       const name = a.textContent.trim();
       li.classList.add(`social-${name.toLowerCase()}`);
-      if (!a.getAttribute('aria-label')) a.setAttribute('aria-label', name);
+      const label = a.getAttribute('title') || name;
+      a.setAttribute('aria-label', label);
+      a.removeAttribute('title');
       const text = el('span', 'button-text');
       text.append(...a.childNodes);
       a.append(text);
