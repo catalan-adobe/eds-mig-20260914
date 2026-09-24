@@ -1,6 +1,14 @@
 /* mini-carousel — lifted from stardust/prototypes/us-en-adventures-climbing-new-zealand-html.css
    (.carousel--mini .image img) and canon.css (.carousel__*, .icon--left-arrow/right-arrow) */
 
+/* Scoped override (foundation request filed): live wraps the breadcrumb list in an
+   inline-block nav, so the list sits on the wrapper's text baseline — 5px (1440) /
+   7px (360) below the wrapper top; the frozen foundation renders it as a block.
+   The gallery follows the breadcrumb on every program page. */
+body.program main .section.breadcrumb :is(ol, ul) {
+  display: inline-block;
+}
+
 /* contains the floated controls: on live the following floated .column is pushed
    below them at every width (clear: both ≥ 1025, float stacking below) */
 .mini-carousel {
