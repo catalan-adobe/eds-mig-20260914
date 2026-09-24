@@ -38,3 +38,9 @@ maintainer folds them into the named skill file.
 - evidence: about-us cluster request line; migrated `_meta.json` `metadata.lang` per page vs the rendered `<html lang="en">` on `/ca/en/about-us` and `/us/es`.
 - proposed change: `skills/deploy/SKILL.md` § 3 foundation — C0 derives `lang` from the pathname (`/<country>/<lang>` → `<lang>-<COUNTRY>`) or from a `lang` metadata row in `scripts/scripts.js`; name `scripts/scripts.js` as a C0-editable file (not vendored like `aem.js`).
 - status: pending
+
+### D-site sitemap verification cannot pass under a preview-only publish decision
+- failure class: path-safety (the served `/sitemap.xml` is built from the PUBLISHED index; a run that ends `--no-publish` by owner decision sees 0 of its pages in it, and when another run shares the DA site the served set is that run's — here 26 `/us/**` urls vs 64 assembled, 0 extra, 38 missing; the same shared site made `/redirects.json` a foreign artefact the run could not safely overwrite)
+- evidence: `stardust/rollout/site/manifest.json` `servedSitemap` (2026-09-24T15:09Z, match false, count 26, assembled 64); `curl -s <preview>/redirects.json` 28 rows owned by sibling run stardust-25-pi-opus-5-5-0003; `rollout D-site end` ledger line.
+- proposed change: `skills/replica/reference/handoff-contract.md` § 3 row D + `skills/rollout/SKILL.md` § Phase D — make the `assemble.mjs --verify-origin … MUST exit 0` requirement conditional on the § 2 publish decision being "publish"; under `--no-publish` the row records the served count as informational and defers the exit-0 check to the publish step in § 7 of the report. Add to the deploy card's DA preflight: refuse (or warn once) when the target DA site already carries documents from a different run (`/redirects.json` or `/nav` not in this run's ledgers) — two runs on one site clobber each other's `/us/**`, sheet and index.
+- status: pending

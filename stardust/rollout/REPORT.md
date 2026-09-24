@@ -3,12 +3,14 @@
 Run: 2026-09-24 · flow: **replica** (same design, no redesign, no rewording, no DOM copy) · mode:
 hands-off · volume: all pages · source: https://wknd.site
 
-**State: 64/64 pages live on the preview origin, 9/9 templates gated PASS at 1440 + 360.** DA
-catalan-adobe/eds-mig-20260914, code branch `sd-25-fable-replica`, preview host
+**State: rollout complete through I-dashboard — 64/64 pages live AND verified on the preview
+origin, 9/9 templates gated PASS at 1440 + 360, optimize gate pass (health 85/100, 0 open P1/P2).**
+DA catalan-adobe/eds-mig-20260914, code branch `sd-25-fable-replica`, preview host
 https://sd-25-fable-replica--eds-mig-20260914--catalan-adobe.aem.page — **preview only**
-(`--no-publish`; nothing on .aem.live). Ledger: `rollout C-deliver end` (`stardust/status.jsonl`).
-The earlier local-only run (`C-deliver blocked`, no DA target) is superseded; its sections below are
-kept where still true.
+(`--no-publish`; nothing of this run on .aem.live). Ledger: `rollout I-dashboard end`
+(`stardust/status.jsonl`; phases D-site, E-full-site, F-optimize, G-aem (skipped), H-report,
+I-dashboard each start/end). The earlier local-only run (`C-deliver blocked`, no DA target) is
+superseded; its sections below are kept where still true. Site-level results in § 2c.
 
 ## 1. Page coverage
 
@@ -18,8 +20,10 @@ kept where still true.
 | archetypes recreated + gate-approved | 9 | one per page type; `stardust/replica/gates/` |
 | migrated (sibling tier) | 64 | `stardust/migrated/**`, commit c64b67c |
 | authored as EDS content (local) | 64 | `content/**/*.html` (64) = Σ `stardust/rollout/units/*.paths` (64) |
-| PUT + previewed (preview origin) | 64 | `stardust/deploy/ledger-*.json`; `coverage/pages.json` 47 `deployed` + 17 `verified` |
-| gate-verified on the preview origin | 17 | archetype + sibling per template (`stardust/replica/gates/<slug>-<w>/*-pub*.txt`) |
+| PUT + previewed (preview origin) | 64 | `stardust/deploy/ledger-*.json` |
+| pixel-gate-verified on the preview origin | 17 | archetype + sibling per template (`stardust/replica/gates/<slug>-<w>/*-pub*.txt`) |
+| verified by `verify.mjs` (E-full-site: 200, no `about:error`, internal hrefs resolve) | 64 | `coverage/pages.json` 64 `verified`, 0 `failed`; `rollout.json.lastRun` |
+| headless render check (first page of each template) | 9/9 | `stardust/.work/rollout/final/render-check.jsonl` — `body.appear`, all blocks `loaded`, 1 `<h1>`, 0 broken images, 0 JS errors |
 | published (.aem.live) | 0 | owner decision — `--no-publish` |
 
 Per template cluster (`stardust/rollout/progress.json` → `units.*`, all `done`; published gate in § 2b):
@@ -65,8 +69,8 @@ harness vs gated prototype Δ 0 px on probed boxes at 1440 + 360 (exceptions in 
 |  | 360 | 0.02 | 0 | 0 | 3 | hero object-fit crop advisory; header/footer crop 100 %/100 % |
 
 Every archetype passed at both widths; every residual is photo resampling / anti-aliasing / a
-sampler artefact — zero layout effect. The same numbers are NOT yet available for the EDS build:
-the published-origin round (§ 7 step 4) is pending.
+sampler artefact — zero layout effect. The EDS build's numbers against the same live pages are in
+§ 2b (preview origin, C-deliver).
 
 ## 2b. Published-origin gate (preview origin vs live, gate.sh --full, C-deliver)
 
@@ -93,6 +97,22 @@ wrapper artefacts (static/white, +6/+13 px, off-canvas nav at 360) and, on ca/en
 Δw −2 px (R-2). Fixes off the instruments during the clusters: text-quote blockquote face (article,
 bfe1256), contributor icon span (about, 9803608), accordion icon host (faqs, ed12bb8), landing
 indicator text; C-final: footer logo `aspect-ratio` + inline clear-icon data URI (e402744).
+
+## 2c. Site-level rollout (phases D–I, 2026-09-24 15:07–15:15Z)
+
+| phase | result | evidence |
+|---|---|---|
+| D-site | `assemble.mjs` → `stardust/rollout/site/{sitemap.xml (64 urls), robots.txt, manifest.json}` = the EXPECTED set (`.hlxignore` keeps `stardust/` off the origin). Served `/sitemap.xml` on the preview host lists **26** urls — the sibling run's published `/us/**` set; this run's 64 pages are preview-only and therefore absent from the published index (`manifest.json.servedSitemap.match false`, 0 extra, 38 missing = the 37 non-`/us/` pages + `/us/es`; the 26 served paths coincide with 26 of our 27 `/us/**` paths because the sibling publishes the same routes). Expected under `--no-publish`; re-check after publish. Root: source `https://wknd.site/` 301 → `/us/en.html`; preview `/` 301 → `/us/en` → 200 via the existing `/redirects.json` (28 rows: `/`, `/index.html`, 26 `/us/**.html` → extensionless — written by the sibling run, left untouched). No `stardust/redirects.tsv` in this run, so no `/ca/**.html` → extensionless rows exist (open item 14). All 22 chrome docs (`/<country>/<lang>/nav`, `/footer`) carry `Robots \| noindex`. | `stardust/rollout/site/manifest.json` |
+| E-full-site | `verify.mjs --all --base <preview>`: **64 checked · 64 verified · 0 failed**; headless render check 9/9 templates clean (see § 1). No page re-driven. | `coverage/pages.json`, `stardust/.work/replica/bg/verify-e.log` |
+| F-optimize | `optimize.mjs --all`: health **85/100** (seo 100 · ai-search 100 · cross-page 56 · a11y/brand/design/content not assessed); open **P1 0 · P2 0 · P3 11** — all `design-pass` `cross-page/duplicate-description`: each ca/en page shares its meta description with its us/en twin (source content, preserved verbatim in replica). Source parity 134 (P2 104 · P3 30: duplicate `<title>` across the same twins, no JSON-LD on the source either) — informational. **GATE pass.** | `stardust/rollout/optimize/{findings,scorecard}.json` |
+| G-aem | **skipped** — F left 0 open in-scope P1 findings; `autofix-aem.mjs` not run, no project edits. | ledger |
+| H-report | this file; `stardust/learnings.md` (7 pending entries); journal § Rollout D–I | — |
+| I-dashboard | `dashboard.mjs` → `stardust/rollout/dashboard/{index.html,data.json}` | `stardust/rollout/dashboard/` |
+
+Not run (out of this run's scope, listed in § 6): D2-dynamic (`/query-index.json` 404 on the preview
+host — `helix-query.yaml` + publish needed), D3-multilingual (n/a, every captured locale root ships),
+E2-link-audit (`localize-links.mjs --check`; 3 `content/ca/en/**` hrefs still point at
+`https://wknd.site/ca/en/magazine/members-only.html` and 2 PDF hrefs at the wknd.site DAM).
 
 ## 3. Blocks (17 authored + 2 chrome)
 
@@ -137,95 +157,73 @@ boilerplate Roboto files were removed.
    and publishes 27 /us/** paths plus /nav, /footer into catalan-adobe/eds-mig-20260914; it overwrote
    /us/en, /us/en/adventures, /us/en/magazine at ~13:54Z (re-PUT --force, re-gated). C-final sweep:
    0/64 pages clobbered, but any /us/** page can be overwritten again — separate DA sites (or stop the
-   other run) before publishing. `.aem.live` currently serves the other run's /us/en.
-2. **Editorial media rehost** — every editorial `<img src>` and PDF `href` is the captured
-   `https://wknd.site/…` URL (anonymous 200 today); `da-media-upload.mjs --scope <cluster>` + src
-   rewrite at PUT. Side effect until then: external images are not wrapped in `<picture>`, so
-   `/us/en/faqs` sits 7–9 px taller than its prototype (A-F-2).
+   other run) before publishing. `.aem.live` and the served `/sitemap.xml` (26 urls) and
+   `/redirects.json` (28 rows) currently reflect the other run's /us/** publish.
+2. **Publish decision** — preview-only (`--no-publish`); nothing of this run on .aem.live. Publishing
+   needs item 1 resolved first, then `deploy-batch.mjs` without `--no-publish` per cluster,
+   `assemble.mjs --verify-origin https://<branch>--<repo>--<org>.aem.live` (must exit 0), and the
+   D2 index (`helix-query.yaml` → `/query-index.json`) for search F-01.
 3. **`<html lang>`** — `scripts/scripts.js` hard-codes `lang = 'en'` (source `en-US`, `en-CA`,
    `es-US`, `fr-CA`, `de-CH` …). Root `scripts/` was outside this run's write boundary; one-line
    fix for the project owner (A-F-1; learnings entry).
-4. **Inconsistency register R-1** — magazine-hub Fly Fishing description 13.5 px lower than live
-   (source markup asymmetry normalised into the block model; A-F-4, reversible).
-5. **Migrated-tree links** — 55 `stardust/migrated` pages carry `href="https://wknd.site/…"` for
-   in-inventory targets (parallel render); the authored `content/` pages use root-relative
-   extensionless hrefs, but E2 `localize-links.mjs --check` must confirm on the live tree.
-6. **No-`<h1>` source pages** — landing (2) + locale stubs (9) have no source h1; clusters authored
-   the first teaser title as `h1` sized as the live h2 (delivery-lint P0 resolution). Owner may
-   prefer an allowlist entry instead.
-7. **Publish decision** — preview-only (`--no-publish`); publishing needs item 1 resolved first.
-11. **`a.button` aria-label** — the pipeline keeps `title` and drops `aria-label` on default-content
-    buttons (landing 2 🔴); copy title → aria-label in `scripts/scripts.js` `decorateMain` (owner, with item 3).
-12. **R-2** — ca/en footer link "localization features with Core Components" 218 vs 220 px: the
-    source's trailing space inside the link is dropped by the pipeline (`inconsistency-register.md`).
-13. **Media ledger `source: null`** — `media-reconcile.mjs` cannot map wknd.site src → contentUrl;
-    magazine-hub rewrote via `probes/rehost-src.mjs`, other clusters kept the wknd.site URLs (ingested
-    as `/media_*` renditions at preview). The LA-skateparks PDF href stays absolute to wknd.site.
-8. **Boilerplate leftovers** — `blocks/{cards,columns,hero,widget}` unused (`--background-color`
-   token references); delete or keep as a project decision.
-9. **Harness footer** — the local harness resolves the footer from its own pathname (falls back to
-   `/us/en`), so `ca/*` measurements show the US footer (Δ confined to the footer) — harness only.
-10. **Search (F-01) + listings (L-0x) index** — `helix-query.yaml` / `/query-index.json` and the
-    search service are D2 work on the published host.
+4. **`a.button` aria-label** — the pipeline keeps `title` and drops `aria-label` on default-content
+   buttons (landing 2 🔴 "read our articles" / "explore our adventures" on /us/en + /ca/en); copy
+   title → aria-label in `scripts/scripts.js` `decorateMain` (owner, with item 3).
+5. **Inconsistency register R-1** — magazine-hub Fly Fishing description modelled as `<p>`, 13.5 px
+   lower than live at 360 (Δh −14; source markup asymmetry normalised into the block model; A-F-4,
+   reversible). Worst published gate: us-en-magazine 360 = 3.90 % (1440 1.07 %).
+6. **Inconsistency register R-2** — ca/en footer link "localization features with Core Components"
+   218 vs 220 px: the source's trailing space inside the link is dropped by the pipeline
+   (`inconsistency-register.md`; chrome-parity Δw −2 px on every ca/en page, footer band 0.00 %).
+7. **Boilerplate leftovers** — `blocks/{cards,columns,hero,widget}` unused by the plan
+   (`--background-color` token references); delete or keep as a project decision.
+8. **Media** — the media ledger rows carry `source: null`, so `media-reconcile.mjs` cannot map
+   wknd.site `src` → `contentUrl`; magazine-hub rewrote 16 srcs via `probes/rehost-src.mjs`, the
+   other clusters kept the `https://wknd.site/…` URLs (ingested as `/media_*` renditions at
+   preview, 0 broken images in the render check). The LA-skateparks PDF href (2 pages) stays
+   absolute to the wknd.site DAM.
+9. **E2 link audit not run** — 3 `content/ca/en/magazine/**` hrefs point at
+   `https://wknd.site/ca/en/magazine/members-only.html` (an in-inventory page, `/ca/en/magazine/members-only`);
+   `localize-links.mjs --source-host wknd.site --content content --check` + re-PUT of the 3 pages
+   would close it. `verify.mjs` passed because it checks root-relative hrefs only.
+10. **Sitemap / redirects on the published origin** — served sitemap ≠ assembled (26 vs 64) is
+    the `--no-publish` consequence (§ 2c); no `stardust/redirects.tsv` exists, so `/ca/**.html` and
+    the locale-stub `.html` source URLs have no redirect rows (only the sibling's `/us/**.html` rows).
+    Generate the sheet from `coverage/pages.json` (`<path>.html → <path>`) and PUT `/redirects.json`
+    once the DA site is this run's alone.
+11. **Optimize P3 ×11** — `cross-page/duplicate-description` ca/en ↔ us/en twins: source content
+    preserved verbatim (replica forbids rewording); design-pass, upstream/owner.
+12. **No-`<h1>` source pages** — landing (2) + locale stubs (9) have no source h1; clusters authored
+    the first teaser title as `h1` sized as the live h2 (delivery-lint P0 resolution). Owner may
+    prefer an allowlist entry instead.
+13. **Article content-diff 3 🔴 MISSING ICON** (footer social glyphs) is a region-classification
+    artefact — the live footer sits inside `<main>`; chrome-parity footer icons 1/1 paired, footer
+    band 0.00 % @1440.
+14. **Search (F-01) + listings (L-0x) index** — `helix-query.yaml` / `/query-index.json` (404 on the
+    preview host) and the search service are D2 work on the published host.
+15. **Harness footer** — the local harness resolves the footer from its own pathname (falls back to
+    `/us/en`), so `ca/*` measurements show the US footer (Δ confined to the footer) — harness only.
+16. **Tooling** — `commit-push.sh` gained `--autostash` on its pull (landing unit; coordinator to
+    confirm); Code Sync admin `POST /code/…/*` is 401 anonymously, 202 with Bearer DA_TOKEN (not
+    needed — pushes reached the code origin within 5 s).
 
-## 7. Next commands (as run in C-deliver; re-runnable — ledgers resume)
+## 7. Remaining commands (to go from preview to published)
 
-Run from the project root. Fill `stardust/rollout/rollout.json` → `site.da.{org,site,ref}` and
-`site.liveHost` first (`inventory.mjs --site-url https://wknd.site` re-derives coverage and keeps rows).
+Run from the project root with `set -a; . ./.env; set +a` (DA_TOKEN). Item 1 (§ 6) first.
 
-1. Rehost editorial media per cluster, then rewrite `src`/`href` in `content/` from each ledger:
-   ```
-   for c in program article locale-landing landing listing magazine-hub about faqs members-only; do
-     DA_TOKEN=… node stardust/scripts/deploy/da-media-upload.mjs --org <org> --repo <repo> \
-       --scope $c --dir content --ledger stardust/deploy/media-$c.json
-   done
-   ```
-2. Foundation first (chrome docs, styles, fonts already on the code branch — push the branch):
-   ```
-   git push -u origin <branch>
-   DA_TOKEN=… node stardust/scripts/deploy/deploy-batch.mjs --org <org> --repo <repo> --branch <branch> \
-     --content content --paths stardust/rollout/units/foundation.paths --no-publish \
-     --ledger stardust/deploy/ledger-foundation.json --log stardust/.work/rollout/deploy-foundation.log
-   ```
-   (`foundation.paths` = the 22 `/<country>/<lang>/nav` + `/footer` documents.) Then the
-   foundation-first gate on `/us/es`:
-   `bash stardust/scripts/replica/gate.sh us-es-html https://wknd.site/us/es.html https://<branch>--<repo>--<org>.aem.page/us/es 1440 pub1 --full`
-   and `360`, plus `crop-compare.mjs` header/footer bands and `chrome-parity.mjs`.
-3. Clusters, ≤ 3 concurrently (`--concurrency 1` when more), each through `run-bg.mjs start`:
-   ```
-   node stardust/scripts/replica/run-bg.mjs start --name deploy-<cluster> -- \
-     node stardust/scripts/deploy/deploy-batch.mjs --org <org> --repo <repo> --branch <branch> \
-       --content content --paths stardust/rollout/units/<cluster>.paths --no-publish --concurrency 2 \
-       --ledger stardust/deploy/ledger-<cluster>.json --log stardust/.work/rollout/<cluster>/deploy.log
-   node stardust/scripts/replica/run-bg.mjs wait --max 100 deploy-<cluster>
-   ```
-   Clusters: program · article · locale-landing · landing · listing · magazine-hub · about · faqs ·
-   members-only. A 401 halt (exit 3) resumes with the same command after the token is refreshed.
-4. Published-origin gate, `pub1` round, archetype + one sibling per cluster at 1440 and 360:
-   ```
-   bash stardust/scripts/replica/gate.sh <slug> https://wknd.site/<path>.html \
-     https://<branch>--<repo>--<org>.aem.page/<path> 1440 pub1 --full
-   bash stardust/scripts/replica/gate.sh <slug> https://wknd.site/<path>.html \
-     https://<branch>--<repo>--<org>.aem.page/<path> 360 pub1 --full
-   node stardust/scripts/replica/crop-compare.mjs …   # header + footer bands (gate doc § Pass bar 5)
-   node stardust/scripts/replica/chrome-parity.mjs https://wknd.site/<path>.html https://<branch>--<repo>--<org>.aem.page/<path>
-   node stardust/scripts/replica/gate-evidence.mjs --progress stardust/replica/progress.json
-   ```
-   Archetype slugs/paths: us-en-html `/us/en` · us-en-adventures-html `/us/en/adventures` ·
-   us-en-magazine-html `/us/en/magazine` · us-en-adventures-riverside-camping-australia-html ·
-   us-en-magazine-western-australia-html · us-en-about-us-html · us-en-faqs-html ·
-   ca-en-magazine-members-only-html · us-es-html `/us/es`.
-5. Record and close C-deliver, then continue the rollout phases:
-   ```
-   node stardust/scripts/rollout/update-coverage.mjs <slug> --status deployed --url <preview-url>   # per page (deploy-batch does this when wired)
-   node stardust/scripts/stardust/ledger.mjs rollout C-deliver end --strict --detail "64/64 previewed; gate pub1 1440 x% / 360 y%"
-   node stardust/scripts/rollout/assemble.mjs --verify-origin https://<branch>--<repo>--<org>.aem.live   # D-site
-   node stardust/scripts/dynamics/dynamics-check.mjs --origin https://<branch>--<repo>--<org>.aem.page  # D2 (after helix-query.yaml + publish)
-   node stardust/scripts/deploy/localize-links.mjs --source-host wknd.site --content content --redirects stardust/redirects.tsv --check  # E2
-   node stardust/scripts/rollout/verify.mjs --base https://<branch>--<repo>--<org>.aem.page             # E
-   node stardust/scripts/rollout/optimize.mjs && node stardust/scripts/rollout/dashboard.mjs           # F, I
-   ```
-   Open a PR carrying the `<branch>--<repo>--<org>.aem.page/us/en` link (AGENTS.md rule).
+1. Close E2: `node stardust/scripts/deploy/localize-links.mjs --source-host wknd.site --content content
+   --redirects stardust/redirects.tsv`, then `--check`; re-PUT the rewritten pages with their cluster
+   `deploy-batch.mjs --paths stardust/rollout/units/<cluster>.paths --force --no-publish`.
+2. Publish per cluster: the same `deploy-batch.mjs` lines as C-deliver (`stardust/journal.md`
+   § C-deliver) without `--no-publish`, ≤ 3 clusters concurrently through `run-bg.mjs`.
+3. Redirects: build `/redirects.json` rows `<path>.html → <path>` for all 64 pages (+ `/`,
+   `/index.html` → `/us/en`), PUT + preview + publish.
+4. `node stardust/scripts/rollout/assemble.mjs --verify-origin https://sd-25-fable-replica--eds-mig-20260914--catalan-adobe.aem.live`
+   must exit 0 (served == 64); `curl -sIL …aem.live/` ends in 200.
+5. D2: add `helix-query.yaml`, publish, poll `/query-index.json` until `total` settles; then
+   `node stardust/scripts/dynamics/dynamics-check.mjs --origin https://<live-host>`.
+6. Re-run `verify.mjs --all`, `optimize.mjs --all`, `dashboard.mjs` against the live host; open a PR
+   carrying the `sd-25-fable-replica--eds-mig-20260914--catalan-adobe.aem.page/us/en` link (AGENTS.md rule).
 
 ## 8. Artifacts
 
@@ -233,4 +231,6 @@ Run from the project root. Fill `stardust/rollout/rollout.json` → `site.da.{or
 A-about-*, A-faq-*, A-ART-*, A-L-*, A-mag-*, A-MO-*, A-F-1…4) · `stardust/rollout/progress.json` ·
 `stardust/rollout/units/*.paths|md` · `stardust/rollout/foundation-requests.md` (applied) ·
 `stardust/rollout/foundation-freeze.json` · `stardust/eds-schema/*.json` · `stardust/learnings.md`
-(6 pending entries) · `stardust/replica/inconsistency-register.md` (R-1) · `stardust/journal.md`.
+(7 pending entries) · `stardust/replica/inconsistency-register.md` (R-1, R-2) · `stardust/journal.md` ·
+`stardust/rollout/site/{sitemap.xml,robots.txt,manifest.json}` · `stardust/rollout/optimize/{findings,scorecard}.json` ·
+`stardust/rollout/dashboard/{index.html,data.json}` · `stardust/rollout/coverage/*.json` · `stardust/status.jsonl`.

@@ -187,3 +187,32 @@ PUBLISHES 27 /us/** paths plus /nav and /footer into the same DA site; it overwr
 site-wide .plain.html sweep at C-final found 0/64 clobbered pages, but DA content is site-scoped —
 any /us/** page can be overwritten again until the runs use separate DA sites. commit-push.sh gained
 `--autostash` on its pull (landing unit) so shared-tree pushes go through.
+
+## Rollout D–I — D-site, E-full-site, F-optimize, G-aem, H-report, I-dashboard on the preview origin (2026-09-24)
+
+D-site: `assemble.mjs` wrote `stardust/rollout/site/{sitemap.xml (64 urls), robots.txt,
+manifest.json}` — the expected set only. `--verify-origin` against the preview host: served sitemap
+26 urls (the sibling run's published `/us/**`), 0 extra, 38 missing = every page this run keeps
+preview-only (`--no-publish`), so the mismatch is the publish decision, not a delivery gap. No
+`stardust/redirects.tsv`; the existing `/redirects.json` (28 rows, `/` + `/index.html` +
+`/us/**.html` → extensionless, written by the sibling run) was left untouched — `/` 301 → `/us/en`
+200, matching the source root's 301 → `/us/en.html`. All 22 chrome docs carry `Robots | noindex`.
+
+E-full-site: `verify.mjs --all --base <preview>` — 64 checked, 64 verified, 0 failed; headless render
+check on the first page of each of 9 templates (`stardust/.work/rollout/probes/render-check.mjs`):
+`body.appear`, every block `loaded` (3–7 per page), one `<h1>`, 0 broken images, 0 JS errors. No page
+re-driven. Coverage: 64 `verified`.
+
+F-optimize: health 85/100 (seo 100, ai-search 100, cross-page 56); open P1 0 · P2 0 · P3 11 (all
+`cross-page/duplicate-description` on ca/en ↔ us/en twins — source content, kept verbatim); source
+parity 134 informational. Gate pass. G-aem skipped (no open in-scope P1; `autofix-aem.mjs` not run).
+
+H-report: REPORT.md state header replaced, coverage rows, new § 2c (D–I results), § 6 rebuilt
+(16 items: shared DA site, publish decision, `scripts/scripts.js` lang + aria-label, R-1, R-2,
+boilerplate blocks, media ledger `source:null`, E2 not run — 3 wknd.site hrefs to
+`/ca/en/magazine/members-only`, sitemap/redirects under `--no-publish`, P3 ×11, no-h1 pages, article
+footer-icon artefact, D2 index, harness footer, tooling), § 7 rewritten as the preview → published
+command list; learnings entry 7 (sitemap verification under `--no-publish`, shared-site preflight).
+
+I-dashboard: `dashboard.mjs` → `stardust/rollout/dashboard/{index.html,data.json}`. Closing commit
+via `stardust/.work/rollout/commit-push.sh`.

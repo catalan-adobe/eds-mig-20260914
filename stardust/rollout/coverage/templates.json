@@ -7,7 +7,7 @@
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-09-24T15:03:21.767Z",
+  "generatedAt": "2026-09-24T15:09:58.300Z",
   "templates": [
     {
       "id": "ca-en-magazine-members-only-html",
@@ -114,8 +114,8 @@
         "title"
       ],
       "delivery": {
-        "verified": 2,
-        "deployed": 30,
+        "verified": 32,
+        "deployed": 0,
         "contentPending": 0,
         "pending": 0
       }
@@ -214,8 +214,8 @@
         "title"
       ],
       "delivery": {
-        "verified": 2,
-        "deployed": 10,
+        "verified": 12,
+        "deployed": 0,
         "contentPending": 0,
         "pending": 0
       }
@@ -239,8 +239,8 @@
         "teaser-hero"
       ],
       "delivery": {
-        "verified": 2,
-        "deployed": 7,
+        "verified": 9,
+        "deployed": 0,
         "contentPending": 0,
         "pending": 0
       }

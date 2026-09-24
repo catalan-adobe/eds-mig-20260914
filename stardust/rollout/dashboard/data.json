@@ -1,0 +1,666 @@
+{
+  "generatedAt": "2026-09-24T15:14:16.227Z",
+  "target": "aem-eds",
+  "site": {
+    "sourceUrl": "https://wknd.site",
+    "liveHost": "sd-25-fable-replica--eds-mig-20260914--catalan-adobe.aem.page"
+  },
+  "stageCount": {
+    "identified": 64,
+    "prototyped": 64,
+    "deployed": 64,
+    "optimised": 0
+  },
+  "stageExclusive": {
+    "identified": 0,
+    "prototyped": 0,
+    "deployed": 64,
+    "optimised": 0
+  },
+  "pages": [
+    {
+      "slug": "ca-en-html",
+      "path": "/ca/en",
+      "stage": "deployed",
+      "templateId": "us-en-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "ca-en-about-us-html",
+      "path": "/ca/en/about-us",
+      "stage": "deployed",
+      "templateId": "us-en-about-us-html",
+      "isTemplate": false,
+      "openFindings": 4
+    },
+    {
+      "slug": "ca-en-adventures-html",
+      "path": "/ca/en/adventures",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "ca-en-adventures-bali-surf-camp-html",
+      "path": "/ca/en/adventures/bali-surf-camp",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "ca-en-adventures-beervana-portland-html",
+      "path": "/ca/en/adventures/beervana-portland",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "ca-en-adventures-climbing-new-zealand-html",
+      "path": "/ca/en/adventures/climbing-new-zealand",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "ca-en-adventures-colorado-rock-climbing-html",
+      "path": "/ca/en/adventures/colorado-rock-climbing",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "ca-en-adventures-cycling-southern-utah-html",
+      "path": "/ca/en/adventures/cycling-southern-utah",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "ca-en-adventures-cycling-tuscany-html",
+      "path": "/ca/en/adventures/cycling-tuscany",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "ca-en-adventures-downhill-skiing-wyoming-html",
+      "path": "/ca/en/adventures/downhill-skiing-wyoming",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "ca-en-adventures-gastronomic-marais-tour-html",
+      "path": "/ca/en/adventures/gastronomic-marais-tour",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "ca-en-adventures-napa-wine-tasting-html",
+      "path": "/ca/en/adventures/napa-wine-tasting",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "ca-en-adventures-riverside-camping-australia-html",
+      "path": "/ca/en/adventures/riverside-camping-australia",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "ca-en-adventures-ski-touring-mont-blanc-html",
+      "path": "/ca/en/adventures/ski-touring-mont-blanc",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "ca-en-adventures-surf-camp-costa-rica-html",
+      "path": "/ca/en/adventures/surf-camp-costa-rica",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "ca-en-adventures-tahoe-skiing-html",
+      "path": "/ca/en/adventures/tahoe-skiing",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "ca-en-adventures-west-coast-cycling-html",
+      "path": "/ca/en/adventures/west-coast-cycling",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "ca-en-adventures-whistler-mountain-biking-html",
+      "path": "/ca/en/adventures/whistler-mountain-biking",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "ca-en-adventures-yosemite-backpacking-html",
+      "path": "/ca/en/adventures/yosemite-backpacking",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "ca-en-faqs-html",
+      "path": "/ca/en/faqs",
+      "stage": "deployed",
+      "templateId": "us-en-faqs-html",
+      "isTemplate": false,
+      "openFindings": 4
+    },
+    {
+      "slug": "ca-en-magazine-html",
+      "path": "/ca/en/magazine",
+      "stage": "deployed",
+      "templateId": "us-en-magazine-html",
+      "isTemplate": false,
+      "openFindings": 4
+    },
+    {
+      "slug": "ca-en-magazine-arctic-surfing-html",
+      "path": "/ca/en/magazine/arctic-surfing",
+      "stage": "deployed",
+      "templateId": "us-en-magazine-western-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "ca-en-magazine-guide-la-skateparks-html",
+      "path": "/ca/en/magazine/guide-la-skateparks",
+      "stage": "deployed",
+      "templateId": "us-en-magazine-western-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "ca-en-magazine-members-only-html",
+      "path": "/ca/en/magazine/members-only",
+      "stage": "deployed",
+      "templateId": "ca-en-magazine-members-only-html",
+      "isTemplate": true,
+      "openFindings": 2
+    },
+    {
+      "slug": "ca-en-magazine-members-only-alaskan-adventure-html",
+      "path": "/ca/en/magazine/members-only/alaskan-adventure",
+      "stage": "deployed",
+      "templateId": "us-en-magazine-western-australia-html",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "ca-en-magazine-members-only-fly-fishing-the-amazon-html",
+      "path": "/ca/en/magazine/members-only/fly-fishing-the-amazon",
+      "stage": "deployed",
+      "templateId": "us-en-magazine-western-australia-html",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "ca-en-magazine-san-diego-surf-html",
+      "path": "/ca/en/magazine/san-diego-surf",
+      "stage": "deployed",
+      "templateId": "us-en-magazine-western-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "ca-en-magazine-ski-touring-html",
+      "path": "/ca/en/magazine/ski-touring",
+      "stage": "deployed",
+      "templateId": "us-en-magazine-western-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "ca-en-magazine-western-australia-html",
+      "path": "/ca/en/magazine/western-australia",
+      "stage": "deployed",
+      "templateId": "us-en-magazine-western-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "ca-fr-html",
+      "path": "/ca/fr",
+      "stage": "deployed",
+      "templateId": "us-es-html",
+      "isTemplate": false,
+      "openFindings": 4
+    },
+    {
+      "slug": "ch-de-html",
+      "path": "/ch/de",
+      "stage": "deployed",
+      "templateId": "us-es-html",
+      "isTemplate": false,
+      "openFindings": 4
+    },
+    {
+      "slug": "ch-fr-html",
+      "path": "/ch/fr",
+      "stage": "deployed",
+      "templateId": "us-es-html",
+      "isTemplate": false,
+      "openFindings": 4
+    },
+    {
+      "slug": "ch-it-html",
+      "path": "/ch/it",
+      "stage": "deployed",
+      "templateId": "us-es-html",
+      "isTemplate": false,
+      "openFindings": 4
+    },
+    {
+      "slug": "de-de-html",
+      "path": "/de/de",
+      "stage": "deployed",
+      "templateId": "us-es-html",
+      "isTemplate": false,
+      "openFindings": 4
+    },
+    {
+      "slug": "es-es-html",
+      "path": "/es/es",
+      "stage": "deployed",
+      "templateId": "us-es-html",
+      "isTemplate": false,
+      "openFindings": 4
+    },
+    {
+      "slug": "fr-fr-html",
+      "path": "/fr/fr",
+      "stage": "deployed",
+      "templateId": "us-es-html",
+      "isTemplate": false,
+      "openFindings": 4
+    },
+    {
+      "slug": "it-it-html",
+      "path": "/it/it",
+      "stage": "deployed",
+      "templateId": "us-es-html",
+      "isTemplate": false,
+      "openFindings": 4
+    },
+    {
+      "slug": "us-en-html",
+      "path": "/us/en",
+      "stage": "deployed",
+      "templateId": "us-en-html",
+      "isTemplate": true,
+      "openFindings": 3
+    },
+    {
+      "slug": "us-en-about-us-html",
+      "path": "/us/en/about-us",
+      "stage": "deployed",
+      "templateId": "us-en-about-us-html",
+      "isTemplate": true,
+      "openFindings": 4
+    },
+    {
+      "slug": "us-en-adventures-html",
+      "path": "/us/en/adventures",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-html",
+      "isTemplate": true,
+      "openFindings": 3
+    },
+    {
+      "slug": "us-en-adventures-bali-surf-camp-html",
+      "path": "/us/en/adventures/bali-surf-camp",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "us-en-adventures-beervana-portland-html",
+      "path": "/us/en/adventures/beervana-portland",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "us-en-adventures-climbing-new-zealand-html",
+      "path": "/us/en/adventures/climbing-new-zealand",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "us-en-adventures-colorado-rock-climbing-html",
+      "path": "/us/en/adventures/colorado-rock-climbing",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "us-en-adventures-cycling-southern-utah-html",
+      "path": "/us/en/adventures/cycling-southern-utah",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "us-en-adventures-cycling-tuscany-html",
+      "path": "/us/en/adventures/cycling-tuscany",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "us-en-adventures-downhill-skiing-wyoming-html",
+      "path": "/us/en/adventures/downhill-skiing-wyoming",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "us-en-adventures-gastronomic-marais-tour-html",
+      "path": "/us/en/adventures/gastronomic-marais-tour",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "us-en-adventures-napa-wine-tasting-html",
+      "path": "/us/en/adventures/napa-wine-tasting",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "us-en-adventures-riverside-camping-australia-html",
+      "path": "/us/en/adventures/riverside-camping-australia",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": true,
+      "openFindings": 3
+    },
+    {
+      "slug": "us-en-adventures-ski-touring-mont-blanc-html",
+      "path": "/us/en/adventures/ski-touring-mont-blanc",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "us-en-adventures-surf-camp-costa-rica-html",
+      "path": "/us/en/adventures/surf-camp-costa-rica",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "us-en-adventures-tahoe-skiing-html",
+      "path": "/us/en/adventures/tahoe-skiing",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "us-en-adventures-west-coast-cycling-html",
+      "path": "/us/en/adventures/west-coast-cycling",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "us-en-adventures-whistler-mountain-biking-html",
+      "path": "/us/en/adventures/whistler-mountain-biking",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "us-en-adventures-yosemite-backpacking-html",
+      "path": "/us/en/adventures/yosemite-backpacking",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-riverside-camping-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "us-en-faqs-html",
+      "path": "/us/en/faqs",
+      "stage": "deployed",
+      "templateId": "us-en-faqs-html",
+      "isTemplate": true,
+      "openFindings": 4
+    },
+    {
+      "slug": "us-en-magazine-html",
+      "path": "/us/en/magazine",
+      "stage": "deployed",
+      "templateId": "us-en-magazine-html",
+      "isTemplate": true,
+      "openFindings": 4
+    },
+    {
+      "slug": "us-en-magazine-arctic-surfing-html",
+      "path": "/us/en/magazine/arctic-surfing",
+      "stage": "deployed",
+      "templateId": "us-en-magazine-western-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "us-en-magazine-guide-la-skateparks-html",
+      "path": "/us/en/magazine/guide-la-skateparks",
+      "stage": "deployed",
+      "templateId": "us-en-magazine-western-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "us-en-magazine-san-diego-surf-html",
+      "path": "/us/en/magazine/san-diego-surf",
+      "stage": "deployed",
+      "templateId": "us-en-magazine-western-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "us-en-magazine-ski-touring-html",
+      "path": "/us/en/magazine/ski-touring",
+      "stage": "deployed",
+      "templateId": "us-en-magazine-western-australia-html",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "us-en-magazine-western-australia-html",
+      "path": "/us/en/magazine/western-australia",
+      "stage": "deployed",
+      "templateId": "us-en-magazine-western-australia-html",
+      "isTemplate": true,
+      "openFindings": 3
+    },
+    {
+      "slug": "us-es-html",
+      "path": "/us/es",
+      "stage": "deployed",
+      "templateId": "us-es-html",
+      "isTemplate": true,
+      "openFindings": 4
+    }
+  ],
+  "templates": [
+    {
+      "id": "ca-en-magazine-members-only-html",
+      "archetype": "ca-en-magazine-members-only-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 1,
+        "optimised": 0
+      }
+    },
+    {
+      "id": "us-en-about-us-html",
+      "archetype": "us-en-about-us-html",
+      "pageCount": 2,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 2,
+        "optimised": 0
+      }
+    },
+    {
+      "id": "us-en-adventures-html",
+      "archetype": "us-en-adventures-html",
+      "pageCount": 2,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 2,
+        "optimised": 0
+      }
+    },
+    {
+      "id": "us-en-adventures-riverside-camping-australia-html",
+      "archetype": "us-en-adventures-riverside-camping-australia-html",
+      "pageCount": 32,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 32,
+        "optimised": 0
+      }
+    },
+    {
+      "id": "us-en-faqs-html",
+      "archetype": "us-en-faqs-html",
+      "pageCount": 2,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 2,
+        "optimised": 0
+      }
+    },
+    {
+      "id": "us-en-html",
+      "archetype": "us-en-html",
+      "pageCount": 2,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 2,
+        "optimised": 0
+      }
+    },
+    {
+      "id": "us-en-magazine-html",
+      "archetype": "us-en-magazine-html",
+      "pageCount": 2,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 2,
+        "optimised": 0
+      }
+    },
+    {
+      "id": "us-en-magazine-western-australia-html",
+      "archetype": "us-en-magazine-western-australia-html",
+      "pageCount": 12,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 12,
+        "optimised": 0
+      }
+    },
+    {
+      "id": "us-es-html",
+      "archetype": "us-es-html",
+      "pageCount": 9,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 9,
+        "optimised": 0
+      }
+    }
+  ],
+  "blocks": {
+    "total": 21,
+    "converted": 21
+  },
+  "quality": {
+    "overall": 85,
+    "dimensions": {
+      "brand-tensions": null,
+      "design-ux": null,
+      "accessibility": null,
+      "seo": 100,
+      "content-conversion": null,
+      "ai-search": 100,
+      "cross-page": 56
+    },
+    "severity": {
+      "P1": 0,
+      "P2": 0,
+      "P3": 11
+    },
+    "history": [
+      85
+    ]
+  },
+  "findings": {
+    "byFixability": {
+      "out-of-scope": 134,
+      "design-pass": 11
+    },
+    "byAutofix": {}
+  }
+}
