@@ -20,8 +20,11 @@
  * Every authored node is MOVED into a layout wrapper (EW1/EW2); nothing is rebuilt.
  */
 
+/** a portrait — never a decorated icon (<span class="icon"><img>) inside a social link */
 function isMedia(el) {
-  return el.matches('picture, img') || !!el.querySelector('picture, img');
+  if (el.matches('picture, img')) return !el.closest('.icon');
+  if (el.matches('ul, ol')) return false;
+  return [...el.querySelectorAll('picture, img')].some((m) => !m.closest('.icon'));
 }
 
 function isHeading(el) {
@@ -91,6 +94,10 @@ function buildCard(nodes) {
   let role = null;
   let text = null;
   nodes.forEach((node) => {
+    if (isList(node) && node.querySelector('a')) {
+      inner.append(wrapNode(node, 'contributor-buttons'));
+      return;
+    }
     if (isMedia(node)) {
       const pic = node.matches('picture, img') ? node : node.querySelector('picture, img');
       inner.append(wrapNode(pic, 'contributor-image'));
@@ -108,10 +115,6 @@ function buildCard(nodes) {
         inner.append(role);
       }
       role.append(node);
-      return;
-    }
-    if (isList(node) && node.querySelector('a')) {
-      inner.append(wrapNode(node, 'contributor-buttons'));
       return;
     }
     // leftovers pass: any other authored element stays visible with default styling
