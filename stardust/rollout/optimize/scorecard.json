@@ -1,0 +1,81 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/autofix-aem",
+    "writtenAt": "2026-09-24T14:04:20.396Z",
+    "stardustVersion": "0.0.0"
+  },
+  "current": {
+    "runId": "autofix-2026-09-24T14:04:20.396Z",
+    "at": "2026-09-24T14:04:20.396Z",
+    "overall": 100,
+    "dimensions": {
+      "brand-tensions": null,
+      "design-ux": null,
+      "accessibility": null,
+      "seo": 100,
+      "content-conversion": null,
+      "ai-search": 100,
+      "cross-page": 100
+    },
+    "severity": {
+      "P1": 0,
+      "P2": 0,
+      "P3": 0
+    },
+    "fixed": {
+      "P1": 0,
+      "P2": 0,
+      "P3": 0
+    }
+  },
+  "history": [
+    {
+      "runId": "run-1",
+      "at": "2026-09-24T14:03:37.611Z",
+      "overall": 100,
+      "dimensions": {
+        "brand-tensions": null,
+        "design-ux": null,
+        "accessibility": null,
+        "seo": 100,
+        "content-conversion": null,
+        "ai-search": 100,
+        "cross-page": 100
+      },
+      "severity": {
+        "P1": 0,
+        "P2": 0,
+        "P3": 0
+      },
+      "fixed": {
+        "P1": 0,
+        "P2": 0,
+        "P3": 0
+      }
+    },
+    {
+      "runId": "autofix-2026-09-24T14:04:20.396Z",
+      "at": "2026-09-24T14:04:20.396Z",
+      "overall": 100,
+      "dimensions": {
+        "brand-tensions": null,
+        "design-ux": null,
+        "accessibility": null,
+        "seo": 100,
+        "content-conversion": null,
+        "ai-search": 100,
+        "cross-page": 100
+      },
+      "severity": {
+        "P1": 0,
+        "P2": 0,
+        "P3": 0
+      },
+      "fixed": {
+        "P1": 0,
+        "P2": 0,
+        "P3": 0
+      }
+    }
+  ]
+}

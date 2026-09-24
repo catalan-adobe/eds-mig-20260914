@@ -565,3 +565,65 @@ content/footer.html); `check` → unchanged. progress.json `units.foundation` �
   internal (26 pages + the PDF) all 200, 15 external all 200 (-L). No 404 remains.
 - Nav + footer documents published (D-site); every nav/footer/landing target is in the 26
   verified rows (E).
+
+## F-optimize — gate PASS: 0 open in-scope findings, 30 source-parity informational (2026-09-24)
+
+- `optimize.mjs --base https://replica-wknd--eds-mig-20260914--catalan-adobe.aem.live --all`
+  (run-1): inspected 26 pages + site checks; open P1 0 · P2 0 · P3 0; health 100/100.
+- Source parity 30 (P2 26 · P3 4), all `fixability: out-of-scope`, excluded from the score
+  and the gate: 26 × `ai-search/jsonld` (the source pages carry no JSON-LD either), 3 ×
+  `seo/title-length` (`About Us`, `Magazine`, `FAQs` — the source's own `<title>`s), 1 ×
+  `seo/duplicate-description` (2 pages share the source's description). Recorded, not
+  auto-fixed: the replica flow keeps the source's metadata byte-faithful.
+- Judgment layers (brand-tensions, design-ux, content-conversion) remain not-assessed
+  (null) — no impeccable/tensions source ran in this hands-off session.
+- Artifacts: `stardust/rollout/optimize/findings.json` (30 rows), `optimize/scorecard.json`.
+
+## G-aem — autofix no-op: 0 candidates, nothing re-deployed (2026-09-24)
+
+- `autofix-aem.mjs --project . --dry-run` → Candidates 0 · applied 0 · manual 0 · skipped 0 ·
+  failed 0; the apply run printed the same. No EDS project file changed (`git status` clean
+  apart from the journal + status ledger).
+- Reason: F left no open in-scope finding; the 30 source-parity rows are `out-of-scope` and
+  the fixer never touches them (A-G-1).
+- Re-verify after the (empty) fix pass: `verify.mjs --base live --all` → 26 verified · 0
+  failed; `/us/en.plain.html` still serves our blocks (hero-carousel, cards, featured-teaser)
+  — the shared-DA-root collision (A-D2-4) has not flipped the live tree since 13:54Z.
+
+## H-report — summary block written; 6 learnings entries (2026-09-24)
+
+- `stardust/rollout/report.md`: 26/26 verified · 6 templates · 15/15 blocks · health 100, open
+  P1/P2/P3 0 · to-deliver none · content-pending 0; per-template published-gate table (C-final
+  numbers), the D2 dynamic parity table beside the delivery ledger, R-01 applied, R-02 candidate,
+  scope debt (10 locale trees → wknd.site, shared DA root A-D2-4, tags awaiting owner).
+- `stardust/learnings.md` (new, 6 entries, all `pending`): shared DA content root
+  (path-safety), helix-query.yaml vs config service (index-empty), root redirect when the
+  source root 301s (path-safety), DA richtext normalisation Δh (content-model), uncaptured
+  locale roots (capture-gap), push credential ≠ repo owner (api-dependency). Each names the
+  skill file + section to change.
+
+## I-dashboard — dashboard rendered: 26 identified/prototyped/deployed, optimised 0 (2026-09-24)
+
+- `dashboard.mjs` → `stardust/rollout/dashboard/index.html` (16.6 KB, self-contained) +
+  `data.json`; page tree 26 nodes, 6 template badges, quality scorecard health 100.
+- `optimised 0`: the dashboard counts the 30 source-parity rows (`open`, `out-of-scope`) as open
+  findings although optimize excludes them from the score and the gate. Left as-is (A-I-1),
+  learning entry added.
+
+## Phase 5 handoff — 26/26 pages delivered on the published origin (2026-09-24)
+
+- Chain: migrate (26 pages, 6 templates) → deploy (foundation C0 + 6 cluster units + C-final,
+  15 blocks, 11 foundation requests applied once) → rollout A–I. Every rollout phase has its
+  start/end ledger pair and journal section above.
+- Published-origin gate (C-final, pixel vs wknd.site at 1440/360): landing 0.26/0.48 %, adventure
+  detail 0.80/2.32 %, listing 0.21/0.73 % (magazine 1.28/3.83 %), article 0.32/2.89 %, static
+  0.03/0.23 %, faqs 0.03/1.22 % — 14/14 PASS, 0 overflow; chrome parity residual = the
+  foundation's justified set.
+- Site: served sitemap 26 = coverage; `/` → 301 → 200; 28 redirects; 42/42 live hrefs 200;
+  dynamics-check 12/12; verify 26/26; optimize open 0 (30 source-parity informational);
+  autofix 0 candidates; dashboard rendered.
+- Design delta: R-01 applied (landing `<h1>`); R-02 candidate flagged (magazine richtext `<p>`).
+- Debt for the owner: 10 locale trees uncaptured (→ wknd.site), shared DA content root with the
+  sibling run (A-D2-4), tags scaffold disabled (DF-07).
+- Artifacts: `stardust/rollout/{report.md,coverage/,optimize/,dashboard/,site/}`,
+  `stardust/learnings.md` (7 pending entries), `stardust/qa/dynamics-report.md`.

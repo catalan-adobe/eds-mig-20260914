@@ -502,3 +502,15 @@ hands-off judgments made at each gate as named assumptions.
   tree) and are repointed to `https://wknd.site/<locale>.html` — never left as 404s. They remain
   scope debt for rollout D3-multilingual; when an owner scopes the locale trees they are crawled
   (capture → migrate → gate) and the hrefs return to root-relative via `localize-links.mjs`.
+
+- **A-G-1 (Phase G, hands-off):** autofix-aem found 0 candidates because F's only findings are
+  source-parity (`out-of-scope`) — JSON-LD, short `<title>`s and one shared description the
+  source itself has. The replica flow keeps metadata byte-faithful, so none is auto-fixed or
+  hand-recorded as accepted; they stay informational in `optimize/findings.json`. No re-deploy.
+- **A-I-1 (dashboard optimised = 0):** `dashboard.mjs` counts the 30 source-parity findings as
+  open, so every page stops at `deployed` (red count 1–3) although the F gate is clean (open 0,
+  health 100). The rows are left `open` + `out-of-scope` as the optimize card defines them — not
+  hand-accepted, the shipped script not modified; recorded in `stardust/learnings.md`.
+- **A-H-1 (checkpoint scope):** the final checkpoint stages `stardust/` only; the untracked
+  `.agents/` and `.claude/` skill copies stay out of the code branch as in every earlier
+  checkpoint (a committed file is served by EDS; they are plugin material, not site code).
