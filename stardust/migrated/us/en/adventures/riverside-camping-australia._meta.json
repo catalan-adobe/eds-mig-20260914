@@ -1,0 +1,114 @@
+{
+  "slug": "us-en-adventures-riverside-camping-australia-html",
+  "type": "program",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "breadcrumb",
+    "mini-carousel",
+    "title",
+    "content-fragment-elements",
+    "tabs"
+  ],
+  "slotsFilled": [
+    "breadcrumb-col",
+    "carousel-col",
+    "container-fixed"
+  ],
+  "canonShas": {
+    "header": "fec9a14bfbc6",
+    "footer": "9fb9189e2ded",
+    "css": "5eff5bd0b8a7"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Riverside Camping",
+    "description": "Learn how to pitch a tent by the Siegel River, catch local cod, and spot unique Australian wildlife on this retreat. Or, you can sit back in the shade with a cool beverage and a book until it's too dark to read, then tell stories around a campfire. ",
+    "canonical": null,
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Riverside Camping",
+    "description": "Learn how to pitch a tent by the Siegel River, catch local cod, and spot unique Australian wildlife on this retreat. Or, you can sit back in the shade with a cool beverage and a book until it's too dark to read, then tell stories around a campfire. ",
+    "url": "https://wknd.site/us/en/adventures/riverside-camping-australia.html"
+  },
+  "migratedAt": "2026-09-24T10:16:55Z",
+  "designMdSha": "a0cc7c463efa",
+  "designJsonSha": "ac6c69c90e4b",
+  "sourceCurrentSha": "aa3ed62e5642",
+  "sourceProposedSha": "e78160c7ca88",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "content-fidelity",
+    "content-count",
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "delivery-lint"
+  ],
+  "gateEvidence": {
+    "content-fidelity": "Path A: approved prototype verbatim; text-parity.mjs vs capture: text/headings/links identical, 2 alt texts truncated in the prototype (contentDeviations[0])",
+    "content-count": "content-diff (live reference, generic profile, main+header+footer): Findings: 3 (0 structural 🔴) — the 3 🟡 are the header search x-template pairing seen on every cluster; text-parity.mjs: role counts identical to the capture (stardust/.work/migrate/us-en-adventures-riverside-camping-australia-html/cd/us-en-adventures-riverside-camping-australia-html.txt)",
+    "pixel-gate-1440": "0.00% (70 px, threshold 10%), height delta 0px, round iter @1440 (us-en-adventures-riverside-camping-australia-html-1440.log) [prototype regime]",
+    "pixel-gate-360": "0.95% (9255 px, threshold 10%), height delta -1px, round iter @360 (us-en-adventures-riverside-camping-australia-html-360.log) [prototype regime]",
+    "media-reconcile": "n/a: no delivered content file yet (content/us/en/adventures/riverside-camping-australia.html) — media-reconcile runs in the delivery chain (row C)",
+    "delivery-lint": "0 P0 · 0 P1 · 1 P2 (delivery-lint --path /us/en/adventures/riverside-camping-australia)"
+  },
+  "contentDeviations": [
+    {
+      "kind": "alt-text",
+      "source": "alt: Female sitting on a large rock relaxing in afternoon dappled light the Australian bushland with views over the river / Sky at moody dawn visible from inside of tent pitched on top of Frenchman's Cap in Franklin-Gordon Wild Rivers National Park",
+      "target": "alt truncated at ~85 chars in the approved prototype (…the Australian bush / …Frenchman's C…)",
+      "reason": "Path A renders the gated prototype verbatim; the prototype's two carousel/itinerary alts were truncated at authoring — visible to text-parity.mjs only, no pixel effect; fix candidate for the archetype prototype"
+    }
+  ],
+  "assetsBundled": 71,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/us/es.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/de.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/it.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/de/de.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/es/es.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/it/it.html",
+      "reason": "in-inventory-not-migrated"
+    }
+  ],
+  "outputPath": "us/en/adventures/riverside-camping-australia.html",
+  "outputPathDefault": null,
+  "sidecar": "us/en/adventures/riverside-camping-australia._meta.json",
+  "driverVersion": "1"
+}

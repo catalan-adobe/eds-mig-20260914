@@ -1,0 +1,424 @@
+{
+  "slug": "ca-en-adventures-html",
+  "type": "listing",
+  "renderBranch": "A'",
+  "template": "us-en-adventures-html",
+  "modules": [
+    "title",
+    "teaser-hero",
+    "tabs",
+    "image-list"
+  ],
+  "slotsFilled": [
+    "container-fixed",
+    "col",
+    "container-fixed"
+  ],
+  "canonShas": {
+    "header": "440a5f11b895",
+    "footer": "db318f31e03d",
+    "css": "5eff5bd0b8a7"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Adventures",
+    "description": "Join us on one of our next adventures.  Browse our list of curated experiences and sign up for one when you're ready to explore with us.",
+    "canonical": null,
+    "lang": "en-CA"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Adventures",
+    "description": "Join us on one of our next adventures.  Browse our list of curated experiences and sign up for one when you're ready to explore with us.",
+    "url": "https://wknd.site/ca/en/adventures.html"
+  },
+  "migratedAt": "2026-09-24T09:35:49Z",
+  "designMdSha": "a0cc7c463efa",
+  "designJsonSha": "ac6c69c90e4b",
+  "sourceCurrentSha": "02c447428faf",
+  "sourceProposedSha": "57049cf7513f",
+  "fidelityTier": "sibling",
+  "archetypeSource": "us-en-adventures-html",
+  "archetypeSha": "9bf06a8c05d9",
+  "variants": [],
+  "gatesPassed": [
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "content-count",
+    "delivery-lint",
+    "variance-probe",
+    "content-fidelity"
+  ],
+  "gateEvidence": {
+    "pixel-gate-1440": "0.00% (95 px, threshold 10%), height delta 0px, round iter @1440 (ca-en-adventures-html-1440.log) [prototype regime]",
+    "pixel-gate-360": "0.81% (18981 px, threshold 10%), height delta 0px, round iter @360 (ca-en-adventures-html-360.log) [prototype regime]",
+    "content-count": "content-diff: 3 (0 structural 🔴) (cd-live-ca-adv.log)",
+    "media-reconcile": "n/a: no delivered content file yet (content/ca/en/adventures.html) — media-reconcile runs in the delivery chain (row C)",
+    "delivery-lint": "0 P0 · 0 P1 · 1 P2 (delivery-lint --path /ca/en/adventures)",
+    "variance-probe": "■ https://wknd.site/ca/en/adventures.html: ✓ matches the archetype (variance-adventures-2.log)",
+    "content-fidelity": "Path A′ clone of us-en-adventures-html; capture-vs-build content-diff (cd-ca-adv.log) main 74/74 nodes, 3/3 h, 32/32 CTA, 33/33 img; header 28/28; footer 19/19 incl. verbatim Canadian footer paragraph; body text/cards identical to archetype capture modulo /ca/en paths"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 25,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/ca/en.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/us/es.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/de.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/it.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/de/de.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/es/es.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/it/it.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/faqs.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/about-us.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/bali-surf-camp.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/bali-surf-camp.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/beervana-portland.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/beervana-portland.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/climbing-new-zealand.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/climbing-new-zealand.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/colorado-rock-climbing.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/colorado-rock-climbing.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/cycling-southern-utah.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/cycling-southern-utah.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/cycling-tuscany.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/cycling-tuscany.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/downhill-skiing-wyoming.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/downhill-skiing-wyoming.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/gastronomic-marais-tour.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/gastronomic-marais-tour.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/napa-wine-tasting.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/napa-wine-tasting.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/riverside-camping-australia.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/riverside-camping-australia.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/ski-touring-mont-blanc.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/ski-touring-mont-blanc.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/surf-camp-costa-rica.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/surf-camp-costa-rica.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/tahoe-skiing.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/tahoe-skiing.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/west-coast-cycling.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/west-coast-cycling.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/whistler-mountain-biking.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/whistler-mountain-biking.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/yosemite-backpacking.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/yosemite-backpacking.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/climbing-new-zealand.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/climbing-new-zealand.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/colorado-rock-climbing.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/colorado-rock-climbing.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/whistler-mountain-biking.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/whistler-mountain-biking.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/cycling-tuscany.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/cycling-tuscany.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/west-coast-cycling.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/west-coast-cycling.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/downhill-skiing-wyoming.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/downhill-skiing-wyoming.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/ski-touring-mont-blanc.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/ski-touring-mont-blanc.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/tahoe-skiing.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/tahoe-skiing.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/bali-surf-camp.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/bali-surf-camp.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/surf-camp-costa-rica.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/surf-camp-costa-rica.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/beervana-portland.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/beervana-portland.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/cycling-tuscany.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/cycling-tuscany.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/gastronomic-marais-tour.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/gastronomic-marais-tour.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/napa-wine-tasting.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/napa-wine-tasting.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/riverside-camping-australia.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/riverside-camping-australia.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/yosemite-backpacking.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/yosemite-backpacking.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/faqs.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/about-us.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/faqs.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/about-us.html",
+      "reason": "in-inventory-not-migrated"
+    }
+  ],
+  "outputPath": "ca/en/adventures.html",
+  "outputPathDefault": null,
+  "sidecar": "ca/en/adventures._meta.json",
+  "driverVersion": "1"
+}

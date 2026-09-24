@@ -1,0 +1,172 @@
+{
+  "slug": "us-en-magazine-html",
+  "type": "magazine",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "title",
+    "teaser-featured",
+    "image-list",
+    "text",
+    "teaser-list"
+  ],
+  "slotsFilled": [
+    "container-fixed"
+  ],
+  "canonShas": {
+    "header": "2a2340a6eb6b",
+    "footer": "22363ca72b38",
+    "css": "5eff5bd0b8a7"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Magazine",
+    "description": "Read articles about adventures and activities that we've recently experienced and would love to share with our community.",
+    "canonical": "/us/en/magazine.html",
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Magazine",
+    "description": "Read articles about adventures and activities that we've recently experienced and would love to share with our community.",
+    "url": "/us/en/magazine.html"
+  },
+  "migratedAt": "2026-09-24T09:38:01Z",
+  "designMdSha": "a0cc7c463efa",
+  "designJsonSha": "ac6c69c90e4b",
+  "sourceCurrentSha": "7bad5caf117c",
+  "sourceProposedSha": "443121ae704e",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "content-fidelity",
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "content-count"
+  ],
+  "gateEvidence": {
+    "content-fidelity": "approved archetype rendered verbatim (Path A); content-diff main 25=25 text nodes, 6=6 headings, 6=6 CTAs, 8=8 img (mag-cd-us.log)",
+    "pixel-gate-1440": "0.00% (70 px, threshold 10%), height delta 0px, round canon @1440 (us-en-magazine-html-1440-canon.log) [prototype regime]",
+    "pixel-gate-360": "0.12% (1852 px, threshold 10%), height delta 0px, round canon @360 (us-en-magazine-html-360-canon.log) [prototype regime]",
+    "content-count": "content-diff: 3 (0 structural 🔴) (mag-cd-us-styled.log)",
+    "media-reconcile": "n/a: no delivered content file yet (content/us/en/magazine.html) — media-reconcile runs in the delivery chain (row C)",
+    "delivery-lint": "FAIL: 0 P0 · 1 P1 · 1 P2 (delivery-lint --path /us/en/magazine)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 69,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/us/es.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/de.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/it.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/de/de.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/es/es.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/it/it.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/us/en/faqs.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/us/en/about-us.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/us/en/magazine/western-australia.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/us/en/magazine/arctic-surfing.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/us/en/magazine/arctic-surfing.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/us/en/magazine/san-diego-surf.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/us/en/magazine/san-diego-surf.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/us/en/magazine/ski-touring.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/us/en/magazine/ski-touring.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/us/en/magazine/guide-la-skateparks.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/us/en/magazine/guide-la-skateparks.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/us/en/magazine/western-australia.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/us/en/magazine/western-australia.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/us/en/faqs.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/us/en/about-us.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/us/en/faqs.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/us/en/about-us.html",
+      "reason": "in-inventory-not-migrated"
+    }
+  ],
+  "outputPath": "us/en/magazine.html",
+  "outputPathDefault": null,
+  "sidecar": "us/en/magazine._meta.json",
+  "driverVersion": "1"
+}

@@ -1,0 +1,66 @@
+{
+  "slug": "us-es-html",
+  "type": "stub",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "teaser-hero"
+  ],
+  "slotsFilled": [
+    "teaser--hero",
+    "container-fixed"
+  ],
+  "canonShas": {
+    "header": "f784411ffb66",
+    "footer": "43ee6b29835d",
+    "css": "5eff5bd0b8a7"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "delivery-lint-h1",
+      "finding": "P0 h1: expected exactly one <h1>, found 0",
+      "source": "live stub page has a single <h2> teaser title and no <h1> (captured stardust/current/pages/us-es-html.html); same finding on the gated us-en-html home archetype",
+      "resolution": "replica flow forbids inventing/promoting headings; deferred to rollout row 6 / inconsistency-register decision by the main agent"
+    }
+  ],
+  "metadata": {
+    "title": "Español",
+    "description": null,
+    "canonical": null,
+    "lang": "es-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Español",
+    "url": "https://wknd.site/us/es.html"
+  },
+  "migratedAt": "2026-09-24T10:34:51Z",
+  "designMdSha": "a0cc7c463efa",
+  "designJsonSha": "ac6c69c90e4b",
+  "sourceCurrentSha": "fb9b1293d276",
+  "sourceProposedSha": "06e8bcc81b15",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "content-fidelity",
+    "content-count"
+  ],
+  "gateEvidence": {
+    "content-fidelity": "approved archetype prototype (Phase 4 gated); captured main = h2 teaser title + hero image + separator, chrome verbatim; content-diff main 1/1 heading, 1/1 img, header 24/24, footer 13/13 text nodes",
+    "media-reconcile": "n/a: no delivered content file yet (content/us/es.html) — media-reconcile runs in the delivery chain (row C)",
+    "delivery-lint": "FAIL: 1 P0 · 0 P1 · 1 P2 (delivery-lint --path /us/es)",
+    "content-count": "content-diff: 3 (0 structural 🔴) (us-es-html-cd.log)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 62,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "us/es.html",
+  "outputPathDefault": null,
+  "sidecar": "us/es._meta.json",
+  "driverVersion": "1"
+}

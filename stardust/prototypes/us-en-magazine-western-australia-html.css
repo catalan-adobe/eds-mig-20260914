@@ -110,3 +110,19 @@ main[data-template="article"] .grid { display: flow-root; }
 .upnext__title { color: var(--color-fg); float: left; padding: 5px; text-transform: uppercase; width: 100%; }
 .upnext__date { color: var(--color-muted); float: left; font-size: var(--body-xs); padding: 5px; text-transform: uppercase; width: 100%; }
 
+
+/* ---- sibling variants (article template, measured by sibling-variance.mjs) — same blocks, extra shapes ---- */
+/* download--pdf (.cmp-download, guide-la-skateparks): title, description, properties, action */
+.download__inner { line-height: 1; }
+.download__title { font-family: var(--body-font-family); font-size: var(--body-sm); font-weight: var(--font-weight-bold); margin-bottom: 0; margin-top: .5em; text-transform: uppercase; }
+.download__description, .download__description p { font-size: var(--heading-md); font-weight: var(--font-weight-bold); }
+.download__description p { margin: 0; text-transform: uppercase; }
+.download__properties { float: left; margin-top: .25em; width: 100%; }
+.download__property { color: var(--color-muted); float: left; font-size: var(--body-xs); text-transform: uppercase; }
+.download__property-label { display: none; }
+.download__property-content { margin-inline-start: 0; margin-right: 1em; }
+.download__action { background-color: var(--color-secondary); color: #fff; float: left; height: var(--button-size); }
+.download__action-text { float: left; font-size: var(--body-sm); padding-left: 2.25em; padding-right: 2.5em; padding-top: 16px; text-transform: uppercase; }
+.download__action-text::before { speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; content: "\ue907"; float: left; font-family: "wknd-icon-font" !important; font-size: 1.1rem; font-style: normal; font-variant: normal; font-weight: 400; line-height: 1; margin-top: -.1em; padding-right: .5em; text-transform: none; }
+/* image--captioned (.cmp-image__title, san-diego-surf): caption under the photo */
+.image__title { float: left; font-family: var(--body-font-family); font-size: var(--body-sm); font-weight: var(--font-weight-bold); margin-top: -.25em; text-transform: uppercase; }

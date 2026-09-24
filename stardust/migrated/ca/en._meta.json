@@ -1,0 +1,242 @@
+{
+  "slug": "ca-en-html",
+  "type": "landing",
+  "renderBranch": "A'",
+  "template": "us-en-html",
+  "modules": [
+    "hero-carousel",
+    "teaser-featured",
+    "title",
+    "image-list",
+    "button",
+    "teaser-hero"
+  ],
+  "slotsFilled": [
+    "col",
+    "container-fixed",
+    "col",
+    "container-fixed"
+  ],
+  "canonShas": {
+    "header": "fae87ea7a93d",
+    "footer": "653b1d02043d",
+    "css": "5eff5bd0b8a7"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "template-adapted",
+      "where": "footer",
+      "what": "second site-footer__text col (Canadian specific footer paragraph + localization link) inserted before the standard footer text, matching source order",
+      "reason": "source ca/en footer carries one extra text component the us/en archetype lacks; same text block shape, no variant class"
+    },
+    {
+      "kind": "delivery-lint-h1",
+      "finding": "P0 no <h1>",
+      "reason": "source page has no h1 (carousel teaser titles are h2); replica adds no content — resolve at deploy (register or content-shape decision), same on archetype"
+    }
+  ],
+  "metadata": {
+    "title": "WKND Adventures and Travel",
+    "description": "WKND is a collective of outdoors, music and adventure enthusiasts that believe in living every day to the fullest.",
+    "canonical": null,
+    "lang": "en-CA"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "WKND Adventures and Travel",
+    "description": "WKND is a collective of outdoors, music and adventure enthusiasts that believe in living every day to the fullest.",
+    "url": "https://wknd.site/ca/en.html"
+  },
+  "migratedAt": "2026-09-24T09:36:50Z",
+  "designMdSha": "a0cc7c463efa",
+  "designJsonSha": "ac6c69c90e4b",
+  "sourceCurrentSha": "346194ec8211",
+  "sourceProposedSha": "f26abf754bfb",
+  "fidelityTier": "sibling",
+  "archetypeSource": "us-en-html",
+  "archetypeSha": "63b8b0fdde29",
+  "variants": [],
+  "gatesPassed": [
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "variance-probe",
+    "content-count",
+    "content-fidelity"
+  ],
+  "gateEvidence": {
+    "pixel-gate-1440": "0.00% (120 px, threshold 10%), height delta 0px, round iter @1440 (ca-en-html-1440.log) [prototype regime]",
+    "pixel-gate-360": "0.94% (19842 px, threshold 10%), height delta -1px, round iter @360 (ca-en-html-360.log) [prototype regime]",
+    "media-reconcile": "n/a: no delivered content file yet (content/ca/en.html) — media-reconcile runs in the delivery chain (row C)",
+    "delivery-lint": "FAIL: 1 P0 · 0 P1 · 1 P2 (delivery-lint --path /ca/en)",
+    "variance-probe": "■ https://wknd.site/ca/en.html: ✓ matches the archetype (landing-variance.log)",
+    "content-count": "content-diff: 3 (0 structural 🔴) (ca-en-html-cd-live.log)",
+    "content-fidelity": "A' fork of us-en-html: identical copy, 41 /us/en→/ca/en link paths, lang en-CA, language-nav active en-CA + CA flag, search action path, one extra source footer paragraph (Canadian localization text) inserted in source order; offline capture role counts main 42/42 header 28/28 footer 19/19 (ca-en-html-cd.log), live 0 structural (ca-en-html-cd-live.log)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 20,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/us/es.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/de.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/it.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/de/de.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/es/es.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/it/it.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/faqs.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/about-us.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine/san-diego-surf.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/downhill-skiing-wyoming.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine/western-australia.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine/guide-la-skateparks.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine/guide-la-skateparks.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine/ski-touring.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine/ski-touring.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine/arctic-surfing.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine/arctic-surfing.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine/san-diego-surf.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine/san-diego-surf.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/climbing-new-zealand.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/yosemite-backpacking.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/yosemite-backpacking.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/whistler-mountain-biking.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/whistler-mountain-biking.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/west-coast-cycling.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/west-coast-cycling.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/tahoe-skiing.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/adventures/tahoe-skiing.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/faqs.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/about-us.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/faqs.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/about-us.html",
+      "reason": "in-inventory-not-migrated"
+    }
+  ],
+  "outputPath": "ca/en.html",
+  "outputPathDefault": null,
+  "sidecar": "ca/en._meta.json",
+  "driverVersion": "1"
+}

@@ -1,0 +1,109 @@
+{
+  "slug": "ca-en-adventures-ski-touring-mont-blanc-html",
+  "type": "program",
+  "renderBranch": "A'",
+  "template": "us-en-adventures-riverside-camping-australia-html",
+  "modules": [
+    "breadcrumb",
+    "mini-carousel",
+    "title",
+    "content-fragment-elements",
+    "tabs"
+  ],
+  "slotsFilled": [
+    "breadcrumb-col",
+    "carousel-col",
+    "container-fixed"
+  ],
+  "canonShas": {
+    "header": "0be5f7ed5d95",
+    "footer": "db318f31e03d",
+    "css": "5eff5bd0b8a7"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Ski Touring Mont Blanc",
+    "description": "This adventure includes 5 days of ski touring topped off with the ascent of Mont Blanc, the highest point in Western Europe. ",
+    "canonical": null,
+    "lang": "en-CA"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Ski Touring Mont Blanc",
+    "description": "This adventure includes 5 days of ski touring topped off with the ascent of Mont Blanc, the highest point in Western Europe. ",
+    "url": "https://wknd.site/ca/en/adventures/ski-touring-mont-blanc.html"
+  },
+  "migratedAt": "2026-09-24T10:28:57Z",
+  "designMdSha": "a0cc7c463efa",
+  "designJsonSha": "ac6c69c90e4b",
+  "sourceCurrentSha": "fa0cdf6c199d",
+  "sourceProposedSha": "5869321233f6",
+  "fidelityTier": "sibling",
+  "archetypeSource": "us-en-adventures-riverside-camping-australia-html",
+  "archetypeSha": "e78160c7ca88",
+  "variants": [],
+  "gatesPassed": [
+    "variance-probe",
+    "content-fidelity",
+    "content-count",
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "delivery-lint"
+  ],
+  "gateEvidence": {
+    "variance-probe": "sibling-variance @1440 vs archetype: breadcrumb: rect{w 252 → 291} | tabs: rect{h 833 → 1462} — content-driven only (breadcrumb width, tabs height, image aspect) — no variant (stardust/.work/migrate/us-en-adventures-riverside-camping-australia-html/variance-probe.json)",
+    "content-fidelity": "Path A′ clone: slots lifted from stardust/current/pages/ca-en-adventures-ski-touring-mont-blanc-html.html; text-parity.mjs: main textContent (hidden tab panels included), ordered images+alt, headings and hrefs identical to the capture (stardust/.work/migrate/us-en-adventures-riverside-camping-australia-html/text-parity.mjs)",
+    "content-count": "content-diff (live reference, generic profile, main+header+footer): Findings: 3 (0 structural 🔴) — the 3 🟡 are the header search x-template pairing seen on every cluster; text-parity.mjs: role counts identical to the capture (stardust/.work/migrate/us-en-adventures-riverside-camping-australia-html/cd/ca-en-adventures-ski-touring-mont-blanc-html.txt)",
+    "pixel-gate-1440": "0.00% (70 px, threshold 10%), height delta 0px, round iter3 @1440 (ca-en-adventures-ski-touring-mont-blanc-html-1440.log) [prototype regime]",
+    "pixel-gate-360": "0.83% (8987 px, threshold 10%), height delta 0px, round iter3 @360 (ca-en-adventures-ski-touring-mont-blanc-html-360.log) [prototype regime]",
+    "media-reconcile": "n/a: no delivered content file yet (content/ca/en/adventures/ski-touring-mont-blanc.html) — media-reconcile runs in the delivery chain (row C)",
+    "delivery-lint": "0 P0 · 0 P1 · 1 P2 (delivery-lint --path /ca/en/adventures/ski-touring-mont-blanc)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 17,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/us/es.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/de.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/it.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/de/de.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/es/es.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/it/it.html",
+      "reason": "in-inventory-not-migrated"
+    }
+  ],
+  "outputPath": "ca/en/adventures/ski-touring-mont-blanc.html",
+  "outputPathDefault": null,
+  "sidecar": "ca/en/adventures/ski-touring-mont-blanc._meta.json",
+  "driverVersion": "1"
+}

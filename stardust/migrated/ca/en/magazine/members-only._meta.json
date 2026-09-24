@@ -1,0 +1,96 @@
+{
+  "slug": "ca-en-magazine-members-only-html",
+  "type": "unique",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "title",
+    "image-list"
+  ],
+  "slotsFilled": [
+    "container-fixed"
+  ],
+  "canonShas": {
+    "header": "1b409a2780a6",
+    "footer": "f54395d309e9",
+    "css": "5eff5bd0b8a7"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Members Only",
+    "description": null,
+    "canonical": "/ca/en/magazine/members-only.html",
+    "lang": "en-CA"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Members Only",
+    "url": "/ca/en/magazine/members-only.html"
+  },
+  "migratedAt": "2026-09-24T10:22:36Z",
+  "designMdSha": "a0cc7c463efa",
+  "designJsonSha": "ac6c69c90e4b",
+  "sourceCurrentSha": "b28c5e6e39a5",
+  "sourceProposedSha": "6260c539f7f6",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "content-count",
+    "content-fidelity"
+  ],
+  "gateEvidence": {
+    "media-reconcile": "n/a: no delivered content file yet (content/ca/en/magazine/members-only.html) — media-reconcile runs in the delivery chain (row C)",
+    "delivery-lint": "FAIL: 0 P0 · 1 P1 · 1 P2 (delivery-lint --path /ca/en/magazine/members-only)",
+    "content-count": "content-diff generic @1280 capture(127.0.0.1:3092, clientlibs served) vs migrated: main 5/5 text (1h,2cta,2body) 2/2 img; header 28/28; footer 19/19; Findings 3 (0 structural) — canon header search-template class rename only (stardust/.work/replica/bg/members-cd2.log)",
+    "content-fidelity": "Path A: approved prototype rendered verbatim; captured headings/body/CTAs/images all present in order, no rewording, no deviations"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 63,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/us/es.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/de.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/it.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/de/de.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/es/es.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/it/it.html",
+      "reason": "in-inventory-not-migrated"
+    }
+  ],
+  "outputPath": "ca/en/magazine/members-only.html",
+  "outputPathDefault": null,
+  "sidecar": "ca/en/magazine/members-only._meta.json",
+  "driverVersion": "1"
+}

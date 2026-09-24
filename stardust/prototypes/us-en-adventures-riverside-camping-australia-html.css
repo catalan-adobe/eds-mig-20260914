@@ -17,8 +17,17 @@ main[data-template="program"] .container-fixed::after { clear: both; content: ""
   .col--9 { clear: none; float: left; width: 75%; }
 }
 
-/* ---- shared image primitive (.cmp-image__image) ---- */
+/* ---- shared image primitive (.cmp-image__image); .cmp-image__title is the authored caption
+   shown under the image on 12 program pages (live: float left, -.25em; measured 21px line) ---- */
 .image img { height: auto; margin: 7px 0; width: 100%; }
+.image__title {
+  display: block;
+  font-family: var(--body-font-family);
+  font-size: var(--body-sm);
+  font-weight: var(--font-weight-bold);
+  margin-top: -.25em;
+  text-transform: uppercase;
+}
 
 /* ---- breadcrumb (.cmp-breadcrumb--fixed) ---- */
 .breadcrumb-col { box-sizing: content-box; margin: 0 auto; max-width: var(--max-width); padding: 0 var(--spacing-md); }
@@ -85,6 +94,10 @@ main[data-template="program"] .container-fixed::after { clear: both; content: ""
 
 /* ---- content fragment title (live .cmp-contentfragment__title is display:none) ---- */
 .fragment__title { display: none; }
+/* live fragment bodies open and close with an (often empty) .aem-Grid whose ::after clearfix keeps
+   the first/last child's margin inside the body — a text-first panel sits 1em lower than a collapsed
+   margin would put it (measured on climbing-new-zealand: h2 18px high without this) */
+.fragment__body { display: flow-root; }
 
 
 /* ---- adventure facts (.cmp-contentfragment--elements) ---- */
@@ -146,3 +159,28 @@ main[data-template="program"] .container-fixed::after { clear: both; content: ""
   top: -.25em;
 }
 .tabs__tabpanel::after { clear: both; content: ""; display: table; }
+
+/* ---- VARIANT program-grid — the AEM-grid layout family of the program template (16 of 32 pages:
+   bali-surf-camp, colorado-rock-climbing, cycling-southern-utah, gastronomic-marais-tour,
+   napa-wine-tasting, tahoe-skiing, west-coast-cycling, yosemite-backpacking, both locales).
+   Live: breadcrumb, fixed container and facts column are AEM grid columns (border-box, 14px gutter,
+   no container padding <=1024) and the share title + sharing sit beside the facts at <=1024
+   (tablet 9/3, phone 7/5). Measured against the archetype with measure.mjs at 1440/1024/768/360;
+   variance-probe.json in stardust/.work/migrate/us-en-adventures-riverside-camping-australia-html. ---- */
+.breadcrumb-col.program-grid { box-sizing: border-box; }
+.adventure-facts.program-grid .facts,
+.adventure-facts.program-grid .title--share,
+.adventure-facts.program-grid .sharing { box-sizing: border-box; padding: 0 var(--spacing-md); }
+.adventure-facts.program-grid .facts { display: flow-root; }
+@media (max-width: 1024px) {
+  main[data-template="program"] .container-fixed.program-grid { padding: 0; }
+  .adventure-facts.program-grid .facts-body::after { clear: both; content: ""; display: table; }
+  .adventure-facts.program-grid .facts { float: left; width: 75%; }
+  .adventure-facts.program-grid .title--share,
+  .adventure-facts.program-grid .sharing { float: left; width: 25%; }
+}
+@media (max-width: 767px) {
+  .adventure-facts.program-grid .facts { width: 58.3333%; }
+  .adventure-facts.program-grid .title--share,
+  .adventure-facts.program-grid .sharing { width: 41.6667%; }
+}

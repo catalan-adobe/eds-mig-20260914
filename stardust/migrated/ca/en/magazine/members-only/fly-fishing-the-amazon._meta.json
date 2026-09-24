@@ -1,0 +1,114 @@
+{
+  "slug": "ca-en-magazine-members-only-fly-fishing-the-amazon-html",
+  "type": "article",
+  "renderBranch": "A'",
+  "template": "us-en-magazine-western-australia-html",
+  "modules": [
+    "image",
+    "breadcrumb",
+    "title",
+    "content-fragment",
+    "byline",
+    "sharing",
+    "list-upnext"
+  ],
+  "slotsFilled": [
+    "container-fixed"
+  ],
+  "canonShas": {
+    "header": "19a36ed656db",
+    "footer": "f54395d309e9",
+    "css": "5eff5bd0b8a7"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Fly Fishing the Amazon",
+    "description": "Deep within the heart of the Amazon we had an unforgettable cultural experience with spectacular wildlife, all in a remote, beautiful setting with strange fish of all shapes and sizes.",
+    "canonical": "/ca/en/magazine/members-only/fly-fishing-the-amazon.html",
+    "lang": "en-CA"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Fly Fishing the Amazon",
+    "description": "Deep within the heart of the Amazon we had an unforgettable cultural experience with spectacular wildlife, all in a remote, beautiful setting with strange fish of all shapes and sizes.",
+    "mainEntityOfPage": "/ca/en/magazine/members-only/fly-fishing-the-amazon.html"
+  },
+  "migratedAt": "2026-09-24T10:13:52Z",
+  "designMdSha": "a0cc7c463efa",
+  "designJsonSha": "ac6c69c90e4b",
+  "sourceCurrentSha": "d207319eeab5",
+  "sourceProposedSha": "8b844565d447",
+  "fidelityTier": "sibling",
+  "archetypeSource": "us-en-magazine-western-australia-html",
+  "archetypeSha": "802027aa4c4d",
+  "variants": [
+    "grid--figure"
+  ],
+  "gatesPassed": [
+    "content-fidelity",
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "content-count",
+    "variance-probe"
+  ],
+  "gateEvidence": {
+    "content-fidelity": "Path A': structural clone of us-en-magazine-western-australia-html via build-sibling.mjs from the captured DOM stardust/current/pages/ca-en-magazine-members-only-fly-fishing-the-amazon-html.html — headings/body/paragraph boundaries/CTAs(+hrefs)/alt+title/order verbatim; only asset paths + language-nav hrefs (captured values) transformed; content-diff vs capture: main /Users/catalan/repos/ai/migration-tests/stardust-benchmark/sd-25-pi-opus-5-5-0004/stardust/.work/replica/bg/art-cd-ca-en-magazine-members-only-fly-fishing-the-amazon-html.log: 25 lines, 6 match /source:|build:/|  source: 26 5 headings, 2 eyebrows, 9 CTAs, 10 body; 5 img| 0 structural (art-cd-ca-en-magazine-members-only-fly-fishing-the-amazon-html.log)",
+    "pixel-gate-1440": "0.00% (195 px, threshold 10%), height delta 0px, round sib @1440 (ca-en-magazine-members-only-fly-fishing-the-amazon-html-1440.log) [prototype regime]",
+    "pixel-gate-360": "1.42% (51572 px, threshold 10%), height delta -1px, round sib @360 (ca-en-magazine-members-only-fly-fishing-the-amazon-html-360.log) [prototype regime]",
+    "content-count": "content-diff: 4 (0 structural 🔴) (art-cd-ca-en-magazine-members-only-fly-fishing-the-amazon-html.log)",
+    "media-reconcile": "n/a: no delivered content file yet (content/ca/en/magazine/members-only/fly-fishing-the-amazon.html) — media-reconcile runs in the delivery chain (row C)",
+    "delivery-lint": "FAIL: 0 P0 · 1 P1 · 1 P2 (delivery-lint --path /ca/en/magazine/members-only/fly-fishing-the-amazon)",
+    "variance-probe": "■ https://wknd.site/ca/en/magazine/members-only/fly-fishing-the-amazon.html: 3 delta(s) — variants [grid--figure] (art-variance-1440.log)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 12,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/us/es.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/de.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/it.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/de/de.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/es/es.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/it/it.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine/members-only.html",
+      "reason": "in-inventory-not-migrated"
+    }
+  ],
+  "outputPath": "ca/en/magazine/members-only/fly-fishing-the-amazon.html",
+  "outputPathDefault": null,
+  "sidecar": "ca/en/magazine/members-only/fly-fishing-the-amazon._meta.json",
+  "driverVersion": "1"
+}

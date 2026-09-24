@@ -1,0 +1,72 @@
+{
+  "slug": "ch-de-html",
+  "type": "stub",
+  "renderBranch": "A'",
+  "template": "us-es-html",
+  "modules": [
+    "teaser-hero"
+  ],
+  "slotsFilled": [
+    "teaser--hero",
+    "container-fixed"
+  ],
+  "canonShas": {
+    "header": "90a005ba8471",
+    "footer": "2d5ad561c541",
+    "css": "5eff5bd0b8a7"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "delivery-lint-h1",
+      "finding": "P0 h1: expected exactly one <h1>, found 0",
+      "source": "live stub page has a single <h2> teaser title and no <h1> (captured stardust/current/pages/ch-de-html.html); same finding on the gated us-en-html home archetype",
+      "resolution": "replica flow forbids inventing/promoting headings; deferred to rollout row 6 / inconsistency-register decision by the main agent"
+    }
+  ],
+  "metadata": {
+    "title": "Deutsch",
+    "description": null,
+    "canonical": null,
+    "lang": "de-CH"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Deutsch",
+    "url": "https://wknd.site/ch/de.html"
+  },
+  "migratedAt": "2026-09-24T10:34:51Z",
+  "designMdSha": "a0cc7c463efa",
+  "designJsonSha": "ac6c69c90e4b",
+  "sourceCurrentSha": "7c06d2fcaac6",
+  "sourceProposedSha": "709f9b96474e",
+  "fidelityTier": "sibling",
+  "archetypeSource": "us-es-html",
+  "archetypeSha": "06e8bcc81b15",
+  "variants": [],
+  "gatesPassed": [
+    "content-fidelity",
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "variance-probe",
+    "content-count"
+  ],
+  "gateEvidence": {
+    "content-fidelity": "structural clone of us-es-html (build-sibling.mjs); captured <main> byte-identical to the archetype's bar AEM ids/data-layer; locale chrome values (lang, title, nav label, toggle+flag, search placeholder/aria/action, active locale) read verbatim from stardust/current/pages/ch-de-html.html; content-diff counts equal on main/header/footer (see cd-ch-de.log)",
+    "pixel-gate-1440": "0.00% (25 px, threshold 10%), height delta 0px, round sib @1440 (ch-de-1440.log) [prototype regime]",
+    "pixel-gate-360": "0.02% (98 px, threshold 10%), height delta 0px, round sib @360 (ch-de-360.log) [prototype regime]",
+    "media-reconcile": "n/a: no delivered content file yet (content/ch/de.html) — media-reconcile runs in the delivery chain (row C)",
+    "delivery-lint": "FAIL: 1 P0 · 0 P1 · 1 P2 (delivery-lint --path /ch/de)",
+    "variance-probe": "■ https://wknd.site/ch/de.html: ✓ matches the archetype (us-es-variance-text.log)",
+    "content-count": "content-diff: 3 (0 structural 🔴) (ch-de-html-cd.log)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 8,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "ch/de.html",
+  "outputPathDefault": null,
+  "sidecar": "ch/de._meta.json",
+  "driverVersion": "1"
+}

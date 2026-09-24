@@ -1,0 +1,120 @@
+{
+  "slug": "ca-en-faqs-html",
+  "type": "faq",
+  "renderBranch": "A'",
+  "template": "us-en-faqs-html",
+  "modules": [
+    "accordion"
+  ],
+  "slotsFilled": [
+    "col",
+    "col"
+  ],
+  "canonShas": {
+    "header": "fc08bc1618c6",
+    "footer": "f6a3f149ab4f",
+    "css": "5eff5bd0b8a7"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "variance-budget",
+      "probe": "footer text",
+      "delta": "US footer 17 vs CA footer 19 text nodes",
+      "cause": "CA-locale canon footer carries the Canadian specific footer paragraph (2 extra nodes: body + CTA); main byte-identical to the US archetype (AEM ids aside) — chrome-only delta; main-scoped probe exit 0",
+      "variant": "footer--locale-ca",
+      "evidence": "stardust/.work/migrate/us-en-faqs-html/variance.json"
+    },
+    {
+      "kind": "canon-chrome-locale",
+      "header": "US archetype header re-localised: flag-CA / en-CA toggle, /ca/en/ nav+logo+search paths, language-nav is-active on en-CA with captured page-level hrefs (/ca/en/faqs.html, /us/en/faqs.html)",
+      "footer": "US archetype footer + CA-specific text column verbatim from the gated ca-en-magazine-members-only-html archetype",
+      "assumption": "hands-off: CA-locale chrome derived from the gated CA archetype rather than re-authored (same recipe as the about-us cluster)"
+    }
+  ],
+  "metadata": {
+    "title": "FAQs",
+    "description": "Here we answer some of the questions that we hear most often from the community.",
+    "canonical": "/ca/en/faqs.html",
+    "lang": "en-CA"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "FAQs",
+    "description": "Here we answer some of the questions that we hear most often from the community.",
+    "url": "/ca/en/faqs.html"
+  },
+  "migratedAt": "2026-09-24T10:01:17Z",
+  "designMdSha": "a0cc7c463efa",
+  "designJsonSha": "ac6c69c90e4b",
+  "sourceCurrentSha": "c48eb373a8f0",
+  "sourceProposedSha": "8e551b9080d0",
+  "fidelityTier": "sibling",
+  "archetypeSource": "us-en-faqs-html",
+  "archetypeSha": "1f3aea87a028",
+  "variants": [
+    "footer--locale-ca"
+  ],
+  "gatesPassed": [
+    "content-fidelity",
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "variance-probe",
+    "content-count"
+  ],
+  "gateEvidence": {
+    "content-fidelity": "structural clone of us-en-faqs-html (build-sibling.mjs guards: main byte-identical to archetype, no stray /us/en links); captured CA main text identical to US main (html-slice --text diff); headings/body/CTAs(+hrefs)/aria-labels/alt/order verbatim from stardust/current/pages/ca-en-faqs-html.html; only locale link paths and asset paths transformed; content-diff main 22=22 text nodes, 2=2 headings, 2=2 CTAs, 1=1 img; header 28=28; footer 19=19 (faq-cd2-ca.log)",
+    "pixel-gate-1440": "0.00% (45 px, threshold 10%), height delta 0px, round iter @1440 (ca-en-faqs-html-1440.log) [prototype regime]",
+    "pixel-gate-360": "0.97% (7176 px, threshold 10%), height delta 0px, round iter @360 (ca-en-faqs-html-360.log) [prototype regime]",
+    "media-reconcile": "n/a: no delivered content file yet (content/ca/en/faqs.html) — media-reconcile runs in the delivery chain (row C)",
+    "delivery-lint": "FAIL: 0 P0 · 1 P1 · 1 P2 (delivery-lint --path /ca/en/faqs)",
+    "variance-probe": "■ https://wknd.site/ca/en/faqs.html: ✓ matches the archetype — variants [footer--locale-ca] (faq-variance.log)",
+    "content-count": "content-diff: 3 (0 structural 🔴) (faq-cd3-ca.log)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 9,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/us/es.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/de.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/it.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/de/de.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/es/es.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/it/it.html",
+      "reason": "in-inventory-not-migrated"
+    }
+  ],
+  "outputPath": "ca/en/faqs.html",
+  "outputPathDefault": null,
+  "sidecar": "ca/en/faqs._meta.json",
+  "driverVersion": "1"
+}

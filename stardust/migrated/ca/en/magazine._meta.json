@@ -1,0 +1,207 @@
+{
+  "slug": "ca-en-magazine-html",
+  "type": "magazine",
+  "renderBranch": "A'",
+  "template": "us-en-magazine-html",
+  "modules": [
+    "title",
+    "teaser-featured",
+    "image-list",
+    "text",
+    "teaser-list"
+  ],
+  "slotsFilled": [
+    "container-fixed"
+  ],
+  "canonShas": {
+    "header": "2d800de193d8",
+    "footer": "f54395d309e9",
+    "css": "5eff5bd0b8a7"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "variance-budget",
+      "probe": "secure",
+      "delta": "rect h 396→424 (+28px)",
+      "cause": "captured CA secure teasers carry <a class=teaser__action href=/ca/en/magazine/members-only/…>Read More</a>; US archetype has plain text. Existing .teaser__action / body.anonymous .teaser--secure .teaser__actions rules cover both — content-level variant, no CSS fork",
+      "variant": "teaser-list--linked-cta",
+      "evidence": "stardust/.work/migrate/us-en-magazine-html/variance.json"
+    },
+    {
+      "kind": "variance-budget",
+      "probe": "text",
+      "delta": "2→3 matches",
+      "cause": "third .cmp-text lives in the CA-locale canon footer (Canadian specific footer paragraph); chrome taken verbatim from the ca-en-magazine-members-only-html archetype, not a main-content delta",
+      "variant": "footer--locale-ca",
+      "evidence": "stardust/.work/migrate/us-en-magazine-html/variance.json"
+    },
+    {
+      "kind": "canon-chrome-locale",
+      "header": "ca-en-magazine-members-only-html archetype header, language-nav active/en-US hrefs set to the captured page-level values (/ca/en/magazine.html, /us/en/magazine.html)",
+      "footer": "ca-en-magazine-members-only-html archetype footer verbatim",
+      "assumption": "hands-off: CA-locale chrome comes from the gated CA archetype rather than the US archetype"
+    }
+  ],
+  "metadata": {
+    "title": "Magazine",
+    "description": "Read articles about adventures and activities that we've recently experienced and would love to share with our community.",
+    "canonical": "/ca/en/magazine.html",
+    "lang": "en-CA"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Magazine",
+    "description": "Read articles about adventures and activities that we've recently experienced and would love to share with our community.",
+    "url": "/ca/en/magazine.html"
+  },
+  "migratedAt": "2026-09-24T09:38:01Z",
+  "designMdSha": "a0cc7c463efa",
+  "designJsonSha": "ac6c69c90e4b",
+  "sourceCurrentSha": "2e9ec215a171",
+  "sourceProposedSha": "b6be44fdc49b",
+  "fidelityTier": "sibling",
+  "archetypeSource": "us-en-magazine-html",
+  "archetypeSha": "443121ae704e",
+  "variants": [
+    "teaser-list--linked-cta footer--locale-ca"
+  ],
+  "gatesPassed": [
+    "content-fidelity",
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "variance-probe",
+    "content-count"
+  ],
+  "gateEvidence": {
+    "content-fidelity": "structural clone of us-en-magazine-html; all headings/body/CTAs(+hrefs)/alt/order verbatim from stardust/current/pages/ca-en-magazine-html.html; only internal-link locale paths and asset paths transformed; content-diff main 25=25 text nodes, 6=6 headings, 8=8 CTAs, 8=8 img (mag-cd-ca.log)",
+    "pixel-gate-1440": "0.00% (70 px, threshold 10%), height delta 0px, round iter @1440 (ca-en-magazine-html-1440.log) [prototype regime]",
+    "pixel-gate-360": "0.10% (1648 px, threshold 10%), height delta 0px, round iter @360 (ca-en-magazine-html-360.log) [prototype regime]",
+    "content-count": "content-diff: 3 (0 structural 🔴) (mag-cd-ca-styled.log)",
+    "media-reconcile": "n/a: no delivered content file yet (content/ca/en/magazine.html) — media-reconcile runs in the delivery chain (row C)",
+    "delivery-lint": "FAIL: 0 P0 · 1 P1 · 1 P2 (delivery-lint --path /ca/en/magazine)",
+    "variance-probe": "■ https://wknd.site/ca/en/magazine.html: 2 delta(s) — variants [teaser-list--linked-cta footer--locale-ca] (mag-variance-txt.log)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 15,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/us/es.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/de.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/it.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/de/de.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/es/es.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/it/it.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/faqs.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/about-us.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine/western-australia.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine/arctic-surfing.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine/arctic-surfing.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine/san-diego-surf.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine/san-diego-surf.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine/ski-touring.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine/ski-touring.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine/guide-la-skateparks.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine/guide-la-skateparks.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine/western-australia.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine/western-australia.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine/members-only/alaskan-adventure.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/magazine/members-only/fly-fishing-the-amazon.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/faqs.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/about-us.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/faqs.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/en/about-us.html",
+      "reason": "in-inventory-not-migrated"
+    }
+  ],
+  "outputPath": "ca/en/magazine.html",
+  "outputPathDefault": null,
+  "sidecar": "ca/en/magazine._meta.json",
+  "driverVersion": "1"
+}

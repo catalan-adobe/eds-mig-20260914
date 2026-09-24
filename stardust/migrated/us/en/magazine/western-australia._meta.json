@@ -1,0 +1,120 @@
+{
+  "slug": "us-en-magazine-western-australia-html",
+  "type": "article",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "image",
+    "breadcrumb",
+    "title",
+    "content-fragment",
+    "text-quote",
+    "byline",
+    "sharing",
+    "download",
+    "list-upnext"
+  ],
+  "slotsFilled": [
+    "container-fixed"
+  ],
+  "canonShas": {
+    "header": "2a2340a6eb6b",
+    "footer": "22363ca72b38",
+    "css": "5eff5bd0b8a7"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Western Australia",
+    "description": "The Australian West coast is a camper’s heaven. Endless miles of desert roads leading to secret beaches, vast canyons and crystal clear rivers, and the very few people you are likely to meet on your journey will be some of the most easy-going characters you’ll find anywhere in the world. ",
+    "canonical": "/us/en/magazine/western-australia.html",
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Western Australia",
+    "description": "The Australian West coast is a camper’s heaven. Endless miles of desert roads leading to secret beaches, vast canyons and crystal clear rivers, and the very few people you are likely to meet on your journey will be some of the most easy-going characters you’ll find anywhere in the world. ",
+    "mainEntityOfPage": "/us/en/magazine/western-australia.html"
+  },
+  "migratedAt": "2026-09-24T10:00:31Z",
+  "designMdSha": "a0cc7c463efa",
+  "designJsonSha": "ac6c69c90e4b",
+  "sourceCurrentSha": "c90077aa93e5",
+  "sourceProposedSha": "802027aa4c4d",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "content-fidelity",
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "content-count"
+  ],
+  "gateEvidence": {
+    "content-fidelity": "Path A: approved prototype verbatim (stardust/prototypes/us-en-magazine-western-australia-html-proposed.html); content-diff vs capture: main /Users/catalan/repos/ai/migration-tests/stardust-benchmark/sd-25-pi-opus-5-5-0004/stardust/.work/replica/bg/art-cd-us-en-magazine-western-australia-html.log: 24 lines, 6 match /source:|build:/|  source: 26 8 headings, 2 eyebrows, 8 CTAs, 8 body; 5 img| 0 structural (art-cd-us-en-magazine-western-australia-html.log)",
+    "pixel-gate-1440": "0.00% (195 px, threshold 10%), height delta 0px, round sib @1440 (us-en-magazine-western-australia-html-1440.log) [prototype regime]",
+    "pixel-gate-360": "0.01% (499 px, threshold 10%), height delta 0px, round sib @360 (us-en-magazine-western-australia-html-360.log) [prototype regime]",
+    "content-count": "content-diff: 3 (0 structural 🔴) (art-cd-us-en-magazine-western-australia-html.log)",
+    "media-reconcile": "n/a: no delivered content file yet (content/us/en/magazine/western-australia.html) — media-reconcile runs in the delivery chain (row C)",
+    "delivery-lint": "FAIL: 0 P0 · 1 P1 · 1 P2 (delivery-lint --path /us/en/magazine/western-australia)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 70,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/us/es.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/de.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/it.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/de/de.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/es/es.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/it/it.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/us/en/faqs.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/us/en/faqs.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/us/en/faqs.html",
+      "reason": "in-inventory-not-migrated"
+    }
+  ],
+  "outputPath": "us/en/magazine/western-australia.html",
+  "outputPathDefault": null,
+  "sidecar": "us/en/magazine/western-australia._meta.json",
+  "driverVersion": "1"
+}

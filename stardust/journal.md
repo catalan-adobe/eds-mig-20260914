@@ -91,3 +91,28 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 - Extract's intercepted latin-ext woff2 have different advances than live's latin subsets — canon.css uses the page's own google-fonts subsets; deploy must self-host those, not stardust/current/assets/fonts.
 
 **Open questions:** EDS/DA target for Phase 5 (still unnamed → delivery stops before the DA PUT); .container-fixed back-port decision at rollout C0.
+
+---
+
+## Migrate — plan + render + state-and-report: 64/64 pages migrated at sibling tier (2026-09-24)
+
+**Prompt:** Migrate siblings (replica flow, hands-off, ALL pages). 9 cluster subagents fanned out (one per page type: landing, listing, magazine, program, article, static, faq, unique, stub); this section is the coordinator's bookkeeping.
+
+**Result:** 64 rendered into `stardust/migrated/` (43 MB, 230 bundled assets, self-contained), 0 failed, 0 stale. Branches: Path A 9 archetypes (approved prototype verbatim), Path A' 55 template-applied siblings (31 program, 11 article, 8 stub, 1 each landing/listing/magazine/static/faq), Path B 0. Every page: contentFidelity pass, content-count equal in every role (main/header/footer, 0 structural 🔴 vs live; the 3 🟡 per page are the header search x-template rename, A10), pixel bar 1440 0.00–0.03 % / Δ0 and 360 0.02–4.41 % / |Δh| ≤ 3 px, no horizontal overflow. Variance probes: 0 deltas on landing/listing/faq/stub; content-shape deltas only on magazine/static/article/program except the budgeted variants below.
+
+**Variants (variance budget, additive CSS appended to the archetype's page CSS, never a fork):**
+- `program-grid` ×16 (program: AEM grid-column breadcrumb/container/facts, share beside facts ≤1024) + `.fragment__body{display:flow-root}` and `.image__title` in `us-en-adventures-riverside-camping-australia-html.css`.
+- `grid--figure` ×10, `text--plain-quote` ×2, `download--pdf` ×2, `image--captioned` ×2, `article-body--inline-headings` ×2 (article) in `us-en-magazine-western-australia-html.css`; empty AEM paragraph systems kept as `.grid--empty` flow-root (margin-collapse barrier, san-diego Δh 54 px otherwise).
+- `footer--locale-ca` ×4 (magazine, static, faq siblings; CA chrome = archetype chrome re-localised + the Canadian footer paragraph verbatim from the gated CA archetype), `teaser-list--linked-cta` ×1 (magazine CA: linked Read More on secure teasers, existing rules cover it).
+
+**Decisions:** `state.mjs advance <slug> --to migrated --migrated <path>` for all 64 (55 extracted→migrated, 9 approved→migrated). `state.json.migrate` merged from the nine cluster work copies (`stardust/.work/migrate/<archetype>/state.json`; page maps verified identical; pages 64, bundledAssets 230 = files on disk, missingAssets 0). 18 migrationDecisions and 3 contentDeviations recorded on sidecars (program archetype: two alt texts truncated ~85 chars in the approved prototype, kept verbatim; guide-la-skateparks US+CA: PDF not in media capture, href absolute pending media-reconcile).
+
+**Named hands-off assumptions:** A13 clusters ran `migrate.mjs` against private state copies (siblings set `directed` there) and `gate-evidence.mjs --progress` redirected to their work dirs — shared `stardust/replica/progress.json` not rolled up this phase. A14 content-diff reference = live URL or a capture served with its clientlibs (unstyled capture yields role-swap/icon 🔴 artefacts). A15 sibling `<link rel=canonical>` follows the archetype of its type (present on magazine/article/static/faq/landing, absent on program). A16 CA chrome derived from the gated `ca-en-magazine-members-only-html` archetype, language-nav hrefs = captured page-level values. A17 `run-bg.mjs clean` by one cluster swept other clusters' ENDED job records mid-run; evidence JSON was saved beforehand, results unaffected.
+
+**OPEN for deploy/rollout:**
+- Cross-page links: 55 pages carry `href="https://wknd.site/…"` for in-inventory pages that were not yet migrated when that cluster rendered (766 driver 'broken' counts, all `in-inventory-not-migrated`). Now that all 64 are migrated, re-run `migrate.mjs render --all --force` (sibling `--source` = each cluster's built sibling HTML under `stardust/.work/migrate/<archetype>/`) or let deploy's link transform resolve them before any PUT.
+- delivery-lint P0 `no <h1>` on landing (2) + stub (9) = 11 pages — a SOURCE property (teaser title is h2); replica adds none → inconsistency-register / lint-allowlist decision at rollout row 6.
+- delivery-lint P1 html-extension on 19 pages (canonical / language-nav self-link `.html`, carried verbatim from live) — deploy's extensionless rewrite owns it. P2 no-metadata-block everywhere (expected pre-deploy).
+- Register `program-grid` + the program/article CSS additions in the canon/variant registry at rollout C0 together with the deferred module promotions.
+
+**Artifacts touched:** stardust/migrated/** (64 html + 64 _meta.json + assets/) · stardust/prototypes/us-en-adventures-riverside-camping-australia-html.css · stardust/prototypes/us-en-magazine-western-australia-html.css · stardust/state.json · stardust/status.jsonl · stardust/journal.md · stardust/replica/gates/<slug>-<w>/ (sibling rounds) · stardust/.work/migrate/** (cluster builders, probes, state copies)

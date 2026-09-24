@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<!-- stardust:migrate
+  writtenBy:        stardust:migrate
+  writtenAt:        2026-09-24T09:50:09Z
+  page:             About Us
+  slug:             ca-en-about-us-html
+  pagePath:         migrated/ca/en/about-us.html
+  renderBranch:     A'
+  template:         us-en-about-us-html
+  archetypePath:    stardust/prototypes/us-en-about-us-html-proposed.html
+  archetypeSha:     36add13368a6
+  sourceCurrent:    stardust/current/pages/ca-en-about-us-html.json
+  againstDirection: stardust/.work/migrate/us-en-about-us-html/direction.md (absent)
+  designMd:         DESIGN.md (sha: a0cc7c463efa)
+  designJson:       DESIGN.json (sha: ac6c69c90e4b)
+  canonShas:        header:2f6509ccf403 footer:3c5e78533606 css:5eff5bd0b8a7
+  decisionTrace:    about-us._meta.json
+  brokenInternalLinks: 12
+  stardustVersion:  local
+-->
+<style>
+:root {
+  /* stardust token contract */
+  --heading-font-family: "Asar", Georgia, "Times New Roman", Times, serif;
+  --body-font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --heading-xxl: 40px;   /* h1 */
+  --heading-xl: 36px;    /* h2 */
+  --heading-lg: 24px;    /* h3 */
+  --heading-md: 16px;    /* h4 */
+  --body: 18px;
+  --body-sm: 14px;
+  --body-xs: 12px;
+
+  --line-height-heading: 1.5;
+  --line-height-body: 1.5;
+
+  --color-bg: #fff;
+  --color-fg: #202020;
+  --color-accent: #ffea00;
+  --color-secondary: #202020;
+  --color-third: #ebebeb;
+  --color-fg-inverse: #ebebeb;
+  --color-fg-inverse-soft: #f7f7f7;
+  --color-link: #0045ff;
+  --color-muted: dimgray;
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 14px;    /* AEM column gutter */
+  --spacing-lg: 28px;
+  --spacing-xl: 48px;
+  --spacing-2xl: 72px;
+
+  --section-padding: 0px;
+  --max-width: 1164px;   /* 873pt fixed layout container */
+  --radius: 0px;
+
+  /* site-specific lifted tokens */
+  --header-height: 200px;
+  --header-mobile-height: 130px;
+  --utility-nav-height: 25px;
+  --button-size: 48px;
+  --font-weight-bold: 600;
+}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"About Us","description":"WKND is a collective of outdoors, music, crafts, adventure sports, and travel enthusiasts that want to share our experiences, connections, and expertise with the world. ","url":"/ca/en/about-us.html"}</script>
+<meta charset="utf-8">
+<title>About Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="WKND is a collective of outdoors, music, crafts, adventure sports, and travel enthusiasts that want to share our experiences, connections, and expertise with the world. ">
+<meta name="template" content="content-page-template">
+<link rel="canonical" href="/ca/en/about-us.html">
+<link rel="icon" href="../../assets/images/favicon.png">
+<link rel="stylesheet" href="../../assets/canon.css">
+<link rel="stylesheet" href="../../assets/us-en-about-us-html.css">
+</head>
+<body class="basicpage anonymous" data-template="content-page" data-stardust-replica="ca-en-about-us-html">
+<div class="site-root">
+
+<header class="site-header" data-section="site-header" data-intent="global navigation" data-layout="full-bleed">
+  <div class="utility-bar" data-section="utility-bar" data-intent="account and locale" data-layout="full-bleed">
+    <div class="utility-bar__inner">
+      <div class="col utility-bar__account">
+        <div class="account-buttons">
+          <span class="account-buttons__button account-buttons__button--greeting">Welcome</span>
+          <a href="#sign-in" class="account-buttons__button account-buttons__button--sign-in">Sign In</a>
+          <a href="#sign-out" class="account-buttons__button account-buttons__button--sign-out">Sign Out</a>
+        </div>
+      </div>
+      <div class="col utility-bar__language">
+        <div class="language-nav__toggle"><a id="langNavToggleHeader" style="background-image:url('../../assets/images/flag-CA.svg')" href="#langNavToggle" aria-label="Toggle Language en-CA">en-CA</a></div>
+        <nav class="language-nav__menu" role="navigation">
+          <ul class="language-nav__group">
+            <li class="language-nav__item language-nav__item--country language-nav__item--US">
+              <span class="language-nav__title">United States</span>
+              <ul class="language-nav__group">
+                <li class="language-nav__item language-nav__item--locale"><a href="../../us/en/about-us.html" class="language-nav__link" hreflang="en-US" lang="en-US" rel="alternate" title="WKND Adventures and Travel">en-US</a></li>
+                <li class="language-nav__item language-nav__item--locale"><a href="https://wknd.site/us/es.html" class="language-nav__link" hreflang="es-US" lang="es-US" rel="alternate" title="Español" data-broken-link="true">es-US</a></li>
+              </ul>
+            </li>
+            <li class="language-nav__item language-nav__item--country language-nav__item--CA">
+              <span class="language-nav__title">Canada</span>
+              <ul class="language-nav__group">
+                <li class="language-nav__item language-nav__item--locale is-active"><a href="../../ca/en/about-us.html" class="language-nav__link" hreflang="en-CA" lang="en-CA" rel="alternate" title="WKND Adventures and Travel">en-CA</a></li>
+                <li class="language-nav__item language-nav__item--locale"><a href="https://wknd.site/ca/fr.html" class="language-nav__link" hreflang="fr-CA" lang="fr-CA" rel="alternate" title="Français" data-broken-link="true">fr-CA</a></li>
+              </ul>
+            </li>
+            <li class="language-nav__item language-nav__item--country language-nav__item--CH">
+              <span class="language-nav__title">Switzerland</span>
+              <ul class="language-nav__group">
+                <li class="language-nav__item language-nav__item--locale"><a href="https://wknd.site/ch/de.html" class="language-nav__link" hreflang="de-CH" lang="de-CH" rel="alternate" title="Deutsch" data-broken-link="true">de-CH</a></li>
+                <li class="language-nav__item language-nav__item--locale"><a href="https://wknd.site/ch/fr.html" class="language-nav__link" hreflang="fr-CH" lang="fr-CH" rel="alternate" title="Français" data-broken-link="true">fr-CH</a></li>
+                <li class="language-nav__item language-nav__item--locale"><a href="https://wknd.site/ch/it.html" class="language-nav__link" hreflang="it-CH" lang="it-CH" rel="alternate" title="Italiano" data-broken-link="true">it-CH</a></li>
+              </ul>
+            </li>
+            <li class="language-nav__item language-nav__item--country language-nav__item--DE">
+              <span class="language-nav__title">Germany</span>
+              <ul class="language-nav__group">
+                <li class="language-nav__item language-nav__item--locale"><a href="https://wknd.site/de/de.html" class="language-nav__link" hreflang="de-DE" lang="de-DE" rel="alternate" title="Deutsch" data-broken-link="true">de-DE</a></li>
+              </ul>
+            </li>
+            <li class="language-nav__item language-nav__item--country language-nav__item--FR">
+              <span class="language-nav__title">France</span>
+              <ul class="language-nav__group">
+                <li class="language-nav__item language-nav__item--locale"><a href="https://wknd.site/fr/fr.html" class="language-nav__link" hreflang="fr-FR" lang="fr-FR" rel="alternate" title="Français" data-broken-link="true">fr-FR</a></li>
+              </ul>
+            </li>
+            <li class="language-nav__item language-nav__item--country language-nav__item--ES">
+              <span class="language-nav__title">Spain</span>
+              <ul class="language-nav__group">
+                <li class="language-nav__item language-nav__item--locale"><a href="https://wknd.site/es/es.html" class="language-nav__link" hreflang="es-ES" lang="es-ES" rel="alternate" title="Español" data-broken-link="true">es-ES</a></li>
+              </ul>
+            </li>
+            <li class="language-nav__item language-nav__item--country language-nav__item--IT">
+              <span class="language-nav__title">Italy</span>
+              <ul class="language-nav__group">
+                <li class="language-nav__item language-nav__item--locale"><a href="https://wknd.site/it/it.html" class="language-nav__link" hreflang="it-IT" lang="it-IT" rel="alternate" title="Italiano" data-broken-link="true">it-IT</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="masthead" data-section="masthead" data-intent="brand and primary navigation" data-layout="contained">
+    <div class="grid-inner masthead__inner">
+      <div class="col masthead__logo">
+        <div class="logo"><a href="../../ca/en.html"><img src="../../assets/media/wknd-logo-dk.svg" alt="WKND Logo"></a></div>
+      </div>
+      <div class="col masthead__nav">
+        <nav class="nav" role="navigation">
+          <ul class="nav__group">
+            <li class="nav__item nav__item--root nav__item--active"><a href="../../ca/en.html" class="nav__link">Home</a>
+              <ul class="nav__group">
+                <li class="nav__item nav__item--child"><a href="../../ca/en/magazine.html" class="nav__link">Magazine</a></li>
+                <li class="nav__item nav__item--child"><a href="../../ca/en/adventures.html" class="nav__link">Adventures</a></li>
+                <li class="nav__item nav__item--child"><a href="https://wknd.site/ca/en/faqs.html" class="nav__link" data-broken-link="true">FAQs</a></li>
+                <li class="nav__item nav__item--child nav__item--active"><a href="../../ca/en/about-us.html" class="nav__link">About Us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col masthead__search">
+        <section class="search" role="search" data-cmp-min-length="3" data-cmp-results-size="5">
+          <form class="search__form" method="get" action="/content/wknd/ca/en.searchresults.json/_jcr_content/root/container/container_1195249223/search" autocomplete="off">
+            <div class="search__field">
+              <i class="search__icon"></i>
+              <span class="search__loading-indicator"></span>
+              <input class="search__input" type="text" name="fulltext" placeholder="Search" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-invalid="false" aria-expanded="false" aria-owns="search-results">
+              <button class="search__clear" type="button" aria-label="Clear"><i class="search__clear-icon"></i></button>
+            </div>
+          </form>
+          <div class="search__results" aria-label="Search results" role="listbox" aria-multiselectable="false" id="search-results"></div>
+          <script type="x-template" class="search__item-template"><a class="search__item" role="option" aria-selected="false"><span class="search__item-title"></span></a></script>
+        </section>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<main class="container" data-template="content-page">
+  <div class="container-fixed" data-section="1">
+
+    <section class="col" data-section="page-title" data-intent="page heading" data-layout="contained" data-module="title">
+      <div class="title"><h1 class="title__text">About Us</h1></div>
+    </section>
+
+    <section class="col title--underline" data-section="contributors-title" data-intent="section heading" data-layout="contained" data-module="title">
+      <div class="title"><h2 class="title__text">Our Contributors</h2></div>
+    </section>
+
+    <section class="col text--font-small" data-section="contributors-intro" data-intent="section lead" data-layout="contained" data-module="text">
+      <div class="text"><p><i>Meet the outstanding individuals responsible for bringing you the most compelling stories across the globe.</i></p></div>
+    </section>
+
+    <section class="col col--3 contributor" data-section="contributor-stacey-roswells" data-intent="team member profile" data-layout="card" data-module="contributor">
+      <div class="contributor__inner">
+        <div class="container-fixed contributor__body">
+          <div class="image contributor__image"><img src="../../assets/media/stacey-roswells.jpeg" alt="" width="1200" height="799" loading="lazy"></div>
+          <div class="title contributor__name"><h3 class="title__text">Stacey Roswells</h3></div>
+          <div class="title title--black contributor__role"><h5 class="title__text">Artist | Photographer | Traveler</h5></div>
+          <div class="button-list contributor__links">
+            <div class="button-list__grid">
+              <div class="col button--secondary button--icononly"><a href="#facebook-staceyroswell" class="button" aria-label="Facebook Social Media"><span class="button__icon button__icon--facebook icon" aria-hidden="true"></span><span class="button__text">Facebook</span></a></div>
+              <div class="col button--secondary button--icononly"><a href="#twitter-staceyroswells" class="button" aria-label="Twitter Social Media"><span class="button__icon button__icon--twitter icon" aria-hidden="true"></span><span class="button__text">Twitter</span></a></div>
+              <div class="col button--secondary button--icononly"><a href="#insta-staceyroswells" class="button" aria-label="Instagram Social Media"><span class="button__icon button__icon--instagram icon" aria-hidden="true"></span><span class="button__text">Instagram</span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="col col--3 contributor" data-section="contributor-jake-hammer" data-intent="team member profile" data-layout="card" data-module="contributor">
+      <div class="contributor__inner">
+        <div class="container-fixed contributor__body">
+          <div class="image contributor__image"><img src="../../assets/media/alex-iby-343837.jpeg" alt="" width="1200" height="799" loading="lazy"></div>
+          <div class="title contributor__name"><h3 class="title__text">Jake Hammer</h3></div>
+          <div class="title contributor__role"><h5 class="title__text">Influencer | Writer</h5></div>
+          <div class="button-list contributor__links">
+            <div class="button-list__grid">
+              <div class="col button--secondary button--icononly"><a href="#facebook-jakehammer" class="button" aria-label="Facebook jakehammer"><span class="button__icon button__icon--facebook icon" aria-hidden="true"></span><span class="button__text">Facebook</span></a></div>
+              <div class="col button--secondary button--icononly"><a href="#twitter-jakehammer" class="button" aria-label="Twitter"><span class="button__icon button__icon--twitter icon" aria-hidden="true"></span><span class="button__text">Twitter</span></a></div>
+              <div class="col button--secondary button--icononly"><a href="#instagram-jakehammer" class="button" aria-label="instagram jakehammer"><span class="button__icon button__icon--instagram icon" aria-hidden="true"></span><span class="button__text">Instagram</span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="col col--3 contributor" data-section="contributor-ian-provo" data-intent="team member profile" data-layout="card" data-module="contributor">
+      <div class="contributor__inner">
+        <div class="container-fixed contributor__body">
+          <div class="image contributor__image"><img src="../../assets/media/ian-provo.jpeg" alt="" width="1200" height="799" loading="lazy"></div>
+          <div class="title contributor__name"><h3 class="title__text">Ian Provo</h3></div>
+          <div class="title contributor__role"><h5 class="title__text">Photographer</h5></div>
+          <div class="button-list contributor__links">
+            <div class="button-list__grid">
+              <div class="col button--secondary button--icononly"><a href="#facebook-ianprovo" class="button" aria-label="Facebook Ian provo"><span class="button__icon button__icon--facebook icon" aria-hidden="true"></span><span class="button__text">Facebook</span></a></div>
+              <div class="col button--secondary button--icononly"><a href="#twitter-ianprovo" class="button" aria-label="Twitter Ian provo"><span class="button__icon button__icon--twitter icon" aria-hidden="true"></span><span class="button__text">Twitter</span></a></div>
+              <div class="col button--secondary button--icononly"><a href="#instagram-ianprovo" class="button" aria-label="instagram Ian provo"><span class="button__icon button__icon--instagram icon" aria-hidden="true"></span><span class="button__text">Instagram</span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="col col--3 contributor" data-section="contributor-jacob-wester" data-intent="team member profile" data-layout="card" data-module="contributor">
+      <div class="contributor__inner">
+        <div class="container-fixed contributor__body">
+          <div class="image contributor__image"><img src="../../assets/media/jacob-wester.jpeg" alt="" width="1200" height="799" loading="lazy"></div>
+          <div class="title contributor__name"><h3 class="title__text">Jacob Wester</h3></div>
+          <div class="title contributor__role"><h5 class="title__text">Skater | Writer</h5></div>
+          <div class="button-list contributor__links">
+            <div class="button-list__grid">
+              <div class="col button--secondary button--icononly"><a href="#jacob-wester" class="button" aria-label="Facebook"><span class="button__icon button__icon--facebook icon" aria-hidden="true"></span><span class="button__text">Facebook</span></a></div>
+              <div class="col button--secondary button--icononly"><a href="#jacob-wester" class="button" aria-label="Twitter"><span class="button__icon button__icon--twitter icon" aria-hidden="true"></span><span class="button__text">Twitter</span></a></div>
+              <div class="col button--secondary button--icononly"><a href="#jacob-wester" class="button" aria-label="instagram"><span class="button__icon button__icon--instagram icon" aria-hidden="true"></span><span class="button__text">Instagram</span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="col title--underline" data-section="guides-title" data-intent="section heading" data-layout="contained" data-module="title">
+      <div class="title"><h2 class="title__text">WKND Guides</h2></div>
+    </section>
+
+    <section class="col text--font-small" data-section="guides-intro" data-intent="section lead" data-layout="contained" data-module="text">
+      <div class="text"><p><i>Meet our extraordinary travel guides. When you travel with a certified WKND guide you gain access to attractions and perspectives not found on the pages of a guide book.</i></p></div>
+    </section>
+
+    <section class="col col--3 contributor" data-section="contributor-sofia-sjoberg" data-intent="team member profile" data-layout="card" data-module="contributor">
+      <div class="contributor__inner">
+        <div class="container-fixed contributor__body">
+          <div class="image contributor__image"><img src="../../assets/media/ayo-ogunseinde-237739.jpeg" alt="" width="1200" height="799" loading="lazy"></div>
+          <div class="title contributor__name"><h3 class="title__text">Sofia Sjöberg</h3></div>
+          <div class="title contributor__role"><h5 class="title__text">Photographer | Youtuber</h5></div>
+          <div class="button-list contributor__links">
+            <div class="button-list__grid">
+              <div class="col button--secondary button--icononly"><a href="#" class="button" aria-label="Facebook"><span class="button__icon button__icon--facebook icon" aria-hidden="true"></span><span class="button__text">Facebook</span></a></div>
+              <div class="col button--secondary button--icononly"><a href="#" class="button" aria-label="Twitter"><span class="button__icon button__icon--twitter icon" aria-hidden="true"></span><span class="button__text">Twitter</span></a></div>
+              <div class="col button--secondary button--icononly"><a href="#" class="button" aria-label="instagram"><span class="button__icon button__icon--instagram icon" aria-hidden="true"></span><span class="button__text">Instagram</span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="col col--3 contributor" data-section="contributor-justin-barr" data-intent="team member profile" data-layout="card" data-module="contributor">
+      <div class="contributor__inner">
+        <div class="container-fixed contributor__body">
+          <div class="image contributor__image"><img src="../../assets/media/justin-barr.jpeg" alt="" width="1200" height="799" loading="lazy"></div>
+          <div class="title contributor__name"><h3 class="title__text">Justin Barr</h3></div>
+          <div class="title contributor__role"><h5 class="title__text">Artist | Rock Climber</h5></div>
+          <div class="button-list contributor__links">
+            <div class="button-list__grid">
+              <div class="col button--secondary button--icononly"><a href="#" class="button" aria-label="Facebook"><span class="button__icon button__icon--facebook icon" aria-hidden="true"></span><span class="button__text">Facebook</span></a></div>
+              <div class="col button--secondary button--icononly"><a href="#" class="button" aria-label="Twitter"><span class="button__icon button__icon--twitter icon" aria-hidden="true"></span><span class="button__text">Twitter</span></a></div>
+              <div class="col button--secondary button--icononly"><a href="#" class="button" aria-label="instagram"><span class="button__icon button__icon--instagram icon" aria-hidden="true"></span><span class="button__text">Instagram</span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="col col--3 contributor" data-section="contributor-kumar-selveraj" data-intent="team member profile" data-layout="card" data-module="contributor">
+      <div class="contributor__inner">
+        <div class="container-fixed contributor__body">
+          <div class="image contributor__image"><img src="../../assets/media/kumar-selvaraj.jpeg" alt="" width="1200" height="799" loading="lazy"></div>
+          <div class="title contributor__name"><h3 class="title__text">Kumar Selveraj</h3></div>
+          <div class="title contributor__role"><h5 class="title__text">Photographer | Surfer</h5></div>
+          <div class="button-list contributor__links">
+            <div class="button-list__grid">
+              <div class="col button--secondary button--icononly"><a href="#selveraj" class="button" aria-label="Facebook"><span class="button__icon button__icon--facebook icon" aria-hidden="true"></span><span class="button__text">Facebook</span></a></div>
+              <div class="col button--secondary button--icononly"><a href="#selveraj" class="button" aria-label="instagram"><span class="button__icon button__icon--instagram icon" aria-hidden="true"></span><span class="button__text">Instagram</span></a></div>
+              <div class="col button--secondary button--icononly"><a href="#selveraj" class="button" aria-label="Twitter"><span class="button__icon button__icon--twitter icon" aria-hidden="true"></span><span class="button__text">Twitter</span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer" data-section="site-footer" data-intent="secondary navigation and legal" data-layout="full-bleed">
+  <div class="site-footer__inner">
+    <div class="grid-inner site-footer__grid">
+      <div class="col site-footer__logo">
+        <div class="logo"><a href="../../ca/en.html"><img src="../../assets/media/wknd-logo-light.svg" alt="WKND Logo"></a></div>
+      </div>
+      <div class="col site-footer__nav">
+        <nav class="nav" aria-label="Footer navigation" role="navigation">
+          <ul class="nav__group">
+            <li class="nav__item nav__item--root nav__item--active"><a href="../../ca/en.html" class="nav__link">Home</a>
+              <ul class="nav__group">
+                <li class="nav__item nav__item--child"><a href="../../ca/en/magazine.html" class="nav__link">Magazine</a></li>
+                <li class="nav__item nav__item--child"><a href="../../ca/en/adventures.html" class="nav__link">Adventures</a></li>
+                <li class="nav__item nav__item--child"><a href="https://wknd.site/ca/en/faqs.html" class="nav__link" data-broken-link="true">FAQs</a></li>
+                <li class="nav__item nav__item--child nav__item--active"><a href="../../ca/en/about-us.html" class="nav__link">About Us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col site-footer__follow title--right title--white">
+        <div class="title"><h4 class="title__text">Follow Us</h4></div>
+      </div>
+      <div class="col site-footer__social">
+        <div class="button-list">
+          <div class="col button--icononly"><a href="#facebookwknd" class="button" aria-label="Facebook WKND Button"><span class="button__icon button__icon--facebook icon" aria-hidden="true"></span><span class="button__text">Facebook</span></a></div>
+          <div class="col button--icononly"><a href="#twitterWKND" class="button" aria-label="Twitter WKND Button"><span class="button__icon button__icon--twitter icon" aria-hidden="true"></span><span class="button__text">Twitter</span></a></div>
+          <div class="col button--icononly"><a href="#instagramwknd" class="button" aria-label="Instagram WKND"><span class="button__icon button__icon--instagram icon" aria-hidden="true"></span><span class="button__text">Instagram</span></a></div>
+        </div>
+      </div>
+      <div class="col separator--hidden separator--space-small">
+        <div class="separator"><hr class="separator__rule"></div>
+      </div>
+      <div class="col site-footer__text">
+        <div class="text">
+<p>Canadian specific footer. This footer serves as an example of <a title="localization" href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html" target="_blank" rel="noopener noreferrer">localization features with Core Components&nbsp;</a></p>
+        </div>
+      </div>
+      <div class="col site-footer__text">
+        <div class="text">
+<p>Ⓒ 2019,&nbsp;&nbsp;WKND Site.</p>
+<p>WKND is a fictitious adventure and travel website created by Adobe to demonstrate how anyone can use Adobe Experience Manager to build a beautiful, feature-rich website over a single weekend. This site is built entirely with Adobe Experience Manager&nbsp;<a href="https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html">Core Components</a>&nbsp;and&nbsp;<a href="https://github.com/adobe/aem-project-archetype">Archetype</a>&nbsp;that are available as open source code to the public. The entire&nbsp;<a href="https://github.com/adobe/aem-guides-wknd/">site source code</a>&nbsp;is available as open source as well and is accompanied with a&nbsp;<a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">detailed tutorial</a>&nbsp;on how to recreate the site.</p>
+<p>Many of the beautiful images in the WKND site are available for purchase via&nbsp;<a href="https://stock.adobe.com/">Adobe Stock</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<div id="toggleNav"><a href="#mobileNav" aria-label="Open hidden mobile navigation" class="toggle"><i class="icon icon--menu" aria-hidden="true"></i></a></div>
+<div id="mobileNav" class="nav--mobile">
+  <nav class="nav">
+    <ul class="nav__group">
+      <li class="nav__item nav__item--root nav__item--active"><a href="../../ca/en.html" class="nav__link">Home</a>
+        <ul class="nav__group">
+          <li class="nav__item nav__item--child"><a href="../../ca/en/magazine.html" class="nav__link">Magazine</a></li>
+          <li class="nav__item nav__item--child"><a href="../../ca/en/adventures.html" class="nav__link">Adventures</a></li>
+          <li class="nav__item nav__item--child"><a href="https://wknd.site/ca/en/faqs.html" class="nav__link" data-broken-link="true">FAQs</a></li>
+          <li class="nav__item nav__item--child nav__item--active"><a href="../../ca/en/about-us.html" class="nav__link">About Us</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<script src="../../assets/canon.js"></script>
+</body>
+</html>

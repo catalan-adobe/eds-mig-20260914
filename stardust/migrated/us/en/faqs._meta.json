@@ -1,0 +1,97 @@
+{
+  "slug": "us-en-faqs-html",
+  "type": "faq",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "accordion"
+  ],
+  "slotsFilled": [
+    "col",
+    "col"
+  ],
+  "canonShas": {
+    "header": "08012cfc16e0",
+    "footer": "a4bde4b5be38",
+    "css": "5eff5bd0b8a7"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "FAQs",
+    "description": "Here we answer some of the questions that we hear most often from the community.",
+    "canonical": "/us/en/faqs.html",
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "FAQs",
+    "description": "Here we answer some of the questions that we hear most often from the community.",
+    "url": "/us/en/faqs.html"
+  },
+  "migratedAt": "2026-09-24T10:01:17Z",
+  "designMdSha": "a0cc7c463efa",
+  "designJsonSha": "ac6c69c90e4b",
+  "sourceCurrentSha": "9b5b8b905f9e",
+  "sourceProposedSha": "1f3aea87a028",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "content-fidelity",
+    "content-count"
+  ],
+  "gateEvidence": {
+    "content-fidelity": "Path A: approved prototype verbatim; content-diff main 22=22 text nodes, 2=2 headings, 2=2 CTAs, 1=1 img; header 28=28; footer 17=17 (faq-cd2-us.log)",
+    "media-reconcile": "n/a: no delivered content file yet (content/us/en/faqs.html) — media-reconcile runs in the delivery chain (row C)",
+    "delivery-lint": "FAIL: 0 P0 · 1 P1 · 1 P2 (delivery-lint --path /us/en/faqs)",
+    "content-count": "content-diff: 3 (0 structural 🔴) (faq-cd3-us.log)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 63,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/us/es.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ca/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/de.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/ch/it.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/de/de.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/fr.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/es/es.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/it/it.html",
+      "reason": "in-inventory-not-migrated"
+    }
+  ],
+  "outputPath": "us/en/faqs.html",
+  "outputPathDefault": null,
+  "sidecar": "us/en/faqs._meta.json",
+  "driverVersion": "1"
+}
