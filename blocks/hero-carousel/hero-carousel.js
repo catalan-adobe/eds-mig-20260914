@@ -12,9 +12,11 @@
  * Every authored node MOVES (EW1): heading → .teaser-content, description paragraphs →
  * .teaser-description, CTA paragraphs → .teaser-actions (EW3), the image → .image; wrappers
  * carry the layout classes (EW2). The Previous / Next labels are generated control text, not
- * authored content. Interaction as the live clientlib (stardust/prototypes/canon.js § carousel):
- * prev/next wrap, indicator click selects; the source markup carries no data-cmp-autoplay,
- * so no autoplay. Re-entrant (EW9).
+ * authored content; each indicator dot carries the slide heading's text as a hidden text
+ * node (font-size 0, the source's Core Components indicator text) — a presentational
+ * duplicate, the heading itself stays in .teaser-content. Interaction as the live clientlib
+ * (stardust/prototypes/canon.js § carousel): prev/next wrap, indicator click selects; the
+ * source markup carries no data-cmp-autoplay, so no autoplay. Re-entrant (EW9).
  */
 function el(tag, className, attrs = {}) {
   const node = document.createElement(tag);
@@ -97,9 +99,14 @@ export default function decorate(block) {
   content.append(actions);
 
   const indicators = el('ol', 'indicators', { role: 'tablist', 'aria-label': 'Choose a slide to display' });
-  const dots = slides.map((slide, i) => el('li', 'indicator', {
-    role: 'tab', 'aria-label': `Slide ${i + 1}`, 'aria-selected': i === 0 ? 'true' : 'false',
-  }));
+  const dots = slides.map((slide, i) => {
+    const dot = el('li', 'indicator', {
+      role: 'tab', 'aria-label': `Slide ${i + 1}`, 'aria-selected': i === 0 ? 'true' : 'false',
+    });
+    const heading = slide.querySelector('h1, h2, h3, h4, h5, h6');
+    if (heading) dot.append(document.createTextNode(heading.textContent));
+    return dot;
+  });
   dots[0].classList.add('indicator-active');
   indicators.append(...dots);
   content.append(indicators);
