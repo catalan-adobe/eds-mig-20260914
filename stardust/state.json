@@ -728,7 +728,7 @@
     }
   ],
   "migrate": {
-    "at": "2026-09-24T09:32:30Z",
+    "at": "2026-09-24T09:42:42Z",
     "outputDir": "stardust/migrated/",
     "selfContained": true,
     "pageMap": [
@@ -1054,13 +1054,9 @@
     "missingAssets": [],
     "cleanedAssets": [],
     "lastRun": {
-      "at": "2026-09-24T09:32:30Z",
+      "at": "2026-09-24T09:42:42Z",
       "rendered": [
-        "us-en-html",
-        "us-en-about-us-html",
-        "us-en-faqs-html",
-        "us-en-adventures-climbing-new-zealand-html",
-        "us-en-magazine-san-diego-surf-html"
+        "us-en-html"
       ],
       "unchanged": [],
       "refused": [],

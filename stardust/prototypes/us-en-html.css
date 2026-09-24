@@ -1,1 +1,4 @@
 /* us-en-html (landing archetype) — page-specific CSS. All modules on this page are shared canon modules; nothing page-only yet. */
+
+/* R-01: first carousel slide title is the page h1; rendered at the h2 size the live page uses */
+.carousel h1.teaser__title { font-size: var(--heading-xl); }
