@@ -1,0 +1,106 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-09-24T07:20:59.365Z",
+    "phase": "preserve-direction",
+    "againstInput": "https://wknd.site/us/en"
+  },
+  "mainSelectorRationale": "header + main — the outer AEM <main class=\"container responsivegrid …\"> directly follows the single <header>; nested layout <main>s make bare main ambiguous (A-PD4)",
+  "archetypes": [
+    {
+      "pageType": "landing",
+      "archetypeSlug": "us-en-html",
+      "type": "landing",
+      "liveUrl": "https://wknd.site/us/en.html",
+      "mainSelector": "header + main",
+      "siblings": [],
+      "status": "pending",
+      "iterations": 0,
+      "breakpoints": {},
+      "motion": null
+    },
+    {
+      "pageType": "listing",
+      "archetypeSlug": "us-en-adventures-html",
+      "type": "listing",
+      "liveUrl": "https://wknd.site/us/en/adventures.html",
+      "mainSelector": "header + main",
+      "siblings": [
+        "us-en-magazine-html"
+      ],
+      "status": "pending",
+      "iterations": 0,
+      "breakpoints": {},
+      "motion": null
+    },
+    {
+      "pageType": "program",
+      "archetypeSlug": "us-en-adventures-climbing-new-zealand-html",
+      "type": "program",
+      "liveUrl": "https://wknd.site/us/en/adventures/climbing-new-zealand.html",
+      "mainSelector": "header + main",
+      "siblings": [
+        "us-en-adventures-bali-surf-camp-html",
+        "us-en-adventures-beervana-portland-html",
+        "us-en-adventures-colorado-rock-climbing-html",
+        "us-en-adventures-cycling-southern-utah-html",
+        "us-en-adventures-cycling-tuscany-html",
+        "us-en-adventures-downhill-skiing-wyoming-html",
+        "us-en-adventures-gastronomic-marais-tour-html",
+        "us-en-adventures-napa-wine-tasting-html",
+        "us-en-adventures-riverside-camping-australia-html",
+        "us-en-adventures-ski-touring-mont-blanc-html",
+        "us-en-adventures-surf-camp-costa-rica-html",
+        "us-en-adventures-tahoe-skiing-html",
+        "us-en-adventures-west-coast-cycling-html",
+        "us-en-adventures-whistler-mountain-biking-html",
+        "us-en-adventures-yosemite-backpacking-html"
+      ],
+      "status": "pending",
+      "iterations": 0,
+      "breakpoints": {},
+      "motion": null
+    },
+    {
+      "pageType": "article",
+      "archetypeSlug": "us-en-magazine-san-diego-surf-html",
+      "type": "article",
+      "liveUrl": "https://wknd.site/us/en/magazine/san-diego-surf.html",
+      "mainSelector": "header + main",
+      "siblings": [
+        "us-en-magazine-arctic-surfing-html",
+        "us-en-magazine-guide-la-skateparks-html",
+        "us-en-magazine-ski-touring-html",
+        "us-en-magazine-western-australia-html"
+      ],
+      "status": "pending",
+      "iterations": 0,
+      "breakpoints": {},
+      "motion": null
+    },
+    {
+      "pageType": "static",
+      "archetypeSlug": "us-en-about-us-html",
+      "type": "static",
+      "liveUrl": "https://wknd.site/us/en/about-us.html",
+      "mainSelector": "header + main",
+      "siblings": [],
+      "status": "pending",
+      "iterations": 0,
+      "breakpoints": {},
+      "motion": null
+    },
+    {
+      "pageType": "unique",
+      "archetypeSlug": "us-en-faqs-html",
+      "type": "unique",
+      "liveUrl": "https://wknd.site/us/en/faqs.html",
+      "mainSelector": "header + main",
+      "siblings": [],
+      "status": "pending",
+      "iterations": 0,
+      "breakpoints": {},
+      "motion": null
+    }
+  ]
+}

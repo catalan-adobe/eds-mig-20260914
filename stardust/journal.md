@@ -38,3 +38,36 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 **Next:** replica Phase 2 — recreate one archetype per page type (home, adventures listing [+ magazine variant], adventure detail, magazine article, about-us, faqs) and gate against the live site.
 
 ---
+
+## Preserve direction — verbatim promotion, empty register, dynamics gate, archetype roster (2026-09-24)
+
+**Prompt:** Replica Phase 2, hands-off: promote the --prep spec verbatim, write direction.md in preserve mode, build the (empty) inconsistency register, run the dynamics gate (detect → plan → curate) against the EDS target origin, confirm the six-archetype roster with live URL + main selector.
+
+**Decisions:**
+- `stardust/current/{PRODUCT.md,DESIGN.md,DESIGN.json}` → project root byte-for-byte (`cmp` clean); no divergence roll, no variant files (A-PD1).
+- Empty register — pure replica; no audit, no user items (A-PD2).
+- Archetype roster = Phase 1 proposal, landing first, 6 types / 26 pages covered (A-PD3); magazine listing stays the declared variant (A-EX4).
+- `mainSelector` = `header + main` on every archetype — bare `main` matches 2–3 nested AEM layout containers (A-PD4).
+- Dynamics: 28 detector rows curated into 11 features, all with a disposition; 4 client-only interaction rows (tabs, carousels, accordion, header toggles) added from Phase 1 evidence because the SSR source reports `client-rendered 0` (A-DY1). Owner decisions ship the interim tier: sign-in decided-out (A-DY2), language nav static with locale hrefs (A-DY3), listings static-snapshot with metadata contract (A-DY4), search index-backed via `helix-query.yaml` (A-DY5), AEM runtime JSON decided-out (A-DY6), tags scaffolded disabled (A-DY7).
+
+**Artifacts touched:**
+- `PRODUCT.md`, `DESIGN.md`, `DESIGN.json` — created (verbatim copies)
+- `stardust/direction.md` — updated (provenance header, preserve-mode record, assumptions A-PD1…A-PD4, A-DY1…A-DY7)
+- `stardust/replica/inconsistency-register.md` — created (empty template + schema comment)
+- `stardust/replica/progress.json` — created (6 archetypes, status pending)
+- `stardust/current/_dynamics.json`, `dynamic-features.generated.md` — created (detector, 6 archetypes, `--reach`)
+- `stardust/dynamics/dynamic-features.generated-plan.{json,md}` — created (`--target-origin` probe: 9/9 API paths host-bound)
+- `stardust/dynamic-features.md`, `stardust/dynamic-features-plan.md`, `stardust/dynamics/parity.json` — created (curated)
+
+**Findings worth flagging:**
+- `/query-index.json` is 404 on `https://main--eds-mig-20260914--catalan-adobe.aem.page` — `helix-query.yaml` must be authored in the code branch at handoff (triage rule 8).
+- Source search endpoint is `https://wknd.site/content/wknd/us/en/<page>.searchresults.json/_jcr_content/root/container/container_1195249223/search?fulltext=` (the `/us/en/...` short form 404s); `surf` → 3 results (Surf Camp in Costa Rica, Bali Surf Camp, San Diego Surf Spots).
+- `wkndsitewknd887971p.112.2o7.net` is Adobe Analytics (Omniture) collection, not an unknown vendor.
+- Every archetype: one `<header>` directly followed by the outer `<main class="container responsivegrid aem-GridColumn aem-GridColumn--default--12">`, then `<footer>`, all inside `.root > .cmp-container > .aem-Grid`.
+
+**Open questions:**
+- none (hands-off; owner decision batch recorded in `stardust/dynamic-features.md § Decision batch`)
+
+**Next:** replica Phase 3 — recreate the landing archetype (`us-en-html`, canon chrome) first, then the five other archetypes, each as clean HTML/CSS under `stardust/prototypes/`, gated with `header + main` as the main selector.
+
+---
