@@ -7,7 +7,7 @@
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-09-24T13:49:07.324Z",
+  "generatedAt": "2026-09-24T14:04:28.499Z",
   "pages": [
     {
       "slug": "ca-en-about-us-html",
@@ -249,9 +249,9 @@
         "image-list"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://sd-25-fable-replica--eds-mig-20260914--catalan-adobe.aem.page/ca/en/adventures",
+        "deployedAt": "2026-09-24T14:04:28.499Z",
         "verifiedAt": null,
         "error": null
       }
@@ -1154,9 +1154,9 @@
         "image-list"
       ],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://sd-25-fable-replica--eds-mig-20260914--catalan-adobe.aem.page/us/en/adventures",
+        "deployedAt": "2026-09-24T14:04:28.458Z",
         "verifiedAt": null,
         "error": null
       }
