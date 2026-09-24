@@ -195,8 +195,14 @@ main:has(> .section.hero-carousel-container) {
 }
 
 @media (width >= 1165px) {
-  .hero-carousel .teaser .image {
+  /* live L367 sizes the inner .image box too — that definite 640px is what lets
+     the img's height: 100% resolve (flex-basis 0% leaves the flex item indefinite) */
+  .hero-carousel .teaser .image,
+  .hero-carousel .teaser .image picture {
     height: 640px;
+  }
+
+  .hero-carousel .teaser .image {
     max-height: 640px;
   }
 
