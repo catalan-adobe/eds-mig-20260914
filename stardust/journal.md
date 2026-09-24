@@ -627,3 +627,5 @@ content/footer.html); `check` → unchanged. progress.json `units.foundation` �
   sibling run (A-D2-4), tags scaffold disabled (DF-07).
 - Artifacts: `stardust/rollout/{report.md,coverage/,optimize/,dashboard/,site/}`,
   `stardust/learnings.md` (7 pending entries), `stardust/qa/dynamics-report.md`.
+
+- Pull request: https://github.com/catalan-adobe/eds-mig-20260914/pull/1 (replica-wknd → main, not merged).

@@ -514,3 +514,8 @@ hands-off judgments made at each gate as named assumptions.
 - **A-H-1 (checkpoint scope):** the final checkpoint stages `stardust/` only; the untracked
   `.agents/` and `.claude/` skill copies stay out of the code branch as in every earlier
   checkpoint (a committed file is served by EDS; they are plugin material, not site code).
+- **A-PR-7 (PR credential):** `gh pr create` under the machine's active EMU account is refused
+  (`createPullRequest` Unauthorized); the PR was opened with the repo-owner token in the
+  process environment only (same rule as A-PR-5) →
+  https://github.com/catalan-adobe/eds-mig-20260914/pull/1. Not merged; content publishes
+  separately.
