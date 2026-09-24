@@ -314,3 +314,18 @@ hands-off judgments made at each gate as named assumptions.
   `--heading-xl` (36px), the live h2 size.
 - **A-C1-6:** Publish decision for this cluster follows the log (§ Publish decision — PUBLISH):
   `deploy-batch.mjs` runs without `--no-publish`.
+
+## Assumptions — C-deliver unit `static` (2026-09-24)
+
+- A-CS-1 (alt text): the source's contributor portraits carry `alt=""`; the delivered page
+  authors the contributor's name as alt. Non-visible, zero pixel effect, an accessibility and
+  AI-readability gain; content text is otherwise verbatim.
+- A-CS-2 (component model): one `contributor-card` block per contributor (the source's one
+  experience fragment per person), several blocks in one section, instead of one block holding
+  the group — the block round-trip maps 1:1 to the seven prototype `section.contributor`s and
+  each person is one authorable table. Layout (25 % floated columns in a 1164px grid) rides the
+  block-scoped section / wrapper rules.
+- A-CS-3 (`aria-label`): DA strips `aria-*` from authored anchors (landing finding); the icon
+  links carry the source label as `title`, and the visible link text (hidden by CSS) stays the
+  accessible name.
+- A-CS-4 (publish): publish = yes, the landing unit's decision, applied unchanged.

@@ -133,6 +133,37 @@ strict 100 % / code 100 %. Published (POST /live 200, aem.live 200).
 
 ## Static cluster — appended by its subagent
 
+Page `us-en-about-us-html` → `/us/en/about-us` (archetype, template us-en-about-us-html, the
+only page of the cluster). Schema `stardust/eds-schema/us-en-about-us-html.json` (10 sections:
+headline, contributors, 4 × column, guides, 3 × column). Media: 7 contributor portraits rehosted
+to `media/wknd/` (`da-media-upload.mjs --manifest`, source fetch 200, plain technique); the
+source's `alt=""` portraits are authored with the contributor's name as alt (non-visible,
+recorded in direction.md). Publish decision: publish (the landing unit's decision, unchanged).
+
+| section (schema) | authored as | block | decode tier |
+|---|---|---|---|
+| headline | default content h1 (own section) | — (D1) | — |
+| contributors / guides | default content h2 + `<p><em>` intro, section style `underline, font-small` | — (D1) | — |
+| column × 7 (contributor) | ONE block per contributor, one row: portrait \| h3 name + h5 role + `<ul>` of 3 icon links (`:facebook:` / `:twitter:` / `:instagram:`, source `aria-label` carried as `title`) — 4 blocks in the contributors section, 3 in the guides section | `contributor-card` | template-slotted (the source is one experience fragment per person; a multi-row block degrades to stacked cards, DA-flattened rows segment on the portrait / name boundary) |
+
+Layout: the section carries the source `.container` (1164px, flow-root) and every
+`.contributor-card-wrapper` the floated `.column` (25 % / 50 % ≤ 1024 / 100 % ≤ 767, 0 14px
+gutters) — both scoped through `main .section.contributor-card-container` in the block CSS.
+`body.static > main` and `body.static main .section > .default-content-wrapper` are
+`flow-root` in the block CSS (live `.page-main` and every `.column` are floats — the h1 → h2 gap
+is 13.5 + 27 = 40.5px, never a collapsed 27px); foundation request filed. Social icons: the
+foundation's `/icons/*.svg` (filled #202020) painted `--color-fg-inverse` with
+`filter: invert(1) brightness(1.05)` (#eaeaea vs #ebebeb) on the dark secondary square.
+
+Gates (harness, structural): `davids-model-lint` 0 🔴 / 0 🟡; `delivery-lint` 0 P0 · 0 P1 · 0 P2;
+`media-reconcile` 7 hosted; `block-roundtrip --ew --map contributor-card=section.contributor`
+7/7 instances closed, 0 🔴, EW 21/21 editable, 0 dead, 0 duplicated; `qa-gate` 23 ok / 8 fail —
+all explained: 2 "broken images" = the frozen chrome logos on `content.da.live` (auth-gated for
+the anonymous harness, as on landing), 7 × "units column renders ≥3" = the schema's repeat unit
+is the 3-button social row (`DIV.button`), a `ul` nested below the block's flex box that the
+grid/flex-child heuristic cannot see — the round-trip proves 3/3 CTAs per instance. Lint
+(`eslint blocks/contributor-card` + `stylelint`) 0 hits.
+
 ## Unique cluster — appended by its subagent
 
 ## Lint environment (prepare finding, 2026-09-24)
