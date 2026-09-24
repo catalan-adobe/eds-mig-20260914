@@ -423,8 +423,10 @@ body.scrolly .header .masthead {
   border: none;
   border-radius: 0;
   color: var(--color-fg);
+  font-family: Arial, sans-serif; /* the source input keeps the UA font (measure.mjs: Arial 12px) */
   font-size: var(--body-xs);
   height: 40px;
+  line-height: normal;
   padding-left: 2rem;
   padding-right: 2rem;
   width: calc(100% - 4rem);

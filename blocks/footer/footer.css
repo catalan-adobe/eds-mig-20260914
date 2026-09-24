@@ -175,6 +175,11 @@
   padding-top: 18px;
 }
 
+/* the source hides the link label (.cmp-button__text { display: none }) behind the glyph */
+.footer .site-footer-social .button-text {
+  display: none;
+}
+
 .footer .social-facebook a::before { content: "\e902"; }
 .footer .social-twitter a::before { content: "\e901"; }
 .footer .social-instagram a::before { content: "\e903"; }

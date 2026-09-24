@@ -80,7 +80,13 @@ function buildSocial(socialDiv) {
     unwrapListParagraphs(authored);
     authored.querySelectorAll('li').forEach((li) => {
       const a = li.querySelector('a');
-      if (a) li.classList.add(`social-${a.textContent.trim().toLowerCase()}`);
+      if (!a) return;
+      const name = a.textContent.trim();
+      li.classList.add(`social-${name.toLowerCase()}`);
+      if (!a.getAttribute('aria-label')) a.setAttribute('aria-label', name);
+      const text = el('span', 'button-text');
+      text.append(...a.childNodes);
+      a.append(text);
     });
     list.append(authored);
   }
