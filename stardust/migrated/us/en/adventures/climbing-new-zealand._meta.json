@@ -1,0 +1,107 @@
+{
+  "slug": "us-en-adventures-climbing-new-zealand-html",
+  "type": "program",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "mini-carousel",
+    "trip-facts",
+    "sharing",
+    "tabs"
+  ],
+  "slotsFilled": [
+    "program"
+  ],
+  "canonShas": {
+    "header": "654179cfad1c",
+    "footer": "c970115fcea3",
+    "css": "bd936aef89b6"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Climbing New Zealand",
+    "description": "Let us help you make your New Zealand climbing vacation a memory you will cherish forever! Come join us for a guided rock climbing adventure in the mountains that trained Sir Edmund Hilary. ",
+    "canonical": null,
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Climbing New Zealand",
+    "description": "Let us help you make your New Zealand climbing vacation a memory you will cherish forever! Come join us for a guided rock climbing adventure in the mountains that trained Sir Edmund Hilary. ",
+    "url": "https://wknd.site/us/en/adventures/climbing-new-zealand.html"
+  },
+  "migratedAt": "2026-09-24T08:37:37Z",
+  "designMdSha": "720637eadd96",
+  "designJsonSha": "a627c03a4224",
+  "sourceCurrentSha": "597465b9383f",
+  "sourceProposedSha": "32c46dcfad9f",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [],
+  "gateEvidence": {},
+  "contentDeviations": [],
+  "assetsBundled": 5,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/us/es.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ca/en.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ca/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/de.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/it.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/de/de.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/es/es.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/it/it.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/us/en/magazine.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/us/en/magazine.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/us/en/magazine.html",
+      "reason": "in-inventory-not-migrated"
+    }
+  ],
+  "outputPath": "us/en/adventures/climbing-new-zealand.html",
+  "outputPathDefault": null,
+  "sidecar": "us/en/adventures/climbing-new-zealand._meta.json",
+  "driverVersion": "1"
+}

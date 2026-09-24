@@ -1,0 +1,279 @@
+{
+  "archetype": "https://wknd.site/us/en/adventures.html",
+  "width": 1440,
+  "tolerance": 2,
+  "probes": {
+    "title": "main .title .cmp-title",
+    "hero": "main .teaser .cmp-teaser",
+    "card": "main .image-list .cmp-image",
+    "tabs": "main .cmp-tabs",
+    "text": "main .text .cmp-text"
+  },
+  "archetypeRaw": {
+    "sections": [],
+    "probes": {
+      "title": {
+        "sel": "main .title .cmp-title",
+        "count": 2,
+        "first": {
+          "rect": {
+            "w": 1164,
+            "h": 60
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 32, 32)",
+          "padding": "0px 0px 0px 0px",
+          "font": "source sans pro 18px/27px 400",
+          "borderRadius": "0px",
+          "heading": "h1 asar 40px/60px 400 rgb(32, 32, 32)",
+          "image": null,
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 2,
+        "text": "Adventures"
+      },
+      "hero": {
+        "sel": "main .teaser .cmp-teaser",
+        "count": 1,
+        "first": {
+          "rect": {
+            "w": 1440,
+            "h": 640
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 32, 32)",
+          "padding": "0px 0px 0px 0px",
+          "font": "source sans pro 18px/27px 400",
+          "borderRadius": "0px",
+          "heading": "h2 asar 36px/54px 400 rgb(32, 32, 32)",
+          "image": {
+            "w": 1440,
+            "h": 640
+          },
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 1,
+        "text": "Experience the world with us With WKND Adventures, you don't"
+      },
+      "card": {
+        "sel": "main .image-list .cmp-image",
+        "count": 16,
+        "first": {
+          "rect": {
+            "w": 260,
+            "h": 207
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 69, 255)",
+          "padding": "0px 0px 0px 0px",
+          "font": "source sans pro 18px/27px 400",
+          "borderRadius": "0px",
+          "heading": null,
+          "image": {
+            "w": 260,
+            "h": 200
+          },
+          "listStyle": null,
+          "before": null
+        },
+        "clusters": 1,
+        "text": ""
+      },
+      "tabs": {
+        "sel": "main .cmp-tabs",
+        "count": 1,
+        "first": {
+          "rect": {
+            "w": 1136,
+            "h": 1268
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 32, 32)",
+          "padding": "0px 0px 0px 0px",
+          "font": "source sans pro 18px/27px 400",
+          "borderRadius": "0px",
+          "heading": null,
+          "image": {
+            "w": 260,
+            "h": 200
+          },
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 1,
+        "text": "All Climbing Cycling Skiing Surfing Travel Bali Surf Camp Su"
+      },
+      "text": {
+        "sel": "main .text .cmp-text",
+        "count": 0
+      }
+    }
+  },
+  "siblings": [
+    {
+      "url": "https://wknd.site/us/en/magazine.html",
+      "findings": [
+        {
+          "kind": "COUNT",
+          "probe": "title",
+          "msg": "2 → 3 matches"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "title",
+          "msg": "rect{w 1164 → 1136}"
+        },
+        {
+          "kind": "COUNT",
+          "probe": "hero",
+          "msg": "1 → 3 matches"
+        },
+        {
+          "kind": "CLUSTERS",
+          "probe": "hero",
+          "msg": "1 → 2 distinct style families among matches (a second visual family = a variant class)"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "hero",
+          "msg": "rect{w 1440 → 1136, h 640 → 509}; image{w 1440 → 709, h 640 → 509}"
+        },
+        {
+          "kind": "COUNT",
+          "probe": "card",
+          "msg": "16 → 5 matches"
+        },
+        {
+          "kind": "MISSING",
+          "probe": "tabs",
+          "msg": "\"main .cmp-tabs\" matches 1 on the archetype, 0 on the sibling"
+        },
+        {
+          "kind": "EXTRA",
+          "probe": "text",
+          "msg": "\"main .text .cmp-text\" matches 0 on the archetype, 1 on the sibling"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "title": {
+            "sel": "main .title .cmp-title",
+            "count": 3,
+            "first": {
+              "rect": {
+                "w": 1136,
+                "h": 60
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h1 asar 40px/60px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Magazine"
+          },
+          "hero": {
+            "sel": "main .teaser .cmp-teaser",
+            "count": 3,
+            "first": {
+              "rect": {
+                "w": 1136,
+                "h": 509
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h2 asar 36px/54px 400 rgb(32, 32, 32)",
+              "image": {
+                "w": 709,
+                "h": 509
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Featured Article Camping in Western Australia The Australian"
+          },
+          "card": {
+            "sel": "main .image-list .cmp-image",
+            "count": 5,
+            "first": {
+              "rect": {
+                "w": 260,
+                "h": 207
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(0, 69, 255)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 260,
+                "h": 200
+              },
+              "listStyle": null,
+              "before": null
+            },
+            "clusters": 1,
+            "text": ""
+          },
+          "tabs": {
+            "sel": "main .cmp-tabs",
+            "count": 0
+          },
+          "text": {
+            "sel": "main .text .cmp-text",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1136,
+                "h": 45
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Sign in to un-lock exclusive content for WKND members only!"
+          }
+        }
+      }
+    }
+  ],
+  "summary": {
+    "siblings": 1,
+    "varying": 1,
+    "probesVarying": [
+      "title",
+      "hero",
+      "card",
+      "tabs",
+      "text"
+    ]
+  }
+}

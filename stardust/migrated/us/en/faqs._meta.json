@@ -1,0 +1,104 @@
+{
+  "slug": "us-en-faqs-html",
+  "type": "unique",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "accordion"
+  ],
+  "slotsFilled": [
+    "container"
+  ],
+  "canonShas": {
+    "header": "e08b75bb9efa",
+    "footer": "fbd190aba85c",
+    "css": "bd936aef89b6"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "FAQs",
+    "description": "Here we answer some of the questions that we hear most often from the community.",
+    "canonical": null,
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "FAQs",
+    "description": "Here we answer some of the questions that we hear most often from the community.",
+    "url": "https://wknd.site/us/en/faqs.html"
+  },
+  "migratedAt": "2026-09-24T08:37:37Z",
+  "designMdSha": "720637eadd96",
+  "designJsonSha": "a627c03a4224",
+  "sourceCurrentSha": "47cd4e0d0b32",
+  "sourceProposedSha": "a22f7789e493",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [],
+  "gateEvidence": {},
+  "contentDeviations": [],
+  "assetsBundled": 5,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/us/es.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ca/en.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ca/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/de.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/it.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/de/de.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/es/es.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/it/it.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/us/en/magazine.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/us/en/magazine.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/us/en/magazine.html",
+      "reason": "in-inventory-not-migrated"
+    }
+  ],
+  "outputPath": "us/en/faqs.html",
+  "outputPathDefault": null,
+  "sidecar": "us/en/faqs._meta.json",
+  "driverVersion": "1"
+}
