@@ -438,9 +438,12 @@ hands-off judgments made at each gate as named assumptions.
   render the `<p>` form — the second column is 15px taller than live at 1440 (its image starts
   15px lower; the row height is set by the first column) and the page is +13px at 360 where the
   columns stack. Not a design delta: a platform richtext normalisation, recorded here.
-- **A-CL-4 (page-title gutter):** listing pages put `h1.page-title` directly in the container
-  (x 138 at 1440) — authored with section style `page-title`; the padding-0 rule rides tabs.css /
-  list-teaser.css scoped on the pages' own blocks until C-final applies the foundation request.
+- **A-CL-4 (page-title gutter):** live adventures puts `h1.page-title` flush with the container
+  (x 138 / w 1164 at 1440, x 0 at 360) while live magazine keeps the 14px column gutter (x 152 /
+  x 14) — the archetype prototype and the migrated sibling render both flush (a 14px prototype
+  drift on magazine that the migrate gate absorbed). The delivered pages follow LIVE per page:
+  adventures carries section style `page-title` (padding-0 rule scoped in tabs.css until C-final
+  applies the foundation request), magazine uses the default gutter.
 - **A-CL-5 (space-medium separator):** the magazine separator is live's 2em variant; scoped in
   list-teaser.css (see foundation-requests.md); the trailing adventures separator uses the
   foundation `separator` style (1px vs live 2px — landing's request already covers it).

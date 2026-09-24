@@ -141,10 +141,3 @@ main .section.separator:has(+ .section.list-teaser-container)::after {
   margin: calc(2em + 13.5px) auto 2em;
   border-top-width: 2px;
 }
-
-/* listing template: the page title sits directly in live's .container--fixed (x 138, w 1164
-   at 1440), not in a 14px-gutter column — section style `page-title` drops the wrapper
-   padding. Scoped to pages carrying this block; foundation request filed. */
-main:has(.list-teaser) > .section.page-title > div {
-  padding: 0;
-}
