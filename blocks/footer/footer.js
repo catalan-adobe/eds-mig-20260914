@@ -35,6 +35,15 @@ function pathOf(href) {
   }
 }
 
+/* live cmp-navigation__item--active: the item whose page is the current one or an ancestor */
+function markCurrent(li, a, homePath) {
+  const path = pathOf(a.href);
+  const here = pathOf(window.location.href);
+  if (homePath && path === homePath) li.classList.add('is-home');
+  if (path && (here === path || here.startsWith(`${path}/`))) li.classList.add('is-active');
+  if (path && here === path) a.setAttribute('aria-current', 'page');
+}
+
 export default async function decorate(block) {
   const footerMeta = getMetadata('footer');
   const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : '/footer';
@@ -65,7 +74,7 @@ export default async function decorate(block) {
       } else if (node.matches('ul, ol')) {
         [...node.querySelectorAll('li')].forEach((li) => {
           const a = li.querySelector('a');
-          if (a && homePath && pathOf(a.href) === homePath) li.classList.add('is-home');
+          if (a) markCurrent(li, a, homePath);
         });
         slots.nav.append(node);
       } else if (node.matches('h1, h2, h3, h4, h5, h6')) {

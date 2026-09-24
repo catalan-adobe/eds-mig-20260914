@@ -2,15 +2,8 @@
    (.carousel, .carousel--hero, .teaser--hero, .teaser__*; R-01 h1 at --heading-xl) */
 
 /* The block is the live .column (a float, so a BFC): flow-root contains the
-   inner margin and the floated controls exactly the way the float did. On the
-   landing template it also stands in for .page-main { float: left } — main's
-   last section margin must not collapse into the footer's margin-top
-   (foundation request filed; the rule is inert once main is flow-root). */
+   inner margin and the floated controls exactly the way the float did. */
 .hero-carousel {
-  display: flow-root;
-}
-
-main:has(> .section.hero-carousel-container) {
   display: flow-root;
 }
 

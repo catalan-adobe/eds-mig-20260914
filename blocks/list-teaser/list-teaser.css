@@ -130,14 +130,3 @@
     width: 100%;
   }
 }
-
-/* the separator ABOVE the members-only row is live's separator--space-medium: 2em margins
-   (foundation `separator` = 4rem) and a 2px rule (hr border 1px on every side, height 0).
-   Live columns are floats, so the preceding paragraph's 13.5px margin stacks on the 2em;
-   here it collapses into the rule's top margin, so the sum is written out (the section is
-   `display: block !important` in the foundation — no BFC possible). Scoped to the separator
-   that precedes this block; foundation request filed. */
-main .section.separator:has(+ .section.list-teaser-container)::after {
-  margin: calc(2em + 13.5px) auto 2em;
-  border-top-width: 2px;
-}

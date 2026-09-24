@@ -75,6 +75,15 @@ function localePath(href) {
   }
 }
 
+/* live cmp-navigation__item--active: the item whose page is the current one or an ancestor */
+function markCurrent(li, a, homePath) {
+  const path = localePath(a.href);
+  const here = localePath(window.location.href);
+  if (homePath && path === homePath) li.classList.add('is-home');
+  if (path && (here === path || here.startsWith(`${path}/`))) li.classList.add('is-active');
+  if (path && here === path) a.setAttribute('aria-current', 'page');
+}
+
 /* utility bar: greeting, sign-in, sign-out paragraphs by authored order */
 function slotAccount(tools, root) {
   const ps = [...tools.querySelectorAll('p')];
@@ -206,7 +215,7 @@ export default async function decorate(block) {
   if (list) {
     [...list.querySelectorAll('li')].forEach((li) => {
       const a = li.querySelector('a');
-      if (a && homePath && localePath(a.href) === homePath) li.classList.add('is-home');
+      if (a) markCurrent(li, a, homePath);
     });
     placeNav(list, root);
   }

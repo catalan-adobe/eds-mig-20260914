@@ -123,17 +123,3 @@
   height: 200px;
   margin: 0;
 }
-
-/* listing template: the page title sits directly in live's .container--fixed (x 138, w 1164
-   at 1440), not in a 14px-gutter column — section style `page-title` drops the wrapper
-   padding. Scoped to pages carrying the cards-variant tabs; foundation request filed. */
-main:has(.tabs.cards) > .section.page-title > div {
-  padding: 0;
-}
-
-/* listing template: the page ends with a `separator` section whose 4rem bottom margin must
-   not collapse into `footer .footer { margin-top: 3rem }` (live .page-main is a float) —
-   same scoped fix as hero-carousel.css; foundation request already queued by landing. */
-main:has(.tabs.cards) {
-  display: flow-root;
-}

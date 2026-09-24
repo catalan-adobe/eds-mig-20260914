@@ -98,14 +98,6 @@ main .section.contributor-card-container > .contributor-card-wrapper {
   filter: invert(1) brightness(1.05);
 }
 
-/* live .page-main and every .column are floats (own BFCs): default-content margins never
-   collapse across the title / intro columns. Scoped to the static template until the
-   queued foundation request (main { display: flow-root }) lands. */
-body.static > main,
-body.static main .section > .default-content-wrapper {
-  display: flow-root;
-}
-
 @media (width <= 1024px) {
   main .section.contributor-card-container > .contributor-card-wrapper {
     width: 50%;

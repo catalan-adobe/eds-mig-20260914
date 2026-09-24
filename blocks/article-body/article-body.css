@@ -108,10 +108,3 @@
   padding-top: 8px;
   border-bottom: 2px solid var(--color-accent);
 }
-
-/* the source's lead image is an inline img (7px baseline descender under the picture);
-   the foundation renders default-content images as blocks — request filed
-   (stardust/rollout/foundation-requests.md), template-scoped override until it lands */
-body.article main .default-content-wrapper picture img {
-  display: inline;
-}

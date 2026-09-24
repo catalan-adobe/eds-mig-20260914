@@ -97,6 +97,12 @@ footer .footer-nav a:focus {
   text-decoration: underline;
 }
 
+/* live cmp-navigation__item--active: the current section's link, strong inverse + underlined */
+footer .footer-nav .is-active > a {
+  color: var(--color-fg-inverse-strong);
+  text-decoration: underline;
+}
+
 footer .footer-follow :is(h2, h3, h4, h5) {
   color: var(--color-fg-inverse);
 }

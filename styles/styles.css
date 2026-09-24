@@ -132,6 +132,13 @@ footer {
   margin: 0 auto;
 }
 
+/* live .page-main and every .column are floats (own BFCs): main's last margin never collapses
+   into the footer's margin-top, and default-content margins never collapse across sections */
+main,
+main .section > .default-content-wrapper {
+  display: flow-root;
+}
+
 h1,
 h2,
 h3,
@@ -306,8 +313,13 @@ main .default-content-wrapper p:has(picture) {
   line-height: var(--line-height-body);
 }
 
-main .default-content-wrapper picture img {
+/* cmp-image: block box holding an INLINE img — the line box keeps the source's 7px descender */
+main .default-content-wrapper picture {
   display: block;
+}
+
+main .default-content-wrapper picture img {
+  display: inline;
   width: 100%;
   height: auto;
   margin: 7px 0;
@@ -338,9 +350,12 @@ main .section.dark :is(h1, h2, h3, h4, h5, h6) {
 }
 
 /* separator (cmp-separator) — an EMPTY section carrying the style: `separator` draws the
-   1px rule with 4rem margins, `spacer` is the source's hidden + space-small variant (1em gap) */
+   2px rule (live hr: 1px border on every side, height 0) with 4rem margins, `spacer` is the
+   source's hidden + space-small variant (1em gap), `space-medium` the 2em variant. The section
+   is a BFC like the live floated .column, so its margins stack on the neighbours' instead of
+   collapsing (a following heading sits 91px below the rule on live, not 64px). */
 main .section:is(.separator, .spacer)[data-section-status='loaded'] {
-  display: block !important;
+  display: flow-root !important;
 }
 
 main .section.separator::after,
@@ -350,7 +365,11 @@ main .section.spacer::after {
   width: calc(100% - 28px);
   max-width: calc(var(--max-width) - 28px);
   margin: 4rem auto;
-  border-top: 1px solid var(--color-third);
+  border-top: 2px solid var(--color-third);
+}
+
+main .section.separator.space-medium::after {
+  margin: 2em auto;
 }
 
 main .section.spacer::after {
@@ -358,8 +377,16 @@ main .section.spacer::after {
   border-top: none;
 }
 
-/* section style `breadcrumb` (cmp-breadcrumb): an authored <ol>/<ul> of links, last item plain */
+/* section style `page-title` (listing pages): the h1 sits directly in live's .container--fixed,
+   not in a 14px .column gutter */
+main > .section.page-title > div {
+  padding: 0;
+}
+
+/* section style `breadcrumb` (cmp-breadcrumb): an authored <ol>/<ul> of links, last item plain;
+   live's nav is inline-block, so the list rides the wrapper's text baseline (5px at 1440) */
 main .section.breadcrumb :is(ol, ul) {
+  display: inline-block;
   margin: 0;
   padding: 0 12px 0 0;
   list-style: none;

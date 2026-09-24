@@ -62,10 +62,6 @@ header .account-links {
   text-align: right;
 }
 
-header .account-links a:any-link {
-  color: var(--color-fg-inverse-strong);
-}
-
 /* anonymous state (DF-02 decided-out): greeting and sign-out stay hidden */
 header .account-greeting,
 header .account-sign-out {
@@ -188,7 +184,8 @@ header .primary-nav a:any-link {
 }
 
 header .primary-nav a:hover,
-header .primary-nav a:focus {
+header .primary-nav a:focus,
+header .primary-nav .is-active > a {
   background-color: var(--color-accent);
 }
 
