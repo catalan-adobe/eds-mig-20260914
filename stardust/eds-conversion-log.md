@@ -173,6 +173,62 @@ until C-final.
 
 ## Article cluster — appended by its subagent
 
+Pages: `/us/en/magazine/san-diego-surf` (archetype, template us-en-magazine-san-diego-surf-html),
+`/us/en/magazine/arctic-surfing`, `/us/en/magazine/guide-la-skateparks`,
+`/us/en/magazine/ski-touring`, `/us/en/magazine/western-australia` (siblings). Schema
+`stardust/eds-schema/us-en-magazine-san-diego-surf-html.json` (4 sections: lead-image,
+breadcrumb, article, sidebar). Media: 25 editorial images rehosted to `media/wknd/`
+(`da-media-upload.mjs --manifest`, source fetch 200); the skateparks PDF is committed at
+`media/wknd/ultimateguidetolaskateparks.pdf` (code origin, 200 application/pdf).
+
+| section (schema) | authored as | block | decode tier |
+|---|---|---|---|
+| lead-image | default content `<p><img></p>` in its own section | — (D1) | — |
+| breadcrumb | default content `<ol>` of links, last item plain; section style `breadcrumb` | — (D1) | — |
+| article: title + byline | default content `<h1>` + `<h4>` in the `article-layout` section | — (D1) | — |
+| article: content fragment | 1 row, 1 cell: hidden `<h3>`, `<p>` copy, `<p><img><em>caption</em></p>`, `<h2>`, `<blockquote>` + attribution `<p>`; variants `underline`, `quote` | `article-body` | reconstructive stream (one flex row per authored element; kind by element) |
+| article: contributor | 1 row, 2 cells: portrait `<p><img></p>` + `<h2>` name + `<p>` occupations \| `<ul>` of icon links (`span.icon.icon-<name>`) | `contributor-byline` | template-slotted |
+| sidebar: download (skateparks) | rows: `<h3><a>` title, `<p>` description, `<p><strong>Label</strong></p>` + `<p>` value ×3, `<p><em><a>` action | `download` | template-slotted; adopted into the upnext-list sidebar |
+| sidebar: share title + up next | 1 row, 1 cell: `<h5>` + `<ul>` of `<li><a>title</a> <em>date</em></li>`; variant `spacer` | `upnext-list` | template-slotted (list = one editable unit; date run moved into the link, EW6) |
+
+Decisions (hands-off, `direction.md` A-CA-1…A-CA-9): the foundation's `article-layout` section
+grid places every wrapper in the 2/3 column and `upnext-list-wrapper` in the 1/3 sidebar;
+`download` is adopted by `upnext-list` between head and list (source order) so the frozen grid
+rule needs no change. Foundation request filed: default-content `picture img { display: block }`
+drops the source's 7px inline-img descender under the lead image (override
+`body.article main .default-content-wrapper picture img { display: inline }` in article-body.css).
+Pipeline reshapes handled in CSS: a lone image section arrives as a bare `<picture>` in the
+default-content wrapper; a `<blockquote>` arrives as `<blockquote><p>` (the `p` inherits the
+quote face — found on the published origin, pub1 → pub2).
+
+Gates (harness, structural): `davids-model-lint` 0 🔴 (🟡 D1 default-content candidates on
+article-body / upnext-list — bespoke, see A-CA-1); `delivery-lint` 0 P0 · 0 P1 · 0 P2 ×5;
+`media-reconcile` 26 hosted; `block-roundtrip --ew` (maps `section.contributor`,
+`aside.article-sidebar`, `.column.download`) 0 🔴 on all 5 pages, EW 20/20 · 15/15 · 27/27 ·
+12/12 · 16/16 editable, 0 dead, 0 duplicated; `qa-gate` 16 ok / 1 warn / 2 fail ×5 — both fails
+the landing's explained pair: the 2 "broken images" are the frozen header/footer logos on
+`preview.da.live` (auth-gated for the anonymous harness) and the schema→block order heuristic
+pairing the "article" repeats with `upnext-list` (round-trip proves 4–5/5 list items). Block
+heights on the harness equal the prototype's to the pixel (article-body 3851, contributor 222,
+sidebar 942). Lint: eslint 0, stylelint 0 on the four blocks.
+
+Published-origin gate (preview URL, `gate.sh --full`, live capture cached):
+archetype pub1 **1440 0.70 % Δh 0 / 360 2.89 % Δh −1, 0 overflow → PASS**; sibling
+guide-la-skateparks 1440 pub1 9.85 % Δh 50 (the `<blockquote><p>` reshape) → pub2 **0.40 % Δh 0
+PASS**; sibling western-australia 360 pub1 **2.84 % Δh −1 PASS**. Crop bands: 1440 header 1.56 %
+(thick = the current-page nav marker, foundation request queued by `static`) / footer 0.41 %;
+360 header 0.48 % / footer 0.09 % (bar 2 %). Chrome-parity 13 (1440) / 28 (360) = the
+foundation's justified set ("Sign In" colour, fixed-header reserve, icon signatures,
+current-page marker) plus footer Δy 2px at 360 (A-CA-8). Content-diff main: MISSING CTA / ICON /
+ARIA-LABEL on the three contributor icon buttons — `font-size: 0` labels + `::before` glyphs
+the classifier cannot read; the buttons render (byline band crop 1.03 %); `aria-*` stripped by
+DA (landing's accepted residual). visual-diff STRETCHED IMAGE = the 60×60 `object-fit: cover`
+portrait (intentional cover crop). Computed-style guard 1440 + 360 on san-diego-surf and
+guide-la-skateparks: 4 sections, 3–4 blocks loaded, `.section.article-layout` grid,
+`.article-body .elements` flex, 9–11 visible images loaded, 0 pageerror. `.plain.html` ×5: 200,
+1 h1, 0 about:error, 0 /img/, 4–6 `<picture>`. `ai-readability` strict 100 % / code 100 % ×5.
+Published (deploy-batch 5 ok, aem.live 200 ×5).
+
 ## Listing cluster — appended by its subagent
 
 ## Static cluster — appended by its subagent

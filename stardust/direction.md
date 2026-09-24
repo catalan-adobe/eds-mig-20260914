@@ -383,3 +383,41 @@ hands-off judgments made at each gate as named assumptions.
   `media/wknd/adobestock-277768563.jpeg` (cmp, 93 276 B) — its ledger URL is authored, no
   duplicate upload.
 - **A-CU-5 (publish):** publish = yes, the landing unit's decision, applied unchanged.
+
+## Assumptions — C-deliver unit `article` (2026-09-24)
+
+- **A-CA-1 (prose stream as one cell):** the article body is ONE `article-body` row with one
+  cell holding the whole prose stream as flat siblings (h3, p, image p, h2, blockquote) — the
+  DA-flattened shape authors naturally edit; the block wraps each element in its own flex row
+  (the source's one-grid-row-per-element model, no margin collapse). Page-level source variants
+  become block variants: `underline` (cmp-title--underline h2 columns), `quote` (text--quote
+  grey box). Locked name `article-body` kept (D1 lint 🟡 "default-content candidate" accepted:
+  gutters, captions, quote boxes and the non-collapsing row model are bespoke structure).
+- **A-CA-2 (hidden fragment title):** the content fragment's `<h3>` title (display:none on the
+  source) is authored and hidden by the block, as on the source — content-preserving; it is
+  not the page `<h1>`.
+- **A-CA-3 (captions and attributions):** an image caption is authored inside the image
+  paragraph (`<p><img><em>caption</em></p>` — survives the pipeline as
+  `<p><picture/><em>`); the paragraph right after a `<blockquote>` is its attribution (the
+  source's `<u>` is not underlined there and does not survive DA — dropped, text kept).
+- **A-CA-4 (sidebar):** `upnext-list` owns the sidebar head ("SHARE THIS STORY" h5) and the
+  list; the source's empty sharing widgets are not authored (A-RO-4); the hidden
+  separator--space-small (36px) is the block variant `spacer` (present on san-diego-surf,
+  guide-la-skateparks, western-australia; absent on arctic-surfing, ski-touring). A `download`
+  block authored in the section is adopted into the sidebar between head and list (source
+  order); its PDF is committed under `media/wknd/` and linked root-relative.
+- **A-CA-5 (download properties):** the source's hidden `<dt>` labels (Filename / Size /
+  Format) are authored as `<p><strong>Label</strong></p>` rows before each value and hidden by
+  the block — content-preserving, round-trip closed.
+- **A-CA-6 (contributor icons):** the social icon buttons author the foundation's
+  `span.icon.icon-<name>` vocabulary; the decorated dark `/icons/*.svg` is hidden and the
+  source's white icon-font glyph drawn instead (the source renders the glyph). `aria-label`s
+  on the anchors are not authored (DA strips `aria-*`; visible label text kept, hidden by
+  `font-size: 0` as the source's `display:none` span).
+- **A-CA-7 (lead image descender):** default-content lead image needs the source's inline-img
+  7px descender — template-scoped override in article-body.css + foundation request.
+- **A-CA-8 (rendition rounding residual):** at 360 the pipeline's 750-wide renditions round to
+  a different aspect ratio than the source's 360-wide ones (221.33 vs 220.77 px per image) —
+  a cumulative 1–2px page shift below the 3rd image, |Δh| ≤ 2, inside the ±8 tolerance;
+  not fixable in block CSS without hard-coding per-image ratios.
+- **A-CA-9 (publish):** publish = yes, the landing unit's decision, applied unchanged.
