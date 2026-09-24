@@ -695,6 +695,318 @@
         "variance-probe"
       ],
       "migrated": "stardust/migrated/us/en/magazine.html"
+    },
+    "us-en-adventures-bali-surf-camp-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "program-body--flush",
+        "program-facts--split"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0,
+          "px": 0,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib3",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.03,
+          "px": 987,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib3",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/bali-surf-camp.html"
+    },
+    "us-en-adventures-beervana-portland-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "content-length"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0,
+          "px": 0,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0,
+          "px": 0,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/beervana-portland.html"
+    },
+    "us-en-adventures-colorado-rock-climbing-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "program-body--flush",
+        "program-facts--split"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0,
+          "px": 0,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib3",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.04,
+          "px": 1259,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib3",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/colorado-rock-climbing.html"
+    },
+    "us-en-adventures-cycling-southern-utah-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "program-body--flush",
+        "program-facts--split",
+        "image--captioned"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0,
+          "px": 0,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib3",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.04,
+          "px": 1231,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib3",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/cycling-southern-utah.html"
+    },
+    "us-en-adventures-cycling-tuscany-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "content-length"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0,
+          "px": 0,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0,
+          "px": 0,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/cycling-tuscany.html"
+    },
+    "us-en-adventures-downhill-skiing-wyoming-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "content-length"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0,
+          "px": 0,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0,
+          "px": 0,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/downhill-skiing-wyoming.html"
+    },
+    "us-en-adventures-gastronomic-marais-tour-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "program-body--flush",
+        "program-facts--split",
+        "image--captioned"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0,
+          "px": 0,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib3",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.05,
+          "px": 1299,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib3",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/gastronomic-marais-tour.html"
+    },
+    "us-en-adventures-napa-wine-tasting-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "program-body--flush",
+        "program-facts--split",
+        "image--captioned"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0,
+          "px": 0,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib3",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.04,
+          "px": 1170,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib3",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/napa-wine-tasting.html"
     }
   }
 }

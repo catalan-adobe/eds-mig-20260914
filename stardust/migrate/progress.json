@@ -1,7 +1,7 @@
 {
   "flow": "replica",
   "phase": "migrate",
-  "updatedAt": "2026-09-24T09:23:36Z",
+  "updatedAt": "2026-09-24T09:25:19Z",
   "units": {
     "plan": {
       "status": "done",
@@ -38,11 +38,11 @@
         "text"
       ],
       "startedAt": "2026-09-24T09:17:51Z",
-      "endedAt": "2026-09-24T09:23:36Z",
-      "verdict": "rendered 1, unchanged 0, refused 0, passthrough 0 (A' sibling; 7 variants; gates 7/7 incl. variance-probe re-run as run-bg job variance-listing)"
+      "endedAt": "2026-09-24T09:23:46Z",
+      "verdict": "rendered 1, unchanged 0, refused 0, passthrough 0 (A' sibling; 7 variants; 6 gates passed, media-reconcile n/a until delivery; variance-probe re-run as run-bg job variance-listing)"
     },
     "us-en-adventures-climbing-new-zealand-html-1": {
-      "status": "pending",
+      "status": "done",
       "kind": "render",
       "templates": [
         "us-en-adventures-climbing-new-zealand-html"
@@ -61,9 +61,9 @@
       "pages": 8,
       "variance": "stardust/migrate/variance/us-en-adventures-climbing-new-zealand-html.json",
       "variants": [],
-      "startedAt": null,
-      "endedAt": null,
-      "verdict": null
+      "startedAt": "2026-09-24T09:23:47Z",
+      "endedAt": "2026-09-24T09:25:19Z",
+      "verdict": "rendered 8, unchanged 0, refused 0, passthrough 0 (A' siblings; 6 gates each, media-reconcile n/a until delivery)"
     },
     "us-en-adventures-climbing-new-zealand-html-2": {
       "status": "pending",

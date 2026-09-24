@@ -1,7 +1,7 @@
 {
   "_provenance": {
     "writtenBy": "stardust:replica",
-    "writtenAt": "2026-09-24T09:18:18Z",
+    "writtenAt": "2026-09-24T09:23:47Z",
     "stardustVersion": "0.10.0"
   },
   "site": {
@@ -52,11 +52,15 @@
       "url": "https://wknd.site/us/en/adventures/bali-surf-camp.html",
       "title": "Bali Surf Camp",
       "type": "program",
-      "status": "extracted",
+      "status": "directed",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-24T06:55:28.426Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:23:47Z"
         }
       ],
       "stale": false,
@@ -70,11 +74,15 @@
       "url": "https://wknd.site/us/en/adventures/beervana-portland.html",
       "title": "Beervana in Portland",
       "type": "program",
-      "status": "extracted",
+      "status": "directed",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-24T06:55:28.426Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:23:47Z"
         }
       ],
       "stale": false,
@@ -115,11 +123,15 @@
       "url": "https://wknd.site/us/en/adventures/colorado-rock-climbing.html",
       "title": "Colorado Rock Climbing",
       "type": "program",
-      "status": "extracted",
+      "status": "directed",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-24T06:55:28.427Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:23:47Z"
         }
       ],
       "stale": false,
@@ -133,11 +145,15 @@
       "url": "https://wknd.site/us/en/adventures/cycling-southern-utah.html",
       "title": "Cycling Southern Utah",
       "type": "program",
-      "status": "extracted",
+      "status": "directed",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-24T06:55:28.647Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:23:47Z"
         }
       ],
       "stale": false,
@@ -151,11 +167,15 @@
       "url": "https://wknd.site/us/en/adventures/cycling-tuscany.html",
       "title": "Cycling Tuscany",
       "type": "program",
-      "status": "extracted",
+      "status": "directed",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-24T06:55:34.016Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:23:47Z"
         }
       ],
       "stale": false,
@@ -169,11 +189,15 @@
       "url": "https://wknd.site/us/en/adventures/downhill-skiing-wyoming.html",
       "title": "Downhill Skiing Wyoming",
       "type": "program",
-      "status": "extracted",
+      "status": "directed",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-24T06:55:11.427Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:23:47Z"
         }
       ],
       "stale": false,
@@ -187,11 +211,15 @@
       "url": "https://wknd.site/us/en/adventures/gastronomic-marais-tour.html",
       "title": "Gastronomic Marais Tour",
       "type": "program",
-      "status": "extracted",
+      "status": "directed",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-24T06:55:34.015Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:23:47Z"
         }
       ],
       "stale": false,
@@ -232,11 +260,15 @@
       "url": "https://wknd.site/us/en/adventures/napa-wine-tasting.html",
       "title": "Napa Wine Tasting",
       "type": "program",
-      "status": "extracted",
+      "status": "directed",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-24T06:55:34.015Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:23:47Z"
         }
       ],
       "stale": false,
@@ -548,7 +580,7 @@
     }
   ],
   "migrate": {
-    "at": "2026-09-24T09:19:20Z",
+    "at": "2026-09-24T09:23:47Z",
     "outputDir": "stardust/migrated/",
     "selfContained": true,
     "pageMap": [
@@ -774,14 +806,61 @@
         "slug": "us-en-magazine-html",
         "file": "stardust/migrated/us/en/magazine.html",
         "assetsBundled": 20
+      },
+      {
+        "slug": "us-en-adventures-bali-surf-camp-html",
+        "file": "stardust/migrated/us/en/adventures/bali-surf-camp.html",
+        "assetsBundled": 21
+      },
+      {
+        "slug": "us-en-adventures-beervana-portland-html",
+        "file": "stardust/migrated/us/en/adventures/beervana-portland.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-adventures-colorado-rock-climbing-html",
+        "file": "stardust/migrated/us/en/adventures/colorado-rock-climbing.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-adventures-cycling-southern-utah-html",
+        "file": "stardust/migrated/us/en/adventures/cycling-southern-utah.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-adventures-cycling-tuscany-html",
+        "file": "stardust/migrated/us/en/adventures/cycling-tuscany.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-adventures-downhill-skiing-wyoming-html",
+        "file": "stardust/migrated/us/en/adventures/downhill-skiing-wyoming.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-adventures-gastronomic-marais-tour-html",
+        "file": "stardust/migrated/us/en/adventures/gastronomic-marais-tour.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-adventures-napa-wine-tasting-html",
+        "file": "stardust/migrated/us/en/adventures/napa-wine-tasting.html",
+        "assetsBundled": 5
       }
     ],
     "missingAssets": [],
     "cleanedAssets": [],
     "lastRun": {
-      "at": "2026-09-24T09:19:20Z",
+      "at": "2026-09-24T09:23:47Z",
       "rendered": [
-        "us-en-magazine-html"
+        "us-en-adventures-bali-surf-camp-html",
+        "us-en-adventures-beervana-portland-html",
+        "us-en-adventures-colorado-rock-climbing-html",
+        "us-en-adventures-cycling-southern-utah-html",
+        "us-en-adventures-cycling-tuscany-html",
+        "us-en-adventures-downhill-skiing-wyoming-html",
+        "us-en-adventures-gastronomic-marais-tour-html",
+        "us-en-adventures-napa-wine-tasting-html"
       ],
       "unchanged": [],
       "refused": [],
