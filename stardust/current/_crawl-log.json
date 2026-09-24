@@ -1,0 +1,475 @@
+{
+  "discovery": {
+    "fetchTechnique": "headless",
+    "count": 64,
+    "concurrency": 4,
+    "technique": "same-origin BFS depth 3 (no sitemap.xml; robots.txt has no Sitemap:) → crawl.mjs --pages in 3 batches (26 + 28 + 10)",
+    "filteredAsJunk": [],
+    "userChoice": "--prep --all (whole site, no cap)"
+  },
+  "consent": {
+    "method": "auto"
+  },
+  "favicon": {
+    "url": "https://wknd.site/etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/favicons/favicon-32.png",
+    "file": "assets/favicon.png"
+  },
+  "crawl": {
+    "failures": []
+  },
+  "captureGaps": {
+    "roots": [],
+    "detail": "uncaptured first-level targets: none (no locale root captured)"
+  },
+  "dynamicSurface": {
+    "pages": 11,
+    "pagesWithSameSiteData": 11,
+    "pagesWithSearchForm": 11,
+    "pagesHydrated": 11,
+    "truncatedPages": 0,
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "wknd.site",
+        "path": "/conf/wknd/settings/wcm/segments.seg.js",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "text/javascript",
+        "sameSite": true,
+        "example": "https://wknd.site/conf/wknd/settings/wcm/segments.seg.js",
+        "pages": 11,
+        "examples": [
+          "us-en-adventures-beervana-portland-html",
+          "us-en-adventures-bali-surf-camp-html",
+          "us-en-adventures-colorado-rock-climbing-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "wknd.site",
+        "path": "/home/users/o/oa6PkCC2rneOdh2ni0qG.infinity.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://wknd.site/home/users/o/oa6PkCC2rneOdh2ni0qG.infinity.json",
+        "pages": 11,
+        "examples": [
+          "us-en-adventures-beervana-portland-html",
+          "us-en-adventures-bali-surf-camp-html",
+          "us-en-adventures-colorado-rock-climbing-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "wknd.site",
+        "path": "/libs/granite/csrf/token.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://wknd.site/libs/granite/csrf/token.json",
+        "pages": 11,
+        "examples": [
+          "us-en-adventures-beervana-portland-html",
+          "us-en-adventures-bali-surf-camp-html",
+          "us-en-adventures-colorado-rock-climbing-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "wknd.site",
+        "path": "/libs/granite/security/currentuser.json",
+        "query": [
+          "nocache"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://wknd.site/libs/granite/security/currentuser.json",
+        "pages": 11,
+        "examples": [
+          "us-en-adventures-beervana-portland-html",
+          "us-en-adventures-bali-surf-camp-html",
+          "us-en-adventures-colorado-rock-climbing-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "dpm.demdex.net",
+        "path": "/id",
+        "query": [
+          "d_fieldgroup",
+          "d_nsid",
+          "d_orgid",
+          "d_rtbd",
+          "d_ver",
+          "d_visid_ver",
+          "ts"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://dpm.demdex.net/id",
+        "pages": 4,
+        "examples": [
+          "us-en-adventures-beervana-portland-html",
+          "us-en-adventures-bali-surf-camp-html",
+          "us-en-adventures-colorado-rock-climbing-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "wknd.site",
+        "path": "/content/wknd/us/en/adventures/beervana-portland/_jcr_content/contexthub.pagedata.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://wknd.site/content/wknd/us/en/adventures/beervana-portland/_jcr_content/contexthub.pagedata.json",
+        "pages": 1,
+        "examples": [
+          "us-en-adventures-beervana-portland-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "wknd.site",
+        "path": "/content/wknd/us/en/adventures/bali-surf-camp/_jcr_content/contexthub.pagedata.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://wknd.site/content/wknd/us/en/adventures/bali-surf-camp/_jcr_content/contexthub.pagedata.json",
+        "pages": 1,
+        "examples": [
+          "us-en-adventures-bali-surf-camp-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "wknd.site",
+        "path": "/content/wknd/us/en/adventures/colorado-rock-climbing/_jcr_content/contexthub.pagedata.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://wknd.site/content/wknd/us/en/adventures/colorado-rock-climbing/_jcr_content/contexthub.pagedata.json",
+        "pages": 1,
+        "examples": [
+          "us-en-adventures-colorado-rock-climbing-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "wknd.site",
+        "path": "/content/wknd/us/en/_jcr_content/contexthub.pagedata.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://wknd.site/content/wknd/us/en/_jcr_content/contexthub.pagedata.json",
+        "pages": 1,
+        "examples": [
+          "us-en-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "wknd.site",
+        "path": "/content/wknd/us/en/adventures/napa-wine-tasting/_jcr_content/contexthub.pagedata.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://wknd.site/content/wknd/us/en/adventures/napa-wine-tasting/_jcr_content/contexthub.pagedata.json",
+        "pages": 1,
+        "examples": [
+          "us-en-adventures-napa-wine-tasting-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "wknd.site",
+        "path": "/content/wknd/us/en/adventures/cycling-southern-utah/_jcr_content/contexthub.pagedata.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://wknd.site/content/wknd/us/en/adventures/cycling-southern-utah/_jcr_content/contexthub.pagedata.json",
+        "pages": 1,
+        "examples": [
+          "us-en-adventures-cycling-southern-utah-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "wknd.site",
+        "path": "/content/wknd/us/en/adventures/gastronomic-marais-tour/_jcr_content/contexthub.pagedata.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://wknd.site/content/wknd/us/en/adventures/gastronomic-marais-tour/_jcr_content/contexthub.pagedata.json",
+        "pages": 1,
+        "examples": [
+          "us-en-adventures-gastronomic-marais-tour-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "wknd.site",
+        "path": "/content/wknd/us/en/adventures/cycling-tuscany/_jcr_content/contexthub.pagedata.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://wknd.site/content/wknd/us/en/adventures/cycling-tuscany/_jcr_content/contexthub.pagedata.json",
+        "pages": 1,
+        "examples": [
+          "us-en-adventures-cycling-tuscany-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "wknd.site",
+        "path": "/content/wknd/us/en/adventures/riverside-camping-australia/_jcr_content/contexthub.pagedata.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://wknd.site/content/wknd/us/en/adventures/riverside-camping-australia/_jcr_content/contexthub.pagedata.json",
+        "pages": 1,
+        "examples": [
+          "us-en-adventures-riverside-camping-australia-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "wknd.site",
+        "path": "/content/wknd/us/en/adventures/surf-camp-costa-rica/_jcr_content/contexthub.pagedata.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://wknd.site/content/wknd/us/en/adventures/surf-camp-costa-rica/_jcr_content/contexthub.pagedata.json",
+        "pages": 1,
+        "examples": [
+          "us-en-adventures-surf-camp-costa-rica-html"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "wknd.site",
+        "path": "/content/wknd/us/en/adventures/ski-touring-mont-blanc/_jcr_content/contexthub.pagedata.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://wknd.site/content/wknd/us/en/adventures/ski-touring-mont-blanc/_jcr_content/contexthub.pagedata.json",
+        "pages": 1,
+        "examples": [
+          "us-en-adventures-ski-touring-mont-blanc-html"
+        ]
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "assets.adobedtm.com",
+        "pages": 11,
+        "examples": [
+          "us-en-adventures-beervana-portland-html",
+          "us-en-adventures-bali-surf-camp-html",
+          "us-en-adventures-colorado-rock-climbing-html"
+        ]
+      }
+    ],
+    "frameworkHints": [
+      {
+        "hint": "aem-sites",
+        "pages": 11,
+        "examples": [
+          "us-en-adventures-beervana-portland-html",
+          "us-en-adventures-bali-surf-camp-html",
+          "us-en-adventures-colorado-rock-climbing-html"
+        ]
+      }
+    ],
+    "globalState": [],
+    "formTargets": [
+      {
+        "action": "https://wknd.site/content/wknd/us/en/adventures/beervana-portland.searchresults.json/_jcr_content/root/container/container_1195249223/search",
+        "method": "get",
+        "sameOrigin": true,
+        "search": true,
+        "fieldNames": [
+          "fulltext"
+        ],
+        "pages": 1,
+        "examples": [
+          "us-en-adventures-beervana-portland-html"
+        ]
+      },
+      {
+        "action": "https://wknd.site/content/wknd/us/en/adventures/bali-surf-camp.searchresults.json/_jcr_content/root/container/container_1195249223/search",
+        "method": "get",
+        "sameOrigin": true,
+        "search": true,
+        "fieldNames": [
+          "fulltext"
+        ],
+        "pages": 1,
+        "examples": [
+          "us-en-adventures-bali-surf-camp-html"
+        ]
+      },
+      {
+        "action": "https://wknd.site/content/wknd/us/en/adventures/colorado-rock-climbing.searchresults.json/_jcr_content/root/container/container_1195249223/search",
+        "method": "get",
+        "sameOrigin": true,
+        "search": true,
+        "fieldNames": [
+          "fulltext"
+        ],
+        "pages": 1,
+        "examples": [
+          "us-en-adventures-colorado-rock-climbing-html"
+        ]
+      },
+      {
+        "action": "https://wknd.site/content/wknd/us/en.searchresults.json/_jcr_content/root/container/container_1195249223/search",
+        "method": "get",
+        "sameOrigin": true,
+        "search": true,
+        "fieldNames": [
+          "fulltext"
+        ],
+        "pages": 1,
+        "examples": [
+          "us-en-html"
+        ]
+      },
+      {
+        "action": "https://wknd.site/content/wknd/us/en/adventures/napa-wine-tasting.searchresults.json/_jcr_content/root/container/container_1195249223/search",
+        "method": "get",
+        "sameOrigin": true,
+        "search": true,
+        "fieldNames": [
+          "fulltext"
+        ],
+        "pages": 1,
+        "examples": [
+          "us-en-adventures-napa-wine-tasting-html"
+        ]
+      },
+      {
+        "action": "https://wknd.site/content/wknd/us/en/adventures/cycling-southern-utah.searchresults.json/_jcr_content/root/container/container_1195249223/search",
+        "method": "get",
+        "sameOrigin": true,
+        "search": true,
+        "fieldNames": [
+          "fulltext"
+        ],
+        "pages": 1,
+        "examples": [
+          "us-en-adventures-cycling-southern-utah-html"
+        ]
+      },
+      {
+        "action": "https://wknd.site/content/wknd/us/en/adventures/gastronomic-marais-tour.searchresults.json/_jcr_content/root/container/container_1195249223/search",
+        "method": "get",
+        "sameOrigin": true,
+        "search": true,
+        "fieldNames": [
+          "fulltext"
+        ],
+        "pages": 1,
+        "examples": [
+          "us-en-adventures-gastronomic-marais-tour-html"
+        ]
+      },
+      {
+        "action": "https://wknd.site/content/wknd/us/en/adventures/cycling-tuscany.searchresults.json/_jcr_content/root/container/container_1195249223/search",
+        "method": "get",
+        "sameOrigin": true,
+        "search": true,
+        "fieldNames": [
+          "fulltext"
+        ],
+        "pages": 1,
+        "examples": [
+          "us-en-adventures-cycling-tuscany-html"
+        ]
+      },
+      {
+        "action": "https://wknd.site/content/wknd/us/en/adventures/riverside-camping-australia.searchresults.json/_jcr_content/root/container/container_1195249223/search",
+        "method": "get",
+        "sameOrigin": true,
+        "search": true,
+        "fieldNames": [
+          "fulltext"
+        ],
+        "pages": 1,
+        "examples": [
+          "us-en-adventures-riverside-camping-australia-html"
+        ]
+      },
+      {
+        "action": "https://wknd.site/content/wknd/us/en/adventures/surf-camp-costa-rica.searchresults.json/_jcr_content/root/container/container_1195249223/search",
+        "method": "get",
+        "sameOrigin": true,
+        "search": true,
+        "fieldNames": [
+          "fulltext"
+        ],
+        "pages": 1,
+        "examples": [
+          "us-en-adventures-surf-camp-costa-rica-html"
+        ]
+      },
+      {
+        "action": "https://wknd.site/content/wknd/us/en/adventures/ski-touring-mont-blanc.searchresults.json/_jcr_content/root/container/container_1195249223/search",
+        "method": "get",
+        "sameOrigin": true,
+        "search": true,
+        "fieldNames": [
+          "fulltext"
+        ],
+        "pages": 1,
+        "examples": [
+          "us-en-adventures-ski-touring-mont-blanc-html"
+        ]
+      }
+    ]
+  },
+  "visionCheck": [
+    {
+      "slug": "us-en-html",
+      "verdict": "ok",
+      "notes": "thumbnail matches record: hero, logo, palette; no consent wall"
+    },
+    {
+      "slug": "us-en-adventures-riverside-camping-australia-html",
+      "verdict": "ok",
+      "notes": "thumbnail matches record: hero, logo, palette; no consent wall"
+    },
+    {
+      "slug": "us-en-magazine-western-australia-html",
+      "verdict": "ok",
+      "notes": "thumbnail matches record: hero, logo, palette; no consent wall"
+    },
+    {
+      "slug": "us-en-about-us-html",
+      "verdict": "ok",
+      "notes": "thumbnail matches record: hero, logo, palette; no consent wall"
+    },
+    {
+      "slug": "us-es-html (+8 locale-root stubs)",
+      "verdict": "ok",
+      "notes": "\"Coming Soon!\" placeholder page with header/footer; genuinely empty, not a capture failure"
+    }
+  ],
+  "notes": [
+    "dynamicSurface rollup reflects the last crawl batch (11 pages); per-page `dynamic` sections cover all 64 pages — the dynamics skill aggregates from pages/*.json."
+  ]
+}

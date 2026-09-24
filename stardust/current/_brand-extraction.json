@@ -1,0 +1,526 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-09-24T07:31:03.069Z",
+    "readArtifacts": [
+      "https://wknd.site/us/en.html",
+      "stardust/current/pages/*.json",
+      "stardust/current/_computed-styles.json",
+      "stardust/current/assets/css/clientlib-site.min.css"
+    ],
+    "synthesizedInputs": [],
+    "stardustVersion": "0.10.0",
+    "notes": [
+      "Locale copies (ca/en) are byte-identical MSM live copies of us/en; nine locale roots are \"Coming Soon!\" stubs with header/footer only.",
+      "Palette and type aggregated across all 64 pages × 2 widths (style-census.mjs); token names come from the site stylesheet custom properties (var(--brandPrimary,#ffea00) etc.)."
+    ]
+  },
+  "site": {
+    "name": "WKND",
+    "tagline": "WKND Adventures and Travel",
+    "originUrl": "https://wknd.site",
+    "description": "WKND is a collective of outdoors, music, crafts, adventure sports, and travel enthusiasts that want to share our experiences, connections, and expertise with the world."
+  },
+  "origins": [
+    {
+      "url": "https://wknd.site",
+      "role": "primary",
+      "pages": 64,
+      "technique": "headless"
+    }
+  ],
+  "logo": {
+    "source": "img",
+    "file": "stardust/current/assets/logo.svg",
+    "fileInverse": "stardust/current/assets/logo-light.svg",
+    "alt": "WKND Logo",
+    "selector": ".cmp-image--logo .cmp-image__image",
+    "maxWidth": "8rem (6rem ≤1024px)",
+    "citedFrom": "https://wknd.site/ca/en.html"
+  },
+  "favicon": {
+    "file": "stardust/current/assets/favicon.png"
+  },
+  "palette": [
+    {
+      "role": "background",
+      "hex": "#ffffff",
+      "token": "--bodyBackground",
+      "sources": [
+        {
+          "url": "https://wknd.site/ca/en.html",
+          "selector": "body",
+          "prop": "background"
+        },
+        {
+          "url": "https://wknd.site/us/en.html",
+          "selector": "body",
+          "prop": "background"
+        }
+      ]
+    },
+    {
+      "role": "text",
+      "hex": "#202020",
+      "token": "--textColor / --brandSecondary",
+      "sources": [
+        {
+          "url": "https://wknd.site/ca/en/magazine/guide-la-skateparks.html",
+          "selector": "#navigation-9ee6d7c65a > ul > li > ul > li:nth-of-type(1) > a",
+          "prop": "text"
+        },
+        {
+          "url": "https://wknd.site/us/en/magazine/guide-la-skateparks.html",
+          "selector": "#navigation-9ee6d7c65a > ul > li > ul > li:nth-of-type(1) > a",
+          "prop": "text"
+        }
+      ]
+    },
+    {
+      "role": "surface",
+      "hex": "#ebebeb",
+      "token": "--brandThird / --textColorInverse",
+      "note": "light grey buttons, footer text on dark, borders",
+      "sources": [
+        {
+          "url": "https://wknd.site/ca/en/about-us.html",
+          "selector": "div > div > div > div > div:nth-of-type(4) > div > div:nth-of-type(1) > a",
+          "prop": "link"
+        },
+        {
+          "url": "https://wknd.site/us/en/about-us.html",
+          "selector": "div > div > div > div > div:nth-of-type(4) > div > div:nth-of-type(1) > a",
+          "prop": "link"
+        }
+      ]
+    },
+    {
+      "role": "primary",
+      "hex": "#ffea00",
+      "token": "--brandPrimary",
+      "note": "WKND yellow: active nav tab, primary button, title underline, button hover",
+      "sources": [
+        {
+          "url": "https://wknd.site/ca/en.html",
+          "selector": "div > div > div:nth-of-type(1) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > a",
+          "prop": "background"
+        },
+        {
+          "url": "https://wknd.site/us/en.html",
+          "selector": "div > div > div:nth-of-type(1) > div > div > div:nth-of-type(1) > div:nth-of-type(2) > a",
+          "prop": "background"
+        }
+      ]
+    },
+    {
+      "role": "accent",
+      "hex": "#0045ff",
+      "token": "--linkColor",
+      "note": "links, tab focus border",
+      "sources": [
+        {
+          "url": "https://wknd.site/ca/en/adventures.html",
+          "selector": "#tabs-7e3beaf10b-item-aebc54e75d-tabpanel > div > ul > li:nth-of-type(1) > article > a:nth-of-type(2)",
+          "prop": "link"
+        },
+        {
+          "url": "https://wknd.site/us/en/adventures.html",
+          "selector": "div:nth-of-type(2) > div > div:nth-of-type(1) > div > ul > li:nth-of-type(1) > article > a:nth-of-type(2)",
+          "prop": "link"
+        }
+      ]
+    },
+    {
+      "role": "text-muted",
+      "hex": "#696969",
+      "sources": [
+        {
+          "url": "https://wknd.site/ca/en/adventures.html",
+          "selector": "#tabs-7e3beaf10b-item-aebc54e75d-tabpanel > div > ul > li:nth-of-type(1) > article > span",
+          "prop": "text"
+        },
+        {
+          "url": "https://wknd.site/us/en/adventures.html",
+          "selector": "div:nth-of-type(2) > div > div:nth-of-type(1) > div > ul > li:nth-of-type(1) > article > span",
+          "prop": "text"
+        }
+      ]
+    },
+    {
+      "role": "border-inverse",
+      "hex": "#ffffff0d",
+      "sources": [
+        {
+          "url": "https://wknd.site/ca/en.html",
+          "selector": "nav > ul > li > a",
+          "prop": "border"
+        },
+        {
+          "url": "https://wknd.site/ca/en/about-us.html",
+          "selector": "nav > ul > li > a",
+          "prop": "border"
+        }
+      ]
+    },
+    {
+      "role": "surface-translucent",
+      "hex": "#ebebeb8a",
+      "note": "carousel indicator / overlay",
+      "sources": [
+        {
+          "url": "https://wknd.site/ca/en.html",
+          "selector": "#search-f5a05c82f1 > form > div > input",
+          "prop": "background"
+        },
+        {
+          "url": "https://wknd.site/ca/en/about-us.html",
+          "selector": "#search-8b7aec3ddf > form > div > input",
+          "prop": "background"
+        }
+      ]
+    },
+    {
+      "role": "overlay",
+      "hex": "#000000cc",
+      "sources": [
+        {
+          "url": "https://wknd.site/ca/en.html",
+          "selector": "#container-bec52d3c6f > div > div:nth-of-type(1) > div > div > ol > li:nth-of-type(1)",
+          "prop": "background"
+        },
+        {
+          "url": "https://wknd.site/ca/en/adventures/bali-surf-camp.html",
+          "selector": "#container-b58a27a4b1 > div > div:nth-of-type(2) > div > div > ol > li",
+          "prop": "background"
+        }
+      ]
+    }
+  ],
+  "type": {
+    "headingFamily": "Asar",
+    "bodyFamily": "Source Sans Pro",
+    "uiFamily": "Source Sans Pro",
+    "families": [
+      {
+        "family": "Asar",
+        "weights": [
+          400
+        ],
+        "role": "display/headings",
+        "source": "https://fonts.googleapis.com/css2?family=Asar",
+        "file": "stardust/current/assets/fonts/Asar-400.woff2"
+      },
+      {
+        "family": "Source Sans Pro",
+        "weights": [
+          300,
+          400,
+          600
+        ],
+        "styles": [
+          "normal",
+          "italic"
+        ],
+        "role": "body/UI",
+        "source": "https://fonts.googleapis.com/css2?family=Source+Sans+Pro",
+        "files": "stardust/current/assets/fonts/SourceSansPro-*.woff2"
+      },
+      {
+        "family": "wknd-icon-font",
+        "role": "icon font",
+        "file": "stardust/current/assets/fonts/wknd-icon-font.woff"
+      }
+    ],
+    "levels": {
+      "h1": {
+        "fontSize": 40,
+        "fontWeight": "400",
+        "family": "Source Sans Pro",
+        "count": 106
+      },
+      "h2": {
+        "fontSize": 36,
+        "fontWeight": "400",
+        "family": "Source Sans Pro",
+        "count": 146
+      },
+      "h3": {
+        "fontSize": 24,
+        "fontWeight": "400",
+        "family": "Source Sans Pro",
+        "count": 76
+      },
+      "h4": {
+        "fontSize": 16,
+        "fontWeight": "600",
+        "family": "Source Sans Pro",
+        "count": 152
+      },
+      "h5": {
+        "fontSize": 14,
+        "fontWeight": "600",
+        "family": "Source Sans Pro",
+        "count": 116
+      }
+    },
+    "body": {
+      "fontSize": "18px",
+      "lineHeight": 1.5,
+      "paragraphLineHeight": 2.5,
+      "paragraphAlign": "justify",
+      "source": "clientlib-site.min.css body, p"
+    },
+    "sizes": [
+      40,
+      36,
+      24,
+      18,
+      16,
+      14,
+      13.33,
+      12
+    ],
+    "tokens": {
+      "--fontSizeXSmall": "12px",
+      "--fontSizeSmall": "14px",
+      "--fontSizeMedium": "18px",
+      "--fontSizeLarge": "24px",
+      "--fontWeightSemiBold": 400,
+      "--fontWeightBold": 600
+    },
+    "scaleAudit": {
+      "kind": "ad-hoc",
+      "sizes": [
+        12,
+        14,
+        16,
+        18,
+        24,
+        36,
+        40
+      ],
+      "note": "fixed px tokens, no constant ratio (14→18→24→36→40)"
+    }
+  },
+  "spacing": {
+    "base": "1rem",
+    "tokens": {
+      "--headerHeight": "200px",
+      "--headerMobileHeight": "130px",
+      "--utilityNavHeight": "25px",
+      "--buttonSize": "48px",
+      "--listItemHeight": "120px"
+    },
+    "buttonPadding": "1rem 2rem",
+    "paragraphMargin": "0 0 13.5px",
+    "source": "clientlib-site.min.css custom-property defaults"
+  },
+  "motifs": {
+    "radius": {
+      "mode": "0",
+      "token": "--buttonBorderRadius: 0",
+      "pill": "50% (contributor avatars, carousel indicators)",
+      "other": [
+        "0 2px 2px 0 (search input)",
+        "30px (mobile nav toggle)"
+      ],
+      "sources": [
+        {
+          "value": "50%",
+          "count": 168
+        },
+        {
+          "value": "0px 2px 2px 0px",
+          "count": 64
+        },
+        {
+          "value": "30px",
+          "count": 24
+        }
+      ]
+    },
+    "shadows": [
+      {
+        "value": "rgba(0, 0, 0, 0.35) -3px 0px 5px 0px inset",
+        "count": 64,
+        "note": "inset shadow on off-canvas mobile nav only"
+      }
+    ],
+    "gradients": [],
+    "patterns": [
+      "square-cornered uppercase buttons",
+      "yellow 2px underline under section titles (.cmp-title--underline)",
+      "yellow filled active nav item",
+      "full-bleed hero carousel with dot indicators + arrow controls",
+      "image-list cards: image, uppercase small title, serif heading",
+      "dark #202020 footer with light logo",
+      "circular contributor avatars with social icon buttons"
+    ]
+  },
+  "componentStyle": {
+    "button": {
+      "background": "#ebebeb",
+      "color": "#202020",
+      "font": "600 14px Source Sans Pro",
+      "textTransform": "uppercase",
+      "radius": 0,
+      "padding": "1rem 2rem",
+      "primary": {
+        "background": "#ffea00"
+      },
+      "secondary": {
+        "background": "#202020",
+        "color": "#ebebeb"
+      },
+      "hover": {
+        "from": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderColor": "rgb(0, 69, 255) rgb(0, 69, 255) rgb(0, 69, 255) rgb(235, 235, 235)"
+        },
+        "to": {
+          "backgroundColor": "rgb(255, 234, 0)",
+          "borderColor": "rgb(32, 32, 32)"
+        }
+      }
+    },
+    "card": {
+      "style": "flat, no border, no shadow, image top, text below"
+    },
+    "nav": {
+      "style": "uppercase 14px 600, active item filled #ffea00",
+      "utilityBar": "dark 25px bar with Sign In + language toggle"
+    },
+    "tabs": {
+      "style": "uppercase pill-less tab list, active filled #202020 with #ebebeb text"
+    }
+  },
+  "systemComponents": [
+    {
+      "id": "site-header",
+      "pages": 64,
+      "selector": "header.cmp-experiencefragment--header",
+      "parts": [
+        "utility bar (Sign In / Sign Out, language navigation)",
+        "logo",
+        "primary nav: Magazine, Adventures, FAQs, About Us",
+        "search form"
+      ]
+    },
+    {
+      "id": "site-footer",
+      "pages": 64,
+      "selector": "footer.cmp-experiencefragment--footer",
+      "parts": [
+        "light logo",
+        "nav: Home, Magazine, Adventures, FAQs, About Us",
+        "Follow Us: Facebook, Twitter, Instagram",
+        "copyright + Adobe disclaimer text"
+      ]
+    },
+    {
+      "id": "breadcrumb",
+      "pages": 44,
+      "selector": ".cmp-breadcrumb"
+    },
+    {
+      "id": "share-adventure",
+      "pages": 32,
+      "headings": [
+        "Share this Adventure"
+      ]
+    },
+    {
+      "id": "article-byline-share",
+      "pages": 12,
+      "selector": ".cmp-byline + social buttons"
+    }
+  ],
+  "iconFont": {
+    "family": "wknd-icon-font",
+    "files": [
+      "stardust/current/assets/fonts/wknd-icon-font.woff",
+      "stardust/current/assets/fonts/wknd-icon-font.ttf"
+    ],
+    "glyphs": [
+      {
+        "class": "cmp-button__icon cmp-button__icon--facebook",
+        "codepoint": "U+E902"
+      },
+      {
+        "class": "cmp-button__icon cmp-button__icon--instagram",
+        "codepoint": "U+E903"
+      },
+      {
+        "class": "cmp-button__icon cmp-button__icon--twitter",
+        "codepoint": "U+E901"
+      },
+      {
+        "class": "wknd__icon wkndicon-menu",
+        "codepoint": "U+E916"
+      },
+      {
+        "class": "cmp-breadcrumb__item cmp-breadcrumb__item--active",
+        "codepoint": "U+EA1C"
+      },
+      {
+        "class": "cmp-carousel__action-icon",
+        "codepoint": "U+E90F"
+      },
+      {
+        "class": "cmp-carousel__action-icon",
+        "codepoint": "U+E90E"
+      },
+      {
+        "class": "cmp-accordion__icon",
+        "codepoint": "U+E911"
+      },
+      {
+        "class": "cmp-breadcrumb__item",
+        "codepoint": "U+EA1C"
+      },
+      {
+        "class": "cmp-download__action-text",
+        "codepoint": "U+E907"
+      },
+      {
+        "class": "teaser cmp-teaser--list cmp-teaser--secure aem-GridColumn--offset--tablet--0 ae…",
+        "codepoint": "U+E98F"
+      }
+    ]
+  },
+  "voice": {
+    "heroHeadline": "WKND Adventures",
+    "heroImage": "https://wknd.site/us/en/_jcr_content/root/container/carousel/item_1571954853062.coreimg.60.1600.jpeg/1660323801921/adobestock-216674449.jpeg",
+    "heroMedium": null,
+    "firstParagraph": "WKND is a collective of outdoors, music, crafts, adventure sports, and travel enthusiasts that want to share our experiences, connections, and expertise with the world.",
+    "ctaLabels": [
+      "View Trips",
+      "Read More",
+      "View All"
+    ],
+    "linkList": [
+      "Magazine",
+      "Adventures",
+      "FAQs",
+      "About Us"
+    ],
+    "sampleHeadings": [
+      "Camping in Western Australia",
+      "Recent Articles",
+      "Next Adventures",
+      "Where do you want to go?"
+    ]
+  },
+  "voiceTable": {
+    "register": "brand",
+    "tone": "enthusiastic, outdoorsy, first-person plural (\"Let us show you why\")",
+    "sentenceLength": "medium",
+    "person": "we/you",
+    "capitalization": "Title Case headings, UPPERCASE nav and buttons"
+  },
+  "crossPromo": {
+    "present": true,
+    "kind": "Recent Articles / Next Adventures card strips on home; related list on articles"
+  },
+  "register": "brand"
+}

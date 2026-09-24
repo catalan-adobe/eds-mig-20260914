@@ -1,0 +1,2 @@
+{"ts":"2026-09-24T07:15:43Z","skill":"stardust:replica","phase":"extract","event":"start","detail":"wknd.site replica prep extract, hands-off, all pages"}
+{"ts":"2026-09-24T07:34:48Z","skill":"stardust:replica","phase":"extract","event":"end","detail":"64/64 pages live (waitMode medium 2500ms, all 200), 9 page types, 0 failures; uncaptured first-level targets: none (no locale root captured; 9 locale roots are Coming-Soon stubs with no subtree)","artifact":"stardust/current","next":"replica preserve-direction"}

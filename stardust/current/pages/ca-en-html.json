@@ -1,0 +1,542 @@
+{
+ "_provenance": {
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-09-24T07:17:44.063Z",
+  "waitMode": "medium",
+  "waitMs": 2500,
+  "httpStatus": 200
+ },
+ "slug": "ca-en-html",
+ "url": "https://wknd.site/ca/en.html",
+ "renderedBy": "playwright",
+ "fetchedAt": "2026-09-24T07:17:44.063Z",
+ "finalUrl": "https://wknd.site/ca/en.html",
+ "title": "WKND Adventures and Travel",
+ "description": "WKND is a collective of outdoors, music, crafts, adventure sports, and travel enthusiasts that want to share our experiences, connections, and expertise with the world.",
+ "og": {
+  "title": null,
+  "description": null,
+  "image": null,
+  "type": null
+ },
+ "headings": [
+  {
+   "tag": "h2",
+   "text": "WKND Adventures"
+  },
+  {
+   "tag": "h2",
+   "text": "Camping in Western Australia"
+  },
+  {
+   "tag": "h2",
+   "text": "Recent Articles"
+  },
+  {
+   "tag": "h2",
+   "text": "Next Adventures"
+  },
+  {
+   "tag": "h2",
+   "text": "Climbing New Zealand"
+  },
+  {
+   "tag": "h3",
+   "text": "Where do you want to go?"
+  },
+  {
+   "tag": "h4",
+   "text": "Follow Us"
+  }
+ ],
+ "body": [
+  "WKND Adventures",
+  "San Diego Surf Spots",
+  "Downhill Skiing Wyoming",
+  "Featured Article",
+  "Ultimate Guide to LA Skateparks Breaking down the top skate destinations in all of Los Angeles. You don't want to miss this!",
+  "Ski Touring Learn about our ski touring experience and how it differs from traditional downhill skiing and even backcountry skiing.",
+  "Arctic Surfing We traveled to Northern Norway to document the joy of surfing in extreme, but breathtakingly beautiful conditions.",
+  "San Diego Surf Spots Best beach breaks",
+  "Yosemite Backpacking Yosemite National Park, designated a World Heritage Site in 1984, is best known for its granite cliffs, waterfalls and giant sequoias, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, glaciers and lakes. The majority of visitors spend their time in the Yosemite Valley, which we'll also explore, but on this trip we'll take you to the backcountry that inspired John Muir to lead a movement to have Congress establish Yosemite as we know it today.",
+  "Whistler Mountain Biking Whistler is often considered North America’s preeminent mountain bike destination. Let us show you why.",
+  "West Coast Cycling Join us for this once in a lifetime bike trip traveling from San Francisco to Portland cycling along the Pacific Coast. Experience world class terrain as we head north through redwood forests, state parks, the Columbia river and the Pacific ocean.",
+  "Tahoe Skiing Great weather, crystal clear lake water, and a relaxed California attitude make Lake Tahoe one of the most desirable ski destinations in the world. Few ski areas rival Lake Tahoe for its excellent snow conditions, challenging terrain and state-of-the-art lift chairs. Lake Tahoe is home to dozens of resorts and we'll be your guide for the best of them."
+ ],
+ "codeBlocks": [],
+ "ctas": [
+  {
+   "label": "Sign In",
+   "href": "#sign-in"
+  },
+  {
+   "label": "en-CA",
+   "href": "#langNavToggle"
+  },
+  {
+   "label": "Magazine",
+   "href": "/ca/en/magazine.html"
+  },
+  {
+   "label": "Adventures",
+   "href": "/ca/en/adventures.html"
+  },
+  {
+   "label": "FAQs",
+   "href": "/ca/en/faqs.html"
+  },
+  {
+   "label": "About Us",
+   "href": "/ca/en/about-us.html"
+  },
+  {
+   "label": "View Trips",
+   "href": "/ca/en/adventures.html"
+  },
+  {
+   "label": "Previous",
+   "href": null
+  },
+  {
+   "label": "Next",
+   "href": null
+  },
+  {
+   "label": "Full Article",
+   "href": "/ca/en/magazine/western-australia.html"
+  },
+  {
+   "label": "Ultimate Guide to LA Skateparks",
+   "href": "/ca/en/magazine/guide-la-skateparks.html"
+  },
+  {
+   "label": "Ski Touring",
+   "href": "/ca/en/magazine/ski-touring.html"
+  },
+  {
+   "label": "Arctic Surfing",
+   "href": "/ca/en/magazine/arctic-surfing.html"
+  },
+  {
+   "label": "San Diego Surf Spots",
+   "href": "/ca/en/magazine/san-diego-surf.html"
+  },
+  {
+   "label": "All Articles",
+   "href": "/ca/en/magazine.html"
+  },
+  {
+   "label": "See Trip",
+   "href": "/ca/en/adventures/climbing-new-zealand.html"
+  },
+  {
+   "label": "Yosemite Backpacking",
+   "href": "/ca/en/adventures/yosemite-backpacking.html"
+  },
+  {
+   "label": "Whistler Mountain Biking",
+   "href": "/ca/en/adventures/whistler-mountain-biking.html"
+  },
+  {
+   "label": "West Coast Cycling",
+   "href": "/ca/en/adventures/west-coast-cycling.html"
+  },
+  {
+   "label": "Tahoe Skiing",
+   "href": "/ca/en/adventures/tahoe-skiing.html"
+  },
+  {
+   "label": "All Trips",
+   "href": "/ca/en/adventures.html"
+  },
+  {
+   "label": "Magazine",
+   "href": "/ca/en/magazine.html"
+  },
+  {
+   "label": "Adventures",
+   "href": "/ca/en/adventures.html"
+  },
+  {
+   "label": "FAQs",
+   "href": "/ca/en/faqs.html"
+  },
+  {
+   "label": "About Us",
+   "href": "/ca/en/about-us.html"
+  },
+  {
+   "label": "Facebook",
+   "href": "#facebookwknd"
+  },
+  {
+   "label": "Twitter",
+   "href": "#twitterWKND"
+  },
+  {
+   "label": "Instagram",
+   "href": "#instagramwknd"
+  },
+  {
+   "label": "localization features with Core Components",
+   "href": "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html"
+  },
+  {
+   "label": "Core Components",
+   "href": "https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html"
+  },
+  {
+   "label": "Archetype",
+   "href": "https://github.com/adobe/aem-project-archetype"
+  },
+  {
+   "label": "site source code",
+   "href": "https://github.com/adobe/aem-guides-wknd/"
+  },
+  {
+   "label": "detailed tutorial",
+   "href": "https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html"
+  },
+  {
+   "label": "Adobe Stock",
+   "href": "https://stock.adobe.com/"
+  }
+ ],
+ "links": [
+  "https://wknd.site/ca/en.html#sign-in",
+  "https://wknd.site/ca/en.html#sign-out",
+  "https://wknd.site/ca/en.html#langNavToggle",
+  "https://wknd.site/us/en.html",
+  "https://wknd.site/us/es.html",
+  "https://wknd.site/ca/en.html",
+  "https://wknd.site/ca/fr.html",
+  "https://wknd.site/ch/de.html",
+  "https://wknd.site/ch/fr.html",
+  "https://wknd.site/ch/it.html",
+  "https://wknd.site/de/de.html",
+  "https://wknd.site/fr/fr.html",
+  "https://wknd.site/es/es.html",
+  "https://wknd.site/it/it.html",
+  "https://wknd.site/ca/en/magazine.html",
+  "https://wknd.site/ca/en/adventures.html",
+  "https://wknd.site/ca/en/faqs.html",
+  "https://wknd.site/ca/en/about-us.html",
+  "https://wknd.site/ca/en/magazine/san-diego-surf.html",
+  "https://wknd.site/ca/en/adventures/downhill-skiing-wyoming.html",
+  "https://wknd.site/ca/en/magazine/western-australia.html",
+  "https://wknd.site/ca/en/magazine/guide-la-skateparks.html",
+  "https://wknd.site/ca/en/magazine/ski-touring.html",
+  "https://wknd.site/ca/en/magazine/arctic-surfing.html",
+  "https://wknd.site/ca/en/adventures/climbing-new-zealand.html",
+  "https://wknd.site/ca/en/adventures/yosemite-backpacking.html",
+  "https://wknd.site/ca/en/adventures/whistler-mountain-biking.html",
+  "https://wknd.site/ca/en/adventures/west-coast-cycling.html",
+  "https://wknd.site/ca/en/adventures/tahoe-skiing.html",
+  "https://wknd.site/ca/en.html#facebookwknd",
+  "https://wknd.site/ca/en.html#twitterWKND",
+  "https://wknd.site/ca/en.html#instagramwknd",
+  "https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html",
+  "https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html",
+  "https://github.com/adobe/aem-project-archetype",
+  "https://github.com/adobe/aem-guides-wknd/",
+  "https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html",
+  "https://stock.adobe.com/",
+  "https://wknd.site/ca/en.html#mobileNav"
+ ],
+ "media": {
+  "imgs": [
+   {
+    "src": "https://wknd.site/content/experience-fragments/wknd/language-masters/en/site/header/master/_jcr_content/root/container/container_1195249223/image.coreimg.svg/1594412560447/wknd-logo-dk.svg",
+    "alt": "WKND Logo",
+    "w": 300,
+    "h": 112
+   },
+   {
+    "src": "https://wknd.site/ca/en/_jcr_content/root/container/carousel/item_1571954853062.coreimg.60.1600.jpeg/1660323801921/adobestock-216674449.jpeg",
+    "alt": "Female sitting on a large rock relaxing in afternoon dappled light the Australian bushland with views over the river",
+    "w": 1440,
+    "h": 810
+   },
+   {
+    "src": "https://wknd.site/ca/en/_jcr_content/root/container/container/teaser.coreimg.60.1600.jpeg/1660323792132/adobestock-156407519.jpeg",
+    "alt": "The Lennard River carves a stunning canyon through the Napier Range at Windjana Gorge, Kimberley Region, Western Australia. The permanent pools in the river provide a permanent habitat for dozens of freshwater crocodiles. Rudyards Kipling's story \"The Elephant Child,\" comes to mind every time I visit Windjana Gorge in the Kimberley,  when the Elephant child says: \"and still I want to know what the Crocodile has for dinner!'Then Kolokolo Bird said, with a mournful cry, 'Go to the banks of the great grey-green, greasy Limpopo River, all set about with fever-trees, and find out.\"At Windana Gorge the green waters of the gorge pools are filled with  Johnston crocodiles floating in the tepid green waters or resting on the hot sand banks.They add a real air of wild Australia below the complex and colourful ramparts of the Gorge where the Leonard River flows through the ancient Devonian reefs.The history of the renegade aboriginal tracker Jandamarra who hid in caves in this gorge and the screeching of the galahs circling overhead and wheeling about amongst the crags further adds to the primeval atmosphere of this special place in Australia.",
+    "w": 1181,
+    "h": 665
+   },
+   {
+    "src": "https://wknd.site/ca/en/magazine/guide-la-skateparks/_jcr_content/root/container/container/contentfragment/par2/image_copy.coreimg.60.1600.png/1660323783259/article-01-picture-01.png",
+    "alt": "Ultimate Guide to LA Skateparks",
+    "w": 688,
+    "h": 481
+   },
+   {
+    "src": "https://wknd.site/ca/en/magazine/ski-touring/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1600.jpeg/1660323789866/skitouring5sjoeberg.jpeg",
+    "alt": "Ski Touring",
+    "w": 1152,
+    "h": 767
+   },
+   {
+    "src": "https://wknd.site/ca/en/magazine/arctic-surfing/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1600.jpeg/1660323789770/surfer-wave-02.jpeg",
+    "alt": "Arctic Surfing",
+    "w": 1151,
+    "h": 767
+   },
+   {
+    "src": "https://wknd.site/ca/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1600.jpeg/1660323790169/adobestock-164735399.jpeg",
+    "alt": "San Diego Surf Spots",
+    "w": 1152,
+    "h": 767
+   },
+   {
+    "src": "https://wknd.site/ca/en/_jcr_content/root/container/teaser.coreimg.60.1600.jpeg/1660323789729/adobestock-140634652.jpeg",
+    "alt": "Rock Climbing and Bouldering above the lake and mountains",
+    "w": 1163,
+    "h": 775
+   },
+   {
+    "src": "https://wknd.site/ca/en/adventures/yosemite-backpacking/_jcr_content/root/container/carousel/image.coreimg.60.1600.jpeg/1660323790695/adobestock-231698835.jpeg",
+    "alt": "Yosemite Backpacking",
+    "w": 1440,
+    "h": 797
+   },
+   {
+    "src": "https://wknd.site/ca/en/adventures/whistler-mountain-biking/_jcr_content/root/container/carousel/image.coreimg.60.1600.jpeg/1660323789625/adobestock-122615840.jpeg",
+    "alt": "Whistler Mountain Biking",
+    "w": 1093,
+    "h": 729
+   },
+   {
+    "src": "https://wknd.site/ca/en/adventures/west-coast-cycling/_jcr_content/root/container/carousel/image.coreimg.60.1600.jpeg/1660323786740/adobestock-151584995.jpeg",
+    "alt": "West Coast Cycling",
+    "w": 900,
+    "h": 321
+   },
+   {
+    "src": "https://wknd.site/ca/en/adventures/tahoe-skiing/_jcr_content/root/container/carousel/image.coreimg.60.1600.jpeg/1660323785476/adobestock-184591344.jpeg",
+    "alt": "Tahoe Skiing",
+    "w": 900,
+    "h": 649
+   },
+   {
+    "src": "https://wknd.site/content/experience-fragments/wknd/ca/en/site/footer/master/_jcr_content/root/container/container/image.coreimg.svg/1605134146747/wknd-logo-light.svg",
+    "alt": "WKND Logo",
+    "w": 300,
+    "h": 112
+   }
+  ],
+  "allImgCount": 15,
+  "cssBackgrounds": [],
+  "modals": [],
+  "videos": [],
+  "iframes": []
+ },
+ "customProps": {},
+ "_signals": {
+  "filteredInterstitials": 0,
+  "distinctHeadings": 7,
+  "mainTextLen": 2875,
+  "realImageCount": 13,
+  "trackingOnlyMedia": false,
+  "spaShellSuspect": false,
+  "screenshotMode": "fullPage",
+  "duplicateOf": "us-en-html"
+ },
+ "dynamic": {
+  "endpoints": [
+   {
+    "method": "GET",
+    "host": "wknd.site",
+    "path": "/conf/wknd/settings/wcm/segments.seg.js",
+    "query": [],
+    "resourceType": "xhr",
+    "contentType": "text/javascript",
+    "status": 200,
+    "bytes": 377,
+    "hits": 1,
+    "example": "https://wknd.site/conf/wknd/settings/wcm/segments.seg.js",
+    "sameSite": true
+   },
+   {
+    "method": "GET",
+    "host": "wknd.site",
+    "path": "/content/wknd/ca/en/_jcr_content/contexthub.pagedata.json",
+    "query": [],
+    "resourceType": "xhr",
+    "contentType": "application/json",
+    "status": 200,
+    "bytes": 280,
+    "hits": 1,
+    "example": "https://wknd.site/content/wknd/ca/en/_jcr_content/contexthub.pagedata.json",
+    "sameSite": true
+   },
+   {
+    "method": "GET",
+    "host": "wknd.site",
+    "path": "/home/users/o/oa6PkCC2rneOdh2ni0qG.infinity.json",
+    "query": [],
+    "resourceType": "xhr",
+    "contentType": "application/json",
+    "status": 200,
+    "bytes": 306,
+    "hits": 1,
+    "example": "https://wknd.site/home/users/o/oa6PkCC2rneOdh2ni0qG.infinity.json",
+    "sameSite": true
+   },
+   {
+    "method": "GET",
+    "host": "wknd.site",
+    "path": "/libs/granite/csrf/token.json",
+    "query": [],
+    "resourceType": "xhr",
+    "contentType": "application/json",
+    "status": 200,
+    "bytes": 2,
+    "hits": 1,
+    "example": "https://wknd.site/libs/granite/csrf/token.json",
+    "sameSite": true
+   },
+   {
+    "method": "GET",
+    "host": "wknd.site",
+    "path": "/libs/granite/security/currentuser.json",
+    "query": [
+     "nocache"
+    ],
+    "resourceType": "xhr",
+    "contentType": "application/json",
+    "status": 200,
+    "bytes": 135,
+    "hits": 1,
+    "example": "https://wknd.site/libs/granite/security/currentuser.json",
+    "sameSite": true
+   },
+   {
+    "method": "GET",
+    "host": "dpm.demdex.net",
+    "path": "/id",
+    "query": [
+     "d_fieldgroup",
+     "d_nsid",
+     "d_orgid",
+     "d_rtbd",
+     "d_ver",
+     "d_visid_ver",
+     "ts"
+    ],
+    "resourceType": "xhr",
+    "contentType": "application/json",
+    "status": 200,
+    "bytes": 313,
+    "hits": 1,
+    "example": "https://dpm.demdex.net/id",
+    "sameSite": false
+   }
+  ],
+  "thirdPartyScriptHosts": [
+   {
+    "host": "assets.adobedtm.com",
+    "count": 3
+   }
+  ],
+  "truncated": false,
+  "inlineData": [],
+  "globalState": [],
+  "frameworkHints": [
+   "aem-sites"
+  ],
+  "forms": [
+   {
+    "action": "https://wknd.site/content/wknd/ca/en.searchresults.json/_jcr_content/root/container/container_1195249223/search",
+    "hasAction": true,
+    "method": "get",
+    "sameOrigin": true,
+    "fieldCount": 1,
+    "fieldNames": [
+     "fulltext"
+    ],
+    "search": true
+   }
+  ],
+  "ariaLiveRegions": 2,
+  "triggers": [
+   {
+    "marker": "data-modal-url",
+    "href": "#sign-in"
+   },
+   {
+    "marker": "data-modal-url",
+    "href": "#sign-out"
+   }
+  ],
+  "mediaIds": [],
+  "summary": {
+   "sameSiteEndpoints": 5,
+   "thirdPartyEndpoints": 1,
+   "thirdPartyScriptHosts": 1,
+   "inlineDataBlobs": 0,
+   "forms": 1,
+   "searchForms": 1,
+   "hydrated": true
+  }
+ },
+ "screenshot": "assets/screenshots/ca-en-html.png",
+ "renderedHtml": "pages/ca-en-html.html",
+ "type": "landing",
+ "slots": {
+  "hero-carousel[]": [
+   "https://wknd.site/ca/en/_jcr_content/root/container/carousel/item_1571954853062.coreimg.60.1600.jpeg/1660323801921/adobestock-216674449.jpeg",
+   "https://wknd.site/ca/en/_jcr_content/root/container/container/teaser.coreimg.60.1600.jpeg/1660323792132/adobestock-156407519.jpeg"
+  ],
+  "sections": [
+   "WKND Adventures",
+   "Camping in Western Australia",
+   "Recent Articles",
+   "Next Adventures",
+   "Climbing New Zealand",
+   "Where do you want to go?",
+   "Follow Us"
+  ],
+  "card-grid": [
+   {
+    "label": "Full Article",
+    "href": "/ca/en/magazine/western-australia.html"
+   },
+   {
+    "label": "Ultimate Guide to LA Skateparks",
+    "href": "/ca/en/magazine/guide-la-skateparks.html"
+   },
+   {
+    "label": "Ski Touring",
+    "href": "/ca/en/magazine/ski-touring.html"
+   },
+   {
+    "label": "Arctic Surfing",
+    "href": "/ca/en/magazine/arctic-surfing.html"
+   },
+   {
+    "label": "San Diego Surf Spots",
+    "href": "/ca/en/magazine/san-diego-surf.html"
+   },
+   {
+    "label": "See Trip",
+    "href": "/ca/en/adventures/climbing-new-zealand.html"
+   },
+   {
+    "label": "Yosemite Backpacking",
+    "href": "/ca/en/adventures/yosemite-backpacking.html"
+   },
+   {
+    "label": "Whistler Mountain Biking",
+    "href": "/ca/en/adventures/whistler-mountain-biking.html"
+   },
+   {
+    "label": "West Coast Cycling",
+    "href": "/ca/en/adventures/west-coast-cycling.html"
+   },
+   {
+    "label": "Tahoe Skiing",
+    "href": "/ca/en/adventures/tahoe-skiing.html"
+   }
+  ]
+ }
+}
