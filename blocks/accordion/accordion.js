@@ -13,7 +13,8 @@
  *
  * EW7: the question moves into `div.accordion-title`, never into the
  * toggle <button>; the whole header row takes the click, the button is a
- * glyph-only toggle carrying the aria state. Every authored node is MOVED
+ * glyph-only toggle carrying the aria state (class `accordion-icon` names
+ * it as the icon host, like the source's `accordion__icon icon` span). Every authored node is MOVED
  * (EW1), wrappers carry the classes (EW2), re-entrant (EW9).
  */
 
@@ -44,7 +45,7 @@ function buildItem(row, id) {
 
   const button = document.createElement('button');
   button.type = 'button';
-  button.className = 'accordion-toggle';
+  button.className = 'accordion-toggle accordion-icon';
   button.setAttribute('aria-controls', `${id}-panel`);
   button.setAttribute('aria-labelledby', `${id}-title`);
   header.append(title, button);
