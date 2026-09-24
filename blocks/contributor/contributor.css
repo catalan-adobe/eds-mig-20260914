@@ -95,10 +95,9 @@
   width: var(--button-size);
 }
 
-.contributor .contributor-link a::before {
+.contributor .contributor-link a .contributor-icon {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  content: "";
   display: block;
   font-family: wknd-icon-font, sans-serif;
   font-size: 17.5px;
@@ -110,14 +109,18 @@
   text-transform: none;
 }
 
-.contributor .contributor-link-facebook a::before {
+.contributor .contributor-link a .contributor-icon::before {
+  content: "";
+}
+
+.contributor .contributor-link-facebook a .contributor-icon::before {
   content: "\e902";
 }
 
-.contributor .contributor-link-twitter a::before {
+.contributor .contributor-link-twitter a .contributor-icon::before {
   content: "\e901";
 }
 
-.contributor .contributor-link-instagram a::before {
+.contributor .contributor-link-instagram a .contributor-icon::before {
   content: "\e903";
 }

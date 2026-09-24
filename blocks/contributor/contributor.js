@@ -42,6 +42,10 @@ function buildLinks(paragraphs) {
   paragraphs.forEach((p) => {
     const a = p.querySelector('a');
     if (a.title && !a.hasAttribute('aria-label')) a.setAttribute('aria-label', a.title);
+    const icon = document.createElement('span');
+    icon.className = 'contributor-icon';
+    icon.setAttribute('aria-hidden', 'true');
+    a.prepend(icon);
     grid.append(wrapNode(p, `contributor-link contributor-link-${networkOf(a)}`));
   });
   links.append(grid);
