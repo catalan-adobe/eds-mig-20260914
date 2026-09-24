@@ -1,7 +1,7 @@
 {
   "_provenance": {
     "writtenBy": "stardust:replica",
-    "writtenAt": "2026-09-24T09:25:19Z",
+    "writtenAt": "2026-09-24T09:25:40Z",
     "stardustVersion": "0.10.0"
   },
   "site": {
@@ -490,11 +490,15 @@
       "url": "https://wknd.site/us/en/magazine/arctic-surfing.html",
       "title": "Arctic Surfing",
       "type": "article",
-      "status": "extracted",
+      "status": "directed",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-24T06:55:17.209Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:25:40Z"
         }
       ],
       "stale": false,
@@ -508,11 +512,15 @@
       "url": "https://wknd.site/us/en/magazine/guide-la-skateparks.html",
       "title": "Ultimate Guide to LA Skateparks",
       "type": "article",
-      "status": "extracted",
+      "status": "directed",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-24T06:55:16.938Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:25:40Z"
         }
       ],
       "stale": false,
@@ -575,11 +583,15 @@
       "url": "https://wknd.site/us/en/magazine/ski-touring.html",
       "title": "Ski Touring",
       "type": "article",
-      "status": "extracted",
+      "status": "directed",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-24T06:55:16.938Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:25:40Z"
         }
       ],
       "stale": false,
@@ -593,11 +605,15 @@
       "url": "https://wknd.site/us/en/magazine/western-australia.html",
       "title": "Western Australia",
       "type": "article",
-      "status": "extracted",
+      "status": "directed",
       "history": [
         {
           "status": "extracted",
           "at": "2026-09-24T06:55:11.428Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:25:40Z"
         }
       ],
       "stale": false,
@@ -608,7 +624,7 @@
     }
   ],
   "migrate": {
-    "at": "2026-09-24T09:25:20Z",
+    "at": "2026-09-24T09:26:41Z",
     "outputDir": "stardust/migrated/",
     "selfContained": true,
     "pageMap": [
@@ -909,20 +925,34 @@
         "slug": "us-en-adventures-yosemite-backpacking-html",
         "file": "stardust/migrated/us/en/adventures/yosemite-backpacking.html",
         "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-magazine-arctic-surfing-html",
+        "file": "stardust/migrated/us/en/magazine/arctic-surfing.html",
+        "assetsBundled": 20
+      },
+      {
+        "slug": "us-en-magazine-guide-la-skateparks-html",
+        "file": "stardust/migrated/us/en/magazine/guide-la-skateparks.html",
+        "assetsBundled": 20
+      },
+      {
+        "slug": "us-en-magazine-ski-touring-html",
+        "file": "stardust/migrated/us/en/magazine/ski-touring.html",
+        "assetsBundled": 4
+      },
+      {
+        "slug": "us-en-magazine-western-australia-html",
+        "file": "stardust/migrated/us/en/magazine/western-australia.html",
+        "assetsBundled": 4
       }
     ],
     "missingAssets": [],
     "cleanedAssets": [],
     "lastRun": {
-      "at": "2026-09-24T09:25:20Z",
+      "at": "2026-09-24T09:26:41Z",
       "rendered": [
-        "us-en-adventures-riverside-camping-australia-html",
-        "us-en-adventures-ski-touring-mont-blanc-html",
-        "us-en-adventures-surf-camp-costa-rica-html",
-        "us-en-adventures-tahoe-skiing-html",
-        "us-en-adventures-west-coast-cycling-html",
-        "us-en-adventures-whistler-mountain-biking-html",
-        "us-en-adventures-yosemite-backpacking-html"
+        "us-en-magazine-html"
       ],
       "unchanged": [],
       "refused": [],

@@ -1278,6 +1278,162 @@
         "variance-probe"
       ],
       "migrated": "stardust/migrated/us/en/adventures/yosemite-backpacking.html"
+    },
+    "us-en-magazine-arctic-surfing-html": {
+      "archetype": "us-en-magazine-san-diego-surf-html",
+      "variants": [
+        "section-title--underline",
+        "text"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0.01,
+          "px": 354,
+          "heightDelta": -1,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.12,
+          "px": 10538,
+          "heightDelta": 2,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "1 (0 structural 🔴)",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/magazine/arctic-surfing.html"
+    },
+    "us-en-magazine-guide-la-skateparks-html": {
+      "archetype": "us-en-magazine-san-diego-surf-html",
+      "variants": [
+        "section-title--underline",
+        "text--quote",
+        "download"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0.03,
+          "px": 675,
+          "heightDelta": -1,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.16,
+          "px": 11307,
+          "heightDelta": 2,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "1 (0 structural 🔴)",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/magazine/guide-la-skateparks.html"
+    },
+    "us-en-magazine-ski-touring-html": {
+      "archetype": "us-en-magazine-san-diego-surf-html",
+      "variants": [
+        "text--quote"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0.01,
+          "px": 294,
+          "heightDelta": -1,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.12,
+          "px": 10323,
+          "heightDelta": 2,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "1 (0 structural 🔴)",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/magazine/ski-touring.html"
+    },
+    "us-en-magazine-western-australia-html": {
+      "archetype": "us-en-magazine-san-diego-surf-html",
+      "variants": [
+        "section-title--underline",
+        "text--quote"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0.03,
+          "px": 908,
+          "heightDelta": -1,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.17,
+          "px": 15697,
+          "heightDelta": 3,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "1 (0 structural 🔴)",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/magazine/western-australia.html"
     }
   }
 }

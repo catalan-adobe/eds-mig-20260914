@@ -1,7 +1,7 @@
 {
   "flow": "replica",
   "phase": "migrate",
-  "updatedAt": "2026-09-24T09:25:40Z",
+  "updatedAt": "2026-09-24T09:28:19Z",
   "units": {
     "plan": {
       "status": "done",
@@ -89,7 +89,7 @@
       "verdict": "rendered 7, unchanged 0, refused 0, passthrough 0 (A' siblings; 6 gates each, media-reconcile n/a until delivery)"
     },
     "us-en-magazine-san-diego-surf-html": {
-      "status": "pending",
+      "status": "done",
       "kind": "render",
       "templates": [
         "us-en-magazine-san-diego-surf-html"
@@ -107,9 +107,9 @@
         "section-title--underline",
         "text"
       ],
-      "startedAt": null,
-      "endedAt": null,
-      "verdict": null
+      "startedAt": "2026-09-24T09:25:40Z",
+      "endedAt": "2026-09-24T09:28:19Z",
+      "verdict": "rendered 4, unchanged 0, refused 0, passthrough 0 (A' siblings; 6 gates each, media-reconcile n/a until delivery; guide-la-skateparks PDF /content/dam link logged soft-broken → asset rehost at rollout)"
     }
   }
 }

@@ -32,7 +32,7 @@
     "description": "Read articles about adventures and activities that we've recently experienced and would love to share with our community.",
     "url": "https://wknd.site/us/en/magazine.html"
   },
-  "migratedAt": "2026-09-24T09:19:20Z",
+  "migratedAt": "2026-09-24T09:26:41Z",
   "designMdSha": "720637eadd96",
   "designJsonSha": "a627c03a4224",
   "sourceCurrentSha": "d99a267ad7c4",
@@ -109,42 +109,6 @@
     {
       "href": "/it/it.html",
       "reason": "not-in-inventory"
-    },
-    {
-      "href": "/us/en/magazine/western-australia.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/magazine/arctic-surfing.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/magazine/arctic-surfing.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/magazine/ski-touring.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/magazine/ski-touring.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/magazine/guide-la-skateparks.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/magazine/guide-la-skateparks.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/magazine/western-australia.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/magazine/western-australia.html",
-      "reason": "in-inventory-not-migrated"
     }
   ],
   "outputPath": "us/en/magazine.html",
