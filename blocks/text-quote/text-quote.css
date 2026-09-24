@@ -22,6 +22,15 @@
   padding: 14px;
 }
 
+/* the pipeline wraps the blockquote's inline run in a <p>; the base p rule (18px / 2.5 /
+   13.5px / justify) must not override the quote face — inherit from the blockquote */
+.text-quote blockquote p {
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  text-align: inherit;
+}
+
 .text-quote blockquote::after {
   border-bottom: 2px solid var(--color-accent);
   content: "";
