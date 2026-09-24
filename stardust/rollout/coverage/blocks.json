@@ -7,7 +7,7 @@
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-09-24T14:22:48.881Z",
+  "generatedAt": "2026-09-24T14:35:10.278Z",
   "blocks": [
     {
       "id": "accordion",
@@ -140,7 +140,7 @@
       ],
       "instanceCount": 12,
       "delivery": {
-        "status": "converted",
+        "status": "deployed",
         "edsBlockName": "byline",
         "blockPath": null,
         "convertedAt": "2026-09-24T13:00:00.098Z"
@@ -171,7 +171,7 @@
       ],
       "instanceCount": 12,
       "delivery": {
-        "status": "converted",
+        "status": "deployed",
         "edsBlockName": "content-fragment",
         "blockPath": null,
         "convertedAt": "2026-09-24T13:00:00.194Z"
@@ -266,7 +266,7 @@
       ],
       "instanceCount": 4,
       "delivery": {
-        "status": "converted",
+        "status": "deployed",
         "edsBlockName": "download",
         "blockPath": null,
         "convertedAt": "2026-09-24T13:00:00.307Z"
@@ -378,7 +378,7 @@
       ],
       "instanceCount": 12,
       "delivery": {
-        "status": "converted",
+        "status": "deployed",
         "edsBlockName": "list-upnext",
         "blockPath": null,
         "convertedAt": "2026-09-24T13:00:00.412Z"
@@ -460,7 +460,7 @@
       ],
       "instanceCount": 12,
       "delivery": {
-        "status": "converted",
+        "status": "deployed",
         "edsBlockName": "sharing",
         "blockPath": null,
         "convertedAt": "2026-09-24T13:00:00.482Z"
@@ -646,7 +646,7 @@
       ],
       "instanceCount": 7,
       "delivery": {
-        "status": "converted",
+        "status": "deployed",
         "edsBlockName": "text-quote",
         "blockPath": null,
         "convertedAt": "2026-09-24T13:00:00.657Z"
