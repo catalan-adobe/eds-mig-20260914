@@ -1,7 +1,7 @@
 {
   "units": {
     "foundation": {
-      "status": "done-local",
+      "status": "done",
       "kind": "foundation",
       "templates": [
         "landing",
@@ -14,25 +14,40 @@
         "magazine-hub",
         "members-only"
       ],
-      "pages": 0,
+      "pages": 1,
       "blocks": 2,
       "gates": {
         "360": {
-          "header": "harness boxes = live lift (117px; logo 60,52 96x36; search 186,50)",
-          "footer": "harness 593px = live lift"
+          "pixelPct": 0.42,
+          "heightDelta": 0,
+          "overflow": "ok",
+          "headerBandPct": 0.58,
+          "footerBandPct": 0.87,
+          "contentDiffRed": 5,
+          "verdict": "PASS (pub3; pub1 0.50%)"
         },
         "1440": {
-          "header": "harness boxes = live lift (194px; logo 152,82 128x48; nav 726,90; search 1122,85)",
-          "footer": "harness 260px = live lift"
+          "pixelPct": 0.26,
+          "heightDelta": 0,
+          "overflow": "ok",
+          "headerBandPct": 0.09,
+          "footerBandPct": 0,
+          "contentDiffRed": 5,
+          "verdict": "PASS (pub3; pub1 0.28%)"
         },
-        "crop": "pending — published origin only (no DA target)",
-        "chrome": "pending — published origin only (no DA target)",
-        "local": "qa-gate 10/10; chrome EW 14/14 editable + 3 exempt, 0 dead/dup; drive 15/15; npm run lint clean; delivery-lint 22/22 fragments clean; davids-model-lint PASS"
+        "crop": "header ≤0.58%, footer ≤0.87% at both widths (bar 2%) — crop-compare-pub3.txt",
+        "chrome": "✓ parity both widths on the chrome elements: chrome-parity --region \"header=header|.header .site-header\" --region \"footer=footer|.footer .site-footer\" (the EDS <header>/<footer> wrappers are in-flow spacers: default regions report static/white/+6px|+13px and the off-canvas nav — wrapper artefacts, chrome-parity-pub2-chrome-element.txt)",
+        "iterations": "pub1 → pub3 (3 rounds; footer glyph-span fix verified with a footer-only probe pub3b)",
+        "contentDiff": "5 🔴 left: 4 in main (landing blocks: \"San Diego Surf Spots\" role/CTA, aria-label read our articles / explore our adventures — landing cluster), 1 header ICON DIFF clear.svg file vs source data-URI (byte-identical, registered)"
       },
-      "startedAt": "2026-09-24T11:01:59Z",
-      "endedAt": "2026-09-24T11:32:35.442Z",
-      "verdict": "foundation: styles + fonts + favicon + header/footer blocks + 22 locale chrome docs authored, lint pass, local asserts pass; PUT pending: no DA target",
-      "putPending": "no DA org/repo/DA_TOKEN — rollout.json.site.da.* null"
+      "startedAt": "2026-09-24T13:30:44Z",
+      "endedAt": "2026-09-24T13:49:07.368Z",
+      "verdict": "foundation: media 252/252, docs 23/23 live (preview), blocks 2, gate 1440 0.26% / 360 0.42%, chrome bands ≤0.87%, requests 7 applied + 1 queued (scripts.js lang)",
+      "deployed": {
+        "media": "252 uploaded / 1 skipped (_manifest.json) / 0 failed → media/wknd-sd25, ledger stardust/deploy/media-ledger.json",
+        "docs": "23/23 previewed (11 nav + 11 footer + /us/en), .plain.html 200, about:error 0, ledger stardust/deploy/ledger-foundation.json",
+        "publish": "preview only (--no-publish)"
+      }
     },
     "program": {
       "status": "done-local",
