@@ -161,7 +161,7 @@
   width: var(--button-size);
 }
 
-.footer .site-footer-social a::before {
+.footer .site-footer-social .button-icon {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: block;
@@ -180,9 +180,9 @@
   display: none;
 }
 
-.footer .social-facebook a::before { content: "\e902"; }
-.footer .social-twitter a::before { content: "\e901"; }
-.footer .social-instagram a::before { content: "\e903"; }
+.footer .social-facebook .button-icon::before { content: "\e902"; }
+.footer .social-twitter .button-icon::before { content: "\e901"; }
+.footer .social-instagram .button-icon::before { content: "\e903"; }
 
 /* ---- hidden separator (space-small): the source's 1em margins + the 9px rule margins,
    the rule box (a BFC) kept them from collapsing through — 36px of empty band ---- */

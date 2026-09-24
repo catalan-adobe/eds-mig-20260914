@@ -88,7 +88,7 @@ function buildSocial(socialDiv) {
       a.removeAttribute('title');
       const text = el('span', 'button-text');
       text.append(...a.childNodes);
-      a.append(text);
+      a.append(el('span', 'button-icon', { 'aria-hidden': 'true' }), text);
     });
     list.append(authored);
   }
