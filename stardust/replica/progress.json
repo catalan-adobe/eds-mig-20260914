@@ -1,0 +1,82 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-09-24T07:41:23.330Z",
+    "phase": "preserve-direction",
+    "againstInput": "https://wknd.site"
+  },
+  "pageTypes": {
+    "landing": {
+      "archetype": "us-en-html",
+      "count": 2,
+      "iterations": 0,
+      "gates": {},
+      "residuals": [],
+      "motion": {}
+    },
+    "listing": {
+      "archetype": "us-en-adventures-html",
+      "count": 2,
+      "iterations": 0,
+      "gates": {},
+      "residuals": [],
+      "motion": {}
+    },
+    "magazine": {
+      "archetype": "us-en-magazine-html",
+      "count": 2,
+      "iterations": 0,
+      "gates": {},
+      "residuals": [],
+      "motion": {}
+    },
+    "program": {
+      "archetype": "us-en-adventures-riverside-camping-australia-html",
+      "count": 32,
+      "iterations": 0,
+      "gates": {},
+      "residuals": [],
+      "motion": {}
+    },
+    "article": {
+      "archetype": "us-en-magazine-western-australia-html",
+      "count": 12,
+      "iterations": 0,
+      "gates": {},
+      "residuals": [],
+      "motion": {}
+    },
+    "static": {
+      "archetype": "us-en-about-us-html",
+      "count": 2,
+      "iterations": 0,
+      "gates": {},
+      "residuals": [],
+      "motion": {}
+    },
+    "faq": {
+      "archetype": "us-en-faqs-html",
+      "count": 2,
+      "iterations": 0,
+      "gates": {},
+      "residuals": [],
+      "motion": {}
+    },
+    "unique": {
+      "archetype": "ca-en-magazine-members-only-html",
+      "count": 1,
+      "iterations": 0,
+      "gates": {},
+      "residuals": [],
+      "motion": {}
+    },
+    "stub": {
+      "archetype": "us-es-html",
+      "count": 9,
+      "iterations": 0,
+      "gates": {},
+      "residuals": [],
+      "motion": {}
+    }
+  }
+}

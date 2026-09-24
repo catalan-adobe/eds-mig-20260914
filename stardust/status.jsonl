@@ -1,2 +1,4 @@
 {"ts":"2026-09-24T07:15:43Z","skill":"stardust:replica","phase":"extract","event":"start","detail":"wknd.site replica prep extract, hands-off, all pages"}
 {"ts":"2026-09-24T07:34:48Z","skill":"stardust:replica","phase":"extract","event":"end","detail":"64/64 pages live (waitMode medium 2500ms, all 200), 9 page types, 0 failures; uncaptured first-level targets: none (no locale root captured; 9 locale roots are Coming-Soon stubs with no subtree)","artifact":"stardust/current","next":"replica preserve-direction"}
+{"ts":"2026-09-24T07:36:09Z","skill":"stardust:replica","phase":"preserve-direction","event":"start"}
+{"ts":"2026-09-24T07:41:40Z","skill":"stardust:replica","phase":"preserve-direction","event":"end","detail":"spec promoted verbatim (cmp ok); register empty (pure replica); dynamics 34 findings → 15 curated rows, 15/15 dispositions, 0 blocked; progress.json 9 page types","artifact":"stardust/dynamic-features.md","next":"replica recreate"}

@@ -43,3 +43,25 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 **Next:** replica Phase 2 — preserve direction (mechanical promotion of stardust/current/PRODUCT.md, DESIGN.md, DESIGN.json to root), then Phase 3 recreate one archetype per type.
 
 ---
+
+## Preserve direction — verbatim promotion, empty register, dynamics triage 15/15 (2026-09-24)
+
+**Prompt:** Replica Phase 2 PRESERVE DIRECTION + dynamics gate (Phases 1–3), hands-off, all pages.
+
+**Decisions:**
+- `stardust/current/{PRODUCT.md,DESIGN.md,DESIGN.json}` promoted byte-for-byte to the project root (`cmp` verified); provenance `verbatim --prep promotion`. The `direct` skill was not invoked.
+- `stardust/direction.md` rewritten in the preserve-mode shape with the hands-off activation and named assumptions A1–A6 (flow=replica from the user phrase; ALL pages, no cap; no DA target → delivery stops before the DA PUT; empty register; dynamics target origin unknown; members-only pages ship as normal pages).
+- `stardust/replica/inconsistency-register.md` — **empty, pure replica** (no audit requested, no `--register`).
+- Dynamics: `dynamics-detect --from-state` probed 9 archetype pages (first slug per type → all /ca/en; byte-identical to /us/en) + reach from 64/64 → 34 findings; `dynamics-plan` drafted 34 rows (self 16 / owner batch 17) without `--target-origin`. Curated to 15 rows in `stardust/dynamic-features.md`: search merged (9→1, probe `surf` → 3 results recorded as expectCount/expectTitles), ContextHub merged (9→1), 5 client-only interactions added from the DOM (carousel, tabs, accordion, language dropdown, off-canvas nav), `2o7.net` resolved to Adobe Analytics (not "inspect").
+- Hands-off owner decisions by name: D-L1 listings curated (authored cards, index switch deferred), D-I1 all captured locales ship, D-T1 no tags load until a Launch property is named, D-X1 Sign In/Out kept as inert hash anchors; decided-out: X-01 auth, D-01 ContextHub, D-02 Granite plumbing.
+- No regulated-PII form (only form = search box), no blank client-rendered capture → no blocked rows.
+- `stardust/replica/progress.json` initialised: 9 page types, iterations 0, gates {}, residuals [], motion {}.
+
+**Artifacts touched:** PRODUCT.md, DESIGN.md, DESIGN.json (root, created) · stardust/direction.md · stardust/replica/inconsistency-register.md · stardust/replica/progress.json · stardust/current/_dynamics.json, dynamic-features.generated.md · stardust/dynamics/dynamic-features.generated-plan.{md,json} · stardust/dynamic-features.md, stardust/dynamic-features-plan.md · stardust/status.jsonl, stardust/journal.md
+
+**Findings worth flagging:**
+- Search on the source is a header typeahead (min 3 chars, 5 results) with no results page — none is invented; P4 needs `helix-query.yaml` on the target code branch.
+- Adventures listing = 6 activity tabs each wrapping an image-list (All 16 cards); tabs and cards are one nested block pair in recreation.
+- Carousel autoplay delay 5000 ms on home hero and adventure-detail gallery — motion gate input.
+
+**Open questions:** D-L1, D-I1, D-T1, D-X1 (all with interim decisions above); EDS/DA target for A3.
