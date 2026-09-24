@@ -1,0 +1,72 @@
+/* ==========================================================================
+   WKND replica — faq archetype (/us/en/faqs.html) NEW modules: two-column
+   content grid (default--8 + default--3 offset--1), lead image, accordion,
+   small text. Values lifted from clientlib-site.min.css:
+   .aem-Grid--default--12 > .aem-GridColumn--default--8 / --default--3 /
+   --offset--default--1, .aem-Grid--tablet--12 > --tablet--8, .aem-Grid--phone--12
+   > --phone--8, .responsivegrid.aem-GridColumn, .aem-Grid:after,
+   .cmp-image .cmp-image__image, .cmp-accordion .cmp-accordion__* ,
+   .cmp-text--font-small p, [class*=__icon] (wknd-icon-font U+E911 / U+E910).
+   Confirmed with measure.mjs at 1440 + 360 (stardust/replica/lifts/us-en-faqs-html-live.txt).
+   ========================================================================== */
+
+/* ---- page grid: the AEM grid clears its floated cells (.aem-Grid:after) ---- */
+.faq-grid::after,
+.faq-main::after { clear: both; content: ""; display: table; }
+
+/* container columns (.responsivegrid.aem-GridColumn): no gutter */
+.faq-main,
+.faq-aside { clear: none; float: left; padding: 0; width: 100%; }
+@media (min-width: 1025px) {
+  .faq-main { width: 66.6666666667%; }
+  .faq-aside { margin-left: 8.3333333333%; width: 25%; }
+}
+
+/* inner grid (aem-Grid--8 / --tablet--12 / --phone--12) */
+.faq-main > .col { clear: none; float: left; width: 100%; }
+@media (max-width: 1024px) { .faq-main > .faq-image { width: 66.6666666667%; } }
+@media (min-width: 768px) and (max-width: 1024px) { .faq-main > .faq-intro { width: 66.6666666667%; } }
+
+/* ---- image (.cmp-image .cmp-image__image) ---- */
+.image img { height: auto; margin: 7px 0; width: 100%; }
+
+/* ---- small text (.cmp-text--font-small p) ---- */
+.text--font-small p { font-size: var(--body-sm); }
+
+/* ---- accordion (.cmp-accordion) ---- */
+.accordion__header { margin: 0; }
+.accordion__button {
+  background: none;
+  border: none;
+  border-bottom: 2px solid var(--color-third);
+  cursor: pointer;
+  display: block;
+  padding: 1em;
+  text-align: left;
+  width: 100%;
+}
+.accordion__button:focus { outline: none; }
+.accordion__button--expanded { border: none; }
+.accordion__title {
+  font-family: var(--body-font-family);
+  font-size: var(--heading-md);
+  font-weight: var(--font-weight-bold, 600);
+  padding-left: .5em;
+  text-transform: uppercase;
+}
+.accordion__icon { float: right; }
+.accordion__icon::before { content: "\e911"; }
+.accordion__button--expanded .accordion__icon::before { content: "\e910"; }
+.accordion__panel {
+  animation-duration: .5s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+  font-size: var(--body-sm);
+  padding-left: .5em;
+  padding-top: .5em;
+}
+.accordion__panel p { font-size: var(--body-sm); line-height: 1.75; }
+.accordion__panel--expanded { display: block; }
+.accordion__panel--hidden { display: none; }
+@keyframes fadeIn { 0% { opacity: 0; } to { opacity: 1; } }
+

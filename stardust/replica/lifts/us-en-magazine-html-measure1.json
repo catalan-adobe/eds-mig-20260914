@@ -1,0 +1,5345 @@
+{
+  "_provenance": {
+    "writtenBy": "skills/replica/scripts/measure.mjs",
+    "writtenAt": "2026-09-24T08:25:49.345Z",
+    "urls": [
+      "https://wknd.site/us/en/magazine.html",
+      "http://localhost:8794/us-en-magazine-html-proposed.html"
+    ],
+    "widths": [
+      1440,
+      360
+    ],
+    "selectors": [
+      "header",
+      "main",
+      "footer",
+      "main h1",
+      "main h2",
+      "main hr",
+      "main ul",
+      "main li",
+      "main p",
+      "main img"
+    ],
+    "props": [
+      "display",
+      "position",
+      "boxSizing",
+      "width",
+      "height",
+      "maxWidth",
+      "margin",
+      "padding",
+      "gap",
+      "backgroundColor",
+      "backgroundImage",
+      "color",
+      "fontFamily",
+      "fontSize",
+      "fontWeight",
+      "lineHeight",
+      "letterSpacing",
+      "textTransform",
+      "textAlign",
+      "borderRadius",
+      "border",
+      "boxShadow",
+      "opacity",
+      "objectFit"
+    ],
+    "allMatches": true,
+    "failed": [],
+    "warnings": []
+  },
+  "widths": [
+    1440,
+    360
+  ],
+  "selectors": [
+    "header",
+    "main",
+    "footer",
+    "main h1",
+    "main h2",
+    "main hr",
+    "main ul",
+    "main li",
+    "main p",
+    "main img"
+  ],
+  "root": {
+    "https://wknd.site/us/en/magazine.html": {
+      "360": {
+        "viewport": 360,
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "scrollHeight": 4365,
+        "overflowX": 0
+      },
+      "1440": {
+        "viewport": 1440,
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "scrollHeight": 2506,
+        "overflowX": 0
+      }
+    },
+    "http://localhost:8794/us-en-magazine-html-proposed.html": {
+      "360": {
+        "viewport": 360,
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "scrollHeight": 4385,
+        "overflowX": 0
+      },
+      "1440": {
+        "viewport": 1440,
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "scrollHeight": 2506,
+        "overflowX": 0
+      }
+    }
+  },
+  "pages": {
+    "https://wknd.site/us/en/magazine.html": {
+      "360": {
+        "header": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 360,
+              "h": 117
+            },
+            "visible": true,
+            "text": "SIGN IN EN-US",
+            "props": {
+              "display": "block",
+              "position": "fixed",
+              "boxSizing": "border-box",
+              "width": "360px",
+              "height": "116.719px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 130,
+              "w": 360,
+              "h": 3593
+            },
+            "visible": true,
+            "text": "Magazine Featured Article Camping in We…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "360px",
+              "height": "3592.75px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "footer": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 3771,
+              "w": 360,
+              "h": 593
+            },
+            "visible": true,
+            "text": "MAGAZINE ADVENTURES FAQS ABOUT US FOLLO…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "360px",
+              "height": "593.031px",
+              "maxWidth": "none",
+              "margin": "48px 0px 0px",
+              "padding": "16px 0px 24px",
+              "gap": "normal",
+              "backgroundColor": "rgb(32, 32, 32)",
+              "backgroundImage": "none",
+              "color": "rgb(235, 235, 235)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(235, 235, 235)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main h1": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 14,
+              "y": 157,
+              "w": 332,
+              "h": 60
+            },
+            "visible": true,
+            "text": "Magazine",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "332px",
+              "height": "60px",
+              "maxWidth": "none",
+              "margin": "27px 0px 13.5px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "fontSize": "40px",
+              "fontWeight": "400",
+              "lineHeight": "60px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main h2": [
+          {
+            "index": 0,
+            "of": 5,
+            "rect": {
+              "x": 50,
+              "y": 352,
+              "w": 260,
+              "h": 162
+            },
+            "visible": true,
+            "text": "Camping in Western Australia",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "162px",
+              "maxWidth": "none",
+              "margin": "18px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "fontSize": "36px",
+              "fontWeight": "400",
+              "lineHeight": "54px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 5,
+            "rect": {
+              "x": 14,
+              "y": 1043,
+              "w": 332,
+              "h": 64
+            },
+            "visible": true,
+            "text": "All Articles",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "332px",
+              "height": "64px",
+              "maxWidth": "none",
+              "margin": "27px 0px 13.5px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "fontSize": "36px",
+              "fontWeight": "400",
+              "lineHeight": "54px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 5,
+            "rect": {
+              "x": 14,
+              "y": 2689,
+              "w": 332,
+              "h": 64
+            },
+            "visible": true,
+            "text": "Members Only",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "332px",
+              "height": "64px",
+              "maxWidth": "none",
+              "margin": "27px 0px 13.5px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "fontSize": "36px",
+              "fontWeight": "400",
+              "lineHeight": "54px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 3,
+            "of": 5,
+            "rect": {
+              "x": 14,
+              "y": 2982,
+              "w": 169,
+              "h": 27
+            },
+            "visible": true,
+            "text": "ALASKAN ADVENTURE",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "169.172px",
+              "height": "27px",
+              "maxWidth": "none",
+              "margin": "9px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "600",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 4,
+            "of": 5,
+            "rect": {
+              "x": 14,
+              "y": 3378,
+              "w": 274,
+              "h": 27
+            },
+            "visible": true,
+            "text": "FLY FISHING THE AMAZON",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "274.234px",
+              "height": "27px",
+              "maxWidth": "none",
+              "margin": "9px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "600",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main hr": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 14,
+              "y": 2906,
+              "w": 332,
+              "h": 2
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "330px",
+              "height": "0px",
+              "maxWidth": "none",
+              "margin": "9px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(235, 235, 235)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "1px solid rgb(235, 235, 235)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main ul": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 14,
+              "y": 1120,
+              "w": 332,
+              "h": 1542
+            },
+            "visible": true,
+            "text": "ARCTIC SURFING WE TRAVELED TO NORTHERN …",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "332px",
+              "height": "1542px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main li": [
+          {
+            "index": 0,
+            "of": 5,
+            "rect": {
+              "x": 14,
+              "y": 1120,
+              "w": 260,
+              "h": 271
+            },
+            "visible": true,
+            "text": "ARCTIC SURFING WE TRAVELED TO NORTHERN …",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "271px",
+              "maxWidth": "none",
+              "margin": "0px 0px 32px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 5,
+            "rect": {
+              "x": 14,
+              "y": 1423,
+              "w": 260,
+              "h": 271
+            },
+            "visible": true,
+            "text": "SAN DIEGO SURF SPOTS BEST BEACH BREAKS",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "271px",
+              "maxWidth": "none",
+              "margin": "0px 0px 32px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 5,
+            "rect": {
+              "x": 14,
+              "y": 1726,
+              "w": 260,
+              "h": 271
+            },
+            "visible": true,
+            "text": "SKI TOURING LEARN ABOUT OUR SKI TOURING…",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "271px",
+              "maxWidth": "none",
+              "margin": "0px 0px 32px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 3,
+            "of": 5,
+            "rect": {
+              "x": 14,
+              "y": 2029,
+              "w": 260,
+              "h": 298
+            },
+            "visible": true,
+            "text": "ULTIMATE GUIDE TO LA SKATEPARKS BREAKIN…",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "298px",
+              "maxWidth": "none",
+              "margin": "0px 0px 32px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 4,
+            "of": 5,
+            "rect": {
+              "x": 14,
+              "y": 2359,
+              "w": 260,
+              "h": 271
+            },
+            "visible": true,
+            "text": "WESTERN AUSTRALIA THE AUSTRALIAN WEST C…",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "271px",
+              "maxWidth": "none",
+              "margin": "0px 0px 32px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main p": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 50,
+              "y": 276,
+              "w": 260,
+              "h": 45
+            },
+            "visible": true,
+            "text": "Featured Article",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "45px",
+              "maxWidth": "none",
+              "margin": "0px 0px 13.5px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "700",
+              "lineHeight": "45px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "justify",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 3,
+            "rect": {
+              "x": 14,
+              "y": 2767,
+              "w": 332,
+              "h": 90
+            },
+            "visible": true,
+            "text": "Sign in to un-lock exclusive content fo…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "332px",
+              "height": "90px",
+              "maxWidth": "none",
+              "margin": "0px 0px 13.5px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "45px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "justify",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 3,
+            "rect": {
+              "x": 14,
+              "y": 3018,
+              "w": 169,
+              "h": 25
+            },
+            "visible": true,
+            "text": "DISCOVER THE 49TH STATE",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "169.172px",
+              "height": "24.5px",
+              "maxWidth": "none",
+              "margin": "0px 0px 13.5px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(105, 105, 105)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "24.5px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "justify",
+              "borderRadius": "0px",
+              "border": "0px none rgb(105, 105, 105)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main img": [
+          {
+            "index": 0,
+            "of": 8,
+            "rect": {
+              "x": 14,
+              "y": 825,
+              "w": 332,
+              "h": 187
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "332px",
+              "height": "186.859px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 295,
+              "naturalHeight": 166,
+              "currentSrc": "https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_main.coreimg.60.1600.jpeg/1660323792132/adobestock-156407519.jpeg"
+            }
+          },
+          {
+            "index": 1,
+            "of": 8,
+            "rect": {
+              "x": 14,
+              "y": 1120,
+              "w": 260,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 69, 255)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 69, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 287,
+              "naturalHeight": 191,
+              "currentSrc": "https://wknd.site/us/en/magazine/arctic-surfing/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1600.jpeg/1660323789770/surfer-wave-02.jpeg"
+            }
+          },
+          {
+            "index": 2,
+            "of": 8,
+            "rect": {
+              "x": 14,
+              "y": 1423,
+              "w": 260,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 69, 255)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 69, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 288,
+              "naturalHeight": 191,
+              "currentSrc": "https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1600.jpeg/1660323790169/adobestock-164735399.jpeg"
+            }
+          },
+          {
+            "index": 3,
+            "of": 8,
+            "rect": {
+              "x": 14,
+              "y": 1726,
+              "w": 260,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 69, 255)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 69, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 288,
+              "naturalHeight": 191,
+              "currentSrc": "https://wknd.site/us/en/magazine/ski-touring/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1600.jpeg/1660323789866/skitouring5sjoeberg.jpeg"
+            }
+          },
+          {
+            "index": 4,
+            "of": 8,
+            "rect": {
+              "x": 14,
+              "y": 2029,
+              "w": 260,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 69, 255)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 69, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 172,
+              "naturalHeight": 120,
+              "currentSrc": "https://wknd.site/us/en/magazine/guide-la-skateparks/_jcr_content/root/container/container/contentfragment/par2/image_copy.coreimg.60.1600.png/1660323783259/article-01-picture-01.png"
+            }
+          },
+          {
+            "index": 5,
+            "of": 8,
+            "rect": {
+              "x": 14,
+              "y": 2359,
+              "w": 260,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 69, 255)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 69, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 288,
+              "naturalHeight": 191,
+              "currentSrc": "https://wknd.site/us/en/magazine/western-australia/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.1600.jpeg/1660323770369/adobe-waadobe-wa-b6a7083.jpeg"
+            }
+          },
+          {
+            "index": 6,
+            "of": 8,
+            "rect": {
+              "x": 14,
+              "y": 3126,
+              "w": 332,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "332px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "7px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 288,
+              "naturalHeight": 191,
+              "currentSrc": "https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser.coreimg.60.1600.jpeg/1660323786175/alaskan-grizzly.jpeg"
+            }
+          },
+          {
+            "index": 7,
+            "of": 8,
+            "rect": {
+              "x": 14,
+              "y": 3509,
+              "w": 332,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "332px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "7px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 288,
+              "naturalHeight": 191,
+              "currentSrc": "https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_copy.coreimg.60.1600.jpeg/1660323790791/amazon-river-02.jpeg"
+            }
+          }
+        ]
+      },
+      "1440": {
+        "header": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 1440,
+              "h": 194
+            },
+            "visible": true,
+            "text": "SIGN IN EN-US MAGAZINE ADVENTURES FAQS …",
+            "props": {
+              "display": "block",
+              "position": "fixed",
+              "boxSizing": "border-box",
+              "width": "1440px",
+              "height": "193.641px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 138,
+              "y": 200,
+              "w": 1164,
+              "h": 1998
+            },
+            "visible": true,
+            "text": "Magazine Featured Article Camping in We…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1164px",
+              "height": "1998px",
+              "maxWidth": "1164px",
+              "margin": "0px 138px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "footer": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 2246,
+              "w": 1440,
+              "h": 260
+            },
+            "visible": true,
+            "text": "MAGAZINE ADVENTURES FAQS ABOUT US FOLLO…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1440px",
+              "height": "260.188px",
+              "maxWidth": "none",
+              "margin": "48px 0px 0px",
+              "padding": "16px 0px 24px",
+              "gap": "normal",
+              "backgroundColor": "rgb(32, 32, 32)",
+              "backgroundImage": "none",
+              "color": "rgb(235, 235, 235)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(235, 235, 235)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main h1": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 152,
+              "y": 227,
+              "w": 1136,
+              "h": 60
+            },
+            "visible": true,
+            "text": "Magazine",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1136px",
+              "height": "60px",
+              "maxWidth": "none",
+              "margin": "27px 0px 13.5px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "fontSize": "40px",
+              "fontWeight": "400",
+              "lineHeight": "60px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main h2": [
+          {
+            "index": 0,
+            "of": 5,
+            "rect": {
+              "x": 897,
+              "y": 440,
+              "w": 355,
+              "h": 108
+            },
+            "visible": true,
+            "text": "Camping in Western Australia",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "354.672px",
+              "height": "108px",
+              "maxWidth": "none",
+              "margin": "18px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "fontSize": "36px",
+              "fontWeight": "400",
+              "lineHeight": "54px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 5,
+            "rect": {
+              "x": 152,
+              "y": 855,
+              "w": 1136,
+              "h": 64
+            },
+            "visible": true,
+            "text": "All Articles",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1136px",
+              "height": "64px",
+              "maxWidth": "none",
+              "margin": "27px 0px 13.5px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "fontSize": "36px",
+              "fontWeight": "400",
+              "lineHeight": "54px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 5,
+            "rect": {
+              "x": 152,
+              "y": 1592,
+              "w": 1136,
+              "h": 64
+            },
+            "visible": true,
+            "text": "Members Only",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1136px",
+              "height": "64px",
+              "maxWidth": "none",
+              "margin": "27px 0px 13.5px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "fontSize": "36px",
+              "fontWeight": "400",
+              "lineHeight": "54px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 3,
+            "of": 5,
+            "rect": {
+              "x": 152,
+              "y": 1840,
+              "w": 169,
+              "h": 27
+            },
+            "visible": true,
+            "text": "ALASKAN ADVENTURE",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "169.172px",
+              "height": "27px",
+              "maxWidth": "none",
+              "margin": "9px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "600",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 4,
+            "of": 5,
+            "rect": {
+              "x": 540,
+              "y": 1840,
+              "w": 274,
+              "h": 27
+            },
+            "visible": true,
+            "text": "FLY FISHING THE AMAZON",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "274.234px",
+              "height": "27px",
+              "maxWidth": "none",
+              "margin": "9px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "600",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main hr": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 152,
+              "y": 1764,
+              "w": 1136,
+              "h": 2
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1134px",
+              "height": "0px",
+              "maxWidth": "none",
+              "margin": "9px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(235, 235, 235)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "1px solid rgb(235, 235, 235)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main ul": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 152,
+              "y": 932,
+              "w": 1136,
+              "h": 633
+            },
+            "visible": true,
+            "text": "ARCTIC SURFING WE TRAVELED TO NORTHERN …",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1136px",
+              "height": "633px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main li": [
+          {
+            "index": 0,
+            "of": 5,
+            "rect": {
+              "x": 152,
+              "y": 932,
+              "w": 274,
+              "h": 271
+            },
+            "visible": true,
+            "text": "ARCTIC SURFING WE TRAVELED TO NORTHERN …",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "271px",
+              "maxWidth": "none",
+              "margin": "0px 0px 32px",
+              "padding": "0px 14px 0px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 5,
+            "rect": {
+              "x": 426,
+              "y": 932,
+              "w": 274,
+              "h": 271
+            },
+            "visible": true,
+            "text": "SAN DIEGO SURF SPOTS BEST BEACH BREAKS",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "271px",
+              "maxWidth": "none",
+              "margin": "0px 0px 32px",
+              "padding": "0px 14px 0px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 5,
+            "rect": {
+              "x": 700,
+              "y": 932,
+              "w": 274,
+              "h": 271
+            },
+            "visible": true,
+            "text": "SKI TOURING LEARN ABOUT OUR SKI TOURING…",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "271px",
+              "maxWidth": "none",
+              "margin": "0px 0px 32px",
+              "padding": "0px 14px 0px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 3,
+            "of": 5,
+            "rect": {
+              "x": 974,
+              "y": 932,
+              "w": 274,
+              "h": 298
+            },
+            "visible": true,
+            "text": "ULTIMATE GUIDE TO LA SKATEPARKS BREAKIN…",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "298px",
+              "maxWidth": "none",
+              "margin": "0px 0px 32px",
+              "padding": "0px 14px 0px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 4,
+            "of": 5,
+            "rect": {
+              "x": 152,
+              "y": 1262,
+              "w": 274,
+              "h": 271
+            },
+            "visible": true,
+            "text": "WESTERN AUSTRALIA THE AUSTRALIAN WEST C…",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "271px",
+              "maxWidth": "none",
+              "margin": "0px 0px 32px",
+              "padding": "0px 14px 0px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main p": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 897,
+              "y": 364,
+              "w": 355,
+              "h": 45
+            },
+            "visible": true,
+            "text": "Featured Article",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "354.672px",
+              "height": "45px",
+              "maxWidth": "none",
+              "margin": "0px 0px 13.5px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "700",
+              "lineHeight": "45px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "justify",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 3,
+            "rect": {
+              "x": 152,
+              "y": 1670,
+              "w": 1136,
+              "h": 45
+            },
+            "visible": true,
+            "text": "Sign in to un-lock exclusive content fo…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1136px",
+              "height": "45px",
+              "maxWidth": "none",
+              "margin": "0px 0px 13.5px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "45px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "justify",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 3,
+            "rect": {
+              "x": 152,
+              "y": 1876,
+              "w": 169,
+              "h": 25
+            },
+            "visible": true,
+            "text": "DISCOVER THE 49TH STATE",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "169.172px",
+              "height": "24.5px",
+              "maxWidth": "none",
+              "margin": "0px 0px 13.5px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(105, 105, 105)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "24.5px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "justify",
+              "borderRadius": "0px",
+              "border": "0px none rgb(105, 105, 105)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main img": [
+          {
+            "index": 0,
+            "of": 8,
+            "rect": {
+              "x": 152,
+              "y": 301,
+              "w": 709,
+              "h": 509
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "709.328px",
+              "height": "509px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 1181,
+              "naturalHeight": 665,
+              "currentSrc": "https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_main.coreimg.60.1600.jpeg/1660323792132/adobestock-156407519.jpeg"
+            }
+          },
+          {
+            "index": 1,
+            "of": 8,
+            "rect": {
+              "x": 152,
+              "y": 932,
+              "w": 260,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 69, 255)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 69, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 1151,
+              "naturalHeight": 767,
+              "currentSrc": "https://wknd.site/us/en/magazine/arctic-surfing/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1600.jpeg/1660323789770/surfer-wave-02.jpeg"
+            }
+          },
+          {
+            "index": 2,
+            "of": 8,
+            "rect": {
+              "x": 426,
+              "y": 932,
+              "w": 260,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 69, 255)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 69, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 1152,
+              "naturalHeight": 767,
+              "currentSrc": "https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1600.jpeg/1660323790169/adobestock-164735399.jpeg"
+            }
+          },
+          {
+            "index": 3,
+            "of": 8,
+            "rect": {
+              "x": 700,
+              "y": 932,
+              "w": 260,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 69, 255)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 69, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 1152,
+              "naturalHeight": 767,
+              "currentSrc": "https://wknd.site/us/en/magazine/ski-touring/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1600.jpeg/1660323789866/skitouring5sjoeberg.jpeg"
+            }
+          },
+          {
+            "index": 4,
+            "of": 8,
+            "rect": {
+              "x": 974,
+              "y": 932,
+              "w": 260,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 69, 255)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 69, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 688,
+              "naturalHeight": 481,
+              "currentSrc": "https://wknd.site/us/en/magazine/guide-la-skateparks/_jcr_content/root/container/container/contentfragment/par2/image_copy.coreimg.60.1600.png/1660323783259/article-01-picture-01.png"
+            }
+          },
+          {
+            "index": 5,
+            "of": 8,
+            "rect": {
+              "x": 152,
+              "y": 1262,
+              "w": 260,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 69, 255)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 69, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 1152,
+              "naturalHeight": 767,
+              "currentSrc": "https://wknd.site/us/en/magazine/western-australia/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.1600.jpeg/1660323770369/adobe-waadobe-wa-b6a7083.jpeg"
+            }
+          },
+          {
+            "index": 6,
+            "of": 8,
+            "rect": {
+              "x": 152,
+              "y": 1984,
+              "w": 360,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "360px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "7px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 1152,
+              "naturalHeight": 767,
+              "currentSrc": "https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser.coreimg.60.1600.jpeg/1660323786175/alaskan-grizzly.jpeg"
+            }
+          },
+          {
+            "index": 7,
+            "of": 8,
+            "rect": {
+              "x": 540,
+              "y": 1971,
+              "w": 360,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "360px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "7px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 1152,
+              "naturalHeight": 767,
+              "currentSrc": "https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_copy.coreimg.60.1600.jpeg/1660323790791/amazon-river-02.jpeg"
+            }
+          }
+        ]
+      }
+    },
+    "http://localhost:8794/us-en-magazine-html-proposed.html": {
+      "360": {
+        "header": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 360,
+              "h": 117
+            },
+            "visible": true,
+            "text": "SIGN IN EN-US",
+            "props": {
+              "display": "block",
+              "position": "fixed",
+              "boxSizing": "border-box",
+              "width": "360px",
+              "height": "116.719px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 130,
+              "w": 360,
+              "h": 3613
+            },
+            "visible": true,
+            "text": "Magazine Featured Article Camping in We…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "360px",
+              "height": "3613.36px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "footer": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 3791,
+              "w": 360,
+              "h": 593
+            },
+            "visible": true,
+            "text": "MAGAZINE ADVENTURES FAQS ABOUT US FOLLO…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "360px",
+              "height": "593.031px",
+              "maxWidth": "none",
+              "margin": "48px 0px 0px",
+              "padding": "16px 0px 24px",
+              "gap": "normal",
+              "backgroundColor": "rgb(32, 32, 32)",
+              "backgroundImage": "none",
+              "color": "rgb(235, 235, 235)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(235, 235, 235)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main h1": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 14,
+              "y": 157,
+              "w": 332,
+              "h": 60
+            },
+            "visible": true,
+            "text": "Magazine",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "332px",
+              "height": "60px",
+              "maxWidth": "none",
+              "margin": "27px 0px 13.5px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "fontSize": "40px",
+              "fontWeight": "400",
+              "lineHeight": "60px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main h2": [
+          {
+            "index": 0,
+            "of": 5,
+            "rect": {
+              "x": 50,
+              "y": 352,
+              "w": 260,
+              "h": 162
+            },
+            "visible": true,
+            "text": "Camping in Western Australia",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "162px",
+              "maxWidth": "none",
+              "margin": "18px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "fontSize": "36px",
+              "fontWeight": "400",
+              "lineHeight": "54px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 5,
+            "rect": {
+              "x": 14,
+              "y": 1063,
+              "w": 332,
+              "h": 64
+            },
+            "visible": true,
+            "text": "All Articles",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "332px",
+              "height": "64px",
+              "maxWidth": "none",
+              "margin": "27px 0px 13.5px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "fontSize": "36px",
+              "fontWeight": "400",
+              "lineHeight": "54px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 5,
+            "rect": {
+              "x": 14,
+              "y": 2710,
+              "w": 332,
+              "h": 64
+            },
+            "visible": true,
+            "text": "Members Only",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "332px",
+              "height": "64px",
+              "maxWidth": "none",
+              "margin": "27px 0px 13.5px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "fontSize": "36px",
+              "fontWeight": "400",
+              "lineHeight": "54px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 3,
+            "of": 5,
+            "rect": {
+              "x": 14,
+              "y": 3003,
+              "w": 169,
+              "h": 27
+            },
+            "visible": true,
+            "text": "ALASKAN ADVENTURE",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "169.172px",
+              "height": "27px",
+              "maxWidth": "none",
+              "margin": "9px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "600",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 4,
+            "of": 5,
+            "rect": {
+              "x": 14,
+              "y": 3399,
+              "w": 274,
+              "h": 27
+            },
+            "visible": true,
+            "text": "FLY FISHING THE AMAZON",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "274.234px",
+              "height": "27px",
+              "maxWidth": "none",
+              "margin": "9px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "600",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main hr": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 14,
+              "y": 2927,
+              "w": 332,
+              "h": 2
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "330px",
+              "height": "0px",
+              "maxWidth": "none",
+              "margin": "9px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(235, 235, 235)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "1px solid rgb(235, 235, 235)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main ul": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 14,
+              "y": 1141,
+              "w": 332,
+              "h": 1542
+            },
+            "visible": true,
+            "text": "ARCTIC SURFING WE TRAVELED TO NORTHERN …",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "332px",
+              "height": "1542px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main li": [
+          {
+            "index": 0,
+            "of": 5,
+            "rect": {
+              "x": 14,
+              "y": 1141,
+              "w": 260,
+              "h": 271
+            },
+            "visible": true,
+            "text": "ARCTIC SURFING WE TRAVELED TO NORTHERN …",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "271px",
+              "maxWidth": "none",
+              "margin": "0px 0px 32px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 5,
+            "rect": {
+              "x": 14,
+              "y": 1444,
+              "w": 260,
+              "h": 271
+            },
+            "visible": true,
+            "text": "SAN DIEGO SURF SPOTS BEST BEACH BREAKS",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "271px",
+              "maxWidth": "none",
+              "margin": "0px 0px 32px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 5,
+            "rect": {
+              "x": 14,
+              "y": 1747,
+              "w": 260,
+              "h": 271
+            },
+            "visible": true,
+            "text": "SKI TOURING LEARN ABOUT OUR SKI TOURING…",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "271px",
+              "maxWidth": "none",
+              "margin": "0px 0px 32px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 3,
+            "of": 5,
+            "rect": {
+              "x": 14,
+              "y": 2050,
+              "w": 260,
+              "h": 298
+            },
+            "visible": true,
+            "text": "ULTIMATE GUIDE TO LA SKATEPARKS BREAKIN…",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "298px",
+              "maxWidth": "none",
+              "margin": "0px 0px 32px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 4,
+            "of": 5,
+            "rect": {
+              "x": 14,
+              "y": 2380,
+              "w": 260,
+              "h": 271
+            },
+            "visible": true,
+            "text": "WESTERN AUSTRALIA THE AUSTRALIAN WEST C…",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "271px",
+              "maxWidth": "none",
+              "margin": "0px 0px 32px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main p": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 50,
+              "y": 276,
+              "w": 260,
+              "h": 45
+            },
+            "visible": true,
+            "text": "Featured Article",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "45px",
+              "maxWidth": "none",
+              "margin": "0px 0px 13.5px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "700",
+              "lineHeight": "45px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "justify",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 3,
+            "rect": {
+              "x": 14,
+              "y": 2787,
+              "w": 332,
+              "h": 90
+            },
+            "visible": true,
+            "text": "Sign in to un-lock exclusive content fo…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "332px",
+              "height": "90px",
+              "maxWidth": "none",
+              "margin": "0px 0px 13.5px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "45px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "justify",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 3,
+            "rect": {
+              "x": 14,
+              "y": 3039,
+              "w": 169,
+              "h": 25
+            },
+            "visible": true,
+            "text": "DISCOVER THE 49TH STATE",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "169.172px",
+              "height": "24.5px",
+              "maxWidth": "none",
+              "margin": "0px 0px 13.5px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(105, 105, 105)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "24.5px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "justify",
+              "borderRadius": "0px",
+              "border": "0px none rgb(105, 105, 105)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main img": [
+          {
+            "index": 0,
+            "of": 8,
+            "rect": {
+              "x": 14,
+              "y": 825,
+              "w": 332,
+              "h": 187
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "332px",
+              "height": "186.859px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 1313,
+              "naturalHeight": 739,
+              "currentSrc": "http://localhost:8794/assets/media/adobestock-156407519.jpeg"
+            }
+          },
+          {
+            "index": 1,
+            "of": 8,
+            "rect": {
+              "x": 14,
+              "y": 1141,
+              "w": 260,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 69, 255)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 69, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 1279,
+              "naturalHeight": 853,
+              "currentSrc": "http://localhost:8794/assets/media/surfer-wave-02.jpeg"
+            }
+          },
+          {
+            "index": 2,
+            "of": 8,
+            "rect": {
+              "x": 14,
+              "y": 1444,
+              "w": 260,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 69, 255)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 69, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 1280,
+              "naturalHeight": 853,
+              "currentSrc": "http://localhost:8794/assets/media/adobestock-164735399.jpeg"
+            }
+          },
+          {
+            "index": 3,
+            "of": 8,
+            "rect": {
+              "x": 14,
+              "y": 1747,
+              "w": 260,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 69, 255)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 69, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 1280,
+              "naturalHeight": 853,
+              "currentSrc": "http://localhost:8794/assets/media/skitouring5sjoeberg.jpeg"
+            }
+          },
+          {
+            "index": 4,
+            "of": 8,
+            "rect": {
+              "x": 14,
+              "y": 2050,
+              "w": 260,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 69, 255)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 69, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 765,
+              "naturalHeight": 535,
+              "currentSrc": "http://localhost:8794/assets/media/article-01-picture-01.png"
+            }
+          },
+          {
+            "index": 5,
+            "of": 8,
+            "rect": {
+              "x": 14,
+              "y": 2380,
+              "w": 260,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 69, 255)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 69, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 1280,
+              "naturalHeight": 853,
+              "currentSrc": "http://localhost:8794/assets/media/adobe-waadobe-wa-b6a7083.jpeg"
+            }
+          },
+          {
+            "index": 6,
+            "of": 8,
+            "rect": {
+              "x": 14,
+              "y": 3147,
+              "w": 332,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "332px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "7px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 1280,
+              "naturalHeight": 853,
+              "currentSrc": "http://localhost:8794/assets/media/alaskan-grizzly.jpeg"
+            }
+          },
+          {
+            "index": 7,
+            "of": 8,
+            "rect": {
+              "x": 14,
+              "y": 3529,
+              "w": 332,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "332px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "7px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 1280,
+              "naturalHeight": 853,
+              "currentSrc": "http://localhost:8794/assets/media/amazon-river-02.jpeg"
+            }
+          }
+        ]
+      },
+      "1440": {
+        "header": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 1440,
+              "h": 194
+            },
+            "visible": true,
+            "text": "SIGN IN EN-US MAGAZINE ADVENTURES FAQS …",
+            "props": {
+              "display": "block",
+              "position": "fixed",
+              "boxSizing": "border-box",
+              "width": "1440px",
+              "height": "193.641px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 200,
+              "w": 1440,
+              "h": 1998
+            },
+            "visible": true,
+            "text": "Magazine Featured Article Camping in We…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1440px",
+              "height": "1998px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "footer": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 2246,
+              "w": 1440,
+              "h": 260
+            },
+            "visible": true,
+            "text": "MAGAZINE ADVENTURES FAQS ABOUT US FOLLO…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1440px",
+              "height": "260.188px",
+              "maxWidth": "none",
+              "margin": "48px 0px 0px",
+              "padding": "16px 0px 24px",
+              "gap": "normal",
+              "backgroundColor": "rgb(32, 32, 32)",
+              "backgroundImage": "none",
+              "color": "rgb(235, 235, 235)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(235, 235, 235)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main h1": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 152,
+              "y": 227,
+              "w": 1136,
+              "h": 60
+            },
+            "visible": true,
+            "text": "Magazine",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1136px",
+              "height": "60px",
+              "maxWidth": "none",
+              "margin": "27px 0px 13.5px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "fontSize": "40px",
+              "fontWeight": "400",
+              "lineHeight": "60px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main h2": [
+          {
+            "index": 0,
+            "of": 5,
+            "rect": {
+              "x": 897,
+              "y": 440,
+              "w": 355,
+              "h": 108
+            },
+            "visible": true,
+            "text": "Camping in Western Australia",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "354.672px",
+              "height": "108px",
+              "maxWidth": "none",
+              "margin": "18px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "fontSize": "36px",
+              "fontWeight": "400",
+              "lineHeight": "54px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 5,
+            "rect": {
+              "x": 152,
+              "y": 855,
+              "w": 1136,
+              "h": 64
+            },
+            "visible": true,
+            "text": "All Articles",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1136px",
+              "height": "64px",
+              "maxWidth": "none",
+              "margin": "27px 0px 13.5px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "fontSize": "36px",
+              "fontWeight": "400",
+              "lineHeight": "54px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 5,
+            "rect": {
+              "x": 152,
+              "y": 1592,
+              "w": 1136,
+              "h": 64
+            },
+            "visible": true,
+            "text": "Members Only",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1136px",
+              "height": "64px",
+              "maxWidth": "none",
+              "margin": "27px 0px 13.5px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "fontSize": "36px",
+              "fontWeight": "400",
+              "lineHeight": "54px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 3,
+            "of": 5,
+            "rect": {
+              "x": 152,
+              "y": 1840,
+              "w": 169,
+              "h": 27
+            },
+            "visible": true,
+            "text": "ALASKAN ADVENTURE",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "169.172px",
+              "height": "27px",
+              "maxWidth": "none",
+              "margin": "9px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "600",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 4,
+            "of": 5,
+            "rect": {
+              "x": 540,
+              "y": 1840,
+              "w": 274,
+              "h": 27
+            },
+            "visible": true,
+            "text": "FLY FISHING THE AMAZON",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "274.234px",
+              "height": "27px",
+              "maxWidth": "none",
+              "margin": "9px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "600",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main hr": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 152,
+              "y": 1764,
+              "w": 1136,
+              "h": 2
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1134px",
+              "height": "0px",
+              "maxWidth": "none",
+              "margin": "9px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(235, 235, 235)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "1px solid rgb(235, 235, 235)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main ul": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 152,
+              "y": 932,
+              "w": 1136,
+              "h": 633
+            },
+            "visible": true,
+            "text": "ARCTIC SURFING WE TRAVELED TO NORTHERN …",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1136px",
+              "height": "633px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main li": [
+          {
+            "index": 0,
+            "of": 5,
+            "rect": {
+              "x": 152,
+              "y": 932,
+              "w": 274,
+              "h": 271
+            },
+            "visible": true,
+            "text": "ARCTIC SURFING WE TRAVELED TO NORTHERN …",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "271px",
+              "maxWidth": "none",
+              "margin": "0px 0px 32px",
+              "padding": "0px 14px 0px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 5,
+            "rect": {
+              "x": 426,
+              "y": 932,
+              "w": 274,
+              "h": 271
+            },
+            "visible": true,
+            "text": "SAN DIEGO SURF SPOTS BEST BEACH BREAKS",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "271px",
+              "maxWidth": "none",
+              "margin": "0px 0px 32px",
+              "padding": "0px 14px 0px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 5,
+            "rect": {
+              "x": 700,
+              "y": 932,
+              "w": 274,
+              "h": 271
+            },
+            "visible": true,
+            "text": "SKI TOURING LEARN ABOUT OUR SKI TOURING…",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "271px",
+              "maxWidth": "none",
+              "margin": "0px 0px 32px",
+              "padding": "0px 14px 0px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 3,
+            "of": 5,
+            "rect": {
+              "x": 974,
+              "y": 932,
+              "w": 274,
+              "h": 298
+            },
+            "visible": true,
+            "text": "ULTIMATE GUIDE TO LA SKATEPARKS BREAKIN…",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "298px",
+              "maxWidth": "none",
+              "margin": "0px 0px 32px",
+              "padding": "0px 14px 0px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 4,
+            "of": 5,
+            "rect": {
+              "x": 152,
+              "y": 1262,
+              "w": 274,
+              "h": 271
+            },
+            "visible": true,
+            "text": "WESTERN AUSTRALIA THE AUSTRALIAN WEST C…",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "271px",
+              "maxWidth": "none",
+              "margin": "0px 0px 32px",
+              "padding": "0px 14px 0px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main p": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 897,
+              "y": 364,
+              "w": 355,
+              "h": 45
+            },
+            "visible": true,
+            "text": "Featured Article",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "354.672px",
+              "height": "45px",
+              "maxWidth": "none",
+              "margin": "0px 0px 13.5px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "700",
+              "lineHeight": "45px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "justify",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 3,
+            "rect": {
+              "x": 152,
+              "y": 1670,
+              "w": 1136,
+              "h": 45
+            },
+            "visible": true,
+            "text": "Sign in to un-lock exclusive content fo…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1136px",
+              "height": "45px",
+              "maxWidth": "none",
+              "margin": "0px 0px 13.5px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "45px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "justify",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 3,
+            "rect": {
+              "x": 152,
+              "y": 1876,
+              "w": 169,
+              "h": 25
+            },
+            "visible": true,
+            "text": "DISCOVER THE 49TH STATE",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "169.172px",
+              "height": "24.5px",
+              "maxWidth": "none",
+              "margin": "0px 0px 13.5px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(105, 105, 105)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "24.5px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "justify",
+              "borderRadius": "0px",
+              "border": "0px none rgb(105, 105, 105)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main img": [
+          {
+            "index": 0,
+            "of": 8,
+            "rect": {
+              "x": 152,
+              "y": 301,
+              "w": 709,
+              "h": 509
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "709.328px",
+              "height": "509px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 1313,
+              "naturalHeight": 739,
+              "currentSrc": "http://localhost:8794/assets/media/adobestock-156407519.jpeg"
+            }
+          },
+          {
+            "index": 1,
+            "of": 8,
+            "rect": {
+              "x": 152,
+              "y": 932,
+              "w": 260,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 69, 255)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 69, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 1279,
+              "naturalHeight": 853,
+              "currentSrc": "http://localhost:8794/assets/media/surfer-wave-02.jpeg"
+            }
+          },
+          {
+            "index": 2,
+            "of": 8,
+            "rect": {
+              "x": 426,
+              "y": 932,
+              "w": 260,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 69, 255)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 69, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 1280,
+              "naturalHeight": 853,
+              "currentSrc": "http://localhost:8794/assets/media/adobestock-164735399.jpeg"
+            }
+          },
+          {
+            "index": 3,
+            "of": 8,
+            "rect": {
+              "x": 700,
+              "y": 932,
+              "w": 260,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 69, 255)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 69, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 1280,
+              "naturalHeight": 853,
+              "currentSrc": "http://localhost:8794/assets/media/skitouring5sjoeberg.jpeg"
+            }
+          },
+          {
+            "index": 4,
+            "of": 8,
+            "rect": {
+              "x": 974,
+              "y": 932,
+              "w": 260,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 69, 255)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 69, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 765,
+              "naturalHeight": 535,
+              "currentSrc": "http://localhost:8794/assets/media/article-01-picture-01.png"
+            }
+          },
+          {
+            "index": 5,
+            "of": 8,
+            "rect": {
+              "x": 152,
+              "y": 1262,
+              "w": 260,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 69, 255)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 69, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 1280,
+              "naturalHeight": 853,
+              "currentSrc": "http://localhost:8794/assets/media/adobe-waadobe-wa-b6a7083.jpeg"
+            }
+          },
+          {
+            "index": 6,
+            "of": 8,
+            "rect": {
+              "x": 152,
+              "y": 1984,
+              "w": 360,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "360px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "7px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 1280,
+              "naturalHeight": 853,
+              "currentSrc": "http://localhost:8794/assets/media/alaskan-grizzly.jpeg"
+            }
+          },
+          {
+            "index": 7,
+            "of": 8,
+            "rect": {
+              "x": 540,
+              "y": 1971,
+              "w": 360,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "360px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "7px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 1280,
+              "naturalHeight": 853,
+              "currentSrc": "http://localhost:8794/assets/media/amazon-river-02.jpeg"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "deltas": {
+    "360": {
+      "header": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "main": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 20
+            },
+            "props": {
+              "boxSizing": [
+                "border-box",
+                "content-box"
+              ],
+              "height": [
+                "3592.75px",
+                "3613.36px"
+              ]
+            }
+          }
+        ]
+      },
+      "footer": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 20,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "main h1": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "main h2": {
+        "status": "ok",
+        "countA": 5,
+        "countB": 5,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          },
+          {
+            "index": 1,
+            "rect": {
+              "dx": 0,
+              "dy": 20,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          },
+          {
+            "index": 2,
+            "rect": {
+              "dx": 0,
+              "dy": 21,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          },
+          {
+            "index": 3,
+            "rect": {
+              "dx": 0,
+              "dy": 21,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          },
+          {
+            "index": 4,
+            "rect": {
+              "dx": 0,
+              "dy": 21,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "main hr": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 21,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "main ul": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 21,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "main li": {
+        "status": "ok",
+        "countA": 5,
+        "countB": 5,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 21,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          },
+          {
+            "index": 1,
+            "rect": {
+              "dx": 0,
+              "dy": 21,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          },
+          {
+            "index": 2,
+            "rect": {
+              "dx": 0,
+              "dy": 21,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          },
+          {
+            "index": 3,
+            "rect": {
+              "dx": 0,
+              "dy": 21,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          },
+          {
+            "index": 4,
+            "rect": {
+              "dx": 0,
+              "dy": 21,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "main p": {
+        "status": "ok",
+        "countA": 3,
+        "countB": 3,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          },
+          {
+            "index": 1,
+            "rect": {
+              "dx": 0,
+              "dy": 20,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          },
+          {
+            "index": 2,
+            "rect": {
+              "dx": 0,
+              "dy": 21,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "main img": {
+        "status": "ok",
+        "countA": 8,
+        "countB": 8,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {},
+            "img": {
+              "naturalWidth": [
+                295,
+                1313
+              ],
+              "naturalHeight": [
+                166,
+                739
+              ]
+            }
+          },
+          {
+            "index": 1,
+            "rect": {
+              "dx": 0,
+              "dy": 21,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {},
+            "img": {
+              "naturalWidth": [
+                287,
+                1279
+              ],
+              "naturalHeight": [
+                191,
+                853
+              ]
+            }
+          },
+          {
+            "index": 2,
+            "rect": {
+              "dx": 0,
+              "dy": 21,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {},
+            "img": {
+              "naturalWidth": [
+                288,
+                1280
+              ],
+              "naturalHeight": [
+                191,
+                853
+              ]
+            }
+          },
+          {
+            "index": 3,
+            "rect": {
+              "dx": 0,
+              "dy": 21,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {},
+            "img": {
+              "naturalWidth": [
+                288,
+                1280
+              ],
+              "naturalHeight": [
+                191,
+                853
+              ]
+            }
+          },
+          {
+            "index": 4,
+            "rect": {
+              "dx": 0,
+              "dy": 21,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {},
+            "img": {
+              "naturalWidth": [
+                172,
+                765
+              ],
+              "naturalHeight": [
+                120,
+                535
+              ]
+            }
+          },
+          {
+            "index": 5,
+            "rect": {
+              "dx": 0,
+              "dy": 21,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {},
+            "img": {
+              "naturalWidth": [
+                288,
+                1280
+              ],
+              "naturalHeight": [
+                191,
+                853
+              ]
+            }
+          },
+          {
+            "index": 6,
+            "rect": {
+              "dx": 0,
+              "dy": 21,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {},
+            "img": {
+              "naturalWidth": [
+                288,
+                1280
+              ],
+              "naturalHeight": [
+                191,
+                853
+              ]
+            }
+          },
+          {
+            "index": 7,
+            "rect": {
+              "dx": 0,
+              "dy": 20,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {},
+            "img": {
+              "naturalWidth": [
+                288,
+                1280
+              ],
+              "naturalHeight": [
+                191,
+                853
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "1440": {
+      "header": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "main": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": -138,
+              "dy": 0,
+              "dw": 276,
+              "dh": 0
+            },
+            "props": {
+              "boxSizing": [
+                "border-box",
+                "content-box"
+              ],
+              "width": [
+                "1164px",
+                "1440px"
+              ],
+              "maxWidth": [
+                "1164px",
+                "none"
+              ],
+              "margin": [
+                "0px 138px",
+                "0px"
+              ]
+            }
+          }
+        ]
+      },
+      "footer": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "main h1": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "main h2": {
+        "status": "ok",
+        "countA": 5,
+        "countB": 5,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          },
+          {
+            "index": 1,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          },
+          {
+            "index": 2,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          },
+          {
+            "index": 3,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          },
+          {
+            "index": 4,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "main hr": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "main ul": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "main li": {
+        "status": "ok",
+        "countA": 5,
+        "countB": 5,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          },
+          {
+            "index": 1,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          },
+          {
+            "index": 2,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          },
+          {
+            "index": 3,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          },
+          {
+            "index": 4,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "main p": {
+        "status": "ok",
+        "countA": 3,
+        "countB": 3,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          },
+          {
+            "index": 1,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          },
+          {
+            "index": 2,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "main img": {
+        "status": "ok",
+        "countA": 8,
+        "countB": 8,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {},
+            "img": {
+              "naturalWidth": [
+                1181,
+                1313
+              ],
+              "naturalHeight": [
+                665,
+                739
+              ]
+            }
+          },
+          {
+            "index": 1,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {},
+            "img": {
+              "naturalWidth": [
+                1151,
+                1279
+              ],
+              "naturalHeight": [
+                767,
+                853
+              ]
+            }
+          },
+          {
+            "index": 2,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {},
+            "img": {
+              "naturalWidth": [
+                1152,
+                1280
+              ],
+              "naturalHeight": [
+                767,
+                853
+              ]
+            }
+          },
+          {
+            "index": 3,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {},
+            "img": {
+              "naturalWidth": [
+                1152,
+                1280
+              ],
+              "naturalHeight": [
+                767,
+                853
+              ]
+            }
+          },
+          {
+            "index": 4,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {},
+            "img": {
+              "naturalWidth": [
+                688,
+                765
+              ],
+              "naturalHeight": [
+                481,
+                535
+              ]
+            }
+          },
+          {
+            "index": 5,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {},
+            "img": {
+              "naturalWidth": [
+                1152,
+                1280
+              ],
+              "naturalHeight": [
+                767,
+                853
+              ]
+            }
+          },
+          {
+            "index": 6,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {},
+            "img": {
+              "naturalWidth": [
+                1152,
+                1280
+              ],
+              "naturalHeight": [
+                767,
+                853
+              ]
+            }
+          },
+          {
+            "index": 7,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {},
+            "img": {
+              "naturalWidth": [
+                1152,
+                1280
+              ],
+              "naturalHeight": [
+                767,
+                853
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rootDeltas": {
+    "360": {
+      "scrollWidth": 0,
+      "scrollHeight": 20
+    },
+    "1440": {
+      "scrollWidth": 0,
+      "scrollHeight": 0
+    }
+  }
+}

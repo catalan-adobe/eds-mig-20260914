@@ -1,0 +1,708 @@
+{
+  "url": "http://localhost:8794/us-en-adventures-riverside-camping-australia-html-proposed.html",
+  "width": 1440,
+  "headerTimeline": [
+    {
+      "y": 0,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "193.641px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 0,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "193.641px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 1064,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "113.641px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 1064,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "113.641px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 800,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "113.641px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 500,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "113.641px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 300,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "113.641px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 200,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "113.641px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 150,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "113.641px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 120,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "113.641px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 90,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "113.641px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 60,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "113.641px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 30,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "113.641px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 0,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "193.641px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    }
+  ],
+  "widgetSamples": [
+    {
+      "sel": ".carousel__action--next",
+      "frames": [
+        {
+          "t": 6518.700000017881,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 6719.9000000059605,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 6922,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 7124,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": ".carousel__action--previous",
+      "frames": [
+        {
+          "t": 8130.700000017881,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 8333.300000011921,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 8535.5,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 8738.200000017881,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": ".carousel__indicator:nth-child(3)",
+      "frames": [
+        {
+          "t": 9746.300000011921,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 9948.800000011921,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 10150.40000000596,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 10353,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": "#tab-itinerary-tab",
+      "frames": [
+        {
+          "t": 11366.59999999404,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 11572.700000017881,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 11777.59999999404,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 11981.5,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": "#tab-what-to-bring-tab",
+      "frames": [
+        {
+          "t": 12988.300000011921,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 13190.59999999404,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 13391.90000000596,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 13594.90000000596,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": "#tab-overview-tab",
+      "frames": [
+        {
+          "t": 14603,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 14805,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 15007.5,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 15210.40000000596,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": "#langNavToggleHeader",
+      "frames": [
+        {
+          "t": 16220,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 16424.20000001788,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 16627.59999999404,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 16829.80000001192,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        }
+      ]
+    }
+  ],
+  "hoverSamples": [
+    {
+      "sel": ".masthead__nav .nav__link",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(32, 32, 32)",
+          "background": "rgb(255, 234, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(32, 32, 32)",
+          "background": "rgb(255, 234, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": ".tabs__tab",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 32, 32)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(32, 32, 32)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": ".breadcrumb__link",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(32, 32, 32)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(32, 32, 32)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": ".carousel__action-icon",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      }
+    }
+  ],
+  "events": {
+    "animations": [
+      {
+        "name": "fadeIn",
+        "el": "main.container > section.carousel-col.carousel--mini > div.carousel > div.carousel__content > div.carousel__item.carousel__item--active",
+        "txt": "",
+        "y": 229
+      },
+      {
+        "name": "fadeIn",
+        "el": "main.container > section.carousel-col.carousel--mini > div.carousel > div.carousel__content > div.carousel__item.carousel__item--active",
+        "txt": "",
+        "y": 229
+      },
+      {
+        "name": "fadeIn",
+        "el": "main.container > section.carousel-col.carousel--mini > div.carousel > div.carousel__content > div.carousel__item.carousel__item--active",
+        "txt": "",
+        "y": 231
+      }
+    ],
+    "transitions": [
+      {
+        "prop": "padding-bottom",
+        "el": "html > body.basicpage.anonymous.scrolly > div.site-root > header.site-header > div.masthead",
+        "y": 400,
+        "dur": "0.5s, 0.5s"
+      },
+      {
+        "prop": "padding-top",
+        "el": "html > body.basicpage.anonymous.scrolly > div.site-root > header.site-header > div.masthead",
+        "y": 800,
+        "dur": "0.5s, 0.5s"
+      },
+      {
+        "prop": "padding-bottom",
+        "el": "html > body.basicpage.anonymous.scrolly > div.site-root > header.site-header > div.masthead",
+        "y": 229,
+        "dur": "0.5s, 0.5s"
+      },
+      {
+        "prop": "padding-top",
+        "el": "html > body.basicpage.anonymous.scrolly > div.site-root > header.site-header > div.masthead",
+        "y": 229,
+        "dur": "0.5s, 0.5s"
+      },
+      {
+        "prop": "padding-bottom",
+        "el": "html > body.basicpage.anonymous.scrolly > div.site-root > header.site-header > div.masthead",
+        "y": 228,
+        "dur": "0.5s, 0.5s"
+      },
+      {
+        "prop": "padding-top",
+        "el": "html > body.basicpage.anonymous.scrolly > div.site-root > header.site-header > div.masthead",
+        "y": 228,
+        "dur": "0.5s, 0.5s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "scrolly"
+        ],
+        "el": "html > body.basicpage.anonymous.scrolly",
+        "y": 400
+      },
+      {
+        "added": [
+          "scrolly"
+        ],
+        "el": "html > body.basicpage.anonymous.scrolly",
+        "y": 229
+      },
+      {
+        "added": [
+          "carousel__item--active"
+        ],
+        "el": "main.container > section.carousel-col.carousel--mini > div.carousel > div.carousel__content > div.carousel__item.carousel__item--active",
+        "y": 229
+      },
+      {
+        "added": [
+          "carousel__indicator--active"
+        ],
+        "el": "section.carousel-col.carousel--mini > div.carousel > div.carousel__content > ol.carousel__indicators > li.carousel__indicator.carousel__indicator--active",
+        "y": 229
+      },
+      {
+        "added": [
+          "carousel__item--active"
+        ],
+        "el": "main.container > section.carousel-col.carousel--mini > div.carousel > div.carousel__content > div.carousel__item.carousel__item--active",
+        "y": 229
+      },
+      {
+        "added": [
+          "carousel__indicator--active"
+        ],
+        "el": "section.carousel-col.carousel--mini > div.carousel > div.carousel__content > ol.carousel__indicators > li.carousel__indicator.carousel__indicator--active",
+        "y": 229
+      },
+      {
+        "added": [
+          "carousel__item--active"
+        ],
+        "el": "main.container > section.carousel-col.carousel--mini > div.carousel > div.carousel__content > div.carousel__item.carousel__item--active",
+        "y": 231
+      },
+      {
+        "added": [
+          "carousel__indicator--active"
+        ],
+        "el": "section.carousel-col.carousel--mini > div.carousel > div.carousel__content > ol.carousel__indicators > li.carousel__indicator.carousel__indicator--active",
+        "y": 231
+      },
+      {
+        "added": [
+          "tabs__tab--active"
+        ],
+        "el": "div.container-fixed > section.col.col--9.adventure-details > div.tabs > ol.tabs__tablist > li.tabs__tab.tabs__tab--active",
+        "y": 392
+      },
+      {
+        "added": [
+          "tabs__tabpanel--active"
+        ],
+        "el": "main.container > div.container-fixed > section.col.col--9.adventure-details > div.tabs > div.tabs__tabpanel.tabs__tabpanel--active",
+        "y": 392
+      },
+      {
+        "added": [
+          "tabs__tab--active"
+        ],
+        "el": "div.container-fixed > section.col.col--9.adventure-details > div.tabs > ol.tabs__tablist > li.tabs__tab.tabs__tab--active",
+        "y": 392
+      },
+      {
+        "added": [
+          "tabs__tabpanel--active"
+        ],
+        "el": "main.container > div.container-fixed > section.col.col--9.adventure-details > div.tabs > div.tabs__tabpanel.tabs__tabpanel--active",
+        "y": 392
+      },
+      {
+        "added": [
+          "tabs__tab--active"
+        ],
+        "el": "div.container-fixed > section.col.col--9.adventure-details > div.tabs > ol.tabs__tablist > li.tabs__tab.tabs__tab--active",
+        "y": 392
+      },
+      {
+        "added": [
+          "tabs__tabpanel--active"
+        ],
+        "el": "main.container > div.container-fixed > section.col.col--9.adventure-details > div.tabs > div.tabs__tabpanel.tabs__tabpanel--active",
+        "y": 392
+      },
+      {
+        "added": [
+          "showMenu"
+        ],
+        "el": "header.site-header > div.utility-bar > div.utility-bar__inner > div.col.utility-bar__language > nav.language-nav__menu.showMenu",
+        "y": 392
+      },
+      {
+        "added": [
+          "open"
+        ],
+        "el": "div.utility-bar > div.utility-bar__inner > div.col.utility-bar__language > div.language-nav__toggle > a.open",
+        "y": 392
+      },
+      {
+        "added": [
+          "scrolly"
+        ],
+        "el": "html > body.basicpage.anonymous.scrolly",
+        "y": 228
+      }
+    ]
+  }
+}

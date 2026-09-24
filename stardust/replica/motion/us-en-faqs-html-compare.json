@@ -1,0 +1,159 @@
+{
+  "live": "stardust/replica/motion/us-en-faqs-html.json",
+  "build": "stardust/replica/motion/us-en-faqs-html-build.json",
+  "toleranceMs": 150,
+  "tolerancePx": 8,
+  "advisory": true,
+  "findings": 3,
+  "counts": {
+    "behaviors": 20,
+    "parity": 7,
+    "missing": 3,
+    "extra": 0,
+    "tolerance": 0,
+    "dead": 7,
+    "advisory": 3
+  },
+  "verdicts": [
+    {
+      "cls": "header",
+      "name": "scroll-morph",
+      "state": "parity",
+      "note": "Δheight 80px, restore at y≤0, 500ms",
+      "line": "motion header scroll-morph: parity (Δheight 80px, restore at y≤0, 500ms)"
+    },
+    {
+      "cls": "widget",
+      "name": ".cmp-accordion__item:nth-child(1) .cmp-accordion__button → .accordion__item:nth-child(1) .accordion__button",
+      "state": "dead",
+      "note": "no sampled change across the frames (track/scroll/box/indicator)",
+      "line": "motion widget .cmp-accordion__item:nth-child(1) .cmp-accordion__button → .accordion__item:nth-child(1) .accordion__button: dead on live — not required (no sampled change across the frames (track/scroll/box/indicator))"
+    },
+    {
+      "cls": "widget",
+      "name": ".cmp-accordion__item:nth-child(2) .cmp-accordion__button → .accordion__item:nth-child(2) .accordion__button",
+      "state": "dead",
+      "note": "no sampled change across the frames (track/scroll/box/indicator)",
+      "line": "motion widget .cmp-accordion__item:nth-child(2) .cmp-accordion__button → .accordion__item:nth-child(2) .accordion__button: dead on live — not required (no sampled change across the frames (track/scroll/box/indicator))"
+    },
+    {
+      "cls": "widget",
+      "name": ".cmp-accordion__item:nth-child(1) .cmp-accordion__button → .accordion__item:nth-child(1) .accordion__button",
+      "state": "dead",
+      "note": "no sampled change across the frames (track/scroll/box/indicator)",
+      "line": "motion widget .cmp-accordion__item:nth-child(1) .cmp-accordion__button → .accordion__item:nth-child(1) .accordion__button: dead on live — not required (no sampled change across the frames (track/scroll/box/indicator))"
+    },
+    {
+      "cls": "widget",
+      "name": "#langNavToggleHeader",
+      "state": "dead",
+      "note": "no sampled change across the frames (track/scroll/box/indicator)",
+      "line": "motion widget #langNavToggleHeader: dead on live — not required (no sampled change across the frames (track/scroll/box/indicator))"
+    },
+    {
+      "cls": "hover",
+      "name": ".cmp-accordion__button → .accordion__button",
+      "state": "dead",
+      "note": "no measured hover diff",
+      "line": "motion hover .cmp-accordion__button → .accordion__button: dead on live — not required (no measured hover diff)"
+    },
+    {
+      "cls": "hover",
+      "name": ".cmp-text--font-small a → .text--font-small a",
+      "state": "dead",
+      "note": "no measured hover diff",
+      "line": "motion hover .cmp-text--font-small a → .text--font-small a: dead on live — not required (no measured hover diff)"
+    },
+    {
+      "cls": "hover",
+      "name": ".cmp-navigation__item-link → .nav__link",
+      "state": "dead",
+      "note": "no measured hover diff",
+      "line": "motion hover .cmp-navigation__item-link → .nav__link: dead on live — not required (no measured hover diff)"
+    },
+    {
+      "cls": "entrance",
+      "name": "fadeIn",
+      "state": "parity",
+      "note": "fired on 2 element(s)",
+      "line": "motion entrance fadeIn: parity (fired on 2 element(s))"
+    },
+    {
+      "cls": "transition",
+      "name": "padding-bottom",
+      "state": "parity",
+      "note": "2 event(s) on live, 2 on build, 500ms",
+      "line": "motion transition padding-bottom: parity (2 event(s) on live, 2 on build, 500ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "padding-top",
+      "state": "parity",
+      "note": "2 event(s) on live, 2 on build, 500ms",
+      "line": "motion transition padding-top: parity (2 event(s) on live, 2 on build, 500ms)"
+    },
+    {
+      "cls": "class",
+      "name": "cmp-accordion__button--expanded",
+      "state": "missing",
+      "note": "trigger class added 2× on live, never on build",
+      "line": "motion class cmp-accordion__button--expanded: MISSING on build (trigger class added 2× on live, never on build)"
+    },
+    {
+      "cls": "class",
+      "name": "cmp-accordion__panel--expanded",
+      "state": "missing",
+      "note": "trigger class added 2× on live, never on build",
+      "line": "motion class cmp-accordion__panel--expanded: MISSING on build (trigger class added 2× on live, never on build)"
+    },
+    {
+      "cls": "class",
+      "name": "cmp-accordion__panel--hidden",
+      "state": "missing",
+      "note": "trigger class added 1× on live, never on build",
+      "line": "motion class cmp-accordion__panel--hidden: MISSING on build (trigger class added 1× on live, never on build)"
+    },
+    {
+      "cls": "class",
+      "name": "open",
+      "state": "parity",
+      "note": "added 1× on live, 1× on build",
+      "line": "motion class open: parity (added 1× on live, 1× on build)"
+    },
+    {
+      "cls": "class",
+      "name": "scrolly",
+      "state": "parity",
+      "note": "added 2× on live, 2× on build",
+      "line": "motion class scrolly: parity (added 2× on live, 2× on build)"
+    },
+    {
+      "cls": "class",
+      "name": "showMenu",
+      "state": "parity",
+      "note": "added 1× on live, 1× on build",
+      "line": "motion class showMenu: parity (added 1× on live, 1× on build)"
+    },
+    {
+      "cls": "class",
+      "name": "accordion__button--expanded",
+      "state": "advisory",
+      "note": "added 2× on build, never on live — check it drives no invented behavior",
+      "line": "motion class accordion__button--expanded: extra on build — advisory (added 2× on build, never on live — check it drives no invented behavior)"
+    },
+    {
+      "cls": "class",
+      "name": "accordion__panel--expanded",
+      "state": "advisory",
+      "note": "added 2× on build, never on live — check it drives no invented behavior",
+      "line": "motion class accordion__panel--expanded: extra on build — advisory (added 2× on build, never on live — check it drives no invented behavior)"
+    },
+    {
+      "cls": "class",
+      "name": "accordion__panel--hidden",
+      "state": "advisory",
+      "note": "added 1× on build, never on live — check it drives no invented behavior",
+      "line": "motion class accordion__panel--hidden: extra on build — advisory (added 1× on build, never on live — check it drives no invented behavior)"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+/* ==========================================================================
+   WKND replica — about-us archetype (/us/en/about-us.html) NEW modules:
+   small text, black title, 3-column grid cell, contributor card (experience
+   fragment). Values lifted from clientlib-site.min.css:
+   .cmp-text--font-small p, .cmp-title--black .cmp-title__text,
+   .aem-Grid--12 > .aem-GridColumn--default--3 / --tablet--6 / --phone--12,
+   .cmp-experience-fragment--contributor (+ .cmp-title__text, .cmp-image__image,
+   .cmp-buildingblock--btn-list, > .aem-Grid), .cmp-button--secondary .cmp-button,
+   .cmp-buildingblock--btn-list > .aem-Grid > .aem-GridColumn.cmp-button--icononly,
+   .cmp-layout-container--fixed (nested).
+   ========================================================================== */
+
+/* ---- small text (.cmp-text--font-small p) ---- */
+.text--font-small p { font-size: var(--body-sm); }
+
+/* ---- black title (.cmp-title--black .cmp-title__text) ---- */
+.title--black .title__text { color: #202020; }
+
+/* ---- 3-column grid cell (.aem-GridColumn--default--3 / --tablet--6 / --phone--12) ---- */
+.col--3 { clear: none; float: left; width: 25%; }
+@media (min-width: 768px) and (max-width: 1024px) { .col--3 { width: 50%; } }
+@media (max-width: 767px) { .col--3 { width: 100%; } }
+/* the AEM grid clears its floated cells (.aem-Grid::after) */
+[data-template="content-page"] .container-fixed::after { clear: both; content: ""; display: table; }
+
+/* ---- contributor card (.cmp-experience-fragment--contributor) ---- */
+.contributor {
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1em;
+  padding-top: .5em;
+  text-align: center;
+}
+/* nested .cmp-layout-container--fixed: 14px gutters at every width */
+.contributor .contributor__body { padding: 0 var(--spacing-md); }
+.contributor .title__text { margin-bottom: .25em; margin-top: 0; }
+.contributor__image img {
+  border-radius: 50%;
+  height: 164px;
+  margin: 7px 0;
+  object-fit: cover;
+  width: 164px;
+}
+.contributor__links { padding-top: 1em; }
+@media (max-width: 1024px) { .contributor__links { padding-left: 14px !important; padding-right: 14px !important; } }
+.contributor__links .button-list__grid { display: flex; justify-content: center; }
+.contributor__links .button-list__grid::after { clear: both; content: ""; display: table; }
+.contributor__links .button--icononly { clear: none; float: left; padding-left: 0; padding-right: 0; width: unset !important; }
+.button--secondary .button { background-color: var(--color-fg); color: var(--color-fg-inverse); }
+

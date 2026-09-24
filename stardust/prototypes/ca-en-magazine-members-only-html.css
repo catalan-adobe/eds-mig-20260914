@@ -1,0 +1,43 @@
+/* ==========================================================================
+   WKND replica — unique archetype (/ca/en/magazine/members-only.html):
+   page title + image list. No new modules — the image list is the module
+   gated on the landing/magazine archetypes, carried over verbatim (values
+   lifted from clientlib-site.min.css .cmp-image-list @120110–121390).
+   ========================================================================== */
+
+/* ---- image list ---- */
+.image-list {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: normal;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.image-list__item { flex-basis: 260px; margin: 0 0 2rem; padding-right: 14px; }
+.image-list__item img { height: 200px; margin: 0; object-fit: cover; object-position: center; overflow: hidden; width: 100%; }
+.image-list__title {
+  color: var(--color-fg);
+  font-family: var(--body-font-family);
+  font-size: var(--body);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+}
+.image-list__description {
+  color: dimgray;
+  display: block;
+  font-size: var(--body-sm);
+  margin-top: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 260px;
+}
+@media (max-width: 767px) {
+  .image-list { justify-content: space-between; }
+  .image-list__item { padding-right: 0; }
+}
+

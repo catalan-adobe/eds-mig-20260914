@@ -1,7 +1,7 @@
 {
   "_provenance": {
-    "writtenBy": "stardust:extract",
-    "writtenAt": "2026-09-24T07:31:12Z",
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-09-24T09:29:43Z",
     "stardustVersion": "0.10.0"
   },
   "site": {
@@ -613,7 +613,7 @@
       "url": "https://wknd.site/ca/en/magazine/members-only.html",
       "title": "Members Only",
       "type": "unique",
-      "status": "extracted",
+      "status": "approved",
       "history": [
         {
           "status": "extracted",
@@ -622,12 +622,17 @@
         {
           "status": "extracted",
           "at": "2026-09-24T07:31:12Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-24T09:29:43Z",
+          "approvedBy": "hands-off"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/ca-en-magazine-members-only-html.json",
-      "prototypePath": null,
+      "prototypePath": "stardust/prototypes/ca-en-magazine-members-only-html-proposed.html",
       "migratedPath": null
     },
     {
@@ -885,7 +890,7 @@
       "url": "https://wknd.site/us/en/about-us.html",
       "title": "About Us",
       "type": "static",
-      "status": "extracted",
+      "status": "approved",
       "history": [
         {
           "status": "extracted",
@@ -894,12 +899,17 @@
         {
           "status": "extracted",
           "at": "2026-09-24T07:31:12Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-24T09:29:43Z",
+          "approvedBy": "hands-off"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-about-us-html.json",
-      "prototypePath": null,
+      "prototypePath": "stardust/prototypes/us-en-about-us-html-proposed.html",
       "migratedPath": null
     },
     {
@@ -1083,7 +1093,7 @@
       "url": "https://wknd.site/us/en/adventures.html",
       "title": "Adventures",
       "type": "listing",
-      "status": "extracted",
+      "status": "approved",
       "history": [
         {
           "status": "extracted",
@@ -1092,12 +1102,17 @@
         {
           "status": "extracted",
           "at": "2026-09-24T07:31:12Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-24T09:29:43Z",
+          "approvedBy": "hands-off"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-adventures-html.json",
-      "prototypePath": null,
+      "prototypePath": "stardust/prototypes/us-en-adventures-html-proposed.html",
       "migratedPath": null
     },
     {
@@ -1127,7 +1142,7 @@
       "url": "https://wknd.site/us/en/adventures/riverside-camping-australia.html",
       "title": "Riverside Camping",
       "type": "program",
-      "status": "extracted",
+      "status": "approved",
       "history": [
         {
           "status": "extracted",
@@ -1136,12 +1151,17 @@
         {
           "status": "extracted",
           "at": "2026-09-24T07:31:12Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-24T09:29:43Z",
+          "approvedBy": "hands-off"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-adventures-riverside-camping-australia-html.json",
-      "prototypePath": null,
+      "prototypePath": "stardust/prototypes/us-en-adventures-riverside-camping-australia-html-proposed.html",
       "migratedPath": null
     },
     {
@@ -1281,7 +1301,7 @@
       "url": "https://wknd.site/us/en/faqs.html",
       "title": "FAQs",
       "type": "faq",
-      "status": "extracted",
+      "status": "approved",
       "history": [
         {
           "status": "extracted",
@@ -1290,12 +1310,17 @@
         {
           "status": "extracted",
           "at": "2026-09-24T07:31:12Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-24T09:29:43Z",
+          "approvedBy": "hands-off"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-faqs-html.json",
-      "prototypePath": null,
+      "prototypePath": "stardust/prototypes/us-en-faqs-html-proposed.html",
       "migratedPath": null
     },
     {
@@ -1303,7 +1328,7 @@
       "url": "https://wknd.site/us/en.html",
       "title": "WKND Adventures and Travel",
       "type": "landing",
-      "status": "extracted",
+      "status": "approved",
       "history": [
         {
           "status": "extracted",
@@ -1312,12 +1337,17 @@
         {
           "status": "extracted",
           "at": "2026-09-24T07:31:12Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-24T09:29:43Z",
+          "approvedBy": "hands-off"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-html.json",
-      "prototypePath": null,
+      "prototypePath": "stardust/prototypes/us-en-html-proposed.html",
       "migratedPath": null
     },
     {
@@ -1369,7 +1399,7 @@
       "url": "https://wknd.site/us/en/magazine.html",
       "title": "Magazine",
       "type": "magazine",
-      "status": "extracted",
+      "status": "approved",
       "history": [
         {
           "status": "extracted",
@@ -1378,12 +1408,17 @@
         {
           "status": "extracted",
           "at": "2026-09-24T07:31:12Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-24T09:29:43Z",
+          "approvedBy": "hands-off"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-magazine-html.json",
-      "prototypePath": null,
+      "prototypePath": "stardust/prototypes/us-en-magazine-html-proposed.html",
       "migratedPath": null
     },
     {
@@ -1435,7 +1470,7 @@
       "url": "https://wknd.site/us/en/magazine/western-australia.html",
       "title": "Western Australia",
       "type": "article",
-      "status": "extracted",
+      "status": "approved",
       "history": [
         {
           "status": "extracted",
@@ -1444,12 +1479,17 @@
         {
           "status": "extracted",
           "at": "2026-09-24T07:31:12Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-24T09:29:43Z",
+          "approvedBy": "hands-off"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-magazine-western-australia-html.json",
-      "prototypePath": null,
+      "prototypePath": "stardust/prototypes/us-en-magazine-western-australia-html-proposed.html",
       "migratedPath": null
     },
     {
@@ -1457,7 +1497,7 @@
       "url": "https://wknd.site/us/es.html",
       "title": "Español",
       "type": "stub",
-      "status": "extracted",
+      "status": "approved",
       "history": [
         {
           "status": "extracted",
@@ -1466,12 +1506,17 @@
         {
           "status": "extracted",
           "at": "2026-09-24T07:31:12Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-24T09:29:43Z",
+          "approvedBy": "hands-off"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-es-html.json",
-      "prototypePath": null,
+      "prototypePath": "stardust/prototypes/us-es-html-proposed.html",
       "migratedPath": null
     }
   ]

@@ -1,0 +1,194 @@
+measure  https://wknd.site/us/en/magazine/western-australia.html
+  widths 1440, 360 · 31 selector(s) · 14 props · first match
+
+@ 1440px
+  root  scrollWidth  1440  viewport 1440  scrollHeight   6537
+  main.cmp-layout-container--fixed
+       x   138  y    200  w  1164  h  6028  vis  "MAGAZINE WESTERN AUSTRALIA Western Aust…"
+      display: block; boxSizing: border-box; width: 1164px; height: 6028.31px; margin: 0px 138px; padding: 0px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: none; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  main.cmp-layout-container--fixed > .cmp-container > .aem-Grid > .image
+       x   138  y    200  w  1164  h   660  vis  ""
+      display: block; boxSizing: border-box; width: 1164px; height: 660.375px; margin: 0px; padding: 0px 14px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .breadcrumb
+       x   138  y    860  w  1164  h    67  vis  "MAGAZINE WESTERN AUSTRALIA"
+      display: block; boxSizing: border-box; width: 1164px; height: 67px; margin: 0px; padding: 0px 14px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  main main
+       x   138  y    927  w   776  h  5301  vis  "Western Australia by Camper Van BY SOFI…"
+      display: block; boxSizing: border-box; width: 776px; height: 5300.94px; margin: 0px; padding: 0px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  aside
+       x  1011  y    927  w   291  h   788  vis  "SHARE THIS STORY ULTIMATE GUIDE TO LA S…"
+      display: block; boxSizing: border-box; width: 291px; height: 787.75px; margin: 0px 0px 0px 97px; padding: 0px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  main main .cmp-title h1
+       x   138  y    954  w   776  h    60  vis  "Western Australia by Camper Van"
+      display: block; boxSizing: content-box; width: 776px; height: 60px; margin: 27px 0px 13.5px; padding: 0px; fontSize: 40px; fontFamily: Asar, Georgia, "Times New Roman", Times, serif; fontWeight: 400; lineHeight: 60px; textAlign: left; float: none; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  main main .cmp-title h4
+       x   138  y   1036  w   776  h    24  vis  "BY SOFIA SJÖBERG"
+      display: block; boxSizing: content-box; width: 776px; height: 24px; margin: 21.28px 0px; padding: 0px; fontSize: 16px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 600; lineHeight: 24px; textAlign: left; float: none; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .contentfragment
+       x   138  y   1081  w   776  h  4926  vis  "A vibrant red, dusty highway stretches …"
+      display: block; boxSizing: content-box; width: 776px; height: 4925.91px; margin: 0px; padding: 0px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: none; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-contentfragment__elements > div > p [1 of 5]
+       x   138  y   1081  w   776  h   270  vis  "A vibrant red, dusty highway stretches …"
+      display: block; boxSizing: content-box; width: 776px; height: 270px; margin: 0px 0px 13.5px; padding: 0px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 45px; textAlign: justify; float: none; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-text--quote
+       x   138  y   1382  w   776  h   251  vis  "Wanderlust \ˈwɒndəlʌst\ a strong desire…"
+      display: block; boxSizing: border-box; width: 776px; height: 250.5px; margin: 18px 0px; padding: 0px 14px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgb(235, 235, 235)
+  .cmp-text--quote blockquote
+       x   170  y   1400  w   712  h   138  vis  "Wanderlust \ˈwɒndəlʌst\ a strong desire…"
+      display: block; boxSizing: content-box; width: 684px; height: 110px; margin: 0px 0px 18px; padding: 14px; fontSize: 36px; fontFamily: Asar, Georgia, "Times New Roman", Times, serif; fontWeight: 400; lineHeight: 54px; textAlign: left; float: none; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-text--quote p
+       x   170  y   1556  w   712  h    45  vis  "noun"
+      display: block; boxSizing: content-box; width: 712px; height: 45px; margin: 0px 0px 13.5px; padding: 0px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 45px; textAlign: justify; float: none; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-title--underline h2 [1 of 3]
+       x   152  y   2051  w   748  h    64  vis  "Hiking and camping on the coast"
+      display: block; boxSizing: content-box; width: 748px; height: 64px; margin: 27px 0px 13.5px; padding: 0px; fontSize: 36px; fontFamily: Asar, Georgia, "Times New Roman", Times, serif; fontWeight: 400; lineHeight: 54px; textAlign: left; float: none; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .contentfragment .image [1 of 3]
+       x   138  y   2129  w   776  h   519  vis  ""
+      display: block; boxSizing: border-box; width: 776px; height: 519.469px; margin: 0px; padding: 0px 14px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .experiencefragment [1 of 3]
+       x     0  y      0  w  1440  h   194  vis  "SIGN IN EN-US MAGAZINE ADVENTURES FAQS …"
+      display: block; boxSizing: border-box; width: 1440px; height: 193.641px; margin: 0px; padding: 0px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: none; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .byline
+       x   138  y   6137  w   582  h    92  vis  "Sofia Sjöberg PHOTOGRAPHER, SKIIER, YOU…"
+      display: block; boxSizing: border-box; width: 582px; height: 91.5px; margin: 0px; padding: 0px 14px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-byline__name
+       x   237  y   6137  w   469  h    44  vis  "Sofia Sjöberg"
+      display: block; boxSizing: content-box; width: 469px; height: 36px; margin: 0px 0px 4px 85px; padding: 8px 0px 0px; fontSize: 24px; fontFamily: Asar, Georgia, "Times New Roman", Times, serif; fontWeight: 400; lineHeight: 36px; textAlign: left; float: none; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-byline__occupations
+       x   237  y   6185  w   469  h    30  vis  "PHOTOGRAPHER, SKIIER, YOUTUBER"
+      display: block; boxSizing: content-box; width: 469px; height: 30px; margin: 0px 0px 13.5px 85px; padding: 0px; fontSize: 12px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 30px; textAlign: justify; float: none; color: rgb(105, 105, 105); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-byline__image img
+       x   152  y   6144  w    60  h    60  vis  ""  img 1280×1666 …/ayo-ogunseinde-237739.jpeg
+      display: inline; boxSizing: content-box; width: 60px; height: 60px; margin: 7px 0px; padding: 0px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: none; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-buildingblock--btn-list [1 of 2]
+       x   720  y   6137  w   194  h    48  vis  ""
+      display: block; boxSizing: border-box; width: 194px; height: 48px; margin: 0px; padding: 0px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-buildingblock--btn-list .button [1 of 6]
+       x   720  y   6137  w    48  h    48  vis  ""
+      display: block; boxSizing: border-box; width: 48px; height: 48px; margin: 0px; padding: 0px; fontSize: 20px; fontFamily: wknd-icon-font; fontWeight: 400; lineHeight: 20px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-title--black h5
+       x  1025  y    951  w   263  h    21  vis  "SHARE THIS STORY"
+      display: block; boxSizing: content-box; width: 263px; height: 21px; margin: 23.38px 0px; padding: 0px; fontSize: 14px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 600; lineHeight: 21px; textAlign: left; float: none; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .sharing
+       x  1011  y    995  w   291  h     0  vis  ""
+      display: block; boxSizing: border-box; width: 291px; height: 0px; margin: 0px; padding: 0px 14px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-list--upnext
+       x  1011  y   1031  w   291  h   684  vis  "ULTIMATE GUIDE TO LA SKATEPARKS WEDNESD…"
+      display: block; boxSizing: border-box; width: 291px; height: 684px; margin: 0px; padding: 32px 14px 0px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-list--upnext .cmp-list
+       x  1025  y   1081  w   263  h   616  vis  "ULTIMATE GUIDE TO LA SKATEPARKS WEDNESD…"
+      display: block; boxSizing: content-box; width: 263px; height: 616px; margin: 18px 0px; padding: 0px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-list__item [1 of 4]
+       x  1025  y   1081  w   263  h   136  vis  "ULTIMATE GUIDE TO LA SKATEPARKS WEDNESD…"
+      display: list-item; boxSizing: content-box; width: 263px; height: 136px; margin: 0px 0px 18px; padding: 0px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-list__item-link [1 of 4]
+       x  1025  y   1081  w   263  h   136  vis  "ULTIMATE GUIDE TO LA SKATEPARKS WEDNESD…"
+      display: block; boxSizing: content-box; width: 226px; height: 120px; margin: 0px; padding: 8px 16px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(0, 69, 255); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-list__item-title [1 of 4]
+       x  1046  y   1089  w   236  h    64  vis  "ULTIMATE GUIDE TO LA SKATEPARKS"
+      display: block; boxSizing: content-box; width: 226px; height: 54px; margin: 0px; padding: 5px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-list__item-date [1 of 4]
+       x  1046  y   1153  w   236  h    28  vis  "WEDNESDAY, 30 SEP 2020"
+      display: block; boxSizing: content-box; width: 226px; height: 18px; margin: 0px; padding: 5px; fontSize: 12px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 18px; textAlign: left; float: left; color: rgb(105, 105, 105); backgroundColor: rgba(0, 0, 0, 0)
+  .experiencefragment .separator [1 of 2]
+       x   138  y   6007  w   776  h   130  vis  ""
+      display: block; boxSizing: border-box; width: 776px; height: 130px; margin: 0px; padding: 0px 14px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-separator--hidden [1 of 2]
+       x  1011  y    995  w   291  h    36  vis  ""
+      display: block; boxSizing: border-box; width: 291px; height: 36px; margin: 0px; padding: 0px 14px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+
+@ 360px
+  root  scrollWidth   360  viewport 360  scrollHeight   9842
+  main.cmp-layout-container--fixed
+       x     0  y    130  w   360  h  9070  vis  "MAGAZINE WESTERN AUSTRALIA Western Aust…"
+      display: block; boxSizing: border-box; width: 360px; height: 9069.84px; margin: 0px; padding: 0px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  main.cmp-layout-container--fixed > .cmp-container > .aem-Grid > .image
+       x     0  y    130  w   360  h   208  vis  ""
+      display: block; boxSizing: border-box; width: 360px; height: 207.859px; margin: 0px; padding: 0px 14px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .breadcrumb
+       x     0  y    338  w   360  h    50  vis  "MAGAZINE WESTERN AUSTRALIA"
+      display: block; boxSizing: border-box; width: 360px; height: 50px; margin: 0px; padding: 0px 14px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  main main
+       x     0  y    388  w   360  h  8024  vis  "Western Australia by Camper Van BY SOFI…"
+      display: block; boxSizing: border-box; width: 360px; height: 8024.23px; margin: 0px; padding: 0px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  aside
+       x     0  y   8412  w   360  h   788  vis  "SHARE THIS STORY ULTIMATE GUIDE TO LA S…"
+      display: block; boxSizing: border-box; width: 360px; height: 787.75px; margin: 0px; padding: 0px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  main main .cmp-title h1
+       x     0  y    415  w   360  h   120  vis  "Western Australia by Camper Van"
+      display: block; boxSizing: content-box; width: 360px; height: 120px; margin: 27px 0px 13.5px; padding: 0px; fontSize: 40px; fontFamily: Asar, Georgia, "Times New Roman", Times, serif; fontWeight: 400; lineHeight: 60px; textAlign: left; float: none; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  main main .cmp-title h4
+       x     0  y    556  w   360  h    24  vis  "BY SOFIA SJÖBERG"
+      display: block; boxSizing: content-box; width: 360px; height: 24px; margin: 21.28px 0px; padding: 0px; fontSize: 16px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 600; lineHeight: 24px; textAlign: left; float: none; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .contentfragment
+       x     0  y    601  w   360  h  7541  vis  "A vibrant red, dusty highway stretches …"
+      display: block; boxSizing: content-box; width: 360px; height: 7541.2px; margin: 0px; padding: 0px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: none; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-contentfragment__elements > div > p [1 of 5]
+       x     0  y    601  w   360  h   585  vis  "A vibrant red, dusty highway stretches …"
+      display: block; boxSizing: content-box; width: 360px; height: 585px; margin: 0px 0px 13.5px; padding: 0px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 45px; textAlign: justify; float: none; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-text--quote
+       x     0  y   1218  w   360  h   359  vis  "Wanderlust \ˈwɒndəlʌst\ a strong desire…"
+      display: block; boxSizing: border-box; width: 360px; height: 358.5px; margin: 18px 0px; padding: 0px 14px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgb(235, 235, 235)
+  .cmp-text--quote blockquote
+       x    32  y   1236  w   296  h   246  vis  "Wanderlust \ˈwɒndəlʌst\ a strong desire…"
+      display: block; boxSizing: content-box; width: 268px; height: 218px; margin: 0px 0px 18px; padding: 14px; fontSize: 36px; fontFamily: Asar, Georgia, "Times New Roman", Times, serif; fontWeight: 400; lineHeight: 54px; textAlign: left; float: none; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-text--quote p
+       x    32  y   1500  w   296  h    45  vis  "noun"
+      display: block; boxSizing: content-box; width: 296px; height: 45px; margin: 0px 0px 13.5px; padding: 0px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 45px; textAlign: justify; float: none; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-title--underline h2 [1 of 3]
+       x    14  y   2445  w   332  h   118  vis  "Hiking and camping on the coast"
+      display: block; boxSizing: content-box; width: 332px; height: 118px; margin: 27px 0px 13.5px; padding: 0px; fontSize: 36px; fontFamily: Asar, Georgia, "Times New Roman", Times, serif; fontWeight: 400; lineHeight: 54px; textAlign: left; float: none; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .contentfragment .image [1 of 3]
+       x     0  y   2576  w   360  h   242  vis  ""
+      display: block; boxSizing: border-box; width: 360px; height: 242.234px; margin: 0px; padding: 0px 14px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .experiencefragment [1 of 3]
+       x     0  y      0  w   360  h   117  vis  "SIGN IN EN-US"
+      display: block; boxSizing: border-box; width: 360px; height: 116.719px; margin: 0px; padding: 0px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: none; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .byline
+       x     0  y   8273  w   360  h    92  vis  "Sofia Sjöberg PHOTOGRAPHER, SKIIER, YOU…"
+      display: block; boxSizing: border-box; width: 360px; height: 91.5px; margin: 0px; padding: 0px 14px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-byline__name
+       x    99  y   8273  w   247  h    44  vis  "Sofia Sjöberg"
+      display: block; boxSizing: content-box; width: 247px; height: 36px; margin: 0px 0px 4px 85px; padding: 8px 0px 0px; fontSize: 24px; fontFamily: Asar, Georgia, "Times New Roman", Times, serif; fontWeight: 400; lineHeight: 36px; textAlign: left; float: none; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-byline__occupations
+       x    99  y   8321  w   247  h    30  vis  "PHOTOGRAPHER, SKIIER, YOUTUBER"
+      display: block; boxSizing: content-box; width: 247px; height: 30px; margin: 0px 0px 13.5px 85px; padding: 0px; fontSize: 12px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 30px; textAlign: justify; float: none; color: rgb(105, 105, 105); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-byline__image img
+       x    14  y   8280  w    60  h    60  vis  ""  img 1280×1666 …/ayo-ogunseinde-237739.jpeg
+      display: inline; boxSizing: content-box; width: 60px; height: 60px; margin: 7px 0px; padding: 0px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: none; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-buildingblock--btn-list [1 of 2]
+       x     0  y   8364  w   360  h    48  vis  ""
+      display: block; boxSizing: border-box; width: 360px; height: 48px; margin: 0px; padding: 0px 14px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-buildingblock--btn-list .button [1 of 6]
+       x    14  y   8364  w    48  h    48  vis  ""
+      display: block; boxSizing: border-box; width: 48px; height: 48px; margin: 0px; padding: 0px; fontSize: 20px; fontFamily: wknd-icon-font; fontWeight: 400; lineHeight: 20px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-title--black h5
+       x    14  y   8435  w   332  h    21  vis  "SHARE THIS STORY"
+      display: block; boxSizing: content-box; width: 332px; height: 21px; margin: 23.38px 0px; padding: 0px; fontSize: 14px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 600; lineHeight: 21px; textAlign: left; float: none; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .sharing
+       x     0  y   8480  w   360  h     0  vis  ""
+      display: block; boxSizing: border-box; width: 360px; height: 0px; margin: 0px; padding: 0px 14px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-list--upnext
+       x     0  y   8516  w   360  h   684  vis  "ULTIMATE GUIDE TO LA SKATEPARKS WEDNESD…"
+      display: block; boxSizing: border-box; width: 360px; height: 684px; margin: 0px; padding: 32px 14px 0px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-list--upnext .cmp-list
+       x    14  y   8566  w   332  h   616  vis  "ULTIMATE GUIDE TO LA SKATEPARKS WEDNESD…"
+      display: block; boxSizing: content-box; width: 332px; height: 616px; margin: 18px 0px; padding: 0px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-list__item [1 of 4]
+       x    14  y   8566  w   332  h   136  vis  "ULTIMATE GUIDE TO LA SKATEPARKS WEDNESD…"
+      display: list-item; boxSizing: content-box; width: 332px; height: 136px; margin: 0px 0px 18px; padding: 0px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-list__item-link [1 of 4]
+       x    14  y   8566  w   332  h   136  vis  "ULTIMATE GUIDE TO LA SKATEPARKS WEDNESD…"
+      display: block; boxSizing: content-box; width: 295px; height: 120px; margin: 0px; padding: 8px 16px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(0, 69, 255); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-list__item-title [1 of 4]
+       x    35  y   8574  w   305  h    37  vis  "ULTIMATE GUIDE TO LA SKATEPARKS"
+      display: block; boxSizing: content-box; width: 295px; height: 27px; margin: 0px; padding: 5px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-list__item-date [1 of 4]
+       x    35  y   8611  w   305  h    28  vis  "WEDNESDAY, 30 SEP 2020"
+      display: block; boxSizing: content-box; width: 295px; height: 18px; margin: 0px; padding: 5px; fontSize: 12px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 18px; textAlign: left; float: left; color: rgb(105, 105, 105); backgroundColor: rgba(0, 0, 0, 0)
+  .experiencefragment .separator [1 of 2]
+       x     0  y   8143  w   360  h   130  vis  ""
+      display: block; boxSizing: border-box; width: 360px; height: 130px; margin: 0px; padding: 0px 14px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)
+  .cmp-separator--hidden [1 of 2]
+       x     0  y   8480  w   360  h    36  vis  ""
+      display: block; boxSizing: border-box; width: 360px; height: 36px; margin: 0px; padding: 0px 14px; fontSize: 18px; fontFamily: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; fontWeight: 400; lineHeight: 27px; textAlign: left; float: left; color: rgb(32, 32, 32); backgroundColor: rgba(0, 0, 0, 0)

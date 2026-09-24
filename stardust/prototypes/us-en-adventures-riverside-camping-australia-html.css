@@ -1,0 +1,148 @@
+/* us-en-adventures-riverside-camping-australia-html (program archetype) — page modules only.
+   Shared chrome/tokens/type come from canon.css. Values lifted from clientlib-site.min.css
+   (.cmp-breadcrumb, .cmp-carousel--mini, .cmp-contentfragment--elements, .cmp-tabs) and
+   confirmed with measure.mjs at 1440 + 360. */
+
+/* ---- layout container: live .cmp-layout-container--fixed is display:block with 0 14px at every
+   width (a flow-root would shrink beside the floated carousel actions at <=1024) ---- */
+@media (max-width: 1024px) {
+  main[data-template="program"] .container-fixed { display: block; padding: 0 var(--spacing-md); }
+}
+
+/* ---- grid columns inside the fixed container (AEM default--3 / default--9); .aem-Grid clearfix ---- */
+main[data-template="program"] .container-fixed::after { clear: both; content: ""; display: table; }
+.col--3 { padding: 0; }
+@media (min-width: 1025px) {
+  .col--3 { clear: none; float: left; width: 25%; }
+  .col--9 { clear: none; float: left; width: 75%; }
+}
+
+/* ---- shared image primitive (.cmp-image__image) ---- */
+.image img { height: auto; margin: 7px 0; width: 100%; }
+
+/* ---- breadcrumb (.cmp-breadcrumb--fixed) ---- */
+.breadcrumb-col { box-sizing: content-box; margin: 0 auto; max-width: var(--max-width); padding: 0 var(--spacing-md); }
+.breadcrumb { display: inline-block; padding: 0; }
+.breadcrumb__list { font-size: var(--body-sm); list-style: none; margin: 0; padding: 0 12px 0 0; }
+.breadcrumb__item { display: inline-block; padding: 10px 5px; text-transform: uppercase; vertical-align: top; }
+.breadcrumb__item::before {
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--color-accent);
+  content: "\ea1c";
+  font-family: "wknd-icon-font" !important;
+  font-size: 1em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  padding-right: 5px;
+  text-transform: none;
+}
+.breadcrumb__item:first-child { padding-left: 0; }
+.breadcrumb__item:first-child::before { content: none; }
+.breadcrumb__link { color: var(--color-fg); font-weight: var(--font-weight-bold); text-decoration: none; }
+@media (max-width: 767px) {
+  .breadcrumb__list { font-size: var(--body-xs); }
+}
+
+/* ---- mini carousel (.cmp-carousel--mini) ---- */
+.carousel-col { padding-left: 0 !important; padding-right: 0 !important; }
+.carousel { width: 100%; }
+.carousel__content { position: relative; }
+.carousel__item { animation-duration: .5s; animation-fill-mode: both; animation-name: fadeIn; display: none; }
+.carousel__item--active { display: block; }
+@keyframes fadeIn { 0% { opacity: 0; } to { opacity: 1; } }
+.carousel--mini .image img { height: 400px; min-height: 400px; object-fit: cover; object-position: center; }
+.carousel__indicators {
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: .5em 0 0;
+  padding: 0;
+}
+.carousel__indicator {
+  background-color: #afafaf;
+  border-radius: 50%;
+  flex: 0 1 auto;
+  font-size: 0;
+  height: 10px;
+  margin: 0 7px;
+  position: relative;
+  text-indent: -3000px;
+  width: 10px;
+}
+.carousel__indicator--active { background-color: rgba(0, 0, 0, .8); }
+.carousel__actions { float: right; margin-top: 0; }
+.carousel__action { appearance: none; background: none; border: none; margin-right: 1em; padding-right: 0; }
+.carousel__action-text { display: none; }
+.carousel__action-icon { cursor: pointer; }
+.carousel__action--previous .carousel__action-icon::before { content: "\e90f"; }
+.carousel__action--next .carousel__action-icon::before { content: "\e90e"; }
+
+/* ---- content fragment title (live .cmp-contentfragment__title is display:none) ---- */
+.fragment__title { display: none; }
+
+
+/* ---- adventure facts (.cmp-contentfragment--elements) ---- */
+.facts__list { box-sizing: content-box; display: block; float: left; margin: 1em 0; width: 100%; }
+.facts__item {
+  border-left: 5px solid var(--color-third);
+  box-sizing: content-box;
+  float: left;
+  font-family: var(--body-font-family);
+  height: 84px;
+  margin: 0 0 1.25em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-transform: uppercase;
+  width: 100%;
+}
+.facts__label { color: var(--color-muted); font-size: var(--body-xs); padding-top: 1em; }
+.facts__value { font-size: var(--body-sm); font-weight: var(--font-weight-bold); margin-inline-start: 0; padding-top: .5em; }
+@media (max-width: 1024px) {
+  .facts__item { border-left: none; padding-left: 0; padding-right: 2em; width: auto; }
+}
+.share-title { margin: 1.67em 0; }
+.sharing a { display: inline; }
+
+/* ---- tabs (.cmp-tabs) ---- */
+.tabs__tablist { display: flex; flex-wrap: wrap; list-style: none; margin: 1em 0; padding-left: 0; }
+.tabs__tab {
+  border-bottom: 1px solid transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: var(--body-sm);
+  max-height: var(--button-size);
+  min-width: var(--button-size);
+  padding: .5rem 1rem;
+  text-transform: uppercase;
+}
+.tabs__tab:focus { outline: none; }
+.tabs__tab--active { background-color: var(--color-secondary); border: none; color: #fff; }
+.tabs__tabpanel { display: none; }
+.tabs__tabpanel--active { display: block; }
+
+/* ---- content fragment rich text (.cmp-contentfragment ul/li) ---- */
+.fragment ul { display: block; list-style-type: none; margin: 1em 0; padding-inline-start: 0; }
+.fragment li { display: list-item; line-height: 2; padding-left: 12px; }
+.fragment li::before {
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\ea1c";
+  font-family: "wknd-icon-font" !important;
+  font-size: .55em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  left: -.75em;
+  line-height: 1;
+  position: relative;
+  text-transform: none;
+  top: -.25em;
+}
+.tabs__tabpanel::after { clear: both; content: ""; display: table; }

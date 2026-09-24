@@ -1,82 +1,1413 @@
 {
   "_provenance": {
     "writtenBy": "stardust:replica",
-    "writtenAt": "2026-09-24T07:41:23.330Z",
-    "phase": "preserve-direction",
+    "writtenAt": "2026-09-24T09:29:37.330Z",
+    "phase": "source-fidelity-gate",
     "againstInput": "https://wknd.site"
   },
   "pageTypes": {
     "landing": {
       "archetype": "us-en-html",
       "count": 2,
-      "iterations": 0,
-      "gates": {},
-      "residuals": [],
-      "motion": {}
+      "iterations": 3,
+      "gates": {
+        "360": {
+          "pixelPct": 0.57,
+          "heightDelta": 0,
+          "structuralRed": 0,
+          "pass": true
+        },
+        "1440": {
+          "pixelPct": 0,
+          "heightDelta": 0,
+          "structuralRed": 0,
+          "pass": true
+        }
+      },
+      "residuals": [
+        {
+          "band": "all bands ≤1.9%",
+          "pct": 0.57,
+          "cause": "capture-state: live selects 300–400w AEM renditions per srcset, prototype serves the 1600w file (only rendition captured); photo resampling noise, Δh 0",
+          "flaggedFor": "delivery"
+        },
+        {
+          "probe": "visual",
+          "flag": "STRETCHED IMAGE ×8",
+          "cause": "intentional object-fit:cover crops identical to live",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "content",
+          "flag": "🟡×3 [header]",
+          "cause": "search x-template class rename",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "pixel",
+          "flag": "featured-teaser image height lazy-load-timing dependent (173.25 vs 193.75 settled)",
+          "cause": "live lazy-load timing; gate captures settled state",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "visual",
+          "flag": "STRETCHED IMAGE ×11",
+          "cause": "intentional object-fit:cover crops identical to live",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "content",
+          "flag": "🟡×3 [header]",
+          "cause": "live search <script type=x-template> item mirrored with clean class names (search__item vs cmp-search__item), same DOM",
+          "flaggedFor": "user"
+        }
+      ],
+      "motion": {
+        "observed": 5,
+        "implemented": 5,
+        "dead": [
+          "carousel autoplay (data-cmp-delay present, never fired)",
+          "hover: teaser CTA",
+          "hover: primary button",
+          "hover: image-list title link",
+          "hover: footer nav link",
+          "hover: social icon button",
+          "hover: footer text link"
+        ],
+        "behaviours": [
+          "body.scrolly header morph",
+          "carousel prev/next/indicator swap + fadeIn .5s",
+          "language toggle showMenu/open",
+          "mobile #toggleNav → body.navPanel-visible (360)",
+          "header nav link hover bg #ffea00"
+        ],
+        "files": [
+          "stardust/replica/motion/us-en-html.json",
+          "stardust/replica/motion/us-en-html-build.json",
+          "stardust/replica/motion/us-en-html-360.json",
+          "stardust/replica/motion/us-en-html-360-build.json"
+        ]
+      },
+      "prototype": "stardust/prototypes/us-en-html-proposed.html",
+      "breakpoints": {
+        "360": {
+          "iterations": 3,
+          "result": {
+            "structuralRed": 0,
+            "pixelPct": 0.57,
+            "heightDelta": 0,
+            "pass": true
+          },
+          "residuals": [
+            {
+              "band": "all bands ≤1.9%",
+              "pct": 0.57,
+              "cause": "capture-state: live selects 300–400w AEM renditions per srcset, prototype serves the 1600w file (only rendition captured); photo resampling noise, Δh 0",
+              "flaggedFor": "delivery"
+            },
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE ×8",
+              "cause": "intentional object-fit:cover crops identical to live",
+              "flaggedFor": "user"
+            },
+            {
+              "probe": "content",
+              "flag": "🟡×3 [header]",
+              "cause": "search x-template class rename",
+              "flaggedFor": "user"
+            },
+            {
+              "probe": "pixel",
+              "flag": "featured-teaser image height lazy-load-timing dependent (173.25 vs 193.75 settled)",
+              "cause": "live lazy-load timing; gate captures settled state",
+              "flaggedFor": "user"
+            }
+          ],
+          "postCanon": {
+            "label": "canon",
+            "pixelPct": 0.57,
+            "heightDelta": 0,
+            "pass": true,
+            "log": "stardust/.work/replica/bg/us-en-html-360-canon.log"
+          },
+          "evidence": "stardust/replica/gates/us-en-html-360/"
+        },
+        "1440": {
+          "iterations": 3,
+          "result": {
+            "structuralRed": 0,
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "pass": true
+          },
+          "residuals": [
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE ×11",
+              "cause": "intentional object-fit:cover crops identical to live",
+              "flaggedFor": "user"
+            },
+            {
+              "probe": "content",
+              "flag": "🟡×3 [header]",
+              "cause": "live search <script type=x-template> item mirrored with clean class names (search__item vs cmp-search__item), same DOM",
+              "flaggedFor": "user"
+            }
+          ],
+          "postCanon": {
+            "label": "canon",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "pass": true,
+            "log": "stardust/.work/replica/bg/us-en-html-1440-canon.log"
+          },
+          "evidence": "stardust/replica/gates/us-en-html-1440/"
+        }
+      },
+      "fontSubstitutions": [],
+      "status": "approved",
+      "approvedAt": "2026-09-24T09:29:37.330Z",
+      "approvedBy": "hands-off"
     },
     "listing": {
       "archetype": "us-en-adventures-html",
       "count": 2,
-      "iterations": 0,
-      "gates": {},
-      "residuals": [],
-      "motion": {}
+      "iterations": 2,
+      "gates": {
+        "360": {
+          "pixelPct": 0.81,
+          "heightDelta": 0,
+          "structuralRed": 0,
+          "pass": true
+        },
+        "1440": {
+          "pixelPct": 0,
+          "heightDelta": 0,
+          "structuralRed": 0,
+          "pass": true
+        }
+      },
+      "residuals": [
+        {
+          "band": "y 3000–3500",
+          "pct": 0.81,
+          "bandPct": 4,
+          "cause": "capture-state: photo resampling in card images (live 360w renditions vs 1600w captured file), text clean",
+          "flaggedFor": "delivery"
+        },
+        {
+          "probe": "visual",
+          "flag": "STRETCHED IMAGE ×16",
+          "cause": "intentional object-fit:cover crops identical to live",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "content",
+          "flag": "🟡×3 [header]",
+          "cause": "search x-template class rename (canon)",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "visual",
+          "flag": "STRETCHED IMAGE ×17",
+          "cause": "intentional object-fit:cover crops identical to live",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "content",
+          "flag": "🟡×3 [header]",
+          "cause": "search x-template class rename (canon)",
+          "flaggedFor": "user"
+        }
+      ],
+      "motion": {
+        "observed": 3,
+        "implemented": 3,
+        "dead": [
+          "hover .cmp-tabs__tab",
+          "hover .cmp-image-list__item-title-link",
+          "hover .cmp-image-list__item-image-link"
+        ],
+        "behaviours": [
+          "scrolly header morph (canon.js)",
+          "tabs click → tab/panel --active swap (us-en-adventures-html.js)",
+          "language toggle showMenu/open (canon.js)"
+        ],
+        "files": [
+          "stardust/replica/motion/us-en-adventures-html.json",
+          "stardust/replica/motion/us-en-adventures-html-build.json"
+        ]
+      },
+      "prototype": "stardust/prototypes/us-en-adventures-html-proposed.html",
+      "breakpoints": {
+        "360": {
+          "iterations": 2,
+          "result": {
+            "structuralRed": 0,
+            "pixelPct": 0.81,
+            "heightDelta": 0,
+            "pass": true
+          },
+          "residuals": [
+            {
+              "band": "y 3000–3500",
+              "pct": 0.81,
+              "bandPct": 4,
+              "cause": "capture-state: photo resampling in card images (live 360w renditions vs 1600w captured file), text clean",
+              "flaggedFor": "delivery"
+            },
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE ×16",
+              "cause": "intentional object-fit:cover crops identical to live",
+              "flaggedFor": "user"
+            },
+            {
+              "probe": "content",
+              "flag": "🟡×3 [header]",
+              "cause": "search x-template class rename (canon)",
+              "flaggedFor": "user"
+            }
+          ],
+          "postCanon": {
+            "label": "canon",
+            "pixelPct": 0.81,
+            "heightDelta": 0,
+            "pass": true,
+            "log": "stardust/.work/replica/bg/us-en-adventures-html-360-canon.log"
+          },
+          "evidence": "stardust/replica/gates/us-en-adventures-html-360/"
+        },
+        "1440": {
+          "iterations": 2,
+          "result": {
+            "structuralRed": 0,
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "pass": true
+          },
+          "residuals": [
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE ×17",
+              "cause": "intentional object-fit:cover crops identical to live",
+              "flaggedFor": "user"
+            },
+            {
+              "probe": "content",
+              "flag": "🟡×3 [header]",
+              "cause": "search x-template class rename (canon)",
+              "flaggedFor": "user"
+            }
+          ],
+          "postCanon": {
+            "label": "canon",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "pass": true,
+            "log": "stardust/.work/replica/bg/us-en-adventures-html-1440-canon.log"
+          },
+          "evidence": "stardust/replica/gates/us-en-adventures-html-1440/"
+        }
+      },
+      "fontSubstitutions": [],
+      "status": "approved",
+      "approvedAt": "2026-09-24T09:29:37.330Z",
+      "approvedBy": "hands-off"
     },
     "magazine": {
       "archetype": "us-en-magazine-html",
       "count": 2,
-      "iterations": 0,
-      "gates": {},
-      "residuals": [],
-      "motion": {}
+      "iterations": 2,
+      "gates": {
+        "360": {
+          "pixelPct": 0.12,
+          "heightDelta": 0,
+          "structuralRed": 0,
+          "pass": true
+        },
+        "1440": {
+          "pixelPct": 0,
+          "heightDelta": 0,
+          "structuralRed": 0,
+          "pass": true
+        }
+      },
+      "residuals": [
+        {
+          "band": "max 500px band 0.4%",
+          "pct": 0.12,
+          "cause": "capture-state: live ~288w renditions vs captured 1280w/1600w files; resampling noise, no layout effect",
+          "flaggedFor": "delivery"
+        },
+        {
+          "probe": "visual",
+          "flag": "STRETCHED IMAGE ×7",
+          "cause": "intentional object-fit:cover crops identical to live",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "content",
+          "flag": "🟡×3 [header]",
+          "cause": "search x-template class rename (canon)",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "pixel",
+          "flag": "featured-teaser image height lazy-load-timing dependent (+20px first read, settled 0)",
+          "cause": "live lazy-load timing; gate captures settled state",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "visual",
+          "flag": "STRETCHED IMAGE ×8",
+          "cause": "intentional object-fit:cover crops identical to live",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "content",
+          "flag": "🟡×3 [header]",
+          "cause": "search x-template class rename (canon)",
+          "flaggedFor": "user"
+        }
+      ],
+      "motion": {
+        "observed": 3,
+        "implemented": 3,
+        "dead": [
+          "hover header nav a",
+          "hover featured teaser CTA",
+          "hover image-list item link",
+          "hover image-list article",
+          "hover footer nav a"
+        ],
+        "behaviours": [
+          "scrolly header morph (canon.js)",
+          "language toggle (canon.js)",
+          "mobile #toggleNav navPanel-visible (canon.js; live sampler missed the click this run — observed live on landing)"
+        ],
+        "files": [
+          "stardust/replica/motion/us-en-magazine-html.json",
+          "stardust/replica/motion/us-en-magazine-html-build.json",
+          "stardust/replica/motion/us-en-magazine-html-360.json",
+          "stardust/replica/motion/us-en-magazine-html-360-build.json"
+        ]
+      },
+      "prototype": "stardust/prototypes/us-en-magazine-html-proposed.html",
+      "breakpoints": {
+        "360": {
+          "iterations": 2,
+          "result": {
+            "structuralRed": 0,
+            "pixelPct": 0.12,
+            "heightDelta": 0,
+            "pass": true
+          },
+          "residuals": [
+            {
+              "band": "max 500px band 0.4%",
+              "pct": 0.12,
+              "cause": "capture-state: live ~288w renditions vs captured 1280w/1600w files; resampling noise, no layout effect",
+              "flaggedFor": "delivery"
+            },
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE ×7",
+              "cause": "intentional object-fit:cover crops identical to live",
+              "flaggedFor": "user"
+            },
+            {
+              "probe": "content",
+              "flag": "🟡×3 [header]",
+              "cause": "search x-template class rename (canon)",
+              "flaggedFor": "user"
+            },
+            {
+              "probe": "pixel",
+              "flag": "featured-teaser image height lazy-load-timing dependent (+20px first read, settled 0)",
+              "cause": "live lazy-load timing; gate captures settled state",
+              "flaggedFor": "user"
+            }
+          ],
+          "postCanon": {
+            "label": "canon",
+            "pixelPct": 0.12,
+            "heightDelta": 0,
+            "pass": true,
+            "log": "stardust/.work/replica/bg/us-en-magazine-html-360-canon.log"
+          },
+          "evidence": "stardust/replica/gates/us-en-magazine-html-360/"
+        },
+        "1440": {
+          "iterations": 2,
+          "result": {
+            "structuralRed": 0,
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "pass": true
+          },
+          "residuals": [
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE ×8",
+              "cause": "intentional object-fit:cover crops identical to live",
+              "flaggedFor": "user"
+            },
+            {
+              "probe": "content",
+              "flag": "🟡×3 [header]",
+              "cause": "search x-template class rename (canon)",
+              "flaggedFor": "user"
+            }
+          ],
+          "postCanon": {
+            "label": "canon",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "pass": true,
+            "log": "stardust/.work/replica/bg/us-en-magazine-html-1440-canon.log"
+          },
+          "evidence": "stardust/replica/gates/us-en-magazine-html-1440/"
+        }
+      },
+      "fontSubstitutions": [],
+      "status": "approved",
+      "approvedAt": "2026-09-24T09:29:37.330Z",
+      "approvedBy": "hands-off"
     },
     "program": {
       "archetype": "us-en-adventures-riverside-camping-australia-html",
       "count": 32,
-      "iterations": 0,
-      "gates": {},
-      "residuals": [],
-      "motion": {}
+      "iterations": 2,
+      "gates": {
+        "360": {
+          "pixelPct": 0.95,
+          "heightDelta": -1,
+          "structuralRed": 0,
+          "pass": true
+        },
+        "1440": {
+          "pixelPct": 0,
+          "heightDelta": 0,
+          "structuralRed": 0,
+          "pass": true
+        }
+      },
+      "residuals": [
+        {
+          "band": "last band (footer) 7.4% unaligned / 0.86% aligned with --y-b",
+          "pct": 0.95,
+          "heightDelta": -1,
+          "cause": "live main 1930.77px fractional vs 1931 → −1px doc height shifts the last band; 99.14% footer match when aligned",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "content",
+          "flag": "🟡×3 [header]",
+          "cause": "search x-template class rename (canon)",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "visual",
+          "flag": "STRETCHED IMAGE adobe-waadobe-wa-mg-2466.jpeg",
+          "cause": "intentional 400px object-fit:cover identical to live",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "content",
+          "flag": "🟡×3 [header]",
+          "cause": "search x-template class rename (canon)",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "visual",
+          "flag": ".fb-share-button / Pinterest anchor empty",
+          "cause": "capture-state: third-party SDKs paint nothing in capture; replicated as captured",
+          "flaggedFor": "delivery"
+        }
+      ],
+      "motion": {
+        "observed": 7,
+        "implemented": 7,
+        "dead": [
+          "hover .cmp-navigation--header .cmp-navigation__item-link (no measured change on this page)",
+          "hover .cmp-tabs__tab",
+          "hover .cmp-breadcrumb__item-link",
+          "hover .cmp-carousel__action-icon"
+        ],
+        "behaviours": [
+          "body.scrolly header morph (canon.js)",
+          "carousel next/prev/indicator active swap + fadeIn (canon.js)",
+          "tabs tab+panel --active swap (page js)",
+          "language toggle showMenu/open (canon.js)"
+        ],
+        "files": [
+          "stardust/replica/motion/us-en-adventures-riverside-camping-australia-html.json",
+          "stardust/replica/motion/us-en-adventures-riverside-camping-australia-html-build.json"
+        ]
+      },
+      "prototype": "stardust/prototypes/us-en-adventures-riverside-camping-australia-html-proposed.html",
+      "breakpoints": {
+        "360": {
+          "iterations": 2,
+          "result": {
+            "structuralRed": 0,
+            "pixelPct": 0.95,
+            "heightDelta": -1,
+            "pass": true
+          },
+          "residuals": [
+            {
+              "band": "last band (footer) 7.4% unaligned / 0.86% aligned with --y-b",
+              "pct": 0.95,
+              "heightDelta": -1,
+              "cause": "live main 1930.77px fractional vs 1931 → −1px doc height shifts the last band; 99.14% footer match when aligned",
+              "flaggedFor": "user"
+            },
+            {
+              "probe": "content",
+              "flag": "🟡×3 [header]",
+              "cause": "search x-template class rename (canon)",
+              "flaggedFor": "user"
+            }
+          ],
+          "postCanon": {
+            "label": "canon",
+            "pixelPct": 0.95,
+            "heightDelta": -1,
+            "pass": true,
+            "log": "stardust/.work/replica/bg/us-en-adventures-riverside-camping-australia-html-360-canon.log"
+          },
+          "evidence": "stardust/replica/gates/us-en-adventures-riverside-camping-australia-html-360/"
+        },
+        "1440": {
+          "iterations": 2,
+          "result": {
+            "structuralRed": 0,
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "pass": true
+          },
+          "residuals": [
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE adobe-waadobe-wa-mg-2466.jpeg",
+              "cause": "intentional 400px object-fit:cover identical to live",
+              "flaggedFor": "user"
+            },
+            {
+              "probe": "content",
+              "flag": "🟡×3 [header]",
+              "cause": "search x-template class rename (canon)",
+              "flaggedFor": "user"
+            },
+            {
+              "probe": "visual",
+              "flag": ".fb-share-button / Pinterest anchor empty",
+              "cause": "capture-state: third-party SDKs paint nothing in capture; replicated as captured",
+              "flaggedFor": "delivery"
+            }
+          ],
+          "postCanon": {
+            "label": "canon",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "pass": true,
+            "log": "stardust/.work/replica/bg/us-en-adventures-riverside-camping-australia-html-1440-canon.log"
+          },
+          "evidence": "stardust/replica/gates/us-en-adventures-riverside-camping-australia-html-1440/"
+        }
+      },
+      "fontSubstitutions": [],
+      "status": "approved",
+      "approvedAt": "2026-09-24T09:29:37.330Z",
+      "approvedBy": "hands-off"
     },
     "article": {
       "archetype": "us-en-magazine-western-australia-html",
       "count": 12,
-      "iterations": 0,
-      "gates": {},
-      "residuals": [],
-      "motion": {}
+      "iterations": 3,
+      "gates": {
+        "360": {
+          "pixelPct": 0.01,
+          "heightDelta": 0,
+          "structuralRed": 0,
+          "pass": true
+        },
+        "1440": {
+          "pixelPct": 0,
+          "heightDelta": 0,
+          "structuralRed": 0,
+          "pass": true
+        }
+      },
+      "residuals": [
+        {
+          "probe": "pixel",
+          "pct": 0.01,
+          "flag": "live rendition selection load-order dependent (±2px doc height between plain loads)",
+          "cause": "capture-state: AEM lazy src fallback vs 400w srcset candidate; gate settles on the 400w state which the build mirrors (400w + 1600w renditions rehosted)",
+          "flaggedFor": "delivery"
+        },
+        {
+          "probe": "motion",
+          "flag": "1 MISSING (up-next hover) in combined run",
+          "cause": "build's #toggleNav click opens the mobile panel before the hover probe; hover-only run confirms parity",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "content",
+          "flag": "🟡×3 [header]",
+          "cause": "search x-template class rename (canon)",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "visual",
+          "flag": "STRETCHED IMAGE ayo-ogunseinde-237739.jpeg",
+          "cause": "intentional object-fit:cover 60×60 byline portrait identical to live",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "content",
+          "flag": "🟡×3 [header]",
+          "cause": "search x-template class rename (canon)",
+          "flaggedFor": "user"
+        }
+      ],
+      "motion": {
+        "observed": 4,
+        "implemented": 4,
+        "dead": [
+          "hover header nav a",
+          "hover .cmp-breadcrumb__item-link",
+          "hover .cmp-buildingblock--btn-list .cmp-button",
+          "hover footer nav a",
+          "widget #langNavToggleHeader (sampler: no frame change; class parity confirmed)",
+          "widget #toggleNav (live sampler missed the click; canon.js)"
+        ],
+        "behaviours": [
+          "body.scrolly header morph — parity 1440+360",
+          "langNav toggle showMenu + open — parity 1440",
+          "up-next link hover background #ffea00 — lifted, confirmed in hover-only run"
+        ],
+        "files": [
+          "stardust/replica/motion/us-en-magazine-western-australia-html.json",
+          "stardust/replica/motion/us-en-magazine-western-australia-html-360.json",
+          "stardust/replica/motion/us-en-magazine-western-australia-html-build.json",
+          "stardust/replica/motion/us-en-magazine-western-australia-html-360-build.json"
+        ]
+      },
+      "prototype": "stardust/prototypes/us-en-magazine-western-australia-html-proposed.html",
+      "breakpoints": {
+        "360": {
+          "iterations": 3,
+          "result": {
+            "structuralRed": 0,
+            "pixelPct": 0.01,
+            "heightDelta": 0,
+            "pass": true
+          },
+          "residuals": [
+            {
+              "probe": "pixel",
+              "pct": 0.01,
+              "flag": "live rendition selection load-order dependent (±2px doc height between plain loads)",
+              "cause": "capture-state: AEM lazy src fallback vs 400w srcset candidate; gate settles on the 400w state which the build mirrors (400w + 1600w renditions rehosted)",
+              "flaggedFor": "delivery"
+            },
+            {
+              "probe": "motion",
+              "flag": "1 MISSING (up-next hover) in combined run",
+              "cause": "build's #toggleNav click opens the mobile panel before the hover probe; hover-only run confirms parity",
+              "flaggedFor": "user"
+            },
+            {
+              "probe": "content",
+              "flag": "🟡×3 [header]",
+              "cause": "search x-template class rename (canon)",
+              "flaggedFor": "user"
+            }
+          ],
+          "postCanon": {
+            "label": "canon",
+            "pixelPct": 0.01,
+            "heightDelta": 0,
+            "pass": true,
+            "log": "stardust/.work/replica/bg/us-en-magazine-western-australia-html-360-canon.log"
+          },
+          "evidence": "stardust/replica/gates/us-en-magazine-western-australia-html-360/"
+        },
+        "1440": {
+          "iterations": 3,
+          "result": {
+            "structuralRed": 0,
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "pass": true
+          },
+          "residuals": [
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE ayo-ogunseinde-237739.jpeg",
+              "cause": "intentional object-fit:cover 60×60 byline portrait identical to live",
+              "flaggedFor": "user"
+            },
+            {
+              "probe": "content",
+              "flag": "🟡×3 [header]",
+              "cause": "search x-template class rename (canon)",
+              "flaggedFor": "user"
+            }
+          ],
+          "postCanon": {
+            "label": "canon",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "pass": true,
+            "log": "stardust/.work/replica/bg/us-en-magazine-western-australia-html-1440-canon.log"
+          },
+          "evidence": "stardust/replica/gates/us-en-magazine-western-australia-html-1440/"
+        }
+      },
+      "fontSubstitutions": [],
+      "status": "approved",
+      "approvedAt": "2026-09-24T09:29:37.330Z",
+      "approvedBy": "hands-off"
     },
     "static": {
       "archetype": "us-en-about-us-html",
       "count": 2,
-      "iterations": 0,
-      "gates": {},
-      "residuals": [],
-      "motion": {}
+      "iterations": 1,
+      "gates": {
+        "360": {
+          "pixelPct": 0.02,
+          "heightDelta": 0,
+          "structuralRed": 0,
+          "pass": true
+        },
+        "1440": {
+          "pixelPct": 0,
+          "heightDelta": 0,
+          "structuralRed": 0,
+          "pass": true
+        }
+      },
+      "residuals": [
+        {
+          "pct": 0.02,
+          "px": 277,
+          "cause": "capture-state: live 300–400w renditions vs 1200w capture; resampling noise",
+          "flaggedFor": "delivery"
+        },
+        {
+          "probe": "motion",
+          "flag": "navPanel-visible + transform transitions extra on build",
+          "cause": "live sampler missed the #toggleNav click; behaviour is canon.js",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "content",
+          "flag": "🟡×3 [header]",
+          "cause": "search x-template class rename (canon)",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "content",
+          "flag": "🟡×3 [header]",
+          "cause": "search x-template class rename (canon)",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "visual",
+          "flag": "STRETCHED IMAGE ×5",
+          "cause": "intentional 164×164 object-fit:cover circle portraits identical to live",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "structure",
+          "flag": "live main.container IS the 1164px fixed container; prototype wraps .container-fixed inside full-width main",
+          "cause": "same pattern as gated siblings; invisible in pixels",
+          "flaggedFor": "user"
+        }
+      ],
+      "motion": {
+        "observed": 3,
+        "implemented": 3,
+        "dead": [
+          "#langNavToggleHeader widget sample (class toggle fired — parity)",
+          "hover header nav a",
+          "hover contributor .cmp-button",
+          "hover contributor portrait",
+          "hover footer nav a",
+          "360 #toggleNav (live sampler miss; canon.js)"
+        ],
+        "behaviours": [
+          "scrolly header morph (canon.js)",
+          "langNav toggle (canon.js)",
+          "mobile nav (canon.js)"
+        ],
+        "files": [
+          "stardust/replica/motion/us-en-about-us-html.json",
+          "stardust/replica/motion/us-en-about-us-html-build.json",
+          "stardust/replica/motion/us-en-about-us-html-360.json",
+          "stardust/replica/motion/us-en-about-us-html-360-build.json"
+        ]
+      },
+      "prototype": "stardust/prototypes/us-en-about-us-html-proposed.html",
+      "breakpoints": {
+        "360": {
+          "iterations": 1,
+          "result": {
+            "structuralRed": 0,
+            "pixelPct": 0.02,
+            "heightDelta": 0,
+            "pass": true
+          },
+          "residuals": [
+            {
+              "pct": 0.02,
+              "px": 277,
+              "cause": "capture-state: live 300–400w renditions vs 1200w capture; resampling noise",
+              "flaggedFor": "delivery"
+            },
+            {
+              "probe": "motion",
+              "flag": "navPanel-visible + transform transitions extra on build",
+              "cause": "live sampler missed the #toggleNav click; behaviour is canon.js",
+              "flaggedFor": "user"
+            },
+            {
+              "probe": "content",
+              "flag": "🟡×3 [header]",
+              "cause": "search x-template class rename (canon)",
+              "flaggedFor": "user"
+            }
+          ],
+          "postCanon": {
+            "label": "canon",
+            "pixelPct": 0.02,
+            "heightDelta": 0,
+            "pass": true,
+            "log": "stardust/.work/replica/bg/us-en-about-us-html-360-canon.log"
+          },
+          "evidence": "stardust/replica/gates/us-en-about-us-html-360/"
+        },
+        "1440": {
+          "iterations": 1,
+          "result": {
+            "structuralRed": 0,
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "pass": true
+          },
+          "residuals": [
+            {
+              "probe": "content",
+              "flag": "🟡×3 [header]",
+              "cause": "search x-template class rename (canon)",
+              "flaggedFor": "user"
+            },
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE ×5",
+              "cause": "intentional 164×164 object-fit:cover circle portraits identical to live",
+              "flaggedFor": "user"
+            },
+            {
+              "probe": "structure",
+              "flag": "live main.container IS the 1164px fixed container; prototype wraps .container-fixed inside full-width main",
+              "cause": "same pattern as gated siblings; invisible in pixels",
+              "flaggedFor": "user"
+            }
+          ],
+          "postCanon": {
+            "label": "canon",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "pass": true,
+            "log": "stardust/.work/replica/bg/us-en-about-us-html-1440-canon.log"
+          },
+          "evidence": "stardust/replica/gates/us-en-about-us-html-1440/"
+        }
+      },
+      "fontSubstitutions": [],
+      "status": "approved",
+      "approvedAt": "2026-09-24T09:29:37.330Z",
+      "approvedBy": "hands-off"
     },
     "faq": {
       "archetype": "us-en-faqs-html",
       "count": 2,
-      "iterations": 0,
-      "gates": {},
-      "residuals": [],
-      "motion": {}
+      "iterations": 1,
+      "gates": {
+        "360": {
+          "pixelPct": 0.93,
+          "heightDelta": 0,
+          "structuralRed": 0,
+          "pass": true
+        },
+        "1440": {
+          "pixelPct": 0,
+          "heightDelta": 0,
+          "structuralRed": 0,
+          "pass": true
+        }
+      },
+      "residuals": [
+        {
+          "band": "y 500–1000",
+          "pct": 0.93,
+          "bandPct": 2.6,
+          "cause": "glyph anti-aliasing on the justified intro paragraph and accordion titles; identical line breaks and box positions (measure Δ0), live main height fractional 1244.83",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "content",
+          "flag": "🟡×3 [header]",
+          "cause": "search x-template class rename (canon)",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "visual",
+          "flag": "lead image single rendition vs live 325×216 coreimg",
+          "cause": "capture-state: single rendition captured",
+          "flaggedFor": "delivery"
+        },
+        {
+          "probe": "content",
+          "flag": "🟡×3 [header]",
+          "cause": "search x-template class rename (canon)",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "visual",
+          "flag": "lead image single captured 1447×964 rendition vs live coreimg srcset (1302×867 at 1440)",
+          "cause": "capture-state: single rendition captured; no visible delta",
+          "flaggedFor": "delivery"
+        }
+      ],
+      "motion": {
+        "observed": 4,
+        "implemented": 4,
+        "dead": [
+          "hover .cmp-accordion__button",
+          "hover .cmp-text--font-small a",
+          "hover .cmp-navigation__item-link"
+        ],
+        "behaviours": [
+          "accordion click (button --expanded + panel --hidden/--expanded swap, fadeIn .5s, multi-expansion) — us-en-faqs-html.js",
+          "header scrolly morph (canon.js)",
+          "language toggle showMenu/open (canon.js)"
+        ],
+        "files": [
+          "stardust/replica/motion/us-en-faqs-html.json",
+          "stardust/replica/motion/us-en-faqs-html-build.json",
+          "stardust/replica/motion/us-en-faqs-html-compare.json"
+        ]
+      },
+      "prototype": "stardust/prototypes/us-en-faqs-html-proposed.html",
+      "breakpoints": {
+        "360": {
+          "iterations": 1,
+          "result": {
+            "structuralRed": 0,
+            "pixelPct": 0.93,
+            "heightDelta": 0,
+            "pass": true
+          },
+          "residuals": [
+            {
+              "band": "y 500–1000",
+              "pct": 0.93,
+              "bandPct": 2.6,
+              "cause": "glyph anti-aliasing on the justified intro paragraph and accordion titles; identical line breaks and box positions (measure Δ0), live main height fractional 1244.83",
+              "flaggedFor": "user"
+            },
+            {
+              "probe": "content",
+              "flag": "🟡×3 [header]",
+              "cause": "search x-template class rename (canon)",
+              "flaggedFor": "user"
+            },
+            {
+              "probe": "visual",
+              "flag": "lead image single rendition vs live 325×216 coreimg",
+              "cause": "capture-state: single rendition captured",
+              "flaggedFor": "delivery"
+            }
+          ],
+          "postCanon": {
+            "label": "canon",
+            "pixelPct": 0.93,
+            "heightDelta": 0,
+            "pass": true,
+            "log": "stardust/.work/replica/bg/us-en-faqs-html-360-canon.log"
+          },
+          "evidence": "stardust/replica/gates/us-en-faqs-html-360/"
+        },
+        "1440": {
+          "iterations": 1,
+          "result": {
+            "structuralRed": 0,
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "pass": true
+          },
+          "residuals": [
+            {
+              "probe": "content",
+              "flag": "🟡×3 [header]",
+              "cause": "search x-template class rename (canon)",
+              "flaggedFor": "user"
+            },
+            {
+              "probe": "visual",
+              "flag": "lead image single captured 1447×964 rendition vs live coreimg srcset (1302×867 at 1440)",
+              "cause": "capture-state: single rendition captured; no visible delta",
+              "flaggedFor": "delivery"
+            }
+          ],
+          "postCanon": {
+            "label": "canon",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "pass": true,
+            "log": "stardust/.work/replica/bg/us-en-faqs-html-1440-canon.log"
+          },
+          "evidence": "stardust/replica/gates/us-en-faqs-html-1440/"
+        }
+      },
+      "fontSubstitutions": [],
+      "status": "approved",
+      "approvedAt": "2026-09-24T09:29:37.330Z",
+      "approvedBy": "hands-off"
     },
     "unique": {
       "archetype": "ca-en-magazine-members-only-html",
       "count": 1,
-      "iterations": 0,
-      "gates": {},
-      "residuals": [],
-      "motion": {}
+      "iterations": 2,
+      "gates": {
+        "360": {
+          "pixelPct": 0.04,
+          "heightDelta": 0,
+          "structuralRed": 0,
+          "pass": true
+        },
+        "1440": {
+          "pixelPct": 0,
+          "heightDelta": 0,
+          "structuralRed": 0,
+          "pass": true
+        }
+      },
+      "residuals": [
+        {
+          "pct": 0.04,
+          "px": 230,
+          "cause": "glyph antialiasing noise; live 360w rendition vs 1280w capture, no layout effect",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "motion",
+          "flag": "navPanel-visible/transform fire on build only",
+          "cause": "live sampler missed the #toggleNav click",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "content",
+          "flag": "🟡×3 [header]",
+          "cause": "search x-template class rename (canon)",
+          "flaggedFor": "user"
+        },
+        {
+          "pct": 0,
+          "px": 45,
+          "cause": "glyph antialiasing noise",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "visual",
+          "flag": "STRETCHED IMAGE ×2 (alaskan-landscape-01, amazon-river-01)",
+          "cause": "intentional object-fit:cover 260×200 crops identical to live",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "content",
+          "flag": "🟡×3 [header]",
+          "cause": "search x-template class rename (canon)",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "motion",
+          "flag": "scroll-morph magnitude delta 24.1px",
+          "cause": "sampling-phase artifact on a 940px-tall page (traversal reaches y=40, mid-transition frame compared); end states 193.6→113.6 and 500ms timing identical",
+          "flaggedFor": "user"
+        }
+      ],
+      "motion": {
+        "observed": 5,
+        "implemented": 5,
+        "dead": [
+          "hover header nav a",
+          "hover main li article a",
+          "hover main li article",
+          "hover footer nav a",
+          "#toggleNav (360, live sampler missed the click; canon.js)"
+        ],
+        "behaviours": [
+          "scrolly header morph padding-top/bottom 500ms (canon.js)",
+          "langNav open+showMenu (canon.js)"
+        ],
+        "files": [
+          "stardust/replica/motion/ca-en-magazine-members-only-html.json",
+          "stardust/replica/motion/ca-en-magazine-members-only-html-build.json",
+          "stardust/replica/motion/ca-en-magazine-members-only-html-360.json",
+          "stardust/replica/motion/ca-en-magazine-members-only-html-360-build.json"
+        ]
+      },
+      "prototype": "stardust/prototypes/ca-en-magazine-members-only-html-proposed.html",
+      "breakpoints": {
+        "360": {
+          "iterations": 2,
+          "result": {
+            "structuralRed": 0,
+            "pixelPct": 0.04,
+            "heightDelta": 0,
+            "pass": true
+          },
+          "residuals": [
+            {
+              "pct": 0.04,
+              "px": 230,
+              "cause": "glyph antialiasing noise; live 360w rendition vs 1280w capture, no layout effect",
+              "flaggedFor": "user"
+            },
+            {
+              "probe": "motion",
+              "flag": "navPanel-visible/transform fire on build only",
+              "cause": "live sampler missed the #toggleNav click",
+              "flaggedFor": "user"
+            },
+            {
+              "probe": "content",
+              "flag": "🟡×3 [header]",
+              "cause": "search x-template class rename (canon)",
+              "flaggedFor": "user"
+            }
+          ],
+          "postCanon": {
+            "label": "canon",
+            "pixelPct": 0.04,
+            "heightDelta": 0,
+            "pass": true,
+            "log": "stardust/.work/replica/bg/ca-en-magazine-members-only-html-360-canon.log"
+          },
+          "evidence": "stardust/replica/gates/ca-en-magazine-members-only-html-360/"
+        },
+        "1440": {
+          "iterations": 2,
+          "result": {
+            "structuralRed": 0,
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "pass": true
+          },
+          "residuals": [
+            {
+              "pct": 0,
+              "px": 45,
+              "cause": "glyph antialiasing noise",
+              "flaggedFor": "user"
+            },
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE ×2 (alaskan-landscape-01, amazon-river-01)",
+              "cause": "intentional object-fit:cover 260×200 crops identical to live",
+              "flaggedFor": "user"
+            },
+            {
+              "probe": "content",
+              "flag": "🟡×3 [header]",
+              "cause": "search x-template class rename (canon)",
+              "flaggedFor": "user"
+            },
+            {
+              "probe": "motion",
+              "flag": "scroll-morph magnitude delta 24.1px",
+              "cause": "sampling-phase artifact on a 940px-tall page (traversal reaches y=40, mid-transition frame compared); end states 193.6→113.6 and 500ms timing identical",
+              "flaggedFor": "user"
+            }
+          ],
+          "postCanon": {
+            "label": "canon",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "pass": true,
+            "log": "stardust/.work/replica/bg/ca-en-magazine-members-only-html-1440-canon.log"
+          },
+          "evidence": "stardust/replica/gates/ca-en-magazine-members-only-html-1440/"
+        }
+      },
+      "fontSubstitutions": [],
+      "status": "approved",
+      "approvedAt": "2026-09-24T09:29:37.330Z",
+      "approvedBy": "hands-off"
     },
     "stub": {
       "archetype": "us-es-html",
       "count": 9,
-      "iterations": 0,
-      "gates": {},
-      "residuals": [],
-      "motion": {}
+      "iterations": 3,
+      "gates": {
+        "360": {
+          "pixelPct": 0.02,
+          "heightDelta": 0,
+          "structuralRed": 0,
+          "pass": true
+        },
+        "1440": {
+          "pixelPct": 0,
+          "heightDelta": 0,
+          "structuralRed": 0,
+          "pass": true
+        }
+      },
+      "residuals": [
+        {
+          "pct": 0.02,
+          "cause": "glyph antialiasing noise",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "content",
+          "flag": "🟡×3 [header]",
+          "cause": "search x-template class rename (canon)",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "visual",
+          "flag": "STRETCHED IMAGE adobestock-216674449.jpeg 1600x900→1440x640",
+          "cause": "intentional object-fit:cover hero crop lifted from .cmp-teaser--hero (same flag on landing)",
+          "flaggedFor": "user"
+        },
+        {
+          "probe": "content",
+          "flag": "🟡×3 [header]",
+          "cause": "search x-template class rename (canon)",
+          "flaggedFor": "user"
+        }
+      ],
+      "motion": {
+        "observed": 3,
+        "implemented": 3,
+        "dead": [
+          "language toggle widget frames (class lines at parity)",
+          "#toggleNav .toggle widget frames (navPanel-visible + 6 transform transitions at parity)",
+          "hover .cmp-button--icononly .cmp-button",
+          "hover .cmp-layoutcontainer--footer .cmp-text a",
+          "hover .cmp-languagenavigation__item-link"
+        ],
+        "behaviours": [
+          "body.scrolly header morph (padding .5s, 193.6→113.6px) — parity",
+          "language menu showMenu/open — parity",
+          "mobile off-canvas navPanel-visible transform .5s — parity"
+        ],
+        "files": [
+          "stardust/replica/motion/us-es-html.json",
+          "stardust/replica/motion/us-es-html-build.json",
+          "stardust/replica/motion/us-es-html-360.json",
+          "stardust/replica/motion/us-es-html-360-build.json"
+        ]
+      },
+      "prototype": "stardust/prototypes/us-es-html-proposed.html",
+      "breakpoints": {
+        "360": {
+          "iterations": 3,
+          "result": {
+            "structuralRed": 0,
+            "pixelPct": 0.02,
+            "heightDelta": 0,
+            "pass": true
+          },
+          "residuals": [
+            {
+              "pct": 0.02,
+              "cause": "glyph antialiasing noise",
+              "flaggedFor": "user"
+            },
+            {
+              "probe": "content",
+              "flag": "🟡×3 [header]",
+              "cause": "search x-template class rename (canon)",
+              "flaggedFor": "user"
+            }
+          ],
+          "postCanon": {
+            "label": "canon",
+            "pixelPct": 0.02,
+            "heightDelta": 0,
+            "pass": true,
+            "log": "stardust/.work/replica/bg/us-es-html-360-canon.log"
+          },
+          "evidence": "stardust/replica/gates/us-es-html-360/"
+        },
+        "1440": {
+          "iterations": 3,
+          "result": {
+            "structuralRed": 0,
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "pass": true
+          },
+          "residuals": [
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE adobestock-216674449.jpeg 1600x900→1440x640",
+              "cause": "intentional object-fit:cover hero crop lifted from .cmp-teaser--hero (same flag on landing)",
+              "flaggedFor": "user"
+            },
+            {
+              "probe": "content",
+              "flag": "🟡×3 [header]",
+              "cause": "search x-template class rename (canon)",
+              "flaggedFor": "user"
+            }
+          ],
+          "postCanon": {
+            "label": "canon",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "pass": true,
+            "log": "stardust/.work/replica/bg/us-es-html-1440-canon.log"
+          },
+          "evidence": "stardust/replica/gates/us-es-html-1440/"
+        }
+      },
+      "fontSubstitutions": [],
+      "status": "approved",
+      "approvedAt": "2026-09-24T09:29:37.330Z",
+      "approvedBy": "hands-off"
     }
+  },
+  "canon": {
+    "files": [
+      "stardust/prototypes/canon.css",
+      "stardust/prototypes/canon.js"
+    ],
+    "requests": "stardust/replica/canon-requests.md",
+    "applied": [
+      "footer active level-1 link rule (live @132288)",
+      "body.scrolly .masthead transition ease/ease (live -webkit fallback)"
+    ],
+    "deferred": [
+      "module promotions (teaser-hero, image-list, carousel base, .image img) → rollout C0",
+      ".container-fixed ≤1024 display:block + padding 0 14px → verify on home at rollout C0"
+    ],
+    "postCanonRound": "all 9 archetypes × 1440/360 identical to gated numbers"
+  },
+  "server": {
+    "port": 8794,
+    "serves": "stardust/prototypes",
+    "note": "8791 is a foreign server (sd-25-pi-opus-5-5-0001) — never kill"
   }
 }

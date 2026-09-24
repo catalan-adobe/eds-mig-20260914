@@ -1,0 +1,113 @@
+/* ==========================================================================
+   WKND replica — listing archetype (/us/en/adventures.html) modules:
+   hero teaser, tabs, image list. Values lifted from clientlib-site.min.css
+   (.cmp-teaser--hero, .cmp-tabs, .cmp-image-list) and confirmed with
+   measure.mjs at 1440 / 360 (stardust/replica/lifts/us-en-adventures-html-live.txt).
+   teaser--hero and image-list duplicate the landing archetype's page CSS
+   (us-en-html.css) — canon-request filed to promote them into canon.css.
+   ========================================================================== */
+
+/* ---- content root: live main.container is a border-box grid with a clearfix (h1 margin stays inside) ---- */
+main.container { box-sizing: border-box; display: flow-root; }
+
+/* ---- teaser (shared mechanics) ---- */
+.teaser__content { float: left; }
+.teaser__title { font-family: var(--heading-font-family); margin: .5em 0; }
+.teaser__description { font-size: 18px; line-height: 1.75; margin: 0; }
+.teaser__description p { font-size: 18px; line-height: 1.75; }
+.teaser__image img { height: auto; margin-bottom: 7px; margin-top: 7px; width: 100%; }
+
+/* ---- hero teaser ---- */
+.teaser--hero .teaser {
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+.teaser--hero .teaser__image { flex: 1; height: 400px; max-height: 400px; overflow: hidden; width: 100%; }
+.teaser--hero .teaser__image .image { height: 100%; width: 100%; }
+.teaser--hero .teaser__image img { height: 100%; margin-bottom: 0; margin-top: 0; object-fit: cover; object-position: center; width: 100%; }
+.teaser--hero .teaser__content { flex: 1; padding-left: 14px; padding-right: 14px; }
+.teaser--hero .teaser__description, .teaser--hero .teaser__description p, .teaser--hero .teaser__title { margin-bottom: 0; }
+@media (min-width: 1165px) {
+  .teaser--hero .teaser__image { height: 640px; max-height: 640px; }
+  .teaser--hero .teaser__image .image { height: 640px; }
+  .teaser--hero .teaser__content {
+    background-color: #fff;
+    float: left;
+    height: 180px;
+    margin-top: -180px;
+    min-height: 180px;
+    padding-bottom: 0;
+    padding-left: 28px;
+    padding-right: 28px;
+    position: relative;
+    width: 1136px;
+  }
+}
+.teaser--hero.col { padding-left: 0 !important; padding-right: 0 !important; }
+
+/* ---- tabs (.cmp-tabs) ---- */
+.tabs__tablist {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 18px 0;
+  padding-left: 0;
+}
+.tabs__tab {
+  border-bottom: 1px solid transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: var(--body-sm);
+  max-height: var(--button-size);
+  min-width: var(--button-size);
+  padding: .5rem 1rem;
+  text-transform: uppercase;
+}
+.tabs__tab:focus { outline: none; }
+.tabs__tab--active {
+  background-color: #202020;
+  border: none;
+  border-color: inherit;
+  color: #fff;
+}
+.tabs__tabpanel { display: none; }
+.tabs__tabpanel--active { display: block; }
+
+/* ---- image list (.cmp-image-list) ---- */
+.image-list {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: normal;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.image-list__item { flex-basis: 260px; margin: 0 0 2rem; padding-right: 14px; }
+.image-list__item img { height: 200px; margin: 0; object-fit: cover; object-position: center; overflow: hidden; width: 100%; }
+.image-list__title {
+  color: var(--color-fg);
+  font-family: var(--body-font-family);
+  font-size: var(--body);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+}
+.image-list__description {
+  color: dimgray;
+  display: block;
+  font-size: var(--body-sm);
+  margin-top: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 260px;
+}
+@media (max-width: 767px) {
+  .image-list { justify-content: space-between; }
+  .image-list__item { padding-right: 0; }
+}
+

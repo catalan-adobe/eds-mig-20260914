@@ -1,0 +1,4124 @@
+{
+  "_provenance": {
+    "writtenBy": "skills/replica/scripts/measure.mjs",
+    "writtenAt": "2026-09-24T07:46:40.047Z",
+    "urls": [
+      "https://wknd.site/us/en.html"
+    ],
+    "widths": [
+      1440,
+      360
+    ],
+    "selectors": [
+      "header",
+      ".cmp-layoutcontainer--utility",
+      ".cmp-layoutcontainer--utility .aem-Grid",
+      ".wknd-sign-in-buttons",
+      ".wknd-sign-in-buttons__button--greeting",
+      ".wknd-sign-in-buttons__button--sign-in",
+      ".cmp-languagenavigation--langnavtoggle",
+      ".cmp-languagenavigation--langnavtoggle a",
+      ".cmp-layoutcontainer--header",
+      ".cmp-layoutcontainer--header .aem-Grid",
+      ".cmp-image--logo",
+      ".cmp-image--logo img",
+      ".cmp-navigation--header",
+      ".cmp-navigation--header .cmp-navigation__group",
+      ".cmp-navigation--header .cmp-navigation__item--level-1",
+      ".cmp-navigation--header .cmp-navigation__item--level-1 a",
+      ".cmp-navigation--header .cmp-navigation__item--level-0>a",
+      ".cmp-search--header",
+      ".cmp-search__field",
+      ".cmp-search__input",
+      ".cmp-search__icon",
+      "main",
+      "main>.cmp-container",
+      ".cmp-carousel--hero",
+      ".cmp-carousel",
+      ".cmp-carousel__item--active",
+      ".cmp-carousel--hero .cmp-teaser",
+      ".cmp-carousel--hero .cmp-teaser__content",
+      ".cmp-carousel--hero .cmp-teaser__title",
+      ".cmp-carousel--hero .cmp-teaser__description",
+      ".cmp-carousel--hero .cmp-teaser__action-link",
+      ".cmp-carousel--hero .cmp-teaser__image",
+      ".cmp-carousel--hero .cmp-teaser__image img",
+      ".cmp-carousel__actions",
+      ".cmp-carousel__action--previous",
+      ".cmp-carousel__action--next",
+      ".cmp-carousel__indicators",
+      ".cmp-carousel__indicator",
+      ".cmp-carousel__indicator--active",
+      ".cmp-layout-container--fixed",
+      ".cmp-teaser--featured",
+      ".cmp-teaser--featured .cmp-teaser",
+      ".cmp-teaser--featured .cmp-teaser__content",
+      ".cmp-teaser__pretitle",
+      ".cmp-teaser--featured .cmp-teaser__title",
+      ".cmp-teaser--featured .cmp-teaser__description",
+      ".cmp-teaser--featured .cmp-teaser__action-link",
+      ".cmp-teaser--featured .cmp-teaser__image",
+      ".cmp-teaser--featured img"
+    ],
+    "props": [
+      "display",
+      "position",
+      "boxSizing",
+      "width",
+      "height",
+      "maxWidth",
+      "margin",
+      "padding",
+      "gap",
+      "backgroundColor",
+      "backgroundImage",
+      "color",
+      "fontFamily",
+      "fontSize",
+      "fontWeight",
+      "lineHeight",
+      "letterSpacing",
+      "textTransform",
+      "textAlign",
+      "borderRadius",
+      "border",
+      "boxShadow",
+      "opacity",
+      "objectFit"
+    ],
+    "allMatches": false,
+    "failed": [],
+    "warnings": []
+  },
+  "widths": [
+    1440,
+    360
+  ],
+  "selectors": [
+    "header",
+    ".cmp-layoutcontainer--utility",
+    ".cmp-layoutcontainer--utility .aem-Grid",
+    ".wknd-sign-in-buttons",
+    ".wknd-sign-in-buttons__button--greeting",
+    ".wknd-sign-in-buttons__button--sign-in",
+    ".cmp-languagenavigation--langnavtoggle",
+    ".cmp-languagenavigation--langnavtoggle a",
+    ".cmp-layoutcontainer--header",
+    ".cmp-layoutcontainer--header .aem-Grid",
+    ".cmp-image--logo",
+    ".cmp-image--logo img",
+    ".cmp-navigation--header",
+    ".cmp-navigation--header .cmp-navigation__group",
+    ".cmp-navigation--header .cmp-navigation__item--level-1",
+    ".cmp-navigation--header .cmp-navigation__item--level-1 a",
+    ".cmp-navigation--header .cmp-navigation__item--level-0>a",
+    ".cmp-search--header",
+    ".cmp-search__field",
+    ".cmp-search__input",
+    ".cmp-search__icon",
+    "main",
+    "main>.cmp-container",
+    ".cmp-carousel--hero",
+    ".cmp-carousel",
+    ".cmp-carousel__item--active",
+    ".cmp-carousel--hero .cmp-teaser",
+    ".cmp-carousel--hero .cmp-teaser__content",
+    ".cmp-carousel--hero .cmp-teaser__title",
+    ".cmp-carousel--hero .cmp-teaser__description",
+    ".cmp-carousel--hero .cmp-teaser__action-link",
+    ".cmp-carousel--hero .cmp-teaser__image",
+    ".cmp-carousel--hero .cmp-teaser__image img",
+    ".cmp-carousel__actions",
+    ".cmp-carousel__action--previous",
+    ".cmp-carousel__action--next",
+    ".cmp-carousel__indicators",
+    ".cmp-carousel__indicator",
+    ".cmp-carousel__indicator--active",
+    ".cmp-layout-container--fixed",
+    ".cmp-teaser--featured",
+    ".cmp-teaser--featured .cmp-teaser",
+    ".cmp-teaser--featured .cmp-teaser__content",
+    ".cmp-teaser__pretitle",
+    ".cmp-teaser--featured .cmp-teaser__title",
+    ".cmp-teaser--featured .cmp-teaser__description",
+    ".cmp-teaser--featured .cmp-teaser__action-link",
+    ".cmp-teaser--featured .cmp-teaser__image",
+    ".cmp-teaser--featured img"
+  ],
+  "root": {
+    "https://wknd.site/us/en.html": {
+      "360": {
+        "viewport": 360,
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "scrollHeight": 5830,
+        "overflowX": 0
+      },
+      "1440": {
+        "viewport": 1440,
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "scrollHeight": 3729,
+        "overflowX": 0
+      }
+    }
+  },
+  "pages": {
+    "https://wknd.site/us/en.html": {
+      "360": {
+        "header": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 360,
+              "h": 117
+            },
+            "visible": true,
+            "text": "SIGN IN EN-US",
+            "props": {
+              "display": "block",
+              "position": "fixed",
+              "boxSizing": "border-box",
+              "width": "360px",
+              "height": "116.719px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-layoutcontainer--utility": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 360,
+              "h": 25
+            },
+            "visible": true,
+            "text": "SIGN IN EN-US",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "360px",
+              "height": "25px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgb(32, 32, 32)",
+              "backgroundImage": "none",
+              "color": "rgb(247, 247, 247)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(247, 247, 247)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-layoutcontainer--utility .aem-Grid": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 360,
+              "h": 25
+            },
+            "visible": true,
+            "text": "SIGN IN EN-US",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "360px",
+              "height": "25px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(247, 247, 247)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(247, 247, 247)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".wknd-sign-in-buttons": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 14,
+              "y": 0,
+              "w": 212,
+              "h": 21
+            },
+            "visible": true,
+            "text": "SIGN IN",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "212px",
+              "height": "21px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(247, 247, 247)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(247, 247, 247)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".wknd-sign-in-buttons__button--greeting": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "Welcome",
+            "props": {
+              "display": "none",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px 14px 0px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(247, 247, 247)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(247, 247, 247)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".wknd-sign-in-buttons__button--sign-in": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 14,
+              "y": 1,
+              "w": 44,
+              "h": 18
+            },
+            "visible": true,
+            "text": "SIGN IN",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(235, 235, 235)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(235, 235, 235)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-languagenavigation--langnavtoggle": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 254,
+              "y": 0,
+              "w": 92,
+              "h": 0
+            },
+            "visible": true,
+            "text": "EN-US",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "92px",
+              "height": "0px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(247, 247, 247)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "right",
+              "borderRadius": "0px",
+              "border": "0px none rgb(247, 247, 247)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-languagenavigation--langnavtoggle a": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 290,
+              "y": 0,
+              "w": 56,
+              "h": 25
+            },
+            "visible": true,
+            "text": "EN-US",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "7.29688px",
+              "height": "25px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px 14px 0px 35px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "url(\"https://wknd.site/etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/country-flags/US.svg\")",
+              "color": "rgb(235, 235, 235)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "0px",
+              "fontWeight": "400",
+              "lineHeight": "0px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "right",
+              "borderRadius": "0px",
+              "border": "0px none rgb(235, 235, 235)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-layoutcontainer--header": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 25,
+              "w": 360,
+              "h": 92
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "360px",
+              "height": "61.7188px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "15px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-layoutcontainer--header .aem-Grid": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 40,
+              "w": 388,
+              "h": 62
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "360px",
+              "height": "61.7188px",
+              "maxWidth": "1164px",
+              "margin": "0px -28px 0px 0px",
+              "padding": "0px 14px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-image--logo": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 14,
+              "y": 40,
+              "w": 180,
+              "h": 62
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "180px",
+              "height": "61.7188px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px 14px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-image--logo img": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 60,
+              "y": 52,
+              "w": 96,
+              "h": 36
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "96px",
+              "height": "35.7188px",
+              "maxWidth": "96px",
+              "margin": "12px 0px 7px 32px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 69, 255)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 69, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            },
+            "img": {
+              "naturalWidth": 300,
+              "naturalHeight": 112,
+              "currentSrc": "https://wknd.site/content/experience-fragments/wknd/language-masters/en/site/header/master/_jcr_content/root/container/container_1195249223/image.coreimg.svg/1594412560447/wknd-logo-dk.svg"
+            }
+          }
+        ],
+        ".cmp-navigation--header": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "Home Magazine Adventures FAQs About Us",
+            "props": {
+              "display": "none",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "100%",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px 14px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-navigation--header .cmp-navigation__group": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "Home Magazine Adventures FAQs About Us",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-navigation--header .cmp-navigation__item--level-1": [
+          {
+            "index": 0,
+            "of": 4,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "Magazine",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-navigation--header .cmp-navigation__item--level-1 a": [
+          {
+            "index": 0,
+            "of": 4,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "Magazine",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "15px 17px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-navigation--header .cmp-navigation__item--level-0>a": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "Home",
+            "props": {
+              "display": "none",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "15px 17px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-search--header": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 180,
+              "y": 40,
+              "w": 180,
+              "h": 42
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "absolute",
+              "boxSizing": "border-box",
+              "width": "180px",
+              "height": "42px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px 0px 0px 14px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-search__field": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 194,
+              "y": 50,
+              "w": 166,
+              "h": 32
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "relative",
+              "boxSizing": "content-box",
+              "width": "166px",
+              "height": "32px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-search__input": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 186,
+              "y": 50,
+              "w": 160,
+              "h": 42
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "absolute",
+              "boxSizing": "content-box",
+              "width": "96px",
+              "height": "40px",
+              "maxWidth": "160px",
+              "margin": "0px",
+              "padding": "1px 32px",
+              "gap": "normal",
+              "backgroundColor": "rgba(235, 235, 235, 0.54)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "Arial",
+              "fontSize": "12px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-search__icon": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 192,
+              "y": 63,
+              "w": 16,
+              "h": 16
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "absolute",
+              "boxSizing": "content-box",
+              "width": "16px",
+              "height": "16px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "url(\"data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTE1MnB4IiBoZWlnaHQ9IjExNTJweCIgdmlld0JveD0iMCAwIDExNTIgMTE1MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTE1MiAxMTUyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGQ9Ik02NzIsMEM0MDYuOTAzLDAsMTkyLDIxNC45MDMsMTkyLDQ4MGMwLDk1LjcsMjguMDExLDE4NC44NTUsNzYuMjc1LDI1OS43MjVDMTgxLjY0Niw4MjYuMzU0LDQ4LjA3NSw5NTkuOTI1LDM2LDk3Mg0KCWMtMTgsMTgtMzYsMzYtMzYsNzJzMTgsNTQsMzYsNzJzMzYuMDEyLDM2LDcyLDM2czU0LTE4LDcyLTM2YzEyLjA3NS0xMi4wNzUsMTQ1LjY0Ni0xNDUuNjQ2LDIzMi4yNzUtMjMyLjI3NQ0KCUM0ODcuMTQ0LDkzMS45ODgsNTc2LjMsOTYwLDY3Miw5NjBjMjY1LjA5NywwLDQ4MC0yMTQuOTAzLDQ4MC00ODBDMTE1MiwyMTQuOTAzLDkzNy4wOTcsMCw2NzIsMHogTTY3Miw4MTYNCgljLTE4NS41NjgsMC0zMzYtMTUwLjQzMy0zMzYtMzM2YzAtMTg1LjU2OCwxNTAuNDMyLTMzNiwzMzYtMzM2YzE4NS41NjcsMCwzMzYsMTUwLjQzMiwzMzYsMzM2QzEwMDgsNjY1LjU2Nyw4NTcuNTY3LDgxNiw2NzIsODE2eiINCgkvPg0KPC9zdmc+DQo=\")",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "wknd-icon-font",
+              "fontSize": "20px",
+              "fontWeight": "400",
+              "lineHeight": "20px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 0,
+              "y": 130,
+              "w": 360,
+              "h": 5058
+            },
+            "visible": true,
+            "text": "WKND Adventures Join us on one of our n…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "360px",
+              "height": "5057.75px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main>.cmp-container": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 0,
+              "y": 130,
+              "w": 360,
+              "h": 5058
+            },
+            "visible": true,
+            "text": "WKND Adventures Join us on one of our n…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "360px",
+              "height": "5057.75px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel--hero": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 130,
+              "w": 360,
+              "h": 565
+            },
+            "visible": true,
+            "text": "WKND Adventures Join us on one of our n…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "360px",
+              "height": "564.5px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 130,
+              "w": 360,
+              "h": 493
+            },
+            "visible": true,
+            "text": "WKND Adventures Join us on one of our n…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "360px",
+              "height": "492.5px",
+              "maxWidth": "none",
+              "margin": "0px 0px 72px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel__item--active": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 130,
+              "w": 360,
+              "h": 493
+            },
+            "visible": true,
+            "text": "WKND Adventures Join us on one of our n…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "360px",
+              "height": "492.5px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel--hero .cmp-teaser": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 0,
+              "y": 130,
+              "w": 360,
+              "h": 493
+            },
+            "visible": true,
+            "text": "WKND Adventures Join us on one of our n…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "360px",
+              "height": "492.5px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel--hero .cmp-teaser__content": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 0,
+              "y": 340,
+              "w": 360,
+              "h": 283
+            },
+            "visible": true,
+            "text": "WKND Adventures Join us on one of our n…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "332px",
+              "height": "283px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px 14px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel--hero .cmp-teaser__title": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 14,
+              "y": 358,
+              "w": 332,
+              "h": 54
+            },
+            "visible": true,
+            "text": "WKND Adventures",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "332px",
+              "height": "54px",
+              "maxWidth": "none",
+              "margin": "18px 0px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "fontSize": "36px",
+              "fontWeight": "400",
+              "lineHeight": "54px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel--hero .cmp-teaser__description": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 14,
+              "y": 412,
+              "w": 332,
+              "h": 126
+            },
+            "visible": true,
+            "text": "Join us on one of our next adventures. …",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "332px",
+              "height": "126px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "31.5px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel--hero .cmp-teaser__action-link": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 14,
+              "y": 556,
+              "w": 139,
+              "h": 49
+            },
+            "visible": true,
+            "text": "VIEW TRIPS",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "68.5156px",
+              "height": "21px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "14px 35px",
+              "gap": "normal",
+              "backgroundColor": "rgb(255, 234, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "600",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel--hero .cmp-teaser__image": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 0,
+              "y": 130,
+              "w": 360,
+              "h": 210
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "360px",
+              "height": "209.5px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel--hero .cmp-teaser__image img": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 0,
+              "y": 130,
+              "w": 360,
+              "h": 203
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "360px",
+              "height": "202.5px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 360,
+              "naturalHeight": 202,
+              "currentSrc": "https://wknd.site/us/en/_jcr_content/root/container/carousel/item_1571954853062.coreimg.60.1600.jpeg/1660323801921/adobestock-216674449.jpeg"
+            }
+          }
+        ],
+        ".cmp-carousel__actions": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 278,
+              "y": 623,
+              "w": 82,
+              "h": 27
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "82.2656px",
+              "height": "27px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel__action--previous": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 278,
+              "y": 623,
+              "w": 26,
+              "h": 24
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline-block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "26px",
+              "height": "24px",
+              "maxWidth": "none",
+              "margin": "0px 13.3333px 0px 0px",
+              "padding": "1px 0px 1px 6px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Arial",
+              "fontSize": "13.3333px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel__action--next": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 321,
+              "y": 623,
+              "w": 26,
+              "h": 24
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline-block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "26px",
+              "height": "24px",
+              "maxWidth": "none",
+              "margin": "0px 13.3333px 0px 0px",
+              "padding": "1px 0px 1px 6px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Arial",
+              "fontSize": "13.3333px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel__indicators": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 632,
+              "w": 86,
+              "h": 24
+            },
+            "visible": true,
+            "text": "WKND Adventures San Diego Surf Spots Do…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "72px",
+              "height": "10px",
+              "maxWidth": "none",
+              "margin": "9px 0px 0px",
+              "padding": "14px 0px 0px 14px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel__indicator": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 21,
+              "y": 646,
+              "w": 10,
+              "h": 10
+            },
+            "visible": true,
+            "text": "WKND Adventures",
+            "props": {
+              "display": "list-item",
+              "position": "relative",
+              "boxSizing": "content-box",
+              "width": "10px",
+              "height": "10px",
+              "maxWidth": "none",
+              "margin": "0px 7px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0.8)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "0px",
+              "fontWeight": "400",
+              "lineHeight": "0px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "50%",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel__indicator--active": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 21,
+              "y": 646,
+              "w": 10,
+              "h": 10
+            },
+            "visible": true,
+            "text": "WKND Adventures",
+            "props": {
+              "display": "list-item",
+              "position": "relative",
+              "boxSizing": "content-box",
+              "width": "10px",
+              "height": "10px",
+              "maxWidth": "none",
+              "margin": "0px 7px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0.8)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "0px",
+              "fontWeight": "400",
+              "lineHeight": "0px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "50%",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-layout-container--fixed": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 0,
+              "y": 695,
+              "w": 360,
+              "h": 2411
+            },
+            "visible": true,
+            "text": "Featured Article Camping in Western Aus…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "360px",
+              "height": "2411.25px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-teaser--featured": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 695,
+              "w": 360,
+              "h": 785
+            },
+            "visible": true,
+            "text": "Featured Article Camping in Western Aus…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "360px",
+              "height": "785.25px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px 14px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-teaser--featured .cmp-teaser": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 14,
+              "y": 695,
+              "w": 332,
+              "h": 767
+            },
+            "visible": true,
+            "text": "Featured Article Camping in Western Aus…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "332px",
+              "height": "767.25px",
+              "maxWidth": "none",
+              "margin": "0px 0px 18px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-teaser--featured .cmp-teaser__content": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 14,
+              "y": 677,
+              "w": 332,
+              "h": 612
+            },
+            "visible": true,
+            "text": "Featured Article Camping in Western Aus…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "513px",
+              "maxWidth": "none",
+              "margin": "-18px 0px 0px",
+              "padding": "63px 36px 36px",
+              "gap": "normal",
+              "backgroundColor": "rgb(235, 235, 235)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-teaser__pretitle": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 50,
+              "y": 740,
+              "w": 260,
+              "h": 45
+            },
+            "visible": true,
+            "text": "Featured Article",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "45px",
+              "maxWidth": "none",
+              "margin": "0px 0px 13.5px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "700",
+              "lineHeight": "45px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "justify",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-teaser--featured .cmp-teaser__title": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 50,
+              "y": 816,
+              "w": 260,
+              "h": 162
+            },
+            "visible": true,
+            "text": "Camping in Western Australia",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "162px",
+              "maxWidth": "none",
+              "margin": "18px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "fontSize": "36px",
+              "fontWeight": "400",
+              "lineHeight": "54px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-teaser--featured .cmp-teaser__description": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 50,
+              "y": 996,
+              "w": 260,
+              "h": 172
+            },
+            "visible": true,
+            "text": "The Australian West coast is a camper’s…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "171.5px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "24.5px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-teaser--featured .cmp-teaser__action-link": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 50,
+              "y": 1186,
+              "w": 153,
+              "h": 49
+            },
+            "visible": true,
+            "text": "FULL ARTICLE",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "83.2656px",
+              "height": "21px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "14px 35px",
+              "gap": "normal",
+              "backgroundColor": "rgb(255, 234, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "600",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-teaser--featured .cmp-teaser__image": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 14,
+              "y": 1289,
+              "w": 332,
+              "h": 173
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "332px",
+              "height": "173.25px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-teaser--featured img": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 14,
+              "y": 1289,
+              "w": 332,
+              "h": 187
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "332px",
+              "height": "186.859px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 295,
+              "naturalHeight": 166,
+              "currentSrc": "https://wknd.site/us/en/_jcr_content/root/container/container/teaser.coreimg.60.1600.jpeg/1660323792132/adobestock-156407519.jpeg"
+            }
+          }
+        ]
+      },
+      "1440": {
+        "header": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 1440,
+              "h": 194
+            },
+            "visible": true,
+            "text": "SIGN IN EN-US MAGAZINE ADVENTURES FAQS …",
+            "props": {
+              "display": "block",
+              "position": "fixed",
+              "boxSizing": "border-box",
+              "width": "1440px",
+              "height": "193.641px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-layoutcontainer--utility": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 1440,
+              "h": 25
+            },
+            "visible": true,
+            "text": "SIGN IN EN-US",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1440px",
+              "height": "25px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgb(32, 32, 32)",
+              "backgroundImage": "none",
+              "color": "rgb(247, 247, 247)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(247, 247, 247)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-layoutcontainer--utility .aem-Grid": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 124,
+              "y": 0,
+              "w": 1192,
+              "h": 21
+            },
+            "visible": true,
+            "text": "SIGN IN EN-US",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1164px",
+              "height": "21px",
+              "maxWidth": "1164px",
+              "margin": "0px 124px",
+              "padding": "0px 14px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(247, 247, 247)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(247, 247, 247)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".wknd-sign-in-buttons": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 152,
+              "y": 0,
+              "w": 942,
+              "h": 21
+            },
+            "visible": true,
+            "text": "SIGN IN",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "942px",
+              "height": "21px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(247, 247, 247)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "right",
+              "borderRadius": "0px",
+              "border": "0px none rgb(247, 247, 247)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".wknd-sign-in-buttons__button--greeting": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "Welcome",
+            "props": {
+              "display": "none",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px 14px 0px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(247, 247, 247)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(247, 247, 247)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".wknd-sign-in-buttons__button--sign-in": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 1050,
+              "y": 1,
+              "w": 44,
+              "h": 18
+            },
+            "visible": true,
+            "text": "SIGN IN",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(235, 235, 235)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "right",
+              "borderRadius": "0px",
+              "border": "0px none rgb(235, 235, 235)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-languagenavigation--langnavtoggle": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 1122,
+              "y": 0,
+              "w": 166,
+              "h": 21
+            },
+            "visible": true,
+            "text": "EN-US",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "166px",
+              "height": "21px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(247, 247, 247)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(247, 247, 247)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-languagenavigation--langnavtoggle a": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 1122,
+              "y": 1,
+              "w": 93,
+              "h": 18
+            },
+            "visible": true,
+            "text": "EN-US",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px 14px 0px 35px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "url(\"https://wknd.site/etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/country-flags/US.svg\")",
+              "color": "rgb(235, 235, 235)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(235, 235, 235)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-layoutcontainer--header": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 25,
+              "w": 1440,
+              "h": 169
+            },
+            "visible": true,
+            "text": "MAGAZINE ADVENTURES FAQS ABOUT US",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1440px",
+              "height": "68.6406px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "50px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-layoutcontainer--header .aem-Grid": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 124,
+              "y": 75,
+              "w": 1192,
+              "h": 69
+            },
+            "visible": true,
+            "text": "MAGAZINE ADVENTURES FAQS ABOUT US",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1164px",
+              "height": "68.6406px",
+              "maxWidth": "1164px",
+              "margin": "0px 124px",
+              "padding": "0px 14px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-image--logo": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 138,
+              "y": 75,
+              "w": 194,
+              "h": 69
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "194px",
+              "height": "68.6406px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px 14px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-image--logo img": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 152,
+              "y": 82,
+              "w": 128,
+              "h": 48
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "128px",
+              "height": "47.6406px",
+              "maxWidth": "128px",
+              "margin": "7px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 69, 255)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 69, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            },
+            "img": {
+              "naturalWidth": 300,
+              "naturalHeight": 112,
+              "currentSrc": "https://wknd.site/content/experience-fragments/wknd/language-masters/en/site/header/master/_jcr_content/root/container/container_1195249223/image.coreimg.svg/1594412560447/wknd-logo-dk.svg"
+            }
+          }
+        ],
+        ".cmp-navigation--header": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 332,
+              "y": 75,
+              "w": 776,
+              "h": 42
+            },
+            "visible": true,
+            "text": "MAGAZINE ADVENTURES FAQS ABOUT US",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "776px",
+              "height": "42px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px 14px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-navigation--header .cmp-navigation__group": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 726,
+              "y": 90,
+              "w": 368,
+              "h": 0
+            },
+            "visible": true,
+            "text": "MAGAZINE ADVENTURES FAQS ABOUT US",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "368.016px",
+              "height": "0px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-navigation--header .cmp-navigation__item--level-1": [
+          {
+            "index": 0,
+            "of": 4,
+            "rect": {
+              "x": 726,
+              "y": 90,
+              "w": 95,
+              "h": 27
+            },
+            "visible": true,
+            "text": "MAGAZINE",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "95.4062px",
+              "height": "27px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-navigation--header .cmp-navigation__item--level-1 a": [
+          {
+            "index": 0,
+            "of": 4,
+            "rect": {
+              "x": 726,
+              "y": 81,
+              "w": 95,
+              "h": 48
+            },
+            "visible": true,
+            "text": "MAGAZINE",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "15px 17px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-navigation--header .cmp-navigation__item--level-0>a": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "Home",
+            "props": {
+              "display": "none",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "15px 17px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-search--header": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 1108,
+              "y": 75,
+              "w": 194,
+              "h": 42
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "194px",
+              "height": "42px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px 14px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-search__field": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 1122,
+              "y": 85,
+              "w": 166,
+              "h": 32
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "relative",
+              "boxSizing": "content-box",
+              "width": "166px",
+              "height": "32px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-search__input": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 1122,
+              "y": 85,
+              "w": 166,
+              "h": 42
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline-block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "102px",
+              "height": "40px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "1px 32px",
+              "gap": "normal",
+              "backgroundColor": "rgba(235, 235, 235, 0.54)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "Arial",
+              "fontSize": "12px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-search__icon": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 1130,
+              "y": 98,
+              "w": 16,
+              "h": 16
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "absolute",
+              "boxSizing": "content-box",
+              "width": "16px",
+              "height": "16px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "url(\"data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTE1MnB4IiBoZWlnaHQ9IjExNTJweCIgdmlld0JveD0iMCAwIDExNTIgMTE1MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTE1MiAxMTUyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGQ9Ik02NzIsMEM0MDYuOTAzLDAsMTkyLDIxNC45MDMsMTkyLDQ4MGMwLDk1LjcsMjguMDExLDE4NC44NTUsNzYuMjc1LDI1OS43MjVDMTgxLjY0Niw4MjYuMzU0LDQ4LjA3NSw5NTkuOTI1LDM2LDk3Mg0KCWMtMTgsMTgtMzYsMzYtMzYsNzJzMTgsNTQsMzYsNzJzMzYuMDEyLDM2LDcyLDM2czU0LTE4LDcyLTM2YzEyLjA3NS0xMi4wNzUsMTQ1LjY0Ni0xNDUuNjQ2LDIzMi4yNzUtMjMyLjI3NQ0KCUM0ODcuMTQ0LDkzMS45ODgsNTc2LjMsOTYwLDY3Miw5NjBjMjY1LjA5NywwLDQ4MC0yMTQuOTAzLDQ4MC00ODBDMTE1MiwyMTQuOTAzLDkzNy4wOTcsMCw2NzIsMHogTTY3Miw4MTYNCgljLTE4NS41NjgsMC0zMzYtMTUwLjQzMy0zMzYtMzM2YzAtMTg1LjU2OCwxNTAuNDMyLTMzNiwzMzYtMzM2YzE4NS41NjcsMCwzMzYsMTUwLjQzMiwzMzYsMzM2QzEwMDgsNjY1LjU2Nyw4NTcuNTY3LDgxNiw2NzIsODE2eiINCgkvPg0KPC9zdmc+DQo=\")",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "wknd-icon-font",
+              "fontSize": "20px",
+              "fontWeight": "400",
+              "lineHeight": "20px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 0,
+              "y": 200,
+              "w": 1440,
+              "h": 3221
+            },
+            "visible": true,
+            "text": "WKND Adventures Join us on one of our n…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1440px",
+              "height": "3221px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main>.cmp-container": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 0,
+              "y": 200,
+              "w": 1440,
+              "h": 3221
+            },
+            "visible": true,
+            "text": "WKND Adventures Join us on one of our n…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1440px",
+              "height": "3221px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel--hero": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 200,
+              "w": 1440,
+              "h": 740
+            },
+            "visible": true,
+            "text": "WKND Adventures Join us on one of our n…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1440px",
+              "height": "739.5px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 200,
+              "w": 1440,
+              "h": 668
+            },
+            "visible": true,
+            "text": "WKND Adventures Join us on one of our n…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1440px",
+              "height": "667.5px",
+              "maxWidth": "none",
+              "margin": "0px 0px 72px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel__item--active": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 200,
+              "w": 1440,
+              "h": 649
+            },
+            "visible": true,
+            "text": "WKND Adventures Join us on one of our n…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1440px",
+              "height": "648.5px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel--hero .cmp-teaser": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 0,
+              "y": 200,
+              "w": 1440,
+              "h": 649
+            },
+            "visible": true,
+            "text": "WKND Adventures Join us on one of our n…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1440px",
+              "height": "648.5px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel--hero .cmp-teaser__content": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 124,
+              "y": 660,
+              "w": 1192,
+              "h": 189
+            },
+            "visible": true,
+            "text": "WKND Adventures Join us on one of our n…",
+            "props": {
+              "display": "block",
+              "position": "relative",
+              "boxSizing": "content-box",
+              "width": "1136px",
+              "height": "188.5px",
+              "maxWidth": "none",
+              "margin": "-180px 0px 0px",
+              "padding": "0px 28px",
+              "gap": "normal",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel--hero .cmp-teaser__title": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 152,
+              "y": 678,
+              "w": 1136,
+              "h": 54
+            },
+            "visible": true,
+            "text": "WKND Adventures",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1136px",
+              "height": "54px",
+              "maxWidth": "none",
+              "margin": "18px 0px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "fontSize": "36px",
+              "fontWeight": "400",
+              "lineHeight": "54px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel--hero .cmp-teaser__description": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 152,
+              "y": 732,
+              "w": 1136,
+              "h": 32
+            },
+            "visible": true,
+            "text": "Join us on one of our next adventures. …",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1136px",
+              "height": "31.5px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "31.5px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel--hero .cmp-teaser__action-link": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 152,
+              "y": 782,
+              "w": 139,
+              "h": 49
+            },
+            "visible": true,
+            "text": "VIEW TRIPS",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "68.5156px",
+              "height": "21px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "14px 35px",
+              "gap": "normal",
+              "backgroundColor": "rgb(255, 234, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "600",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel--hero .cmp-teaser__image": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 0,
+              "y": 200,
+              "w": 1440,
+              "h": 640
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1440px",
+              "height": "640px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel--hero .cmp-teaser__image img": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 0,
+              "y": 200,
+              "w": 1440,
+              "h": 640
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1440px",
+              "height": "640px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 1440,
+              "naturalHeight": 810,
+              "currentSrc": "https://wknd.site/us/en/_jcr_content/root/container/carousel/item_1571954853062.coreimg.60.1600.jpeg/1660323801921/adobestock-216674449.jpeg"
+            }
+          }
+        ],
+        ".cmp-carousel__actions": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 1358,
+              "y": 849,
+              "w": 82,
+              "h": 27
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "82.2656px",
+              "height": "27px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel__action--previous": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 1358,
+              "y": 849,
+              "w": 26,
+              "h": 24
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline-block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "26px",
+              "height": "24px",
+              "maxWidth": "none",
+              "margin": "0px 13.3333px 0px 0px",
+              "padding": "1px 0px 1px 6px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Arial",
+              "fontSize": "13.3333px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel__action--next": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 1401,
+              "y": 849,
+              "w": 26,
+              "h": 24
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline-block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "26px",
+              "height": "24px",
+              "maxWidth": "none",
+              "margin": "0px 13.3333px 0px 0px",
+              "padding": "1px 0px 1px 6px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Arial",
+              "fontSize": "13.3333px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel__indicators": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 858,
+              "w": 1358,
+              "h": 10
+            },
+            "visible": true,
+            "text": "WKND Adventures San Diego Surf Spots Do…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1357.73px",
+              "height": "10px",
+              "maxWidth": "none",
+              "margin": "9px 0px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel__indicator": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 650,
+              "y": 858,
+              "w": 10,
+              "h": 10
+            },
+            "visible": true,
+            "text": "WKND Adventures",
+            "props": {
+              "display": "list-item",
+              "position": "relative",
+              "boxSizing": "content-box",
+              "width": "10px",
+              "height": "10px",
+              "maxWidth": "none",
+              "margin": "0px 7px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0.8)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "0px",
+              "fontWeight": "400",
+              "lineHeight": "0px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "50%",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-carousel__indicator--active": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 650,
+              "y": 858,
+              "w": 10,
+              "h": 10
+            },
+            "visible": true,
+            "text": "WKND Adventures",
+            "props": {
+              "display": "list-item",
+              "position": "relative",
+              "boxSizing": "content-box",
+              "width": "10px",
+              "height": "10px",
+              "maxWidth": "none",
+              "margin": "0px 7px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0.8)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "0px",
+              "fontWeight": "400",
+              "lineHeight": "0px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "50%",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-layout-container--fixed": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 138,
+              "y": 940,
+              "w": 1164,
+              "h": 1244
+            },
+            "visible": true,
+            "text": "Featured Article Camping in Western Aus…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1164px",
+              "height": "1244px",
+              "maxWidth": "1164px",
+              "margin": "0px 138px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-teaser--featured": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 138,
+              "y": 940,
+              "w": 1164,
+              "h": 527
+            },
+            "visible": true,
+            "text": "Featured Article Camping in Western Aus…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1164px",
+              "height": "527px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px 14px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-teaser--featured .cmp-teaser": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 152,
+              "y": 940,
+              "w": 1136,
+              "h": 509
+            },
+            "visible": true,
+            "text": "Featured Article Camping in Western Aus…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1136px",
+              "height": "509px",
+              "maxWidth": "none",
+              "margin": "0px 0px 18px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-teaser--featured .cmp-teaser__content": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 861,
+              "y": 940,
+              "w": 427,
+              "h": 509
+            },
+            "visible": true,
+            "text": "Featured Article Camping in Western Aus…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "354.672px",
+              "height": "410px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "63px 36px 36px",
+              "gap": "normal",
+              "backgroundColor": "rgb(235, 235, 235)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-teaser__pretitle": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 897,
+              "y": 1003,
+              "w": 355,
+              "h": 45
+            },
+            "visible": true,
+            "text": "Featured Article",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "354.672px",
+              "height": "45px",
+              "maxWidth": "none",
+              "margin": "0px 0px 13.5px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "700",
+              "lineHeight": "45px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "justify",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-teaser--featured .cmp-teaser__title": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 897,
+              "y": 1079,
+              "w": 355,
+              "h": 108
+            },
+            "visible": true,
+            "text": "Camping in Western Australia",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "354.672px",
+              "height": "108px",
+              "maxWidth": "none",
+              "margin": "18px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+              "fontSize": "36px",
+              "fontWeight": "400",
+              "lineHeight": "54px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-teaser--featured .cmp-teaser__description": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 897,
+              "y": 1205,
+              "w": 355,
+              "h": 123
+            },
+            "visible": true,
+            "text": "The Australian West coast is a camper’s…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "354.672px",
+              "height": "122.5px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "24.5px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-teaser--featured .cmp-teaser__action-link": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 897,
+              "y": 1346,
+              "w": 153,
+              "h": 49
+            },
+            "visible": true,
+            "text": "FULL ARTICLE",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "83.2656px",
+              "height": "21px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "14px 35px",
+              "gap": "normal",
+              "backgroundColor": "rgb(255, 234, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "600",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-teaser--featured .cmp-teaser__image": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 152,
+              "y": 940,
+              "w": 709,
+              "h": 509
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "709.328px",
+              "height": "509px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".cmp-teaser--featured img": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 152,
+              "y": 940,
+              "w": 709,
+              "h": 509
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "709.328px",
+              "height": "509px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 1181,
+              "naturalHeight": 665,
+              "currentSrc": "https://wknd.site/us/en/_jcr_content/root/container/container/teaser.coreimg.60.1600.jpeg/1660323792132/adobestock-156407519.jpeg"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

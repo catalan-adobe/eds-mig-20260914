@@ -65,3 +65,29 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 - Carousel autoplay delay 5000 ms on home hero and adventure-detail gallery — motion gate input.
 
 **Open questions:** D-L1, D-I1, D-T1, D-X1 (all with interim decisions above); EDS/DA target for A3.
+
+---
+
+## Recreate + gate — recreate + source-fidelity-gate: 9/9 archetypes approved, canon fidelity fixes applied (2026-09-24)
+
+**Prompt:** Replica Phases 3–4 (RECREATE + SOURCE-FIDELITY GATE), hands-off, all pages; 9 archetype subagents fanned out (one per page type), this section is the coordinator's bookkeeping.
+
+**Decisions:**
+- All 9 archetypes pass both breakpoints (1440 / 360) — pixel % / Δh / structural 🔴, iterations:
+  landing `us-en-html` 0.00 / 0.57 · Δ0 · 0 (3 it) — listing `us-en-adventures-html` 0.00 / 0.81 · Δ0 · 0 (2) — magazine `us-en-magazine-html` 0.00 / 0.12 · Δ0 · 0 (2) — program `us-en-adventures-riverside-camping-australia-html` 0.00 / 0.95 · Δ0/−1 · 0 (2) — article `us-en-magazine-western-australia-html` 0.00 / 0.01 · Δ0 · 0 (3) — static `us-en-about-us-html` 0.00 / 0.02 · Δ0 · 0 (1) — faq `us-en-faqs-html` 0.00 / 0.93 · Δ0 · 0 (1) — unique `ca-en-magazine-members-only-html` 0.00 / 0.04 · Δ0 · 0 (2) — stub `us-es-html` 0.00 / 0.02 · Δ0 · 0 (3). Chrome-parity ✓ and header/footer crop bands ≥99.1% on every archetype; no horizontal overflow.
+- Motion: 37 behaviours observed live, 37 implemented (canon.js: scrolly header morph, carousel, language toggle, off-canvas nav; page js: tabs ×2, accordion). Dead hovers/autoplay listed per type in `stardust/replica/progress.json`.
+- Canon requests (`stardust/replica/canon-requests.md`) triaged: APPLIED two pure fidelity fixes to `canon.css` — the footer active level-1 link rule (live @132288; 7 page-scoped duplicates removed) and the `body.scrolly .masthead` transition (`ease/ease`, Chrome's -webkit fallback to live's invalid declaration; us-es workaround removed). Confirmation pixel round (`canon` label) on all 9 × 2 widths: every number identical to the gated value. DEFERRED to rollout C0: module promotions (teaser-hero, image-list, carousel base, `.image img`) and the `.container-fixed` ≤1024 box-model change (needs home-page verification, as the requester noted).
+- `state.mjs advance … --to approved --by hands-off` for the 9 archetypes; 55 siblings stay `extracted` for migrate. No archetype missing.
+- Fonts: no substitutions (Asar + Source Sans Pro from Google Fonts, self-hosted; wknd-icon-font from the clientlib).
+
+**Named hands-off assumptions:** A7 per-project prototype server on port 8794 (8791 is a foreign sibling-run server, never killed). A8 only the captured master rendition serves at 360 (no per-breakpoint AEM renditions) — 0.1–1% resampling residuals accepted, flagged for delivery. A9 STRETCHED IMAGE advisories = intentional object-fit:cover crops identical to live. A10 search x-template class rename (🟡×3 header) accepted as non-content. A11 live sampler misses of #toggleNav at 360 on sub-pages accepted (behaviour is canon.js, observed live on landing). A12 promotions/refactors are not fidelity fixes → deferred, not applied this phase.
+
+**Artifacts touched:** stardust/prototypes/canon.css (+7 page CSS, us-es-html.css) · stardust/replica/progress.json · stardust/replica/canon-requests.md · stardust/replica/gates/<slug>-<w>/ (canon round) · stardust/state.json · stardust/status.jsonl · stardust/journal.md
+
+**Findings worth flagging (for deploy/rollout):**
+- Box model: source is content-box; only AEM grid columns are border-box — the EDS styles.css reset must be scoped to block wrappers, never universal.
+- Carousel/accordion/menu glyphs and social icons use wknd-icon-font codepoints — deploy must ship the icon font.
+- Content-page-template pages (members-only): live main children carry no grid-column padding — do not wrap main sections in `.col`.
+- Extract's intercepted latin-ext woff2 have different advances than live's latin subsets — canon.css uses the page's own google-fonts subsets; deploy must self-host those, not stardust/current/assets/fonts.
+
+**Open questions:** EDS/DA target for Phase 5 (still unnamed → delivery stops before the DA PUT); .container-fixed back-port decision at rollout C0.

@@ -1,0 +1,1745 @@
+{
+  "_provenance": {
+    "writtenBy": "skills/replica/scripts/measure.mjs",
+    "writtenAt": "2026-09-24T08:28:51.025Z",
+    "urls": [
+      "https://wknd.site/us/en/adventures.html",
+      "http://localhost:8794/us-en-adventures-html-proposed.html"
+    ],
+    "widths": [
+      1440,
+      360
+    ],
+    "selectors": [
+      "main.container",
+      "[class$=tabs__tablist]",
+      "[class$=tabs__tabpanel--active]",
+      "li[class$=image-list__item]",
+      "li[class$=image-list__item] img",
+      "li[class$=image-list__item] span[class*=description]",
+      "hr",
+      "footer"
+    ],
+    "props": [
+      "display",
+      "position",
+      "boxSizing",
+      "width",
+      "height",
+      "maxWidth",
+      "margin",
+      "padding",
+      "gap",
+      "backgroundColor",
+      "backgroundImage",
+      "color",
+      "fontFamily",
+      "fontSize",
+      "fontWeight",
+      "lineHeight",
+      "letterSpacing",
+      "textTransform",
+      "textAlign",
+      "borderRadius",
+      "border",
+      "boxShadow",
+      "opacity",
+      "objectFit"
+    ],
+    "allMatches": false,
+    "failed": [],
+    "warnings": []
+  },
+  "widths": [
+    1440,
+    360
+  ],
+  "selectors": [
+    "main.container",
+    "[class$=tabs__tablist]",
+    "[class$=tabs__tabpanel--active]",
+    "li[class$=image-list__item]",
+    "li[class$=image-list__item] img",
+    "li[class$=image-list__item] span[class*=description]",
+    "hr",
+    "footer"
+  ],
+  "root": {
+    "https://wknd.site/us/en/adventures.html": {
+      "360": {
+        "viewport": 360,
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "scrollHeight": 6497,
+        "overflowX": 0
+      },
+      "1440": {
+        "viewport": 1440,
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "scrollHeight": 2769,
+        "overflowX": 0
+      }
+    },
+    "http://localhost:8794/us-en-adventures-html-proposed.html": {
+      "360": {
+        "viewport": 360,
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "scrollHeight": 6497,
+        "overflowX": 0
+      },
+      "1440": {
+        "viewport": 1440,
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "scrollHeight": 2769,
+        "overflowX": 0
+      }
+    }
+  },
+  "pages": {
+    "https://wknd.site/us/en/adventures.html": {
+      "360": {
+        "main.container": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 0,
+              "y": 130,
+              "w": 360,
+              "h": 5725
+            },
+            "visible": true,
+            "text": "Adventures Experience the world with us…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "360px",
+              "height": "5725px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "[class$=tabs__tablist]": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 14,
+              "y": 783,
+              "w": 332,
+              "h": 76
+            },
+            "visible": true,
+            "text": "ALL CLIMBING CYCLING SKIING SURFING TRA…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "332px",
+              "height": "76px",
+              "maxWidth": "none",
+              "margin": "18px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "[class$=tabs__tabpanel--active]": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 14,
+              "y": 877,
+              "w": 332,
+              "h": 4848
+            },
+            "visible": true,
+            "text": "BALI SURF CAMP SURFING IN BALI IS ON TH…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "332px",
+              "height": "4848px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "li[class$=image-list__item]": [
+          {
+            "index": 0,
+            "of": 32,
+            "rect": {
+              "x": 14,
+              "y": 877,
+              "w": 260,
+              "h": 271
+            },
+            "visible": true,
+            "text": "BALI SURF CAMP SURFING IN BALI IS ON TH…",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "271px",
+              "maxWidth": "none",
+              "margin": "0px 0px 32px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "li[class$=image-list__item] img": [
+          {
+            "index": 0,
+            "of": 32,
+            "rect": {
+              "x": 14,
+              "y": 877,
+              "w": 260,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 69, 255)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 69, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 360,
+              "naturalHeight": 202,
+              "currentSrc": "https://wknd.site/us/en/adventures/bali-surf-camp/_jcr_content/root/container/carousel/image.coreimg.60.1600.jpeg/1660323792187/adobestock-175749320.jpeg"
+            }
+          }
+        ],
+        "li[class$=image-list__item] span[class*=description]": [
+          {
+            "index": 0,
+            "of": 32,
+            "rect": {
+              "x": 14,
+              "y": 1127,
+              "w": 260,
+              "h": 21
+            },
+            "visible": true,
+            "text": "SURFING IN BALI IS ON THE BUCKET LIST O…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "21px",
+              "maxWidth": "none",
+              "margin": "16px 0px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(105, 105, 105)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(105, 105, 105)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "hr": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 14,
+              "y": 5789,
+              "w": 332,
+              "h": 2
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "330px",
+              "height": "0px",
+              "maxWidth": "none",
+              "margin": "9px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(235, 235, 235)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "1px solid rgb(235, 235, 235)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "footer": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 5903,
+              "w": 360,
+              "h": 593
+            },
+            "visible": true,
+            "text": "MAGAZINE ADVENTURES FAQS ABOUT US FOLLO…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "360px",
+              "height": "593.031px",
+              "maxWidth": "none",
+              "margin": "48px 0px 0px",
+              "padding": "16px 0px 24px",
+              "gap": "normal",
+              "backgroundColor": "rgb(32, 32, 32)",
+              "backgroundImage": "none",
+              "color": "rgb(235, 235, 235)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(235, 235, 235)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ]
+      },
+      "1440": {
+        "main.container": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 0,
+              "y": 200,
+              "w": 1440,
+              "h": 2261
+            },
+            "visible": true,
+            "text": "Adventures Experience the world with us…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1440px",
+              "height": "2261px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "[class$=tabs__tablist]": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 152,
+              "y": 1063,
+              "w": 1136,
+              "h": 38
+            },
+            "visible": true,
+            "text": "ALL CLIMBING CYCLING SKIING SURFING TRA…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1136px",
+              "height": "38px",
+              "maxWidth": "none",
+              "margin": "18px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "[class$=tabs__tabpanel--active]": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 152,
+              "y": 1119,
+              "w": 1136,
+              "h": 1212
+            },
+            "visible": true,
+            "text": "BALI SURF CAMP SURFING IN BALI IS ON TH…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1136px",
+              "height": "1212px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "li[class$=image-list__item]": [
+          {
+            "index": 0,
+            "of": 32,
+            "rect": {
+              "x": 152,
+              "y": 1119,
+              "w": 274,
+              "h": 271
+            },
+            "visible": true,
+            "text": "BALI SURF CAMP SURFING IN BALI IS ON TH…",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "271px",
+              "maxWidth": "none",
+              "margin": "0px 0px 32px",
+              "padding": "0px 14px 0px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "li[class$=image-list__item] img": [
+          {
+            "index": 0,
+            "of": 32,
+            "rect": {
+              "x": 152,
+              "y": 1119,
+              "w": 260,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 69, 255)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 69, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 1440,
+              "naturalHeight": 809,
+              "currentSrc": "https://wknd.site/us/en/adventures/bali-surf-camp/_jcr_content/root/container/carousel/image.coreimg.60.1600.jpeg/1660323792187/adobestock-175749320.jpeg"
+            }
+          }
+        ],
+        "li[class$=image-list__item] span[class*=description]": [
+          {
+            "index": 0,
+            "of": 32,
+            "rect": {
+              "x": 152,
+              "y": 1369,
+              "w": 260,
+              "h": 21
+            },
+            "visible": true,
+            "text": "SURFING IN BALI IS ON THE BUCKET LIST O…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "21px",
+              "maxWidth": "none",
+              "margin": "16px 0px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(105, 105, 105)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(105, 105, 105)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "hr": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 152,
+              "y": 2395,
+              "w": 1136,
+              "h": 2
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1134px",
+              "height": "0px",
+              "maxWidth": "none",
+              "margin": "9px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(235, 235, 235)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "1px solid rgb(235, 235, 235)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "footer": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 2509,
+              "w": 1440,
+              "h": 260
+            },
+            "visible": true,
+            "text": "MAGAZINE ADVENTURES FAQS ABOUT US FOLLO…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1440px",
+              "height": "260.188px",
+              "maxWidth": "none",
+              "margin": "48px 0px 0px",
+              "padding": "16px 0px 24px",
+              "gap": "normal",
+              "backgroundColor": "rgb(32, 32, 32)",
+              "backgroundImage": "none",
+              "color": "rgb(235, 235, 235)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(235, 235, 235)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ]
+      }
+    },
+    "http://localhost:8794/us-en-adventures-html-proposed.html": {
+      "360": {
+        "main.container": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 130,
+              "w": 360,
+              "h": 5725
+            },
+            "visible": true,
+            "text": "Adventures Experience the world with us…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "360px",
+              "height": "5725px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "[class$=tabs__tablist]": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 14,
+              "y": 783,
+              "w": 332,
+              "h": 76
+            },
+            "visible": true,
+            "text": "ALL CLIMBING CYCLING SKIING SURFING TRA…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "332px",
+              "height": "76px",
+              "maxWidth": "none",
+              "margin": "18px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "[class$=tabs__tabpanel--active]": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 14,
+              "y": 877,
+              "w": 332,
+              "h": 4848
+            },
+            "visible": true,
+            "text": "BALI SURF CAMP SURFING IN BALI IS ON TH…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "332px",
+              "height": "4848px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "li[class$=image-list__item]": [
+          {
+            "index": 0,
+            "of": 32,
+            "rect": {
+              "x": 14,
+              "y": 877,
+              "w": 260,
+              "h": 271
+            },
+            "visible": true,
+            "text": "BALI SURF CAMP SURFING IN BALI IS ON TH…",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "271px",
+              "maxWidth": "none",
+              "margin": "0px 0px 32px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "li[class$=image-list__item] img": [
+          {
+            "index": 0,
+            "of": 32,
+            "rect": {
+              "x": 14,
+              "y": 877,
+              "w": 260,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 69, 255)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 69, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 1600,
+              "naturalHeight": 899,
+              "currentSrc": "http://localhost:8794/assets/media/34918568-adobestock-175749320.jpeg"
+            }
+          }
+        ],
+        "li[class$=image-list__item] span[class*=description]": [
+          {
+            "index": 0,
+            "of": 32,
+            "rect": {
+              "x": 14,
+              "y": 1127,
+              "w": 260,
+              "h": 21
+            },
+            "visible": true,
+            "text": "SURFING IN BALI IS ON THE BUCKET LIST O…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "21px",
+              "maxWidth": "none",
+              "margin": "16px 0px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(105, 105, 105)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(105, 105, 105)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "hr": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 14,
+              "y": 5789,
+              "w": 332,
+              "h": 2
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "330px",
+              "height": "0px",
+              "maxWidth": "none",
+              "margin": "9px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(235, 235, 235)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "1px solid rgb(235, 235, 235)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "footer": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 5903,
+              "w": 360,
+              "h": 593
+            },
+            "visible": true,
+            "text": "MAGAZINE ADVENTURES FAQS ABOUT US FOLLO…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "360px",
+              "height": "593.031px",
+              "maxWidth": "none",
+              "margin": "48px 0px 0px",
+              "padding": "16px 0px 24px",
+              "gap": "normal",
+              "backgroundColor": "rgb(32, 32, 32)",
+              "backgroundImage": "none",
+              "color": "rgb(235, 235, 235)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(235, 235, 235)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ]
+      },
+      "1440": {
+        "main.container": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 227,
+              "w": 1440,
+              "h": 2234
+            },
+            "visible": true,
+            "text": "Adventures Experience the world with us…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1440px",
+              "height": "2234px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "[class$=tabs__tablist]": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 152,
+              "y": 1063,
+              "w": 1136,
+              "h": 38
+            },
+            "visible": true,
+            "text": "ALL CLIMBING CYCLING SKIING SURFING TRA…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1136px",
+              "height": "38px",
+              "maxWidth": "none",
+              "margin": "18px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "[class$=tabs__tabpanel--active]": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 152,
+              "y": 1119,
+              "w": 1136,
+              "h": 1212
+            },
+            "visible": true,
+            "text": "BALI SURF CAMP SURFING IN BALI IS ON TH…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1136px",
+              "height": "1212px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "li[class$=image-list__item]": [
+          {
+            "index": 0,
+            "of": 32,
+            "rect": {
+              "x": 152,
+              "y": 1119,
+              "w": 274,
+              "h": 271
+            },
+            "visible": true,
+            "text": "BALI SURF CAMP SURFING IN BALI IS ON TH…",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "271px",
+              "maxWidth": "none",
+              "margin": "0px 0px 32px",
+              "padding": "0px 14px 0px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(32, 32, 32)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(32, 32, 32)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "li[class$=image-list__item] img": [
+          {
+            "index": 0,
+            "of": 32,
+            "rect": {
+              "x": 152,
+              "y": 1119,
+              "w": 260,
+              "h": 200
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "200px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 69, 255)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 69, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 1600,
+              "naturalHeight": 899,
+              "currentSrc": "http://localhost:8794/assets/media/34918568-adobestock-175749320.jpeg"
+            }
+          }
+        ],
+        "li[class$=image-list__item] span[class*=description]": [
+          {
+            "index": 0,
+            "of": 32,
+            "rect": {
+              "x": 152,
+              "y": 1369,
+              "w": 260,
+              "h": 21
+            },
+            "visible": true,
+            "text": "SURFING IN BALI IS ON THE BUCKET LIST O…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "260px",
+              "height": "21px",
+              "maxWidth": "none",
+              "margin": "16px 0px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(105, 105, 105)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(105, 105, 105)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "hr": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 152,
+              "y": 2395,
+              "w": 1136,
+              "h": 2
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1134px",
+              "height": "0px",
+              "maxWidth": "none",
+              "margin": "9px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(235, 235, 235)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "1px solid rgb(235, 235, 235)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "footer": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 2509,
+              "w": 1440,
+              "h": 260
+            },
+            "visible": true,
+            "text": "MAGAZINE ADVENTURES FAQS ABOUT US FOLLO…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1440px",
+              "height": "260.188px",
+              "maxWidth": "none",
+              "margin": "48px 0px 0px",
+              "padding": "16px 0px 24px",
+              "gap": "normal",
+              "backgroundColor": "rgb(32, 32, 32)",
+              "backgroundImage": "none",
+              "color": "rgb(235, 235, 235)",
+              "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "left",
+              "borderRadius": "0px",
+              "border": "0px none rgb(235, 235, 235)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "deltas": {
+    "360": {
+      "main.container": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "boxSizing": [
+                "border-box",
+                "content-box"
+              ]
+            }
+          }
+        ]
+      },
+      "[class$=tabs__tablist]": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "[class$=tabs__tabpanel--active]": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "li[class$=image-list__item]": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "li[class$=image-list__item] img": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {},
+            "img": {
+              "naturalWidth": [
+                360,
+                1600
+              ],
+              "naturalHeight": [
+                202,
+                899
+              ],
+              "file": [
+                "adobestock-175749320.jpeg",
+                "34918568-adobestock-175749320.jpeg"
+              ]
+            }
+          }
+        ]
+      },
+      "li[class$=image-list__item] span[class*=description]": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "hr": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "footer": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      }
+    },
+    "1440": {
+      "main.container": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 27,
+              "dw": 0,
+              "dh": -27
+            },
+            "props": {
+              "boxSizing": [
+                "border-box",
+                "content-box"
+              ],
+              "height": [
+                "2261px",
+                "2234px"
+              ]
+            }
+          }
+        ]
+      },
+      "[class$=tabs__tablist]": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "[class$=tabs__tabpanel--active]": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "li[class$=image-list__item]": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "li[class$=image-list__item] img": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {},
+            "img": {
+              "naturalWidth": [
+                1440,
+                1600
+              ],
+              "naturalHeight": [
+                809,
+                899
+              ],
+              "file": [
+                "adobestock-175749320.jpeg",
+                "34918568-adobestock-175749320.jpeg"
+              ]
+            }
+          }
+        ]
+      },
+      "li[class$=image-list__item] span[class*=description]": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "hr": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "footer": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      }
+    }
+  },
+  "rootDeltas": {
+    "360": {
+      "scrollWidth": 0,
+      "scrollHeight": 0
+    },
+    "1440": {
+      "scrollWidth": 0,
+      "scrollHeight": 0
+    }
+  }
+}

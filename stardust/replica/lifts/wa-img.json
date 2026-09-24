@@ -1,0 +1,259 @@
+{
+  "_provenance": {
+    "writtenBy": "skills/replica/scripts/measure.mjs",
+    "writtenAt": "2026-09-24T08:48:37.104Z",
+    "urls": [
+      "https://wknd.site/us/en/magazine/western-australia.html"
+    ],
+    "widths": [
+      1440,
+      360
+    ],
+    "selectors": [
+      "main img"
+    ],
+    "props": [
+      "height"
+    ],
+    "allMatches": true,
+    "failed": [],
+    "warnings": []
+  },
+  "widths": [
+    1440,
+    360
+  ],
+  "selectors": [
+    "main img"
+  ],
+  "root": {
+    "https://wknd.site/us/en/magazine/western-australia.html": {
+      "360": {
+        "viewport": 360,
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "scrollHeight": 9842,
+        "overflowX": 0
+      },
+      "1440": {
+        "viewport": 1440,
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "scrollHeight": 6537,
+        "overflowX": 0
+      }
+    }
+  },
+  "pages": {
+    "https://wknd.site/us/en/magazine/western-australia.html": {
+      "360": {
+        "main img": [
+          {
+            "index": 0,
+            "of": 5,
+            "rect": {
+              "x": 14,
+              "y": 137,
+              "w": 332,
+              "h": 187
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "height": "186.859px"
+            },
+            "img": {
+              "naturalWidth": 295,
+              "naturalHeight": 166,
+              "currentSrc": "https://wknd.site/us/en/magazine/western-australia/_jcr_content/root/container/image.coreimg.60.1600.jpeg/1660323792132/adobestock-156407519.jpeg"
+            }
+          },
+          {
+            "index": 1,
+            "of": 5,
+            "rect": {
+              "x": 14,
+              "y": 2583,
+              "w": 332,
+              "h": 221
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "height": "221.234px"
+            },
+            "img": {
+              "naturalWidth": 288,
+              "naturalHeight": 191,
+              "currentSrc": "https://wknd.site/us/en/magazine/western-australia/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.1600.jpeg/1660323770369/adobe-waadobe-wa-b6a7083.jpeg"
+            }
+          },
+          {
+            "index": 2,
+            "of": 5,
+            "rect": {
+              "x": 14,
+              "y": 4159,
+              "w": 332,
+              "h": 221
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "height": "221.234px"
+            },
+            "img": {
+              "naturalWidth": 288,
+              "naturalHeight": 191,
+              "currentSrc": "https://wknd.site/us/en/magazine/western-australia/_jcr_content/root/container/container/contentfragment/par3/image.coreimg.60.1600.jpeg/1660323789157/adobe-waadobe-wa-mg-3094.jpeg"
+            }
+          },
+          {
+            "index": 3,
+            "of": 5,
+            "rect": {
+              "x": 14,
+              "y": 6454,
+              "w": 332,
+              "h": 221
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "height": "221.234px"
+            },
+            "img": {
+              "naturalWidth": 288,
+              "naturalHeight": 191,
+              "currentSrc": "https://wknd.site/us/en/magazine/western-australia/_jcr_content/root/container/container/contentfragment/par4/image.coreimg.60.1600.jpeg/1660323786307/adobe-waadobe-wa-mg-3851.jpeg"
+            }
+          },
+          {
+            "index": 4,
+            "of": 5,
+            "rect": {
+              "x": 14,
+              "y": 8280,
+              "w": 60,
+              "h": 60
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "height": "60px"
+            },
+            "img": {
+              "naturalWidth": 1280,
+              "naturalHeight": 1666,
+              "currentSrc": "https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/byline/_jcr_content/root/container/byline_copy.coreimg.jpeg/1660323785351/ayo-ogunseinde-237739.jpeg"
+            }
+          }
+        ]
+      },
+      "1440": {
+        "main img": [
+          {
+            "index": 0,
+            "of": 5,
+            "rect": {
+              "x": 152,
+              "y": 207,
+              "w": 1136,
+              "h": 639
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "height": "639.375px"
+            },
+            "img": {
+              "naturalWidth": 1181,
+              "naturalHeight": 665,
+              "currentSrc": "https://wknd.site/us/en/magazine/western-australia/_jcr_content/root/container/image.coreimg.60.1600.jpeg/1660323792132/adobestock-156407519.jpeg"
+            }
+          },
+          {
+            "index": 1,
+            "of": 5,
+            "rect": {
+              "x": 152,
+              "y": 2136,
+              "w": 748,
+              "h": 498
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "height": "498.469px"
+            },
+            "img": {
+              "naturalWidth": 1152,
+              "naturalHeight": 767,
+              "currentSrc": "https://wknd.site/us/en/magazine/western-australia/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.1600.jpeg/1660323770369/adobe-waadobe-wa-b6a7083.jpeg"
+            }
+          },
+          {
+            "index": 2,
+            "of": 5,
+            "rect": {
+              "x": 152,
+              "y": 3313,
+              "w": 748,
+              "h": 498
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "height": "498.469px"
+            },
+            "img": {
+              "naturalWidth": 1152,
+              "naturalHeight": 767,
+              "currentSrc": "https://wknd.site/us/en/magazine/western-australia/_jcr_content/root/container/container/contentfragment/par3/image.coreimg.60.1600.jpeg/1660323789157/adobe-waadobe-wa-mg-3094.jpeg"
+            }
+          },
+          {
+            "index": 3,
+            "of": 5,
+            "rect": {
+              "x": 152,
+              "y": 4806,
+              "w": 748,
+              "h": 498
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "height": "498.469px"
+            },
+            "img": {
+              "naturalWidth": 1152,
+              "naturalHeight": 767,
+              "currentSrc": "https://wknd.site/us/en/magazine/western-australia/_jcr_content/root/container/container/contentfragment/par4/image.coreimg.60.1600.jpeg/1660323786307/adobe-waadobe-wa-mg-3851.jpeg"
+            }
+          },
+          {
+            "index": 4,
+            "of": 5,
+            "rect": {
+              "x": 152,
+              "y": 6144,
+              "w": 60,
+              "h": 60
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "height": "60px"
+            },
+            "img": {
+              "naturalWidth": 1280,
+              "naturalHeight": 1666,
+              "currentSrc": "https://wknd.site/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/byline/_jcr_content/root/container/byline_copy.coreimg.jpeg/1660323785351/ayo-ogunseinde-237739.jpeg"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+/* ==========================================================================
+   WKND replica — stub archetype (/us/es.html and the 8 other "Coming Soon!"
+   locale roots): one hero teaser + one separator inside the fixed container.
+   Teaser values lifted from clientlib-site.min.css (.cmp-teaser, .cmp-teaser--hero)
+   — same module the landing archetype (us-en-html.css) gated; duplicated here
+   until canon absorbs it (see stardust/replica/canon-requests.md).
+   ========================================================================== */
+
+/* ---- teaser (shared mechanics) ---- */
+.teaser__content { float: left; }
+.teaser__title { font-family: var(--heading-font-family); margin: .5em 0; }
+.teaser__image img { height: auto; margin-bottom: 7px; margin-top: 7px; width: 100%; }
+
+/* ---- hero teaser (.cmp-teaser--hero) ---- */
+.teaser--hero .teaser {
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+.teaser--hero .teaser__image { flex: 1; height: 400px; max-height: 400px; overflow: hidden; width: 100%; }
+.teaser--hero .teaser__image .image { height: 100%; width: 100%; }
+.teaser--hero .teaser__image img { height: 100%; margin-bottom: 0; margin-top: 0; object-fit: cover; object-position: center; width: 100%; }
+.teaser--hero .teaser__content { flex: 1; padding-left: 14px; padding-right: 14px; }
+.teaser--hero .teaser__title { margin-bottom: 0; }
+@media (min-width: 1165px) {
+  .teaser--hero .teaser__image { height: 640px; max-height: 640px; }
+  .teaser--hero .teaser__image .image { height: 640px; }
+  .teaser--hero .teaser__content {
+    background-color: #fff;
+    float: left;
+    height: 180px;
+    margin-top: -180px;
+    min-height: 180px;
+    padding-bottom: 0;
+    padding-left: 28px;
+    padding-right: 28px;
+    position: relative;
+    width: 1136px;
+  }
+}
+
+/* ---- inner fixed container (.cmp-layout-container--fixed: padding 0 14px below 1025px) ---- */
+@media (max-width: 1024px) {
+  .stub__fixed { padding: 0 14px; }
+}
+
+/* ---- content root: live main is a floated grid column (BFC) — the trailing separator's
+   4rem bottom margin stays inside main instead of collapsing into the footer's 48px ---- */
+main[data-template="stub"] { display: flow-root; }
+

@@ -1,0 +1,152 @@
+/* ==========================================================================
+   WKND replica — landing archetype (/us/en.html) modules:
+   hero carousel, featured teaser, image-bottom teaser, image list.
+   Values lifted from clientlib-site.min.css (.cmp-carousel, .cmp-teaser--hero,
+   .cmp-teaser--featured, .cmp-teaser--imagebottom, .cmp-image-list) and
+   confirmed with measure.mjs at 1440 / 360.
+   ========================================================================== */
+
+/* ---- teaser (shared mechanics) ---- */
+.teaser__pretitle { font-weight: 700; }
+.teaser__content { float: left; }
+.teaser__title { font-family: var(--heading-font-family); margin: .5em 0; }
+.teaser__description { font-size: 18px; line-height: 1.75; margin: 0; }
+.teaser__description p { font-size: 18px; line-height: 1.75; }
+.teaser__actions { float: left; margin: 1em 0; }
+.teaser__action {
+  background-color: var(--color-accent);
+  border-radius: var(--radius);
+  color: var(--color-fg);
+  float: left;
+  font-size: var(--body-sm);
+  font-weight: var(--font-weight-bold);
+  padding: 1em 2.5em;
+  text-transform: uppercase;
+}
+.teaser__image img { height: auto; margin-bottom: 7px; margin-top: 7px; width: 100%; }
+
+/* ---- hero teaser (carousel slides + image-bottom teaser) ---- */
+.teaser--hero .teaser {
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+.teaser--hero .teaser__image { flex: 1; height: 400px; max-height: 400px; overflow: hidden; width: 100%; }
+.teaser--hero .teaser__image .image { height: 100%; width: 100%; }
+.teaser--hero .teaser__image img { height: 100%; margin-bottom: 0; margin-top: 0; object-fit: cover; object-position: center; width: 100%; }
+.teaser--hero .teaser__content { flex: 1; padding-left: 14px; padding-right: 14px; }
+.teaser--hero .teaser__description, .teaser--hero .teaser__description p, .teaser--hero .teaser__title { margin-bottom: 0; }
+@media (min-width: 1165px) {
+  .teaser--hero .teaser__image { height: 640px; max-height: 640px; }
+  .teaser--hero .teaser__image .image { height: 640px; }
+  .teaser--hero .teaser__content {
+    background-color: #fff;
+    float: left;
+    height: 180px;
+    margin-top: -180px;
+    min-height: 180px;
+    padding-bottom: 0;
+    padding-left: 28px;
+    padding-right: 28px;
+    position: relative;
+    width: 1136px;
+  }
+}
+.teaser--hero.col { padding-left: 0 !important; padding-right: 0 !important; }
+.teaser--imagebottom .teaser__image img { object-position: bottom; }
+
+/* ---- hero carousel ---- */
+.carousel-col { padding-left: 0 !important; padding-right: 0 !important; }
+.carousel { margin-bottom: 4em; }
+.carousel__content { position: relative; }
+.carousel__item { animation-duration: .5s; animation-fill-mode: both; animation-name: fadeIn; display: none; }
+.carousel__item--active { display: block; }
+@keyframes fadeIn { 0% { opacity: 0; } to { opacity: 1; } }
+.carousel__indicators {
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: .5em 0 0;
+  padding: 0;
+}
+.carousel__indicator {
+  background-color: #afafaf;
+  border-radius: 50%;
+  flex: 0 1 auto;
+  font-size: 0;
+  height: 10px;
+  margin: 0 7px;
+  position: relative;
+  text-indent: -3000px;
+  width: 10px;
+}
+.carousel__indicator--active { background-color: rgba(0, 0, 0, .8); }
+.carousel__actions { float: right; margin-top: 0; }
+.carousel__action { appearance: none; background: none; border: none; margin-right: 1em; padding-right: 0; }
+.carousel__action-text { display: none; }
+.carousel__action-icon { cursor: pointer; }
+.carousel__action--previous .carousel__action-icon::before { content: "\e90f"; }
+.carousel__action--next .carousel__action-icon::before { content: "\e90e"; }
+@media (max-width: 767px) {
+  .carousel__indicators { float: left; padding-left: 14px; padding-top: 14px; }
+}
+
+/* ---- featured teaser ---- */
+.teaser--featured .teaser { display: flex; flex-direction: row-reverse; flex-wrap: wrap; margin-bottom: 1em; width: 100%; }
+.teaser--featured .teaser__image { display: flex; flex-basis: 100%; flex: 2; flex-direction: column; }
+.teaser--featured .teaser__image .image { height: 100%; width: 100%; }
+.teaser--featured .teaser__image img { height: 100%; margin-bottom: 0; margin-top: 0; object-fit: cover; object-position: top; width: 100%; }
+.teaser--featured .teaser__content {
+  background-color: #ebebeb;
+  display: flex;
+  flex-basis: 100%;
+  flex: 1;
+  flex-direction: column;
+  padding: 3.5em 2em 2em;
+}
+.teaser--featured .teaser__description { font-size: var(--body-sm); }
+.teaser--featured .teaser__description p { font-size: var(--body-sm); text-align: left; }
+@media (max-width: 767px) {
+  .teaser--featured .teaser { flex-direction: column; }
+  .teaser--featured .teaser__image { flex: 1; }
+  .teaser--featured .teaser__content { flex: 1; margin-top: -1em; }
+}
+
+/* ---- image list ---- */
+.image-list {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: normal;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.image-list__item { flex-basis: 260px; margin: 0 0 2rem; padding-right: 14px; }
+.image-list__item img { height: 200px; margin: 0; object-fit: cover; object-position: center; overflow: hidden; width: 100%; }
+.image-list__title {
+  color: var(--color-fg);
+  font-family: var(--body-font-family);
+  font-size: var(--body);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+}
+.image-list__description {
+  color: dimgray;
+  display: block;
+  font-size: var(--body-sm);
+  margin-top: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 260px;
+}
+@media (max-width: 767px) {
+  .image-list { justify-content: space-between; }
+  .image-list__item { padding-right: 0; }
+}
