@@ -55,3 +55,4 @@
 {"ts":"2026-09-24T10:04:31Z","skill":"stardust:rollout","phase":"B-block","event":"end","detail":"15 distinct blocks: 14 to convert + sharing=default-content; names locked; 6 clusters + foundation","artifact":"stardust/rollout/plan.json"}
 {"ts":"2026-09-24T10:04:31Z","skill":"stardust:rollout","phase":"B2-dynamic","event":"start","detail":"re-verify dynamic-features.md: dynamics-detect + dynamics-plan --target-origin aem.page"}
 {"ts":"2026-09-24T10:09:13Z","skill":"stardust:rollout","phase":"B2-dynamic","event":"end","detail":"28 fresh findings → 11 curated rows, all dispositioned; host-bound 9/9; no new rows","artifact":"stardust/dynamic-features.md"}
+{"ts":"2026-09-24T10:15:19Z","skill":"stardust:rollout","phase":"C-deliver","event":"start","detail":"C0 foundation: styles, fonts, header/footer blocks, nav/footer docs, shell page"}

@@ -1,20 +1,194 @@
-footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+/* footer — WKND site footer, lifted from stardust/prototypes/canon.css (.site-footer) */
+
+footer .footer {
+  box-sizing: border-box;
+  display: flow-root;
+  width: 100%;
+  margin-top: 3rem;
+  padding: 1rem 0 1.5rem;
+  background-color: var(--color-secondary);
+  color: var(--color-fg-inverse);
 }
 
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+footer .footer-container {
+  width: auto;
+  padding: 0 14px;
+  background-color: var(--color-secondary);
+  color: var(--color-fg-inverse-strong);
+}
+
+footer .footer-grid {
+  display: flow-root;
+  width: 100%;
+}
+
+footer .footer-grid > * {
+  box-sizing: border-box;
+  float: left;
+  clear: both;
+  width: 100%;
+  padding: 0 14px;
+}
+
+footer .footer-grid > .logo {
+  clear: none;
+  width: 16.6667%;
+}
+
+footer .footer-grid > .footer-nav {
+  clear: none;
+  width: 50%;
+}
+
+footer .footer-grid > .footer-follow {
+  clear: none;
+  width: 16.6667%;
+  text-align: right;
+}
+
+footer .footer-grid > .social-buttons {
+  clear: none;
+  width: 16.6667%;
+  padding: 0;
 }
 
 footer .footer p {
   margin: 0;
+  line-height: var(--line-height-body);
+  text-align: left;
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+footer .footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer .logo img {
+  width: 100%;
+  max-width: 8rem;
+  height: auto;
+  margin: 7px 0;
+}
+
+footer .footer-nav ul {
+  padding: 15px 0 0;
+}
+
+footer .footer-nav li {
+  display: block;
+  float: left;
+}
+
+footer .footer-nav li.is-home {
+  display: none;
+}
+
+footer .footer-nav a:any-link {
+  padding: 15px 17px;
+  color: var(--color-fg-inverse);
+  font-size: var(--body-sm);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer .footer-nav a:hover,
+footer .footer-nav a:focus {
+  text-decoration: underline;
+}
+
+footer .footer-follow :is(h2, h3, h4, h5) {
+  color: var(--color-fg-inverse);
+}
+
+/* social icon buttons (.button--icon on the source): 48px squares, glyph-sized icons */
+footer .social-buttons ul {
+  display: flow-root;
+  width: 100%;
+}
+
+footer .social-buttons li {
+  display: flex;
+  float: left;
+  clear: none;
+  padding: 0;
+}
+
+footer .social-buttons a:any-link {
+  float: left;
+  width: var(--button-size);
+  height: var(--button-size);
+  min-width: var(--button-size);
+  border-radius: var(--radius);
+  background-color: var(--color-third);
+  color: var(--color-fg);
+  font-size: 0;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+}
+
+footer .social-buttons .icon {
+  float: left;
+  padding-top: 18px;
+  padding-left: 14px;
+  font-size: 17.5px;
+}
+
+footer .footer-separator {
+  height: 0;
+  margin: 1em 0;
+}
+
+footer .footer-text p {
+  margin: 0 0 13.5px;
+  font-size: var(--body-xs);
+  line-height: 1.25;
+  text-align: justify;
+}
+
+footer .footer-text a:any-link {
+  color: var(--color-fg-inverse-strong);
+  text-decoration: underline;
+}
+
+@media (width >= 1025px) {
+  footer .footer-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+}
+
+@media (width <= 1024px) {
+  footer .footer-grid > .logo {
+    width: 33.3333%;
+  }
+
+  footer .footer-grid > .footer-nav {
+    width: 66.6667%;
+  }
+
+  footer .footer-grid > .footer-follow,
+  footer .footer-grid > .social-buttons {
+    clear: both;
+    width: 100%;
+  }
+
+  footer .footer-grid > .social-buttons {
+    padding: 0 14px;
+  }
+
+  footer .footer-nav ul {
+    float: left;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  footer .footer-nav li {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  footer .footer-grid > .footer-follow {
+    text-align: unset;
   }
 }
