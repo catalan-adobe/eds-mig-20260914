@@ -1,0 +1,87 @@
+/* upnext-list — values lifted from stardust/prototypes/us-en-magazine-san-diego-surf-html.css
+   (cmp-layoutcontainer--sidebar columns, .sidebar-title__text, separator--space-small,
+   cmp-list--upnext) */
+
+.upnext-list {
+  display: flow-root;
+}
+
+.upnext-list .sidebar {
+  display: flow-root;
+  width: 100%;
+}
+
+/* .column.sidebar-title (0 14px gutters) + the empty sharing row */
+.upnext-list .sidebar-title {
+  display: flow-root;
+  box-sizing: border-box;
+  padding: 0 14px;
+}
+
+/* `spacer` variant: the source's hidden separator--space-small column
+   (1em margins, floated: 36px) between the title and the next column */
+.upnext-list.spacer .sidebar-title {
+  margin-bottom: 36px;
+}
+
+.upnext-list .sidebar-title :is(h2, h3, h4, h5, h6) {
+  color: var(--color-fg);
+}
+
+/* .column.upnext */
+.upnext-list .upnext {
+  display: flow-root;
+  box-sizing: border-box;
+  padding: 2rem 14px 0;
+}
+
+.upnext-list .upnext ul {
+  display: flow-root;
+  margin: 1em 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* .upnext__link box: 120px tall, 5px left rule; the whole item is the link target */
+.upnext-list .upnext li {
+  box-sizing: content-box;
+  position: relative;
+  height: 120px;
+  margin: 0 0 1em;
+  border-left: 5px solid var(--color-third);
+  padding: 0.5rem 1rem;
+  list-style: none;
+  font-weight: 400;
+}
+
+.upnext-list .upnext li:hover {
+  border-color: var(--color-fg);
+  background: var(--color-accent);
+}
+
+.upnext-list .upnext li a:any-link {
+  display: block;
+  color: var(--color-fg);
+  text-decoration: none;
+}
+
+.upnext-list .upnext li .title {
+  display: block;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.upnext-list .upnext li a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.upnext-list .upnext li em {
+  display: block;
+  padding: 5px;
+  color: var(--color-muted);
+  font-size: var(--body-xs);
+  font-style: normal;
+  text-transform: uppercase;
+}

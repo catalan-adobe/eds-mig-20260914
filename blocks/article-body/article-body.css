@@ -1,0 +1,109 @@
+/* article-body — values lifted from stardust/prototypes/us-en-magazine-san-diego-surf-html.css
+   (cmp-contentfragment, aem-Grid .column gutters, cmp-image__title, text--quote,
+   section-title--underline) */
+
+.article-body {
+  display: flow-root;
+}
+
+/* live wraps every element in its own grid row, so sibling margins never collapse */
+.article-body .elements {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* the content-fragment title is hidden on the source (.article-body__title) */
+.article-body .body-title {
+  display: none;
+}
+
+/* images: .grid > .column.image.article-image (0 14px gutters), inline img in a block box */
+.article-body .image {
+  display: flow-root;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 14px;
+}
+
+.article-body .image p {
+  margin: 0;
+  line-height: var(--line-height-body);
+  text-align: left;
+}
+
+.article-body .image picture {
+  display: block;
+}
+
+.article-body .image img {
+  width: 100%;
+  height: auto;
+  margin: 7px 0;
+}
+
+/* caption (cmp-image__title): floats under the image line box */
+.article-body .image em {
+  float: left;
+  margin-top: -0.25em;
+  font-family: var(--body-font-family);
+  font-size: var(--body-sm);
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+}
+
+/* quotes: .grid > .column.text (0 14px gutters); browser blockquote by default */
+.article-body .text {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 14px;
+}
+
+.article-body.quote .text {
+  margin: 1em 0;
+  background-color: var(--color-third);
+}
+
+.article-body.quote .text-inner {
+  padding: 1em;
+}
+
+.article-body.quote blockquote {
+  margin: 0 0 0.5em;
+  border: none;
+  padding: 14px;
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-xl);
+}
+
+.article-body.quote blockquote::after {
+  content: '';
+  display: block;
+  position: relative;
+  top: 0.25em;
+  width: 5pc;
+  border-bottom: 2px solid var(--color-accent);
+}
+
+/* sub-titles: bare h2 rows by default; `underline` = cmp-title--underline in a gutter column */
+.article-body.underline .section-title {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 14px;
+}
+
+.article-body.underline .section-title :is(h2, h3, h4)::after {
+  content: '';
+  display: block;
+  width: 84px;
+  padding-top: 8px;
+  border-bottom: 2px solid var(--color-accent);
+}
+
+/* the source's lead image is an inline img (7px baseline descender under the picture);
+   the foundation renders default-content images as blocks — request filed
+   (stardust/rollout/foundation-requests.md), template-scoped override until it lands */
+body.article main .default-content-wrapper picture img {
+  display: inline;
+}

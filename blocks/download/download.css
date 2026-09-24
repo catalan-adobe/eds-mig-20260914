@@ -1,0 +1,99 @@
+/* download — values lifted from the gated sibling stardust/migrated/us/en/magazine/
+   guide-la-skateparks.html (cmp-download variant rules on top of canon.css) */
+
+/* the source's .column.download (0 14px gutters) */
+.download {
+  display: flow-root;
+  box-sizing: border-box;
+  padding: 0 14px;
+}
+
+.download .download-inner {
+  display: flow-root;
+  line-height: 1;
+}
+
+/* .download__title: 14px bold uppercase body face, link in the link colour */
+.download .title :is(h2, h3, h4) {
+  margin: 0.5em 0 0;
+  font-family: var(--body-font-family);
+  font-size: var(--body-sm);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+/* .download__description */
+.download .description p {
+  margin: 0;
+  font-size: var(--heading-md);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+}
+
+/* .download__properties: floated dd values (labels hidden on the source), wrapping */
+.download .properties {
+  display: flow-root;
+  width: 100%;
+  margin: 0.25em 0 1em;
+}
+
+.download .property {
+  float: left;
+  color: var(--color-muted);
+  font-size: var(--body-xs);
+  text-transform: uppercase;
+}
+
+/* the source's <dt> labels are display:none */
+.download .property-label {
+  display: none;
+}
+
+.download .property p {
+  margin: 0 1em 0 0;
+  font-size: var(--body-xs);
+  line-height: 1;
+  text-align: left;
+}
+
+/* .download__action: dark 48px bar, download glyph before the uppercase label */
+.download .action p {
+  display: flow-root;
+  margin: 0;
+}
+
+.download .action a:any-link {
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  width: auto;
+  height: var(--button-size);
+  min-width: 0;
+  margin: 0;
+  border-radius: var(--radius);
+  padding: 1pc 2.5em 0 2.25em;
+  background-color: var(--color-secondary);
+  color: #fff;
+  font-size: var(--body-sm);
+  font-weight: 400;
+  line-height: 1;
+  text-align: left;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.download .action a::before {
+  content: '\e907';
+  float: left;
+  margin-top: -0.1em;
+  padding-right: 0.5em;
+  font-family: var(--icon-font-family);
+  font-size: 1.1rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}
