@@ -65,6 +65,41 @@ recorded by each cluster below.
 
 ## Landing cluster — appended by its subagent
 
+Page `us-en-html` → `/us/en` (archetype, template us-en-html). Schema
+`stardust/eds-schema/us-en-html.json` (10 sections). Media: 13 editorial images rehosted to
+`media/wknd/` (`da-media-upload.mjs --manifest`, source fetch 200, plain technique).
+
+| section (schema) | authored as | block | decode tier |
+|---|---|---|---|
+| hero | 3 rows: image \| h1/h2 + p + `<strong><a>` (section style `flush`) | `hero-carousel` | reconstructive (one slide per row; heading-boundary fallback) |
+| featured-article | 1 row: image \| `<p><strong>` eyebrow + h2 + p + CTA | `featured-teaser` | template-slotted |
+| recent-articles-title / destinations-title | default content h2 (`underline`) / h3 | — (D1) | — |
+| recent-articles / destinations | 4 rows: image \| `<p><a>` title + p | `cards` (stock block replaced) | reconstructive (one card per row; media-boundary fallback) |
+| all-articles-cta / all-trips-cta | default content `<p><strong><a>` → foundation button | — (D1) | — |
+| separators | empty section, style `separator` | — (D1) | — |
+| next-adventures-title + next-adventure | ONE section: default-content h2 + block, styles `flush, underline` | `hero-teaser` (variant `image-bottom`) | template-slotted |
+
+Decisions (hands-off, recorded in direction.md): carousel controls carry aria-labels and
+icon-font glyphs, no DOM words (#100) — the live "Previous"/"Next"/indicator texts are
+`display:none`/`font-size:0`, so 0 rendered pixels (round-trip 🟡 MISSING BODY ×5 accepted);
+the "Next Adventures" title shares the hero-teaser section so its 27px top margin cannot
+collapse into the separator's 4rem (live `.column` floats are BFCs) — block CSS scopes
+`main .section.hero-teaser-container .default-content-wrapper` (flow-root, container width)
+and cancels the `underline` ::after on the block's own heading; foundation request filed
+(`main .section.separator { display: flow-root }` or padding) for every other template.
+Every block is `display: flow-root` for the same reason. R-01 applied in hero-carousel CSS
+(h1 at `--heading-xl`).
+
+Gates (harness, structural): `davids-model-lint` 0 🔴 / 0 🟡; `delivery-lint` 0 P0 · 0 P1 · 4 P2
+(cross-origin-optimize advisories — this cards block does not call createOptimizedPicture);
+`media-reconcile` 13 hosted; `block-roundtrip --ew` (maps: `section.carousel--hero`,
+`section.teaser--featured`, `section:has(> .card-list)`, `section.teaser--hero`) 0 🔴,
+EW 33/33 editable, 0 dead, 0 duplicated; `qa-gate` 20 ok / 3 warn / 2 fail — both fails
+explained: the 2 "broken images" are the frozen header/footer logos on `preview.da.live`
+(auth-gated for the anonymous harness, fine on the preview origin) and the schema→block
+order heuristic paired `recent-articles` with `hero-teaser` (round-trip proves 4/4 cards in
+both cards instances). Lint: eslint 0, stylelint 0 on the four blocks.
+
 ## Program cluster — appended by its subagent
 
 ## Article cluster — appended by its subagent

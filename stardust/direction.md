@@ -292,3 +292,25 @@ hands-off judgments made at each gate as named assumptions.
   "Facebook/Twitter/Instagram" EXTRA texts are the icon links' accessible names; the four
   360 nav EXTRA links are the off-canvas menu. One true residual is carried: "Sign In"
   colour rgb(235,235,235) → rgb(247,247,247), sub-pixel-band, queued for C-final.
+
+### Landing cluster (C-deliver unit `landing`, 2026-09-24) — hands-off assumptions
+
+- **A-C1-1:** Carousel controls render no words: previous/next are `<button aria-label>` with
+  icon-font glyphs, indicators are `<li role="tab" aria-label>` dots — the live texts are
+  `display:none` / `font-size:0` (0 rendered pixels), and `decorate()` adds no words (#100).
+- **A-C1-2:** The "Next Adventures" section title is authored as default content INSIDE the
+  hero-teaser section (`style: flush, underline`), not as its own section: the foundation's
+  `separator` section lets its 4rem `::after` margin collapse with the next heading's 27px
+  margin (live floats never collapse). The block CSS scopes the wrapper (flow-root, container
+  width) and cancels the `underline` rule on the block's own heading; the general fix is a
+  foundation request line for C-final.
+- **A-C1-3:** Every landing block is `display: flow-root` so its inner margins stay inside the
+  block, mirroring the live `.column { float: left }` BFC; the carousel's 4em bottom gap is
+  padding on the block for the same reason.
+- **A-C1-4:** The card image link is a generated text-less `<a>` carrying the title link's
+  href (live links the image too); the title is a bare `<p><a>` (the foundation's
+  formatted-only buttonisation leaves it a link, A-C0-2).
+- **A-C1-5:** R-01 rides the hero-carousel CSS: the first slide's `<h1>` renders at
+  `--heading-xl` (36px), the live h2 size.
+- **A-C1-6:** Publish decision for this cluster follows the log (§ Publish decision — PUBLISH):
+  `deploy-batch.mjs` runs without `--no-publish`.
