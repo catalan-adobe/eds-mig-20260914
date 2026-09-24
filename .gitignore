@@ -11,3 +11,11 @@ helix-importer-ui
 # Ensure these files are tracked
 !CLAUDE.md
 !AGENTS.md
+
+# >>> stardust
+.env
+.env.*
+# <<< stardust
+# >>> stardust:extract
+stardust/.work/
+# <<< stardust:extract

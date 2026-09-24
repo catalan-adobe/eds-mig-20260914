@@ -1,0 +1,23 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/assemble",
+    "writtenAt": "2026-09-24T13:33:54.100Z",
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-24T13:33:54.100Z",
+  "host": "https://replica-wknd--eds-mig-20260914--catalan-adobe.aem.live",
+  "sitemap": "stardust/rollout/site/sitemap.xml",
+  "robots": "stardust/rollout/site/robots.txt",
+  "fragments": [],
+  "servedSitemap": {
+    "origin": "https://replica-wknd--eds-mig-20260914--catalan-adobe.aem.live",
+    "url": "https://replica-wknd--eds-mig-20260914--catalan-adobe.aem.live/sitemap.xml",
+    "checkedAt": "2026-09-24T13:33:54.100Z",
+    "match": true,
+    "error": null,
+    "count": 26,
+    "assembled": 26,
+    "extra": [],
+    "missing": []
+  }
+}

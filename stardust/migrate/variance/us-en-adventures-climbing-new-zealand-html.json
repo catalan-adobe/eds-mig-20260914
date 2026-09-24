@@ -1,0 +1,2255 @@
+{
+  "archetype": "https://wknd.site/us/en/adventures/climbing-new-zealand.html",
+  "width": 1440,
+  "tolerance": 2,
+  "probes": {
+    "breadcrumb": "main .cmp-breadcrumb",
+    "carousel": "main .cmp-carousel--mini",
+    "title": "main .cmp-title--underline .cmp-title",
+    "fragment": "main .cmp-contentfragment",
+    "tabs": "main .cmp-tabs"
+  },
+  "archetypeRaw": {
+    "sections": [],
+    "probes": {
+      "breadcrumb": {
+        "sel": "main .cmp-breadcrumb",
+        "count": 1,
+        "first": {
+          "rect": {
+            "w": 279,
+            "h": 41
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 32, 32)",
+          "padding": "0px 0px 0px 0px",
+          "font": "source sans pro 18px/27px 400",
+          "borderRadius": "0px",
+          "heading": null,
+          "image": null,
+          "listStyle": null,
+          "before": null
+        },
+        "clusters": 1,
+        "text": "Adventures Climbing New Zealand"
+      },
+      "carousel": {
+        "sel": "main .cmp-carousel--mini",
+        "count": 1,
+        "first": {
+          "rect": {
+            "w": 1440,
+            "h": 440
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 32, 32)",
+          "padding": "0px 0px 0px 0px",
+          "font": "source sans pro 18px/27px 400",
+          "borderRadius": "0px",
+          "heading": null,
+          "image": {
+            "w": 1440,
+            "h": 400
+          },
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 1,
+        "text": "Previous Next"
+      },
+      "title": {
+        "sel": "main .cmp-title--underline .cmp-title",
+        "count": 1,
+        "first": {
+          "rect": {
+            "w": 1136,
+            "h": 70
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 32, 32)",
+          "padding": "0px 0px 0px 0px",
+          "font": "source sans pro 18px/27px 400",
+          "borderRadius": "0px",
+          "heading": "h1 asar 40px/60px 400 rgb(32, 32, 32)",
+          "image": null,
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 1,
+        "text": "Climbing New Zealand"
+      },
+      "fragment": {
+        "sel": "main .cmp-contentfragment",
+        "count": 2,
+        "first": {
+          "rect": {
+            "w": 291,
+            "h": 0
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 32, 32)",
+          "padding": "0px 0px 0px 0px",
+          "font": "source sans pro 18px/27px 400",
+          "borderRadius": "0px",
+          "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+          "image": null,
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 2,
+        "text": "Climbing New Zealand Activity Rock Climbing Adventure Type O"
+      },
+      "tabs": {
+        "sel": "main .cmp-tabs",
+        "count": 1,
+        "first": {
+          "rect": {
+            "w": 845,
+            "h": 1899
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 32, 32)",
+          "padding": "0px 0px 0px 0px",
+          "font": "source sans pro 18px/27px 400",
+          "borderRadius": "0px",
+          "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+          "image": {
+            "w": 845,
+            "h": 563
+          },
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 1,
+        "text": "Overview Itinerary What to Bring Climbing New Zealand Let us"
+      }
+    }
+  },
+  "siblings": [
+    {
+      "url": "https://wknd.site/us/en/adventures/bali-surf-camp.html",
+      "findings": [
+        {
+          "kind": "PROBE",
+          "probe": "breadcrumb",
+          "msg": "rect{w 279 → 230}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "carousel",
+          "msg": "rect{h 440 → 448}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "fragment",
+          "msg": "rect{w 291 → 263}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "tabs",
+          "msg": "rect{h 1899 → 847}"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "breadcrumb": {
+            "sel": "main .cmp-breadcrumb",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 230,
+                "h": 41
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": null,
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Adventures Bali Surf Camp"
+          },
+          "carousel": {
+            "sel": "main .cmp-carousel--mini",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 448
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 400
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Previous Next"
+          },
+          "title": {
+            "sel": "main .cmp-title--underline .cmp-title",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1136,
+                "h": 70
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h1 asar 40px/60px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Bali Surf Camp"
+          },
+          "fragment": {
+            "sel": "main .cmp-contentfragment",
+            "count": 2,
+            "first": {
+              "rect": {
+                "w": 263,
+                "h": 0
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Bali Surf Camp Activity Surfing Adventure Type Overnight Tri"
+          },
+          "tabs": {
+            "sel": "main .cmp-tabs",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 845,
+                "h": 847
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": {
+                "w": 845,
+                "h": 563
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Overview Itinerary What to Bring Bali Surf Camp Surfing in B"
+          }
+        }
+      }
+    },
+    {
+      "url": "https://wknd.site/us/en/adventures/beervana-portland.html",
+      "findings": [
+        {
+          "kind": "PROBE",
+          "probe": "tabs",
+          "msg": "rect{h 1899 → 1296}; image{h 563 → 845}"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "breadcrumb": {
+            "sel": "main .cmp-breadcrumb",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 278,
+                "h": 41
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": null,
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Adventures Beervana in Portland"
+          },
+          "carousel": {
+            "sel": "main .cmp-carousel--mini",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 440
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 400
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Previous Next"
+          },
+          "title": {
+            "sel": "main .cmp-title--underline .cmp-title",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1136,
+                "h": 70
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h1 asar 40px/60px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Beervana in Portland"
+          },
+          "fragment": {
+            "sel": "main .cmp-contentfragment",
+            "count": 2,
+            "first": {
+              "rect": {
+                "w": 291,
+                "h": 0
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Beervana in Portland Activity Social Adventure Type Day Trip"
+          },
+          "tabs": {
+            "sel": "main .cmp-tabs",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 845,
+                "h": 1296
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": {
+                "w": 845,
+                "h": 845
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Overview Itinerary What to Bring Beervana in Portland Experi"
+          }
+        }
+      }
+    },
+    {
+      "url": "https://wknd.site/us/en/adventures/colorado-rock-climbing.html",
+      "findings": [
+        {
+          "kind": "PROBE",
+          "probe": "breadcrumb",
+          "msg": "rect{w 279 → 296}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "carousel",
+          "msg": "rect{h 440 → 448}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "fragment",
+          "msg": "rect{w 291 → 263}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "tabs",
+          "msg": "rect{h 1899 → 834}"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "breadcrumb": {
+            "sel": "main .cmp-breadcrumb",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 296,
+                "h": 41
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": null,
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Adventures Colorado Rock Climbing"
+          },
+          "carousel": {
+            "sel": "main .cmp-carousel--mini",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 448
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 400
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Previous Next"
+          },
+          "title": {
+            "sel": "main .cmp-title--underline .cmp-title",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1136,
+                "h": 70
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h1 asar 40px/60px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Colorado Rock Climbing"
+          },
+          "fragment": {
+            "sel": "main .cmp-contentfragment",
+            "count": 2,
+            "first": {
+              "rect": {
+                "w": 263,
+                "h": 0
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Colorado Rock Climbing Activity Rock Climbing Adventure Type"
+          },
+          "tabs": {
+            "sel": "main .cmp-tabs",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 845,
+                "h": 834
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": {
+                "w": 845,
+                "h": 564
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Overview Itinerary What to Bring Colorado Rock Climbing With"
+          }
+        }
+      }
+    },
+    {
+      "url": "https://wknd.site/us/en/adventures/cycling-southern-utah.html",
+      "findings": [
+        {
+          "kind": "PROBE",
+          "probe": "breadcrumb",
+          "msg": "rect{w 279 → 288}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "carousel",
+          "msg": "rect{h 440 → 448}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "fragment",
+          "msg": "rect{w 291 → 263}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "tabs",
+          "msg": "rect{h 1899 → 807}"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "breadcrumb": {
+            "sel": "main .cmp-breadcrumb",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 288,
+                "h": 41
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": null,
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Adventures Cycling Southern Utah"
+          },
+          "carousel": {
+            "sel": "main .cmp-carousel--mini",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 448
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 400
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Previous Next"
+          },
+          "title": {
+            "sel": "main .cmp-title--underline .cmp-title",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1136,
+                "h": 70
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h1 asar 40px/60px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Cycling Southern Utah"
+          },
+          "fragment": {
+            "sel": "main .cmp-contentfragment",
+            "count": 2,
+            "first": {
+              "rect": {
+                "w": 263,
+                "h": 0
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Cycling Southern Utah Activity Cycling Adventure Type Overni"
+          },
+          "tabs": {
+            "sel": "main .cmp-tabs",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 845,
+                "h": 807
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": {
+                "w": 845,
+                "h": 564
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Overview Itinerary What to Bring Cycling Southern Utah Join "
+          }
+        }
+      }
+    },
+    {
+      "url": "https://wknd.site/us/en/adventures/cycling-tuscany.html",
+      "findings": [
+        {
+          "kind": "PROBE",
+          "probe": "breadcrumb",
+          "msg": "rect{w 279 → 241}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "tabs",
+          "msg": "rect{h 1899 → 928}"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "breadcrumb": {
+            "sel": "main .cmp-breadcrumb",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 241,
+                "h": 41
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": null,
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Adventures Cycling Tuscany"
+          },
+          "carousel": {
+            "sel": "main .cmp-carousel--mini",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 440
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 400
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Previous Next"
+          },
+          "title": {
+            "sel": "main .cmp-title--underline .cmp-title",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1136,
+                "h": 70
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h1 asar 40px/60px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Cycling Tuscany"
+          },
+          "fragment": {
+            "sel": "main .cmp-contentfragment",
+            "count": 2,
+            "first": {
+              "rect": {
+                "w": 291,
+                "h": 0
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Cycling Tuscany Activity Cycling Adventure Type Overnight Tr"
+          },
+          "tabs": {
+            "sel": "main .cmp-tabs",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 845,
+                "h": 928
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": {
+                "w": 845,
+                "h": 563
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Overview Itinerary What to Bring Cycling Tuscany Experience "
+          }
+        }
+      }
+    },
+    {
+      "url": "https://wknd.site/us/en/adventures/downhill-skiing-wyoming.html",
+      "findings": [
+        {
+          "kind": "PROBE",
+          "probe": "breadcrumb",
+          "msg": "rect{w 279 → 301}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "tabs",
+          "msg": "rect{h 1899 → 983}"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "breadcrumb": {
+            "sel": "main .cmp-breadcrumb",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 301,
+                "h": 41
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": null,
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Adventures Downhill Skiing Wyoming"
+          },
+          "carousel": {
+            "sel": "main .cmp-carousel--mini",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 440
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 400
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Previous Next"
+          },
+          "title": {
+            "sel": "main .cmp-title--underline .cmp-title",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1136,
+                "h": 70
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h1 asar 40px/60px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Downhill Skiing Wyoming"
+          },
+          "fragment": {
+            "sel": "main .cmp-contentfragment",
+            "count": 2,
+            "first": {
+              "rect": {
+                "w": 291,
+                "h": 0
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Downhill Skiing Wyoming Activity Skiing Adventure Type Overn"
+          },
+          "tabs": {
+            "sel": "main .cmp-tabs",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 845,
+                "h": 983
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": {
+                "w": 845,
+                "h": 564
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Overview Itinerary What to Bring Downhill Skiing Wyoming Exp"
+          }
+        }
+      }
+    },
+    {
+      "url": "https://wknd.site/us/en/adventures/gastronomic-marais-tour.html",
+      "findings": [
+        {
+          "kind": "PROBE",
+          "probe": "breadcrumb",
+          "msg": "rect{w 279 → 304}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "carousel",
+          "msg": "rect{h 440 → 448}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "fragment",
+          "msg": "rect{w 291 → 263}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "tabs",
+          "msg": "rect{h 1899 → 807}"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "breadcrumb": {
+            "sel": "main .cmp-breadcrumb",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 304,
+                "h": 41
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": null,
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Adventures Gastronomic Marais Tour"
+          },
+          "carousel": {
+            "sel": "main .cmp-carousel--mini",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 448
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 400
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Previous Next"
+          },
+          "title": {
+            "sel": "main .cmp-title--underline .cmp-title",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1136,
+                "h": 70
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h1 asar 40px/60px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Gastronomic Marais Tour"
+          },
+          "fragment": {
+            "sel": "main .cmp-contentfragment",
+            "count": 2,
+            "first": {
+              "rect": {
+                "w": 263,
+                "h": 0
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Gastronomic Marais Tour Activity Social Adventure Type Day T"
+          },
+          "tabs": {
+            "sel": "main .cmp-tabs",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 845,
+                "h": 807
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": {
+                "w": 845,
+                "h": 564
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Overview Itinerary What to Bring Gastronomic Marais Tour Duc"
+          }
+        }
+      }
+    },
+    {
+      "url": "https://wknd.site/us/en/adventures/napa-wine-tasting.html",
+      "findings": [
+        {
+          "kind": "PROBE",
+          "probe": "breadcrumb",
+          "msg": "rect{w 279 → 251}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "carousel",
+          "msg": "rect{h 440 → 448}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "fragment",
+          "msg": "rect{w 291 → 263}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "tabs",
+          "msg": "rect{h 1899 → 883}"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "breadcrumb": {
+            "sel": "main .cmp-breadcrumb",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 251,
+                "h": 41
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": null,
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Adventures Napa Wine Tasting"
+          },
+          "carousel": {
+            "sel": "main .cmp-carousel--mini",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 448
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 400
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Previous Next Napa Wine Valley wine glasses"
+          },
+          "title": {
+            "sel": "main .cmp-title--underline .cmp-title",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1136,
+                "h": 70
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h1 asar 40px/60px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Napa Wine Tasting"
+          },
+          "fragment": {
+            "sel": "main .cmp-contentfragment",
+            "count": 2,
+            "first": {
+              "rect": {
+                "w": 263,
+                "h": 0
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Napa Wine Tasting Activity Social Adventure Type Day Trip Tr"
+          },
+          "tabs": {
+            "sel": "main .cmp-tabs",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 845,
+                "h": 883
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": {
+                "w": 845,
+                "h": 564
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Overview Itinerary What to Bring Napa Wine Tasting Enjoy spe"
+          }
+        }
+      }
+    },
+    {
+      "url": "https://wknd.site/us/en/adventures/riverside-camping-australia.html",
+      "findings": [
+        {
+          "kind": "PROBE",
+          "probe": "breadcrumb",
+          "msg": "rect{w 279 → 252}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "tabs",
+          "msg": "rect{h 1899 → 833}"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "breadcrumb": {
+            "sel": "main .cmp-breadcrumb",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 252,
+                "h": 41
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": null,
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Adventures Riverside Camping"
+          },
+          "carousel": {
+            "sel": "main .cmp-carousel--mini",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 440
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 400
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Previous Next"
+          },
+          "title": {
+            "sel": "main .cmp-title--underline .cmp-title",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1136,
+                "h": 70
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h1 asar 40px/60px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Riverside Camping"
+          },
+          "fragment": {
+            "sel": "main .cmp-contentfragment",
+            "count": 2,
+            "first": {
+              "rect": {
+                "w": 291,
+                "h": 0
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Riverside Camping Australia Activity Camping Adventure Type "
+          },
+          "tabs": {
+            "sel": "main .cmp-tabs",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 845,
+                "h": 833
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": {
+                "w": 845,
+                "h": 563
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Overview Itinerary What to Bring Riverside Camping Australia"
+          }
+        }
+      }
+    },
+    {
+      "url": "https://wknd.site/us/en/adventures/ski-touring-mont-blanc.html",
+      "findings": [
+        {
+          "kind": "PROBE",
+          "probe": "breadcrumb",
+          "msg": "rect{w 279 → 291}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "tabs",
+          "msg": "rect{h 1899 → 1462}"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "breadcrumb": {
+            "sel": "main .cmp-breadcrumb",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 291,
+                "h": 41
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": null,
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Adventures Ski Touring Mont Blanc"
+          },
+          "carousel": {
+            "sel": "main .cmp-carousel--mini",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 440
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 400
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Previous Next"
+          },
+          "title": {
+            "sel": "main .cmp-title--underline .cmp-title",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1136,
+                "h": 70
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h1 asar 40px/60px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Ski Touring Mont Blanc"
+          },
+          "fragment": {
+            "sel": "main .cmp-contentfragment",
+            "count": 2,
+            "first": {
+              "rect": {
+                "w": 291,
+                "h": 0
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Ski Touring Mont Blanc Activity Skiing Adventure Type Overni"
+          },
+          "tabs": {
+            "sel": "main .cmp-tabs",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 845,
+                "h": 1462
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": {
+                "w": 845,
+                "h": 563
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Overview Itinerary What to Bring Ski Touring Mont Blanc If y"
+          }
+        }
+      }
+    },
+    {
+      "url": "https://wknd.site/us/en/adventures/surf-camp-costa-rica.html",
+      "findings": [
+        {
+          "kind": "PROBE",
+          "probe": "breadcrumb",
+          "msg": "rect{w 279 → 287}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "tabs",
+          "msg": "rect{h 1899 → 867}; image{h 563 → 475}"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "breadcrumb": {
+            "sel": "main .cmp-breadcrumb",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 287,
+                "h": 41
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": null,
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Adventures Surf Camp in Costa Rica"
+          },
+          "carousel": {
+            "sel": "main .cmp-carousel--mini",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 440
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 400
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Previous Next"
+          },
+          "title": {
+            "sel": "main .cmp-title--underline .cmp-title",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1136,
+                "h": 70
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h1 asar 40px/60px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Surf Camp in Costa Rica"
+          },
+          "fragment": {
+            "sel": "main .cmp-contentfragment",
+            "count": 2,
+            "first": {
+              "rect": {
+                "w": 291,
+                "h": 0
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Surf Camp Costa Rica Activity Surfing Adventure Type Overnig"
+          },
+          "tabs": {
+            "sel": "main .cmp-tabs",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 845,
+                "h": 867
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": {
+                "w": 845,
+                "h": 475
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Overview Itinerary What to Bring Surf Camp Costa Rica Experi"
+          }
+        }
+      }
+    },
+    {
+      "url": "https://wknd.site/us/en/adventures/tahoe-skiing.html",
+      "findings": [
+        {
+          "kind": "PROBE",
+          "probe": "breadcrumb",
+          "msg": "rect{w 279 → 216}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "carousel",
+          "msg": "rect{h 440 → 448}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "fragment",
+          "msg": "rect{w 291 → 263}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "tabs",
+          "msg": "rect{h 1899 → 852}"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "breadcrumb": {
+            "sel": "main .cmp-breadcrumb",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 216,
+                "h": 41
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": null,
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Adventures Tahoe Skiing"
+          },
+          "carousel": {
+            "sel": "main .cmp-carousel--mini",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 448
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 400
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Previous Next"
+          },
+          "title": {
+            "sel": "main .cmp-title--underline .cmp-title",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1136,
+                "h": 70
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h1 asar 40px/60px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Tahoe Skiing"
+          },
+          "fragment": {
+            "sel": "main .cmp-contentfragment",
+            "count": 2,
+            "first": {
+              "rect": {
+                "w": 263,
+                "h": 0
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Tahoe Skiing Activity Skiing Adventure Type Overnight Trip T"
+          },
+          "tabs": {
+            "sel": "main .cmp-tabs",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 845,
+                "h": 852
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": {
+                "w": 845,
+                "h": 564
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Overview Itinerary What to Bring Tahoe Skiing Crystalline wa"
+          }
+        }
+      }
+    },
+    {
+      "url": "https://wknd.site/us/en/adventures/west-coast-cycling.html",
+      "findings": [
+        {
+          "kind": "PROBE",
+          "probe": "breadcrumb",
+          "msg": "rect{w 279 → 261}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "carousel",
+          "msg": "rect{h 440 → 448}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "fragment",
+          "msg": "rect{w 291 → 263}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "tabs",
+          "msg": "rect{h 1899 → 788}"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "breadcrumb": {
+            "sel": "main .cmp-breadcrumb",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 261,
+                "h": 41
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": null,
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Adventures West Coast Cycling"
+          },
+          "carousel": {
+            "sel": "main .cmp-carousel--mini",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 448
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 400
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Previous Next"
+          },
+          "title": {
+            "sel": "main .cmp-title--underline .cmp-title",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1136,
+                "h": 70
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h1 asar 40px/60px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "West Coast Cycling"
+          },
+          "fragment": {
+            "sel": "main .cmp-contentfragment",
+            "count": 2,
+            "first": {
+              "rect": {
+                "w": 263,
+                "h": 0
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "West Coast Cycling Activity Cycling Adventure Type Overnight"
+          },
+          "tabs": {
+            "sel": "main .cmp-tabs",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 845,
+                "h": 788
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": {
+                "w": 845,
+                "h": 563
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Overview Itinerary What to Bring West Coast Cycling Join us "
+          }
+        }
+      }
+    },
+    {
+      "url": "https://wknd.site/us/en/adventures/whistler-mountain-biking.html",
+      "findings": [
+        {
+          "kind": "PROBE",
+          "probe": "breadcrumb",
+          "msg": "rect{w 279 → 305}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "tabs",
+          "msg": "rect{h 1899 → 1558}"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "breadcrumb": {
+            "sel": "main .cmp-breadcrumb",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 305,
+                "h": 41
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": null,
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Adventures Whistler Mountain Biking"
+          },
+          "carousel": {
+            "sel": "main .cmp-carousel--mini",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 440
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 400
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Previous Next"
+          },
+          "title": {
+            "sel": "main .cmp-title--underline .cmp-title",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1136,
+                "h": 70
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h1 asar 40px/60px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Whistler Mountain Biking"
+          },
+          "fragment": {
+            "sel": "main .cmp-contentfragment",
+            "count": 2,
+            "first": {
+              "rect": {
+                "w": 291,
+                "h": 0
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Whistler Mountain Biking Activity Cycling Adventure Type Ove"
+          },
+          "tabs": {
+            "sel": "main .cmp-tabs",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 845,
+                "h": 1558
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": {
+                "w": 845,
+                "h": 564
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Overview Itinerary What to Bring Whistler Mountain Biking Ex"
+          }
+        }
+      }
+    },
+    {
+      "url": "https://wknd.site/us/en/adventures/yosemite-backpacking.html",
+      "findings": [
+        {
+          "kind": "PROBE",
+          "probe": "carousel",
+          "msg": "rect{h 440 → 448}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "fragment",
+          "msg": "rect{w 291 → 263}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "tabs",
+          "msg": "rect{h 1899 → 897}"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "breadcrumb": {
+            "sel": "main .cmp-breadcrumb",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 279,
+                "h": 41
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": null,
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Adventures Yosemite Backpacking"
+          },
+          "carousel": {
+            "sel": "main .cmp-carousel--mini",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 448
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 400
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Previous Next"
+          },
+          "title": {
+            "sel": "main .cmp-title--underline .cmp-title",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1136,
+                "h": 70
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h1 asar 40px/60px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Yosemite Backpacking"
+          },
+          "fragment": {
+            "sel": "main .cmp-contentfragment",
+            "count": 2,
+            "first": {
+              "rect": {
+                "w": 263,
+                "h": 0
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Yosemite Backpacking Activity Camping Adventure Type Overnig"
+          },
+          "tabs": {
+            "sel": "main .cmp-tabs",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 845,
+                "h": 897
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": {
+                "w": 845,
+                "h": 564
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Overview Itinerary What to Bring Yosemite Backpacking Yosemi"
+          }
+        }
+      }
+    }
+  ],
+  "summary": {
+    "siblings": 15,
+    "varying": 15,
+    "probesVarying": [
+      "breadcrumb",
+      "carousel",
+      "fragment",
+      "tabs"
+    ]
+  }
+}

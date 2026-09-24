@@ -1,0 +1,114 @@
+{
+  "slug": "us-en-adventures-cycling-southern-utah-html",
+  "type": "program",
+  "renderBranch": "A'",
+  "template": "us-en-adventures-climbing-new-zealand-html",
+  "modules": [
+    "mini-carousel",
+    "trip-facts",
+    "sharing",
+    "tabs"
+  ],
+  "slotsFilled": [
+    "program"
+  ],
+  "canonShas": {
+    "header": "654179cfad1c",
+    "footer": "c970115fcea3",
+    "css": "bd936aef89b6"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Cycling Southern Utah",
+    "description": "Join us as we explore the rugged, stunningly gorgeous landscape of southern Utah. Touch your soul as we ride through red rock canyons and sandstone cliffs in Bryce Canyon and Zion National Park, two of Utah's iconic national parks. These parks provide a stunning backdrop for a once in a lifetime cycling vacation.",
+    "canonical": null,
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Cycling Southern Utah",
+    "description": "Join us as we explore the rugged, stunningly gorgeous landscape of southern Utah. Touch your soul as we ride through red rock canyons and sandstone cliffs in Bryce Canyon and Zion National Park, two of Utah's iconic national parks. These parks provide a stunning backdrop for a once in a lifetime cycling vacation.",
+    "url": "https://wknd.site/us/en/adventures/cycling-southern-utah.html"
+  },
+  "migratedAt": "2026-09-24T09:23:47Z",
+  "designMdSha": "720637eadd96",
+  "designJsonSha": "a627c03a4224",
+  "sourceCurrentSha": "15aef7c17dd9",
+  "sourceProposedSha": "d8cdc8e05315",
+  "fidelityTier": "sibling",
+  "archetypeSource": "us-en-adventures-climbing-new-zealand-html",
+  "archetypeSha": "32c46dcfad9f",
+  "variants": [
+    "program-body--flush",
+    "program-facts--split",
+    "image--captioned"
+  ],
+  "gatesPassed": [
+    "content-fidelity",
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "content-count",
+    "delivery-lint",
+    "variance-probe"
+  ],
+  "gateEvidence": {
+    "content-fidelity": "verbatim from stardust/current/pages/us-en-adventures-cycling-southern-utah-html.html; content-diff: header+main 36/36 text nodes (9 headings, 1 CTA, 2 img), header 28/28, footer 17/17; deviations logged in contentDeviations[]",
+    "pixel-gate-1440": "0.04% (1231 px, threshold 10%), height delta 0px, round sib3 @1440 (us-en-adventures-cycling-southern-utah-html-1440-r3.log) [prototype regime]",
+    "pixel-gate-360": "0.00% (0 px, threshold 10%), height delta 0px, round sib3 @360 (us-en-adventures-cycling-southern-utah-html-360-r3.log) [prototype regime]",
+    "content-count": "content-diff: none — content + roles match (us-en-adventures-cycling-southern-utah-html-cc3.log)",
+    "media-reconcile": "n/a: no delivered content file yet (content/us/en/adventures/cycling-southern-utah.html) — media-reconcile runs in the delivery chain (row C)",
+    "delivery-lint": "0 P0 · 0 P1 · 1 P2 (delivery-lint --path /us/en/adventures/cycling-southern-utah)",
+    "variance-probe": "■ https://wknd.site/us/en/adventures/cycling-southern-utah.html: 4 delta(s) — variants [program-body--flush, program-facts--split, image--captioned] (variance-program.log)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 5,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/us/es.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ca/en.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ca/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/de.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/it.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/de/de.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/es/es.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/it/it.html",
+      "reason": "not-in-inventory"
+    }
+  ],
+  "outputPath": "us/en/adventures/cycling-southern-utah.html",
+  "outputPathDefault": null,
+  "sidecar": "us/en/adventures/cycling-southern-utah._meta.json",
+  "driverVersion": "1"
+}

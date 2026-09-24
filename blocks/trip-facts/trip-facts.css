@@ -1,0 +1,72 @@
+/* trip-facts — lifted from stardust/prototypes/us-en-adventures-climbing-new-zealand-html.css
+   (.facts, .facts__item, .facts__label, .facts__value; .section-title h5 via canon.css) */
+
+/* the block stands in for the floated live aside (a BFC) */
+.trip-facts {
+  display: flow-root;
+}
+
+/* live: the content fragment title is display:none */
+.trip-facts .trip-facts-title {
+  display: none;
+}
+
+/* live: dl.facts { float: left; width: 100%; margin: 1em 0 } */
+.trip-facts .trip-facts-list {
+  display: flow-root;
+  margin: 1em 0;
+}
+
+/* live: the floated list sits BELOW the sidebar title's collapsed-through top
+   margin (h5 1.67em = 23.38px) — measured 41.4px from the h1 column, not 18 */
+.trip-facts:has(.trip-facts-aside) .trip-facts-list {
+  margin-top: calc(1em + 23.38px);
+}
+
+.trip-facts .trip-facts-item {
+  box-sizing: content-box;
+  float: left;
+  width: 100%;
+  height: 84px;
+  margin-bottom: 1.25em;
+  padding-right: 1em;
+  padding-left: 1em;
+  border-left: 5px solid var(--color-third);
+  font-family: var(--body-font-family);
+  text-transform: uppercase;
+}
+
+.trip-facts .trip-facts-label {
+  padding-top: 1em;
+  color: var(--color-muted);
+  font-size: var(--body-xs);
+}
+
+.trip-facts .trip-facts-value {
+  padding-top: 0.5em;
+  font-size: var(--body-sm);
+  font-weight: var(--font-weight-bold);
+}
+
+/* the authored paragraphs take the dt / dd metrics (EW2) */
+.trip-facts .trip-facts-item p {
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+  text-align: left;
+}
+
+/* live: the "Share this Adventure" h5 line box sits right under the floated
+   list — its own top margin is swallowed above the float */
+.trip-facts .trip-facts-aside h5 {
+  margin-top: 0;
+}
+
+@media (width <= 1024px) {
+  .trip-facts .trip-facts-item {
+    width: unset;
+    padding-right: 2em;
+    padding-left: 0;
+    border-left: none;
+  }
+}

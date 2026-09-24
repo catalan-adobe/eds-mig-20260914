@@ -1,0 +1,105 @@
+{
+  "slug": "us-en-magazine-san-diego-surf-html",
+  "type": "article",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "content-fragment",
+    "contributor-byline",
+    "upnext-list"
+  ],
+  "slotsFilled": [
+    "fixed-container"
+  ],
+  "canonShas": {
+    "header": "879f33c5a71d",
+    "footer": "e734a8699b2b",
+    "css": "bd936aef89b6"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "San Diego Surf Spots",
+    "description": "From the hippie beaches of Ocean Beach to the ritzy shores of La Jolla and everywhere in between. Discover the San Diego surf scene.",
+    "canonical": null,
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "San Diego Surf Spots",
+    "description": "From the hippie beaches of Ocean Beach to the ritzy shores of La Jolla and everywhere in between. Discover the San Diego surf scene.",
+    "mainEntityOfPage": "https://wknd.site/us/en/magazine/san-diego-surf.html"
+  },
+  "migratedAt": "2026-09-24T09:32:30Z",
+  "designMdSha": "720637eadd96",
+  "designJsonSha": "a627c03a4224",
+  "sourceCurrentSha": "e8fb0f471bca",
+  "sourceProposedSha": "8444bfa39b0a",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "content-count",
+    "delivery-lint"
+  ],
+  "gateEvidence": {
+    "pixel-gate-1440": "0.14% (11030 px, threshold 10%), height delta 2px, round conf @1440 (conf-us-en-magazine-san-diego-surf-html-1440.log) [prototype regime]",
+    "pixel-gate-360": "0.02% (540 px, threshold 10%), height delta 0px, round conf @360 (conf-us-en-magazine-san-diego-surf-html-360.log) [prototype regime]",
+    "content-count": "content-diff: none — content + roles match (conf-us-en-magazine-san-diego-surf-html-1440.log)",
+    "media-reconcile": "n/a: no delivered content file yet (content/us/en/magazine/san-diego-surf.html) — media-reconcile runs in the delivery chain (row C)",
+    "delivery-lint": "0 P0 · 0 P1 · 1 P2 (delivery-lint --path /us/en/magazine/san-diego-surf)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 4,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/us/es.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ca/en.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ca/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/de.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/it.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/de/de.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/es/es.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/it/it.html",
+      "reason": "not-in-inventory"
+    }
+  ],
+  "outputPath": "us/en/magazine/san-diego-surf.html",
+  "outputPathDefault": null,
+  "sidecar": "us/en/magazine/san-diego-surf._meta.json",
+  "driverVersion": "1"
+}

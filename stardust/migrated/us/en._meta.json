@@ -1,0 +1,108 @@
+{
+  "slug": "us-en-html",
+  "type": "landing",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "hero-carousel",
+    "featured-teaser",
+    "image-list",
+    "hero-teaser"
+  ],
+  "slotsFilled": [
+    "column",
+    "container",
+    "column",
+    "container"
+  ],
+  "canonShas": {
+    "header": "f9762d8e0248",
+    "footer": "9d307d43d613",
+    "css": "bd936aef89b6"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "WKND Adventures and Travel",
+    "description": "WKND is a collective of outdoors, music, crafts, adventure sports, and travel enthusiasts that want to share our experiences, connections, and expertise with the world.",
+    "canonical": null,
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "WKND Adventures and Travel",
+    "description": "WKND is a collective of outdoors, music, crafts, adventure sports, and travel enthusiasts that want to share our experiences, connections, and expertise with the world.",
+    "url": "https://wknd.site/us/en.html"
+  },
+  "migratedAt": "2026-09-24T09:42:42Z",
+  "designMdSha": "720637eadd96",
+  "designJsonSha": "a627c03a4224",
+  "sourceCurrentSha": "a30ab10cd97b",
+  "sourceProposedSha": "a82766b92681",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "content-count"
+  ],
+  "gateEvidence": {
+    "pixel-gate-1440": "0.00% (0 px, threshold 10%), height delta 0px, round conf @1440 (conf-us-en-html-1440.log) [prototype regime]",
+    "pixel-gate-360": "0.00% (0 px, threshold 10%), height delta 0px, round conf @360 (conf-us-en-html-360.log) [prototype regime]",
+    "content-count": "content-diff: none — content + roles match (conf-us-en-html-360.log)",
+    "media-reconcile": "n/a: no delivered content file yet (content/us/en.html) — media-reconcile runs in the delivery chain (row C)",
+    "delivery-lint": "FAIL: 1 P0 · 0 P1 · 1 P2 (delivery-lint --path /us/en)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 20,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/us/es.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ca/en.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ca/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/de.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/it.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/de/de.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/es/es.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/it/it.html",
+      "reason": "not-in-inventory"
+    }
+  ],
+  "outputPath": "us/en.html",
+  "outputPathDefault": null,
+  "sidecar": "us/en._meta.json",
+  "driverVersion": "1"
+}

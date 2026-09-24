@@ -1,0 +1,2005 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics detect",
+  "writtenAt": "2026-09-24T10:05:23.490Z",
+  "settleMs": 5000,
+  "width": 1440,
+  "urls": [
+   "https://wknd.site/us/en/about-us.html",
+   "https://wknd.site/us/en/adventures/bali-surf-camp.html",
+   "https://wknd.site/us/en/adventures.html",
+   "https://wknd.site/us/en/faqs.html",
+   "https://wknd.site/us/en.html",
+   "https://wknd.site/us/en/magazine/arctic-surfing.html"
+  ],
+  "reachSource": "stardust/current/pages"
+ },
+ "pages": {
+  "/us/en/about-us.html": {
+   "url": "https://wknd.site/us/en/about-us.html",
+   "status": 200,
+   "host": "wknd.site",
+   "title": "About Us",
+   "forms": [
+    {
+     "name": "cmp-search__form",
+     "action": "https://wknd.site/content/wknd/us/en/about-us.searchresults.json/_jcr_content/root/container/container_1195249223/search",
+     "method": "get",
+     "role": "",
+     "inChrome": true,
+     "fields": 1,
+     "signature": [
+      "text:fulltext"
+     ],
+     "hidden": [],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    }
+   ],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "Sign In",
+     "href": "https://wknd.site/us/en/about-us.html#sign-in",
+     "marker": "data-modal-url",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Sign Out",
+     "href": "https://wknd.site/us/en/about-us.html#sign-out",
+     "marker": "data-modal-url",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://wkndsite.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwknd.site",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": "https://wkndsite.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwknd.site",
+     "title": "Adobe ID Syncing iFrame",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [],
+   "auth": [
+    "https://wknd.site/us/en/about-us.html#sign-in"
+   ],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en-US",
+    "hreflang": [],
+    "switcher": [
+     "https://wknd.site/ca/en/about-us.html",
+     "https://wknd.site/ca/fr.html",
+     "https://wknd.site/ch/de.html",
+     "https://wknd.site/ch/fr.html",
+     "https://wknd.site/ch/it.html"
+    ]
+   },
+   "cms": {
+    "adobeDataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "11",
+     "12",
+     "13",
+     "14",
+     "15",
+     "16",
+     "17",
+     "18",
+     "19",
+     "20",
+     "21",
+     "22",
+     "23",
+     "24",
+     "25",
+     "26",
+     "27",
+     "28",
+     "29"
+    ],
+    "Granite": [
+     "HTTP",
+     "I18n",
+     "author",
+     "csrf"
+    ],
+    "CQ": [
+     "CoreComponents"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "adobe",
+    "_satellite"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [
+    {
+     "cls": "aem-Grid aem-Grid--12",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": false
+    },
+    {
+     "cls": "aem-Grid aem-Grid--12",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": false
+    },
+    {
+     "cls": "aem-Grid aem-Grid--12",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": false
+    },
+    {
+     "cls": "aem-Grid aem-Grid--12",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": false
+    },
+    {
+     "cls": "aem-Grid aem-Grid--12",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": false
+    },
+    {
+     "cls": "aem-Grid aem-Grid--12",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": false
+    },
+    {
+     "cls": "aem-Grid aem-Grid--12",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": false
+    }
+   ],
+   "inlineScripts": 4,
+   "inlineFetch": false,
+   "mainText": 557,
+   "domAddedAfterLoad": 1,
+   "hosts": {
+    "wknd.site": 28,
+    "fonts.googleapis.com": 1,
+    "assets.adobedtm.com": 3,
+    "fonts.gstatic.com": 4,
+    "dpm.demdex.net": 2,
+    "cm.everesttech.net": 1,
+    "wkndsite.demdex.net": 1,
+    "wkndsitewknd887971p.112.2o7.net": 1
+   },
+   "thirdPartyHosts": [
+    "fonts.googleapis.com",
+    "assets.adobedtm.com",
+    "fonts.gstatic.com",
+    "dpm.demdex.net",
+    "cm.everesttech.net",
+    "wkndsite.demdex.net",
+    "wkndsitewknd887971p.112.2o7.net"
+   ],
+   "scripts": [
+    "https://wknd.site/.rum/@adobe/helix-rum-js@%5E2/dist/micro.js",
+    "https://wknd.site/etc/cloudsettings.kernel.js/conf/wknd/settings/cloudsettings/default/contexthub",
+    "https://wknd.site/etc.clientlibs/wknd/clientlibs/clientlib-dependencies.lc-a9dcac4698709ca8e1cbc88363cf0793-lc.min.js",
+    "https://wknd.site/etc.clientlibs/core/wcm/components/commons/datalayer/v2/clientlibs/core.wcm.components.commons.datalayer.v2.lc-1e0136bad0acfb78be509234578e44f9-lc.min.js",
+    "https://assets.adobedtm.com/8435ef3ee65b/ba907718de70/launch-23f8357258bd.min.js",
+    "https://wknd.site/etc.clientlibs/core/wcm/components/commons/datalayer/acdl/core.wcm.components.commons.datalayer.acdl.lc-bf921af342fd2c40139671dbf0920a1f-lc.min.js",
+    "https://wknd.site/etc.clientlibs/wknd/clientlibs/clientlib-site.lc-d576df30bf19565e97faf1f96eb60e7c-lc.min.js",
+    "https://wknd.site/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.lc-0a6aff292f5cc42142779cde92054524-lc.min.js",
+    "https://wknd.site/etc.clientlibs/wknd/clientlibs/clientlib-base.lc-1a078899122ab0da1a33c32fbb264709-lc.min.js",
+    "https://assets.adobedtm.com/extensions/EPbf7b42aa08bc4f10879b1484195e80d1/AppMeasurement_Module_ActivityMap.min.js",
+    "https://assets.adobedtm.com/extensions/EPbf7b42aa08bc4f10879b1484195e80d1/AppMeasurement.min.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/conf/wknd/settings/wcm/segments.seg.js",
+     "query": [],
+     "status": 200,
+     "contentType": "text/javascript",
+     "example": "https://wknd.site/conf/wknd/settings/wcm/segments.seg.js"
+    },
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/home/users/o/oa6PkCC2rneOdh2ni0qG.infinity.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://wknd.site/home/users/o/oa6PkCC2rneOdh2ni0qG.infinity.json"
+    },
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/content/wknd/us/en/about-us/_jcr_content/contexthub.pagedata.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://wknd.site/content/wknd/us/en/about-us/_jcr_content/contexthub.pagedata.json"
+    },
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/libs/granite/csrf/token.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://wknd.site/libs/granite/csrf/token.json"
+    },
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/libs/granite/security/currentuser.json",
+     "query": [
+      "nocache"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://wknd.site/libs/granite/security/currentuser.json"
+    }
+   ],
+   "thirdPartyXhr": [
+    "GET dpm.demdex.net/id"
+   ],
+   "postBodies": [],
+   "textAtLoad": 557,
+   "mainEmptyAtLoad": false
+  },
+  "/us/en/adventures/bali-surf-camp.html": {
+   "url": "https://wknd.site/us/en/adventures/bali-surf-camp.html",
+   "status": 200,
+   "host": "wknd.site",
+   "title": "Bali Surf Camp",
+   "forms": [
+    {
+     "name": "cmp-search__form",
+     "action": "https://wknd.site/content/wknd/us/en/adventures/bali-surf-camp.searchresults.json/_jcr_content/root/container/container_1195249223/search",
+     "method": "get",
+     "role": "",
+     "inChrome": true,
+     "fields": 1,
+     "signature": [
+      "text:fulltext"
+     ],
+     "hidden": [],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    }
+   ],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "Sign In",
+     "href": "https://wknd.site/us/en/adventures/bali-surf-camp.html#sign-in",
+     "marker": "data-modal-url",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Sign Out",
+     "href": "https://wknd.site/us/en/adventures/bali-surf-camp.html#sign-out",
+     "marker": "data-modal-url",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://wkndsite.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwknd.site",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": "https://wkndsite.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwknd.site",
+     "title": "Adobe ID Syncing iFrame",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [],
+   "auth": [
+    "https://wknd.site/us/en/adventures/bali-surf-camp.html#sign-in"
+   ],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en-US",
+    "hreflang": [],
+    "switcher": [
+     "https://wknd.site/ca/en/adventures/bali-surf-camp.html",
+     "https://wknd.site/ca/fr.html",
+     "https://wknd.site/ch/de.html",
+     "https://wknd.site/ch/fr.html",
+     "https://wknd.site/ch/it.html"
+    ]
+   },
+   "cms": {
+    "adobeDataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "11",
+     "12",
+     "13",
+     "14",
+     "15",
+     "16",
+     "17",
+     "18",
+     "19",
+     "20",
+     "21",
+     "22",
+     "23",
+     "24",
+     "25",
+     "26",
+     "27",
+     "28",
+     "29"
+    ],
+    "Granite": [
+     "HTTP",
+     "I18n",
+     "author",
+     "csrf"
+    ],
+    "CQ": [
+     "CoreComponents"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "adobe",
+    "_satellite"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 4,
+   "inlineFetch": false,
+   "mainText": 523,
+   "domAddedAfterLoad": 1,
+   "hosts": {
+    "wknd.site": 23,
+    "fonts.googleapis.com": 1,
+    "assets.adobedtm.com": 3,
+    "fonts.gstatic.com": 3,
+    "dpm.demdex.net": 2,
+    "wkndsite.demdex.net": 1,
+    "cm.everesttech.net": 1,
+    "wkndsitewknd887971p.112.2o7.net": 1
+   },
+   "thirdPartyHosts": [
+    "fonts.googleapis.com",
+    "assets.adobedtm.com",
+    "fonts.gstatic.com",
+    "dpm.demdex.net",
+    "wkndsite.demdex.net",
+    "cm.everesttech.net",
+    "wkndsitewknd887971p.112.2o7.net"
+   ],
+   "scripts": [
+    "https://wknd.site/.rum/@adobe/helix-rum-js@%5E2/dist/micro.js",
+    "https://wknd.site/etc/cloudsettings.kernel.js/conf/wknd/settings/cloudsettings/default/contexthub",
+    "https://wknd.site/etc.clientlibs/wknd/clientlibs/clientlib-dependencies.lc-a9dcac4698709ca8e1cbc88363cf0793-lc.min.js",
+    "https://wknd.site/etc.clientlibs/core/wcm/components/commons/datalayer/v2/clientlibs/core.wcm.components.commons.datalayer.v2.lc-1e0136bad0acfb78be509234578e44f9-lc.min.js",
+    "https://wknd.site/etc.clientlibs/core/wcm/components/commons/datalayer/acdl/core.wcm.components.commons.datalayer.acdl.lc-bf921af342fd2c40139671dbf0920a1f-lc.min.js",
+    "https://wknd.site/etc.clientlibs/wknd/clientlibs/clientlib-site.lc-d576df30bf19565e97faf1f96eb60e7c-lc.min.js",
+    "https://wknd.site/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.lc-0a6aff292f5cc42142779cde92054524-lc.min.js",
+    "https://wknd.site/etc.clientlibs/wknd/clientlibs/clientlib-base.lc-1a078899122ab0da1a33c32fbb264709-lc.min.js",
+    "https://assets.adobedtm.com/8435ef3ee65b/ba907718de70/launch-23f8357258bd.min.js",
+    "https://assets.adobedtm.com/extensions/EPbf7b42aa08bc4f10879b1484195e80d1/AppMeasurement_Module_ActivityMap.min.js",
+    "https://assets.adobedtm.com/extensions/EPbf7b42aa08bc4f10879b1484195e80d1/AppMeasurement.min.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/conf/wknd/settings/wcm/segments.seg.js",
+     "query": [],
+     "status": 200,
+     "contentType": "text/javascript",
+     "example": "https://wknd.site/conf/wknd/settings/wcm/segments.seg.js"
+    },
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/content/wknd/us/en/adventures/bali-surf-camp/_jcr_content/contexthub.pagedata.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://wknd.site/content/wknd/us/en/adventures/bali-surf-camp/_jcr_content/contexthub.pagedata.json"
+    },
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/home/users/o/oa6PkCC2rneOdh2ni0qG.infinity.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://wknd.site/home/users/o/oa6PkCC2rneOdh2ni0qG.infinity.json"
+    },
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/libs/granite/csrf/token.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://wknd.site/libs/granite/csrf/token.json"
+    },
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/libs/granite/security/currentuser.json",
+     "query": [
+      "nocache"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://wknd.site/libs/granite/security/currentuser.json"
+    }
+   ],
+   "thirdPartyXhr": [
+    "GET dpm.demdex.net/id"
+   ],
+   "postBodies": [],
+   "textAtLoad": 523,
+   "mainEmptyAtLoad": false
+  },
+  "/us/en/adventures.html": {
+   "url": "https://wknd.site/us/en/adventures.html",
+   "status": 200,
+   "host": "wknd.site",
+   "title": "Adventures",
+   "forms": [
+    {
+     "name": "cmp-search__form",
+     "action": "https://wknd.site/content/wknd/us/en/adventures.searchresults.json/_jcr_content/root/container/container_1195249223/search",
+     "method": "get",
+     "role": "",
+     "inChrome": true,
+     "fields": 1,
+     "signature": [
+      "text:fulltext"
+     ],
+     "hidden": [],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    }
+   ],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "Sign In",
+     "href": "https://wknd.site/us/en/adventures.html#sign-in",
+     "marker": "data-modal-url",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Sign Out",
+     "href": "https://wknd.site/us/en/adventures.html#sign-out",
+     "marker": "data-modal-url",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://wkndsite.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwknd.site",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": "https://wkndsite.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwknd.site",
+     "title": "Adobe ID Syncing iFrame",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [],
+   "auth": [
+    "https://wknd.site/us/en/adventures.html#sign-in"
+   ],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en-US",
+    "hreflang": [],
+    "switcher": [
+     "https://wknd.site/ca/en/adventures.html",
+     "https://wknd.site/ca/fr.html",
+     "https://wknd.site/ch/de.html",
+     "https://wknd.site/ch/fr.html",
+     "https://wknd.site/ch/it.html"
+    ]
+   },
+   "cms": {
+    "adobeDataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "11",
+     "12",
+     "13",
+     "14",
+     "15",
+     "16",
+     "17",
+     "18",
+     "19",
+     "20",
+     "21",
+     "22",
+     "23",
+     "24",
+     "25",
+     "26",
+     "27",
+     "28",
+     "29"
+    ],
+    "Granite": [
+     "HTTP",
+     "I18n",
+     "author",
+     "csrf"
+    ],
+    "CQ": [
+     "CoreComponents"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "adobe",
+    "_satellite"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [
+    {
+     "cls": "cmp-image-list",
+     "cards": 16,
+     "sameSite": 16,
+     "hasDate": false
+    },
+    {
+     "cls": "cmp-image-list",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": false
+    },
+    {
+     "cls": "cmp-image-list",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": false
+    },
+    {
+     "cls": "cmp-image-list",
+     "cards": 6,
+     "sameSite": 6,
+     "hasDate": false
+    }
+   ],
+   "inlineScripts": 4,
+   "inlineFetch": false,
+   "mainText": 3992,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "wknd.site": 38,
+    "fonts.googleapis.com": 1,
+    "assets.adobedtm.com": 3,
+    "fonts.gstatic.com": 3,
+    "dpm.demdex.net": 2,
+    "wkndsite.demdex.net": 1,
+    "cm.everesttech.net": 1,
+    "wkndsitewknd887971p.112.2o7.net": 1
+   },
+   "thirdPartyHosts": [
+    "fonts.googleapis.com",
+    "assets.adobedtm.com",
+    "fonts.gstatic.com",
+    "dpm.demdex.net",
+    "wkndsite.demdex.net",
+    "cm.everesttech.net",
+    "wkndsitewknd887971p.112.2o7.net"
+   ],
+   "scripts": [
+    "https://wknd.site/.rum/@adobe/helix-rum-js@%5E2/dist/micro.js",
+    "https://wknd.site/etc/cloudsettings.kernel.js/conf/wknd/settings/cloudsettings/default/contexthub",
+    "https://wknd.site/etc.clientlibs/wknd/clientlibs/clientlib-dependencies.lc-a9dcac4698709ca8e1cbc88363cf0793-lc.min.js",
+    "https://wknd.site/etc.clientlibs/core/wcm/components/commons/datalayer/v2/clientlibs/core.wcm.components.commons.datalayer.v2.lc-1e0136bad0acfb78be509234578e44f9-lc.min.js",
+    "https://wknd.site/etc.clientlibs/core/wcm/components/commons/datalayer/acdl/core.wcm.components.commons.datalayer.acdl.lc-bf921af342fd2c40139671dbf0920a1f-lc.min.js",
+    "https://wknd.site/etc.clientlibs/wknd/clientlibs/clientlib-site.lc-d576df30bf19565e97faf1f96eb60e7c-lc.min.js",
+    "https://wknd.site/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.lc-0a6aff292f5cc42142779cde92054524-lc.min.js",
+    "https://wknd.site/etc.clientlibs/wknd/clientlibs/clientlib-base.lc-1a078899122ab0da1a33c32fbb264709-lc.min.js",
+    "https://assets.adobedtm.com/8435ef3ee65b/ba907718de70/launch-23f8357258bd.min.js",
+    "https://assets.adobedtm.com/extensions/EPbf7b42aa08bc4f10879b1484195e80d1/AppMeasurement_Module_ActivityMap.min.js",
+    "https://assets.adobedtm.com/extensions/EPbf7b42aa08bc4f10879b1484195e80d1/AppMeasurement.min.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/content/wknd/us/en/adventures/_jcr_content/contexthub.pagedata.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://wknd.site/content/wknd/us/en/adventures/_jcr_content/contexthub.pagedata.json"
+    },
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/conf/wknd/settings/wcm/segments.seg.js",
+     "query": [],
+     "status": 200,
+     "contentType": "text/javascript",
+     "example": "https://wknd.site/conf/wknd/settings/wcm/segments.seg.js"
+    },
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/home/users/o/oa6PkCC2rneOdh2ni0qG.infinity.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://wknd.site/home/users/o/oa6PkCC2rneOdh2ni0qG.infinity.json"
+    },
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/libs/granite/security/currentuser.json",
+     "query": [
+      "nocache"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://wknd.site/libs/granite/security/currentuser.json"
+    },
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/libs/granite/csrf/token.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://wknd.site/libs/granite/csrf/token.json"
+    }
+   ],
+   "thirdPartyXhr": [
+    "GET dpm.demdex.net/id"
+   ],
+   "postBodies": [],
+   "textAtLoad": 3992,
+   "mainEmptyAtLoad": false
+  },
+  "/us/en/faqs.html": {
+   "url": "https://wknd.site/us/en/faqs.html",
+   "status": 200,
+   "host": "wknd.site",
+   "title": "FAQs",
+   "forms": [
+    {
+     "name": "cmp-search__form",
+     "action": "https://wknd.site/content/wknd/us/en/faqs.searchresults.json/_jcr_content/root/container/container_1195249223/search",
+     "method": "get",
+     "role": "",
+     "inChrome": true,
+     "fields": 1,
+     "signature": [
+      "text:fulltext"
+     ],
+     "hidden": [],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    }
+   ],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "Sign In",
+     "href": "https://wknd.site/us/en/faqs.html#sign-in",
+     "marker": "data-modal-url",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Sign Out",
+     "href": "https://wknd.site/us/en/faqs.html#sign-out",
+     "marker": "data-modal-url",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://wkndsite.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwknd.site",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": "https://wkndsite.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwknd.site",
+     "title": "Adobe ID Syncing iFrame",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [],
+   "auth": [
+    "https://wknd.site/us/en/faqs.html#sign-in"
+   ],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en-US",
+    "hreflang": [],
+    "switcher": [
+     "https://wknd.site/ca/en/faqs.html",
+     "https://wknd.site/ca/fr.html",
+     "https://wknd.site/ch/de.html",
+     "https://wknd.site/ch/fr.html",
+     "https://wknd.site/ch/it.html"
+    ]
+   },
+   "cms": {
+    "adobeDataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "11",
+     "12",
+     "13",
+     "14",
+     "15",
+     "16",
+     "17",
+     "18",
+     "19",
+     "20",
+     "21",
+     "22",
+     "23",
+     "24",
+     "25",
+     "26",
+     "27",
+     "28",
+     "29"
+    ],
+    "Granite": [
+     "HTTP",
+     "I18n",
+     "author",
+     "csrf"
+    ],
+    "CQ": [
+     "CoreComponents"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "adobe",
+    "_satellite"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 4,
+   "inlineFetch": false,
+   "mainText": 627,
+   "domAddedAfterLoad": 1,
+   "hosts": {
+    "wknd.site": 22,
+    "fonts.googleapis.com": 1,
+    "assets.adobedtm.com": 3,
+    "fonts.gstatic.com": 3,
+    "dpm.demdex.net": 2,
+    "cm.everesttech.net": 1,
+    "wkndsite.demdex.net": 1,
+    "wkndsitewknd887971p.112.2o7.net": 1
+   },
+   "thirdPartyHosts": [
+    "fonts.googleapis.com",
+    "assets.adobedtm.com",
+    "fonts.gstatic.com",
+    "dpm.demdex.net",
+    "cm.everesttech.net",
+    "wkndsite.demdex.net",
+    "wkndsitewknd887971p.112.2o7.net"
+   ],
+   "scripts": [
+    "https://wknd.site/.rum/@adobe/helix-rum-js@%5E2/dist/micro.js",
+    "https://wknd.site/etc/cloudsettings.kernel.js/conf/wknd/settings/cloudsettings/default/contexthub",
+    "https://wknd.site/etc.clientlibs/wknd/clientlibs/clientlib-dependencies.lc-a9dcac4698709ca8e1cbc88363cf0793-lc.min.js",
+    "https://wknd.site/etc.clientlibs/core/wcm/components/commons/datalayer/v2/clientlibs/core.wcm.components.commons.datalayer.v2.lc-1e0136bad0acfb78be509234578e44f9-lc.min.js",
+    "https://wknd.site/etc.clientlibs/core/wcm/components/commons/datalayer/acdl/core.wcm.components.commons.datalayer.acdl.lc-bf921af342fd2c40139671dbf0920a1f-lc.min.js",
+    "https://wknd.site/etc.clientlibs/wknd/clientlibs/clientlib-site.lc-d576df30bf19565e97faf1f96eb60e7c-lc.min.js",
+    "https://wknd.site/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.lc-0a6aff292f5cc42142779cde92054524-lc.min.js",
+    "https://wknd.site/etc.clientlibs/wknd/clientlibs/clientlib-base.lc-1a078899122ab0da1a33c32fbb264709-lc.min.js",
+    "https://assets.adobedtm.com/8435ef3ee65b/ba907718de70/launch-23f8357258bd.min.js",
+    "https://assets.adobedtm.com/extensions/EPbf7b42aa08bc4f10879b1484195e80d1/AppMeasurement_Module_ActivityMap.min.js",
+    "https://assets.adobedtm.com/extensions/EPbf7b42aa08bc4f10879b1484195e80d1/AppMeasurement.min.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/content/wknd/us/en/faqs/_jcr_content/contexthub.pagedata.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://wknd.site/content/wknd/us/en/faqs/_jcr_content/contexthub.pagedata.json"
+    },
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/conf/wknd/settings/wcm/segments.seg.js",
+     "query": [],
+     "status": 200,
+     "contentType": "text/javascript",
+     "example": "https://wknd.site/conf/wknd/settings/wcm/segments.seg.js"
+    },
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/home/users/o/oa6PkCC2rneOdh2ni0qG.infinity.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://wknd.site/home/users/o/oa6PkCC2rneOdh2ni0qG.infinity.json"
+    },
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/libs/granite/csrf/token.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://wknd.site/libs/granite/csrf/token.json"
+    },
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/libs/granite/security/currentuser.json",
+     "query": [
+      "nocache"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://wknd.site/libs/granite/security/currentuser.json"
+    }
+   ],
+   "thirdPartyXhr": [
+    "GET dpm.demdex.net/id"
+   ],
+   "postBodies": [],
+   "textAtLoad": 627,
+   "mainEmptyAtLoad": false
+  },
+  "/us/en.html": {
+   "url": "https://wknd.site/us/en.html",
+   "status": 200,
+   "host": "wknd.site",
+   "title": "WKND Adventures and Travel",
+   "forms": [
+    {
+     "name": "cmp-search__form",
+     "action": "https://wknd.site/content/wknd/us/en.searchresults.json/_jcr_content/root/container/container_1195249223/search",
+     "method": "get",
+     "role": "",
+     "inChrome": true,
+     "fields": 1,
+     "signature": [
+      "text:fulltext"
+     ],
+     "hidden": [],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    }
+   ],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "Sign In",
+     "href": "https://wknd.site/us/en.html#sign-in",
+     "marker": "data-modal-url",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Sign Out",
+     "href": "https://wknd.site/us/en.html#sign-out",
+     "marker": "data-modal-url",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://wkndsite.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwknd.site",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": "https://wkndsite.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwknd.site",
+     "title": "Adobe ID Syncing iFrame",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [],
+   "auth": [
+    "https://wknd.site/us/en.html#sign-in"
+   ],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en-US",
+    "hreflang": [],
+    "switcher": [
+     "https://wknd.site/ca/en.html",
+     "https://wknd.site/ca/fr.html",
+     "https://wknd.site/ch/de.html",
+     "https://wknd.site/ch/fr.html",
+     "https://wknd.site/ch/it.html"
+    ]
+   },
+   "cms": {
+    "adobeDataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "11",
+     "12",
+     "13",
+     "14",
+     "15",
+     "16",
+     "17",
+     "18",
+     "19",
+     "20",
+     "21",
+     "22",
+     "23",
+     "24",
+     "25",
+     "26",
+     "27",
+     "28",
+     "29"
+    ],
+    "Granite": [
+     "HTTP",
+     "I18n",
+     "author",
+     "csrf"
+    ],
+    "CQ": [
+     "CoreComponents"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "adobe",
+    "_satellite"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [
+    {
+     "cls": "aem-Grid aem-Grid--12",
+     "cards": 4,
+     "sameSite": 4,
+     "hasDate": false
+    },
+    {
+     "cls": "cmp-image-list",
+     "cards": 4,
+     "sameSite": 4,
+     "hasDate": false
+    },
+    {
+     "cls": "cmp-image-list",
+     "cards": 4,
+     "sameSite": 4,
+     "hasDate": false
+    }
+   ],
+   "inlineScripts": 4,
+   "inlineFetch": false,
+   "mainText": 2563,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "wknd.site": 32,
+    "fonts.googleapis.com": 1,
+    "assets.adobedtm.com": 3,
+    "fonts.gstatic.com": 3,
+    "dpm.demdex.net": 2,
+    "wkndsite.demdex.net": 1,
+    "cm.everesttech.net": 1,
+    "wkndsitewknd887971p.112.2o7.net": 1
+   },
+   "thirdPartyHosts": [
+    "fonts.googleapis.com",
+    "assets.adobedtm.com",
+    "fonts.gstatic.com",
+    "dpm.demdex.net",
+    "wkndsite.demdex.net",
+    "cm.everesttech.net",
+    "wkndsitewknd887971p.112.2o7.net"
+   ],
+   "scripts": [
+    "https://wknd.site/.rum/@adobe/helix-rum-js@%5E2/dist/micro.js",
+    "https://wknd.site/etc/cloudsettings.kernel.js/conf/wknd/settings/cloudsettings/default/contexthub",
+    "https://wknd.site/etc.clientlibs/wknd/clientlibs/clientlib-dependencies.lc-a9dcac4698709ca8e1cbc88363cf0793-lc.min.js",
+    "https://wknd.site/etc.clientlibs/core/wcm/components/commons/datalayer/v2/clientlibs/core.wcm.components.commons.datalayer.v2.lc-1e0136bad0acfb78be509234578e44f9-lc.min.js",
+    "https://wknd.site/etc.clientlibs/core/wcm/components/commons/datalayer/acdl/core.wcm.components.commons.datalayer.acdl.lc-bf921af342fd2c40139671dbf0920a1f-lc.min.js",
+    "https://wknd.site/etc.clientlibs/wknd/clientlibs/clientlib-site.lc-d576df30bf19565e97faf1f96eb60e7c-lc.min.js",
+    "https://wknd.site/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.lc-0a6aff292f5cc42142779cde92054524-lc.min.js",
+    "https://assets.adobedtm.com/8435ef3ee65b/ba907718de70/launch-23f8357258bd.min.js",
+    "https://wknd.site/etc.clientlibs/wknd/clientlibs/clientlib-base.lc-1a078899122ab0da1a33c32fbb264709-lc.min.js",
+    "https://assets.adobedtm.com/extensions/EPbf7b42aa08bc4f10879b1484195e80d1/AppMeasurement_Module_ActivityMap.min.js",
+    "https://assets.adobedtm.com/extensions/EPbf7b42aa08bc4f10879b1484195e80d1/AppMeasurement.min.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/content/wknd/us/en/_jcr_content/contexthub.pagedata.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://wknd.site/content/wknd/us/en/_jcr_content/contexthub.pagedata.json"
+    },
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/conf/wknd/settings/wcm/segments.seg.js",
+     "query": [],
+     "status": 200,
+     "contentType": "text/javascript",
+     "example": "https://wknd.site/conf/wknd/settings/wcm/segments.seg.js"
+    },
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/home/users/o/oa6PkCC2rneOdh2ni0qG.infinity.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://wknd.site/home/users/o/oa6PkCC2rneOdh2ni0qG.infinity.json"
+    },
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/libs/granite/csrf/token.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://wknd.site/libs/granite/csrf/token.json"
+    },
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/libs/granite/security/currentuser.json",
+     "query": [
+      "nocache"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://wknd.site/libs/granite/security/currentuser.json"
+    }
+   ],
+   "thirdPartyXhr": [
+    "GET dpm.demdex.net/id"
+   ],
+   "postBodies": [],
+   "textAtLoad": 2563,
+   "mainEmptyAtLoad": false
+  },
+  "/us/en/magazine/arctic-surfing.html": {
+   "url": "https://wknd.site/us/en/magazine/arctic-surfing.html",
+   "status": 200,
+   "host": "wknd.site",
+   "title": "Arctic Surfing",
+   "forms": [
+    {
+     "name": "cmp-search__form",
+     "action": "https://wknd.site/content/wknd/us/en/magazine/arctic-surfing.searchresults.json/_jcr_content/root/container/container_1195249223/search",
+     "method": "get",
+     "role": "",
+     "inChrome": true,
+     "fields": 1,
+     "signature": [
+      "text:fulltext"
+     ],
+     "hidden": [],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    }
+   ],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "Sign In",
+     "href": "https://wknd.site/us/en/magazine/arctic-surfing.html#sign-in",
+     "marker": "data-modal-url",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "Sign Out",
+     "href": "https://wknd.site/us/en/magazine/arctic-surfing.html#sign-out",
+     "marker": "data-modal-url",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": null
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://wkndsite.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwknd.site",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": "https://wkndsite.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwknd.site",
+     "title": "Adobe ID Syncing iFrame",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [],
+   "auth": [
+    "https://wknd.site/us/en/magazine/arctic-surfing.html#sign-in"
+   ],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en-US",
+    "hreflang": [],
+    "switcher": [
+     "https://wknd.site/ca/en/magazine/arctic-surfing.html",
+     "https://wknd.site/ca/fr.html",
+     "https://wknd.site/ch/de.html",
+     "https://wknd.site/ch/fr.html",
+     "https://wknd.site/ch/it.html"
+    ]
+   },
+   "cms": {
+    "adobeDataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "11",
+     "12",
+     "13",
+     "14",
+     "15",
+     "16",
+     "17",
+     "18",
+     "19",
+     "20",
+     "21",
+     "22",
+     "23",
+     "24",
+     "25",
+     "26",
+     "27",
+     "28",
+     "29"
+    ],
+    "Granite": [
+     "HTTP",
+     "I18n",
+     "author",
+     "csrf"
+    ],
+    "CQ": [
+     "CoreComponents"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "adobe",
+    "_satellite"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [
+    {
+     "cls": "aem-Grid aem-Grid--3",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": false
+    },
+    {
+     "cls": "cmp-list",
+     "cards": 4,
+     "sameSite": 4,
+     "hasDate": true
+    }
+   ],
+   "inlineScripts": 4,
+   "inlineFetch": false,
+   "mainText": 5962,
+   "domAddedAfterLoad": 1,
+   "hosts": {
+    "wknd.site": 26,
+    "fonts.googleapis.com": 1,
+    "assets.adobedtm.com": 3,
+    "fonts.gstatic.com": 3,
+    "dpm.demdex.net": 2,
+    "cm.everesttech.net": 1,
+    "wkndsite.demdex.net": 1,
+    "wkndsitewknd887971p.112.2o7.net": 1
+   },
+   "thirdPartyHosts": [
+    "fonts.googleapis.com",
+    "assets.adobedtm.com",
+    "fonts.gstatic.com",
+    "dpm.demdex.net",
+    "cm.everesttech.net",
+    "wkndsite.demdex.net",
+    "wkndsitewknd887971p.112.2o7.net"
+   ],
+   "scripts": [
+    "https://wknd.site/.rum/@adobe/helix-rum-js@%5E2/dist/micro.js",
+    "https://wknd.site/etc/cloudsettings.kernel.js/conf/wknd/settings/cloudsettings/default/contexthub",
+    "https://wknd.site/etc.clientlibs/wknd/clientlibs/clientlib-dependencies.lc-a9dcac4698709ca8e1cbc88363cf0793-lc.min.js",
+    "https://wknd.site/etc.clientlibs/core/wcm/components/commons/datalayer/v2/clientlibs/core.wcm.components.commons.datalayer.v2.lc-1e0136bad0acfb78be509234578e44f9-lc.min.js",
+    "https://wknd.site/etc.clientlibs/core/wcm/components/commons/datalayer/acdl/core.wcm.components.commons.datalayer.acdl.lc-bf921af342fd2c40139671dbf0920a1f-lc.min.js",
+    "https://wknd.site/etc.clientlibs/wknd/clientlibs/clientlib-site.lc-d576df30bf19565e97faf1f96eb60e7c-lc.min.js",
+    "https://wknd.site/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.lc-0a6aff292f5cc42142779cde92054524-lc.min.js",
+    "https://wknd.site/etc.clientlibs/wknd/clientlibs/clientlib-base.lc-1a078899122ab0da1a33c32fbb264709-lc.min.js",
+    "https://assets.adobedtm.com/8435ef3ee65b/ba907718de70/launch-23f8357258bd.min.js",
+    "https://assets.adobedtm.com/extensions/EPbf7b42aa08bc4f10879b1484195e80d1/AppMeasurement_Module_ActivityMap.min.js",
+    "https://assets.adobedtm.com/extensions/EPbf7b42aa08bc4f10879b1484195e80d1/AppMeasurement.min.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/content/wknd/us/en/magazine/arctic-surfing/_jcr_content/contexthub.pagedata.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://wknd.site/content/wknd/us/en/magazine/arctic-surfing/_jcr_content/contexthub.pagedata.json"
+    },
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/conf/wknd/settings/wcm/segments.seg.js",
+     "query": [],
+     "status": 200,
+     "contentType": "text/javascript",
+     "example": "https://wknd.site/conf/wknd/settings/wcm/segments.seg.js"
+    },
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/home/users/o/oa6PkCC2rneOdh2ni0qG.infinity.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://wknd.site/home/users/o/oa6PkCC2rneOdh2ni0qG.infinity.json"
+    },
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/libs/granite/csrf/token.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://wknd.site/libs/granite/csrf/token.json"
+    },
+    {
+     "method": "GET",
+     "host": "wknd.site",
+     "path": "/libs/granite/security/currentuser.json",
+     "query": [
+      "nocache"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://wknd.site/libs/granite/security/currentuser.json"
+    }
+   ],
+   "thirdPartyXhr": [
+    "GET dpm.demdex.net/id"
+   ],
+   "postBodies": [],
+   "textAtLoad": 5962,
+   "mainEmptyAtLoad": false
+  }
+ },
+ "findings": [
+  {
+   "id": "a-cms-app-settings-object-adobedatalayer",
+   "class": "A",
+   "feature": "CMS / app settings object adobeDataLayer",
+   "hint": "settings",
+   "evidence": [],
+   "pages": [
+    "/us/en/about-us.html",
+    "/us/en/adventures/bali-surf-camp.html",
+    "/us/en/adventures.html",
+    "/us/en/faqs.html",
+    "/us/en.html",
+    "/us/en/magazine/arctic-surfing.html"
+   ]
+  },
+  {
+   "id": "a-cms-app-settings-object-granite",
+   "class": "A",
+   "feature": "CMS / app settings object Granite",
+   "hint": "settings",
+   "evidence": [],
+   "pages": [
+    "/us/en/about-us.html",
+    "/us/en/adventures/bali-surf-camp.html",
+    "/us/en/adventures.html",
+    "/us/en/faqs.html",
+    "/us/en.html",
+    "/us/en/magazine/arctic-surfing.html"
+   ]
+  },
+  {
+   "id": "a-cms-app-settings-object-cq",
+   "class": "A",
+   "feature": "CMS / app settings object CQ",
+   "hint": "settings",
+   "evidence": [],
+   "pages": [
+    "/us/en/about-us.html",
+    "/us/en/adventures/bali-surf-camp.html",
+    "/us/en/adventures.html",
+    "/us/en/faqs.html",
+    "/us/en.html",
+    "/us/en/magazine/arctic-surfing.html"
+   ]
+  },
+  {
+   "id": "d-first-party-data-file-get-home-users-o-oa6pkcc2rneodh2ni0q",
+   "class": "D",
+   "feature": "first-party data file GET /home/users/o/oa6PkCC2rneOdh2ni0qG.infinity.json",
+   "api": {
+    "method": "GET",
+    "path": "/home/users/o/oa6PkCC2rneOdh2ni0qG.infinity.json"
+   },
+   "hint": "data",
+   "evidence": [
+    "GET /home/users/o/oa6PkCC2rneOdh2ni0qG.infinity.json → 200"
+   ],
+   "pages": [
+    "/us/en/about-us.html",
+    "/us/en/adventures/bali-surf-camp.html",
+    "/us/en/adventures.html",
+    "/us/en/faqs.html",
+    "/us/en.html",
+    "/us/en/magazine/arctic-surfing.html"
+   ],
+   "reach": {
+    "pages": 26,
+    "of": 26
+   }
+  },
+  {
+   "id": "d-first-party-data-file-get-libs-granite-csrf-token-json",
+   "class": "D",
+   "feature": "first-party data file GET /libs/granite/csrf/token.json",
+   "api": {
+    "method": "GET",
+    "path": "/libs/granite/csrf/token.json"
+   },
+   "hint": "data",
+   "evidence": [
+    "GET /libs/granite/csrf/token.json → 200"
+   ],
+   "pages": [
+    "/us/en/about-us.html",
+    "/us/en/adventures/bali-surf-camp.html",
+    "/us/en/adventures.html",
+    "/us/en/faqs.html",
+    "/us/en.html",
+    "/us/en/magazine/arctic-surfing.html"
+   ],
+   "reach": {
+    "pages": 26,
+    "of": 26
+   }
+  },
+  {
+   "id": "d-first-party-data-file-get-libs-granite-security-currentuse",
+   "class": "D",
+   "feature": "first-party data file GET /libs/granite/security/currentuser.json",
+   "api": {
+    "method": "GET",
+    "path": "/libs/granite/security/currentuser.json"
+   },
+   "hint": "data",
+   "evidence": [
+    "GET /libs/granite/security/currentuser.json?nocache → 200"
+   ],
+   "pages": [
+    "/us/en/about-us.html",
+    "/us/en/adventures/bali-surf-camp.html",
+    "/us/en/adventures.html",
+    "/us/en/faqs.html",
+    "/us/en.html",
+    "/us/en/magazine/arctic-surfing.html"
+   ],
+   "reach": {
+    "pages": 26,
+    "of": 26
+   }
+  },
+  {
+   "id": "d-first-party-data-file-get-content-wknd-us-en-about-us-jcr-",
+   "class": "D",
+   "feature": "first-party data file GET /content/wknd/us/en/about-us/_jcr_content/contexthub.pagedata.json",
+   "api": {
+    "method": "GET",
+    "path": "/content/wknd/us/en/about-us/_jcr_content/contexthub.pagedata.json"
+   },
+   "hint": "data",
+   "evidence": [
+    "GET /content/wknd/us/en/about-us/_jcr_content/contexthub.pagedata.json → 200"
+   ],
+   "pages": [
+    "/us/en/about-us.html"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 26
+   }
+  },
+  {
+   "id": "d-first-party-data-file-get-content-wknd-us-en-adventures-ba",
+   "class": "D",
+   "feature": "first-party data file GET /content/wknd/us/en/adventures/bali-surf-camp/_jcr_content/contexthub.pagedata.json",
+   "api": {
+    "method": "GET",
+    "path": "/content/wknd/us/en/adventures/bali-surf-camp/_jcr_content/contexthub.pagedata.json"
+   },
+   "hint": "data",
+   "evidence": [
+    "GET /content/wknd/us/en/adventures/bali-surf-camp/_jcr_content/contexthub.pagedata.json → 200"
+   ],
+   "pages": [
+    "/us/en/adventures/bali-surf-camp.html"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 26
+   }
+  },
+  {
+   "id": "d-first-party-data-file-get-content-wknd-us-en-adventures-jc",
+   "class": "D",
+   "feature": "first-party data file GET /content/wknd/us/en/adventures/_jcr_content/contexthub.pagedata.json",
+   "api": {
+    "method": "GET",
+    "path": "/content/wknd/us/en/adventures/_jcr_content/contexthub.pagedata.json"
+   },
+   "hint": "data",
+   "evidence": [
+    "GET /content/wknd/us/en/adventures/_jcr_content/contexthub.pagedata.json → 200"
+   ],
+   "pages": [
+    "/us/en/adventures.html"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 26
+   }
+  },
+  {
+   "id": "d-first-party-data-file-get-content-wknd-us-en-faqs-jcr-cont",
+   "class": "D",
+   "feature": "first-party data file GET /content/wknd/us/en/faqs/_jcr_content/contexthub.pagedata.json",
+   "api": {
+    "method": "GET",
+    "path": "/content/wknd/us/en/faqs/_jcr_content/contexthub.pagedata.json"
+   },
+   "hint": "data",
+   "evidence": [
+    "GET /content/wknd/us/en/faqs/_jcr_content/contexthub.pagedata.json → 200"
+   ],
+   "pages": [
+    "/us/en/faqs.html"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 26
+   }
+  },
+  {
+   "id": "d-first-party-data-file-get-content-wknd-us-en-jcr-content-c",
+   "class": "D",
+   "feature": "first-party data file GET /content/wknd/us/en/_jcr_content/contexthub.pagedata.json",
+   "api": {
+    "method": "GET",
+    "path": "/content/wknd/us/en/_jcr_content/contexthub.pagedata.json"
+   },
+   "hint": "data",
+   "evidence": [
+    "GET /content/wknd/us/en/_jcr_content/contexthub.pagedata.json → 200"
+   ],
+   "pages": [
+    "/us/en.html"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 26
+   }
+  },
+  {
+   "id": "d-first-party-data-file-get-content-wknd-us-en-magazine-arct",
+   "class": "D",
+   "feature": "first-party data file GET /content/wknd/us/en/magazine/arctic-surfing/_jcr_content/contexthub.pagedata.json",
+   "api": {
+    "method": "GET",
+    "path": "/content/wknd/us/en/magazine/arctic-surfing/_jcr_content/contexthub.pagedata.json"
+   },
+   "hint": "data",
+   "evidence": [
+    "GET /content/wknd/us/en/magazine/arctic-surfing/_jcr_content/contexthub.pagedata.json → 200"
+   ],
+   "pages": [
+    "/us/en/magazine/arctic-surfing.html"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 26
+   }
+  },
+  {
+   "id": "f-form-cmp-search-form-origin-content-wknd-us-en-about-us-se",
+   "class": "F",
+   "feature": "form \"cmp-search__form\" → origin /content/wknd/us/en/about-us.searchresults.json/_jcr_content/root/container/container_1195249223/search (1 fields)",
+   "signature": [
+    "text:fulltext"
+   ],
+   "hint": "forms",
+   "evidence": [
+    "text:fulltext"
+   ],
+   "pages": [
+    "/us/en/about-us.html"
+   ]
+  },
+  {
+   "id": "f-form-cmp-search-form-origin-content-wknd-us-en-adventures-",
+   "class": "F",
+   "feature": "form \"cmp-search__form\" → origin /content/wknd/us/en/adventures/bali-surf-camp.searchresults.json/_jcr_content/root/container/container_1195249223/search (1 fields)",
+   "signature": [
+    "text:fulltext"
+   ],
+   "hint": "forms",
+   "evidence": [
+    "text:fulltext"
+   ],
+   "pages": [
+    "/us/en/adventures/bali-surf-camp.html"
+   ]
+  },
+  {
+   "id": "f-form-cmp-search-form-origin-content-wknd-us-en-adventures-",
+   "class": "F",
+   "feature": "form \"cmp-search__form\" → origin /content/wknd/us/en/adventures.searchresults.json/_jcr_content/root/container/container_1195249223/search (1 fields)",
+   "signature": [
+    "text:fulltext"
+   ],
+   "hint": "forms",
+   "evidence": [
+    "text:fulltext"
+   ],
+   "pages": [
+    "/us/en/adventures.html"
+   ]
+  },
+  {
+   "id": "f-form-cmp-search-form-origin-content-wknd-us-en-faqs-search",
+   "class": "F",
+   "feature": "form \"cmp-search__form\" → origin /content/wknd/us/en/faqs.searchresults.json/_jcr_content/root/container/container_1195249223/search (1 fields)",
+   "signature": [
+    "text:fulltext"
+   ],
+   "hint": "forms",
+   "evidence": [
+    "text:fulltext"
+   ],
+   "pages": [
+    "/us/en/faqs.html"
+   ]
+  },
+  {
+   "id": "f-form-cmp-search-form-origin-content-wknd-us-en-searchresul",
+   "class": "F",
+   "feature": "form \"cmp-search__form\" → origin /content/wknd/us/en.searchresults.json/_jcr_content/root/container/container_1195249223/search (1 fields)",
+   "signature": [
+    "text:fulltext"
+   ],
+   "hint": "forms",
+   "evidence": [
+    "text:fulltext"
+   ],
+   "pages": [
+    "/us/en.html"
+   ]
+  },
+  {
+   "id": "f-form-cmp-search-form-origin-content-wknd-us-en-magazine-ar",
+   "class": "F",
+   "feature": "form \"cmp-search__form\" → origin /content/wknd/us/en/magazine/arctic-surfing.searchresults.json/_jcr_content/root/container/container_1195249223/search (1 fields)",
+   "signature": [
+    "text:fulltext"
+   ],
+   "hint": "forms",
+   "evidence": [
+    "text:fulltext"
+   ],
+   "pages": [
+    "/us/en/magazine/arctic-surfing.html"
+   ]
+  },
+  {
+   "id": "i18n-locale-variants-ca-ca-ch-ch-ch",
+   "class": "I18N",
+   "feature": "locale variants ca,ca,ch,ch,ch",
+   "hint": "locale",
+   "evidence": [
+    "https://wknd.site/ca/en/about-us.html",
+    "https://wknd.site/ca/fr.html",
+    "https://wknd.site/ch/de.html",
+    "https://wknd.site/ca/en/adventures/bali-surf-camp.html",
+    "https://wknd.site/ca/en/adventures.html",
+    "https://wknd.site/ca/en/faqs.html",
+    "https://wknd.site/ca/en.html",
+    "https://wknd.site/ca/en/magazine/arctic-surfing.html"
+   ],
+   "pages": [
+    "/us/en/about-us.html",
+    "/us/en/adventures/bali-surf-camp.html",
+    "/us/en/adventures.html",
+    "/us/en/faqs.html",
+    "/us/en.html",
+    "/us/en/magazine/arctic-surfing.html"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-cmp-image-list-16-cards",
+   "class": "L",
+   "feature": "listing candidate cmp-image-list (16 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/us/en/adventures.html"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-cmp-image-list-6-cards",
+   "class": "L",
+   "feature": "listing candidate cmp-image-list (6 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/us/en/adventures.html"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-cmp-list-4-cards",
+   "class": "L",
+   "feature": "listing candidate cmp-list (4 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/us/en/magazine/arctic-surfing.html"
+   ]
+  },
+  {
+   "id": "m-modal-trigger-data-modal-url-chrome-only-target-outside-do",
+   "class": "M",
+   "feature": "modal trigger data-modal-url (chrome only) → target outside DOM at capture",
+   "hint": "chrome-interaction",
+   "evidence": [
+    "https://wknd.site/us/en/about-us.html#sign-in",
+    "https://wknd.site/us/en/about-us.html#sign-out",
+    "https://wknd.site/us/en/adventures/bali-surf-camp.html#sign-in",
+    "https://wknd.site/us/en/adventures/bali-surf-camp.html#sign-out",
+    "https://wknd.site/us/en/adventures.html#sign-in",
+    "https://wknd.site/us/en/adventures.html#sign-out",
+    "https://wknd.site/us/en/faqs.html#sign-in",
+    "https://wknd.site/us/en/faqs.html#sign-out",
+    "https://wknd.site/us/en.html#sign-in",
+    "https://wknd.site/us/en.html#sign-out",
+    "https://wknd.site/us/en/magazine/arctic-surfing.html#sign-in",
+    "https://wknd.site/us/en/magazine/arctic-surfing.html#sign-out"
+   ],
+   "pages": [
+    "/us/en/about-us.html",
+    "/us/en/adventures/bali-surf-camp.html",
+    "/us/en/adventures.html",
+    "/us/en/faqs.html",
+    "/us/en.html",
+    "/us/en/magazine/arctic-surfing.html"
+   ],
+   "reach": {
+    "pages": 52,
+    "of": 26
+   }
+  },
+  {
+   "id": "t-tag-manager-adobe-launch",
+   "class": "T",
+   "feature": "tag manager: Adobe Launch",
+   "role": "tag manager: Adobe Launch",
+   "hint": "tags",
+   "evidence": [
+    "assets.adobedtm.com"
+   ],
+   "pages": [
+    "/us/en/about-us.html",
+    "/us/en/adventures/bali-surf-camp.html",
+    "/us/en/adventures.html",
+    "/us/en/faqs.html",
+    "/us/en.html",
+    "/us/en/magazine/arctic-surfing.html"
+   ]
+  },
+  {
+   "id": "t-analytics-adobe-analytics-experience-cloud-id",
+   "class": "T",
+   "feature": "analytics: Adobe Analytics / Experience Cloud ID",
+   "role": "analytics: Adobe Analytics / Experience Cloud ID",
+   "hint": "tags",
+   "evidence": [
+    "dpm.demdex.net",
+    "wkndsite.demdex.net"
+   ],
+   "pages": [
+    "/us/en/about-us.html",
+    "/us/en/adventures/bali-surf-camp.html",
+    "/us/en/adventures.html",
+    "/us/en/faqs.html",
+    "/us/en.html",
+    "/us/en/magazine/arctic-surfing.html"
+   ]
+  },
+  {
+   "id": "t-marketing-ad-retargeting-pixel",
+   "class": "T",
+   "feature": "marketing: ad / retargeting pixel",
+   "role": "marketing: ad / retargeting pixel",
+   "hint": "tags",
+   "evidence": [
+    "cm.everesttech.net"
+   ],
+   "pages": [
+    "/us/en/about-us.html",
+    "/us/en/adventures/bali-surf-camp.html",
+    "/us/en/adventures.html",
+    "/us/en/faqs.html",
+    "/us/en.html",
+    "/us/en/magazine/arctic-surfing.html"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-wkndsitewknd887971p-112-2o7-net",
+   "class": "T",
+   "feature": "unknown third-party host wkndsitewknd887971p.112.2o7.net",
+   "hint": "inspect",
+   "evidence": [
+    "wkndsitewknd887971p.112.2o7.net"
+   ],
+   "pages": [
+    "/us/en/about-us.html",
+    "/us/en/adventures/bali-surf-camp.html",
+    "/us/en/adventures.html",
+    "/us/en/faqs.html",
+    "/us/en.html",
+    "/us/en/magazine/arctic-surfing.html"
+   ]
+  },
+  {
+   "id": "x-sign-in-account-links",
+   "class": "X",
+   "feature": "sign-in / account links",
+   "hint": "decided-out",
+   "evidence": [
+    "https://wknd.site/us/en/about-us.html#sign-in",
+    "https://wknd.site/us/en/adventures/bali-surf-camp.html#sign-in",
+    "https://wknd.site/us/en/adventures.html#sign-in",
+    "https://wknd.site/us/en/faqs.html#sign-in",
+    "https://wknd.site/us/en.html#sign-in",
+    "https://wknd.site/us/en/magazine/arctic-surfing.html#sign-in"
+   ],
+   "pages": [
+    "/us/en/about-us.html",
+    "/us/en/adventures/bali-surf-camp.html",
+    "/us/en/adventures.html",
+    "/us/en/faqs.html",
+    "/us/en.html",
+    "/us/en/magazine/arctic-surfing.html"
+   ]
+  }
+ ],
+ "reach": {
+  "pagesWithEvidence": 26,
+  "of": 26,
+  "endpoints": {
+   "GET wknd.site/conf/wknd/settings/wcm/segments.seg.js": 26,
+   "GET wknd.site/home/users/o/oa6PkCC2rneOdh2ni0qG.infinity.json": 26,
+   "GET wknd.site/libs/granite/csrf/token.json": 26,
+   "GET wknd.site/content/wknd/us/en/about-us/_jcr_content/contexthub.pagedata.json": 1,
+   "GET wknd.site/libs/granite/security/currentuser.json": 26,
+   "GET wknd.site/content/wknd/us/en/adventures/bali-surf-camp/_jcr_content/contexthub.pagedata.json": 1,
+   "GET wknd.site/content/wknd/us/en/adventures/beervana-portland/_jcr_content/contexthub.pagedata.json": 1,
+   "GET wknd.site/content/wknd/us/en/adventures/climbing-new-zealand/_jcr_content/contexthub.pagedata.json": 1,
+   "GET wknd.site/content/wknd/us/en/adventures/colorado-rock-climbing/_jcr_content/contexthub.pagedata.json": 1,
+   "GET wknd.site/content/wknd/us/en/adventures/cycling-southern-utah/_jcr_content/contexthub.pagedata.json": 1,
+   "GET wknd.site/content/wknd/us/en/adventures/cycling-tuscany/_jcr_content/contexthub.pagedata.json": 1,
+   "GET wknd.site/content/wknd/us/en/adventures/downhill-skiing-wyoming/_jcr_content/contexthub.pagedata.json": 1,
+   "GET wknd.site/content/wknd/us/en/adventures/gastronomic-marais-tour/_jcr_content/contexthub.pagedata.json": 1,
+   "GET wknd.site/content/wknd/us/en/adventures/_jcr_content/contexthub.pagedata.json": 1,
+   "GET dpm.demdex.net/id": 4,
+   "GET wknd.site/content/wknd/us/en/adventures/napa-wine-tasting/_jcr_content/contexthub.pagedata.json": 1,
+   "GET wknd.site/content/wknd/us/en/adventures/riverside-camping-australia/_jcr_content/contexthub.pagedata.json": 1,
+   "GET wknd.site/content/wknd/us/en/adventures/ski-touring-mont-blanc/_jcr_content/contexthub.pagedata.json": 1,
+   "GET wknd.site/content/wknd/us/en/adventures/surf-camp-costa-rica/_jcr_content/contexthub.pagedata.json": 1,
+   "GET wknd.site/content/wknd/us/en/adventures/tahoe-skiing/_jcr_content/contexthub.pagedata.json": 1,
+   "GET wknd.site/content/wknd/us/en/adventures/west-coast-cycling/_jcr_content/contexthub.pagedata.json": 1,
+   "GET wknd.site/content/wknd/us/en/adventures/whistler-mountain-biking/_jcr_content/contexthub.pagedata.json": 1,
+   "GET wknd.site/content/wknd/us/en/adventures/yosemite-backpacking/_jcr_content/contexthub.pagedata.json": 1,
+   "GET wknd.site/content/wknd/us/en/faqs/_jcr_content/contexthub.pagedata.json": 1,
+   "GET wknd.site/content/wknd/us/en/_jcr_content/contexthub.pagedata.json": 1,
+   "GET wknd.site/content/wknd/us/en/magazine/arctic-surfing/_jcr_content/contexthub.pagedata.json": 1,
+   "GET wknd.site/content/wknd/us/en/magazine/guide-la-skateparks/_jcr_content/contexthub.pagedata.json": 1,
+   "GET wknd.site/content/wknd/us/en/magazine/_jcr_content/contexthub.pagedata.json": 1,
+   "GET wknd.site/content/wknd/us/en/magazine/san-diego-surf/_jcr_content/contexthub.pagedata.json": 1,
+   "GET wknd.site/content/wknd/us/en/magazine/ski-touring/_jcr_content/contexthub.pagedata.json": 1,
+   "GET wknd.site/content/wknd/us/en/magazine/western-australia/_jcr_content/contexthub.pagedata.json": 1
+  },
+  "searchFormPages": 26,
+  "formPages": 0,
+  "triggerPages": {
+   "data-modal-url": 52
+  }
+ }
+}

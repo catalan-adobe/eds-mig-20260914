@@ -10,82 +10,109 @@
  * governing permissions and limitations under the License.
  */
 
+/* WKND foundation — tokens and base typography lifted from stardust/prototypes/canon.css
+   (clientlib-site.min.css of wknd.site). Brand faces load from styles/fonts.css after
+   first paint; the metric-matched *-fallback faces below hold the line boxes until then.
+   Box model: the source is content-box by default and declares border-box per element —
+   lifted rules keep that (no global reset), so a width + padding pair renders as on the source. */
+
 :root {
-  /* colors */
-  --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
-
   /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --heading-font-family: asar, asar-fallback, georgia, 'Times New Roman', times, serif;
+  --body-font-family:
+    'Source Sans Pro', source-sans-pro-fallback, 'Helvetica Neue', helvetica, arial, sans-serif;
+  --icon-font-family: wknd-icon-font;
 
-  /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 19px;
-  --body-font-size-xs: 17px;
+  /* type scale */
+  --heading-xxl: 40px;
+  --heading-xl: 36px;
+  --heading-lg: 24px;
+  --heading-md: 16px;
+  --body: 18px;
+  --body-sm: 14px;
+  --body-xs: 12px;
+  --body-xxs: 10px;
+  --line-height-heading: 1.5;
+  --line-height-body: 1.5;
+  --font-weight-bold: 600;
 
-  /* heading sizes */
-  --heading-font-size-xxl: 55px;
-  --heading-font-size-xl: 44px;
-  --heading-font-size-l: 34px;
-  --heading-font-size-m: 27px;
-  --heading-font-size-s: 24px;
-  --heading-font-size-xs: 22px;
+  /* colors */
+  --color-bg: #fff;
+  --color-fg: #202020;
+  --color-accent: #ffea00;
+  --color-secondary: #202020;
+  --color-third: #ebebeb;
+  --color-fg-inverse: #ebebeb;
+  --color-fg-inverse-strong: #f7f7f7;
+  --color-muted: dimgray;
+  --color-link: #0045ff;
 
-  /* nav height */
-  --nav-height: 64px;
+  /* spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 14px;
+  --spacing-lg: 27px;
+  --spacing-xl: 48px;
+  --spacing-2xl: 72px;
+  --section-padding: 48px;
+
+  /* layout */
+  --max-width: 1164px;
+  --root-max-width: 1680px;
+  --radius: 0;
+  --header-height: 200px;
+  --header-mobile-height: 130px;
+  --utility-nav-height: 25px;
+  --button-size: 48px;
+
+  /* the in-flow reservation for the fixed header (= .page-root padding-top on the source) */
+  --nav-height: var(--header-height);
 }
 
-/* fallback fonts */
+/* fallback fonts — local faces re-declared with the brand fonts' metrics (zero CLS on swap) */
 @font-face {
-  font-family: roboto-condensed-fallback;
-  size-adjust: 88.82%;
-  src: local('Arial');
+  font-family: asar-fallback;
+  size-adjust: 95.56%;
+  ascent-override: 125.16%;
+  descent-override: 58.29%;
+  line-gap-override: 0%;
+  src: local('Georgia');
 }
 
 @font-face {
-  font-family: roboto-fallback;
-  size-adjust: 99.529%;
-  src: local('Arial');
+  font-family: source-sans-pro-fallback;
+  size-adjust: 93.5%;
+  ascent-override: 105.24%;
+  descent-override: 29.2%;
+  line-gap-override: 0%;
+  src: local('Helvetica Neue'), local('Arial');
 }
 
-@media (width >= 900px) {
+@media (width <= 1024px) {
   :root {
-    /* body sizes */
-    --body-font-size-m: 18px;
-    --body-font-size-s: 16px;
-    --body-font-size-xs: 14px;
-
-    /* heading sizes */
-    --heading-font-size-xxl: 45px;
-    --heading-font-size-xl: 36px;
-    --heading-font-size-l: 28px;
-    --heading-font-size-m: 22px;
-    --heading-font-size-s: 20px;
-    --heading-font-size-xs: 18px;
+    --nav-height: var(--header-mobile-height);
   }
 }
 
 body {
   display: none;
   margin: 0;
-  background-color: var(--background-color);
-  color: var(--text-color);
+  padding: 0;
+  background-color: var(--color-bg);
+  color: var(--color-fg);
   font-family: var(--body-font-family);
-  font-size: var(--body-font-size-m);
-  line-height: 1.6;
+  font-size: var(--body);
+  line-height: var(--line-height-body);
+  text-align: left;
 }
 
 body.appear {
   display: block;
 }
 
-header {
+body > header {
   height: var(--nav-height);
+  background-color: var(--color-bg);
 }
 
 header .header,
@@ -93,9 +120,23 @@ footer .footer {
   visibility: hidden;
 }
 
-header .header[data-block-status="loaded"],
-footer .footer[data-block-status="loaded"] {
+header .header[data-block-status='loaded'],
+footer .footer[data-block-status='loaded'] {
   visibility: visible;
+}
+
+/* .page-root on the source: the page body is capped at 1680px and centred */
+main,
+footer {
+  max-width: var(--root-max-width);
+  margin: 0 auto;
+}
+
+/* live .page-main and every .column are floats (own BFCs): main's last margin never collapses
+   into the footer's margin-top, and default-content margins never collapse across sections */
+main,
+main .section > .default-content-wrapper {
+  display: flow-root;
 }
 
 h1,
@@ -104,46 +145,50 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
+  color: var(--color-fg);
+  line-height: var(--line-height-heading);
+  scroll-margin: calc(var(--nav-height) + 20px);
+}
+
+h1,
+h2,
+h3 {
+  margin: 27px 0 13.5px;
   font-family: var(--heading-font-family);
-  font-weight: 600;
-  line-height: 1.25;
-  scroll-margin: 40px;
+  font-weight: normal;
 }
 
-h1 { font-size: var(--heading-font-size-xxl); }
-h2 { font-size: var(--heading-font-size-xl); }
-h3 { font-size: var(--heading-font-size-l); }
-h4 { font-size: var(--heading-font-size-m); }
-h5 { font-size: var(--heading-font-size-s); }
-h6 { font-size: var(--heading-font-size-xs); }
-
-p,
-dl,
-ol,
-ul,
-pre,
-blockquote {
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
+h4,
+h5,
+h6 {
+  font-family: var(--body-font-family);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
 }
 
-code,
-pre {
-  font-size: var(--body-font-size-s);
+h1 { font-size: var(--heading-xxl); }
+h2 { font-size: var(--heading-xl); }
+h3 { font-size: var(--heading-lg); }
+h4 { font-size: var(--heading-md); }
+h5 { font-size: var(--body-sm); }
+h6 { font-size: var(--body-xxs); }
+
+p {
+  margin: 0 0 13.5px;
+  font-size: var(--body);
+  line-height: 2.5;
+  text-align: justify;
 }
 
-pre {
-  padding: 16px;
-  border-radius: 8px;
-  background-color: var(--light-color);
-  overflow-x: auto;
-  white-space: pre;
+a:any-link {
+  color: var(--color-link);
+  text-decoration: none;
+  overflow-wrap: break-word;
 }
 
-main > div {
-  margin: 40px 16px;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 input,
@@ -153,45 +198,70 @@ button {
   font: inherit;
 }
 
-/* links */
-a:any-link {
-  color: var(--link-color);
-  text-decoration: none;
-  overflow-wrap: break-word;
+/* decorated icon images (span.icon.icon-<name> -> /icons/<name>.svg, sized by the font size) */
+.icon {
+  display: inline-block;
+  line-height: 1;
 }
 
-a:hover {
-  color: var(--link-hover-color);
-  text-decoration: underline;
+.icon img {
+  display: block;
+  width: auto;
+  height: 1em;
 }
 
-/* buttons */
+/* icon-font glyphs (wknd-icon-font) — presentational spans built by block JS */
+.glyph {
+  display: inline-block;
+  font-family: var(--icon-font-family);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.glyph-menu::before { content: '\e916'; }
+.glyph-left-arrow::before { content: '\e90f'; }
+.glyph-right-arrow::before { content: '\e90e'; }
+
+/* buttons — the source's .button > a (48px bar, 14px 600 uppercase); authored as
+   <strong><a> = primary (accent yellow), <em><a> = secondary (dark), <em><strong><a> = accent
+   (the source's unstyled grey default) */
 p.button-wrapper {
-  margin: 12px 0;
+  display: flex;
+  margin: 0;
+  line-height: var(--line-height-body);
+  text-align: left;
 }
 
 a.button:any-link,
 button.button {
   box-sizing: border-box;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 100%;
+  display: block;
+  height: var(--button-size);
+  min-width: var(--button-size);
   margin: 0;
-  border: 2px solid transparent;
-  border-radius: 2.4em;
-  padding: 0.5em 1.2em;
+  border: none;
+  border-radius: var(--radius);
+  padding: 1rem 2rem 0;
+  background-color: var(--color-third);
+  color: var(--color-fg);
   font: inherit;
-  font-weight: 500;
-  line-height: 1.25;
+  font-size: var(--body-sm);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-body);
+  text-align: center;
   text-decoration: none;
-  cursor: pointer;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  text-transform: uppercase;
   white-space: nowrap;
+  cursor: pointer;
 }
 
-a.button[aria-disabled="true"],
+a.button[aria-disabled='true'],
 button.button:disabled {
   cursor: not-allowed;
   pointer-events: none;
@@ -199,127 +269,301 @@ button.button:disabled {
 
 a.button.primary,
 button.button.primary {
-  border-color: var(--text-color);
-  background-color: var(--text-color);
-  color: var(--background-color);
-}
-
-a.button.primary:hover,
-a.button.primary:focus-visible,
-button.button.primary:hover,
-button.button.primary:focus-visible {
-  border-color: var(--dark-color);
-  background-color: var(--dark-color);
-  color: var(--light-color);
-}
-
-a.button.primary[aria-disabled="true"],
-a.button.primary[aria-disabled="true"]:hover,
-a.button.primary[aria-disabled="true"]:focus-visible,
-button.button.primary:disabled,
-button.button.primary:disabled:hover,
-button.button.primary:disabled:focus-visible {
-  background-color: var(--light-color);
-  border-color: var(--light-color);
-  color: var(--dark-color);
+  background-color: var(--color-accent);
+  color: var(--color-fg);
 }
 
 a.button.secondary,
 button.button.secondary {
-  border-color: var(--text-color);
-  background-color: transparent;
-  color: var(--text-color);
+  background-color: var(--color-secondary);
+  color: var(--color-fg-inverse);
 }
 
-a.button.secondary:hover,
-a.button.secondary:focus-visible,
-button.button.secondary:hover,
-button.button.secondary:focus-visible {
-  border-color: var(--dark-color);
-  background-color: var(--light-color);
-  color: var(--dark-color);
-}
-
-a.button.secondary[aria-disabled="true"],
-a.button.secondary[aria-disabled="true"]:hover,
-a.button.secondary[aria-disabled="true"]:focus-visible,
-button.button.secondary:disabled,
-button.button.secondary:disabled:hover,
-button.button.secondary:disabled:focus-visible {
-  background-color: var(--light-color);
-  border-color: var(--light-color);
-  color: var(--dark-color);
-}
-
-/* high-impact call-to-action */
 a.button.accent,
 button.button.accent {
-  border-color: var(--link-color);
-  background-color: var(--link-color);
-  color: var(--background-color);
+  background-color: var(--color-third);
+  color: var(--color-fg);
 }
 
-a.button.accent:hover,
-a.button.accent:focus-visible,
-button.button.accent:hover,
-button.button.accent:focus-visible {
-  border-color: var(--link-hover-color);
-  background-color: var(--link-hover-color);
-}
-
-a.button.accent[aria-disabled="true"],
-a.button.accent[aria-disabled="true"]:hover,
-a.button.accent[aria-disabled="true"]:focus-visible,
-button.button.accent:disabled,
-button.button.accent:disabled:hover,
-button.button.accent:disabled:focus-visible {
-  background-color: var(--light-color);
-  border-color: var(--light-color);
-  color: var(--dark-color);
-}
-
-main img {
-  max-width: 100%;
-  width: auto;
-  height: auto;
-}
-
-.icon {
-  display: inline-block;
-  height: 24px;
-  width: 24px;
-}
-
-.icon img {
-  height: 100%;
-  width: 100%;
-}
-
-/* sections */
+/* sections — .container (1164px above 1024px) + .column (0 14px gutters) of the source */
 main > .section {
-  margin: 40px 0;
+  margin: 0;
 }
 
 main > .section > div {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 24px;
+  box-sizing: border-box;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 14px;
 }
 
-main > .section:first-of-type {
-  margin-top: 0;
+main .section:empty {
+  display: none;
 }
 
-@media (width >= 900px) {
-  main > .section > div {
-    padding: 0 32px;
+/* full-bleed escape (.column--flush outside .container on the source) */
+main > .section.flush > div {
+  max-width: none;
+  padding: 0;
+}
+
+/* default-content images (cmp-image) */
+main .default-content-wrapper p:has(picture) {
+  margin: 0;
+  line-height: var(--line-height-body);
+}
+
+/* cmp-image: block box holding an INLINE img — the line box keeps the source's 7px descender */
+main .default-content-wrapper picture {
+  display: block;
+}
+
+main .default-content-wrapper picture img {
+  display: inline;
+  width: 100%;
+  height: auto;
+  margin: 7px 0;
+}
+
+/* section style `underline` (cmp-title--underline): 84px accent rule under the title */
+main .section.underline :is(h1, h2, h3, h4)::after {
+  content: '';
+  display: block;
+  width: 84px;
+  padding-top: 8px;
+  border-bottom: 2px solid var(--color-accent);
+}
+
+/* section style `font-small` (cmp-text--font-small) */
+main .section.font-small p {
+  font-size: var(--body-sm);
+}
+
+/* section style `dark` — inverse ground for prose sections */
+main .section.dark {
+  background-color: var(--color-secondary);
+  color: var(--color-fg-inverse);
+}
+
+main .section.dark :is(h1, h2, h3, h4, h5, h6) {
+  color: var(--color-fg-inverse);
+}
+
+/* separator (cmp-separator) — an EMPTY section carrying the style: `separator` draws the
+   2px rule (live hr: 1px border on every side, height 0) with 4rem margins, `spacer` is the
+   source's hidden + space-small variant (1em gap), `space-medium` the 2em variant. The section
+   is a BFC like the live floated .column, so its margins stack on the neighbours' instead of
+   collapsing (a following heading sits 91px below the rule on live, not 64px). */
+main .section:is(.separator, .spacer)[data-section-status='loaded'] {
+  display: flow-root !important;
+}
+
+main .section.separator::after,
+main .section.spacer::after {
+  content: '';
+  display: block;
+  width: calc(100% - 28px);
+  max-width: calc(var(--max-width) - 28px);
+  margin: 4rem auto;
+  border-top: 2px solid var(--color-third);
+}
+
+main .section.separator.space-medium::after {
+  margin: 2em auto;
+}
+
+main .section.spacer::after {
+  margin: 1em auto;
+  border-top: none;
+}
+
+/* section style `page-title` (listing pages): the h1 sits directly in live's .container--fixed,
+   not in a 14px .column gutter */
+main > .section.page-title > div {
+  padding: 0;
+}
+
+/* section style `breadcrumb` (cmp-breadcrumb): an authored <ol>/<ul> of links, last item plain;
+   live's nav is inline-block, so the list rides the wrapper's text baseline (5px at 1440) */
+main .section.breadcrumb :is(ol, ul) {
+  display: inline-block;
+  margin: 0;
+  padding: 0 12px 0 0;
+  list-style: none;
+  font-size: var(--body-sm);
+}
+
+main .section.breadcrumb li {
+  display: inline-block;
+  padding: 10px 5px;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+
+main .section.breadcrumb li::before {
+  content: '\ea1c';
+  padding-right: 5px;
+  color: var(--color-accent);
+  font-family: var(--icon-font-family);
+  font-size: 1em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+main .section.breadcrumb li:first-child {
+  padding-left: 0;
+}
+
+main .section.breadcrumb li:first-child::before {
+  content: none;
+}
+
+main .section.breadcrumb a {
+  color: var(--color-fg);
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+}
+
+body.article main .section.breadcrumb :is(ol, ul) {
+  margin: 1em 0 0;
+  padding: 12px 12px 0 0;
+}
+
+@media (width <= 1024px) {
+  body.article main .section.breadcrumb :is(ol, ul) {
+    margin-top: 0;
   }
 }
 
-/* section metadata */
-main .section.light,
-main .section.highlight {
-  background-color: var(--light-color);
+@media (width <= 767px) {
+  main .section.breadcrumb :is(ol, ul) {
+    font-size: var(--body-xs);
+  }
+}
+
+/* section style `article-layout` (magazine article): main column 2/3, sidebar 1/3 —
+   every wrapper flows down the main column, the upnext-list block is the sidebar */
+main .section.article-layout {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+main .section.article-layout > div {
+  max-width: none;
   margin: 0;
-  padding: 40px 0;
+  padding: 0;
+}
+
+@media (width >= 1025px) {
+  main .section.article-layout {
+    display: grid;
+    grid-template-columns: 66.6667% 25%;
+    grid-template-rows: repeat(19, auto) 1fr;
+    column-gap: 8.3333%;
+    align-items: start;
+  }
+
+  main .section.article-layout > .upnext-list-wrapper {
+    grid-column: 2;
+    grid-row: 1 / span 20;
+  }
+}
+
+/* section style `program-layout` (adventure detail): underlined title over
+   trip-facts (1/4, flush) beside tabs (3/4) */
+main .section.program-layout {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 14px;
+}
+
+main .section.program-layout > div {
+  max-width: none;
+  margin: 0;
+  padding: 0 14px;
+}
+
+main .section.program-layout > .trip-facts-wrapper {
+  padding: 0;
+}
+
+main .section.program-layout .default-content-wrapper h1::after {
+  content: '';
+  display: block;
+  width: 84px;
+  padding-top: 8px;
+  border-bottom: 2px solid var(--color-accent);
+}
+
+@media (width >= 1025px) {
+  main .section.program-layout {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-items: start;
+  }
+
+  main .section.program-layout > div {
+    grid-column: 1 / -1;
+  }
+
+  main .section.program-layout > .trip-facts-wrapper {
+    grid-column: 1;
+  }
+
+  main .section.program-layout > .tabs-wrapper {
+    grid-column: 2;
+  }
+}
+
+/* the adventure page's breadcrumb is the source's 1164 + 28px container (content-box) */
+body.program main .section.breadcrumb > div {
+  box-sizing: content-box;
+}
+
+/* Experience Workspace edit mode (da.live inline editor only) */
+
+/* (b) card-as-link inner anchor reads like the card text */
+a .prosemirror-editor a:any-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* (a) repaint CTAs from their authored marks — the editor drops the .button classes */
+.prosemirror-editor p > :is(strong, em):only-child > a:any-link,
+.prosemirror-editor p > a:any-link:has(> :is(strong, em):only-child) {
+  box-sizing: border-box;
+  display: block;
+  height: var(--button-size);
+  min-width: var(--button-size);
+  padding: 1rem 2rem 0;
+  background-color: var(--color-third);
+  color: var(--color-fg);
+  font-size: var(--body-sm);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-body);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.prosemirror-editor p > a:any-link > :is(strong, em) {
+  font-weight: inherit;
+  font-style: inherit;
+}
+
+.prosemirror-editor p > strong:only-child > a:any-link,
+.prosemirror-editor p > a:any-link:has(> strong:only-child) {
+  background-color: var(--color-accent);
+  color: var(--color-fg);
+}
+
+.prosemirror-editor p > em:only-child > a:any-link,
+.prosemirror-editor p > a:any-link:has(> em:only-child) {
+  background-color: var(--color-secondary);
+  color: var(--color-fg-inverse);
 }

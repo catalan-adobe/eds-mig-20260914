@@ -1,0 +1,214 @@
+/* hero-carousel — lifted from stardust/prototypes/canon.css
+   (.carousel, .carousel--hero, .teaser--hero, .teaser__*; R-01 h1 at --heading-xl) */
+
+/* The block is the live .column (a float, so a BFC): flow-root contains the
+   inner margin and the floated controls exactly the way the float did. */
+.hero-carousel {
+  display: flow-root;
+}
+
+/* live: .carousel--hero .carousel { margin-bottom: 4em } */
+.hero-carousel .hero-carousel-inner {
+  margin-bottom: 4em;
+}
+
+.hero-carousel .hero-carousel-content {
+  position: relative;
+}
+
+.hero-carousel .hero-carousel-item {
+  display: none;
+}
+
+.hero-carousel .hero-carousel-item.active {
+  display: block;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: hero-carousel-fade-in;
+}
+
+@keyframes hero-carousel-fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-carousel .hero-carousel-item.active {
+    animation: none;
+  }
+}
+
+/* teaser (hero variant) */
+.hero-carousel .teaser {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-carousel .teaser .image {
+  flex: 1;
+  width: 100%;
+  height: 400px;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+/* <picture> plays the live div.image (a block, height 100%); the <img> inside it
+   stays inline so the line box carries the live baseline descender */
+.hero-carousel .teaser .image picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-carousel .teaser .image img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-carousel .teaser .content {
+  flex: 1;
+  padding-right: 14px;
+  padding-left: 14px;
+}
+
+.hero-carousel .headline :is(h1, h2, h3) {
+  margin: 0.5em 0 0;
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-xl);
+}
+
+.hero-carousel .description p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.75;
+  text-align: left;
+}
+
+.hero-carousel .actions {
+  float: left;
+  margin: 1em 0;
+}
+
+.hero-carousel .actions a:any-link {
+  display: block;
+  float: left;
+  height: auto;
+  min-width: 0;
+  padding: 1em 2.5em;
+  border-radius: var(--radius);
+  background-color: var(--color-accent);
+  color: var(--color-fg);
+  font-size: var(--body-sm);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-body);
+  text-transform: uppercase;
+  white-space: normal;
+}
+
+/* controls */
+.hero-carousel .hero-carousel-actions {
+  float: right;
+  margin-top: 0;
+}
+
+/* live buttons keep the UA font (13.333px, line-height normal, padding 1px 6px);
+   the foundation's button { font: inherit } would grow them to 29px */
+.hero-carousel .hero-carousel-action {
+  margin-right: 1em;
+  padding: 1px 0 1px 6px;
+  border: none;
+  background: none;
+  font-size: 13.3333px;
+  line-height: normal;
+  appearance: none;
+  cursor: pointer;
+}
+
+.hero-carousel .hero-carousel-arrow {
+  display: inline-block;
+  font-family: var(--icon-font-family);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hero-carousel .hero-carousel-arrow-previous::before {
+  content: '\e90f';
+}
+
+.hero-carousel .hero-carousel-arrow-next::before {
+  content: '\e90e';
+}
+
+.hero-carousel .hero-carousel-indicators {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0.5em 0 0;
+  padding: 0;
+  list-style: none;
+  cursor: pointer;
+}
+
+.hero-carousel .hero-carousel-indicator {
+  position: relative;
+  flex: 0 1 auto;
+  width: 10px;
+  height: 10px;
+  margin: 0 7px;
+  border-radius: 50%;
+  background-color: #afafaf;
+}
+
+.hero-carousel .hero-carousel-indicator.active {
+  background-color: rgb(0 0 0 / 80%);
+}
+
+@media (width <= 767px) {
+  .hero-carousel .hero-carousel-indicators {
+    float: left;
+    padding-top: 14px;
+    padding-left: 14px;
+  }
+}
+
+@media (width >= 1165px) {
+  /* live L367 sizes the inner .image box too — that definite 640px is what lets
+     the img's height: 100% resolve (flex-basis 0% leaves the flex item indefinite) */
+  .hero-carousel .teaser .image,
+  .hero-carousel .teaser .image picture {
+    height: 640px;
+  }
+
+  .hero-carousel .teaser .image {
+    max-height: 640px;
+  }
+
+  .hero-carousel .teaser .content {
+    position: relative;
+    float: left;
+    width: 1136px;
+    height: 180px;
+    min-height: 180px;
+    margin-top: -180px;
+    padding-right: 28px;
+    padding-bottom: 0;
+    padding-left: 28px;
+    background-color: #fff;
+  }
+}

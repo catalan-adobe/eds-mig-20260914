@@ -1,0 +1,393 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/blocks",
+    "writtenAt": "2026-09-24T09:54:28.109Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage/pages.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-24T13:04:35.240Z",
+  "blocks": [
+    {
+      "id": "accordion",
+      "label": "accordion",
+      "kind": "module",
+      "signature": "module:accordion",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-faqs-html"
+      ],
+      "usedByPages": [
+        "us-en-faqs-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "accordion",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "content-fragment",
+      "label": "content-fragment",
+      "kind": "module",
+      "signature": "module:content-fragment",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-magazine-san-diego-surf-html"
+      ],
+      "usedByPages": [
+        "us-en-magazine-arctic-surfing-html",
+        "us-en-magazine-guide-la-skateparks-html",
+        "us-en-magazine-san-diego-surf-html",
+        "us-en-magazine-ski-touring-html",
+        "us-en-magazine-western-australia-html"
+      ],
+      "instanceCount": 5,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "article-body",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "contributor-byline",
+      "label": "contributor-byline",
+      "kind": "module",
+      "signature": "module:contributor-byline",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-magazine-san-diego-surf-html"
+      ],
+      "usedByPages": [
+        "us-en-magazine-arctic-surfing-html",
+        "us-en-magazine-guide-la-skateparks-html",
+        "us-en-magazine-san-diego-surf-html",
+        "us-en-magazine-ski-touring-html",
+        "us-en-magazine-western-australia-html"
+      ],
+      "instanceCount": 5,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "contributor-byline",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "contributor-card",
+      "label": "contributor-card",
+      "kind": "module",
+      "signature": "module:contributor-card",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-about-us-html"
+      ],
+      "usedByPages": [
+        "us-en-about-us-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "contributor-card",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "download",
+      "label": "download",
+      "kind": "module",
+      "signature": "module:download",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-magazine-san-diego-surf-html"
+      ],
+      "usedByPages": [
+        "us-en-magazine-guide-la-skateparks-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "download",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "featured-teaser",
+      "label": "featured-teaser",
+      "kind": "module",
+      "signature": "module:featured-teaser",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-adventures-html",
+        "us-en-html"
+      ],
+      "usedByPages": [
+        "us-en-html",
+        "us-en-magazine-html"
+      ],
+      "instanceCount": 2,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "featured-teaser",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "hero-carousel",
+      "label": "hero-carousel",
+      "kind": "module",
+      "signature": "module:hero-carousel",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-html"
+      ],
+      "usedByPages": [
+        "us-en-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "hero-carousel",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "hero-teaser",
+      "label": "hero-teaser",
+      "kind": "module",
+      "signature": "module:hero-teaser",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-adventures-html",
+        "us-en-html"
+      ],
+      "usedByPages": [
+        "us-en-adventures-html",
+        "us-en-html"
+      ],
+      "instanceCount": 2,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "hero-teaser",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "image-list",
+      "label": "image-list",
+      "kind": "module",
+      "signature": "module:image-list",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-adventures-html",
+        "us-en-html"
+      ],
+      "usedByPages": [
+        "us-en-html",
+        "us-en-magazine-html"
+      ],
+      "instanceCount": 2,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "cards",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "list-teaser",
+      "label": "list-teaser",
+      "kind": "module",
+      "signature": "module:list-teaser",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-adventures-html"
+      ],
+      "usedByPages": [
+        "us-en-magazine-html"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "list-teaser",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "mini-carousel",
+      "label": "mini-carousel",
+      "kind": "module",
+      "signature": "module:mini-carousel",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-adventures-climbing-new-zealand-html"
+      ],
+      "usedByPages": [
+        "us-en-adventures-bali-surf-camp-html",
+        "us-en-adventures-beervana-portland-html",
+        "us-en-adventures-climbing-new-zealand-html",
+        "us-en-adventures-colorado-rock-climbing-html",
+        "us-en-adventures-cycling-southern-utah-html",
+        "us-en-adventures-cycling-tuscany-html",
+        "us-en-adventures-downhill-skiing-wyoming-html",
+        "us-en-adventures-gastronomic-marais-tour-html",
+        "us-en-adventures-napa-wine-tasting-html",
+        "us-en-adventures-riverside-camping-australia-html",
+        "us-en-adventures-ski-touring-mont-blanc-html",
+        "us-en-adventures-surf-camp-costa-rica-html",
+        "us-en-adventures-tahoe-skiing-html",
+        "us-en-adventures-west-coast-cycling-html",
+        "us-en-adventures-whistler-mountain-biking-html",
+        "us-en-adventures-yosemite-backpacking-html"
+      ],
+      "instanceCount": 16,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "mini-carousel",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "sharing",
+      "label": "sharing",
+      "kind": "module",
+      "signature": "module:sharing",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-adventures-climbing-new-zealand-html"
+      ],
+      "usedByPages": [
+        "us-en-adventures-bali-surf-camp-html",
+        "us-en-adventures-beervana-portland-html",
+        "us-en-adventures-climbing-new-zealand-html",
+        "us-en-adventures-colorado-rock-climbing-html",
+        "us-en-adventures-cycling-southern-utah-html",
+        "us-en-adventures-cycling-tuscany-html",
+        "us-en-adventures-downhill-skiing-wyoming-html",
+        "us-en-adventures-gastronomic-marais-tour-html",
+        "us-en-adventures-napa-wine-tasting-html",
+        "us-en-adventures-riverside-camping-australia-html",
+        "us-en-adventures-ski-touring-mont-blanc-html",
+        "us-en-adventures-surf-camp-costa-rica-html",
+        "us-en-adventures-tahoe-skiing-html",
+        "us-en-adventures-west-coast-cycling-html",
+        "us-en-adventures-whistler-mountain-biking-html",
+        "us-en-adventures-yosemite-backpacking-html"
+      ],
+      "instanceCount": 16,
+      "delivery": {
+        "status": "converted",
+        "edsBlockName": "default-content",
+        "blockPath": null,
+        "convertedAt": "2026-09-24T10:02:39.162Z"
+      }
+    },
+    {
+      "id": "tabs",
+      "label": "tabs",
+      "kind": "module",
+      "signature": "module:tabs",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-adventures-climbing-new-zealand-html",
+        "us-en-adventures-html"
+      ],
+      "usedByPages": [
+        "us-en-adventures-bali-surf-camp-html",
+        "us-en-adventures-beervana-portland-html",
+        "us-en-adventures-climbing-new-zealand-html",
+        "us-en-adventures-colorado-rock-climbing-html",
+        "us-en-adventures-cycling-southern-utah-html",
+        "us-en-adventures-cycling-tuscany-html",
+        "us-en-adventures-downhill-skiing-wyoming-html",
+        "us-en-adventures-gastronomic-marais-tour-html",
+        "us-en-adventures-html",
+        "us-en-adventures-napa-wine-tasting-html",
+        "us-en-adventures-riverside-camping-australia-html",
+        "us-en-adventures-ski-touring-mont-blanc-html",
+        "us-en-adventures-surf-camp-costa-rica-html",
+        "us-en-adventures-tahoe-skiing-html",
+        "us-en-adventures-west-coast-cycling-html",
+        "us-en-adventures-whistler-mountain-biking-html",
+        "us-en-adventures-yosemite-backpacking-html"
+      ],
+      "instanceCount": 17,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "tabs",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "trip-facts",
+      "label": "trip-facts",
+      "kind": "module",
+      "signature": "module:trip-facts",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-adventures-climbing-new-zealand-html"
+      ],
+      "usedByPages": [
+        "us-en-adventures-bali-surf-camp-html",
+        "us-en-adventures-beervana-portland-html",
+        "us-en-adventures-climbing-new-zealand-html",
+        "us-en-adventures-colorado-rock-climbing-html",
+        "us-en-adventures-cycling-southern-utah-html",
+        "us-en-adventures-cycling-tuscany-html",
+        "us-en-adventures-downhill-skiing-wyoming-html",
+        "us-en-adventures-gastronomic-marais-tour-html",
+        "us-en-adventures-napa-wine-tasting-html",
+        "us-en-adventures-riverside-camping-australia-html",
+        "us-en-adventures-ski-touring-mont-blanc-html",
+        "us-en-adventures-surf-camp-costa-rica-html",
+        "us-en-adventures-tahoe-skiing-html",
+        "us-en-adventures-west-coast-cycling-html",
+        "us-en-adventures-whistler-mountain-biking-html",
+        "us-en-adventures-yosemite-backpacking-html"
+      ],
+      "instanceCount": 16,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "trip-facts",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "upnext-list",
+      "label": "upnext-list",
+      "kind": "module",
+      "signature": "module:upnext-list",
+      "source": null,
+      "usedByTemplates": [
+        "us-en-magazine-san-diego-surf-html"
+      ],
+      "usedByPages": [
+        "us-en-magazine-arctic-surfing-html",
+        "us-en-magazine-guide-la-skateparks-html",
+        "us-en-magazine-san-diego-surf-html",
+        "us-en-magazine-ski-touring-html",
+        "us-en-magazine-western-australia-html"
+      ],
+      "instanceCount": 5,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "upnext-list",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    }
+  ]
+}

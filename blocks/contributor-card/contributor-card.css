@@ -1,0 +1,111 @@
+/* contributor-card — lifted from stardust/prototypes/us-en-about-us-html.css
+   (.page-about .grid, .contributor, .contributor__inner, .contributor__image img,
+   .contributor__name, .contributor__role, .contributor__buttons) and canon.css
+   (.column, .button, .button--secondary, .button--icon, .button .icon) */
+
+/* one block per contributor, several per section: the section is the source's .container
+   + aem-Grid (1164px, clearfix), each block wrapper the floated 25% .column (0 14px gutters) */
+main .section.contributor-card-container {
+  display: flow-root;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+main .section.contributor-card-container > .contributor-card-wrapper {
+  box-sizing: border-box;
+  float: left;
+  clear: none;
+  width: 25%;
+  max-width: none;
+  margin: 0;
+  padding: 0 14px;
+}
+
+/* section.column.contributor: centred flex box, .5em / 1em vertical padding */
+.contributor-card .contributor {
+  display: flex;
+  padding: 0.5em 0 1em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contributor-card .contributor-inner {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 14px;
+}
+
+/* <picture> plays the live div.image block; the 164px <img> stays inline on its baseline */
+.contributor-card .contributor-image picture {
+  display: block;
+}
+
+.contributor-card .contributor-image img {
+  width: 164px;
+  height: 164px;
+  margin: 7px 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.contributor-card .contributor-name :is(h2, h3, h4),
+.contributor-card .contributor-role :is(h4, h5, h6, p) {
+  margin: 0 0 0.25em;
+}
+
+/* .btn-list.contributor__buttons: flex-centred row of touching 48px secondary icon buttons */
+.contributor-card .contributor-buttons ul,
+.contributor-card .contributor-buttons ol {
+  display: flex;
+  margin: 0;
+  padding: 1em 0 0;
+  justify-content: center;
+  list-style: none;
+}
+
+.contributor-card .contributor-buttons li {
+  display: flex;
+  float: left;
+  clear: none;
+  padding: 0;
+}
+
+.contributor-card .contributor-buttons a:any-link {
+  float: left;
+  width: var(--button-size);
+  height: var(--button-size);
+  min-width: var(--button-size);
+  border-radius: var(--radius);
+  background-color: var(--color-secondary);
+  color: var(--color-fg-inverse);
+  font-size: 0;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+}
+
+/* .button .icon: 1.25em glyph (17.5px at the button's 14px) inset 14px / 18px */
+.contributor-card .contributor-buttons .icon {
+  float: left;
+  padding-top: 18px;
+  padding-left: 14px;
+  font-size: 17.5px;
+}
+
+/* /icons/*.svg are filled #202020 (the glyph traced from wknd-icon-font); the secondary
+   button paints them --color-fg-inverse (#ebebeb) — invert + 5% lift lands on #eaeaea */
+.contributor-card .contributor-buttons .icon img {
+  filter: invert(1) brightness(1.05);
+}
+
+@media (width <= 1024px) {
+  main .section.contributor-card-container > .contributor-card-wrapper {
+    width: 50%;
+  }
+}
+
+@media (width <= 767px) {
+  main .section.contributor-card-container > .contributor-card-wrapper {
+    width: 100%;
+  }
+}

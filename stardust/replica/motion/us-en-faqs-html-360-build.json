@@ -1,0 +1,333 @@
+{
+  "url": "http://localhost:8803/prototypes/us-en-faqs-html-proposed.html",
+  "width": 360,
+  "headerTimeline": [
+    {
+      "y": 0,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "116.719px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 0,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "116.719px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 17,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "116.719px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 1117,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "116.719px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 1117,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "116.719px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 800,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "116.719px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 500,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "116.719px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 300,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "116.719px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 200,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "116.719px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 150,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "116.719px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 120,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "116.719px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 90,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "116.719px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 60,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "116.719px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 30,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "116.719px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 0,
+      "cls": "site-header",
+      "position": "fixed",
+      "height": "116.719px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    }
+  ],
+  "widgetSamples": [
+    {
+      "sel": ".cmp-navigation-toggle a, a[href=\"#mobileNav\"]",
+      "frames": [
+        {
+          "t": 6683.600000023842,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 6884.800000011921,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 7086.800000011921,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 7288.800000011921,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": "main button",
+      "frames": [
+        {
+          "t": 8294.200000017881,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 8495.5,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 8697.5,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 8899.700000017881,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        }
+      ]
+    }
+  ],
+  "hoverSamples": [],
+  "events": {
+    "animations": [
+      {
+        "name": "fadeIn",
+        "el": "div.column.column--group.faq-content > div.grid.grid--8 > div.column.accordion.faq-accordion > div.accordion__item > div.accordion__panel.accordion__panel--expanded",
+        "txt": "We believe the best adventures and activities are ",
+        "y": 395
+      }
+    ],
+    "transitions": [
+      {
+        "prop": "transform",
+        "el": "html > body.anonymous.page-faqs.navPanel-visible > div.mobile-nav",
+        "y": 0,
+        "dur": "0.5s"
+      },
+      {
+        "prop": "transform",
+        "el": "html > body.anonymous.page-faqs.navPanel-visible > div.nav-toggle",
+        "y": 0,
+        "dur": "0.5s"
+      },
+      {
+        "prop": "transform",
+        "el": "html > body.anonymous.page-faqs.navPanel-visible > div.page-root",
+        "y": 0,
+        "dur": "0.5s"
+      },
+      {
+        "prop": "transform",
+        "el": "html > body.anonymous.page-faqs.scrolly > div.nav-toggle",
+        "y": 395,
+        "dur": "0.5s"
+      },
+      {
+        "prop": "transform",
+        "el": "html > body.anonymous.page-faqs.scrolly > div.mobile-nav",
+        "y": 395,
+        "dur": "0.5s"
+      },
+      {
+        "prop": "transform",
+        "el": "html > body.anonymous.page-faqs.scrolly > div.page-root",
+        "y": 395,
+        "dur": "0.5s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "scrolly"
+        ],
+        "el": "html > body.anonymous.page-faqs.scrolly",
+        "y": 400
+      },
+      {
+        "added": [
+          "navPanel-visible"
+        ],
+        "el": "html > body.anonymous.page-faqs.navPanel-visible",
+        "y": 0
+      },
+      {
+        "added": [
+          "scrolly"
+        ],
+        "el": "html > body.anonymous.page-faqs.navPanel-visible",
+        "y": 395
+      },
+      {
+        "added": [
+          "accordion__button--expanded"
+        ],
+        "el": "div.grid.grid--8 > div.column.accordion.faq-accordion > div.accordion__item > h3.accordion__header > button.accordion__button.accordion__button--expanded",
+        "y": 395
+      },
+      {
+        "added": [
+          "accordion__panel--expanded"
+        ],
+        "el": "div.column.column--group.faq-content > div.grid.grid--8 > div.column.accordion.faq-accordion > div.accordion__item > div.accordion__panel.accordion__panel--expanded",
+        "y": 395
+      }
+    ]
+  }
+}

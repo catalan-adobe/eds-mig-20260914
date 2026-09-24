@@ -1,0 +1,39 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout prepare (deploy § Runtime-detection probe)",
+    "writtenAt": "2026-09-24T10:00:00Z",
+    "readFrom": ["scripts/aem.js", "scripts/scripts.js", "head.html", "blocks/fragment/fragment.js",
+      "blocks/header/header.js", "blocks/footer/footer.js", "package.json"]
+  },
+  "runtime": "vanilla-eds",
+  "blockWrapperClass": "block",
+  "blockDecoration": "decorateBlock adds .block + data-block-name, wraps in div.<name>-wrapper, section gains .<name>-container; scope block CSS under .<name>",
+  "buttonClasses": ".button / .button.primary (strong) / .button.secondary (em) / .button.accent (strong+em), in p.button-wrapper",
+  "buttonization": "formatted-only",
+  "buttonizationNotes": "scripts.js decorateButtons: only p > a[href] whose <p> text equals the link text AND is wrapped in <strong> and/or <em>; bare links stay links; links whose text is their own URL stay links; a link containing <img> stays a link",
+  "fragmentScriptPolicy": "inert-innerHTML",
+  "fragmentNotes": "blocks/fragment/fragment.js fetches <path>.plain.html into main.innerHTML, rebases img src / source srcset, runs decorateMain + loadSections; head.html CSP sets require-trusted-types-for 'script' and scripts.js installs a default Trusted Types policy that passes innerHTML strings through and strips <script> only on createContextualFragment / document.write sinks",
+  "trustedTypes": true,
+  "emptySectionCollapse": true,
+  "sectionDecoration": "decorateSections wraps default content in div.default-content-wrapper, folds section-metadata rows into section classes / data-*; sections start display:none until loadSection",
+  "iconDecoration": "decorateIcons: span.icon.icon-<name> -> <img data-icon-name src=/icons/<name>.svg>; place SVGs under /icons/",
+  "templateAndTheme": "metadata template / theme -> body classes (toClassName)",
+  "documentLang": "loadEager hard-codes document.documentElement.lang = 'en'",
+  "chrome": {
+    "navDocument": "/nav (metadata nav overrides)",
+    "footerDocument": "/footer (metadata footer overrides)",
+    "loadOrder": "header in loadLazy before main sections; footer after"
+  },
+  "fonts": "loadFonts loads /styles/fonts.css after LCP (eager when innerWidth >= 900 or session flag); never in head.html",
+  "autoBlocks": ["fragment (a[href*='/fragments/'])", "widget (a[href*='/widgets/'])"],
+  "optimizedPictureBreakpoints": "[{media:'(min-width: 600px)', width:'2000'}, {width:'750'}]",
+  "delayed": "loadDelayed imports scripts/consent-check.js (consent declined by default; consented.js only on ?consent=accept)",
+  "lint": {
+    "js": "eslint . (airbnb-base)",
+    "css": "stylelint blocks/**/*.css styles/*.css (standard)",
+    "all": "npm run lint",
+    "fix": "npm run lint:fix"
+  },
+  "existingBlocks": ["cards", "columns", "footer", "fragment", "header", "hero", "widget"],
+  "existingBlocksNote": "cards / columns / hero are the stock Block Collection copies; header / footer / styles are the stock boilerplate and are REPLACED by the foundation unit; widget + consent-check are project additions, keep them"
+}

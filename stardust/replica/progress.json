@@ -1,0 +1,1455 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-09-24T07:20:59.365Z",
+    "phase": "source-fidelity-gate",
+    "againstInput": "https://wknd.site/us/en",
+    "updatedBy": "stardust:replica",
+    "updatedAt": "2026-09-24T08:36:13.491Z",
+    "canonChangesApplied": 0,
+    "canonRequests": {
+      "received": 1,
+      "applied": 0,
+      "reverted": 1,
+      "log": "stardust/replica/canon-requests.applied.md"
+    }
+  },
+  "mainSelectorRationale": "header + main — the outer AEM <main class=\"container responsivegrid …\"> directly follows the single <header>; nested layout <main>s make bare main ambiguous (A-PD4)",
+  "archetypes": [
+    {
+      "pageType": "landing",
+      "archetypeSlug": "us-en-html",
+      "type": "landing",
+      "liveUrl": "https://wknd.site/us/en.html",
+      "mainSelector": "header + main",
+      "siblings": [],
+      "status": "approved",
+      "iterations": 3,
+      "breakpoints": {
+        "360": {
+          "iterations": 3,
+          "confirmation": {
+            "round": "conf",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "chromeParity": "ok"
+          },
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "advisory STRETCHED IMAGE, justified (live object-fit cover crop)",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "overflow": false,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE",
+              "why": "visual-diff advisory STRETCHED IMAGE (11 @1440, 8 @360): object-fit:cover crops identical to live — justified (pixel 0.00%)"
+            }
+          ],
+          "residuals": [
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "visual-diff advisory STRETCHED IMAGE (11 @1440, 8 @360): object-fit:cover crops identical to live — justified (pixel 0.00%)",
+              "flaggedFor": "user"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "footer-nav / language-menu text-decoration hovers and mobile-nav hover colour are lifted from live CSS but unobservable by motion-observe (probe blind to text-decoration; panel hidden) — kept, logged A-RC6",
+              "flaggedFor": "user"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "images reference live wknd.site renditions (no captured media dir) — rehost at delivery (capture-state policy)",
+              "flaggedFor": "delivery"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "ledger: source-fidelity-gate start written after its rounds began (interleaved with recreate fixes)",
+              "flaggedFor": "user"
+            }
+          ]
+        },
+        "1440": {
+          "iterations": 3,
+          "confirmation": {
+            "round": "conf",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "chromeParity": "ok"
+          },
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "advisory STRETCHED IMAGE, justified (live object-fit cover crop)",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "overflow": false,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE",
+              "why": "visual-diff advisory STRETCHED IMAGE (11 @1440, 8 @360): object-fit:cover crops identical to live — justified (pixel 0.00%)"
+            }
+          ],
+          "residuals": [
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "visual-diff advisory STRETCHED IMAGE (11 @1440, 8 @360): object-fit:cover crops identical to live — justified (pixel 0.00%)",
+              "flaggedFor": "user"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "footer-nav / language-menu text-decoration hovers and mobile-nav hover colour are lifted from live CSS but unobservable by motion-observe (probe blind to text-decoration; panel hidden) — kept, logged A-RC6",
+              "flaggedFor": "user"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "images reference live wknd.site renditions (no captured media dir) — rehost at delivery (capture-state policy)",
+              "flaggedFor": "delivery"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "ledger: source-fidelity-gate start written after its rounds began (interleaved with recreate fixes)",
+              "flaggedFor": "user"
+            }
+          ]
+        }
+      },
+      "motion": {
+        "observed": 6,
+        "implemented": 6,
+        "dead": [
+          "hover main a[href=\"/us/en/adventures.html\"] (hero CTA)",
+          "hover main article a (image-list cards)",
+          "hover a[aria-label=\"read our articles\"] (primary button)",
+          "hover a[aria-label=\"Facebook WKND Button\"] (social buttons)",
+          "hover footer nav a (probe-visible props)"
+        ],
+        "implementedList": [
+          "body.scrolly header morph @ scrollTop>15 (.5s padding)",
+          "carousel prev/next/indicator active swap",
+          "carousel slide fadeIn .5s",
+          "language menu showMenu/open toggle + outside-click close",
+          "mobile panel body.navPanel-visible (transform .5s)",
+          "primary-nav hover background #ffea00"
+        ]
+      },
+      "approvedBy": "hands-off",
+      "prototype": "stardust/prototypes/us-en-html-proposed.html",
+      "fonts": "Same public source, self-hosted: Asar 400 + Source Sans Pro 300/400/600 (+italics) from the Google Fonts latin woff2 files named by the captured google-fonts.css (stardust/current/assets/fonts/gf/*, SIL OFL) — the extract's own woff2 captures were a different font version (4–7% wider glyphs) and are not used; wknd-icon-font (Apache-2.0, aem-guides-wknd) self-hosted from the capture. No substitutes, no licensed kits.",
+      "canonRequests": 0
+    },
+    {
+      "pageType": "listing",
+      "archetypeSlug": "us-en-adventures-html",
+      "type": "listing",
+      "liveUrl": "https://wknd.site/us/en/adventures.html",
+      "mainSelector": "header + main",
+      "siblings": [
+        "us-en-magazine-html"
+      ],
+      "status": "approved",
+      "iterations": 1,
+      "breakpoints": {
+        "360": {
+          "iterations": 1,
+          "confirmation": {
+            "round": "conf",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "chromeParity": "ok"
+          },
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "none",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "overflow": false,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [],
+          "residuals": []
+        },
+        "1440": {
+          "iterations": 1,
+          "confirmation": {
+            "round": "conf",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "chromeParity": "ok"
+          },
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "none",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "overflow": false,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [],
+          "residuals": []
+        }
+      },
+      "motion": {
+        "observed": 3,
+        "implemented": 3,
+        "dead": [
+          ".cmp-tabs__tab hover",
+          ".cmp-image-list__item-title-link hover",
+          ".cmp-image-list__item-image-link hover",
+          ".cmp-navigation__item-link hover",
+          ".cmp-teaser__title hover"
+        ]
+      },
+      "approvedBy": "hands-off",
+      "prototype": "stardust/prototypes/us-en-adventures-html-proposed.html",
+      "fonts": "canon: Asar + Source Sans Pro self-hosted Google Fonts woff2 (stardust/current/assets/fonts/gf), wknd-icon-font from the site; no licensed kit, no substitution",
+      "canonRequests": 0
+    },
+    {
+      "pageType": "program",
+      "archetypeSlug": "us-en-adventures-climbing-new-zealand-html",
+      "type": "program",
+      "liveUrl": "https://wknd.site/us/en/adventures/climbing-new-zealand.html",
+      "mainSelector": "header + main",
+      "siblings": [
+        "us-en-adventures-bali-surf-camp-html",
+        "us-en-adventures-beervana-portland-html",
+        "us-en-adventures-colorado-rock-climbing-html",
+        "us-en-adventures-cycling-southern-utah-html",
+        "us-en-adventures-cycling-tuscany-html",
+        "us-en-adventures-downhill-skiing-wyoming-html",
+        "us-en-adventures-gastronomic-marais-tour-html",
+        "us-en-adventures-napa-wine-tasting-html",
+        "us-en-adventures-riverside-camping-australia-html",
+        "us-en-adventures-ski-touring-mont-blanc-html",
+        "us-en-adventures-surf-camp-costa-rica-html",
+        "us-en-adventures-tahoe-skiing-html",
+        "us-en-adventures-west-coast-cycling-html",
+        "us-en-adventures-whistler-mountain-biking-html",
+        "us-en-adventures-yosemite-backpacking-html"
+      ],
+      "status": "approved",
+      "iterations": 1,
+      "breakpoints": {
+        "360": {
+          "iterations": 1,
+          "confirmation": {
+            "round": "conf",
+            "pixelPct": 0.04,
+            "heightDelta": 0,
+            "chromeParity": "ok"
+          },
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "advisory STRETCHED IMAGE, justified (live object-fit cover crop)",
+            "pixelPct": 0.04,
+            "heightDelta": 0,
+            "overflow": false,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE",
+              "why": "visual-diff advisory STRETCHED IMAGE on mini-carousel slide sport-climbing.jpeg — identical to the live object-fit cover crop (height 25pc); zero pixel delta in that band (direction.md A-CNZ-2)"
+            }
+          ],
+          "residuals": [
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "visual-diff advisory STRETCHED IMAGE on mini-carousel slide sport-climbing.jpeg — identical to the live object-fit cover crop (height 25pc); zero pixel delta in that band (direction.md A-CNZ-2)",
+              "flaggedFor": "user"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "Images referenced by live wknd.site src + rebuilt coreimg srcset (no captured media dir) — capture-state policy (A-CNZ-1); rehost at delivery",
+              "flaggedFor": "delivery"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "Sharing widgets (.fb-share-button, empty Pinterest anchor) replicated as captured 0 px — third-party scripts never hydrate headless (A-CNZ-6); flag for delivery",
+              "flaggedFor": "delivery"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "motion-compare: 4 MISSING/4 advisory lines are class-name mappings (cmp-*--active ↔ clean *--active) with identical add counts — treated as parity (A-CNZ-4)",
+              "flaggedFor": "user"
+            }
+          ]
+        },
+        "1440": {
+          "iterations": 1,
+          "confirmation": {
+            "round": "conf",
+            "pixelPct": 0.02,
+            "heightDelta": 0,
+            "chromeParity": "ok"
+          },
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "advisory STRETCHED IMAGE, justified (live object-fit cover crop)",
+            "pixelPct": 0.02,
+            "heightDelta": 0,
+            "overflow": false,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE",
+              "why": "visual-diff advisory STRETCHED IMAGE on mini-carousel slide sport-climbing.jpeg — identical to the live object-fit cover crop (height 25pc); zero pixel delta in that band (direction.md A-CNZ-2)"
+            }
+          ],
+          "residuals": [
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "visual-diff advisory STRETCHED IMAGE on mini-carousel slide sport-climbing.jpeg — identical to the live object-fit cover crop (height 25pc); zero pixel delta in that band (direction.md A-CNZ-2)",
+              "flaggedFor": "user"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "Images referenced by live wknd.site src + rebuilt coreimg srcset (no captured media dir) — capture-state policy (A-CNZ-1); rehost at delivery",
+              "flaggedFor": "delivery"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "Sharing widgets (.fb-share-button, empty Pinterest anchor) replicated as captured 0 px — third-party scripts never hydrate headless (A-CNZ-6); flag for delivery",
+              "flaggedFor": "delivery"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "motion-compare: 4 MISSING/4 advisory lines are class-name mappings (cmp-*--active ↔ clean *--active) with identical add counts — treated as parity (A-CNZ-4)",
+              "flaggedFor": "user"
+            }
+          ]
+        }
+      },
+      "motion": {
+        "observed": 6,
+        "implemented": 6,
+        "dead": [
+          "hover .cmp-breadcrumb__item-link",
+          "hover .cmp-tabs__tab (inactive)",
+          "hover .cmp-carousel__action--next",
+          "hover a[aria-label=\"Facebook WKND Button\"]",
+          "hover footer nav a[href$=\"magazine.html\"]"
+        ],
+        "implementedList": "fired: body.scrolly + header padding 0.5s (canon), carousel --active swap + fadeIn .5s (canon), language menu open/showMenu (canon), mobile navPanel-visible at 360 (canon), header nav link hover background (canon), tabs --active swap (new: us-en-adventures-climbing-new-zealand-html.js)"
+      },
+      "approvedBy": "hands-off",
+      "prototype": "stardust/prototypes/us-en-adventures-climbing-new-zealand-html-proposed.html",
+      "fonts": "Asar 400 + Source Sans Pro 300/400/600 (+italics) self-hosted from stardust/current/assets/fonts via canon.css @font-face (Google Fonts, open licence); wknd-icon-font.ttf self-hosted for breadcrumb chevron / list bullet (U+EA1C) and carousel arrows. No licensed kit, no substitution.",
+      "canonRequests": 0
+    },
+    {
+      "pageType": "article",
+      "archetypeSlug": "us-en-magazine-san-diego-surf-html",
+      "type": "article",
+      "liveUrl": "https://wknd.site/us/en/magazine/san-diego-surf.html",
+      "mainSelector": "header + main",
+      "siblings": [
+        "us-en-magazine-arctic-surfing-html",
+        "us-en-magazine-guide-la-skateparks-html",
+        "us-en-magazine-ski-touring-html",
+        "us-en-magazine-western-australia-html"
+      ],
+      "status": "approved",
+      "iterations": 1,
+      "breakpoints": {
+        "360": {
+          "iterations": 1,
+          "confirmation": {
+            "round": "conf",
+            "pixelPct": 0.02,
+            "heightDelta": 0,
+            "chromeParity": "ok"
+          },
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "advisory STRETCHED IMAGE, justified (live object-fit cover crop)",
+            "pixelPct": 0.02,
+            "heightDelta": 0,
+            "overflow": false,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE",
+              "why": "visual-diff advisory STRETCHED IMAGE on justin-barr.jpeg (672x1008 → 60x60): identical live object-fit cover crop lifted from .cmp-byline__image — justified (direction.md A-SDS-4)"
+            }
+          ],
+          "residuals": [
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "visual-diff advisory STRETCHED IMAGE on justin-barr.jpeg (672x1008 → 60x60): identical live object-fit cover crop lifted from .cmp-byline__image — justified (direction.md A-SDS-4)",
+              "flaggedFor": "user"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "Empty .fb-share-button div and Pinterest anchor render 0 px on live (third-party scripts never hydrate headless); replicated as captured (A-SDS-7)",
+              "flaggedFor": "user"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "ledger.mjs warned that the source-fidelity-gate end had no open start — a parallel agent's end line consumed it in the shared status.jsonl; this archetype's start (08:12:31Z) and end (08:18:18Z) both carry the slug",
+              "flaggedFor": "user"
+            }
+          ]
+        },
+        "1440": {
+          "iterations": 1,
+          "confirmation": {
+            "round": "conf",
+            "pixelPct": 0.14,
+            "heightDelta": 2,
+            "chromeParity": "ok"
+          },
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "advisory STRETCHED IMAGE, justified (live object-fit cover crop)",
+            "pixelPct": 0.14,
+            "heightDelta": 2,
+            "overflow": false,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE",
+              "why": "visual-diff advisory STRETCHED IMAGE on justin-barr.jpeg (672x1008 → 60x60): identical live object-fit cover crop lifted from .cmp-byline__image — justified (direction.md A-SDS-4)"
+            }
+          ],
+          "residuals": [
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "visual-diff advisory STRETCHED IMAGE on justin-barr.jpeg (672x1008 → 60x60): identical live object-fit cover crop lifted from .cmp-byline__image — justified (direction.md A-SDS-4)",
+              "flaggedFor": "user"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "Empty .fb-share-button div and Pinterest anchor render 0 px on live (third-party scripts never hydrate headless); replicated as captured (A-SDS-7)",
+              "flaggedFor": "user"
+            },
+            {
+              "band": "see cause",
+              "pct": 0,
+              "cause": "ledger.mjs warned that the source-fidelity-gate end had no open start — a parallel agent's end line consumed it in the shared status.jsonl; this archetype's start (08:12:31Z) and end (08:18:18Z) both carry the slug",
+              "flaggedFor": "user"
+            }
+          ]
+        }
+      },
+      "motion": {
+        "observed": 4,
+        "implemented": 4,
+        "dead": [
+          "hover main nav a[href$=\"magazine.html\"] (breadcrumb link)",
+          "hover main a[aria-label=\"Facebook\"] (contributor icon button)",
+          "hover main a[aria-label=\"Twitter\"] (contributor icon button)",
+          "hover footer nav a[href$=\"adventures.html\"]",
+          "hover a[aria-label=\"Facebook WKND Button\"] (footer social)",
+          "hover main aside li a at 360 (touch viewport)"
+        ]
+      },
+      "approvedBy": "hands-off",
+      "prototype": "stardust/prototypes/us-en-magazine-san-diego-surf-html-proposed.html",
+      "fonts": "Canon @font-face: Asar 400 + Source Sans Pro 300/400/600 (+italics) self-hosted woff2 from stardust/current/assets/fonts (Google Fonts, open licence) and wknd-icon-font woff/ttf from the site. No licensed kit, no metric substitute needed.",
+      "canonRequests": 0
+    },
+    {
+      "pageType": "static",
+      "archetypeSlug": "us-en-about-us-html",
+      "type": "static",
+      "liveUrl": "https://wknd.site/us/en/about-us.html",
+      "mainSelector": "header + main",
+      "siblings": [],
+      "status": "approved",
+      "iterations": 1,
+      "breakpoints": {
+        "360": {
+          "iterations": 1,
+          "confirmation": {
+            "round": "conf",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "chromeParity": "ok"
+          },
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "none",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "overflow": false,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [],
+          "residuals": []
+        },
+        "1440": {
+          "iterations": 1,
+          "confirmation": {
+            "round": "conf",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "chromeParity": "ok"
+          },
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "none",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "overflow": false,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [],
+          "residuals": []
+        }
+      },
+      "motion": {
+        "observed": 4,
+        "implemented": 4,
+        "dead": [
+          "contributor social icon buttons hover (Facebook/Twitter)",
+          "contributor name h3 hover",
+          "contributor portrait hover",
+          "footer nav link hover",
+          "footer social button hover"
+        ]
+      },
+      "approvedBy": "hands-off",
+      "prototype": "stardust/prototypes/us-en-about-us-html-proposed.html",
+      "fonts": "canon.css @font-face: Asar 400 + Source Sans Pro 300/400/600 (+italics) self-hosted Google Fonts woff2 from stardust/current/assets/fonts, wknd-icon-font from the site; no licensed kit, no substitution",
+      "canonRequests": 0
+    },
+    {
+      "pageType": "unique",
+      "archetypeSlug": "us-en-faqs-html",
+      "type": "unique",
+      "liveUrl": "https://wknd.site/us/en/faqs.html",
+      "mainSelector": "header + main",
+      "siblings": [],
+      "status": "approved",
+      "iterations": 1,
+      "breakpoints": {
+        "360": {
+          "iterations": 1,
+          "confirmation": {
+            "round": "conf",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "chromeParity": "ok"
+          },
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "none",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "overflow": false,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [],
+          "residuals": [
+            {
+              "band": "n/a (canon back-port reverted)",
+              "pct": 0,
+              "cause": "canon-request .separator hr margin (live: UA default 0.5em) reverted — in the prototypes' flex/grid columns the hr margin does not collapse through .separator, so every other separator grew +18px on all six archetypes (height Δ −18…−54px); FAQ keeps the page-scoped .page-faqs .faq-aside .separator hr { margin: 9px 0 } compensation (A-GC1)",
+              "flaggedFor": "user"
+            }
+          ]
+        },
+        "1440": {
+          "iterations": 1,
+          "confirmation": {
+            "round": "conf",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "chromeParity": "ok"
+          },
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "none",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "overflow": false,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [],
+          "residuals": [
+            {
+              "band": "n/a (canon back-port reverted)",
+              "pct": 0,
+              "cause": "canon-request .separator hr margin (live: UA default 0.5em) reverted — in the prototypes' flex/grid columns the hr margin does not collapse through .separator, so every other separator grew +18px on all six archetypes (height Δ −18…−54px); FAQ keeps the page-scoped .page-faqs .faq-aside .separator hr { margin: 9px 0 } compensation (A-GC1)",
+              "flaggedFor": "user"
+            }
+          ]
+        }
+      },
+      "motion": {
+        "observed": 5,
+        "implemented": 5,
+        "dead": [
+          "accordion button hover",
+          "aside # links hover",
+          "footer nav link hover",
+          "footer Facebook button hover"
+        ]
+      },
+      "approvedBy": "hands-off",
+      "prototype": "stardust/prototypes/us-en-faqs-html-proposed.html",
+      "fonts": "canon: Asar + Source Sans Pro self-hosted Google Fonts woff2 (stardust/current/assets/fonts) + wknd-icon-font (site's own, Apache-2.0); no licensed kit, no substitution",
+      "canonRequests": 1
+    }
+  ],
+  "siblings": {
+    "us-en-magazine-html": {
+      "archetype": "us-en-adventures-html",
+      "variants": [
+        "teaser--featured",
+        "teaser--list",
+        "teaser--secure",
+        "column--third",
+        "no-tabs",
+        "text",
+        "separator--space-medium"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0.09,
+          "px": 1396,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "placed",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.04,
+          "px": 1396,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/magazine.html"
+    },
+    "us-en-adventures-bali-surf-camp-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "program-body--flush",
+        "program-facts--split"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0,
+          "px": 0,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib3",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.03,
+          "px": 987,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib3",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/bali-surf-camp.html"
+    },
+    "us-en-adventures-beervana-portland-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "content-length"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0,
+          "px": 0,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0,
+          "px": 0,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/beervana-portland.html"
+    },
+    "us-en-adventures-colorado-rock-climbing-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "program-body--flush",
+        "program-facts--split"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0,
+          "px": 0,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib3",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.04,
+          "px": 1259,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib3",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/colorado-rock-climbing.html"
+    },
+    "us-en-adventures-cycling-southern-utah-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "program-body--flush",
+        "program-facts--split",
+        "image--captioned"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0,
+          "px": 0,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib3",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.04,
+          "px": 1231,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib3",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/cycling-southern-utah.html"
+    },
+    "us-en-adventures-cycling-tuscany-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "content-length"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0,
+          "px": 0,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0,
+          "px": 0,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/cycling-tuscany.html"
+    },
+    "us-en-adventures-downhill-skiing-wyoming-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "content-length"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0,
+          "px": 0,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0,
+          "px": 0,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/downhill-skiing-wyoming.html"
+    },
+    "us-en-adventures-gastronomic-marais-tour-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "program-body--flush",
+        "program-facts--split",
+        "image--captioned"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0,
+          "px": 0,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib3",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.05,
+          "px": 1299,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib3",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/gastronomic-marais-tour.html"
+    },
+    "us-en-adventures-napa-wine-tasting-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "program-body--flush",
+        "program-facts--split",
+        "image--captioned"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0,
+          "px": 0,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib3",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.04,
+          "px": 1170,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib3",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/napa-wine-tasting.html"
+    },
+    "us-en-adventures-riverside-camping-australia-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "content-length"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0.05,
+          "px": 467,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.02,
+          "px": 644,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/riverside-camping-australia.html"
+    },
+    "us-en-adventures-ski-touring-mont-blanc-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "content-length"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0.06,
+          "px": 684,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.02,
+          "px": 836,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/ski-touring-mont-blanc.html"
+    },
+    "us-en-adventures-surf-camp-costa-rica-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "image--captioned"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0.06,
+          "px": 590,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.03,
+          "px": 796,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/surf-camp-costa-rica.html"
+    },
+    "us-en-adventures-tahoe-skiing-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "program-body--flush",
+        "program-facts--split",
+        "image--captioned"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0.04,
+          "px": 367,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.03,
+          "px": 942,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/tahoe-skiing.html"
+    },
+    "us-en-adventures-west-coast-cycling-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "program-body--flush",
+        "program-facts--split"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0.05,
+          "px": 487,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.04,
+          "px": 1060,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/west-coast-cycling.html"
+    },
+    "us-en-adventures-whistler-mountain-biking-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "content-length"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0.07,
+          "px": 749,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.03,
+          "px": 982,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/whistler-mountain-biking.html"
+    },
+    "us-en-adventures-yosemite-backpacking-html": {
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "variants": [
+        "program-body--flush",
+        "program-facts--split",
+        "image--captioned"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0.05,
+          "px": 570,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.04,
+          "px": 1187,
+          "heightDelta": 0,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/adventures/yosemite-backpacking.html"
+    },
+    "us-en-magazine-arctic-surfing-html": {
+      "archetype": "us-en-magazine-san-diego-surf-html",
+      "variants": [
+        "section-title--underline",
+        "text"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0.01,
+          "px": 354,
+          "heightDelta": -1,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.12,
+          "px": 10538,
+          "heightDelta": 2,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "1 (0 structural 🔴)",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/magazine/arctic-surfing.html"
+    },
+    "us-en-magazine-guide-la-skateparks-html": {
+      "archetype": "us-en-magazine-san-diego-surf-html",
+      "variants": [
+        "section-title--underline",
+        "text--quote",
+        "download"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0.03,
+          "px": 675,
+          "heightDelta": -1,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "placed",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.16,
+          "px": 11307,
+          "heightDelta": 2,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "1 (0 structural 🔴)",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/magazine/guide-la-skateparks.html"
+    },
+    "us-en-magazine-ski-touring-html": {
+      "archetype": "us-en-magazine-san-diego-surf-html",
+      "variants": [
+        "text--quote"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0.01,
+          "px": 294,
+          "heightDelta": -1,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.12,
+          "px": 10323,
+          "heightDelta": 2,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib2",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "1 (0 structural 🔴)",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/magazine/ski-touring.html"
+    },
+    "us-en-magazine-western-australia-html": {
+      "archetype": "us-en-magazine-san-diego-surf-html",
+      "variants": [
+        "section-title--underline",
+        "text--quote"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0.03,
+          "px": 908,
+          "heightDelta": -1,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        },
+        "1440": {
+          "pct": 0.17,
+          "px": 15697,
+          "heightDelta": 3,
+          "overflowX": 0,
+          "verdict": "PASS",
+          "label": "sib1",
+          "regime": "prototype"
+        }
+      },
+      "contentDiff": "1 (0 structural 🔴)",
+      "deliveryLint": "0 P0 · 0 P1 · 1 P2",
+      "media": null,
+      "gatesPassed": [
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "content-count",
+        "delivery-lint",
+        "variance-probe"
+      ],
+      "migrated": "stardust/migrated/us/en/magazine/western-australia.html"
+    }
+  },
+  "migrate": {
+    "at": "2026-09-24T09:28:20.510Z",
+    "pages": 26,
+    "archetypes": 6,
+    "siblings": 20,
+    "thin": 0,
+    "gates": {
+      "pixel-gate-1440": 26,
+      "pixel-gate-360": 26,
+      "content-count": 26,
+      "delivery-lint": 25,
+      "content-fidelity": 20,
+      "variance-probe": 20
+    },
+    "missing": {}
+  }
+}

@@ -1,0 +1,453 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout prepare",
+    "writtenAt": "2026-09-24T10:09:49.493Z",
+    "shape": "handoff-contract § 3 progress.json"
+  },
+  "phase": "C-deliver",
+  "units": {
+    "foundation": {
+      "status": "done",
+      "kind": "foundation",
+      "templates": [
+        "us-en-html",
+        "us-en-adventures-climbing-new-zealand-html",
+        "us-en-magazine-san-diego-surf-html",
+        "us-en-about-us-html",
+        "us-en-faqs-html",
+        "us-en-adventures-html"
+      ],
+      "pages": 3,
+      "blocks": 2,
+      "order": 0,
+      "scope": [
+        "stardust/runtime-contract.json",
+        "styles/styles.css",
+        "styles/fonts.css",
+        "styles/lazy-styles.css",
+        "fonts/",
+        "favicon.ico",
+        "icons/",
+        "head.html",
+        "blocks/header/",
+        "blocks/footer/",
+        "/nav",
+        "/footer"
+      ],
+      "startedAt": "2026-09-24T07:50:00.000Z",
+      "endedAt": "2026-09-24T10:59:03.762Z",
+      "gates": {
+        "360": {
+          "page": "/us/en/shell-check",
+          "header": "0.53%",
+          "footer": "0.84%",
+          "chromeDeltas": 29,
+          "pageerrors": 0,
+          "scrollWidth": 360
+        },
+        "1440": {
+          "page": "/us/en/shell-check",
+          "header": "0.09%",
+          "footer": "0.02%",
+          "chromeDeltas": 25,
+          "pageerrors": 0,
+          "scrollWidth": 1440
+        },
+        "crop": "1440 header 0.09% footer 0.02%; 360 header 0.53% footer 0.84% (bar 2%)",
+        "chrome": "1440 Δ25 / 360 Δ29 — all region-level (header reserve wrapper vs live fixed header, footer y on short shell page), pipeline media-hash icon signatures, a11y text of icon links, off-canvas mobile nav; pixels confirm (A-C0-8)"
+      },
+      "verdict": "foundation: files 39, nav+footer live, shell previewed; gate 1440 header 0.09% / footer 0.02%, 360 header 0.53% / footer 0.84%, chrome Δ25/Δ29 justified, 0 pageerror, 0 overflow; frozen 39 files"
+    },
+    "landing": {
+      "status": "done",
+      "kind": "cluster",
+      "order": 1,
+      "templates": [
+        "us-en-html"
+      ],
+      "archetypeSlug": "us-en-html",
+      "pages": 1,
+      "blocks": 4,
+      "pageSlugs": [
+        "us-en-html"
+      ],
+      "daPaths": [
+        "/us/en"
+      ],
+      "blocksToConvert": [
+        "hero-carousel",
+        "featured-teaser",
+        "hero-teaser",
+        "cards"
+      ],
+      "blocksToReuse": [],
+      "pagesLive": 1,
+      "blocksConverted": [
+        "hero-carousel",
+        "featured-teaser",
+        "hero-teaser",
+        "cards"
+      ],
+      "foundationRequests": 3,
+      "gates": {
+        "360": {
+          "archetype": 2.41,
+          "sibling": null,
+          "heightDelta": 3,
+          "overflow": 0,
+          "crop": "hdr 0.48% ftr 0.89%",
+          "chrome": 25
+        },
+        "1440": {
+          "archetype": 2,
+          "sibling": null,
+          "heightDelta": 2,
+          "overflow": 0,
+          "crop": "hdr 0.09% ftr 0.02%",
+          "chrome": 25
+        }
+      },
+      "startedAt": "2026-09-24T10:59:03.762Z",
+      "endedAt": "2026-09-24T13:06:56.239Z",
+      "verdict": "landing: pages 1/1 live, blocks 4, gate 1440 2.00% / 360 2.41%, requests 3"
+    },
+    "program": {
+      "status": "done",
+      "kind": "cluster",
+      "order": 2,
+      "templates": [
+        "us-en-adventures-climbing-new-zealand-html"
+      ],
+      "archetypeSlug": "us-en-adventures-climbing-new-zealand-html",
+      "pages": 16,
+      "blocks": 3,
+      "pageSlugs": [
+        "us-en-adventures-climbing-new-zealand-html",
+        "us-en-adventures-bali-surf-camp-html",
+        "us-en-adventures-beervana-portland-html",
+        "us-en-adventures-colorado-rock-climbing-html",
+        "us-en-adventures-cycling-southern-utah-html",
+        "us-en-adventures-cycling-tuscany-html",
+        "us-en-adventures-downhill-skiing-wyoming-html",
+        "us-en-adventures-gastronomic-marais-tour-html",
+        "us-en-adventures-napa-wine-tasting-html",
+        "us-en-adventures-riverside-camping-australia-html",
+        "us-en-adventures-ski-touring-mont-blanc-html",
+        "us-en-adventures-surf-camp-costa-rica-html",
+        "us-en-adventures-tahoe-skiing-html",
+        "us-en-adventures-west-coast-cycling-html",
+        "us-en-adventures-whistler-mountain-biking-html",
+        "us-en-adventures-yosemite-backpacking-html"
+      ],
+      "daPaths": [
+        "/us/en/adventures/climbing-new-zealand",
+        "/us/en/adventures/bali-surf-camp",
+        "/us/en/adventures/beervana-portland",
+        "/us/en/adventures/colorado-rock-climbing",
+        "/us/en/adventures/cycling-southern-utah",
+        "/us/en/adventures/cycling-tuscany",
+        "/us/en/adventures/downhill-skiing-wyoming",
+        "/us/en/adventures/gastronomic-marais-tour",
+        "/us/en/adventures/napa-wine-tasting",
+        "/us/en/adventures/riverside-camping-australia",
+        "/us/en/adventures/ski-touring-mont-blanc",
+        "/us/en/adventures/surf-camp-costa-rica",
+        "/us/en/adventures/tahoe-skiing",
+        "/us/en/adventures/west-coast-cycling",
+        "/us/en/adventures/whistler-mountain-biking",
+        "/us/en/adventures/yosemite-backpacking"
+      ],
+      "blocksToConvert": [
+        "mini-carousel",
+        "trip-facts",
+        "tabs"
+      ],
+      "blocksToReuse": [],
+      "pagesLive": 16,
+      "blocksConverted": [
+        "mini-carousel",
+        "trip-facts",
+        "tabs"
+      ],
+      "foundationRequests": 2,
+      "gates": {
+        "360": {
+          "archetype": 2.32,
+          "sibling": 0.48,
+          "crop": "hdr 0.53% ftr 0.01%",
+          "chrome": 15
+        },
+        "1440": {
+          "archetype": 0.8,
+          "sibling": 0.06,
+          "crop": "hdr 0.09% ftr 0.31%",
+          "chrome": 11
+        }
+      },
+      "startedAt": "2026-09-24T10:59:03.762Z",
+      "endedAt": "2026-09-24T13:06:56.239Z",
+      "verdict": "program: pages 16/16 live, blocks 3, gate 1440 0.80% / 360 2.32%, requests 2"
+    },
+    "article": {
+      "status": "done",
+      "kind": "cluster",
+      "order": 2,
+      "templates": [
+        "us-en-magazine-san-diego-surf-html"
+      ],
+      "archetypeSlug": "us-en-magazine-san-diego-surf-html",
+      "pages": 5,
+      "blocks": 4,
+      "pageSlugs": [
+        "us-en-magazine-san-diego-surf-html",
+        "us-en-magazine-arctic-surfing-html",
+        "us-en-magazine-guide-la-skateparks-html",
+        "us-en-magazine-ski-touring-html",
+        "us-en-magazine-western-australia-html"
+      ],
+      "daPaths": [
+        "/us/en/magazine/san-diego-surf",
+        "/us/en/magazine/arctic-surfing",
+        "/us/en/magazine/guide-la-skateparks",
+        "/us/en/magazine/ski-touring",
+        "/us/en/magazine/western-australia"
+      ],
+      "blocksToConvert": [
+        "article-body",
+        "contributor-byline",
+        "upnext-list",
+        "download"
+      ],
+      "blocksToReuse": [],
+      "pagesLive": 5,
+      "blocksConverted": [
+        "article-body",
+        "contributor-byline",
+        "upnext-list",
+        "download"
+      ],
+      "foundationRequests": 1,
+      "gates": {
+        "360": {
+          "archetype": 2.89,
+          "sibling": 2.84,
+          "crop": "hdr 0.48% ftr 0.09%",
+          "chrome": 28,
+          "heightDelta": {
+            "archetype": -1,
+            "sibling": -1
+          },
+          "siblingSlug": "us-en-magazine-western-australia-html"
+        },
+        "1440": {
+          "archetype": 0.7,
+          "sibling": 0.4,
+          "crop": "hdr 1.56% ftr 0.41%",
+          "chrome": 13,
+          "heightDelta": {
+            "archetype": 0,
+            "sibling": 0
+          },
+          "siblingSlug": "us-en-magazine-guide-la-skateparks-html"
+        },
+        "overflow": 0,
+        "computedStyleGuard": "PASS 1440+360",
+        "aiReadability": "strict 100% / code 100% x5"
+      },
+      "startedAt": "2026-09-24T10:59:03.762Z",
+      "endedAt": "2026-09-24T13:06:56.239Z",
+      "verdict": "article: pages 5/5 live, blocks 4, gate 1440 0.70% / 360 2.89%, requests 1"
+    },
+    "static": {
+      "status": "done",
+      "kind": "cluster",
+      "order": 2,
+      "templates": [
+        "us-en-about-us-html"
+      ],
+      "archetypeSlug": "us-en-about-us-html",
+      "pages": 1,
+      "blocks": 1,
+      "pageSlugs": [
+        "us-en-about-us-html"
+      ],
+      "daPaths": [
+        "/us/en/about-us"
+      ],
+      "blocksToConvert": [
+        "contributor-card"
+      ],
+      "blocksToReuse": [],
+      "pagesLive": 1,
+      "blocksConverted": [
+        "contributor-card"
+      ],
+      "foundationRequests": 2,
+      "gates": {
+        "360": {
+          "archetype": 0.24,
+          "sibling": null,
+          "crop": "hdr 0.48% ftr 0.04%",
+          "chrome": 16,
+          "heightDelta": 1,
+          "overflow": 0
+        },
+        "1440": {
+          "archetype": 0.4,
+          "sibling": null,
+          "crop": "hdr 1.56% ftr 0.02%",
+          "chrome": 13,
+          "heightDelta": 0,
+          "overflow": 0
+        }
+      },
+      "startedAt": "2026-09-24T10:59:03.762Z",
+      "endedAt": "2026-09-24T13:06:56.239Z",
+      "verdict": "static: pages 1/1 live, blocks 1, gate 1440 0.40% / 360 0.24%, requests 2"
+    },
+    "unique": {
+      "status": "done",
+      "kind": "cluster",
+      "order": 2,
+      "templates": [
+        "us-en-faqs-html"
+      ],
+      "archetypeSlug": "us-en-faqs-html",
+      "pages": 1,
+      "blocks": 1,
+      "pageSlugs": [
+        "us-en-faqs-html"
+      ],
+      "daPaths": [
+        "/us/en/faqs"
+      ],
+      "blocksToConvert": [
+        "accordion"
+      ],
+      "blocksToReuse": [],
+      "pagesLive": 1,
+      "blocksConverted": [
+        "accordion"
+      ],
+      "foundationRequests": 0,
+      "gates": {
+        "360": {
+          "archetype": 1.22,
+          "sibling": null,
+          "crop": "hdr 0.48% ftr 0.06%",
+          "chrome": 16
+        },
+        "1440": {
+          "archetype": 0.27,
+          "sibling": null,
+          "crop": "hdr 1.10% ftr 0.02%",
+          "chrome": 13
+        }
+      },
+      "startedAt": "2026-09-24T10:59:03.762Z",
+      "endedAt": "2026-09-24T13:06:56.239Z",
+      "verdict": "unique: pages 1/1 live, blocks 1, gate 1440 0.27% / 360 1.22%, requests 0"
+    },
+    "listing": {
+      "status": "done",
+      "kind": "cluster",
+      "order": 3,
+      "templates": [
+        "us-en-adventures-html"
+      ],
+      "archetypeSlug": "us-en-adventures-html",
+      "pages": 2,
+      "blocks": 1,
+      "pageSlugs": [
+        "us-en-adventures-html",
+        "us-en-magazine-html"
+      ],
+      "daPaths": [
+        "/us/en/adventures",
+        "/us/en/magazine"
+      ],
+      "blocksToConvert": [
+        "list-teaser"
+      ],
+      "blocksToReuse": [
+        "featured-teaser",
+        "hero-teaser",
+        "cards",
+        "tabs"
+      ],
+      "pagesLive": 2,
+      "blocksConverted": [
+        "list-teaser"
+      ],
+      "foundationRequests": 2,
+      "gates": {
+        "360": {
+          "archetype": 1.15,
+          "sibling": 3.83,
+          "crop": "hdr 0.48% ftr 0.05%",
+          "chrome": 16,
+          "heightDelta": {
+            "archetype": 2,
+            "sibling": 13
+          }
+        },
+        "1440": {
+          "archetype": 1,
+          "sibling": 1.64,
+          "crop": "hdr 1.82% ftr 0.04%",
+          "chrome": 13,
+          "heightDelta": {
+            "archetype": 1,
+            "sibling": 0
+          }
+        }
+      },
+      "startedAt": "2026-09-24T10:59:03.762Z",
+      "endedAt": "2026-09-24T13:06:56.239Z",
+      "verdict": "listing: pages 2/2 live, blocks 1, gate 1440 1.00% / 360 1.15%, requests 2"
+    },
+    "final": {
+      "status": "done",
+      "kind": "final",
+      "templates": [
+        "us-en-html",
+        "us-en-adventures-climbing-new-zealand-html",
+        "us-en-magazine-san-diego-surf-html",
+        "us-en-about-us-html",
+        "us-en-faqs-html",
+        "us-en-adventures-html"
+      ],
+      "pages": 26,
+      "blocks": 16,
+      "order": 4,
+      "startedAt": "2026-09-24T13:07:05.875Z",
+      "endedAt": "2026-09-24T13:29:27.702Z",
+      "requestsApplied": 11,
+      "gates": {
+        "360": {
+          "us-en-html": 0.48,
+          "us-en-adventures-climbing-new-zealand-html": 2.32,
+          "us-en-magazine-san-diego-surf-html": 2.89,
+          "us-en-about-us-html": 0.23,
+          "us-en-faqs-html": 1.22,
+          "us-en-adventures-html": 0.73,
+          "us-en-magazine-html": 3.83,
+          "chrome": 14
+        },
+        "1440": {
+          "us-en-html": 0.26,
+          "us-en-adventures-climbing-new-zealand-html": 0.8,
+          "us-en-magazine-san-diego-surf-html": 0.32,
+          "us-en-about-us-html": 0.03,
+          "us-en-faqs-html": 0.03,
+          "us-en-adventures-html": 0.21,
+          "us-en-magazine-html": 1.28,
+          "chrome": 10
+        },
+        "crop": "cluster bands unchanged; chrome pairs Sign In + current-nav resolved",
+        "chrome": "1440 10 / 360 14 — foundation justified set (A-C0-8)"
+      },
+      "verdict": "final: pages 26/26 live, requests 11 applied / 0 reverted, re-gate PASS 7 pages x 2 widths (1440 0.03-1.28%, 360 0.23-3.83%), shell page removed"
+    }
+  }
+}

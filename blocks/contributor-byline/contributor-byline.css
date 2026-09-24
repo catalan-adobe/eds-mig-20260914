@@ -1,0 +1,152 @@
+/* contributor-byline — values lifted from stardust/prototypes/us-en-magazine-san-diego-surf-html.css
+   (.contributor .separator, cmp-byline, .btn-list, .button--secondary.button--icon) */
+
+.contributor-byline {
+  display: flow-root;
+}
+
+/* the source's .column.separator > hr (1px borders, 2px tall, 4rem margins) */
+.contributor-byline .separator {
+  margin: 4rem 14px;
+  border-top: 1px solid var(--color-third);
+  border-bottom: 1px solid var(--color-third);
+}
+
+/* aem-Grid: floated columns, byline 9/12, button list 3/12 */
+.contributor-byline .grid {
+  display: flow-root;
+  width: 100%;
+}
+
+.contributor-byline .byline-column {
+  box-sizing: border-box;
+  float: left;
+  width: 75%;
+  padding: 0 14px;
+}
+
+.contributor-byline .buttons-column {
+  box-sizing: border-box;
+  float: left;
+  width: 25%;
+  padding: 0;
+}
+
+/* cmp-byline: 60px round portrait floated left of the name + occupations */
+.contributor-byline .byline-image {
+  float: left;
+}
+
+.contributor-byline .byline-image p {
+  margin: 0;
+  line-height: var(--line-height-body);
+  text-align: left;
+}
+
+.contributor-byline .byline-image picture {
+  display: block;
+}
+
+.contributor-byline .byline-image img {
+  width: 60px;
+  height: 60px;
+  margin: 7px 0;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.contributor-byline .name :is(h1, h2, h3, h4) {
+  margin: 0 0 0.25rem 85px;
+  padding-top: 0.5rem;
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-lg);
+}
+
+.contributor-byline .occupations p {
+  margin: 0 0 13.5px 85px;
+  color: var(--color-muted);
+  font-size: var(--body-xs);
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* .btn-list of .button--secondary.button--icon: 48px dark squares, glyph-sized icons */
+.contributor-byline .btn-list {
+  display: flow-root;
+  width: 100%;
+}
+
+.contributor-byline .btn-list ul {
+  display: flow-root;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contributor-byline .btn-list li {
+  display: flex;
+  float: left;
+  clear: none;
+  padding: 0;
+}
+
+.contributor-byline .btn-list a:any-link {
+  float: left;
+  width: var(--button-size);
+  height: var(--button-size);
+  min-width: var(--button-size);
+  border-radius: var(--radius);
+  background-color: var(--color-secondary);
+  color: var(--color-fg-inverse);
+  font-size: 0;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+}
+
+/* the source draws the icon-font glyph in white on the dark square; the decorated
+   /icons/<name>.svg is dark-filled, so the glyph is drawn and the img hidden */
+.contributor-byline .btn-list .icon {
+  display: inline-block;
+  float: left;
+  padding-top: 18px;
+  padding-left: 14px;
+  font-size: 17.5px;
+  line-height: 1;
+}
+
+.contributor-byline .btn-list .icon img {
+  display: none;
+}
+
+.contributor-byline .btn-list .icon::before {
+  font-family: var(--icon-font-family);
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.contributor-byline .btn-list .icon-facebook::before {
+  content: '\e902';
+}
+
+.contributor-byline .btn-list .icon-twitter::before {
+  content: '\e901';
+}
+
+.contributor-byline .btn-list .icon-instagram::before {
+  content: '\e903';
+}
+
+@media (width <= 1024px) {
+  .contributor-byline .byline-column,
+  .contributor-byline .buttons-column {
+    width: 100%;
+  }
+
+  .contributor-byline .buttons-column {
+    padding: 0 14px;
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "slug": "us-en-magazine-western-australia-html",
+  "type": "article",
+  "renderBranch": "A'",
+  "template": "us-en-magazine-san-diego-surf-html",
+  "modules": [
+    "content-fragment",
+    "contributor-byline",
+    "upnext-list"
+  ],
+  "slotsFilled": [
+    "fixed-container"
+  ],
+  "canonShas": {
+    "header": "879f33c5a71d",
+    "footer": "e734a8699b2b",
+    "css": "bd936aef89b6"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Western Australia",
+    "description": "The Australian West coast is a camper’s heaven. Endless miles of desert roads leading to secret beaches, vast canyons and crystal clear rivers, and the very few people you are likely to meet on your journey will be some of the most easy-going characters you’ll find anywhere in the world. ",
+    "canonical": null,
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Western Australia",
+    "description": "The Australian West coast is a camper’s heaven. Endless miles of desert roads leading to secret beaches, vast canyons and crystal clear rivers, and the very few people you are likely to meet on your journey will be some of the most easy-going characters you’ll find anywhere in the world. ",
+    "mainEntityOfPage": "https://wknd.site/us/en/magazine/western-australia.html"
+  },
+  "migratedAt": "2026-09-24T09:25:40Z",
+  "designMdSha": "720637eadd96",
+  "designJsonSha": "a627c03a4224",
+  "sourceCurrentSha": "eb3067d991d9",
+  "sourceProposedSha": "80f8110bce94",
+  "fidelityTier": "sibling",
+  "archetypeSource": "us-en-magazine-san-diego-surf-html",
+  "archetypeSha": "8444bfa39b0a",
+  "variants": [
+    "section-title--underline",
+    "text--quote"
+  ],
+  "gatesPassed": [
+    "content-fidelity",
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "content-count",
+    "delivery-lint",
+    "variance-probe"
+  ],
+  "gateEvidence": {
+    "content-fidelity": "verbatim from stardust/current/pages/us-en-magazine-western-australia-html.html; content-diff: main 26 text / 8 headings / 8 CTAs / 5 img = source; header 28/28, footer 17/17; 0 red, 1 yellow ICON MOVED (contributor photo, whitespace-only anchor); deviations logged in contentDeviations[]",
+    "pixel-gate-1440": "0.17% (15697 px, threshold 10%), height delta 3px, round sib1 @1440 (us-en-magazine-western-australia-html-1440.log) [prototype regime]",
+    "pixel-gate-360": "0.03% (908 px, threshold 10%), height delta -1px, round sib1 @360 (us-en-magazine-western-australia-html-360.log) [prototype regime]",
+    "content-count": "content-diff: 1 (0 structural 🔴) (us-en-magazine-western-australia-html-cd2.log)",
+    "media-reconcile": "n/a: no delivered content file yet (content/us/en/magazine/western-australia.html) — media-reconcile runs in the delivery chain (row C)",
+    "delivery-lint": "0 P0 · 0 P1 · 1 P2 (delivery-lint --path /us/en/magazine/western-australia)",
+    "variance-probe": "■ https://wknd.site/us/en/magazine/western-australia.html: 8 delta(s) — variants [section-title--underline, text--quote] (variance-article.log)"
+  },
+  "contentDeviations": [
+    {
+      "kind": "transform",
+      "source": "contributor button href '#'",
+      "target": "'#ssjöberg'",
+      "reason": "archetype convention, same target"
+    },
+    {
+      "kind": "drop",
+      "source": "empty live sidebar .download column",
+      "target": "none",
+      "reason": "renders nothing on live"
+    },
+    {
+      "kind": "drop",
+      "source": "2 empty aem-Grid placeholder wrappers",
+      "target": "none",
+      "reason": "render nothing on live"
+    }
+  ],
+  "assetsBundled": 4,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/us/es.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ca/en.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ca/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/de.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/it.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/de/de.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/es/es.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/it/it.html",
+      "reason": "not-in-inventory"
+    }
+  ],
+  "outputPath": "us/en/magazine/western-australia.html",
+  "outputPathDefault": null,
+  "sidecar": "us/en/magazine/western-australia._meta.json",
+  "driverVersion": "1"
+}

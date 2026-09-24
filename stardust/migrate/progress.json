@@ -1,0 +1,124 @@
+{
+  "flow": "replica",
+  "phase": "migrate",
+  "updatedAt": "2026-09-24T09:29:33Z",
+  "units": {
+    "plan": {
+      "status": "done",
+      "kind": "plan",
+      "templates": [
+        "us-en-html",
+        "us-en-adventures-html",
+        "us-en-adventures-climbing-new-zealand-html",
+        "us-en-magazine-san-diego-surf-html",
+        "us-en-about-us-html",
+        "us-en-faqs-html"
+      ],
+      "pages": 6,
+      "startedAt": "2026-09-24T08:37:17Z",
+      "endedAt": "2026-09-24T08:43:57Z",
+      "verdict": "rendered 6, unchanged 0, refused 0, passthrough 0 (Path A archetypes); variance probes: listing exit 2 (magazine.html: featured+list teasers, no tabs, +text), program exit 2 (content-length boxes only), article exit 2 (+text block, underline h2 titles)"
+    },
+    "us-en-adventures-html": {
+      "status": "done",
+      "kind": "render",
+      "templates": [
+        "us-en-adventures-html"
+      ],
+      "archetype": "us-en-adventures-html",
+      "siblings": [
+        "us-en-magazine-html"
+      ],
+      "pages": 1,
+      "variance": "stardust/migrate/variance/us-en-adventures-html.json",
+      "variants": [
+        "teaser--featured",
+        "teaser--list",
+        "no-tabs image-list",
+        "text"
+      ],
+      "startedAt": "2026-09-24T09:17:51Z",
+      "endedAt": "2026-09-24T09:23:46Z",
+      "verdict": "rendered 1, unchanged 0, refused 0, passthrough 0 (A' sibling; 7 variants; 6 gates passed, media-reconcile n/a until delivery; variance-probe re-run as run-bg job variance-listing)"
+    },
+    "us-en-adventures-climbing-new-zealand-html-1": {
+      "status": "done",
+      "kind": "render",
+      "templates": [
+        "us-en-adventures-climbing-new-zealand-html"
+      ],
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "siblings": [
+        "us-en-adventures-bali-surf-camp-html",
+        "us-en-adventures-beervana-portland-html",
+        "us-en-adventures-colorado-rock-climbing-html",
+        "us-en-adventures-cycling-southern-utah-html",
+        "us-en-adventures-cycling-tuscany-html",
+        "us-en-adventures-downhill-skiing-wyoming-html",
+        "us-en-adventures-gastronomic-marais-tour-html",
+        "us-en-adventures-napa-wine-tasting-html"
+      ],
+      "pages": 8,
+      "variance": "stardust/migrate/variance/us-en-adventures-climbing-new-zealand-html.json",
+      "variants": [],
+      "startedAt": "2026-09-24T09:23:47Z",
+      "endedAt": "2026-09-24T09:25:19Z",
+      "verdict": "rendered 8, unchanged 0, refused 0, passthrough 0 (A' siblings; 6 gates each, media-reconcile n/a until delivery)"
+    },
+    "us-en-adventures-climbing-new-zealand-html-2": {
+      "status": "done",
+      "kind": "render",
+      "templates": [
+        "us-en-adventures-climbing-new-zealand-html"
+      ],
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "siblings": [
+        "us-en-adventures-riverside-camping-australia-html",
+        "us-en-adventures-ski-touring-mont-blanc-html",
+        "us-en-adventures-surf-camp-costa-rica-html",
+        "us-en-adventures-tahoe-skiing-html",
+        "us-en-adventures-west-coast-cycling-html",
+        "us-en-adventures-whistler-mountain-biking-html",
+        "us-en-adventures-yosemite-backpacking-html"
+      ],
+      "pages": 7,
+      "variance": "stardust/migrate/variance/us-en-adventures-climbing-new-zealand-html.json",
+      "variants": [],
+      "startedAt": "2026-09-24T09:25:19Z",
+      "endedAt": "2026-09-24T09:25:40Z",
+      "verdict": "rendered 7, unchanged 0, refused 0, passthrough 0 (A' siblings; 6 gates each, media-reconcile n/a until delivery)"
+    },
+    "us-en-magazine-san-diego-surf-html": {
+      "status": "done",
+      "kind": "render",
+      "templates": [
+        "us-en-magazine-san-diego-surf-html"
+      ],
+      "archetype": "us-en-magazine-san-diego-surf-html",
+      "siblings": [
+        "us-en-magazine-arctic-surfing-html",
+        "us-en-magazine-guide-la-skateparks-html",
+        "us-en-magazine-ski-touring-html",
+        "us-en-magazine-western-australia-html"
+      ],
+      "pages": 4,
+      "variance": "stardust/migrate/variance/us-en-magazine-san-diego-surf-html.json",
+      "variants": [
+        "section-title--underline",
+        "text"
+      ],
+      "startedAt": "2026-09-24T09:25:40Z",
+      "endedAt": "2026-09-24T09:28:19Z",
+      "verdict": "rendered 4, unchanged 0, refused 0, passthrough 0 (A' siblings; 6 gates each, media-reconcile n/a until delivery; guide-la-skateparks PDF /content/dam link logged soft-broken → asset rehost at rollout)"
+    },
+    "report": {
+      "status": "done",
+      "kind": "report",
+      "templates": [],
+      "pages": 0,
+      "startedAt": "2026-09-24T09:28:19Z",
+      "endedAt": "2026-09-24T09:29:33Z",
+      "verdict": "20 siblings migrated (A' sibling tier), 0 refused, 0 unmigrated; gate-evidence --check exit 0; archetypes remain approved (plan unit scope)"
+    }
+  }
+}

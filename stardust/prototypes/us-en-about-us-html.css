@@ -1,0 +1,40 @@
+/* us-en-about-us-html (static archetype) — page-specific CSS.
+   Values lifted from clientlib-site.min.css (wknd.site): .cmp-layout-container--fixed, aem-Grid
+   columns (default 3/12, tablet 6/12, phone 12/12), .cmp-experience-fragment--contributor,
+   .cmp-title--underline, .cmp-title--black, .cmp-text--font-small, .cmp-buildingblock--btn-list.
+   Chrome, headings, buttons, icons come from canon.css. */
+
+/* Fixed layout container (cmp-layout-container--fixed): identical to canon .container above 1024 */
+.page-about .container--fixed { box-sizing: border-box; }
+
+/* aem-Grid: block + clearfix; every column floats with 14px gutters (canon .column) */
+.page-about .grid { display: block; width: 100%; }
+.page-about .grid::after, .page-about .grid::before { content: " "; display: table; }
+.page-about .grid::after { clear: both; }
+
+/* Page title (cmp-title h1) — inherits canon h1: Asar 40px, margin 27px 0 13.5px */
+.page-about .page-title { margin: 27px 0 13.5px; }
+
+/* Section intro (cmp-text--font-small): 14px paragraph, keeps canon p margin 0 0 13.5px */
+.page-about .text--font-small p { font-size: var(--body-sm); }
+
+/* Contributor XF (cmp-experience-fragment--contributor): centred flex column, 3/12 wide by default */
+.page-about .contributor {
+  align-items: center; display: flex; justify-content: center; padding-bottom: 1em; padding-top: .5em;
+  text-align: center; width: 25%;
+}
+.page-about .contributor__inner { box-sizing: border-box; padding: 0 14px; width: 100%; }
+.page-about .contributor__image img { border-radius: 50%; height: 164px; margin: 7px 0; object-fit: cover; width: 164px; }
+.page-about .contributor__name, .page-about .contributor__role { margin-bottom: .25em; margin-top: 0; }
+.page-about .contributor__role--black { color: #202020; }
+
+/* Building block button list: padding-top 1em, flex-centred row of touching 48px icon buttons */
+.page-about .contributor__buttons { display: flex; justify-content: center; padding-top: 1em; }
+.page-about .contributor__buttons .button { clear: none; float: left; padding: 0; }
+
+@media (max-width: 1024px) {
+  .page-about .contributor { width: 50%; }
+}
+@media (max-width: 767px) {
+  .page-about .contributor { width: 100%; }
+}

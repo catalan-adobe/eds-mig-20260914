@@ -1,0 +1,103 @@
+{
+  "slug": "us-en-about-us-html",
+  "type": "static",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "contributor-card"
+  ],
+  "slotsFilled": [
+    "container"
+  ],
+  "canonShas": {
+    "header": "d7b47e166dea",
+    "footer": "c531d82fe21e",
+    "css": "bd936aef89b6"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "About Us",
+    "description": "WKND is a collective of outdoors, music, crafts, adventure sports, and travel enthusiasts that want to share our experiences, connections, and expertise with the world. ",
+    "canonical": null,
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "About Us",
+    "description": "WKND is a collective of outdoors, music, crafts, adventure sports, and travel enthusiasts that want to share our experiences, connections, and expertise with the world. ",
+    "url": "https://wknd.site/us/en/about-us.html"
+  },
+  "migratedAt": "2026-09-24T09:32:30Z",
+  "designMdSha": "720637eadd96",
+  "designJsonSha": "a627c03a4224",
+  "sourceCurrentSha": "0e421070b532",
+  "sourceProposedSha": "beeba347a1f3",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "content-count",
+    "delivery-lint"
+  ],
+  "gateEvidence": {
+    "pixel-gate-1440": "0.00% (0 px, threshold 10%), height delta 0px, round conf @1440 (conf-us-en-about-us-html-1440.log) [prototype regime]",
+    "pixel-gate-360": "0.00% (0 px, threshold 10%), height delta 0px, round conf @360 (conf-us-en-about-us-html-360.log) [prototype regime]",
+    "content-count": "content-diff: none — content + roles match (conf-us-en-about-us-html-360.log)",
+    "media-reconcile": "n/a: no delivered content file yet (content/us/en/about-us.html) — media-reconcile runs in the delivery chain (row C)",
+    "delivery-lint": "0 P0 · 0 P1 · 1 P2 (delivery-lint --path /us/en/about-us)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 4,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/us/es.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ca/en.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ca/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/de.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/it.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/de/de.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/es/es.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/it/it.html",
+      "reason": "not-in-inventory"
+    }
+  ],
+  "outputPath": "us/en/about-us.html",
+  "outputPathDefault": null,
+  "sidecar": "us/en/about-us._meta.json",
+  "driverVersion": "1"
+}

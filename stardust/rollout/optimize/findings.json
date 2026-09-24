@@ -1,0 +1,922 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/optimize",
+    "writtenAt": "2026-09-24T14:03:37.611Z",
+    "stardustVersion": "0.0.0"
+  },
+  "runs": [
+    {
+      "id": "run-1",
+      "at": "2026-09-24T14:03:37.611Z",
+      "scopePages": [
+        "us-en-about-us-html",
+        "us-en-adventures-bali-surf-camp-html",
+        "us-en-adventures-beervana-portland-html",
+        "us-en-adventures-climbing-new-zealand-html",
+        "us-en-adventures-colorado-rock-climbing-html",
+        "us-en-adventures-cycling-southern-utah-html",
+        "us-en-adventures-cycling-tuscany-html",
+        "us-en-adventures-downhill-skiing-wyoming-html",
+        "us-en-adventures-gastronomic-marais-tour-html",
+        "us-en-adventures-html",
+        "us-en-adventures-napa-wine-tasting-html",
+        "us-en-adventures-riverside-camping-australia-html",
+        "us-en-adventures-ski-touring-mont-blanc-html",
+        "us-en-adventures-surf-camp-costa-rica-html",
+        "us-en-adventures-tahoe-skiing-html",
+        "us-en-adventures-west-coast-cycling-html",
+        "us-en-adventures-whistler-mountain-biking-html",
+        "us-en-adventures-yosemite-backpacking-html",
+        "us-en-faqs-html",
+        "us-en-html",
+        "us-en-magazine-arctic-surfing-html",
+        "us-en-magazine-guide-la-skateparks-html",
+        "us-en-magazine-html",
+        "us-en-magazine-san-diego-surf-html",
+        "us-en-magazine-ski-touring-html",
+        "us-en-magazine-western-australia-html"
+      ],
+      "layersRun": [
+        "accessibility",
+        "seo",
+        "ai-search",
+        "cross-page"
+      ],
+      "trigger": "deliver",
+      "source": "https://replica-wknd--eds-mig-20260914--catalan-adobe.aem.live"
+    }
+  ],
+  "findings": [
+    {
+      "id": "f-1c79c94137",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-adventures-bali-surf-camp-html"
+        ]
+      },
+      "evidence": "source parity: no JSON-LD structured data — the source page has no JSON-LD either",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-1e1d48f966",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-adventures-napa-wine-tasting-html"
+        ]
+      },
+      "evidence": "source parity: no JSON-LD structured data — the source page has no JSON-LD either",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-2c400375f1",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-html"
+        ]
+      },
+      "evidence": "source parity: no JSON-LD structured data — the source page has no JSON-LD either",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-314521d2c7",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-magazine-ski-touring-html"
+        ]
+      },
+      "evidence": "source parity: no JSON-LD structured data — the source page has no JSON-LD either",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-331fcf0b3b",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-adventures-west-coast-cycling-html"
+        ]
+      },
+      "evidence": "source parity: no JSON-LD structured data — the source page has no JSON-LD either",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-490cc5439f",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-magazine-western-australia-html"
+        ]
+      },
+      "evidence": "source parity: no JSON-LD structured data — the source page has no JSON-LD either",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-543d7533cb",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-magazine-html"
+        ]
+      },
+      "evidence": "source parity: no JSON-LD structured data — the source page has no JSON-LD either",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-59a024ad5e",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-adventures-whistler-mountain-biking-html"
+        ]
+      },
+      "evidence": "source parity: no JSON-LD structured data — the source page has no JSON-LD either",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-5f92d881a4",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-adventures-surf-camp-costa-rica-html"
+        ]
+      },
+      "evidence": "source parity: no JSON-LD structured data — the source page has no JSON-LD either",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-61f211c7b5",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-adventures-riverside-camping-australia-html"
+        ]
+      },
+      "evidence": "source parity: no JSON-LD structured data — the source page has no JSON-LD either",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-6ff6cb077f",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-adventures-climbing-new-zealand-html"
+        ]
+      },
+      "evidence": "source parity: no JSON-LD structured data — the source page has no JSON-LD either",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-81a5309f37",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-adventures-beervana-portland-html"
+        ]
+      },
+      "evidence": "source parity: no JSON-LD structured data — the source page has no JSON-LD either",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-9a9f6deeca",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-adventures-gastronomic-marais-tour-html"
+        ]
+      },
+      "evidence": "source parity: no JSON-LD structured data — the source page has no JSON-LD either",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-ad0b6c468e",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-about-us-html"
+        ]
+      },
+      "evidence": "source parity: no JSON-LD structured data — the source page has no JSON-LD either",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-b0a894fec7",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-adventures-colorado-rock-climbing-html"
+        ]
+      },
+      "evidence": "source parity: no JSON-LD structured data — the source page has no JSON-LD either",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-b7b0f6a8e9",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-adventures-downhill-skiing-wyoming-html"
+        ]
+      },
+      "evidence": "source parity: no JSON-LD structured data — the source page has no JSON-LD either",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-bc3b725305",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-adventures-cycling-tuscany-html"
+        ]
+      },
+      "evidence": "source parity: no JSON-LD structured data — the source page has no JSON-LD either",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-bfa38b1eb2",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-magazine-san-diego-surf-html"
+        ]
+      },
+      "evidence": "source parity: no JSON-LD structured data — the source page has no JSON-LD either",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-c326a27769",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-adventures-html"
+        ]
+      },
+      "evidence": "source parity: no JSON-LD structured data — the source page has no JSON-LD either",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-c7b585de67",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-adventures-ski-touring-mont-blanc-html"
+        ]
+      },
+      "evidence": "source parity: no JSON-LD structured data — the source page has no JSON-LD either",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-d5c64166a6",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-adventures-yosemite-backpacking-html"
+        ]
+      },
+      "evidence": "source parity: no JSON-LD structured data — the source page has no JSON-LD either",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-e4709a5e4a",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-adventures-tahoe-skiing-html"
+        ]
+      },
+      "evidence": "source parity: no JSON-LD structured data — the source page has no JSON-LD either",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-e804f1bc47",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-faqs-html"
+        ]
+      },
+      "evidence": "source parity: no JSON-LD structured data — the source page has no JSON-LD either",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-ece868755c",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-magazine-guide-la-skateparks-html"
+        ]
+      },
+      "evidence": "source parity: no JSON-LD structured data — the source page has no JSON-LD either",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-f5ec71a4e8",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-magazine-arctic-surfing-html"
+        ]
+      },
+      "evidence": "source parity: no JSON-LD structured data — the source page has no JSON-LD either",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-fce89d074c",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-adventures-cycling-southern-utah-html"
+        ]
+      },
+      "evidence": "source parity: no JSON-LD structured data — the source page has no JSON-LD either",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-6bbb4c482d",
+      "source": "rollout:baseline",
+      "layer": "seo",
+      "check": "title-length",
+      "severity": "P3",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-about-us-html"
+        ]
+      },
+      "evidence": "source parity: <title> is 8 chars (\"About Us\") — the source page carries the same <title>",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-72d66bbc39",
+      "source": "rollout:baseline",
+      "layer": "cross-page",
+      "check": "duplicate-description",
+      "severity": "P3",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-about-us-html",
+          "us-en-html"
+        ]
+      },
+      "evidence": "source parity: 2 pages share a meta description — the source shares this description across the same pages",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-a65c70c3a5",
+      "source": "rollout:baseline",
+      "layer": "seo",
+      "check": "title-length",
+      "severity": "P3",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-magazine-html"
+        ]
+      },
+      "evidence": "source parity: <title> is 8 chars (\"Magazine\") — the source page carries the same <title>",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-e7c156eae4",
+      "source": "rollout:baseline",
+      "layer": "seo",
+      "check": "title-length",
+      "severity": "P3",
+      "fixability": "out-of-scope",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "us-en-faqs-html"
+        ]
+      },
+      "evidence": "source parity: <title> is 4 chars (\"FAQs\") — the source page carries the same <title>",
+      "recommendedMove": "Mirrors the source capture — informational, not scored, no rollout action; change it on the source (or record a content decision) if wanted.",
+      "autofix": {
+        "available": false,
+        "target": "aem-eds",
+        "strategy": null,
+        "kind": null,
+        "status": "unavailable",
+        "appliedBy": null,
+        "at": null,
+        "detail": "source parity — a faithful migration is not auto-rewritten"
+      },
+      "status": "open",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    }
+  ]
+}

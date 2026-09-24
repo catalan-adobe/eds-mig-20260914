@@ -1,0 +1,1066 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:migrate",
+    "writtenAt": "2026-09-24T09:33:25Z",
+    "stardustVersion": "0.10.0"
+  },
+  "site": {
+    "originUrl": "https://wknd.site/us/en.html",
+    "deployUrl": null,
+    "extractedAt": "2026-09-24T07:06:16.219Z",
+    "pageCap": null,
+    "totalDiscovered": 26,
+    "crawled": 26,
+    "scope": "/us/en subtree",
+    "captureGaps": []
+  },
+  "direction": null,
+  "handsOff": true,
+  "flow": "replica",
+  "flowChosenAt": "2026-09-24T07:06:30.434Z",
+  "flowSource": "question",
+  "pages": [
+    {
+      "slug": "us-en-about-us-html",
+      "url": "https://wknd.site/us/en/about-us.html",
+      "title": "About Us",
+      "type": "static",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T06:55:10.951Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-24T08:36:19Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-24T08:36:19Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:33:25Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-en-about-us-html.json",
+      "prototypePath": "stardust/prototypes/us-en-about-us-html-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "us-en-adventures-bali-surf-camp-html",
+      "url": "https://wknd.site/us/en/adventures/bali-surf-camp.html",
+      "title": "Bali Surf Camp",
+      "type": "program",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T06:55:28.426Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:23:47Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-en-adventures-bali-surf-camp-html.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/us/en/adventures/bali-surf-camp.html"
+    },
+    {
+      "slug": "us-en-adventures-beervana-portland-html",
+      "url": "https://wknd.site/us/en/adventures/beervana-portland.html",
+      "title": "Beervana in Portland",
+      "type": "program",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T06:55:28.426Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:23:47Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-en-adventures-beervana-portland-html.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/us/en/adventures/beervana-portland.html"
+    },
+    {
+      "slug": "us-en-adventures-climbing-new-zealand-html",
+      "url": "https://wknd.site/us/en/adventures/climbing-new-zealand.html",
+      "title": "Climbing New Zealand",
+      "type": "program",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T06:55:17.425Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-24T08:36:19Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-24T08:36:19Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:33:25Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-en-adventures-climbing-new-zealand-html.json",
+      "prototypePath": "stardust/prototypes/us-en-adventures-climbing-new-zealand-html-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "us-en-adventures-colorado-rock-climbing-html",
+      "url": "https://wknd.site/us/en/adventures/colorado-rock-climbing.html",
+      "title": "Colorado Rock Climbing",
+      "type": "program",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T06:55:28.427Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:23:47Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-en-adventures-colorado-rock-climbing-html.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/us/en/adventures/colorado-rock-climbing.html"
+    },
+    {
+      "slug": "us-en-adventures-cycling-southern-utah-html",
+      "url": "https://wknd.site/us/en/adventures/cycling-southern-utah.html",
+      "title": "Cycling Southern Utah",
+      "type": "program",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T06:55:28.647Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:23:47Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-en-adventures-cycling-southern-utah-html.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/us/en/adventures/cycling-southern-utah.html"
+    },
+    {
+      "slug": "us-en-adventures-cycling-tuscany-html",
+      "url": "https://wknd.site/us/en/adventures/cycling-tuscany.html",
+      "title": "Cycling Tuscany",
+      "type": "program",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T06:55:34.016Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:23:47Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-en-adventures-cycling-tuscany-html.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/us/en/adventures/cycling-tuscany.html"
+    },
+    {
+      "slug": "us-en-adventures-downhill-skiing-wyoming-html",
+      "url": "https://wknd.site/us/en/adventures/downhill-skiing-wyoming.html",
+      "title": "Downhill Skiing Wyoming",
+      "type": "program",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T06:55:11.427Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:23:47Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-en-adventures-downhill-skiing-wyoming-html.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/us/en/adventures/downhill-skiing-wyoming.html"
+    },
+    {
+      "slug": "us-en-adventures-gastronomic-marais-tour-html",
+      "url": "https://wknd.site/us/en/adventures/gastronomic-marais-tour.html",
+      "title": "Gastronomic Marais Tour",
+      "type": "program",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T06:55:34.015Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:23:47Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-en-adventures-gastronomic-marais-tour-html.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/us/en/adventures/gastronomic-marais-tour.html"
+    },
+    {
+      "slug": "us-en-adventures-html",
+      "url": "https://wknd.site/us/en/adventures.html",
+      "title": "Adventures",
+      "type": "listing",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T06:55:05.676Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-24T08:36:19Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-24T08:36:19Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:33:25Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-en-adventures-html.json",
+      "prototypePath": "stardust/prototypes/us-en-adventures-html-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "us-en-adventures-napa-wine-tasting-html",
+      "url": "https://wknd.site/us/en/adventures/napa-wine-tasting.html",
+      "title": "Napa Wine Tasting",
+      "type": "program",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T06:55:34.015Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:23:47Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-en-adventures-napa-wine-tasting-html.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/us/en/adventures/napa-wine-tasting.html"
+    },
+    {
+      "slug": "us-en-adventures-riverside-camping-australia-html",
+      "url": "https://wknd.site/us/en/adventures/riverside-camping-australia.html",
+      "title": "Riverside Camping",
+      "type": "program",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T06:55:34.174Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:25:19Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-en-adventures-riverside-camping-australia-html.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/us/en/adventures/riverside-camping-australia.html"
+    },
+    {
+      "slug": "us-en-adventures-ski-touring-mont-blanc-html",
+      "url": "https://wknd.site/us/en/adventures/ski-touring-mont-blanc.html",
+      "title": "Ski Touring Mont Blanc",
+      "type": "program",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T06:55:39.412Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:25:19Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-en-adventures-ski-touring-mont-blanc-html.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/us/en/adventures/ski-touring-mont-blanc.html"
+    },
+    {
+      "slug": "us-en-adventures-surf-camp-costa-rica-html",
+      "url": "https://wknd.site/us/en/adventures/surf-camp-costa-rica.html",
+      "title": "Surf Camp in Costa Rica",
+      "type": "program",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T06:55:39.411Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:25:19Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-en-adventures-surf-camp-costa-rica-html.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/us/en/adventures/surf-camp-costa-rica.html"
+    },
+    {
+      "slug": "us-en-adventures-tahoe-skiing-html",
+      "url": "https://wknd.site/us/en/adventures/tahoe-skiing.html",
+      "title": "Tahoe Skiing",
+      "type": "program",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T06:55:22.994Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:25:19Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-en-adventures-tahoe-skiing-html.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/us/en/adventures/tahoe-skiing.html"
+    },
+    {
+      "slug": "us-en-adventures-west-coast-cycling-html",
+      "url": "https://wknd.site/us/en/adventures/west-coast-cycling.html",
+      "title": "West Coast Cycling",
+      "type": "program",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T06:55:22.818Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:25:19Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-en-adventures-west-coast-cycling-html.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/us/en/adventures/west-coast-cycling.html"
+    },
+    {
+      "slug": "us-en-adventures-whistler-mountain-biking-html",
+      "url": "https://wknd.site/us/en/adventures/whistler-mountain-biking.html",
+      "title": "Whistler Mountain Biking",
+      "type": "program",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T06:55:22.820Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:25:19Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-en-adventures-whistler-mountain-biking-html.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/us/en/adventures/whistler-mountain-biking.html"
+    },
+    {
+      "slug": "us-en-adventures-yosemite-backpacking-html",
+      "url": "https://wknd.site/us/en/adventures/yosemite-backpacking.html",
+      "title": "Yosemite Backpacking",
+      "type": "program",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T06:55:22.819Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:25:19Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-en-adventures-yosemite-backpacking-html.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/us/en/adventures/yosemite-backpacking.html"
+    },
+    {
+      "slug": "us-en-faqs-html",
+      "url": "https://wknd.site/us/en/faqs.html",
+      "title": "FAQs",
+      "type": "unique",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T06:55:05.141Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-24T08:36:19Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-24T08:36:19Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:33:25Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-en-faqs-html.json",
+      "prototypePath": "stardust/prototypes/us-en-faqs-html-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "us-en-html",
+      "url": "https://wknd.site/us/en.html",
+      "title": "WKND Adventures and Travel",
+      "type": "landing",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T06:55:05.676Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-24T08:36:19Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-24T08:36:19Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:33:25Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-en-html.json",
+      "prototypePath": "stardust/prototypes/us-en-html-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "us-en-magazine-arctic-surfing-html",
+      "url": "https://wknd.site/us/en/magazine/arctic-surfing.html",
+      "title": "Arctic Surfing",
+      "type": "article",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T06:55:17.209Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:25:40Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-en-magazine-arctic-surfing-html.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/us/en/magazine/arctic-surfing.html"
+    },
+    {
+      "slug": "us-en-magazine-guide-la-skateparks-html",
+      "url": "https://wknd.site/us/en/magazine/guide-la-skateparks.html",
+      "title": "Ultimate Guide to LA Skateparks",
+      "type": "article",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T06:55:16.938Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:25:40Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-en-magazine-guide-la-skateparks-html.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/us/en/magazine/guide-la-skateparks.html"
+    },
+    {
+      "slug": "us-en-magazine-html",
+      "url": "https://wknd.site/us/en/magazine.html",
+      "title": "Magazine",
+      "type": "listing",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T06:55:05.142Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:18:18Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-en-magazine-html.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/us/en/magazine.html"
+    },
+    {
+      "slug": "us-en-magazine-san-diego-surf-html",
+      "url": "https://wknd.site/us/en/magazine/san-diego-surf.html",
+      "title": "San Diego Surf Spots",
+      "type": "article",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T06:55:10.952Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-24T08:36:19Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-24T08:36:19Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:33:25Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-en-magazine-san-diego-surf-html.json",
+      "prototypePath": "stardust/prototypes/us-en-magazine-san-diego-surf-html-proposed.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "us-en-magazine-ski-touring-html",
+      "url": "https://wknd.site/us/en/magazine/ski-touring.html",
+      "title": "Ski Touring",
+      "type": "article",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T06:55:16.938Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:25:40Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-en-magazine-ski-touring-html.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/us/en/magazine/ski-touring.html"
+    },
+    {
+      "slug": "us-en-magazine-western-australia-html",
+      "url": "https://wknd.site/us/en/magazine/western-australia.html",
+      "title": "Western Australia",
+      "type": "article",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T06:55:11.428Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:25:40Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-en-magazine-western-australia-html.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/us/en/magazine/western-australia.html"
+    }
+  ],
+  "migrate": {
+    "at": "2026-09-24T09:42:42Z",
+    "outputDir": "stardust/migrated/",
+    "selfContained": true,
+    "pageMap": [
+      {
+        "sourceUrl": "/us/en/about-us.html",
+        "outputPath": "us/en/about-us.html",
+        "slug": "us-en-about-us-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/us/en/adventures/bali-surf-camp.html",
+        "outputPath": "us/en/adventures/bali-surf-camp.html",
+        "slug": "us-en-adventures-bali-surf-camp-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/us/en/adventures/beervana-portland.html",
+        "outputPath": "us/en/adventures/beervana-portland.html",
+        "slug": "us-en-adventures-beervana-portland-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/us/en/adventures/climbing-new-zealand.html",
+        "outputPath": "us/en/adventures/climbing-new-zealand.html",
+        "slug": "us-en-adventures-climbing-new-zealand-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/us/en/adventures/colorado-rock-climbing.html",
+        "outputPath": "us/en/adventures/colorado-rock-climbing.html",
+        "slug": "us-en-adventures-colorado-rock-climbing-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/us/en/adventures/cycling-southern-utah.html",
+        "outputPath": "us/en/adventures/cycling-southern-utah.html",
+        "slug": "us-en-adventures-cycling-southern-utah-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/us/en/adventures/cycling-tuscany.html",
+        "outputPath": "us/en/adventures/cycling-tuscany.html",
+        "slug": "us-en-adventures-cycling-tuscany-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/us/en/adventures/downhill-skiing-wyoming.html",
+        "outputPath": "us/en/adventures/downhill-skiing-wyoming.html",
+        "slug": "us-en-adventures-downhill-skiing-wyoming-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/us/en/adventures/gastronomic-marais-tour.html",
+        "outputPath": "us/en/adventures/gastronomic-marais-tour.html",
+        "slug": "us-en-adventures-gastronomic-marais-tour-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/us/en/adventures.html",
+        "outputPath": "us/en/adventures.html",
+        "slug": "us-en-adventures-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/us/en/adventures/napa-wine-tasting.html",
+        "outputPath": "us/en/adventures/napa-wine-tasting.html",
+        "slug": "us-en-adventures-napa-wine-tasting-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/us/en/adventures/riverside-camping-australia.html",
+        "outputPath": "us/en/adventures/riverside-camping-australia.html",
+        "slug": "us-en-adventures-riverside-camping-australia-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/us/en/adventures/ski-touring-mont-blanc.html",
+        "outputPath": "us/en/adventures/ski-touring-mont-blanc.html",
+        "slug": "us-en-adventures-ski-touring-mont-blanc-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/us/en/adventures/surf-camp-costa-rica.html",
+        "outputPath": "us/en/adventures/surf-camp-costa-rica.html",
+        "slug": "us-en-adventures-surf-camp-costa-rica-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/us/en/adventures/tahoe-skiing.html",
+        "outputPath": "us/en/adventures/tahoe-skiing.html",
+        "slug": "us-en-adventures-tahoe-skiing-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/us/en/adventures/west-coast-cycling.html",
+        "outputPath": "us/en/adventures/west-coast-cycling.html",
+        "slug": "us-en-adventures-west-coast-cycling-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/us/en/adventures/whistler-mountain-biking.html",
+        "outputPath": "us/en/adventures/whistler-mountain-biking.html",
+        "slug": "us-en-adventures-whistler-mountain-biking-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/us/en/adventures/yosemite-backpacking.html",
+        "outputPath": "us/en/adventures/yosemite-backpacking.html",
+        "slug": "us-en-adventures-yosemite-backpacking-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/us/en/faqs.html",
+        "outputPath": "us/en/faqs.html",
+        "slug": "us-en-faqs-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/us/en.html",
+        "outputPath": "us/en.html",
+        "slug": "us-en-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/us/en/magazine/arctic-surfing.html",
+        "outputPath": "us/en/magazine/arctic-surfing.html",
+        "slug": "us-en-magazine-arctic-surfing-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/us/en/magazine/guide-la-skateparks.html",
+        "outputPath": "us/en/magazine/guide-la-skateparks.html",
+        "slug": "us-en-magazine-guide-la-skateparks-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/us/en/magazine.html",
+        "outputPath": "us/en/magazine.html",
+        "slug": "us-en-magazine-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/us/en/magazine/san-diego-surf.html",
+        "outputPath": "us/en/magazine/san-diego-surf.html",
+        "slug": "us-en-magazine-san-diego-surf-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/us/en/magazine/ski-touring.html",
+        "outputPath": "us/en/magazine/ski-touring.html",
+        "slug": "us-en-magazine-ski-touring-html",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/us/en/magazine/western-australia.html",
+        "outputPath": "us/en/magazine/western-australia.html",
+        "slug": "us-en-magazine-western-australia-html",
+        "outputPathDefault": null
+      }
+    ],
+    "totalAssetsBundled": 27,
+    "bundledAssets": [
+      "canon.css",
+      "canon.js",
+      "favicon.png",
+      "flags/CA.svg",
+      "flags/CH.svg",
+      "flags/DE.svg",
+      "flags/ES.svg",
+      "flags/FR.svg",
+      "flags/IT.svg",
+      "flags/US.svg",
+      "fonts/gf/Asar-400-normal-latin.woff2",
+      "fonts/gf/Source-Sans-Pro-300-italic-latin.woff2",
+      "fonts/gf/Source-Sans-Pro-300-normal-latin.woff2",
+      "fonts/gf/Source-Sans-Pro-400-italic-latin.woff2",
+      "fonts/gf/Source-Sans-Pro-400-normal-latin.woff2",
+      "fonts/gf/Source-Sans-Pro-600-italic-latin.woff2",
+      "fonts/gf/Source-Sans-Pro-600-normal-latin.woff2",
+      "fonts/wknd-icon-font.ttf",
+      "fonts/wknd-icon-font.woff",
+      "us-en-about-us-html.css",
+      "us-en-adventures-climbing-new-zealand-html.css",
+      "us-en-adventures-climbing-new-zealand-html.js",
+      "us-en-adventures-html.css",
+      "us-en-faqs-html.css",
+      "us-en-faqs-html.js",
+      "us-en-html.css",
+      "us-en-magazine-san-diego-surf-html.css"
+    ],
+    "pages": [
+      {
+        "slug": "us-en-html",
+        "file": "stardust/migrated/us/en.html",
+        "assetsBundled": 20
+      },
+      {
+        "slug": "us-en-adventures-html",
+        "file": "stardust/migrated/us/en/adventures.html",
+        "assetsBundled": 20
+      },
+      {
+        "slug": "us-en-adventures-climbing-new-zealand-html",
+        "file": "stardust/migrated/us/en/adventures/climbing-new-zealand.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-magazine-san-diego-surf-html",
+        "file": "stardust/migrated/us/en/magazine/san-diego-surf.html",
+        "assetsBundled": 4
+      },
+      {
+        "slug": "us-en-about-us-html",
+        "file": "stardust/migrated/us/en/about-us.html",
+        "assetsBundled": 4
+      },
+      {
+        "slug": "us-en-faqs-html",
+        "file": "stardust/migrated/us/en/faqs.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-magazine-html",
+        "file": "stardust/migrated/us/en/magazine.html",
+        "assetsBundled": 20
+      },
+      {
+        "slug": "us-en-adventures-bali-surf-camp-html",
+        "file": "stardust/migrated/us/en/adventures/bali-surf-camp.html",
+        "assetsBundled": 21
+      },
+      {
+        "slug": "us-en-adventures-beervana-portland-html",
+        "file": "stardust/migrated/us/en/adventures/beervana-portland.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-adventures-colorado-rock-climbing-html",
+        "file": "stardust/migrated/us/en/adventures/colorado-rock-climbing.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-adventures-cycling-southern-utah-html",
+        "file": "stardust/migrated/us/en/adventures/cycling-southern-utah.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-adventures-cycling-tuscany-html",
+        "file": "stardust/migrated/us/en/adventures/cycling-tuscany.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-adventures-downhill-skiing-wyoming-html",
+        "file": "stardust/migrated/us/en/adventures/downhill-skiing-wyoming.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-adventures-gastronomic-marais-tour-html",
+        "file": "stardust/migrated/us/en/adventures/gastronomic-marais-tour.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-adventures-napa-wine-tasting-html",
+        "file": "stardust/migrated/us/en/adventures/napa-wine-tasting.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-adventures-riverside-camping-australia-html",
+        "file": "stardust/migrated/us/en/adventures/riverside-camping-australia.html",
+        "assetsBundled": 21
+      },
+      {
+        "slug": "us-en-adventures-ski-touring-mont-blanc-html",
+        "file": "stardust/migrated/us/en/adventures/ski-touring-mont-blanc.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-adventures-surf-camp-costa-rica-html",
+        "file": "stardust/migrated/us/en/adventures/surf-camp-costa-rica.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-adventures-tahoe-skiing-html",
+        "file": "stardust/migrated/us/en/adventures/tahoe-skiing.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-adventures-west-coast-cycling-html",
+        "file": "stardust/migrated/us/en/adventures/west-coast-cycling.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-adventures-whistler-mountain-biking-html",
+        "file": "stardust/migrated/us/en/adventures/whistler-mountain-biking.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-adventures-yosemite-backpacking-html",
+        "file": "stardust/migrated/us/en/adventures/yosemite-backpacking.html",
+        "assetsBundled": 5
+      },
+      {
+        "slug": "us-en-magazine-arctic-surfing-html",
+        "file": "stardust/migrated/us/en/magazine/arctic-surfing.html",
+        "assetsBundled": 20
+      },
+      {
+        "slug": "us-en-magazine-guide-la-skateparks-html",
+        "file": "stardust/migrated/us/en/magazine/guide-la-skateparks.html",
+        "assetsBundled": 20
+      },
+      {
+        "slug": "us-en-magazine-ski-touring-html",
+        "file": "stardust/migrated/us/en/magazine/ski-touring.html",
+        "assetsBundled": 4
+      },
+      {
+        "slug": "us-en-magazine-western-australia-html",
+        "file": "stardust/migrated/us/en/magazine/western-australia.html",
+        "assetsBundled": 4
+      }
+    ],
+    "missingAssets": [],
+    "cleanedAssets": [],
+    "lastRun": {
+      "at": "2026-09-24T09:42:42Z",
+      "rendered": [
+        "us-en-html"
+      ],
+      "unchanged": [],
+      "refused": [],
+      "passthrough": []
+    }
+  }
+}

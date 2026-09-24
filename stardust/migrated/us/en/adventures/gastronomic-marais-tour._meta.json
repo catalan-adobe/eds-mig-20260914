@@ -1,0 +1,114 @@
+{
+  "slug": "us-en-adventures-gastronomic-marais-tour-html",
+  "type": "program",
+  "renderBranch": "A'",
+  "template": "us-en-adventures-climbing-new-zealand-html",
+  "modules": [
+    "mini-carousel",
+    "trip-facts",
+    "sharing",
+    "tabs"
+  ],
+  "slotsFilled": [
+    "program"
+  ],
+  "canonShas": {
+    "header": "654179cfad1c",
+    "footer": "c970115fcea3",
+    "css": "bd936aef89b6"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Gastronomic Marais Tour",
+    "description": "Take a VIP gastronomic tour through the vibrant Marais, one of the oldest, colorful and historical areas of Paris. Our Marais expert, Marie Bernard will take food lovers to the top food shops, patisseries and chocolate shops as you take in Marais' unique atmosphere.",
+    "canonical": null,
+    "lang": "en-US"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Gastronomic Marais Tour",
+    "description": "Take a VIP gastronomic tour through the vibrant Marais, one of the oldest, colorful and historical areas of Paris. Our Marais expert, Marie Bernard will take food lovers to the top food shops, patisseries and chocolate shops as you take in Marais' unique atmosphere.",
+    "url": "https://wknd.site/us/en/adventures/gastronomic-marais-tour.html"
+  },
+  "migratedAt": "2026-09-24T09:23:47Z",
+  "designMdSha": "720637eadd96",
+  "designJsonSha": "a627c03a4224",
+  "sourceCurrentSha": "13e18fa2f0df",
+  "sourceProposedSha": "0356b59a6f9c",
+  "fidelityTier": "sibling",
+  "archetypeSource": "us-en-adventures-climbing-new-zealand-html",
+  "archetypeSha": "32c46dcfad9f",
+  "variants": [
+    "program-body--flush",
+    "program-facts--split",
+    "image--captioned"
+  ],
+  "gatesPassed": [
+    "content-fidelity",
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "content-count",
+    "delivery-lint",
+    "variance-probe"
+  ],
+  "gateEvidence": {
+    "content-fidelity": "verbatim from stardust/current/pages/us-en-adventures-gastronomic-marais-tour-html.html; content-diff: header+main text nodes equal, header 28/28, footer 17/17; deviations logged in contentDeviations[]",
+    "pixel-gate-1440": "0.05% (1299 px, threshold 10%), height delta 0px, round sib3 @1440 (us-en-adventures-gastronomic-marais-tour-html-1440-r3.log) [prototype regime]",
+    "pixel-gate-360": "0.00% (0 px, threshold 10%), height delta 0px, round sib3 @360 (us-en-adventures-gastronomic-marais-tour-html-360-r3.log) [prototype regime]",
+    "content-count": "content-diff: none — content + roles match (us-en-adventures-gastronomic-marais-tour-html-cc3.log)",
+    "media-reconcile": "n/a: no delivered content file yet (content/us/en/adventures/gastronomic-marais-tour.html) — media-reconcile runs in the delivery chain (row C)",
+    "delivery-lint": "0 P0 · 0 P1 · 1 P2 (delivery-lint --path /us/en/adventures/gastronomic-marais-tour)",
+    "variance-probe": "■ https://wknd.site/us/en/adventures/gastronomic-marais-tour.html: 4 delta(s) — variants [program-body--flush, program-facts--split, image--captioned] (variance-program.log)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 5,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/us/es.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ca/en.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ca/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/de.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ch/it.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/de/de.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/fr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/es/es.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/it/it.html",
+      "reason": "not-in-inventory"
+    }
+  ],
+  "outputPath": "us/en/adventures/gastronomic-marais-tour.html",
+  "outputPathDefault": null,
+  "sidecar": "us/en/adventures/gastronomic-marais-tour._meta.json",
+  "driverVersion": "1"
+}

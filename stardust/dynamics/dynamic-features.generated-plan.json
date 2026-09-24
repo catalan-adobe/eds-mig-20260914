@@ -1,0 +1,524 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics plan",
+  "writtenAt": "2026-09-24T10:07:34.006Z",
+  "input": "stardust/current/_dynamics.json",
+  "target": "https://replica-wknd--eds-mig-20260914--catalan-adobe.aem.page",
+  "migrated": "stardust/migrated"
+ },
+ "rows": [
+  {
+   "id": "a-cms-app-settings-object-adobedatalayer",
+   "class": "A",
+   "feature": "CMS / app settings object adobeDataLayer",
+   "pages": 6,
+   "probed": 6,
+   "reach": null,
+   "evidence": [],
+   "pattern": "read-settings",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "detect",
+   "decision": "— (keys name endpoints, ids, vendors)"
+  },
+  {
+   "id": "a-cms-app-settings-object-granite",
+   "class": "A",
+   "feature": "CMS / app settings object Granite",
+   "pages": 6,
+   "probed": 6,
+   "reach": null,
+   "evidence": [],
+   "pattern": "read-settings",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "detect",
+   "decision": "— (keys name endpoints, ids, vendors)"
+  },
+  {
+   "id": "a-cms-app-settings-object-cq",
+   "class": "A",
+   "feature": "CMS / app settings object CQ",
+   "pages": 6,
+   "probed": 6,
+   "reach": null,
+   "evidence": [],
+   "pattern": "read-settings",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "detect",
+   "decision": "— (keys name endpoints, ids, vendors)"
+  },
+  {
+   "id": "d-first-party-data-file-get-home-users-o-oa6pkcc2rneodh2ni0q",
+   "class": "D",
+   "feature": "first-party data file GET /home/users/o/oa6PkCC2rneOdh2ni0qG.infinity.json",
+   "pages": 6,
+   "probed": 6,
+   "reach": {
+    "pages": 26,
+    "of": 26
+   },
+   "evidence": [
+    "GET /home/users/o/oa6PkCC2rneOdh2ni0qG.infinity.json → 200"
+   ],
+   "pattern": "sheet-sync",
+   "disposition": "data-fed",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "data",
+   "decision": "none (sync from the source origin)",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "d-first-party-data-file-get-libs-granite-csrf-token-json",
+   "class": "D",
+   "feature": "first-party data file GET /libs/granite/csrf/token.json",
+   "pages": 6,
+   "probed": 6,
+   "reach": {
+    "pages": 26,
+    "of": 26
+   },
+   "evidence": [
+    "GET /libs/granite/csrf/token.json → 200"
+   ],
+   "pattern": "sheet-sync",
+   "disposition": "data-fed",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "data",
+   "decision": "none (sync from the source origin)",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "d-first-party-data-file-get-libs-granite-security-currentuse",
+   "class": "D",
+   "feature": "first-party data file GET /libs/granite/security/currentuser.json",
+   "pages": 6,
+   "probed": 6,
+   "reach": {
+    "pages": 26,
+    "of": 26
+   },
+   "evidence": [
+    "GET /libs/granite/security/currentuser.json?nocache → 200"
+   ],
+   "pattern": "sheet-sync",
+   "disposition": "data-fed",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "data",
+   "decision": "none (sync from the source origin)",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "d-first-party-data-file-get-content-wknd-us-en-about-us-jcr-",
+   "class": "D",
+   "feature": "first-party data file GET /content/wknd/us/en/about-us/_jcr_content/contexthub.pagedata.json",
+   "pages": 1,
+   "probed": 6,
+   "reach": {
+    "pages": 1,
+    "of": 26
+   },
+   "evidence": [
+    "GET /content/wknd/us/en/about-us/_jcr_content/contexthub.pagedata.json → 200"
+   ],
+   "pattern": "sheet-sync",
+   "disposition": "data-fed",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "data",
+   "decision": "none (sync from the source origin)",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "d-first-party-data-file-get-content-wknd-us-en-adventures-ba",
+   "class": "D",
+   "feature": "first-party data file GET /content/wknd/us/en/adventures/bali-surf-camp/_jcr_content/contexthub.pagedata.json",
+   "pages": 1,
+   "probed": 6,
+   "reach": {
+    "pages": 1,
+    "of": 26
+   },
+   "evidence": [
+    "GET /content/wknd/us/en/adventures/bali-surf-camp/_jcr_content/contexthub.pagedata.json → 200"
+   ],
+   "pattern": "sheet-sync",
+   "disposition": "data-fed",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "data",
+   "decision": "none (sync from the source origin)",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "d-first-party-data-file-get-content-wknd-us-en-adventures-jc",
+   "class": "D",
+   "feature": "first-party data file GET /content/wknd/us/en/adventures/_jcr_content/contexthub.pagedata.json",
+   "pages": 1,
+   "probed": 6,
+   "reach": {
+    "pages": 1,
+    "of": 26
+   },
+   "evidence": [
+    "GET /content/wknd/us/en/adventures/_jcr_content/contexthub.pagedata.json → 200"
+   ],
+   "pattern": "sheet-sync",
+   "disposition": "data-fed",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "data",
+   "decision": "none (sync from the source origin)",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "d-first-party-data-file-get-content-wknd-us-en-faqs-jcr-cont",
+   "class": "D",
+   "feature": "first-party data file GET /content/wknd/us/en/faqs/_jcr_content/contexthub.pagedata.json",
+   "pages": 1,
+   "probed": 6,
+   "reach": {
+    "pages": 1,
+    "of": 26
+   },
+   "evidence": [
+    "GET /content/wknd/us/en/faqs/_jcr_content/contexthub.pagedata.json → 200"
+   ],
+   "pattern": "sheet-sync",
+   "disposition": "data-fed",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "data",
+   "decision": "none (sync from the source origin)",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "d-first-party-data-file-get-content-wknd-us-en-jcr-content-c",
+   "class": "D",
+   "feature": "first-party data file GET /content/wknd/us/en/_jcr_content/contexthub.pagedata.json",
+   "pages": 1,
+   "probed": 6,
+   "reach": {
+    "pages": 1,
+    "of": 26
+   },
+   "evidence": [
+    "GET /content/wknd/us/en/_jcr_content/contexthub.pagedata.json → 200"
+   ],
+   "pattern": "sheet-sync",
+   "disposition": "data-fed",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "data",
+   "decision": "none (sync from the source origin)",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "d-first-party-data-file-get-content-wknd-us-en-magazine-arct",
+   "class": "D",
+   "feature": "first-party data file GET /content/wknd/us/en/magazine/arctic-surfing/_jcr_content/contexthub.pagedata.json",
+   "pages": 1,
+   "probed": 6,
+   "reach": {
+    "pages": 1,
+    "of": 26
+   },
+   "evidence": [
+    "GET /content/wknd/us/en/magazine/arctic-surfing/_jcr_content/contexthub.pagedata.json → 200"
+   ],
+   "pattern": "sheet-sync",
+   "disposition": "data-fed",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "data",
+   "decision": "none (sync from the source origin)",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "f-form-cmp-search-form-origin-content-wknd-us-en-about-us-se",
+   "class": "F",
+   "feature": "form \"cmp-search__form\" → origin /content/wknd/us/en/about-us.searchresults.json/_jcr_content/root/container/container_1195249223/search (1 fields)",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "text:fulltext"
+   ],
+   "pattern": "forms",
+   "disposition": "rebuild-native",
+   "reproducibility": "needs-backend",
+   "status": "pending",
+   "phase": "forms",
+   "decision": "production endpoint; interim capture ships now"
+  },
+  {
+   "id": "f-form-cmp-search-form-origin-content-wknd-us-en-adventures-",
+   "class": "F",
+   "feature": "form \"cmp-search__form\" → origin /content/wknd/us/en/adventures/bali-surf-camp.searchresults.json/_jcr_content/root/container/container_1195249223/search (1 fields)",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "text:fulltext"
+   ],
+   "pattern": "forms",
+   "disposition": "rebuild-native",
+   "reproducibility": "needs-backend",
+   "status": "pending",
+   "phase": "forms",
+   "decision": "production endpoint; interim capture ships now"
+  },
+  {
+   "id": "f-form-cmp-search-form-origin-content-wknd-us-en-adventures-",
+   "class": "F",
+   "feature": "form \"cmp-search__form\" → origin /content/wknd/us/en/adventures.searchresults.json/_jcr_content/root/container/container_1195249223/search (1 fields)",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "text:fulltext"
+   ],
+   "pattern": "forms",
+   "disposition": "rebuild-native",
+   "reproducibility": "needs-backend",
+   "status": "pending",
+   "phase": "forms",
+   "decision": "production endpoint; interim capture ships now"
+  },
+  {
+   "id": "f-form-cmp-search-form-origin-content-wknd-us-en-faqs-search",
+   "class": "F",
+   "feature": "form \"cmp-search__form\" → origin /content/wknd/us/en/faqs.searchresults.json/_jcr_content/root/container/container_1195249223/search (1 fields)",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "text:fulltext"
+   ],
+   "pattern": "forms",
+   "disposition": "rebuild-native",
+   "reproducibility": "needs-backend",
+   "status": "pending",
+   "phase": "forms",
+   "decision": "production endpoint; interim capture ships now"
+  },
+  {
+   "id": "f-form-cmp-search-form-origin-content-wknd-us-en-searchresul",
+   "class": "F",
+   "feature": "form \"cmp-search__form\" → origin /content/wknd/us/en.searchresults.json/_jcr_content/root/container/container_1195249223/search (1 fields)",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "text:fulltext"
+   ],
+   "pattern": "forms",
+   "disposition": "rebuild-native",
+   "reproducibility": "needs-backend",
+   "status": "pending",
+   "phase": "forms",
+   "decision": "production endpoint; interim capture ships now"
+  },
+  {
+   "id": "f-form-cmp-search-form-origin-content-wknd-us-en-magazine-ar",
+   "class": "F",
+   "feature": "form \"cmp-search__form\" → origin /content/wknd/us/en/magazine/arctic-surfing.searchresults.json/_jcr_content/root/container/container_1195249223/search (1 fields)",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "text:fulltext"
+   ],
+   "pattern": "forms",
+   "disposition": "rebuild-native",
+   "reproducibility": "needs-backend",
+   "status": "pending",
+   "phase": "forms",
+   "decision": "production endpoint; interim capture ships now"
+  },
+  {
+   "id": "i18n-locale-variants-ca-ca-ch-ch-ch",
+   "class": "I18N",
+   "feature": "locale variants ca,ca,ch,ch,ch",
+   "pages": 6,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "https://wknd.site/ca/en/about-us.html",
+    "https://wknd.site/ca/fr.html",
+    "https://wknd.site/ch/de.html",
+    "https://wknd.site/ca/en/adventures/bali-surf-camp.html"
+   ],
+   "pattern": "locale-tree",
+   "disposition": "rebuild-native",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "locale wave",
+   "decision": "scope of the locale trees"
+  },
+  {
+   "id": "l-listing-candidate-cmp-image-list-16-cards",
+   "class": "L",
+   "feature": "listing candidate cmp-image-list (16 cards)",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [],
+   "pattern": "listing-index-backed",
+   "disposition": "index-backed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "listings",
+   "decision": "index-driven or editorially curated?"
+  },
+  {
+   "id": "l-listing-candidate-cmp-image-list-6-cards",
+   "class": "L",
+   "feature": "listing candidate cmp-image-list (6 cards)",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [],
+   "pattern": "listing-index-backed",
+   "disposition": "index-backed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "listings",
+   "decision": "index-driven or editorially curated?"
+  },
+  {
+   "id": "l-listing-candidate-cmp-list-4-cards",
+   "class": "L",
+   "feature": "listing candidate cmp-list (4 cards)",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [],
+   "pattern": "listing-index-backed",
+   "disposition": "index-backed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "listings",
+   "decision": "index-driven or editorially curated?"
+  },
+  {
+   "id": "m-modal-trigger-data-modal-url-chrome-only-target-outside-do",
+   "class": "M",
+   "feature": "modal trigger data-modal-url (chrome only) → target outside DOM at capture",
+   "pages": 6,
+   "probed": 6,
+   "reach": {
+    "pages": 52,
+    "of": 26
+   },
+   "evidence": [
+    "https://wknd.site/us/en/about-us.html#sign-in",
+    "https://wknd.site/us/en/about-us.html#sign-out",
+    "https://wknd.site/us/en/adventures/bali-surf-camp.html#sign-in",
+    "https://wknd.site/us/en/adventures/bali-surf-camp.html#sign-out"
+   ],
+   "pattern": "chrome-interaction",
+   "disposition": "rebuild-native",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "interactive",
+   "decision": "none (motion-observe evidence)"
+  },
+  {
+   "id": "t-tag-manager-adobe-launch",
+   "class": "T",
+   "feature": "tag manager: Adobe Launch",
+   "pages": 6,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "assets.adobedtm.com"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-analytics-adobe-analytics-experience-cloud-id",
+   "class": "T",
+   "feature": "analytics: Adobe Analytics / Experience Cloud ID",
+   "pages": 6,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "dpm.demdex.net",
+    "wkndsite.demdex.net"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-marketing-ad-retargeting-pixel",
+   "class": "T",
+   "feature": "marketing: ad / retargeting pixel",
+   "pages": 6,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "cm.everesttech.net"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-unknown-third-party-host-wkndsitewknd887971p-112-2o7-net",
+   "class": "T",
+   "feature": "unknown third-party host wkndsitewknd887971p.112.2o7.net",
+   "pages": 6,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "wkndsitewknd887971p.112.2o7.net"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "x-sign-in-account-links",
+   "class": "X",
+   "feature": "sign-in / account links",
+   "pages": 6,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "https://wknd.site/us/en/about-us.html#sign-in",
+    "https://wknd.site/us/en/adventures/bali-surf-camp.html#sign-in",
+    "https://wknd.site/us/en/adventures.html#sign-in",
+    "https://wknd.site/us/en/faqs.html#sign-in"
+   ],
+   "pattern": "decided-out",
+   "disposition": "decided-out",
+   "reproducibility": "needs-backend",
+   "status": "pending",
+   "phase": "register",
+   "decision": "auth / commerce on the new host?"
+  }
+ ]
+}

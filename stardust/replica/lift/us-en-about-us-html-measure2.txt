@@ -1,0 +1,443 @@
+measure  A = https://wknd.site/us/en/about-us.html
+         B = http://localhost:8803/prototypes/us-en-about-us-html-proposed.html
+  widths 1440, 360 · 6 selector(s) · 24 props · all matches (≤ 12)
+
+@ 1440px
+  root
+    A  scrollWidth  1440  viewport 1440  scrollHeight   1604
+    B  scrollWidth  1440  viewport 1440  scrollHeight   1604
+    Δ  scrollWidth 0  scrollHeight 0
+  main section   7 matches
+    [1]
+    A  x   138  y    454  w   291  h   345  vis  "Stacey Roswells ARTIST | PHOTOGRAPHER |…"
+    B  x   138  y    454  w   291  h   345  vis  "Stacey Roswells ARTIST | PHOTOGRAPHER |…"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  display: block → flex
+    [2]
+    A  x   429  y    454  w   291  h   345  vis  "Jake Hammer INFLUENCER | WRITER"
+    B  x   429  y    454  w   291  h   345  vis  "Jake Hammer INFLUENCER | WRITER"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  display: block → flex
+    [3]
+    A  x   720  y    454  w   291  h   345  vis  "Ian Provo PHOTOGRAPHER"
+    B  x   720  y    454  w   291  h   345  vis  "Ian Provo PHOTOGRAPHER"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  display: block → flex
+    [4]
+    A  x  1011  y    454  w   291  h   345  vis  "Jacob Wester SKATER | WRITER"
+    B  x  1011  y    454  w   291  h   345  vis  "Jacob Wester SKATER | WRITER"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  display: block → flex
+    [5]
+    A  x   138  y    951  w   291  h   345  vis  "Sofia Sjöberg PHOTOGRAPHER | YOUTUBER"
+    B  x   138  y    951  w   291  h   345  vis  "Sofia Sjöberg PHOTOGRAPHER | YOUTUBER"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  display: block → flex
+    [6]
+    A  x   429  y    951  w   291  h   345  vis  "Justin Barr ARTIST | ROCK CLIMBER"
+    B  x   429  y    951  w   291  h   345  vis  "Justin Barr ARTIST | ROCK CLIMBER"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  display: block → flex
+    [7]
+    A  x   720  y    951  w   291  h   345  vis  "Kumar Selveraj PHOTOGRAPHER | SURFER"
+    B  x   720  y    951  w   291  h   345  vis  "Kumar Selveraj PHOTOGRAPHER | SURFER"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  display: block → flex
+  main section img   7 matches
+    [1]
+    A  x   202  y    470  w   164  h   164  vis  ""  img 1440×958 …/stacey-roswells.jpeg
+    B  x   202  y    470  w   164  h   164  vis  ""  img 1200×799 …/stacey-roswells.jpeg
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  maxWidth: none → 100%; img.naturalWidth: 1440 → 1200; img.naturalHeight: 958 → 799
+    [2]
+    A  x   493  y    470  w   164  h   164  vis  ""  img 1200×1612 …/alex-iby-343837.jpeg
+    B  x   493  y    470  w   164  h   164  vis  ""  img 1000×1344 …/alex-iby-343837.jpeg
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  maxWidth: none → 100%; img.naturalWidth: 1200 → 1000; img.naturalHeight: 1612 → 1344
+    [3]
+    A  x   784  y    470  w   164  h   164  vis  ""  img 1382×1382 …/ian-provo.jpeg
+    B  x   784  y    470  w   164  h   164  vis  ""  img 1152×1152 …/ian-provo.jpeg
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  maxWidth: none → 100%; img.naturalWidth: 1382 → 1152; img.naturalHeight: 1382 → 1152
+    [4]
+    A  x  1075  y    470  w   164  h   164  vis  ""  img 816×1225 …/jacob-wester.jpeg
+    B  x  1075  y    470  w   164  h   164  vis  ""  img 680×1021 …/jacob-wester.jpeg
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  maxWidth: none → 100%; img.naturalWidth: 816 → 680; img.naturalHeight: 1225 → 1021
+    [5]
+    A  x   202  y    967  w   164  h   164  vis  ""  img 1440×1874 …/ayo-ogunseinde-237739.jpeg
+    B  x   202  y    967  w   164  h   164  vis  ""  img 1200×1562 …/ayo-ogunseinde-237739.jpeg
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  maxWidth: none → 100%; img.naturalWidth: 1440 → 1200; img.naturalHeight: 1874 → 1562
+    [6]
+    A  x   493  y    967  w   164  h   164  vis  ""  img 806×1209 …/justin-barr.jpeg
+    B  x   493  y    967  w   164  h   164  vis  ""  img 672×1008 …/justin-barr.jpeg
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  maxWidth: none → 100%; img.naturalWidth: 806 → 672; img.naturalHeight: 1209 → 1008
+    [7]
+    A  x   784  y    967  w   164  h   164  vis  ""  img 1440×1440 …/kumar-selvaraj.jpeg
+    B  x   784  y    967  w   164  h   164  vis  ""  img 1200×1200 …/kumar-selvaraj.jpeg
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  maxWidth: none → 100%; img.naturalWidth: 1440 → 1200; img.naturalHeight: 1440 → 1200
+  main h3   7 matches
+    [1]
+    A  x   166  y    648  w   235  h    36  vis  "Stacey Roswells"
+    B  x   166  y    648  w   235  h    36  vis  "Stacey Roswells"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [2]
+    A  x   457  y    648  w   235  h    36  vis  "Jake Hammer"
+    B  x   457  y    648  w   235  h    36  vis  "Jake Hammer"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [3]
+    A  x   748  y    648  w   235  h    36  vis  "Ian Provo"
+    B  x   748  y    648  w   235  h    36  vis  "Ian Provo"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [4]
+    A  x  1039  y    648  w   235  h    36  vis  "Jacob Wester"
+    B  x  1039  y    648  w   235  h    36  vis  "Jacob Wester"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [5]
+    A  x   166  y   1145  w   235  h    36  vis  "Sofia Sjöberg"
+    B  x   166  y   1145  w   235  h    36  vis  "Sofia Sjöberg"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [6]
+    A  x   457  y   1145  w   235  h    36  vis  "Justin Barr"
+    B  x   457  y   1145  w   235  h    36  vis  "Justin Barr"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [7]
+    A  x   748  y   1145  w   235  h    36  vis  "Kumar Selveraj"
+    B  x   748  y   1145  w   235  h    36  vis  "Kumar Selveraj"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+  main h5   7 matches
+    [1]
+    A  x   166  y    690  w   235  h    21  vis  "ARTIST | PHOTOGRAPHER | TRAVELER"
+    B  x   166  y    690  w   235  h    21  vis  "ARTIST | PHOTOGRAPHER | TRAVELER"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [2]
+    A  x   457  y    690  w   235  h    21  vis  "INFLUENCER | WRITER"
+    B  x   457  y    690  w   235  h    21  vis  "INFLUENCER | WRITER"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [3]
+    A  x   748  y    690  w   235  h    21  vis  "PHOTOGRAPHER"
+    B  x   748  y    690  w   235  h    21  vis  "PHOTOGRAPHER"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [4]
+    A  x  1039  y    690  w   235  h    21  vis  "SKATER | WRITER"
+    B  x  1039  y    690  w   235  h    21  vis  "SKATER | WRITER"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [5]
+    A  x   166  y   1187  w   235  h    21  vis  "PHOTOGRAPHER | YOUTUBER"
+    B  x   166  y   1187  w   235  h    21  vis  "PHOTOGRAPHER | YOUTUBER"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [6]
+    A  x   457  y   1187  w   235  h    21  vis  "ARTIST | ROCK CLIMBER"
+    B  x   457  y   1187  w   235  h    21  vis  "ARTIST | ROCK CLIMBER"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [7]
+    A  x   748  y   1187  w   235  h    21  vis  "PHOTOGRAPHER | SURFER"
+    B  x   748  y   1187  w   235  h    21  vis  "PHOTOGRAPHER | SURFER"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+  main section a   12 matches
+    [1]
+    A  x   212  y    732  w    48  h    48  vis  ""
+    B  x   212  y    732  w    48  h    48  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: wknd-icon-font → "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; lineHeight: 14px → 21px
+    [2]
+    A  x   260  y    732  w    48  h    48  vis  ""
+    B  x   260  y    732  w    48  h    48  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: wknd-icon-font → "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; lineHeight: 14px → 21px
+    [3]
+    A  x   308  y    732  w    48  h    48  vis  ""
+    B  x   308  y    732  w    48  h    48  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: wknd-icon-font → "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; lineHeight: 14px → 21px
+    [4]
+    A  x   503  y    732  w    48  h    48  vis  ""
+    B  x   503  y    732  w    48  h    48  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: wknd-icon-font → "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; lineHeight: 14px → 21px
+    [5]
+    A  x   551  y    732  w    48  h    48  vis  ""
+    B  x   551  y    732  w    48  h    48  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: wknd-icon-font → "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; lineHeight: 14px → 21px
+    [6]
+    A  x   599  y    732  w    48  h    48  vis  ""
+    B  x   599  y    732  w    48  h    48  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: wknd-icon-font → "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; lineHeight: 14px → 21px
+    [7]
+    A  x   794  y    732  w    48  h    48  vis  ""
+    B  x   794  y    732  w    48  h    48  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: wknd-icon-font → "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; lineHeight: 14px → 21px
+    [8]
+    A  x   842  y    732  w    48  h    48  vis  ""
+    B  x   842  y    732  w    48  h    48  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: wknd-icon-font → "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; lineHeight: 14px → 21px
+    [9]
+    A  x   890  y    732  w    48  h    48  vis  ""
+    B  x   890  y    732  w    48  h    48  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: wknd-icon-font → "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; lineHeight: 14px → 21px
+    [10]
+    A  x  1085  y    732  w    48  h    48  vis  ""
+    B  x  1085  y    732  w    48  h    48  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: wknd-icon-font → "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; lineHeight: 14px → 21px
+    [11]
+    A  x  1133  y    732  w    48  h    48  vis  ""
+    B  x  1133  y    732  w    48  h    48  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: wknd-icon-font → "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; lineHeight: 14px → 21px
+    [12]
+    A  x  1181  y    732  w    48  h    48  vis  ""
+    B  x  1181  y    732  w    48  h    48  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: wknd-icon-font → "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; lineHeight: 14px → 21px
+  main section a span:first-child   12 matches
+    [1]
+    A  x   212  y    732  w    23  h    36  vis  ""
+    B  x   212  y    732  w    23  h    36  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [2]
+    A  x   260  y    732  w    36  h    36  vis  ""
+    B  x   260  y    732  w    36  h    36  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [3]
+    A  x   308  y    732  w    32  h    36  vis  ""
+    B  x   308  y    732  w    32  h    36  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [4]
+    A  x   503  y    732  w    23  h    36  vis  ""
+    B  x   503  y    732  w    23  h    36  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [5]
+    A  x   551  y    732  w    36  h    36  vis  ""
+    B  x   551  y    732  w    36  h    36  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [6]
+    A  x   599  y    732  w    32  h    36  vis  ""
+    B  x   599  y    732  w    32  h    36  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [7]
+    A  x   794  y    732  w    23  h    36  vis  ""
+    B  x   794  y    732  w    23  h    36  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [8]
+    A  x   842  y    732  w    36  h    36  vis  ""
+    B  x   842  y    732  w    36  h    36  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [9]
+    A  x   890  y    732  w    32  h    36  vis  ""
+    B  x   890  y    732  w    32  h    36  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [10]
+    A  x  1085  y    732  w    23  h    36  vis  ""
+    B  x  1085  y    732  w    23  h    36  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [11]
+    A  x  1133  y    732  w    36  h    36  vis  ""
+    B  x  1133  y    732  w    36  h    36  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [12]
+    A  x  1181  y    732  w    32  h    36  vis  ""
+    B  x  1181  y    732  w    32  h    36  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+
+@ 360px
+  root
+    A  scrollWidth   360  viewport 360  scrollHeight   3695
+    B  scrollWidth   360  viewport 360  scrollHeight   3695
+    Δ  scrollWidth 0  scrollHeight 0
+  main section   7 matches
+    [1]
+    A  x     0  y    419  w   360  h   345  vis  "Stacey Roswells ARTIST | PHOTOGRAPHER |…"
+    B  x     0  y    419  w   360  h   345  vis  "Stacey Roswells ARTIST | PHOTOGRAPHER |…"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  display: block → flex
+    [2]
+    A  x     0  y    763  w   360  h   345  vis  "Jake Hammer INFLUENCER | WRITER"
+    B  x     0  y    763  w   360  h   345  vis  "Jake Hammer INFLUENCER | WRITER"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  display: block → flex
+    [3]
+    A  x     0  y   1108  w   360  h   345  vis  "Ian Provo PHOTOGRAPHER"
+    B  x     0  y   1108  w   360  h   345  vis  "Ian Provo PHOTOGRAPHER"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  display: block → flex
+    [4]
+    A  x     0  y   1452  w   360  h   345  vis  "Jacob Wester SKATER | WRITER"
+    B  x     0  y   1452  w   360  h   345  vis  "Jacob Wester SKATER | WRITER"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  display: block → flex
+    [5]
+    A  x     0  y   2020  w   360  h   345  vis  "Sofia Sjöberg PHOTOGRAPHER | YOUTUBER"
+    B  x     0  y   2020  w   360  h   345  vis  "Sofia Sjöberg PHOTOGRAPHER | YOUTUBER"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  display: block → flex
+    [6]
+    A  x     0  y   2364  w   360  h   345  vis  "Justin Barr ARTIST | ROCK CLIMBER"
+    B  x     0  y   2364  w   360  h   345  vis  "Justin Barr ARTIST | ROCK CLIMBER"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  display: block → flex
+    [7]
+    A  x     0  y   2709  w   360  h   345  vis  "Kumar Selveraj PHOTOGRAPHER | SURFER"
+    B  x     0  y   2709  w   360  h   345  vis  "Kumar Selveraj PHOTOGRAPHER | SURFER"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  display: block → flex
+  main section img   7 matches
+    [1]
+    A  x    98  y    435  w   164  h   164  vis  ""  img 360×239 …/stacey-roswells.jpeg
+    B  x    98  y    435  w   164  h   164  vis  ""  img 1200×799 …/stacey-roswells.jpeg
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  maxWidth: none → 100%; img.naturalWidth: 360 → 1200; img.naturalHeight: 239 → 799
+    [2]
+    A  x    98  y    779  w   164  h   164  vis  ""  img 300×403 …/alex-iby-343837.jpeg
+    B  x    98  y    779  w   164  h   164  vis  ""  img 1000×1344 …/alex-iby-343837.jpeg
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  maxWidth: none → 100%; img.naturalWidth: 300 → 1000; img.naturalHeight: 403 → 1344
+    [3]
+    A  x    98  y   1124  w   164  h   164  vis  ""  img 345×345 …/ian-provo.jpeg
+    B  x    98  y   1124  w   164  h   164  vis  ""  img 1152×1152 …/ian-provo.jpeg
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  maxWidth: none → 100%; img.naturalWidth: 345 → 1152; img.naturalHeight: 345 → 1152
+    [4]
+    A  x    98  y   1468  w   164  h   164  vis  ""  img 204×306 …/jacob-wester.jpeg
+    B  x    98  y   1468  w   164  h   164  vis  ""  img 680×1021 …/jacob-wester.jpeg
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  maxWidth: none → 100%; img.naturalWidth: 204 → 680; img.naturalHeight: 306 → 1021
+    [5]
+    A  x    98  y   2036  w   164  h   164  vis  ""  img 360×468 …/ayo-ogunseinde-237739.jpeg
+    B  x    98  y   2036  w   164  h   164  vis  ""  img 1200×1562 …/ayo-ogunseinde-237739.jpeg
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  maxWidth: none → 100%; img.naturalWidth: 360 → 1200; img.naturalHeight: 468 → 1562
+    [6]
+    A  x    98  y   2380  w   164  h   164  vis  ""  img 201×302 …/justin-barr.jpeg
+    B  x    98  y   2380  w   164  h   164  vis  ""  img 672×1008 …/justin-barr.jpeg
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  maxWidth: none → 100%; img.naturalWidth: 201 → 672; img.naturalHeight: 302 → 1008
+    [7]
+    A  x    98  y   2725  w   164  h   164  vis  ""  img 360×360 …/kumar-selvaraj.jpeg
+    B  x    98  y   2725  w   164  h   164  vis  ""  img 1200×1200 …/kumar-selvaraj.jpeg
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  maxWidth: none → 100%; img.naturalWidth: 360 → 1200; img.naturalHeight: 360 → 1200
+  main h3   7 matches
+    [1]
+    A  x    28  y    613  w   304  h    36  vis  "Stacey Roswells"
+    B  x    28  y    613  w   304  h    36  vis  "Stacey Roswells"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [2]
+    A  x    28  y    957  w   304  h    36  vis  "Jake Hammer"
+    B  x    28  y    957  w   304  h    36  vis  "Jake Hammer"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [3]
+    A  x    28  y   1302  w   304  h    36  vis  "Ian Provo"
+    B  x    28  y   1302  w   304  h    36  vis  "Ian Provo"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [4]
+    A  x    28  y   1646  w   304  h    36  vis  "Jacob Wester"
+    B  x    28  y   1646  w   304  h    36  vis  "Jacob Wester"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [5]
+    A  x    28  y   2214  w   304  h    36  vis  "Sofia Sjöberg"
+    B  x    28  y   2214  w   304  h    36  vis  "Sofia Sjöberg"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [6]
+    A  x    28  y   2558  w   304  h    36  vis  "Justin Barr"
+    B  x    28  y   2558  w   304  h    36  vis  "Justin Barr"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [7]
+    A  x    28  y   2903  w   304  h    36  vis  "Kumar Selveraj"
+    B  x    28  y   2903  w   304  h    36  vis  "Kumar Selveraj"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+  main h5   7 matches
+    [1]
+    A  x    28  y    655  w   304  h    21  vis  "ARTIST | PHOTOGRAPHER | TRAVELER"
+    B  x    28  y    655  w   304  h    21  vis  "ARTIST | PHOTOGRAPHER | TRAVELER"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [2]
+    A  x    28  y    999  w   304  h    21  vis  "INFLUENCER | WRITER"
+    B  x    28  y    999  w   304  h    21  vis  "INFLUENCER | WRITER"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [3]
+    A  x    28  y   1344  w   304  h    21  vis  "PHOTOGRAPHER"
+    B  x    28  y   1344  w   304  h    21  vis  "PHOTOGRAPHER"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [4]
+    A  x    28  y   1688  w   304  h    21  vis  "SKATER | WRITER"
+    B  x    28  y   1688  w   304  h    21  vis  "SKATER | WRITER"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [5]
+    A  x    28  y   2256  w   304  h    21  vis  "PHOTOGRAPHER | YOUTUBER"
+    B  x    28  y   2256  w   304  h    21  vis  "PHOTOGRAPHER | YOUTUBER"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [6]
+    A  x    28  y   2600  w   304  h    21  vis  "ARTIST | ROCK CLIMBER"
+    B  x    28  y   2600  w   304  h    21  vis  "ARTIST | ROCK CLIMBER"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [7]
+    A  x    28  y   2945  w   304  h    21  vis  "PHOTOGRAPHER | SURFER"
+    B  x    28  y   2945  w   304  h    21  vis  "PHOTOGRAPHER | SURFER"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+  main section a   12 matches
+    [1]
+    A  x   108  y    697  w    48  h    48  vis  ""
+    B  x   108  y    697  w    48  h    48  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: wknd-icon-font → "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; lineHeight: 14px → 21px
+    [2]
+    A  x   156  y    697  w    48  h    48  vis  ""
+    B  x   156  y    697  w    48  h    48  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: wknd-icon-font → "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; lineHeight: 14px → 21px
+    [3]
+    A  x   204  y    697  w    48  h    48  vis  ""
+    B  x   204  y    697  w    48  h    48  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: wknd-icon-font → "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; lineHeight: 14px → 21px
+    [4]
+    A  x   108  y   1042  w    48  h    48  vis  ""
+    B  x   108  y   1042  w    48  h    48  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: wknd-icon-font → "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; lineHeight: 14px → 21px
+    [5]
+    A  x   156  y   1042  w    48  h    48  vis  ""
+    B  x   156  y   1042  w    48  h    48  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: wknd-icon-font → "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; lineHeight: 14px → 21px
+    [6]
+    A  x   204  y   1042  w    48  h    48  vis  ""
+    B  x   204  y   1042  w    48  h    48  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: wknd-icon-font → "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; lineHeight: 14px → 21px
+    [7]
+    A  x   108  y   1386  w    48  h    48  vis  ""
+    B  x   108  y   1386  w    48  h    48  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: wknd-icon-font → "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; lineHeight: 14px → 21px
+    [8]
+    A  x   156  y   1386  w    48  h    48  vis  ""
+    B  x   156  y   1386  w    48  h    48  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: wknd-icon-font → "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; lineHeight: 14px → 21px
+    [9]
+    A  x   204  y   1386  w    48  h    48  vis  ""
+    B  x   204  y   1386  w    48  h    48  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: wknd-icon-font → "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; lineHeight: 14px → 21px
+    [10]
+    A  x   108  y   1731  w    48  h    48  vis  ""
+    B  x   108  y   1731  w    48  h    48  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: wknd-icon-font → "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; lineHeight: 14px → 21px
+    [11]
+    A  x   156  y   1731  w    48  h    48  vis  ""
+    B  x   156  y   1731  w    48  h    48  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: wknd-icon-font → "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; lineHeight: 14px → 21px
+    [12]
+    A  x   204  y   1731  w    48  h    48  vis  ""
+    B  x   204  y   1731  w    48  h    48  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: wknd-icon-font → "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; lineHeight: 14px → 21px
+  main section a span:first-child   12 matches
+    [1]
+    A  x   108  y    697  w    23  h    36  vis  ""
+    B  x   108  y    697  w    23  h    36  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [2]
+    A  x   156  y    697  w    36  h    36  vis  ""
+    B  x   156  y    697  w    36  h    36  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [3]
+    A  x   204  y    697  w    32  h    36  vis  ""
+    B  x   204  y    697  w    32  h    36  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [4]
+    A  x   108  y   1042  w    23  h    36  vis  ""
+    B  x   108  y   1042  w    23  h    36  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [5]
+    A  x   156  y   1042  w    36  h    36  vis  ""
+    B  x   156  y   1042  w    36  h    36  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [6]
+    A  x   204  y   1042  w    32  h    36  vis  ""
+    B  x   204  y   1042  w    32  h    36  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [7]
+    A  x   108  y   1386  w    23  h    36  vis  ""
+    B  x   108  y   1386  w    23  h    36  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [8]
+    A  x   156  y   1386  w    36  h    36  vis  ""
+    B  x   156  y   1386  w    36  h    36  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [9]
+    A  x   204  y   1386  w    32  h    36  vis  ""
+    B  x   204  y   1386  w    32  h    36  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [10]
+    A  x   108  y   1731  w    23  h    36  vis  ""
+    B  x   108  y   1731  w    23  h    36  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [11]
+    A  x   156  y   1731  w    36  h    36  vis  ""
+    B  x   156  y   1731  w    36  h    36  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+    [12]
+    A  x   204  y   1731  w    32  h    36  vis  ""
+    B  x   204  y   1731  w    32  h    36  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal

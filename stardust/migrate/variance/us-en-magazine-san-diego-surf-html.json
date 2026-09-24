@@ -1,0 +1,883 @@
+{
+  "archetype": "https://wknd.site/us/en/magazine/san-diego-surf.html",
+  "width": 1440,
+  "tolerance": 2,
+  "probes": {
+    "breadcrumb": "main .cmp-breadcrumb",
+    "title": "main .cmp-title",
+    "image": "main .image .cmp-image",
+    "text": "main .text .cmp-text",
+    "fragment": "main .cmp-contentfragment",
+    "btnlist": "main .cmp-buildingblock--btn-list"
+  },
+  "archetypeRaw": {
+    "sections": [],
+    "probes": {
+      "breadcrumb": {
+        "sel": "main .cmp-breadcrumb",
+        "count": 1,
+        "first": {
+          "rect": {
+            "w": 255,
+            "h": 67
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 32, 32)",
+          "padding": "0px 0px 0px 0px",
+          "font": "source sans pro 18px/27px 400",
+          "borderRadius": "0px",
+          "heading": null,
+          "image": null,
+          "listStyle": null,
+          "before": null
+        },
+        "clusters": 1,
+        "text": "Magazine San Diego Surf Spots"
+      },
+      "title": {
+        "sel": "main .cmp-title",
+        "count": 3,
+        "first": {
+          "rect": {
+            "w": 776,
+            "h": 60
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 32, 32)",
+          "padding": "0px 0px 0px 0px",
+          "font": "source sans pro 18px/27px 400",
+          "borderRadius": "0px",
+          "heading": "h1 asar 40px/60px 400 rgb(32, 32, 32)",
+          "image": null,
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 3,
+        "text": "San Diego Surf Spots"
+      },
+      "image": {
+        "sel": "main .image .cmp-image",
+        "count": 6,
+        "first": {
+          "rect": {
+            "w": 1136,
+            "h": 723
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 32, 32)",
+          "padding": "0px 0px 0px 0px",
+          "font": "source sans pro 18px/27px 400",
+          "borderRadius": "0px",
+          "heading": null,
+          "image": {
+            "w": 1136,
+            "h": 702
+          },
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 5,
+        "text": ""
+      },
+      "text": {
+        "sel": "main .text .cmp-text",
+        "count": 0
+      },
+      "fragment": {
+        "sel": "main .cmp-contentfragment",
+        "count": 1,
+        "first": {
+          "rect": {
+            "w": 776,
+            "h": 3851
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 32, 32)",
+          "padding": "0px 0px 0px 0px",
+          "font": "source sans pro 18px/27px 400",
+          "borderRadius": "0px",
+          "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+          "image": {
+            "w": 748,
+            "h": 498
+          },
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 1,
+        "text": "San Diego Surfspots San Diego's 70 miles of open ocean coast"
+      },
+      "btnlist": {
+        "sel": "main .cmp-buildingblock--btn-list",
+        "count": 1,
+        "first": {
+          "rect": {
+            "w": 194,
+            "h": 48
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(32, 32, 32)",
+          "padding": "0px 0px 0px 0px",
+          "font": "source sans pro 18px/27px 400",
+          "borderRadius": "0px",
+          "heading": null,
+          "image": null,
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 1,
+        "text": "Facebook Twitter Instagram"
+      }
+    }
+  },
+  "siblings": [
+    {
+      "url": "https://wknd.site/us/en/magazine/arctic-surfing.html",
+      "findings": [
+        {
+          "kind": "PROBE",
+          "probe": "breadcrumb",
+          "msg": "rect{w 255 → 212}"
+        },
+        {
+          "kind": "COUNT",
+          "probe": "title",
+          "msg": "3 → 6 matches"
+        },
+        {
+          "kind": "CLUSTERS",
+          "probe": "title",
+          "msg": "3 → 4 distinct style families among matches (a second visual family = a variant class)"
+        },
+        {
+          "kind": "COUNT",
+          "probe": "image",
+          "msg": "6 → 5 matches"
+        },
+        {
+          "kind": "CLUSTERS",
+          "probe": "image",
+          "msg": "5 → 3 distinct style families among matches (a second visual family = a variant class)"
+        },
+        {
+          "kind": "EXTRA",
+          "probe": "text",
+          "msg": "\"main .text .cmp-text\" matches 0 on the archetype, 1 on the sibling"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "fragment",
+          "msg": "rect{h 3851 → 4569}"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "breadcrumb": {
+            "sel": "main .cmp-breadcrumb",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 212,
+                "h": 67
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": null,
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Magazine Arctic Surfing"
+          },
+          "title": {
+            "sel": "main .cmp-title",
+            "count": 6,
+            "first": {
+              "rect": {
+                "w": 776,
+                "h": 60
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h1 asar 40px/60px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 4,
+            "text": "Aloha Spirits in Northern Norway"
+          },
+          "image": {
+            "sel": "main .image .cmp-image",
+            "count": 5,
+            "first": {
+              "rect": {
+                "w": 1136,
+                "h": 723
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1136,
+                "h": 702
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 3,
+            "text": ""
+          },
+          "text": {
+            "sel": "main .text .cmp-text",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 748,
+                "h": 27
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "\"When rare sunrays pierce through the low clouds, the scener"
+          },
+          "fragment": {
+            "sel": "main .cmp-contentfragment",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 776,
+                "h": 4569
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": {
+                "w": 748,
+                "h": 499
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Aloha Spirits in Northern Norway Steep mountain sides surrou"
+          },
+          "btnlist": {
+            "sel": "main .cmp-buildingblock--btn-list",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 194,
+                "h": 48
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Facebook Twitter Instagram"
+          }
+        }
+      }
+    },
+    {
+      "url": "https://wknd.site/us/en/magazine/guide-la-skateparks.html",
+      "findings": [
+        {
+          "kind": "PROBE",
+          "probe": "breadcrumb",
+          "msg": "rect{w 255 → 327}"
+        },
+        {
+          "kind": "COUNT",
+          "probe": "title",
+          "msg": "3 → 6 matches"
+        },
+        {
+          "kind": "CLUSTERS",
+          "probe": "title",
+          "msg": "3 → 4 distinct style families among matches (a second visual family = a variant class)"
+        },
+        {
+          "kind": "COUNT",
+          "probe": "image",
+          "msg": "6 → 4 matches"
+        },
+        {
+          "kind": "CLUSTERS",
+          "probe": "image",
+          "msg": "5 → 4 distinct style families among matches (a second visual family = a variant class)"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "image",
+          "msg": "rect{h 723 → 659}; image{h 702 → 638}"
+        },
+        {
+          "kind": "EXTRA",
+          "probe": "text",
+          "msg": "\"main .text .cmp-text\" matches 0 on the archetype, 1 on the sibling"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "fragment",
+          "msg": "rect{h 3851 → 3198}; image{h 498 → 523}"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "breadcrumb": {
+            "sel": "main .cmp-breadcrumb",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 327,
+                "h": 67
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": null,
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Magazine Ultimate Guide to LA Skateparks"
+          },
+          "title": {
+            "sel": "main .cmp-title",
+            "count": 6,
+            "first": {
+              "rect": {
+                "w": 776,
+                "h": 60
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h1 asar 40px/60px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 4,
+            "text": "Ultimate Guide to LA Skateparks"
+          },
+          "image": {
+            "sel": "main .image .cmp-image",
+            "count": 4,
+            "first": {
+              "rect": {
+                "w": 1136,
+                "h": 659
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1136,
+                "h": 638
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 4,
+            "text": ""
+          },
+          "text": {
+            "sel": "main .text .cmp-text",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 748,
+                "h": 251
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "18px 18px 18px 18px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "\"There is no better place to shred then Los Angeles\" Jacob W"
+          },
+          "fragment": {
+            "sel": "main .cmp-contentfragment",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 776,
+                "h": 3198
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": {
+                "w": 748,
+                "h": 523
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Ultimate Guide to LA Skateparks Contrary to popular belief s"
+          },
+          "btnlist": {
+            "sel": "main .cmp-buildingblock--btn-list",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 194,
+                "h": 48
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Facebook Twitter Instagram"
+          }
+        }
+      }
+    },
+    {
+      "url": "https://wknd.site/us/en/magazine/ski-touring.html",
+      "findings": [
+        {
+          "kind": "PROBE",
+          "probe": "breadcrumb",
+          "msg": "rect{w 255 → 191}"
+        },
+        {
+          "kind": "CLUSTERS",
+          "probe": "image",
+          "msg": "5 → 4 distinct style families among matches (a second visual family = a variant class)"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "image",
+          "msg": "rect{h 723 → 778}; image{h 702 → 757}"
+        },
+        {
+          "kind": "EXTRA",
+          "probe": "text",
+          "msg": "\"main .text .cmp-text\" matches 0 on the archetype, 1 on the sibling"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "fragment",
+          "msg": "rect{h 3851 → 4156}"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "breadcrumb": {
+            "sel": "main .cmp-breadcrumb",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 191,
+                "h": 67
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": null,
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Magazine Ski Touring"
+          },
+          "title": {
+            "sel": "main .cmp-title",
+            "count": 3,
+            "first": {
+              "rect": {
+                "w": 776,
+                "h": 60
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h1 asar 40px/60px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 3,
+            "text": "Ski Touring"
+          },
+          "image": {
+            "sel": "main .image .cmp-image",
+            "count": 6,
+            "first": {
+              "rect": {
+                "w": 1136,
+                "h": 778
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1136,
+                "h": 757
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 4,
+            "text": ""
+          },
+          "text": {
+            "sel": "main .text .cmp-text",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 748,
+                "h": 413
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "18px 18px 18px 18px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "\"...a mountain face stretching out for a thousand meters cov"
+          },
+          "fragment": {
+            "sel": "main .cmp-contentfragment",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 776,
+                "h": 4156
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": {
+                "w": 748,
+                "h": 498
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Ski Touring My backpack feels heavier for every meter, slowl"
+          },
+          "btnlist": {
+            "sel": "main .cmp-buildingblock--btn-list",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 194,
+                "h": 48
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Facebook Twitter Instagram"
+          }
+        }
+      }
+    },
+    {
+      "url": "https://wknd.site/us/en/magazine/western-australia.html",
+      "findings": [
+        {
+          "kind": "PROBE",
+          "probe": "breadcrumb",
+          "msg": "rect{w 255 → 239}"
+        },
+        {
+          "kind": "COUNT",
+          "probe": "title",
+          "msg": "3 → 6 matches"
+        },
+        {
+          "kind": "CLUSTERS",
+          "probe": "title",
+          "msg": "3 → 4 distinct style families among matches (a second visual family = a variant class)"
+        },
+        {
+          "kind": "COUNT",
+          "probe": "image",
+          "msg": "6 → 5 matches"
+        },
+        {
+          "kind": "CLUSTERS",
+          "probe": "image",
+          "msg": "5 → 3 distinct style families among matches (a second visual family = a variant class)"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "image",
+          "msg": "rect{h 723 → 660}; image{h 702 → 639}"
+        },
+        {
+          "kind": "EXTRA",
+          "probe": "text",
+          "msg": "\"main .text .cmp-text\" matches 0 on the archetype, 1 on the sibling"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "fragment",
+          "msg": "rect{h 3851 → 4926}"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "breadcrumb": {
+            "sel": "main .cmp-breadcrumb",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 239,
+                "h": 67
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": null,
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Magazine Western Australia"
+          },
+          "title": {
+            "sel": "main .cmp-title",
+            "count": 6,
+            "first": {
+              "rect": {
+                "w": 776,
+                "h": 60
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h1 asar 40px/60px 400 rgb(32, 32, 32)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 4,
+            "text": "Western Australia by Camper Van"
+          },
+          "image": {
+            "sel": "main .image .cmp-image",
+            "count": 5,
+            "first": {
+              "rect": {
+                "w": 1136,
+                "h": 660
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1136,
+                "h": 639
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 3,
+            "text": ""
+          },
+          "text": {
+            "sel": "main .text .cmp-text",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 748,
+                "h": 251
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "18px 18px 18px 18px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Wanderlust \\ˈwɒndəlʌst\\ a strong desire to travel. noun"
+          },
+          "fragment": {
+            "sel": "main .cmp-contentfragment",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 776,
+                "h": 4926
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": "h3 asar 24px/36px 400 rgb(32, 32, 32)",
+              "image": {
+                "w": 748,
+                "h": 498
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Western Australia by Camper Van A vibrant red, dusty highway"
+          },
+          "btnlist": {
+            "sel": "main .cmp-buildingblock--btn-list",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 194,
+                "h": 48
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(32, 32, 32)",
+              "padding": "0px 0px 0px 0px",
+              "font": "source sans pro 18px/27px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Facebook Twitter Instagram"
+          }
+        }
+      }
+    }
+  ],
+  "summary": {
+    "siblings": 4,
+    "varying": 4,
+    "probesVarying": [
+      "breadcrumb",
+      "title",
+      "image",
+      "text",
+      "fragment"
+    ]
+  }
+}

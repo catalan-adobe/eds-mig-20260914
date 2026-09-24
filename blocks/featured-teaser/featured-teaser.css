@@ -1,0 +1,95 @@
+/* featured-teaser — lifted from stardust/prototypes/canon.css
+   (.teaser--featured, .teaser__*, .teaser__cta, .image img) */
+
+.featured-teaser {
+  display: flow-root;
+}
+
+.featured-teaser .teaser {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.featured-teaser .teaser .content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 3.5em 2em 2em;
+  background-color: var(--color-third);
+}
+
+.featured-teaser .teaser .image {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+}
+
+/* <picture> plays the live div.image (a block, height 100%); the <img> inside it
+   stays inline so the line box carries the live baseline descender */
+.featured-teaser .teaser .image picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.featured-teaser .teaser .image img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  object-position: top;
+}
+
+.featured-teaser .eyebrow p {
+  font-weight: 700;
+}
+
+.featured-teaser .headline :is(h1, h2, h3) {
+  margin: 0.5em 0;
+  font-family: var(--heading-font-family);
+}
+
+.featured-teaser .description p {
+  margin: 0;
+  font-size: var(--body-sm);
+  line-height: 1.75;
+  text-align: left;
+}
+
+.featured-teaser .actions {
+  float: left;
+  margin: 1em 0;
+}
+
+.featured-teaser .actions a:any-link {
+  display: block;
+  float: left;
+  height: auto;
+  min-width: 0;
+  padding: 1em 2.5em;
+  border-radius: var(--radius);
+  background-color: var(--color-accent);
+  color: var(--color-fg);
+  font-size: var(--body-sm);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-body);
+  text-transform: uppercase;
+  white-space: normal;
+}
+
+@media (width <= 767px) {
+  .featured-teaser .teaser {
+    flex-direction: column;
+  }
+
+  .featured-teaser .teaser .image {
+    flex: 1;
+  }
+
+  .featured-teaser .teaser .content {
+    flex: 1;
+    margin-top: -1em;
+  }
+}

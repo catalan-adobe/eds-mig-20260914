@@ -1,0 +1,128 @@
+/* hero-teaser — lifted from stardust/prototypes/canon.css
+   (.teaser--hero, .teaser--image-bottom, .teaser__*, .teaser__cta) */
+
+.hero-teaser {
+  display: flow-root;
+}
+
+.hero-teaser .teaser {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-teaser .teaser .image {
+  flex: 1;
+  width: 100%;
+  height: 400px;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+/* <picture> plays the live div.image (a block, height 100%); the <img> inside it
+   stays inline so the line box carries the live baseline descender */
+.hero-teaser .teaser .image picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-teaser .teaser .image img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-teaser.image-bottom .teaser .image img {
+  object-position: bottom;
+}
+
+.hero-teaser.image-top .teaser .image img {
+  object-position: top;
+}
+
+.hero-teaser .teaser .content {
+  flex: 1;
+  padding-right: 14px;
+  padding-left: 14px;
+}
+
+.hero-teaser .eyebrow p {
+  font-weight: 700;
+}
+
+.hero-teaser .headline :is(h1, h2, h3) {
+  margin: 0.5em 0 0;
+  font-family: var(--heading-font-family);
+}
+
+.hero-teaser .description p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.75;
+  text-align: left;
+}
+
+.hero-teaser .actions {
+  float: left;
+  margin: 1em 0;
+}
+
+.hero-teaser .actions a:any-link {
+  display: block;
+  float: left;
+  height: auto;
+  min-width: 0;
+  padding: 1em 2.5em;
+  border-radius: var(--radius);
+  background-color: var(--color-accent);
+  color: var(--color-fg);
+  font-size: var(--body-sm);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-body);
+  text-transform: uppercase;
+  white-space: normal;
+}
+
+/* A section title authored as default content in the same (flush) section keeps
+   the container width and holds its own top margin (live .column is a float BFC,
+   so the separator's 4rem and the title's 27px never collapse into one gap). */
+main .section.hero-teaser-container .default-content-wrapper {
+  display: flow-root;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 14px;
+}
+
+main .section.hero-teaser-container .hero-teaser .headline :is(h1, h2, h3)::after {
+  content: none;
+}
+
+@media (width >= 1165px) {
+  /* live L367 sizes the inner .image box too — that definite 640px is what lets
+     the img's height: 100% resolve (flex-basis 0% leaves the flex item indefinite) */
+  .hero-teaser .teaser .image,
+  .hero-teaser .teaser .image picture {
+    height: 640px;
+  }
+
+  .hero-teaser .teaser .image {
+    max-height: 640px;
+  }
+
+  .hero-teaser .teaser .content {
+    position: relative;
+    float: left;
+    width: 1136px;
+    height: 180px;
+    min-height: 180px;
+    margin-top: -180px;
+    padding-right: 28px;
+    padding-bottom: 0;
+    padding-left: 28px;
+    background-color: #fff;
+  }
+}

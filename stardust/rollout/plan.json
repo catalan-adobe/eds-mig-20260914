@@ -1,0 +1,745 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/plan",
+    "writtenAt": "2026-09-24T10:02:56.779Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-24T10:02:56.779Z",
+  "fragments": [],
+  "deliveryOrder": [
+    "us-en-adventures-climbing-new-zealand-html",
+    "us-en-adventures-bali-surf-camp-html",
+    "us-en-adventures-beervana-portland-html",
+    "us-en-adventures-colorado-rock-climbing-html",
+    "us-en-adventures-cycling-southern-utah-html",
+    "us-en-adventures-cycling-tuscany-html",
+    "us-en-adventures-downhill-skiing-wyoming-html",
+    "us-en-adventures-gastronomic-marais-tour-html",
+    "us-en-adventures-napa-wine-tasting-html",
+    "us-en-adventures-riverside-camping-australia-html",
+    "us-en-adventures-ski-touring-mont-blanc-html",
+    "us-en-adventures-surf-camp-costa-rica-html",
+    "us-en-adventures-tahoe-skiing-html",
+    "us-en-adventures-west-coast-cycling-html",
+    "us-en-adventures-whistler-mountain-biking-html",
+    "us-en-adventures-yosemite-backpacking-html",
+    "us-en-magazine-san-diego-surf-html",
+    "us-en-magazine-arctic-surfing-html",
+    "us-en-magazine-guide-la-skateparks-html",
+    "us-en-magazine-ski-touring-html",
+    "us-en-magazine-western-australia-html",
+    "us-en-adventures-html",
+    "us-en-magazine-html",
+    "us-en-about-us-html",
+    "us-en-faqs-html",
+    "us-en-html"
+  ],
+  "steps": [
+    {
+      "slug": "us-en-adventures-climbing-new-zealand-html",
+      "path": "/us/en/adventures/climbing-new-zealand",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel"
+        },
+        {
+          "id": "trip-facts",
+          "edsBlockName": "trip-facts"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "default-content"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs"
+        }
+      ],
+      "reuse": []
+    },
+    {
+      "slug": "us-en-adventures-bali-surf-camp-html",
+      "path": "/us/en/adventures/bali-surf-camp",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "trip-facts",
+          "edsBlockName": "trip-facts",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-beervana-portland-html",
+      "path": "/us/en/adventures/beervana-portland",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "trip-facts",
+          "edsBlockName": "trip-facts",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-colorado-rock-climbing-html",
+      "path": "/us/en/adventures/colorado-rock-climbing",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "trip-facts",
+          "edsBlockName": "trip-facts",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-cycling-southern-utah-html",
+      "path": "/us/en/adventures/cycling-southern-utah",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "trip-facts",
+          "edsBlockName": "trip-facts",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-cycling-tuscany-html",
+      "path": "/us/en/adventures/cycling-tuscany",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "trip-facts",
+          "edsBlockName": "trip-facts",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-downhill-skiing-wyoming-html",
+      "path": "/us/en/adventures/downhill-skiing-wyoming",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "trip-facts",
+          "edsBlockName": "trip-facts",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-gastronomic-marais-tour-html",
+      "path": "/us/en/adventures/gastronomic-marais-tour",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "trip-facts",
+          "edsBlockName": "trip-facts",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-napa-wine-tasting-html",
+      "path": "/us/en/adventures/napa-wine-tasting",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "trip-facts",
+          "edsBlockName": "trip-facts",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-riverside-camping-australia-html",
+      "path": "/us/en/adventures/riverside-camping-australia",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "trip-facts",
+          "edsBlockName": "trip-facts",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-ski-touring-mont-blanc-html",
+      "path": "/us/en/adventures/ski-touring-mont-blanc",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "trip-facts",
+          "edsBlockName": "trip-facts",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-surf-camp-costa-rica-html",
+      "path": "/us/en/adventures/surf-camp-costa-rica",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "trip-facts",
+          "edsBlockName": "trip-facts",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-tahoe-skiing-html",
+      "path": "/us/en/adventures/tahoe-skiing",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "trip-facts",
+          "edsBlockName": "trip-facts",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-west-coast-cycling-html",
+      "path": "/us/en/adventures/west-coast-cycling",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "trip-facts",
+          "edsBlockName": "trip-facts",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-whistler-mountain-biking-html",
+      "path": "/us/en/adventures/whistler-mountain-biking",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "trip-facts",
+          "edsBlockName": "trip-facts",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-yosemite-backpacking-html",
+      "path": "/us/en/adventures/yosemite-backpacking",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "mini-carousel",
+          "edsBlockName": "mini-carousel",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "trip-facts",
+          "edsBlockName": "trip-facts",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "sharing",
+          "edsBlockName": "default-content",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-magazine-san-diego-surf-html",
+      "path": "/us/en/magazine/san-diego-surf",
+      "templateId": "us-en-magazine-san-diego-surf-html",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "content-fragment",
+          "edsBlockName": "article-body"
+        },
+        {
+          "id": "contributor-byline",
+          "edsBlockName": "contributor-byline"
+        },
+        {
+          "id": "upnext-list",
+          "edsBlockName": "upnext-list"
+        }
+      ],
+      "reuse": []
+    },
+    {
+      "slug": "us-en-magazine-arctic-surfing-html",
+      "path": "/us/en/magazine/arctic-surfing",
+      "templateId": "us-en-magazine-san-diego-surf-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "content-fragment",
+          "edsBlockName": "article-body",
+          "convertedBy": "us-en-magazine-san-diego-surf-html"
+        },
+        {
+          "id": "contributor-byline",
+          "edsBlockName": "contributor-byline",
+          "convertedBy": "us-en-magazine-san-diego-surf-html"
+        },
+        {
+          "id": "upnext-list",
+          "edsBlockName": "upnext-list",
+          "convertedBy": "us-en-magazine-san-diego-surf-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-magazine-guide-la-skateparks-html",
+      "path": "/us/en/magazine/guide-la-skateparks",
+      "templateId": "us-en-magazine-san-diego-surf-html",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "download",
+          "edsBlockName": "download"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "content-fragment",
+          "edsBlockName": "article-body",
+          "convertedBy": "us-en-magazine-san-diego-surf-html"
+        },
+        {
+          "id": "contributor-byline",
+          "edsBlockName": "contributor-byline",
+          "convertedBy": "us-en-magazine-san-diego-surf-html"
+        },
+        {
+          "id": "upnext-list",
+          "edsBlockName": "upnext-list",
+          "convertedBy": "us-en-magazine-san-diego-surf-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-magazine-ski-touring-html",
+      "path": "/us/en/magazine/ski-touring",
+      "templateId": "us-en-magazine-san-diego-surf-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "content-fragment",
+          "edsBlockName": "article-body",
+          "convertedBy": "us-en-magazine-san-diego-surf-html"
+        },
+        {
+          "id": "contributor-byline",
+          "edsBlockName": "contributor-byline",
+          "convertedBy": "us-en-magazine-san-diego-surf-html"
+        },
+        {
+          "id": "upnext-list",
+          "edsBlockName": "upnext-list",
+          "convertedBy": "us-en-magazine-san-diego-surf-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-magazine-western-australia-html",
+      "path": "/us/en/magazine/western-australia",
+      "templateId": "us-en-magazine-san-diego-surf-html",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "content-fragment",
+          "edsBlockName": "article-body",
+          "convertedBy": "us-en-magazine-san-diego-surf-html"
+        },
+        {
+          "id": "contributor-byline",
+          "edsBlockName": "contributor-byline",
+          "convertedBy": "us-en-magazine-san-diego-surf-html"
+        },
+        {
+          "id": "upnext-list",
+          "edsBlockName": "upnext-list",
+          "convertedBy": "us-en-magazine-san-diego-surf-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-adventures-html",
+      "path": "/us/en/adventures",
+      "templateId": "us-en-adventures-html",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "hero-teaser",
+          "edsBlockName": "hero-teaser"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs",
+          "convertedBy": "us-en-adventures-climbing-new-zealand-html"
+        }
+      ]
+    },
+    {
+      "slug": "us-en-magazine-html",
+      "path": "/us/en/magazine",
+      "templateId": "us-en-adventures-html",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "featured-teaser",
+          "edsBlockName": "featured-teaser"
+        },
+        {
+          "id": "image-list",
+          "edsBlockName": "cards"
+        },
+        {
+          "id": "list-teaser",
+          "edsBlockName": "list-teaser"
+        }
+      ],
+      "reuse": []
+    },
+    {
+      "slug": "us-en-about-us-html",
+      "path": "/us/en/about-us",
+      "templateId": "us-en-about-us-html",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "contributor-card",
+          "edsBlockName": "contributor-card"
+        }
+      ],
+      "reuse": []
+    },
+    {
+      "slug": "us-en-faqs-html",
+      "path": "/us/en/faqs",
+      "templateId": "us-en-faqs-html",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "accordion",
+          "edsBlockName": "accordion"
+        }
+      ],
+      "reuse": []
+    },
+    {
+      "slug": "us-en-html",
+      "path": "/us/en",
+      "templateId": "us-en-html",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "hero-carousel",
+          "edsBlockName": "hero-carousel"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "featured-teaser",
+          "edsBlockName": "featured-teaser",
+          "convertedBy": "us-en-magazine-html"
+        },
+        {
+          "id": "image-list",
+          "edsBlockName": "cards",
+          "convertedBy": "us-en-magazine-html"
+        },
+        {
+          "id": "hero-teaser",
+          "edsBlockName": "hero-teaser",
+          "convertedBy": "us-en-adventures-html"
+        }
+      ]
+    }
+  ]
+}

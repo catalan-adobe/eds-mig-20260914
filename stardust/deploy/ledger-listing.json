@@ -1,0 +1,20 @@
+{
+  "/us/en/adventures": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-24T12:48:54.435Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/us/en/magazine": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-24T13:21:53.093Z",
+    "put": 200,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  }
+}

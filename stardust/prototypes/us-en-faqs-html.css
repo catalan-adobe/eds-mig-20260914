@@ -1,0 +1,74 @@
+/* us-en-faqs-html (unique archetype) — page-specific CSS.
+   Values lifted from clientlib-site.min.css (wknd.site): .cmp-layout-container--fixed, aem-Grid
+   12/8 column model (content container default 8/12 → inner grid 8; aside default 3/12 with
+   offset 1; tablet 768–1024 and phone ≤767 both 12/12), .responsivegrid.aem-GridColumn padding 0,
+   .cmp-title--underline, .cmp-text--font-small, .cmp-separator--space-small, .cmp-accordion.
+   Chrome, headings, buttons, separator and icon font come from canon.css (frozen). */
+
+/* aem-Grid: block + clearfix */
+.page-faqs .grid { display: block; width: 100%; }
+.page-faqs .grid::after, .page-faqs .grid::before { content: " "; display: table; }
+.page-faqs .grid::after { clear: both; }
+
+/* responsivegrid columns carry no gutter (.responsivegrid.aem-GridColumn { padding: 0 }) */
+.page-faqs .column--group { padding-left: 0; padding-right: 0; }
+
+/* content container: aem-GridColumn--default--8 of aem-Grid--12 */
+.page-faqs .faq-content { width: 66.6666666667%; }
+/* aside container: aem-GridColumn--default--3 + aem-GridColumn--offset--default--1 */
+.page-faqs .faq-aside { margin-left: 8.3333333333%; width: 25%; }
+
+/* inner aem-Grid--8: title, image, text, accordion are all default--8 → 100% (canon .column) */
+
+/* cmp-title h1 inherits canon h1 (Asar 40px, margin 27px 0 13.5px); underline via canon
+   .section-title--underline .section-title__text::after */
+
+/* cmp-image: img 100% wide, 7px vertical margins (canon .image img) */
+
+/* cmp-accordion (lifted verbatim, scoped) */
+.page-faqs .accordion__header { margin: 0; }
+.page-faqs .accordion__button {
+  background: none; border: none; border-bottom: 2px solid var(--color-third); cursor: pointer;
+  display: block; padding: 1em; text-align: left; width: 100%;
+}
+/* the live site leaves the UA button font in place (Arial 13.333px, black, line-height normal);
+   the 1em padding resolves against it — not a value to "fix" */
+.page-faqs .accordion__button:focus { outline: none; }
+.page-faqs .accordion__button--expanded { border: none; }
+.page-faqs .accordion__title {
+  font-family: var(--body-font-family); font-size: var(--heading-md);
+  font-weight: var(--font-weight-bold); padding-left: .5em; text-transform: uppercase;
+}
+.page-faqs .accordion__icon {
+  float: right; font-family: var(--icon-font-family) !important; font-size: 1.25rem; font-style: normal;
+  font-variant: normal; font-weight: 400; line-height: 1; speak: none; text-transform: none;
+  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.page-faqs .accordion__icon::before { content: "\e911"; }
+.page-faqs .accordion__button--expanded .accordion__icon::before { content: "\e910"; }
+.page-faqs .accordion__panel {
+  animation: fadeIn .5s both; font-size: var(--body-sm); padding-left: .5em; padding-top: .5em;
+}
+.page-faqs .accordion__panel p { font-size: var(--body-sm); line-height: 1.75; }
+.page-faqs .accordion__panel--hidden { display: none; }
+.page-faqs .accordion__panel--expanded { display: block; }
+@keyframes fadeIn { 0% { opacity: 0; } to { opacity: 1; } }
+
+/* aside: hidden small separator, h3 title (canon), small text.
+   Live .cmp-separator__horizontal-rule keeps the UA hr margin (9px 0 at 18px); canon .separator hr
+   zeroes it → page compensation. Canon back-port tried and reverted (A-GC1 in direction.md):
+   in the prototypes' flex/grid columns the hr margin cannot collapse, so every other separator
+   grew 18px on all six archetypes. */
+.page-faqs .faq-aside .separator hr { margin: 9px 0; }
+.page-faqs .text--font-small p { font-size: var(--body-sm); }
+
+/* tablet (768–1024): both containers 12/12; image and text 8/12 inside the inner grid */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .page-faqs .faq-content, .page-faqs .faq-aside { margin-left: 0; width: 100%; }
+  .page-faqs .faq-image, .page-faqs .faq-intro { width: 66.6666666667%; }
+}
+/* phone (≤767): both containers 12/12; image 8/12, everything else 12/12 */
+@media (max-width: 767px) {
+  .page-faqs .faq-content, .page-faqs .faq-aside { margin-left: 0; width: 100%; }
+  .page-faqs .faq-image { width: 66.6666666667%; }
+}

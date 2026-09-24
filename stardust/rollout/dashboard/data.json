@@ -1,0 +1,329 @@
+{
+  "generatedAt": "2026-09-24T14:08:37.008Z",
+  "target": "aem-eds",
+  "site": {
+    "sourceUrl": "https://wknd.site/us/en",
+    "liveHost": "replica-wknd--eds-mig-20260914--catalan-adobe.aem.live"
+  },
+  "stageCount": {
+    "identified": 26,
+    "prototyped": 26,
+    "deployed": 26,
+    "optimised": 0
+  },
+  "stageExclusive": {
+    "identified": 0,
+    "prototyped": 0,
+    "deployed": 26,
+    "optimised": 0
+  },
+  "pages": [
+    {
+      "slug": "us-en-html",
+      "path": "/us/en",
+      "stage": "deployed",
+      "templateId": "us-en-html",
+      "isTemplate": true,
+      "openFindings": 2
+    },
+    {
+      "slug": "us-en-about-us-html",
+      "path": "/us/en/about-us",
+      "stage": "deployed",
+      "templateId": "us-en-about-us-html",
+      "isTemplate": true,
+      "openFindings": 3
+    },
+    {
+      "slug": "us-en-adventures-html",
+      "path": "/us/en/adventures",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-html",
+      "isTemplate": true,
+      "openFindings": 1
+    },
+    {
+      "slug": "us-en-adventures-bali-surf-camp-html",
+      "path": "/us/en/adventures/bali-surf-camp",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "us-en-adventures-beervana-portland-html",
+      "path": "/us/en/adventures/beervana-portland",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "us-en-adventures-climbing-new-zealand-html",
+      "path": "/us/en/adventures/climbing-new-zealand",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "isTemplate": true,
+      "openFindings": 1
+    },
+    {
+      "slug": "us-en-adventures-colorado-rock-climbing-html",
+      "path": "/us/en/adventures/colorado-rock-climbing",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "us-en-adventures-cycling-southern-utah-html",
+      "path": "/us/en/adventures/cycling-southern-utah",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "us-en-adventures-cycling-tuscany-html",
+      "path": "/us/en/adventures/cycling-tuscany",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "us-en-adventures-downhill-skiing-wyoming-html",
+      "path": "/us/en/adventures/downhill-skiing-wyoming",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "us-en-adventures-gastronomic-marais-tour-html",
+      "path": "/us/en/adventures/gastronomic-marais-tour",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "us-en-adventures-napa-wine-tasting-html",
+      "path": "/us/en/adventures/napa-wine-tasting",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "us-en-adventures-riverside-camping-australia-html",
+      "path": "/us/en/adventures/riverside-camping-australia",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "us-en-adventures-ski-touring-mont-blanc-html",
+      "path": "/us/en/adventures/ski-touring-mont-blanc",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "us-en-adventures-surf-camp-costa-rica-html",
+      "path": "/us/en/adventures/surf-camp-costa-rica",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "us-en-adventures-tahoe-skiing-html",
+      "path": "/us/en/adventures/tahoe-skiing",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "us-en-adventures-west-coast-cycling-html",
+      "path": "/us/en/adventures/west-coast-cycling",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "us-en-adventures-whistler-mountain-biking-html",
+      "path": "/us/en/adventures/whistler-mountain-biking",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "us-en-adventures-yosemite-backpacking-html",
+      "path": "/us/en/adventures/yosemite-backpacking",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-climbing-new-zealand-html",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "us-en-faqs-html",
+      "path": "/us/en/faqs",
+      "stage": "deployed",
+      "templateId": "us-en-faqs-html",
+      "isTemplate": true,
+      "openFindings": 2
+    },
+    {
+      "slug": "us-en-magazine-html",
+      "path": "/us/en/magazine",
+      "stage": "deployed",
+      "templateId": "us-en-adventures-html",
+      "isTemplate": false,
+      "openFindings": 2
+    },
+    {
+      "slug": "us-en-magazine-arctic-surfing-html",
+      "path": "/us/en/magazine/arctic-surfing",
+      "stage": "deployed",
+      "templateId": "us-en-magazine-san-diego-surf-html",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "us-en-magazine-guide-la-skateparks-html",
+      "path": "/us/en/magazine/guide-la-skateparks",
+      "stage": "deployed",
+      "templateId": "us-en-magazine-san-diego-surf-html",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "us-en-magazine-san-diego-surf-html",
+      "path": "/us/en/magazine/san-diego-surf",
+      "stage": "deployed",
+      "templateId": "us-en-magazine-san-diego-surf-html",
+      "isTemplate": true,
+      "openFindings": 1
+    },
+    {
+      "slug": "us-en-magazine-ski-touring-html",
+      "path": "/us/en/magazine/ski-touring",
+      "stage": "deployed",
+      "templateId": "us-en-magazine-san-diego-surf-html",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "us-en-magazine-western-australia-html",
+      "path": "/us/en/magazine/western-australia",
+      "stage": "deployed",
+      "templateId": "us-en-magazine-san-diego-surf-html",
+      "isTemplate": false,
+      "openFindings": 1
+    }
+  ],
+  "templates": [
+    {
+      "id": "us-en-about-us-html",
+      "archetype": "us-en-about-us-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 1,
+        "optimised": 0
+      }
+    },
+    {
+      "id": "us-en-adventures-climbing-new-zealand-html",
+      "archetype": "us-en-adventures-climbing-new-zealand-html",
+      "pageCount": 16,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 16,
+        "optimised": 0
+      }
+    },
+    {
+      "id": "us-en-adventures-html",
+      "archetype": "us-en-adventures-html",
+      "pageCount": 2,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 2,
+        "optimised": 0
+      }
+    },
+    {
+      "id": "us-en-faqs-html",
+      "archetype": "us-en-faqs-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 1,
+        "optimised": 0
+      }
+    },
+    {
+      "id": "us-en-html",
+      "archetype": "us-en-html",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 1,
+        "optimised": 0
+      }
+    },
+    {
+      "id": "us-en-magazine-san-diego-surf-html",
+      "archetype": "us-en-magazine-san-diego-surf-html",
+      "pageCount": 5,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 5,
+        "optimised": 0
+      }
+    }
+  ],
+  "blocks": {
+    "total": 15,
+    "converted": 15
+  },
+  "quality": {
+    "overall": 100,
+    "dimensions": {
+      "brand-tensions": null,
+      "design-ux": null,
+      "accessibility": null,
+      "seo": 100,
+      "content-conversion": null,
+      "ai-search": 100,
+      "cross-page": 100
+    },
+    "severity": {
+      "P1": 0,
+      "P2": 0,
+      "P3": 0
+    },
+    "history": [
+      100,
+      100
+    ]
+  },
+  "findings": {
+    "byFixability": {
+      "out-of-scope": 30
+    },
+    "byAutofix": {}
+  }
+}

@@ -1,0 +1,1418 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-09-24T07:07:16.637Z",
+    "readArtifacts": [
+      "stardust/current/_brand-extraction.json",
+      "stardust/current/_computed-styles.json",
+      "stardust/current/assets/css/clientlib-site.min.css",
+      "stardust/current/pages/*.json"
+    ],
+    "synthesizedInputs": [],
+    "stardustVersion": "0.10.0"
+  },
+  "name": "WKND Adventures and Travel",
+  "description": "WKND is a collective of outdoors, music, crafts, adventure sports, and travel enthusiasts that want to share our experiences, connections, and expertise with the world.",
+  "colors": {
+    "bg-white": "#ffffff",
+    "text-ink": "#202020",
+    "brand-yellow": "#ffea00",
+    "surface-light": "#ebebeb",
+    "link-blue": "#0045ff",
+    "text-dim": "#696969",
+    "overlay-dark": "#000000cc",
+    "border-muted": "#afafaf"
+  },
+  "typography": {
+    "display": {
+      "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+      "fontSize": "40px",
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    "heading": {
+      "fontFamily": "Asar, Georgia, \"Times New Roman\", Times, serif",
+      "fontSize": "36px",
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    "subheading": {
+      "fontFamily": "Asar, Georgia, serif",
+      "fontSize": "24px",
+      "fontWeight": 400
+    },
+    "label": {
+      "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": 600
+    },
+    "body": {
+      "fontFamily": "\"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontSize": "18px",
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    "small": {
+      "fontFamily": "\"Source Sans Pro\", sans-serif",
+      "fontSize": "14px",
+      "fontWeight": 600,
+      "textTransform": "uppercase"
+    },
+    "caption": {
+      "fontFamily": "\"Source Sans Pro\", sans-serif",
+      "fontSize": "12px",
+      "fontWeight": 400
+    }
+  },
+  "rounded": {
+    "none": "0px",
+    "input": "0px 2px 2px 0px",
+    "full": "50%"
+  },
+  "spacing": {
+    "gutter": "14px",
+    "headerY": "50px",
+    "footerTop": "3rem",
+    "footerY": "1rem 0 1.5rem",
+    "underlineGap": "8px"
+  },
+  "components": {
+    "button": {
+      "backgroundColor": "{colors.surface-light}",
+      "textColor": "{colors.text-ink}",
+      "rounded": "{rounded.none}",
+      "typography": "{typography.small}",
+      "height": "48px"
+    },
+    "button-primary": {
+      "backgroundColor": "{colors.brand-yellow}",
+      "textColor": "{colors.text-ink}",
+      "rounded": "{rounded.none}",
+      "typography": "{typography.small}",
+      "height": "48px"
+    },
+    "button-primary-hover": {
+      "backgroundColor": "{colors.brand-yellow}"
+    },
+    "button-secondary": {
+      "backgroundColor": "{colors.text-ink}",
+      "textColor": "{colors.surface-light}",
+      "rounded": "{rounded.none}",
+      "typography": "{typography.small}",
+      "height": "48px"
+    },
+    "nav-link": {
+      "textColor": "{colors.text-ink}",
+      "typography": "{typography.small}",
+      "padding": "15px 17px"
+    },
+    "nav-link-active": {
+      "backgroundColor": "{colors.brand-yellow}"
+    },
+    "section-title": {
+      "typography": "{typography.heading}",
+      "textColor": "{colors.text-ink}"
+    },
+    "footer": {
+      "backgroundColor": "{colors.text-ink}",
+      "textColor": "{colors.surface-light}",
+      "padding": "1rem 0 1.5rem"
+    },
+    "header": {
+      "backgroundColor": "{colors.bg-white}",
+      "padding": "50px 0"
+    },
+    "portrait": {
+      "rounded": "{rounded.full}"
+    }
+  },
+  "extensions": {
+    "register": "brand",
+    "componentStyle": {
+      "button": {
+        "base": ".cmp-button — bg #ebebeb, color #202020, radius 0, font 14px/600 uppercase Source Sans Pro, height 3pc(48px), min-width 48px",
+        "primary": ".cmp-button--primary .cmp-button — bg #ffea00",
+        "secondary": ".cmp-button--secondary .cmp-button — bg #202020, color #ebebeb",
+        "hover": {
+          "kind": "button",
+          "from": {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderColor": "rgb(0, 69, 255) rgb(0, 69, 255) rgb(0, 69, 255) rgb(235, 235, 235)"
+          },
+          "to": {
+            "backgroundColor": "rgb(255, 234, 0)",
+            "borderColor": "rgb(32, 32, 32)"
+          },
+          "count": 10,
+          "sources": [
+            {
+              "url": "https://wknd.site/us/en/magazine/arctic-surfing.html",
+              "selector": "#list-01a86fbca3 > li:nth-of-type(1) > a"
+            },
+            {
+              "url": "https://wknd.site/us/en/magazine/arctic-surfing.html",
+              "selector": "#list-01a86fbca3 > li:nth-of-type(1) > a"
+            }
+          ]
+        }
+      },
+      "nav": ".cmp-navigation__item-link — 14px uppercase #202020, padding 15px 17px; active item #ffea00 background",
+      "sectionTitle": ".cmp-title--underline .cmp-title__text:after — 84px×2px #ffea00 rule",
+      "header": ".cmp-layoutcontainer--header — white, padding 50px 0; shrinks + shadow on .scrolly",
+      "footer": ".cmp-experiencefragment--footer — #202020 bg, #ebebeb text, margin-top 3rem, padding 1rem 0 1.5rem",
+      "container": ".cmp-layout-container--fixed — padding 0 14px; breakpoints max-width 1024 / 767, min-width 1025/1165/1201"
+    },
+    "motifs": {
+      "radius": {
+        "mode": "0px 2px 2px 0px",
+        "areaMode": "0px 2px 2px 0px",
+        "pill": "50%",
+        "values": [
+          {
+            "value": "50%",
+            "count": 84,
+            "area": 383544
+          },
+          {
+            "value": "0px 2px 2px 0px",
+            "count": 26,
+            "area": 45760
+          },
+          {
+            "value": "30px",
+            "count": 10,
+            "area": 36000
+          }
+        ],
+        "note": "buttons are square (--buttonBorderRadius,0); 50% = circular contributor portraits (about-us) and carousel indicators; 0 2px 2px 0 = search input"
+      },
+      "shadows": [
+        {
+          "value": "rgba(0, 0, 0, 0.35) -3px 0px 5px 0px inset",
+          "count": 26
+        },
+        {
+          "value": "0 8px 20px 0 rgba(0,0,0,.26)",
+          "count": "scrolled header only",
+          "source": ".scrolly .cmp-layoutcontainer--header clientlib-site.min.css@122769"
+        }
+      ],
+      "gradients": [],
+      "patterns": [
+        "hero-with-image (cmp-teaser--hero, cmp-carousel--hero)",
+        "title-underline (84px × 2px #ffea00 rule under section titles)",
+        "uppercase 14px/600 nav + buttons",
+        "dark footer band #202020 on #ebebeb text",
+        "circular portrait cards (about-us)",
+        "breadcrumb with icon-font chevron",
+        "accordion (faqs)",
+        "tabs (adventures listing + adventure detail)"
+      ]
+    },
+    "voice": {
+      "heroHeadline": "WKND Adventures",
+      "heroLede": "WKND is a collective of outdoors, music, crafts, adventure sports, and travel enthusiasts that want to share our experiences, connections, and expertise with the world.",
+      "heroImage": {
+        "src": "https://wknd.site/us/en/_jcr_content/root/container/carousel/item_1571954853062.coreimg.60.1600.jpeg/1660323801921/adobestock-216674449.jpeg",
+        "alt": "Female sitting on a large rock relaxing in afternoon dappled light the Australian bushland with views over the river",
+        "w": 1440,
+        "h": 810,
+        "selector": ".cmp-carousel--hero .cmp-teaser--hero img",
+        "source": "pages/us-en-html.json#media.imgs[1]"
+      },
+      "heroMedium": null,
+      "firstParagraph": "Ultimate Guide to LA Skateparks Breaking down the top skate destinations in all of Los Angeles. You don't want to miss this!",
+      "ctaLabels": [
+        "View Trips",
+        "Full Article",
+        "See Trip",
+        "All Articles",
+        "Read More"
+      ],
+      "linkSample": [
+        "Magazine",
+        "Adventures",
+        "FAQs",
+        "About Us"
+      ],
+      "tagline": "WKND Adventures and Travel",
+      "register": "brand",
+      "registerBasis": "marketing/travel-magazine landing with full-bleed photo heroes, teasers and CTAs (pages/us-en-html.json)"
+    },
+    "shadows": [
+      {
+        "value": "rgba(0, 0, 0, 0.35) -3px 0px 5px 0px inset",
+        "count": 26
+      },
+      {
+        "value": "0 8px 20px 0 rgba(0,0,0,.26)",
+        "count": "scrolled header only",
+        "source": ".scrolly .cmp-layoutcontainer--header clientlib-site.min.css@122769"
+      }
+    ],
+    "iconFont": {
+      "family": "wknd-icon-font",
+      "files": [
+        "stardust/current/assets/fonts/wknd-icon-font.ttf",
+        "stardust/current/assets/fonts/wknd-icon-font.woff"
+      ],
+      "glyphs": [
+        {
+          "class": "cmp-button__icon cmp-button__icon--facebook",
+          "pseudo": "::before",
+          "codepoint": "U+E902",
+          "count": 52
+        },
+        {
+          "class": "cmp-button__icon cmp-button__icon--instagram",
+          "pseudo": "::before",
+          "codepoint": "U+E903",
+          "count": 52
+        },
+        {
+          "class": "cmp-button__icon cmp-button__icon--twitter",
+          "pseudo": "::before",
+          "codepoint": "U+E901",
+          "count": 52
+        },
+        {
+          "class": "wknd__icon wkndicon-menu",
+          "pseudo": "::before",
+          "codepoint": "U+E916",
+          "count": 52
+        },
+        {
+          "class": "cmp-breadcrumb__item cmp-breadcrumb__item--active",
+          "pseudo": "::before",
+          "codepoint": "U+EA1C",
+          "count": 42
+        },
+        {
+          "class": "cmp-carousel__action-icon",
+          "pseudo": "::before",
+          "codepoint": "U+E90F",
+          "count": 34
+        },
+        {
+          "class": "cmp-carousel__action-icon",
+          "pseudo": "::before",
+          "codepoint": "U+E90E",
+          "count": 34
+        },
+        {
+          "class": "cmp-accordion__icon",
+          "pseudo": "::before",
+          "codepoint": "U+E911",
+          "count": 2
+        },
+        {
+          "class": "cmp-download__action-text",
+          "pseudo": "::before",
+          "codepoint": "U+E907",
+          "count": 2
+        },
+        {
+          "class": "teaser cmp-teaser--list cmp-teaser--secure aem-GridColumn--offset--tablet--0 ae…",
+          "pseudo": "::before",
+          "codepoint": "U+E98F",
+          "count": 2
+        }
+      ]
+    },
+    "fonts": {
+      "loader": "fonts.googleapis.com/css2?family=Asar&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap (link in <head>)",
+      "files": [
+        {
+          "path": "stardust/current/assets/fonts/Asar-400-latin.woff2",
+          "family": "Asar",
+          "source": "fonts.gstatic.com (latin subset) via fonts.googleapis.com/css2?family=Asar&family=Source+Sans+Pro",
+          "license": "SIL OFL 1.1 (Google Fonts) — self-hostable",
+          "selfHostable": true
+        },
+        {
+          "path": "stardust/current/assets/fonts/Source-Sans-Pro-300-italic-latin.woff2",
+          "family": "Source Sans Pro",
+          "source": "fonts.gstatic.com (latin subset) via fonts.googleapis.com/css2?family=Asar&family=Source+Sans+Pro",
+          "license": "SIL OFL 1.1 (Google Fonts) — self-hostable",
+          "selfHostable": true
+        },
+        {
+          "path": "stardust/current/assets/fonts/Source-Sans-Pro-300-latin.woff2",
+          "family": "Source Sans Pro",
+          "source": "fonts.gstatic.com (latin subset) via fonts.googleapis.com/css2?family=Asar&family=Source+Sans+Pro",
+          "license": "SIL OFL 1.1 (Google Fonts) — self-hostable",
+          "selfHostable": true
+        },
+        {
+          "path": "stardust/current/assets/fonts/Source-Sans-Pro-400-italic-latin.woff2",
+          "family": "Source Sans Pro",
+          "source": "fonts.gstatic.com (latin subset) via fonts.googleapis.com/css2?family=Asar&family=Source+Sans+Pro",
+          "license": "SIL OFL 1.1 (Google Fonts) — self-hostable",
+          "selfHostable": true
+        },
+        {
+          "path": "stardust/current/assets/fonts/Source-Sans-Pro-400-latin.woff2",
+          "family": "Source Sans Pro",
+          "source": "fonts.gstatic.com (latin subset) via fonts.googleapis.com/css2?family=Asar&family=Source+Sans+Pro",
+          "license": "SIL OFL 1.1 (Google Fonts) — self-hostable",
+          "selfHostable": true
+        },
+        {
+          "path": "stardust/current/assets/fonts/Source-Sans-Pro-600-italic-latin.woff2",
+          "family": "Source Sans Pro",
+          "source": "fonts.gstatic.com (latin subset) via fonts.googleapis.com/css2?family=Asar&family=Source+Sans+Pro",
+          "license": "SIL OFL 1.1 (Google Fonts) — self-hostable",
+          "selfHostable": true
+        },
+        {
+          "path": "stardust/current/assets/fonts/Source-Sans-Pro-600-latin.woff2",
+          "family": "Source Sans Pro",
+          "source": "fonts.gstatic.com (latin subset) via fonts.googleapis.com/css2?family=Asar&family=Source+Sans+Pro",
+          "license": "SIL OFL 1.1 (Google Fonts) — self-hostable",
+          "selfHostable": true
+        },
+        {
+          "path": "stardust/current/assets/fonts/wknd-icon-font.ttf",
+          "family": "wknd-icon-font",
+          "source": "https://wknd.site/etc.clientlibs/wknd/clientlibs/clientlib-site/resources/fonts/wknd-icon-font.ttf",
+          "license": "site-owned icon font (WKND clientlib, Apache-2.0 aem-guides-wknd)",
+          "selfHostable": true
+        },
+        {
+          "path": "stardust/current/assets/fonts/wknd-icon-font.woff",
+          "family": "wknd-icon-font",
+          "source": "https://wknd.site/etc.clientlibs/wknd/clientlibs/clientlib-site/resources/fonts/wknd-icon-font.woff",
+          "license": "site-owned icon font (WKND clientlib, Apache-2.0 aem-guides-wknd)",
+          "selfHostable": true
+        }
+      ]
+    },
+    "breakpoints": {
+      "tablet": "max-width:1024px",
+      "mobile": "max-width:767px",
+      "desktop": "min-width:1025px",
+      "wide": "min-width:1201px"
+    },
+    "systemComponents": [
+      {
+        "id": "site-header",
+        "kind": "header",
+        "pages": 26,
+        "fingerprint": "utility bar (Sign In / Sign Out / language nav en-US…it-IT) + WKND logo (img alt \"WKND Logo\") + nav Magazine·Adventures·FAQs·About Us + search (.cmp-search)",
+        "selector": "header.cmp-experiencefragment--header",
+        "source": "pages/*.json#ctas labels Sign In/en-US/Magazine/Adventures/FAQs/About Us on 26/26"
+      },
+      {
+        "id": "site-footer",
+        "kind": "footer",
+        "pages": 26,
+        "fingerprint": "WKND light logo + nav Home·Magazine·Adventures·FAQs·About Us + Follow Us (Facebook/Twitter/Instagram icon buttons) + © 2019 WKND Site + Adobe disclaimer paragraph + Adobe Stock note",
+        "selector": "footer.cmp-experiencefragment--footer",
+        "source": "pages/*.json#headings h4 \"Follow Us\" 26/26; ctas Facebook/Twitter/Instagram/Core Components/Archetype/site source code/detailed tutorial/Adobe Stock 26/26"
+      },
+      {
+        "id": "share-adventure",
+        "kind": "cross-promo",
+        "pages": 16,
+        "fingerprint": "h5 \"Share this Adventure\" + Previous/Next carousel controls",
+        "source": "headings h5 on 16 adventure pages; ctas Previous/Next 17"
+      },
+      {
+        "id": "share-story",
+        "kind": "cross-promo",
+        "pages": 5,
+        "fingerprint": "h5 \"SHARE THIS STORY\" + icon-only social buttons + related-article list (.cmp-teaser--list)",
+        "source": "headings h5 on 5 magazine articles; ctas \"Western Australia Thursday, 9 Jul 2020\" etc. on 5"
+      },
+      {
+        "id": "contributor-byline",
+        "kind": "byline",
+        "pages": 5,
+        "fingerprint": ".cmp-byline + contributor .cmp-experiencefragment--<name>",
+        "source": "pages/us-en-magazine-*.html class census"
+      }
+    ],
+    "modules": [
+      {
+        "id": "candidate-header",
+        "name": "site-header",
+        "signals": [
+          "ctas:Sign In/en-US/Magazine/Adventures/FAQs/About Us ×26"
+        ],
+        "confidence": "high",
+        "slots": [
+          {
+            "name": "logo",
+            "type": "image",
+            "required": true
+          },
+          {
+            "name": "nav",
+            "type": "links",
+            "required": true
+          },
+          {
+            "name": "language-nav",
+            "type": "links",
+            "required": false
+          },
+          {
+            "name": "sign-in",
+            "type": "link",
+            "required": false
+          },
+          {
+            "name": "search",
+            "type": "form",
+            "required": false
+          }
+        ],
+        "instances": [
+          {
+            "slug": "about-us",
+            "selector": "header.cmp-experiencefragment--header"
+          },
+          {
+            "slug": "adventures-bali-surf-camp",
+            "selector": "header.cmp-experiencefragment--header"
+          },
+          {
+            "slug": "adventures-beervana-portland",
+            "selector": "header.cmp-experiencefragment--header"
+          },
+          {
+            "slug": "adventures-climbing-new-zealand",
+            "selector": "header.cmp-experiencefragment--header"
+          },
+          {
+            "slug": "adventures-colorado-rock-climbing",
+            "selector": "header.cmp-experiencefragment--header"
+          },
+          {
+            "slug": "adventures-cycling-southern-utah",
+            "selector": "header.cmp-experiencefragment--header"
+          },
+          {
+            "slug": "adventures-cycling-tuscany",
+            "selector": "header.cmp-experiencefragment--header"
+          },
+          {
+            "slug": "adventures-downhill-skiing-wyoming",
+            "selector": "header.cmp-experiencefragment--header"
+          },
+          {
+            "slug": "adventures-gastronomic-marais-tour",
+            "selector": "header.cmp-experiencefragment--header"
+          },
+          {
+            "slug": "adventures",
+            "selector": "header.cmp-experiencefragment--header"
+          },
+          {
+            "slug": "adventures-napa-wine-tasting",
+            "selector": "header.cmp-experiencefragment--header"
+          },
+          {
+            "slug": "adventures-riverside-camping-australia",
+            "selector": "header.cmp-experiencefragment--header"
+          },
+          {
+            "slug": "adventures-ski-touring-mont-blanc",
+            "selector": "header.cmp-experiencefragment--header"
+          },
+          {
+            "slug": "adventures-surf-camp-costa-rica",
+            "selector": "header.cmp-experiencefragment--header"
+          },
+          {
+            "slug": "adventures-tahoe-skiing",
+            "selector": "header.cmp-experiencefragment--header"
+          },
+          {
+            "slug": "adventures-west-coast-cycling",
+            "selector": "header.cmp-experiencefragment--header"
+          },
+          {
+            "slug": "adventures-whistler-mountain-biking",
+            "selector": "header.cmp-experiencefragment--header"
+          },
+          {
+            "slug": "adventures-yosemite-backpacking",
+            "selector": "header.cmp-experiencefragment--header"
+          },
+          {
+            "slug": "faqs",
+            "selector": "header.cmp-experiencefragment--header"
+          },
+          {
+            "slug": "html",
+            "selector": "header.cmp-experiencefragment--header"
+          },
+          {
+            "slug": "magazine-arctic-surfing",
+            "selector": "header.cmp-experiencefragment--header"
+          },
+          {
+            "slug": "magazine-guide-la-skateparks",
+            "selector": "header.cmp-experiencefragment--header"
+          },
+          {
+            "slug": "magazine",
+            "selector": "header.cmp-experiencefragment--header"
+          },
+          {
+            "slug": "magazine-san-diego-surf",
+            "selector": "header.cmp-experiencefragment--header"
+          },
+          {
+            "slug": "magazine-ski-touring",
+            "selector": "header.cmp-experiencefragment--header"
+          },
+          {
+            "slug": "magazine-western-australia",
+            "selector": "header.cmp-experiencefragment--header"
+          }
+        ],
+        "status": "candidate"
+      },
+      {
+        "id": "candidate-footer",
+        "name": "site-footer",
+        "signals": [
+          "headings:h4 Follow Us ×26",
+          "ctas:Facebook/Twitter/Instagram/Adobe Stock ×26"
+        ],
+        "confidence": "high",
+        "slots": [
+          {
+            "name": "logo",
+            "type": "image",
+            "required": true
+          },
+          {
+            "name": "nav",
+            "type": "links",
+            "required": true
+          },
+          {
+            "name": "social",
+            "type": "links",
+            "required": true
+          },
+          {
+            "name": "copyright",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "disclaimer",
+            "type": "richtext",
+            "required": true
+          }
+        ],
+        "instances": [
+          {
+            "slug": "about-us",
+            "selector": "footer.cmp-experiencefragment--footer"
+          },
+          {
+            "slug": "adventures-bali-surf-camp",
+            "selector": "footer.cmp-experiencefragment--footer"
+          },
+          {
+            "slug": "adventures-beervana-portland",
+            "selector": "footer.cmp-experiencefragment--footer"
+          },
+          {
+            "slug": "adventures-climbing-new-zealand",
+            "selector": "footer.cmp-experiencefragment--footer"
+          },
+          {
+            "slug": "adventures-colorado-rock-climbing",
+            "selector": "footer.cmp-experiencefragment--footer"
+          },
+          {
+            "slug": "adventures-cycling-southern-utah",
+            "selector": "footer.cmp-experiencefragment--footer"
+          },
+          {
+            "slug": "adventures-cycling-tuscany",
+            "selector": "footer.cmp-experiencefragment--footer"
+          },
+          {
+            "slug": "adventures-downhill-skiing-wyoming",
+            "selector": "footer.cmp-experiencefragment--footer"
+          },
+          {
+            "slug": "adventures-gastronomic-marais-tour",
+            "selector": "footer.cmp-experiencefragment--footer"
+          },
+          {
+            "slug": "adventures",
+            "selector": "footer.cmp-experiencefragment--footer"
+          },
+          {
+            "slug": "adventures-napa-wine-tasting",
+            "selector": "footer.cmp-experiencefragment--footer"
+          },
+          {
+            "slug": "adventures-riverside-camping-australia",
+            "selector": "footer.cmp-experiencefragment--footer"
+          },
+          {
+            "slug": "adventures-ski-touring-mont-blanc",
+            "selector": "footer.cmp-experiencefragment--footer"
+          },
+          {
+            "slug": "adventures-surf-camp-costa-rica",
+            "selector": "footer.cmp-experiencefragment--footer"
+          },
+          {
+            "slug": "adventures-tahoe-skiing",
+            "selector": "footer.cmp-experiencefragment--footer"
+          },
+          {
+            "slug": "adventures-west-coast-cycling",
+            "selector": "footer.cmp-experiencefragment--footer"
+          },
+          {
+            "slug": "adventures-whistler-mountain-biking",
+            "selector": "footer.cmp-experiencefragment--footer"
+          },
+          {
+            "slug": "adventures-yosemite-backpacking",
+            "selector": "footer.cmp-experiencefragment--footer"
+          },
+          {
+            "slug": "faqs",
+            "selector": "footer.cmp-experiencefragment--footer"
+          },
+          {
+            "slug": "html",
+            "selector": "footer.cmp-experiencefragment--footer"
+          },
+          {
+            "slug": "magazine-arctic-surfing",
+            "selector": "footer.cmp-experiencefragment--footer"
+          },
+          {
+            "slug": "magazine-guide-la-skateparks",
+            "selector": "footer.cmp-experiencefragment--footer"
+          },
+          {
+            "slug": "magazine",
+            "selector": "footer.cmp-experiencefragment--footer"
+          },
+          {
+            "slug": "magazine-san-diego-surf",
+            "selector": "footer.cmp-experiencefragment--footer"
+          },
+          {
+            "slug": "magazine-ski-touring",
+            "selector": "footer.cmp-experiencefragment--footer"
+          },
+          {
+            "slug": "magazine-western-australia",
+            "selector": "footer.cmp-experiencefragment--footer"
+          }
+        ],
+        "status": "candidate"
+      },
+      {
+        "id": "candidate-hero-carousel",
+        "name": "hero-carousel",
+        "signals": [
+          "class census cmp-carousel--hero + cmp-teaser--hero ×3 (home)"
+        ],
+        "confidence": "medium",
+        "slots": [
+          {
+            "name": "image",
+            "type": "image",
+            "required": true
+          },
+          {
+            "name": "title",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "description",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "cta",
+            "type": "link",
+            "required": false
+          }
+        ],
+        "instances": [
+          {
+            "slug": "home",
+            "selector": ".cmp-carousel--hero"
+          }
+        ],
+        "status": "candidate"
+      },
+      {
+        "id": "candidate-title-underline",
+        "name": "section-title",
+        "signals": [
+          "class census cmp-title--underline on home(2), magazine(2), adventures(1), faqs(1), about-us(2), adventure detail(1)"
+        ],
+        "confidence": "high",
+        "slots": [
+          {
+            "name": "title",
+            "type": "text",
+            "required": true
+          }
+        ],
+        "instances": [
+          {
+            "slug": "home",
+            "selector": ".cmp-title--underline"
+          },
+          {
+            "slug": "magazine",
+            "selector": ".cmp-title--underline"
+          },
+          {
+            "slug": "adventures",
+            "selector": ".cmp-title--underline"
+          },
+          {
+            "slug": "about-us",
+            "selector": ".cmp-title--underline"
+          },
+          {
+            "slug": "faqs",
+            "selector": ".cmp-title--underline"
+          }
+        ],
+        "status": "candidate"
+      },
+      {
+        "id": "candidate-teaser-list",
+        "name": "article-teaser-list",
+        "signals": [
+          "ctas:Ultimate Guide to LA Skateparks/Ski Touring/Arctic Surfing/San Diego Surf Spots on home; dated variants ×5 articles",
+          "class census cmp-teaser--list (magazine)"
+        ],
+        "confidence": "high",
+        "slots": [
+          {
+            "name": "image",
+            "type": "image",
+            "required": true
+          },
+          {
+            "name": "title",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "date",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "link",
+            "type": "link",
+            "required": true
+          }
+        ],
+        "instances": [
+          {
+            "slug": "home",
+            "selector": ".cmp-teaser--list, Recent Articles list"
+          },
+          {
+            "slug": "magazine",
+            "selector": ".cmp-teaser--list"
+          },
+          {
+            "slug": "magazine-arctic-surfing",
+            "selector": "aside related list"
+          },
+          {
+            "slug": "magazine-guide-la-skateparks",
+            "selector": "aside related list"
+          },
+          {
+            "slug": "magazine-san-diego-surf",
+            "selector": "aside related list"
+          },
+          {
+            "slug": "magazine-ski-touring",
+            "selector": "aside related list"
+          },
+          {
+            "slug": "magazine-western-australia",
+            "selector": "aside related list"
+          }
+        ],
+        "status": "candidate"
+      },
+      {
+        "id": "candidate-featured-teaser",
+        "name": "featured-teaser",
+        "signals": [
+          "headings:h2 Camping in Western Australia ×2 (home, magazine)",
+          "class census cmp-teaser--featured ×1 each"
+        ],
+        "confidence": "high",
+        "slots": [
+          {
+            "name": "eyebrow",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "image",
+            "type": "image",
+            "required": true
+          },
+          {
+            "name": "title",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "description",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "cta",
+            "type": "link",
+            "required": true
+          }
+        ],
+        "instances": [
+          {
+            "slug": "home",
+            "selector": ".cmp-teaser--featured"
+          },
+          {
+            "slug": "magazine",
+            "selector": ".cmp-teaser--featured"
+          }
+        ],
+        "status": "candidate"
+      },
+      {
+        "id": "candidate-adventure-cards",
+        "name": "adventure-image-list",
+        "signals": [
+          "ctas: adventure titles → /us/en/adventures/* on home (4) and adventures (16)"
+        ],
+        "confidence": "high",
+        "slots": [
+          {
+            "name": "image",
+            "type": "image",
+            "required": true
+          },
+          {
+            "name": "title",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "link",
+            "type": "link",
+            "required": true
+          }
+        ],
+        "instances": [
+          {
+            "slug": "home",
+            "selector": "Next Adventures image list"
+          },
+          {
+            "slug": "adventures",
+            "selector": ".cmp-tabs .image-list"
+          }
+        ],
+        "status": "candidate"
+      },
+      {
+        "id": "candidate-share-adventure",
+        "name": "share-adventure",
+        "signals": [
+          "headings:h5 Share this Adventure ×16",
+          "ctas:Previous/Next ×17"
+        ],
+        "confidence": "high",
+        "slots": [
+          {
+            "name": "title",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "social",
+            "type": "links",
+            "required": true
+          }
+        ],
+        "instances": [
+          {
+            "slug": "adventures-bali-surf-camp",
+            "selector": "h5 Share this Adventure section"
+          },
+          {
+            "slug": "adventures-beervana-portland",
+            "selector": "h5 Share this Adventure section"
+          },
+          {
+            "slug": "adventures-climbing-new-zealand",
+            "selector": "h5 Share this Adventure section"
+          },
+          {
+            "slug": "adventures-colorado-rock-climbing",
+            "selector": "h5 Share this Adventure section"
+          },
+          {
+            "slug": "adventures-cycling-southern-utah",
+            "selector": "h5 Share this Adventure section"
+          },
+          {
+            "slug": "adventures-cycling-tuscany",
+            "selector": "h5 Share this Adventure section"
+          },
+          {
+            "slug": "adventures-downhill-skiing-wyoming",
+            "selector": "h5 Share this Adventure section"
+          },
+          {
+            "slug": "adventures-gastronomic-marais-tour",
+            "selector": "h5 Share this Adventure section"
+          },
+          {
+            "slug": "adventures-napa-wine-tasting",
+            "selector": "h5 Share this Adventure section"
+          },
+          {
+            "slug": "adventures-riverside-camping-australia",
+            "selector": "h5 Share this Adventure section"
+          },
+          {
+            "slug": "adventures-ski-touring-mont-blanc",
+            "selector": "h5 Share this Adventure section"
+          },
+          {
+            "slug": "adventures-surf-camp-costa-rica",
+            "selector": "h5 Share this Adventure section"
+          },
+          {
+            "slug": "adventures-tahoe-skiing",
+            "selector": "h5 Share this Adventure section"
+          },
+          {
+            "slug": "adventures-west-coast-cycling",
+            "selector": "h5 Share this Adventure section"
+          },
+          {
+            "slug": "adventures-whistler-mountain-biking",
+            "selector": "h5 Share this Adventure section"
+          },
+          {
+            "slug": "adventures-yosemite-backpacking",
+            "selector": "h5 Share this Adventure section"
+          }
+        ],
+        "status": "candidate"
+      },
+      {
+        "id": "candidate-adventure-detail",
+        "name": "adventure-detail",
+        "signals": [
+          "class census cmp-contentfragment--elements + cmp-carousel--mini + cmp-breadcrumb on 16 program pages"
+        ],
+        "confidence": "high",
+        "slots": [
+          {
+            "name": "breadcrumb",
+            "type": "links",
+            "required": true
+          },
+          {
+            "name": "gallery",
+            "type": "images",
+            "required": true
+          },
+          {
+            "name": "title",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "facts",
+            "type": "list",
+            "required": true
+          },
+          {
+            "name": "tabs",
+            "type": "richtext[]",
+            "required": true
+          }
+        ],
+        "instances": [
+          {
+            "slug": "adventures-bali-surf-camp",
+            "selector": ".cmp-contentfragment--elements"
+          },
+          {
+            "slug": "adventures-beervana-portland",
+            "selector": ".cmp-contentfragment--elements"
+          },
+          {
+            "slug": "adventures-climbing-new-zealand",
+            "selector": ".cmp-contentfragment--elements"
+          },
+          {
+            "slug": "adventures-colorado-rock-climbing",
+            "selector": ".cmp-contentfragment--elements"
+          },
+          {
+            "slug": "adventures-cycling-southern-utah",
+            "selector": ".cmp-contentfragment--elements"
+          },
+          {
+            "slug": "adventures-cycling-tuscany",
+            "selector": ".cmp-contentfragment--elements"
+          },
+          {
+            "slug": "adventures-downhill-skiing-wyoming",
+            "selector": ".cmp-contentfragment--elements"
+          },
+          {
+            "slug": "adventures-gastronomic-marais-tour",
+            "selector": ".cmp-contentfragment--elements"
+          },
+          {
+            "slug": "adventures-napa-wine-tasting",
+            "selector": ".cmp-contentfragment--elements"
+          },
+          {
+            "slug": "adventures-riverside-camping-australia",
+            "selector": ".cmp-contentfragment--elements"
+          },
+          {
+            "slug": "adventures-ski-touring-mont-blanc",
+            "selector": ".cmp-contentfragment--elements"
+          },
+          {
+            "slug": "adventures-surf-camp-costa-rica",
+            "selector": ".cmp-contentfragment--elements"
+          },
+          {
+            "slug": "adventures-tahoe-skiing",
+            "selector": ".cmp-contentfragment--elements"
+          },
+          {
+            "slug": "adventures-west-coast-cycling",
+            "selector": ".cmp-contentfragment--elements"
+          },
+          {
+            "slug": "adventures-whistler-mountain-biking",
+            "selector": ".cmp-contentfragment--elements"
+          },
+          {
+            "slug": "adventures-yosemite-backpacking",
+            "selector": ".cmp-contentfragment--elements"
+          }
+        ],
+        "status": "candidate"
+      },
+      {
+        "id": "candidate-share-story",
+        "name": "share-story",
+        "signals": [
+          "headings:h5 SHARE THIS STORY ×5",
+          "class census cmp-button--icononly ×3 per article"
+        ],
+        "confidence": "high",
+        "slots": [
+          {
+            "name": "title",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "social",
+            "type": "links",
+            "required": true
+          }
+        ],
+        "instances": [
+          {
+            "slug": "magazine-arctic-surfing",
+            "selector": "aside h5 SHARE THIS STORY"
+          },
+          {
+            "slug": "magazine-guide-la-skateparks",
+            "selector": "aside h5 SHARE THIS STORY"
+          },
+          {
+            "slug": "magazine-san-diego-surf",
+            "selector": "aside h5 SHARE THIS STORY"
+          },
+          {
+            "slug": "magazine-ski-touring",
+            "selector": "aside h5 SHARE THIS STORY"
+          },
+          {
+            "slug": "magazine-western-australia",
+            "selector": "aside h5 SHARE THIS STORY"
+          }
+        ],
+        "status": "candidate"
+      },
+      {
+        "id": "candidate-byline",
+        "name": "article-byline",
+        "signals": [
+          "class census cmp-byline + cmp-experiencefragment--<contributor> on 5 articles",
+          "headings:h4 By Sofia Sjöberg ×2"
+        ],
+        "confidence": "medium",
+        "slots": [
+          {
+            "name": "author",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "portrait",
+            "type": "image",
+            "required": false
+          },
+          {
+            "name": "bio",
+            "type": "text",
+            "required": false
+          }
+        ],
+        "instances": [
+          {
+            "slug": "magazine-arctic-surfing",
+            "selector": ".cmp-byline"
+          },
+          {
+            "slug": "magazine-guide-la-skateparks",
+            "selector": ".cmp-byline"
+          },
+          {
+            "slug": "magazine-san-diego-surf",
+            "selector": ".cmp-byline"
+          },
+          {
+            "slug": "magazine-ski-touring",
+            "selector": ".cmp-byline"
+          },
+          {
+            "slug": "magazine-western-australia",
+            "selector": ".cmp-byline"
+          }
+        ],
+        "status": "candidate"
+      },
+      {
+        "id": "candidate-contributor-card",
+        "name": "contributor-card",
+        "signals": [
+          "class census cmp-experiencefragment--<name> ×7 + cmp-button--icononly ×21 (about-us)"
+        ],
+        "confidence": "medium",
+        "slots": [
+          {
+            "name": "portrait",
+            "type": "image",
+            "required": true
+          },
+          {
+            "name": "name",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "role",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "social",
+            "type": "links",
+            "required": true
+          }
+        ],
+        "instances": [
+          {
+            "slug": "about-us",
+            "selector": ".cmp-experiencefragment--contributor"
+          }
+        ],
+        "status": "candidate"
+      },
+      {
+        "id": "candidate-accordion",
+        "name": "faq-accordion",
+        "signals": [
+          "class census cmp-accordion (faqs)"
+        ],
+        "confidence": "medium",
+        "slots": [
+          {
+            "name": "question",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "answer",
+            "type": "richtext",
+            "required": true
+          }
+        ],
+        "instances": [
+          {
+            "slug": "faqs",
+            "selector": ".cmp-accordion"
+          }
+        ],
+        "status": "candidate"
+      },
+      {
+        "id": "candidate-search",
+        "name": "header-search",
+        "signals": [
+          "_crawl-log.json#dynamicSurface.formTargets: <page>.searchresults.json?fulltext= on 26/26"
+        ],
+        "confidence": "high",
+        "slots": [
+          {
+            "name": "query",
+            "type": "input",
+            "required": true
+          },
+          {
+            "name": "results",
+            "type": "listbox",
+            "required": true
+          }
+        ],
+        "instances": [
+          {
+            "slug": "about-us",
+            "selector": ".cmp-search"
+          },
+          {
+            "slug": "adventures-bali-surf-camp",
+            "selector": ".cmp-search"
+          },
+          {
+            "slug": "adventures-beervana-portland",
+            "selector": ".cmp-search"
+          },
+          {
+            "slug": "adventures-climbing-new-zealand",
+            "selector": ".cmp-search"
+          },
+          {
+            "slug": "adventures-colorado-rock-climbing",
+            "selector": ".cmp-search"
+          },
+          {
+            "slug": "adventures-cycling-southern-utah",
+            "selector": ".cmp-search"
+          },
+          {
+            "slug": "adventures-cycling-tuscany",
+            "selector": ".cmp-search"
+          },
+          {
+            "slug": "adventures-downhill-skiing-wyoming",
+            "selector": ".cmp-search"
+          },
+          {
+            "slug": "adventures-gastronomic-marais-tour",
+            "selector": ".cmp-search"
+          },
+          {
+            "slug": "adventures",
+            "selector": ".cmp-search"
+          },
+          {
+            "slug": "adventures-napa-wine-tasting",
+            "selector": ".cmp-search"
+          },
+          {
+            "slug": "adventures-riverside-camping-australia",
+            "selector": ".cmp-search"
+          },
+          {
+            "slug": "adventures-ski-touring-mont-blanc",
+            "selector": ".cmp-search"
+          },
+          {
+            "slug": "adventures-surf-camp-costa-rica",
+            "selector": ".cmp-search"
+          },
+          {
+            "slug": "adventures-tahoe-skiing",
+            "selector": ".cmp-search"
+          },
+          {
+            "slug": "adventures-west-coast-cycling",
+            "selector": ".cmp-search"
+          },
+          {
+            "slug": "adventures-whistler-mountain-biking",
+            "selector": ".cmp-search"
+          },
+          {
+            "slug": "adventures-yosemite-backpacking",
+            "selector": ".cmp-search"
+          },
+          {
+            "slug": "faqs",
+            "selector": ".cmp-search"
+          },
+          {
+            "slug": "html",
+            "selector": ".cmp-search"
+          },
+          {
+            "slug": "magazine-arctic-surfing",
+            "selector": ".cmp-search"
+          },
+          {
+            "slug": "magazine-guide-la-skateparks",
+            "selector": ".cmp-search"
+          },
+          {
+            "slug": "magazine",
+            "selector": ".cmp-search"
+          },
+          {
+            "slug": "magazine-san-diego-surf",
+            "selector": ".cmp-search"
+          },
+          {
+            "slug": "magazine-ski-touring",
+            "selector": ".cmp-search"
+          },
+          {
+            "slug": "magazine-western-australia",
+            "selector": ".cmp-search"
+          }
+        ],
+        "status": "candidate",
+        "dynamic": true
+      }
+    ]
+  }
+}
