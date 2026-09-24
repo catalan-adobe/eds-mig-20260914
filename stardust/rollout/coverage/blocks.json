@@ -7,7 +7,7 @@
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-09-24T12:07:50.103Z",
+  "generatedAt": "2026-09-24T12:22:36.830Z",
   "blocks": [
     {
       "id": "accordion",
@@ -252,7 +252,7 @@
       ],
       "instanceCount": 16,
       "delivery": {
-        "status": "pending",
+        "status": "deployed",
         "edsBlockName": "mini-carousel",
         "blockPath": null,
         "convertedAt": null
@@ -324,7 +324,7 @@
       ],
       "instanceCount": 17,
       "delivery": {
-        "status": "pending",
+        "status": "deployed",
         "edsBlockName": "tabs",
         "blockPath": null,
         "convertedAt": null
@@ -359,7 +359,7 @@
       ],
       "instanceCount": 16,
       "delivery": {
-        "status": "pending",
+        "status": "deployed",
         "edsBlockName": "trip-facts",
         "blockPath": null,
         "convertedAt": null

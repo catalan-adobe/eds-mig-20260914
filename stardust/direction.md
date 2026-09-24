@@ -333,3 +333,35 @@ hands-off judgments made at each gate as named assumptions.
   ("About Us" yellow item / underlined footer link on live). Filed as a foundation request with
   the chrome-parity evidence; no override from the block CSS — a nav state belongs to the chrome
   JS (`aria-current`), and the 1440 header band passes at 1.56 % without it.
+
+## Assumptions — C-deliver unit `program` (2026-09-24)
+
+- **A-PR-1 (hidden content-fragment titles):** every AEM content fragment on the live program
+  page renders an `<h3 class="cmp-contentfragment__title">` that CSS hides (`display: none`) —
+  one above the fact sheet, one per tab panel. `block-roundtrip` inventories hidden headings
+  and reports them MISSING HEADING (🔴); the gate never weakens, so the titles are authored as
+  on live and hidden by block CSS: `trip-facts` leading single-cell row → `.trip-facts-title`;
+  `tabs` variant `fragment` (block class `tabs fragment`) → a leading `<h3>` per panel →
+  `.tabs-panel-title`. Both declared `@ew-exempt` (never displayed on live either).
+- **A-PR-2 (sharing omitted, sidebar title kept):** the live `.sharing` module (empty Facebook
+  div + empty Pinterest anchor) paints 0 px and is omitted (A-RO-4, conversion log); its visible
+  `<h5>Share this Adventure</h5>` is authored as a trailing single-cell `trip-facts` row and
+  rendered after the facts in `.trip-facts-aside` — the live position (the h5 line box sits
+  right under the floated `dl`, its own top margin collapsed above the float, measured 41.4 px
+  from the h1 column to the list — reproduced with `calc(1em + 23.38px)` on the list).
+- **A-PR-3 (chrome state from a block):** the frozen header/footer carry no current-section
+  state; live highlights "Adventures" in both navs on every adventure page. Shipped as a
+  `body.program`-scoped override in `blocks/mini-carousel/mini-carousel.css` (the gallery is on
+  every program page) with a foundation request; same for the breadcrumb list's inline-block
+  baseline offset (5 px @1440 / 7 px @360). Both lines in `stardust/rollout/foundation-requests.md`.
+- **A-PR-4 (sibling structural gates):** `block-roundtrip` compares TEXT against the archetype
+  prototype, so it closes only for the archetype (0 🔴, EW 30/30); the 15 siblings run the same
+  harness asserts without a prototype — `qa-gate` (one h1, blocks loaded non-empty, 0 pageerror;
+  the 2 "broken images" are the auth-gated chrome logos and the unit-count pairing is the
+  known schema→block order offset, as recorded by landing) and `ew-editability-probe` exit 0 ×16.
+- **A-PR-5 (push credential):** the machine's active `gh` account (`catalan_adobe`) is denied on
+  the repo (403 on push mid-wave); pushes run with the repo-owner token in the environment
+  (`stardust/.work/deploy/probes/program-push.sh`, `gh auth token -u catalan-adobe`, never
+  printed). Nothing global was switched.
+- **A-PR-6 (trailing `<br>`):** source `<p>Day 1<br></p>` / `<h2>…<br></h2>` trailing breaks
+  render no line box and the pipeline drops them — stripped at authoring; in-line `<br>` kept.

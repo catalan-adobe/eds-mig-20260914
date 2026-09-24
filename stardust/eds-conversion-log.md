@@ -127,6 +127,50 @@ strict 100 % / code 100 %. Published (POST /live 200, aem.live 200).
 
 ## Program cluster — appended by its subagent
 
+Template `us-en-adventures-climbing-new-zealand-html` (archetype) + 15 siblings → 16 pages under
+`/us/en/adventures/<slug>`. Schema `stardust/eds-schema/us-en-adventures-climbing-new-zealand-html.json`
+(5 sections). Media: 74 editorial images rehosted to `media/wknd/` (`da-media-upload.mjs --manifest`,
+source fetch 200, headless technique; 4 same-asset name collisions = one upload each).
+
+| section (schema) | authored as | block | decode tier |
+|---|---|---|---|
+| breadcrumb | default content `<ul>` (link + current), section style `breadcrumb`; `body.program` via metadata `template` | — (D1) | — |
+| gallery | 1 row per slide: image (alt = caption); section style `flush` | `mini-carousel` | reconstructive (one slide per authored image) |
+| program-headline | default content `<h1>` inside the `program-layout` section (foundation grid 25/75 places the two blocks) | — (D1) | — |
+| trip-facts | leading row `<h3>` fragment title (hidden, A-PR-1) · 6 rows label \| value · trailing row `<h5>Share this Adventure</h5>` (A-PR-2) | `trip-facts` | reconstructive (one item per two-cell row; single-cell rows = title / aside prose) |
+| trip-details | variant `tabs fragment`; 1 row per tab: title \| `<h3>` fragment title + prose (h2 `<strong>`, `<p><img>` (+caption text), p, ul) | `tabs` | reconstructive (one tab per row; empty content cell → adopts `data-tab` sections and `loadBlock`s them — the D2 path for the listing's card panels) |
+
+Lint: `davids-model-lint` 0 🔴 / 2 🟡 ×16 — D1 "mini-carousel holds only images" (a genuine
+carousel widget) and D3 "trip-facts rows have 2 and 1 cells" (documented shape: single-cell rows
+are the hidden title / sidebar prose, never spans); `delivery-lint` 0 P0 · 0 P1 · 0 P2 ×16;
+`media-reconcile` 75 hosted; `sanitise.js` per file. Boilerplate lint: eslint 0, stylelint 0 on
+the three blocks. Publish decision: publish (POST /live, aem.live 200).
+
+Harness (structural): archetype `block-roundtrip --ew` (maps `section.carousel--mini`,
+`.program-facts`, `.program-tabs`) 0 🔴, EW 30/30 editable, 0 dead, 0 duplicated (2 🟡 MISSING
+BODY = the hidden "Previous"/"Next" control words, A-C1-1); `qa-gate` 16 ok / 3 warn / 2 fail
+×16 — fails are the auth-gated chrome logos and the schema→block order pairing (A-PR-4);
+`ew-editability-probe` exit 0 ×16 (0 dead, 0 duplicated).
+
+Published-origin gate (preview URL, `gate.sh --full`, main `header + main`): pub1 1440 9.51 % /
+360 10.82 % (hot band y 0–500) → the breadcrumb list rode a block instead of live's inline-block
+nav (page shifted 5/7 px) → scoped override + request; pub2 1440 1.26 % / 360 2.32 %, Δh 0;
+current-section nav state added (header accent / footer underline, request filed) → **pub3 1440
+0.80 % Δh 0, 360 2.32 % Δh 0, 0 overflow → PASS**. Sibling `surf-camp-costa-rica` pub1 1440
+0.06 % Δh 0 / 360 0.48 % Δh 1. Crop bands: 1440 header 0.09 % / footer 0.31 %; 360 header 0.53 %
+/ footer 0.01 % (`--y-b` +1, the build footer sits 1 px lower). chrome-parity 11 @1440 / 15 @360 =
+the foundation's justified set (A-C0-8: fixed→static reservation, "Sign In" colour queued, rehosted
+logo signatures, social icon names). content-diff 9 🔴 — all in chrome (the same foundation set),
+0 in main. Computed-style guard 1440 + 360: 4 sections, 3 blocks flow-root, 8 visible images,
+0 pageerror. Drive on the preview: tab click / ArrowRight switch the active panel (1 visible),
+carousel next / dot move the active slide, hidden titles display:none, 6 fact items.
+`.plain.html` ×16: 200, 1 h1, 0 about:error, 0 /img/, `<picture>` count = authored `<img>` count.
+`ai-readability` ×16 strict 100 % / code 100 %.
+
+Residuals: the 1 px footer offset at 360 (sub-pixel margins); two foundation requests (breadcrumb
+baseline, current-section nav state) carried as `body.program` overrides in mini-carousel.css
+until C-final.
+
 ## Article cluster — appended by its subagent
 
 ## Listing cluster — appended by its subagent
