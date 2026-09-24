@@ -157,3 +157,33 @@ A-F-2); freeze re-taken. Coverage: 17 blocks `converted`, page rows `pending` (A
 pending entries. Report: `stardust/rollout/REPORT.md` (gate table, coverage, blocks, dynamics,
 fonts, open items, exact next commands). Totals: 64 extracted · 9 archetypes approved · 64 migrated ·
 64 authored · 0 PUT.
+
+## C-deliver — 64/64 pages live on the preview origin, 9 templates gated (2026-09-24)
+
+Fresh C-deliver against DA catalan-adobe/eds-mig-20260914, code branch `sd-25-fable-replica`,
+preview only (`--no-publish`; nothing on .aem.live). C0 uploaded media once (media/wknd-sd25/,
+stardust/deploy/media-ledger.json), PUT 22 chrome docs + /us/en and gated pub1→pub3; nine cluster
+units then PUT their pages and gated archetype + sibling at 1440/360 on the preview origin — every
+round PASS: landing 0.26/0.42 %, listing 0.22/0.69, magazine-hub 1.07/3.90 (Δh −14 = R-1), program
+1.13/1.07, article 0.03/2.91, about 0.02/0.12, faqs 0.20/1.34, members-only 0.04/0.14,
+locale-landing 0.24/0.21; header/footer crop bands ≤1.10 % (bar 2 %); chrome element probe ✓ except
+the ca/en footer link Δw −2 px (now R-2: the source's trailing space inside the link, dropped by the
+pipeline). Fixes off the instruments inside clusters: text-quote blockquote face (article), contributor
+icon span (about), accordion icon host (faqs), landing indicator text.
+
+C-final applied two foundation-request lines once — `blocks/footer/footer.css` `.footer .logo img
+{ aspect-ratio: 300 / 112 }` (article 1440 stitched Δh −80 → 0) and `blocks/header/header.css`
+inlining the source's base64 clear-icon data URI (byte-identical to icons/clear.svg, file removed;
+the site-wide header ICON DIFF 🔴 is gone) — re-froze (66 files, check clean) and re-gated all 9
+archetypes at both widths (18/18 PASS, pixel numbers identical to the cluster rounds, content-diff
+−1 🔴 per page, chrome-parity byte-identical). Not applied: `scripts/scripts.js` `lang` and the
+`a.button` title→aria-label copy (root scripts/ is outside the write boundary → owner items); the CA
+footer −2 px is registered, not fixed. Coverage: 64 pages deployed, 17 verified (archetype + sibling
+per template), 17/17 blocks verified. Ledger: `rollout C-deliver end`.
+
+Cross-run hazard: sibling benchmark run stardust-25-pi-opus-5-5-0003 (branch replica-wknd) PUTs and
+PUBLISHES 27 /us/** paths plus /nav and /footer into the same DA site; it overwrote /us/en,
+/us/en/adventures and /us/en/magazine around 13:54Z (re-PUT --force by the clusters, re-gated). A
+site-wide .plain.html sweep at C-final found 0/64 clobbered pages, but DA content is site-scoped —
+any /us/** page can be overwritten again until the runs use separate DA sites. commit-push.sh gained
+`--autostash` on its pull (landing unit) so shared-tree pushes go through.

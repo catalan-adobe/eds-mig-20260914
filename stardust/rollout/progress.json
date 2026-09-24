@@ -50,7 +50,7 @@
       }
     },
     "program": {
-      "status": "done-local",
+      "status": "done",
       "kind": "cluster",
       "templates": [
         "program"
@@ -65,21 +65,60 @@
         "tabs"
       ],
       "blocksReused": [],
-      "foundationRequests": 1,
+      "foundationRequests": 0,
       "gates": {
-        "360": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
-        "1440": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
-        "crop": "pending — published origin only (no DA target)",
-        "chrome": "pending — published origin only (no DA target)",
-        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed"
+        "360": {
+          "pixelPct": 1.07,
+          "heightDelta": -1,
+          "overflow": "ok",
+          "headerBandPct": 0.58,
+          "footerBandPct": 0.86,
+          "sibling": {
+            "slug": "ca-en-adventures-ski-touring-mont-blanc-html",
+            "pixelPct": 1.93,
+            "heightDelta": -1
+          },
+          "cFinal": {
+            "label": "pub2",
+            "pixelPct": 1.07,
+            "heightDelta": -1,
+            "contentDiffRed": 0
+          },
+          "verdict": "PASS (cluster 1.07%; C-final pub2 1.07% Δh -1)"
+        },
+        "1440": {
+          "pixelPct": 1.13,
+          "heightDelta": 0,
+          "overflow": "ok",
+          "headerBandPct": 0.09,
+          "footerBandPct": 0,
+          "sibling": {
+            "slug": "ca-en-adventures-ski-touring-mont-blanc-html",
+            "pixelPct": 0.07,
+            "heightDelta": 0
+          },
+          "cFinal": {
+            "label": "pub2",
+            "pixelPct": 1.13,
+            "heightDelta": 0,
+            "contentDiffRed": 0
+          },
+          "verdict": "PASS (cluster 1.13%; C-final pub2 1.13% Δh 0)"
+        },
+        "crop": "header ≤0.59%, footer ≤0.86% at both widths (bar 2%)",
+        "chrome": "element probe (--region header=header|.header .site-header, footer=footer|.footer .site-footer) ✓ parity; default regions report the EDS wrapper artefacts (static/white/+6px|+13px, off-canvas nav at 360); ca/en footer PAIR Δw −2px = R-2",
+        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed",
+        "residuals": "R-2 CA footer Δw −2px; carousel hero STRETCHED IMAGE advisory = source cover crop; gated with the page title as --marker (brand only in the /nav fragment)"
       },
-      "endedAt": "2026-09-24T13:00:32.060Z",
-      "verdict": "program: pages 32/32 authored locally, blocks 4 (+0 reused), gate pending (no DA target), requests 1",
-      "putPending": "no DA org/repo/DA_TOKEN — rollout.json.site.da.* null",
-      "paths": "stardust/rollout/units/program.paths"
+      "endedAt": "2026-09-24T15:04:19.029Z",
+      "verdict": "program: pages 32/32 live (preview), blocks 4 (+0 reused), gate 1440 1.13% / 360 1.07%, requests 0",
+      "paths": "stardust/rollout/units/program.paths",
+      "pagesLive": 32,
+      "publish": "preview only (--no-publish)",
+      "iterations": 1
     },
     "locale-landing": {
-      "status": "done-local",
+      "status": "done",
       "kind": "cluster",
       "templates": [
         "locale-landing"
@@ -91,21 +130,60 @@
         "teaser-hero"
       ],
       "blocksReused": [],
-      "foundationRequests": 2,
+      "foundationRequests": 1,
       "gates": {
-        "360": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
-        "1440": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
-        "crop": "pending — published origin only (no DA target)",
-        "chrome": "pending — published origin only (no DA target)",
-        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed"
+        "360": {
+          "pixelPct": 0.21,
+          "heightDelta": 0,
+          "overflow": "ok",
+          "headerBandPct": 0.65,
+          "footerBandPct": 0,
+          "sibling": {
+            "slug": "ca-fr-html",
+            "pixelPct": 0.21,
+            "heightDelta": 0
+          },
+          "cFinal": {
+            "label": "pub2",
+            "pixelPct": 0.21,
+            "heightDelta": 0,
+            "contentDiffRed": 0
+          },
+          "verdict": "PASS (cluster 0.21%; C-final pub2 0.21% Δh 0)"
+        },
+        "1440": {
+          "pixelPct": 0.24,
+          "heightDelta": 0,
+          "overflow": "ok",
+          "headerBandPct": 0.1,
+          "footerBandPct": 0,
+          "sibling": {
+            "slug": "ca-fr-html",
+            "pixelPct": 0.24,
+            "heightDelta": 0
+          },
+          "cFinal": {
+            "label": "pub2",
+            "pixelPct": 0.24,
+            "heightDelta": 0,
+            "contentDiffRed": 0
+          },
+          "verdict": "PASS (cluster 0.24%; C-final pub2 0.24% Δh 0)"
+        },
+        "crop": "header ≤0.66%, footer ≤0% at both widths (bar 2%)",
+        "chrome": "element probe (--region header=header|.header .site-header, footer=footer|.footer .site-footer) ✓ parity; default regions report the EDS wrapper artefacts (static/white/+6px|+13px, off-canvas nav at 360); ca/en footer PAIR Δw −2px = R-2",
+        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed",
+        "residuals": "default-region chrome-parity wrapper artefacts only (element probe ✓ both widths)"
       },
-      "endedAt": "2026-09-24T13:00:32.060Z",
-      "verdict": "locale-landing: pages 9/9 authored locally, blocks 1 (+0 reused), gate pending (no DA target), requests 2",
-      "putPending": "no DA org/repo/DA_TOKEN — rollout.json.site.da.* null",
-      "paths": "stardust/rollout/units/locale-landing.paths"
+      "endedAt": "2026-09-24T15:04:19.029Z",
+      "verdict": "locale-landing: pages 9/9 live (preview), blocks 1 (+0 reused), gate 1440 0.24% / 360 0.21%, requests 1",
+      "paths": "stardust/rollout/units/locale-landing.paths",
+      "pagesLive": 9,
+      "publish": "preview only (--no-publish)",
+      "iterations": 1
     },
     "about": {
-      "status": "done-local",
+      "status": "done",
       "kind": "cluster",
       "templates": [
         "about"
@@ -117,21 +195,60 @@
         "contributor"
       ],
       "blocksReused": [],
-      "foundationRequests": 1,
+      "foundationRequests": 0,
       "gates": {
-        "360": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
-        "1440": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
-        "crop": "pending — published origin only (no DA target)",
-        "chrome": "pending — published origin only (no DA target)",
-        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed"
+        "360": {
+          "pixelPct": 0.12,
+          "heightDelta": 0,
+          "overflow": "ok",
+          "headerBandPct": 0.65,
+          "footerBandPct": 0,
+          "sibling": {
+            "slug": "ca-en-about-us-html",
+            "pixelPct": 0.12,
+            "heightDelta": 0
+          },
+          "cFinal": {
+            "label": "pub3",
+            "pixelPct": 0.12,
+            "heightDelta": 0,
+            "contentDiffRed": 0
+          },
+          "verdict": "PASS (cluster 0.12%; C-final pub3 0.12% Δh 0)"
+        },
+        "1440": {
+          "pixelPct": 0.02,
+          "heightDelta": 0,
+          "overflow": "ok",
+          "headerBandPct": 0.1,
+          "footerBandPct": 0,
+          "sibling": {
+            "slug": "ca-en-about-us-html",
+            "pixelPct": 0.02,
+            "heightDelta": 0
+          },
+          "cFinal": {
+            "label": "pub3",
+            "pixelPct": 0.02,
+            "heightDelta": 0,
+            "contentDiffRed": 0
+          },
+          "verdict": "PASS (cluster 0.02%; C-final pub3 0.02% Δh 0)"
+        },
+        "crop": "header ≤0.66%, footer ≤0% at both widths (bar 2%)",
+        "chrome": "element probe (--region header=header|.header .site-header, footer=footer|.footer .site-footer) ✓ parity; default regions report the EDS wrapper artefacts (static/white/+6px|+13px, off-canvas nav at 360); ca/en footer PAIR Δw −2px = R-2",
+        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed",
+        "residuals": "R-2 CA footer Δw −2px; contributor portraits STRETCHED IMAGE advisory = source 164×164 circular crop; block-roundtrip 2 pre-existing instance-pairing 🔴 vs the prototype"
       },
-      "endedAt": "2026-09-24T13:00:32.060Z",
-      "verdict": "about: pages 2/2 authored locally, blocks 1 (+0 reused), gate pending (no DA target), requests 1",
-      "putPending": "no DA org/repo/DA_TOKEN — rollout.json.site.da.* null",
-      "paths": "stardust/rollout/units/about.paths"
+      "endedAt": "2026-09-24T15:04:19.029Z",
+      "verdict": "about: pages 2/2 live (preview), blocks 1 (+0 reused), gate 1440 0.02% / 360 0.12%, requests 0",
+      "paths": "stardust/rollout/units/about.paths",
+      "pagesLive": 2,
+      "publish": "preview only (--no-publish)",
+      "iterations": 2
     },
     "faqs": {
-      "status": "done-local",
+      "status": "done",
       "kind": "cluster",
       "templates": [
         "faqs"
@@ -143,21 +260,60 @@
         "accordion"
       ],
       "blocksReused": [],
-      "foundationRequests": 1,
+      "foundationRequests": 0,
       "gates": {
-        "360": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
-        "1440": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
-        "crop": "pending — published origin only (no DA target)",
-        "chrome": "pending — published origin only (no DA target)",
-        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed"
+        "360": {
+          "pixelPct": 1.34,
+          "heightDelta": 0,
+          "overflow": "ok",
+          "headerBandPct": 0.58,
+          "footerBandPct": 0.01,
+          "sibling": {
+            "slug": "ca-en-faqs-html",
+            "pixelPct": 1.42,
+            "heightDelta": 0
+          },
+          "cFinal": {
+            "label": "pub3",
+            "pixelPct": 1.34,
+            "heightDelta": 0,
+            "contentDiffRed": 0
+          },
+          "verdict": "PASS (cluster 1.34%; C-final pub3 1.34% Δh 0)"
+        },
+        "1440": {
+          "pixelPct": 0.2,
+          "heightDelta": 0,
+          "overflow": "ok",
+          "headerBandPct": 0.09,
+          "footerBandPct": 0,
+          "sibling": {
+            "slug": "ca-en-faqs-html",
+            "pixelPct": 0.19,
+            "heightDelta": 0
+          },
+          "cFinal": {
+            "label": "pub3",
+            "pixelPct": 0.2,
+            "heightDelta": 0,
+            "contentDiffRed": 0
+          },
+          "verdict": "PASS (cluster 0.2%; C-final pub3 0.2% Δh 0)"
+        },
+        "crop": "header ≤0.59%, footer ≤0.01% at both widths (bar 2%)",
+        "chrome": "element probe (--region header=header|.header .site-header, footer=footer|.footer .site-footer) ✓ parity; default regions report the EDS wrapper artefacts (static/white/+6px|+13px, off-canvas nav at 360); ca/en footer PAIR Δw −2px = R-2",
+        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed",
+        "residuals": "R-2 CA footer Δw −2px; default-region chrome-parity deltas are the EDS wrapper artefacts (element probe ✓)"
       },
-      "endedAt": "2026-09-24T13:00:32.060Z",
-      "verdict": "faqs: pages 2/2 authored locally, blocks 1 (+0 reused), gate pending (no DA target), requests 1",
-      "putPending": "no DA org/repo/DA_TOKEN — rollout.json.site.da.* null",
-      "paths": "stardust/rollout/units/faqs.paths"
+      "endedAt": "2026-09-24T15:04:19.029Z",
+      "verdict": "faqs: pages 2/2 live (preview), blocks 1 (+0 reused), gate 1440 0.2% / 360 1.34%, requests 0",
+      "paths": "stardust/rollout/units/faqs.paths",
+      "pagesLive": 2,
+      "publish": "preview only (--no-publish)",
+      "iterations": 2
     },
     "article": {
-      "status": "done-local",
+      "status": "done",
       "kind": "cluster",
       "templates": [
         "article"
@@ -176,21 +332,60 @@
       "blocksReused": [
         "breadcrumb"
       ],
-      "foundationRequests": 0,
+      "foundationRequests": 1,
       "gates": {
-        "360": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
-        "1440": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
-        "crop": "pending — published origin only (no DA target)",
-        "chrome": "pending — published origin only (no DA target)",
-        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed"
+        "360": {
+          "pixelPct": 2.91,
+          "heightDelta": -2,
+          "overflow": "ok",
+          "headerBandPct": 0.63,
+          "footerBandPct": 0.05,
+          "sibling": {
+            "slug": "ca-en-magazine-guide-la-skateparks-html",
+            "pixelPct": 3,
+            "heightDelta": -1
+          },
+          "cFinal": {
+            "label": "pub4",
+            "pixelPct": 2.91,
+            "heightDelta": -2,
+            "contentDiffRed": 3
+          },
+          "verdict": "PASS (cluster 2.91%; C-final pub4 2.91% Δh -2)"
+        },
+        "1440": {
+          "pixelPct": 0.03,
+          "heightDelta": 0,
+          "overflow": "ok",
+          "headerBandPct": 0.09,
+          "footerBandPct": 0,
+          "sibling": {
+            "slug": "ca-en-magazine-guide-la-skateparks-html",
+            "pixelPct": 0.03,
+            "heightDelta": 0
+          },
+          "cFinal": {
+            "label": "pub4",
+            "pixelPct": 0.03,
+            "heightDelta": 0,
+            "contentDiffRed": 3
+          },
+          "verdict": "PASS (cluster 0.03%; C-final pub4 0.03% Δh 0)"
+        },
+        "crop": "header ≤0.64%, footer ≤1.1% at both widths (bar 2%)",
+        "chrome": "element probe (--region header=header|.header .site-header, footer=footer|.footer .site-footer) ✓ parity; default regions report the EDS wrapper artefacts (static/white/+6px|+13px, off-canvas nav at 360); ca/en footer PAIR Δw −2px = R-2",
+        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed",
+        "residuals": "content-diff 3 🔴 MISSING ICON [main] footer social glyphs = region-classification artefact (live footer inside <main>); 360 sub-pixel drift +1–2px; LA skateparks PDF href absolute to wknd.site (not in media ledger); h2 box-model padding vs margin (0 px delta); 1440 stitched Δh −80 (footer logo pre-load box) → fixed at C-final (Δh 0 in pub4)"
       },
-      "endedAt": "2026-09-24T13:00:32.060Z",
-      "verdict": "article: pages 12/12 authored locally, blocks 6 (+1 reused), gate pending (no DA target), requests 0",
-      "putPending": "no DA org/repo/DA_TOKEN — rollout.json.site.da.* null",
-      "paths": "stardust/rollout/units/article.paths"
+      "endedAt": "2026-09-24T15:04:19.029Z",
+      "verdict": "article: pages 12/12 live (preview), blocks 6 (+1 reused), gate 1440 0.03% / 360 2.91%, requests 1",
+      "paths": "stardust/rollout/units/article.paths",
+      "pagesLive": 12,
+      "publish": "preview only (--no-publish)",
+      "iterations": 3
     },
     "listing": {
-      "status": "done-local",
+      "status": "done",
       "kind": "cluster",
       "templates": [
         "listing"
@@ -206,19 +401,58 @@
       ],
       "foundationRequests": 1,
       "gates": {
-        "360": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
-        "1440": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
-        "crop": "pending — published origin only (no DA target)",
-        "chrome": "pending — published origin only (no DA target)",
-        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed"
+        "360": {
+          "pixelPct": 0.69,
+          "heightDelta": 0,
+          "overflow": "ok",
+          "headerBandPct": 0.58,
+          "footerBandPct": 0,
+          "sibling": {
+            "slug": "ca-en-adventures-html",
+            "pixelPct": 0.69,
+            "heightDelta": 0
+          },
+          "cFinal": {
+            "label": "pub3",
+            "pixelPct": 0.69,
+            "heightDelta": 0,
+            "contentDiffRed": 0
+          },
+          "verdict": "PASS (cluster 0.69%; C-final pub3 0.69% Δh 0)"
+        },
+        "1440": {
+          "pixelPct": 0.22,
+          "heightDelta": 0,
+          "overflow": "ok",
+          "headerBandPct": 0.09,
+          "footerBandPct": 0,
+          "sibling": {
+            "slug": "ca-en-adventures-html",
+            "pixelPct": 0.22,
+            "heightDelta": 0
+          },
+          "cFinal": {
+            "label": "pub3",
+            "pixelPct": 0.22,
+            "heightDelta": 0,
+            "contentDiffRed": 0
+          },
+          "verdict": "PASS (cluster 0.22%; C-final pub3 0.22% Δh 0)"
+        },
+        "crop": "header ≤0.59%, footer ≤0% at both widths (bar 2%)",
+        "chrome": "element probe (--region header=header|.header .site-header, footer=footer|.footer .site-footer) ✓ parity; default regions report the EDS wrapper artefacts (static/white/+6px|+13px, off-canvas nav at 360); ca/en footer PAIR Δw −2px = R-2",
+        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed",
+        "residuals": "R-2 CA footer Δw −2px; visual-diff advisory STRETCHED IMAGE = source object-fit cover crops; sibling run overwrote /us/en/adventures at 13:53Z, re-PUT --force 13:59Z"
       },
-      "endedAt": "2026-09-24T13:00:32.060Z",
-      "verdict": "listing: pages 2/2 authored locally, blocks 1 (+1 reused), gate pending (no DA target), requests 1",
-      "putPending": "no DA org/repo/DA_TOKEN — rollout.json.site.da.* null",
-      "paths": "stardust/rollout/units/listing.paths"
+      "endedAt": "2026-09-24T15:04:19.029Z",
+      "verdict": "listing: pages 2/2 live (preview), blocks 1 (+1 reused), gate 1440 0.22% / 360 0.69%, requests 1",
+      "paths": "stardust/rollout/units/listing.paths",
+      "pagesLive": 2,
+      "publish": "preview only (--no-publish)",
+      "iterations": 2
     },
     "landing": {
-      "status": "done-local",
+      "status": "done",
       "kind": "cluster",
       "templates": [
         "landing"
@@ -234,21 +468,60 @@
         "image-list",
         "teaser-hero"
       ],
-      "foundationRequests": 0,
+      "foundationRequests": 2,
       "gates": {
-        "360": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
-        "1440": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
-        "crop": "pending — published origin only (no DA target)",
-        "chrome": "pending — published origin only (no DA target)",
-        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed"
+        "360": {
+          "pixelPct": 0.42,
+          "heightDelta": 0,
+          "overflow": "ok",
+          "headerBandPct": 0.58,
+          "footerBandPct": 0.87,
+          "sibling": {
+            "slug": "ca-en-html",
+            "pixelPct": 0.79,
+            "heightDelta": -1
+          },
+          "cFinal": {
+            "label": "pub4",
+            "pixelPct": 0.42,
+            "heightDelta": 0,
+            "contentDiffRed": 2
+          },
+          "verdict": "PASS (cluster 0.42%; C-final pub4 0.42% Δh 0)"
+        },
+        "1440": {
+          "pixelPct": 0.26,
+          "heightDelta": 0,
+          "overflow": "ok",
+          "headerBandPct": 0.09,
+          "footerBandPct": 0,
+          "sibling": {
+            "slug": "ca-en-html",
+            "pixelPct": 0.26,
+            "heightDelta": 0
+          },
+          "cFinal": {
+            "label": "pub4",
+            "pixelPct": 0.26,
+            "heightDelta": 0,
+            "contentDiffRed": 2
+          },
+          "verdict": "PASS (cluster 0.26%; C-final pub4 0.26% Δh 0)"
+        },
+        "crop": "header ≤0.59%, footer ≤0.87% at both widths (bar 2%)",
+        "chrome": "element probe (--region header=header|.header .site-header, footer=footer|.footer .site-footer) ✓ parity; default regions report the EDS wrapper artefacts (static/white/+6px|+13px, off-canvas nav at 360); ca/en footer PAIR Δw −2px = R-2",
+        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed",
+        "residuals": "content-diff 2 🔴 MISSING ARIA-LABEL on default-content buttons (pipeline keeps title, drops aria-label — scripts.js decorateMain, owner item); R-2 CA footer Δw −2px; sibling run 0003 overwrote /us/en at 13:54Z, re-PUT --force 13:58Z and re-gated"
       },
-      "endedAt": "2026-09-24T13:00:32.060Z",
-      "verdict": "landing: pages 2/2 authored locally, blocks 2 (+2 reused), gate pending (no DA target), requests 0",
-      "putPending": "no DA org/repo/DA_TOKEN — rollout.json.site.da.* null",
-      "paths": "stardust/rollout/units/landing.paths"
+      "endedAt": "2026-09-24T15:04:19.029Z",
+      "verdict": "landing: pages 2/2 live (preview), blocks 2 (+2 reused), gate 1440 0.26% / 360 0.42%, requests 2",
+      "paths": "stardust/rollout/units/landing.paths",
+      "pagesLive": 2,
+      "publish": "preview only (--no-publish)",
+      "iterations": 3
     },
     "magazine-hub": {
-      "status": "done-local",
+      "status": "done",
       "kind": "cluster",
       "templates": [
         "magazine-hub"
@@ -263,21 +536,60 @@
         "teaser-featured",
         "image-list"
       ],
-      "foundationRequests": 1,
+      "foundationRequests": 0,
       "gates": {
-        "360": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
-        "1440": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
-        "crop": "pending — published origin only (no DA target)",
-        "chrome": "pending — published origin only (no DA target)",
-        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed"
+        "360": {
+          "pixelPct": 3.9,
+          "heightDelta": -14,
+          "overflow": "ok",
+          "headerBandPct": 0.58,
+          "footerBandPct": 0.86,
+          "sibling": {
+            "slug": "ca-en-magazine-html",
+            "pixelPct": 3.78,
+            "heightDelta": -13
+          },
+          "cFinal": {
+            "label": "pub3",
+            "pixelPct": 3.9,
+            "heightDelta": -14,
+            "contentDiffRed": 0
+          },
+          "verdict": "PASS (cluster 3.9%; C-final pub3 3.9% Δh -14)"
+        },
+        "1440": {
+          "pixelPct": 1.07,
+          "heightDelta": 0,
+          "overflow": "ok",
+          "headerBandPct": 0.09,
+          "footerBandPct": 0,
+          "sibling": {
+            "slug": "ca-en-magazine-html",
+            "pixelPct": 1.15,
+            "heightDelta": 0
+          },
+          "cFinal": {
+            "label": "pub3",
+            "pixelPct": 1.07,
+            "heightDelta": 0,
+            "contentDiffRed": 0
+          },
+          "verdict": "PASS (cluster 1.07%; C-final pub3 1.07% Δh 0)"
+        },
+        "crop": "header ≤0.59%, footer ≤0.9% at both widths (bar 2%)",
+        "chrome": "element probe (--region header=header|.header .site-header, footer=footer|.footer .site-footer) ✓ parity; default regions report the EDS wrapper artefacts (static/white/+6px|+13px, off-canvas nav at 360); ca/en footer PAIR Δw −2px = R-2",
+        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed",
+        "residuals": "360 Δh −14/−13 = R-1 (Fly Fishing description as <p>); media-reconcile could not map wknd.site src (ledger source:null) — 16 srcs rewritten via probes/rehost-src.mjs; sibling run overwrote /us/en/magazine at 13:54Z, re-PUT --force ~14:02Z"
       },
-      "endedAt": "2026-09-24T13:00:32.060Z",
-      "verdict": "magazine-hub: pages 2/2 authored locally, blocks 1 (+2 reused), gate pending (no DA target), requests 1",
-      "putPending": "no DA org/repo/DA_TOKEN — rollout.json.site.da.* null",
-      "paths": "stardust/rollout/units/magazine-hub.paths"
+      "endedAt": "2026-09-24T15:04:19.029Z",
+      "verdict": "magazine-hub: pages 2/2 live (preview), blocks 1 (+2 reused), gate 1440 1.07% / 360 3.9%, requests 0",
+      "paths": "stardust/rollout/units/magazine-hub.paths",
+      "pagesLive": 2,
+      "publish": "preview only (--no-publish)",
+      "iterations": 2
     },
     "members-only": {
-      "status": "done-local",
+      "status": "done",
       "kind": "cluster",
       "templates": [
         "members-only"
@@ -289,21 +601,52 @@
       "blocksReused": [
         "image-list"
       ],
-      "foundationRequests": 1,
+      "foundationRequests": 0,
       "gates": {
-        "360": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
-        "1440": "pending — published origin only (no DA target); local harness boxes Δ0 vs gated prototype",
-        "crop": "pending — published origin only (no DA target)",
-        "chrome": "pending — published origin only (no DA target)",
-        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed"
+        "360": {
+          "pixelPct": 0.14,
+          "heightDelta": 0,
+          "overflow": "ok",
+          "headerBandPct": 0.59,
+          "footerBandPct": 0,
+          "sibling": null,
+          "cFinal": {
+            "label": "pub2",
+            "pixelPct": 0.14,
+            "heightDelta": 0,
+            "contentDiffRed": 0
+          },
+          "verdict": "PASS (cluster 0.14%; C-final pub2 0.14% Δh 0)"
+        },
+        "1440": {
+          "pixelPct": 0.04,
+          "heightDelta": 0,
+          "overflow": "ok",
+          "headerBandPct": 0.19,
+          "footerBandPct": 0,
+          "sibling": null,
+          "cFinal": {
+            "label": "pub2",
+            "pixelPct": 0.04,
+            "heightDelta": 0,
+            "contentDiffRed": 0
+          },
+          "verdict": "PASS (cluster 0.04%; C-final pub2 0.04% Δh 0)"
+        },
+        "crop": "header ≤0.59%, footer ≤0% at both widths (bar 2%)",
+        "chrome": "element probe (--region header=header|.header .site-header, footer=footer|.footer .site-footer) ✓ parity; default regions report the EDS wrapper artefacts (static/white/+6px|+13px, off-canvas nav at 360); ca/en footer PAIR Δw −2px = R-2",
+        "local": "delivery-lint 0/0/0 · media-reconcile · davids-model-lint 0 🔴 · sanitise · qa-gate PASS · block-roundtrip --ew closed",
+        "residuals": "R-2 CA footer Δw −2px; gated with --marker \"Members Only\" (no WKND string in the served HTML)"
       },
-      "endedAt": "2026-09-24T13:00:32.060Z",
-      "verdict": "members-only: pages 1/1 authored locally, blocks 0 (+1 reused), gate pending (no DA target), requests 1",
-      "putPending": "no DA org/repo/DA_TOKEN — rollout.json.site.da.* null",
-      "paths": "stardust/rollout/units/members-only.paths"
+      "endedAt": "2026-09-24T15:04:19.029Z",
+      "verdict": "members-only: pages 1/1 live (preview), blocks 0 (+1 reused), gate 1440 0.04% / 360 0.14%, requests 0",
+      "paths": "stardust/rollout/units/members-only.paths",
+      "pagesLive": 1,
+      "publish": "preview only (--no-publish)",
+      "iterations": 1
     },
     "final": {
-      "status": "done-local",
+      "status": "done",
       "kind": "final",
       "templates": [
         "program",
@@ -320,11 +663,214 @@
       "blocks": 17,
       "gates": {
         "local": "foundation-requests applied to styles/styles.css (8 lines, 7 applied, 1 deferred: scripts/scripts.js lang); npm run lint clean; qa-gate PASS on 7 affected archetypes; measure.mjs harness vs prototype Δ0 (magazine 360 −14 register candidate, faqs −9 pre-existing external-img margin)",
-        "published": "pending — PUT → preview → published-origin gate.sh pub1 round"
+        "published": "C-final re-gate after the foundation requests (blocks/footer aspect-ratio, blocks/header inline clear data-URI): 18/18 rounds PASS on the 9 archetypes at 1440 + 360, pixel numbers identical to the cluster rounds (no regression), content-diff −1 🔴 per page (header ICON DIFF cleared), article 1440 stitched Δh −80 → 0; worst us-en-magazine-html @360 3.9% (R-1)",
+        "freeze": "foundation-freeze check: unchanged (66) before C-final; re-frozen after the two applied request lines; check unchanged (66)",
+        "cFinal": [
+          {
+            "slug": "ca-en-magazine-members-only-html",
+            "width": 1440,
+            "label": "pub2",
+            "pixelPct": 0.04,
+            "verdict": "PASS",
+            "heightDelta": 0,
+            "contentDiffRed": 0,
+            "chromeDefaultDeltas": 5,
+            "exit": 2
+          },
+          {
+            "slug": "ca-en-magazine-members-only-html",
+            "width": 360,
+            "label": "pub2",
+            "pixelPct": 0.14,
+            "verdict": "PASS",
+            "heightDelta": 0,
+            "contentDiffRed": 0,
+            "chromeDefaultDeltas": 9,
+            "exit": 2
+          },
+          {
+            "slug": "us-en-about-us-html",
+            "width": 1440,
+            "label": "pub3",
+            "pixelPct": 0.02,
+            "verdict": "PASS",
+            "heightDelta": 0,
+            "contentDiffRed": 0,
+            "chromeDefaultDeltas": 4,
+            "exit": 2
+          },
+          {
+            "slug": "us-en-about-us-html",
+            "width": 360,
+            "label": "pub3",
+            "pixelPct": 0.12,
+            "verdict": "PASS",
+            "heightDelta": 0,
+            "contentDiffRed": 0,
+            "chromeDefaultDeltas": 8,
+            "exit": 2
+          },
+          {
+            "slug": "us-en-adventures-html",
+            "width": 1440,
+            "label": "pub3",
+            "pixelPct": 0.22,
+            "verdict": "PASS",
+            "heightDelta": 0,
+            "contentDiffRed": 0,
+            "chromeDefaultDeltas": 4,
+            "exit": 2
+          },
+          {
+            "slug": "us-en-adventures-html",
+            "width": 360,
+            "label": "pub3",
+            "pixelPct": 0.69,
+            "verdict": "PASS",
+            "heightDelta": 0,
+            "contentDiffRed": 0,
+            "chromeDefaultDeltas": 8,
+            "exit": 2
+          },
+          {
+            "slug": "us-en-adventures-riverside-camping-australia-html",
+            "width": 1440,
+            "label": "pub2",
+            "pixelPct": 1.13,
+            "verdict": "PASS",
+            "heightDelta": 0,
+            "contentDiffRed": 0,
+            "chromeDefaultDeltas": 4,
+            "exit": 2
+          },
+          {
+            "slug": "us-en-adventures-riverside-camping-australia-html",
+            "width": 360,
+            "label": "pub2",
+            "pixelPct": 1.07,
+            "verdict": "PASS",
+            "heightDelta": -1,
+            "contentDiffRed": 0,
+            "chromeDefaultDeltas": 8,
+            "exit": 2
+          },
+          {
+            "slug": "us-en-faqs-html",
+            "width": 1440,
+            "label": "pub3",
+            "pixelPct": 0.2,
+            "verdict": "PASS",
+            "heightDelta": 0,
+            "contentDiffRed": 0,
+            "chromeDefaultDeltas": 4,
+            "exit": 2
+          },
+          {
+            "slug": "us-en-faqs-html",
+            "width": 360,
+            "label": "pub3",
+            "pixelPct": 1.34,
+            "verdict": "PASS",
+            "heightDelta": 0,
+            "contentDiffRed": 0,
+            "chromeDefaultDeltas": 8,
+            "exit": 2
+          },
+          {
+            "slug": "us-en-html",
+            "width": 1440,
+            "label": "pub4",
+            "pixelPct": 0.26,
+            "verdict": "PASS",
+            "heightDelta": 0,
+            "contentDiffRed": 2,
+            "chromeDefaultDeltas": 4,
+            "exit": 2
+          },
+          {
+            "slug": "us-en-html",
+            "width": 360,
+            "label": "pub4",
+            "pixelPct": 0.42,
+            "verdict": "PASS",
+            "heightDelta": 0,
+            "contentDiffRed": 2,
+            "chromeDefaultDeltas": 8,
+            "exit": 2
+          },
+          {
+            "slug": "us-en-magazine-html",
+            "width": 1440,
+            "label": "pub3",
+            "pixelPct": 1.07,
+            "verdict": "PASS",
+            "heightDelta": 0,
+            "contentDiffRed": 0,
+            "chromeDefaultDeltas": 4,
+            "exit": 2
+          },
+          {
+            "slug": "us-en-magazine-html",
+            "width": 360,
+            "label": "pub3",
+            "pixelPct": 3.9,
+            "verdict": "PASS",
+            "heightDelta": -14,
+            "contentDiffRed": 0,
+            "chromeDefaultDeltas": 22,
+            "exit": 2
+          },
+          {
+            "slug": "us-en-magazine-western-australia-html",
+            "width": 1440,
+            "label": "pub4",
+            "pixelPct": 0.03,
+            "verdict": "PASS",
+            "heightDelta": 0,
+            "contentDiffRed": 3,
+            "chromeDefaultDeltas": 4,
+            "exit": 2
+          },
+          {
+            "slug": "us-en-magazine-western-australia-html",
+            "width": 360,
+            "label": "pub4",
+            "pixelPct": 2.91,
+            "verdict": "PASS",
+            "heightDelta": -2,
+            "contentDiffRed": 3,
+            "chromeDefaultDeltas": 21,
+            "exit": 2
+          },
+          {
+            "slug": "us-es-html",
+            "width": 1440,
+            "label": "pub2",
+            "pixelPct": 0.24,
+            "verdict": "PASS",
+            "heightDelta": 0,
+            "contentDiffRed": 0,
+            "chromeDefaultDeltas": 4,
+            "exit": 2
+          },
+          {
+            "slug": "us-es-html",
+            "width": 360,
+            "label": "pub2",
+            "pixelPct": 0.21,
+            "verdict": "PASS",
+            "heightDelta": 0,
+            "contentDiffRed": 0,
+            "chromeDefaultDeltas": 4,
+            "exit": 2
+          }
+        ]
       },
       "startedAt": "2026-09-24T13:00:32.060Z",
-      "endedAt": "2026-09-24T13:00:32.060Z",
-      "verdict": "final: requests applied once, freeze re-taken, coverage blocks 17 converted; C-deliver blocked on DA credentials"
+      "endedAt": "2026-09-24T15:04:19.029Z",
+      "verdict": "final: 64/64 pages live on the preview origin, 17 gate-verified, 9/9 templates gated PASS at both widths; requests 2 applied, 2 registered (R-2), 2 owner items (scripts.js lang + aria-label)",
+      "pagesLive": 64,
+      "pagesVerified": 17
     }
   }
 }

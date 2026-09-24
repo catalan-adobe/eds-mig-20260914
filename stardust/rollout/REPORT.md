@@ -3,9 +3,12 @@
 Run: 2026-09-24 · flow: **replica** (same design, no redesign, no rewording, no DOM copy) · mode:
 hands-off · volume: all pages · source: https://wknd.site
 
-**State: pages authored and locally asserted; nothing PUT.** `rollout.json.site.da.{org,site,ref}`
-and `DA_TOKEN` were never provided, so every C-deliver unit stopped before the PUT → preview →
-published-origin gate. Ledger: `rollout C-deliver blocked` (`stardust/status.jsonl`).
+**State: 64/64 pages live on the preview origin, 9/9 templates gated PASS at 1440 + 360.** DA
+catalan-adobe/eds-mig-20260914, code branch `sd-25-fable-replica`, preview host
+https://sd-25-fable-replica--eds-mig-20260914--catalan-adobe.aem.page — **preview only**
+(`--no-publish`; nothing on .aem.live). Ledger: `rollout C-deliver end` (`stardust/status.jsonl`).
+The earlier local-only run (`C-deliver blocked`, no DA target) is superseded; its sections below are
+kept where still true.
 
 ## 1. Page coverage
 
@@ -15,9 +18,11 @@ published-origin gate. Ledger: `rollout C-deliver blocked` (`stardust/status.jso
 | archetypes recreated + gate-approved | 9 | one per page type; `stardust/replica/gates/` |
 | migrated (sibling tier) | 64 | `stardust/migrated/**`, commit c64b67c |
 | authored as EDS content (local) | 64 | `content/**/*.html` (64) = Σ `stardust/rollout/units/*.paths` (64) |
-| PUT / previewed / published | 0 | no DA target |
+| PUT + previewed (preview origin) | 64 | `stardust/deploy/ledger-*.json`; `coverage/pages.json` 47 `deployed` + 17 `verified` |
+| gate-verified on the preview origin | 17 | archetype + sibling per template (`stardust/replica/gates/<slug>-<w>/*-pub*.txt`) |
+| published (.aem.live) | 0 | owner decision — `--no-publish` |
 
-Per template cluster (`stardust/rollout/progress.json` → `units.*`, all `done-local`):
+Per template cluster (`stardust/rollout/progress.json` → `units.*`, all `done`; published gate in § 2b):
 
 | cluster | pages | blocks authored | blocks reused | local chain |
 |---|---|---|---|---|
@@ -63,6 +68,32 @@ Every archetype passed at both widths; every residual is photo resampling / anti
 sampler artefact — zero layout effect. The same numbers are NOT yet available for the EDS build:
 the published-origin round (§ 7 step 4) is pending.
 
+## 2b. Published-origin gate (preview origin vs live, gate.sh --full, C-deliver)
+
+Archetype per template at 1440 / 360; sibling in parentheses. Pixel bar 10 %, height bar 8 px,
+crop bands (header/footer) bar 2 %. Every round PASS. C-final re-gated all 9 archetypes after the
+two applied foundation requests (§ 6) — pixel numbers identical, chrome-parity byte-identical,
+content-diff −1 🔴 per page (header clear-icon), article 1440 stitched Δh −80 → 0.
+
+| template | archetype | 1440 px % (sib) | 360 px % (sib) | Δh 1440/360 | header ≤ | footer ≤ | content-diff 🔴 left | rounds |
+|---|---|---|---|---|---|---|---|---|
+| landing | us-en | 0.26 (0.26) | 0.42 (0.79) | 0 / 0 | 0.59 % | 0.87 % | 2 aria-label (owner: scripts.js) | 3 + C-final pub4 |
+| listing | us-en-adventures | 0.22 (0.22) | 0.69 (0.69) | 0 / 0 | 0.59 % | 0.00 % | 0 | 2 + pub3 |
+| magazine-hub | us-en-magazine | 1.07 (1.15) | 3.90 (3.78) | 0 / −14 (R-1) | 0.59 % | 0.90 % | 0 | 2 + pub3 |
+| program | riverside-camping-australia | 1.13 (0.07) | 1.07 (1.93) | 0 / −1 | 0.59 % | 0.86 % | 0 | 1 + pub2 |
+| article | western-australia | 0.03 (0.03) | 2.91 (3.00) | 0 / −2 | 0.64 % | 1.10 % | 3 footer-social region artefact | 3 + pub4 |
+| about | us-en-about-us | 0.02 (0.02) | 0.12 (0.12) | 0 / 0 | 0.66 % | 0.00 % | 0 | 2 + pub3 |
+| faqs | us-en-faqs | 0.20 (0.19) | 1.34 (1.42) | 0 / 0 | 0.59 % | 0.01 % | 0 | 2 + pub3 |
+| members-only | ca-en-magazine-members-only | 0.04 | 0.14 | 0 / 0 | 0.59 % | 0.00 % | 0 | 1 + pub2 |
+| locale-landing | us-es | 0.24 (0.24) | 0.21 (0.21) | 0 / 0 | 0.66 % | 0.00 % | 0 | 1 + pub2 |
+
+Chrome parity: element probe (`--region header=header|.header .site-header`, `footer=footer|.footer
+.site-footer`) ✓ on every page; the default-region report lists the EDS `<header>`/`<footer>`
+wrapper artefacts (static/white, +6/+13 px, off-canvas nav at 360) and, on ca/en, the footer link
+Δw −2 px (R-2). Fixes off the instruments during the clusters: text-quote blockquote face (article,
+bfe1256), contributor icon span (about, 9803608), accordion icon host (faqs, ed12bb8), landing
+indicator text; C-final: footer logo `aspect-ratio` + inline clear-icon data URI (e402744).
+
 ## 3. Blocks (17 authored + 2 chrome)
 
 `blocks/`: accordion · breadcrumb (variants `program-grid`, `article`) · byline · content-fragment
@@ -102,9 +133,11 @@ boilerplate Roboto files were removed.
 
 ## 6. Open items
 
-1. **DA target + token** — `rollout.json.site.da.{org,site,ref}` null, no `DA_TOKEN`: nothing PUT,
-   previewed or published; the published-origin gates (pixel, `crop-compare` bands, chrome parity)
-   and `deployed` / `verified` coverage rows are all pending (page rows remain `pending`, A-F-3).
+1. **Shared DA site with sibling run stardust-25-pi-opus-5-5-0003** (branch replica-wknd) — it PUTs
+   and publishes 27 /us/** paths plus /nav, /footer into catalan-adobe/eds-mig-20260914; it overwrote
+   /us/en, /us/en/adventures, /us/en/magazine at ~13:54Z (re-PUT --force, re-gated). C-final sweep:
+   0/64 pages clobbered, but any /us/** page can be overwritten again — separate DA sites (or stop the
+   other run) before publishing. `.aem.live` currently serves the other run's /us/en.
 2. **Editorial media rehost** — every editorial `<img src>` and PDF `href` is the captured
    `https://wknd.site/…` URL (anonymous 200 today); `da-media-upload.mjs --scope <cluster>` + src
    rewrite at PUT. Side effect until then: external images are not wrapped in `<picture>`, so
@@ -120,7 +153,14 @@ boilerplate Roboto files were removed.
 6. **No-`<h1>` source pages** — landing (2) + locale stubs (9) have no source h1; clusters authored
    the first teaser title as `h1` sized as the live h2 (delivery-lint P0 resolution). Owner may
    prefer an allowlist entry instead.
-7. **Publish decision** — preview-only (`--no-publish`) until the owner decides.
+7. **Publish decision** — preview-only (`--no-publish`); publishing needs item 1 resolved first.
+11. **`a.button` aria-label** — the pipeline keeps `title` and drops `aria-label` on default-content
+    buttons (landing 2 🔴); copy title → aria-label in `scripts/scripts.js` `decorateMain` (owner, with item 3).
+12. **R-2** — ca/en footer link "localization features with Core Components" 218 vs 220 px: the
+    source's trailing space inside the link is dropped by the pipeline (`inconsistency-register.md`).
+13. **Media ledger `source: null`** — `media-reconcile.mjs` cannot map wknd.site src → contentUrl;
+    magazine-hub rewrote via `probes/rehost-src.mjs`, other clusters kept the wknd.site URLs (ingested
+    as `/media_*` renditions at preview). The LA-skateparks PDF href stays absolute to wknd.site.
 8. **Boilerplate leftovers** — `blocks/{cards,columns,hero,widget}` unused (`--background-color`
    token references); delete or keep as a project decision.
 9. **Harness footer** — the local harness resolves the footer from its own pathname (falls back to
@@ -128,7 +168,7 @@ boilerplate Roboto files were removed.
 10. **Search (F-01) + listings (L-0x) index** — `helix-query.yaml` / `/query-index.json` and the
     search service are D2 work on the published host.
 
-## 7. Next commands (once `DA_TOKEN` + org/repo/branch exist)
+## 7. Next commands (as run in C-deliver; re-runnable — ledgers resume)
 
 Run from the project root. Fill `stardust/rollout/rollout.json` → `site.da.{org,site,ref}` and
 `site.liveHost` first (`inventory.mjs --site-url https://wknd.site` re-derives coverage and keeps rows).
