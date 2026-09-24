@@ -29,7 +29,7 @@
     "description": "Here we answer some of the questions that we hear most often from the community.",
     "url": "https://wknd.site/us/en/faqs.html"
   },
-  "migratedAt": "2026-09-24T08:37:37Z",
+  "migratedAt": "2026-09-24T09:32:30Z",
   "designMdSha": "720637eadd96",
   "designJsonSha": "a627c03a4224",
   "sourceCurrentSha": "47cd4e0d0b32",
@@ -94,18 +94,6 @@
     {
       "href": "/it/it.html",
       "reason": "not-in-inventory"
-    },
-    {
-      "href": "/us/en/magazine.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/magazine.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/magazine.html",
-      "reason": "in-inventory-not-migrated"
     }
   ],
   "outputPath": "us/en/faqs.html",

@@ -46,3 +46,5 @@
 {"ts":"2026-09-24T09:28:19Z","skill":"stardust:replica","phase":"migrate-state-and-report","event":"start","detail":"advance 20 siblings to migrated; report unit"}
 {"ts":"2026-09-24T09:29:33Z","skill":"stardust:replica","phase":"migrate-state-and-report","event":"end","detail":"20 pages advanced to migrated; 4 render units + report done; gate-evidence --check 0"}
 {"ts":"2026-09-24T09:29:34Z","skill":"stardust:replica","phase":"handoff","event":"end","detail":"migrate done; deploy/rollout pending DA_TOKEN"}
+{"ts":"2026-09-24T09:33:25Z","skill":"stardust:migrate","phase":"state-and-report","event":"start","detail":"coordinator: re-place archetypes after siblings, advance to migrated"}
+{"ts":"2026-09-24T09:33:25Z","skill":"stardust:migrate","phase":"state-and-report","event":"end","detail":"archetypes re-placed (--force) and advanced to migrated; 26/26 migrated; open: us/en.html P0 h1 (source has none) → register entry in run 2"}

@@ -29,7 +29,7 @@
     "description": "WKND is a collective of outdoors, music, crafts, adventure sports, and travel enthusiasts that want to share our experiences, connections, and expertise with the world. ",
     "url": "https://wknd.site/us/en/about-us.html"
   },
-  "migratedAt": "2026-09-24T08:37:37Z",
+  "migratedAt": "2026-09-24T09:32:30Z",
   "designMdSha": "720637eadd96",
   "designJsonSha": "a627c03a4224",
   "sourceCurrentSha": "0e421070b532",
@@ -94,18 +94,6 @@
     {
       "href": "/it/it.html",
       "reason": "not-in-inventory"
-    },
-    {
-      "href": "/us/en/magazine.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/magazine.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/magazine.html",
-      "reason": "in-inventory-not-migrated"
     }
   ],
   "outputPath": "us/en/about-us.html",

@@ -331,3 +331,10 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 **Next:** with DA_TOKEN set, `rollout` Phase A from `stardust/migrated/`; the media-reconcile gate (row 7) and the published-origin pixel gate run there.
 
 ---
+
+## Migrate — archetypes re-placed and advanced (2026-09-24)
+
+- Coordinator follow-up after run 1: the six archetypes had been placed in the plan unit before any sibling existed, so their sidecars counted every sibling link as broken (73 on the adventures listing). Re-rendered all six with `migrate.mjs render --force`; residual broken links are now exactly the 10 locale-root links (`/us/es.html`, `/ca/en.html`, …) — the D3-multilingual scope debt (A-EX1), not defects.
+- Advanced the six archetypes `approved → migrated`. 26/26 pages migrated.
+- Open for run 2 (deploy): `us/en.html` fails delivery-lint P0 `h1` — the live home page has no `<h1>` either (carousel headings are `<h2>`). Resolving it is a design delta and needs an inconsistency-register entry before the PUT.
+- `crop-diff.png` had leaked to the project root (write boundary) — trashed.

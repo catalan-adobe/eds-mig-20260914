@@ -35,7 +35,7 @@
     "description": "WKND is a collective of outdoors, music, crafts, adventure sports, and travel enthusiasts that want to share our experiences, connections, and expertise with the world.",
     "url": "https://wknd.site/us/en.html"
   },
-  "migratedAt": "2026-09-24T08:37:37Z",
+  "migratedAt": "2026-09-24T09:32:30Z",
   "designMdSha": "720637eadd96",
   "designJsonSha": "a627c03a4224",
   "sourceCurrentSha": "a30ab10cd97b",
@@ -99,86 +99,6 @@
     {
       "href": "/it/it.html",
       "reason": "not-in-inventory"
-    },
-    {
-      "href": "/us/en/magazine.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/adventures/downhill-skiing-wyoming.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/magazine/western-australia.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/magazine/guide-la-skateparks.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/magazine/guide-la-skateparks.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/magazine/ski-touring.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/magazine/ski-touring.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/magazine/arctic-surfing.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/magazine/arctic-surfing.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/magazine.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/adventures/yosemite-backpacking.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/adventures/yosemite-backpacking.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/adventures/whistler-mountain-biking.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/adventures/whistler-mountain-biking.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/adventures/west-coast-cycling.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/adventures/west-coast-cycling.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/adventures/tahoe-skiing.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/adventures/tahoe-skiing.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/magazine.html",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/us/en/magazine.html",
-      "reason": "in-inventory-not-migrated"
     }
   ],
   "outputPath": "us/en.html",

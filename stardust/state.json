@@ -1,7 +1,7 @@
 {
   "_provenance": {
     "writtenBy": "stardust:migrate",
-    "writtenAt": "2026-09-24T09:28:43Z",
+    "writtenAt": "2026-09-24T09:33:25Z",
     "stardustVersion": "0.10.0"
   },
   "site": {
@@ -25,7 +25,7 @@
       "url": "https://wknd.site/us/en/about-us.html",
       "title": "About Us",
       "type": "static",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -39,6 +39,10 @@
           "status": "approved",
           "at": "2026-09-24T08:36:19Z",
           "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:33:25Z"
         }
       ],
       "stale": false,
@@ -104,7 +108,7 @@
       "url": "https://wknd.site/us/en/adventures/climbing-new-zealand.html",
       "title": "Climbing New Zealand",
       "type": "program",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -118,6 +122,10 @@
           "status": "approved",
           "at": "2026-09-24T08:36:19Z",
           "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:33:25Z"
         }
       ],
       "stale": false,
@@ -261,7 +269,7 @@
       "url": "https://wknd.site/us/en/adventures.html",
       "title": "Adventures",
       "type": "listing",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -275,6 +283,10 @@
           "status": "approved",
           "at": "2026-09-24T08:36:19Z",
           "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:33:25Z"
         }
       ],
       "stale": false,
@@ -496,7 +508,7 @@
       "url": "https://wknd.site/us/en/faqs.html",
       "title": "FAQs",
       "type": "unique",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -510,6 +522,10 @@
           "status": "approved",
           "at": "2026-09-24T08:36:19Z",
           "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:33:25Z"
         }
       ],
       "stale": false,
@@ -523,7 +539,7 @@
       "url": "https://wknd.site/us/en.html",
       "title": "WKND Adventures and Travel",
       "type": "landing",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -537,6 +553,10 @@
           "status": "approved",
           "at": "2026-09-24T08:36:19Z",
           "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:33:25Z"
         }
       ],
       "stale": false,
@@ -628,7 +648,7 @@
       "url": "https://wknd.site/us/en/magazine/san-diego-surf.html",
       "title": "San Diego Surf Spots",
       "type": "article",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -642,6 +662,10 @@
           "status": "approved",
           "at": "2026-09-24T08:36:19Z",
           "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:33:25Z"
         }
       ],
       "stale": false,
@@ -704,7 +728,7 @@
     }
   ],
   "migrate": {
-    "at": "2026-09-24T09:26:41Z",
+    "at": "2026-09-24T09:32:30Z",
     "outputDir": "stardust/migrated/",
     "selfContained": true,
     "pageMap": [
@@ -904,7 +928,7 @@
       {
         "slug": "us-en-adventures-html",
         "file": "stardust/migrated/us/en/adventures.html",
-        "assetsBundled": 4
+        "assetsBundled": 20
       },
       {
         "slug": "us-en-adventures-climbing-new-zealand-html",
@@ -1030,9 +1054,13 @@
     "missingAssets": [],
     "cleanedAssets": [],
     "lastRun": {
-      "at": "2026-09-24T09:26:41Z",
+      "at": "2026-09-24T09:32:30Z",
       "rendered": [
-        "us-en-magazine-html"
+        "us-en-html",
+        "us-en-about-us-html",
+        "us-en-faqs-html",
+        "us-en-adventures-climbing-new-zealand-html",
+        "us-en-magazine-san-diego-surf-html"
       ],
       "unchanged": [],
       "refused": [],
