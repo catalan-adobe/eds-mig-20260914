@@ -48,3 +48,10 @@
 {"ts":"2026-09-24T09:29:34Z","skill":"stardust:replica","phase":"handoff","event":"end","detail":"migrate done; deploy/rollout pending DA_TOKEN"}
 {"ts":"2026-09-24T09:33:25Z","skill":"stardust:migrate","phase":"state-and-report","event":"start","detail":"coordinator: re-place archetypes after siblings, advance to migrated"}
 {"ts":"2026-09-24T09:33:25Z","skill":"stardust:migrate","phase":"state-and-report","event":"end","detail":"archetypes re-placed (--force) and advanced to migrated; 26/26 migrated; open: us/en.html P0 h1 (source has none) → register entry in run 2"}
+{"ts":"2026-09-24T09:53:19Z","skill":"stardust:replica","phase":"handoff","event":"start","detail":"rollout prepare: Setup + A + B + B2 + runtime probe (gated archetypes 6/6 pass @1440+360)"}
+{"ts":"2026-09-24T09:53:19Z","skill":"stardust:rollout","phase":"A-inventory","event":"start","detail":"inventory.mjs over stardust/migrated (26 pages)"}
+{"ts":"2026-09-24T09:54:28Z","skill":"stardust:rollout","phase":"A-inventory","event":"end","detail":"26 pages, 6 templates, all pending; DA coords filled","artifact":"stardust/rollout/coverage/pages.json"}
+{"ts":"2026-09-24T09:54:28Z","skill":"stardust:rollout","phase":"B-block","event":"start","detail":"blocks.mjs + plan.mjs, lock edsBlockName"}
+{"ts":"2026-09-24T10:04:31Z","skill":"stardust:rollout","phase":"B-block","event":"end","detail":"15 distinct blocks: 14 to convert + sharing=default-content; names locked; 6 clusters + foundation","artifact":"stardust/rollout/plan.json"}
+{"ts":"2026-09-24T10:04:31Z","skill":"stardust:rollout","phase":"B2-dynamic","event":"start","detail":"re-verify dynamic-features.md: dynamics-detect + dynamics-plan --target-origin aem.page"}
+{"ts":"2026-09-24T10:09:13Z","skill":"stardust:rollout","phase":"B2-dynamic","event":"end","detail":"28 fresh findings → 11 curated rows, all dispositioned; host-bound 9/9; no new rows","artifact":"stardust/dynamic-features.md"}

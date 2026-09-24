@@ -1,0 +1,233 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout prepare",
+    "writtenAt": "2026-09-24T10:09:49.493Z",
+    "shape": "handoff-contract § 3 progress.json"
+  },
+  "phase": "C-deliver",
+  "units": {
+    "foundation": {
+      "status": "pending",
+      "kind": "foundation",
+      "templates": [
+        "us-en-html",
+        "us-en-adventures-climbing-new-zealand-html",
+        "us-en-magazine-san-diego-surf-html",
+        "us-en-about-us-html",
+        "us-en-faqs-html",
+        "us-en-adventures-html"
+      ],
+      "pages": 0,
+      "blocks": 2,
+      "order": 0,
+      "scope": [
+        "stardust/runtime-contract.json",
+        "styles/styles.css",
+        "styles/fonts.css",
+        "styles/lazy-styles.css",
+        "fonts/",
+        "favicon.ico",
+        "icons/",
+        "head.html",
+        "blocks/header/",
+        "blocks/footer/",
+        "/nav",
+        "/footer"
+      ]
+    },
+    "landing": {
+      "status": "pending",
+      "kind": "cluster",
+      "order": 1,
+      "templates": [
+        "us-en-html"
+      ],
+      "archetypeSlug": "us-en-html",
+      "pages": 1,
+      "blocks": 4,
+      "pageSlugs": [
+        "us-en-html"
+      ],
+      "daPaths": [
+        "/us/en"
+      ],
+      "blocksToConvert": [
+        "hero-carousel",
+        "featured-teaser",
+        "hero-teaser",
+        "cards"
+      ],
+      "blocksToReuse": []
+    },
+    "program": {
+      "status": "pending",
+      "kind": "cluster",
+      "order": 2,
+      "templates": [
+        "us-en-adventures-climbing-new-zealand-html"
+      ],
+      "archetypeSlug": "us-en-adventures-climbing-new-zealand-html",
+      "pages": 16,
+      "blocks": 3,
+      "pageSlugs": [
+        "us-en-adventures-climbing-new-zealand-html",
+        "us-en-adventures-bali-surf-camp-html",
+        "us-en-adventures-beervana-portland-html",
+        "us-en-adventures-colorado-rock-climbing-html",
+        "us-en-adventures-cycling-southern-utah-html",
+        "us-en-adventures-cycling-tuscany-html",
+        "us-en-adventures-downhill-skiing-wyoming-html",
+        "us-en-adventures-gastronomic-marais-tour-html",
+        "us-en-adventures-napa-wine-tasting-html",
+        "us-en-adventures-riverside-camping-australia-html",
+        "us-en-adventures-ski-touring-mont-blanc-html",
+        "us-en-adventures-surf-camp-costa-rica-html",
+        "us-en-adventures-tahoe-skiing-html",
+        "us-en-adventures-west-coast-cycling-html",
+        "us-en-adventures-whistler-mountain-biking-html",
+        "us-en-adventures-yosemite-backpacking-html"
+      ],
+      "daPaths": [
+        "/us/en/adventures/climbing-new-zealand",
+        "/us/en/adventures/bali-surf-camp",
+        "/us/en/adventures/beervana-portland",
+        "/us/en/adventures/colorado-rock-climbing",
+        "/us/en/adventures/cycling-southern-utah",
+        "/us/en/adventures/cycling-tuscany",
+        "/us/en/adventures/downhill-skiing-wyoming",
+        "/us/en/adventures/gastronomic-marais-tour",
+        "/us/en/adventures/napa-wine-tasting",
+        "/us/en/adventures/riverside-camping-australia",
+        "/us/en/adventures/ski-touring-mont-blanc",
+        "/us/en/adventures/surf-camp-costa-rica",
+        "/us/en/adventures/tahoe-skiing",
+        "/us/en/adventures/west-coast-cycling",
+        "/us/en/adventures/whistler-mountain-biking",
+        "/us/en/adventures/yosemite-backpacking"
+      ],
+      "blocksToConvert": [
+        "mini-carousel",
+        "trip-facts",
+        "tabs"
+      ],
+      "blocksToReuse": []
+    },
+    "article": {
+      "status": "pending",
+      "kind": "cluster",
+      "order": 2,
+      "templates": [
+        "us-en-magazine-san-diego-surf-html"
+      ],
+      "archetypeSlug": "us-en-magazine-san-diego-surf-html",
+      "pages": 5,
+      "blocks": 4,
+      "pageSlugs": [
+        "us-en-magazine-san-diego-surf-html",
+        "us-en-magazine-arctic-surfing-html",
+        "us-en-magazine-guide-la-skateparks-html",
+        "us-en-magazine-ski-touring-html",
+        "us-en-magazine-western-australia-html"
+      ],
+      "daPaths": [
+        "/us/en/magazine/san-diego-surf",
+        "/us/en/magazine/arctic-surfing",
+        "/us/en/magazine/guide-la-skateparks",
+        "/us/en/magazine/ski-touring",
+        "/us/en/magazine/western-australia"
+      ],
+      "blocksToConvert": [
+        "article-body",
+        "contributor-byline",
+        "upnext-list",
+        "download"
+      ],
+      "blocksToReuse": []
+    },
+    "static": {
+      "status": "pending",
+      "kind": "cluster",
+      "order": 2,
+      "templates": [
+        "us-en-about-us-html"
+      ],
+      "archetypeSlug": "us-en-about-us-html",
+      "pages": 1,
+      "blocks": 1,
+      "pageSlugs": [
+        "us-en-about-us-html"
+      ],
+      "daPaths": [
+        "/us/en/about-us"
+      ],
+      "blocksToConvert": [
+        "contributor-card"
+      ],
+      "blocksToReuse": []
+    },
+    "unique": {
+      "status": "pending",
+      "kind": "cluster",
+      "order": 2,
+      "templates": [
+        "us-en-faqs-html"
+      ],
+      "archetypeSlug": "us-en-faqs-html",
+      "pages": 1,
+      "blocks": 1,
+      "pageSlugs": [
+        "us-en-faqs-html"
+      ],
+      "daPaths": [
+        "/us/en/faqs"
+      ],
+      "blocksToConvert": [
+        "accordion"
+      ],
+      "blocksToReuse": []
+    },
+    "listing": {
+      "status": "pending",
+      "kind": "cluster",
+      "order": 3,
+      "templates": [
+        "us-en-adventures-html"
+      ],
+      "archetypeSlug": "us-en-adventures-html",
+      "pages": 2,
+      "blocks": 1,
+      "pageSlugs": [
+        "us-en-adventures-html",
+        "us-en-magazine-html"
+      ],
+      "daPaths": [
+        "/us/en/adventures",
+        "/us/en/magazine"
+      ],
+      "blocksToConvert": [
+        "list-teaser"
+      ],
+      "blocksToReuse": [
+        "featured-teaser",
+        "hero-teaser",
+        "cards",
+        "tabs"
+      ]
+    },
+    "final": {
+      "status": "pending",
+      "kind": "final",
+      "templates": [
+        "us-en-html",
+        "us-en-adventures-climbing-new-zealand-html",
+        "us-en-magazine-san-diego-surf-html",
+        "us-en-about-us-html",
+        "us-en-faqs-html",
+        "us-en-adventures-html"
+      ],
+      "pages": 26,
+      "blocks": 0,
+      "order": 4
+    }
+  }
+}

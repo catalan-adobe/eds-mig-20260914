@@ -1,10 +1,10 @@
 {
  "_provenance": {
   "writtenBy": "stardust:dynamics plan",
-  "writtenAt": "2026-09-24T07:16:25.715Z",
+  "writtenAt": "2026-09-24T10:07:34.006Z",
   "input": "stardust/current/_dynamics.json",
-  "target": "https://main--eds-mig-20260914--catalan-adobe.aem.page",
-  "migrated": null
+  "target": "https://replica-wknd--eds-mig-20260914--catalan-adobe.aem.page",
+  "migrated": "stardust/migrated"
  },
  "rows": [
   {
@@ -116,9 +116,9 @@
    "hostBound": "dead on target (404)"
   },
   {
-   "id": "d-first-party-data-file-get-content-wknd-us-en-jcr-content-c",
+   "id": "d-first-party-data-file-get-content-wknd-us-en-about-us-jcr-",
    "class": "D",
-   "feature": "first-party data file GET /content/wknd/us/en/_jcr_content/contexthub.pagedata.json",
+   "feature": "first-party data file GET /content/wknd/us/en/about-us/_jcr_content/contexthub.pagedata.json",
    "pages": 1,
    "probed": 6,
    "reach": {
@@ -126,7 +126,28 @@
     "of": 26
    },
    "evidence": [
-    "GET /content/wknd/us/en/_jcr_content/contexthub.pagedata.json → 200"
+    "GET /content/wknd/us/en/about-us/_jcr_content/contexthub.pagedata.json → 200"
+   ],
+   "pattern": "sheet-sync",
+   "disposition": "data-fed",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "data",
+   "decision": "none (sync from the source origin)",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "d-first-party-data-file-get-content-wknd-us-en-adventures-ba",
+   "class": "D",
+   "feature": "first-party data file GET /content/wknd/us/en/adventures/bali-surf-camp/_jcr_content/contexthub.pagedata.json",
+   "pages": 1,
+   "probed": 6,
+   "reach": {
+    "pages": 1,
+    "of": 26
+   },
+   "evidence": [
+    "GET /content/wknd/us/en/adventures/bali-surf-camp/_jcr_content/contexthub.pagedata.json → 200"
    ],
    "pattern": "sheet-sync",
    "disposition": "data-fed",
@@ -158,69 +179,6 @@
    "hostBound": "dead on target (404)"
   },
   {
-   "id": "d-first-party-data-file-get-content-wknd-us-en-adventures-cl",
-   "class": "D",
-   "feature": "first-party data file GET /content/wknd/us/en/adventures/climbing-new-zealand/_jcr_content/contexthub.pagedata.json",
-   "pages": 1,
-   "probed": 6,
-   "reach": {
-    "pages": 1,
-    "of": 26
-   },
-   "evidence": [
-    "GET /content/wknd/us/en/adventures/climbing-new-zealand/_jcr_content/contexthub.pagedata.json → 200"
-   ],
-   "pattern": "sheet-sync",
-   "disposition": "data-fed",
-   "reproducibility": "self",
-   "status": "pending",
-   "phase": "data",
-   "decision": "none (sync from the source origin)",
-   "hostBound": "dead on target (404)"
-  },
-  {
-   "id": "d-first-party-data-file-get-content-wknd-us-en-magazine-san-",
-   "class": "D",
-   "feature": "first-party data file GET /content/wknd/us/en/magazine/san-diego-surf/_jcr_content/contexthub.pagedata.json",
-   "pages": 1,
-   "probed": 6,
-   "reach": {
-    "pages": 1,
-    "of": 26
-   },
-   "evidence": [
-    "GET /content/wknd/us/en/magazine/san-diego-surf/_jcr_content/contexthub.pagedata.json → 200"
-   ],
-   "pattern": "sheet-sync",
-   "disposition": "data-fed",
-   "reproducibility": "self",
-   "status": "pending",
-   "phase": "data",
-   "decision": "none (sync from the source origin)",
-   "hostBound": "dead on target (404)"
-  },
-  {
-   "id": "d-first-party-data-file-get-content-wknd-us-en-about-us-jcr-",
-   "class": "D",
-   "feature": "first-party data file GET /content/wknd/us/en/about-us/_jcr_content/contexthub.pagedata.json",
-   "pages": 1,
-   "probed": 6,
-   "reach": {
-    "pages": 1,
-    "of": 26
-   },
-   "evidence": [
-    "GET /content/wknd/us/en/about-us/_jcr_content/contexthub.pagedata.json → 200"
-   ],
-   "pattern": "sheet-sync",
-   "disposition": "data-fed",
-   "reproducibility": "self",
-   "status": "pending",
-   "phase": "data",
-   "decision": "none (sync from the source origin)",
-   "hostBound": "dead on target (404)"
-  },
-  {
    "id": "d-first-party-data-file-get-content-wknd-us-en-faqs-jcr-cont",
    "class": "D",
    "feature": "first-party data file GET /content/wknd/us/en/faqs/_jcr_content/contexthub.pagedata.json",
@@ -242,9 +200,68 @@
    "hostBound": "dead on target (404)"
   },
   {
-   "id": "f-form-cmp-search-form-origin-content-wknd-us-en-searchresul",
+   "id": "d-first-party-data-file-get-content-wknd-us-en-jcr-content-c",
+   "class": "D",
+   "feature": "first-party data file GET /content/wknd/us/en/_jcr_content/contexthub.pagedata.json",
+   "pages": 1,
+   "probed": 6,
+   "reach": {
+    "pages": 1,
+    "of": 26
+   },
+   "evidence": [
+    "GET /content/wknd/us/en/_jcr_content/contexthub.pagedata.json → 200"
+   ],
+   "pattern": "sheet-sync",
+   "disposition": "data-fed",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "data",
+   "decision": "none (sync from the source origin)",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "d-first-party-data-file-get-content-wknd-us-en-magazine-arct",
+   "class": "D",
+   "feature": "first-party data file GET /content/wknd/us/en/magazine/arctic-surfing/_jcr_content/contexthub.pagedata.json",
+   "pages": 1,
+   "probed": 6,
+   "reach": {
+    "pages": 1,
+    "of": 26
+   },
+   "evidence": [
+    "GET /content/wknd/us/en/magazine/arctic-surfing/_jcr_content/contexthub.pagedata.json → 200"
+   ],
+   "pattern": "sheet-sync",
+   "disposition": "data-fed",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "data",
+   "decision": "none (sync from the source origin)",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "f-form-cmp-search-form-origin-content-wknd-us-en-about-us-se",
    "class": "F",
-   "feature": "form \"cmp-search__form\" → origin /content/wknd/us/en.searchresults.json/_jcr_content/root/container/container_1195249223/search (1 fields)",
+   "feature": "form \"cmp-search__form\" → origin /content/wknd/us/en/about-us.searchresults.json/_jcr_content/root/container/container_1195249223/search (1 fields)",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "text:fulltext"
+   ],
+   "pattern": "forms",
+   "disposition": "rebuild-native",
+   "reproducibility": "needs-backend",
+   "status": "pending",
+   "phase": "forms",
+   "decision": "production endpoint; interim capture ships now"
+  },
+  {
+   "id": "f-form-cmp-search-form-origin-content-wknd-us-en-adventures-",
+   "class": "F",
+   "feature": "form \"cmp-search__form\" → origin /content/wknd/us/en/adventures/bali-surf-camp.searchresults.json/_jcr_content/root/container/container_1195249223/search (1 fields)",
    "pages": 1,
    "probed": 6,
    "reach": null,
@@ -276,60 +293,43 @@
    "decision": "production endpoint; interim capture ships now"
   },
   {
-   "id": "f-form-cmp-search-form-origin-content-wknd-us-en-adventures-",
-   "class": "F",
-   "feature": "form \"cmp-search__form\" → origin /content/wknd/us/en/adventures/climbing-new-zealand.searchresults.json/_jcr_content/root/container/container_1195249223/search (1 fields)",
-   "pages": 1,
-   "probed": 6,
-   "reach": null,
-   "evidence": [
-    "text:fulltext"
-   ],
-   "pattern": "forms",
-   "disposition": "rebuild-native",
-   "reproducibility": "needs-backend",
-   "status": "pending",
-   "phase": "forms",
-   "decision": "production endpoint; interim capture ships now"
-  },
-  {
-   "id": "f-form-cmp-search-form-origin-content-wknd-us-en-magazine-sa",
-   "class": "F",
-   "feature": "form \"cmp-search__form\" → origin /content/wknd/us/en/magazine/san-diego-surf.searchresults.json/_jcr_content/root/container/container_1195249223/search (1 fields)",
-   "pages": 1,
-   "probed": 6,
-   "reach": null,
-   "evidence": [
-    "text:fulltext"
-   ],
-   "pattern": "forms",
-   "disposition": "rebuild-native",
-   "reproducibility": "needs-backend",
-   "status": "pending",
-   "phase": "forms",
-   "decision": "production endpoint; interim capture ships now"
-  },
-  {
-   "id": "f-form-cmp-search-form-origin-content-wknd-us-en-about-us-se",
-   "class": "F",
-   "feature": "form \"cmp-search__form\" → origin /content/wknd/us/en/about-us.searchresults.json/_jcr_content/root/container/container_1195249223/search (1 fields)",
-   "pages": 1,
-   "probed": 6,
-   "reach": null,
-   "evidence": [
-    "text:fulltext"
-   ],
-   "pattern": "forms",
-   "disposition": "rebuild-native",
-   "reproducibility": "needs-backend",
-   "status": "pending",
-   "phase": "forms",
-   "decision": "production endpoint; interim capture ships now"
-  },
-  {
    "id": "f-form-cmp-search-form-origin-content-wknd-us-en-faqs-search",
    "class": "F",
    "feature": "form \"cmp-search__form\" → origin /content/wknd/us/en/faqs.searchresults.json/_jcr_content/root/container/container_1195249223/search (1 fields)",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "text:fulltext"
+   ],
+   "pattern": "forms",
+   "disposition": "rebuild-native",
+   "reproducibility": "needs-backend",
+   "status": "pending",
+   "phase": "forms",
+   "decision": "production endpoint; interim capture ships now"
+  },
+  {
+   "id": "f-form-cmp-search-form-origin-content-wknd-us-en-searchresul",
+   "class": "F",
+   "feature": "form \"cmp-search__form\" → origin /content/wknd/us/en.searchresults.json/_jcr_content/root/container/container_1195249223/search (1 fields)",
+   "pages": 1,
+   "probed": 6,
+   "reach": null,
+   "evidence": [
+    "text:fulltext"
+   ],
+   "pattern": "forms",
+   "disposition": "rebuild-native",
+   "reproducibility": "needs-backend",
+   "status": "pending",
+   "phase": "forms",
+   "decision": "production endpoint; interim capture ships now"
+  },
+  {
+   "id": "f-form-cmp-search-form-origin-content-wknd-us-en-magazine-ar",
+   "class": "F",
+   "feature": "form \"cmp-search__form\" → origin /content/wknd/us/en/magazine/arctic-surfing.searchresults.json/_jcr_content/root/container/container_1195249223/search (1 fields)",
    "pages": 1,
    "probed": 6,
    "reach": null,
@@ -351,10 +351,10 @@
    "probed": 6,
    "reach": null,
    "evidence": [
-    "https://wknd.site/ca/en.html",
+    "https://wknd.site/ca/en/about-us.html",
     "https://wknd.site/ca/fr.html",
     "https://wknd.site/ch/de.html",
-    "https://wknd.site/ca/en/adventures.html"
+    "https://wknd.site/ca/en/adventures/bali-surf-camp.html"
    ],
    "pattern": "locale-tree",
    "disposition": "rebuild-native",
@@ -394,9 +394,9 @@
    "decision": "index-driven or editorially curated?"
   },
   {
-   "id": "l-listing-candidate-cmp-list-5-cards",
+   "id": "l-listing-candidate-cmp-list-4-cards",
    "class": "L",
-   "feature": "listing candidate cmp-list (5 cards)",
+   "feature": "listing candidate cmp-list (4 cards)",
    "pages": 1,
    "probed": 6,
    "reach": null,
@@ -419,10 +419,10 @@
     "of": 26
    },
    "evidence": [
-    "https://wknd.site/us/en.html#sign-in",
-    "https://wknd.site/us/en.html#sign-out",
-    "https://wknd.site/us/en/adventures.html#sign-in",
-    "https://wknd.site/us/en/adventures.html#sign-out"
+    "https://wknd.site/us/en/about-us.html#sign-in",
+    "https://wknd.site/us/en/about-us.html#sign-out",
+    "https://wknd.site/us/en/adventures/bali-surf-camp.html#sign-in",
+    "https://wknd.site/us/en/adventures/bali-surf-camp.html#sign-out"
    ],
    "pattern": "chrome-interaction",
    "disposition": "rebuild-native",
@@ -508,10 +508,10 @@
    "probed": 6,
    "reach": null,
    "evidence": [
-    "https://wknd.site/us/en.html#sign-in",
+    "https://wknd.site/us/en/about-us.html#sign-in",
+    "https://wknd.site/us/en/adventures/bali-surf-camp.html#sign-in",
     "https://wknd.site/us/en/adventures.html#sign-in",
-    "https://wknd.site/us/en/adventures/climbing-new-zealand.html#sign-in",
-    "https://wknd.site/us/en/magazine/san-diego-surf.html#sign-in"
+    "https://wknd.site/us/en/faqs.html#sign-in"
    ],
    "pattern": "decided-out",
    "disposition": "decided-out",

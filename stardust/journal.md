@@ -343,3 +343,29 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 
 - User decision (option 1): the home page's first carousel slide title becomes the page `<h1>`, rendered at the h2 size. Register entry R-01 written; prototype + `us-en-html.css` edited; gate.sh rounds `r01` at 1440 and 360 both 0.00 % / Δ0 / no overflow; `stardust/migrated/us/en.html` re-placed and now lints 0 P0 / 0 P1.
 - DA token obtained through the `da-auth` skill (`da-auth-helper token`, browser IMS login), stored in `.env` (gitignored), valid to 2026-09-25T09:40Z; `admin.da.live/list` → 200.
+
+## A-inventory — 26 pages, 6 templates, DA coordinates filled (2026-09-24)
+
+- Gated-archetype precondition verified from `stardust/replica/progress.json`: all 6 archetypes (landing, listing, program, article, static, unique) `result.pass: true` at 1440 and 360, every residual carries a `cause`. Nothing blocked.
+- `inventory.mjs --site-url https://wknd.site/us/en` in full mode → `coverage/pages.json` (26 rows, all `pending`), `coverage/templates.json` (6: us-en-html:1, us-en-adventures-html:2, us-en-adventures-climbing-new-zealand-html:16, us-en-magazine-san-diego-surf-html:5, us-en-about-us-html:1, us-en-faqs-html:1), `rollout.json`.
+- **A-RO-0:** the brief's `--state stardust/state.json` (archetypes-only mode) produced 26 one-page templates because every page is fully migrated with a sidecar naming its `template`; full mode is the documented mode for a complete migrated tree and was used instead.
+- `rollout.json` `site.da` = catalan-adobe / eds-mig-20260914 / replica-wknd; `site.liveHost` = replica-wknd--eds-mig-20260914--catalan-adobe.aem.live (targeted edit).
+
+## B-block — 15 distinct blocks → 14 block conversions + 1 default-content, names locked (2026-09-24)
+
+- `blocks.mjs`: 15 distinct module blocks, 0 chrome (header/footer are foundation), 91 instances → 15 conversion points; most reused tabs×17, mini-carousel/trip-facts/sharing×16.
+- `plan.mjs`: representative-first per template; `plan.json` written. Cross-cluster shared blocks: featured-teaser / cards / hero-teaser (landing ↔ listing) and tabs (program ↔ listing).
+- Names locked in `stardust/eds-conversion-log.md` (deploy § 2 triage D1/D11 per module) and in `coverage/blocks.json` via `update-coverage.mjs --block … --eds-name`: `image-list → cards`, `content-fragment → article-body`, `sharing → default-content` (converted, omitted, A-RO-4). 14 blocks pending.
+- Cluster list (7 units): foundation (C0) → landing order 1 → program, article, static, unique order 2 (concurrent, disjoint) → listing order 3 (reuses tabs from program, cards/featured-teaser/hero-teaser from landing). Assumptions A-RO-0…6 in `direction.md`.
+
+## B2-dynamic — dynamic-features.md re-verified against fresh evidence, 11/11 rows dispositioned (2026-09-24)
+
+- `dynamics-detect.mjs` (run-bg `b2-detect`): 28 findings, 6 pages, reach rolled from the 26-page capture. `dynamics-plan.mjs --target-origin …replica-wknd…aem.page --migrated stardust/migrated`: 28 rows, host-bound 9/9, delivered 0.
+- Every fresh row maps to a curated DF-01…DF-11 row; no new evidence; every row carries a disposition. Note added to `stardust/dynamic-features.md` (consent-check.js replaces delayed.js for the DF-07 scaffold).
+
+## Rollout prepare — runtime contract, publish decision, cluster list, progress.json (2026-09-24)
+
+- `stardust/runtime-contract.json` written from `scripts/aem.js` + `scripts/scripts.js` + `head.html`: vanilla EDS, `formatted-only` buttonization into `p.button-wrapper` (`.button.primary|secondary|accent`), `div.<name>-wrapper` / `.<name>-container`, Trusted Types default policy (CSP `require-trusted-types-for 'script'`), `/nav` + `/footer` chrome documents, `emptySectionCollapse: true`, `documentElement.lang` hard-coded `en`, `consent-check.js` in `loadDelayed` (no `delayed.js`), stock `cards`/`columns`/`hero`/`widget` blocks present.
+- Publish decision PUBLISH recorded in `stardust/eds-conversion-log.md` (created) with the pre-existing-DA-content note (A-RO-1).
+- `stardust/rollout/progress.json`: units foundation (o0) → landing (o1) → program, article, static, unique (o2) → listing (o3) → final; every unit `pending`, each cluster carrying pageSlugs, daPaths, blocksToConvert, blocksToReuse.
+- Lint environment finding (conversion log § Lint environment): `lint:js` needs `NODE_PATH` to the `.work/lint-babel` shim; 0 runtime hits; `stardust/` to be added to `.eslintignore` by the foundation unit.

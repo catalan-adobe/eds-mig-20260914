@@ -1,0 +1,35 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-09-24T09:53:42.498Z",
+    "stardustVersion": "0.0.0"
+  },
+  "target": "aem-eds",
+  "site": {
+    "sourceUrl": "https://wknd.site/us/en",
+    "da": {
+      "org": "catalan-adobe",
+      "site": "eds-mig-20260914",
+      "ref": "replica-wknd"
+    },
+    "liveHost": "replica-wknd--eds-mig-20260914--catalan-adobe.aem.live"
+  },
+  "lastRun": {
+    "at": "2026-09-24T10:02:39.162Z",
+    "pages": {
+      "total": 26,
+      "verified": 0,
+      "deployed": 0,
+      "pending": 26,
+      "contentPending": 0,
+      "stale": 0,
+      "failed": 0
+    },
+    "blocks": {
+      "total": 15,
+      "converted": 1,
+      "pending": 14
+    },
+    "verifyFailures": 0
+  }
+}

@@ -79,3 +79,18 @@ as named assumptions in `stardust/direction.md`):
 | DF-02 Sign In / Sign Out behaviour | session-bound AEM Sites login/ContextHub; no auth backend on EDS | The header shows the "Welcome / Sign In / Sign Out" links exactly as designed; clicking does nothing until an owner-provided auth endpoint exists. |
 | DF-05 ContextHub + Granite CSRF/currentuser/infinity JSON | source-CMS runtime plumbing, no consumer on the migrated pages, 404 on target | Not migrated; no personalization or session state exists on the new host. |
 | DF-06 `Granite` / `CQ` globals | authoring-runtime globals | Not migrated. |
+
+## B2 re-verification (rollout prepare, 2026-09-24)
+
+Fresh evidence: `dynamics-detect.mjs --from-state --reach stardust/current` → 28 findings over
+6 probed pages (same feature set as the Phase 2 run; only the sampled sibling pages differ),
+`dynamics-plan.mjs --target-origin https://replica-wknd--eds-mig-20260914--catalan-adobe.aem.page
+--migrated stardust/migrated` → 28 rows, self 13, owner batch 14, delivered 0, host-bound 9/9.
+Every fresh row maps to DF-01…DF-11 (`adobeDataLayer` and the ad/retargeting pixel are inside
+DF-07); no new feature, no row without a disposition. Gate passes. Runtime note for the
+foundation: this boilerplate has no `delayed.js` — `scripts/scripts.js` `loadDelayed()` imports
+`scripts/consent-check.js` (consent declined by default, `consented.js` only on
+`?consent=accept`), so the DF-07 disabled tag scaffold lives behind `consented.js`, not a new
+`delayed.js`. DF-01 (search) stays `index-backed`, built in D2-dynamic (`helix-query.yaml` in the
+code branch + the search results page with a coverage row); the header ships the search form UI
+as chrome (DF-11) in C0.
