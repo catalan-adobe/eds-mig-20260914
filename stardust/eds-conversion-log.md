@@ -100,6 +100,31 @@ explained: the 2 "broken images" are the frozen header/footer logos on `preview.
 order heuristic paired `recent-articles` with `hero-teaser` (round-trip proves 4/4 cards in
 both cards instances). Lint: eslint 0, stylelint 0 on the four blocks.
 
+Published-origin gate (preview URL, `gate.sh --full`, live capture cached, 4 rounds):
+pub1 1440 10.23 % Δh −54 / 360 19.87 % Δh −95 → three lifts the harness could not show —
+(1) live images are inline `<img>` inside a block `div.image`, so every image line box carries
+a 7px baseline descender (cards 4×7, hero + featured + hero-teaser at 360): `<picture>` now
+plays the block box and the `<img>` stays inline; (2) `main`'s last section margin collapsed
+into `footer .footer { margin-top: 3rem }` (−48px; live `.page-main`/`.site-footer` are floats):
+`main:has(> .section.hero-carousel-container) { display: flow-root }` in hero-carousel.css +
+foundation request; (3) the carousel controls: the UA-font buttons (13.333px/normal, 1px 6px)
+and the inner `.hero-carousel-inner { margin-bottom: 4em }` box so the floated controls hang
+below it as on live (+10px). pub3 found the desktop hero image at its intrinsic 810px: live
+L367 sizes the INNER `.image` box to 640px too — a definite height the img's `height: 100%`
+can resolve against (flex-basis 0 % leaves the flex item indefinite) — restored on `picture`.
+**pub4: 1440 2.00 % Δh 2px, 360 2.41 % Δh 3px, 0 overflow → PASS**; crop bands 1440 header
+0.09 % / footer 0.02 %, 360 header 0.48 % / footer 0.89 % (bar 2 %); chrome-parity 25 = the
+foundation's justified set (A-C0-8: "Sign In" colour queued, icon-link names) + footer Δy −2px
+(= the two 1px separators, request filed); content-diff 13 🔴 — 9 in chrome (foundation set),
+4 in main: "San Diego Surf Spots" ROLE SWAP / MISSING CTA (the dropped hidden indicator text,
+A-C1-1 — the card link is present, extensionless) and the two `aria-label`s on the All
+Articles / All Trips buttons ("read our articles", "explore our adventures") — DA strips
+`aria-*` from authored anchors; the visible text stays descriptive — accepted residual.
+Computed-style guard 1440 + 360: 12 sections, 5 blocks flex, 16 visible images loaded,
+0 pageerror. Carousel driven on the preview: next/prev/dot move the active slide, 1 visible.
+`.plain.html`: 200, 1 h1, 0 about:error, 0 /img/, 13 `<picture>`/alt. `ai-readability`
+strict 100 % / code 100 %. Published (POST /live 200, aem.live 200).
+
 ## Program cluster — appended by its subagent
 
 ## Article cluster — appended by its subagent
