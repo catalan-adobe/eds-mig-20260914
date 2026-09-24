@@ -67,6 +67,8 @@
 }
 
 .footer .logo img {
+  /* wknd-logo-light.svg is 300×112: reserve its box before the icon loads (footer 341→260px shift) */
+  aspect-ratio: 300 / 112;
   height: auto;
   margin-bottom: 7px;
   margin-top: 7px;
