@@ -1,0 +1,4 @@
+{"ts":"2026-09-24T06:44:26Z","skill":"stardust:stardust","phase":"setup","event":"start","detail":"replica flow, hands-off; wknd.site"}
+{"ts":"2026-09-24T06:44:26Z","skill":"stardust:stardust","phase":"hands-off","event":"start","detail":"activated: user asked for autonomous workflow run"}
+{"ts":"2026-09-24T06:53:10Z","skill":"stardust:replica","phase":"extract","event":"start","detail":"extract --prep --dynamics of https://wknd.site/us/en (scope: /us/en subtree)"}
+{"ts":"2026-09-24T07:13:29Z","skill":"stardust:replica","phase":"extract","event":"end","detail":"26/26 live (medium 2500ms, HTTP 200); types landing 1, listing 2, program 16, article 5, static 1, unique 1; 14 module candidates; uncaptured first-level targets: none (no locale root captured); scope /us/en only (9 locale trees = D3-multilingual debt)"}
