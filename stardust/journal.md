@@ -226,3 +226,60 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 - Hands-off assumption A-MP-1 (direction.md): program-template deltas are content-driven and carry no variant; listing and article deltas are budgeted as variants above, never as per-page block forks.
 
 ---
+
+## Migrate — render unit `us-en-adventures-html` (listing), sibling `us-en-magazine-html` rendered (2026-09-24)
+
+- Path A′ fork of `stardust/prototypes/us-en-adventures-html-proposed.html` via `stardust/.work/migrate/build-us-en-magazine-html.mjs` → `stardust/.work/migrate/us-en-magazine-html.html` (header/footer/mobile nav verbatim from the archetype with the Magazine item active; `<head>` title + description from the capture; every heading, paragraph, CTA + href, image src/srcset/alt/width/height copied verbatim from `stardust/current/pages/us-en-magazine-html.html`).
+- Variants on the sibling only (`data-variant`): `teaser--featured` (canon rules), `teaser--list` + `teaser--secure` + `column--third` (authored in `stardust/.work/migrate/us-en-magazine-html.variants.css`), `no-tabs` image-list, default `text`, `separator--space-medium`.
+- Pixel bar (`gate.sh … sib1 --main "header + main"`): 1440 → 0.04 % / Δh 0 / overflow ok; 360 → 0.09 % / Δh 0 / overflow ok. All differing pixels sit in the y 0–500 header band (canon chrome noise, identical 1396 px at both widths); main is pixel-identical.
+- Content-count (`content-diff.mjs --profile generic --main "header + main"`): capture as source → counts equal on every root (25/6/6/8 main, 28 header, 17 footer), 16 🔴 all stylesheet artefacts of the unstyled capture (A-MR-L5); live as source → `Findings: none — content + roles match`. Zero content deviations.
+- Not done here by design: `migrate.mjs render`, `_meta.json`, `state.json`, `progress.json` — the place agent owns them.
+
+---
+
+## Migrate — render unit `us-en-adventures-climbing-new-zealand-html-2` (program), 7 siblings rendered (2026-09-24)
+
+- Path A′ fork of `stardust/prototypes/us-en-adventures-climbing-new-zealand-html-proposed.html` via `stardust/.work/migrate/gen-program.mjs` (playwright DOM read of the captured page, no network) → `stardust/.work/migrate/<slug>.html` for riverside-camping-australia, ski-touring-mont-blanc, surf-camp-costa-rica, tahoe-skiing, west-coast-cycling, whistler-mountain-biking, yosemite-backpacking. Injected verbatim: title/description, breadcrumb, carousel slides (1 or 3; src/srcset/width/height/alt/title absolutised to https://wknd.site), h1, 6 facts, "Share this Adventure", 3 tabs with full fragment bodies (`<h2><b>`, `<br>` inside headings, `&nbsp;`, lists, images kept as authored). Canon chrome untouched.
+- Variants (sibling content only, same class names as unit `-1`): `program-body--flush` + `program-facts--split` on tahoe-skiing, west-coast-cycling, yosemite-backpacking (live nested `aem-Grid--3` rail — A-MR2-1); `image--captioned` on surf-camp-costa-rica, tahoe-skiing, yosemite-backpacking (A-MR2-2). Rules in a `<style data-variants>` block per page (A-MR2-4).
+- Pixel bar (`gate.sh … sib1|sib2 --main "header + main"`, `stardust/replica/gates/<slug>-<w>/`): all 7 × 2 widths PASS, Δh 0 px, overflow ok — 1440: 0.02–0.04 % (riverside 0.02, ski-touring 0.02, surf 0.03, tahoe 0.03, west-coast 0.04, whistler 0.03, yosemite 0.04); 360: 0.04–0.07 % (0.05, 0.06, 0.06, 0.04, 0.05, 0.07, 0.05). Round 1 misses at 360 on the three grid-variant pages (24.6–27.9 %, Δh 166–234) closed in round 2 by the variants; no third round needed.
+- Content-count (`content-diff.mjs <styled capture> <build> --profile generic --main "header + main"`, A-MR2-3): "Findings: none — content + roles match" on all 7 pages, every root (header 28/28, footer 17/17, main equal per page incl. img counts).
+- Not done here by design: `migrate.mjs render`, `_meta.json`, `state.json`, `progress.json` — the place agent owns them. Gate logs: `stardust/.work/replica/bg/<slug>-{1440,360}[-r2].log`, `<slug>-cdiff.log`.
+
+## Migrate — render unit `us-en-adventures-climbing-new-zealand-html-1`: 8 program siblings rendered, gated, counted (2026-09-24)
+
+**Prompt:** Phase 5a render unit for the 8 program siblings of `us-en-adventures-climbing-new-zealand-html` (bali-surf-camp, beervana-portland, colorado-rock-climbing, cycling-southern-utah, cycling-tuscany, downhill-skiing-wyoming, gastronomic-marais-tour, napa-wine-tasting): fork the archetype, inject captured content verbatim, pixel bar at 1440/360, content-count; no `migrate.mjs render`, no state/progress writes.
+
+**Decisions:**
+- Path A′ by DOM transform of the captured `<main>` (A-MR1-1) — one script, eight forks, no hand-authored content.
+- Variance deltas as variant classes: `program-body--flush`, `program-facts--split` (5 pages), `image--captioned` (3 pages); rules inline in the sibling `<head>` (A-MR1-2/3).
+- Content-count reference = styled byte copy of the capture with `<base href>` (A-MR1-4, same as A-MR2-3).
+
+**Artifacts touched:**
+- stardust/.work/migrate/_render-program.mjs — created (render script)
+- stardust/.work/migrate/us-en-adventures-{bali-surf-camp,beervana-portland,colorado-rock-climbing,cycling-southern-utah,cycling-tuscany,downhill-skiing-wyoming,gastronomic-marais-tour,napa-wine-tasting}-html.html — created
+- stardust/.work/migrate/capture/<slug>.html — created (8 styled capture copies)
+- stardust/replica/gates/<slug>-{1440,360}/ — gate rounds sib1 (all), sib2 + sib3 (five flush pages)
+- stardust/direction.md — appended A-MR1-1…5
+
+**Findings worth flagging:**
+- Pixel bar: 1440 → 0.00 % (beervana, tuscany, wyoming) / 0.03–0.05 % (other five); 360 → 0.00 % on all 8; Δh 0 everywhere; overflow assert ok at both widths on all 8.
+- Two fix rounds were needed on the five "flush" pages: round 1 (padding only) moved 360 the wrong way (build shorter by 168–275 px) because the facts rail's column split, not the container padding, drove the height; measuring `.fragment--facts` / `.section-title` / `.sharing` against live named it.
+- Content-count: `Findings: none — content + roles match` on all 8 (header + main, header, footer). Unstyled capture as source gives 29 false 🔴 per page — never use it.
+- macOS BSD `sed` has no `0,/re/` address; a `<base>` injection via sed silently produced byte copies — use python/node for one-shot substitutions.
+
+**Open questions:**
+- none
+
+**Next:** place agent runs `migrate.mjs render` for this cluster, declares `variants[]` (`program-body--flush`, `program-facts--split`, `image--captioned`) and `modules[]` (`mini-carousel`, `trip-facts`, `sharing`, `tabs`) on the sidecars, then `gate-evidence.mjs`.
+
+---
+
+## Migrate — render unit `us-en-magazine-san-diego-surf-html` (article), 4 siblings rendered, gated, counted (2026-09-24)
+
+- Path A′ fork of `stardust/prototypes/us-en-magazine-san-diego-surf-html-proposed.html` via `stardust/.work/migrate/_render-article.mjs` (playwright DOM read of the captured page, no network) → `stardust/.work/migrate/<slug>.html` for arctic-surfing, guide-la-skateparks, ski-touring, western-australia; CSS/JS/favicon linked as `../../prototypes/…` / `../../current/…`; `<head>` carries the archetype meta + `stardust-archetype`, page title/description/og (A-MA-1).
+- Variants (sibling content only, rules in `<style data-variants>`): `section-title--underline` (arctic-surfing, guide-la-skateparks, western-australia — canon L323), `text` (arctic-surfing), `text--quote` (guide-la-skateparks, ski-touring, western-australia — live `.cmp-text--quote` lifted), `download` (guide-la-skateparks — sidebar PDF Download component, template-adapted + bespoke slot, A-MA-4). Sidebar children follow source order/presence (no hidden separator on arctic-surfing, ski-touring — A-MA-3); western-australia's empty live `.download` dropped.
+- Pixel bar (`gate.sh … sib1|sib2 --main "header + main"`, `stardust/replica/gates/<slug>-<w>/`): all 4 × 2 widths PASS, overflow ok. Final: 1440 — arctic 0.12 % Δh 2, skateparks 0.16 % Δh 2, ski-touring 0.12 % Δh 2, western-australia 0.17 % Δh 3; 360 — arctic 0.01 % Δh −1, skateparks 0.03 % Δh −1, ski-touring 0.01 % Δh −1, western-australia 0.03 % Δh −1. Round sib1 at 360 failed the |Δh| bar on three pages (arctic −37, ski-touring −37, skateparks +162) → separator/download fixes above → sib2 pass; two rounds used, cap not exceeded.
+- Content-count (`content-diff.mjs <styled capture> <build> --profile generic --main "header + main"`, A-MA-6): counts identical on every root for all 4 pages, 0 🔴; one 🟡 ICON MOVED per page (contributor photo, whitespace-only anchor difference) — not a deviation. Contributor `href="#"` → `#<initial><lastname>` per archetype convention (A-MA-5).
+- Not done here by design: `migrate.mjs render`, `_meta.json`, `state.json`, `progress.json` — the place agent owns them. Gate logs: `stardust/.work/replica/bg/<slug>-{1440,360}[-r2].log`, `<slug>-cd2.log`.
+
+**Next:** place agent runs `migrate.mjs render` for this cluster, declares `variants[]` per page (above) and `modules[]` (`content-fragment`, `contributor-byline`, `upnext-list`; `download` on guide-la-skateparks), records the `template-adapted` decision for the skateparks download block.

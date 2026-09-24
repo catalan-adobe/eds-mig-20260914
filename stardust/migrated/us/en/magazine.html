@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- stardust:migrate
+  writtenBy:        stardust:migrate
+  writtenAt:        2026-09-24T09:19:20Z
+  page:             Magazine
+  slug:             us-en-magazine-html
+  pagePath:         migrated/us/en/magazine.html
+  renderBranch:     A'
+  template:         us-en-adventures-html
+  archetypePath:    stardust/prototypes/us-en-adventures-html-proposed.html
+  archetypeSha:     34c5b2b34b57
+  sourceCurrent:    stardust/current/pages/us-en-magazine-html.json
+  againstDirection: stardust/direction.md (Active)
+  designMd:         DESIGN.md (sha: 720637eadd96)
+  designJson:       DESIGN.json (sha: a627c03a4224)
+  canonShas:        header:879f33c5a71d footer:e734a8699b2b css:bd936aef89b6
+  decisionTrace:    magazine._meta.json
+  brokenInternalLinks: 19
+  stardustVersion:  local
+-->
+<style>
+:root {
+  --heading-font-family: "Asar", Georgia, "Times New Roman", Times, serif;
+  --body-font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --icon-font-family: "wknd-icon-font";
+
+  --heading-xxl: 40px;
+  --heading-xl: 36px;
+  --heading-lg: 24px;
+  --heading-md: 16px;
+  --body: 18px;
+  --body-sm: 14px;
+  --body-xs: 12px;
+  --body-xxs: 10px;
+
+  --line-height-heading: 1.5;
+  --line-height-body: 1.5;
+
+  --color-bg: #fff;
+  --color-fg: #202020;
+  --color-accent: #ffea00;
+  --color-secondary: #202020;
+  --color-third: #ebebeb;
+  --color-fg-inverse: #ebebeb;
+  --color-fg-inverse-strong: #f7f7f7;
+  --color-muted: dimgray;
+  --color-link: #0045ff;
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 14px;
+  --spacing-lg: 27px;
+  --spacing-xl: 48px;
+  --spacing-2xl: 72px;
+
+  --section-padding: 48px;
+  --max-width: 1164px;
+  --root-max-width: 1680px;
+  --radius: 0;
+
+  --header-height: 200px;
+  --header-mobile-height: 130px;
+  --utility-nav-height: 25px;
+  --button-size: 48px;
+  --font-weight-bold: 600;
+}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Magazine","description":"Read articles about adventures and activities that we've recently experienced and would love to share with our community.","url":"https://wknd.site/us/en/magazine.html"}</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Magazine</title>
+<meta name="description" content="Read articles about adventures and activities that we've recently experienced and would love to share with our community.">
+<meta name="stardust-prototype" content="us-en-magazine-html">
+<meta name="stardust-archetype" content="us-en-adventures-html">
+<link rel="icon" href="../../assets/favicon.png">
+<link rel="stylesheet" href="../../assets/canon.css">
+<link rel="stylesheet" href="../../assets/us-en-adventures-html.css">
+<style data-variants="teaser--featured teaser--list teaser--secure column--third no-tabs text separator--space-medium">
+/* us-en-magazine-html — sibling variants of the listing archetype (us-en-adventures-html).
+   Lifted verbatim from clientlib-site.min.css: .cmp-teaser--list, .cmp-teaser--secure,
+   .cmp-separator--space-medium, aem-GridColumn default--4 / tablet--6 / phone--12. */
+
+/* separator--space-medium (live: .cmp-separator--space-medium .cmp-separator) */
+.separator--space-medium {
+  margin: 2em 0;
+}
+
+/* column--third (live: aem-GridColumn--default--4, --tablet--6, --phone--12) */
+.column--third {
+  width: 33.3333333333%;
+}
+
+@media (max-width: 1024px) {
+  .column--third {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .column--third {
+    width: 100%;
+  }
+}
+
+/* teaser--list (live: .cmp-teaser--list) */
+.teaser--list .teaser__image img {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.teaser--list .teaser__title {
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+}
+
+.teaser--list .teaser__description {
+  color: dimgray;
+  font-size: var(--body-sm);
+  text-transform: uppercase;
+}
+
+.teaser--list .teaser__description p {
+  font-size: var(--body-sm);
+}
+
+/* teaser--secure, anonymous visitor (live: body.anonymous .cmp-teaser--secure) */
+body.anonymous .teaser--secure::before {
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to top left, hsla(0, 0%, 100%, 0) 0, hsla(0, 0%, 100%, 0) 50%, var(--color-accent) 50%, var(--color-accent) 100%);
+  color: #000;
+  content: "\e98f";
+  font-family: var(--icon-font-family) !important;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  padding: 9pt;
+  position: relative;
+  text-transform: none;
+  top: 49px;
+  z-index: 2;
+}
+
+body.anonymous .teaser--secure .teaser {
+  opacity: .65;
+}
+
+body.anonymous .teaser--secure .teaser__actions {
+  background-color: #ebebeb;
+  color: dimgray;
+  font-size: var(--body-sm);
+  padding: .5em 1em;
+  text-transform: uppercase;
+}
+</style>
+</head>
+<body class="anonymous page--magazine" data-template="listing">
+<div class="page-root">
+<header class="site-header" data-canon data-section="site-header" data-intent="global navigation" data-layout="edge-to-edge" data-nav-collapse="hamburger">
+  <div class="utility-bar">
+    <div class="utility-bar__inner">
+      <div class="utility-bar__account">
+        <div class="account-links">
+          <span class="account-links__greeting" id="wkndGreetingLabel">Welcome</span>
+          <a class="account-links__link account-links__link--sign-in" href="#sign-in">Sign In</a>
+          <a class="account-links__link account-links__link--sign-out" href="#sign-out">Sign Out</a>
+        </div>
+      </div>
+      <div class="language-nav">
+        <div class="language-nav__toggle"><a id="langNavToggleHeader" href="#langNavToggle" aria-label="Toggle Language en-US">en-US</a></div>
+        <nav class="language-menu" role="navigation">
+          <ul>
+            <li class="language-menu__country language-menu__country--US"><span class="language-menu__country-title" lang="en-US">United States</span>
+              <ul>
+                <li class="language-menu__locale language-menu__locale--active"><a href="../../us/en.html" hreflang="en-US" lang="en-US" rel="alternate" title="WKND Adventures and Travel">en-US</a></li>
+                <li class="language-menu__locale"><a href="../../us/es.html" hreflang="es-US" lang="es-US" rel="alternate" title="Español" data-broken-link="true">es-US</a></li>
+              </ul>
+            </li>
+            <li class="language-menu__country language-menu__country--CA"><span class="language-menu__country-title" lang="en-CA">Canada</span>
+              <ul>
+                <li class="language-menu__locale"><a href="../../ca/en.html" hreflang="en-CA" lang="en-CA" rel="alternate" title="WKND Adventures and Travel" data-broken-link="true">en-CA</a></li>
+                <li class="language-menu__locale"><a href="../../ca/fr.html" hreflang="fr-CA" lang="fr-CA" rel="alternate" title="Français" data-broken-link="true">fr-CA</a></li>
+              </ul>
+            </li>
+            <li class="language-menu__country language-menu__country--CH"><span class="language-menu__country-title" lang="de-CH">Switzerland</span>
+              <ul>
+                <li class="language-menu__locale"><a href="../../ch/de.html" hreflang="de-CH" lang="de-CH" rel="alternate" title="Deutsch" data-broken-link="true">de-CH</a></li>
+                <li class="language-menu__locale"><a href="../../ch/fr.html" hreflang="fr-CH" lang="fr-CH" rel="alternate" title="Français" data-broken-link="true">fr-CH</a></li>
+                <li class="language-menu__locale"><a href="../../ch/it.html" hreflang="it-CH" lang="it-CH" rel="alternate" title="Italiano" data-broken-link="true">it-CH</a></li>
+              </ul>
+            </li>
+            <li class="language-menu__country language-menu__country--DE"><span class="language-menu__country-title" lang="de-DE">Germany</span>
+              <ul><li class="language-menu__locale"><a href="../../de/de.html" hreflang="de-DE" lang="de-DE" rel="alternate" title="Deutsch" data-broken-link="true">de-DE</a></li></ul>
+            </li>
+            <li class="language-menu__country language-menu__country--FR"><span class="language-menu__country-title" lang="fr-FR">France</span>
+              <ul><li class="language-menu__locale"><a href="../../fr/fr.html" hreflang="fr-FR" lang="fr-FR" rel="alternate" title="Français" data-broken-link="true">fr-FR</a></li></ul>
+            </li>
+            <li class="language-menu__country language-menu__country--ES"><span class="language-menu__country-title" lang="es-ES">Spain</span>
+              <ul><li class="language-menu__locale"><a href="../../es/es.html" hreflang="es-ES" lang="es-ES" rel="alternate" title="Español" data-broken-link="true">es-ES</a></li></ul>
+            </li>
+            <li class="language-menu__country language-menu__country--IT"><span class="language-menu__country-title" lang="it-IT">Italy</span>
+              <ul><li class="language-menu__locale"><a href="../../it/it.html" hreflang="it-IT" lang="it-IT" rel="alternate" title="Italiano" data-broken-link="true">it-IT</a></li></ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="masthead">
+    <div class="masthead__inner">
+      <div class="logo image" data-slot="logo"><a href="../../us/en.html"><img src="https://wknd.site/content/experience-fragments/wknd/language-masters/en/site/header/master/_jcr_content/root/container/container_1195249223/image.coreimg.svg/1594412560447/wknd-logo-dk.svg" loading="lazy" alt="WKND Logo"></a></div>
+      <nav class="primary-nav" role="navigation" data-slot="primary-nav">
+        <ul class="primary-nav__list">
+          <li class="is-home"><a href="../../us/en.html">Home</a></li>
+          <li class="is-active"><a href="../../us/en/magazine.html">Magazine</a></li>
+          <li><a href="../../us/en/adventures.html">Adventures</a></li>
+          <li><a href="../../us/en/faqs.html">FAQs</a></li>
+          <li><a href="../../us/en/about-us.html">About Us</a></li>
+        </ul>
+      </nav>
+      <section class="site-search" role="search">
+        <form class="site-search__form">
+          <div class="site-search__field">
+            <i class="site-search__icon"></i>
+            <input class="site-search__input" type="text" name="fulltext" placeholder="Search" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" aria-owns="site-search-results">
+            <button class="site-search__clear" type="button" aria-label="Clear"><i class="site-search__clear-icon"></i></button>
+          </div>
+        </form>
+        <div class="site-search__results" id="site-search-results" role="listbox" aria-label="Search results" aria-multiselectable="false"></div>
+        <script type="x-template">
+    <a class="cmp-search__item" data-cmp-hook-search="item" role="option" aria-selected="false">
+        <span class="cmp-search__item-title" data-cmp-hook-search="itemTitle"></span>
+    </a>
+</script>
+      </section>
+    </div>
+  </div>
+</header>
+<main class="page-main" data-template="listing">
+  <div class="container container--fixed" data-section="index-headline" data-intent="explain mechanic" data-layout="contained">
+    <h1 class="page-title" data-slot="index-headline">Magazine</h1>
+  </div>
+  <div class="container container--fixed" data-section="2">
+    <section class="column teaser--featured" data-section="hero" data-intent="emotional hook" data-layout="split-media" data-module="featured-teaser" data-slot="intro" data-variant="teaser--featured">
+      <div class="teaser">
+        <div class="teaser__content">
+          <p class="teaser__pretitle">Featured Article</p>
+          <h2 class="teaser__title">Camping in Western Australia</h2>
+          <div class="teaser__description">The Australian West coast is a camper’s heaven. Endless miles of desert roads leading to secret beaches, vast canyons and crystal clear rivers, and the very few people you are likely to meet on your journey will be some of the most easy-going characters you’ll find anywhere in the world.</div>
+          <div class="teaser__actions"><a class="teaser__cta" href="https://wknd.site/us/en/magazine/western-australia.html" data-broken-link="true">Read More</a></div>
+        </div>
+        <div class="teaser__image"><div class="image"><img src="https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_main.coreimg.jpeg/1660323792132/adobestock-156407519.jpeg" srcset="https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_main.coreimg.60.100.jpeg/1660323792132/adobestock-156407519.jpeg 100w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_main.coreimg.60.200.jpeg/1660323792132/adobestock-156407519.jpeg 200w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_main.coreimg.60.300.jpeg/1660323792132/adobestock-156407519.jpeg 300w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_main.coreimg.60.400.jpeg/1660323792132/adobestock-156407519.jpeg 400w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_main.coreimg.60.500.jpeg/1660323792132/adobestock-156407519.jpeg 500w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_main.coreimg.60.600.jpeg/1660323792132/adobestock-156407519.jpeg 600w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_main.coreimg.60.700.jpeg/1660323792132/adobestock-156407519.jpeg 700w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_main.coreimg.60.800.jpeg/1660323792132/adobestock-156407519.jpeg 800w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_main.coreimg.60.900.jpeg/1660323792132/adobestock-156407519.jpeg 900w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_main.coreimg.60.1000.jpeg/1660323792132/adobestock-156407519.jpeg 1000w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_main.coreimg.60.1100.jpeg/1660323792132/adobestock-156407519.jpeg 1100w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_main.coreimg.60.1200.jpeg/1660323792132/adobestock-156407519.jpeg 1200w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_main.coreimg.60.1600.jpeg/1660323792132/adobestock-156407519.jpeg 1600w" loading="lazy" itemprop="contentUrl" width="1313" height="739" alt="The Lennard River carves a stunning canyon through the Napier Range at Windjana Gorge, Kimberley Region, Western Australia. The permanent pools in the river provide a permanent habitat for dozens of freshwater crocodiles. Rudyards Kipling's story &quot;The Elephant Child,&quot; comes to mind every time I visit Windjana Gorge in the Kimberley,  when the Elephant child says: &quot;and still I want to know what the Crocodile has for dinner!'Then Kolokolo Bird said, with a mournful cry, 'Go to the banks of the great grey-green, greasy Limpopo River, all set about with fever-trees, and find out.&quot;At Windana Gorge the green waters of the gorge pools are filled with  Johnston crocodiles floating in the tepid green waters or resting on the hot sand banks.They add a real air of wild Australia below the complex and colourful ramparts of the Gorge where the Leonard River flows through the ancient Devonian reefs.The history of the renegade aboriginal tracker Jandamarra who hid in caves in this gorge and the screeching of the galahs circling overhead and wheeling about amongst the crags further adds to the primeval atmosphere of this special place in Australia." title="The Lennard River"></div></div>
+      </div>
+    </section>
+    <section class="column section-title section-title--underline" data-section="all-articles-title" data-intent="explain mechanic" data-layout="contained">
+      <h2 class="section-title__text">All Articles</h2>
+    </section>
+    <section class="column image-list" data-section="all-articles" data-intent="drive action" data-layout="grid" data-module="image-list" data-slot="card-grid" data-variant="no-tabs">
+        <ul class="card-list">
+        <li class="card-list__item"><article><a href="https://wknd.site/us/en/magazine/arctic-surfing.html" data-broken-link="true"><div class="image"><img src="https://wknd.site/us/en/magazine/arctic-surfing/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.jpeg/1660323789770/surfer-wave-02.jpeg" srcset="https://wknd.site/us/en/magazine/arctic-surfing/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.100.jpeg/1660323789770/surfer-wave-02.jpeg 100w, https://wknd.site/us/en/magazine/arctic-surfing/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.200.jpeg/1660323789770/surfer-wave-02.jpeg 200w, https://wknd.site/us/en/magazine/arctic-surfing/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.300.jpeg/1660323789770/surfer-wave-02.jpeg 300w, https://wknd.site/us/en/magazine/arctic-surfing/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.400.jpeg/1660323789770/surfer-wave-02.jpeg 400w, https://wknd.site/us/en/magazine/arctic-surfing/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.500.jpeg/1660323789770/surfer-wave-02.jpeg 500w, https://wknd.site/us/en/magazine/arctic-surfing/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.600.jpeg/1660323789770/surfer-wave-02.jpeg 600w, https://wknd.site/us/en/magazine/arctic-surfing/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.700.jpeg/1660323789770/surfer-wave-02.jpeg 700w, https://wknd.site/us/en/magazine/arctic-surfing/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.800.jpeg/1660323789770/surfer-wave-02.jpeg 800w, https://wknd.site/us/en/magazine/arctic-surfing/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.900.jpeg/1660323789770/surfer-wave-02.jpeg 900w, https://wknd.site/us/en/magazine/arctic-surfing/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1000.jpeg/1660323789770/surfer-wave-02.jpeg 1000w, https://wknd.site/us/en/magazine/arctic-surfing/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1100.jpeg/1660323789770/surfer-wave-02.jpeg 1100w, https://wknd.site/us/en/magazine/arctic-surfing/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1200.jpeg/1660323789770/surfer-wave-02.jpeg 1200w, https://wknd.site/us/en/magazine/arctic-surfing/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1600.jpeg/1660323789770/surfer-wave-02.jpeg 1600w" loading="lazy" itemprop="contentUrl" width="1279" height="853" alt="Arctic Surfing"></div></a> <a class="card-list__title-link" href="https://wknd.site/us/en/magazine/arctic-surfing.html" data-broken-link="true"><span class="card-list__title">Arctic Surfing</span></a> <span class="card-list__description">We traveled to Northern Norway to document the joy of surfing in extreme, but breathtakingly beautiful conditions.</span></article></li>
+        <li class="card-list__item"><article><a href="../../us/en/magazine/san-diego-surf.html"><div class="image"><img src="https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.jpeg/1660323790169/adobestock-164735399.jpeg" srcset="https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.100.jpeg/1660323790169/adobestock-164735399.jpeg 100w, https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.200.jpeg/1660323790169/adobestock-164735399.jpeg 200w, https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.300.jpeg/1660323790169/adobestock-164735399.jpeg 300w, https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.400.jpeg/1660323790169/adobestock-164735399.jpeg 400w, https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.500.jpeg/1660323790169/adobestock-164735399.jpeg 500w, https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.600.jpeg/1660323790169/adobestock-164735399.jpeg 600w, https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.700.jpeg/1660323790169/adobestock-164735399.jpeg 700w, https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.800.jpeg/1660323790169/adobestock-164735399.jpeg 800w, https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.900.jpeg/1660323790169/adobestock-164735399.jpeg 900w, https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1000.jpeg/1660323790169/adobestock-164735399.jpeg 1000w, https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1100.jpeg/1660323790169/adobestock-164735399.jpeg 1100w, https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1200.jpeg/1660323790169/adobestock-164735399.jpeg 1200w, https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1600.jpeg/1660323790169/adobestock-164735399.jpeg 1600w" loading="lazy" itemprop="contentUrl" width="1280" height="853" alt="San Diego Surf Spots" title="Gorgeous beach point breaks"></div></a> <a class="card-list__title-link" href="../../us/en/magazine/san-diego-surf.html"><span class="card-list__title">San Diego Surf Spots</span></a> <span class="card-list__description">Best beach breaks</span></article></li>
+        <li class="card-list__item"><article><a href="https://wknd.site/us/en/magazine/ski-touring.html" data-broken-link="true"><div class="image"><img src="https://wknd.site/us/en/magazine/ski-touring/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.jpeg/1660323789866/skitouring5sjoeberg.jpeg" srcset="https://wknd.site/us/en/magazine/ski-touring/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.100.jpeg/1660323789866/skitouring5sjoeberg.jpeg 100w, https://wknd.site/us/en/magazine/ski-touring/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.200.jpeg/1660323789866/skitouring5sjoeberg.jpeg 200w, https://wknd.site/us/en/magazine/ski-touring/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.300.jpeg/1660323789866/skitouring5sjoeberg.jpeg 300w, https://wknd.site/us/en/magazine/ski-touring/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.400.jpeg/1660323789866/skitouring5sjoeberg.jpeg 400w, https://wknd.site/us/en/magazine/ski-touring/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.500.jpeg/1660323789866/skitouring5sjoeberg.jpeg 500w, https://wknd.site/us/en/magazine/ski-touring/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.600.jpeg/1660323789866/skitouring5sjoeberg.jpeg 600w, https://wknd.site/us/en/magazine/ski-touring/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.700.jpeg/1660323789866/skitouring5sjoeberg.jpeg 700w, https://wknd.site/us/en/magazine/ski-touring/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.800.jpeg/1660323789866/skitouring5sjoeberg.jpeg 800w, https://wknd.site/us/en/magazine/ski-touring/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.900.jpeg/1660323789866/skitouring5sjoeberg.jpeg 900w, https://wknd.site/us/en/magazine/ski-touring/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1000.jpeg/1660323789866/skitouring5sjoeberg.jpeg 1000w, https://wknd.site/us/en/magazine/ski-touring/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1100.jpeg/1660323789866/skitouring5sjoeberg.jpeg 1100w, https://wknd.site/us/en/magazine/ski-touring/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1200.jpeg/1660323789866/skitouring5sjoeberg.jpeg 1200w, https://wknd.site/us/en/magazine/ski-touring/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1600.jpeg/1660323789866/skitouring5sjoeberg.jpeg 1600w" loading="lazy" itemprop="contentUrl" width="1280" height="853" alt="Ski Touring"></div></a> <a class="card-list__title-link" href="https://wknd.site/us/en/magazine/ski-touring.html" data-broken-link="true"><span class="card-list__title">Ski Touring</span></a> <span class="card-list__description">Learn about our ski touring experience and how it differs from traditional downhill skiing and even backcountry skiing.</span></article></li>
+        <li class="card-list__item"><article><a href="https://wknd.site/us/en/magazine/guide-la-skateparks.html" data-broken-link="true"><div class="image"><img src="https://wknd.site/us/en/magazine/guide-la-skateparks/_jcr_content/root/container/container/contentfragment/par2/image_copy.coreimg.png/1660323783259/article-01-picture-01.png" srcset="https://wknd.site/us/en/magazine/guide-la-skateparks/_jcr_content/root/container/container/contentfragment/par2/image_copy.coreimg.60.100.png/1660323783259/article-01-picture-01.png 100w, https://wknd.site/us/en/magazine/guide-la-skateparks/_jcr_content/root/container/container/contentfragment/par2/image_copy.coreimg.60.200.png/1660323783259/article-01-picture-01.png 200w, https://wknd.site/us/en/magazine/guide-la-skateparks/_jcr_content/root/container/container/contentfragment/par2/image_copy.coreimg.60.300.png/1660323783259/article-01-picture-01.png 300w, https://wknd.site/us/en/magazine/guide-la-skateparks/_jcr_content/root/container/container/contentfragment/par2/image_copy.coreimg.60.400.png/1660323783259/article-01-picture-01.png 400w, https://wknd.site/us/en/magazine/guide-la-skateparks/_jcr_content/root/container/container/contentfragment/par2/image_copy.coreimg.60.500.png/1660323783259/article-01-picture-01.png 500w, https://wknd.site/us/en/magazine/guide-la-skateparks/_jcr_content/root/container/container/contentfragment/par2/image_copy.coreimg.60.600.png/1660323783259/article-01-picture-01.png 600w, https://wknd.site/us/en/magazine/guide-la-skateparks/_jcr_content/root/container/container/contentfragment/par2/image_copy.coreimg.60.700.png/1660323783259/article-01-picture-01.png 700w, https://wknd.site/us/en/magazine/guide-la-skateparks/_jcr_content/root/container/container/contentfragment/par2/image_copy.coreimg.60.800.png/1660323783259/article-01-picture-01.png 800w, https://wknd.site/us/en/magazine/guide-la-skateparks/_jcr_content/root/container/container/contentfragment/par2/image_copy.coreimg.60.900.png/1660323783259/article-01-picture-01.png 900w, https://wknd.site/us/en/magazine/guide-la-skateparks/_jcr_content/root/container/container/contentfragment/par2/image_copy.coreimg.60.1000.png/1660323783259/article-01-picture-01.png 1000w, https://wknd.site/us/en/magazine/guide-la-skateparks/_jcr_content/root/container/container/contentfragment/par2/image_copy.coreimg.60.1100.png/1660323783259/article-01-picture-01.png 1100w, https://wknd.site/us/en/magazine/guide-la-skateparks/_jcr_content/root/container/container/contentfragment/par2/image_copy.coreimg.60.1200.png/1660323783259/article-01-picture-01.png 1200w, https://wknd.site/us/en/magazine/guide-la-skateparks/_jcr_content/root/container/container/contentfragment/par2/image_copy.coreimg.60.1600.png/1660323783259/article-01-picture-01.png 1600w" loading="lazy" itemprop="contentUrl" width="765" height="535" alt="Ultimate Guide to LA Skateparks"></div></a> <a class="card-list__title-link" href="https://wknd.site/us/en/magazine/guide-la-skateparks.html" data-broken-link="true"><span class="card-list__title">Ultimate Guide to LA Skateparks</span></a> <span class="card-list__description">Breaking down the top skate destinations in all of Los Angeles. You don't want to miss this!</span></article></li>
+        <li class="card-list__item"><article><a href="https://wknd.site/us/en/magazine/western-australia.html" data-broken-link="true"><div class="image"><img src="https://wknd.site/us/en/magazine/western-australia/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.jpeg/1660323770369/adobe-waadobe-wa-b6a7083.jpeg" srcset="https://wknd.site/us/en/magazine/western-australia/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.100.jpeg/1660323770369/adobe-waadobe-wa-b6a7083.jpeg 100w, https://wknd.site/us/en/magazine/western-australia/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.200.jpeg/1660323770369/adobe-waadobe-wa-b6a7083.jpeg 200w, https://wknd.site/us/en/magazine/western-australia/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.300.jpeg/1660323770369/adobe-waadobe-wa-b6a7083.jpeg 300w, https://wknd.site/us/en/magazine/western-australia/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.400.jpeg/1660323770369/adobe-waadobe-wa-b6a7083.jpeg 400w, https://wknd.site/us/en/magazine/western-australia/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.500.jpeg/1660323770369/adobe-waadobe-wa-b6a7083.jpeg 500w, https://wknd.site/us/en/magazine/western-australia/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.600.jpeg/1660323770369/adobe-waadobe-wa-b6a7083.jpeg 600w, https://wknd.site/us/en/magazine/western-australia/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.700.jpeg/1660323770369/adobe-waadobe-wa-b6a7083.jpeg 700w, https://wknd.site/us/en/magazine/western-australia/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.800.jpeg/1660323770369/adobe-waadobe-wa-b6a7083.jpeg 800w, https://wknd.site/us/en/magazine/western-australia/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.900.jpeg/1660323770369/adobe-waadobe-wa-b6a7083.jpeg 900w, https://wknd.site/us/en/magazine/western-australia/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.1000.jpeg/1660323770369/adobe-waadobe-wa-b6a7083.jpeg 1000w, https://wknd.site/us/en/magazine/western-australia/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.1100.jpeg/1660323770369/adobe-waadobe-wa-b6a7083.jpeg 1100w, https://wknd.site/us/en/magazine/western-australia/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.1200.jpeg/1660323770369/adobe-waadobe-wa-b6a7083.jpeg 1200w, https://wknd.site/us/en/magazine/western-australia/_jcr_content/root/container/container/contentfragment/par2/image.coreimg.60.1600.jpeg/1660323770369/adobe-waadobe-wa-b6a7083.jpeg 1600w" loading="lazy" itemprop="contentUrl" width="1280" height="853" alt="Western Australia"></div></a> <a class="card-list__title-link" href="https://wknd.site/us/en/magazine/western-australia.html" data-broken-link="true"><span class="card-list__title">Western Australia</span></a> <span class="card-list__description">The Australian West coast is a camper’s heaven. Endless miles of desert roads leading to secret beaches, vast canyons and crystal clear rivers, and the very few people you are likely to meet on your journey will be some of the most easy-going characters you’ll find anywhere in the world.</span></article></li>
+        </ul>
+    </section>
+    <section class="column section-title section-title--underline" data-section="members-only-title" data-intent="explain mechanic" data-layout="contained">
+      <h2 class="section-title__text">Members Only</h2>
+    </section>
+    <section class="column text" data-section="members-only-text" data-intent="explain mechanic" data-layout="contained" data-variant="default">
+      <p><b>Sign in&nbsp;</b>to un-lock exclusive content for WKND members only!</p>
+    </section>
+    <div class="column separator separator--space-medium"><hr></div>
+    <section class="column column--third teaser--list teaser--secure" data-section="members-only-teaser-1" data-intent="drive action" data-layout="grid" data-module="list-teaser" data-variant="teaser--list">
+      <div class="teaser">
+        <div class="teaser__content">
+          <h2 class="teaser__title">Alaskan Adventure</h2>
+          <div class="teaser__description"><p>Discover the 49th state</p></div>
+          <div class="teaser__actions">Read More</div>
+        </div>
+        <div class="teaser__image"><div class="image"><img src="https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser.coreimg.jpeg/1660323786175/alaskan-grizzly.jpeg" srcset="https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser.coreimg.60.100.jpeg/1660323786175/alaskan-grizzly.jpeg 100w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser.coreimg.60.200.jpeg/1660323786175/alaskan-grizzly.jpeg 200w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser.coreimg.60.300.jpeg/1660323786175/alaskan-grizzly.jpeg 300w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser.coreimg.60.400.jpeg/1660323786175/alaskan-grizzly.jpeg 400w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser.coreimg.60.500.jpeg/1660323786175/alaskan-grizzly.jpeg 500w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser.coreimg.60.600.jpeg/1660323786175/alaskan-grizzly.jpeg 600w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser.coreimg.60.700.jpeg/1660323786175/alaskan-grizzly.jpeg 700w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser.coreimg.60.800.jpeg/1660323786175/alaskan-grizzly.jpeg 800w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser.coreimg.60.900.jpeg/1660323786175/alaskan-grizzly.jpeg 900w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser.coreimg.60.1000.jpeg/1660323786175/alaskan-grizzly.jpeg 1000w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser.coreimg.60.1100.jpeg/1660323786175/alaskan-grizzly.jpeg 1100w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser.coreimg.60.1200.jpeg/1660323786175/alaskan-grizzly.jpeg 1200w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser.coreimg.60.1600.jpeg/1660323786175/alaskan-grizzly.jpeg 1600w" loading="lazy" itemprop="contentUrl" width="1280" height="853" alt=""></div></div>
+      </div>
+    </section>
+    <section class="column column--third teaser--list teaser--secure" data-section="members-only-teaser-2" data-intent="drive action" data-layout="grid" data-module="list-teaser" data-variant="teaser--list">
+      <div class="teaser">
+        <div class="teaser__content">
+          <h2 class="teaser__title">Fly Fishing the Amazon</h2>
+          <div class="teaser__description">Experience the Amazon like never before</div>
+          <div class="teaser__actions">Read More</div>
+        </div>
+        <div class="teaser__image"><div class="image"><img src="https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_copy.coreimg.jpeg/1660323790791/amazon-river-02.jpeg" srcset="https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_copy.coreimg.60.100.jpeg/1660323790791/amazon-river-02.jpeg 100w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_copy.coreimg.60.200.jpeg/1660323790791/amazon-river-02.jpeg 200w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_copy.coreimg.60.300.jpeg/1660323790791/amazon-river-02.jpeg 300w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_copy.coreimg.60.400.jpeg/1660323790791/amazon-river-02.jpeg 400w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_copy.coreimg.60.500.jpeg/1660323790791/amazon-river-02.jpeg 500w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_copy.coreimg.60.600.jpeg/1660323790791/amazon-river-02.jpeg 600w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_copy.coreimg.60.700.jpeg/1660323790791/amazon-river-02.jpeg 700w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_copy.coreimg.60.800.jpeg/1660323790791/amazon-river-02.jpeg 800w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_copy.coreimg.60.900.jpeg/1660323790791/amazon-river-02.jpeg 900w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_copy.coreimg.60.1000.jpeg/1660323790791/amazon-river-02.jpeg 1000w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_copy.coreimg.60.1100.jpeg/1660323790791/amazon-river-02.jpeg 1100w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_copy.coreimg.60.1200.jpeg/1660323790791/amazon-river-02.jpeg 1200w, https://wknd.site/us/en/magazine/_jcr_content/root/container/teaser_copy.coreimg.60.1600.jpeg/1660323790791/amazon-river-02.jpeg 1600w" loading="lazy" itemprop="contentUrl" width="1280" height="853" alt=""></div></div>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="site-footer" data-canon data-section="site-footer" data-intent="build trust" data-layout="contained">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="logo image" data-slot="logo"><a href="../../us/en.html"><img src="https://wknd.site/content/experience-fragments/wknd/language-masters/en/site/footer/master/_jcr_content/root/container/container/image.coreimg.svg/1594412963641/wknd-logo-light.svg" loading="lazy" alt="WKND Logo"></a></div>
+      <nav class="footer-nav" role="navigation" aria-label="Footer navigation" data-slot="footer-nav">
+        <ul class="footer-nav__list">
+          <li class="is-home"><a href="../../us/en.html">Home</a></li>
+          <li class="is-active"><a href="../../us/en/magazine.html">Magazine</a></li>
+          <li><a href="../../us/en/adventures.html">Adventures</a></li>
+          <li><a href="../../us/en/faqs.html">FAQs</a></li>
+          <li><a href="../../us/en/about-us.html">About Us</a></li>
+        </ul>
+      </nav>
+      <div class="footer-follow"><h4>Follow Us</h4></div>
+      <div class="social-buttons" data-slot="social">
+        <div class="social-buttons__list">
+          <div class="button button--icon"><a href="#facebookwknd" aria-label="Facebook WKND Button"><span class="icon icon--facebook"></span><span>Facebook</span></a></div>
+          <div class="button button--icon"><a href="#twitterWKND" aria-label="Twitter WKND Button"><span class="icon icon--twitter"></span><span>Twitter</span></a></div>
+          <div class="button button--icon"><a href="#instagramwknd" aria-label="Instagram WKND"><span class="icon icon--instagram"></span><span>Instagram</span></a></div>
+        </div>
+      </div>
+      <div class="separator separator--hidden separator--space-small"><hr></div>
+      <div class="footer-text" data-slot="legal">
+<p>Ⓒ 2019,&nbsp;&nbsp;WKND Site.</p>
+<p>WKND is a fictitious adventure and travel website created by Adobe to demonstrate how anyone can use Adobe Experience Manager to build a beautiful, feature-rich website over a single weekend. This site is built entirely with Adobe Experience Manager&nbsp;<a href="https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html">Core Components</a>&nbsp;and&nbsp;<a href="https://github.com/adobe/aem-project-archetype">Archetype</a>&nbsp;that are available as open source code to the public. The entire&nbsp;<a href="https://github.com/adobe/aem-guides-wknd/">site source code</a>&nbsp;is available as open source as well and is accompanied with a&nbsp;<a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">detailed tutorial</a>&nbsp;on how to recreate the site.</p>
+<p>Many of the beautiful images in the WKND site are available for purchase via&nbsp;<a href="https://stock.adobe.com/">Adobe Stock</a>.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+<div class="nav-toggle"><a href="#mobileNav" aria-label="Open hidden mobile navigation" class="toggle"><i class="icon icon--menu" aria-hidden="true"></i></a></div>
+<div class="mobile-nav" id="mobileNav"><nav>
+  <ul>
+    <li><a href="../../us/en/magazine.html">Magazine</a></li>
+    <li><a href="../../us/en/adventures.html">Adventures</a></li>
+    <li><a href="../../us/en/faqs.html">FAQs</a></li>
+    <li><a href="../../us/en/about-us.html">About Us</a></li>
+  </ul>
+</nav></div>
+<script src="../../assets/canon.js"></script>
+</body>
+</html>

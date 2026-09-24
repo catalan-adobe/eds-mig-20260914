@@ -1,36 +1,63 @@
 {
   "flow": "replica",
   "phase": "migrate",
-  "updatedAt": "2026-09-24T08:43:57Z",
+  "updatedAt": "2026-09-24T09:23:36Z",
   "units": {
     "plan": {
       "status": "done",
       "kind": "plan",
-      "templates": ["us-en-html", "us-en-adventures-html", "us-en-adventures-climbing-new-zealand-html", "us-en-magazine-san-diego-surf-html", "us-en-about-us-html", "us-en-faqs-html"],
+      "templates": [
+        "us-en-html",
+        "us-en-adventures-html",
+        "us-en-adventures-climbing-new-zealand-html",
+        "us-en-magazine-san-diego-surf-html",
+        "us-en-about-us-html",
+        "us-en-faqs-html"
+      ],
       "pages": 6,
       "startedAt": "2026-09-24T08:37:17Z",
       "endedAt": "2026-09-24T08:43:57Z",
       "verdict": "rendered 6, unchanged 0, refused 0, passthrough 0 (Path A archetypes); variance probes: listing exit 2 (magazine.html: featured+list teasers, no tabs, +text), program exit 2 (content-length boxes only), article exit 2 (+text block, underline h2 titles)"
     },
     "us-en-adventures-html": {
-      "status": "pending",
+      "status": "done",
       "kind": "render",
-      "templates": ["us-en-adventures-html"],
+      "templates": [
+        "us-en-adventures-html"
+      ],
       "archetype": "us-en-adventures-html",
-      "siblings": ["us-en-magazine-html"],
+      "siblings": [
+        "us-en-magazine-html"
+      ],
       "pages": 1,
       "variance": "stardust/migrate/variance/us-en-adventures-html.json",
-      "variants": ["teaser--featured", "teaser--list", "no-tabs image-list", "text"],
-      "startedAt": null,
-      "endedAt": null,
-      "verdict": null
+      "variants": [
+        "teaser--featured",
+        "teaser--list",
+        "no-tabs image-list",
+        "text"
+      ],
+      "startedAt": "2026-09-24T09:17:51Z",
+      "endedAt": "2026-09-24T09:23:36Z",
+      "verdict": "rendered 1, unchanged 0, refused 0, passthrough 0 (A' sibling; 7 variants; gates 7/7 incl. variance-probe re-run as run-bg job variance-listing)"
     },
     "us-en-adventures-climbing-new-zealand-html-1": {
       "status": "pending",
       "kind": "render",
-      "templates": ["us-en-adventures-climbing-new-zealand-html"],
+      "templates": [
+        "us-en-adventures-climbing-new-zealand-html"
+      ],
       "archetype": "us-en-adventures-climbing-new-zealand-html",
-      "siblings": ["us-en-adventures-bali-surf-camp-html", "us-en-adventures-beervana-portland-html", "us-en-adventures-colorado-rock-climbing-html", "us-en-adventures-cycling-southern-utah-html", "us-en-adventures-cycling-tuscany-html", "us-en-adventures-downhill-skiing-wyoming-html", "us-en-adventures-gastronomic-marais-tour-html", "us-en-adventures-napa-wine-tasting-html"],
+      "siblings": [
+        "us-en-adventures-bali-surf-camp-html",
+        "us-en-adventures-beervana-portland-html",
+        "us-en-adventures-colorado-rock-climbing-html",
+        "us-en-adventures-cycling-southern-utah-html",
+        "us-en-adventures-cycling-tuscany-html",
+        "us-en-adventures-downhill-skiing-wyoming-html",
+        "us-en-adventures-gastronomic-marais-tour-html",
+        "us-en-adventures-napa-wine-tasting-html"
+      ],
       "pages": 8,
       "variance": "stardust/migrate/variance/us-en-adventures-climbing-new-zealand-html.json",
       "variants": [],
@@ -41,9 +68,19 @@
     "us-en-adventures-climbing-new-zealand-html-2": {
       "status": "pending",
       "kind": "render",
-      "templates": ["us-en-adventures-climbing-new-zealand-html"],
+      "templates": [
+        "us-en-adventures-climbing-new-zealand-html"
+      ],
       "archetype": "us-en-adventures-climbing-new-zealand-html",
-      "siblings": ["us-en-adventures-riverside-camping-australia-html", "us-en-adventures-ski-touring-mont-blanc-html", "us-en-adventures-surf-camp-costa-rica-html", "us-en-adventures-tahoe-skiing-html", "us-en-adventures-west-coast-cycling-html", "us-en-adventures-whistler-mountain-biking-html", "us-en-adventures-yosemite-backpacking-html"],
+      "siblings": [
+        "us-en-adventures-riverside-camping-australia-html",
+        "us-en-adventures-ski-touring-mont-blanc-html",
+        "us-en-adventures-surf-camp-costa-rica-html",
+        "us-en-adventures-tahoe-skiing-html",
+        "us-en-adventures-west-coast-cycling-html",
+        "us-en-adventures-whistler-mountain-biking-html",
+        "us-en-adventures-yosemite-backpacking-html"
+      ],
       "pages": 7,
       "variance": "stardust/migrate/variance/us-en-adventures-climbing-new-zealand-html.json",
       "variants": [],
@@ -54,12 +91,22 @@
     "us-en-magazine-san-diego-surf-html": {
       "status": "pending",
       "kind": "render",
-      "templates": ["us-en-magazine-san-diego-surf-html"],
+      "templates": [
+        "us-en-magazine-san-diego-surf-html"
+      ],
       "archetype": "us-en-magazine-san-diego-surf-html",
-      "siblings": ["us-en-magazine-arctic-surfing-html", "us-en-magazine-guide-la-skateparks-html", "us-en-magazine-ski-touring-html", "us-en-magazine-western-australia-html"],
+      "siblings": [
+        "us-en-magazine-arctic-surfing-html",
+        "us-en-magazine-guide-la-skateparks-html",
+        "us-en-magazine-ski-touring-html",
+        "us-en-magazine-western-australia-html"
+      ],
       "pages": 4,
       "variance": "stardust/migrate/variance/us-en-magazine-san-diego-surf-html.json",
-      "variants": ["section-title--underline", "text"],
+      "variants": [
+        "section-title--underline",
+        "text"
+      ],
       "startedAt": null,
       "endedAt": null,
       "verdict": null
