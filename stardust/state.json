@@ -1,7 +1,7 @@
 {
   "_provenance": {
-    "writtenBy": "stardust:replica",
-    "writtenAt": "2026-09-24T09:25:40Z",
+    "writtenBy": "stardust:migrate",
+    "writtenAt": "2026-09-24T09:28:43Z",
     "stardustVersion": "0.10.0"
   },
   "site": {
@@ -52,7 +52,7 @@
       "url": "https://wknd.site/us/en/adventures/bali-surf-camp.html",
       "title": "Bali Surf Camp",
       "type": "program",
-      "status": "directed",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -61,20 +61,24 @@
         {
           "status": "directed",
           "at": "2026-09-24T09:23:47Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-adventures-bali-surf-camp-html.json",
       "prototypePath": null,
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/us/en/adventures/bali-surf-camp.html"
     },
     {
       "slug": "us-en-adventures-beervana-portland-html",
       "url": "https://wknd.site/us/en/adventures/beervana-portland.html",
       "title": "Beervana in Portland",
       "type": "program",
-      "status": "directed",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -83,13 +87,17 @@
         {
           "status": "directed",
           "at": "2026-09-24T09:23:47Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-adventures-beervana-portland-html.json",
       "prototypePath": null,
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/us/en/adventures/beervana-portland.html"
     },
     {
       "slug": "us-en-adventures-climbing-new-zealand-html",
@@ -123,7 +131,7 @@
       "url": "https://wknd.site/us/en/adventures/colorado-rock-climbing.html",
       "title": "Colorado Rock Climbing",
       "type": "program",
-      "status": "directed",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -132,20 +140,24 @@
         {
           "status": "directed",
           "at": "2026-09-24T09:23:47Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-adventures-colorado-rock-climbing-html.json",
       "prototypePath": null,
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/us/en/adventures/colorado-rock-climbing.html"
     },
     {
       "slug": "us-en-adventures-cycling-southern-utah-html",
       "url": "https://wknd.site/us/en/adventures/cycling-southern-utah.html",
       "title": "Cycling Southern Utah",
       "type": "program",
-      "status": "directed",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -154,20 +166,24 @@
         {
           "status": "directed",
           "at": "2026-09-24T09:23:47Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-adventures-cycling-southern-utah-html.json",
       "prototypePath": null,
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/us/en/adventures/cycling-southern-utah.html"
     },
     {
       "slug": "us-en-adventures-cycling-tuscany-html",
       "url": "https://wknd.site/us/en/adventures/cycling-tuscany.html",
       "title": "Cycling Tuscany",
       "type": "program",
-      "status": "directed",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -176,20 +192,24 @@
         {
           "status": "directed",
           "at": "2026-09-24T09:23:47Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-adventures-cycling-tuscany-html.json",
       "prototypePath": null,
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/us/en/adventures/cycling-tuscany.html"
     },
     {
       "slug": "us-en-adventures-downhill-skiing-wyoming-html",
       "url": "https://wknd.site/us/en/adventures/downhill-skiing-wyoming.html",
       "title": "Downhill Skiing Wyoming",
       "type": "program",
-      "status": "directed",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -198,20 +218,24 @@
         {
           "status": "directed",
           "at": "2026-09-24T09:23:47Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-adventures-downhill-skiing-wyoming-html.json",
       "prototypePath": null,
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/us/en/adventures/downhill-skiing-wyoming.html"
     },
     {
       "slug": "us-en-adventures-gastronomic-marais-tour-html",
       "url": "https://wknd.site/us/en/adventures/gastronomic-marais-tour.html",
       "title": "Gastronomic Marais Tour",
       "type": "program",
-      "status": "directed",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -220,13 +244,17 @@
         {
           "status": "directed",
           "at": "2026-09-24T09:23:47Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-adventures-gastronomic-marais-tour-html.json",
       "prototypePath": null,
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/us/en/adventures/gastronomic-marais-tour.html"
     },
     {
       "slug": "us-en-adventures-html",
@@ -260,7 +288,7 @@
       "url": "https://wknd.site/us/en/adventures/napa-wine-tasting.html",
       "title": "Napa Wine Tasting",
       "type": "program",
-      "status": "directed",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -269,20 +297,24 @@
         {
           "status": "directed",
           "at": "2026-09-24T09:23:47Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-adventures-napa-wine-tasting-html.json",
       "prototypePath": null,
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/us/en/adventures/napa-wine-tasting.html"
     },
     {
       "slug": "us-en-adventures-riverside-camping-australia-html",
       "url": "https://wknd.site/us/en/adventures/riverside-camping-australia.html",
       "title": "Riverside Camping",
       "type": "program",
-      "status": "directed",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -291,20 +323,24 @@
         {
           "status": "directed",
           "at": "2026-09-24T09:25:19Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-adventures-riverside-camping-australia-html.json",
       "prototypePath": null,
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/us/en/adventures/riverside-camping-australia.html"
     },
     {
       "slug": "us-en-adventures-ski-touring-mont-blanc-html",
       "url": "https://wknd.site/us/en/adventures/ski-touring-mont-blanc.html",
       "title": "Ski Touring Mont Blanc",
       "type": "program",
-      "status": "directed",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -313,20 +349,24 @@
         {
           "status": "directed",
           "at": "2026-09-24T09:25:19Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-adventures-ski-touring-mont-blanc-html.json",
       "prototypePath": null,
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/us/en/adventures/ski-touring-mont-blanc.html"
     },
     {
       "slug": "us-en-adventures-surf-camp-costa-rica-html",
       "url": "https://wknd.site/us/en/adventures/surf-camp-costa-rica.html",
       "title": "Surf Camp in Costa Rica",
       "type": "program",
-      "status": "directed",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -335,20 +375,24 @@
         {
           "status": "directed",
           "at": "2026-09-24T09:25:19Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-adventures-surf-camp-costa-rica-html.json",
       "prototypePath": null,
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/us/en/adventures/surf-camp-costa-rica.html"
     },
     {
       "slug": "us-en-adventures-tahoe-skiing-html",
       "url": "https://wknd.site/us/en/adventures/tahoe-skiing.html",
       "title": "Tahoe Skiing",
       "type": "program",
-      "status": "directed",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -357,20 +401,24 @@
         {
           "status": "directed",
           "at": "2026-09-24T09:25:19Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-adventures-tahoe-skiing-html.json",
       "prototypePath": null,
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/us/en/adventures/tahoe-skiing.html"
     },
     {
       "slug": "us-en-adventures-west-coast-cycling-html",
       "url": "https://wknd.site/us/en/adventures/west-coast-cycling.html",
       "title": "West Coast Cycling",
       "type": "program",
-      "status": "directed",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -379,20 +427,24 @@
         {
           "status": "directed",
           "at": "2026-09-24T09:25:19Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-adventures-west-coast-cycling-html.json",
       "prototypePath": null,
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/us/en/adventures/west-coast-cycling.html"
     },
     {
       "slug": "us-en-adventures-whistler-mountain-biking-html",
       "url": "https://wknd.site/us/en/adventures/whistler-mountain-biking.html",
       "title": "Whistler Mountain Biking",
       "type": "program",
-      "status": "directed",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -401,20 +453,24 @@
         {
           "status": "directed",
           "at": "2026-09-24T09:25:19Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-adventures-whistler-mountain-biking-html.json",
       "prototypePath": null,
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/us/en/adventures/whistler-mountain-biking.html"
     },
     {
       "slug": "us-en-adventures-yosemite-backpacking-html",
       "url": "https://wknd.site/us/en/adventures/yosemite-backpacking.html",
       "title": "Yosemite Backpacking",
       "type": "program",
-      "status": "directed",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -423,13 +479,17 @@
         {
           "status": "directed",
           "at": "2026-09-24T09:25:19Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-adventures-yosemite-backpacking-html.json",
       "prototypePath": null,
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/us/en/adventures/yosemite-backpacking.html"
     },
     {
       "slug": "us-en-faqs-html",
@@ -490,7 +550,7 @@
       "url": "https://wknd.site/us/en/magazine/arctic-surfing.html",
       "title": "Arctic Surfing",
       "type": "article",
-      "status": "directed",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -499,20 +559,24 @@
         {
           "status": "directed",
           "at": "2026-09-24T09:25:40Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-magazine-arctic-surfing-html.json",
       "prototypePath": null,
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/us/en/magazine/arctic-surfing.html"
     },
     {
       "slug": "us-en-magazine-guide-la-skateparks-html",
       "url": "https://wknd.site/us/en/magazine/guide-la-skateparks.html",
       "title": "Ultimate Guide to LA Skateparks",
       "type": "article",
-      "status": "directed",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -521,20 +585,24 @@
         {
           "status": "directed",
           "at": "2026-09-24T09:25:40Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-magazine-guide-la-skateparks-html.json",
       "prototypePath": null,
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/us/en/magazine/guide-la-skateparks.html"
     },
     {
       "slug": "us-en-magazine-html",
       "url": "https://wknd.site/us/en/magazine.html",
       "title": "Magazine",
       "type": "listing",
-      "status": "directed",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -543,13 +611,17 @@
         {
           "status": "directed",
           "at": "2026-09-24T09:18:18Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-magazine-html.json",
       "prototypePath": null,
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/us/en/magazine.html"
     },
     {
       "slug": "us-en-magazine-san-diego-surf-html",
@@ -583,7 +655,7 @@
       "url": "https://wknd.site/us/en/magazine/ski-touring.html",
       "title": "Ski Touring",
       "type": "article",
-      "status": "directed",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -592,20 +664,24 @@
         {
           "status": "directed",
           "at": "2026-09-24T09:25:40Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-magazine-ski-touring-html.json",
       "prototypePath": null,
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/us/en/magazine/ski-touring.html"
     },
     {
       "slug": "us-en-magazine-western-australia-html",
       "url": "https://wknd.site/us/en/magazine/western-australia.html",
       "title": "Western Australia",
       "type": "article",
-      "status": "directed",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -614,13 +690,17 @@
         {
           "status": "directed",
           "at": "2026-09-24T09:25:40Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T09:28:43Z"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/us-en-magazine-western-australia-html.json",
       "prototypePath": null,
-      "migratedPath": null
+      "migratedPath": "stardust/migrated/us/en/magazine/western-australia.html"
     }
   ],
   "migrate": {

@@ -1,7 +1,7 @@
 {
   "flow": "replica",
   "phase": "migrate",
-  "updatedAt": "2026-09-24T09:28:19Z",
+  "updatedAt": "2026-09-24T09:29:33Z",
   "units": {
     "plan": {
       "status": "done",
@@ -110,6 +110,15 @@
       "startedAt": "2026-09-24T09:25:40Z",
       "endedAt": "2026-09-24T09:28:19Z",
       "verdict": "rendered 4, unchanged 0, refused 0, passthrough 0 (A' siblings; 6 gates each, media-reconcile n/a until delivery; guide-la-skateparks PDF /content/dam link logged soft-broken → asset rehost at rollout)"
+    },
+    "report": {
+      "status": "done",
+      "kind": "report",
+      "templates": [],
+      "pages": 0,
+      "startedAt": "2026-09-24T09:28:19Z",
+      "endedAt": "2026-09-24T09:29:33Z",
+      "verdict": "20 siblings migrated (A' sibling tier), 0 refused, 0 unmigrated; gate-evidence --check exit 0; archetypes remain approved (plan unit scope)"
     }
   }
 }

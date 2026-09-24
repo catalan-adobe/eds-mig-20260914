@@ -56,7 +56,7 @@
   "gateEvidence": {
     "content-fidelity": "verbatim from stardust/current/pages/us-en-magazine-guide-la-skateparks-html.html; content-diff: main 40 text / 8 headings / 10 CTAs / 4 img = source; header 28/28, footer 17/17; 0 red, 1 yellow ICON MOVED (contributor photo, whitespace-only anchor); deviations logged in contentDeviations[]",
     "pixel-gate-1440": "0.16% (11307 px, threshold 10%), height delta 2px, round sib2 @1440 (us-en-magazine-guide-la-skateparks-html-1440-r2.log) [prototype regime]",
-    "pixel-gate-360": "0.03% (675 px, threshold 10%), height delta -1px, round sib2 @360 (us-en-magazine-guide-la-skateparks-html-360-r2.log) [prototype regime]",
+    "pixel-gate-360": "0.03% (675 px, threshold 10%), height delta -1px, round placed @360 (us-en-magazine-guide-la-skateparks-html-360-placed.log) [prototype regime]",
     "content-count": "content-diff: 1 (0 structural 🔴) (us-en-magazine-guide-la-skateparks-html-cd2.log)",
     "media-reconcile": "n/a: no delivered content file yet (content/us/en/magazine/guide-la-skateparks.html) — media-reconcile runs in the delivery chain (row C)",
     "delivery-lint": "0 P0 · 0 P1 · 1 P2 (delivery-lint --path /us/en/magazine/guide-la-skateparks)",

@@ -44,8 +44,18 @@
   "archetypeSource": null,
   "archetypeSha": null,
   "variants": [],
-  "gatesPassed": [],
-  "gateEvidence": {},
+  "gatesPassed": [
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "content-count"
+  ],
+  "gateEvidence": {
+    "pixel-gate-1440": "0.00% (0 px, threshold 10%), height delta 0px, round conf @1440 (conf-us-en-html-1440.log) [prototype regime]",
+    "pixel-gate-360": "0.00% (0 px, threshold 10%), height delta 0px, round conf @360 (conf-us-en-html-360.log) [prototype regime]",
+    "content-count": "content-diff: none — content + roles match (conf-us-en-html-360.log)",
+    "media-reconcile": "n/a: no delivered content file yet (content/us/en.html) — media-reconcile runs in the delivery chain (row C)",
+    "delivery-lint": "FAIL: 1 P0 · 0 P1 · 1 P2 (delivery-lint --path /us/en)"
+  },
   "contentDeviations": [],
   "assetsBundled": 20,
   "missingAssets": [],

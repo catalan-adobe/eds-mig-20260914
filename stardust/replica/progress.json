@@ -670,7 +670,7 @@
           "heightDelta": 0,
           "overflowX": 0,
           "verdict": "PASS",
-          "label": "sib1",
+          "label": "placed",
           "regime": "prototype"
         },
         "1440": {
@@ -1332,7 +1332,7 @@
           "heightDelta": -1,
           "overflowX": 0,
           "verdict": "PASS",
-          "label": "sib2",
+          "label": "placed",
           "regime": "prototype"
         },
         "1440": {
@@ -1435,5 +1435,21 @@
       ],
       "migrated": "stardust/migrated/us/en/magazine/western-australia.html"
     }
+  },
+  "migrate": {
+    "at": "2026-09-24T09:28:20.510Z",
+    "pages": 26,
+    "archetypes": 6,
+    "siblings": 20,
+    "thin": 0,
+    "gates": {
+      "pixel-gate-1440": 26,
+      "pixel-gate-360": 26,
+      "content-count": 26,
+      "delivery-lint": 25,
+      "content-fidelity": 20,
+      "variance-probe": 20
+    },
+    "missing": {}
   }
 }

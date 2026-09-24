@@ -60,7 +60,7 @@
   "gateEvidence": {
     "content-fidelity": "verbatim from stardust/current/pages/us-en-magazine-html.html; content-diff: header+main: 25 text nodes / 6 headings / 6 CTAs / 8 img on both sides; header 28=28; footer 17=17; live-as-source content-diff: Findings: none — content + roles match; deviations logged in contentDeviations[]",
     "pixel-gate-1440": "0.04% (1396 px, threshold 10%), height delta 0px, round sib1 @1440 (us-en-magazine-html-1440.log) [prototype regime]",
-    "pixel-gate-360": "0.09% (1396 px, threshold 10%), height delta 0px, round sib1 @360 (us-en-magazine-html-360.log) [prototype regime]",
+    "pixel-gate-360": "0.09% (1396 px, threshold 10%), height delta 0px, round placed @360 (us-en-magazine-html-360-placed.log) [prototype regime]",
     "content-count": "content-diff: none — content + roles match (us-en-magazine-html-content-live.log)",
     "media-reconcile": "n/a: no delivered content file yet (content/us/en/magazine.html) — media-reconcile runs in the delivery chain (row C)",
     "delivery-lint": "0 P0 · 0 P1 · 1 P2 (delivery-lint --path /us/en/magazine)",

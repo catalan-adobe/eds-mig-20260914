@@ -283,3 +283,51 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 - Not done here by design: `migrate.mjs render`, `_meta.json`, `state.json`, `progress.json` — the place agent owns them. Gate logs: `stardust/.work/replica/bg/<slug>-{1440,360}[-r2].log`, `<slug>-cd2.log`.
 
 **Next:** place agent runs `migrate.mjs render` for this cluster, declares `variants[]` per page (above) and `modules[]` (`content-fragment`, `contributor-byline`, `upnext-list`; `download` on guide-la-skateparks), records the `template-adapted` decision for the skateparks download block.
+
+## Migrate place + state-and-report — 20 siblings placed at sibling tier, advanced to migrated (2026-09-24)
+
+**Prompt:** Phase 5a place + report: run `migrate.mjs render` for the 20 pre-gated sibling files (4 clusters), fill sidecars (modules, variants, deviations, gates), lint, `gate-evidence`, advance to `migrated`, report unit, ledger, journal, commit.
+
+**Decisions:**
+- Placed copies (`stardust/.work/migrate/placed/`) rewrite only asset hrefs to prototype-relative; content bytes verbatim (D-MP-1). Magazine listing's variants.css folded in as `<style data-variants>` (A-MP-2).
+- Siblings advanced `extracted → directed` per cluster so the driver takes branch A′ (A-MP-1); 20/20 rendered A′, `fidelityTier: sibling`, `archetypeSource`/`template` = archetype slug, 0 refused.
+- Sidecars: `modules[]` per brief (program: mini-carousel, trip-facts, sharing, tabs; article: content-fragment, contributor-byline, upnext-list [+download]; listing: featured-teaser, image-list, list-teaser); `variants[]` one class per entry; `contentDeviations[]` from the render agents (article cluster: contributor href transform, empty aem-Grid drops, download template-adapted).
+- Variance probes re-run as run-bg jobs for attribution (A-MP-3); `content-length` variant token on 6 clone-as-is program pages.
+- Gates per sibling: content-fidelity (declared), pixel-gate-1440/360 [prototype regime], content-count, delivery-lint (0 P0 · 0 P1 · 1 P2 everywhere), variance-probe; media-reconcile `n/a` until delivery. `gate-evidence.mjs --check` exit 0.
+- Placement spot-check: gate.sh at 360 on the MIGRATED files (`us-en-magazine-html-360-placed` 0.09 % PASS, `us-en-magazine-guide-la-skateparks-html-360-placed` 0.03 % PASS) — assets resolve from `stardust/migrated/assets/`.
+
+**Artifacts touched:**
+- stardust/migrated/us/en/**/*.html + *._meta.json (20 siblings) — created
+- stardust/migrated/assets/ — canon/archetype CSS+JS bundled (updated)
+- stardust/migrate/progress.json — 4 render units done, report unit — updated
+- stardust/state.json — 20 pages → migrated (state.mjs); state.json.migrate merged by the driver — updated
+- stardust/.work/migrate/placed/ (brief.json, _place.mjs, _sidecar.sh, placed html) — created
+- stardust/direction.md — D-MP-1, A-MP-1…6 — updated
+
+**Findings worth flagging:**
+- `migrate.mjs` chooses A′ by page status (`directed`), not by `--archetype`; an `extracted` page renders as tier archetype silently.
+- The driver resolves asset hrefs against the proto-dir, not the `--source` file's directory — fan-out files must reference `canon.css` as the prototypes do.
+- The driver's idempotent skip did not notice a `--source` content change (needed `--force`).
+- Adjacent, not in scope: the 6 archetypes are still `approved` (never advanced to migrated by the plan unit) and `stardust/migrated/us/en.html` lints P0 `no <h1>`; the archetype adventures.html keeps absolute `https://wknd.site/...` program links inside its tabs `x-template`.
+
+**Open questions:** none
+
+**Next:** deploy/rollout once DA_TOKEN is available — Phase A inventory from `stardust/migrated/`, media-reconcile per page (row 7), published-origin gate.
+
+---
+
+## handoff — migrate complete, deploy/rollout pending DA_TOKEN (2026-09-24)
+
+**Prompt:** close the replica handoff phase after migrate.
+
+**Decisions:**
+- Handoff ends at migrate: 26 pages rendered under `stardust/migrated/` (6 archetypes from the plan unit, 20 siblings from this session); no DA_TOKEN in the environment, so deploy (row 2) and rollout (A–I) are not attempted.
+
+**Artifacts touched:**
+- stardust/status.jsonl — `replica handoff end` — updated
+
+**Open questions:** none
+
+**Next:** with DA_TOKEN set, `rollout` Phase A from `stardust/migrated/`; the media-reconcile gate (row 7) and the published-origin pixel gate run there.
+
+---
