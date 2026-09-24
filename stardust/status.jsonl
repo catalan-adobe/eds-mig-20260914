@@ -56,3 +56,4 @@
 {"ts":"2026-09-24T10:04:31Z","skill":"stardust:rollout","phase":"B2-dynamic","event":"start","detail":"re-verify dynamic-features.md: dynamics-detect + dynamics-plan --target-origin aem.page"}
 {"ts":"2026-09-24T10:09:13Z","skill":"stardust:rollout","phase":"B2-dynamic","event":"end","detail":"28 fresh findings → 11 curated rows, all dispositioned; host-bound 9/9; no new rows","artifact":"stardust/dynamic-features.md"}
 {"ts":"2026-09-24T10:15:19Z","skill":"stardust:rollout","phase":"C-deliver","event":"start","detail":"C0 foundation: styles, fonts, header/footer blocks, nav/footer docs, shell page"}
+{"ts":"2026-09-24T13:29:10Z","skill":"stardust:rollout","phase":"C-deliver","event":"end","detail":"26/26 pages live; published gate PASS on 7 gated pages x 2 widths after 11 foundation requests applied (1440 0.03-1.28%, 360 0.23-3.83%, max |dh| 13 = known magazine residual); chrome-parity 10/14"}

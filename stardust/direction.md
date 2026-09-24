@@ -448,3 +448,30 @@ hands-off judgments made at each gate as named assumptions.
   list-teaser.css (see foundation-requests.md); the trailing adventures separator uses the
   foundation `separator` style (1px vs live 2px — landing's request already covers it).
 - **A-CL-6 (publish):** publish = yes, the landing unit's decision, applied unchanged.
+
+### C-final (coordinator) — foundation-request application
+
+- **A-CF-1 (apply all, gate decides):** every queued request line was applied at once and the
+  published gate re-run on the seven gated pages (six archetypes + the magazine sibling whose
+  content changed) at 1440 and 360; every round passed with equal or lower pixel and |Δh|
+  numbers, so no request was reverted. Rounds are labelled `cfinal` (not `pub2`) so the cluster
+  evidence files stay intact.
+- **A-CF-2 (current-nav marker semantics):** live marks the item whose page is the current one
+  OR an ancestor (`cmp-navigation__item--active` on Home at level 0 and the section at level 1);
+  header.js/footer.js add `is-active` on the same rule (path equality or `path + '/'` prefix)
+  and `aria-current="page"` on the exact match. Home is marked too but stays hidden
+  (`li.is-home { display: none }`), as on live where the level-0 item carries no visible style.
+- **A-CF-3 (Sign In colour):** the `header .account-links a` override (`--color-fg-inverse-strong`)
+  was deleted rather than recoloured — the utility-bar link rule already paints
+  `--color-fg-inverse` (rgb 235), live's value.
+- **A-CF-4 (space-medium is a section style, not a block rule):** the magazine separator now
+  carries `separator, space-medium` in its section metadata (one content re-PUT, published) and
+  the foundation owns `main .section.separator.space-medium::after { margin: 2em auto }`; the
+  list-teaser `:has(+ …)` override is gone. The 360 Δh +13 residual (A-CL-3) is unchanged.
+- **A-CF-5 (separator rule 2px + BFC):** `separator`/`spacer` sections are `flow-root` and the
+  rule is 2px (live hr border 1px on every side); landing 1440 dropped 2.00 % → 0.26 %, Δh 2 → 0.
+- **A-CF-6 (re-freeze):** the foundation manifest was re-frozen after the gate with the C0 path
+  set (39 files); the sanctioned C-final edit is the only change since the freeze.
+- **A-CF-7 (shell page):** `/us/en/shell-check` deleted from DA (204), unpreviewed (204), never
+  published (live DELETE 404), file removed from `content/`; `ledger-foundation.json` keeps its
+  historical row.

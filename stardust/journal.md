@@ -458,3 +458,34 @@ content/footer.html); `check` → unchanged. progress.json `units.foundation` �
   live page (A-CL-4). Foundation requests: `page-title` section style; `separator space-medium`.
 - Coverage: 2 pages `deployed`, block `list-teaser` `deployed`. Push via the `catalan-adobe`
   credential helper (keychain default 403s, as the static unit recorded).
+
+## C-deliver — final: 26/26 pages live, foundation requests applied, re-gate green (2026-09-24)
+
+- Cluster units recorded `done` in `stardust/rollout/progress.json` (landing 1, program 16,
+  article 5, static 1, unique 1, listing 2 = 26 pages, 14 blocks + the foundation's 2).
+- The 11 queued `foundation-requests.md` lines applied once (commit `b1ee385`): `main` and
+  every `.default-content-wrapper` are `flow-root`; `separator`/`spacer` sections are BFCs with
+  a 2px rule and a `space-medium` variant; `page-title` section style; breadcrumb list
+  `inline-block`; default-content `picture` block + `img` inline (7px descender); Sign In in
+  `--color-fg-inverse`; header/footer mark the current page/section (`is-active` +
+  `aria-current`). Scoped overrides removed from hero-carousel, contributor-card, mini-carousel,
+  tabs, article-body, list-teaser. `content/us/en/magazine` re-PUT with `separator, space-medium`
+  (live 200). Lint 0 (eslint via the lint-babel NODE_PATH, stylelint). Code Sync POST 200.
+- Re-gate (published origin, `gate.sh --full`, label `cfinal`, 14 rounds, all PASS, 0 overflow):
+  landing 1440 0.26 % Δh 0 (was 2.00 % / 2) · 360 0.48 % Δh 1 (was 2.41 % / 3);
+  program 1440 0.80 % Δh 0 · 360 2.32 % Δh 0 (unchanged);
+  article 1440 0.32 % Δh 0 (was 0.70 %) · 360 2.89 % Δh −1 (unchanged);
+  static 1440 0.03 % Δh 0 (was 0.40 %) · 360 0.23 % Δh 1 (was 0.24 %);
+  unique 1440 0.03 % Δh 0 (was 0.27 %) · 360 1.22 % Δh 1 (unchanged);
+  listing adventures 1440 0.21 % Δh 0 (was 1.00 % / 1) · 360 0.73 % Δh 1 (was 1.15 % / 2);
+  listing magazine 1440 1.28 % Δh 0 (was 1.64 %) · 360 3.83 % Δh −13 (unchanged, A-CL-3).
+  chrome-parity 1440 13 → 10 deltas, 360 15–16 → 14 (the Sign In and current-nav pairs are
+  gone; the rest is the foundation's justified region/icon/a11y set, A-C0-8). No regression, no
+  request reverted.
+- Shell page `/us/en/shell-check` deleted from DA, unpreviewed, removed from `content/`.
+- `update-coverage.mjs` roll-ups re-derived: 26 deployed / 0 pending, 15 blocks. Foundation
+  re-frozen (39 files, check green). Decisions A-CF-1…7 in direction.md.
+- Residuals carried forward: magazine 360 Δh +13 (source richtext inconsistency, register
+  candidate R-02); sub-pixel Δh 1 at 360 on landing/static/unique/adventures; content-diff 🔴
+  counts are the documented classifier blind spots (hidden carousel text, font-size:0 icon
+  labels, DA-stripped aria-labels) and the chrome set.

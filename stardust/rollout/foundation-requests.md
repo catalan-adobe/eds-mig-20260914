@@ -9,3 +9,12 @@
 - article | `main .default-content-wrapper picture img { display: block }` drops the 7px baseline descender of the source's inline `<img>` (cmp-image: `.image img { margin: 7px 0 }` inline in a block box) — a default-content lead image is 7px short and everything below shifts | measure.mjs 1440 prototype `.lead-image .image` h 723 vs img 702 + 14 margins = 716 (7px descender); block CSS override `body.article main .default-content-wrapper picture img { display: inline }` in blocks/article-body/article-body.css — fix: keep the img inline (block `picture`, inline `img`) for default-content images site-wide | article (lead image); any template with a default-content image
 - listing | section style `page-title`: `main > .section.page-title > div { padding: 0 }` — live listing pages put `h1.page-title` directly in `.container--fixed` (x 138, w 1164 at 1440), not in a 14px `.column` gutter | measure.mjs 1440 prototype h1 x 138 w 1164 vs harness x 152 w 1136 before the scoped override (tabs.css `main:has(.tabs.cards) > .section.page-title > div`); live magazine keeps the gutter (h1 x 152 / x 14), so only adventures carries the style | listing (adventures)
 - listing | separator `space-medium` variant: live `.cmp-separator--space-medium` margins are 2em (foundation `separator` = 4rem) and the hr is 2px (border 1px all sides); the preceding paragraph's 13.5px margin stacks on it (live floats) but collapses under `display: block !important` — a `separator space-medium` section style (`::after { margin: 2em auto; border-top-width: 2px }`) + a collapse-proof section box (padding-top 0.01px or flow-root without the !important) | measure.mjs 1440 migrated magazine hr y 1764 vs harness 1751 before the scoped override (list-teaser.css `main .section.separator:has(+ .section.list-teaser-container)::after { margin: calc(2em + 13.5px) auto 2em }`) | listing (magazine); any page using the space-medium separator
+
+## Applied at C-final (2026-09-24)
+
+All 11 lines above landed ONCE in commit `b1ee385` (styles/styles.css, blocks/header,
+blocks/footer) and the requesting blocks' scoped overrides were removed (hero-carousel,
+contributor-card, mini-carousel, tabs, article-body, list-teaser); `content/us/en/magazine`
+now carries `separator, space-medium`. Re-gate (`gate.sh --full`, label `cfinal`, published
+origin, both widths) passed every archetype with equal or lower numbers — see journal.md
+§ C-deliver final. Foundation re-frozen (39 files). No request reverted.

@@ -1,5 +1,5 @@
 {
-  "frozenAt": "2026-09-24T10:58:53.249Z",
+  "frozenAt": "2026-09-24T13:28:22.720Z",
   "root": ".",
   "paths": [
     "styles",
@@ -16,8 +16,8 @@
     "content/footer.html"
   ],
   "files": {
-    "blocks/footer/footer.css": "3669c115e8dbde43efd64f6ac90d4a5d406bde4186b61033a3f50c941dc8ce15",
-    "blocks/footer/footer.js": "2177b83352efdab3f95500f74227e43a60b85c8daca04268a07d3a79d10a53b3",
+    "blocks/footer/footer.css": "2f30ded6ce581f866ea5d0b1e73df949e12a714610715f7fee47faa3036b1bf9",
+    "blocks/footer/footer.js": "8184f0a7f358a10bf4b309805db54a49aaa3131a4f551e8a0e8474efcd590984",
     "blocks/header/clear.svg": "9abd951a1b6d84d0abcc55ae4dfb9f8d5023c6a3f72166bb0eb0bf04e42cac87",
     "blocks/header/flags/ca.svg": "ee904ffcc7d3f2ce2b5d143b305db3d351a898cf1efe6967ea680d860b476924",
     "blocks/header/flags/ch.svg": "2630b6abb76e484495980e444dffe2c213be9a0a8727eda5d35104a6dc5e8602",
@@ -26,8 +26,8 @@
     "blocks/header/flags/fr.svg": "264774502a3a885ef0d48b61c3bda44888cf41c684a26ac62ee9de2d7dbc14ec",
     "blocks/header/flags/it.svg": "27b1f75536f2189c064b74c2c4bb6fd54d3f26ee295bb2d3c15bee3d68443489",
     "blocks/header/flags/us.svg": "d298cc91e3a87abc2e588414070d8f133fe14fb10a50faf7f919bb97137926aa",
-    "blocks/header/header.css": "8a2fa573deac4730db800a512a46062120de08824fbe3bee3c1fd36411012169",
-    "blocks/header/header.js": "2a0e0d4d7a7ee0f39f652d79769598b8a4464df29f3ce5e8a3d1e851432ef9ec",
+    "blocks/header/header.css": "e05d2bb72285bfa7fd7a193a4596d22f420edb96a8ca0ddfb11e776692235aa8",
+    "blocks/header/header.js": "0a66156c4dd6b46e1941427811cecc91ccb408df107e1d6cc8dc5cc1428b13ad",
     "blocks/header/search.svg": "04a25c10d60140b4092209debcb4b81f13f95a7c7d754583a9c039935db1bb87",
     "content/footer.html": "ccf9a24a59227026bdfe95abe91e2c3aba8a13bdd94fd0cd223430c622991ad7",
     "content/nav.html": "e3a659889653e895015fb667b8d47a8f08eac4573cab698027c69d51396da0f2",
@@ -54,6 +54,6 @@
     "stardust/runtime-contract.json": "b0190e6c579245d95e62d15b544ff178faa514443b2b500f6500809b5ebdf403",
     "styles/fonts.css": "c47514293902a82ac6080ea4ea6dc061650c37f834938a29b39eb735f05349b3",
     "styles/lazy-styles.css": "391d6721991eb169fa04d7c71d9b597361d76c24ab8a3d5f1dcb47457d8ca2d6",
-    "styles/styles.css": "56ba3f2c321a29373f07b786d46f43f2deb361c4d40971ee570d2880dd7c55ea"
+    "styles/styles.css": "0f318581b6941cdafaf40af12cce4c2e7588c34f64989482f0efdee1cea9f1f7"
   }
 }

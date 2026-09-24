@@ -407,7 +407,7 @@
       "verdict": "listing: pages 2/2 live, blocks 1, gate 1440 1.00% / 360 1.15%, requests 2"
     },
     "final": {
-      "status": "running",
+      "status": "done",
       "kind": "final",
       "templates": [
         "us-en-html",
@@ -418,9 +418,36 @@
         "us-en-adventures-html"
       ],
       "pages": 26,
-      "blocks": 0,
+      "blocks": 16,
       "order": 4,
-      "startedAt": "2026-09-24T13:07:05.875Z"
+      "startedAt": "2026-09-24T13:07:05.875Z",
+      "endedAt": "2026-09-24T13:29:27.702Z",
+      "requestsApplied": 11,
+      "gates": {
+        "360": {
+          "us-en-html": 0.48,
+          "us-en-adventures-climbing-new-zealand-html": 2.32,
+          "us-en-magazine-san-diego-surf-html": 2.89,
+          "us-en-about-us-html": 0.23,
+          "us-en-faqs-html": 1.22,
+          "us-en-adventures-html": 0.73,
+          "us-en-magazine-html": 3.83,
+          "chrome": 14
+        },
+        "1440": {
+          "us-en-html": 0.26,
+          "us-en-adventures-climbing-new-zealand-html": 0.8,
+          "us-en-magazine-san-diego-surf-html": 0.32,
+          "us-en-about-us-html": 0.03,
+          "us-en-faqs-html": 0.03,
+          "us-en-adventures-html": 0.21,
+          "us-en-magazine-html": 1.28,
+          "chrome": 10
+        },
+        "crop": "cluster bands unchanged; chrome pairs Sign In + current-nav resolved",
+        "chrome": "1440 10 / 360 14 — foundation justified set (A-C0-8)"
+      },
+      "verdict": "final: pages 26/26 live, requests 11 applied / 0 reverted, re-gate PASS 7 pages x 2 widths (1440 0.03-1.28%, 360 0.23-3.83%), shell page removed"
     }
   }
 }
