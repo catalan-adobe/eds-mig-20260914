@@ -369,3 +369,33 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 - Publish decision PUBLISH recorded in `stardust/eds-conversion-log.md` (created) with the pre-existing-DA-content note (A-RO-1).
 - `stardust/rollout/progress.json`: units foundation (o0) → landing (o1) → program, article, static, unique (o2) → listing (o3) → final; every unit `pending`, each cluster carrying pageSlugs, daPaths, blocksToConvert, blocksToReuse.
 - Lint environment finding (conversion log § Lint environment): `lint:js` needs `NODE_PATH` to the `.work/lint-babel` shim; 0 runtime hits; `stardust/` to be added to `.eslintignore` by the foundation unit.
+
+## C-deliver C0 — foundation authored and deployed: styles, fonts, favicon, header/footer blocks, /nav + /footer live, shell previewed (2026-09-24)
+
+- `styles/styles.css` rewritten from `canon.css` (tokens verbatim, kebab-case; base type; WKND button
+  system on the EDS conventions — `strong` = accent yellow primary, `em` = dark secondary, `em+strong`
+  = the source's grey default; section scaffold = `.container` 1164 + `.column` 14px gutters; section
+  styles `flush`, `underline`, `font-small`, `dark`, `separator`, `spacer`, `breadcrumb`,
+  `article-layout`, `program-layout`; EW edit-mode repaint). `styles/fonts.css`: Asar 400, Source
+  Sans Pro 300/400/600 n+i, wknd-icon-font (block) from `fonts/`; metric-matched `asar-fallback`
+  (Georgia) and `source-sans-pro-fallback` (Helvetica Neue/Arial) in styles.css. `favicon.png` +
+  `favicon.ico` from the capture, one `head.html` link. `stardust/` added to `.eslintignore`.
+- `blocks/header`: template-slotted fixed chrome (utility bar with account links / language menu,
+  masthead with logo / primary nav / search UI, mobile toggle + off-canvas panel; body.scrolly at
+  scrollY > 15; the primary `<ul>` is re-placed between masthead and panel on the 1025px breakpoint,
+  never cloned). `blocks/footer`: logo / nav / Follow Us / social icon buttons (icons/*.svg
+  extracted from the icon font, sized by the glyph advance) / legal text. Flags + search icons ride
+  the code origin under `blocks/header/`.
+- `/nav` and `/footer` authored (Robots noindex) and PUT → preview → publish (deploy-batch, ledger
+  `stardust/deploy/ledger-foundation.json`); logos rehosted via `da-media-upload.mjs` (media ledger,
+  2 files, scope `wknd`). `/us/en/shell-check` previewed only. `.plain.html`: 200 / 0 about:error /
+  0 `/img/` on all three; deployed shell: header + footer `loaded`, logos 300×112 natural, fonts
+  loaded, 0 console errors, `main` top = 200px.
+- Harness (`qa-gate.mjs` on :3013): 8 ok; the 2 fails are by design — the shell page has no `<h1>`
+  (one paragraph, per brief) and the two logo images 404 locally (the dev server rewrites
+  `content.da.live` to an anonymous preview.da.live URL) — both verified green on the preview origin.
+- Notes for clusters: the stock `blocks/cards` + `blocks/hero` still reference `var(--background-color)`
+  (token gate hit; both are replaced by the landing cluster). The source is content-box by default —
+  lift `box-sizing` together with any width + padding rule (see A-C0-1). `article-layout` puts every
+  wrapper in the main column and `.upnext-list-wrapper` in the sidebar; `program-layout` spans the
+  default-content title, then `.trip-facts-wrapper` (1/4) beside `.tabs-wrapper` (3/4).

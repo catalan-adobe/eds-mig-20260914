@@ -256,3 +256,29 @@ hands-off judgments made at each gate as named assumptions.
 - **A-RO-4:** `sharing` (program + article sidebars) is an empty `fb-share-button` div and an empty Pinterest anchor with no CSS anywhere in the gated prototypes — zero rendered pixels. Recorded `default-content` (omitted), no block; removes the only program↔article dependency. If a later gate shows a delta at that spot it is a residual with this cause.
 - **A-RO-5:** `image-list` → `cards` (D11: mirrors the Block Collection name and content model; overwrites the stock `blocks/cards/`); `content-fragment` → `article-body` (an AEM term with no meaning to EDS authors; the block hosts the article prose stream). All other sidecar ids are kept as block names.
 - **A-RO-6:** Recurring non-block treatments (`page-title`, `section-title--underline`, `breadcrumb`, `separator`, `text--font-small`, `button`/`btn-list`, `container`/`column` widths) are FOUNDATION scope as section styles / default-content CSS in `styles/styles.css`, because `styles/` freezes after C0 and four clusters need them. Also foundation: the `article-layout` (main 2/3 + sidebar 1/3) and `program-layout` (facts aside + tabs) section grids, expressed on `.section.<style>` and the `*-wrapper` children.
+
+## C-deliver C0 foundation — hands-off assumptions (2026-09-24)
+
+- **A-C0-1:** No global `border-box` reset. The source stylesheet is content-box by default and
+  declares `box-sizing: border-box` per element (grid columns, chrome columns); lifted rules render
+  as on the source only under the same default (`.masthead__inner` 1164 + 28px, the search input
+  `calc(100% - 4rem)` + 4rem padding). Elements the foundation owns declare border-box explicitly
+  (`main > .section > div`, `a.button`, chrome columns); clusters lift `box-sizing` with the rule.
+- **A-C0-2:** Button slots: `<strong>` = `.primary` (accent yellow, the source's `button--primary`),
+  `<em>` = `.secondary` (dark, `button--secondary`), `<em><strong>` = `.accent` = the source's
+  unstyled grey `.button a`. The 48px bar with the text 16px from the top reproduces the source's
+  overflowing inner span.
+- **A-C0-3:** `<hr>` cannot be authored (a section break in the pipeline), so the separator is an
+  EMPTY section carrying `separator` (4rem, 1px rule) or `spacer` (the source's hidden +
+  space-small, 1em gap); one style value per section (#120).
+- **A-C0-4:** Social icons are decorateIcons images extracted from the icon-font glyphs
+  (`icons/facebook|twitter|instagram.svg`, fill #202020, viewBox = glyph advance × em) so the
+  authored footer stays `:facebook:`-style content; the anchor text is kept and hidden with
+  `font-size: 0`. Chevron/menu glyphs stay icon-font (`.glyph-*`, presentational).
+- **A-C0-5:** `is-home` / `is-active` are set by block JS on the authored `<li>` (hidden Home link,
+  underlined current locale) — they vanish only inside the nav document's own editor view, where
+  showing every item is acceptable. Country flags are content-anchored `li:has(ul a[href^='/xx/'])`.
+- **A-C0-6:** Language locale links are root-relative `/xx/yy` (404 until D3, DF-03); Sign In /
+  Sign Out are static `#sign-in` / `#sign-out` anchors in the anonymous state (DF-02).
+- **A-C0-7:** The shell page `/us/en/shell-check` is preview-only, has no `<h1>` by design, and is
+  deleted at C-final.

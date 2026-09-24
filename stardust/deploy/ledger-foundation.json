@@ -1,0 +1,28 @@
+{
+  "/footer": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-24T10:51:45.431Z",
+    "put": 200,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/nav": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-09-24T10:51:45.431Z",
+    "put": 200,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/us/en/shell-check": {
+    "status": "previewed",
+    "attempts": 1,
+    "ts": "2026-09-24T10:52:02.610Z",
+    "put": 201,
+    "preview": 200,
+    "verify": "ok"
+  }
+}

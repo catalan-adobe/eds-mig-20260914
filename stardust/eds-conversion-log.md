@@ -91,3 +91,16 @@ recorded by each cluster below.
   touch project-root files) adds `stardust/` to `.eslintignore` — this is not the forbidden
   "ignore for runtime files". Until then, clusters lint their own files by path:
   `npx eslint blocks/<name>` + `npx stylelint "blocks/<name>/*.css"`.
+
+## C0 foundation — decode tiers and foundation vocabulary (2026-09-24)
+
+- header, footer: template-slotted (chrome). Authored documents `/nav` (brand / sections / tools)
+  and `/footer` (logo / nav / heading / social list / text), both `Robots | noindex`, published.
+- Fonts: Asar 400 (headings), Source Sans Pro 300/400/600 normal+italic (body), wknd-icon-font
+  (block) — all self-hosted under `fonts/`, declared in `styles/fonts.css`; fallbacks
+  `asar-fallback` (Georgia 95.56%) and `source-sans-pro-fallback` (Helvetica Neue 93.5%) in
+  `styles/styles.css`. Licences: SIL OFL 1.1 (Google Fonts) + the site's own icon font.
+- Section styles (D1 closed set): `flush`, `underline`, `font-small`, `dark`, `separator`, `spacer`,
+  `breadcrumb`, `article-layout`, `program-layout`. Template body classes: `landing`, `article`,
+  `program`, `static`, `unique`, `listing` (metadata `template`).
+- Lint: `npm run lint` (with the `.work/lint-babel` NODE_PATH) 0 hits; `stardust/` ignored.
