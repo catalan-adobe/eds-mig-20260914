@@ -1,0 +1,104 @@
+/* tabs — lifted from stardust/prototypes/us-en-adventures-climbing-new-zealand-html.css
+   (.tabs__list, .tabs__tab, .tabs__panel, .fragment ul/li, .image img via canon.css) */
+
+.tabs {
+  display: flow-root;
+}
+
+/* live: .tabs__list { display: flex; flex-wrap: wrap; margin: 1em 0; padding-left: 0 } */
+.tabs .tabs-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.tabs .tabs-tab {
+  box-sizing: border-box;
+  min-width: var(--button-size);
+  max-height: var(--button-size);
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid transparent;
+  font-size: var(--body-sm);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* live removes the focus ring; keep it for keyboard users only (0 px at rest) */
+.tabs .tabs-tab:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.tabs .tabs-tab.active {
+  border: none;
+  background-color: #202020;
+  color: #fff;
+}
+
+/* the authored title paragraph inherits the tab's type (EW2) */
+.tabs .tabs-tab p {
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+  text-align: inherit;
+}
+
+.tabs .tabs-panel {
+  display: none;
+}
+
+.tabs .tabs-panel.active {
+  /* flow-root: the panel's first margin stays inside it — on live the content
+     fragment's wrapper grids keep the h2 margin from collapsing into the list's */
+  display: flow-root;
+}
+
+/* variant fragment: the content fragment title is display:none on live */
+.tabs.fragment .tabs-panel-title {
+  display: none;
+}
+
+/* live: div.image > inline <img> { width: 100%; height: auto; margin: 7px 0 } — the
+   pipeline's <p><picture> plays div.image, so the paragraph drops its prose metrics */
+.tabs .tabs-panel p:has(picture) {
+  margin: 0;
+  line-height: var(--line-height-body);
+  text-align: left;
+}
+
+.tabs .tabs-panel picture img {
+  width: 100%;
+  height: auto;
+  margin: 7px 0;
+}
+
+/* content fragment lists (cmp-contentfragment ul/li) */
+.tabs .tabs-panel ul {
+  display: block;
+  margin: 1em 0;
+  padding-inline-start: 0;
+  list-style-type: none;
+}
+
+.tabs .tabs-panel ul li {
+  display: list-item;
+  padding-left: 12px;
+  line-height: 2;
+}
+
+.tabs .tabs-panel ul li::before {
+  content: '\ea1c';
+  position: relative;
+  top: -0.25em;
+  left: -0.75em;
+  font-family: var(--icon-font-family);
+  font-size: 0.55em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
