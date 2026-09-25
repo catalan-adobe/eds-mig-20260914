@@ -1,0 +1,79 @@
+/* accordion — values lifted from the source .faq-* rules; narrow section column */
+main .accordion-container > div {
+  max-width: var(--container-narrow);
+}
+
+.accordion .faq-item {
+  overflow: hidden;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-sm);
+}
+
+.accordion .faq-item:hover {
+  border-color: var(--color-amber);
+}
+
+.accordion .faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--space-md) var(--space-lg);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.accordion .faq-question:hover {
+  background-color: var(--color-gray-100);
+}
+
+.accordion .faq-label p {
+  margin: 0;
+}
+
+.accordion .faq-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: none;
+  background: none;
+  padding: 0;
+  color: var(--color-amber);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.accordion .faq-icon::before {
+  content: '+';
+}
+
+.accordion .faq-item.is-open .faq-icon {
+  transform: rotate(45deg);
+}
+
+.accordion .faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 var(--space-lg);
+  color: var(--color-gray-700);
+  line-height: 1.7;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+}
+
+.accordion .faq-answer p {
+  margin: 0;
+}
+
+.accordion .faq-item.is-open .faq-answer {
+  max-height: 30rem;
+  padding: var(--space-md) var(--space-lg);
+}

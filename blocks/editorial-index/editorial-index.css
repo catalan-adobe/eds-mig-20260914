@@ -1,0 +1,57 @@
+/* editorial-index — values lifted from the source .editorial-index-* rules; secondary ground, narrow column */
+main .editorial-index-container {
+  background-color: var(--color-gray-100);
+}
+
+main .editorial-index-container > div {
+  max-width: var(--container-narrow);
+}
+
+.editorial-index {
+  display: flex;
+  flex-direction: column;
+}
+
+.editorial-index .editorial-index-item {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+  border-top: 1px solid var(--color-amber);
+  padding: var(--space-xl) 0;
+}
+
+.editorial-index .editorial-index-item:last-child {
+  border-bottom: 1px solid var(--color-amber);
+}
+
+.editorial-index .editorial-index-number p {
+  color: var(--color-amber);
+  font-family: var(--heading-font-family);
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.editorial-index .editorial-index-body h3 {
+  margin-bottom: var(--space-md);
+  font-size: var(--text-2xl);
+}
+
+.editorial-index .editorial-index-body p {
+  font-size: var(--text-lg);
+  line-height: var(--leading-normal);
+  color: var(--color-gray-500);
+}
+
+@media (width <= 768px) {
+  .editorial-index .editorial-index-item {
+    grid-template-columns: 3rem 1fr;
+    gap: var(--space-lg);
+  }
+
+  .editorial-index .editorial-index-number p {
+    font-size: 2.5rem;
+  }
+}

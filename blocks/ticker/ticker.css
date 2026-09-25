@@ -1,0 +1,62 @@
+/* ticker — values lifted from the source .ticker-strip / .ticker-track rules */
+main .ticker-container {
+  padding: 0;
+}
+
+main .ticker-container > div {
+  max-width: none;
+  padding: 0;
+}
+
+.ticker {
+  overflow: hidden;
+  border-top: 1px solid var(--color-amber);
+  border-bottom: 1px solid var(--color-amber);
+  padding: var(--space-md) 0;
+}
+
+.ticker .ticker-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  gap: var(--space-xl);
+  animation: ticker-scroll 40s linear infinite;
+}
+
+.ticker ul {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  font-family: var(--heading-font-family);
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.ticker li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.ticker li::after {
+  content: '·';
+  flex-shrink: 0;
+  color: var(--color-amber);
+  font-size: var(--text-2xl);
+  line-height: 1;
+}
+
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker .ticker-track {
+    animation: none;
+    overflow-x: auto;
+  }
+}

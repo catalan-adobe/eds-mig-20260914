@@ -1,37 +1,99 @@
-.hero-container .hero-wrapper {
-  max-width: unset;
+/* hero — values lifted from the source .hero-section rules */
+main .hero-container {
+  padding: 0;
+}
+
+main .hero-container > div {
+  max-width: none;
   padding: 0;
 }
 
 .hero {
   position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
+  display: flex;
+  align-items: center;
+  min-height: 55vh;
+  overflow: hidden;
 }
 
-.hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
+.hero.full {
+  min-height: 65vh;
 }
 
-.hero picture {
+.hero .hero-bg {
   position: absolute;
-  z-index: -1;
   inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
 }
 
-.hero img {
-  object-fit: cover;
+.hero .hero-bg picture,
+.hero .hero-bg img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
-@media (width >= 900px) {
-  .hero {
-    padding: 40px 32px;
+.hero .hero-bg picture {
+  display: block;
+}
+
+.hero .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgb(0 0 0 / 75%) 0, rgb(0 0 0 / 45%) 40%, rgb(0 0 0 / 25%));
+}
+
+.hero .hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: var(--container-max);
+  margin: auto;
+  padding: var(--space-3xl) var(--container-padding);
+  color: var(--color-white);
+  text-shadow: 0 1px 3px rgb(0 0 0 / 35%);
+}
+
+.hero .hero-content-inner {
+  max-width: 52rem;
+}
+
+.hero .eyebrow strong {
+  text-shadow: none;
+}
+
+.hero .headline :is(h1, h2, h3) {
+  margin: var(--space-md) 0 var(--space-lg);
+}
+
+.hero .lead p {
+  max-width: 38rem;
+  margin-bottom: var(--space-lg);
+  font-size: var(--text-xl);
+  line-height: var(--leading-normal);
+  color: rgb(255 255 255 / 85%);
+}
+
+.hero a.button.secondary {
+  border-color: rgb(255 255 255 / 50%);
+  box-shadow: 3px 3px 0 0 var(--color-black);
+  color: var(--color-white);
+}
+
+.hero a.button.secondary:hover,
+.hero a.button.secondary:focus-visible {
+  background: var(--color-amber);
+  border-color: var(--color-amber);
+  box-shadow: 5px 5px 0 0 var(--color-black);
+  color: var(--color-black);
+}
+
+.hero a.button.secondary:active {
+  box-shadow: 1px 1px 0 0 var(--color-black);
+}
+
+@media (width <= 768px) {
+  .hero .hero-content {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
   }
 }
