@@ -26,6 +26,7 @@ main .editorial-index-container > div {
 }
 
 .editorial-index .editorial-index-number p {
+  white-space: nowrap;
   color: var(--color-amber);
   font-family: var(--heading-font-family);
   font-size: 3.5rem;

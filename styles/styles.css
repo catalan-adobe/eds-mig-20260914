@@ -160,6 +160,7 @@ h3 { font-size: var(--text-3xl); }
 h4 { font-size: var(--text-2xl); }
 
 h5 { font-size: var(--text-xl); }
+
 h6 {
   font-size: var(--text-sm);
   letter-spacing: 0.05em;
@@ -395,6 +396,7 @@ main .section .default-content-wrapper h2 {
    Rule order is the deploy contract's (mark-generic first, mark-specific after, on-dark last). */
 /* stylelint-disable no-descending-specificity */
 .prosemirror-editor p > :is(strong, em) > a:any-link,
+.prosemirror-editor p > :is(strong, em) > :is(strong, em) > a:any-link,
 .prosemirror-editor p > a:any-link:has(> :is(strong, em):only-child) {
   display: inline-flex;
   border: 2px solid var(--color-black);
@@ -413,6 +415,7 @@ main .section .default-content-wrapper h2 {
 }
 
 .prosemirror-editor p > strong > a:any-link,
+.prosemirror-editor p > em > strong > a:any-link,
 .prosemirror-editor p > a:any-link:has(> strong:only-child) {
   background: var(--color-black);
   box-shadow: 3px 3px 0 0 var(--color-amber);
