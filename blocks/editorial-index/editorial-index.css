@@ -36,11 +36,12 @@ main .editorial-index-container > div {
 }
 
 .editorial-index .editorial-index-body h3 {
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-sm);
   font-size: var(--text-2xl);
 }
 
 .editorial-index .editorial-index-body p {
+  margin-bottom: var(--space-md);
   font-size: var(--text-lg);
   line-height: var(--leading-normal);
   color: var(--color-gray-500);

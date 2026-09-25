@@ -22,6 +22,7 @@ main .accordion-container > div {
   padding: var(--space-md) var(--space-lg);
   font-size: var(--text-lg);
   font-weight: 600;
+  line-height: normal;
   text-align: left;
   cursor: pointer;
   transition: background-color 0.15s ease;

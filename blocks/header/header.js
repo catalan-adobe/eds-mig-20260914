@@ -3,7 +3,7 @@ import { loadFragment } from '../fragment/fragment.js';
 
 /**
  * header — the source navbar, template-slotted from the /nav document's three sections:
- *   1. brand: <p><a href="/"><img logo> WKND<br>Adventures</a></p>
+ *   1. brand: <p><a href="/">WKND<br>Adventures</a></p> — the brand mark is a fixed inline SVG
  *   2. sections: <ul> of triggers, each with a nested <ul> of megamenu links
  *      (<a><strong>title</strong> description</a>); a nested <li> holding text + <ul> is a
  *      sub-column with a label (the "Recent from the Field" article list).
@@ -15,6 +15,11 @@ import { loadFragment } from '../fragment/fragment.js';
 const MOBILE_MAX = 1024;
 const isDesktop = () => window.innerWidth > MOBILE_MAX;
 
+const LOGO_SVG = '<svg width="100%" height="100%" viewBox="0 0 33 33"'
+  + ' preserveAspectRatio="xMidYMid meet" aria-hidden="true"><path d="M28,0H5C2.24,0,0,2.24,0,5v23'
+  + 'c0,2.76,2.24,5,5,5h23c2.76,0,5-2.24,5-5V5c0-2.76-2.24-5-5-5ZM29,17c-6.63,0-12,5.37-12,12h-1'
+  + 'c0-6.63-5.37-12-12-12v-1c6.63,0,12-5.37,12-12h1c0,6.63,5.37,12,12,12v1Z" fill="currentColor"/>'
+  + '</svg>';
 const ICON_HAMBURGER = '<svg class="nav-icon-hamburger" width="24" height="24" viewBox="0 0 24 24"'
   + ' fill="none" aria-hidden="true"><rect x="3" y="6" width="18" height="2" fill="currentColor"/>'
   + '<rect x="3" y="11" width="18" height="2" fill="currentColor"/>'
@@ -114,18 +119,13 @@ export default async function decorate(block) {
     const link = brandSection.querySelector('a');
     if (link) {
       link.className = 'logo';
-      const img = link.querySelector('picture, img');
-      if (img) {
-        const icon = document.createElement('span');
-        icon.className = 'nav-logo-icon';
-        icon.append(img);
-        link.prepend(icon);
-      }
       const text = document.createElement('span');
       text.className = 'logo-text';
-      [...link.childNodes].filter((n) => !n.classList || !n.classList.contains('nav-logo-icon'))
-        .forEach((n) => text.append(n));
-      link.append(text);
+      text.append(...link.childNodes);
+      const icon = document.createElement('span');
+      icon.className = 'nav-logo-icon';
+      icon.innerHTML = LOGO_SVG;
+      link.append(icon, text);
       inner.append(link);
     }
   }

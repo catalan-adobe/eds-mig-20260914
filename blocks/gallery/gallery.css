@@ -14,6 +14,7 @@ main .gallery-container .default-content-wrapper {
 main .gallery-container .default-content-wrapper h2 {
   flex: 1 1 auto;
   min-width: 0;
+  margin-bottom: var(--space-sm);
 }
 
 main .gallery-container .default-content-wrapper p {

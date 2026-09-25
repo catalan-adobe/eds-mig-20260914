@@ -341,9 +341,10 @@ a.button.secondary:active {
   }
 }
 
-/* eyebrow pill — the source's .tag: a bold-only paragraph */
-main p strong:only-child,
-header p strong:only-child {
+/* eyebrow pill — the source's p.tag: a bold-only paragraph; the paragraph itself is the
+   inline-flex pill (as on the source), so its margins do not collapse with the heading's */
+main p:has(> strong:only-child),
+header p:has(> strong:only-child) {
   display: inline-flex;
   align-items: center;
   background-color: var(--color-amber);
@@ -354,11 +355,22 @@ header p strong:only-child {
   font-weight: 600;
   letter-spacing: 0.05em;
   padding: calc(var(--space-xxs) + 1px) var(--space-xs) calc(var(--space-xxs) - 1px);
+  text-shadow: none;
 }
 
-main p.button-wrapper strong,
-header p.button-wrapper strong {
-  all: unset;
+main p:has(> strong:only-child) strong,
+header p:has(> strong:only-child) strong {
+  font-weight: inherit;
+}
+
+main p:has(> strong:only-child) + :is(h1, h2, h3, h4) {
+  margin-top: var(--space-md);
+}
+
+main p.button-wrapper,
+header p.button-wrapper {
+  all: revert;
+  margin: 0;
 }
 
 /* sections — the source's .section rhythm; blocks paint their own ground via .<name>-container */
@@ -459,7 +471,7 @@ main .section:is(.inverse-narrow, .accent-center) .default-content-wrapper {
 }
 
 main .section:is(.inverse-narrow, .accent-center) .default-content-wrapper h2 {
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-sm);
 }
 
 main .section:is(.inverse-narrow, .accent-center) .default-content-wrapper p {
@@ -469,7 +481,7 @@ main .section:is(.inverse-narrow, .accent-center) .default-content-wrapper p {
 }
 
 main .section.accent-center .default-content-wrapper p {
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-lg);
 }
 
 main .section.inverse-narrow .default-content-wrapper p {

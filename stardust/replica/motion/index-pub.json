@@ -1,0 +1,910 @@
+{
+  "url": "https://sd-spm-0001--eds-mig-20260914--catalan-adobe.aem.page/",
+  "width": 1440,
+  "headerTimeline": [
+    {
+      "y": 0,
+      "cls": "header-wrapper",
+      "position": "sticky",
+      "height": "75px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 0,
+      "cls": "header-wrapper",
+      "position": "sticky",
+      "height": "75px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 1200,
+      "cls": "header-wrapper",
+      "position": "sticky",
+      "height": "75px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 2400,
+      "cls": "header-wrapper",
+      "position": "sticky",
+      "height": "75px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 3600,
+      "cls": "header-wrapper",
+      "position": "sticky",
+      "height": "75px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 3587,
+      "cls": "header-wrapper",
+      "position": "sticky",
+      "height": "75px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 2087,
+      "cls": "header-wrapper",
+      "position": "sticky",
+      "height": "75px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 2400,
+      "cls": "header-wrapper",
+      "position": "sticky",
+      "height": "75px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 1200,
+      "cls": "header-wrapper",
+      "position": "sticky",
+      "height": "75px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 800,
+      "cls": "header-wrapper",
+      "position": "sticky",
+      "height": "75px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 500,
+      "cls": "header-wrapper",
+      "position": "sticky",
+      "height": "75px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 300,
+      "cls": "header-wrapper",
+      "position": "sticky",
+      "height": "75px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 200,
+      "cls": "header-wrapper",
+      "position": "sticky",
+      "height": "75px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 150,
+      "cls": "header-wrapper",
+      "position": "sticky",
+      "height": "75px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 120,
+      "cls": "header-wrapper",
+      "position": "sticky",
+      "height": "75px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 90,
+      "cls": "header-wrapper",
+      "position": "sticky",
+      "height": "75px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 60,
+      "cls": "header-wrapper",
+      "position": "sticky",
+      "height": "75px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 30,
+      "cls": "header-wrapper",
+      "position": "sticky",
+      "height": "75px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 0,
+      "cls": "header-wrapper",
+      "position": "sticky",
+      "height": "75px",
+      "transform": "none",
+      "transition": "all",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    }
+  ],
+  "widgetSamples": [
+    {
+      "sel": ".tab-menu-link:nth-child(2)",
+      "frames": [
+        {
+          "t": 14742.200000047684,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 14947,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 15152.300000011921,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 15357,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": ".faq-question",
+      "frames": [
+        {
+          "t": 16369.700000047684,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 16573.200000047684,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 16775.5,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 16979.400000035763,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": ".nav-megamenu-trigger",
+      "frames": [
+        {
+          "t": 17991.400000035763,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 18197,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 18402.900000035763,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 18607.200000047684,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        }
+      ]
+    }
+  ],
+  "hoverSamples": [
+    {
+      "sel": ".article-card",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(15, 26, 20)",
+          "background": "rgb(255, 255, 255)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background-color 0.15s, border-color 0.15s, box-shadow 0.15s"
+        },
+        "subs": [
+          {
+            "el": "img.",
+            "transform": "none",
+            "color": "rgb(15, 26, 20)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          },
+          {
+            "el": "h3.",
+            "transform": "none",
+            "color": "rgb(15, 26, 20)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          }
+        ]
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(15, 26, 20)",
+          "background": "rgb(255, 255, 255)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background-color 0.15s, border-color 0.15s, box-shadow 0.15s"
+        },
+        "subs": [
+          {
+            "el": "img.",
+            "transform": "none",
+            "color": "rgb(15, 26, 20)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          },
+          {
+            "el": "h3.",
+            "transform": "none",
+            "color": "rgb(15, 26, 20)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          }
+        ]
+      }
+    },
+    {
+      "sel": "a.button.primary",
+      "changed": [
+        "self.transform",
+        "self.boxShadow"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(15, 26, 20)",
+          "boxShadow": "rgb(232, 101, 26) 3px 3px 0px 0px",
+          "opacity": "1",
+          "transition": "transform 0.15s, box-shadow 0.15s, background-color 0.15s, color 0.15s, border-color 0.15s"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "matrix(1, 0, 0, 1, -2, -2)",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(15, 26, 20)",
+          "boxShadow": "rgb(232, 101, 26) 5px 5px 0px 0px",
+          "opacity": "1",
+          "transition": "transform 0.15s, box-shadow 0.15s, background-color 0.15s, color 0.15s, border-color 0.15s"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": "a.button.accent",
+      "changed": [
+        "self.transform",
+        "self.boxShadow"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(15, 26, 20)",
+          "background": "rgb(232, 101, 26)",
+          "boxShadow": "rgb(15, 26, 20) 3px 3px 0px 0px",
+          "opacity": "1",
+          "transition": "transform 0.15s, box-shadow 0.15s, background-color 0.15s, color 0.15s, border-color 0.15s"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "matrix(1, 0, 0, 1, -2, -2)",
+          "color": "rgb(15, 26, 20)",
+          "background": "rgb(232, 101, 26)",
+          "boxShadow": "rgb(15, 26, 20) 5px 5px 0px 0px",
+          "opacity": "1",
+          "transition": "transform 0.15s, box-shadow 0.15s, background-color 0.15s, color 0.15s, border-color 0.15s"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": "a.button.secondary",
+      "changed": [
+        "self.transform",
+        "self.color",
+        "self.background",
+        "self.boxShadow"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "rgb(15, 26, 20) 3px 3px 0px 0px",
+          "opacity": "1",
+          "transition": "transform 0.15s, box-shadow 0.15s, background-color 0.15s, color 0.15s, border-color 0.15s"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "matrix(1, 0, 0, 1, -2, -2)",
+          "color": "rgb(15, 26, 20)",
+          "background": "rgb(232, 101, 26)",
+          "boxShadow": "rgb(15, 26, 20) 5px 5px 0px 0px",
+          "opacity": "1",
+          "transition": "transform 0.15s, box-shadow 0.15s, background-color 0.15s, color 0.15s, border-color 0.15s"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": ".nav-megamenu-trigger",
+      "changed": [
+        "self.background"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(15, 26, 20)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background-color 0.15s"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(15, 26, 20)",
+          "background": "rgb(240, 236, 228)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background-color 0.15s"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": ".faq-question",
+      "changed": [
+        "self.background"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(15, 26, 20)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background-color 0.15s"
+        },
+        "subs": [
+          {
+            "el": "button.faq-icon",
+            "transform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)",
+            "color": "rgb(232, 101, 26)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "transform 0.3s"
+          }
+        ]
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(15, 26, 20)",
+          "background": "rgb(240, 236, 228)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background-color 0.15s"
+        },
+        "subs": [
+          {
+            "el": "button.faq-icon",
+            "transform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)",
+            "color": "rgb(232, 101, 26)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "transform 0.3s"
+          }
+        ]
+      }
+    },
+    {
+      "sel": "footer .footer-col a",
+      "changed": [
+        "self.color"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(153, 153, 153)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "color 0.15s"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "color 0.15s"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": ".gallery-container .default-content-wrapper p a",
+      "changed": [
+        "self.opacity"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "opacity 0.15s"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "0.65",
+          "transition": "opacity 0.15s"
+        },
+        "subs": []
+      }
+    }
+  ],
+  "events": {
+    "animations": [],
+    "transitions": [
+      {
+        "prop": "border-bottom-color",
+        "el": "div.section.tabs-container > div.tabs-wrapper > div.tabs.block > div.tab-menu > button.tab-menu-link",
+        "y": 833,
+        "dur": "0.15s, 0.15s"
+      },
+      {
+        "prop": "color",
+        "el": "div.section.tabs-container > div.tabs-wrapper > div.tabs.block > div.tab-menu > button.tab-menu-link",
+        "y": 833,
+        "dur": "0.15s, 0.15s"
+      },
+      {
+        "prop": "border-bottom-color",
+        "el": "div.section.tabs-container > div.tabs-wrapper > div.tabs.block > div.tab-menu > button.tab-menu-link.is-active",
+        "y": 833,
+        "dur": "0.15s, 0.15s"
+      },
+      {
+        "prop": "color",
+        "el": "div.section.tabs-container > div.tabs-wrapper > div.tabs.block > div.tab-menu > button.tab-menu-link.is-active",
+        "y": 833,
+        "dur": "0.15s, 0.15s"
+      },
+      {
+        "prop": "padding-bottom",
+        "el": "div.section.accordion-container > div.accordion-wrapper > div.accordion.block > div.faq-item.is-open > div.faq-answer",
+        "y": 2142,
+        "dur": "0.35s, 0.35s"
+      },
+      {
+        "prop": "max-height",
+        "el": "div.section.accordion-container > div.accordion-wrapper > div.accordion.block > div.faq-item.is-open > div.faq-answer",
+        "y": 2142,
+        "dur": "0.35s, 0.35s"
+      },
+      {
+        "prop": "padding-top",
+        "el": "div.section.accordion-container > div.accordion-wrapper > div.accordion.block > div.faq-item.is-open > div.faq-answer",
+        "y": 2142,
+        "dur": "0.35s, 0.35s"
+      },
+      {
+        "prop": "transform",
+        "el": "div.accordion-wrapper > div.accordion.block > div.faq-item.is-open > div.faq-question > button.faq-icon",
+        "y": 2142,
+        "dur": "0.3s"
+      },
+      {
+        "prop": "box-shadow",
+        "el": "nav.navbar > div.nav-inner > div.nav-right > p.button-wrapper > a.button.primary",
+        "y": 1316,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "transform",
+        "el": "nav.navbar > div.nav-inner > div.nav-right > p.button-wrapper > a.button.primary",
+        "y": 1316,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "box-shadow",
+        "el": "nav.navbar > div.nav-inner > div.nav-right > p.button-wrapper > a.button.primary",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "transform",
+        "el": "nav.navbar > div.nav-inner > div.nav-right > p.button-wrapper > a.button.primary",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "box-shadow",
+        "el": "div.hero-content > div.hero-content-inner > div.button-group > p.button-wrapper > a.button.accent",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "transform",
+        "el": "div.hero-content > div.hero-content-inner > div.button-group > p.button-wrapper > a.button.accent",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "box-shadow",
+        "el": "div.hero-content > div.hero-content-inner > div.button-group > p.button-wrapper > a.button.accent",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "transform",
+        "el": "div.hero-content > div.hero-content-inner > div.button-group > p.button-wrapper > a.button.accent",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "border-left-color",
+        "el": "div.hero-content > div.hero-content-inner > div.button-group > p.button-wrapper > a.button.secondary",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "border-right-color",
+        "el": "div.hero-content > div.hero-content-inner > div.button-group > p.button-wrapper > a.button.secondary",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "color",
+        "el": "div.hero-content > div.hero-content-inner > div.button-group > p.button-wrapper > a.button.secondary",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "border-top-color",
+        "el": "div.hero-content > div.hero-content-inner > div.button-group > p.button-wrapper > a.button.secondary",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "transform",
+        "el": "div.hero-content > div.hero-content-inner > div.button-group > p.button-wrapper > a.button.secondary",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "border-bottom-color",
+        "el": "div.hero-content > div.hero-content-inner > div.button-group > p.button-wrapper > a.button.secondary",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "box-shadow",
+        "el": "div.hero-content > div.hero-content-inner > div.button-group > p.button-wrapper > a.button.secondary",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.hero-content > div.hero-content-inner > div.button-group > p.button-wrapper > a.button.secondary",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "border-left-color",
+        "el": "div.hero-content > div.hero-content-inner > div.button-group > p.button-wrapper > a.button.secondary",
+        "y": 0,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "border-right-color",
+        "el": "div.hero-content > div.hero-content-inner > div.button-group > p.button-wrapper > a.button.secondary",
+        "y": 0,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "color",
+        "el": "div.hero-content > div.hero-content-inner > div.button-group > p.button-wrapper > a.button.secondary",
+        "y": 0,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "border-top-color",
+        "el": "div.hero-content > div.hero-content-inner > div.button-group > p.button-wrapper > a.button.secondary",
+        "y": 0,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "transform",
+        "el": "div.hero-content > div.hero-content-inner > div.button-group > p.button-wrapper > a.button.secondary",
+        "y": 0,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "border-bottom-color",
+        "el": "div.hero-content > div.hero-content-inner > div.button-group > p.button-wrapper > a.button.secondary",
+        "y": 0,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "box-shadow",
+        "el": "div.hero-content > div.hero-content-inner > div.button-group > p.button-wrapper > a.button.secondary",
+        "y": 0,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.hero-content > div.hero-content-inner > div.button-group > p.button-wrapper > a.button.secondary",
+        "y": 0,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.nav-inner > div.nav-menu > ul.nav-menu-list > li.nav-menu-list-item.nav-megamenu-item.mega-open > button.nav-link.nav-megamenu-trigger",
+        "y": 0,
+        "dur": "0.15s"
+      },
+      {
+        "prop": "transform",
+        "el": "div.nav-menu > ul.nav-menu-list > li.nav-menu-list-item.nav-megamenu-item.mega-open > button.nav-link.nav-megamenu-trigger > span.nav-caret",
+        "y": 0,
+        "dur": "0.15s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.nav-inner > div.nav-menu > ul.nav-menu-list > li.nav-menu-list-item.nav-megamenu-item.mega-open > button.nav-link.nav-megamenu-trigger",
+        "y": 2142,
+        "dur": "0.15s"
+      },
+      {
+        "prop": "transform",
+        "el": "div.nav-menu > ul.nav-menu-list > li.nav-menu-list-item.nav-megamenu-item > button.nav-link.nav-megamenu-trigger > span.nav-caret",
+        "y": 2142,
+        "dur": "0.15s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.section.accordion-container > div.accordion-wrapper > div.accordion.block > div.faq-item.is-open > div.faq-question",
+        "y": 2142,
+        "dur": "0.15s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.section.accordion-container > div.accordion-wrapper > div.accordion.block > div.faq-item.is-open > div.faq-question",
+        "y": 4785,
+        "dur": "0.15s"
+      },
+      {
+        "prop": "color",
+        "el": "div.footer-col > div.default-content-wrapper > ul > li > a",
+        "y": 4785,
+        "dur": "0.15s"
+      },
+      {
+        "prop": "color",
+        "el": "div.footer-col > div.default-content-wrapper > ul > li > a",
+        "y": 3680,
+        "dur": "0.15s"
+      },
+      {
+        "prop": "opacity",
+        "el": "main > div.section.gallery-container > div.default-content-wrapper > p > a",
+        "y": 3680,
+        "dur": "0.15s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "is-active"
+        ],
+        "el": "div.section.tabs-container > div.tabs-wrapper > div.tabs.block > div.tab-menu > button.tab-menu-link.is-active",
+        "y": 833
+      },
+      {
+        "added": [
+          "is-active"
+        ],
+        "el": "div.section.tabs-container > div.tabs-wrapper > div.tabs.block > div.tab-panes > div.tab-pane.is-active",
+        "y": 833
+      },
+      {
+        "added": [
+          "is-active"
+        ],
+        "el": "div.section.tabs-container > div.tabs-wrapper > div.tabs.block > div.tab-menu > button.tab-menu-link.is-active",
+        "y": 833
+      },
+      {
+        "added": [
+          "is-active"
+        ],
+        "el": "div.section.tabs-container > div.tabs-wrapper > div.tabs.block > div.tab-panes > div.tab-pane.is-active",
+        "y": 833
+      },
+      {
+        "added": [
+          "is-open"
+        ],
+        "el": "main > div.section.accordion-container > div.accordion-wrapper > div.accordion.block > div.faq-item.is-open",
+        "y": 2142
+      },
+      {
+        "added": [
+          "mega-open"
+        ],
+        "el": "nav.navbar > div.nav-inner > div.nav-menu > ul.nav-menu-list > li.nav-menu-list-item.nav-megamenu-item.mega-open",
+        "y": 0
+      }
+    ]
+  }
+}

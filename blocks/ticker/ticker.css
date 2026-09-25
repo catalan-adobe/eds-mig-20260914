@@ -36,14 +36,16 @@ main .ticker-container > div {
 }
 
 .ticker li {
-  display: flex;
-  align-items: center;
-  gap: var(--space-xl);
+  position: relative;
+  margin-right: calc(var(--space-xl) + 0.3em);
 }
 
 .ticker li::after {
   content: '·';
-  flex-shrink: 0;
+  position: absolute;
+  top: 50%;
+  left: calc(100% + var(--space-xl));
+  transform: translateY(-50%);
   color: var(--color-amber);
   font-size: var(--text-2xl);
   line-height: 1;
