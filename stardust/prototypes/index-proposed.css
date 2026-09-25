@@ -1,0 +1,75 @@
+/* index archetype modules — values lifted from the source stylesheet (tokens.json) */
+.hero-section{align-items:center;display:flex;min-height:55vh;overflow:hidden;padding:0;position:relative}
+.hero-section--full{min-height:65vh}
+.hero-bg{inset:0;position:absolute}
+.hero-bg img{height:100%;object-fit:cover;width:100%}
+.overlay{background:linear-gradient(0deg,rgba(0,0,0,.75) 0,rgba(0,0,0,.45) 40%,rgba(0,0,0,.25));inset:0;position:absolute}
+.hero-content{color:var(--color-white);padding-block:var(--space-3xl);position:relative;text-shadow:0 1px 3px rgba(0,0,0,.35);width:100%;z-index:2}
+.hero-content-inner{max-width:52rem}
+.hero-lead{color:hsla(0,0%,100%,.85);margin-bottom:var(--space-lg);max-width:38rem}
+@media (max-width:768px){.hero-content{padding-block:var(--space-xl)}}
+
+.featured-article{align-items:stretch;display:grid;gap:var(--space-2xl);grid-template-columns:1fr 1fr}
+.featured-article-image{border-radius:var(--radius-card);min-height:20rem;overflow:hidden}
+.featured-article-image img{height:100%;object-fit:cover;width:100%}
+.featured-article .tag,.featured-article h2{margin-bottom:var(--space-sm)}
+.featured-article-footer{align-items:center;border-top:1px solid var(--color-gray-200);display:flex;flex-wrap:wrap;gap:var(--space-md);justify-content:flex-end;padding-top:var(--space-sm)}
+.featured-article-footer .button{flex-shrink:0}
+@media (max-width:768px){
+  .featured-article{grid-template-columns:1fr}
+  .featured-article-image{min-height:11rem}
+  .featured-article-footer{align-items:stretch;flex-direction:column;gap:var(--space-lg)}
+  .featured-article-footer .button{align-self:flex-end}
+}
+
+.tab-menu{border-top:2px solid var(--color-black);display:flex;flex-wrap:wrap;gap:0;padding-top:var(--space-sm)}
+.tab-menu-link{background:none;border:none;border-bottom:4px solid transparent;border-radius:0;color:var(--color-gray-300);cursor:pointer;font-family:var(--font-heading);font-size:var(--text-xl);font-weight:700;letter-spacing:-.01em;line-height:1.1;padding:var(--space-xs) var(--space-xl) var(--space-xs) 0;transition:color var(--transition-fast),border-color var(--transition-fast);white-space:nowrap}
+.tab-menu-link:hover{color:var(--color-gray-500)}
+.tab-menu-link.is-active{border-bottom-color:var(--color-amber);color:var(--color-black)}
+.tab-pane{display:none}
+.tab-pane.is-active{display:block}
+.tab-container>div:last-child{margin-top:var(--space-2xl)}
+@media (max-width:768px){
+  .tab-menu{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+  .tab-menu::-webkit-scrollbar{display:none}
+  .tab-menu-link{flex-shrink:0;font-size:var(--text-lg);padding-right:var(--space-lg)}
+}
+
+.article-card{background:var(--color-white);border:1px solid var(--color-gray-200);border-radius:var(--radius-card);color:inherit;display:block;overflow:hidden;text-decoration:none;transition:background-color var(--transition-fast),border-color var(--transition-fast),box-shadow var(--transition-fast)}
+.article-card-image{aspect-ratio:16/10;overflow:hidden}
+.article-card-image img{height:100%;object-fit:cover;width:100%}
+.article-card-body{align-items:stretch;display:flex;flex-direction:column;gap:var(--space-sm);min-width:0;padding:var(--space-lg) var(--space-md)}
+.article-card-body>*,.article-card .article-card-body p{margin-block:0}
+.article-card-meta{align-items:center;display:flex;flex-wrap:wrap;gap:var(--space-sm);margin-bottom:0;margin-top:var(--space-xs);width:100%}
+.article-card-body>p.paragraph-sm.utility-text-secondary{line-height:var(--leading-snug)}
+
+.ticker-strip{border-bottom:1px solid var(--color-amber);border-top:1px solid var(--color-amber);overflow:hidden;padding-block:var(--space-md)}
+.ticker-track{align-items:center;animation:ticker-scroll 40s linear infinite;display:flex;font-family:var(--font-heading);font-size:var(--text-3xl);font-weight:700;gap:var(--space-xl);letter-spacing:-.02em;line-height:1;white-space:nowrap;width:max-content}
+@keyframes ticker-scroll{0%{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.ticker-track{animation:none;overflow-x:auto}}
+.ticker-sep{color:var(--color-amber);flex-shrink:0;font-size:var(--text-2xl);line-height:1}
+
+.faq-item{border:1px solid var(--color-gray-200);border-radius:var(--radius-lg);margin-bottom:var(--space-sm);overflow:hidden}
+.faq-item:hover{border-color:var(--color-amber)}
+.faq-question{align-items:center;background:none;border:none;color:inherit;cursor:pointer;display:flex;font-family:inherit;font-size:var(--text-lg);font-weight:600;justify-content:space-between;padding:var(--space-md) var(--space-lg);text-align:left;transition:background-color .15s ease;width:100%}
+.faq-question:hover{background-color:var(--color-gray-100)}
+.faq-answer{color:var(--color-gray-700);line-height:1.7;max-height:0;overflow:hidden;padding:0 var(--space-lg);transition:max-height .35s ease,padding .35s ease}
+.faq-item.is-open .faq-answer{max-height:30rem;padding:var(--space-md) var(--space-lg)}
+.faq-icon{align-items:center;color:var(--color-amber);display:flex;flex-shrink:0;font-size:1.25rem;height:1.25rem;justify-content:center;line-height:1;transition:transform .3s ease;width:1.25rem}
+.faq-icon:before{content:"+"}
+.faq-item.is-open .faq-icon{transform:rotate(45deg)}
+
+.editorial-index{display:flex;flex-direction:column}
+.editorial-index-item{align-items:start;border-top:1px solid var(--color-amber);display:grid;gap:var(--space-2xl);grid-template-columns:5rem 1fr;padding-block:var(--space-xl)}
+.editorial-index-item:last-child{border-bottom:1px solid var(--color-amber)}
+.editorial-index-number{color:var(--color-amber);font-family:var(--font-heading);font-size:3.5rem;font-weight:700;letter-spacing:-.03em;line-height:1}
+@media (max-width:768px){
+  .editorial-index-item{gap:var(--space-lg);grid-template-columns:3rem 1fr}
+  .editorial-index-number{font-size:2.5rem}
+}
+
+.gallery-img{height:280px}
+.gallery-img,.gallery-img--wide{border-radius:var(--radius-card);object-fit:cover;width:100%}
+.gallery-img--wide{height:360px}
+/* card hover — live evidence: motion/index.json transitions border-*-color ×2 + background-color on .article-card hover */
+a.article-card:hover{background-color:var(--color-cream);border-color:var(--color-gray-300);box-shadow:0 4px 20px rgba(0,0,0,.08)}

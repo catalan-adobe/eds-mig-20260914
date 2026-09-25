@@ -1,0 +1,289 @@
+{
+  "url": "https://wknd-adventures.com/",
+  "width": 360,
+  "headerTimeline": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "widgetSamples": [
+    {
+      "sel": "#nav-toggle",
+      "frames": [
+        {
+          "t": 16214.799999952316,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 16421,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 16627.299999952316,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 16830.69999998808,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": ".nav-megamenu-trigger",
+      "frames": [
+        {
+          "t": 17840.099999964237,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 18043.599999964237,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 18249.69999998808,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 18455.399999976158,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": ".tab-menu-link:nth-child(2)",
+      "frames": [
+        {
+          "t": 19467.099999964237,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 19671,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 19876.799999952316,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 20082.799999952316,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": ".faq-question",
+      "frames": [
+        {
+          "t": 21096,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 21300.899999976158,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 21506.099999964237,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 21709.5,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    }
+  ],
+  "hoverSamples": [],
+  "events": {
+    "animations": [],
+    "transitions": [
+      {
+        "prop": "transform",
+        "el": "nav.nav-menu.is-open > ul.nav-menu-list > li.nav-menu-list-item.nav-megamenu-item.is-open > button.nav-link.nav-megamenu-trigger > span.nav-caret",
+        "y": 0,
+        "dur": "0.15s"
+      },
+      {
+        "prop": "border-bottom-color",
+        "el": "section.section > div.container > div.tab-container.tab-container--wide > div.tab-menu > button.tab-menu-link.is-active",
+        "y": 1011,
+        "dur": "0.15s, 0.15s"
+      },
+      {
+        "prop": "color",
+        "el": "section.section > div.container > div.tab-container.tab-container--wide > div.tab-menu > button.tab-menu-link.is-active",
+        "y": 1011,
+        "dur": "0.15s, 0.15s"
+      },
+      {
+        "prop": "border-bottom-color",
+        "el": "section.section > div.container > div.tab-container.tab-container--wide > div.tab-menu > button.tab-menu-link",
+        "y": 1011,
+        "dur": "0.15s, 0.15s"
+      },
+      {
+        "prop": "color",
+        "el": "section.section > div.container > div.tab-container.tab-container--wide > div.tab-menu > button.tab-menu-link",
+        "y": 1011,
+        "dur": "0.15s, 0.15s"
+      },
+      {
+        "prop": "padding-bottom",
+        "el": "section.section > div.container.container--narrow > div.faq-list > div.faq-item.is-open > div.faq-answer",
+        "y": 3243,
+        "dur": "0.35s, 0.35s"
+      },
+      {
+        "prop": "max-height",
+        "el": "section.section > div.container.container--narrow > div.faq-list > div.faq-item.is-open > div.faq-answer",
+        "y": 3243,
+        "dur": "0.35s, 0.35s"
+      },
+      {
+        "prop": "padding-top",
+        "el": "section.section > div.container.container--narrow > div.faq-list > div.faq-item.is-open > div.faq-answer",
+        "y": 3243,
+        "dur": "0.35s, 0.35s"
+      },
+      {
+        "prop": "transform",
+        "el": "div.container.container--narrow > div.faq-list > div.faq-item.is-open > button.faq-question > span.faq-icon",
+        "y": 3243,
+        "dur": "0.3s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "is-open"
+        ],
+        "el": "body > div.navbar > div.container > div.nav-inner > nav.nav-menu.is-open",
+        "y": 0
+      },
+      {
+        "added": [
+          "is-open"
+        ],
+        "el": "div.container > div.nav-inner > nav.nav-menu.is-open > ul.nav-menu-list > li.nav-menu-list-item.nav-megamenu-item.is-open",
+        "y": 0
+      },
+      {
+        "added": [
+          "is-active"
+        ],
+        "el": "section.section > div.container > div.tab-container.tab-container--wide > div.tab-menu > button.tab-menu-link.is-active",
+        "y": 1011
+      },
+      {
+        "added": [
+          "is-active"
+        ],
+        "el": "section.section > div.container > div.tab-container.tab-container--wide > div > div.tab-pane.is-active",
+        "y": 1011
+      },
+      {
+        "added": [
+          "is-active"
+        ],
+        "el": "section.section > div.container > div.tab-container.tab-container--wide > div.tab-menu > button.tab-menu-link.is-active",
+        "y": 1011
+      },
+      {
+        "added": [
+          "is-active"
+        ],
+        "el": "section.section > div.container > div.tab-container.tab-container--wide > div > div.tab-pane.is-active",
+        "y": 1011
+      },
+      {
+        "added": [
+          "is-open"
+        ],
+        "el": "main > section.section > div.container.container--narrow > div.faq-list > div.faq-item.is-open",
+        "y": 3243
+      }
+    ]
+  }
+}

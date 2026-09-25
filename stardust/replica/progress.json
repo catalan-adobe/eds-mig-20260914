@@ -1,0 +1,42 @@
+{
+  "index": {
+    "pageType": "landing",
+    "archetype": "index",
+    "prototype": "stardust/prototypes/index-proposed.html",
+    "register": ["R-01"],
+    "breakpoints": {
+      "1440": {
+        "iterations": 4,
+        "result": { "structuralRed": 0, "visualFlags": "9 justified", "pixelPct": 0.00, "heightDelta": 0, "overflowPx": 0, "pass": true, "regime": "prototype" },
+        "chrome": { "headerCropPct": 0.00, "footerCropPct": 0.00, "parity": "quiet (--region header=.navbar|.navbar)" },
+        "capProbe": "PASS at 2560 (0 of 10 rows failed)",
+        "justified": [
+          { "probe": "visual", "flag": "STRETCHED IMAGE x9", "why": "object-fit: cover crops mirrored from the live CSS (hero-bg img, article-card-image img, gallery-img)" },
+          { "probe": "content", "flag": "FONT FORK x2 (source Syncopate->sys)", "why": "instrument artifact: the live side's font-display:swap face had not loaded at the domcontentloaded probe; the build self-hosts the same woff2 the source names; pixel diff 0.00% proves the rendered faces match", "permanent": true }
+        ],
+        "residuals": []
+      },
+      "360": {
+        "iterations": 4,
+        "result": { "structuralRed": 0, "visualFlags": "8 justified", "pixelPct": 2.19, "heightDelta": 0, "overflowPx": 0, "pass": true, "regime": "prototype" },
+        "chrome": { "headerCropPct": 25.83, "footerCropPct": 0.00, "parity": "header MISSING 'WKND Adventures' wordmark - R-01" },
+        "justified": [
+          { "probe": "visual", "flag": "STRETCHED IMAGE x8", "why": "same cover crops as 1440" },
+          { "probe": "content", "flag": "FONT FORK x2", "why": "same as 1440", "permanent": true },
+          { "probe": "pixel", "flag": "2.19% in 3.9% bands at every stitched seam; header crop 25.83%", "why": "R-01 applied: wordmark hidden <=450px so the source's +75px horizontal overflow is not replicated; body band y75+800 = 0.00%", "register": "R-01" }
+        ],
+        "residuals": []
+      }
+    },
+    "motion": {
+      "observed": ["tabs is-active (click)", "faq is-open (click)", "megamenu mega-open (hover >1024, 200ms leave delay)", "megamenu is-open (click <=1024)", "nav-menu is-open (#nav-toggle <=1024)", "hover: .button/.accent-button/.button--ghost transform+box-shadow(+bg/color/border) 150ms", "hover: .nav-megamenu-trigger bg", "hover: .faq-question bg", "hover: .footer-link color", "hover: .text-button opacity", "ticker CSS animation 40s linear (frozen by capture)"],
+      "implemented": "stardust/prototypes/index-proposed.js (mirrors js/site.js) + lifted hover/transition CSS",
+      "compare": { "1440": "22 parity, 0 missing, 0 extra", "360": "8 parity, 0 missing, 0 extra" },
+      "dead": [],
+      "unobserved": ["a.article-card:hover - hover sampler measured no change on either side; rule kept verbatim from the source stylesheet (symmetric under the instrument)"]
+    },
+    "captureState": [],
+    "approvedBy": "hands-off",
+    "at": "2026-09-25T19:07:26Z"
+  }
+}

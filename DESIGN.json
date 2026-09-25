@@ -1,0 +1,233 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "mode": "bounded-single",
+    "writtenAt": "2026-09-25T18:44:35Z",
+    "synthesizedFrom": [
+      "stardust/current/pages/index.json",
+      "stardust/replica/capture/tokens.json",
+      "stardust/current/DESIGN.json"
+    ]
+  },
+  "colors": {
+    "white": "#fff",
+    "black": "#0f1a14",
+    "amber": "#e8651a",
+    "cream": "#f5f0e8",
+    "gray100": "#f0ece4",
+    "gray200": "#ddd8cf",
+    "gray300": "#c8c2b8",
+    "gray500": "#7a8a80",
+    "gray700": "#3d4f45",
+    "footerGray500": "#999"
+  },
+  "fonts": {
+    "heading": "\"Syncopate\", sans-serif (400/700, self-hosted woff2, OFL)",
+    "body": "\"Instrument Sans\", sans-serif (400–700 variable, self-hosted woff2, OFL)",
+    "smoothing": "-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale"
+  },
+  "typeRamp": {
+    "xs": ".75rem",
+    "sm": ".875rem",
+    "base": "1rem",
+    "lg": "1.125rem",
+    "xl": "1.25rem",
+    "2xl": "1.5rem",
+    "3xl": "2rem",
+    "4xl": "2.5rem",
+    "5xl": "3.5rem",
+    "mobile768": {
+      "5xl": "2rem",
+      "4xl": "1.75rem",
+      "3xl": "1.375rem"
+    }
+  },
+  "space": {
+    "xxs": ".25rem",
+    "xs": ".5rem",
+    "sm": ".75rem",
+    "md": "1rem",
+    "lg": "1.5rem",
+    "xl": "2rem",
+    "2xl": "3rem",
+    "3xl": "4rem",
+    "4xl": "5rem"
+  },
+  "container": {
+    "max": "1200px",
+    "narrow": "48rem",
+    "padding": "1.5rem",
+    "padding768": "1rem",
+    "boxSizing": "border-box (universal reset)"
+  },
+  "radius": {
+    "md": ".5rem",
+    "lg": "1rem",
+    "card": "1.25rem",
+    "full": "9999px"
+  },
+  "extensions": {
+    "breakpoints": {
+      "containerMaxWidth": "1200px",
+      "probeWidth": 2560,
+      "shellMaxWidth": null,
+      "caps": [
+        {
+          "kind": "module",
+          "px": 1200,
+          "via": "max-width",
+          "selector": "#main-content > section.hero-section.hero-section--full > div.container.hero-content",
+          "pages": [
+            "https://wknd-adventures.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 993,
+          "via": "fixed",
+          "selector": "section.section.inverse-section > div.container > div.section-heading > h2.h2-heading",
+          "pages": [
+            "https://wknd-adventures.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 832,
+          "via": "max-width",
+          "selector": "#main-content > section.hero-section.hero-section--full > div.container.hero-content > div.hero-content-inner",
+          "pages": [
+            "https://wknd-adventures.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 768,
+          "via": "max-width",
+          "selector": "#main-content > section.section.inverse-section > div.container.container--narrow",
+          "pages": [
+            "https://wknd-adventures.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 608,
+          "via": "max-width",
+          "selector": "section.hero-section.hero-section--full > div.container.hero-content > div.hero-content-inner > p.paragraph-xl.hero-lead",
+          "pages": [
+            "https://wknd-adventures.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 552,
+          "via": "fixed",
+          "selector": "section.section.secondary-section > div.container > div.featured-article > div.featured-article-image",
+          "pages": [
+            "https://wknd-adventures.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 373,
+          "via": "fixed",
+          "selector": "#tab-climbing > div.grid-layout.desktop-3-column > a.article-card",
+          "pages": [
+            "https://wknd-adventures.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 306,
+          "via": "fixed",
+          "selector": "div.container.hero-content > div.hero-content-inner > div.button-group > a.accent-button",
+          "pages": [
+            "https://wknd-adventures.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 269,
+          "via": "fixed",
+          "selector": "div.container.hero-content > div.hero-content-inner > div.button-group > a.button--ghost",
+          "pages": [
+            "https://wknd-adventures.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 246,
+          "via": "fixed",
+          "selector": "div.featured-article > div > div.featured-article-footer > a.button",
+          "pages": [
+            "https://wknd-adventures.com/"
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "url": "https://wknd-adventures.com/",
+          "section": 0,
+          "selector": "#main-content > section.hero-section.hero-section--full",
+          "px": 1200
+        },
+        {
+          "url": "https://wknd-adventures.com/",
+          "section": 1,
+          "selector": "#main-content > section.section.secondary-section",
+          "px": 1200
+        },
+        {
+          "url": "https://wknd-adventures.com/",
+          "section": 2,
+          "selector": "#main-content > section.section",
+          "px": 1200
+        },
+        {
+          "url": "https://wknd-adventures.com/",
+          "section": 3,
+          "selector": "#main-content > div.ticker-strip",
+          "px": 364
+        },
+        {
+          "url": "https://wknd-adventures.com/",
+          "section": 4,
+          "selector": "#main-content > section.section.inverse-section",
+          "px": 768
+        },
+        {
+          "url": "https://wknd-adventures.com/",
+          "section": 5,
+          "selector": "#main-content > section.section",
+          "px": 768
+        },
+        {
+          "url": "https://wknd-adventures.com/",
+          "section": 6,
+          "selector": "#main-content > section.section.secondary-section",
+          "px": 768
+        },
+        {
+          "url": "https://wknd-adventures.com/",
+          "section": 7,
+          "selector": "#main-content > section.section.inverse-section",
+          "px": 1200
+        },
+        {
+          "url": "https://wknd-adventures.com/",
+          "section": 8,
+          "selector": "#main-content > section.section.accent-section",
+          "px": 1200
+        }
+      ],
+      "capRegister": [],
+      "capProvenance": {
+        "writtenBy": "skills/replica/scripts/cap-probe.mjs",
+        "writtenAt": "2026-09-25T18:40:48.358Z",
+        "baseWidth": 1440,
+        "urls": [
+          "https://wknd-adventures.com/"
+        ]
+      }
+    }
+  }
+}

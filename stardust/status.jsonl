@@ -1,0 +1,11 @@
+{"ts":"2026-09-25T18:39:50Z","skill":"stardust:stardust","phase":"setup","event":"start","detail":"replica hands-off, single page"}
+{"ts":"2026-09-25T18:39:50Z","skill":"stardust:stardust","phase":"setup","event":"end","detail":"scripts copied, deps ok, state.json flow=replica handsOff=true"}
+{"ts":"2026-09-25T18:39:50Z","skill":"stardust:replica","phase":"extract","event":"start","detail":"crawl.mjs --pages / --dynamics (bounded single-page entry)"}
+{"ts":"2026-09-25T18:41:35Z","skill":"stardust:replica","phase":"extract","event":"end","detail":"1/1 captured headless; fonts 3, media 9, DESIGN.json caps written","artifact":"stardust/current/pages/index.json"}
+{"ts":"2026-09-25T18:41:50Z","skill":"stardust:replica","phase":"preserve-direction","event":"start","detail":"bounded promotion branch"}
+{"ts":"2026-09-25T18:44:35Z","skill":"stardust:replica","phase":"preserve-direction","event":"end","detail":"bounded-single spec synthesized; register empty (pure replica)","artifact":"stardust/direction.md"}
+{"ts":"2026-09-25T18:44:35Z","skill":"stardust:replica","phase":"recreate","event":"start","detail":"index archetype: clean HTML/CSS from index.json + tokens.json"}
+{"ts":"2026-09-25T19:00:10Z","skill":"stardust:replica","phase":"recreate","event":"end","detail":"index-proposed.html + canon/module CSS + motion JS; R-01 applied","artifact":"stardust/prototypes/index-proposed.html"}
+{"ts":"2026-09-25T19:00:10Z","skill":"stardust:replica","phase":"source-fidelity-gate","event":"start","detail":"1440: 0.00% Δ0; 360: 2.19% Δ0 (R-01 header seams), overflow ok; cap PASS; chrome bands 100%"}
+{"ts":"2026-09-25T19:07:26Z","skill":"stardust:replica","phase":"source-fidelity-gate","event":"end","detail":"1440 0.00%/Δ0; 360 2.19%/Δ0 (R-01), overflow ok, cap PASS, chrome 100%; motion 22 parity","artifact":"stardust/replica/progress.json"}
+{"ts":"2026-09-25T19:07:26Z","skill":"stardust:replica","phase":"handoff","event":"start","detail":"single page → deploy (foundation + blocks + nav/footer) to sd-spm--0001"}

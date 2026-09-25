@@ -1,0 +1,103 @@
+{
+  "live": "stardust/replica/motion/index-360.json",
+  "build": "stardust/replica/motion/index-360-build.json",
+  "toleranceMs": 150,
+  "tolerancePx": 8,
+  "advisory": true,
+  "findings": 0,
+  "counts": {
+    "behaviors": 12,
+    "parity": 8,
+    "missing": 0,
+    "extra": 0,
+    "tolerance": 0,
+    "dead": 4,
+    "advisory": 0
+  },
+  "verdicts": [
+    {
+      "cls": "widget",
+      "name": "#nav-toggle",
+      "state": "dead",
+      "note": "no sampled change across the frames (track/scroll/box/indicator)",
+      "line": "motion widget #nav-toggle: dead on live — not required (no sampled change across the frames (track/scroll/box/indicator))"
+    },
+    {
+      "cls": "widget",
+      "name": ".nav-megamenu-trigger",
+      "state": "dead",
+      "note": "no sampled change across the frames (track/scroll/box/indicator)",
+      "line": "motion widget .nav-megamenu-trigger: dead on live — not required (no sampled change across the frames (track/scroll/box/indicator))"
+    },
+    {
+      "cls": "widget",
+      "name": ".tab-menu-link:nth-child(2)",
+      "state": "dead",
+      "note": "no sampled change across the frames (track/scroll/box/indicator)",
+      "line": "motion widget .tab-menu-link:nth-child(2): dead on live — not required (no sampled change across the frames (track/scroll/box/indicator))"
+    },
+    {
+      "cls": "widget",
+      "name": ".faq-question",
+      "state": "dead",
+      "note": "no sampled change across the frames (track/scroll/box/indicator)",
+      "line": "motion widget .faq-question: dead on live — not required (no sampled change across the frames (track/scroll/box/indicator))"
+    },
+    {
+      "cls": "transition",
+      "name": "border-bottom-color",
+      "state": "parity",
+      "note": "2 event(s) on live, 2 on build, 150ms",
+      "line": "motion transition border-bottom-color: parity (2 event(s) on live, 2 on build, 150ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "color",
+      "state": "parity",
+      "note": "2 event(s) on live, 2 on build, 150ms",
+      "line": "motion transition color: parity (2 event(s) on live, 2 on build, 150ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "max-height",
+      "state": "parity",
+      "note": "1 event(s) on live, 1 on build, 350ms",
+      "line": "motion transition max-height: parity (1 event(s) on live, 1 on build, 350ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "padding-bottom",
+      "state": "parity",
+      "note": "1 event(s) on live, 1 on build, 350ms",
+      "line": "motion transition padding-bottom: parity (1 event(s) on live, 1 on build, 350ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "padding-top",
+      "state": "parity",
+      "note": "1 event(s) on live, 1 on build, 350ms",
+      "line": "motion transition padding-top: parity (1 event(s) on live, 1 on build, 350ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "transform",
+      "state": "parity",
+      "note": "2 event(s) on live, 2 on build, 300ms",
+      "line": "motion transition transform: parity (2 event(s) on live, 2 on build, 300ms)"
+    },
+    {
+      "cls": "class",
+      "name": "is-active",
+      "state": "parity",
+      "note": "added 4× on live, 4× on build",
+      "line": "motion class is-active: parity (added 4× on live, 4× on build)"
+    },
+    {
+      "cls": "class",
+      "name": "is-open",
+      "state": "parity",
+      "note": "added 3× on live, 3× on build",
+      "line": "motion class is-open: parity (added 3× on live, 3× on build)"
+    }
+  ]
+}

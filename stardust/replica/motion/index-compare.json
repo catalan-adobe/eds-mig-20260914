@@ -1,0 +1,201 @@
+{
+  "live": "stardust/replica/motion/index.json",
+  "build": "stardust/replica/motion/index-build.json",
+  "toleranceMs": 150,
+  "tolerancePx": 8,
+  "advisory": true,
+  "findings": 0,
+  "counts": {
+    "behaviors": 26,
+    "parity": 22,
+    "missing": 0,
+    "extra": 0,
+    "tolerance": 0,
+    "dead": 4,
+    "advisory": 0
+  },
+  "verdicts": [
+    {
+      "cls": "widget",
+      "name": ".tab-menu-link:nth-child(2)",
+      "state": "dead",
+      "note": "no sampled change across the frames (track/scroll/box/indicator)",
+      "line": "motion widget .tab-menu-link:nth-child(2): dead on live — not required (no sampled change across the frames (track/scroll/box/indicator))"
+    },
+    {
+      "cls": "widget",
+      "name": ".faq-question",
+      "state": "dead",
+      "note": "no sampled change across the frames (track/scroll/box/indicator)",
+      "line": "motion widget .faq-question: dead on live — not required (no sampled change across the frames (track/scroll/box/indicator))"
+    },
+    {
+      "cls": "widget",
+      "name": ".nav-megamenu-trigger",
+      "state": "dead",
+      "note": "no sampled change across the frames (track/scroll/box/indicator)",
+      "line": "motion widget .nav-megamenu-trigger: dead on live — not required (no sampled change across the frames (track/scroll/box/indicator))"
+    },
+    {
+      "cls": "hover",
+      "name": ".article-card",
+      "state": "dead",
+      "note": "no measured hover diff",
+      "line": "motion hover .article-card: dead on live — not required (no measured hover diff)"
+    },
+    {
+      "cls": "hover",
+      "name": ".button",
+      "state": "parity",
+      "note": "self.boxShadow, self.transform; 150ms",
+      "line": "motion hover .button: parity (self.boxShadow, self.transform; 150ms)"
+    },
+    {
+      "cls": "hover",
+      "name": ".accent-button",
+      "state": "parity",
+      "note": "self.boxShadow, self.transform; 150ms",
+      "line": "motion hover .accent-button: parity (self.boxShadow, self.transform; 150ms)"
+    },
+    {
+      "cls": "hover",
+      "name": ".button--ghost",
+      "state": "parity",
+      "note": "self.background, self.boxShadow, self.color, self.transform; 150ms",
+      "line": "motion hover .button--ghost: parity (self.background, self.boxShadow, self.color, self.transform; 150ms)"
+    },
+    {
+      "cls": "hover",
+      "name": ".nav-megamenu-trigger",
+      "state": "parity",
+      "note": "self.background; 150ms",
+      "line": "motion hover .nav-megamenu-trigger: parity (self.background; 150ms)"
+    },
+    {
+      "cls": "hover",
+      "name": ".faq-question",
+      "state": "parity",
+      "note": "self.background; 300ms",
+      "line": "motion hover .faq-question: parity (self.background; 300ms)"
+    },
+    {
+      "cls": "hover",
+      "name": ".footer-link",
+      "state": "parity",
+      "note": "self.color; 150ms",
+      "line": "motion hover .footer-link: parity (self.color; 150ms)"
+    },
+    {
+      "cls": "hover",
+      "name": ".text-button",
+      "state": "parity",
+      "note": "self.opacity; 150ms",
+      "line": "motion hover .text-button: parity (self.opacity; 150ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "background-color",
+      "state": "parity",
+      "note": "6 event(s) on live, 6 on build, 150ms",
+      "line": "motion transition background-color: parity (6 event(s) on live, 6 on build, 150ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "border-bottom-color",
+      "state": "parity",
+      "note": "4 event(s) on live, 4 on build, 150ms",
+      "line": "motion transition border-bottom-color: parity (4 event(s) on live, 4 on build, 150ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "border-left-color",
+      "state": "parity",
+      "note": "2 event(s) on live, 2 on build, 150ms",
+      "line": "motion transition border-left-color: parity (2 event(s) on live, 2 on build, 150ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "border-right-color",
+      "state": "parity",
+      "note": "2 event(s) on live, 2 on build, 150ms",
+      "line": "motion transition border-right-color: parity (2 event(s) on live, 2 on build, 150ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "border-top-color",
+      "state": "parity",
+      "note": "2 event(s) on live, 2 on build, 150ms",
+      "line": "motion transition border-top-color: parity (2 event(s) on live, 2 on build, 150ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "box-shadow",
+      "state": "parity",
+      "note": "6 event(s) on live, 6 on build, 150ms",
+      "line": "motion transition box-shadow: parity (6 event(s) on live, 6 on build, 150ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "color",
+      "state": "parity",
+      "note": "6 event(s) on live, 6 on build, 150ms",
+      "line": "motion transition color: parity (6 event(s) on live, 6 on build, 150ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "max-height",
+      "state": "parity",
+      "note": "1 event(s) on live, 1 on build, 350ms",
+      "line": "motion transition max-height: parity (1 event(s) on live, 1 on build, 350ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "opacity",
+      "state": "parity",
+      "note": "1 event(s) on live, 1 on build, 150ms",
+      "line": "motion transition opacity: parity (1 event(s) on live, 1 on build, 150ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "padding-bottom",
+      "state": "parity",
+      "note": "1 event(s) on live, 1 on build, 350ms",
+      "line": "motion transition padding-bottom: parity (1 event(s) on live, 1 on build, 350ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "padding-top",
+      "state": "parity",
+      "note": "1 event(s) on live, 1 on build, 350ms",
+      "line": "motion transition padding-top: parity (1 event(s) on live, 1 on build, 350ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "transform",
+      "state": "parity",
+      "note": "9 event(s) on live, 9 on build, 300ms",
+      "line": "motion transition transform: parity (9 event(s) on live, 9 on build, 300ms)"
+    },
+    {
+      "cls": "class",
+      "name": "is-active",
+      "state": "parity",
+      "note": "added 4× on live, 4× on build",
+      "line": "motion class is-active: parity (added 4× on live, 4× on build)"
+    },
+    {
+      "cls": "class",
+      "name": "is-open",
+      "state": "parity",
+      "note": "added 1× on live, 1× on build",
+      "line": "motion class is-open: parity (added 1× on live, 1× on build)"
+    },
+    {
+      "cls": "class",
+      "name": "mega-open",
+      "state": "parity",
+      "note": "added 1× on live, 1× on build",
+      "line": "motion class mega-open: parity (added 1× on live, 1× on build)"
+    }
+  ]
+}

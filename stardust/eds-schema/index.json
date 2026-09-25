@@ -1,0 +1,325 @@
+{
+ "source": "http://localhost:8797/index-proposed.html",
+ "width": 1280,
+ "profile": "generic",
+ "sections": [
+  {
+   "section": "hero-section",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "WKND Adventures"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "Bold Stories. Real Life. Wild Places."
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "We document the people, routes, and moments that make the outdoors worth protecting."
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Explore Adventures",
+     "href": "adventures.html"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Read Field Notes",
+     "href": "field-notes.html"
+    }
+   ],
+   "imgCount": 1,
+   "editableTexts": 3,
+   "repeats": []
+  },
+  {
+   "section": "section",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Gear Guide · Hiking"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "Sub-10 lb: What to Cut, What to Keep"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "An honest guide to ultralight backpacking — where the weight actually lives, what to cut, what to keep, and when to ignore all of it."
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Read the Story",
+     "href": "blog/ultralight-backpacking.html"
+    }
+   ],
+   "imgCount": 1,
+   "editableTexts": 3,
+   "repeats": []
+  },
+  {
+   "section": "section",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Browse by Activity"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Climbing"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Water"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "Cycling"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Hiking"
+    }
+   ],
+   "imgCount": 12,
+   "editableTexts": 25,
+   "repeats": [
+    {
+     "unitSelector": "DIV.tab-pane",
+     "count": 4,
+     "unit": {
+      "headings": 3,
+      "ctas": 0,
+      "imgs": 3,
+      "textRuns": 9
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "section",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Start Here"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "Not sure where to start?"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "WKND Adventures is built for people who are serious about the outdoors — but it's not a gatekeeping exercise. If you're planning your first multi-day route, you belong here. If you're a seasoned alpinist looking for detailed beta on a route you haven't done, you belong here too. The depth of the archive is the point. If you know roughly what you want to do but haven't committed to a specific route yet, the Destinations section is the fastest way in. It's organised by region, and every destination page links to every relevant route, gear guide, and field note we've published for that area. Start broad, then go deep."
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Browse Adventures",
+     "href": "adventures.html"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Find a Destination",
+     "href": "destinations.html"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 3,
+   "repeats": []
+  },
+  {
+   "section": "section",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Quick Answers"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Who is WKND Adventures for?"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "WKND Adventures is built for anyone serious about the outdoors — whether you're planning your first multi-day route or you're a seasoned alpinist looking for detailed beta on routes you haven't done. The depth of the archive is the point."
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "Are route conditions kept up to date?"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Yes. Every report carries a last-verified date. When conditions shift materially — trail closures, permit changes, access agreements — we go back, revisit the route, and update the record. We consider outdated advice on active terrain a form of negligence."
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "Can I contribute a story?"
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "Yes. We accept reader submissions — routes completed, dispatches from the field, gear reflections. Email stories@wknd-adventures.com with your draft and a one-line bio. We review submissions monthly and respond to everything, yes or no."
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 1,
+   "repeats": [
+    {
+     "unitSelector": "DIV.faq-item",
+     "count": 3,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 2
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "section",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "How We Work"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "01"
+    },
+    {
+     "role": "heading",
+     "order": 2,
+     "text": "We go first"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "Every route published on WKND Adventures has been completed by a WKND contributor before a word is written for public consumption. No desk research. No secondhand accounts aggregated from trip reports on other platforms. If the trail doesn't go, or the permit system has changed, or the hut is closed for the winter — we find out in the field, not in the edit. It costs more time. It produces better information."
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "02"
+    },
+    {
+     "role": "heading",
+     "order": 5,
+     "text": "We document everything"
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "A WKND trip report is not a summary. It's a working document: full gear lists with weights and model numbers, weather windows with specific dates and conditions, permit processes with links and lead times, camp notes with coordinates, water sources, and honest assessments of ground quality. The kind of detail that actually changes how you plan. We write for the reader who is three weeks out and needs to know exactly what they're getting into."
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "03"
+    },
+    {
+     "role": "heading",
+     "order": 8,
+     "text": "We update our work"
+    },
+    {
+     "role": "body",
+     "order": 9,
+     "text": "Routes change. Bridges wash out. Access agreements expire. Fire closures redraw the map. Trail conditions that were accurate in September can be dangerous in April. Every report on WKND carries a last-verified date — and when conditions shift materially, we go back, revisit the route, and update the record. We consider outdated advice on active terrain a form of negligence. We take that seriously."
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 7,
+   "repeats": [
+    {
+     "unitSelector": "DIV.editorial-index-item",
+     "count": 3,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "section",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "In the Field"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": "Field Notes",
+     "href": "field-notes.html"
+    }
+   ],
+   "imgCount": 4,
+   "editableTexts": 1,
+   "repeats": []
+  },
+  {
+   "section": "section",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Ready to plan your next adventure?"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Gear up, read the briefing, then go. Every route you need is here."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Find a Destination",
+     "href": "destinations.html"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Browse Gear Guides",
+     "href": "gear.html"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 2,
+   "repeats": []
+  }
+ ]
+}

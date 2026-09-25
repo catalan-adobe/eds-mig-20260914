@@ -1,0 +1,720 @@
+{
+  "url": "http://localhost:8797/index-proposed.html",
+  "width": 1440,
+  "headerTimeline": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "widgetSamples": [
+    {
+      "sel": ".tab-menu-link:nth-child(2)",
+      "frames": [
+        {
+          "t": 8565.5,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 8768.5,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 8973.199999988079,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 9176.699999988079,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": ".faq-question",
+      "frames": [
+        {
+          "t": 10182.699999988079,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 10385.599999964237,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 10588.699999988079,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 10791.699999988079,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": ".nav-megamenu-trigger",
+      "frames": [
+        {
+          "t": 11801,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 12007.099999964237,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 12213.099999964237,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 12416.5,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        }
+      ]
+    }
+  ],
+  "hoverSamples": [
+    {
+      "sel": ".article-card",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(15, 26, 20)",
+          "background": "rgb(255, 255, 255)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background-color 0.15s, border-color 0.15s, box-shadow 0.15s"
+        },
+        "subs": [
+          {
+            "el": "img.",
+            "transform": "none",
+            "color": "rgb(15, 26, 20)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          },
+          {
+            "el": "h3.h6-heading.utility-margin-bottom-sm",
+            "transform": "none",
+            "color": "rgb(15, 26, 20)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          }
+        ]
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(15, 26, 20)",
+          "background": "rgb(255, 255, 255)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background-color 0.15s, border-color 0.15s, box-shadow 0.15s"
+        },
+        "subs": [
+          {
+            "el": "img.",
+            "transform": "none",
+            "color": "rgb(15, 26, 20)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          },
+          {
+            "el": "h3.h6-heading.utility-margin-bottom-sm",
+            "transform": "none",
+            "color": "rgb(15, 26, 20)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          }
+        ]
+      }
+    },
+    {
+      "sel": ".button",
+      "changed": [
+        "self.transform",
+        "self.boxShadow"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(15, 26, 20)",
+          "boxShadow": "rgb(232, 101, 26) 3px 3px 0px 0px",
+          "opacity": "1",
+          "transition": "transform 0.15s, box-shadow 0.15s, background-color 0.15s, color 0.15s, border-color 0.15s"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "matrix(1, 0, 0, 1, -2, -2)",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(15, 26, 20)",
+          "boxShadow": "rgb(232, 101, 26) 5px 5px 0px 0px",
+          "opacity": "1",
+          "transition": "transform 0.15s, box-shadow 0.15s, background-color 0.15s, color 0.15s, border-color 0.15s"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": ".accent-button",
+      "changed": [
+        "self.transform",
+        "self.boxShadow"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(15, 26, 20)",
+          "background": "rgb(232, 101, 26)",
+          "boxShadow": "rgb(15, 26, 20) 3px 3px 0px 0px",
+          "opacity": "1",
+          "transition": "transform 0.15s, box-shadow 0.15s, background-color 0.15s, color 0.15s, border-color 0.15s"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "matrix(1, 0, 0, 1, -2, -2)",
+          "color": "rgb(15, 26, 20)",
+          "background": "rgb(232, 101, 26)",
+          "boxShadow": "rgb(15, 26, 20) 5px 5px 0px 0px",
+          "opacity": "1",
+          "transition": "transform 0.15s, box-shadow 0.15s, background-color 0.15s, color 0.15s, border-color 0.15s"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": ".button--ghost",
+      "changed": [
+        "self.transform",
+        "self.color",
+        "self.background",
+        "self.boxShadow"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "rgb(15, 26, 20) 3px 3px 0px 0px",
+          "opacity": "1",
+          "transition": "transform 0.15s, box-shadow 0.15s, background-color 0.15s, color 0.15s, border-color 0.15s"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "matrix(1, 0, 0, 1, -2, -2)",
+          "color": "rgb(15, 26, 20)",
+          "background": "rgb(232, 101, 26)",
+          "boxShadow": "rgb(15, 26, 20) 5px 5px 0px 0px",
+          "opacity": "1",
+          "transition": "transform 0.15s, box-shadow 0.15s, background-color 0.15s, color 0.15s, border-color 0.15s"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": ".nav-megamenu-trigger",
+      "changed": [
+        "self.background"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(15, 26, 20)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background-color 0.15s"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(15, 26, 20)",
+          "background": "rgb(240, 236, 228)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background-color 0.15s"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": ".faq-question",
+      "changed": [
+        "self.background"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(15, 26, 20)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background-color 0.15s"
+        },
+        "subs": [
+          {
+            "el": "span.faq-icon",
+            "transform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)",
+            "color": "rgb(232, 101, 26)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "transform 0.3s"
+          }
+        ]
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(15, 26, 20)",
+          "background": "rgb(240, 236, 228)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background-color 0.15s"
+        },
+        "subs": [
+          {
+            "el": "span.faq-icon",
+            "transform": "matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 0)",
+            "color": "rgb(232, 101, 26)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "transform 0.3s"
+          }
+        ]
+      }
+    },
+    {
+      "sel": ".footer-link",
+      "changed": [
+        "self.color"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(153, 153, 153)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "color 0.15s"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "color 0.15s"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": ".text-button",
+      "changed": [
+        "self.opacity"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "opacity 0.15s"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "0.65",
+          "transition": "opacity 0.15s"
+        },
+        "subs": []
+      }
+    }
+  ],
+  "events": {
+    "animations": [],
+    "transitions": [
+      {
+        "prop": "border-bottom-color",
+        "el": "section.section > div.container > div.tab-container.tab-container--wide > div.tab-menu > button.tab-menu-link",
+        "y": 840,
+        "dur": "0.15s, 0.15s"
+      },
+      {
+        "prop": "color",
+        "el": "section.section > div.container > div.tab-container.tab-container--wide > div.tab-menu > button.tab-menu-link",
+        "y": 840,
+        "dur": "0.15s, 0.15s"
+      },
+      {
+        "prop": "border-bottom-color",
+        "el": "section.section > div.container > div.tab-container.tab-container--wide > div.tab-menu > button.tab-menu-link.is-active",
+        "y": 840,
+        "dur": "0.15s, 0.15s"
+      },
+      {
+        "prop": "color",
+        "el": "section.section > div.container > div.tab-container.tab-container--wide > div.tab-menu > button.tab-menu-link.is-active",
+        "y": 840,
+        "dur": "0.15s, 0.15s"
+      },
+      {
+        "prop": "transform",
+        "el": "div.container.container--narrow > div.faq-list > div.faq-item.is-open > button.faq-question > span.faq-icon",
+        "y": 2146,
+        "dur": "0.3s"
+      },
+      {
+        "prop": "padding-bottom",
+        "el": "section.section > div.container.container--narrow > div.faq-list > div.faq-item.is-open > div.faq-answer",
+        "y": 2146,
+        "dur": "0.35s, 0.35s"
+      },
+      {
+        "prop": "max-height",
+        "el": "section.section > div.container.container--narrow > div.faq-list > div.faq-item.is-open > div.faq-answer",
+        "y": 2146,
+        "dur": "0.35s, 0.35s"
+      },
+      {
+        "prop": "padding-top",
+        "el": "section.section > div.container.container--narrow > div.faq-list > div.faq-item.is-open > div.faq-answer",
+        "y": 2146,
+        "dur": "0.35s, 0.35s"
+      },
+      {
+        "prop": "box-shadow",
+        "el": "body > div.navbar > div.container.nav-inner > div.nav-right > a.button",
+        "y": 1320,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "transform",
+        "el": "body > div.navbar > div.container.nav-inner > div.nav-right > a.button",
+        "y": 1320,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "box-shadow",
+        "el": "body > div.navbar > div.container.nav-inner > div.nav-right > a.button",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "transform",
+        "el": "body > div.navbar > div.container.nav-inner > div.nav-right > a.button",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "box-shadow",
+        "el": "section.hero-section.hero-section--full > div.container.hero-content > div.hero-content-inner > div.button-group > a.accent-button",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "transform",
+        "el": "section.hero-section.hero-section--full > div.container.hero-content > div.hero-content-inner > div.button-group > a.accent-button",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "box-shadow",
+        "el": "section.hero-section.hero-section--full > div.container.hero-content > div.hero-content-inner > div.button-group > a.accent-button",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "transform",
+        "el": "section.hero-section.hero-section--full > div.container.hero-content > div.hero-content-inner > div.button-group > a.accent-button",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "border-left-color",
+        "el": "section.hero-section.hero-section--full > div.container.hero-content > div.hero-content-inner > div.button-group > a.button--ghost",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "border-right-color",
+        "el": "section.hero-section.hero-section--full > div.container.hero-content > div.hero-content-inner > div.button-group > a.button--ghost",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "color",
+        "el": "section.hero-section.hero-section--full > div.container.hero-content > div.hero-content-inner > div.button-group > a.button--ghost",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "border-top-color",
+        "el": "section.hero-section.hero-section--full > div.container.hero-content > div.hero-content-inner > div.button-group > a.button--ghost",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "transform",
+        "el": "section.hero-section.hero-section--full > div.container.hero-content > div.hero-content-inner > div.button-group > a.button--ghost",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "border-bottom-color",
+        "el": "section.hero-section.hero-section--full > div.container.hero-content > div.hero-content-inner > div.button-group > a.button--ghost",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "box-shadow",
+        "el": "section.hero-section.hero-section--full > div.container.hero-content > div.hero-content-inner > div.button-group > a.button--ghost",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "background-color",
+        "el": "section.hero-section.hero-section--full > div.container.hero-content > div.hero-content-inner > div.button-group > a.button--ghost",
+        "y": 56,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "border-left-color",
+        "el": "section.hero-section.hero-section--full > div.container.hero-content > div.hero-content-inner > div.button-group > a.button--ghost",
+        "y": 0,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "border-right-color",
+        "el": "section.hero-section.hero-section--full > div.container.hero-content > div.hero-content-inner > div.button-group > a.button--ghost",
+        "y": 0,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "color",
+        "el": "section.hero-section.hero-section--full > div.container.hero-content > div.hero-content-inner > div.button-group > a.button--ghost",
+        "y": 0,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "border-top-color",
+        "el": "section.hero-section.hero-section--full > div.container.hero-content > div.hero-content-inner > div.button-group > a.button--ghost",
+        "y": 0,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "transform",
+        "el": "section.hero-section.hero-section--full > div.container.hero-content > div.hero-content-inner > div.button-group > a.button--ghost",
+        "y": 0,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "border-bottom-color",
+        "el": "section.hero-section.hero-section--full > div.container.hero-content > div.hero-content-inner > div.button-group > a.button--ghost",
+        "y": 0,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "box-shadow",
+        "el": "section.hero-section.hero-section--full > div.container.hero-content > div.hero-content-inner > div.button-group > a.button--ghost",
+        "y": 0,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "background-color",
+        "el": "section.hero-section.hero-section--full > div.container.hero-content > div.hero-content-inner > div.button-group > a.button--ghost",
+        "y": 0,
+        "dur": "0.15s, 0.15s, 0.15s, 0.15s, 0.15s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.container.nav-inner > nav.nav-menu > ul.nav-menu-list > li.nav-menu-list-item.nav-megamenu-item.mega-open > button.nav-link.nav-megamenu-trigger",
+        "y": 0,
+        "dur": "0.15s"
+      },
+      {
+        "prop": "transform",
+        "el": "nav.nav-menu > ul.nav-menu-list > li.nav-menu-list-item.nav-megamenu-item.mega-open > button.nav-link.nav-megamenu-trigger > span.nav-caret",
+        "y": 0,
+        "dur": "0.15s"
+      },
+      {
+        "prop": "background-color",
+        "el": "div.container.nav-inner > nav.nav-menu > ul.nav-menu-list > li.nav-menu-list-item.nav-megamenu-item.mega-open > button.nav-link.nav-megamenu-trigger",
+        "y": 2146,
+        "dur": "0.15s"
+      },
+      {
+        "prop": "transform",
+        "el": "nav.nav-menu > ul.nav-menu-list > li.nav-menu-list-item.nav-megamenu-item > button.nav-link.nav-megamenu-trigger > span.nav-caret",
+        "y": 2146,
+        "dur": "0.15s"
+      },
+      {
+        "prop": "background-color",
+        "el": "section.section > div.container.container--narrow > div.faq-list > div.faq-item.is-open > button.faq-question",
+        "y": 2146,
+        "dur": "0.15s"
+      },
+      {
+        "prop": "background-color",
+        "el": "section.section > div.container.container--narrow > div.faq-list > div.faq-item.is-open > button.faq-question",
+        "y": 4777,
+        "dur": "0.15s"
+      },
+      {
+        "prop": "color",
+        "el": "div.grid-layout.desktop-4-column.grid-gap-xl > div > ul > li > a.footer-link",
+        "y": 4777,
+        "dur": "0.15s"
+      },
+      {
+        "prop": "color",
+        "el": "div.grid-layout.desktop-4-column.grid-gap-xl > div > ul > li > a.footer-link",
+        "y": 3703,
+        "dur": "0.15s"
+      },
+      {
+        "prop": "opacity",
+        "el": "main > section.section.inverse-section > div.container > div.section-heading > a.text-button",
+        "y": 3703,
+        "dur": "0.15s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "is-active"
+        ],
+        "el": "section.section > div.container > div.tab-container.tab-container--wide > div.tab-menu > button.tab-menu-link.is-active",
+        "y": 840
+      },
+      {
+        "added": [
+          "is-active"
+        ],
+        "el": "section.section > div.container > div.tab-container.tab-container--wide > div > div.tab-pane.is-active",
+        "y": 840
+      },
+      {
+        "added": [
+          "is-active"
+        ],
+        "el": "section.section > div.container > div.tab-container.tab-container--wide > div.tab-menu > button.tab-menu-link.is-active",
+        "y": 840
+      },
+      {
+        "added": [
+          "is-active"
+        ],
+        "el": "section.section > div.container > div.tab-container.tab-container--wide > div > div.tab-pane.is-active",
+        "y": 840
+      },
+      {
+        "added": [
+          "is-open"
+        ],
+        "el": "main > section.section > div.container.container--narrow > div.faq-list > div.faq-item.is-open",
+        "y": 2146
+      },
+      {
+        "added": [
+          "mega-open"
+        ],
+        "el": "div.navbar > div.container.nav-inner > nav.nav-menu > ul.nav-menu-list > li.nav-menu-list-item.nav-megamenu-item.mega-open",
+        "y": 0
+      }
+    ]
+  }
+}

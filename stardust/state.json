@@ -1,0 +1,58 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:prototype",
+    "writtenAt": "2026-09-25T19:07:26Z",
+    "stardustVersion": "0.10.0"
+  },
+  "site": {
+    "originUrl": "https://wknd-adventures.com",
+    "deployUrl": "https://sd-spm--0001--eds-mig-20260914--catalan-adobe.aem.page",
+    "extractedAt": "2026-09-25T18:41:35.147Z",
+    "pageCap": 1,
+    "totalDiscovered": 1,
+    "crawled": 1
+  },
+  "direction": {
+    "resolvedAt": "2026-09-25T18:39:50Z",
+    "phrase": "keeping its current design (pixel-perfect replica)",
+    "directionFile": "stardust/direction.md",
+    "iaFidelity": "verbatim"
+  },
+  "handsOff": true,
+  "flow": "replica",
+  "flowChosenAt": "2026-09-25T18:39:50Z",
+  "flowSource": "user-phrase",
+  "pages": [
+    {
+      "slug": "index",
+      "url": "https://wknd-adventures.com/",
+      "title": "WKND Adventures — Bold Stories. Real Life. Wild Places.",
+      "type": "landing",
+      "status": "approved",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-25T18:41:35.147Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-25T18:44:35Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-25T19:07:26Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-25T19:07:26Z",
+          "approvedBy": "hands-off"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/index.json",
+      "prototypePath": "stardust/prototypes/index-proposed.html",
+      "migratedPath": null
+    }
+  ]
+}

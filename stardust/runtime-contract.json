@@ -1,0 +1,14 @@
+{
+  "runtime": "vanilla-eds",
+  "probedAt": "2026-09-25",
+  "source": "scripts/scripts.js decorateButtons() + scripts/aem.js decorateBlock()",
+  "blockWrapperClass": "block",
+  "sectionDom": "main > div → div.section.<name>-container > div.default-content-wrapper | div.<name>-wrapper > div.<name>.block[data-block-name]",
+  "buttonClasses": "a.button.primary (<strong><a>) / a.button.secondary (<em><a>) / a.button.accent (<em><strong><a>), parent p.button-wrapper",
+  "buttonization": "formatted-only",
+  "fragmentScriptPolicy": "inert-innerHTML",
+  "emptySectionCollapse": true,
+  "headerBlock": "stock: nav-brand / nav-sections / nav-tools from /nav sections; isDesktop = (min-width: 900px); hamburger toggleMenu",
+  "footerBlock": "stock: appends /footer fragment children",
+  "fonts": "styles/fonts.css loaded by loadFonts(); fallback faces in styles/styles.css"
+}
