@@ -343,7 +343,8 @@ a.button.secondary:active {
 
 /* eyebrow pill — the source's p.tag: a bold-only paragraph; the paragraph itself is the
    inline-flex pill (as on the source), so its margins do not collapse with the heading's */
-main p:has(> strong:only-child),
+main .section .default-content-wrapper p:has(> strong:only-child),
+main .block p:has(> strong:only-child),
 header p:has(> strong:only-child) {
   display: inline-flex;
   align-items: center;
@@ -492,21 +493,31 @@ main .section.inverse-narrow .default-content-wrapper p:has(> strong:only-child)
   margin-bottom: var(--space-md);
 }
 
-/* CTA rows in default content: consecutive button paragraphs sit on one row.
-   font-size 0 on the wrapper removes the whitespace between the inline-flex paragraphs;
-   every child sets its own rem size (headings globally, p above, a.button globally). */
+/* CTA rows in default content: consecutive button paragraphs sit on one row (the source's
+   .button-group, gap 1rem). Left-aligned bands float the paragraphs (floats ignore the
+   whitespace between them); the centered band is a wrapping flex row. */
 main .section .default-content-wrapper:has(> p.button-wrapper) {
-  font-size: 0;
+  display: flow-root;
 }
 
 main .section .default-content-wrapper p.button-wrapper {
-  display: inline-flex;
-  vertical-align: top;
+  float: left;
   margin: 0 var(--space-md) 0 0;
-  font-size: var(--text-base);
+}
+
+main .section.accent-center .default-content-wrapper:has(> p.button-wrapper) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main .section.accent-center .default-content-wrapper > :is(h1, h2, h3, p) {
+  flex: 0 0 100%;
 }
 
 main .section.accent-center .default-content-wrapper p.button-wrapper {
+  float: none;
+  flex: 0 0 auto;
   margin: 0 var(--space-xs);
 }
 
@@ -545,12 +556,19 @@ main .section.accent-center a.button.secondary:hover {
 
 @media (width <= 768px) {
   main .section .default-content-wrapper p.button-wrapper {
+    float: none;
     display: flex;
     width: 100%;
     margin: 0 0 var(--space-md);
   }
 
-  main .section .default-content-wrapper p.button-wrapper:last-child {
+  main .section.accent-center .default-content-wrapper p.button-wrapper {
+    flex: 0 0 100%;
+    margin: 0 0 var(--space-md);
+  }
+
+  main .section .default-content-wrapper p.button-wrapper:last-child,
+  main .section.accent-center .default-content-wrapper p.button-wrapper:last-child {
     margin-bottom: 0;
   }
 }

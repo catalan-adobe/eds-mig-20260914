@@ -106,7 +106,7 @@
 }
 
 .tabs .card-title :is(h3, h4) {
-  margin: 0;
+  margin: 0 0 var(--space-sm);
   font-size: var(--text-sm);
   letter-spacing: 0.05em;
 }

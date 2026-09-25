@@ -37,6 +37,9 @@ main .ticker-container > div {
 
 .ticker li {
   position: relative;
+  display: flex;
+  align-items: center;
+  min-height: var(--text-2xl);
   margin-right: calc(var(--space-xl) + 0.3em);
 }
 
