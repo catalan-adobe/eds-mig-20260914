@@ -78,3 +78,25 @@ See `skills/stardust/reference/journal-format.md` for entry format.
 **Next:** Phase 5 handoff — deploy to EDS (catalan-adobe/eds-mig-20260914, branch sd-spm--0001).
 
 ---
+## Handoff — home page deployed to EDS, published gate 1440 0.00% / 360 3.77% (2026-09-25)
+
+**Prompt:** (same run) Phase 5 of replica — deploy to catalan-adobe/eds-mig-20260914 branch sd-spm--0001.
+
+**Decisions:**
+- Single page → the deploy chain ran on the main agent (no cluster fan-out); units recorded in stardust/rollout/progress.json (foundation, home, final).
+- Code Sync never builds a `--` ref: `sd-spm--0001` is pushed as requested; previews are served from the identical alias `sd-spm-0001` (see direction.md).
+- Shared DA content: /index.html, /nav.html, /footer.html overwritten; /redirects.json rows `/` and `/index.html` → /us/en removed (they shadowed the root page); media under media/sd-spm-0001/. Preview only, no aem.live publish.
+- Blocks: hero, featured, tabs, ticker, accordion, editorial-index, gallery + header/footer; prose bands as default content with `inverse-narrow` / `accent-center` styles (D1 lint 0 🔴). Brand mark inline SVG in the chrome blocks (the media pipeline serves SVG as webply → 0×0).
+- Published-origin reconcile: 6 rounds; fixes came off measure.mjs/anchor.mjs (eyebrow paragraph is inline-flex on the source, section heading rules beat utility margins, accordion line-height normal, footer fragment wrappers, CTA rows via float/flex).
+
+**Artifacts touched:** styles/, fonts/, favicon.svg, head.html (favicon link), blocks/**, content/{index,nav,footer}.html, stardust/eds-conversion-log.md, stardust/runtime-contract.json, stardust/rollout/{progress.json,foundation-freeze.json}, stardust/replica/progress.json (published regime), stardust/state.json (index → migrated).
+
+**Findings worth flagging:**
+- 360 residual 3.77% = R-01 header seams + gallery photo resampling (pipeline 750px webply renditions vs the source's full jpeg); geometry matches to ±1px.
+- qa-gate's schema unit rows shift by one when the metadata block sits in its own section — a harness/schema alignment artifact, not a defect.
+
+**Open questions:** publish to aem.live (owner decision); whether to keep the `--` branch name.
+
+**Next:** owner review of https://sd-spm-0001--eds-mig-20260914--catalan-adobe.aem.page/ ; publish when approved.
+
+---

@@ -1,7 +1,7 @@
 {
   "_provenance": {
-    "writtenBy": "stardust:prototype",
-    "writtenAt": "2026-09-25T19:07:26Z",
+    "writtenBy": "stardust:migrate",
+    "writtenAt": "2026-09-25T19:43:54Z",
     "stardustVersion": "0.10.0"
   },
   "site": {
@@ -28,7 +28,7 @@
       "url": "https://wknd-adventures.com/",
       "title": "WKND Adventures — Bold Stories. Real Life. Wild Places.",
       "type": "landing",
-      "status": "approved",
+      "status": "migrated",
       "history": [
         {
           "status": "extracted",
@@ -46,13 +46,17 @@
           "status": "approved",
           "at": "2026-09-25T19:07:26Z",
           "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-25T19:43:54Z"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/index.json",
       "prototypePath": "stardust/prototypes/index-proposed.html",
-      "migratedPath": null
+      "migratedPath": "content/index.html"
     }
   ]
 }

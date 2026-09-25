@@ -1,0 +1,75 @@
+{
+  "units": {
+    "foundation": {
+      "status": "done",
+      "kind": "foundation",
+      "templates": [
+        "landing"
+      ],
+      "pages": 2,
+      "blocks": 2,
+      "files": [
+        "styles/styles.css",
+        "styles/fonts.css",
+        "fonts/*.woff2",
+        "favicon.svg",
+        "head.html (favicon link)",
+        "blocks/header/*",
+        "blocks/footer/*",
+        "content/nav.html",
+        "content/footer.html",
+        "stardust/runtime-contract.json"
+      ],
+      "gates": {
+        "360": {
+          "headerCrop": "25.83% (R-01)",
+          "footerCrop": "2.22% before gallery-head fix — re-measured in pub6"
+        },
+        "1440": {
+          "headerCrop": "0.00%",
+          "footerCrop": "0.01%",
+          "chromeParity": "footer quiet; header: Subscribe span→a pairing only"
+        }
+      },
+      "startedAt": "2026-09-25T19:05:00Z",
+      "endedAt": "2026-09-25T19:43:54Z",
+      "owner": "main agent (single page — no fan-out; named decision in stardust/direction.md)",
+      "verdict": "foundation: nav + footer previewed on sd-spm-0001, header/footer bands 100%/99.99% at 1440"
+    },
+    "home": {
+      "status": "done",
+      "kind": "cluster",
+      "templates": [
+        "landing"
+      ],
+      "pages": 1,
+      "blocks": 7,
+      "gates": {
+        "360": {
+          "pixel": "3.77%",
+          "heightDelta": -1,
+          "overflow": 0
+        },
+        "1440": {
+          "pixel": "0.00%",
+          "heightDelta": 0,
+          "overflow": 0
+        },
+        "cap": "PASS at 2560",
+        "cls": "0.0000 / 0.0103",
+        "aiReadability": "strict 100 / code 100",
+        "plain": "1 h1, 18 img, 0 about:error"
+      },
+      "startedAt": "2026-09-25T19:05:00Z",
+      "endedAt": "2026-09-25T19:43:54Z",
+      "verdict": "home: pages 1/1 previewed, blocks 7 (hero, featured, tabs, ticker, accordion, editorial-index, gallery), gate 1440 0.00% / 360 3.77%, requests 0"
+    },
+    "final": {
+      "status": "done",
+      "kind": "final",
+      "startedAt": "2026-09-25T19:43:54Z",
+      "endedAt": "2026-09-25T19:44:57Z",
+      "verdict": "final: foundation-freeze check ok, published gate 1440 0.00% Δ0 / 360 3.77% Δ-1, no open foundation requests"
+    }
+  }
+}
