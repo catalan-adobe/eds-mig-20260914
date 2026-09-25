@@ -343,9 +343,9 @@ a.button.secondary:active {
 
 /* eyebrow pill — the source's p.tag: a bold-only paragraph; the paragraph itself is the
    inline-flex pill (as on the source), so its margins do not collapse with the heading's */
-main .section .default-content-wrapper p:has(> strong:only-child),
+header p:has(> strong:only-child),
 main .block p:has(> strong:only-child),
-header p:has(> strong:only-child) {
+main .section .default-content-wrapper p:has(> strong:only-child) {
   display: inline-flex;
   align-items: center;
   background-color: var(--color-amber);
@@ -359,8 +359,8 @@ header p:has(> strong:only-child) {
   text-shadow: none;
 }
 
-main p:has(> strong:only-child) strong,
-header p:has(> strong:only-child) strong {
+header p:has(> strong:only-child) strong,
+main p:has(> strong:only-child) strong {
   font-weight: inherit;
 }
 
