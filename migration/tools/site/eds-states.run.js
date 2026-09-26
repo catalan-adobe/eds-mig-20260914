@@ -34,7 +34,7 @@ async (page) => {
   } else {
     const burger = page.locator('.header-hamburger');
     await burger.click(); await page.waitForTimeout(1000); await shot('menu-open'); done.push('menu-open');
-    await burger.click(); await page.waitForTimeout(800);
+    await page.locator('.header-mobile-close').click(); await page.waitForTimeout(800);
   }
   const next = page.locator(mobile ? '.news-carousel-nav .news-carousel-arrow.next' : '.news-carousel-arrow-overlay.next').first();
   await next.scrollIntoViewIfNeeded(); await page.waitForTimeout(400);

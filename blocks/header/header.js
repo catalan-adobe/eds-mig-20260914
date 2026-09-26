@@ -196,6 +196,7 @@ function buildMegaCol(col) {
     if (cta) colEl.append(cta);
   } else {
     colEl.append(heading);
+    if (desc) colEl.append(desc);
     if (col.items.length) {
       const ul = document.createElement('ul');
       col.items.forEach(({

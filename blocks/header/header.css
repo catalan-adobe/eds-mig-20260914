@@ -421,9 +421,9 @@ a.header-contact {
 
 .header-mega-caret {
   position: absolute;
-  top: 4px;
-  width: 18px;
-  height: 18px;
+  top: -7px;
+  width: 14px;
+  height: 14px;
   background: #fff;
   transform: translate(-50%, -50%) rotate(45deg);
   box-shadow: -1px -1px 2px 0 rgb(0 0 0 / 12%);
@@ -432,7 +432,7 @@ a.header-contact {
 .header-mega {
   display: none;
   position: absolute;
-  top: 12px;
+  top: -7px;
   pointer-events: auto;
 }
 
@@ -479,11 +479,13 @@ a.header-contact {
 }
 
 .header-mega-col-promo {
-  background: #f7f7fa;
-  border-radius: 12px;
-  padding: 16px;
-  border-left: 0 !important;
+  align-self: stretch;
   width: 260px;
+  margin: -24px -24px -24px 0;
+  padding: 24px;
+  border-left: 0 !important;
+  border-radius: 0 16px 16px 0;
+  background: #f7f7fa;
 }
 
 .header-mega-group {
@@ -998,5 +1000,52 @@ a.header-mobile-promo {
 
   #chat-bar.mobile-open .chat-bar-inner {
     width: 100%;
+  }
+}
+
+/* Products (five-col) panel at desktop widths, as on the reference at 1440px: the grey 4-column
+   group on top, "By Function" below it as a 3-column list, "View all" link bottom-right. */
+@media (width >= 1130px) {
+  .header-mega-inner.five-col {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .header-mega-inner.five-col > .header-mega-group {
+    order: -1;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 572px;
+    margin: 0;
+  }
+
+  .header-mega-inner.five-col > .header-mega-col:first-child {
+    order: 1;
+    width: auto;
+    margin-top: 24px;
+    padding: 0;
+    border-left: 0;
+  }
+
+  .header-mega-inner.five-col > .header-mega-col:first-child .header-mega-col-heading {
+    margin: 27px 0 16px;
+    line-height: 32px;
+  }
+
+  .header-mega-inner.five-col > .header-mega-col:first-child ul {
+    display: block;
+    width: 788px;
+    column-count: 3;
+    column-gap: 24px;
+  }
+
+  .header-mega-inner.five-col > .header-mega-col:first-child li {
+    break-inside: avoid;
+  }
+
+  .header-mega-inner.five-col > .header-mega-col:first-child .header-mega-col-cta {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
   }
 }
