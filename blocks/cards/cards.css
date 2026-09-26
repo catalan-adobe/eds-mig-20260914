@@ -3,7 +3,7 @@
    visible (mobile). Fidelity source: .component-solutioncard in site CSS. */
 
 .cards {
-  padding: 40px 0 60px;
+  padding: 40px 0 100px;
 }
 
 .cards > ul {
@@ -61,21 +61,28 @@
 }
 
 .cards-card-body h3 {
+  height: 68px;
   margin: 0;
+  overflow: hidden;
   font-size: 24px;
   font-weight: 300;
   line-height: 1.4;
 }
 
 .cards-card-body p {
-  margin: 16px 0 0;
+  height: 77px;
+  margin: 16px 0 4px;
+  overflow: hidden;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
 }
 
-.cards-card-cta {
-  margin-top: 8px !important;
+.cards-card-body p.cards-card-cta {
+  display: inline-block;
+  height: auto;
+  margin: 4px;
+  padding: 8px 25px;
 }
 
 .cards-card-cta::after {
@@ -95,13 +102,19 @@
 }
 
 @media (width >= 900px) {
-  .cards {
-    padding: 75px 0;
-  }
-
   .cards > ul {
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
+  }
+}
+
+@media (width >= 1200px) {
+  .cards {
+    padding: 60px 0 90px;
+  }
+
+  .cards-card-body h3 {
+    height: auto;
   }
 
   .cards-card-body p {

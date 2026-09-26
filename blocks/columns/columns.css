@@ -42,15 +42,19 @@
 }
 
 .columns.divider > div {
-  gap: 40px;
+  gap: 0;
 }
 
 .columns.divider {
-  padding: 53px 0;
+  padding: 40px 0 59px;
 }
 
 .columns.divider h2 {
   margin-bottom: 16px;
+}
+
+.columns.divider p:last-child {
+  margin-bottom: 0;
 }
 
 .columns-divider {
@@ -79,6 +83,14 @@
 }
 
 @media (width >= 900px) {
+  .columns.divider {
+    padding: 60px 0;
+  }
+
+  .columns.divider h2 {
+    margin-bottom: 24px;
+  }
+
   .columns.divider > div {
     gap: 60px;
   }
