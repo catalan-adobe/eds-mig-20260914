@@ -38,7 +38,7 @@ main .section.inverse-section-2-container > .inverse-section-2-wrapper {
   margin: 0;
 }
 
-.inverse-section-2.block :where(.picture :is(p, picture)) {
+.inverse-section-2.block :where(.picture > :is(p, picture)) {
   display: flex;
   margin: 0;
 }
@@ -99,7 +99,7 @@ main .section.inverse-section-2-container > .inverse-section-2-wrapper {
   opacity: .65;
 }
 
-.inverse-section-2.block :where(.picture :is(p, picture):nth-of-type(1)), .inverse-section-2.block :where(.picture :is(p, picture):nth-of-type(2)), .inverse-section-2.block :where(.picture :is(p, picture):nth-of-type(3)), .inverse-section-2.block :where(.picture :is(p, picture):nth-of-type(4)) {
+.inverse-section-2.block :where(.picture > :is(p, picture):nth-of-type(1)), .inverse-section-2.block :where(.picture > :is(p, picture):nth-of-type(2)), .inverse-section-2.block :where(.picture > :is(p, picture):nth-of-type(3)), .inverse-section-2.block :where(.picture > :is(p, picture):nth-of-type(4)) {
   flex: 0 1 calc((100% - 2 * var(--space-lg)) / 3);
   order: 2;
   width: calc((100% - 2 * var(--space-lg)) / 3);
@@ -107,24 +107,24 @@ main .section.inverse-section-2-container > .inverse-section-2-wrapper {
   margin: var(--space-xl) var(--space-lg) 0 0;
 }
 
-.inverse-section-2.block :where(.picture :is(p, picture):nth-of-type(1) img), .inverse-section-2.block :where(.picture :is(p, picture):nth-of-type(2) img), .inverse-section-2.block :where(.picture :is(p, picture):nth-of-type(3) img), .inverse-section-2.block :where(.picture :is(p, picture):nth-of-type(4) img) {
+.inverse-section-2.block :where(.picture > :is(p, picture):nth-of-type(1) img), .inverse-section-2.block :where(.picture > :is(p, picture):nth-of-type(2) img), .inverse-section-2.block :where(.picture > :is(p, picture):nth-of-type(3) img), .inverse-section-2.block :where(.picture > :is(p, picture):nth-of-type(4) img) {
   display: block;
   height: 280px;
   border-radius: var(--radius-card);
   object-fit: cover;
 }
 
-.inverse-section-2.block :where(.picture :is(p, picture):nth-of-type(3)) {
+.inverse-section-2.block :where(.picture > :is(p, picture):nth-of-type(3)) {
   margin-right: 0;
 }
 
-.inverse-section-2.block :where(.picture :is(p, picture):nth-of-type(4)) {
+.inverse-section-2.block :where(.picture > :is(p, picture):nth-of-type(4)) {
   flex: 0 0 100%;
   width: 100%;
   margin: var(--space-lg) 0 0;
 }
 
-.inverse-section-2.block :where(.picture :is(p, picture):nth-of-type(4) img) {
+.inverse-section-2.block :where(.picture > :is(p, picture):nth-of-type(4) img) {
   height: 360px;
 }
 
@@ -138,13 +138,13 @@ main .section.inverse-section-2-container > .inverse-section-2-wrapper {
     margin-bottom: calc(var(--space-sm) + var(--space-md));
   }
 
-  .inverse-section-2.block :where(.picture :is(p, picture):nth-of-type(1)), .inverse-section-2.block :where(.picture :is(p, picture):nth-of-type(2)), .inverse-section-2.block :where(.picture :is(p, picture):nth-of-type(3)), .inverse-section-2.block :where(.picture :is(p, picture):nth-of-type(4)) {
+  .inverse-section-2.block :where(.picture > :is(p, picture):nth-of-type(1)), .inverse-section-2.block :where(.picture > :is(p, picture):nth-of-type(2)), .inverse-section-2.block :where(.picture > :is(p, picture):nth-of-type(3)), .inverse-section-2.block :where(.picture > :is(p, picture):nth-of-type(4)) {
     flex: 0 0 100%;
     width: 100%;
     margin: var(--space-lg) 0 0;
   }
 
-  .inverse-section-2.block :where(.picture :is(p, picture):nth-of-type(1)) {
+  .inverse-section-2.block :where(.picture > :is(p, picture):nth-of-type(1)) {
     margin-top: var(--space-xl);
   }
 }
