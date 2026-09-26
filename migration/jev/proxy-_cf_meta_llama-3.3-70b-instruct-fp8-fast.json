@@ -1,0 +1,336 @@
+{
+ "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+ "summary": {
+  "total": 18,
+  "agree": 16,
+  "parsed": 18,
+  "p50Ms": 462,
+  "p95Ms": 10817
+ },
+ "rows": [
+  {
+   "id": "map-hero",
+   "mine": "hero-carousel",
+   "model": "hero-carousel",
+   "raw": "{\"answer\":\"hero-carousel\"}",
+   "agree": true,
+   "latencyMs": 1595,
+   "http": 200,
+   "usage": {
+    "prompt_tokens": 278,
+    "completion_tokens": 8,
+    "total_tokens": 286,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    },
+    "neurons": 9.052054405212402
+   }
+  },
+  {
+   "id": "map-intro",
+   "mine": "default-content",
+   "model": "default-content",
+   "raw": "{\"answer\":\"default-content\"}",
+   "agree": true,
+   "latencyMs": 297,
+   "http": 200,
+   "usage": {
+    "prompt_tokens": 239,
+    "completion_tokens": 8,
+    "total_tokens": 247,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    },
+    "neurons": 8.012015342712402
+   }
+  },
+  {
+   "id": "map-cards",
+   "mine": "cards",
+   "model": "cards",
+   "raw": "{\"answer\":\"cards\"}",
+   "agree": true,
+   "latencyMs": 4718,
+   "http": 200,
+   "usage": {
+    "prompt_tokens": 248,
+    "completion_tokens": 7,
+    "total_tokens": 255,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    },
+    "neurons": 8.047219276428223
+   }
+  },
+  {
+   "id": "map-features",
+   "mine": "columns",
+   "model": "columns",
+   "raw": "{\"answer\":\"columns\"}",
+   "agree": true,
+   "latencyMs": 402,
+   "http": 200,
+   "usage": {
+    "prompt_tokens": 245,
+    "completion_tokens": 7,
+    "total_tokens": 252,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    },
+    "neurons": 7.9672160148620605
+   }
+  },
+  {
+   "id": "map-partners",
+   "mine": "logo-carousel",
+   "model": "logo-carousel",
+   "raw": "{\"answer\":\"logo-carousel\"}",
+   "agree": true,
+   "latencyMs": 493,
+   "http": 200,
+   "usage": {
+    "prompt_tokens": 244,
+    "completion_tokens": 8,
+    "total_tokens": 252,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    },
+    "neurons": 8.145354270935059
+   }
+  },
+  {
+   "id": "map-news",
+   "mine": "news-carousel",
+   "model": "news-carousel",
+   "raw": "{\"answer\":\"news-carousel\"}",
+   "agree": true,
+   "latencyMs": 10817,
+   "http": 200,
+   "usage": {
+    "prompt_tokens": 255,
+    "completion_tokens": 8,
+    "total_tokens": 263,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    },
+    "neurons": 8.438698768615723
+   }
+  },
+  {
+   "id": "map-support",
+   "mine": "columns",
+   "model": "columns",
+   "raw": "{\"answer\":\"columns\"}",
+   "agree": true,
+   "latencyMs": 1920,
+   "http": 200,
+   "usage": {
+    "prompt_tokens": 238,
+    "completion_tokens": 7,
+    "total_tokens": 245,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    },
+    "neurons": 7.780542373657227
+   }
+  },
+  {
+   "id": "map-connect",
+   "mine": "default-content",
+   "model": "default-content",
+   "raw": "{\"answer\":\"default-content\"}",
+   "agree": true,
+   "latencyMs": 299,
+   "http": 200,
+   "usage": {
+    "prompt_tokens": 217,
+    "completion_tokens": 8,
+    "total_tokens": 225,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    },
+    "neurons": 7.425326824188232
+   }
+  },
+  {
+   "id": "auth-chat-placeholder",
+   "mine": true,
+   "model": true,
+   "raw": "{\"answer\":true}",
+   "agree": true,
+   "latencyMs": 227,
+   "http": 200,
+   "usage": {
+    "prompt_tokens": 94,
+    "completion_tokens": 6,
+    "total_tokens": 100,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    },
+    "neurons": 3.735592842102051
+   }
+  },
+  {
+   "id": "auth-progress-bar",
+   "mine": false,
+   "model": false,
+   "raw": "{\"answer\":false}",
+   "agree": true,
+   "latencyMs": 174,
+   "http": 200,
+   "usage": {
+    "prompt_tokens": 94,
+    "completion_tokens": 6,
+    "total_tokens": 100,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    },
+    "neurons": 3.735592842102051
+   }
+  },
+  {
+   "id": "auth-tab-label",
+   "mine": true,
+   "model": true,
+   "raw": "{\"answer\":true}",
+   "agree": true,
+   "latencyMs": 409,
+   "http": 200,
+   "usage": {
+    "prompt_tokens": 113,
+    "completion_tokens": 6,
+    "total_tokens": 119,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    },
+    "neurons": 4.242278575897217
+   }
+  },
+  {
+   "id": "auth-card-gradient",
+   "mine": false,
+   "model": false,
+   "raw": "{\"answer\":false}",
+   "agree": true,
+   "latencyMs": 340,
+   "http": 200,
+   "usage": {
+    "prompt_tokens": 92,
+    "completion_tokens": 6,
+    "total_tokens": 98,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    },
+    "neurons": 3.682257652282715
+   }
+  },
+  {
+   "id": "auth-partner-logo",
+   "mine": true,
+   "model": true,
+   "raw": "{\"answer\":true}",
+   "agree": true,
+   "latencyMs": 349,
+   "http": 200,
+   "usage": {
+    "prompt_tokens": 99,
+    "completion_tokens": 6,
+    "total_tokens": 105,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    },
+    "neurons": 3.868931293487549
+   }
+  },
+  {
+   "id": "auth-chevron",
+   "mine": false,
+   "model": false,
+   "raw": "{\"answer\":false}",
+   "agree": true,
+   "latencyMs": 177,
+   "http": 200,
+   "usage": {
+    "prompt_tokens": 91,
+    "completion_tokens": 6,
+    "total_tokens": 97,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    },
+    "neurons": 3.6555898189544678
+   }
+  },
+  {
+   "id": "auth-copyright",
+   "mine": true,
+   "model": false,
+   "raw": "{\"answer\":false}",
+   "agree": false,
+   "latencyMs": 462,
+   "http": 200,
+   "usage": {
+    "prompt_tokens": 89,
+    "completion_tokens": 6,
+    "total_tokens": 95,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    },
+    "neurons": 3.602254629135132
+   }
+  },
+  {
+   "id": "fid-breakpoints",
+   "mine": "mirror-source",
+   "model": "mirror-source",
+   "raw": "{\"answer\":\"mirror-source\"}",
+   "agree": true,
+   "latencyMs": 511,
+   "http": 200,
+   "usage": {
+    "prompt_tokens": 139,
+    "completion_tokens": 8,
+    "total_tokens": 147,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    },
+    "neurons": 5.345248699188232
+   }
+  },
+  {
+   "id": "fid-fonts",
+   "mine": "reference-files",
+   "model": "reference-files",
+   "raw": "{\"answer\":\"reference-files\"}",
+   "agree": true,
+   "latencyMs": 515,
+   "http": 200,
+   "usage": {
+    "prompt_tokens": 140,
+    "completion_tokens": 8,
+    "total_tokens": 148,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    },
+    "neurons": 5.3719162940979
+   }
+  },
+  {
+   "id": "fid-consent",
+   "mine": "exclude",
+   "model": "rebuild",
+   "raw": "{\"answer\":\"rebuild\"}",
+   "agree": false,
+   "latencyMs": 511,
+   "http": 200,
+   "usage": {
+    "prompt_tokens": 122,
+    "completion_tokens": 8,
+    "total_tokens": 130,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    },
+    "neurons": 4.891898155212402
+   }
+  }
+ ]
+}

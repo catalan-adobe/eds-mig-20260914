@@ -26,7 +26,15 @@ async (page) => {
   await page.addStyleTag({ content: `__FULLCSS__` });
   await page.waitForTimeout(300);
   await page.screenshot({ path: '__OUT__-full.png', fullPage: true, scale: 'css' });
-  const H2 = await page.evaluate(() => document.documentElement.scrollHeight);
+  const boxes = await page.evaluate(() => {
+    const box = (e) => { const r = e.getBoundingClientRect(); return [0, Math.round(r.top + scrollY), Math.round(r.width), Math.round(r.height)]; };
+    const out = { H: document.documentElement.scrollHeight };
+    [...document.querySelectorAll('main > .section')].filter((e) => e.getBoundingClientRect().height > 0)
+      .forEach((e, i) => { out[`section${i}`] = box(e); });
+    const f = document.querySelector('footer');
+    if (f) out.footer = box(f);
+    return out;
+  });
   await page.clock.resume();
-  return { w: page.viewportSize().width, h: page.viewportSize().height, H: H2 };
+  return { w: page.viewportSize().width, h: page.viewportSize().height, ...boxes };
 }

@@ -12,7 +12,7 @@ import { createHash } from 'node:crypto';
 import { join } from 'node:path';
 
 const ROOT = new URL('../..', import.meta.url).pathname;
-const SECTIONS = join(ROOT, 'migration/sections');
+const SECTIONS = process.env.SECTIONS_DIR || join(ROOT, 'migration/sections');
 const DA = join(ROOT, 'migration/tools/da.sh');
 const ORG_SITE = 'catalan-adobe/eds-mig-20260914';
 const MEDIA_DIR = 'spm-ft-0001/media';

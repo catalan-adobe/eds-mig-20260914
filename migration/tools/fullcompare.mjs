@@ -23,8 +23,8 @@ mkdirSync(diffDir, { recursive: true });
 const rows = [];
 for (const [vp, session, w, h] of [['desktop', 'eds-d', '1440', '900'], ['mobile', 'eds-m', '0', '0']]) {
   const out = join(EV, 'eds', `${label}-${vp}`);
-  run(join(T, 'capture.sh'), [session, url, out, w, h, join(T, 'site/eds.css'), join(T, 'site/eds.prep.js'), join(T, 'site/eds-full.css')]);
-  const boxes = JSON.parse(run(join(T, 'pw.sh'), [session, join(T, 'slots.run.js')]));
+  const boxes = JSON.parse(run(join(T, 'capture.sh'), [session, url, out, w, h, join(T, 'site/eds.css'), join(T, 'site/eds.prep.js'), join(T, 'site/eds-full.css')]));
+  writeFileSync(join(diffDir, `${vp}-boxes.json`), JSON.stringify(boxes));
   const width = vp === 'desktop' ? 1440 : 390;
   const ref = join(EV, 'ref', `${vp}-full.png`);
   const whole = run(join(T, 'compare.sh'), [ref, `${out}-full.png`, join(diffDir, `${vp}-page`)]);

@@ -136,3 +136,25 @@ examples, not audited by us):
   the raw API response; `--runs N` batches N calls).
 - `migration/tools/jev-sample.json` — sample migration-flavored request (`block_type`,
   `authorable`, `visual_diff_severity`).
+
+## 7. Main-agent evaluation (integrator, 18:35 UTC)
+
+- Re-verified Jev: `node migration/tools/jev.mjs migration/tools/jev-sample.json` → HTTP 402 "Insufficient balance".
+  `tools/jev-eval.mjs` replays 18 recorded migration decisions (`migration/jev/decisions.json`: 8 section→block
+  mappings, 7 authorable-vs-code flags, 3 fidelity trade-offs) — ready to run once the gateway is funded/BYOK.
+- PROXY (not Jev): same decisions through standard Workers AI chat models on the same account
+  (`tools/cf-llm-eval.mjs`, temperature 0, JSON answer):
+
+| model | agreement with my decisions | p50 | p95 | cost (18 calls) |
+|---|---|---|---|---|
+| @cf/meta/llama-3.1-8b-instruct | 13/18 (72%) | 258 ms | 567 ms | 16.9 neurons (~$0.0002) |
+| @cf/meta/llama-3.3-70b-instruct-fp8-fast | 16/18 (89%) | 462 ms | 10.8 s | 107 neurons (~$0.0012) |
+| main agent (me, reasoning inline) | reference | ~5-30 s per decision incl. evidence reading | | included in session |
+
+  8B disagreements: intro→columns, connect→header (wrong), progress bar & chevron "authorable" (wrong), fonts
+  choice (wrong). 70B disagreements: copyright not authorable (debatable), consent "rebuild" (scope call).
+- Reading: block-mapping and authorable/decoration flags are cheap closed questions where a fast classifier is
+  near-free and mostly right; scope/fidelity trade-offs depend on goals the classifier does not weigh well.
+  Use a System-1 model as a pre-classifier / second opinion (flag disagreements for the main agent), not as the
+  decider. For one page the saving is small (8 mappings); it matters for multi-page migrations (hundreds of
+  sections). Jev's calibrated probabilities would make the "flag low-confidence cases" rule direct — untested.
