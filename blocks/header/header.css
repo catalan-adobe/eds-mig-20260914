@@ -27,6 +27,7 @@ header .header {
 @media (width >= 1130px) {
   .header-utility {
     display: flex;
+    box-sizing: border-box;
     align-items: center;
     justify-content: space-between;
     min-height: 53px;
@@ -40,7 +41,7 @@ header .header {
 .header-utility-left {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
 }
 
 .header-utility-left a {
@@ -136,7 +137,7 @@ header .header {
 
   position: relative;
   min-height: 36px;
-  padding: 0 14px;
+  padding: 0 12px;
   border: 2px solid transparent;
   border-radius: 9999px;
   background:
@@ -172,7 +173,7 @@ header .header {
   align-items: center;
   justify-content: space-between;
   height: 70px;
-  padding: 0 16px;
+  padding: 0 24px 0 32px;
   background: transparent;
   transition: background-color .25s, box-shadow .25s;
   color: #fff;
@@ -182,9 +183,8 @@ header .header {
   .header-nav {
     top: 53px;
     height: 80px;
-    padding: 0 32px;
-    max-width: 1264px;
-    margin: 0 auto;
+    justify-content: flex-start;
+    padding: 0 max(15px, calc((100% - var(--container-width)) / 2 + 15px));
   }
 }
 
@@ -215,7 +215,7 @@ a.header-logo {
 
 @media (width >= 1130px) {
   .header-logo svg {
-    height: 24px;
+    height: 34px;
   }
 }
 
@@ -230,6 +230,12 @@ a.header-logo {
   .header-nav-items {
     display: flex;
     gap: 24px;
+    margin-left: 40px;
+  }
+
+  .header-tools {
+    gap: 40px;
+    margin-left: auto;
   }
 }
 
@@ -240,22 +246,22 @@ a.header-logo {
   color: inherit;
   text-decoration: none;
   font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
   cursor: pointer;
 }
 
 .header-nav-item::after {
   content: '';
-  width: 6px;
-  height: 6px;
-  border: solid currentcolor;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-  margin-top: -4px;
+  width: 8px;
+  height: 12px;
+  background-color: currentcolor;
+  mask: url('/icons/caret-down.svg') center / contain no-repeat;
+  transition: rotate 0.1s ease-in;
 }
 
 .header-nav-item[aria-expanded='true']::after {
-  transform: rotate(-135deg);
-  margin-top: 4px;
+  rotate: 180deg;
 }
 
 .header-tools {
@@ -294,9 +300,12 @@ a.header-contact {
     align-items: center;
     min-height: 40px;
     padding: 0 24px;
+    border-radius: 5px;
     background: #fff;
     color: var(--header-dark);
     font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
     text-decoration: none;
   }
 
@@ -312,20 +321,25 @@ a.header-contact {
 
 .header-hamburger {
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
   justify-content: center;
-  gap: 4px;
-  width: 22px;
-  height: 22px;
+  align-items: center;
+  gap: 2.75px;
+  width: 32px;
+  height: 24px;
+  padding: 1px 6px;
   border: 0;
-  background: none;
+  border-radius: 5px;
+  background: rgb(196 196 196 / 80%);
   cursor: pointer;
 }
 
 .header-hamburger span {
   display: block;
+  width: 14px;
   height: 2px;
-  background: currentcolor;
+  background: #fff;
 }
 
 @media (width >= 1130px) {
@@ -638,6 +652,7 @@ a.header-mobile-promo {
   --inner-bg: #171917;
 
   display: flex;
+  box-sizing: border-box;
   align-items: center;
   width: 808px;
   max-width: calc(100vw - 40px);
@@ -655,6 +670,7 @@ a.header-mobile-promo {
   display: flex;
   align-items: center;
   padding-right: 10px;
+  color: #fff;
 }
 
 .chat-bar-left svg {
@@ -713,6 +729,7 @@ a.header-mobile-promo {
   right: 20px;
   z-index: 900;
   display: none;
+  box-sizing: border-box;
   align-items: center;
   height: 54px;
   min-width: 54px;
@@ -721,10 +738,21 @@ a.header-mobile-promo {
   border-radius: 9999px;
   background:
     linear-gradient(#171917, #171917) padding-box,
-    conic-gradient(from 90deg, #fdb71a 0%, #ab714e 25%, #5a2a82 50%, #ab714e 75%, #fdb71a 100%) border-box;
+    conic-gradient(from calc(90deg + var(--header-ask-angle)), #fdb71a 0%, #ab714e 25%, #5a2a82 50%, #ab714e 75%, #fdb71a 100%) border-box;
   color: #fff;
   cursor: pointer;
   justify-content: center;
+  animation: header-ask-spin 4s linear infinite;
+}
+
+@property --header-ask-angle {
+  syntax: '<angle>';
+  initial-value: 0.001deg;
+  inherits: false;
+}
+
+@keyframes header-ask-spin {
+  to { --header-ask-angle: 360deg; }
 }
 
 #floating-icon svg {
@@ -733,7 +761,7 @@ a.header-mobile-promo {
   fill: #fff;
 }
 
-#floating-icon span {
+#floating-icon > span:not(.header-icon) {
   display: none;
 }
 
