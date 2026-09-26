@@ -1,3 +1,4 @@
 #onetrust-consent-sdk { display: none !important; }
 * { pointer-events: none !important; }
 #floating-icon { animation: none !important; }
+*, *::before, *::after { transition: none !important; }

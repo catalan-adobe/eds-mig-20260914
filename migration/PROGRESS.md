@@ -22,11 +22,11 @@ Resume here. Update after every pass. Secrets: `.hlx/.da-token.json`, `.env.jev`
 - [x] P0 inspect project, branch, checkpoint
 - [x] P1 research (bg subagents): EDS digest → `notes/eds-digest.md`; Jev → `notes/jev-research.md` + `tools/jev.mjs`
 - [x] P2 reference baseline: screenshots desktop/mobile, section map, styles, assets, states, animations
-- [ ] P3 content model + DA docs (index/nav/footer) + media, preview
+- [x] P3 content model + DA docs (index/nav/footer) + media, preview
 - [x] P4 foundation: fonts, tokens, sections, buttons; local aem up
-- [ ] P5 blocks (parallel subagents, worktrees): header, footer, hero carousel, cards, lists, logos, news carousel, columns, cta
-- [ ] P6 integrate + whole-page diff loop (largest gap first)
-- [ ] P7 authoring proof: edit → preview → verify → restore
+- [x] P5 blocks (parallel subagents, worktrees): header, footer, hero carousel, cards, lists, logos, news carousel, columns, cta
+- [x] P6 integrate + whole-page diff loop (largest gap first) — desktop 1.62% / mobile 2.55%
+- [x] P7 authoring proof: edit → preview → verify → restore (notes/authoring-proof.md)
 - [ ] P8 push branch, verify on aem.page, final evidence, report + recipe
 
 ## Timeline (UTC)
@@ -36,7 +36,10 @@ Resume here. Update after every pass. Secrets: `.hlx/.da-token.json`, `.env.jev`
 | P1 research (2 bg agents) | 18:06 | 18:18 | 1st launch failed (git config lock race), relaunch ok; ~10M tokens |
 | P2 reference baseline | 18:06 | 18:24 | full-page + top screenshots desktop/mobile, DOM/CSS/JS, inventory, tokens |
 | P4 foundation | 18:21 | 18:25 | fonts (synopsys TTF->woff2), tokens, container, buttons, compare tool |
-| P5 block agents (5 parallel) | 18:26 | | header, hero, cards+columns, logos+news, footer+sections |
+| P5 block agents (5 parallel) | 18:26 | 20:00 | footer 33m, logos 40m, cards 49m, header 85m, hero 93m (2 hung ~40m on wedged sessions) |
+| P6 integration loop (me) | 19:05 | 20:19 | 14 compare rounds; page 6.7%→1.63% desktop, 10.3%→2.55% mobile |
+| P6b interaction states | 20:19 | 20:22 | 13 states compared; menus 3-13% → delegated (menus agent) |
+| P7 authoring proof | 20:24 | 20:33 | 5 edits in 2 docs, verified + restored |
 
 ## Key decisions
 - Viewports: desktop 1440x900 Chromium DPR1; mobile iPhone 13 emulation 390x664 DPR3 (CSS-px screenshots).

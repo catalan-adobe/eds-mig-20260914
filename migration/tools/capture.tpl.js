@@ -2,7 +2,7 @@ async (page) => {
   const W = __W__;
   const H = __H__;
   if (W) await page.setViewportSize({ width: W, height: H });
-  const useClock = !'__URL__'.includes('localhost');
+  const useClock = '__URL__'.includes('www.synopsys.com');
   if (useClock) await page.clock.install();
   await page.goto('__URL__', { waitUntil: 'load', timeout: 90000 });
   await page.waitForTimeout(2500);

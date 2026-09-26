@@ -1,0 +1,32 @@
+[
+ {
+  "doc": "spm-ft-0001/index",
+  "find": "<h2>Introducing Synopsys<br>Physical AI Solutions</h2>",
+  "replace": "<h2>Introducing Synopsys<br>Physical AI Solutions (Edited in DA)</h2>",
+  "expect": "Physical AI Solutions (Edited in DA)"
+ },
+ {
+  "doc": "spm-ft-0001/index",
+  "find": "<picture><img src=\"https://content.da.live/catalan-adobe/eds-mig-20260914/spm-ft-0001/media/ai-tech-1-77fed3.jpg\" alt=\"Synopsys.ai\"></picture>",
+  "replace": "<picture><img src=\"https://content.da.live/catalan-adobe/eds-mig-20260914/spm-ft-0001/media/silicon-design-verification-368x434-bbaefb.jpg\" alt=\"Synopsys.ai image swapped in DA\"></picture>",
+  "expect": "alt=\"Synopsys.ai image swapped in DA\""
+ },
+ {
+  "doc": "spm-ft-0001/index",
+  "find": "<a href=\"https://www.synopsys.com/support.html\">View Support &amp; Services</a>",
+  "replace": "<a href=\"https://www.synopsys.com/support/training.html\">View Training (edited link)</a>",
+  "expect": "href=\"https://www.synopsys.com/support/training.html\""
+ },
+ {
+  "doc": "spm-ft-0001/index",
+  "find": "Supercharge Productivity&nbsp; &bull;&nbsp; Conquer Complexity",
+  "replace": "Supercharge Productivity&nbsp; &bull;&nbsp; Conquer Complexity (edited)",
+  "expect": "Conquer Complexity (edited)"
+ },
+ {
+  "doc": "spm-ft-0001/footer",
+  "find": "&copy;2026 Synopsys, Inc. All Rights Reserved",
+  "replace": "&copy;2026 Synopsys, Inc. All Rights Reserved (footer edited in DA)",
+  "expect": "All Rights Reserved (footer edited in DA)"
+ }
+]
