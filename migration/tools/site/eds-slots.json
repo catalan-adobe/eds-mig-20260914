@@ -1,0 +1,29 @@
+{
+  "hero": [
+    "main .section:has(.hero-carousel)"
+  ],
+  "intro": [
+    "main .section.intro-section"
+  ],
+  "cards": [
+    "main .section:has(.cards)"
+  ],
+  "features": [
+    "main .section:has(.columns.key-benefits)"
+  ],
+  "partners": [
+    "main .section:has(.logo-carousel)"
+  ],
+  "whatsnew": [
+    "main .section:has(.news-carousel)"
+  ],
+  "support": [
+    "main .section:has(.columns.divider)"
+  ],
+  "connect": [
+    "main .section.connect-section"
+  ],
+  "footer": [
+    "body > footer"
+  ]
+}

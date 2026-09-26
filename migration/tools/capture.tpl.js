@@ -2,7 +2,8 @@ async (page) => {
   const W = __W__;
   const H = __H__;
   if (W) await page.setViewportSize({ width: W, height: H });
-  await page.clock.install();
+  const useClock = !'__URL__'.includes('localhost');
+  if (useClock) await page.clock.install();
   await page.goto('__URL__', { waitUntil: 'load', timeout: 90000 });
   await page.waitForTimeout(2500);
   await page.addStyleTag({ content: `__CSS__` });
@@ -18,8 +19,10 @@ async (page) => {
   await page.evaluate(() => Promise.all([...document.images].filter((i) => !i.complete && i.loading !== 'lazy')
     .map((i) => new Promise((r) => { i.onload = r; i.onerror = r; setTimeout(r, 8000); }))));
   await page.evaluate(() => document.fonts.ready);
-  const now = await page.evaluate(() => Date.now());
-  await page.clock.pauseAt(new Date(now + 50));
+  if (useClock) {
+    const now = await page.evaluate(() => Date.now());
+    await page.clock.pauseAt(new Date(now + 50));
+  }
   await page.evaluate(() => { __PREP__ });
   await page.waitForTimeout(700);
   await page.screenshot({ path: '__OUT__-top.png', scale: 'css' });
@@ -33,8 +36,18 @@ async (page) => {
       .forEach((e, i) => { out[`section${i}`] = box(e); });
     const f = document.querySelector('footer');
     if (f) out.footer = box(f);
+    const slots = __SLOTS__;
+    out.slots = {};
+    Object.entries(slots).forEach(([name, [first, last]]) => {
+      const a = document.querySelector(first);
+      const b = document.querySelector(last || first);
+      if (!a || !b) return;
+      const ra = a.getBoundingClientRect();
+      const rb = b.getBoundingClientRect();
+      out.slots[name] = [0, Math.round(ra.top + scrollY), Math.round(ra.width), Math.round(rb.bottom - ra.top)];
+    });
     return out;
   });
-  await page.clock.resume();
+  if (useClock) await page.clock.resume();
   return { w: page.viewportSize().width, h: page.viewportSize().height, ...boxes };
 }

@@ -122,7 +122,7 @@ function setupNav(block, viewport, track, slides) {
   const viewportNext = next.cloneNode(true);
   viewportPrev.classList.add('news-carousel-arrow-overlay');
   viewportNext.classList.add('news-carousel-arrow-overlay');
-  viewport.append(viewportPrev, viewportNext);
+  block.append(viewportPrev, viewportNext);
 
   let page = 0;
 

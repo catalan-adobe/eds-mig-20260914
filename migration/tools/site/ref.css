@@ -1,2 +1,3 @@
 #onetrust-consent-sdk { display: none !important; }
 .border-gradient-ask.spin { animation: none !important; }
+* { pointer-events: none !important; }

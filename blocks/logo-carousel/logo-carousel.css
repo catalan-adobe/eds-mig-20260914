@@ -1,17 +1,16 @@
 /* Ecosystem Partners logo marquee. Reference: .cmp-logo-carousel (slick, speed 5000ms/slide,
    linear, autoplaySpeed 0, slidesToShow 5/4/3/2 at >992/992/768/320 max-width breakpoints). */
 
-#ecosystem-partners h2 {
-  text-align: center;
-  margin-bottom: 32px;
+main .section.logo-carousel-container {
+  padding: 60px 0 80px;
 }
 
-#ecosystem-partners {
-  padding: 24px 0;
+main .section.logo-carousel-container h2 {
+  text-align: center;
 }
 
 .logo-carousel {
-  margin: 40px 0 80px;
+  margin: 40px 0 0;
 }
 
 .logo-carousel-viewport {
@@ -58,16 +57,12 @@
 }
 
 @media (width <= 730px) {
-  #ecosystem-partners {
-    padding: 12px 0;
-  }
-
-  #ecosystem-partners h2 {
-    margin-bottom: 16px;
+  main .section.logo-carousel-container {
+    padding: 40px 0 47px;
   }
 
   .logo-carousel {
-    margin: 24px 0 48px;
+    margin-top: 25px;
   }
 
   .logo-carousel-item {

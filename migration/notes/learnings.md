@@ -37,3 +37,29 @@ Format: finding · evidence · status. GENERIC = hypothesis until tested on anot
 ### What I will do differently next time
 - Set local git config for worktrees before the first fan-out.
 - Capture the slot table (section y-ranges) first; it is the contract that makes parallel block work composable.
+
+## Iteration 2 (parallel block build) — 18:26–19:40 UTC
+
+### Generic (hypotheses)
+- G2 REVISED: `page.clock.pauseAt()` works on the reference but HANGS on some EDS pages (hero draft; even with a
+  +5 s target, and without any zero-delay timers in the block code). Root cause not isolated (time-boxed).
+  Rule now: fake clock only on pages where it was verified; freeze EDS pages through block hooks
+  (pause button, `getAnimations()` pause) — deterministic without faking time.
+- G9 One hung `playwright-cli run-code` wedges its session daemon: every later command on that session queues
+  forever, so an agent that "retries" hangs again. Two agents lost ~30-40 min each. Fix: `pw.sh` wraps run-code in
+  `timeout` and kills the session daemon with an explanatory message; plus a global watchdog (150 s). Evidence:
+  /tmp/pw-watchdog.log; agents resumed within minutes after the kill.
+- G10 Background servers started inside an agent tool call (`aem up &`) die when the call's process group ends;
+  use `nohup … &` (observed: all agent ports 3011-3015 dead after ~20 min; my own :3000 died the same way).
+- G11 Full-page screenshots can put hover-gated elements into `:hover` (the pointer ends up over content when the
+  viewport is expanded). Capture CSS `* { pointer-events: none !important }` on both sides removes it.
+  (reported by cards agent, applied to ref + eds capture CSS).
+- G12 Worktree agents still write to the main checkout when given absolute evidence paths (sections files, prep
+  hooks landed in main). Harmless here, but merges need an "untracked files would be overwritten" check.
+- G13 Cost: 5 parallel block agents ≈ 100M tokens in 35 min (mostly cached context). Parallelism bought wall
+  time (5 blocks in ~40-70 min) at a high token price; small blocks (footer, logos) finished in 30-40 min.
+
+### Synopsys-specific
+- S9 Mobile shows `#floating-icon` (54px round button, rotating conic border) instead of `#chat-bar`.
+- S10 The Ask pill's gradient border rotates (`rotate-border 4s linear infinite`, `@property --angle`); freeze
+  with `animation: none` for comparisons.

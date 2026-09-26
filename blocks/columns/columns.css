@@ -41,79 +41,6 @@
   line-height: 1.6;
 }
 
-/* --- key-benefits variant: "Industry" / "Technology" icon+title+description
-   lists. Mobile-natural DOM order (heading, 6 items) per column, grouped;
-   desktop lays the same flat list out as two column-major grid tracks so
-   items stay row-aligned without ever duplicating markup. --- */
-
-.columns.key-benefits .columns-key-benefits-flat {
-  display: block;
-}
-
-.columns.key-benefits .columns-key-benefits-heading h3 {
-  font-weight: 300;
-  margin-bottom: 32px;
-}
-
-.columns.key-benefits .columns-key-benefits-item {
-  margin-bottom: 14px;
-}
-
-.columns.key-benefits .columns-key-benefits-link {
-  display: block;
-  color: inherit;
-}
-
-.columns.key-benefits .columns-key-benefits-icon {
-  display: flex;
-  align-items: center;
-  margin: 0 0 8px;
-}
-
-.columns.key-benefits .columns-key-benefits-icon img {
-  width: 50px;
-  height: 50px;
-}
-
-.columns.key-benefits .columns-key-benefits-item h4 {
-  display: inline;
-  margin: 0;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 1.4;
-}
-
-.columns.key-benefits .columns-key-benefits-item p:last-child {
-  margin: 8px 0 0;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.6;
-}
-
-.columns.key-benefits .columns-key-benefits-link:hover h4 {
-  text-decoration: underline;
-}
-
-@media (width >= 730px) {
-  .columns.key-benefits .columns-key-benefits-heading h3 {
-    font-size: 32px;
-  }
-}
-
-@media (width >= 900px) {
-  .columns.key-benefits .columns-key-benefits-flat {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(7, auto);
-    gap: 55px 60px;
-  }
-
-  .columns.key-benefits .columns-key-benefits-item {
-    margin-bottom: 0;
-  }
-}
-
 .columns.divider > div {
   gap: 40px;
 }
@@ -162,5 +89,95 @@
     align-self: stretch;
     width: 1px;
     background-color: #c4c4c4;
+  }
+}
+
+/* --- key-benefits variant: "Industry" / "Technology" lists of icon + title + description.
+   DOM is one flat list (heading, 6 items, heading, 6 items); desktop places it in two
+   column-major grid tracks. Geometry from the reference .cmp-key-benefits rules. --- */
+
+main .section.columns-container:has(.key-benefits) {
+  padding: 70px 0;
+}
+
+main .section.columns-container:has(.key-benefits) .default-content-wrapper h2 {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.columns.key-benefits .columns-key-benefits-heading h3 {
+  margin-bottom: 31px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+.columns.key-benefits .columns-key-benefits-heading ~ .columns-key-benefits-heading {
+  margin-top: 41px;
+}
+
+.columns.key-benefits .columns-key-benefits-link {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  column-gap: 16px;
+  margin-bottom: 32px;
+  color: inherit;
+}
+
+.columns.key-benefits .columns-key-benefits-icon {
+  margin: 0;
+  line-height: 0;
+}
+
+.columns.key-benefits .columns-key-benefits-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.columns.key-benefits .columns-key-benefits-item h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.columns.key-benefits .columns-key-benefits-item p:last-child {
+  grid-column: 1 / -1;
+  margin: 16px 0 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25.6px;
+}
+
+@media (width >= 730px) {
+  main .section.columns-container:has(.key-benefits) {
+    padding: 90px 0 60px;
+  }
+
+  main .section.columns-container:has(.key-benefits) .default-content-wrapper h2 {
+    margin-bottom: 60px;
+  }
+
+  .columns.key-benefits .columns-key-benefits-heading h3 {
+    font-size: 32px;
+  }
+
+  .columns.key-benefits .columns-key-benefits-link {
+    margin-bottom: 48px;
+  }
+}
+
+@media (width >= 992px) {
+  .columns.key-benefits .columns-key-benefits-flat {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, auto);
+    gap: 0 30px;
+  }
+
+  .columns.key-benefits .columns-key-benefits-heading ~ .columns-key-benefits-heading {
+    margin-top: 0;
   }
 }

@@ -23,7 +23,7 @@ mkdirSync(diffDir, { recursive: true });
 const rows = [];
 for (const [vp, session, w, h] of [['desktop', 'eds-d', '1440', '900'], ['mobile', 'eds-m', '0', '0']]) {
   const out = join(EV, 'eds', `${label}-${vp}`);
-  const boxes = JSON.parse(run(join(T, 'capture.sh'), [session, url, out, w, h, join(T, 'site/eds.css'), join(T, 'site/eds.prep.js'), join(T, 'site/eds-full.css')]));
+  const boxes = JSON.parse(run(join(T, 'capture.sh'), [session, url, out, w, h, join(T, 'site/eds.css'), join(T, 'site/eds.prep.js'), join(T, 'site/eds-full.css'), join(T, 'site/eds-slots.json')]));
   writeFileSync(join(diffDir, `${vp}-boxes.json`), JSON.stringify(boxes));
   const width = vp === 'desktop' ? 1440 : 390;
   const ref = join(EV, 'ref', `${vp}-full.png`);
@@ -33,13 +33,14 @@ for (const [vp, session, w, h] of [['desktop', 'eds-d', '1440', '900'], ['mobile
   rows.push({ vp, part: 'TOP (viewport)', result: top });
   NAMES.forEach((name, i) => {
     const [y0, y1] = SLOTS[vp][name];
-    const b = boxes[`section${i}`];
+    const b = boxes.slots[name];
     if (!b) { rows.push({ vp, part: name, result: 'MISSING' }); return; }
     const res = run(join(T, 'compare.sh'), [ref, `${out}-full.png`, join(diffDir, `${vp}-${name}`),
       `${width}x${y1 - y0}+0+${y0}`, `${width}x${b[3]}+0+${b[1]}`]);
     rows.push({ vp, part: name, result: `${res} edsY=${b[1]} refY=${y0}` });
   });
-  if (boxes.footer) {
+  if (boxes.slots.footer) {
+    boxes.footer = boxes.slots.footer;
     const [y0, y1] = SLOTS[vp].footer;
     const res = run(join(T, 'compare.sh'), [ref, `${out}-full.png`, join(diffDir, `${vp}-footer`),
       `${width}x${y1 - y0}+0+${y0}`, `${width}x${boxes.footer[3]}+0+${boxes.footer[1]}`]);

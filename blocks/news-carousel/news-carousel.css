@@ -1,13 +1,17 @@
 /* What's New card carousel. Reference: .cmp-carousel[carousel-type="card-carousel"]
    (slick: infinite, dots, speed 200ms, slidesToShow/Scroll 3/2/1 at >=728/>=600/<600). */
 
-#whats-new h2 {
+main .section.news-carousel-container {
+  padding: 41px 0 76px;
+}
+
+main .section.news-carousel-container h2 {
   text-align: center;
 }
 
 .news-carousel {
   position: relative;
-  margin: 32px auto 0;
+  margin: 70px auto 0;
   max-width: 1170px;
 }
 
@@ -49,7 +53,7 @@
 
 .news-carousel-body {
   padding: 20px 32px 53px;
-  min-height: 260px;
+  min-height: 198px;
 }
 
 .news-carousel-meta {
@@ -114,9 +118,9 @@
 .news-carousel-nav {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 16px;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 15px;
 }
 
 .news-carousel-arrow {
@@ -176,8 +180,8 @@
 .news-carousel-dots li {
   position: relative;
   display: inline-block;
-  height: 2px;
-  width: 50px;
+  height: 0;
+  width: 20px;
   padding: 4px 0;
   cursor: pointer;
   margin: 0 8px 0 0;
@@ -213,10 +217,27 @@
 }
 
 @media (width >= 730px) {
+  main .section.news-carousel-container {
+    padding: 60px 0;
+  }
+
+  .news-carousel {
+    margin-top: 46px;
+  }
+
   .news-carousel-nav {
     display: block;
     text-align: center;
     margin-top: 28px;
+    padding: 0;
+  }
+
+  .news-carousel-nav .news-carousel-dots {
+    margin: 0 auto;
+  }
+
+  .news-carousel-dots li {
+    width: 50px;
   }
 
   .news-carousel-nav .news-carousel-arrow {
@@ -226,8 +247,7 @@
   .news-carousel-arrow-overlay {
     display: flex;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 226px;
     z-index: 1;
     width: 40px;
     height: 40px;
@@ -243,6 +263,6 @@
   }
 
   .news-carousel-body {
-    min-height: 300px;
+    min-height: 198px;
   }
 }

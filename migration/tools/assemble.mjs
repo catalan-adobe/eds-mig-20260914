@@ -62,16 +62,22 @@ function assemble() {
 function copyMedia(html) {
   const urls = [...new Set([...html.matchAll(/<img[^>]+src="(https?:\/\/[^"]+)"/g)].map((m) => m[1]))]
     .filter((u) => !u.startsWith('https://content.da.live/'));
+  const existing = new Set(JSON.parse(execFileSync(DA, ['list', MEDIA_DIR], { encoding: 'utf8' }) || '[]')
+    .map((x) => `${x.name}.${x.ext}`));
   let out = html;
   for (const url of urls) {
     const clean = url.replace(/&amp;/g, '&');
-    const res = execFileSync('curl', ['-sS', '-f', '-L', '-D', '-', '-o', '/tmp/da-media.bin', clean], { encoding: 'utf8' });
-    const type = (res.match(/content-type:\s*([^\s;]+)/i) || [])[1] || '';
-    const ext = { 'image/svg+xml': 'svg', 'image/png': 'png', 'image/webp': 'webp', 'image/gif': 'gif' }[type] || 'jpg';
     const base = new URL(clean).pathname.split('/').pop().replace(/\.(svg|png|jpe?g|webp|gif)(\..*)?$/i, '')
       .replace(/[^a-z0-9-]+/gi, '-').toLowerCase().slice(0, 60);
-    const name = `${base}-${createHash('sha1').update(clean).digest('hex').slice(0, 6)}.${ext}`;
-    execFileSync(DA, ['upload', `${MEDIA_DIR}/${name}`, '/tmp/da-media.bin'], { stdio: 'inherit' });
+    const hash = createHash('sha1').update(clean).digest('hex').slice(0, 6);
+    let name = [...existing].find((n) => n.startsWith(`${base}-${hash}.`));
+    if (!name) {
+      const res = execFileSync('curl', ['-sS', '-f', '-L', '-D', '-', '-o', '/tmp/da-media.bin', clean], { encoding: 'utf8' });
+      const type = (res.match(/content-type:\s*([^\s;]+)/i) || [])[1] || '';
+      const ext = { 'image/svg+xml': 'svg', 'image/png': 'png', 'image/webp': 'webp', 'image/gif': 'gif' }[type] || 'jpg';
+      name = `${base}-${hash}.${ext}`;
+      execFileSync(DA, ['upload', `${MEDIA_DIR}/${name}`, '/tmp/da-media.bin'], { stdio: 'inherit' });
+    }
     out = out.split(url).join(`https://content.da.live/${ORG_SITE}/${MEDIA_DIR}/${name}`);
   }
   return out;

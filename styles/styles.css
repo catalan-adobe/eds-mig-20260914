@@ -143,13 +143,13 @@ button {
 }
 
 /* links */
-a:any-link {
+:where(a:any-link) {
   color: inherit;
   text-decoration: none;
   overflow-wrap: break-word;
 }
 
-a:hover {
+:where(a:hover) {
   text-decoration: none;
 }
 
