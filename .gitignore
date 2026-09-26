@@ -11,3 +11,14 @@ helix-importer-ui
 # Ensure these files are tracked
 !CLAUDE.md
 !AGENTS.md
+
+.hlx/.da-token.json
+
+content
+
+# local secrets
+.env*
+
+# migration evidence (large binaries)
+migration/evidence/
+.playwright-cli/
