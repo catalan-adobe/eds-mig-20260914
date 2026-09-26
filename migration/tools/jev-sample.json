@@ -1,0 +1,34 @@
+{
+  "state": "Section with 4 image tiles, each tile has a background image and a centered title linking to a product area.",
+  "questions": {
+    "block_type": {
+      "type": "choice",
+      "instructions": "What EDS block type best matches this page section?",
+      "criteria": {
+        "hero": "Single large banner, one headline/CTA over a background image",
+        "cards": "Grid of tiles/cards, each with an image, title, and optional link",
+        "columns": "Side-by-side text/image columns, no repeating tile grid",
+        "carousel": "Horizontally scrolling/sliding set of items with nav controls",
+        "default-content": "Plain prose/rich text with no repeating structure",
+        "tabs": "Content switches behind clickable tab labels"
+      }
+    },
+    "authorable": {
+      "type": "noul",
+      "instructions": "Is the tile title real editable text content (not decorative or purely visual)?",
+      "criteria": {
+        "true": "Author-facing text a content editor would change",
+        "false": "Decoration, layout chrome, or generated/boilerplate text"
+      }
+    },
+    "visual_diff_severity": {
+      "type": "score",
+      "instructions": "If this block's implementation only approximates the described layout, how severe would the resulting visual diff likely be?",
+      "criteria": [
+        "Negligible - pixel-level spacing/font differences only",
+        "Minor - noticeable but layout intent preserved",
+        "Major - structure or content order breaks"
+      ]
+    }
+  }
+}
