@@ -1,0 +1,248 @@
+/* What's New card carousel. Reference: .cmp-carousel[carousel-type="card-carousel"]
+   (slick: infinite, dots, speed 200ms, slidesToShow/Scroll 3/2/1 at >=728/>=600/<600). */
+
+#whats-new h2 {
+  text-align: center;
+}
+
+.news-carousel {
+  position: relative;
+  margin: 32px auto 0;
+  max-width: 1170px;
+}
+
+.news-carousel-viewport {
+  position: relative;
+  overflow: hidden;
+}
+
+.news-carousel-track {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: transform 200ms ease;
+}
+
+.news-carousel-slide {
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.news-carousel-image,
+.news-carousel-body {
+  background-color: #fff;
+  box-shadow: 0 1px 7px 0 rgb(0 0 0 / 15%);
+}
+
+.news-carousel-image {
+  box-shadow: none;
+}
+
+.news-carousel-image picture,
+.news-carousel-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.news-carousel-body {
+  padding: 20px 32px 53px;
+  min-height: 260px;
+}
+
+.news-carousel-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.news-carousel-tag {
+  display: inline-block;
+  background-color: var(--purple-light);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 12px;
+  border-radius: 3px;
+  padding: 4px 8px;
+}
+
+.news-carousel-date {
+  flex-shrink: 0;
+  margin-left: 16px;
+  color: var(--grey-text);
+  font-size: 14px;
+  line-height: 16.5px;
+  text-align: right;
+}
+
+.news-carousel-title {
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  color: var(--text-color);
+}
+
+.news-carousel-title-link {
+  color: inherit;
+}
+
+.news-carousel-more-wrapper {
+  position: absolute;
+  bottom: 32px;
+}
+
+.news-carousel-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--link-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.news-carousel-more:hover {
+  color: #23527c;
+}
+
+.news-carousel-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.news-carousel-arrow {
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  border-radius: 20px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--grey-text);
+  background: #fff;
+  color: var(--grey-text);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.news-carousel-arrow:hover,
+.news-carousel-arrow:focus-visible {
+  background: #f7f7fa;
+}
+
+.news-carousel-arrow::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: solid currentcolor;
+  border-width: 0 2px 2px 0;
+}
+
+.news-carousel-arrow.prev::before {
+  transform: rotate(135deg) translate(1px, 1px);
+}
+
+.news-carousel-arrow.next::before {
+  transform: rotate(-45deg) translate(1px, 1px);
+}
+
+.news-carousel-arrow-overlay {
+  display: none;
+}
+
+.news-carousel-dots {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 342px;
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.news-carousel-dots li {
+  position: relative;
+  display: inline-block;
+  height: 2px;
+  width: 50px;
+  padding: 4px 0;
+  cursor: pointer;
+  margin: 0 8px 0 0;
+}
+
+.news-carousel-dots li:last-child {
+  margin: 0;
+}
+
+.news-carousel-dots li::before {
+  content: '';
+  border-bottom: 2px solid #e3e3e3;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 2.5px;
+  transition: 0.5s;
+}
+
+.news-carousel-dots li.active::before {
+  border-color: var(--grey-text);
+  transition: 0.3s;
+}
+
+.news-carousel-dots button {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+@media (width >= 730px) {
+  .news-carousel-nav {
+    display: block;
+    text-align: center;
+    margin-top: 28px;
+  }
+
+  .news-carousel-nav .news-carousel-arrow {
+    display: none;
+  }
+
+  .news-carousel-arrow-overlay {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .news-carousel-arrow-overlay.prev {
+    left: -80px;
+  }
+
+  .news-carousel-arrow-overlay.next {
+    right: -80px;
+  }
+
+  .news-carousel-body {
+    min-height: 300px;
+  }
+}

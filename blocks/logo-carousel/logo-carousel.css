@@ -1,0 +1,84 @@
+/* Ecosystem Partners logo marquee. Reference: .cmp-logo-carousel (slick, speed 5000ms/slide,
+   linear, autoplaySpeed 0, slidesToShow 5/4/3/2 at >992/992/768/320 max-width breakpoints). */
+
+#ecosystem-partners h2 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+#ecosystem-partners {
+  padding: 24px 0;
+}
+
+.logo-carousel {
+  margin: 40px 0 80px;
+}
+
+.logo-carousel-viewport {
+  --logo-visible: 5;
+
+  overflow: hidden;
+}
+
+.logo-carousel-track {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: calc(2000% / var(--logo-visible));
+  animation: logo-carousel-scroll 50s linear infinite;
+}
+
+.logo-carousel-item {
+  flex: 0 0 calc(100% / (var(--logo-count, 10) * 2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.logo-carousel-item img {
+  height: 100px;
+  width: auto;
+  max-width: 80%;
+}
+
+@keyframes logo-carousel-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (width <= 992px) {
+  .logo-carousel-viewport { --logo-visible: 4; }
+}
+
+@media (width <= 768px) {
+  .logo-carousel-viewport { --logo-visible: 3; }
+}
+
+@media (width <= 730px) {
+  #ecosystem-partners {
+    padding: 12px 0;
+  }
+
+  #ecosystem-partners h2 {
+    margin-bottom: 16px;
+  }
+
+  .logo-carousel {
+    margin: 24px 0 48px;
+  }
+
+  .logo-carousel-item {
+    height: 80px;
+  }
+
+  .logo-carousel-item img {
+    height: 80px;
+  }
+}
+
+@media (width <= 320px) {
+  .logo-carousel-viewport { --logo-visible: 2; }
+}
