@@ -1,0 +1,200 @@
+main .section.tabs-container {
+  --pad: var(--container-padding);
+  --cap: var(--container-max);
+  --x: max(var(--pad), calc(50% - var(--cap) / 2 + var(--pad)));
+
+  margin: 0;
+  padding: var(--space-3xl) 0;
+}
+
+.tabs.block :where(.tabs-list) {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabs.block :where(.tabs-tab) {
+  background: none;
+  border: none;
+  border-bottom: 4px solid transparent;
+  border-radius: 0;
+  color: var(--color-gray-300);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.1;
+  padding: var(--space-xs) var(--space-xl) var(--space-xs) 0;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.tabs.block :where(.tabs-tab p),
+.tabs.block :where(.tabs-card p) {
+  margin: 0;
+}
+
+.tabs.block :where(.tabs-panel[hidden]) {
+  display: none;
+}
+
+.tabs.block :where(.tabs-cards) {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabs.block :where(.tabs-card) {
+  position: relative;
+}
+
+.tabs.block :where(.card-link) {
+  display: contents;
+  color: inherit;
+  text-decoration: none;
+}
+
+.tabs.block :where(.tabs-card :is(h1, h2, h3, h4, h5, h6) a) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.tabs.block :where(.tabs-cards img) {
+  display: block;
+  width: 100%;
+}
+
+.tabs.block :where(.tabs-list),
+.tabs.block :where(.tabs-cards) {
+  display: flow-root;
+  white-space: nowrap;
+}
+
+main .section.tabs-container > div {
+  max-width: var(--cap);
+  padding-inline: var(--pad);
+}
+
+main .section.tabs-container .default-content-wrapper :where(:is(h1, h2, h3, h4, h5, h6)) {
+  border-bottom: 2px solid var(--color-black);
+  margin: 0 0 var(--space-sm);
+  padding-bottom: var(--space-xl);
+  white-space: normal;
+}
+
+.tabs.block :where(.tabs-tab:hover) {
+  color: var(--color-gray-500);
+}
+
+.tabs.block :where(.tabs-tab[aria-selected="true"]) {
+  border-bottom-color: var(--color-amber);
+  color: var(--color-black);
+}
+
+.tabs.block :where(.tabs-panel p:has(> picture, > img)) {
+  clear: left;
+  float: left;
+  margin: var(--space-xl) 0 var(--space-md) var(--space-md);
+}
+
+.tabs.block :where(.tabs-panel p:has(> picture, > img) img) {
+  border: 3px solid var(--color-amber);
+  border-radius: 50%;
+  height: 8rem;
+  object-fit: cover;
+  width: 8rem;
+}
+
+.tabs.block :where(.tabs-panel p:not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))) {
+  color: var(--color-gray-500);
+  font-size: var(--text-lg);
+  line-height: var(--leading-normal);
+  margin: 0 0 var(--space-md) 13rem;
+  max-width: 48rem;
+  white-space: normal;
+}
+
+.tabs.block :where(.tabs-panel:nth-of-type(2) p:nth-of-type(2):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))),
+.tabs.block :where(.tabs-panel:nth-of-type(3) p:nth-of-type(2):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))),
+.tabs.block :where(.tabs-panel:nth-of-type(4) p:nth-of-type(2):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))),
+.tabs.block :where(.tabs-panel:nth-of-type(5) p:nth-of-type(2):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))),
+.tabs.block :where(.tabs-panel:nth-of-type(3) p:nth-of-type(3):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))),
+.tabs.block :where(.tabs-panel:nth-of-type(4) p:nth-of-type(3):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))),
+.tabs.block :where(.tabs-panel:nth-of-type(5) p:nth-of-type(3):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))) {
+  clear: left;
+  float: left;
+  margin: 0 0 var(--space-md) var(--space-md);
+  max-width: none;
+  width: 11rem;
+}
+
+.tabs.block :where(.tabs-panel:nth-of-type(2) p:nth-of-type(2):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))),
+.tabs.block :where(.tabs-panel:nth-of-type(3) p:nth-of-type(2):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))),
+.tabs.block :where(.tabs-panel:nth-of-type(4) p:nth-of-type(2):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))),
+.tabs.block :where(.tabs-panel:nth-of-type(5) p:nth-of-type(2):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))) {
+  color: var(--color-black);
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+}
+
+.tabs.block :where(.tabs-panel:nth-of-type(3) p:nth-of-type(3):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))),
+.tabs.block :where(.tabs-panel:nth-of-type(4) p:nth-of-type(3):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))),
+.tabs.block :where(.tabs-panel:nth-of-type(5) p:nth-of-type(3):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))) {
+  font-size: var(--text-sm);
+}
+
+.tabs.block :where(.tabs-panel:nth-of-type(2) p:nth-of-type(3):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))),
+.tabs.block :where(.tabs-panel:nth-of-type(3) p:nth-of-type(4):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))),
+.tabs.block :where(.tabs-panel:nth-of-type(4) p:nth-of-type(4):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))),
+.tabs.block :where(.tabs-panel:nth-of-type(5) p:nth-of-type(4):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))) {
+  margin-top: var(--space-xl);
+}
+
+.tabs.block :where(.is-hidden) {
+  display: none;
+}
+
+@media (width <= 768px) {
+  main .section.tabs-container {
+    overflow-x: hidden;
+    padding: var(--space-xl) 0;
+  }
+
+  .tabs.block :where(.tabs-tab) {
+    font-size: var(--text-lg);
+    padding-right: var(--space-lg);
+  }
+
+  .tabs.block :where(.tabs-panel p:has(> picture, > img)) {
+    float: none;
+    margin-left: 0;
+  }
+
+  .tabs.block :where(.tabs-panel p:not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))) {
+    margin-left: 0;
+    max-width: none;
+  }
+
+  .tabs.block :where(.tabs-panel:nth-of-type(2) p:nth-of-type(2):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))),
+  .tabs.block :where(.tabs-panel:nth-of-type(3) p:nth-of-type(2):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))),
+  .tabs.block :where(.tabs-panel:nth-of-type(4) p:nth-of-type(2):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))),
+  .tabs.block :where(.tabs-panel:nth-of-type(5) p:nth-of-type(2):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))),
+  .tabs.block :where(.tabs-panel:nth-of-type(3) p:nth-of-type(3):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))),
+  .tabs.block :where(.tabs-panel:nth-of-type(4) p:nth-of-type(3):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))),
+  .tabs.block :where(.tabs-panel:nth-of-type(5) p:nth-of-type(3):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))) {
+    float: none;
+    margin-left: 0;
+    width: auto;
+  }
+
+  .tabs.block :where(.tabs-panel:nth-of-type(2) p:nth-of-type(3):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))),
+  .tabs.block :where(.tabs-panel:nth-of-type(3) p:nth-of-type(4):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))),
+  .tabs.block :where(.tabs-panel:nth-of-type(4) p:nth-of-type(4):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))),
+  .tabs.block :where(.tabs-panel:nth-of-type(5) p:nth-of-type(4):not(.button-wrapper, :has(> picture, > img), p:has(> picture, > img) + p:has(> em:only-child))) {
+    margin-top: 0;
+    padding-top: var(--space-md);
+  }
+}
