@@ -31,3 +31,136 @@
     order: unset;
   }
 }
+
+/* --- divider variant: two text columns with a vertical rule on desktop,
+   stacked on mobile with no rule. --- */
+
+.columns.divider p {
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* --- key-benefits variant: "Industry" / "Technology" icon+title+description
+   lists. Mobile-natural DOM order (heading, 6 items) per column, grouped;
+   desktop lays the same flat list out as two column-major grid tracks so
+   items stay row-aligned without ever duplicating markup. --- */
+
+.columns.key-benefits .columns-key-benefits-flat {
+  display: block;
+}
+
+.columns.key-benefits .columns-key-benefits-heading h3 {
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+
+.columns.key-benefits .columns-key-benefits-item {
+  margin-bottom: 14px;
+}
+
+.columns.key-benefits .columns-key-benefits-link {
+  display: block;
+  color: inherit;
+}
+
+.columns.key-benefits .columns-key-benefits-icon {
+  display: flex;
+  align-items: center;
+  margin: 0 0 8px;
+}
+
+.columns.key-benefits .columns-key-benefits-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.columns.key-benefits .columns-key-benefits-item h4 {
+  display: inline;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.columns.key-benefits .columns-key-benefits-item p:last-child {
+  margin: 8px 0 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.columns.key-benefits .columns-key-benefits-link:hover h4 {
+  text-decoration: underline;
+}
+
+@media (width >= 730px) {
+  .columns.key-benefits .columns-key-benefits-heading h3 {
+    font-size: 32px;
+  }
+}
+
+@media (width >= 900px) {
+  .columns.key-benefits .columns-key-benefits-flat {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, auto);
+    gap: 55px 60px;
+  }
+
+  .columns.key-benefits .columns-key-benefits-item {
+    margin-bottom: 0;
+  }
+}
+
+.columns.divider > div {
+  gap: 40px;
+}
+
+.columns.divider {
+  padding: 53px 0;
+}
+
+.columns.divider h2 {
+  margin-bottom: 16px;
+}
+
+.columns-divider {
+  display: none;
+}
+
+.columns.divider .columns-cta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: inherit;
+  font-weight: 400;
+}
+
+.columns.divider .columns-cta-link::after {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 13px;
+  background-color: currentcolor;
+  mask: url('/icons/chevron-right.svg') center / contain no-repeat;
+}
+
+.columns.divider .columns-cta-link:hover {
+  text-decoration: underline;
+}
+
+@media (width >= 900px) {
+  .columns.divider > div {
+    gap: 60px;
+  }
+
+  .columns.divider > div > .columns-divider {
+    display: block;
+    flex: none;
+    align-self: stretch;
+    width: 1px;
+    background-color: #c4c4c4;
+  }
+}
