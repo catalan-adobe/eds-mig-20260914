@@ -30,6 +30,28 @@ function textOf(el) {
 }
 
 /**
+ * Splits a "Title \u2014 Subtitle" list-item label into its two parts, mirroring
+ * the site's two-line nav items (bold title + grey description).
+ * @param {string} label full item text
+ * @returns {{title: string, subtitle: string|null}}
+ */
+function splitItemLabel(label) {
+  const idx = label.indexOf(' \u2014 ');
+  if (idx === -1) return { title: label, subtitle: null };
+  return { title: label.slice(0, idx), subtitle: label.slice(idx + 3) };
+}
+
+/**
+ * A <p> made of nothing but a single link is authored as a trailing CTA
+ * ("View all X", "Learn more", "Download eBook") rather than descriptive text.
+ * @param {Element} p paragraph element
+ */
+function linkOnlyPara(p) {
+  const a = p.querySelector(':scope > a');
+  return a && a.textContent.trim() === p.textContent.trim() ? a : null;
+}
+
+/**
  * Parses the "menus" section (h3 = top-level item, h4 = column heading,
  * ul = link list, p = image or description) into a data structure.
  * @param {Element} section default-content-wrapper of the menus section
@@ -50,18 +72,32 @@ function parseMenus(section) {
       col = null;
     } else if (el.tagName === 'H4' && current) {
       const a = el.querySelector('a');
+      const icon = el.querySelector('img');
       col = {
-        heading: textOf(el), href: a ? a.getAttribute('href') : null, items: [], media: null, desc: null,
+        heading: textOf(el),
+        href: a ? a.getAttribute('href') : null,
+        icon: icon ? icon.getAttribute('src') : null,
+        items: [],
+        media: null,
+        desc: null,
+        cta: null,
       };
       current.cols.push(col);
     } else if (el.tagName === 'UL' && col) {
       col.items = [...el.querySelectorAll(':scope > li')].map((li) => {
         const a = li.querySelector('a');
-        return { label: textOf(li), href: a ? a.getAttribute('href') : '#' };
+        const icon = li.querySelector('img');
+        return {
+          ...splitItemLabel(a ? a.textContent.trim() : textOf(li)),
+          href: a ? a.getAttribute('href') : '#',
+          icon: icon ? icon.getAttribute('src') : null,
+        };
       });
     } else if (el.tagName === 'P' && col) {
       const img = el.querySelector('img');
+      const link = linkOnlyPara(el);
       if (img) col.media = { src: img.getAttribute('src'), alt: img.getAttribute('alt') || '' };
+      else if (link) col.cta = { label: link.textContent.trim(), href: link.getAttribute('href') };
       else col.desc = textOf(el);
     }
   });
@@ -111,13 +147,22 @@ function buildMegaCol(col) {
   const colEl = document.createElement('div');
   colEl.className = 'header-mega-col';
   if (col.media) colEl.classList.add('header-mega-col-promo');
+
   const headingTag = col.href ? 'a' : 'span';
   const heading = document.createElement(headingTag);
   heading.className = 'header-mega-col-heading';
-  heading.textContent = col.heading;
+  if (col.icon) {
+    const icon = document.createElement('img');
+    icon.src = col.icon;
+    icon.alt = '';
+    icon.loading = 'lazy';
+    icon.className = 'header-mega-col-icon';
+    heading.append(icon);
+  }
+  heading.append(document.createTextNode(col.heading));
   if (col.href) heading.setAttribute('href', col.href);
-  colEl.append(heading);
-  if (col.media) {
+
+  const media = col.media && (() => {
     const link = document.createElement('a');
     link.href = col.href || '#';
     link.className = 'header-mega-col-media';
@@ -126,25 +171,66 @@ function buildMegaCol(col) {
     img.alt = col.media.alt;
     img.loading = 'lazy';
     link.append(img);
-    colEl.append(link);
-  }
-  if (col.desc) {
+    return link;
+  })();
+
+  const desc = col.desc && (() => {
     const p = document.createElement('p');
     p.className = 'header-mega-col-desc';
     p.textContent = col.desc;
-    colEl.append(p);
-  }
-  if (col.items.length) {
-    const ul = document.createElement('ul');
-    col.items.forEach(({ label, href }) => {
-      const li = document.createElement('li');
-      const a = document.createElement('a');
-      a.href = href;
-      a.textContent = label;
-      li.append(a);
-      ul.append(li);
-    });
-    colEl.append(ul);
+    return p;
+  })();
+
+  const cta = col.cta && (() => {
+    const a = document.createElement('a');
+    a.href = col.cta.href;
+    a.className = 'header-mega-col-cta';
+    a.textContent = col.cta.label;
+    return a;
+  })();
+
+  if (col.media) {
+    // promo tile: image, then title, then text, then CTA
+    colEl.append(media, heading);
+    if (desc) colEl.append(desc);
+    if (cta) colEl.append(cta);
+  } else {
+    colEl.append(heading);
+    if (col.items.length) {
+      const ul = document.createElement('ul');
+      col.items.forEach(({
+        title, subtitle, href, icon,
+      }) => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = href;
+        if (icon) {
+          const img = document.createElement('img');
+          img.src = icon;
+          img.alt = '';
+          img.loading = 'lazy';
+          img.className = 'header-mega-item-icon';
+          a.append(img);
+        }
+        const content = document.createElement('div');
+        content.className = 'header-mega-item-content';
+        const titleEl = document.createElement('div');
+        titleEl.className = 'header-mega-item-title';
+        titleEl.textContent = title;
+        content.append(titleEl);
+        if (subtitle) {
+          const subEl = document.createElement('div');
+          subEl.className = 'header-mega-item-subtitle';
+          subEl.textContent = subtitle;
+          content.append(subEl);
+        }
+        a.append(content);
+        li.append(a);
+        ul.append(li);
+      });
+      colEl.append(ul);
+    }
+    if (cta) colEl.append(cta);
   }
   return colEl;
 }
@@ -159,7 +245,16 @@ function buildMegaPanel(item) {
   panel.hidden = true;
   const inner = document.createElement('div');
   inner.className = `header-mega-inner ${COL_VARIANT[item.cols.length] || ''}`;
-  item.cols.forEach((col) => inner.append(buildMegaCol(col)));
+  if (item.cols.length === 5) {
+    // 4+1 layout: first column stands alone, the rest share a light-grey group
+    inner.append(buildMegaCol(item.cols[0]));
+    const group = document.createElement('div');
+    group.className = 'header-mega-group';
+    item.cols.slice(1).forEach((col) => group.append(buildMegaCol(col)));
+    inner.append(group);
+  } else {
+    item.cols.forEach((col) => inner.append(buildMegaCol(col)));
+  }
   panel.append(inner);
   return panel;
 }
@@ -243,12 +338,37 @@ function buildUtilityBar(utility) {
   return bar;
 }
 
-function buildMobileMenu(brand, menus, tools) {
+function buildMobileMenu(brand, menus, tools, utility, callbacks) {
   const mobile = document.createElement('div');
   mobile.className = 'header-mobile-menu';
   mobile.hidden = true;
+
+  const topbar = document.createElement('div');
+  topbar.className = 'header-mobile-topbar';
+  const logoLink = document.createElement('a');
+  logoLink.href = brand.href;
+  logoLink.className = 'header-mobile-logo';
+  logoLink.setAttribute('aria-label', brand.label);
+  inlineIcon('synopsys-logo').then((icon) => icon && logoLink.append(icon));
+  const topbarTools = document.createElement('div');
+  topbarTools.className = 'header-mobile-topbar-tools';
+  const searchToggle = document.createElement('button');
+  searchToggle.type = 'button';
+  searchToggle.className = 'header-mobile-search-toggle';
+  searchToggle.setAttribute('aria-label', 'Search Synopsys.com');
+  inlineIcon('search').then((icon) => icon && searchToggle.append(icon));
+  const closeBtn = document.createElement('button');
+  closeBtn.type = 'button';
+  closeBtn.className = 'header-mobile-close';
+  closeBtn.setAttribute('aria-label', 'Close navigation');
+  closeBtn.innerHTML = '<span></span><span></span>';
+  topbarTools.append(searchToggle, closeBtn);
+  topbar.append(logoLink, topbarTools);
+  mobile.append(topbar);
+
   const search = document.createElement('form');
   search.className = 'header-mobile-search';
+  search.hidden = true;
   search.action = 'https://www.synopsys.com/search.html';
   search.method = 'get';
   const searchInput = document.createElement('input');
@@ -257,6 +377,11 @@ function buildMobileMenu(brand, menus, tools) {
   searchInput.placeholder = 'Search Synopsys.com';
   search.append(searchInput);
   mobile.append(search);
+  searchToggle.addEventListener('click', () => {
+    search.hidden = !search.hidden;
+    if (!search.hidden) searchInput.focus();
+  });
+
   const list = document.createElement('ul');
   list.className = 'header-mobile-list';
   menus.forEach((item) => {
@@ -273,13 +398,58 @@ function buildMobileMenu(brand, menus, tools) {
     const back = document.createElement('button');
     back.type = 'button';
     back.className = 'header-mobile-back';
-    back.textContent = `← ${item.label}`;
+    back.textContent = `\u2190 ${item.label}`;
     sub.append(back);
     item.cols.forEach((col) => sub.append(buildMegaCol(col)));
     li.append(sub);
     list.append(li);
   });
   mobile.append(list);
+
+  const utilList = document.createElement('ul');
+  utilList.className = 'header-mobile-util-list';
+  const langLi = document.createElement('li');
+  const langBtn = document.createElement('button');
+  langBtn.type = 'button';
+  langBtn.className = 'header-mobile-item header-mobile-item-lang';
+  const langLabel = document.createElement('span');
+  langLabel.textContent = 'Language Selector';
+  inlineIcon('globe').then((icon) => icon && langBtn.prepend(icon));
+  langBtn.append(langLabel);
+  langLi.append(langBtn);
+  const langSub = document.createElement('div');
+  langSub.className = 'header-mobile-sub';
+  langSub.hidden = true;
+  const langBack = document.createElement('button');
+  langBack.type = 'button';
+  langBack.className = 'header-mobile-back';
+  langBack.textContent = '\u2190 Language Selector';
+  langSub.append(langBack);
+  const langUl = document.createElement('ul');
+  langUl.className = 'header-mega-col';
+  (utility.langs || []).forEach(({ label, href }) => {
+    const item = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = href;
+    a.textContent = label;
+    item.append(a);
+    langUl.append(item);
+  });
+  langSub.append(langUl);
+  langLi.append(langSub);
+  utilList.append(langLi);
+
+  const askLi = document.createElement('li');
+  const askBtn = document.createElement('button');
+  askBtn.type = 'button';
+  askBtn.className = 'header-mobile-item header-mobile-item-ask';
+  const askLabel = document.createElement('span');
+  askLabel.textContent = 'Ask';
+  inlineIcon('sparkle').then((icon) => icon && askBtn.prepend(icon));
+  askBtn.append(askLabel);
+  askLi.append(askBtn);
+  utilList.append(askLi);
+  mobile.append(utilList);
 
   const ctaHolder = document.createElement('div');
   ctaHolder.className = 'header-mobile-cta';
@@ -309,6 +479,12 @@ function buildMobileMenu(brand, menus, tools) {
     sub.hidden = false;
     mobile.classList.add('drilled');
   });
+  langBtn.addEventListener('click', () => {
+    langSub.hidden = false;
+    mobile.classList.add('drilled');
+  });
+  askBtn.addEventListener('click', () => callbacks.onAsk());
+  closeBtn.addEventListener('click', () => callbacks.onClose());
   mobile.addEventListener('click', (e) => {
     if (e.target.closest('.header-mobile-back')) {
       e.target.closest('.header-mobile-sub').hidden = true;
@@ -413,10 +589,35 @@ function initStickyNav(navBar) {
 
 function initDesktopMegaMenus(navBar, navItems, megaWrap) {
   let closeTimer;
+  const caret = document.createElement('div');
+  caret.className = 'header-mega-caret';
+  megaWrap.append(caret);
   const closeAll = () => {
     navItems.forEach((btn) => btn.setAttribute('aria-expanded', 'false'));
     megaWrap.querySelectorAll('.header-mega').forEach((p) => { p.hidden = true; });
     megaWrap.hidden = true;
+  };
+  /**
+   * Positions the panel and its caret so the caret always points at the
+   * trigger item's center, while the panel itself is centered in the
+   * viewport unless that would push it to the right of the trigger (in
+   * which case it's pinned to the trigger's left edge instead) — this is
+   * the site's own behaviour, reverse-engineered from the live nav.
+   * @param {Element} btn the hovered/focused nav item
+   * @param {Element} panel the mega panel being shown
+   */
+  const position = (btn, panel) => {
+    const navRect = navBar.getBoundingClientRect();
+    const itemRect = btn.getBoundingClientRect();
+    const itemLeft = itemRect.left - navRect.left;
+    const itemCenter = itemLeft + itemRect.width / 2;
+    const panelWidth = panel.offsetWidth;
+    const idealLeft = window.innerWidth / 2 - panelWidth / 2 - navRect.left;
+    const margin = 8;
+    const maxLeft = window.innerWidth - navRect.left - panelWidth - margin;
+    const left = Math.max(margin, Math.min(idealLeft, itemLeft, maxLeft));
+    panel.style.left = `${left}px`;
+    caret.style.left = `${itemCenter}px`;
   };
   const open = (btn) => {
     clearTimeout(closeTimer);
@@ -427,6 +628,7 @@ function initDesktopMegaMenus(navBar, navItems, megaWrap) {
     if (panel) {
       panel.hidden = false;
       megaWrap.hidden = false;
+      position(btn, panel);
     }
   };
   navItems.forEach((btn) => {
@@ -516,11 +718,27 @@ export default async function decorate(block) {
 
   navBar.append(brandLink, navItemsWrap, toolsWrap, searchPanel, megaWrap);
 
-  const mobileMenu = buildMobileMenu(brand, menus, tools);
+  const { bar: chatBar, floating } = buildChatBar(chat);
+
+  function openAsk() {
+    chatBar.classList.remove('bc-hidden');
+    chatBar.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    chatBar.querySelector('#chat-bar-input')?.focus();
+  }
+
+  let mobileMenu;
+  function setMobileOpen(open) {
+    hamburger.setAttribute('aria-expanded', String(open));
+    mobileMenu.hidden = !open;
+    document.body.style.overflowY = open ? 'hidden' : '';
+  }
+
+  mobileMenu = buildMobileMenu(brand, menus, tools, utility, {
+    onClose: () => setMobileOpen(false),
+    onAsk: () => { setMobileOpen(false); openAsk(); },
+  });
 
   block.append(navBar, mobileMenu);
-
-  const { bar: chatBar, floating } = buildChatBar(chat);
   block.append(chatBar, floating);
 
   initStickyNav(navBar);
@@ -531,24 +749,13 @@ export default async function decorate(block) {
     if (!searchPanel.hidden) searchPanel.querySelector('input').focus();
   });
 
-  document.getElementById('header-ask')?.addEventListener('click', () => {
-    chatBar.classList.remove('bc-hidden');
-    chatBar.scrollIntoView({ block: 'center', behavior: 'smooth' });
-    chatBar.querySelector('#chat-bar-input')?.focus();
-  });
+  document.getElementById('header-ask')?.addEventListener('click', openAsk);
 
   hamburger.addEventListener('click', () => {
-    const expanded = hamburger.getAttribute('aria-expanded') === 'true';
-    hamburger.setAttribute('aria-expanded', String(!expanded));
-    mobileMenu.hidden = expanded;
-    document.body.style.overflowY = expanded ? '' : 'hidden';
+    setMobileOpen(hamburger.getAttribute('aria-expanded') !== 'true');
   });
 
   DESKTOP.addEventListener('change', (e) => {
-    if (e.matches) {
-      mobileMenu.hidden = true;
-      hamburger.setAttribute('aria-expanded', 'false');
-      document.body.style.overflowY = '';
-    }
+    if (e.matches) setMobileOpen(false);
   });
 }
