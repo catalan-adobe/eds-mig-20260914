@@ -1,0 +1,90 @@
+main .section.secondary-section-2-container {
+  margin: 0;
+  padding: 0;
+}
+
+main .section.secondary-section-2-container > .secondary-section-2-wrapper {
+  max-width: none;
+  padding: 0;
+}
+
+.secondary-section-2.block {
+  --pad: max(var(--container-padding), calc(50% - var(--container-narrow) / 2 + var(--container-padding)));
+  --index-col: calc(5rem + var(--space-2xl));
+
+  margin: 0;
+  padding: var(--space-3xl) 0;
+  box-sizing: border-box;
+  background-color: var(--color-gray-100);
+  color: var(--color-black);
+  -webkit-font-smoothing: antialiased;
+}
+
+.secondary-section-2.block :where(.inner) {
+  box-sizing: border-box;
+  display: flow-root;
+  max-width: var(--container-narrow);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+.secondary-section-2.block :where(.inner > [data-slot]:not(.ctas)), .secondary-section-2.block :where(.inner .item) {
+  display: contents;
+}
+
+.secondary-section-2.block :where(.inner :is(p, h1, h2, h3, h4, h5, h6, ul, ol)) {
+  margin: 0;
+}
+
+.secondary-section-2.block :where(*) {
+  box-sizing: border-box;
+}
+
+.secondary-section-2.block :where(.heading :is(h1, h2, h3, h4, h5, h6):nth-of-type(1)) {
+  margin: 0 0 var(--space-xl);
+}
+
+.secondary-section-2.block :where(.body p:nth-of-type(1)), .secondary-section-2.block :where(.items .item:nth-of-type(1) p:nth-of-type(2)), .secondary-section-2.block :where(.items .item:nth-of-type(2) p:nth-of-type(2)) {
+  float: left;
+  clear: left;
+  width: 5rem;
+  margin-top: calc(var(--space-xl) + 1px);
+  color: var(--color-amber);
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -.03em;
+  line-height: 1;
+}
+
+.secondary-section-2.block :where(.items .item :is(h1, h2, h3, h4, h5, h6):nth-of-type(1)) {
+  margin: 0 0 var(--space-sm);
+  padding: var(--space-xl) 0 0 var(--index-col);
+  border-top: 1px solid var(--color-amber);
+  font-size: var(--text-2xl);
+}
+
+.secondary-section-2.block :where(.items .item p:nth-of-type(1)) {
+  margin: 0;
+  padding: 0 0 calc(var(--space-md) + var(--space-xl)) var(--index-col);
+  color: var(--color-gray-500);
+  font-size: var(--text-lg);
+  line-height: var(--leading-normal);
+}
+
+.secondary-section-2.block :where(.items .item:nth-of-type(3) p:nth-of-type(1)) {
+  border-bottom: 1px solid var(--color-amber);
+}
+
+@media (width <= 768px) {
+  .secondary-section-2.block {
+    --index-col: calc(3rem + var(--space-lg));
+
+    padding-block: var(--space-xl);
+  }
+
+  .secondary-section-2.block :where(.body p:nth-of-type(1)), .secondary-section-2.block :where(.items .item:nth-of-type(1) p:nth-of-type(2)), .secondary-section-2.block :where(.items .item:nth-of-type(2) p:nth-of-type(2)) {
+    width: 3rem;
+    font-size: 2.5rem;
+  }
+}

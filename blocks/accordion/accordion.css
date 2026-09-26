@@ -1,0 +1,124 @@
+main .section.accordion-container {
+  --pad: max(var(--container-padding), calc(50% - var(--container-narrow) / 2 + var(--container-padding)));
+
+  margin: 0;
+  display: flow-root;
+  padding: var(--space-3xl) 0;
+  box-sizing: border-box;
+  color: var(--color-black);
+  -webkit-font-smoothing: antialiased;
+}
+
+.accordion.block :where(.accordion-item-label) {
+  display: block;
+  width: 100%;
+  font-size: 0;
+  line-height: normal;
+  margin: 0 0 var(--space-sm);
+  padding: var(--space-md) var(--space-lg);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  background: none;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color .15s ease;
+}
+
+.accordion.block :where(.accordion-item-label p), .accordion.block :where(.accordion-item-body p) {
+  margin: 0;
+}
+
+.accordion.block :where(.accordion-item-toggle) {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.accordion.block :where(.accordion-item-body[hidden]) {
+  display: none;
+}
+
+main .section.accordion-container > div {
+  max-width: var(--container-narrow);
+  padding-inline: var(--container-padding);
+}
+
+.accordion.block :where(*) {
+  box-sizing: border-box;
+}
+
+main .section.accordion-container .default-content-wrapper :where(:is(h1, h2, h3, h4, h5, h6)) {
+  margin: 0 0 var(--space-xl);
+}
+
+.accordion.block :where(.accordion-item-label p) {
+  display: inline-block;
+  width: calc(100% - 1.25rem);
+  vertical-align: middle;
+  font-size: var(--text-lg);
+  line-height: normal;
+}
+
+.accordion.block :where(.accordion-item-label:hover) {
+  background-color: var(--color-gray-100);
+  border-color: var(--color-amber);
+}
+
+.accordion.block :where(.accordion-item-label .accordion-item-toggle) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--color-amber);
+  font-size: 1.25rem;
+  line-height: 1;
+  transition: transform .3s ease;
+}
+
+.accordion.block :where(.accordion-item-label .accordion-item-toggle)::before {
+  content: "+";
+}
+
+.accordion.block :where(.accordion-item-label:has(> [aria-expanded="true"])) {
+  margin-bottom: 0;
+  border-bottom-color: transparent;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.accordion.block :where(.accordion-item-label:has(> [aria-expanded="true"]) .accordion-item-toggle) {
+  transform: rotate(45deg);
+}
+
+.accordion.block :where(.accordion-item-body) {
+  max-height: 0;
+  margin: 0;
+  padding: 0 var(--space-lg);
+  border: 0 solid var(--color-gray-200);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  overflow: hidden;
+  color: var(--color-gray-700);
+  line-height: 1.7;
+  transition: max-height .35s ease, padding .35s ease;
+}
+
+.accordion.block :where(.accordion-item-body:not([hidden])) {
+  max-height: 30rem;
+  margin-bottom: var(--space-sm);
+  padding: var(--space-md) var(--space-lg);
+  border-width: 0 1px 1px;
+}
+
+@media (width <= 768px) {
+  main .section.accordion-container {
+    padding-block: var(--space-xl);
+  }
+}

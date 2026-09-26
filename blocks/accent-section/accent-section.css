@@ -1,0 +1,95 @@
+main .section.accent-section-container {
+  margin: 0;
+  padding: 0;
+}
+
+main .section.accent-section-container > .accent-section-wrapper {
+  max-width: none;
+  padding: 0;
+}
+
+.accent-section.block {
+  --pad: max(var(--container-padding), calc(50% - var(--container-max) / 2 + var(--container-padding)));
+
+  margin: 0;
+  padding: var(--space-3xl) 0;
+  box-sizing: border-box;
+  background-color: var(--color-amber);
+  color: var(--color-black);
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.accent-section.block :where(.inner) {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--space-md);
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+  place-content: flex-start center;
+}
+
+.accent-section.block :where(.inner > [data-slot]:not(.ctas)), .accent-section.block :where(.inner .item) {
+  display: contents;
+}
+
+.accent-section.block :where(.inner :is(p, h1, h2, h3, h4, h5, h6, ul, ol)) {
+  margin: 0;
+}
+
+.accent-section.block :where(.ctas) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: inherit;
+  margin-top: var(--space-xs);
+}
+
+.accent-section.block :where(.ctas p) {
+  display: flex;
+  margin: 0;
+}
+
+.accent-section.block :where(*) {
+  box-sizing: border-box;
+}
+
+.accent-section.block :where(div), .accent-section.block :where(.heading :is(h1, h2, h3, h4, h5, h6):nth-of-type(1)), .accent-section.block :where(.lead p:nth-of-type(1)) {
+  flex: 0 0 100%;
+}
+
+.accent-section.block :where(.heading :is(h1, h2, h3, h4, h5, h6):nth-of-type(1)) {
+  margin: 0 0 var(--space-sm);
+}
+
+.accent-section.block :where(.lead p:nth-of-type(1)) {
+  margin: 0 0 var(--space-md);
+  font-size: var(--text-lg);
+  line-height: var(--leading-normal);
+}
+
+@media (width <= 768px) {
+  .accent-section.block :where(.ctas .button-wrapper) {
+    flex: 1 1 100%;
+  }
+}
+
+@media (width <= 768px) {
+  .accent-section.block {
+    padding-block: var(--space-xl);
+  }
+
+  .accent-section.block :where(.ctas) {
+    flex: 0 0 100%;
+  }
+
+  .accent-section.block :where(.ctas p:nth-of-type(1) a), .accent-section.block :where(.ctas p:nth-of-type(2) a) {
+    width: 100%;
+  }
+
+  .accent-section.block :where(.ctas p:nth-of-type(1) a + a), .accent-section.block :where(.ctas p:nth-of-type(2) a + a) {
+    margin-top: var(--space-md);
+  }
+}

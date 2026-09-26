@@ -1,0 +1,76 @@
+main .section.ticker-strip-container {
+  margin: 0;
+  padding: 0;
+}
+
+main .section.ticker-strip-container > .ticker-strip-wrapper {
+  max-width: none;
+  padding: 0;
+}
+
+.ticker-strip.block {
+  --ticker-shift: -2902.92px;
+
+  margin: 0;
+  padding-block: var(--space-md);
+  box-sizing: border-box;
+  border-top: 1px solid var(--color-amber);
+  border-bottom: 1px solid var(--color-amber);
+  color: var(--color-black);
+  font-family: var(--font-heading);
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  letter-spacing: -.02em;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ticker-strip.block :where(.inner) {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ticker-strip.block :where(.inner > [data-slot]:not(.ctas)), .ticker-strip.block :where(.inner .item) {
+  display: contents;
+}
+
+.ticker-strip.block :where(.inner :is(p, h1, h2, h3, h4, h5, h6, ul, ol)) {
+  margin: 0;
+}
+
+.ticker-strip.block :where(.body p:nth-of-type(1)), .ticker-strip.block :where(.body p:nth-of-type(2)), .ticker-strip.block :where(.body p:nth-of-type(3)), .ticker-strip.block :where(.body p:nth-of-type(4)), .ticker-strip.block :where(.body p:nth-of-type(5)), .ticker-strip.block :where(.body p:nth-of-type(6)), .ticker-strip.block :where(.body p:nth-of-type(7)), .ticker-strip.block :where(.body p:nth-of-type(8)), .ticker-strip.block :where(.body p:nth-of-type(9)), .ticker-strip.block :where(.body p:nth-of-type(10)), .ticker-strip.block :where(.body p:nth-of-type(11)), .ticker-strip.block :where(.body p:nth-of-type(12)), .ticker-strip.block :where(.body p:nth-of-type(13)), .ticker-strip.block :where(.body p:nth-of-type(14)), .ticker-strip.block :where(.body p:nth-of-type(15)), .ticker-strip.block :where(.body p:nth-of-type(16)), .ticker-strip.block :where(.body p:nth-of-type(17)), .ticker-strip.block :where(.body p:nth-of-type(18)), .ticker-strip.block :where(.body p:nth-of-type(19)), .ticker-strip.block :where(.body p:nth-of-type(20)), .ticker-strip.block :where(.body p:nth-of-type(21)), .ticker-strip.block :where(.body p:nth-of-type(22)), .ticker-strip.block :where(.body p:nth-of-type(23)), .ticker-strip.block :where(.body p:nth-of-type(24)), .ticker-strip.block :where(.body p:nth-of-type(25)), .ticker-strip.block :where(.body p:nth-of-type(26)), .ticker-strip.block :where(.body p:nth-of-type(27)), .ticker-strip.block :where(.body p:nth-of-type(28)), .ticker-strip.block :where(.body p:nth-of-type(29)), .ticker-strip.block :where(.body p:nth-of-type(30)), .ticker-strip.block :where(.body p:nth-of-type(31)), .ticker-strip.block :where(.body p:nth-of-type(32)), .ticker-strip.block :where(.body p:nth-of-type(33)), .ticker-strip.block :where(.body p:nth-of-type(34)), .ticker-strip.block :where(.body p:nth-of-type(35)), .ticker-strip.block :where(.body p:nth-of-type(36)), .ticker-strip.block :where(.body p:nth-of-type(37)), .ticker-strip.block :where(.body p:nth-of-type(38)), .ticker-strip.block :where(.body p:nth-of-type(39)) {
+  flex-shrink: 0;
+  animation: ticker-scroll 40s linear infinite;
+}
+
+.ticker-strip.block :where(.body p:nth-of-type(2)), .ticker-strip.block :where(.body p:nth-of-type(4)), .ticker-strip.block :where(.body p:nth-of-type(6)), .ticker-strip.block :where(.body p:nth-of-type(8)), .ticker-strip.block :where(.body p:nth-of-type(10)), .ticker-strip.block :where(.body p:nth-of-type(12)), .ticker-strip.block :where(.body p:nth-of-type(14)), .ticker-strip.block :where(.body p:nth-of-type(16)), .ticker-strip.block :where(.body p:nth-of-type(18)), .ticker-strip.block :where(.body p:nth-of-type(20)), .ticker-strip.block :where(.body p:nth-of-type(22)), .ticker-strip.block :where(.body p:nth-of-type(24)), .ticker-strip.block :where(.body p:nth-of-type(26)), .ticker-strip.block :where(.body p:nth-of-type(28)), .ticker-strip.block :where(.body p:nth-of-type(30)), .ticker-strip.block :where(.body p:nth-of-type(32)), .ticker-strip.block :where(.body p:nth-of-type(34)), .ticker-strip.block :where(.body p:nth-of-type(36)), .ticker-strip.block :where(.body p:nth-of-type(38)) {
+  color: var(--color-amber);
+  font-size: var(--text-2xl);
+  line-height: 1;
+}
+
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(var(--ticker-shift));
+  }
+}
+
+@media (width <= 768px) {
+  .ticker-strip.block {
+    --ticker-shift: -2206px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker-strip.block :where(.body p:nth-of-type(1)), .ticker-strip.block :where(.body p:nth-of-type(2)), .ticker-strip.block :where(.body p:nth-of-type(3)), .ticker-strip.block :where(.body p:nth-of-type(4)), .ticker-strip.block :where(.body p:nth-of-type(5)), .ticker-strip.block :where(.body p:nth-of-type(6)), .ticker-strip.block :where(.body p:nth-of-type(7)), .ticker-strip.block :where(.body p:nth-of-type(8)), .ticker-strip.block :where(.body p:nth-of-type(9)), .ticker-strip.block :where(.body p:nth-of-type(10)), .ticker-strip.block :where(.body p:nth-of-type(11)), .ticker-strip.block :where(.body p:nth-of-type(12)), .ticker-strip.block :where(.body p:nth-of-type(13)), .ticker-strip.block :where(.body p:nth-of-type(14)), .ticker-strip.block :where(.body p:nth-of-type(15)), .ticker-strip.block :where(.body p:nth-of-type(16)), .ticker-strip.block :where(.body p:nth-of-type(17)), .ticker-strip.block :where(.body p:nth-of-type(18)), .ticker-strip.block :where(.body p:nth-of-type(19)), .ticker-strip.block :where(.body p:nth-of-type(20)), .ticker-strip.block :where(.body p:nth-of-type(21)), .ticker-strip.block :where(.body p:nth-of-type(22)), .ticker-strip.block :where(.body p:nth-of-type(23)), .ticker-strip.block :where(.body p:nth-of-type(24)), .ticker-strip.block :where(.body p:nth-of-type(25)), .ticker-strip.block :where(.body p:nth-of-type(26)), .ticker-strip.block :where(.body p:nth-of-type(27)), .ticker-strip.block :where(.body p:nth-of-type(28)), .ticker-strip.block :where(.body p:nth-of-type(29)), .ticker-strip.block :where(.body p:nth-of-type(30)), .ticker-strip.block :where(.body p:nth-of-type(31)), .ticker-strip.block :where(.body p:nth-of-type(32)), .ticker-strip.block :where(.body p:nth-of-type(33)), .ticker-strip.block :where(.body p:nth-of-type(34)), .ticker-strip.block :where(.body p:nth-of-type(35)), .ticker-strip.block :where(.body p:nth-of-type(36)), .ticker-strip.block :where(.body p:nth-of-type(37)), .ticker-strip.block :where(.body p:nth-of-type(38)), .ticker-strip.block :where(.body p:nth-of-type(39)) {
+    animation: none;
+  }
+}

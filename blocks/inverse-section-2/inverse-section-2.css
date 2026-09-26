@@ -1,0 +1,151 @@
+main .section.inverse-section-2-container {
+  margin: 0;
+  padding: 0;
+}
+
+main .section.inverse-section-2-container > .inverse-section-2-wrapper {
+  max-width: none;
+  padding: 0;
+}
+
+.inverse-section-2.block {
+  --pad: max(var(--container-padding), calc(50% - var(--container-max) / 2 + var(--container-padding)));
+
+  margin: 0;
+  padding: var(--space-3xl) 0;
+  box-sizing: border-box;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+.inverse-section-2.block :where(.inner) {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  align-content: flex-start;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+.inverse-section-2.block :where(.inner > [data-slot]:not(.ctas)), .inverse-section-2.block :where(.inner .item) {
+  display: contents;
+}
+
+.inverse-section-2.block :where(.inner :is(p, h1, h2, h3, h4, h5, h6, ul, ol)) {
+  margin: 0;
+}
+
+.inverse-section-2.block :where(.picture p) {
+  display: flex;
+  margin: 0;
+}
+
+.inverse-section-2.block :where(.picture picture) {
+  display: flex;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.inverse-section-2.block :where(.picture img) {
+  width: 100%;
+  height: auto;
+}
+
+.inverse-section-2.block :where(*) {
+  box-sizing: border-box;
+}
+
+.inverse-section-2.block :where(.inner)::before {
+  content: "";
+  flex: 0 0 100%;
+  order: 1;
+  height: 0;
+}
+
+.inverse-section-2.block :where(div) {
+  flex: 0 0 100%;
+}
+
+.inverse-section-2.block :where(.heading :is(h1, h2, h3, h4, h5, h6):nth-of-type(1)) {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0 0 var(--space-sm);
+  color: var(--color-white);
+}
+
+.inverse-section-2.block :where(.body p:nth-of-type(1)) {
+  flex-shrink: 0;
+}
+
+.inverse-section-2.block :where(.body p:nth-of-type(1) a) {
+  display: inline-flex;
+  margin-inline-start: auto;
+  align-items: center;
+  gap: var(--space-xs);
+  color: inherit;
+  font-family: var(--font-heading);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  transition: opacity var(--transition-fast);
+}
+
+.inverse-section-2.block :where(.body p:nth-of-type(1) a:hover) {
+  opacity: .65;
+}
+
+.inverse-section-2.block :where(.picture p:nth-of-type(1)), .inverse-section-2.block :where(.picture p:nth-of-type(2)), .inverse-section-2.block :where(.picture p:nth-of-type(3)), .inverse-section-2.block :where(.picture p:nth-of-type(4)) {
+  flex: 0 1 calc((100% - 2 * var(--space-lg)) / 3);
+  order: 2;
+  width: calc((100% - 2 * var(--space-lg)) / 3);
+  max-width: 100%;
+  margin: var(--space-xl) var(--space-lg) 0 0;
+}
+
+.inverse-section-2.block :where(.picture p:nth-of-type(1) img), .inverse-section-2.block :where(.picture p:nth-of-type(2) img), .inverse-section-2.block :where(.picture p:nth-of-type(3) img), .inverse-section-2.block :where(.picture p:nth-of-type(4) img) {
+  display: block;
+  height: 280px;
+  border-radius: var(--radius-card);
+  object-fit: cover;
+}
+
+.inverse-section-2.block :where(.picture p:nth-of-type(3)) {
+  margin-right: 0;
+}
+
+.inverse-section-2.block :where(.picture p:nth-of-type(4)) {
+  flex: 0 0 100%;
+  width: 100%;
+  margin: var(--space-lg) 0 0;
+}
+
+.inverse-section-2.block :where(.picture p:nth-of-type(4) img) {
+  height: 360px;
+}
+
+@media (width <= 768px) {
+  .inverse-section-2.block {
+    padding-block: var(--space-xl);
+  }
+
+  .inverse-section-2.block :where(.heading :is(h1, h2, h3, h4, h5, h6):nth-of-type(1)) {
+    flex: 0 0 100%;
+    margin-bottom: calc(var(--space-sm) + var(--space-md));
+  }
+
+  .inverse-section-2.block :where(.picture p:nth-of-type(1)), .inverse-section-2.block :where(.picture p:nth-of-type(2)), .inverse-section-2.block :where(.picture p:nth-of-type(3)), .inverse-section-2.block :where(.picture p:nth-of-type(4)) {
+    flex: 0 0 100%;
+    width: 100%;
+    margin: var(--space-lg) 0 0;
+  }
+
+  .inverse-section-2.block :where(.picture p:nth-of-type(1)) {
+    margin-top: var(--space-xl);
+  }
+}
