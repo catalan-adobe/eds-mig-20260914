@@ -105,3 +105,32 @@ mobile 10.31% → 1.97%; every section ≤ 2.7%; tablet 1024 5.71% → 3.90%, 76
 - Timing: hero progress and marquee speed match to the sample (notes/animation-evidence.md).
 - Next time: include menu/hover states in the block agents' definition of done from the start (the header agent
   only compared the closed header and got ~1% there while its menus were 3–13% off).
+
+## Iteration 5 (menus + final) — 20:21–21:25 UTC
+Evidence: `evidence/diff/final-states.md`, `evidence/diff/final-branch/table.md`.
+- Menus agent (43 min, ~51M tokens): mobile menu 12.97% → 2.98%, Why Synopsys 6.85% → 2.74%, Solutions 9.01% → 4.50%;
+  Products regressed then recovered. My follow-up (8 min): panel top offset (−19 px), Products "By Function" moved
+  below the grey group as a 3-column list (as the reference renders at 1440), column descriptions rendered, promo
+  column full-height, correct video poster → menus 2.34 / 3.57 / 1.96 / 2.47 / 1.64%.
+
+### Generic (hypotheses)
+- G23 A narrow second pass by a fresh agent on a hard component (menus) converged faster than the first agent did,
+  because the brief contained the exact reference states and the compare script. Evidence: 43 min vs 85 min, and
+  3–10 point drops per state. Status: 1 observation.
+- G24 Responsive layouts of mega-menus can differ from "desktop = widest layout": the reference stacks a side
+  column below at 1440px. Always capture menus at the recorded width instead of assuming the wide layout.
+- G25 Parallel agents cost most of the tokens (~260M of the run) but saved wall time; the integration loop by one
+  agent with good tools was cheap and produced most of the fidelity gains (6.7% → 1.0%). Next time: fewer, better
+  briefed agents + an earlier integration loop (start integrating after the first agent lands, as done here).
+
+### Synopsys-specific
+- S16 Mega-menu panels start 7px above the nav bottom edge; Products uses a 1240px panel with a 1192×572 grey group,
+  "By Function" as column-count 3 (788px) and a bottom-right "View all Products" link.
+- S17 "Why Synopsys" promo is a Brightcove video (poster from cf-images boltdns); rebuilt as poster + link.
+
+## What I would do differently next time (process)
+1. Put interaction states (menus, hovers, mobile menu) in every block agent's definition of done from the start.
+2. Give agents the timeout-wrapped browser tooling and "no fake clock on EDS" rule up front (lost ~80 agent-minutes).
+3. Start the selector-based slot map + full-page loop before the agents finish (it found the real gaps quickly).
+4. Copy rendering globals (font smoothing, box-sizing) into the foundation before fan-out.
+5. Use two or three agents max for a page of this size; integration by one agent is where fidelity converges.
