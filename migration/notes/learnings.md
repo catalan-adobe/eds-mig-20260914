@@ -139,3 +139,9 @@ Evidence: `evidence/diff/final-states.md`, `evidence/diff/final-branch/table.md`
 - Research workflow `spm_research` (2 agents, 504 s): 338.1K uncached tokens + 9.9M cached, **$3.32**. G7 ("~10M
   tokens") overstated the real cost: ~97% were cache reads. Rule of thumb for this harness: judge agent cost by
   uncached tokens and reported $, not the raw token counter shown by `workflow_control status`.
+- Block workflow `spm_blocks` (5 agents, 5639 s = 94 min wall): 3.8M uncached + 199.4M cached tokens, **$54.47**
+  (~98% cache reads). Per block ≈ $11. The menus pass (`spm_menus`) reported 51M raw tokens (cost report pending).
+- Agent self-reported `minutesSpent` is unreliable (hero claimed 150 min inside a 94-min run) — use runtime wall time.
+- Agent self-reported mismatch was measured in isolation (placeholder neighbours, own crops) and mostly overstated or
+  mis-stated fidelity; integrated numbers are the ones that count: What's New 16.0%/26.2% self → 1.15%/0.19% final,
+  footer 4.3%/6.7% self → 2.27%/1.72% final, features 2.79% self vs 5.98% measured at integration → 1.02% final.

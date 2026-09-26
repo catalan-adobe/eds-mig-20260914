@@ -33,10 +33,10 @@ Resume here. Secrets: `.hlx/.da-token.json`, `.env.jev` — never print/commit.
 | pass | start | end | notes |
 |---|---|---|---|
 | P0 setup + inspection | 17:59 | 18:06 | branch, workspace, ignores |
-| P1 research (2 bg agents) | 18:06 | 18:18 | 1st launch failed (git config lock race); ~10M tokens |
+| P1 research (2 bg agents) | 18:06 | 18:18 | 1st launch failed (git config lock race); $3.32 (338K uncached + 9.9M cached) |
 | P2 reference baseline | 18:06 | 18:24 | captures, DOM/CSS/JS, inventory, tokens |
 | P4 foundation | 18:21 | 18:25 | fonts (synopsys TTF→woff2), tokens, container, buttons, tools |
-| P5 block agents (5 parallel) | 18:26 | 20:00 | footer 33m, logos 40m, cards 49m, header 85m, hero 93m; 2 agents lost ~40m to wedged browser sessions; ~200M tokens |
+| P5 block agents (5 parallel) | 18:26 | 20:00 | footer 33m, logos 40m, cards 49m, header 85m, hero 93m; 2 agents lost ~40m to wedged browser sessions; $54.47 (3.8M uncached + 199M cached tokens) |
 | P6 integration loop (me) | 19:05 | 20:37 | 16 compare rounds; page 6.7%→1.04% desktop, 10.3%→1.97% mobile |
 | P6b states + menus agent | 20:19 | 21:15 | menus agent 43m (~51M tokens) + my fixes; menus 3–13% → 1.6–3.6% |
 | P7 authoring proof | 20:24 | 20:33 | 5 edits in 2 docs, verified + restored |
