@@ -15,5 +15,6 @@ case "$1" in
   delete) curl -sS -f "${auth[@]}" -X DELETE "https://admin.da.live/source/$ORG/$SITE/$2" -o /dev/null -w "DELETE $2 %{http_code}\n" ;;
   preview) curl -sS "${auth[@]}" -X POST "https://admin.hlx.page/preview/$ORG/$SITE/main/$2" -o /tmp/da-preview.json -w "PREVIEW $2 %{http_code}\n" ;;
   status) curl -sS "${auth[@]}" "https://admin.hlx.page/status/$ORG/$SITE/main/$2" ;;
+  unpreview) curl -sS "${auth[@]}" -X DELETE "https://admin.hlx.page/preview/$ORG/$SITE/main/$2" -o /dev/null -w "UNPREVIEW $2 %{http_code}\n" ;;
   *) echo "unknown command: $1" >&2; exit 2 ;;
 esac

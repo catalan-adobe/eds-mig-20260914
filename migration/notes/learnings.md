@@ -63,3 +63,45 @@ Format: finding · evidence · status. GENERIC = hypothesis until tested on anot
 - S9 Mobile shows `#floating-icon` (54px round button, rotating conic border) instead of `#chat-bar`.
 - S10 The Ask pill's gradient border rotates (`rotate-border 4s linear infinite`, `@property --angle`); freeze
   with `animation: none` for comparisons.
+
+## Iteration 3 (integration loop, me) — 19:05–20:37 UTC
+Evidence: `migration/evidence/diff/<run>/table.md` (integ1 … main10, branch1). Page mismatch desktop 6.68% → 1.04%,
+mobile 10.31% → 1.97%; every section ≤ 2.7%; tablet 1024 5.71% → 3.90%, 768 35.5% → 6.3%.
+
+### Generic (hypotheses)
+- G14 Per-section diffs need a selector→slot map, not section indexes: an extra heading section shifted every index
+  after it and produced nonsense numbers. `tools/site/eds-slots.json` (first/last selector per slot) fixed it.
+- G15 Measure element boxes at screenshot time (inside the capture), never after: layout changed after the clock
+  resumed and crops landed on the wrong content.
+- G16 Largest-gap-first on section HEIGHT before pixels: most mismatch was vertical drift (margins collapsing out
+  of a background section, boilerplate `gap` leaking into grids, trailing paragraph margins). Fixing heights first
+  collapsed the page diff from 7% to 3% before any styling change.
+- G17 Global defaults must have zero specificity (`:where(a:any-link)`): a `(0,1,1)` global link rule silently beat
+  every single-class block rule (wrong link colours in two blocks).
+- G18 Copy the reference's rendering-affecting globals too: `-webkit-font-smoothing` (reference `auto` vs my
+  `antialiased`) changed every glyph; removing it took the intro section from 0.25% to 0.00%.
+- G19 Breakpoints and gutters belong to the reference grid, not the block author's habit: agents used 900/992
+  where the reference switches at 730; aligning them fixed 768px (35% → 6%) without touching the recorded viewports.
+- G20 Chromium full-page capture briefly re-evaluates media queries; CSS transitions then get caught mid-flight
+  (cards revealed). Disable transitions in the capture CSS and verify timing separately (animation-evidence.md).
+- G21 Agent self-reports are not evidence: one agent reported 2.79% for a section whose own sbs image showed a
+  broken layout (real: 5.98%). Always re-measure integrated.
+- G22 Freeze a live reference session (pause carousel) before measuring — probes taken seconds apart hit different
+  slides and gave contradictory geometry.
+
+### Synopsys-specific
+- S11 Bootstrap-3 grid: containers 1170/970/fluid, 30px gutters, footer = full-width 5×20% row with 15px gutters.
+- S12 Hero: slide text at fixed tops (170px desktop, 260px mobile), 7s timer, pause button with translateX(-50%),
+  tab track line at the top of each tab, labels 400 16/22.4 clamped to 2 lines.
+- S13 Cards image = height 102% centered (≥730), cover on mobile; text block anchored 15/-25px with fixed 68/77px boxes.
+- S14 News carousel: track inset 40px and arrows at -9px below 1200; arrows at -95px ≥1200.
+- S15 Ask pill = static 270° gradient ring (fill on hover); only the mobile floating icon rotates.
+
+## Iteration 4 (states + authoring) — 20:19–20:37 UTC
+- States: sticky 0.61%, card hover 1.78%, language 1.64%, news-next 0.46/0.53%, hero slide 3 0.66/1.69%;
+  mega-menus 3–9% and mobile menu 13% → delegated to a focused agent.
+- Authoring: 5 edits in 2 DA docs verified in preview within ~4s each and restored byte-identically
+  (notes/authoring-proof.md). Nav doc edits deferred while an agent owned it.
+- Timing: hero progress and marquee speed match to the sample (notes/animation-evidence.md).
+- Next time: include menu/hover states in the block agents' definition of done from the start (the header agent
+  only compared the closed header and got ~1% there while its menus were 3–13% off).
