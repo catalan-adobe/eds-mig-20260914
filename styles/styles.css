@@ -236,3 +236,75 @@ main .section.purple-gradient {
   background-image: var(--purple-gradient);
   color: #fff;
 }
+
+/* === default content & section styles (footer-sections agent) === */
+
+/* intro banner: centered heading + subhead with bullet separators (slot: intro) */
+main .section.intro-section {
+  padding: 76px 0 58px;
+  text-align: center;
+}
+
+main .section.intro-section h2 {
+  margin: 0 auto;
+}
+
+main .section.intro-section p {
+  margin: 16px auto 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media (width >= 730px) {
+  main .section.intro-section {
+    padding: 80px 0 48px;
+  }
+
+  main .section.intro-section p {
+    margin-top: 24px;
+    font-size: 20px;
+  }
+}
+
+/* connect-with-us banner: purple gradient CTA (slot: connect) */
+main .section.connect-section {
+  padding: 104px 0;
+  text-align: center;
+}
+
+main .section.connect-section h2 {
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+main .section.connect-section p {
+  margin-top: 24px;
+}
+
+/* plain "Contact Sales" CTA on a dark background reads as a white pill, not the
+   generic outlined secondary button */
+main .section.connect-section a.button.secondary:any-link {
+  background-color: #fff;
+  color: var(--text-color);
+  box-shadow: none;
+}
+
+@media (width >= 730px) {
+  main .section.connect-section {
+    padding: 88px 0;
+  }
+
+  main .section.connect-section h2 {
+    font-size: 38px;
+  }
+}
+
+/* generic default-content spacing: a heading followed by a paragraph gets breathing room */
+main .section .default-content-wrapper h1 + p,
+main .section .default-content-wrapper h2 + p,
+main .section .default-content-wrapper h3 + p {
+  margin-top: 16px;
+}
+
+/* === end === */
