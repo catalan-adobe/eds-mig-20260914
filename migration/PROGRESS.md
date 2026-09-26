@@ -20,10 +20,10 @@ Resume here. Update after every pass. Secrets: `.hlx/.da-token.json`, `.env.jev`
 
 ## Plan
 - [x] P0 inspect project, branch, checkpoint
-- [ ] P1 research (bg subagents): EDS digest → `notes/eds-digest.md`; Jev → `notes/jev-research.md` + `tools/jev.mjs`
-- [ ] P2 reference baseline: screenshots desktop/mobile, section map, styles, assets, states, animations
+- [x] P1 research (bg subagents): EDS digest → `notes/eds-digest.md`; Jev → `notes/jev-research.md` + `tools/jev.mjs`
+- [x] P2 reference baseline: screenshots desktop/mobile, section map, styles, assets, states, animations
 - [ ] P3 content model + DA docs (index/nav/footer) + media, preview
-- [ ] P4 foundation: fonts, tokens, sections, buttons; local aem up
+- [x] P4 foundation: fonts, tokens, sections, buttons; local aem up
 - [ ] P5 blocks (parallel subagents, worktrees): header, footer, hero carousel, cards, lists, logos, news carousel, columns, cta
 - [ ] P6 integrate + whole-page diff loop (largest gap first)
 - [ ] P7 authoring proof: edit → preview → verify → restore
@@ -32,7 +32,20 @@ Resume here. Update after every pass. Secrets: `.hlx/.da-token.json`, `.env.jev`
 ## Timeline (UTC)
 | pass | start | end | notes |
 |---|---|---|---|
-| P0 setup | 17:59 | 18:08 | |
+| P0 setup + inspection | 17:59 | 18:06 | branch spm-ft-0001, workspace, ignores |
+| P1 research (2 bg agents) | 18:06 | 18:18 | 1st launch failed (git config lock race), relaunch ok; ~10M tokens |
+| P2 reference baseline | 18:06 | 18:24 | full-page + top screenshots desktop/mobile, DOM/CSS/JS, inventory, tokens |
+| P4 foundation | 18:21 | 18:25 | fonts (synopsys TTF->woff2), tokens, container, buttons, compare tool |
+| P5 block agents (5 parallel) | 18:26 | | header, hero, cards+columns, logos+news, footer+sections |
+
+## Key decisions
+- Viewports: desktop 1440x900 Chromium DPR1; mobile iPhone 13 emulation 390x664 DPR3 (CSS-px screenshots).
+- Deterministic states: page.clock.install() before goto, pauseAt() after lazy-load scroll, carousels reset to 0.
+- OneTrust hidden (3rd-party consent), #chat-bar hidden in full-page shots (fixed overlay compared in viewport shots).
+- Breakpoints mirror source CSS (730/992/1130/1200) instead of boilerplate 600/900/1200 (fidelity > convention).
+- Fonts: synopsys' own Roboto TTF 300/400/500/700 converted to woff2 (latin subset) for identical metrics.
+- Images: DA HTML may reference external URLs; preview ingests into media bus (verified incl. SVG).
+- Jev (typesafe/jev via CF AI gateway): HTTP 402 insufficient balance -> blocked; decision set prepared.
 
 ## Evidence index
 (see `migration/evidence/` — gitignored; key numbers copied here)

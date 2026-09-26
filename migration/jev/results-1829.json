@@ -1,0 +1,191 @@
+{
+ "summary": {
+  "total": 18,
+  "answered": 0,
+  "agree": 0,
+  "p50Ms": null,
+  "totalCostUsd": 0
+ },
+ "rows": [
+  {
+   "id": "map-hero",
+   "kind": "block_type",
+   "mine": "hero-carousel",
+   "jev": null,
+   "agree": null,
+   "confidence": null,
+   "costUsd": null,
+   "error": "{\n  \"ok\": false,\n  \"error\": \"Jev API error (HTTP 402): 2021: Insufficient balance; add money to your gateway or use BYOK\",\n  \"latencyMs\": 464,\n  \"httpStatus\": 402\n}\n"
+  },
+  {
+   "id": "map-intro",
+   "kind": "block_type",
+   "mine": "default-content",
+   "jev": null,
+   "agree": null,
+   "confidence": null,
+   "costUsd": null,
+   "error": "{\n  \"ok\": false,\n  \"error\": \"Jev API error (HTTP 402): 2021: Insufficient balance; add money to your gateway or use BYOK\",\n  \"latencyMs\": 457,\n  \"httpStatus\": 402\n}\n"
+  },
+  {
+   "id": "map-cards",
+   "kind": "block_type",
+   "mine": "cards",
+   "jev": null,
+   "agree": null,
+   "confidence": null,
+   "costUsd": null,
+   "error": "{\n  \"ok\": false,\n  \"error\": \"Jev API error (HTTP 402): 2021: Insufficient balance; add money to your gateway or use BYOK\",\n  \"latencyMs\": 358,\n  \"httpStatus\": 402\n}\n"
+  },
+  {
+   "id": "map-features",
+   "kind": "block_type",
+   "mine": "columns",
+   "jev": null,
+   "agree": null,
+   "confidence": null,
+   "costUsd": null,
+   "error": "{\n  \"ok\": false,\n  \"error\": \"Jev API error (HTTP 402): 2021: Insufficient balance; add money to your gateway or use BYOK\",\n  \"latencyMs\": 438,\n  \"httpStatus\": 402\n}\n"
+  },
+  {
+   "id": "map-partners",
+   "kind": "block_type",
+   "mine": "logo-carousel",
+   "jev": null,
+   "agree": null,
+   "confidence": null,
+   "costUsd": null,
+   "error": "{\n  \"ok\": false,\n  \"error\": \"Jev API error (HTTP 402): 2021: Insufficient balance; add money to your gateway or use BYOK\",\n  \"latencyMs\": 652,\n  \"httpStatus\": 402\n}\n"
+  },
+  {
+   "id": "map-news",
+   "kind": "block_type",
+   "mine": "news-carousel",
+   "jev": null,
+   "agree": null,
+   "confidence": null,
+   "costUsd": null,
+   "error": "{\n  \"ok\": false,\n  \"error\": \"Jev API error (HTTP 402): 2021: Insufficient balance; add money to your gateway or use BYOK\",\n  \"latencyMs\": 354,\n  \"httpStatus\": 402\n}\n"
+  },
+  {
+   "id": "map-support",
+   "kind": "block_type",
+   "mine": "columns",
+   "jev": null,
+   "agree": null,
+   "confidence": null,
+   "costUsd": null,
+   "error": "{\n  \"ok\": false,\n  \"error\": \"Jev API error (HTTP 402): 2021: Insufficient balance; add money to your gateway or use BYOK\",\n  \"latencyMs\": 381,\n  \"httpStatus\": 402\n}\n"
+  },
+  {
+   "id": "map-connect",
+   "kind": "block_type",
+   "mine": "default-content",
+   "jev": null,
+   "agree": null,
+   "confidence": null,
+   "costUsd": null,
+   "error": "{\n  \"ok\": false,\n  \"error\": \"Jev API error (HTTP 402): 2021: Insufficient balance; add money to your gateway or use BYOK\",\n  \"latencyMs\": 365,\n  \"httpStatus\": 402\n}\n"
+  },
+  {
+   "id": "auth-chat-placeholder",
+   "kind": "authorable",
+   "mine": true,
+   "jev": null,
+   "agree": null,
+   "confidence": null,
+   "costUsd": null,
+   "error": "{\n  \"ok\": false,\n  \"error\": \"Jev API error (HTTP 402): 2021: Insufficient balance; add money to your gateway or use BYOK\",\n  \"latencyMs\": 451,\n  \"httpStatus\": 402\n}\n"
+  },
+  {
+   "id": "auth-progress-bar",
+   "kind": "authorable",
+   "mine": false,
+   "jev": null,
+   "agree": null,
+   "confidence": null,
+   "costUsd": null,
+   "error": "{\n  \"ok\": false,\n  \"error\": \"Jev API error (HTTP 402): 2021: Insufficient balance; add money to your gateway or use BYOK\",\n  \"latencyMs\": 358,\n  \"httpStatus\": 402\n}\n"
+  },
+  {
+   "id": "auth-tab-label",
+   "kind": "authorable",
+   "mine": true,
+   "jev": null,
+   "agree": null,
+   "confidence": null,
+   "costUsd": null,
+   "error": "{\n  \"ok\": false,\n  \"error\": \"Jev API error (HTTP 402): 2021: Insufficient balance; add money to your gateway or use BYOK\",\n  \"latencyMs\": 408,\n  \"httpStatus\": 402\n}\n"
+  },
+  {
+   "id": "auth-card-gradient",
+   "kind": "authorable",
+   "mine": false,
+   "jev": null,
+   "agree": null,
+   "confidence": null,
+   "costUsd": null,
+   "error": "{\n  \"ok\": false,\n  \"error\": \"Jev API error (HTTP 402): 2021: Insufficient balance; add money to your gateway or use BYOK\",\n  \"latencyMs\": 1087,\n  \"httpStatus\": 402\n}\n"
+  },
+  {
+   "id": "auth-partner-logo",
+   "kind": "authorable",
+   "mine": true,
+   "jev": null,
+   "agree": null,
+   "confidence": null,
+   "costUsd": null,
+   "error": "{\n  \"ok\": false,\n  \"error\": \"Jev API error (HTTP 402): 2021: Insufficient balance; add money to your gateway or use BYOK\",\n  \"latencyMs\": 429,\n  \"httpStatus\": 402\n}\n"
+  },
+  {
+   "id": "auth-chevron",
+   "kind": "authorable",
+   "mine": false,
+   "jev": null,
+   "agree": null,
+   "confidence": null,
+   "costUsd": null,
+   "error": "{\n  \"ok\": false,\n  \"error\": \"Jev API error (HTTP 402): 2021: Insufficient balance; add money to your gateway or use BYOK\",\n  \"latencyMs\": 454,\n  \"httpStatus\": 402\n}\n"
+  },
+  {
+   "id": "auth-copyright",
+   "kind": "authorable",
+   "mine": true,
+   "jev": null,
+   "agree": null,
+   "confidence": null,
+   "costUsd": null,
+   "error": "{\n  \"ok\": false,\n  \"error\": \"Jev API error (HTTP 402): 2021: Insufficient balance; add money to your gateway or use BYOK\",\n  \"latencyMs\": 1252,\n  \"httpStatus\": 402\n}\n"
+  },
+  {
+   "id": "fid-breakpoints",
+   "kind": "choice",
+   "mine": "mirror-source",
+   "jev": null,
+   "agree": null,
+   "confidence": null,
+   "costUsd": null,
+   "error": "{\n  \"ok\": false,\n  \"error\": \"Jev API error (HTTP 402): 2021: Insufficient balance; add money to your gateway or use BYOK\",\n  \"latencyMs\": 360,\n  \"httpStatus\": 402\n}\n"
+  },
+  {
+   "id": "fid-fonts",
+   "kind": "choice",
+   "mine": "reference-files",
+   "jev": null,
+   "agree": null,
+   "confidence": null,
+   "costUsd": null,
+   "error": "{\n  \"ok\": false,\n  \"error\": \"Jev API error (HTTP 402): 2021: Insufficient balance; add money to your gateway or use BYOK\",\n  \"latencyMs\": 399,\n  \"httpStatus\": 402\n}\n"
+  },
+  {
+   "id": "fid-consent",
+   "kind": "choice",
+   "mine": "exclude",
+   "jev": null,
+   "agree": null,
+   "confidence": null,
+   "costUsd": null,
+   "error": "{\n  \"ok\": false,\n  \"error\": \"Jev API error (HTTP 402): 2021: Insufficient balance; add money to your gateway or use BYOK\",\n  \"latencyMs\": 428,\n  \"httpStatus\": 402\n}\n"
+  }
+ ]
+}

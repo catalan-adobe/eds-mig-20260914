@@ -1,0 +1,33 @@
+{
+  "note": "Decisions taken by the main agent during the Synopsys migration. 'mine' = answer used. Run tools/jev-eval.mjs.",
+  "blockPalette": {
+    "default-content": "Headings, paragraphs, lists, single buttons; no special component behaviour",
+    "hero-carousel": "Full-width rotating banner slides with image, headline, text, CTA buttons and slide tabs",
+    "cards": "Grid of repeated tiles, each with an image and text/link",
+    "columns": "Side-by-side columns of rich content (text, lists, icons) without rotation",
+    "logo-carousel": "Continuously scrolling strip of partner/customer logos",
+    "news-carousel": "Paged slider of article/news teaser cards with arrows and dots",
+    "header": "Site navigation: logo, menus, search, utility links",
+    "footer": "Site footer: link columns, social links, legal text"
+  },
+  "decisions": [
+    {"id": "map-hero", "kind": "block_type", "state": "Section at top of page, 700px tall. 5 slides that fade every 7 seconds. Each slide: full-bleed background image, 2-line bold headline 'Introducing Synopsys / Physical AI Solutions', a sentence, 1-2 buttons ('Learn More', 'Press Release'). Bottom bar with 5 short slide titles each over a thin progress line; a round pause button.", "mine": "hero-carousel"},
+    {"id": "map-intro", "kind": "block_type", "state": "Centered h2 'Powering the Era of Pervasive Intelligence from Silicon to Systems' followed by one centered paragraph 'Supercharge Productivity • Conquer Complexity • Accelerate Time-to-Market'. No images.", "mine": "default-content"},
+    {"id": "map-cards", "kind": "block_type", "state": "Row of 4 tall tiles (263x443). Each tile: background photo, dark gradient at the bottom, centered title (Synopsys.ai, EDA, Systems, Silicon IP); on hover a description and 'Learn More >' link slide in.", "mine": "cards"},
+    {"id": "map-features", "kind": "block_type", "state": "Centered h2 'Design the Future Today with Synopsys'. Two columns titled 'Industry' and 'Technology'; each lists 6 entries: 50px line icon, title (e.g. 'AI Chip Development'), one-line description.", "mine": "columns"},
+    {"id": "map-partners", "kind": "block_type", "state": "Grey band, centered h2 'Ecosystem Partners', then a strip of 10 partner logos (NVIDIA, TSMC, Intel Foundry, Samsung...) moving slowly and continuously from right to left, 5 visible at a time.", "mine": "logo-carousel"},
+    {"id": "map-news", "kind": "block_type", "state": "Centered h2 'What's New'. 3 visible cards out of 9, each: 16:9 image, purple pill 'NEWS RELEASE' or 'BLOG', date, title, 'Learn more >' link. Round prev/next arrows on the sides and dots below.", "mine": "news-carousel"},
+    {"id": "map-support", "kind": "block_type", "state": "Grey band with two side-by-side text areas separated by a vertical line: 'Support & Services' (paragraph + 'View Support & Services >') and 'Careers' (paragraph + 'View Careers >').", "mine": "columns"},
+    {"id": "map-connect", "kind": "block_type", "state": "Purple gradient band with centered bold white text 'Connect with Us' and one white button 'Contact Sales >'.", "mine": "default-content"},
+    {"id": "auth-chat-placeholder", "kind": "authorable", "state": "Floating chat bar input placeholder text: 'Ask a question to get instant answers about our tools and solutions.'", "mine": true},
+    {"id": "auth-progress-bar", "kind": "authorable", "state": "2px white line under each hero slide tab that fills from left to right during 7 seconds.", "mine": false},
+    {"id": "auth-tab-label", "kind": "authorable", "state": "Short label under the hero progress line, e.g. 'Introducing HAV for the AI Era' (differs from the slide headline 'Introducing Hardware-Assisted Verification for the AI Era').", "mine": true},
+    {"id": "auth-card-gradient", "kind": "authorable", "state": "Black-to-transparent gradient overlay at the bottom of each product tile image, same on every tile.", "mine": false},
+    {"id": "auth-partner-logo", "kind": "authorable", "state": "Partner logo image (e.g. TSMC) in the Ecosystem Partners strip, with alt text 'TSMC'.", "mine": true},
+    {"id": "auth-chevron", "kind": "authorable", "state": "Small '>' chevron icon after every 'Learn More' button and link on the site.", "mine": false},
+    {"id": "auth-copyright", "kind": "authorable", "state": "Footer text '©2026 Synopsys, Inc. All Rights Reserved'.", "mine": true},
+    {"id": "fid-breakpoints", "kind": "choice", "state": "Reference site CSS uses breakpoints 730/992/1130/1200px; the EDS boilerplate convention is 600/900/1200px. Goal: pixel-perfect 1:1 replica at 1440 and 390 plus sane responsive behaviour.", "options": {"mirror-source": "Use the reference breakpoints", "boilerplate": "Use 600/900/1200 and approximate"}, "mine": "mirror-source"},
+    {"id": "fid-fonts", "kind": "choice", "state": "Reference self-hosts Roboto 300/400/500/700 TTF (2011 Google build). Boilerplate ships a different Roboto woff2 build without weight 300. Pixel-perfect text rendering is required.", "options": {"reference-files": "Convert the reference TTFs to woff2 and self-host", "boilerplate-files": "Keep boilerplate fonts and add a Google Fonts Light"}, "mine": "reference-files"},
+    {"id": "fid-consent", "kind": "choice", "state": "Reference homepage shows a OneTrust cookie consent modal on first visit, covering the hero. Task: pixel-perfect replica of the homepage content, header and footer.", "options": {"exclude": "Treat as third-party overlay, hide it in reference captures and do not rebuild", "rebuild": "Rebuild the consent modal visually"}, "mine": "exclude"}
+  ]
+}
