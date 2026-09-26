@@ -1,27 +1,126 @@
+/* Tall, hover-reveal solution cards: background image + gradient overlay +
+   centered title; description/CTA reveal on hover (desktop) or always
+   visible (mobile). Fidelity source: .component-solutioncard in site CSS. */
+
+.cards {
+  padding: 40px 0 60px;
+}
+
 .cards > ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  gap: 24px;
+  grid-template-columns: 1fr;
+  gap: 32px;
 }
 
 .cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+  margin: 0;
 }
 
-.cards .cards-card-body {
-  margin: 16px;
+.cards-card-link {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+  height: 434px;
 }
 
-.cards .cards-card-image {
+.cards-card-image {
+  position: absolute;
+  inset: 0;
   line-height: 0;
 }
 
-.cards > ul > li img {
+.cards-card-image picture,
+.cards-card-image img {
+  display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 100%;
   object-fit: cover;
+}
+
+.cards-card-overlay {
+  position: absolute;
+  inset: auto 0 0;
+  height: 275px;
+  background: linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0 / 50%) 28%, rgb(0 0 0 / 100%) 100%);
+}
+
+.cards-card-body {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  transform: translateX(-50%);
+  width: 75%;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 6px #474747;
+}
+
+.cards-card-body h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.cards-card-body p {
+  margin: 16px 0 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.cards-card-cta {
+  margin-top: 8px !important;
+}
+
+.cards-card-cta::after {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 13px;
+  margin-left: 8px;
+  vertical-align: middle;
+  background-color: currentcolor;
+  mask: url('/icons/chevron-right.svg') center / contain no-repeat;
+}
+
+.cards-card-link:hover .cards-card-cta,
+.cards-card-link:focus-within .cards-card-cta {
+  text-decoration: underline;
+}
+
+@media (width >= 900px) {
+  .cards {
+    padding: 75px 0;
+  }
+
+  .cards > ul {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+
+  .cards-card-body p {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .cards-card-body {
+    bottom: -25px;
+    transition: bottom 1s;
+  }
+
+  .cards-card-link:hover .cards-card-body,
+  .cards-card-link:focus-within .cards-card-body {
+    bottom: 15px;
+  }
+
+  .cards-card-link:hover .cards-card-body p,
+  .cards-card-link:focus-within .cards-card-body p {
+    opacity: 1;
+  }
 }
