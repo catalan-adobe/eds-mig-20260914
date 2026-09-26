@@ -134,3 +134,8 @@ Evidence: `evidence/diff/final-states.md`, `evidence/diff/final-branch/table.md`
 3. Start the selector-based slot map + full-page loop before the agents finish (it found the real gaps quickly).
 4. Copy rendering globals (font smoothing, box-sizing) into the foundation before fan-out.
 5. Use two or three agents max for a page of this size; integration by one agent is where fidelity converges.
+
+## Cost correction (from the workflow runtime report, delivered after the run)
+- Research workflow `spm_research` (2 agents, 504 s): 338.1K uncached tokens + 9.9M cached, **$3.32**. G7 ("~10M
+  tokens") overstated the real cost: ~97% were cache reads. Rule of thumb for this harness: judge agent cost by
+  uncached tokens and reported $, not the raw token counter shown by `workflow_control status`.
