@@ -188,7 +188,7 @@ header {
   margin-left: auto;
 }
 
-.header.block :where(.nav-hamburger[aria-label="Toggle navigation"]) {
+.header.block :where(.nav-hamburger) {
   display: none;
   align-items: center;
   justify-content: center;
@@ -231,7 +231,7 @@ header {
     width: 100%;
   }
 
-  .header.block :where(.nav-hamburger[aria-label="Toggle navigation"]) {
+  .header.block :where(.nav-hamburger) {
     display: flex;
     z-index: 101;
   }
