@@ -53,13 +53,12 @@ main .section.secondary-section-container > .secondary-section-wrapper {
   margin: 0;
 }
 
-.secondary-section.block :where(.picture p) {
+.secondary-section.block :where(.picture :is(p, picture)) {
   display: flex;
   margin: 0;
 }
 
 .secondary-section.block :where(.picture picture) {
-  display: flex;
   flex: 1 1 auto;
   min-width: 0;
 }
@@ -73,14 +72,14 @@ main .section.secondary-section-container > .secondary-section-wrapper {
   box-sizing: border-box;
 }
 
-.secondary-section.block :where(.picture p:nth-of-type(1)) {
+.secondary-section.block :where(.picture :is(p, picture):nth-of-type(1)) {
   grid-column: 1;
   grid-row: 1 / span 4;
   width: 100%;
   max-width: 100%;
 }
 
-.secondary-section.block :where(.picture p:nth-of-type(1) img) {
+.secondary-section.block :where(.picture :is(p, picture):nth-of-type(1) img) {
   display: block;
   height: 100%;
   min-height: 20rem;
@@ -136,13 +135,13 @@ main .section.secondary-section-container > .secondary-section-wrapper {
     grid-template-rows: none;
   }
 
-  .secondary-section.block :where(.picture p:nth-of-type(1)) {
+  .secondary-section.block :where(.picture :is(p, picture):nth-of-type(1)) {
     grid-column: 1;
     grid-row: auto;
     margin-bottom: var(--space-2xl);
   }
 
-  .secondary-section.block :where(.picture p:nth-of-type(1) img) {
+  .secondary-section.block :where(.picture :is(p, picture):nth-of-type(1) img) {
     height: auto;
     min-height: 11rem;
   }

@@ -54,13 +54,12 @@ main .section.hero-section-container > .hero-section-wrapper {
   margin: 0;
 }
 
-.hero-section.block :where(.picture p) {
+.hero-section.block :where(.picture :is(p, picture)) {
   display: flex;
   margin: 0;
 }
 
 .hero-section.block :where(.picture picture) {
-  display: flex;
   flex: 1 1 auto;
   min-width: 0;
 }
@@ -82,12 +81,12 @@ main .section.hero-section-container > .hero-section-wrapper {
   background: linear-gradient(0deg, rgb(0 0 0 / 75%) 0, rgb(0 0 0 / 45%) 40%, rgb(0 0 0 / 25%));
 }
 
-.hero-section.block :where(.picture p:nth-of-type(1)) {
+.hero-section.block :where(.picture :is(p, picture):nth-of-type(1)) {
   width: 100%;
   max-width: 100%;
 }
 
-.hero-section.block :where(.picture p:nth-of-type(1) img) {
+.hero-section.block :where(.picture :is(p, picture):nth-of-type(1) img) {
   position: absolute;
   inset: 0;
   z-index: 0;
