@@ -149,3 +149,132 @@ Contact-Sales color-inversion fixes → nav positioning/centering rewrite from `
 ~85 minutes (research/content-extraction heavy: mega-menu content, utility bar, sticky-nav JS/CSS,
 chat bar all had to be reverse-engineered from live CSS/JS since the block-collection docs for this
 don't exist as authored content).
+
+## Iteration 2 (menus)
+
+Follow-up pass focused only on the 5 desktop mega-menu panels and the mobile drill-down menu
+(`blocks/header/*`, `migration/sections/nav.html`, DA doc `spm-ft-0001/nav.html`). No new icons
+files were added; all icons are real Synopsys CDN SVGs referenced by URL in the nav doc (ingested
+into DA's media bus on `da.sh put`+`preview`, same as other images).
+
+### What changed
+- **Desktop mega-menu position + caret**: reverse-engineered the real site's positioning algorithm
+  by hovering all 5 items live and reading `getBoundingClientRect()`/inline styles (see
+  `panelLeft = min(viewportWidth/2 - panelWidth/2, itemLeft)`, caret always centered on the
+  trigger's own center) and ported it to `initDesktopMegaMenus`'s new `position()` function. Added
+  a `.header-mega-caret` (rotated white square) that tracks the trigger item.
+- **Content additions (nav doc, authorable)**: real icons for Solutions' 14 list items and for the
+  4 Products/2 Support&Training column headings (all `https://www.synopsys.com/content/dam/synopsys/icon/*.svg`);
+  a "View all Solutions" link after the Industry column; "Learn more"/"Download eBook" CTA links
+  under the two promo tiles (previously only the heading+image+text existed, no CTA).
+- **Header.js parsing**: `<p>` containing nothing but a single `<a>` is now parsed as a column
+  `cta` (view-all or promo CTA, disambiguated by which content precedes it) instead of being
+  dropped as if it were a plain description; `<li><a>Title — Subtitle</a>` is split into a
+  bold title + grey 12px subtitle two-line item (site's real two-line nav items), reusable for any
+  future menu content without another JS change.
+- **Products 4+1 layout**: five-column menus now render column 1 standalone and wrap columns 2-5 in
+  a `.header-mega-group` (light-grey rounded box, negative-margined to bleed to the panel's own
+  edges) matching the reference's "By Function" list + grey Synopsys.ai/EDA/System/IP box.
+- **Mobile menu**: added a self-contained top bar (purple logo, search-toggle icon, X close button)
+  that now covers the old dark hamburger bar entirely (`position:fixed;inset:0`) instead of leaving
+  it visible underneath; added "Language Selector" (drills into the language list) and "Ask" rows
+  with icons below a divider; Contact Sales button is now a full pill (`border-radius:9999px`).
+- Fixed a bleed-through bug (pre-existing, noted as an open gap in iteration 1): the mobile
+  drill-down sub-panel is `position:fixed` but its siblings (the other 4 top-level buttons) are
+  static, and per CSS stacking rules later-DOM-order static content painted **above** an
+  earlier-DOM `position:fixed` sibling with `z-index:auto` — visible as stray chevrons floating
+  mid-list. Fixed by hiding the whole list/util-list/CTA (`visibility:hidden`) while `.drilled`,
+  with the open sub-panel explicitly re-declaring `visibility:visible`.
+
+### Evidence (desktop 1440x900, mobile iPhone 13 390x664; images under
+`$MAIN/migration/evidence/blocks/header/`, `-sbs`/`-diff` per state)
+
+| state | before | after |
+|---|---|---|
+| desktop-menu-1 (Why Synopsys) | 6.86% | **2.75%** |
+| desktop-menu-2 (Solutions) | 9.02% | **4.51%** |
+| desktop-menu-3 (Products) | 7.82% | **7.16%** |
+| desktop-menu-4 (Support & Training) | 3.23% | **4.49%** |
+| desktop-menu-5 (Resources) | 2.98% | **2.15%** |
+| mobile-menu-open | 12.97% | **2.92%** |
+| mobile-menu-drill (Solutions) | visual only (stray-glyph bug) | visual only, bug fixed |
+
+4 iteration rounds were run per state via `tools/pw.sh` sessions `mn-d`/`mn-m` +
+`tools/compare.sh` against `evidence/ref/states/desktop-menu-{1..5}.png` /
+`mobile-menu-open.png`, fixing the largest gap first each round (position/caret formula ->
+`box-sizing` panel-width bug -> item title/subtitle stacking bug -> five-col grey-group flex sizing
+-> mobile spacing/topbar -> mobile bleed-through bug). `desktop-menu-3` (Products) stayed above the
+2% target: the reference's 4-column grey-box sub-layout has per-column widths that don't reduce to
+a clean formula from static CSS alone (would need runtime measurement of the real site's actual
+column content, out of scope for the time box); `desktop-menu-4`'s number is dominated by the
+underlying hero-carousel car image/color mismatch behind the panel (owned by a different block),
+not the menu panel itself.
+
+### Remaining gaps
+- Products (5-col) panel: our 4 grey-box columns are close but not pixel-identical in width to the
+  reference's (`~208px` vs an estimated `~230px`), causing a small cumulative rightward drift by the
+  4th column (IP). Would need the real site's actual rendered column widths (not derivable from the
+  minified CSS's `flex:1 1 auto` sizing alone) to close fully.
+- Language-selector dropdown content in the mobile drill-down (list of languages) isn't visually
+  verified against a reference (no reference screenshot for it); only structurally mirrors the
+  desktop utility-bar dropdown.
+- Mobile search-icon toggle opens a plain inline `<input>` row (no dedicated reference screenshot
+  for the open state) — kept minimal per brief's "search icon" requirement, not a full search UI.
+
+### Learnings — GENERIC
+- When reverse-engineering a hover-panel's position from a live site, don't trust eyeballed
+  screenshot pixel-scanning alone — dispatching real events isn't reliable for jQuery/hoverIntent
+  sites (synthetic `dispatchEvent(new MouseEvent(...))` didn't trigger the site's real panel-swap
+  logic even though it *did* trigger the position-tracking code, which silently kept showing the
+  wrong (first) panel while still moving to the right x position — always corroborate with a direct
+  `getBoundingClientRect()` probe of the *actually visible* element via `hover({force:true})`, not
+  just a value read off a screenshot.
+  Once probed for real: `panelLeft = min(viewportWidth/2 - panelWidth/2, triggerItem.left)` with the
+  caret always centered on the trigger's own center is a compact, general "centered-unless-that-
+  would-overhang-the-trigger" mega-menu positioning rule that generalizes to any hover-panel with a
+  variable-width panel and variable-position triggers.
+- A CSS-only-declared fixed `width` on a flex/grid panel (e.g. `width: 894px`) silently becomes
+  `894px + padding` (i.e. wider than intended) the moment the element or an ancestor lacks
+  `box-sizing: border-box` — since most boilerplates don't set a universal `*{box-sizing:border-box}`
+  reset, any new component that borrows exact literal widths from a reference site's CSS needs its
+  own explicit `box-sizing: border-box` (don't assume the reset exists globally).
+  Flex items also need an explicit `min-width: 0` to actually respect a parent's fixed pixel width
+  when their content (long words, several stacked spans) has a larger intrinsic min-content size —
+  otherwise the browser lets flex children overflow the declared container width one by one,
+  producing a slow cumulative rightward drift across columns that's easy to misdiagnose as a
+  "column width" bug when it's really a `min-width: auto` default.
+  Putting a `title` and `subtitle` in sibling flex-row children looks like it should "obviously"
+  stack (because you visually expect a list-item layout), but a flex row lays out siblings
+  side-by-side unless a `flex-direction: column` wrapper is introduced — wrap "the parts that should
+  stack" in their own inner container instead of relying on `flex-wrap` accidentally kicking in.
+- A `position: fixed` element with `z-index: auto` does **not** automatically paint above later
+  static-position siblings that are its own DOM cousins (only above earlier ones, by tree order,
+  within the same stacking context) — for any "open one of N sibling overlays, hide the rest"
+  pattern (accordions, drill-down menus, tab panels), explicitly hide the *inactive* siblings
+  (`visibility:hidden`/`display:none`) rather than relying on the active one's own positioning to
+  cover them; give the open panel its own small `z-index` and don't forget `visibility: visible` if
+  the hiding technique is `visibility` on an ancestor (it's inherited).
+- For any "measure the live site's real, dynamic layout" reverse-engineering task, temporarily
+  writing small dedicated `run-code` probe scripts that read `getBoundingClientRect()`/inline
+  styles directly (rather than pixel-scanning screenshots with ImageMagick) is dramatically faster
+  and exact — pixel scanning is a fallback for when you can't get a live DOM handle, not a first
+  choice.
+
+### Learnings — SYNOPSYS-SPECIFIC
+- The real site's per-panel offsets (`346px` for the 2-col "Why Synopsys" menu, `273px` for both
+  3-col menus, `422px` for the 2-col-simple menu, `100px` for the 5-col menu, all at 1440px
+  viewport) are **not** hardcoded per-menu-name constants — they all fall out of the single
+  `min(centered, triggerLeft)` formula once the actual panel width (`596`/`894`/`1240`/`596px`) and
+  trigger position are known; no special-casing per item was needed once the formula was right.
+- Column heading icons (Solutions/Products/Support&Training) and list-item icons (Solutions only)
+  are real per-item SVGs at `https://www.synopsys.com/content/dam/synopsys/icon/<name>-black.svg`,
+  not a shared icon font — every icon referenced in this iteration resolved with a plain `curl` HEAD
+  200 before being added to the nav doc.
+- Products list items use the site's own "Title — Subtitle" em-dash convention in the visible text
+  (e.g. "AI-enabled EDA — Design, Automation, Insights") which is also how the reference site's own
+  authors appear to have encoded a title+subtitle pair in a single link's text content; splitting on
+  ` — ` client-side reproduces the site's real two-line list-item look without needing extra nav-doc
+  markup.
+
+## Time spent (iteration 2)
+~70 minutes.
