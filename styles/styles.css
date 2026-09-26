@@ -239,9 +239,14 @@ main .section.purple-gradient {
 
 /* === default content & section styles (footer-sections agent) === */
 
+/* generic default-content spacing: a heading followed by a paragraph gets breathing room */
+:where(main .section .default-content-wrapper) :is(h1, h2, h3) + p {
+  margin-top: 16px;
+}
+
 /* intro banner: centered heading + subhead with bullet separators (slot: intro) */
 main .section.intro-section {
-  padding: 76px 0 58px;
+  padding: 80px 0 54px;
   text-align: center;
 }
 
@@ -257,7 +262,7 @@ main .section.intro-section p {
 
 @media (width >= 730px) {
   main .section.intro-section {
-    padding: 80px 0 48px;
+    padding: 90px 0 30px;
   }
 
   main .section.intro-section p {
@@ -268,23 +273,24 @@ main .section.intro-section p {
 
 /* connect-with-us banner: purple gradient CTA (slot: connect) */
 main .section.connect-section {
-  padding: 104px 0;
+  padding: 100px 0 87px;
   text-align: center;
 }
 
 main .section.connect-section h2 {
-  font-size: 19px;
+  font-size: 19.2px;
   font-weight: 800;
-  line-height: 1.2;
+  line-height: 33.6px;
 }
 
-main .section.connect-section p {
+main .section.connect-section .default-content-wrapper h2 + p {
   margin-top: 24px;
 }
 
 /* plain "Contact Sales" CTA on a dark background reads as a white pill, not the
    generic outlined secondary button */
 main .section.connect-section a.button.secondary:any-link {
+  min-width: 260px;
   background-color: #fff;
   color: var(--text-color);
   box-shadow: none;
@@ -292,19 +298,21 @@ main .section.connect-section a.button.secondary:any-link {
 
 @media (width >= 730px) {
   main .section.connect-section {
-    padding: 88px 0;
+    padding: 78px 0 73px;
   }
 
   main .section.connect-section h2 {
-    font-size: 38px;
+    font-size: 38.4px;
+    line-height: 38.4px;
   }
-}
 
-/* generic default-content spacing: a heading followed by a paragraph gets breathing room */
-main .section .default-content-wrapper h1 + p,
-main .section .default-content-wrapper h2 + p,
-main .section .default-content-wrapper h3 + p {
-  margin-top: 16px;
+  main .section.connect-section .default-content-wrapper h2 + p {
+    margin-top: 55px;
+  }
+
+  main .section.connect-section a.button.secondary:any-link {
+    min-width: 0;
+  }
 }
 
 /* === end === */

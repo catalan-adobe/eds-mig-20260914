@@ -7,7 +7,7 @@ footer .footer-inner {
   box-sizing: border-box;
   max-width: 1660px;
   margin: 0 auto;
-  padding: 24px 15px 46px;
+  padding: 40px 8px 39px;
   color: #fff;
   font-family: var(--body-font-family);
 }
@@ -26,7 +26,7 @@ footer .footer-logo picture {
 
 footer .footer-logo-top {
   display: block;
-  margin: 0 0 24px;
+  margin: 0 16px 33px;
 }
 
 footer .footer-logo-bottom {
@@ -36,11 +36,7 @@ footer .footer-logo-bottom {
 /* nav columns: accordion on mobile */
 footer .footer-nav-col {
   border-top: 1px solid #fff;
-  padding: 28px 0;
-}
-
-footer .footer-nav-col:last-child {
-  border-bottom: 1px solid #fff;
+  padding: 32px 16px;
 }
 
 footer .footer-nav-col h3 {
@@ -64,19 +60,21 @@ footer .footer-nav-heading {
   cursor: pointer;
 }
 
-footer .footer-nav-heading::after {
+footer .footer-nav-heading::after,
+footer .footer-lang-caret {
   content: '';
   flex: none;
-  width: 8px;
-  height: 8px;
-  border: 2px solid currentcolor;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
+  width: 0;
+  height: 0;
+  border-top: 5px solid currentcolor;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
   transition: transform 0.2s;
 }
 
-footer .footer-nav-heading[aria-expanded='true']::after {
-  transform: rotate(225deg);
+footer .footer-nav-heading[aria-expanded='true']::after,
+footer .footer-lang-toggle[aria-expanded='true'] .footer-lang-caret {
+  transform: rotate(180deg);
 }
 
 footer .footer-nav-col ul {
@@ -104,7 +102,7 @@ footer .footer-nav-col li:first-child {
 /* language selector */
 footer .footer-lang {
   position: relative;
-  margin: 32px 0;
+  margin: 0 16px;
 }
 
 footer .footer-lang-toggle {
@@ -114,7 +112,7 @@ footer .footer-lang-toggle {
   height: 40px;
   border: 0;
   border-radius: 5px;
-  padding: 0 16px;
+  padding: 0 24px;
   background-color: #fff;
   color: var(--text-color);
   font-family: inherit;
@@ -125,19 +123,6 @@ footer .footer-lang-toggle {
 footer .footer-lang-toggle .icon {
   width: 16px;
   height: 16px;
-}
-
-footer .footer-lang-caret {
-  width: 8px;
-  height: 8px;
-  border: 2px solid currentcolor;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-  transition: transform 0.2s;
-}
-
-footer .footer-lang-toggle[aria-expanded='true'] .footer-lang-caret {
-  transform: rotate(225deg);
 }
 
 footer .footer-lang-menu {
@@ -169,16 +154,15 @@ footer .footer-brand-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid #fff;
-  margin-top: 24px;
-  padding-top: 40px;
-  padding-bottom: 8px;
+  margin-top: 38px;
+  padding: 0 16px;
 }
 
 footer .footer-social {
   display: flex;
   align-items: center;
   gap: 16px;
+  line-height: 0;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -190,6 +174,10 @@ footer .footer-social .icon {
   transition: color 0.2s;
 }
 
+footer .footer-social .icon img {
+  filter: brightness(0) invert(1);
+}
+
 footer .footer-social a:hover .icon {
   color: #b3b4b3;
 }
@@ -197,13 +185,18 @@ footer .footer-social a:hover .icon {
 /* legal row */
 footer .footer-legal {
   margin-top: 40px;
+  padding: 0 16px;
   color: #fff;
   font-size: 14px;
   font-weight: 300;
-  line-height: 1.6;
+  line-height: 14px;
 }
 
 footer .footer-legal p {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 8px;
   margin: 0;
 }
 
@@ -217,7 +210,7 @@ footer .footer-inner .footer-legal a:hover {
 
 @media (width >= 992px) {
   footer .footer-inner {
-    padding: 64px 32px 40px;
+    padding: 67px 15px 40px;
   }
 
   footer .footer-logo-top {
@@ -235,25 +228,19 @@ footer .footer-inner .footer-legal a:hover {
   }
 
   footer .footer-top-row {
-    display: flex;
-    align-items: flex-start;
-    gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: start;
+    column-gap: 30px;
   }
 
   footer .footer-nav {
-    display: flex;
-    flex: 1;
-    gap: 24px;
+    display: contents;
   }
 
   footer .footer-nav-col {
-    flex: 1;
     border: 0;
     padding: 0;
-  }
-
-  footer .footer-nav-col:last-child {
-    border: 0;
   }
 
   footer .footer-nav-heading {
@@ -281,17 +268,18 @@ footer .footer-inner .footer-legal a:hover {
   }
 
   footer .footer-lang {
-    flex: none;
+    justify-self: end;
     margin: 0;
   }
 
   footer .footer-brand-row {
     margin-top: 45px;
-    padding-top: 24px;
-    padding-bottom: 0;
+    border-top: 1px solid #fff;
+    padding: 24px 0 0;
   }
 
   footer .footer-legal {
     margin-top: 24px;
+    padding: 0;
   }
 }
