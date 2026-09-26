@@ -82,17 +82,23 @@
   text-decoration: underline;
 }
 
-@media (width >= 900px) {
+@media (width >= 730px) {
   .columns.divider {
     padding: 60px 0;
   }
 
-  .columns.divider h2 {
-    margin-bottom: 24px;
+  .columns.divider > div {
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
   }
 
-  .columns.divider > div {
-    gap: 60px;
+  .columns.divider > div > div {
+    flex: 1;
+  }
+
+  .columns.divider h2 {
+    margin-bottom: 24px;
   }
 
   .columns.divider > div > .columns-divider {
@@ -180,7 +186,7 @@ main .section.columns-container:has(.key-benefits) .default-content-wrapper h2 {
   }
 }
 
-@media (width >= 992px) {
+@media (width >= 730px) {
   .columns.key-benefits .columns-key-benefits-flat {
     display: grid;
     grid-auto-flow: column;
