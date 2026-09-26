@@ -145,3 +145,10 @@ Evidence: `evidence/diff/final-states.md`, `evidence/diff/final-branch/table.md`
 - Agent self-reported mismatch was measured in isolation (placeholder neighbours, own crops) and mostly overstated or
   mis-stated fidelity; integrated numbers are the ones that count: What's New 16.0%/26.2% self → 1.15%/0.19% final,
   footer 4.3%/6.7% self → 2.27%/1.72% final, features 2.79% self vs 5.98% measured at integration → 1.02% final.
+- Menus workflow `spm_menus` (1 agent, 2569 s = 43 min wall): 494.1K uncached + 50.6M cached tokens, **$12.58**
+  (self-reported 150 min again). Agent after-numbers matched my independent measurement to ±0.02 pt this time
+  (2.75/4.51/7.16/4.49/2.15/2.92%) — refinement of G21: self-reports ARE reliable when the agent measures the
+  integrated page with the integrator's own state script; they are not when it measures an isolated draft.
+  It regressed Support & Training (3.23 → 4.49%); my follow-up took the menus to 2.34/3.57/1.96/2.47/1.64%.
+- **Total subagent cost for the run: $70.37** ($3.32 research + $54.47 blocks + $12.58 menus), on top of the main
+  session. Parallel block agents = 77% of subagent spend.
