@@ -1,2 +1,4 @@
 helix-importer-ui
-*.min.js
+*.min.js# migration tooling: playwright run-code snippets + downloaded reference bundles, not site code
+migration/
+.pi/
