@@ -118,6 +118,13 @@ export default async function decorate(block) {
   const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
   const fragment = await loadFragment(navPath);
 
+  // plg-scaffold:start (transition) a nav that still holds legacy slices renders as-is
+  if (fragment.querySelector('.legacy')) {
+    block.replaceChildren(...fragment.children);
+    return;
+  }
+  // plg-scaffold:end
+
   // decorate nav DOM
   block.textContent = '';
   const nav = document.createElement('nav');
