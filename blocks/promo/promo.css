@@ -1,0 +1,116 @@
+.promo {
+  position: relative;
+  padding: 0 50px;
+}
+
+.promo .promo-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px 12px;
+  box-sizing: border-box;
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  text-align: center;
+}
+
+.promo .promo-content p,
+.promo .promo-content p.button-wrapper,
+.promo .promo-content p.button-container {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.promo .promo-content a.button:any-link {
+  position: relative;
+  display: inline-block;
+  border: 0;
+  border-radius: 4px;
+  padding: 8px 16px;
+  background: var(--accent-color);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-overflow: clip;
+  overflow: visible;
+}
+
+.promo .promo-content a.button:any-link:hover {
+  background: color-mix(in srgb, var(--accent-color) 92%, #000);
+  text-decoration: none;
+}
+
+.promo .promo-close {
+  position: absolute;
+  top: 7px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 37px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: #646568;
+  cursor: pointer;
+  transition: color 0.1s linear;
+}
+
+.promo .promo-close:hover {
+  color: #000;
+}
+
+.promo .promo-close svg {
+  width: auto;
+  height: 15px;
+}
+
+.promo .promo-close svg path {
+  fill: currentcolor;
+}
+
+@media (width >= 540px) {
+  .promo {
+    padding: 0 65px;
+  }
+
+  .promo .promo-close {
+    top: 12px;
+  }
+}
+
+@media (width >= 768px) {
+  .promo .promo-content {
+    max-width: 720px;
+  }
+
+  .promo .promo-close {
+    right: 20px;
+  }
+}
+
+@media (width >= 992px) {
+  .promo .promo-content {
+    max-width: 960px;
+  }
+
+  .promo .promo-content p,
+  .promo .promo-content a.button:any-link {
+    font-size: 16px;
+  }
+}
+
+@media (width >= 1200px) {
+  .promo .promo-content {
+    max-width: 1320px;
+    gap: 16px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}

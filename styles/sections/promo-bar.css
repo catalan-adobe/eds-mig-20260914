@@ -1,0 +1,14 @@
+/* section style "promo-bar": full-width light bar above the nav */
+header .section.promo-bar {
+  background-color: #f7f9ff;
+}
+
+header .section.promo-bar .promo-wrapper {
+  margin: 0;
+  padding: 0;
+  max-width: none;
+}
+
+header .section.promo-bar[hidden] {
+  display: none;
+}
