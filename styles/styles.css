@@ -298,3 +298,8 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+/* a metadata-only section is an empty div on aem.page */
+main > .section:empty {
+  display: none;
+}
