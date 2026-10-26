@@ -1,0 +1,36 @@
+/* transition scaffolding: legacy slices bring their own spacing and full-bleed layout */
+main > .section.legacy-container {
+  margin: 0;
+  padding: 0;
+}
+
+main > .section.legacy-container > .legacy-wrapper {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+header:has(.legacy),
+footer:has(.legacy) {
+  height: auto;
+}
+
+.legacy {
+  display: block;
+}
+
+footer:has(.legacy) .footer > div {
+  max-width: none;
+  padding: 0;
+}
+
+header:has(.legacy) .section,
+footer:has(.legacy) .section {
+  margin: 0;
+  padding: 0;
+}
+
+/* a page whose footer is inside a main slice (whole page in one slice) has an empty footer */
+footer .footer > div:has(> .section:only-child:empty) {
+  padding: 0;
+}
