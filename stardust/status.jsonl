@@ -18,3 +18,4 @@
 {"ts":"2026-10-26T15:51:39Z","skill":"stardust:dynamics","phase":"triage","event":"end","track":"site-scope","detail":"12 curated rows, interim tiers named"}
 {"ts":"2026-10-26T15:51:39Z","skill":"stardust:replica","phase":"extract","event":"end","track":"site-scope","detail":"roster caps 100/20 · 79 of 571 · types article 56/listing 12/form 7/static 2/landing 2 · uncaptured first-level targets: hub/seo 55"}
 {"ts":"2026-10-26T15:52:37Z","skill":"stardust:replica","phase":"reconcile-first-page","event":"start"}
+{"ts":"2026-10-26T15:56:54Z","skill":"stardust:replica","phase":"reconcile-first-page","event":"end","detail":"promoted site spec; 5 confirmed, 2 corrected (blocks, scope) in e99821e; pub6 1440 0.47%/Δ0 360 3.45%/Δ1; index approved hands-off"}

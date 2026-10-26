@@ -1,7 +1,7 @@
 {
   "_provenance": {
-    "writtenBy": "stardust:extract",
-    "writtenAt": "2026-10-26T15:48:05Z",
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-10-26T15:55:07Z",
     "stardustVersion": "0.36.0"
   },
   "site": {
@@ -718,17 +718,22 @@
       "url": "https://backlinko.com/",
       "title": "Backlinko: SEO, Content Marketing, & Link Building Strategies",
       "type": "landing",
-      "status": "extracted",
+      "status": "approved",
       "history": [
         {
           "status": "extracted",
           "at": "2026-10-26T15:48:05Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-26T15:55:07Z",
+          "approvedBy": "hands-off"
         }
       ],
       "stale": false,
       "staleReason": null,
       "currentStatePath": "stardust/current/pages/index.json",
-      "prototypePath": null,
+      "prototypePath": "stardust/prototypes/index-proposed.html",
       "migratedPath": null
     },
     {

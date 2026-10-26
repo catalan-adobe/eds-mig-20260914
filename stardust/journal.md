@@ -41,3 +41,15 @@
 - cap-probe across /, /blog, /hub/seo, /seo-strategy: container 1140, shell 1320, articles 740 content column.
 - Capture gap reported by crawl: "uncaptured first-level targets: hub/seo 55" (scope debt for rollout).
 - Dynamics: 69 rows → stardust/dynamic-features.md (12 curated rows, interim tiers named).
+
+## Triage — site dynamics curated (Track B, 2026-10-26)
+
+- 69 generated rows → 12 curated rows in stardust/dynamic-features.md; interim tiers and owner decisions named.
+
+## Reconcile first page — site spec promoted, 2 corrections, home approved (2026-10-26)
+
+- Promoted Track B's PRODUCT.md / DESIGN.md / DESIGN.json verbatim; direction.md rewritten with roster caps.
+- Corrections (e99821e): hubs topic colour keyed on the tile link slug (the /hub/seo reuse has 9 colours);
+  146 links outside the delivered set point at backlinko.com instead of 404ing root-relative paths.
+- pub6 re-gate: 1440 0.47 %/Δ0, 360 3.45 %/Δ1, 0 🔴 0 🟡; gate-all PASS at both widths.
+- state.json `index` → approved (hands-off). Table: stardust/reconcile-first-page.md.
