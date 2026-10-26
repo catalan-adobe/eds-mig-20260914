@@ -918,7 +918,7 @@
 }
 
 @media (width >= 1400px) {
-  .semrush-card {
+  .header .semrush-card {
     right: -80px;
   }
 }

@@ -67,17 +67,19 @@ body.appear {
   display: block;
 }
 
-header {
+body > header {
+  position: relative;
+  z-index: 1030;
   min-height: var(--header-h);
 }
 
-header .header,
-footer .footer {
+body > header .header,
+body > footer .footer {
   visibility: hidden;
 }
 
-header .header[data-block-status='loaded'],
-footer .footer[data-block-status='loaded'] {
+body > header .header[data-block-status='loaded'],
+body > footer .footer[data-block-status='loaded'] {
   visibility: visible;
 }
 

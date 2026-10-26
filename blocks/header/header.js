@@ -46,6 +46,7 @@ function unwrapParagraphs(list) {
 }
 
 function stripInstrumentation(root) {
+  if (root.nodeType !== Node.ELEMENT_NODE) return root;
   [root, ...root.querySelectorAll('*')].forEach((node) => {
     [...node.attributes].forEach(({ name }) => {
       if (name.startsWith('data-aue-') || name.startsWith('data-richtext-')) node.removeAttribute(name);
@@ -84,7 +85,7 @@ function buildMega(li, notice) {
   const button = el('button', { type: 'button' }, ...label);
   const catList = el('ul');
   const lists = el('div', { class: 'mega-lists' });
-  const close = el('button', { class: 'mega-close', type: 'button', 'aria-label': 'Close' }, icon('close'));
+  const close = el('button', { class: 'mega-close', type: 'button' }, icon('close'));
   lists.append(close);
   [...sub.children].forEach((cat, i) => {
     const { label: catLabel, sub: links } = labelOf(cat);
@@ -145,7 +146,7 @@ function buildSearch(placeholderP) {
     el('div', { class: 'search-form' }, form),
     el('button', { class: 'popup-close', type: 'button' }, icon('close'), el('span', { class: 'sr-only' }, 'Close')),
   );
-  const toggle = el('button', { type: 'button', 'aria-label': 'Search' }, icon('search'));
+  const toggle = el('button', { type: 'button' }, icon('search'));
   toggle.addEventListener('click', () => popup.classList.toggle('open'));
   popup.querySelector('.popup-close').addEventListener('click', () => popup.classList.remove('open'));
   return el('div', { class: 'header-search' }, toggle, popup);
@@ -187,13 +188,20 @@ function buildCta(section) {
   return el('div', { class: 'header-cta' }, button, el('div', { class: 'header-popup semrush-popup' }, card));
 }
 
+/** Presentational clone of a button label (its text, without the glyph). */
+function labelClone(button) {
+  return [...button.childNodes]
+    .filter((node) => !(node.classList && node.classList.contains('icon')))
+    .map((node) => stripInstrumentation(node.cloneNode(true)));
+}
+
 function buildMobile(megas, links, ctaSection) {
   const ul = el('ul');
   megas.forEach(({ name, cats }) => {
     const items = cats.map((cat) => el(
       'li',
       { class: 'm-acc' },
-      el('div', {}, el('button', { type: 'button' }, cat.firstChild.textContent, icon('chevron-down')), el('div', { class: 'm-acc-body' })),
+      el('div', {}, el('button', { type: 'button' }, ...labelClone(cat), icon('chevron-down')), el('div', { class: 'm-acc-body' })),
     ));
     const back = el('button', { type: 'button' }, icon('chevron-left'), 'Back');
     const sub = el(
