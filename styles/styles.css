@@ -42,8 +42,21 @@
 
   /* layout */
   --content-max-width: 1140px;
-  --nav-height: 0px;
+  --nav-height: 171px;
 }
+
+@media (width >= 768px) {
+  :root {
+    --nav-height: 121px;
+  }
+}
+
+@media (width >= 992px) {
+  :root {
+    --nav-height: 142px;
+  }
+}
+
 body {
   display: none;
   margin: 0;
