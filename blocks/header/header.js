@@ -16,11 +16,33 @@ function el(tag, attrs = {}, ...children) {
   return node;
 }
 
+const svgCache = new Map();
+
+/** Inline SVG glyph (the live header inlines its icons), fetched once per name. */
 function icon(name) {
-  const img = el('img', {
-    src: `${window.hlx?.codeBasePath || ''}/icons/${name}.svg`, alt: '', loading: 'lazy', width: '16', height: '16',
+  const span = el('span', { class: `icon icon-${name}` });
+  if (!svgCache.has(name)) {
+    svgCache.set(name, fetch(`${window.hlx?.codeBasePath || ''}/icons/${name}.svg`)
+      .then((resp) => (resp.ok ? resp.text() : ''))
+      .then((text) => new DOMParser().parseFromString(text, 'image/svg+xml').documentElement));
+  }
+  svgCache.get(name).then((svg) => {
+    if (svg && svg.tagName === 'svg') span.append(document.importNode(svg, true));
   });
-  return el('span', { class: `icon icon-${name}` }, img);
+  return span;
+}
+
+/** Inline-SVG version of an authored :icon: span (decorateIcons renders an <img>). */
+function inlineIcon(span) {
+  const name = [...span.classList].find((c) => c.startsWith('icon-')).slice(5);
+  const glyph = icon(name);
+  span.replaceWith(glyph);
+  return glyph;
+}
+
+/** Moves a lone paragraph's children up into its list item (the delivered lists are loose). */
+function unwrapParagraphs(list) {
+  list.querySelectorAll('li > p').forEach((p) => p.replaceWith(...p.childNodes));
 }
 
 function stripInstrumentation(root) {
@@ -93,6 +115,7 @@ function buildNotice(paragraphs) {
 
 function buildNav(section) {
   const list = section.querySelector('ul');
+  unwrapParagraphs(list);
   const notice = buildNotice([...section.querySelectorAll(':scope p')]);
   const ul = el('ul');
   const megas = [];
@@ -133,6 +156,13 @@ function buildCta(section) {
   const button = el('button', { type: 'button' }, ctaP.textContent);
   ctaP.remove();
   const [title, list, footTitle, footText] = rest;
+  const helps = [...title.childNodes]
+    .filter((node) => node.nodeType === Node.TEXT_NODE && node.textContent.trim());
+  helps.forEach((node) => {
+    const span = el('span');
+    node.replaceWith(span);
+    span.append(node);
+  });
   const brand = title.querySelector('em');
   if (brand) {
     const srOnly = el('span', { class: 'sr-only' });
@@ -263,6 +293,7 @@ export default async function decorate(block) {
   const [barSection, logoSection, navSection, toolsSection, mobileSection] = fragment.children;
 
   const logo = logoSection.querySelector('a');
+  logo.querySelectorAll('.icon').forEach(inlineIcon);
   logo.className = 'header-logo';
   logo.title = 'Backlinko';
   const { nav, megas, links } = buildNav(navSection);

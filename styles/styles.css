@@ -68,7 +68,7 @@ body.appear {
 }
 
 header {
-  min-height: calc(var(--bar-h) + var(--header-h));
+  min-height: var(--header-h);
 }
 
 header .header,

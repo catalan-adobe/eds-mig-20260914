@@ -41,7 +41,9 @@
   padding: 6px;
 }
 
-.tool-cards .tool-icon picture {
+.tool-cards .tool-icon p,
+.tool-cards .tool-icon picture,
+.tool-cards .tool-icon .icon {
   display: contents;
 }
 

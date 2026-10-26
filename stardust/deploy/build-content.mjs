@@ -45,7 +45,7 @@ sections.push(block('keyword-search', [
   [`<p>${kw.find('input').attr('placeholder')}</p>`],
   [`<p>by</p><p><picture><img src="${mediaBase}/semrush-logo.svg" alt="Semrush"></picture></p>`],
 ]));
-sections.push(block('tool-cards', $('.tool-card').map((_, a) => [[img($(a).find('img')),
+sections.push(block('tool-cards', $('.tool-card').map((_, a) => [[`<p>:${$(a).find('img').attr('src').split('/').pop().replace('.svg', '')}:</p>`,
   `<h3><a href="${$(a).attr('href')}">${text($(a).find('h3'))}</a></h3><p>${text($(a).find('p'))}</p>`]]).get())
   + `<p><a href="${$('.tools-more a').attr('href')}">${text($('.tools-more a'))}</a></p>`);
 sections.push(head('section.is-latest') + block('posts', postRows('section.is-latest')) + meta('latest'));

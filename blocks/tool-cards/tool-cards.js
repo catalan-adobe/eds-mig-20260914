@@ -21,7 +21,7 @@ export default function decorate(block) {
     card.title = link.textContent;
     link.replaceWith(...link.childNodes);
     card.append(
-      el('div', 'tool-icon', iconCell.querySelector('picture')),
+      el('div', 'tool-icon', iconCell.querySelector('p') || iconCell.querySelector('picture')),
       el('div', 'tool-text', heading, ...textCell.querySelectorAll('p')),
     );
     grid.append(el('div', 'tool-item', card));
