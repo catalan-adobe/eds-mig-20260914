@@ -1,12 +1,12 @@
 {
   "_provenance": {
-    "writtenBy": "stardust:replica",
-    "mode": "bounded-single",
-    "writtenAt": "2026-10-26T15:09:16Z",
-    "synthesizedFrom": [
-      "stardust/first-page/current/pages/index.json",
-      "stardust/first-page/lift/rules-slim.css",
-      "stardust/prototypes/canon.css"
+    "writtenBy": "stardust:extract",
+    "mode": "prep",
+    "writtenAt": "2026-10-26T15:51:19Z",
+    "readArtifacts": [
+      "stardust/current/pages/*.json (79)",
+      "stardust/current/_crawl-log.json",
+      "cap-probe across /, /blog, /hub/seo, /seo-strategy"
     ]
   },
   "name": "Backlinko",
@@ -55,7 +55,9 @@
       768,
       992,
       1200
-    ]
+    ],
+    "articleShell": "1320px shell, 740px content column (/seo-strategy)",
+    "hubShell": "1140px (/hub/seo)"
   },
   "components": {
     "buttonPrimary": "bg #00bc98, radius 6px, 1.05rem 1.2rem padding, 18px/600",
@@ -67,15 +69,62 @@
     "breakpoints": {
       "containerMaxWidth": "1140px",
       "probeWidth": 2560,
-      "shellMaxWidth": null,
+      "shellMaxWidth": "1320px",
       "caps": [
+        {
+          "kind": "shell",
+          "px": 1320,
+          "via": "max-width",
+          "selector": "div.wrap > main.main.css-1avyp1d > article.css-1v3c6n7 > div.css-1g6p4ok",
+          "pages": [
+            "https://backlinko.com/seo-strategy"
+          ]
+        },
+        {
+          "kind": "shell",
+          "px": 1140,
+          "via": "max-width",
+          "selector": "div.wrap > div.css-oew2hu > main.css-cohvba > div.css-1gmiqn5",
+          "pages": [
+            "https://backlinko.com/hub/seo"
+          ]
+        },
+        {
+          "kind": "content",
+          "px": 740,
+          "via": "max-width",
+          "selector": "article.css-1v3c6n7 > div.css-1g6p4ok > div.css-v7klxw > div.css-yaer3c",
+          "pages": [
+            "https://backlinko.com/seo-strategy"
+          ]
+        },
         {
           "kind": "module",
           "px": 1140,
           "via": "max-width",
           "selector": "main.css-1avyp1d > section > div.css-17mdh0m > div.css-1gmiqn5",
           "pages": [
-            "https://backlinko.com/"
+            "https://backlinko.com/",
+            "https://backlinko.com/blog",
+            "https://backlinko.com/seo-strategy"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 1002,
+          "via": "fixed",
+          "selector": "div > div.css-1gmiqn5 > div > div",
+          "pages": [
+            "https://backlinko.com/blog"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 800,
+          "via": "max-width",
+          "selector": "section > div.css-1a57u8g > div.css-1sncbml > h2",
+          "pages": [
+            "https://backlinko.com/blog"
           ]
         },
         {
@@ -98,11 +147,31 @@
         },
         {
           "kind": "module",
+          "px": 652,
+          "via": "fixed",
+          "selector": "#content > div.toc-section > p > strong",
+          "pages": [
+            "https://backlinko.com/seo-strategy"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 610,
+          "via": "max-width",
+          "selector": "section > div.css-1a57u8g > div.css-1sncbml > div.css-mzoych",
+          "pages": [
+            "https://backlinko.com/blog"
+          ]
+        },
+        {
+          "kind": "module",
           "px": 580,
           "via": "fixed",
           "selector": "div.css-1gmiqn5 > div > div.css-1aclb7b > div.css-yw0cdh",
           "pages": [
-            "https://backlinko.com/"
+            "https://backlinko.com/",
+            "https://backlinko.com/blog",
+            "https://backlinko.com/seo-strategy"
           ]
         },
         {
@@ -111,7 +180,9 @@
           "via": "fixed",
           "selector": "div.css-11utl4o > div > div.css-1o1v5h > div.css-1qe7gkt",
           "pages": [
-            "https://backlinko.com/"
+            "https://backlinko.com/",
+            "https://backlinko.com/blog",
+            "https://backlinko.com/seo-strategy"
           ]
         },
         {
@@ -121,6 +192,24 @@
           "selector": "section > div.css-17mdh0m > div.css-1gmiqn5 > div.css-14ccikl",
           "pages": [
             "https://backlinko.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 459,
+          "via": "fixed",
+          "selector": "div.css-18rzvnw > div.css-l36v40 > div > h3",
+          "pages": [
+            "https://backlinko.com/blog"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 425,
+          "via": "fixed",
+          "selector": "article.css-1v3c6n7 > div.css-1g6p4ok > div.css-v7klxw > aside.css-1sc3ikw",
+          "pages": [
+            "https://backlinko.com/seo-strategy"
           ]
         },
         {
@@ -138,7 +227,19 @@
           "via": "fixed",
           "selector": "div.css-yw0cdh > article.css-1gmoqx4 > a > h3",
           "pages": [
-            "https://backlinko.com/"
+            "https://backlinko.com/",
+            "https://backlinko.com/blog",
+            "https://backlinko.com/hub/seo",
+            "https://backlinko.com/seo-strategy"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 342,
+          "via": "fixed",
+          "selector": "div.css-18rzvnw > div.css-l36v40 > div > a.css-1yqcxip",
+          "pages": [
+            "https://backlinko.com/blog"
           ]
         },
         {
@@ -147,7 +248,8 @@
           "via": "fixed",
           "selector": "div > ul.hub-topic-resources-list.resources-list > li.css-0 > a",
           "pages": [
-            "https://backlinko.com/"
+            "https://backlinko.com/",
+            "https://backlinko.com/hub/seo"
           ]
         },
         {
@@ -156,7 +258,9 @@
           "via": "fixed",
           "selector": "div > ul.hub-topic-resources-list.resources-list > li.css-0 > a",
           "pages": [
-            "https://backlinko.com/"
+            "https://backlinko.com/",
+            "https://backlinko.com/hub/seo",
+            "https://backlinko.com/seo-strategy"
           ]
         }
       ],
@@ -214,17 +318,224 @@
           "section": 8,
           "selector": "div > div.wrap > main.css-1avyp1d > section",
           "px": 1140
+        },
+        {
+          "url": "https://backlinko.com/blog",
+          "section": 0,
+          "selector": "div > div.wrap > main > section.css-qe3r6g",
+          "px": 1140
+        },
+        {
+          "url": "https://backlinko.com/blog",
+          "section": 1,
+          "selector": "div > div.wrap > main > section",
+          "px": 1140
+        },
+        {
+          "url": "https://backlinko.com/blog",
+          "section": 2,
+          "selector": "div > div.wrap > main > section",
+          "px": 1140
+        },
+        {
+          "url": "https://backlinko.com/blog",
+          "section": 3,
+          "selector": "div > div.wrap > main > section",
+          "px": 1140
+        },
+        {
+          "url": "https://backlinko.com/blog",
+          "section": 4,
+          "selector": "div > div.wrap > main > section",
+          "px": 1140
+        },
+        {
+          "url": "https://backlinko.com/blog",
+          "section": 5,
+          "selector": "div > div.wrap > main > section",
+          "px": 1140
+        },
+        {
+          "url": "https://backlinko.com/blog",
+          "section": 6,
+          "selector": "div > div.wrap > main > section",
+          "px": 1140
+        },
+        {
+          "url": "https://backlinko.com/blog",
+          "section": 7,
+          "selector": "div > div.wrap > main > section",
+          "px": 1140
+        },
+        {
+          "url": "https://backlinko.com/blog",
+          "section": 8,
+          "selector": "div > div.wrap > main > section",
+          "px": 1140
+        },
+        {
+          "url": "https://backlinko.com/blog",
+          "section": 9,
+          "selector": "div > div.wrap > main > section",
+          "px": 1140
+        },
+        {
+          "url": "https://backlinko.com/hub/seo",
+          "section": 0,
+          "selector": "#fundamentals",
+          "px": 373
+        },
+        {
+          "url": "https://backlinko.com/hub/seo",
+          "section": 1,
+          "selector": "#keyword-research-strategies",
+          "px": 373
+        },
+        {
+          "url": "https://backlinko.com/hub/seo",
+          "section": 2,
+          "selector": "#optimization",
+          "px": 373
+        },
+        {
+          "url": "https://backlinko.com/hub/seo",
+          "section": 3,
+          "selector": "#technical",
+          "px": 373
+        },
+        {
+          "url": "https://backlinko.com/hub/seo",
+          "section": 4,
+          "selector": "#link-building-for-seo",
+          "px": 373
+        },
+        {
+          "url": "https://backlinko.com/hub/seo",
+          "section": 5,
+          "selector": "#uxsignals",
+          "px": 373
+        },
+        {
+          "url": "https://backlinko.com/hub/seo",
+          "section": 6,
+          "selector": "#tools",
+          "px": 373
+        },
+        {
+          "url": "https://backlinko.com/hub/seo",
+          "section": 7,
+          "selector": "#advanced",
+          "px": 373
+        },
+        {
+          "url": "https://backlinko.com/hub/seo",
+          "section": 8,
+          "selector": "#seoquake",
+          "px": 373
+        },
+        {
+          "url": "https://backlinko.com/seo-strategy",
+          "section": 0,
+          "selector": "div.wrap > main.main.css-1avyp1d > article.css-1v3c6n7 > header.css-18v8wlq",
+          "px": null
+        },
+        {
+          "url": "https://backlinko.com/seo-strategy",
+          "section": 1,
+          "selector": "div.wrap > main.main.css-1avyp1d > article.css-1v3c6n7 > div.css-1g6p4ok",
+          "px": 1140
         }
       ],
-      "capRegister": [],
+      "capRegister": [
+        "contentMaxWidth differs between archetypes: 1140 (https://backlinko.com/), 1140 (https://backlinko.com/blog), 1140 (https://backlinko.com/hub/seo), 740 (https://backlinko.com/seo-strategy) — decide per template in the inconsistency register",
+        "shellMaxWidth differs between archetypes: fluid (https://backlinko.com/), fluid (https://backlinko.com/blog), 1140 (https://backlinko.com/hub/seo), 1320 (https://backlinko.com/seo-strategy)"
+      ],
       "capProvenance": {
         "writtenBy": "skills/replica/scripts/cap-probe.mjs",
-        "writtenAt": "2026-10-26T15:00:11.331Z",
+        "writtenAt": "2026-10-26T15:49:27.107Z",
         "baseWidth": 1440,
         "urls": [
-          "https://backlinko.com/"
+          "https://backlinko.com/",
+          "https://backlinko.com/blog",
+          "https://backlinko.com/hub/seo",
+          "https://backlinko.com/seo-strategy"
         ]
       }
-    }
+    },
+    "modules": [
+      {
+        "id": "promo-bar",
+        "status": "candidate",
+        "instances": 78,
+        "signal": "css-18rnoag fixed bar + spacer",
+        "pages": "all templates"
+      },
+      {
+        "id": "site-header",
+        "status": "candidate",
+        "instances": 78,
+        "signal": "header.headroom-wrapper mega menu + mobile drop",
+        "variants": [
+          "default"
+        ]
+      },
+      {
+        "id": "site-footer",
+        "status": "candidate",
+        "instances": 77,
+        "signal": "footer.css-160f2kj"
+      },
+      {
+        "id": "hub-row",
+        "status": "candidate",
+        "instances": 8,
+        "signal": "css-z8mql1 hub tile + summary + resources",
+        "pages": [
+          "index",
+          "hub-seo",
+          "hub-content",
+          "introducing-*-hub"
+        ]
+      },
+      {
+        "id": "hub-topic-list",
+        "status": "candidate",
+        "instances": 13,
+        "signal": "ul.hub-topic-resources-list",
+        "pages": [
+          "hub-*",
+          "index"
+        ]
+      },
+      {
+        "id": "tool-card",
+        "status": "candidate",
+        "instances": 2,
+        "signal": "css-2iio8",
+        "pages": [
+          "index",
+          "tools"
+        ]
+      },
+      {
+        "id": "post-card",
+        "status": "candidate",
+        "instances": 1,
+        "signal": "css-1gmoqx4 / css-10svfql",
+        "pages": [
+          "index"
+        ]
+      },
+      {
+        "id": "section-heading",
+        "status": "candidate",
+        "instances": 2,
+        "signal": "css-r6z6n4 / css-114ss0j",
+        "pages": [
+          "index",
+          "blog"
+        ]
+      }
+    ]
   }
 }

@@ -1,10 +1,1509 @@
 {
-  "_provenance": { "writtenBy": "stardust:replica", "writtenAt": "2026-10-26T14:58:17Z", "stardustVersion": "0.36.0" },
-  "site": { "originUrl": "https://backlinko.com/", "deployUrl": null },
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-10-26T15:48:05Z",
+    "stardustVersion": "0.36.0"
+  },
+  "site": {
+    "originUrl": "https://backlinko.com/",
+    "deployUrl": null,
+    "extractedAt": "2026-10-26T15:48:05Z",
+    "pageCap": 100,
+    "totalDiscovered": 571,
+    "crawled": 79,
+    "roster": "cap 100/20 (hands-off default); priority roster: header/footer links + section landings + sitemap spread",
+    "captureGaps": [
+      {
+        "root": "/hub/seo",
+        "slug": "hub-seo",
+        "linked": 57,
+        "uncaptured": [
+          "/hub/seo/advanced",
+          "/hub/seo/architecture",
+          "/hub/seo/backlinks",
+          "/hub/seo/best-practices",
+          "/hub/seo/bounce-rate",
+          "/hub/seo/broken-link-building",
+          "/hub/seo/choosing-keywords",
+          "/hub/seo/content-audits",
+          "/hub/seo/core-web-vitals",
+          "/hub/seo/dwell-time",
+          "/hub/seo/enterprise",
+          "/hub/seo/featured-snippets",
+          "/hub/seo/fundamentals",
+          "/hub/seo/internal-links",
+          "/hub/seo/irrelevant-keywords",
+          "/hub/seo/keyword-difficulty",
+          "/hub/seo/keyword-research-strategies",
+          "/hub/seo/linkbait",
+          "/hub/seo/long-tail-keywords",
+          "/hub/seo/lsi",
+          "/hub/seo/moz-pro",
+          "/hub/seo/optimizing-content",
+          "/hub/seo/organic-ctr",
+          "/hub/seo/original-research",
+          "/hub/seo/pagespeed",
+          "/hub/seo/ranking-factors",
+          "/hub/seo/raven-tools",
+          "/hub/seo/robots-txt",
+          "/hub/seo/search-intent",
+          "/hub/seo/semantic-seo",
+          "/hub/seo/semrush",
+          "/hub/seo/seo-keywords",
+          "/hub/seo/seo-results",
+          "/hub/seo/seo-vs-sem",
+          "/hub/seo/seo-writing",
+          "/hub/seo/seoquake",
+          "/hub/seo/seoquake-audit-checks",
+          "/hub/seo/seoquake-configuration",
+          "/hub/seo/seoquake-parameters",
+          "/hub/seo/seoquake-semrush",
+          "/hub/seo/seoquake-troubleshooting",
+          "/hub/seo/seoquake-usage",
+          "/hub/seo/seoquake-whats-new",
+          "/hub/seo/serp-features",
+          "/hub/seo/serps",
+          "/hub/seo/sitemaps",
+          "/hub/seo/snippets",
+          "/hub/seo/software",
+          "/hub/seo/spam-link",
+          "/hub/seo/team",
+          "/hub/seo/technical",
+          "/hub/seo/ubersuggest",
+          "/hub/seo/url-slug",
+          "/hub/seo/ux",
+          "/hub/seo/visibility"
+        ]
+      }
+    ]
+  },
   "direction": null,
   "handsOff": true,
   "flow": "replica",
   "flowChosenAt": "2026-10-26T14:58:17Z",
   "flowSource": "user-phrase",
-  "pages": []
+  "pages": [
+    {
+      "slug": "about-backlinko",
+      "url": "https://backlinko.com/about-backlinko",
+      "title": "About Backlinko",
+      "type": "static",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/about-backlinko.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "affiliate-marketing-niches",
+      "url": "https://backlinko.com/affiliate-marketing-niches",
+      "title": "Top 90+ Affiliate Marketing Niches of 2024",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/affiliate-marketing-niches.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "affiliate-marketing-statistics",
+      "url": "https://backlinko.com/affiliate-marketing-statistics",
+      "title": "16 Key Affiliate Marketing Statistics for 2026",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/affiliate-marketing-statistics.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "agencyanalytics",
+      "url": "https://backlinko.com/agencyanalytics",
+      "title": "AgencyAnalytics Review: Pricing, Features & Key Features",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/agencyanalytics.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "ahrefs-review",
+      "url": "https://backlinko.com/ahrefs-review",
+      "title": "Ahrefs Review: Is This SEO Tool Worth The Money?",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/ahrefs-review.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "b2b-content-marketing-report",
+      "url": "https://backlinko.com/b2b-content-marketing-report",
+      "title": "The B2B Content Marketing Report",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/b2b-content-marketing-report.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "best-affiliate-programs",
+      "url": "https://backlinko.com/best-affiliate-programs",
+      "title": "22 Best Affiliate Programs to Try in 2026",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/best-affiliate-programs.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "best-free-seo-tools",
+      "url": "https://backlinko.com/best-free-seo-tools",
+      "title": "12 Best SEO Tools for 2026 (Used by Our Team Daily)",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/best-free-seo-tools.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "blog-authors-leigh-mckenzie",
+      "url": "https://backlinko.com/blog/authors/leigh-mckenzie",
+      "title": "Leigh McKenzie - SEO & AI Search Strategist",
+      "type": "listing",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/blog-authors-leigh-mckenzie.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "blog",
+      "url": "https://backlinko.com/blog",
+      "title": "The Backlinko SEO Blog",
+      "type": "listing",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/blog.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "clearscope-review",
+      "url": "https://backlinko.com/clearscope-review",
+      "title": "Clearscope Review: Is This New SEO Tool Any Good?",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/clearscope-review.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "clickflow-review",
+      "url": "https://backlinko.com/clickflow-review",
+      "title": "Clickflow Review: Is This Tool Worth It?",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/clickflow-review.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "clubhouse-guide",
+      "url": "https://backlinko.com/clubhouse-guide",
+      "title": "Clubhouse Made Simple: A Step-By-Step Guide",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/clubhouse-guide.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "competitor-analysis",
+      "url": "https://backlinko.com/competitor-analysis",
+      "title": "Free Competitor Analysis Tool: Analyze Your SEO & PPC Rivals",
+      "type": "form",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/competitor-analysis.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "contact",
+      "url": "https://backlinko.com/contact",
+      "title": "Get in touch with Backlinko",
+      "type": "static",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/contact.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "content-study",
+      "url": "https://backlinko.com/content-study",
+      "title": "We Analyzed 912 Million Blog Posts. Here's What We Learned About Content Marketing",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/content-study.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "deals-semrush-coupon",
+      "url": "https://backlinko.com/deals/semrush-coupon",
+      "title": "Semrush Coupon Code: 14-Day Free Trial Promo + 17% Off",
+      "type": "landing",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/deals-semrush-coupon.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "digital-marketing-stats",
+      "url": "https://backlinko.com/digital-marketing-stats",
+      "title": "161 Incredible Digital Marketing Stats",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/digital-marketing-stats.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "eeat-checklist",
+      "url": "https://backlinko.com/eeat-checklist",
+      "title": "How to Master E-E-A-T in 2024: A Comprehensive Checklist",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/eeat-checklist.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "email-open-rate",
+      "url": "https://backlinko.com/email-open-rate",
+      "title": "Need to Improve Your Email Open Rates? Try These 8 Tips",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/email-open-rate.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "email-outreach-study",
+      "url": "https://backlinko.com/email-outreach-study",
+      "title": "We Analyzed 12 Million Outreach Emails. Here's What We Learned",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/email-outreach-study.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "evergreen-content-study",
+      "url": "https://backlinko.com/evergreen-content-study",
+      "title": "We Analyzed 3.6 Billion Articles. Here's What We Learned About Evergreen Content",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/evergreen-content-study.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "financial-affiliate-programs",
+      "url": "https://backlinko.com/financial-affiliate-programs",
+      "title": "10 Best Financial Affiliate Programs for 2026",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/financial-affiliate-programs.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "google-keyword-study",
+      "url": "https://backlinko.com/google-keyword-study",
+      "title": "We Analyzed 306M Keywords. Here's What We Learned About Google Searches",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/google-keyword-study.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "google-search-tips",
+      "url": "https://backlinko.com/google-search-tips",
+      "title": "21 Google Search Tips to Find Exactly What You Want",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/google-search-tips.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "google-trustrank",
+      "url": "https://backlinko.com/google-trustrank",
+      "title": "Google TrustRank: The Definitive Guide",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/google-trustrank.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "how-to-find-and-fix-broken-links",
+      "url": "https://backlinko.com/how-to-find-and-fix-broken-links",
+      "title": "Broken Link Overview: How to Fix | Backlinko",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/how-to-find-and-fix-broken-links.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "html-tags",
+      "url": "https://backlinko.com/html-tags",
+      "title": "8 HTML Tags for SEO (The Ones That Actually Matter)",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/html-tags.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "hub-content-what-is-content-marketing",
+      "url": "https://backlinko.com/hub/content/what-is-content-marketing",
+      "title": "What Is Content Marketing? Complete Beginner's Guide",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/hub-content-what-is-content-marketing.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "hub-content",
+      "url": "https://backlinko.com/hub/content",
+      "title": "Content Marketing Hub",
+      "type": "listing",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/hub-content.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "hub-seo-link-building-seo",
+      "url": "https://backlinko.com/hub/seo/link-building-seo",
+      "title": "Link Building for SEO",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/hub-seo-link-building-seo.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "hub-seo-what-is-seo",
+      "url": "https://backlinko.com/hub/seo/what-is-seo",
+      "title": "What is SEO? The Complete Search Engine Optimization Guide",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/hub-seo-what-is-seo.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "hub-seo",
+      "url": "https://backlinko.com/hub/seo",
+      "title": "SEO Marketing Hub",
+      "type": "listing",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/hub-seo.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "hub-youtube",
+      "url": "https://backlinko.com/hub/youtube",
+      "title": "YouTube Marketing Hub",
+      "type": "listing",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/hub-youtube.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "increase-conversions",
+      "url": "https://backlinko.com/increase-conversions",
+      "title": "How To Boost Conversions by 785% in One Day (The Content Upgrade)",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/increase-conversions.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "index",
+      "url": "https://backlinko.com/",
+      "title": "Backlinko: SEO, Content Marketing, & Link Building Strategies",
+      "type": "landing",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/index.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "introducing-content-marketing-hub-2-0",
+      "url": "https://backlinko.com/introducing-content-marketing-hub-2-0",
+      "title": "Content Marketing Hub",
+      "type": "listing",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/introducing-content-marketing-hub-2-0.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "introducing-seo-marketing-hub-2-0",
+      "url": "https://backlinko.com/introducing-seo-marketing-hub-2-0",
+      "title": "SEO Marketing Hub",
+      "type": "listing",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/introducing-seo-marketing-hub-2-0.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "introducing-the-content-marketing-hub",
+      "url": "https://backlinko.com/introducing-the-content-marketing-hub",
+      "title": "Content Marketing Hub",
+      "type": "listing",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/introducing-the-content-marketing-hub.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "introducing-the-digital-marketing-templates-library",
+      "url": "https://backlinko.com/introducing-the-digital-marketing-templates-library",
+      "title": "The Digital Marketing Templates Library",
+      "type": "listing",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/introducing-the-digital-marketing-templates-library.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "introducing-the-youtube-marketing-hub",
+      "url": "https://backlinko.com/introducing-the-youtube-marketing-hub",
+      "title": "YouTube Marketing Hub",
+      "type": "listing",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/introducing-the-youtube-marketing-hub.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "keyword-research-tool-analysis",
+      "url": "https://backlinko.com/keyword-research-tool-analysis",
+      "title": "Free Keyword Research Tool by Backlinko",
+      "type": "form",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/keyword-research-tool-analysis.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "keyword-research-tools",
+      "url": "https://backlinko.com/keyword-research-tools",
+      "title": "Free Keyword Research Tool by Backlinko",
+      "type": "form",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/keyword-research-tools.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "landing-page-guide",
+      "url": "https://backlinko.com/landing-page-guide",
+      "title": "Landing Page Guide: Create Pages That Convert Super Well",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/landing-page-guide.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "list-building",
+      "url": "https://backlinko.com/list-building",
+      "title": "List Building: How to Build an Email List",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/list-building.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "list-hygiene",
+      "url": "https://backlinko.com/list-hygiene",
+      "title": "The Complete Guide to List Hygiene",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/list-hygiene.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "llm-seeding",
+      "url": "https://backlinko.com/llm-seeding",
+      "title": "LLM Seeding: A New SEO Strategy to Get Mentioned by LLMs",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/llm-seeding.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "local-rank-trackers",
+      "url": "https://backlinko.com/local-rank-trackers",
+      "title": "Top 5 Local Rank Tracker Tools (Tested & Reviewed)",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/local-rank-trackers.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "mangools-review",
+      "url": "https://backlinko.com/mangools-review",
+      "title": "Mangools Review: How Does This SEO Tool Stack Up?",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/mangools-review.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "newsletter",
+      "url": "https://backlinko.com/newsletter",
+      "title": "Sign Up to the Backlinko Newsletter",
+      "type": "form",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/newsletter.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "nofollow-link",
+      "url": "https://backlinko.com/nofollow-link",
+      "title": "What Is a Nofollow Link? Here's A Simple Plain English Answer",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/nofollow-link.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "on-page-seo",
+      "url": "https://backlinko.com/on-page-seo",
+      "title": "On-Page SEO: The Definitive Guide + FREE Template (2026)",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/on-page-seo.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "optimize-for-voice-search",
+      "url": "https://backlinko.com/optimize-for-voice-search",
+      "title": "Voice Search: The Definitive Guide",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/optimize-for-voice-search.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "page-speed-stats",
+      "url": "https://backlinko.com/page-speed-stats",
+      "title": "We Analyzed 5.2 Million Webpages. Here's What We Learned About PageSpeed",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/page-speed-stats.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "raven-tools-guide",
+      "url": "https://backlinko.com/raven-tools-guide",
+      "title": "An In-Depth Guide To Raven Tools",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/raven-tools-guide.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "reverse-image-search",
+      "url": "https://backlinko.com/reverse-image-search",
+      "title": "How to Do a Reverse Image Search: A Step-by-Step Guide",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/reverse-image-search.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "sales-copy",
+      "url": "https://backlinko.com/sales-copy",
+      "title": "How to Write Sales Copy That Converts",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/sales-copy.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "seo-affiliate-programs",
+      "url": "https://backlinko.com/seo-affiliate-programs",
+      "title": "23 Top SEO Affiliate Programs to Try in 2026",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/seo-affiliate-programs.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "seo-automation",
+      "url": "https://backlinko.com/seo-automation",
+      "title": "SEO Automation: 17 Tasks Streamlined for Enhanced Efficiency",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/seo-automation.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "seo-companies-chicago",
+      "url": "https://backlinko.com/seo-companies-chicago",
+      "title": "Top 23 SEO Services Companies in Chicago",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/seo-companies-chicago.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "seo-jobs-report",
+      "url": "https://backlinko.com/seo-jobs-report",
+      "title": "The SEO Jobs Report",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/seo-jobs-report.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "seo-strategy",
+      "url": "https://backlinko.com/seo-strategy",
+      "title": "How to Create an Effective SEO Strategy in 2026",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/seo-strategy.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "serpstat-review",
+      "url": "https://backlinko.com/serpstat-review",
+      "title": "Serpstat Review: Is This SEO Tool Worth It?",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/serpstat-review.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "show-notes-seo",
+      "url": "https://backlinko.com/show-notes-seo",
+      "title": "How to Create SEO-Friendly Podcast Show Notes",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/show-notes-seo.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "skyscraper-technique",
+      "url": "https://backlinko.com/skyscraper-technique",
+      "title": "Skyscraper Method: +110% Traffic (Link Building Case Study)",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/skyscraper-technique.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "sparktoro-review",
+      "url": "https://backlinko.com/sparktoro-review",
+      "title": "SparkToro Review: Is Rand Fishkin's New Tool Any Good?",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/sparktoro-review.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "squeeze-page",
+      "url": "https://backlinko.com/squeeze-page",
+      "title": "Squeeze Page: Step-by-Step Tutorial (+ Template)",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/squeeze-page.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "templates-marketing",
+      "url": "https://backlinko.com/templates/marketing",
+      "title": "The Digital Marketing Templates Library",
+      "type": "listing",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/templates-marketing.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "test-email-message-sample",
+      "url": "https://backlinko.com/test-email-message-sample",
+      "title": "3 Sample Test Email Messages: Verify Before Sending",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/test-email-message-sample.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "tools-backlink-checker",
+      "url": "https://backlinko.com/tools/backlink-checker",
+      "title": "Free Backlink Checker: See Who Links to Any Site",
+      "type": "form",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/tools-backlink-checker.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "tools-keyword",
+      "url": "https://backlinko.com/tools/keyword",
+      "title": "Free Keyword Research Tool by Backlinko",
+      "type": "form",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/tools-keyword.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "tools-seo-checker",
+      "url": "https://backlinko.com/tools/seo-checker",
+      "title": "Free SEO Checker: Score Any Website in 60 Seconds",
+      "type": "form",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/tools-seo-checker.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "tools",
+      "url": "https://backlinko.com/tools",
+      "title": "Free SEO Tools | Keyword Research, Rankings & Audit",
+      "type": "listing",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/tools.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "viral-marketing",
+      "url": "https://backlinko.com/viral-marketing",
+      "title": "Viral Marketing: The Definitive Guide",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/viral-marketing.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "visual-search-ranking-factors",
+      "url": "https://backlinko.com/visual-search-ranking-factors",
+      "title": "Google Lens Study: Results From 65,388 Visual Searches",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/visual-search-ranking-factors.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "voice-search-seo-study",
+      "url": "https://backlinko.com/voice-search-seo-study",
+      "title": "Voice Search SEO Study: Results From 10k Voice Searches",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/voice-search-seo-study.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "what-is-ctr",
+      "url": "https://backlinko.com/what-is-ctr",
+      "title": "What Is Click-Through Rate (CTR)?: And How To Improve It",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/what-is-ctr.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "write-email-newsletter",
+      "url": "https://backlinko.com/write-email-newsletter",
+      "title": "How to Create an Email Newsletter (That Actually Drives Results)",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/write-email-newsletter.json",
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "youtube-ranking-factors",
+      "url": "https://backlinko.com/youtube-ranking-factors",
+      "title": "We Analyzed 1.3 Million YouTube Videos. Here's What We Learned About YouTube SEO",
+      "type": "article",
+      "status": "extracted",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-26T15:48:05Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/youtube-ranking-factors.json",
+      "prototypePath": null,
+      "migratedPath": null
+    }
+  ]
 }

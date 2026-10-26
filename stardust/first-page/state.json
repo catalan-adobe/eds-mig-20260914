@@ -1,7 +1,8 @@
 {
   "site": { "originUrl": "https://backlinko.com/" },
   "pages": [
-    { "slug": "index", "url": "https://backlinko.com/", "status": "prototyped",
-      "prototypePath": "stardust/prototypes/index-proposed.html" }
+    { "slug": "index", "url": "https://backlinko.com/", "status": "deployed",
+      "prototypePath": "stardust/prototypes/index-proposed.html",
+      "liveUrl": "https://scope-2610-01--eds-mig-20260914--catalan-adobe.aem.live/scope-2610-01/" }
   ]
 }

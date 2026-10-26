@@ -1,0 +1,35 @@
+{
+  "types": {
+    "landing": {
+      "archetype": "index",
+      "url": "https://backlinko.com/",
+      "prototype": "stardust/prototypes/index-proposed.html",
+      "iterationsUsed": { "1440": 5, "360": 5 },
+      "gates": {
+        "prototype": {
+          "1440": { "pixel": "0.40%", "heightDelta": 0, "contentDiff": "0 red / 0 nothing-lost", "chromeParity": "quiet", "clip": 0, "label": "iter5" },
+          "360": { "pixel": "3.23%", "heightDelta": 1, "contentDiff": "0 red / 0 nothing-lost", "chromeParity": "quiet", "clip": 0, "label": "iter5" },
+          "capProbe": "PASS at 2560"
+        },
+        "published": {
+          "origin": "https://scope-2610-01--eds-mig-20260914--catalan-adobe.aem.live/scope-2610-01/",
+          "1440": { "pixel": "0.47%", "heightDelta": 0, "contentDiff": "0 red / 0 nothing-lost", "visualDiff": "0 flags", "chromeParity": "quiet", "clip": 0, "headerBand": "0.02%", "footerBand": "0.12%", "label": "pub5" },
+          "360": { "pixel": "3.45%", "heightDelta": 1, "contentDiff": "0 red / 0 nothing-lost", "visualDiff": "0 flags", "chromeParity": "quiet", "clip": 0, "headerBand": "0.17%", "footerBand": "1.94%", "label": "pub5" },
+          "capProbe": "PASS at 2560",
+          "gateAll": { "1440": "PASS 0.5% Δh 0", "360": "PASS 3.46% Δh 1" },
+          "aiReadability": "code 100%"
+        }
+      },
+      "residuals": [
+        "360: 3.45% pixel — hero quote card / featured lead card antialiasing, no hot band over 10%"
+      ],
+      "motion": {
+        "observed": ["headroom pin/unpin/scrolled", "mega panel toggle (button.active + panel.active)", "search popup .open", "mobile drop toggle", "mobile sub-panel .active"],
+        "implemented": ["headroom (headroom-pinned/-unpinned/-scrolled/-unfixed classes)", "mega toggle + category tabs", "search popup", "mobile drop", "mobile sub-panels"],
+        "dead": ["headroom-disable-animation (react-headroom internal)", "Semrush CTA click (no class mutation fired)", "hover probes (no computed change)"]
+      },
+      "captureState": [],
+      "updatedAt": "2026-10-26T15:50:54Z"
+    }
+  }
+}

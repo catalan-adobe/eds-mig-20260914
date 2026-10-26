@@ -11,7 +11,10 @@ const img = (node) => `<picture><img src="${media($(node).attr('src'))}" alt="${
 const text = (node) => $(node).html().trim();
 const block = (name, rows) => `<div class="${name}">${rows.map((cells) => `<div>${cells.map((c) => `<div>${c}</div>`).join('')}</div>`).join('')}</div>`;
 const meta = (style) => block('section-metadata', [['style', style]]);
-const doc = (sections) => `<body><header></header><main>${sections.map((s) => `<div>${s}</div>`).join('')}</main><footer></footer></body>\n`;
+// RECONCILE row 6: targets not (yet) delivered stay absolute on the source host (localize-links
+// re-points them once they enter the content tree); "/" is the delivered home.
+const source = (html) => html.replace(/href="(\/[^"/][^"]*)"/g, 'href="https://backlinko.com$1"');
+const doc = (sections) => source(`<body><header></header><main>${sections.map((s) => `<div>${s}</div>`).join('')}</main><footer></footer></body>\n`);
 
 function postRows(scope) {
   return $(scope).find('article.post-card').map((_, a) => {

@@ -35,7 +35,9 @@ function buildResources(cell) {
 export default function decorate(block) {
   const hubs = [...block.children].map((row) => {
     const [tileCell, summaryCell, resourcesCell] = [...row.children];
-    return el(
+    const topicLink = tileCell.querySelector('a');
+    const topic = topicLink ? new URL(topicLink.href).pathname.split('/').filter(Boolean).pop() : '';
+    const hub = el(
       'section',
       'hub',
       el('div', 'hub-card', el('div', 'hub-outer', el(
@@ -46,6 +48,8 @@ export default function decorate(block) {
         buildResources(resourcesCell),
       ))),
     );
+    if (topic) hub.dataset.topic = topic;
+    return hub;
   });
   block.textContent = '';
   block.append(...hubs);

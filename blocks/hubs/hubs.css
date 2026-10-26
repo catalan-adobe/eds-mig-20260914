@@ -6,25 +6,61 @@
 
 .hubs .hub {
   padding-bottom: 3rem;
+
+  --topic-color: #2ec4d8;
 }
 
 .hubs .hub:last-of-type {
   padding-bottom: 2rem;
 }
 
-.hubs .hub:nth-child(1) {
+/* topic colours lifted per hub (home + /hub/seo); keyed by the tile link slug */
+
+.hubs .hub[data-topic='seo'] {
   --topic-color: #2ec4d8;
 }
 
-.hubs .hub:nth-child(2) {
+.hubs .hub[data-topic='fundamentals'] {
+  --topic-color: #2ec4d8;
+}
+
+.hubs .hub[data-topic='keyword-research-strategies'] {
+  --topic-color: #4a66f7;
+}
+
+.hubs .hub[data-topic='optimizing-content'] {
+  --topic-color: #ffc207;
+}
+
+.hubs .hub[data-topic='technical'] {
+  --topic-color: #794fff;
+}
+
+.hubs .hub[data-topic='link-building-seo'] {
   --topic-color: #f15e4a;
 }
 
-.hubs .hub:nth-child(3) {
+.hubs .hub[data-topic='ux'] {
+  --topic-color: #00bca2;
+}
+
+.hubs .hub[data-topic='software'] {
+  --topic-color: #11a6f5;
+}
+
+.hubs .hub[data-topic='advanced'] {
+  --topic-color: #d85efb;
+}
+
+.hubs .hub[data-topic='seoquake'] {
+  --topic-color: #f27202;
+}
+
+.hubs .hub[data-topic='content'] {
   --topic-color: #f7aa04;
 }
 
-.hubs .hub:nth-child(4) {
+.hubs .hub[data-topic='youtube'] {
   --topic-color: #8256c5;
 }
 
