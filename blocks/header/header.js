@@ -134,7 +134,11 @@ function buildCta(section) {
   ctaP.remove();
   const [title, list, footTitle, footText] = rest;
   const brand = title.querySelector('em');
-  if (brand) brand.replaceWith(el('span', { class: 'sr-only' }, brand));
+  if (brand) {
+    const srOnly = el('span', { class: 'sr-only' });
+    brand.replaceWith(srOnly);
+    srOnly.append(brand);
+  }
   title.prepend(icon('semrush-logo'));
   const closeButton = el('button', { type: 'button' }, icon('close'), el('span', { class: 'sr-only' }, 'Close'));
   [...list.children].forEach((li) => li.prepend(icon('check')));
