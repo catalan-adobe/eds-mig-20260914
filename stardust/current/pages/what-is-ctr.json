@@ -1,0 +1,1715 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-26T15:00:13.274Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "what-is-ctr",
+  "url": "https://backlinko.com/what-is-ctr",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-26T15:00:13.274Z",
+  "finalUrl": "https://backlinko.com/what-is-ctr",
+  "title": "What Is Click-Through Rate (CTR)?: And How To Improve It",
+  "description": "Unlock the power of CTR in this guide—discover how it gauges engagement, shapes strategies, and influences the success of your campaigns.",
+  "og": {
+    "title": "What Is Click-Through Rate (CTR)?: And How To Improve It",
+    "description": "Unlock the power of CTR in this guide—discover how it gauges engagement, shapes strategies, and influences the success of your campaigns.",
+    "image": "https://api.backlinko.com/app/uploads/2023/12/what-is-ctr-blog-post-header.png",
+    "type": "article"
+  },
+  "headings": [
+    {
+      "tag": "h2",
+      "text": "About cookies on this site"
+    },
+    {
+      "tag": "h3",
+      "text": ".semrush_svg__cls-2{fill:#181e15}Semrush helps you:"
+    },
+    {
+      "tag": "h3",
+      "text": "Backlinko readers get:"
+    },
+    {
+      "tag": "h6",
+      "text": "AI Keyword Ideas in Seconds"
+    },
+    {
+      "tag": "h1",
+      "text": "What Is CTR? And How You Can Improve It"
+    },
+    {
+      "tag": "h2",
+      "text": "What Is CTR?"
+    },
+    {
+      "tag": "h2",
+      "text": "Why Is CTR Important?"
+    },
+    {
+      "tag": "h3",
+      "text": "Why CTR Matters for SEO"
+    },
+    {
+      "tag": "h3",
+      "text": "Why CTR Matters in SEM"
+    },
+    {
+      "tag": "h2",
+      "text": "How to Calculate CTR"
+    },
+    {
+      "tag": "h2",
+      "text": "What Is a Good CTR?"
+    },
+    {
+      "tag": "h3",
+      "text": "What Is A Good CTR for Organic Search?"
+    },
+    {
+      "tag": "h3",
+      "text": "What Is a Good CTR for Paid Ads?"
+    },
+    {
+      "tag": "h2",
+      "text": "What Affects Organic CTR vs. Paid CTR"
+    },
+    {
+      "tag": "h3",
+      "text": "Organic CTR"
+    },
+    {
+      "tag": "h3",
+      "text": "Paid CTR"
+    },
+    {
+      "tag": "h2",
+      "text": "CTR Tracking and Reporting"
+    },
+    {
+      "tag": "h3",
+      "text": "Tracking Organic CTR"
+    },
+    {
+      "tag": "h3",
+      "text": "Tracking Paid CTR"
+    },
+    {
+      "tag": "h3",
+      "text": "High CTR in PPC Campaigns Can Indicate Issues, Too"
+    },
+    {
+      "tag": "h2",
+      "text": "Desktop vs. Mobile CTR"
+    },
+    {
+      "tag": "h3",
+      "text": "Find Your Organic CTR for Desktop and Mobile"
+    },
+    {
+      "tag": "h3",
+      "text": "Optimizing for Desktop and Mobile"
+    },
+    {
+      "tag": "h2",
+      "text": "How SERP Features Affect CTR, and Vice Versa"
+    },
+    {
+      "tag": "h3",
+      "text": "The Implications of SGE/AI on CTR"
+    },
+    {
+      "tag": "h2",
+      "text": "How to Improve Your CTR"
+    },
+    {
+      "tag": "h3",
+      "text": "Tips for Improving Your Organic CTR"
+    },
+    {
+      "tag": "h4",
+      "text": "Optimize Your Content for SERP Features"
+    },
+    {
+      "tag": "h4",
+      "text": "Optimize Your Meta Titles and Descriptions"
+    },
+    {
+      "tag": "h4",
+      "text": "Implement Schema Markup"
+    },
+    {
+      "tag": "h4",
+      "text": "Find Keywords Within Striking Distance"
+    },
+    {
+      "tag": "h3",
+      "text": "Tips for Improving Your Paid CTR"
+    },
+    {
+      "tag": "h4",
+      "text": "Targeting the Right Keywords for PPC Campaigns"
+    },
+    {
+      "tag": "h4",
+      "text": "Don’t Forget About Negative Keywords"
+    },
+    {
+      "tag": "h4",
+      "text": "Leverage Remarketing Campaigns"
+    },
+    {
+      "tag": "h3",
+      "text": "Common Mistakes People Make When Trying to Improve CTR"
+    },
+    {
+      "tag": "h2",
+      "text": "What are the Future Trends of CTR?"
+    },
+    {
+      "tag": "h4",
+      "text": "Learn"
+    },
+    {
+      "tag": "h4",
+      "text": "Company"
+    },
+    {
+      "tag": "h4",
+      "text": "Connect"
+    }
+  ],
+  "body": [
+    "Written by Leigh McKenzie",
+    "On this page",
+    "What Is CTR?",
+    "Why Is CTR Important?",
+    "How to Calculate CTR",
+    "What Is a Good CTR?",
+    "What Affects Organic CTR vs. Paid CTR",
+    "CTR Tracking and Reporting",
+    "Desktop vs. Mobile CTR",
+    "How SERP Features Affect CTR, and Vice Versa",
+    "How to Improve Your CTR",
+    "What are the Future Trends of CTR?",
+    "Your click-through rate (CTR) is one of the most important metrics to track if you’re running online ads or investing in SEO campaigns. If you don’t keep tabs on it, you might struggle to determine which content resonates the most with your audience.",
+    "In this guide, I’ll tell you:",
+    "Exactly what CTR is and why it’s important,",
+    "How to calculate it,",
+    "What’s classed as a “good” CTR,",
+    "How to track it,",
+    "How to improve it,",
+    "And much more!",
+    "So, let’s dive right in.",
+    "Click-through rate is a metric utilized in many digital marketing channels, such as online advertising, email campaigns, and organic search. It gauges the frequency with which users click through to your site from a search result, ad, or link within an email, relative to the number of impressions (views) the link received.",
+    "For organic CTR, an impression occurs when a link appears in the search engine results page (SERP) due to its relevance to a user’s search query.",
+    "Paid CTR refers to any traffic you receive as a result of a paid promotion. For example, if a user lands on your site after:",
+    "Clicking on a Google text ad or Shopping ad",
+    "Clicking on a display ad on a website or social media site like Facebook",
+    "Here’s an example of what a paid ad looks like when it appears in Google’s search results:",
+    "When a user clicks on any of the blue text, it’s included in your PPC CTR data.",
+    "And here’s an example of what a Shopping ad looks like:",
+    "Clicking on the blue text or image within one of these Shopping ads will contribute to the CTR.",
+    "In 2018, Brian Dean said:",
+    "“If you want to master SEO in 2018 (and beyond), you need to become a CTR Jedi!”",
+    "“If you want to master SEO in 2018 (and beyond), you need to become a CTR Jedi!”",
+    "CTR is a digital marketing metric you shouldn’t ignore. It can offer powerful insights into your SEO and SEM strategies, helping you determine what’s working and what isn’t.",
+    "This metric provides insights into how customers engage with your content, highlighting what resonates with them. Your CTR can tell you whether you’re targeting the right audience and saying the right things. So, you’re going to want to keep a close eye on it.",
+    "Google Search Console (GSC) can be useful for SEO insights while Google Ads is the best tool for tracking CTR for SEM. With these tools, you’ll be able to pinpoint which content gets clicks, and what pages are missing the mark. I’ll show you how to do this later on.",
+    "Additionally, CTR can offer valuable competitive insights for both PPC and search engine optimization strategies. By comparing your CTR to industry benchmarks, you’ll gain insights into how well you’re performing in your niche and discover areas for improvement.",
+    "Now that we’ve explored what CTR is and why it’s important, let’s examine why it matters for SEO.",
+    "User engagement: A high CTR shows that you’re matching the search intent of users and that they’re engaging with your content.",
+    "Improved rankings and increased traffic: While CTR isn’t a direct ranking factor used by search engines, it does communicate valuable signals about the relevance and quality of your content to search engines. When users consistently click on your content in search results, it sends a positive signal. Over time, this can contribute to improved rankings for specific keywords. Plus, as your position on the SERPs improves, your CTR rises, which leads to an increase in traffic to your site.",
+    "Identify optimization opportunities: By analyzing your CTR, you can pinpoint areas in your content that require improvement (but more on this later).",
+    "Next, we’ll dive into why this metric matters for SEM and your PPC campaigns.",
+    "Campaign evaluation: CTR is a valuable metric for assessing the effectiveness of a particular ad, campaign, or keyword. Higher CTRs often increase the likelihood of conversions. Basically, your CTR can give you an idea of how effective your ads are, which helps you identify successful and unsuccessful campaigns.",
+    "Quality Score: A good CTR can help you earn a higher Quality Score. This metric is used by search engines, like Google and Bing, to give you an idea of how your ad quality compares to your competitors. It determines an ad’s usefulness and relevance for someone searching for a specific keyword. It impacts your ad’s position and cost-per-click (CPC).",
+    "Ad Copy Testing (A/B Testing): A/B testing involves comparing two versions of your ad copy to see which one performs better. By analyzing your CTR data, you can gain valuable insights into which version resonates most with your audience.",
+    "So, now we know why CTR matters for both SEO and SEM. Let’s figure out how CTR is calculated.",
+    "To calculate your CTR, all you need to do is divide the number of users who clicked on your ad or search result (clicks) by the number of users who saw it (impressions).",
+    "Here’s the formula:",
+    "For example, let’s say you ran an ad campaign and it received 1,000 impressions. Out of those 1,000 impressions, 50 users clicked on your ad.",
+    "Let’s plug it into the formula:",
+    "CTR = (50 / 1,000) x 100",
+    "Crunch the numbers, and you’ll discover your CTR is 5%.",
+    "The higher your CTR, the better your content is converting. So, obviously, you’d want to work to get that number as high as possible.",
+    "But there’s no universal benchmark that determines good or bad CTRs. They vary massively between industries, type of content, device types, and advertising channels.",
+    "This means:",
+    "A “good” CTR in one industry may not be the same as in another.",
+    "Your paid ads CTR will often differ from your organic search CTR.",
+    "You’ll see differences when evaluating CTR for mobile and desktop users.",
+    "It’s also important to consider the specific goals and objectives of your PPC campaign and SEO strategy when evaluating your CTR.",
+    "Generally speaking, a CTR above 2% is seen as good, while a CTR of 5% and above is considered to be excellent. But, again, these numbers can’t be applied to every industry.",
+    "Within the finance, e-commerce, and travel industries, a “good” organic CTR is typically 2 to 4%. However, within the legal services industry, a CTR of around 1% is considered to be “good”.",
+    "The average organic CTR for an industry is also greatly affected by the ranking position of a page, as this table demonstrates:",
+    "A 2024 study of CTR data showed that:",
+    "Results in the top position on Google had an average CTR of 39.8%",
+    "This drops to 18.7% for the results in the second position.",
+    "It lowers to 10.2% for results in the third position.",
+    "For results in the tenth position, it decreases all the way down to 2.2%.",
+    "If you want to learn more about this topic, check out this guide on CTR for various industries.",
+    "Interestingly, what’s considered to be a good CTR for paid ads is actually lower than a good CTR for organic results.",
+    "For instance, a “good” CTR for paid ads in the education industry would be around 0.73% or more. But when it comes to organic search, a CTR of around 2.27% would be considered “good”.",
+    "Now, this might seem counterintuitive. After all, why does your CTR tend to be lower for something you’re paying for compared to a result that can be achieved for “free”?",
+    "One of the reasons for this is the intense competition between advertisers for limited ad space.",
+    "Plus, users often view organic results as more natural and trustworthy than paid ads. This is because they’re aware that a paid ad has appeared simply because a company has paid for them to see it.",
+    "So, now we know what CTR is, let’s dive into what influences organic CTR and paid CTR and how to track each.",
+    "A good CTR for organic results is influenced by a range of factors. These include:",
+    "Optimized meta title & description: Creating engaging meta titles and descriptions that accurately reflect that piece of content and include the target keyword can greatly boost your CTR. Users are more inclined to click on a result that clearly communicates its relevance to their search query.",
+    "Rich snippet: Rich snippets offer extra information, such as star ratings, images, and other details, making the result more appealing to users. This visual enhancement captures more attention and boosts the likelihood a user clicks on the organic listing. To enable rich snippets, you need to add schema markup to your pages.",
+    "Search engine ranking: Pages that rank highly in the SERPs tend to have a higher CTR than those that don’t.",
+    "Favicons: These are the small icons that appear next to a site’s URL in the SERPs. They not only serve as branding for the site, but also help pages stand out in search results, while enhancing user recognition and trust. This can then encourage users to click through.",
+    "Site name: The name of a site can also influence brand recognition and user trust. This can encourage more users to click through to a page when it appears in the SERPs.",
+    "Breadcrumbs: Implementing breadcrumbs on your site can entice people to click, therefore influencing your click-through rates. For some sites, the breadcrumb trail will even show up in your URL in the SERP. To learn how to leverage this, check out Google’s guide on how to add Breadcrumb structured data.",
+    "Factors that influence paid CTR include:",
+    "Ad copy quality: The text used in an ad should be concise and compelling to encourage users to click through.",
+    "Ad relevance: The content of the ad needs to align with search intent to achieve a good CTR. For example, a user is highly unlikely to click on an ad for a guitar if they’re searching for something like “best laptops 2024”.",
+    "Ad position: If you’re running an ad in the SERPs, then its position can greatly influence its CTR. Ads that appear at the top of the results page have far more visibility than those that appear further down, leading to increased user engagement.",
+    "Ad format: The ad type (text, video, display) can also affect CTR. However, this is highly dependent on the advertising platform. For example, text ads tend to perform better in the SERPs and video ads often perform better on social media platforms.",
+    "Ad extensions: Things like a callout, site link, and location extensions can be very beneficial for an ad’s CTR. They go beyond basic ad content and give users additional info and functionality, which can make it more likely for them to click through.",
+    "Now you’re up to speed on CTR, it’s time to take a look at how to track it for both organic search and PPC.",
+    "To analyze your Organic CTR for different keywords and pages, you’ll need to first connect your website to Google Search Console (GSC). If you don’t know how to do this, take a look at my Google Search Console guide.",
+    "In GSC, head to the “Search Results” section underneath “Performance”:",
+    "Here, “Total Clicks” and “Total Impressions” will be pre-selected:",
+    "Click on “Average CTR.”",
+    "If you scroll down, you’ll be able to review your CTR for your “Top Queries.”",
+    "If you click on “Pages”, you’ll see your current CTR for your pages.",
+    "I can see that my “social media users” page has a CTR of 1%.",
+    "That’s not ideal, so clearly this page needs some attention.",
+    "But first, I need to figure out why my CTR is low. This could be due to any of the following:",
+    "Poor meta title and description",
+    "Lacking schema markup",
+    "Poor URL",
+    "Low SERP position",
+    "So, I’ll need to analyze these factors to pinpoint where I can make improvements that will boost the CTR for this page. We’ll get into that more later.",
+    "You can track your paid CTR using Google Ads.",
+    "After you log into your Google Ads account, click on “Campaigns”:",
+    "Here, you can see your CTR for each of your ad campaigns, allowing you to identify which ones are working, and which ones aren’t.",
+    "In some instances, a high CTR can indicate that something is wrong with your paid marketing efforts. Especially if your high CTR doesn’t lead to high conversion rates.",
+    "Think about it: you have to pay for each click, so you want to make sure your investment is paying off. If your link is getting clicks, but visitors aren’t converting, then you’re not receiving a good return on investment (ROI). This can significantly impact the profitability of your advertising efforts.",
+    "So, why would users click on your ad but not convert?",
+    "There could be various reasons for this, such as:",
+    "Misleading ad copy: Your ad may promise something that the page or product doesn’t deliver, which may cause users to quickly exit. For example, if your ad offers a sale of up to 70% off but your items are only 20% off.",
+    "Mismatched search intent: Your ad may not match the user’s search intent or expectation. For example, if you’re advertising a specific brand of sneakers, but the advert leads to a different brand, there could be a disconnect between your offering and what the user is looking for.",
+    "Poor page UX: Users may be clicking through to your site, only to find that their inputs are delayed. Or the page takes too long to load. As a result, they get frustrated and leave.",
+    "Weak Call-to-Action (CTA): Your landing page might lack a clear and persuasive CTA. This may cause users to click through but not take an action.",
+    "Competitive market: In very competitive industries, users may click on several ads before making a decision. If your product or offer doesn’t stand out, users may click through but not convert.",
+    "Mobile optimization: If your website or landing page isn’t optimized for mobile users, it can lead to high bounce rates. This is especially true if a significant percentage of your traffic comes from mobile devices.",
+    "Click fraud: Click fraud occurs when someone, often a competitor, repeatedly clicks on your ads with the intent of depleting your ad budget prematurely. As a result, you may experience a high click-through rate but no corresponding conversions.",
+    "Mobile phones account for approximately 95.3% of all internet usage. And the CTR for mobile devices is around 40% higher than it is for desktop devices.",
+    "But why is this the case?",
+    "One significant factor is that mobile users often conduct searches when they require immediate solutions and are prepared to take action. This increases the likelihood of users clicking through on a search result.",
+    "In contrast, desktop users typically have more leisurely browsing sessions. They dedicate time to research, scan the SERP for the most suitable page, and potentially explore multiple pages.",
+    "To review your organic CTR for both mobile and desktop, you can use GSC. Follow the steps I laid out earlier to find the “Average CTR” section.",
+    "Then scroll down to the table and click on “Devices”:",
+    "Here you’ll be able to compare your mobile and desktop CTRs.",
+    "When it comes to optimizing your CTR for desktop and mobile, some approaches work well for both such as:",
+    "Keyword targeting: Using relevant keywords in your organic search and paid ad copy, and regularly updating and refining your keyword strategy based on performance.",
+    "A/B testing: Testing different headlines, ad creatives, CTAs, and formats to see which are the most effective.",
+    "Using compelling copy: Ensure your meta titles and descriptions align with search intent, capture attention, and encourage users to click through.",
+    "Use location-based targeting: (or geotargeting) to display organic results and ads that are relevant to a user’s location.",
+    "However, certain best practices apply specifically to mobile or desktop optimization:",
+    "Desktop:",
+    "Make the most of desktop features like hover-over effects for ad extensions. For instance, a tooltip with extra information could appear when a user hovers their cursor over a specific element of an ad.",
+    "For display ads, use detailed graphics and larger image sizes to take advantage of desktop screen sizes.",
+    "Mobile:",
+    "For paid ads, use mobile-specific ad formats like app promotion ads that are suited to smaller screens.",
+    "Now, let’s have a look at how your CTR is affected when your content shows up in SERP features.",
+    "A study done by First Page Sage found that, on average, “a snippet that takes the first place in search results has the highest overall CTR at 42.9%”. This is compared to traditional organic search results.",
+    "There are a couple of reasons for this:",
+    "More information: They provide users with more in-SERP information than other results.",
+    "Increased visibility: They are displayed at the top of SERPs, making them the first thing most people see.",
+    "But it’s also important to point out that there are different SERP features and they each will have a different CTR.",
+    "Let me give you an example.",
+    "Featured snippets, while very helpful, tend to have a lower CTR than other SERP features. That’s because featured snippets tend to answer the user’s question comprehensively enough for them to not have to click through.",
+    "Here’s what a featured snippet looks like:",
+    "Here’s a brief breakdown of some of the top SERP features, and their CTRs:",
+    "As you can see, Featured Snippets have a negative correlation with CTR. That means they’re less likely to get clicked on than SERP features like People Also Ask and Knowledge Panels.",
+    "There’s been a lot of talk about the impact of Search Generative Experiences (SGE) and Artificial Intelligence (AI) on digital media consumption and search queries.",
+    "Both software types are designed to streamline the process of finding information.",
+    "For example, Google’s SGE feature is aimed at finding and compiling content to provide users with the information they’re looking for, while also providing the links it pulled the information from. This will allow users to click straight through to the specific page to learn more.",
+    "So, it’s not really a surprise that these tools will impact organic CTRs.",
+    "The general expectation is that it’s going to lead to a decrease in CTR for organic search results below the SGE box. This is because the answers the user is looking for will likely be given to them directly in the SERP, meaning there’s no need for them to click through to an actual webpage.",
+    "However, it should have a particularly big impact on queries that have informational intent—when users just want information on something.",
+    "For example, I asked Google’s SGE to tell me what SEO is:",
+    "As you can see, the query has been answered in a fair bit of detail. If I was just looking for a basic summary of SEO, I wouldn’t need to click through to any of the pages at the top-right of the screen.",
+    "As a percentage of users will only be looking for concise info on a topic, SGE is probably going to have a big impact on the CTR of informational results like this.",
+    "When it comes to improving your CTR for both paid ads or organic results, there are various strategies and techniques you can use.",
+    "Let’s dive into them.",
+    "From optimizing your content to implementing schema markup, here are my top tips for improving your organic CTR.",
+    "Earlier, I spoke about the fact that some SERP features can increase your CTR. So, if you’re looking for a way to bump your clicks up, you should try to optimize your content to rank for these.",
+    "Semrush’s Keyword Magic Tool makes it super simple to find keywords that trigger SERP features.",
+    "It gives you a ton of SERP features to choose from, such as “Featured snippet”.",
+    "And then gives you a list of keywords that are triggering featured snippets:",
+    "You’ll need to check if you’re ranking for any of these keywords, but not earning a featured snippet spot. If that’s the case, you’ll need to look at the pages that are earning featured snippets and structure your content in the same format to steal that spot.",
+    "As I said earlier, meta titles and descriptions are SUPER important because they can significantly impact your CTR. This is because they’re the first things a user sees when your pages appear in the SERPs. This means they have to be engaging and concise.",
+    "And remember, they should contain your keywords.",
+    "When users see search results that include the keywords they searched for, it reassures them that the content is likely to be relevant to their needs. This alignment between the user’s search query and your meta title and description can increase the likelihood of users clicking on your result.",
+    "Your meta titles should contain your primary keyword, and you should incorporate variations and related keywords into your meta descriptions.",
+    "Using variations and related keywords ensures that your meta description covers a broader range of potential search queries. This can be particularly important when users utilize different terms or phrases to express the same intent.",
+    "Tips for optimizing meta titles",
+    "Keep your meta titles ideally under 60 characters to ensure they display properly in search results.",
+    "Include your brand name if relevant, especially if brand recognition is important for your website.",
+    "Ensure that each page on your site has a unique meta title. This helps search engines differentiate and index your pages accurately.",
+    "Place the most critical information at the beginning of the title. Users often scan quickly, so make sure the essential details are easily visible.",
+    "Make your titles readable and user-friendly. Avoid excessive use of symbols or all caps. This can be perceived as spammy.",
+    "Here’s an example of a good meta title.",
+    "Tips for optimizing meta descriptions",
+    "Keep your meta descriptions under 140 characters to ensure they display fully in search results.",
+    "Understand the user’s search intent for each page and reflect it in the meta description. Make it clear how your content addresses the user’s search query or problem.",
+    "Encourage users to take action by including a compelling CTA. Whether it’s to learn more, shop now, or explore further. A well-crafted CTA can improve engagement.",
+    "Ensure that each page on your site has a unique meta description. This not only helps with SEO but also provides users with specific information about what to expect on each page.",
+    "Make your meta descriptions easy to read and understand. Avoid jargon or overly complex language. Use clear and concise language that appeals to a broad audience.",
+    "Ensure that your meta descriptions are mobile-friendly. This is because a significant portion of searches occur on mobile devices. Test how your descriptions appear on various devices.",
+    "Schema markup is a type of structured data that’s used to organize and mark up information on web pages to make it more understandable for search engines.",
+    "In simple terms, when web pages are marked up with structured data, search engines can better understand the content’s context and meaning.",
+    "This can lead to enhanced search engine results, known as rich snippets or rich results. These could include additional information like star ratings, prices, publication dates and more, making them more appealing to users, which can lead to increased CTRs.",
+    "Here’s an example of what rich results look like in the SERPs for a recipe page:",
+    "To add schema markup to your web pages, head over to Schema.org.",
+    "Here, you’ll find a vast collection of predefined schema types that cover a wide range of content, from events and products to recipes and reviews. Each schema type has its own set of properties and values that you can use to describe your content.",
+    "Once you’ve added the details for your web page, you’ll need to download the generated schema markup code and insert it into the HTML of the relevant web page.",
+    "Next, you should validate the code using the Schema Markup Validator.",
+    "Striking distance keywords are terms and phrases that your site ranks for within positions 11-30 on Google search results. Notably, there’s a significant drop in click-through rates for keywords positioned at 11 or lower.",
+    "Identifying and focusing on striking distance keywords can be an effective strategy for SEO, as it allows webmasters to prioritize efforts on search queries with a greater potential of getting more clicks.",
+    "By boosting the ranking of a keyword from position 11 to a more prominent spot, such as position 6 on the first page of the SERP, you can significantly improve your CTR.",
+    "To find striking distance keywords, paste your domain into Semrush’s Organic Research tool. Then, click “Positions” and use the “Positions” filter to display keywords ranking in positions 11-30.",
+    "You’ll then see a list of your keywords within striking distance.",
+    "There are a couple of ways you can optimize your paid ads to improve your CTR. Here are some tips:",
+    "Targeting the right keywords can help your ad get in front of the folks who actually care about what you’re offering. By doing so, you steer clear of clicks from disinterested users, which can preserve your ad budget.",
+    "Plus, when you draw in the right crowd, your likelihood of converting them into customers increases. This results in a more effective campaign and potentially a higher ROI.",
+    "To help you find the best keywords to attract your target audience, you can use Semrush’s Keyword Magic Tool. Let’s say your ad is for a pair of running shoes.",
+    "The tool will give you a long list of keywords related to the search term “running shoes”.",
+    "For PPC campaigns, you want to target keywords with commercial or transactional intent.",
+    "Commercial intent means the user is interested in buying a product or service but is assessing their options first, such as “best running shoes”.",
+    "Transactional intent means the user is actively looking to buy a product or service, such as “buy running shoes online”.",
+    "To view keywords with commercial or transactional intent, click the “Intent” filter. Then, select “Commercial” and “Transactional” from the dropdown, and click “Apply”.",
+    "Now, you’ll only see commercial and transactional intent keywords.",
+    "You should also target keywords with a low CPC. Targeting these keywords will help you manage your ad budget more efficiently since you can acquire clicks at a lower cost. This will allow you to stretch your budget further and potentially achieve a higher ROI.",
+    "To find keywords with a low CPC, click the “CPC (USD)” filter, enter a range, and click “Apply”.",
+    "Now, you’ll see a list of keywords with commercial or transactional intent and a CPC within this range.",
+    "After ensuring that you’re targeting the right keywords, it’s crucial to build out a comprehensive list of negative keywords as well.",
+    "Negative keywords play a vital role in enhancing your CTR as they prevent your ads from appearing for irrelevant searches.",
+    "By utilizing them correctly, you not only ensure that your ads are displayed to a more targeted audience, but you also enhance the likelihood of gaining clicks from users genuinely interested in your content.",
+    "You’ll need to consistently monitor your ad campaign’s Search Terms Report to identify irrelevant keywords that you don’t want the ad to appear for.",
+    "Here’s an example.",
+    "If your online store specializes in selling running shoes, and you observe that the search term “basketball shoes” is triggering your ads, you should add “basketball” as a negative keyword.",
+    "By regularly updating your negative keyword list, you can improve your ad’s efficiency and increase your CTR.",
+    "Remarketing campaigns re-engage users who previously visited your website. Through leveraging tracking pixels, you can target these past visitors with personalized ads.",
+    "By tailoring your ads to past users, you can significantly improve your CTR, since the users have already expressed interest and are more likely to engage.",
+    "Some of the most common mistakes when trying to improve CTR include:",
+    "Using clickbait ad copy: Using exaggerated or misleading information in ad copy to get people to click on ads.",
+    "Targeting the wrong audience: Targeting an audience that’s not relevant to your product or service.",
+    "Not testing ad variations: Good ads are tried and tested. Not varying the titles, images and copy can lead to low CTRs.",
+    "Not monitoring CTR properly: CTR is an important metric. But not monitoring it closely, or focusing on it means you won’t be able to identify areas to improve or strengthen your content.",
+    "In the future, there will be several CTR trends that you should keep an eye on. These include:",
+    "Personalization: AI and machine learning are likely going to personalize ads and landing pages to individuals, which could lead to higher CTRs.",
+    "Voice search optimization: As voice search continues to gain popularity, PPC campaigns will need to target long-tail keywords and use conversational language to match with voice searches.",
+    "Embracing these upcoming trends will allow you to stay at the forefront of CTR optimization.",
+    "Backlinko is owned by Semrush. We’re still obsessed with bringing you world-class SEO insights, backed by hands-on experience. Unless otherwise noted, this content was written by either an employee or paid contractor of Semrush Inc.",
+    "7850 shares"
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Cookie Policy.",
+      "href": "https://www.semrush.com/company/legal/cookie-policy/"
+    },
+    {
+      "label": "Allow all cookies",
+      "href": null
+    },
+    {
+      "label": "Deny all",
+      "href": null
+    },
+    {
+      "label": "Cookie settings",
+      "href": null
+    },
+    {
+      "label": "Watch Now",
+      "href": "https://www.youtube.com/watch?v=rIGzcovF6cM"
+    },
+    {
+      "label": "Close",
+      "href": null
+    },
+    {
+      "label": "Articles",
+      "href": null
+    },
+    {
+      "label": "Tools",
+      "href": null
+    },
+    {
+      "label": "Templates",
+      "href": "/templates/marketing"
+    },
+    {
+      "label": "About",
+      "href": "/about-backlinko"
+    },
+    {
+      "label": "Newsletter",
+      "href": "/newsletter"
+    },
+    {
+      "label": "Check My Site's SEO",
+      "href": null
+    },
+    {
+      "label": "Close",
+      "href": null
+    },
+    {
+      "label": "Free access",
+      "href": "https://www.semrush.com/blog/what-can-i-do-with-a-free-account-from-semrush/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=navigation"
+    },
+    {
+      "label": "Leigh McKenzie",
+      "href": "/blog/authors/leigh-mckenzie"
+    },
+    {
+      "label": "What Is CTR?",
+      "href": "#what-is-ctr"
+    },
+    {
+      "label": "Why Is CTR Important?",
+      "href": "#why-is-ctr-important"
+    },
+    {
+      "label": "How to Calculate CTR",
+      "href": "#how-to-calculate-ctr"
+    },
+    {
+      "label": "What Is a Good CTR?",
+      "href": "#what-is-a-good-ctr"
+    },
+    {
+      "label": "What Affects Organic CTR vs. Paid CTR",
+      "href": "#what-affects-organic-ctr-vs-paid-ctr"
+    },
+    {
+      "label": "CTR Tracking and Reporting",
+      "href": "#ctr-tracking-and-reporting"
+    },
+    {
+      "label": "Desktop vs. Mobile CTR",
+      "href": "#desktop-vs-mobile-ctr"
+    },
+    {
+      "label": "How SERP Features Affect CTR, and Vice Versa",
+      "href": "#how-serp-features-affect-ctr-and-vice-versa"
+    },
+    {
+      "label": "How to Improve Your CTR",
+      "href": "#how-to-improve-your-ctr"
+    },
+    {
+      "label": "What are the Future Trends of CTR?",
+      "href": "#what-are-the-future-trends-of-ctr"
+    },
+    {
+      "label": "SEO",
+      "href": "https://backlinko.com/hub/seo/what-is-seo"
+    },
+    {
+      "label": "SERP",
+      "href": "https://backlinko.com/hub/seo/serps"
+    },
+    {
+      "label": "SEO and SEM",
+      "href": "https://backlinko.com/hub/seo/seo-vs-sem"
+    },
+    {
+      "label": "Google Search Console (GSC)",
+      "href": "https://backlinko.com/google-search-console"
+    },
+    {
+      "label": "search intent of users",
+      "href": "https://backlinko.com/hub/seo/search-intent"
+    },
+    {
+      "label": "ranking factor",
+      "href": "https://backlinko.com/hub/seo/ranking-factors"
+    },
+    {
+      "label": "keywords",
+      "href": "https://backlinko.com/hub/seo/seo-keywords"
+    },
+    {
+      "label": "Quality Score",
+      "href": "https://support.google.com/google-ads/answer/6167118"
+    },
+    {
+      "label": "SEO strategy",
+      "href": "https://backlinko.com/seo-strategy"
+    },
+    {
+      "label": "FirstPageSage",
+      "href": "https://firstpagesage.com/reports/clickthrough-rates-ctrs-by-industry/"
+    },
+    {
+      "label": "2024 study of CTR data",
+      "href": "https://firstpagesage.com/reports/google-click-through-rates-ctrs-by-ranking-position/"
+    },
+    {
+      "label": "CTR for various industries",
+      "href": "https://firstpagesage.com/reports/clickthrough-rates-ctrs-by-industry/"
+    },
+    {
+      "label": "organic CTR",
+      "href": "https://backlinko.com/hub/seo/organic-ctr"
+    },
+    {
+      "label": "Rich snippets",
+      "href": "https://backlinko.com/hub/seo/snippets"
+    },
+    {
+      "label": "Breadcrumb structured data",
+      "href": "https://developers.google.com/search/docs/appearance/structured-data/breadcrumb"
+    },
+    {
+      "label": "Google Search Console guide",
+      "href": "https://backlinko.com/google-search-console"
+    },
+    {
+      "label": "bounce rates",
+      "href": "https://backlinko.com/hub/seo/bounce-rate"
+    },
+    {
+      "label": "95.3% of all internet usage",
+      "href": "https://www.statista.com/statistics/1289755/internet-access-by-device-worldwide/#:~:text=As%20of%20the%20first%20quarter,almost%2063.4%20percent%20of%20respondents."
+    },
+    {
+      "label": "40% higher",
+      "href": "https://www.janbaskdigitaldesign.com/blogs/mobile-vs-desktop-traffic-statistics/"
+    },
+    {
+      "label": "location-based targeting",
+      "href": "https://support.google.com/google-ads/answer/2453995?hl=en"
+    },
+    {
+      "label": "SERP features",
+      "href": "https://backlinko.com/hub/seo/serp-features"
+    },
+    {
+      "label": "study done by First Page Sage",
+      "href": "https://firstpagesage.com/reports/google-click-through-rates-ctrs-by-ranking-position/"
+    },
+    {
+      "label": "Featured snippets",
+      "href": "https://backlinko.com/hub/seo/featured-snippets"
+    },
+    {
+      "label": "Google’s SGE feature",
+      "href": "https://static.googleusercontent.com/media/www.google.com/en//search/howsearchworks/google-about-SGE.pdf"
+    },
+    {
+      "label": "rich snippets",
+      "href": "https://backlinko.com/hub/seo/snippets"
+    },
+    {
+      "label": "Schema.org",
+      "href": "https://schema.org/"
+    },
+    {
+      "label": "Schema Markup Validator",
+      "href": "https://validator.schema.org/"
+    },
+    {
+      "label": "Commercial intent",
+      "href": "https://backlinko.com/commercial-intent"
+    },
+    {
+      "label": "Search Terms Report",
+      "href": "https://support.google.com/google-ads/answer/2472708?hl=en"
+    },
+    {
+      "label": "irrelevant keywords",
+      "href": "https://backlinko.com/hub/seo/irrelevant-keywords"
+    },
+    {
+      "label": "voice search",
+      "href": "https://backlinko.com/optimize-for-voice-search"
+    },
+    {
+      "label": "long-tail keywords",
+      "href": "https://backlinko.com/hub/seo/long-tail-keywords"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Newsletter",
+      "href": "/newsletter"
+    },
+    {
+      "label": "Templates",
+      "href": "https://backlinko.com/templates/marketing"
+    },
+    {
+      "label": "Best SEO Tools",
+      "href": "/best-free-seo-tools"
+    },
+    {
+      "label": "About",
+      "href": "/about-backlinko"
+    },
+    {
+      "label": "Semrush AI Visiblity",
+      "href": "https://www.semrush.com/ai-seo/overview/"
+    },
+    {
+      "label": "Semrush Free Trial",
+      "href": "https://backlinko.com/deals/semrush-coupon"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    },
+    {
+      "label": "Twitter",
+      "href": "https://twitter.com/backlinko"
+    },
+    {
+      "label": "YouTube",
+      "href": "https://www.youtube.com/@BacklinkoTeam"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/briandean/"
+    },
+    {
+      "label": "Terms of Service",
+      "href": "https://www.semrush.com/company/legal/terms-of-service/?utm_source=backlinko.com&utm_medium=referral"
+    }
+  ],
+  "links": [
+    "https://www.semrush.com/company/legal/cookie-policy/",
+    "https://backlinko.com/what-is-ctr#",
+    "https://www.youtube.com/watch?v=rIGzcovF6cM",
+    "https://backlinko.com/",
+    "https://backlinko.com/ai-search-strategy",
+    "https://backlinko.com/llm-seeding",
+    "https://backlinko.com/generative-engine-optimization-geo",
+    "https://backlinko.com/hub/seo/what-is-seo",
+    "https://backlinko.com/improve-your-seo",
+    "https://backlinko.com/seo-checklist",
+    "https://backlinko.com/seo-strategy",
+    "https://backlinko.com/?p=165994",
+    "https://backlinko.com/google-e-e-a-t",
+    "https://backlinko.com/hub/seo/internal-links",
+    "https://backlinko.com/technical-seo-guide",
+    "https://backlinko.com/on-page-seo",
+    "https://backlinko.com/ecommerce-seo",
+    "https://backlinko.com/seo-certification-guide",
+    "https://backlinko.com/ai-optimization",
+    "https://backlinko.com/ai-seo",
+    "https://backlinko.com/entity-seo",
+    "https://backlinko.com/audience-research",
+    "https://backlinko.com/reddit-marketing",
+    "https://backlinko.com/?p=193164",
+    "https://backlinko.com/answer-engine-optimization-aeo",
+    "https://backlinko.com/seo-basics-for-beginners",
+    "https://backlinko.com/seo-tutorial",
+    "https://backlinko.com/pillar-pages",
+    "https://backlinko.com/?p=175006",
+    "https://backlinko.com/actionable-seo-tips",
+    "https://backlinko.com/small-business-seo",
+    "https://backlinko.com/schema-markup-guide",
+    "https://backlinko.com/website-migration-checklist",
+    "https://backlinko.com/hub/content/what-is-content-marketing",
+    "https://backlinko.com/seo-copywriting",
+    "https://backlinko.com/?p=103911",
+    "https://backlinko.com/content-marketing-this-year",
+    "https://backlinko.com/?p=190262",
+    "https://backlinko.com/?p=172343",
+    "https://backlinko.com/scale-content",
+    "https://backlinko.com/hub/content/writing",
+    "https://backlinko.com/link-building",
+    "https://backlinko.com/hub/seo/backlinks",
+    "https://backlinko.com/high-quality-backlinks",
+    "https://backlinko.com/link-building-strategies",
+    "https://backlinko.com/link-building-services",
+    "https://backlinko.com/step-by-step-backlink-audit",
+    "https://backlinko.com/skyscraper-technique",
+    "https://backlinko.com/increase-domain-authority",
+    "https://backlinko.com/competitor-analysis",
+    "https://backlinko.com/?p=173056",
+    "https://backlinko.com/?p=174557",
+    "https://backlinko.com/how-to-create-a-website",
+    "https://backlinko.com/tools/seo-checker",
+    "https://backlinko.com/tools/backlink-checker",
+    "https://backlinko.com/tools/website-authority",
+    "https://backlinko.com/tools/website-traffic-checker",
+    "https://backlinko.com/tools/keyword",
+    "https://backlinko.com/tools/keyword-difficulty-checker",
+    "https://backlinko.com/tools/competitor-analysis",
+    "https://backlinko.com/tools/schema-markup-generator",
+    "https://backlinko.com/tools/ai-visibility-checker",
+    "https://backlinko.com/tools/ai-agent-readiness",
+    "https://backlinko.com/tools/agentic-browsing-readiness",
+    "https://backlinko.com/best-free-seo-tools",
+    "https://backlinko.com/llm-tracking-tools",
+    "https://backlinko.com/keyword-research-tools",
+    "https://backlinko.com/?p=98736",
+    "https://backlinko.com/link-building-tools",
+    "https://backlinko.com/best-rank-tracking-tools",
+    "https://backlinko.com/?p=171633",
+    "https://backlinko.com/seo-software-agencies",
+    "https://backlinko.com/ai-seo-tools",
+    "https://backlinko.com/sitemap-generator-tools",
+    "https://backlinko.com/best-digital-marketing-tools",
+    "https://backlinko.com/?p=170722",
+    "https://backlinko.com/semrush-review",
+    "https://backlinko.com/ahrefs-review",
+    "https://backlinko.com/ahrefs-vs-semrush",
+    "https://backlinko.com/clearscope-review",
+    "https://backlinko.com/majestic-seo-review",
+    "https://backlinko.com/surfer-seo",
+    "https://backlinko.com/serpstat-review",
+    "https://backlinko.com/sparktoro-review",
+    "https://backlinko.com/templates/marketing",
+    "https://backlinko.com/about-backlinko",
+    "https://backlinko.com/newsletter",
+    "https://www.semrush.com/blog/what-can-i-do-with-a-free-account-from-semrush/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=navigation",
+    "https://backlinko.com/blog/authors/leigh-mckenzie",
+    "https://backlinko.com/what-is-ctr#what-is-ctr",
+    "https://backlinko.com/what-is-ctr#why-is-ctr-important",
+    "https://backlinko.com/what-is-ctr#how-to-calculate-ctr",
+    "https://backlinko.com/what-is-ctr#what-is-a-good-ctr",
+    "https://backlinko.com/what-is-ctr#what-affects-organic-ctr-vs-paid-ctr",
+    "https://backlinko.com/what-is-ctr#ctr-tracking-and-reporting",
+    "https://backlinko.com/what-is-ctr#desktop-vs-mobile-ctr",
+    "https://backlinko.com/what-is-ctr#how-serp-features-affect-ctr-and-vice-versa",
+    "https://backlinko.com/what-is-ctr#how-to-improve-your-ctr",
+    "https://backlinko.com/what-is-ctr#what-are-the-future-trends-of-ctr",
+    "https://backlinko.com/hub/seo/serps",
+    "https://backlinko.com/hub/seo/seo-vs-sem",
+    "https://backlinko.com/google-search-console",
+    "https://backlinko.com/hub/seo/search-intent",
+    "https://backlinko.com/hub/seo/ranking-factors",
+    "https://backlinko.com/hub/seo/seo-keywords",
+    "https://support.google.com/google-ads/answer/6167118",
+    "https://firstpagesage.com/reports/clickthrough-rates-ctrs-by-industry/",
+    "https://firstpagesage.com/reports/google-click-through-rates-ctrs-by-ranking-position/",
+    "https://backlinko.com/hub/seo/organic-ctr",
+    "https://backlinko.com/hub/seo/snippets",
+    "https://developers.google.com/search/docs/appearance/structured-data/breadcrumb",
+    "https://backlinko.com/hub/seo/bounce-rate",
+    "https://www.statista.com/statistics/1289755/internet-access-by-device-worldwide/#:~:text=As%20of%20the%20first%20quarter,almost%2063.4%20percent%20of%20respondents.",
+    "https://www.janbaskdigitaldesign.com/blogs/mobile-vs-desktop-traffic-statistics/",
+    "https://support.google.com/google-ads/answer/2453995?hl=en",
+    "https://backlinko.com/hub/seo/serp-features",
+    "https://backlinko.com/hub/seo/featured-snippets",
+    "https://static.googleusercontent.com/media/www.google.com/en//search/howsearchworks/google-about-SGE.pdf",
+    "https://schema.org/",
+    "https://validator.schema.org/",
+    "https://backlinko.com/commercial-intent",
+    "https://support.google.com/google-ads/answer/2472708?hl=en",
+    "https://backlinko.com/hub/seo/irrelevant-keywords",
+    "https://backlinko.com/optimize-for-voice-search",
+    "https://backlinko.com/hub/seo/long-tail-keywords",
+    "https://twitter.com/share?text=What%20Is%20Click-Through%20Rate%20(CTR)%3F%3A%20And%20How%20To%20Improve%20It&url=https%3A%2F%2Fbacklinko.com%2Fwhat-is-ctr&via=Backlinko",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbacklinko.com%2Fwhat-is-ctr",
+    "https://www.reddit.com/submit?url=https%3A%2F%2Fbacklinko.com%2Fwhat-is-ctr&title=What%20Is%20Click-Through%20Rate%20(CTR)%3F%3A%20And%20How%20To%20Improve%20It",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fbacklinko.com%2Fwhat-is-ctr&summary=What%20Is%20Click-Through%20Rate%20(CTR)%3F%3A%20And%20How%20To%20Improve%20It",
+    "https://backlinko.com/blog",
+    "https://www.semrush.com/ai-seo/overview/",
+    "https://backlinko.com/deals/semrush-coupon",
+    "https://backlinko.com/contact",
+    "https://twitter.com/backlinko",
+    "https://www.youtube.com/@BacklinkoTeam",
+    "https://www.instagram.com/briandean/",
+    "https://www.semrush.com/company/legal/terms-of-service/?utm_source=backlinko.com&utm_medium=referral",
+    "https://www.semrush.com/company/legal/privacy-policy/?utm_source=backlinko.com&utm_medium=referral"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://backlinko.com/_next/image?url=https%3A%2F%2Fapi.backlinko.com%2Fapp%2Fuploads%2F2025%2F11%2Fleigh-profile-pic.jpg&w=640&q=75",
+        "alt": "leigh-profile-pic",
+        "w": 149,
+        "h": 149
+      },
+      {
+        "src": "https://backlinko.com/_next/image?url=https%3A%2F%2Fapi.backlinko.com%2Fapp%2Fuploads%2F2023%2F12%2Fwhat-is-ctr-blog-post-header.png&w=1080&q=75",
+        "alt": "What is CTR – Blog post header image",
+        "w": 960,
+        "h": 502
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2023/12/google-serp-paid-ad-768x315.webp",
+        "alt": "Google SERP – Paid Ad",
+        "w": 700,
+        "h": 287
+      },
+      {
+        "src": "https://backlinko.com/app/uploads/2020/03/brian-dean-circle.png",
+        "alt": "",
+        "w": 3333,
+        "h": 3333
+      },
+      {
+        "src": "https://backlinko.com/app/uploads/2020/03/brian-dean-circle.png",
+        "alt": "",
+        "w": 3333,
+        "h": 3333
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2023/12/gsc-perfomance-average-ctr-768x404.webp",
+        "alt": "GSC – Performance – Average CTR",
+        "w": 700,
+        "h": 368
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2023/12/gsc-perfomance-top-queries-768x591.webp",
+        "alt": "GSC – Performance – Top Queries",
+        "w": 650,
+        "h": 500
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2023/12/gsc-perfomance-pages-768x811.webp",
+        "alt": "GSC – Performance – Pages",
+        "w": 700,
+        "h": 739
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2023/12/google-ads-campaigns-640x547.webp",
+        "alt": "Google Ads – Campaigns",
+        "w": 599,
+        "h": 512
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2023/12/google-ads-campaign-ctr-768x290.webp",
+        "alt": "Google Ads – Campaign CTR",
+        "w": 700,
+        "h": 264
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2023/12/semrush-keyword-magic-tool-filters-featured-snippet-768x576.webp",
+        "alt": "Semrush – Keyword Magic Tool – Filters – Featured Snippet",
+        "w": 650,
+        "h": 487
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2023/12/keyword-magic-tool-featured-snippet-keywords-768x670.webp",
+        "alt": "Keyword Magic Tool – Featured Snippet Keywords",
+        "w": 650,
+        "h": 567
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2023/12/good-meta-title-example-640x169.webp",
+        "alt": "Good Meta Title Example",
+        "w": 599,
+        "h": 158
+      }
+    ],
+    "allImgCount": 29,
+    "cssBackgrounds": [],
+    "modals": [
+      "About cookies on this siteWe use cookies to run our website, analyze your use of our services, manage your online preferences & personalize ad content. By accepting our cookies, you'll get relevant content and social media features, personalized ads, and an enhanced browsing experience. To manage your choices, click “Cookie Settings.” Necessary cookies are required for the core website functionality and cannot be rejected. For more information, see ourCookie Policy.Allow all cookiesDeny allCookie settings"
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {
+    "--fa-font-solid": "normal 900 1em/1 \"Font Awesome 6 Free\"",
+    "--fa-font-regular": "normal 400 1em/1 \"Font Awesome 6 Free\"",
+    "--fa-font-light": "normal 300 1em/1 \"Font Awesome 6 Pro\"",
+    "--fa-font-thin": "normal 100 1em/1 \"Font Awesome 6 Pro\"",
+    "--fa-font-duotone": "normal 900 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-regular": "normal 400 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-light": "normal 300 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-thin": "normal 100 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-brands": "normal 400 1em/1 \"Font Awesome 6 Brands\"",
+    "--fa-font-sharp-solid": "normal 900 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-regular": "normal 400 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-light": "normal 300 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-thin": "normal 100 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-duotone-solid": "normal 900 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-regular": "normal 400 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-light": "normal 300 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-thin": "normal 100 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--app-height": "100svh",
+    "--backlinko-bar-height": "62px",
+    "--sl-widgets-font-family": "-apple-system, system-ui",
+    "--sl-widgets-base-unit": "16px"
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 40,
+    "mainTextLen": 29685,
+    "realImageCount": 13,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "dev.visualwebsiteoptimizer.com",
+        "path": "/j.php",
+        "query": [
+          "a",
+          "ph",
+          "st",
+          "u",
+          "vn",
+          "x"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://dev.visualwebsiteoptimizer.com/j.php",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "pagead2.googlesyndication.com",
+        "path": "/ccm/collect",
+        "query": [
+          "ae",
+          "apvc",
+          "dl",
+          "dma",
+          "dma_cps",
+          "en",
+          "ep.ads_data_redaction",
+          "fmt",
+          "frm",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "navt",
+          "npa",
+          "rcb",
+          "rnd",
+          "scrsrc",
+          "tag_exp",
+          "tfd",
+          "tft"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "status": 200,
+        "bytes": null,
+        "hits": 3,
+        "example": "https://pagead2.googlesyndication.com/ccm/collect",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "region-eu.cookiehub.net",
+        "path": "/",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 28,
+        "hits": 1,
+        "example": "https://region-eu.cookiehub.net/",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "cdn.cookiehub.eu",
+        "path": "/client/7417b56b/en.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://cdn.cookiehub.eu/client/7417b56b/en.json",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "region1.google-analytics.com",
+        "path": "/g/collect",
+        "query": [
+          "_eu",
+          "_fv",
+          "_nsi",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "cid",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dp",
+          "dt",
+          "en",
+          "ep.container_id",
+          "frm",
+          "gaf",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "status": 204,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://region1.google-analytics.com/g/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "streaming.bi.owox.com",
+        "path": "/ga4/{hash}/g/collect",
+        "query": [
+          "_eu",
+          "_fplc",
+          "_fv",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "cid",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dp",
+          "dt",
+          "ecid",
+          "en",
+          "ep.container_id",
+          "ep.page_language",
+          "ep.user_agent",
+          "frm",
+          "gaf",
+          "gap.sstd",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "richsstsse",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "sst.etld",
+          "sst.gch",
+          "sst.gcsub",
+          "sst.lpc",
+          "sst.navt",
+          "sst.rnd",
+          "sst.tft",
+          "sst.ude",
+          "sst.us_privacy",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "ur",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/gif",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://streaming.bi.owox.com/ga4/9bb752a08674f116753ca5719dda03ed/g/collect",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "www.semrush.com",
+        "path": "/olaf/init",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://www.semrush.com/olaf/init",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 15248,
+        "hits": 2,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 9070,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 15785,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 8271,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 11077,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+        "query": [
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 6748,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "api.backlinko.com",
+        "path": "/wp-json/backlinkostats/v1/shares/{n}",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://api.backlinko.com/wp-json/backlinkostats/v1/shares/168191",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "js.sparkloop.app",
+        "path": "/team_d05f5749d84d/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "status": 301,
+        "bytes": 167,
+        "hits": 1,
+        "example": "https://js.sparkloop.app/team_d05f5749d84d/settings",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "script-settings.sparkloop.app",
+        "path": "/team_d05f5749d84d/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://script-settings.sparkloop.app/team_d05f5749d84d/settings",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 56067,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 37423,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 46222,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 43379,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 37069,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 26586,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 44063,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 24417,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/leigh-mckenzie.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 7385,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/leigh-mckenzie.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 51780,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 21047,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 10492,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 19849,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 9009,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 32629,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 47409,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 56656,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "rum-collector-2.pingdom.net",
+        "path": "/img/beacon.gif",
+        "query": [
+          "bIH",
+          "bIW",
+          "cE",
+          "cS",
+          "dC",
+          "dCLEE",
+          "dCLES",
+          "dI",
+          "dL",
+          "dLE",
+          "dLS",
+          "dPR",
+          "fS",
+          "hS",
+          "id",
+          "lEE",
+          "lES",
+          "nS",
+          "nT",
+          "or",
+          "pD",
+          "path",
+          "rC",
+          "rE",
+          "rS",
+          "rV",
+          "reS",
+          "ref",
+          "resE",
+          "resS",
+          "s",
+          "sAH",
+          "sAW",
+          "sIS",
+          "sId",
+          "sST",
+          "title",
+          "uEE",
+          "uES",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": null,
+        "status": 200,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://rum-collector-2.pingdom.net/img/beacon.gif",
+        "sameSite": false
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "www.googletagmanager.com",
+        "count": 5
+      },
+      {
+        "host": "rum-static.pingdom.net",
+        "count": 2
+      },
+      {
+        "host": "cdn.cookiehub.eu",
+        "count": 1
+      },
+      {
+        "host": "js.sparkloop.app",
+        "count": 1
+      },
+      {
+        "host": "script.sparkloop.app",
+        "count": 1
+      },
+      {
+        "host": "www.semrush.com",
+        "count": 1
+      }
+    ],
+    "truncated": false,
+    "inlineData": [
+      {
+        "id": "__NEXT_DATA__",
+        "type": "application/json",
+        "bytes": 164213,
+        "topLevelKeys": [
+          "props",
+          "page",
+          "query",
+          "buildId",
+          "isFallback",
+          "isExperimentalCompile",
+          "gsp",
+          "scriptLoader"
+        ]
+      }
+    ],
+    "globalState": [
+      "__NEXT_DATA__",
+      "dataLayer"
+    ],
+    "frameworkHints": [
+      "next"
+    ],
+    "forms": [],
+    "ariaLiveRegions": 1,
+    "triggers": [
+      {
+        "marker": "aria-haspopup",
+        "href": null
+      }
+    ],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 26,
+      "thirdPartyEndpoints": 10,
+      "thirdPartyScriptHosts": 6,
+      "inlineDataBlobs": 1,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": true
+    }
+  },
+  "screenshot": "assets/screenshots/what-is-ctr.png",
+  "renderedHtml": "pages/what-is-ctr.html"
+}

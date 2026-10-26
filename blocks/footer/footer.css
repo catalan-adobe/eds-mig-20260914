@@ -1,20 +1,271 @@
-footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+/* stylelint-disable no-descending-specificity -- component selectors are independent; order mirrors the lifted source */
+
+/* Footer — ported from stardust/prototypes/canon.css (lifted from backlinko.com) */
+
+/* ---------- footer ---------- */
+
+.footer {
+  background-color: var(--navy);
+  line-height: 1.6;
+  font-size: 16px;
 }
 
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+.footer .footer-main {
+  padding: 50px 0;
 }
 
-footer .footer p {
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.footer .footer-col {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.footer .footer-links-col {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.footer .footer-logo {
+  display: inline-flex;
+  margin-bottom: 30px;
+  color: var(--green);
+}
+
+.footer .footer-about {
+  max-width: 300px;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.footer .footer-about p {
   margin: 0;
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+.footer h4 {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.footer .footer-links ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer .footer-links li {
+  width: 100%;
+}
+
+.footer .footer-links li + li {
+  margin-top: 6px;
+}
+
+.footer .footer-links a {
+  display: block;
+  color: var(--footer-link);
+  font-size: 1rem;
+}
+
+.footer .footer-links a:hover {
+  color: #fff;
+}
+
+.footer .footer-social ul {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: -10px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer .footer-social li {
+  padding: 10px;
+}
+
+.footer .footer-social a {
+  color: rgb(255 255 255 / 60%);
+  font-size: 30px;
+}
+
+.footer .footer-social h4 {
+  display: none;
+}
+
+.footer .footer-bottom {
+  padding: 35px 0;
+  border-top: 1px solid rgb(255 255 255 / 10%);
+}
+
+.footer .footer-legal {
+  margin-bottom: 10px;
+  margin-left: auto;
+}
+
+.footer .footer-legal ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer .footer-legal li {
+  padding: 0 12px;
+}
+
+.footer .footer-legal a {
+  color: var(--footer-link);
+  font-size: 13px;
+}
+
+.footer .footer-legal a:hover {
+  color: #fff;
+}
+
+.footer .footer-copy {
+  margin-right: auto;
+  margin-bottom: 0;
+  color: var(--footer-link);
+  font-size: 13px;
+}
+
+@media (width < 768px) {
+  .footer h4 {
+    margin-top: 50px;
   }
+
+  .footer .footer-social ul {
+    padding-top: 50px;
+  }
+}
+
+@media (width >= 540px) {
+  .footer .footer-legal a,
+  .footer .footer-copy {
+    font-size: .875rem;
+  }
+}
+
+@media (width >= 768px) {
+  .footer .footer-main {
+    padding: 80px 0 50px;
+  }
+
+  .footer .footer-brand {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .footer .footer-links-col {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .footer .footer-bottom {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .footer .footer-legal {
+    margin-bottom: 0;
+  }
+}
+
+@media (width >= 768px) and (width < 992px) {
+  .footer-social {
+    padding-top: 50px;
+  }
+}
+
+@media (width >= 992px) {
+  .footer .footer-main {
+    padding: 80px 0;
+  }
+
+  .footer .footer-left {
+    flex: 0 0 83.3333%;
+    max-width: 83.3333%;
+  }
+
+  .footer .footer-social {
+    flex: 0 0 16.6667%;
+    max-width: 16.6667%;
+  }
+
+  .footer .footer-social h4 {
+    display: block;
+  }
+
+  .footer .footer-about {
+    max-width: 350px;
+  }
+}
+
+.footer .footer-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (width >= 540px) {
+  .footer .footer-container {
+    max-width: 540px;
+  }
+}
+
+@media (width >= 576px) {
+  .footer .footer-container {
+    padding: 0 10px;
+  }
+}
+
+@media (width >= 768px) {
+  .footer .footer-container {
+    max-width: 720px;
+  }
+}
+
+@media (width >= 992px) {
+  .footer .footer-container {
+    max-width: 960px;
+  }
+}
+
+@media (width >= 1200px) {
+  .footer .footer-container {
+    max-width: 1140px;
+  }
+}
+
+.footer .footer-logo .icon {
+  width: 188px;
+  height: 25px;
+}
+
+.footer .footer-social .icon {
+  width: auto;
+  height: 30px;
+}
+
+.footer .footer-social .icon img {
+  width: auto;
+  height: 30px;
+}
+
+.footer ul {
+  margin-top: 0;
 }

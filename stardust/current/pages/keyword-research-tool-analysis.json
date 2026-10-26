@@ -1,0 +1,1685 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-26T14:59:50.495Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "keyword-research-tool-analysis",
+  "url": "https://backlinko.com/keyword-research-tool-analysis",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-26T14:59:50.495Z",
+  "finalUrl": "https://backlinko.com/tools/keyword",
+  "title": "Free Keyword Research Tool by Backlinko",
+  "description": null,
+  "og": {
+    "title": "Free Keyword Research Tool by Backlinko",
+    "description": "Most keyword research feels like guesswork. We want to help you cut through the noise — and find keywords that actually lead to traffic, leads, and revenue. This guide breaks down the exact process we use at Backlinko. And right up top, you can try it for yourself using real data from Semrush’s massive keyword …",
+    "image": "https://api.backlinko.com/app/uploads/2019/03/keyword-research-social.png",
+    "type": "article"
+  },
+  "headings": [
+    {
+      "tag": "h2",
+      "text": "About cookies on this site"
+    },
+    {
+      "tag": "h1",
+      "text": "FREEKeyword Tool"
+    },
+    {
+      "tag": "h2",
+      "text": "How to Find Keywords That Actually Drive Results"
+    },
+    {
+      "tag": "h2",
+      "text": "How to Do Keyword Research (The Right Way)"
+    },
+    {
+      "tag": "h2",
+      "text": "Understanding Keywords and Their Search Volumes"
+    },
+    {
+      "tag": "h3",
+      "text": "Determining Ideal Search Volumes for Keywords"
+    },
+    {
+      "tag": "h4",
+      "text": "Factors That Influence Keyword Search Volume"
+    },
+    {
+      "tag": "h2",
+      "text": "Why Keyword Search Volume Matters in SEO"
+    },
+    {
+      "tag": "h3",
+      "text": "1. Find High-Traffic Opportunities"
+    },
+    {
+      "tag": "h3",
+      "text": "2. Spot Growing Topics Early"
+    },
+    {
+      "tag": "h3",
+      "text": "3. Create Content People Actually Want"
+    },
+    {
+      "tag": "h2",
+      "text": "3 Ways to Use Keyword Search Volume to Drive High-Intent Traffic"
+    },
+    {
+      "tag": "h3",
+      "text": "1. Analyze Competitor Keywords"
+    },
+    {
+      "tag": "h3",
+      "text": "2. Use Long-Tail Keywords"
+    },
+    {
+      "tag": "h3",
+      "text": "3. Monitor and Analyze Your Results"
+    },
+    {
+      "tag": "h2",
+      "text": "Selecting the Right Keyword Research Tool"
+    },
+    {
+      "tag": "h3",
+      "text": "1. Semrush"
+    },
+    {
+      "tag": "h3",
+      "text": "2. Google Keyword Planner (GKP)"
+    },
+    {
+      "tag": "h3",
+      "text": "3. Moz"
+    },
+    {
+      "tag": "h3",
+      "text": "4. Ahrefs"
+    },
+    {
+      "tag": "h3",
+      "text": "5. Serpstat"
+    },
+    {
+      "tag": "h3",
+      "text": "6. Sistrix"
+    },
+    {
+      "tag": "h3",
+      "text": "7. Mangools"
+    },
+    {
+      "tag": "h3",
+      "text": "8. SERP Gap Analyzer"
+    },
+    {
+      "tag": "h4",
+      "text": "1. Track Brand Visibility Across AI Search"
+    },
+    {
+      "tag": "h4",
+      "text": "2. Discover Fast-Ranking Keyword Opportunities"
+    },
+    {
+      "tag": "h4",
+      "text": "3. Optimize Content and Stop Decay"
+    },
+    {
+      "tag": "h2",
+      "text": "How to Use Semrush to Access Search Volume Data"
+    },
+    {
+      "tag": "h2",
+      "text": "3 Common Keyword Research Problems (and Solutions)"
+    },
+    {
+      "tag": "h3",
+      "text": "Problem #1: Search Volumes Don’t Match Across Tools"
+    },
+    {
+      "tag": "h3",
+      "text": "Problem #2: High-Volume Keywords Are Too Competitive"
+    },
+    {
+      "tag": "h3",
+      "text": "Problem #3: Keywords Show Volume but Don’t Convert"
+    },
+    {
+      "tag": "h2",
+      "text": "Which Is the Best Keyword Research Tool?"
+    },
+    {
+      "tag": "h4",
+      "text": "Learn"
+    },
+    {
+      "tag": "h4",
+      "text": "Company"
+    },
+    {
+      "tag": "h4",
+      "text": "Connect"
+    }
+  ],
+  "body": [
+    "On this page",
+    "How to Do Keyword Research (The Right Way)",
+    "Understanding Keywords and Their Search Volumes",
+    "Why Keyword Search Volume Matters in SEO",
+    "3 Ways to Use Keyword Search Volume to Drive High-Intent Traffic",
+    "Selecting the Right Keyword Research Tool",
+    "How to Use Semrush to Access Search Volume Data",
+    "3 Common Keyword Research Problems (and Solutions)",
+    "Which Is the Best Keyword Research Tool?",
+    "Written by Leigh McKenzie",
+    "Most keyword research feels like guesswork.",
+    "We want to help you cut through the noise — and find keywords that actually lead to traffic, leads, and revenue.",
+    "This guide breaks down the exact process we use at Backlinko.",
+    "And right up top, you can try it for yourself using real data from Semrush’s massive keyword database.",
+    "Here’s what the tool helps you do:",
+    "Find low-competition keywords your competitors are missing",
+    "Generate fresh content and keyword ideas that actually rank",
+    "See exactly how many monthly searches each keyword gets",
+    "The best part?",
+    "You don’t need any technical SEO knowledge to get started.",
+    "And to show you what’s possible…",
+    "At Backlinko, this process helped us rank in Google’s top 10 for over 20,000 keywords — worth about $756K/month in ad value.",
+    "It all starts with the right keywords. So let’s break down how to find them.",
+    "Keyword research isn’t just about finding popular terms.",
+    "It’s a type of audience research that helps you understand what potential customers or clients are searching for. You can then use this insight to create content that ranks, gets clicked, and drives business results.",
+    "Start by brainstorming topics related to your business. Use sources like:",
+    "Google’s Related Searches section",
+    "Reddit discussions",
+    "Niche forums",
+    "YouTube’s auto-suggest feature",
+    "Then, validate your ideas with real data. This is where the keyword tool comes in.",
+    "It helps you analyze:",
+    "Search volume: How many people search for this each month",
+    "Keyword difficulty (KD): How hard it is to rank. The lower the score, the easier it should be",
+    "Cost per click (CPC): What advertisers are paying per click",
+    "Search trends: Whether interest is going up, down, or seasonal",
+    "Click any keyword to dig deeper in Semrush — including search intent (what someone actually wants to do when they search).",
+    "Make sure each keyword is relevant to your business.",
+    "Even a high-volume term won’t help if it doesn’t attract the right people.",
+    "As you do your research, pay special attention to long-tail keywords — especially if you’re just starting out.",
+    "These are highly specific phrases with lower competition and search volume, which means they’re often easier to rank for.",
+    "Examples include “best content marketing tools for freelancers” and “b2b content marketing case studies.”",
+    "If you already have Google Search Console (GSC) set up, check for keywords you’re ranking for—but not well.",
+    "These are often quick wins. Google already sees your content as somewhat relevant, and you’re getting impressions and clicks.",
+    "This can help you identify quick wins, as Google is already seeing your content as somewhat relevant and you’re getting impressions and clicks.",
+    "While this was just a quick overview of keyword research, it gives you a solid foundation for finding keywords that can drive targeted traffic to your site.",
+    "Remember: The goal isn’t just to find any keywords—it’s to find the right keywords for your business.",
+    "Remember: The goal isn’t just to find any keywords—it’s to find the right keywords for your business.",
+    "Now, let’s dive deeper into search volume and intent.",
+    "Want your pages to rank in Google? You need to find keywords your target audience is actually searching for.",
+    "That’s where search volume comes in.",
+    "It shows you how popular a particular term or phrase is.",
+    "For example, “content marketing” gets searched 27.1K times per month.",
+    "But a niche phrase like “content marketing for dentists” gets just 70 monthly searches.",
+    "But here’s the thing about keywords: volume isn’t everything.",
+    "You also need to consider search intent (aka keyword intent)—or why someone is searching for that term in the first place.",
+    "There are four main types of search intent:",
+    "Informational: Users want to learn something, such as “how to make cold brew coffee,” “what is SEO,” or “symptoms of a cold”",
+    "Commercial: Users are researching products or services before buying. Examples include “best running shoes,” “iPhone vs Samsung,” or “coffee maker reviews”",
+    "Navigational: Users want to find a specific website or page, such as “Facebook login,” “Gmail,” or “Nike store”",
+    "Transactional: Users are ready to buy or take action. Examples: “buy AirPods Pro,” “book hotel in Paris,” or “order pizza delivery.”",
+    "Search intent is one of Google’s many ranking factors, so pay close attention to it if you want your pages to rank.",
+    "So, how many monthly searches make a keyword worth targeting?",
+    "The truth? There’s no magic number.",
+    "It depends on factors like search intent, keyword competition, industry type, and seasonality.",
+    "What’s low in one niche could be a goldmine in another.",
+    "For instance, in the tech industry, 500 searches per month for a keyword might be considered low.",
+    "However, in the niche collectible vintage typewriter industry, 500 monthly searches might be high.",
+    "Context is key.",
+    "Before targeting any keyword, check if these factors might affect its search volume:",
+    "Seasonality: Search volumes naturally rise and fall throughout the year (like “gift ideas” in December)",
+    "Trending topics: Current events and trends can temporarily boost keyword search volumes",
+    "Industry growth: Growing industries see search volumes climb over time",
+    "Local modifiers: Adding location-specific terms enhances local SEO by targeting regional search intent",
+    "Smart content creators use keyword search volume as a tool to make better decisions about what to write.",
+    "Here’s why it matters in SEO.",
+    "Keywords with high search volumes indicate a high level of user interest.",
+    "By targeting these keywords, you give your site a good chance of receiving a significant amount of traffic.",
+    "However, simply targeting a keyword with a high search volume isn’t enough.",
+    "You need to make sure the content you create is highly relevant to the keywords you target and matches the user’s search intent.",
+    "Analyzing the search volume of keywords over time also helps you identify market and search trends.",
+    "In this way, it serves as a window into the evolving interests of your target audience.",
+    "If you notice the search volume for a certain keyword steadily increasing or suddenly spiking, it’s a good indicator of the topics your audience is currently interested in.",
+    "Rather than creating content for keywords you think your audience will be interested in, search volume data enables you to write relevant content you know they’ll be interested in.",
+    "This knowledge can guide your entire content campaign and help to ensure user engagement remains high and your rankings continue to improve.",
+    "4. Uncover Hidden Gems",
+    "Some of the best keywords have relatively low search volume.",
+    "Take “ecommerce email marketing software” for example.",
+    "It might only get 110 searches in the U.S. per month, but those are likely marketing directors with buying power.",
+    "Low-volume terms can also convert better than broader keywords—so don’t leave them out of your strategy.",
+    "“I would rather have 100 readers that convert at 10% than 10,000 readers that convert 0.01%. If you’re going after a lower quantity of traffic but users are really satisfied with it and want to convert, then that’s success. It’s not all about huge volumes of traffic. Start with creating the best quality content and trying to convert it as best as possible, which will compound more over time.”",
+    "“I would rather have 100 readers that convert at 10% than 10,000 readers that convert 0.01%. If you’re going after a lower quantity of traffic but users are really satisfied with it and want to convert, then that’s success. It’s not all about huge volumes of traffic. Start with creating the best quality content and trying to convert it as best as possible, which will compound more over time.”",
+    "Finding keywords with decent search volume isn’t enough anymore.",
+    "You need to find keywords that:",
+    "You can actually rank for",
+    "Bring in visitors ready to take action",
+    "Your competitors are missing",
+    "Here’s exactly how to do that:",
+    "Competitor keyword research involves analyzing and identifying the keywords your competitors target in their online content.",
+    "Like websites, blog posts, and online advertising.",
+    "But don’t just look at what keywords your competitors rank for.",
+    "Look for keywords where they’re almost ranking well.",
+    "Use a tool like Semrush to find keywords where competitors rank on page 2 or at the bottom of page 1.",
+    "These are golden opportunities—they’ve proven the keyword has value but haven’t quite cracked the code on ranking for it.",
+    "(That’s where you come in.)",
+    "By identifying less competitive long-tail terms and incorporating them into your keyword strategy, you can maximize the results of your SEO efforts.",
+    "Concentrating solely on high-search-volume keywords that are highly competitive won’t yield quick and favorable rankings.",
+    "This is why it’s essential to diversify your keyword strategy by targeting a well-balanced mix of long-tail keywords and search queries with higher search volume.",
+    "This approach will significantly increase your chances of achieving success.",
+    "For example, say you run a coffee subscription business.",
+    "Your competitor might be trying to rank for “best coffee maker” (33.1K monthly searches; 62 KD), but they’re stuck on page 2.",
+    "Instead of fighting that battle, you could target terms like “best mini coffee maker” (1,300 monthly searches; 17 KD) or “best small coffee maker” (2.9K monthly searches; 43 KD).",
+    "These long-tail keywords still have decent search volume.",
+    "And they’re attracting users who are getting close to making a purchasing decision (commercial intent).",
+    "You’ll also have a much better chance of ranking on page 1 for these terms.",
+    "Once you’ve done your keyword research and created content for your search terms, you’ll need to keep a close eye on them.",
+    "This means tracking the search volumes of your target keywords to gauge their efficiency.",
+    "Use a tool such as Semrush’s Keyword Overview to monitor increases and decreases in the search queries you’ve targeted.",
+    "Assess how these fluctuations affect your other performance metrics, such as click-through and conversion rates, as well as the ranking positions of your pages.",
+    "If your main keyword is losing steam, look for rising alternative terms people are using instead.",
+    "For example, if “best accounting software” is dropping, you might find “cloud accounting platforms” is growing.",
+    "Add these terms to the page to help regain traffic.",
+    "Now that you’re up to speed on keyword search volume, it’s time to take a look at the seven best keyword research tools for gathering search volume data.",
+    "I included the best free tools for keyword research, along with some tools that offer free trials.",
+    "Good For: Accuracy, trending terms, database coverage",
+    "Best Feature: Keyword Magic Tool",
+    "Free Plan: Conduct up to 10 free searches in the Keyword Magic Tool or analyze up to 10 competitor domains per day with Domain Overview. (And much more.)",
+    "Semrush conducted a search volume study to see how its data stacks up against other top keyword research tools—and the results were pretty impressive.",
+    "Semrush is the most accurate tool for search volume data, and its database has much better coverage than other tools.",
+    "For example, 3.82% of the keywords in GKP’s database were “not found,” and this rose to a MASSIVE 18.22% for Serpstat.",
+    "Meanwhile, only 1.78% of the keywords in Semrush’s database were “not found.”",
+    "In my opinion, this makes it the best keyword research tool available.",
+    "Start your keyword research",
+    "Explore the largest keyword database.",
+    "Good For: Pay-per-click (PPC) keyword research",
+    "Best Feature: Forecasts for PPC campaigns",
+    "Free Plan: The full version is completely free (but you’ll need a Google Ads account)",
+    "Google Keyword Planner is a feature that’s included within the Google Ads platform. It’s a powerful keyword research tool for paid ads, but it’s not as good for organic keyword research.",
+    "Still, in Semrush’s keyword search volume study, Google Keyword Planner achieved a 40.94% search volume accuracy score in the head-to-head with Semrush, which got 59.06%.",
+    "Although it was still behind Semrush, it did a lot better than many of the other tools.",
+    "Good For: Quick and easy (but fairly limited) search volume data",
+    "Best Feature: Keyword “Priority” score",
+    "Free Plan: The 30-day Moz Pro trial gives you access to all of the tool’s features",
+    "Moz is a good all-around SEO tool with a pretty decent keyword research tool.",
+    "But in the search volume accuracy tests in Semrush’s study, it scored 42.73% compared to Semrush’s score of 57.27%.",
+    "Good For: Keyword Difficulty rating",
+    "Best Feature: Keyword volumes for Google, Bing, YouTube, and Amazon",
+    "Free Plan: Unlimited searches with limited data",
+    "In a head-to-head comparison with Semrush, Ahrefs was WAY behind in accuracy. It was accurate 39.53% of the time compared to Semrush’s score of 60.47%.",
+    "Ahrefs’ Free Keyword Generator is easy to use and quickly gives you access to page-level keyword rankings.",
+    "However, it doesn’t provide exact search volumes or other essential details like intent, CPC, or trends.",
+    "It also only shows data for some of the results, and if you want the rest, you’ll need to pay for an Ahrefs plan.",
+    "Good For: SEO and PPC keyword research",
+    "Best Feature: Allows you to access data from 230+ regions.",
+    "Free Plan: 10 keyword searches per day",
+    "Serpstat has a wide array of features you can use for your SEO and PPC campaigns. Plus, their keyword research tool gives you data from many different regions.",
+    "And lets you research the competition so you can create higher-performing campaigns.",
+    "Good For: Finding related keywords",
+    "Best Feature: Fast keyword info without logging in",
+    "Free Plan: 10 free searches per day without signing in or 100 free searches per day with free registration",
+    "Sistrix offers a simple, free keyword research tool that provides related keywords and real user questions for each term you search.",
+    "However, it doesn’t provide search volume or any other essential keyword metrics.",
+    "Good For: Getting a wide variety of data about keywords",
+    "Best Feature: Keyword “Trend” data column",
+    "Free Plan: 10 free daily searches",
+    "In terms of free keyword research tools, Mangools is pretty competitive with what it provides as part of its free plan and trials.",
+    "Still, in its head-to-head with Semrush in the previously mentioned study, Semrush’s search volume data was closer to the GSC reference data (32.39% of the time) than Mangools’ data (20.65% of the time).",
+    "Good For: Finding SERP weak spots at scale",
+    "Best Feature: See your brand’s health on AI search",
+    "Free Plan: 7-day free trial; paid plans from $99/month",
+    "The SERP Gap Analyzer does something most keyword tools don’t: it tells you not just what to rank for, but where you can actually win.",
+    "Enter your domain and a seed topic, and the tool scans the first page of Google for keywords where the current results are beatable. We’re talking thin content, slow mobile performance, missing keywords in title tags, low-authority domains — real, exploitable weaknesses you can act on.",
+    "It breaks down into three core use cases:",
+    "This is where the tool stands out from everything else on this list.",
+    "The SERP Gap Analyzer tracks how your brand appears in AI-generated answers across ChatGPT, Gemini, Claude, DeepSeek, Mistral, and Llama 4. You get an AI Search Score from 0–100 (weighted by each model’s market share), rank tracking across the top 20 AI results, and a prompt-testing engine that automatically generates and tests queries across platforms.",
+    "As more users turn to AI tools instead of Google, this kind of visibility data is becoming essential — not optional.",
+    "Instead of filtering by keyword difficulty alone, the tool identifies SERPs where the top-10 results are genuinely weak. That means you’re not just looking for low-KD keywords — you’re finding keywords where the existing content gives you a realistic opening. Each opportunity comes with search volume, difficulty, and a breakdown of the specific weaknesses holding competing pages back.",
+    "Got pages that used to rank but have started slipping? The tool connects to Google Search Console to identify underperforming content and tells you exactly why — whether it’s low CTR despite high impressions, duplicate content already in Google’s Knowledge Graph, or missing subtopics that competitors are covering.",
+    "As a bonus, built-in GPT-4-powered tools let you generate SEO titles, content briefs, meta descriptions, and full article drafts directly from your research.",
+    "The main trade-off: it’s not cheap, and it’s best suited for sites that already have some content to work with. But if you want to go beyond finding keywords and start identifying winnable ranking opportunities — in both Google and AI search — it’s one of the most actionable tools available.",
+    "Well, there are several different tools for this.",
+    "To begin with, let’s take a look at the Keyword Magic Tool.",
+    "First, sign up for a Semrush account, and log in.",
+    "Click “Keyword Magic Tool” at the left of the page.",
+    "Type in a keyword and click “Search.”",
+    "The tool will return a list of keywords and key metrics.",
+    "The “Volume” column tells you the average monthly search volume for each term in the keyword list",
+    "The “KD %” column gives a score out of 100 for each term, indicating how hard it would be to rank for it",
+    "You can see that the volume for “running shoes” is really high, and the keyword difficulty percentage is 76, so it would be incredibly hard to rank for this term.",
+    "The long-tail keyword “white running shoes” has a lower difficulty score of 20 and has a relatively high search volume, so that will be a good keyword to target instead.",
+    "Next up, let’s check out Semrush’s Keyword Overview tool.",
+    "Enter your keyword, choose your location, and click “Search.”",
+    "On the next page, you’ll see the search volume for your location and the keyword difficulty percentage.",
+    "You’ll also see the volume for other locations.",
+    "Now, let’s take a look at the Keyword Gap tool, which allows you to compare your keyword profile to your competitors.",
+    "Enter your domain and up to four competing domains, and click “Compare.”",
+    "On the next page, scroll down to view a table of keywords you share with your competitors.",
+    "You’ll see the search volume for each term and the search engine rankings that you and your competitors occupy for these terms.",
+    "This allows you to benchmark the performance of your keywords against your competitors.",
+    "You can also identify how search volume correlates to your search engine rankings.",
+    "While anyone can learn how to conduct keyword research, you might run into some confusing situations along the way.",
+    "Here’s the deal: You plug the same keyword into different tools and get wildly different numbers.",
+    "Super frustrating, right?",
+    "But there’s an easy solution: Use one reputable tool as your “source of truth.”",
+    "And focus on relative volume trends rather than exact numbers. Cross-reference with Google Trends for validation.",
+    "You’ve found some juicy keywords, but they’re dominated by major players.",
+    "The fix?",
+    "Add modifiers like “best,” “vs,” or “how to” when searching terms in a keyword research tool.",
+    "And target question-based alternatives using “People Also Ask” data.",
+    "This will help you find low-competition keywords you’ll have a better chance of ranking for on the SERPs.",
+    "Traffic without conversions is just a vanity metric.",
+    "Audit your existing content to double-check that you’ve targeted the right intent for each page—and that you’ve targeted a good mix of commercial and transactional keywords (not just informational).",
+    "Look for “buyer keywords” with modifiers like “buy,” “review,” or “best” to update existing content with or target on new pages.",
+    "This should help you attract high-intent traffic that will be more likely to convert.",
+    "Every keyword research tool brings something different to the table.",
+    "Some are great for finding long-tail keywords. Others excel at competitor analysis.",
+    "And a few do pretty much everything.",
+    "Here’s what matters: picking a tool that aligns with your budget and goals.",
+    "Just starting out? Google Keyword Planner is solid (and free).",
+    "Ready to level up your SEO game? Explore all-in-one platforms like Semrush that offer deeper insights with both free and paid plans.",
+    "If you still need help deciding, read our Semrush Ultimate Guide for an in-depth look at the platform’s best tools and features.",
+    "174 shares"
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Cookie Policy.",
+      "href": "https://www.semrush.com/company/legal/cookie-policy/"
+    },
+    {
+      "label": "Allow all cookies",
+      "href": null
+    },
+    {
+      "label": "Deny all",
+      "href": null
+    },
+    {
+      "label": "Cookie settings",
+      "href": null
+    },
+    {
+      "label": "Watch Now",
+      "href": "https://www.youtube.com/watch?v=rIGzcovF6cM"
+    },
+    {
+      "label": "Close",
+      "href": null
+    },
+    {
+      "label": "Articles",
+      "href": null
+    },
+    {
+      "label": "Tools",
+      "href": null
+    },
+    {
+      "label": "Templates",
+      "href": "/templates/marketing"
+    },
+    {
+      "label": "About",
+      "href": "/about-backlinko"
+    },
+    {
+      "label": "Newsletter",
+      "href": "/newsletter"
+    },
+    {
+      "label": "Tools",
+      "href": "/tools"
+    },
+    {
+      "label": "Find Keywords",
+      "href": null
+    },
+    {
+      "label": "How to Do Keyword Research (The Right Way)",
+      "href": "#how-to-do-keyword-research-the-right-way"
+    },
+    {
+      "label": "Understanding Keywords and Their Search Volumes",
+      "href": "#understanding-keywords-and-their-search-volumes"
+    },
+    {
+      "label": "Why Keyword Search Volume Matters in SEO",
+      "href": "#why-keyword-search-volume-matters-in-seo"
+    },
+    {
+      "label": "3 Ways to Use Keyword Search Volume to Drive High-Intent Traffic",
+      "href": "#3-ways-to-use-keyword-search-volume-to-drive-high-intent-traffic"
+    },
+    {
+      "label": "Selecting the Right Keyword Research Tool",
+      "href": "#selecting-the-right-keyword-research-tool"
+    },
+    {
+      "label": "How to Use Semrush to Access Search Volume Data",
+      "href": "#how-to-use-semrush-to-access-search-volume-data"
+    },
+    {
+      "label": "3 Common Keyword Research Problems (and Solutions)",
+      "href": "#3-common-keyword-research-problems-and-solutions"
+    },
+    {
+      "label": "Which Is the Best Keyword Research Tool?",
+      "href": "#which-is-the-best-keyword-research-tool"
+    },
+    {
+      "label": "Leigh McKenzie",
+      "href": "/blog/authors/leigh-mckenzie"
+    },
+    {
+      "label": "audience research",
+      "href": "https://backlinko.com/audience-research"
+    },
+    {
+      "label": "Search volume",
+      "href": "https://www.semrush.com/blog/keyword-search-volume/?utm_campaign=free-keyword-tool&utm_source=backlinko.com&utm_medium=referral"
+    },
+    {
+      "label": "Keyword difficulty (KD)",
+      "href": "https://www.semrush.com/blog/keyword-difficulty/?utm_campaign=free-keyword-tool&utm_source=backlinko.com&utm_medium=referral"
+    },
+    {
+      "label": "Cost per click (CPC)",
+      "href": "https://www.semrush.com/blog/cost-per-click/?utm_campaign=free-keyword-tool&utm_source=backlinko.com&utm_medium=referral"
+    },
+    {
+      "label": "Search trends",
+      "href": "https://backlinko.com/hub/content/google-trends"
+    },
+    {
+      "label": "search intent",
+      "href": "https://backlinko.com/hub/seo/search-intent"
+    },
+    {
+      "label": "long-tail keywords",
+      "href": "https://backlinko.com/hub/seo/long-tail-keywords"
+    },
+    {
+      "label": "Google Search Console",
+      "href": "https://backlinko.com/google-search-console"
+    },
+    {
+      "label": "search intent",
+      "href": "https://backlinko.com/hub/seo/search-intent"
+    },
+    {
+      "label": "what is SEO",
+      "href": "https://backlinko.com/hub/seo/what-is-seo"
+    },
+    {
+      "label": "local SEO",
+      "href": "https://backlinko.com/local-seo-guide"
+    },
+    {
+      "label": "keyword search volume",
+      "href": "https://trafficthinktank.com/keyword-search-volume/"
+    },
+    {
+      "label": "Competitor keyword research",
+      "href": "https://backlinko.com/seo-competitor-analysis"
+    },
+    {
+      "label": "commercial intent",
+      "href": "https://backlinko.com/commercial-intent"
+    },
+    {
+      "label": "Keyword Overview",
+      "href": "https://www.semrush.com/analytics/keywordoverview/?utm_campaign=free-keyword-tool&utm_source=backlinko.com&utm_medium=referral"
+    },
+    {
+      "label": "Semrush",
+      "href": "https://www.semrush.com/?utm_campaign=free-keyword-tool&utm_source=backlinko.com&utm_medium=referral"
+    },
+    {
+      "label": "search volume study",
+      "href": "https://www.semrush.com/blog/us-search-volume-update/?utm_campaign=free-keyword-tool&utm_source=backlinko.com&utm_medium=referral"
+    },
+    {
+      "label": "Analyze",
+      "href": null
+    },
+    {
+      "label": "Google Keyword Planner",
+      "href": "https://backlinko.com/google-keyword-planner"
+    },
+    {
+      "label": "Moz",
+      "href": "https://backlinko.com/hub/seo/moz-pro"
+    },
+    {
+      "label": "Ahrefs",
+      "href": "https://backlinko.com/ahrefs-guide"
+    },
+    {
+      "label": "PPC keyword",
+      "href": "https://backlinko.com/ppc-keyword-cost"
+    },
+    {
+      "label": "Serpstat",
+      "href": "https://backlinko.com/serpstat-review"
+    },
+    {
+      "label": "Mangools",
+      "href": "https://backlinko.com/mangools-review"
+    },
+    {
+      "label": "The SERP Gap Analyzer",
+      "href": "https://www.semrush.com/apps/serp-gap-analyzer/?utm_campaign=free-keyword-tool&utm_source=backlinko.com&utm_medium=referral"
+    },
+    {
+      "label": "sign up for a Semrush account",
+      "href": "https://www.semrush.com/signup/?src=header&utm_campaign=free-keyword-tool&utm_source=backlinko.com&utm_medium=referral"
+    },
+    {
+      "label": "Keyword Gap",
+      "href": "https://www.semrush.com/analytics/keywordgap/?utm_campaign=free-keyword-tool&utm_source=backlinko.com&utm_medium=referral"
+    },
+    {
+      "label": "Semrush Ultimate Guide",
+      "href": "https://backlinko.com/hub/seo/semrush"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Newsletter",
+      "href": "/newsletter"
+    },
+    {
+      "label": "Templates",
+      "href": "https://backlinko.com/templates/marketing"
+    },
+    {
+      "label": "Best SEO Tools",
+      "href": "/best-free-seo-tools"
+    },
+    {
+      "label": "About",
+      "href": "/about-backlinko"
+    },
+    {
+      "label": "Semrush AI Visiblity",
+      "href": "https://www.semrush.com/ai-seo/overview/"
+    },
+    {
+      "label": "Semrush Free Trial",
+      "href": "https://backlinko.com/deals/semrush-coupon"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    },
+    {
+      "label": "Twitter",
+      "href": "https://twitter.com/backlinko"
+    },
+    {
+      "label": "YouTube",
+      "href": "https://www.youtube.com/@BacklinkoTeam"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/briandean/"
+    },
+    {
+      "label": "Terms of Service",
+      "href": "https://www.semrush.com/company/legal/terms-of-service/?utm_source=backlinko.com&utm_medium=referral"
+    }
+  ],
+  "links": [
+    "https://www.semrush.com/company/legal/cookie-policy/",
+    "https://backlinko.com/tools/keyword#",
+    "https://www.youtube.com/watch?v=rIGzcovF6cM",
+    "https://backlinko.com/",
+    "https://backlinko.com/ai-search-strategy",
+    "https://backlinko.com/llm-seeding",
+    "https://backlinko.com/generative-engine-optimization-geo",
+    "https://backlinko.com/hub/seo/what-is-seo",
+    "https://backlinko.com/improve-your-seo",
+    "https://backlinko.com/seo-checklist",
+    "https://backlinko.com/seo-strategy",
+    "https://backlinko.com/?p=165994",
+    "https://backlinko.com/google-e-e-a-t",
+    "https://backlinko.com/hub/seo/internal-links",
+    "https://backlinko.com/technical-seo-guide",
+    "https://backlinko.com/on-page-seo",
+    "https://backlinko.com/ecommerce-seo",
+    "https://backlinko.com/seo-certification-guide",
+    "https://backlinko.com/ai-optimization",
+    "https://backlinko.com/ai-seo",
+    "https://backlinko.com/entity-seo",
+    "https://backlinko.com/audience-research",
+    "https://backlinko.com/reddit-marketing",
+    "https://backlinko.com/?p=193164",
+    "https://backlinko.com/answer-engine-optimization-aeo",
+    "https://backlinko.com/seo-basics-for-beginners",
+    "https://backlinko.com/seo-tutorial",
+    "https://backlinko.com/pillar-pages",
+    "https://backlinko.com/?p=175006",
+    "https://backlinko.com/actionable-seo-tips",
+    "https://backlinko.com/small-business-seo",
+    "https://backlinko.com/schema-markup-guide",
+    "https://backlinko.com/website-migration-checklist",
+    "https://backlinko.com/hub/content/what-is-content-marketing",
+    "https://backlinko.com/seo-copywriting",
+    "https://backlinko.com/?p=103911",
+    "https://backlinko.com/content-marketing-this-year",
+    "https://backlinko.com/?p=190262",
+    "https://backlinko.com/?p=172343",
+    "https://backlinko.com/scale-content",
+    "https://backlinko.com/hub/content/writing",
+    "https://backlinko.com/link-building",
+    "https://backlinko.com/hub/seo/backlinks",
+    "https://backlinko.com/high-quality-backlinks",
+    "https://backlinko.com/link-building-strategies",
+    "https://backlinko.com/link-building-services",
+    "https://backlinko.com/step-by-step-backlink-audit",
+    "https://backlinko.com/skyscraper-technique",
+    "https://backlinko.com/increase-domain-authority",
+    "https://backlinko.com/competitor-analysis",
+    "https://backlinko.com/?p=173056",
+    "https://backlinko.com/?p=174557",
+    "https://backlinko.com/how-to-create-a-website",
+    "https://backlinko.com/tools/seo-checker",
+    "https://backlinko.com/tools/backlink-checker",
+    "https://backlinko.com/tools/website-authority",
+    "https://backlinko.com/tools/website-traffic-checker",
+    "https://backlinko.com/tools/keyword",
+    "https://backlinko.com/tools/keyword-difficulty-checker",
+    "https://backlinko.com/tools/competitor-analysis",
+    "https://backlinko.com/tools/schema-markup-generator",
+    "https://backlinko.com/tools/ai-visibility-checker",
+    "https://backlinko.com/tools/ai-agent-readiness",
+    "https://backlinko.com/tools/agentic-browsing-readiness",
+    "https://backlinko.com/best-free-seo-tools",
+    "https://backlinko.com/llm-tracking-tools",
+    "https://backlinko.com/keyword-research-tools",
+    "https://backlinko.com/?p=98736",
+    "https://backlinko.com/link-building-tools",
+    "https://backlinko.com/best-rank-tracking-tools",
+    "https://backlinko.com/?p=171633",
+    "https://backlinko.com/seo-software-agencies",
+    "https://backlinko.com/ai-seo-tools",
+    "https://backlinko.com/sitemap-generator-tools",
+    "https://backlinko.com/best-digital-marketing-tools",
+    "https://backlinko.com/?p=170722",
+    "https://backlinko.com/semrush-review",
+    "https://backlinko.com/ahrefs-review",
+    "https://backlinko.com/ahrefs-vs-semrush",
+    "https://backlinko.com/clearscope-review",
+    "https://backlinko.com/majestic-seo-review",
+    "https://backlinko.com/surfer-seo",
+    "https://backlinko.com/serpstat-review",
+    "https://backlinko.com/sparktoro-review",
+    "https://backlinko.com/templates/marketing",
+    "https://backlinko.com/about-backlinko",
+    "https://backlinko.com/newsletter",
+    "https://backlinko.com/tools",
+    "https://backlinko.com/tools/keyword#how-to-do-keyword-research-the-right-way",
+    "https://backlinko.com/tools/keyword#understanding-keywords-and-their-search-volumes",
+    "https://backlinko.com/tools/keyword#why-keyword-search-volume-matters-in-seo",
+    "https://backlinko.com/tools/keyword#3-ways-to-use-keyword-search-volume-to-drive-high-intent-traffic",
+    "https://backlinko.com/tools/keyword#selecting-the-right-keyword-research-tool",
+    "https://backlinko.com/tools/keyword#how-to-use-semrush-to-access-search-volume-data",
+    "https://backlinko.com/tools/keyword#3-common-keyword-research-problems-and-solutions",
+    "https://backlinko.com/tools/keyword#which-is-the-best-keyword-research-tool",
+    "https://backlinko.com/blog/authors/leigh-mckenzie",
+    "https://www.semrush.com/blog/keyword-search-volume/?utm_campaign=free-keyword-tool&utm_source=backlinko.com&utm_medium=referral",
+    "https://www.semrush.com/blog/keyword-difficulty/?utm_campaign=free-keyword-tool&utm_source=backlinko.com&utm_medium=referral",
+    "https://www.semrush.com/blog/cost-per-click/?utm_campaign=free-keyword-tool&utm_source=backlinko.com&utm_medium=referral",
+    "https://backlinko.com/hub/content/google-trends",
+    "https://backlinko.com/hub/seo/search-intent",
+    "https://backlinko.com/hub/seo/long-tail-keywords",
+    "https://backlinko.com/google-search-console",
+    "https://backlinko.com/local-seo-guide",
+    "https://trafficthinktank.com/keyword-search-volume/",
+    "https://backlinko.com/seo-competitor-analysis",
+    "https://backlinko.com/commercial-intent",
+    "https://www.semrush.com/analytics/keywordoverview/?utm_campaign=free-keyword-tool&utm_source=backlinko.com&utm_medium=referral",
+    "https://www.semrush.com/?utm_campaign=free-keyword-tool&utm_source=backlinko.com&utm_medium=referral",
+    "https://www.semrush.com/blog/us-search-volume-update/?utm_campaign=free-keyword-tool&utm_source=backlinko.com&utm_medium=referral",
+    "https://backlinko.com/google-keyword-planner",
+    "https://backlinko.com/hub/seo/moz-pro",
+    "https://backlinko.com/ahrefs-guide",
+    "https://backlinko.com/ppc-keyword-cost",
+    "https://backlinko.com/mangools-review",
+    "https://www.semrush.com/apps/serp-gap-analyzer/?utm_campaign=free-keyword-tool&utm_source=backlinko.com&utm_medium=referral",
+    "https://www.semrush.com/signup/?src=header&utm_campaign=free-keyword-tool&utm_source=backlinko.com&utm_medium=referral",
+    "https://www.semrush.com/analytics/keywordgap/?utm_campaign=free-keyword-tool&utm_source=backlinko.com&utm_medium=referral",
+    "https://backlinko.com/hub/seo/semrush",
+    "https://twitter.com/share?text=Free%20Keyword%20Research%20Tool%20by%20Backlinko&url=https%3A%2F%2Fbacklinko.com%2Ftools%2Fkeyword&via=Backlinko",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbacklinko.com%2Ftools%2Fkeyword",
+    "https://www.reddit.com/submit?url=https%3A%2F%2Fbacklinko.com%2Ftools%2Fkeyword&title=Free%20Keyword%20Research%20Tool%20by%20Backlinko",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fbacklinko.com%2Ftools%2Fkeyword&summary=Free%20Keyword%20Research%20Tool%20by%20Backlinko",
+    "https://backlinko.com/blog",
+    "https://www.semrush.com/ai-seo/overview/",
+    "https://backlinko.com/deals/semrush-coupon",
+    "https://backlinko.com/contact",
+    "https://twitter.com/backlinko",
+    "https://www.youtube.com/@BacklinkoTeam",
+    "https://www.instagram.com/briandean/",
+    "https://www.semrush.com/company/legal/terms-of-service/?utm_source=backlinko.com&utm_medium=referral",
+    "https://www.semrush.com/company/legal/privacy-policy/?utm_source=backlinko.com&utm_medium=referral"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://backlinko.com/_next/image?url=https%3A%2F%2Fapi.backlinko.com%2Fapp%2Fuploads%2F2024%2F01%2FKeyword-Research.png&w=640&q=75",
+        "alt": "Keyword-Research",
+        "w": 286,
+        "h": 294
+      },
+      {
+        "src": "https://backlinko.com/_next/image?url=https%3A%2F%2Fapi.backlinko.com%2Fapp%2Fuploads%2F2025%2F11%2Fleigh-profile-pic.jpg&w=640&q=75",
+        "alt": "leigh-profile-pic",
+        "w": 149,
+        "h": 149
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/01/organic-research-baclinko-positions-top-10-768x325.webp",
+        "alt": "Organic Research – Backlinko – Positions – Top 10",
+        "w": 700,
+        "h": 296
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2024/10/google-trends-interest-over-time-smart-doorbell-768x503.webp",
+        "alt": "Google Trends – Interest Over Time – Smart doorbell",
+        "w": 700,
+        "h": 458
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/01/keyword-overview-ecommerce-email-marketing-software-768x565.webp",
+        "alt": "Keyword Overview – eCommerce email marketing software",
+        "w": 700,
+        "h": 514
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2024/01/Leigh-avatar.png",
+        "alt": "",
+        "w": 512,
+        "h": 512
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2024/01/Leigh-avatar.png",
+        "alt": "",
+        "w": 512,
+        "h": 512
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/01/organic-research-ahrefs-positions-768x702.webp",
+        "alt": "Organic Research – Ahrefs – Positions",
+        "w": 700,
+        "h": 639
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2024/01/serpstat-homepage-768x568.webp",
+        "alt": "Serpstat – Homepage",
+        "w": 700,
+        "h": 517
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/01/sistrix-keyword-tool-768x587.webp",
+        "alt": "Sistrix – Keyword tool",
+        "w": 700,
+        "h": 535
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2024/08/mangools-homepage-768x535.webp",
+        "alt": "Mangools – Homepage",
+        "w": 700,
+        "h": 487
+      }
+    ],
+    "allImgCount": 49,
+    "cssBackgrounds": [],
+    "modals": [
+      "About cookies on this siteWe use cookies to run our website, analyze your use of our services, manage your online preferences & personalize ad content. By accepting our cookies, you'll get relevant content and social media features, personalized ads, and an enhanced browsing experience. To manage your choices, click “Cookie Settings.” Necessary cookies are required for the core website functionality and cannot be rejected. For more information, see ourCookie Policy.Allow all cookiesDeny allCookie settings"
+    ],
+    "videos": [],
+    "iframes": [
+      {
+        "src": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LekP9gtAAAAAAZpR5vPPD0Berfc7RjjEUP2yXju&co=aHR0cHM6Ly9iYWNrbGlua28uY29tOjQ0Mw..&hl=en&v=NhfdZHzre16wrc2m6BxEdu7J&size=invisible&anchor-ms=20000&execute-ms=30000&cb=axtp7gc5q5le",
+        "title": "reCAPTCHA"
+      }
+    ]
+  },
+  "customProps": {
+    "--fa-font-solid": "normal 900 1em/1 \"Font Awesome 6 Free\"",
+    "--fa-font-regular": "normal 400 1em/1 \"Font Awesome 6 Free\"",
+    "--fa-font-light": "normal 300 1em/1 \"Font Awesome 6 Pro\"",
+    "--fa-font-thin": "normal 100 1em/1 \"Font Awesome 6 Pro\"",
+    "--fa-font-duotone": "normal 900 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-regular": "normal 400 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-light": "normal 300 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-thin": "normal 100 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-brands": "normal 400 1em/1 \"Font Awesome 6 Brands\"",
+    "--fa-font-sharp-solid": "normal 900 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-regular": "normal 400 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-light": "normal 300 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-thin": "normal 100 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-duotone-solid": "normal 900 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-regular": "normal 400 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-light": "normal 300 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-thin": "normal 100 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--app-height": "100svh",
+    "--backlinko-bar-height": "62px",
+    "--sl-widgets-font-family": "-apple-system, system-ui",
+    "--sl-widgets-base-unit": "16px"
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 36,
+    "mainTextLen": 21793,
+    "realImageCount": 11,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "dev.visualwebsiteoptimizer.com",
+        "path": "/j.php",
+        "query": [
+          "a",
+          "ph",
+          "st",
+          "u",
+          "vn",
+          "x"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://dev.visualwebsiteoptimizer.com/j.php",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "pagead2.googlesyndication.com",
+        "path": "/ccm/collect",
+        "query": [
+          "ae",
+          "apvc",
+          "dl",
+          "dma",
+          "dma_cps",
+          "en",
+          "ep.ads_data_redaction",
+          "fmt",
+          "frm",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "navt",
+          "npa",
+          "rcb",
+          "rnd",
+          "scrsrc",
+          "tag_exp",
+          "tfd",
+          "tft"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "status": 200,
+        "bytes": null,
+        "hits": 3,
+        "example": "https://pagead2.googlesyndication.com/ccm/collect",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "region-eu.cookiehub.net",
+        "path": "/",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 28,
+        "hits": 1,
+        "example": "https://region-eu.cookiehub.net/",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "cdn.cookiehub.eu",
+        "path": "/client/7417b56b/en.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://cdn.cookiehub.eu/client/7417b56b/en.json",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 15368,
+        "hits": 2,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 56343,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+        "query": [
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 6695,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 9086,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 10416,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 15801,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "api.backlinko.com",
+        "path": "/wp-json/backlinkostats/v1/shares/{n}",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://api.backlinko.com/wp-json/backlinkostats/v1/shares/168539",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 47465,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 44227,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 32531,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 46349,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 9030,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 19882,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 11092,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/leigh-mckenzie.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 7358,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/leigh-mckenzie.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 26509,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 24511,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "www.semrush.com",
+        "path": "/olaf/init",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://www.semrush.com/olaf/init",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 37708,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 51872,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 37237,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 21088,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 56858,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 42872,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "region1.google-analytics.com",
+        "path": "/g/collect",
+        "query": [
+          "_eu",
+          "_fv",
+          "_nsi",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "cid",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dp",
+          "dt",
+          "en",
+          "ep.container_id",
+          "frm",
+          "gaf",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "status": 204,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://region1.google-analytics.com/g/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "js.sparkloop.app",
+        "path": "/team_d05f5749d84d/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "status": 301,
+        "bytes": 167,
+        "hits": 1,
+        "example": "https://js.sparkloop.app/team_d05f5749d84d/settings",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "script-settings.sparkloop.app",
+        "path": "/team_d05f5749d84d/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://script-settings.sparkloop.app/team_d05f5749d84d/settings",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "streaming.bi.owox.com",
+        "path": "/ga4/{hash}/g/collect",
+        "query": [
+          "_eu",
+          "_fplc",
+          "_fv",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "cid",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dp",
+          "dt",
+          "ecid",
+          "en",
+          "ep.container_id",
+          "ep.page_language",
+          "ep.user_agent",
+          "frm",
+          "gaf",
+          "gap.sstd",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "richsstsse",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "sst.etld",
+          "sst.gch",
+          "sst.gcsub",
+          "sst.lpc",
+          "sst.navt",
+          "sst.rnd",
+          "sst.tft",
+          "sst.ude",
+          "sst.us_privacy",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "ur",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/gif",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://streaming.bi.owox.com/ga4/9bb752a08674f116753ca5719dda03ed/g/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "rum-collector-2.pingdom.net",
+        "path": "/img/beacon.gif",
+        "query": [
+          "bIH",
+          "bIW",
+          "cE",
+          "cS",
+          "dC",
+          "dCLEE",
+          "dCLES",
+          "dI",
+          "dL",
+          "dLE",
+          "dLS",
+          "dPR",
+          "fS",
+          "hS",
+          "id",
+          "lEE",
+          "lES",
+          "nS",
+          "nT",
+          "or",
+          "pD",
+          "path",
+          "rC",
+          "rE",
+          "rS",
+          "rV",
+          "reS",
+          "ref",
+          "resE",
+          "resS",
+          "s",
+          "sAH",
+          "sAW",
+          "sIS",
+          "sId",
+          "sST",
+          "title",
+          "uEE",
+          "uES",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": null,
+        "status": 200,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://rum-collector-2.pingdom.net/img/beacon.gif",
+        "sameSite": false
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "www.googletagmanager.com",
+        "count": 5
+      },
+      {
+        "host": "rum-static.pingdom.net",
+        "count": 2
+      },
+      {
+        "host": "www.google.com",
+        "count": 2
+      },
+      {
+        "host": "www.gstatic.com",
+        "count": 2
+      },
+      {
+        "host": "cdn.cookiehub.eu",
+        "count": 1
+      },
+      {
+        "host": "js.sparkloop.app",
+        "count": 1
+      },
+      {
+        "host": "script.sparkloop.app",
+        "count": 1
+      },
+      {
+        "host": "www.semrush.com",
+        "count": 1
+      }
+    ],
+    "truncated": false,
+    "inlineData": [
+      {
+        "id": "__NEXT_DATA__",
+        "type": "application/json",
+        "bytes": 203877,
+        "topLevelKeys": [
+          "props",
+          "page",
+          "query",
+          "buildId",
+          "isFallback",
+          "isExperimentalCompile",
+          "gsp",
+          "scriptLoader"
+        ]
+      }
+    ],
+    "globalState": [
+      "__NEXT_DATA__",
+      "dataLayer"
+    ],
+    "frameworkHints": [
+      "next"
+    ],
+    "forms": [
+      {
+        "action": "https://backlinko.com/tools/keyword",
+        "hasAction": false,
+        "method": "get",
+        "sameOrigin": true,
+        "fieldCount": 1,
+        "fieldNames": [],
+        "search": false
+      },
+      {
+        "action": "https://www.semrush.com/analytics/keywordoverview/",
+        "hasAction": true,
+        "method": "get",
+        "sameOrigin": false,
+        "fieldCount": 1,
+        "fieldNames": [
+          "q"
+        ],
+        "search": true
+      }
+    ],
+    "ariaLiveRegions": 1,
+    "triggers": [
+      {
+        "marker": "aria-haspopup",
+        "href": null
+      },
+      {
+        "marker": "aria-haspopup",
+        "href": null
+      }
+    ],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 26,
+      "thirdPartyEndpoints": 10,
+      "thirdPartyScriptHosts": 8,
+      "inlineDataBlobs": 1,
+      "forms": 2,
+      "searchForms": 1,
+      "hydrated": true
+    }
+  },
+  "screenshot": "assets/screenshots/keyword-research-tool-analysis.png",
+  "renderedHtml": "pages/keyword-research-tool-analysis.html"
+}

@@ -1,0 +1,1751 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-26T14:59:57.620Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "html-tags",
+  "url": "https://backlinko.com/html-tags",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-26T14:59:57.620Z",
+  "finalUrl": "https://backlinko.com/html-tags",
+  "title": "8 HTML Tags for SEO (The Ones That Actually Matter)",
+  "description": null,
+  "og": {
+    "title": "8 HTML Tags for SEO (The Ones That Actually Matter)",
+    "description": "Do you need to know HTML to be good at SEO? No. Are there some HTML tags that you should at least know how to use properly? Definitely. But there really are only a handful of important ones. And in this guide, I’ll go over each of these, what they do, and how you can …",
+    "image": "https://api.backlinko.com/app/uploads/2025/04/html-tags-for-seo-featured-image.png",
+    "type": "article"
+  },
+  "headings": [
+    {
+      "tag": "h2",
+      "text": "About cookies on this site"
+    },
+    {
+      "tag": "h3",
+      "text": ".semrush_svg__cls-2{fill:#181e15}Semrush helps you:"
+    },
+    {
+      "tag": "h3",
+      "text": "Backlinko readers get:"
+    },
+    {
+      "tag": "h6",
+      "text": "AI Keyword Ideas in Seconds"
+    },
+    {
+      "tag": "h1",
+      "text": "8 HTML Tags for SEO (The Ones That Actually Matter)"
+    },
+    {
+      "tag": "h2",
+      "text": "1. Title Tag"
+    },
+    {
+      "tag": "h3",
+      "text": "Title Tag Best Practices"
+    },
+    {
+      "tag": "h4",
+      "text": "Front-Load Your Primary Keyword"
+    },
+    {
+      "tag": "h4",
+      "text": "Keep It Concise But Descriptive"
+    },
+    {
+      "tag": "h4",
+      "text": "Make It Stand Out"
+    },
+    {
+      "tag": "h2",
+      "text": "2. Heading Tags (H1-H6)"
+    },
+    {
+      "tag": "h3",
+      "text": "Heading Tags Best Practices"
+    },
+    {
+      "tag": "h4",
+      "text": "Closely Match Your H1 to Your Title Tag"
+    },
+    {
+      "tag": "h4",
+      "text": "Include Target Keywords (Naturally)"
+    },
+    {
+      "tag": "h4",
+      "text": "Keep Headings Concise and Descriptive"
+    },
+    {
+      "tag": "h2",
+      "text": "3. Robots Meta Tag"
+    },
+    {
+      "tag": "h3",
+      "text": "Robots Meta Tag Best Practices"
+    },
+    {
+      "tag": "h4",
+      "text": "Default to “index, follow” for Most Pages"
+    },
+    {
+      "tag": "h4",
+      "text": "Use “noindex” Strategically"
+    },
+    {
+      "tag": "h4",
+      "text": "Remember That “noindex” Prevents Indexing, Not Crawling"
+    },
+    {
+      "tag": "h2",
+      "text": "4. Canonical Tag"
+    },
+    {
+      "tag": "h3",
+      "text": "Canonical Tag Best Practices"
+    },
+    {
+      "tag": "h4",
+      "text": "Use Absolute URLs, Not Relative Paths"
+    },
+    {
+      "tag": "h4",
+      "text": "Be Consistent with Trailing Slashes"
+    },
+    {
+      "tag": "h2",
+      "text": "5. Link Tags"
+    },
+    {
+      "tag": "h3",
+      "text": "Link Tag Best Practices"
+    },
+    {
+      "tag": "h4",
+      "text": "Use “nofollow” for Sites You Don’t Want to Endorse"
+    },
+    {
+      "tag": "h4",
+      "text": "Use “sponsored” for Affiliate and Sponsor Links"
+    },
+    {
+      "tag": "h4",
+      "text": "Use “ugc” for Links to User-Generated Content"
+    },
+    {
+      "tag": "h2",
+      "text": "6. Hreflang Tag"
+    },
+    {
+      "tag": "h3",
+      "text": "Hreflang Tag Best Practices"
+    },
+    {
+      "tag": "h4",
+      "text": "Use the Correct Language and Country Codes"
+    },
+    {
+      "tag": "h4",
+      "text": "Implement Complete Hreflang Return Tags"
+    },
+    {
+      "tag": "h4",
+      "text": "Use X-Default for Fallback Pages"
+    },
+    {
+      "tag": "h4",
+      "text": "Use Absolute URLs"
+    },
+    {
+      "tag": "h2",
+      "text": "7. Alt Tags"
+    },
+    {
+      "tag": "h3",
+      "text": "Alt Text Best Practices"
+    },
+    {
+      "tag": "h4",
+      "text": "Be Specific and Descriptive"
+    },
+    {
+      "tag": "h4",
+      "text": "Keep It Concise"
+    },
+    {
+      "tag": "h4",
+      "text": "Include Your Target Keyword (When Relevant)"
+    },
+    {
+      "tag": "h4",
+      "text": "Don’t Start with “Image of” or “Picture of”"
+    },
+    {
+      "tag": "h4",
+      "text": "Use Empty Alt Attributes for Decorative Images"
+    },
+    {
+      "tag": "h2",
+      "text": "8. Meta Description Tag"
+    },
+    {
+      "tag": "h3",
+      "text": "Meta Description Best Practices"
+    },
+    {
+      "tag": "h4",
+      "text": "Keep It Within the Ideal Length"
+    },
+    {
+      "tag": "h4",
+      "text": "Include Your Primary Keyword"
+    },
+    {
+      "tag": "h4",
+      "text": "Write Compelling, Action-Oriented Copy"
+    },
+    {
+      "tag": "h2",
+      "text": "Other HTML Meta Tags"
+    },
+    {
+      "tag": "h3",
+      "text": "Viewport Meta Tag"
+    },
+    {
+      "tag": "h3",
+      "text": "Character Set (Charset) Meta Tag"
+    },
+    {
+      "tag": "h2",
+      "text": "How to Find Issues with Your Site’s HTML Tags"
+    },
+    {
+      "tag": "h3",
+      "text": "1. The Inspect Tool"
+    },
+    {
+      "tag": "h3",
+      "text": "2. The Detailed Chrome Extension"
+    },
+    {
+      "tag": "h3",
+      "text": "3. Semrush Site Audit"
+    },
+    {
+      "tag": "h4",
+      "text": "Learn"
+    },
+    {
+      "tag": "h4",
+      "text": "Company"
+    },
+    {
+      "tag": "h4",
+      "text": "Connect"
+    }
+  ],
+  "body": [
+    "Written by Chris Hanna",
+    "On this page",
+    "1. Title Tag",
+    "2. Heading Tags (H1-H6)",
+    "3. Robots Meta Tag",
+    "4. Canonical Tag",
+    "5. Link Tags",
+    "6. Hreflang Tag",
+    "7. Alt Tags",
+    "8. Meta Description Tag",
+    "Other HTML Meta Tags",
+    "How to Find Issues with Your Site’s HTML Tags",
+    "Do you need to know HTML to be good at SEO?",
+    "No.",
+    "Are there some HTML tags that you should at least know how to use properly?",
+    "Definitely.",
+    "But there really are only a handful of important ones. And in this guide, I’ll go over each of these, what they do, and how you can use them properly to optimize your site.",
+    "Here’s a quick summary of the tags I’ll cover:",
+    "There are many HTML tags that are essential for building a functional website (like <html>, <body>, and <p>) but that don’t directly impact your SEO. In this guide, I’ll focus on the tags that actually move the needle for your search rankings.",
+    "This means I won’t be covering Open Graph tags or Twitter Cards. While they might improve social sharing, they won’t directly affect your SEO.",
+    "I also won’t talk about schema markup. While incredibly powerful for SEO, schema isn’t an HTML tag. If you do want to learn more about it, check out our complete guide to schema markup.",
+    "SEO Impact: High",
+    "Your title tag is arguably the most important HTML tag from an SEO perspective.",
+    "This one line of code tells search engines what your page is about. Plus, it can affect where you appear in search results, as Google uses it as a ranking signal.",
+    "Here’s what a title tag looks like in HTML:",
+    "And here’s how it appears in search results:",
+    "The title tag is the first thing users see in search results. So it’s your most important opportunity to convince them to click through to your site.",
+    "While they can affect rankings, the main influence is going to be on your click-through rate (CTR). But: Google often rewrites titles when it thinks a different title would better serve the searcher. In fact, a study by Zyppy found that Google rewrites about 61.6% of title tags.",
+    "(Note that it’s not actually rewriting your title tag, just displaying a different title in search results.)",
+    "For example, Google sometimes shows our article H1…",
+    "…instead of the title tag:",
+    "Even though Google often rewrites them, you should still optimize your title tags because:",
+    "They give Google useful context about your page",
+    "They’re your first chance to influence CTR",
+    "Even when it rewrites them, Google often still uses elements of your title tag in the one it displays",
+    "Here’s how to write title tags that both search engines and humans love:",
+    "Put your most important keyword at the beginning of your title when possible. This makes it immediately clear what your page is about.",
+    "So instead of this:",
+    "“A Complete Beginner’s Guide to Understanding Social Media Marketing”",
+    "Do this:",
+    "“Social Media Marketing: The Complete Beginner’s Guide”",
+    "Google typically displays the first 50-60 characters of your title tag. It’ll often truncate (cut off) anything longer than that.",
+    "Use power words, numbers, or parentheses to make your titles stand out from competitors.",
+    "Compare these two titles:",
+    "HTML Tags for SEO",
+    "17 HTML Tags That Will Skyrocket Your SEO (Proven Results)",
+    "Which one would you click?",
+    "Obviously don’t use clickbait. But consider how you can make your titles more clickworthy.",
+    "SEO Impact: High",
+    "Heading tags create a hierarchical structure for your content that helps both readers and search engines understand how your information is organized.",
+    "Here’s how heading tags look in HTML:",
+    "(Most of the time you’ll only need to go to H3/H4.)",
+    "Think of these tags like an outline for your page. They create a clear content hierarchy that Google uses to understand what your page is about.",
+    "Many sites (including this one) use heading tags to create a table of contents for easier navigation.",
+    "Heading tags also:",
+    "Improve readability by breaking up text",
+    "Help users scan your content",
+    "Make your page more accessible for people using screen readers",
+    "Here’s how to optimize your heading tags for SEO:",
+    "Your H1 should function as the main title of your page, and you only need one.",
+    "Remember the example from earlier where Google used our H1 instead of our title tag?",
+    "This happens more often than you’d think.",
+    "So, optimizing your H1s for SEO and CTR could improve your performance beyond simply providing Google and users with helpful context.",
+    "But the aim here isn’t to get Google to choose your H1 over your title tag.",
+    "Instead, by closely matching your H1 and title tag, you just make it more likely that Google will choose a relevant, keyword-focused title to display in search. Plus, when the user lands on your page, the H1 is relevant to the content they’re about to read.",
+    "Include your primary keyword in your H1 and variations of your keyword in your H2s and H3s where it makes sense.",
+    "But don’t force it. Your headings still need to read naturally.",
+    "Aim for headings that clearly communicate what the following section is about.",
+    "This makes it more likely that Google will display sections of your content in featured snippets and people also ask boxes.",
+    "Like this featured snippet…",
+    "…based on this H2 section:",
+    "Plus, they’re just better for users too, improving readability.",
+    "SEO Impact: High",
+    "The robots meta tag gives you control over how search engines interact with individual pages on your site.",
+    "Here’s what a robots meta tag looks like in HTML:",
+    "You place this tag in thesection of your HTML. It provides specific instructions to search engine crawlers that visit your page.",
+    "While the robots.txt file controls site-wide access, the robots meta tag gives you page-by-page control.",
+    "This is the first HTML tag on this list that uses attributes and values.",
+    "It’s worth explaining these because you can modify different elements (or “tags” for simplicity) with attributes and values. And it’s often the case that the specific attributes you use are what impact your SEO.",
+    "For example, in this case the “tag” is the “meta” part, “content” is the attribute, and “noindex, nofollow” are the values.",
+    "The most common directives you can use in the robots meta tag are:",
+    "index/noindex: Controls whether Google should index the page",
+    "follow/nofollow: Controls whether Google should follow links on the page",
+    "nosnippet: Stops Google displaying a description in search results (usually not what you want)",
+    "Here’s how to use the robots meta tag effectively:",
+    "Most pages should use a meta robots tag like this:",
+    "You can even simply omit the tag since this is the default behavior.",
+    "If you’re using a CMS like WordPress, it’ll likely use this default configuration for your pages. You can use plugins to provide more control, like Yoast:",
+    "Apply “noindex” to pages that shouldn’t appear in search results but are still valuable to users, such as:",
+    "Thank you pages",
+    "Admin pages",
+    "Pages still in development",
+    "Use the “follow” directive to ensure that link equity still flows through these pages even though they won’t appear in search results:",
+    "Google will still need to crawl your “noindex” pages to see the directive. It doesn’t mean the page will never be crawled.",
+    "So if you don’t want to index the page, make sure you haven’t blocked crawling in your robots.txt file.",
+    "SEO Impact: High",
+    "The canonical tag tells search engines which version of a page is the “primary” version. In other words: the one they should index and rank.",
+    "Here’s what a canonical tag looks like in HTML:",
+    "Why are canonicals important?",
+    "When Google sees multiple pages with the same or close to the same content, it has to decide which version to index and where the link equity should go.",
+    "Without canonical tags, Google makes these decisions for you, often not in your favor.",
+    "Common situations where you need canonical tags include:",
+    "When your site can be accessed through both www and non-www URLs",
+    "When products can be accessed through multiple category paths",
+    "When you have similar content across mobile and desktop versions (less common nowadays)",
+    "You’ll usually just want your main page URL to be the canonical. But when you want to change it, you might need to use a plugin if you’re using WordPress, like Yoast:",
+    "On other platforms, like Shopify and Wix, there may be page-level settings you can tweak.",
+    "Here’s how to implement canonical tags effectively:",
+    "Always use the complete URL, including the protocol (https://) in your canonical tag.",
+    "Correct:",
+    "Incorrect:",
+    "Choose whether your URLs end with a slash or not and stick with it.",
+    "If your preferred URL is https://yourdomain.com/page/, don’t canonicalize it to https://yourdomain.com/page (without the trailing slash).",
+    "Google treats these as two separate URLs.",
+    "SEO Impact: High",
+    "You use link tags to create hyperlinks between pieces of content. These can be internal (to links on your site) or external (to other websites).",
+    "But you also use link tags for things like canonicalization (see above), defining site icons, and even improving your site’s performance.",
+    "Here’s what link tags look like in HTML:",
+    "Most website platforms like WordPress will insert link tags properly any time you add a link in the post or page editor.",
+    "Beyond the <link> element in the <head> section of the page, you can also use relationship attributes in regular anchor tags within your content.",
+    "Here are the most common ones and when to use them:",
+    "Use the “nofollow” attribute when you don’t want Google to associate your site with the page you’re linking to. Or when you just don’t want to pass link authority from your site to theirs.",
+    "You might want to set your site up to automatically add this to external links that you’re not manually reviewing (like blog comments). But you can also use them for paid or sponsored links.",
+    "Nofollow was the traditional way to mark sponsored and affiliate links. But the dedicated “sponsored” attribute also works (Google says it prefers the sponsored attribute):",
+    "Finally, for comments and forum posts, you can use the “ugc” attribute:",
+    "You can also combine these attributes, so you’ll often see links like this:",
+    "SEO Impact: High",
+    "The hreflang tag tells search engines which language and geographical region a specific page is intended for.",
+    "This helps Google choose the right version to display in search results for different audiences.",
+    "Here’s what hreflang tags look like in HTML:",
+    "Without proper hreflang implementation, Google might:",
+    "Show your UK content to US users (reducing relevance and conversion potential)",
+    "Show your Spanish-language content to French-speaking users (rendering the page useless to that audience)",
+    "Treat your similar language versions as duplicate content (leading to a drop in rankings)",
+    "Note: If you’re not running a multilingual or international website, you don’t need to add or worry about hreflang tags. They only impact international SEO.",
+    "Note: If you’re not running a multilingual or international website, you don’t need to add or worry about hreflang tags. They only impact international SEO.",
+    "Here’s how to implement hreflang correctly:",
+    "Language codes follow the ISO 639-1 format (like “en” for English). Country codes use the ISO 3166-1 alpha 2 format (like “us” for the United States).",
+    "Common examples:",
+    "en-us: English in the United States",
+    "en-gb: English in Great Britain",
+    "es-es: Spanish in Spain",
+    "es-mx: Spanish in Mexico",
+    "fr: French (all regions)",
+    "You don’t need to use a regional code, but hreflang tags do need a language code.",
+    "Each language/region version must reference all other versions, including itself. This creates a complete loop of references.",
+    "For a site with English, Spanish, and French versions, you might have hreflang tags that look like this:",
+    "Each page must contain the complete set, including the tag for its own language and region (if you’re using one).",
+    "The x-default value specifies a fallback page when none of your language/region versions match the user.",
+    "It looks like this:",
+    "Always use complete URLs including the protocol (https://):",
+    "Correct:",
+    "href=”https://example.com/es/page/”",
+    "Incorrect:",
+    "href=”/es/page/”",
+    "SEO Impact: Low",
+    "Alt tags (technically attributes rather than HTML tags) provide a text description of an image. The alt tag serves multiple important purposes as it:",
+    "Makes your images accessible to visually impaired users",
+    "Appears when images fail to load",
+    "Helps search engines understand what your images show",
+    "May help your images rank in Google Image Search",
+    "Here’s what alt text looks like in HTML:",
+    "Here’s an example of useful alt text:",
+    "You can manually add alt text by editing your page’s code. But in the WordPress editor for example, you can change it with the menu on the right-hand side:",
+    "Here’s how to optimize your alt text for both users and search engines:",
+    "Describe what’s actually in the image. Think about how you’d describe the image to someone who can’t see it.",
+    "Bad example:",
+    "Good example:",
+    "Most screen readers cut off alt text at around 125 characters. Aim for alt text that’s descriptive but brief to ensure visually impaired users can understand what your images contain.",
+    "If your keyword naturally fits the image description, include it. But don’t force it if it’s not actually relevant to what the image shows.",
+    "Natural example:",
+    "“HTML title tag example showing proper keyword placement”",
+    "Forced example:",
+    "“HTML tags SEO title tags meta tags heading tags SEO optimization best practices”",
+    "The impact of including keywords in your alt text is just so low that it’s not worth doing at best and spammy at worst.",
+    "Screen readers already announce that an element is an image, so starting with “image of” is redundant.",
+    "If an image is purely decorative and doesn’t add any information to the page, use an empty alt attribute:",
+    "This tells screen readers to skip the image entirely.",
+    "SEO Impact: Low",
+    "Your meta description doesn’t directly influence your rankings. But it can play a role in convincing users to click on your result in the search engine results pages (SERPs).",
+    "Here’s what a meta description looks like in HTML:",
+    "And here’s how it typically appears in search results:",
+    "Like with title tags, it’s important to note that Google frequently rewrites meta descriptions. It often pulls relevant text from your page content instead to suit the specific query.",
+    "For example, here’s the description Google chose for the same page but for a different search query:",
+    "This is why it’s so far down on our list of HTML tags, while it often appears near the top of others.",
+    "The bottom line is that putting time and energy into optimizing your meta descriptions is simply not going to lead to measurable SEO impact for most people.",
+    "You’ll likely be able to find bigger gains by focusing on other SEO opportunities instead.",
+    "But writing a strong meta description can still increase click-through rates when Google does display your chosen description.",
+    "Here’s how to write meta descriptions that attract clicks:",
+    "Google typically truncates meta descriptions at around 155-160 characters on desktop (more like 110 characters on mobile). Aim to keep yours under this limit to avoid getting cut off mid-sentence.",
+    "When a user’s search query appears in your meta description, Google typically bolds those terms, making your result stand out.",
+    "To increase the likelihood of this happening for relevant queries, include your target keyword naturally in your description.",
+    "Your meta description should encourage clicks. Use active voice and include a clear benefit or call to action.",
+    "Bad example:",
+    "“This page is about HTML tags for SEO and how they work.”",
+    "Good example:",
+    "“Discover which HTML tags actually impact your SEO rankings and learn how to implement them correctly to boost your organic traffic.”",
+    "There are a few other meta tags that you should be aware of as a website owner. These won’t directly influence your SEO in most cases. But using them incorrectly can lead to some issues.",
+    "Let’s look at the two most important ones:",
+    "This tag helps ensure your site appears correctly on mobile devices:",
+    "The viewport tag tells browsers how to scale and size your page on different devices. Without it, mobile users might see a tiny version of your desktop site. This would provide a poor user experience and potentially lead to higher bounce rates.",
+    "How mobile-friendly your site is can affect your rankings, so it’s a good idea to use this tag properly on your site.",
+    "Further reading: Mobile SEO: The Definitive Guide",
+    "Further reading: Mobile SEO: The Definitive Guide",
+    "The meta charset tag defines the character encoding for your document. It looks like this:",
+    "This tag helps ensure your content displays correctly, and special characters appear as they should.",
+    "Not like this:",
+    "Google recommends using UTF-8 encoding as it supports virtually all characters and symbols.",
+    "Note: Most website platforms, like WordPress, Wix, and Shopify, will add these tags for you by default. You’ll rarely, if ever, need to change them.",
+    "Note: Most website platforms, like WordPress, Wix, and Shopify, will add these tags for you by default. You’ll rarely, if ever, need to change them.",
+    "Here are three ways to check your site’s HTML tags:",
+    "The quickest way to check your HTML tags on a single page is to use the inspect tool. Just right-click on the element you want to inspect (like a heading tag) or anywhere on the screen to open up the developer tools window.",
+    "You’ll be able to look at the code to find specific HTML tags. This can be a bit overwhelming at first, but you can use Ctrl/Cmd + F on your keyboard to search for specific tags.",
+    "Like this:",
+    "This is useful if you want to check for the presence of a specific tag. Or if you want to verify things like image alt text or canonical URLs.",
+    "Another option for checking HTML tags on specific pages is the Detailed Chrome extension. It shows a lot of useful information about a site’s SEO. But we’re most interested in the HTML tags it shows.",
+    "Here’s what it looks like:",
+    "It’ll show the page’s:",
+    "Title tag",
+    "Meta description",
+    "Canonical URL",
+    "Robots meta tag",
+    "Heading hierarchy",
+    "Links",
+    "Image alt tags (you’ll need to export them first)",
+    "Schema",
+    "Open Graph and Twitter Cards",
+    "If you want to check more than one page’s HTML tags, you’ll need a more powerful tool. Semrush’s Site Audit will scan your full site and highlight any issues with your HTML tags.",
+    "Just run an audit and head to the “Issues” tab. Then search for “tag” to highlight relevant issues:",
+    "Site Audit will highlight issues related to your:",
+    "Title tags",
+    "Meta description",
+    "Meta viewport tags",
+    "Canonicals",
+    "Alt attributes",
+    "Heading tags",
+    "Links",
+    "Hreflang",
+    "This makes it super useful for spotting issues across your entire site. Just click on any of the linked numbers to see each page with the relevant issue:",
+    "Go through each of these and fix the issues to improve your site’s SEO and user experience.",
+    "Note: A free Semrush account lets you audit up to 100 URLs. Or you can use this link to access a 14-day trial on a Semrush Pro subscription.",
+    "Note: A free Semrush account lets you audit up to 100 URLs. Or you can use this link to access a 14-day trial on a Semrush Pro subscription.",
+    "Backlinko is owned by Semrush. We’re still obsessed with bringing you world-class SEO insights, backed by hands-on experience. Unless otherwise noted, this content was written by either an employee or paid contractor of Semrush Inc."
+  ],
+  "codeBlocks": [
+    "<title>Information Gain: How Top Content Leaders Win at SEO</title>",
+    "<h1>Main Page Title</h1>\n<h2>Major Section Topic</h2>\n<h3>Subsection</h3>\n<h4>Further breakdown of the subsection</h4>\n<h5>Even more specific point</h5>\n<h6>The most granular level</h6>",
+    "<meta name=\"robots\" content=\"noindex, nofollow\">",
+    "<meta name=\"robots\" content=\"index, follow\">",
+    "<meta name=\"robots\" content=\"noindex, follow\">",
+    "<link rel=\"canonical\" href=\"https://yourdomain.com/preferred-page-url/\">",
+    "<link rel=\"canonical\" href=\"https://yourdomain.com/page/\">",
+    "<link rel=\"canonical\" href=\"/page/\">",
+    "<link rel=\"nofollow\" href=\"https://exampledomain.com/page/\">\n<link rel=\"stylesheet\" href=\"styles.css\">\n<link rel=\"icon\" href=\"favicon.ico\">",
+    "<a href=\"https://external-site.com\" rel=\"nofollow\">External Link</a>",
+    "<a href=\"https://product.com/ref=123\" rel=\"sponsored\">Product Link</a>",
+    "<a href=\"https://user-site.com\" rel=\"ugc\">User Comment Link</a>",
+    "<a href=\"https://user-site.com\" rel=\"ugc nofollow\">User Comment Link</a>",
+    "<link rel=\"alternate\" hreflang=\"en-us\" href=\"https://example.com/en-us/page/\">\n<link rel=\"alternate\" hreflang=\"es-mx\" href=\"https://example.com/es-mx/page/\">\n<link rel=\"alternate\" hreflang=\"fr-ca\" href=\"https://example.com/fr-ca/page/\">",
+    "<link rel=\"alternate\" hreflang=\"en\" href=\"https://example.com/en/page/\">\n<link rel=\"alternate\" hreflang=\"es\" href=\"https://example.com/es/page/\">\n<link rel=\"alternate\" hreflang=\"fr\" href=\"https://example.com/fr/page/\">",
+    "<link rel=\"alternate\" hreflang=\"x-default\" href=\"https://example.com/\">",
+    "<img src=\"html-tags-diagram.jpg\" alt=\"Diagram showing essential HTML tags for SEO with their impact levels\">",
+    "<img src=\"ingredients-on-table.jpg\" alt=\"Vegetable risotto\">",
+    "<img src=\"ingredients-on-table.jpg\" alt=\"A table with ingredients laid out for vegetable risotto\">",
+    "<img src=\"decorative-divider.jpg\" alt=\"\">",
+    "<meta name=\"description\" content=\"A backlink, also known as an inbound link or incoming link, is a link created when one website links to another website.\">",
+    "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+    "<meta charset=\"UTF-8\">"
+  ],
+  "ctas": [
+    {
+      "label": "Cookie Policy.",
+      "href": "https://www.semrush.com/company/legal/cookie-policy/"
+    },
+    {
+      "label": "Allow all cookies",
+      "href": null
+    },
+    {
+      "label": "Deny all",
+      "href": null
+    },
+    {
+      "label": "Cookie settings",
+      "href": null
+    },
+    {
+      "label": "Watch Now",
+      "href": "https://www.youtube.com/watch?v=rIGzcovF6cM"
+    },
+    {
+      "label": "Close",
+      "href": null
+    },
+    {
+      "label": "Articles",
+      "href": null
+    },
+    {
+      "label": "Tools",
+      "href": null
+    },
+    {
+      "label": "Templates",
+      "href": "/templates/marketing"
+    },
+    {
+      "label": "About",
+      "href": "/about-backlinko"
+    },
+    {
+      "label": "Newsletter",
+      "href": "/newsletter"
+    },
+    {
+      "label": "Check My Site's SEO",
+      "href": null
+    },
+    {
+      "label": "Close",
+      "href": null
+    },
+    {
+      "label": "Free access",
+      "href": "https://www.semrush.com/blog/what-can-i-do-with-a-free-account-from-semrush/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=navigation"
+    },
+    {
+      "label": "Chris Hanna",
+      "href": "/blog/authors/chris-hanna"
+    },
+    {
+      "label": "1. Title Tag",
+      "href": "#1-title-tag"
+    },
+    {
+      "label": "2. Heading Tags (H1-H6)",
+      "href": "#2-heading-tags-h-1-h-6"
+    },
+    {
+      "label": "3. Robots Meta Tag",
+      "href": "#3-robots-meta-tag"
+    },
+    {
+      "label": "4. Canonical Tag",
+      "href": "#4-canonical-tag"
+    },
+    {
+      "label": "5. Link Tags",
+      "href": "#5-link-tags"
+    },
+    {
+      "label": "6. Hreflang Tag",
+      "href": "#6-hreflang-tag"
+    },
+    {
+      "label": "7. Alt Tags",
+      "href": "#7-alt-tags"
+    },
+    {
+      "label": "8. Meta Description Tag",
+      "href": "#8-meta-description-tag"
+    },
+    {
+      "label": "Other HTML Meta Tags",
+      "href": "#other-html-meta-tags"
+    },
+    {
+      "label": "How to Find Issues with Your Site’s HTML Tags",
+      "href": "#how-to-find-issues-with-your-sites-html-tags"
+    },
+    {
+      "label": "complete guide to schema markup",
+      "href": "https://backlinko.com/schema-markup-guide"
+    },
+    {
+      "label": "ranking signal",
+      "href": "https://backlinko.com/google-ranking-factors"
+    },
+    {
+      "label": "click-through rate (CTR)",
+      "href": "https://backlinko.com/what-is-ctr"
+    },
+    {
+      "label": "a study by Zyppy",
+      "href": "https://zyppy.com/seo/title-tags/google-title-rewrite-study/"
+    },
+    {
+      "label": "title tags",
+      "href": "https://backlinko.com/title-tags"
+    },
+    {
+      "label": "featured snippets",
+      "href": "https://backlinko.com/hub/seo/featured-snippets"
+    },
+    {
+      "label": "people also ask",
+      "href": "https://backlinko.com/tools/people-also-ask"
+    },
+    {
+      "label": "robots.txt file",
+      "href": "https://backlinko.com/hub/seo/robots-txt"
+    },
+    {
+      "label": "canonical tag",
+      "href": "https://backlinko.com/canonical-url-guide"
+    },
+    {
+      "label": "Google says",
+      "href": "https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links"
+    },
+    {
+      "label": "hreflang tag",
+      "href": "https://backlinko.com/hreflang-tag"
+    },
+    {
+      "label": "international SEO",
+      "href": "https://backlinko.com/international-seo"
+    },
+    {
+      "label": "meta tags",
+      "href": "https://backlinko.com/meta-tags"
+    },
+    {
+      "label": "bounce rates",
+      "href": "https://backlinko.com/hub/seo/bounce-rate"
+    },
+    {
+      "label": "Mobile SEO: The Definitive Guide",
+      "href": "https://backlinko.com/mobile-seo-guide"
+    },
+    {
+      "label": "Google recommends",
+      "href": "https://developers.google.com/search/docs/crawling-indexing/special-tags"
+    },
+    {
+      "label": "Detailed Chrome extension",
+      "href": "https://chromewebstore.google.com/detail/detailed-seo-extension/pfjdepjjfjjahkjfpkcgfmfhmnakjfba"
+    },
+    {
+      "label": "Semrush’s Site Audit",
+      "href": "https://www.semrush.com/siteaudit/?utm_campaign=html-tags&utm_source=backlinko.com&utm_medium=referral"
+    },
+    {
+      "label": "14-day trial on a Semrush Pro subscription",
+      "href": "https://www.semrush.com/lp/backlinko-offer/en/?utm_campaign=html-tags&utm_source=backlinko.com&utm_medium=referral"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Newsletter",
+      "href": "/newsletter"
+    },
+    {
+      "label": "Templates",
+      "href": "https://backlinko.com/templates/marketing"
+    },
+    {
+      "label": "Best SEO Tools",
+      "href": "/best-free-seo-tools"
+    },
+    {
+      "label": "About",
+      "href": "/about-backlinko"
+    },
+    {
+      "label": "Semrush AI Visiblity",
+      "href": "https://www.semrush.com/ai-seo/overview/"
+    },
+    {
+      "label": "Semrush Free Trial",
+      "href": "https://backlinko.com/deals/semrush-coupon"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    },
+    {
+      "label": "Twitter",
+      "href": "https://twitter.com/backlinko"
+    },
+    {
+      "label": "YouTube",
+      "href": "https://www.youtube.com/@BacklinkoTeam"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/briandean/"
+    },
+    {
+      "label": "Terms of Service",
+      "href": "https://www.semrush.com/company/legal/terms-of-service/?utm_source=backlinko.com&utm_medium=referral"
+    }
+  ],
+  "links": [
+    "https://www.semrush.com/company/legal/cookie-policy/",
+    "https://backlinko.com/html-tags#",
+    "https://www.youtube.com/watch?v=rIGzcovF6cM",
+    "https://backlinko.com/",
+    "https://backlinko.com/ai-search-strategy",
+    "https://backlinko.com/llm-seeding",
+    "https://backlinko.com/generative-engine-optimization-geo",
+    "https://backlinko.com/hub/seo/what-is-seo",
+    "https://backlinko.com/improve-your-seo",
+    "https://backlinko.com/seo-checklist",
+    "https://backlinko.com/seo-strategy",
+    "https://backlinko.com/?p=165994",
+    "https://backlinko.com/google-e-e-a-t",
+    "https://backlinko.com/hub/seo/internal-links",
+    "https://backlinko.com/technical-seo-guide",
+    "https://backlinko.com/on-page-seo",
+    "https://backlinko.com/ecommerce-seo",
+    "https://backlinko.com/seo-certification-guide",
+    "https://backlinko.com/ai-optimization",
+    "https://backlinko.com/ai-seo",
+    "https://backlinko.com/entity-seo",
+    "https://backlinko.com/audience-research",
+    "https://backlinko.com/reddit-marketing",
+    "https://backlinko.com/?p=193164",
+    "https://backlinko.com/answer-engine-optimization-aeo",
+    "https://backlinko.com/seo-basics-for-beginners",
+    "https://backlinko.com/seo-tutorial",
+    "https://backlinko.com/pillar-pages",
+    "https://backlinko.com/?p=175006",
+    "https://backlinko.com/actionable-seo-tips",
+    "https://backlinko.com/small-business-seo",
+    "https://backlinko.com/schema-markup-guide",
+    "https://backlinko.com/website-migration-checklist",
+    "https://backlinko.com/hub/content/what-is-content-marketing",
+    "https://backlinko.com/seo-copywriting",
+    "https://backlinko.com/?p=103911",
+    "https://backlinko.com/content-marketing-this-year",
+    "https://backlinko.com/?p=190262",
+    "https://backlinko.com/?p=172343",
+    "https://backlinko.com/scale-content",
+    "https://backlinko.com/hub/content/writing",
+    "https://backlinko.com/link-building",
+    "https://backlinko.com/hub/seo/backlinks",
+    "https://backlinko.com/high-quality-backlinks",
+    "https://backlinko.com/link-building-strategies",
+    "https://backlinko.com/link-building-services",
+    "https://backlinko.com/step-by-step-backlink-audit",
+    "https://backlinko.com/skyscraper-technique",
+    "https://backlinko.com/increase-domain-authority",
+    "https://backlinko.com/competitor-analysis",
+    "https://backlinko.com/?p=173056",
+    "https://backlinko.com/?p=174557",
+    "https://backlinko.com/how-to-create-a-website",
+    "https://backlinko.com/tools/seo-checker",
+    "https://backlinko.com/tools/backlink-checker",
+    "https://backlinko.com/tools/website-authority",
+    "https://backlinko.com/tools/website-traffic-checker",
+    "https://backlinko.com/tools/keyword",
+    "https://backlinko.com/tools/keyword-difficulty-checker",
+    "https://backlinko.com/tools/competitor-analysis",
+    "https://backlinko.com/tools/schema-markup-generator",
+    "https://backlinko.com/tools/ai-visibility-checker",
+    "https://backlinko.com/tools/ai-agent-readiness",
+    "https://backlinko.com/tools/agentic-browsing-readiness",
+    "https://backlinko.com/best-free-seo-tools",
+    "https://backlinko.com/llm-tracking-tools",
+    "https://backlinko.com/keyword-research-tools",
+    "https://backlinko.com/?p=98736",
+    "https://backlinko.com/link-building-tools",
+    "https://backlinko.com/best-rank-tracking-tools",
+    "https://backlinko.com/?p=171633",
+    "https://backlinko.com/seo-software-agencies",
+    "https://backlinko.com/ai-seo-tools",
+    "https://backlinko.com/sitemap-generator-tools",
+    "https://backlinko.com/best-digital-marketing-tools",
+    "https://backlinko.com/?p=170722",
+    "https://backlinko.com/semrush-review",
+    "https://backlinko.com/ahrefs-review",
+    "https://backlinko.com/ahrefs-vs-semrush",
+    "https://backlinko.com/clearscope-review",
+    "https://backlinko.com/majestic-seo-review",
+    "https://backlinko.com/surfer-seo",
+    "https://backlinko.com/serpstat-review",
+    "https://backlinko.com/sparktoro-review",
+    "https://backlinko.com/templates/marketing",
+    "https://backlinko.com/about-backlinko",
+    "https://backlinko.com/newsletter",
+    "https://www.semrush.com/blog/what-can-i-do-with-a-free-account-from-semrush/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=navigation",
+    "https://backlinko.com/blog/authors/chris-hanna",
+    "https://backlinko.com/html-tags#1-title-tag",
+    "https://backlinko.com/html-tags#2-heading-tags-h-1-h-6",
+    "https://backlinko.com/html-tags#3-robots-meta-tag",
+    "https://backlinko.com/html-tags#4-canonical-tag",
+    "https://backlinko.com/html-tags#5-link-tags",
+    "https://backlinko.com/html-tags#6-hreflang-tag",
+    "https://backlinko.com/html-tags#7-alt-tags",
+    "https://backlinko.com/html-tags#8-meta-description-tag",
+    "https://backlinko.com/html-tags#other-html-meta-tags",
+    "https://backlinko.com/html-tags#how-to-find-issues-with-your-sites-html-tags",
+    "https://backlinko.com/google-ranking-factors",
+    "https://backlinko.com/what-is-ctr",
+    "https://zyppy.com/seo/title-tags/google-title-rewrite-study/",
+    "https://backlinko.com/title-tags",
+    "https://backlinko.com/hub/seo/featured-snippets",
+    "https://backlinko.com/tools/people-also-ask",
+    "https://backlinko.com/hub/seo/robots-txt",
+    "https://backlinko.com/canonical-url-guide",
+    "https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links",
+    "https://backlinko.com/hreflang-tag",
+    "https://backlinko.com/international-seo",
+    "https://backlinko.com/meta-tags",
+    "https://backlinko.com/hub/seo/bounce-rate",
+    "https://backlinko.com/mobile-seo-guide",
+    "https://developers.google.com/search/docs/crawling-indexing/special-tags",
+    "https://chromewebstore.google.com/detail/detailed-seo-extension/pfjdepjjfjjahkjfpkcgfmfhmnakjfba",
+    "https://www.semrush.com/siteaudit/?utm_campaign=html-tags&utm_source=backlinko.com&utm_medium=referral",
+    "https://www.semrush.com/lp/backlinko-offer/en/?utm_campaign=html-tags&utm_source=backlinko.com&utm_medium=referral",
+    "https://twitter.com/share?text=8%20HTML%20Tags%20for%20SEO%20(The%20Ones%20That%20Actually%20Matter)&url=https%3A%2F%2Fbacklinko.com%2Fhtml-tags&via=Backlinko",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbacklinko.com%2Fhtml-tags",
+    "https://www.reddit.com/submit?url=https%3A%2F%2Fbacklinko.com%2Fhtml-tags&title=8%20HTML%20Tags%20for%20SEO%20(The%20Ones%20That%20Actually%20Matter)",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fbacklinko.com%2Fhtml-tags&summary=8%20HTML%20Tags%20for%20SEO%20(The%20Ones%20That%20Actually%20Matter)",
+    "https://backlinko.com/blog",
+    "https://www.semrush.com/ai-seo/overview/",
+    "https://backlinko.com/deals/semrush-coupon",
+    "https://backlinko.com/contact",
+    "https://twitter.com/backlinko",
+    "https://www.youtube.com/@BacklinkoTeam",
+    "https://www.instagram.com/briandean/",
+    "https://www.semrush.com/company/legal/terms-of-service/?utm_source=backlinko.com&utm_medium=referral",
+    "https://www.semrush.com/company/legal/privacy-policy/?utm_source=backlinko.com&utm_medium=referral"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://backlinko.com/_next/image?url=https%3A%2F%2Fapi.backlinko.com%2Fapp%2Fuploads%2F2024%2F06%2Fchris-hanna.png&w=640&q=75",
+        "alt": "Chris Hanna",
+        "w": 149,
+        "h": 146
+      },
+      {
+        "src": "https://backlinko.com/_next/image?url=https%3A%2F%2Fapi.backlinko.com%2Fapp%2Fuploads%2F2025%2F04%2Fhtml-tags-for-seo-featured-image.png&w=1080&q=75",
+        "alt": "HTML Tags for SEO – Featured image",
+        "w": 960,
+        "h": 536
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/04/components-of-a-meta-tag-1-768x402.webp",
+        "alt": "Components of a Meta Tag",
+        "w": 700,
+        "h": 366
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/04/yoast-advanced-settings-640x497.webp",
+        "alt": "Yoast – Advanced settings",
+        "w": 599,
+        "h": 465
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/04/gsc-page-indexing-google-chose-different-canonical-than-user-768x786.webp",
+        "alt": "GSC – Page indexing – Google chose different canonical than user",
+        "w": 700,
+        "h": 716
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/04/backlinko-meta-description-tag-768x340.webp",
+        "alt": "Backlinko – Meta description tag",
+        "w": 700,
+        "h": 309
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/04/google-chose-description-for-different-search-query-768x317.webp",
+        "alt": "Google chose description for different search query",
+        "w": 700,
+        "h": 288
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/04/truncated-description-768x177.webp",
+        "alt": "Truncated description",
+        "w": 700,
+        "h": 161
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/04/google-bolds-terms-in-description-768x160.webp",
+        "alt": "Google bolds terms in description",
+        "w": 700,
+        "h": 145
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2024/06/icon-further-reading.png",
+        "alt": "",
+        "w": 2500,
+        "h": 2500
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2024/06/icon-further-reading.png",
+        "alt": "",
+        "w": 2500,
+        "h": 2500
+      }
+    ],
+    "allImgCount": 34,
+    "cssBackgrounds": [],
+    "modals": [
+      "About cookies on this siteWe use cookies to run our website, analyze your use of our services, manage your online preferences & personalize ad content. By accepting our cookies, you'll get relevant content and social media features, personalized ads, and an enhanced browsing experience. To manage your choices, click “Cookie Settings.” Necessary cookies are required for the core website functionality and cannot be rejected. For more information, see ourCookie Policy.Allow all cookiesDeny allCookie settings"
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {
+    "--fa-font-solid": "normal 900 1em/1 \"Font Awesome 6 Free\"",
+    "--fa-font-regular": "normal 400 1em/1 \"Font Awesome 6 Free\"",
+    "--fa-font-light": "normal 300 1em/1 \"Font Awesome 6 Pro\"",
+    "--fa-font-thin": "normal 100 1em/1 \"Font Awesome 6 Pro\"",
+    "--fa-font-duotone": "normal 900 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-regular": "normal 400 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-light": "normal 300 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-thin": "normal 100 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-brands": "normal 400 1em/1 \"Font Awesome 6 Brands\"",
+    "--fa-font-sharp-solid": "normal 900 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-regular": "normal 400 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-light": "normal 300 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-thin": "normal 100 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-duotone-solid": "normal 900 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-regular": "normal 400 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-light": "normal 300 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-thin": "normal 100 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--app-height": "100svh",
+    "--backlinko-bar-height": "62px",
+    "--sl-widgets-font-family": "-apple-system, system-ui",
+    "--sl-widgets-base-unit": "16px"
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 57,
+    "mainTextLen": 22573,
+    "realImageCount": 11,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "dev.visualwebsiteoptimizer.com",
+        "path": "/j.php",
+        "query": [
+          "a",
+          "ph",
+          "st",
+          "u",
+          "vn",
+          "x"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://dev.visualwebsiteoptimizer.com/j.php",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "region-eu.cookiehub.net",
+        "path": "/",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 28,
+        "hits": 1,
+        "example": "https://region-eu.cookiehub.net/",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "pagead2.googlesyndication.com",
+        "path": "/ccm/collect",
+        "query": [
+          "ae",
+          "apvc",
+          "dl",
+          "dma",
+          "dma_cps",
+          "en",
+          "ep.ads_data_redaction",
+          "fmt",
+          "frm",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "navt",
+          "npa",
+          "rcb",
+          "rnd",
+          "scrsrc",
+          "tag_exp",
+          "tfd",
+          "tft"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "status": 200,
+        "bytes": null,
+        "hits": 3,
+        "example": "https://pagead2.googlesyndication.com/ccm/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "cdn.cookiehub.eu",
+        "path": "/client/7417b56b/en.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://cdn.cookiehub.eu/client/7417b56b/en.json",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 56682,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 15888,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 9091,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "region1.google-analytics.com",
+        "path": "/g/collect",
+        "query": [
+          "_eu",
+          "_fv",
+          "_nsi",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "cid",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dp",
+          "dt",
+          "en",
+          "ep.container_id",
+          "frm",
+          "gaf",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "status": 204,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://region1.google-analytics.com/g/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 10392,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+        "query": [
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 6685,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 8253,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "www.semrush.com",
+        "path": "/olaf/init",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://www.semrush.com/olaf/init",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 9032,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 20906,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 46515,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 32592,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 47134,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/chris-hanna.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/chris-hanna.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 51691,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "rum-collector-2.pingdom.net",
+        "path": "/img/beacon.gif",
+        "query": [
+          "bIH",
+          "bIW",
+          "cE",
+          "cS",
+          "dC",
+          "dCLEE",
+          "dCLES",
+          "dI",
+          "dL",
+          "dLE",
+          "dLS",
+          "dPR",
+          "fS",
+          "hS",
+          "id",
+          "lEE",
+          "lES",
+          "nS",
+          "nT",
+          "or",
+          "pD",
+          "path",
+          "rC",
+          "rE",
+          "rS",
+          "rV",
+          "reS",
+          "ref",
+          "resE",
+          "resS",
+          "s",
+          "sAH",
+          "sAW",
+          "sIS",
+          "sId",
+          "sST",
+          "title",
+          "uEE",
+          "uES",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": null,
+        "status": 200,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://rum-collector-2.pingdom.net/img/beacon.gif",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "streaming.bi.owox.com",
+        "path": "/ga4/{hash}/g/collect",
+        "query": [
+          "_eu",
+          "_fplc",
+          "_fv",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "cid",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dp",
+          "dt",
+          "ecid",
+          "en",
+          "ep.container_id",
+          "ep.page_language",
+          "ep.user_agent",
+          "frm",
+          "gaf",
+          "gap.sstd",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "richsstsse",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "sst.etld",
+          "sst.gch",
+          "sst.gcsub",
+          "sst.lpc",
+          "sst.navt",
+          "sst.rnd",
+          "sst.tft",
+          "sst.ude",
+          "sst.us_privacy",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "ur",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/gif",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://streaming.bi.owox.com/ga4/9bb752a08674f116753ca5719dda03ed/g/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 26528,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 56812,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 37803,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 19793,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 24460,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 15298,
+        "hits": 2,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 43844,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 44155,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 37436,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 11235,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "api.backlinko.com",
+        "path": "/wp-json/backlinkostats/v1/shares/{n}",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://api.backlinko.com/wp-json/backlinkostats/v1/shares/169800",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "js.sparkloop.app",
+        "path": "/team_d05f5749d84d/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "status": 301,
+        "bytes": 167,
+        "hits": 1,
+        "example": "https://js.sparkloop.app/team_d05f5749d84d/settings",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "script-settings.sparkloop.app",
+        "path": "/team_d05f5749d84d/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://script-settings.sparkloop.app/team_d05f5749d84d/settings",
+        "sameSite": false
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "www.googletagmanager.com",
+        "count": 5
+      },
+      {
+        "host": "rum-static.pingdom.net",
+        "count": 2
+      },
+      {
+        "host": "cdn.cookiehub.eu",
+        "count": 1
+      },
+      {
+        "host": "js.sparkloop.app",
+        "count": 1
+      },
+      {
+        "host": "script.sparkloop.app",
+        "count": 1
+      },
+      {
+        "host": "www.semrush.com",
+        "count": 1
+      }
+    ],
+    "truncated": false,
+    "inlineData": [
+      {
+        "id": "__NEXT_DATA__",
+        "type": "application/json",
+        "bytes": 155562,
+        "topLevelKeys": [
+          "props",
+          "page",
+          "query",
+          "buildId",
+          "isFallback",
+          "isExperimentalCompile",
+          "gsp",
+          "scriptLoader"
+        ]
+      }
+    ],
+    "globalState": [
+      "__NEXT_DATA__",
+      "dataLayer"
+    ],
+    "frameworkHints": [
+      "next"
+    ],
+    "forms": [],
+    "ariaLiveRegions": 1,
+    "triggers": [
+      {
+        "marker": "aria-haspopup",
+        "href": null
+      }
+    ],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 26,
+      "thirdPartyEndpoints": 10,
+      "thirdPartyScriptHosts": 6,
+      "inlineDataBlobs": 1,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": true
+    }
+  },
+  "screenshot": "assets/screenshots/html-tags.png",
+  "renderedHtml": "pages/html-tags.html"
+}

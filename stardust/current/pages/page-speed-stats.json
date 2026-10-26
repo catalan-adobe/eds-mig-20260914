@@ -1,0 +1,1461 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-26T14:59:02.811Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "page-speed-stats",
+  "url": "https://backlinko.com/page-speed-stats",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-26T14:59:02.811Z",
+  "finalUrl": "https://backlinko.com/page-speed-stats",
+  "title": "We Analyzed 5.2 Million Webpages. Here's What We Learned About PageSpeed",
+  "description": "A page speed study of over 5 million webpages. Contains lots of interersting page loading speed stats.",
+  "og": {
+    "title": "We Analyzed 5.2 Million Webpages. Here's What We Learned About PageSpeed",
+    "description": "A page speed study of over 5 million webpages. Contains lots of interersting page loading speed stats.",
+    "image": "https://api.backlinko.com/app/uploads/2019/10/page-speed-stats-social-1.png",
+    "type": "article"
+  },
+  "headings": [
+    {
+      "tag": "h2",
+      "text": "About cookies on this site"
+    },
+    {
+      "tag": "h3",
+      "text": ".semrush_svg__cls-2{fill:#181e15}Semrush helps you:"
+    },
+    {
+      "tag": "h3",
+      "text": "Backlinko readers get:"
+    },
+    {
+      "tag": "h1",
+      "text": "We Analyzed 5.2 Million Desktop and Mobile Pages. Here’s What We Learned About Page Speed"
+    },
+    {
+      "tag": "h2",
+      "text": "Benchmarks for Key Page Speed Load Time Metrics"
+    },
+    {
+      "tag": "h2",
+      "text": "Weebly and Squarespace Have the Best Overall Speed Performance. WordPress Has One of the Worst"
+    },
+    {
+      "tag": "h2",
+      "text": "Using a CDN May Help Desktop TTFB. Minimizing HTML Requests Is Key For Mobile TTFB"
+    },
+    {
+      "tag": "h2",
+      "text": "Large Pages Take 381% Longer to “Visually Complete” Load Compared to Smaller Pages"
+    },
+    {
+      "tag": "h2",
+      "text": "Total Page Weight Is Closely Tied to “Fully Loaded” Page Speed"
+    },
+    {
+      "tag": "h2",
+      "text": "Wink and Gatsby are the Fastest JavaScript Frameworks for Average-Sized Webpages"
+    },
+    {
+      "tag": "h2",
+      "text": "Pages with Low or High Compression Levels Have the Fastest Load Times"
+    },
+    {
+      "tag": "h2",
+      "text": "Third-Party Scripts Negatively Impact Load Times"
+    },
+    {
+      "tag": "h2",
+      "text": "Responsive Images Appear to Improve Page Load Times More Than Lazy Loading and Use of WebP"
+    },
+    {
+      "tag": "h2",
+      "text": "GitHub and Weebly Hosting Has the Best TTFB Performance. Siteground and Wix Have The Worst"
+    },
+    {
+      "tag": "h2",
+      "text": "China, Japan and Germany Have the Fastest TTFB Load Times"
+    },
+    {
+      "tag": "h2",
+      "text": "Pages With CDNs Perform Worse Than Those Without a CDN"
+    },
+    {
+      "tag": "h3",
+      "text": "Reveal Your Competitor Secrets for Free"
+    },
+    {
+      "tag": "h4",
+      "text": "Learn"
+    },
+    {
+      "tag": "h4",
+      "text": "Company"
+    },
+    {
+      "tag": "h4",
+      "text": "Connect"
+    }
+  ],
+  "body": [
+    "Written by Brian Dean",
+    "3793 shares",
+    "We analyzed 5 million desktop and mobile pages to learn which factors impact page speed.",
+    "First, we established worldwide benchmarks for TTFB, Visual Complete and Fully Loaded load time metrics.",
+    "Then, we looked at how image compression, CDNs and hosting impact site loading speed.",
+    "Our data revealed some very interesting (and surprising) insights.",
+    "Here is a Summary of Our Key Findings:",
+    "1. In our analysis of 5.2 million pages, the average desktop Time to First Byte (TTFB) speed is 1.286 seconds on desktop and 2.594 seconds on mobile. The average time it takes to fully load a webpage is 10.3 seconds on desktop and 27.3 seconds on mobile.",
+    "2. The average web page takes 87.84% longer to load on mobile vs. desktop.",
+    "3. When comparing major CMSs against one another, Squarespace and Weebly have the best overall mobile page speed performance. Wix and WordPress ranked near the bottom.",
+    "4. On desktop, CDNs have the biggest impact on TTFB. However, on mobile devices, the number of HTML requests seems to affect TTFB the most.",
+    "5. Overall page size has a significant impact on desktop and mobile “Visually Complete” loading speed. Larger pages take 318% longer to visually load compared to smaller pages. We also found that gzip compression helps images load more quickly on both desktop and mobile.",
+    "6. Total page weight is the #1 determinant of Fully Loaded page speed. Light pages fully load 486% faster than large pages.",
+    "7. Wink and Gatsby are the fastest Javascript frameworks. Meteor and Tweenmax are the slowest. The fastest framework is 213% faster than the slowest.",
+    "8. Pages with very low or very high file compression have above-average page speed performance (measured via First Contextual Paint).",
+    "9. Third-party scripts significantly slow down page loading speed. Each third party script added to a page increases load time by 34.1 milliseconds.",
+    "10. We discovered that using responsive images results in the best overall image loading performance. Use of WebP was significantly less effective at reducing image load times.",
+    "11. GitHub and Weebly web hosts have the fastest overall TTFB Performance. Siteground and Wix are the slowest among the hosting providers that we analyzed.",
+    "12. China, Japan, and Germany have the fastest TTFB loading times. Australia, India and Brazil have the slowest TTFB times.",
+    "13. CDN usage was correlated with worse page speed performance. This is likely due to the fact that certain CDNs perform significantly better than others.",
+    "Our first task was to establish benchmarks for important page speed metrics.",
+    "As you may know, “page speed” is actually made up of several distinct stages.",
+    "Some of these stages occur at the server level. And others take place within the user’s browser.",
+    "And to fully understand how quickly pages load, we needed to drill down into each of these stages.",
+    "Specifically, we determined the average speed for:",
+    "TTFB: Time to first byte of HTML doc response",
+    "StartRender: When rendering begins",
+    "Visual Complete: User can see all page assets",
+    "Speed Index: How quickly a user sees a page load",
+    "onLoad: When all page resources (CSS, images, etc.) are downloaded",
+    "Fully Loaded: When a page is 100% loaded in a user’s browser",
+    "The average TTFB speed is 1.286 seconds on desktop and 2.594 seconds on mobile.",
+    "The average Start Render speed is 2.834 seconds on desktop and 6.709 seconds on mobile.",
+    "The average Visual Complete speed is 8.225 seconds on desktop and 21.608 seconds on mobile.",
+    "The average Speed Index speed is 4.782 seconds on desktop and 11.455 seconds on mobile.",
+    "The average onLoad speed is 8.875 seconds on desktop and 23.608 seconds on mobile.",
+    "The average Fully Loaded speed is 10.3 seconds on desktop and 27.3 seconds on mobile.",
+    "Key Takeaway: The average page loading speed for a web page is 10.3 seconds on desktop and 27.3 seconds on mobile. On average, pages take 87.84% longer to load on mobile devices than on desktop.",
+    "When it comes to page speed, which CMS is best?",
+    "To answer this question, we determined the CMS used for all of the sites in our data set. We then compared TTFB performance for each CMS that we discovered.",
+    "According to our data, Weebly and Squarespace come out on top for desktop.",
+    "And for mobile page speed, Squarespace is #1… with Adobe Experience Manager and Weebly rounding out the top 3.",
+    "What’s interesting to note is that, when it comes to mobile speed, WordPress is only the 14th best CMS that we analyzed.",
+    "Another popular CMS, Wix, also rated poorly for desktop and mobile loading speed.",
+    "Although WordPress powers approximately 30% of all websites, it’s clearly not optimized for page loading speed. That’s not to say WordPress is a bad CMS. It has other advantages (like ease of use, a massive library of plugins and SEO) that make it the go-to CMS for many site owners.",
+    "However, when looking strictly at website loading speed, it appears that other CMSs have a distinct edge over WordPress.",
+    "Key Takeaway: Among major CMSs, Squarespace and Weebly have the best mobile page speed performance. WordPress and Wix rank near the bottom.",
+    "We analyzed the impact that various page characteristics had on TTFB (time to first byte).",
+    "Here’s what we found:",
+    "As you can see, using a CDN seems to improve TTFB for both desktop and mobile. However, CDNs appear to be more helpful on desktop compared to mobile. On pages loaded via a mobile device, the number of HTML requests had the greatest impact on TTFB.",
+    "While we did find a relationship between various page characteristics and TTFB times, page-level factors won’t make or break TTFB. TTFB is largely determined by the server’s response time, something we will cover a bit later.",
+    "Key Takeaway: Using a CDN and minimizing HTML requests may speed up TTFB on both desktop and mobile.",
+    "“Visually Complete” is when all of the visual content of a webpage inside of a user’s browser is loaded.",
+    "There may be scripts and other assets loading off-screen. But from a user’s point of view, the page is loaded.",
+    "Visually Complete is an important page speed metric because it affects a user’s subjective experience of how quickly or slowly a page loads.",
+    "As long as a user can see and use the page, it’s fully loaded… even though there may still be assets loading and rendering behind the scenes.",
+    "We discovered that page size (bytesTotal) had a significant effect on mobile and desktop Visually Complete load times.",
+    "However, page size is more important on mobile compared to desktop.",
+    "On desktop, use of a CDN was most strongly correlated with faster Visually Complete loading speed. With page size coming in as a close second.",
+    "On mobile devices a CDN was only the 5th most important factor.",
+    "So if improving mobile loading speed is a top priority for you, I’d consider doing as much as you can to reduce the size of your pages. This may mean deleting third party scripts. Or compressing images. The exact steps will depend on your site. However, it’s clear that, when it comes to Visually Complete speeds, it’s all about HTML size.",
+    "Key Takeaway: CDNs can significantly improve Visually Complete page speed on desktop and mobile. However, CDNs have a much bigger impact on desktop loading. For mobile, total page size is the most important factor for Visually Complete load times.",
+    "Finally, we looked at factors that impact “Fully Loaded” page speed.",
+    "As the name suggests, Fully Loaded is when 100% of a page’s assets are loaded and rendered.",
+    "When it comes to Fully Loaded page speed, the total size of a page is by far the most important factor on desktop and mobile.",
+    "The number of requests also play a role in how quickly a page fully loads.",
+    "What’s interesting about this data is that there’s a strong overlap between desktop and mobile. Unlike many of the other metrics that we analyzed, desktop and mobile Fully Loaded seem to be impacted by the same set of variables (namely, page size and total HTML requests).",
+    "However, the importance of page size and HTML requests shouldn’t come as a big surprise.",
+    "Compressing images, caching and other steps usually reduce how long it takes a page to load. But they can only go so far. At the end of the day, for a page to be “Fully Loaded” a browser has to load all of the assets on a page. And the more assets there are to load, the longer it will take for the page to load.",
+    "This is probably why CDNs don’t seem to have much of an impact on Fully Loaded page speed (3rd in overall importance on desktop, 10th on mobile). CDNs can improve image load times. But they don’t do much to help with 3rd-party scripts and other assets that can slow things down.",
+    "Key Takeaway: Total size impacts Fully Loaded page speed more than any other variable on both desktop and mobile. Large pages (>3.49 MB) take 486% longer to fully load compared to smaller pages (<.83 MB).",
+    "When it comes to prioritizing what to load on a page (and when), JavaScript Frameworks do a lot of the heavy lifting.",
+    "This is why almost 76% of all websites make use of these frameworks to create pages that are efficient, secure, and standardized.",
+    "We first gathered benchmarks for how often each Framework was used across the web.",
+    "React is by far the most commonly-used JS Framework (25.3% of sites use it). TweenMax (10.3%) and RequireJS (9.5%) are also fairly popular",
+    "Next, we wanted to figure out which JavaScript frameworks performed best on small (<1,264,374 Bytes) medium (1,264,374 and 4,019,332 Bytes) and large (>4,019,332 Bytes) pages.",
+    "For small pages, RightJS came out on top.",
+    "For medium pages, Wink and Gatsby performed best.",
+    "And for large pages, Gatsby and Riot had the fastest FCP times.",
+    "Overall, the choice of a JavaScript framework can make a significant impact on FCP times. In fact, for medium-sized pages, the best JS framework (Wink) loaded 213% faster than the slowest framework (Meteor).",
+    "Although there’s quite a bit of overlap for the best and worst performers (for example, Gatsby and RightJS were in the top 5 among all three page size categories), it does appear that certain JS Frameworks work best on certain sized pages.",
+    "For example, Riot is a great framework for large pages (2nd overall).",
+    "However, for small pages, Riot fared significantly worse (15th overall).",
+    "Key Takeaway: There’s no “best” JavaScript framework for every situation. For sites with lots of small-sized pages, RightJS is your best bet. For websites with mostly large pages, Gatsby looks to be ideal.",
+    "Compressing page files on a server is a double-edged sword. On the one hand, compressing files significantly reduces page weight.",
+    "However, compressing files before sending them from the server entails additional work on the browser, as the client needs to decompress the files before rendering them.",
+    "As part of this analysis, we set out to answer the question: does compressing files actually improve page speed?",
+    "To answer this question, we classified FCP into three categories (Fast, Average, Slow):",
+    "Fast: 0-1000ms Average: 1000ms-2500ms Slow: < 2500ms",
+    "We then compared FCP speed and levels of compression among small, medium and large pages.",
+    "For small pages, lower levels of compression were associated with faster FCP load times. However, load times pick up again at very high (90-100%) compression levels.",
+    "Medium-sized pages had a similar distribution:",
+    "Large pages had an even more extreme reverse bell curve distribution:",
+    "Although the exact distribution between page sizes differed, the takeaway is clear: pages with very low or very high levels of compression load the fastest.",
+    "In fact, you can see a dip in FCP performance for pages that compress a moderate amount of their files.",
+    "Specifically, pages that compress 60%-80% of their files perform the worst.",
+    "Therefore, when it comes to improving page speed, super low or super high levels of compression tend to work best. Low levels of compression reduce the work needed by the browser. And high levels of compression outweigh taxing work on the client side with a smaller payload.",
+    "Key Takeaway: Pages with very low or very high compression have better performance vs. pages with moderate levels of compression.",
+    "Not surprisingly, we found that third-party scripts (like Google Analytics, social share buttons and video hosts) result in slower FCP times.",
+    "In fact, we found that each 3rd party script increases page load time by 34.1 milliseconds.",
+    "Our findings are in-line with others (like this) that discovered that third-party scripts have a massive impact on page speed.",
+    "Obviously, the impact depends on the script being used. Certain third-party scripts (like Hotjar) load relatively quickly. Others, including Salesforce, are notoriously slow.",
+    "In short, third-party scripts lead to longer load times. And the more scripts a page has, the slower it tends to load.",
+    "Key Takeaway: Each 3rd party script used on a page increases page load time by 34.1 milliseconds.",
+    "Images play an extremely important role in website performance for two main reasons:",
+    "First, images take up a sizeable amount of a page’s overall size.",
+    "Second, user attention tends to focus on images that appear on a page. And if those images load slowly, this can negatively impact UX.",
+    "Because images can make or break a site’s loading speed, we decided to compare the performance of 4 different approaches to image optimization:",
+    "WebP: Developed by Google, WebP is an image format that can be smaller in size compared to other file formats, but still results in a similar level of image quality.",
+    "Optimized Images: “Optimized Images” are when different versions of an image are served depending on the user’s device, location and more. We included the use of a Content Delivery Network (CDN), Image Compression, and other Image Optimization Web Services under this category.",
+    "Defer Offscreen Images When images below the fold load when a user scrolls to that point on the page. Also known as “lazy loading”.",
+    "Responsive Images: When images dynamically adapt to browser window size.",
+    "And when we compared these various approaches for Lighthouse speed scores, Responsive Images came out on top.",
+    "We also analyzed which approach led to the most 100/100 Lighthouse scores. And the results were very similar.",
+    "Key Takeaway: Although the WebP may improve image compression compared to PNG and JPEGs, at this time very few sites have implemented this new image format.",
+    "We compared the page speed performance of major web hosting providers.",
+    "Considering that server response time has the greatest impact on TTFB, we analyzed how different hosts performed on that key metric.",
+    "Specifically, we classified TTFB into three categories (Fast, Average, Slow). And we looked at the percentage that each host appeared in each category.",
+    "Here are each web hosting provider’s TTFB performance on desktop:",
+    "Github, Weebly and Acquia were the top 3 performers for desktop TTFB. Automattic, Wix and Siteground fared the worst.",
+    "We ran this same analysis for mobile TTFB. Here are the results:",
+    "As you can see, Github performs extremely well on both mobile and desktop. Which, considering that Github Pages only serve static resources, should come as no surprise. Which means that, in many ways, Github isn’t a 1:1 comparison to “normal” web hosts.",
+    "Seravo, Netlify and Weebly round out the top 4. Wix and Automattic are at the bottom of the list.",
+    "What’s the takeaway from this analysis?",
+    "TTFB is just one of many factors to consider when choosing a host. There’s also cost, uptime, customer support, features, and more.",
+    "That said, when it comes to fast page load times on desktop and mobile, Github Pages is by far the best option among major hosts. Wix and Automattic hosts tend to have slow TTFB times.",
+    "Key Takeaway: Among major hosting providers, Github and Weebly performed best on desktop. According to our analysis, GitHub and Seravo were the fastest mobile hosts. However, it should be noted that Github Pages only serves static pages, which gives it an inherent advantage over the other hosts that we analyzed.",
+    "We compared TTFB loading times for 11 countries from our data set.",
+    "Here’s a country-by-country breakdown for desktop speeds:",
+    "And mobile:",
+    "Key Takeaway: China has the best mobile and desktop TTFB performance. Next comes Japan and Germany with fast page speeds that are above the global averages. France, UK, Canada, US, and Russia have an average page speed. Australia, Brazil, and India have speeds that are below global averages.",
+    "One of our most surprising findings was that pages that utilized a CDN actually fared worse than those that didn’t use a CDN.",
+    "This was true for both desktop:",
+    "And mobile:",
+    "How could this be?",
+    "In theory, because it delivers content close to where a user is located, a CDN should improve page speed across the board.",
+    "However, that wasn’t the case in our analysis.",
+    "We hypothesized that not all CDNs are created equal. In many cases, using a poorly-optimized CDN can actually slow things down.",
+    "And when we analyzed the performance of the top 18 of the top CDN providers, we did, in fact, discover a massive difference in performance.",
+    "Specifically, we noticed that (on desktop) the best CDN performed 3.6x better than the worst CDN. Which helps explain why CDNs don’t automatically improve performance.",
+    "To make the poor performers easier to spot, we compared CDN performance to the global average.",
+    "We then put each CDN into one of three buckets:",
+    "Good (Fast % and Slow % are better than the average across all providers)",
+    "Average (Fast % or Slow % are better than the average across all providers)",
+    "Bad (Fast % and Slow % are worse than the average across all providers)",
+    "Here is a summary of performance for each provider:",
+    "Desktop",
+    "Good: Airee, Amazon Cloudfront, Azure CDN, CacheFly, EdgeCast, Fastly, GitHub Pages, Google Cloud, KeyCDN, MaxCDN, Netlify Average: CDN77 Bad: Akamai, ArvanCloud, Cloudflare, Fireblade, Incapsula, Sucuri",
+    "Mobile",
+    "Good: Airee, Amazon Cloudfront, Azure CDN, CDN77, EdgeCast, Fastly, GitHub Pages, Google Cloud, KeyCDN, MaxCDN, Netlify Average: Fireblade, Incapsula, Sucuri Bad: Akamai, ArvanCloud, Cloudflare",
+    "Key Takeaway: Using a CDN won’t automatically improve page speed performance. Certain CDNs perform significantly better than others. Therefore, it’s important to go with a CDN that performs well on both desktop and mobile.",
+    "Conclusion",
+    "If you want to learn more about how this analysis was done, feel free to check out our study methods PDF.",
+    "Backlinko is owned by Semrush. We’re still obsessed with bringing you world-class SEO insights, backed by hands-on experience. Unless otherwise noted, this content was written by either an employee or paid contractor of Semrush Inc.",
+    "On This Page",
+    "Benchmarks for Key Page Speed Load Time Metrics",
+    "Weebly and Squarespace Have the Best Overall Speed Performance. WordPress Has One of the Worst",
+    "Using a CDN May Help Desktop TTFB. Minimizing HTML Requests Is Key For Mobile TTFB",
+    "Large Pages Take 381% Longer to “Visually Complete” Load Compared to Smaller Pages",
+    "Total Page Weight Is Closely Tied to “Fully Loaded” Page Speed",
+    "Wink and Gatsby are the Fastest JavaScript Frameworks for Average-Sized Webpages",
+    "Pages with Low or High Compression Levels Have the Fastest Load Times",
+    "Third-Party Scripts Negatively Impact Load Times",
+    "Responsive Images Appear to Improve Page Load Times More Than Lazy Loading and Use of WebP",
+    "GitHub and Weebly Hosting Has the Best TTFB Performance. Siteground and Wix Have The Worst",
+    "China, Japan and Germany Have the Fastest TTFB Load Times",
+    "Pages With CDNs Perform Worse Than Those Without a CDN",
+    "Get instant insights into strengths and weaknesses of your competitors or prospective customers with Semrush"
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Cookie Policy.",
+      "href": "https://www.semrush.com/company/legal/cookie-policy/"
+    },
+    {
+      "label": "Allow all cookies",
+      "href": null
+    },
+    {
+      "label": "Deny all",
+      "href": null
+    },
+    {
+      "label": "Cookie settings",
+      "href": null
+    },
+    {
+      "label": "Watch Now",
+      "href": "https://www.youtube.com/watch?v=rIGzcovF6cM"
+    },
+    {
+      "label": "Close",
+      "href": null
+    },
+    {
+      "label": "Articles",
+      "href": null
+    },
+    {
+      "label": "Tools",
+      "href": null
+    },
+    {
+      "label": "Templates",
+      "href": "/templates/marketing"
+    },
+    {
+      "label": "About",
+      "href": "/about-backlinko"
+    },
+    {
+      "label": "Newsletter",
+      "href": "/newsletter"
+    },
+    {
+      "label": "Check My Site's SEO",
+      "href": null
+    },
+    {
+      "label": "Close",
+      "href": null
+    },
+    {
+      "label": "Free access",
+      "href": "https://www.semrush.com/blog/what-can-i-do-with-a-free-account-from-semrush/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=navigation"
+    },
+    {
+      "label": "Brian Dean",
+      "href": "/blog/authors/brian-dean"
+    },
+    {
+      "label": "30% of all websites",
+      "href": "https://venturebeat.com/2018/03/05/wordpress-now-powers-30-of-websites/"
+    },
+    {
+      "label": "improve image load times",
+      "href": "https://gtmetrix.com/why-use-a-cdn.html"
+    },
+    {
+      "label": "JavaScript Frameworks",
+      "href": "https://en.wikipedia.org/wiki/JavaScript_framework"
+    },
+    {
+      "label": "almost 76% of all websites",
+      "href": "https://w3techs.com/technologies/overview/javascript_library/all"
+    },
+    {
+      "label": "compressing files significantly reduces page weight",
+      "href": "https://royal.pingdom.com/can-gzip-compression-really-improve-web-performance/"
+    },
+    {
+      "label": "like this",
+      "href": "https://github.com/patrickhulce/third-party-web"
+    },
+    {
+      "label": "a sizeable amount of a page’s overall size",
+      "href": "https://httparchive.org/reports/page-weight#bytesImg"
+    },
+    {
+      "label": "tends to focus on images that appear on a page",
+      "href": "https://www.nngroup.com/articles/photos-as-web-content/"
+    },
+    {
+      "label": "Developed by Google",
+      "href": "https://developers.google.com/speed/webp/"
+    },
+    {
+      "label": "Lighthouse speed scores",
+      "href": "https://developers.google.com/web/tools/lighthouse"
+    },
+    {
+      "label": "the greatest impact on TTFB",
+      "href": "https://kinsta.com/blog/ttfb/"
+    },
+    {
+      "label": "Github Pages",
+      "href": "https://pages.github.com/"
+    },
+    {
+      "label": "our study methods PDF",
+      "href": "https://backlinko.com/app/uploads/2019/10/backlinko-large-scale-page-speed-analysis-methods.pdf"
+    },
+    {
+      "label": "Benchmarks for Key Page Speed Load Time Metrics",
+      "href": "#benchmarks-for-key-page-speed-load-time-metrics"
+    },
+    {
+      "label": "Weebly and Squarespace Have the Best Overall Speed Performance. WordPress Has One of the Worst",
+      "href": "#weebly-and-squarespace-have-the-best-overall-speed-performance-word-press-has-one-of-the-worst"
+    },
+    {
+      "label": "Using a CDN May Help Desktop TTFB. Minimizing HTML Requests Is Key For Mobile TTFB",
+      "href": "#using-a-cdn-may-help-desktop-ttfb-minimizing-html-requests-is-key-for-mobile-ttfb"
+    },
+    {
+      "label": "Large Pages Take 381% Longer to “Visually Complete” Load Compared to Smaller Pages",
+      "href": "#large-pages-take-381-longer-to-visually-complete-load-compared-to-smaller-pages"
+    },
+    {
+      "label": "Total Page Weight Is Closely Tied to “Fully Loaded” Page Speed",
+      "href": "#total-page-weight-is-closely-tied-to-fully-loaded-page-speed"
+    },
+    {
+      "label": "Wink and Gatsby are the Fastest JavaScript Frameworks for Average-Sized Webpages",
+      "href": "#wink-and-gatsby-are-the-fastest-java-script-frameworks-for-average-sized-webpages"
+    },
+    {
+      "label": "Pages with Low or High Compression Levels Have the Fastest Load Times",
+      "href": "#pages-with-low-or-high-compression-levels-have-the-fastest-load-times"
+    },
+    {
+      "label": "Third-Party Scripts Negatively Impact Load Times",
+      "href": "#third-party-scripts-negatively-impact-load-times"
+    },
+    {
+      "label": "Responsive Images Appear to Improve Page Load Times More Than Lazy Loading and Use of WebP",
+      "href": "#responsive-images-appear-to-improve-page-load-times-more-than-lazy-loading-and-use-of-web-p"
+    },
+    {
+      "label": "GitHub and Weebly Hosting Has the Best TTFB Performance. Siteground and Wix Have The Worst",
+      "href": "#git-hub-and-weebly-hosting-has-the-best-ttfb-performance-siteground-and-wix-have-the-worst"
+    },
+    {
+      "label": "China, Japan and Germany Have the Fastest TTFB Load Times",
+      "href": "#china-japan-and-germany-have-the-fastest-ttfb-load-times"
+    },
+    {
+      "label": "Pages With CDNs Perform Worse Than Those Without a CDN",
+      "href": "#pages-with-cd-ns-perform-worse-than-those-without-a-cdn"
+    },
+    {
+      "label": "Get My Free Data",
+      "href": "https://www.semrush.com/analytics/overview/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=page-speed-stats"
+    },
+    {
+      "label": "Why Try Semrush?",
+      "href": "https://backlinko.com/lp/seo-ai-search-tool-v1?utm_source=backlinko.com&utm_medium=referral&utm_campaign=page-speed-stats"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Newsletter",
+      "href": "/newsletter"
+    },
+    {
+      "label": "Templates",
+      "href": "https://backlinko.com/templates/marketing"
+    },
+    {
+      "label": "Best SEO Tools",
+      "href": "/best-free-seo-tools"
+    },
+    {
+      "label": "About",
+      "href": "/about-backlinko"
+    },
+    {
+      "label": "Semrush AI Visiblity",
+      "href": "https://www.semrush.com/ai-seo/overview/"
+    },
+    {
+      "label": "Semrush Free Trial",
+      "href": "https://backlinko.com/deals/semrush-coupon"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    },
+    {
+      "label": "Twitter",
+      "href": "https://twitter.com/backlinko"
+    },
+    {
+      "label": "YouTube",
+      "href": "https://www.youtube.com/@BacklinkoTeam"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/briandean/"
+    },
+    {
+      "label": "Terms of Service",
+      "href": "https://www.semrush.com/company/legal/terms-of-service/?utm_source=backlinko.com&utm_medium=referral"
+    }
+  ],
+  "links": [
+    "https://www.semrush.com/company/legal/cookie-policy/",
+    "https://backlinko.com/page-speed-stats#",
+    "https://www.youtube.com/watch?v=rIGzcovF6cM",
+    "https://backlinko.com/",
+    "https://backlinko.com/ai-search-strategy",
+    "https://backlinko.com/llm-seeding",
+    "https://backlinko.com/generative-engine-optimization-geo",
+    "https://backlinko.com/hub/seo/what-is-seo",
+    "https://backlinko.com/improve-your-seo",
+    "https://backlinko.com/seo-checklist",
+    "https://backlinko.com/seo-strategy",
+    "https://backlinko.com/?p=165994",
+    "https://backlinko.com/google-e-e-a-t",
+    "https://backlinko.com/hub/seo/internal-links",
+    "https://backlinko.com/technical-seo-guide",
+    "https://backlinko.com/on-page-seo",
+    "https://backlinko.com/ecommerce-seo",
+    "https://backlinko.com/seo-certification-guide",
+    "https://backlinko.com/ai-optimization",
+    "https://backlinko.com/ai-seo",
+    "https://backlinko.com/entity-seo",
+    "https://backlinko.com/audience-research",
+    "https://backlinko.com/reddit-marketing",
+    "https://backlinko.com/?p=193164",
+    "https://backlinko.com/answer-engine-optimization-aeo",
+    "https://backlinko.com/seo-basics-for-beginners",
+    "https://backlinko.com/seo-tutorial",
+    "https://backlinko.com/pillar-pages",
+    "https://backlinko.com/?p=175006",
+    "https://backlinko.com/actionable-seo-tips",
+    "https://backlinko.com/small-business-seo",
+    "https://backlinko.com/schema-markup-guide",
+    "https://backlinko.com/website-migration-checklist",
+    "https://backlinko.com/hub/content/what-is-content-marketing",
+    "https://backlinko.com/seo-copywriting",
+    "https://backlinko.com/?p=103911",
+    "https://backlinko.com/content-marketing-this-year",
+    "https://backlinko.com/?p=190262",
+    "https://backlinko.com/?p=172343",
+    "https://backlinko.com/scale-content",
+    "https://backlinko.com/hub/content/writing",
+    "https://backlinko.com/link-building",
+    "https://backlinko.com/hub/seo/backlinks",
+    "https://backlinko.com/high-quality-backlinks",
+    "https://backlinko.com/link-building-strategies",
+    "https://backlinko.com/link-building-services",
+    "https://backlinko.com/step-by-step-backlink-audit",
+    "https://backlinko.com/skyscraper-technique",
+    "https://backlinko.com/increase-domain-authority",
+    "https://backlinko.com/competitor-analysis",
+    "https://backlinko.com/?p=173056",
+    "https://backlinko.com/?p=174557",
+    "https://backlinko.com/how-to-create-a-website",
+    "https://backlinko.com/tools/seo-checker",
+    "https://backlinko.com/tools/backlink-checker",
+    "https://backlinko.com/tools/website-authority",
+    "https://backlinko.com/tools/website-traffic-checker",
+    "https://backlinko.com/tools/keyword",
+    "https://backlinko.com/tools/keyword-difficulty-checker",
+    "https://backlinko.com/tools/competitor-analysis",
+    "https://backlinko.com/tools/schema-markup-generator",
+    "https://backlinko.com/tools/ai-visibility-checker",
+    "https://backlinko.com/tools/ai-agent-readiness",
+    "https://backlinko.com/tools/agentic-browsing-readiness",
+    "https://backlinko.com/best-free-seo-tools",
+    "https://backlinko.com/llm-tracking-tools",
+    "https://backlinko.com/keyword-research-tools",
+    "https://backlinko.com/?p=98736",
+    "https://backlinko.com/link-building-tools",
+    "https://backlinko.com/best-rank-tracking-tools",
+    "https://backlinko.com/?p=171633",
+    "https://backlinko.com/seo-software-agencies",
+    "https://backlinko.com/ai-seo-tools",
+    "https://backlinko.com/sitemap-generator-tools",
+    "https://backlinko.com/best-digital-marketing-tools",
+    "https://backlinko.com/?p=170722",
+    "https://backlinko.com/semrush-review",
+    "https://backlinko.com/ahrefs-review",
+    "https://backlinko.com/ahrefs-vs-semrush",
+    "https://backlinko.com/clearscope-review",
+    "https://backlinko.com/majestic-seo-review",
+    "https://backlinko.com/surfer-seo",
+    "https://backlinko.com/serpstat-review",
+    "https://backlinko.com/sparktoro-review",
+    "https://backlinko.com/templates/marketing",
+    "https://backlinko.com/about-backlinko",
+    "https://backlinko.com/newsletter",
+    "https://www.semrush.com/blog/what-can-i-do-with-a-free-account-from-semrush/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=navigation",
+    "https://backlinko.com/blog/authors/brian-dean",
+    "https://twitter.com/share?text=We%20Analyzed%205.2%20Million%20Webpages.%20Here%27s%20What%20We%20Learned%20About%20PageSpeed&url=https%3A%2F%2Fbacklinko.com%2Fpage-speed-stats&via=Backlinko",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbacklinko.com%2Fpage-speed-stats",
+    "https://www.reddit.com/submit?url=https%3A%2F%2Fbacklinko.com%2Fpage-speed-stats&title=We%20Analyzed%205.2%20Million%20Webpages.%20Here%27s%20What%20We%20Learned%20About%20PageSpeed",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fbacklinko.com%2Fpage-speed-stats&summary=We%20Analyzed%205.2%20Million%20Webpages.%20Here%27s%20What%20We%20Learned%20About%20PageSpeed",
+    "https://venturebeat.com/2018/03/05/wordpress-now-powers-30-of-websites/",
+    "https://gtmetrix.com/why-use-a-cdn.html",
+    "https://en.wikipedia.org/wiki/JavaScript_framework",
+    "https://w3techs.com/technologies/overview/javascript_library/all",
+    "https://royal.pingdom.com/can-gzip-compression-really-improve-web-performance/",
+    "https://github.com/patrickhulce/third-party-web",
+    "https://httparchive.org/reports/page-weight#bytesImg",
+    "https://www.nngroup.com/articles/photos-as-web-content/",
+    "https://developers.google.com/speed/webp/",
+    "https://developers.google.com/web/tools/lighthouse",
+    "https://kinsta.com/blog/ttfb/",
+    "https://pages.github.com/",
+    "https://backlinko.com/app/uploads/2019/10/backlinko-large-scale-page-speed-analysis-methods.pdf",
+    "https://backlinko.com/page-speed-stats#benchmarks-for-key-page-speed-load-time-metrics",
+    "https://backlinko.com/page-speed-stats#weebly-and-squarespace-have-the-best-overall-speed-performance-word-press-has-one-of-the-worst",
+    "https://backlinko.com/page-speed-stats#using-a-cdn-may-help-desktop-ttfb-minimizing-html-requests-is-key-for-mobile-ttfb",
+    "https://backlinko.com/page-speed-stats#large-pages-take-381-longer-to-visually-complete-load-compared-to-smaller-pages",
+    "https://backlinko.com/page-speed-stats#total-page-weight-is-closely-tied-to-fully-loaded-page-speed",
+    "https://backlinko.com/page-speed-stats#wink-and-gatsby-are-the-fastest-java-script-frameworks-for-average-sized-webpages",
+    "https://backlinko.com/page-speed-stats#pages-with-low-or-high-compression-levels-have-the-fastest-load-times",
+    "https://backlinko.com/page-speed-stats#third-party-scripts-negatively-impact-load-times",
+    "https://backlinko.com/page-speed-stats#responsive-images-appear-to-improve-page-load-times-more-than-lazy-loading-and-use-of-web-p",
+    "https://backlinko.com/page-speed-stats#git-hub-and-weebly-hosting-has-the-best-ttfb-performance-siteground-and-wix-have-the-worst",
+    "https://backlinko.com/page-speed-stats#china-japan-and-germany-have-the-fastest-ttfb-load-times",
+    "https://backlinko.com/page-speed-stats#pages-with-cd-ns-perform-worse-than-those-without-a-cdn",
+    "https://www.semrush.com/analytics/overview/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=page-speed-stats",
+    "https://backlinko.com/lp/seo-ai-search-tool-v1?utm_source=backlinko.com&utm_medium=referral&utm_campaign=page-speed-stats",
+    "https://backlinko.com/blog",
+    "https://www.semrush.com/ai-seo/overview/",
+    "https://backlinko.com/deals/semrush-coupon",
+    "https://backlinko.com/contact",
+    "https://twitter.com/backlinko",
+    "https://www.youtube.com/@BacklinkoTeam",
+    "https://www.instagram.com/briandean/",
+    "https://www.semrush.com/company/legal/terms-of-service/?utm_source=backlinko.com&utm_medium=referral",
+    "https://www.semrush.com/company/legal/privacy-policy/?utm_source=backlinko.com&utm_medium=referral"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://secure.gravatar.com/avatar/609c0e567577ac8c2c617f9062376394033fd851ca930c40bdc6aea2fa20fe2a?s=96&d=mm&r=g",
+        "alt": "Brian Dean",
+        "w": 96,
+        "h": 96
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2019/10/factors-that-impact-visually-complete-on-desktop-and-mobile-768x1004.webp",
+        "alt": "Factors that impact Visually Complete on desktop and mobile",
+        "w": 700,
+        "h": 915
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2019/10/factors-that-impact-fully-loaded-on-desktop-and-mobile-768x1004.webp",
+        "alt": "Factors that impact Fully Loaded on desktop and mobile",
+        "w": 700,
+        "h": 915
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2019/10/dip-in-fcp-performance-for-pages-that-compress-a-moderate-amount-of-files-768x574.webp",
+        "alt": "Dip in FCP performance for pages that compress a moderate amount of files",
+        "w": 700,
+        "h": 523
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2019/10/third-party-scripts-negatively-impact-page-load-times-768x618.webp",
+        "alt": "Third-party scripts negatively impact page load times",
+        "w": 700,
+        "h": 563
+      }
+    ],
+    "allImgCount": 38,
+    "cssBackgrounds": [],
+    "modals": [
+      "About cookies on this siteWe use cookies to run our website, analyze your use of our services, manage your online preferences & personalize ad content. By accepting our cookies, you'll get relevant content and social media features, personalized ads, and an enhanced browsing experience. To manage your choices, click “Cookie Settings.” Necessary cookies are required for the core website functionality and cannot be rejected. For more information, see ourCookie Policy.Allow all cookiesDeny allCookie settings"
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {
+    "--fa-font-solid": "normal 900 1em/1 \"Font Awesome 6 Free\"",
+    "--fa-font-regular": "normal 400 1em/1 \"Font Awesome 6 Free\"",
+    "--fa-font-light": "normal 300 1em/1 \"Font Awesome 6 Pro\"",
+    "--fa-font-thin": "normal 100 1em/1 \"Font Awesome 6 Pro\"",
+    "--fa-font-duotone": "normal 900 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-regular": "normal 400 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-light": "normal 300 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-thin": "normal 100 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-brands": "normal 400 1em/1 \"Font Awesome 6 Brands\"",
+    "--fa-font-sharp-solid": "normal 900 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-regular": "normal 400 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-light": "normal 300 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-thin": "normal 100 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-duotone-solid": "normal 900 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-regular": "normal 400 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-light": "normal 300 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-thin": "normal 100 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--app-height": "100svh",
+    "--backlinko-bar-height": "62px",
+    "--sl-widgets-font-family": "-apple-system, system-ui",
+    "--sl-widgets-base-unit": "16px"
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 20,
+    "mainTextLen": 20403,
+    "realImageCount": 5,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "dev.visualwebsiteoptimizer.com",
+        "path": "/j.php",
+        "query": [
+          "a",
+          "ph",
+          "st",
+          "u",
+          "vn",
+          "x"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://dev.visualwebsiteoptimizer.com/j.php",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "pagead2.googlesyndication.com",
+        "path": "/ccm/collect",
+        "query": [
+          "ae",
+          "apvc",
+          "dl",
+          "dma",
+          "dma_cps",
+          "en",
+          "ep.ads_data_redaction",
+          "fmt",
+          "frm",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "navt",
+          "npa",
+          "rcb",
+          "rnd",
+          "scrsrc",
+          "tag_exp",
+          "tfd",
+          "tft"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "status": 200,
+        "bytes": null,
+        "hits": 3,
+        "example": "https://pagead2.googlesyndication.com/ccm/collect",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "region-eu.cookiehub.net",
+        "path": "/",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 28,
+        "hits": 1,
+        "example": "https://region-eu.cookiehub.net/",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "cdn.cookiehub.eu",
+        "path": "/client/7417b56b/en.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://cdn.cookiehub.eu/client/7417b56b/en.json",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "region1.google-analytics.com",
+        "path": "/g/collect",
+        "query": [
+          "_eu",
+          "_fv",
+          "_nsi",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "cid",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dp",
+          "dt",
+          "en",
+          "ep.container_id",
+          "frm",
+          "gaf",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "status": 204,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://region1.google-analytics.com/g/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "api.backlinko.com",
+        "path": "/wp-json/backlinkostats/v1/shares/{n}",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://api.backlinko.com/wp-json/backlinkostats/v1/shares/118470",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 37803,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 10392,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+        "query": [
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 6685,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 9032,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 11235,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 56682,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 43911,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 43844,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 56812,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 15888,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 9091,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/brian-dean.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/brian-dean.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 8253,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "rum-collector-2.pingdom.net",
+        "path": "/img/beacon.gif",
+        "query": [
+          "bIH",
+          "bIW",
+          "cE",
+          "cS",
+          "dC",
+          "dCLEE",
+          "dCLES",
+          "dI",
+          "dL",
+          "dLE",
+          "dLS",
+          "dPR",
+          "fS",
+          "hS",
+          "id",
+          "lEE",
+          "lES",
+          "nS",
+          "nT",
+          "or",
+          "pD",
+          "path",
+          "rC",
+          "rE",
+          "rS",
+          "rV",
+          "reS",
+          "ref",
+          "resE",
+          "resS",
+          "s",
+          "sAH",
+          "sAW",
+          "sIS",
+          "sId",
+          "sST",
+          "title",
+          "uEE",
+          "uES",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": null,
+        "status": 200,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://rum-collector-2.pingdom.net/img/beacon.gif",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "streaming.bi.owox.com",
+        "path": "/ga4/{hash}/g/collect",
+        "query": [
+          "_eu",
+          "_fplc",
+          "_fv",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "cid",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dp",
+          "dt",
+          "ecid",
+          "en",
+          "ep.container_id",
+          "ep.page_language",
+          "ep.user_agent",
+          "frm",
+          "gaf",
+          "gap.sstd",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "richsstsse",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "sst.etld",
+          "sst.gch",
+          "sst.gcsub",
+          "sst.lpc",
+          "sst.navt",
+          "sst.rnd",
+          "sst.tft",
+          "sst.ude",
+          "sst.us_privacy",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "ur",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/gif",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://streaming.bi.owox.com/ga4/9bb752a08674f116753ca5719dda03ed/g/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 44155,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 19793,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 20906,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 32592,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 47134,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "www.semrush.com",
+        "path": "/olaf/init",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://www.semrush.com/olaf/init",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 26528,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 51691,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 37436,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 46515,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+        "query": [
+          "p"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 15298,
+        "hits": 2,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 24460,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "js.sparkloop.app",
+        "path": "/team_d05f5749d84d/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "status": 301,
+        "bytes": 167,
+        "hits": 1,
+        "example": "https://js.sparkloop.app/team_d05f5749d84d/settings",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "script-settings.sparkloop.app",
+        "path": "/team_d05f5749d84d/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://script-settings.sparkloop.app/team_d05f5749d84d/settings",
+        "sameSite": false
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "www.googletagmanager.com",
+        "count": 5
+      },
+      {
+        "host": "rum-static.pingdom.net",
+        "count": 2
+      },
+      {
+        "host": "cdn.cookiehub.eu",
+        "count": 1
+      },
+      {
+        "host": "js.sparkloop.app",
+        "count": 1
+      },
+      {
+        "host": "script.sparkloop.app",
+        "count": 1
+      },
+      {
+        "host": "www.semrush.com",
+        "count": 1
+      }
+    ],
+    "truncated": false,
+    "inlineData": [
+      {
+        "id": "__NEXT_DATA__",
+        "type": "application/json",
+        "bytes": 267641,
+        "topLevelKeys": [
+          "props",
+          "page",
+          "query",
+          "buildId",
+          "isFallback",
+          "isExperimentalCompile",
+          "gsp",
+          "scriptLoader"
+        ]
+      }
+    ],
+    "globalState": [
+      "__NEXT_DATA__",
+      "dataLayer"
+    ],
+    "frameworkHints": [
+      "next"
+    ],
+    "forms": [],
+    "ariaLiveRegions": 1,
+    "triggers": [
+      {
+        "marker": "aria-haspopup",
+        "href": null
+      }
+    ],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 26,
+      "thirdPartyEndpoints": 10,
+      "thirdPartyScriptHosts": 6,
+      "inlineDataBlobs": 1,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": true
+    }
+  },
+  "screenshot": "assets/screenshots/page-speed-stats.png",
+  "renderedHtml": "pages/page-speed-stats.html"
+}

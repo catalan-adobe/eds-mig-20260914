@@ -1,0 +1,1830 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-26T15:02:08.175Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "tools-backlink-checker",
+  "url": "https://backlinko.com/tools/backlink-checker",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-26T15:02:08.175Z",
+  "finalUrl": "https://backlinko.com/tools/backlink-checker",
+  "title": "Free Backlink Checker: See Who Links to Any Site",
+  "description": "Check backlinks for any domain in seconds. Get referring domains, anchor text, and link quality data powered by Semrush.",
+  "og": {
+    "title": "Free Backlink Checker: See Who Links to Any Site",
+    "description": "Check backlinks for any domain in seconds. Get referring domains, anchor text, and link quality data powered by Semrush.",
+    "image": "https://api.backlinko.com/app/uploads/2019/03/best-backlink-checker-social.png",
+    "type": "article"
+  },
+  "headings": [
+    {
+      "tag": "h2",
+      "text": "About cookies on this site"
+    },
+    {
+      "tag": "h1",
+      "text": "FREE Backlink Checker"
+    },
+    {
+      "tag": "h2",
+      "text": "Why Backlinks Matter for SEO (and How to Check Them)"
+    },
+    {
+      "tag": "h2",
+      "text": "What are Backlinks?"
+    },
+    {
+      "tag": "h4",
+      "text": "What are Nofollow, Sponsored, and UGC Backlinks?"
+    },
+    {
+      "tag": "h2",
+      "text": "What Are They Important for SEO?"
+    },
+    {
+      "tag": "h3",
+      "text": "1. Provide a Vote of Confidence in Your Site"
+    },
+    {
+      "tag": "h3",
+      "text": "2. Improve Search Rankings"
+    },
+    {
+      "tag": "h3",
+      "text": "3. Drive Referral Traffic to Your Site"
+    },
+    {
+      "tag": "h2",
+      "text": "How to Analyze Your Site’s Backlinks For Free"
+    },
+    {
+      "tag": "h2",
+      "text": "How to Analyze Your Competitor’s Backlinks"
+    },
+    {
+      "tag": "h3",
+      "text": "Site-Wide Analysis"
+    },
+    {
+      "tag": "h3",
+      "text": "Specific URL Analysis"
+    },
+    {
+      "tag": "h2",
+      "text": "Why You Should Analyze Your Competitors Backlinks"
+    },
+    {
+      "tag": "h3",
+      "text": "See What Type of Content Is Popular"
+    },
+    {
+      "tag": "h3",
+      "text": "See Why Their Content Has Been Linked To"
+    },
+    {
+      "tag": "h3",
+      "text": "Reverse Engineer How Their Content Was Linked To"
+    },
+    {
+      "tag": "h2",
+      "text": "What Is Considered a Good Backlink?"
+    },
+    {
+      "tag": "h3",
+      "text": "Authority"
+    },
+    {
+      "tag": "h3",
+      "text": "Relevance"
+    },
+    {
+      "tag": "h3",
+      "text": "Natural vs Unnatural"
+    },
+    {
+      "tag": "h3",
+      "text": "Link Position"
+    },
+    {
+      "tag": "h3",
+      "text": "Anchor Text"
+    },
+    {
+      "tag": "h3",
+      "text": "Link Attribute"
+    },
+    {
+      "tag": "h2",
+      "text": "Top Backlink Checker Tools: An In-Depth Comparison"
+    },
+    {
+      "tag": "h3",
+      "text": "#1: Original Data Provider"
+    },
+    {
+      "tag": "h3",
+      "text": "#2: Speed of Backlinks Discovery"
+    },
+    {
+      "tag": "h3",
+      "text": "#3: Quantity of Backlinks Discovered"
+    },
+    {
+      "tag": "h3",
+      "text": "#4: Quality of Backlinks Discovered"
+    },
+    {
+      "tag": "h2",
+      "text": "How to Get High-Quality Backlinks"
+    },
+    {
+      "tag": "h4",
+      "text": "Learn"
+    },
+    {
+      "tag": "h4",
+      "text": "Company"
+    },
+    {
+      "tag": "h4",
+      "text": "Connect"
+    }
+  ],
+  "body": [
+    "On this page",
+    "What are Backlinks?",
+    "What Are They Important for SEO?",
+    "1. Provide a Vote of Confidence in Your Site",
+    "2. Improve Search Rankings",
+    "3. Drive Referral Traffic to Your Site",
+    "How to Analyze Your Site’s Backlinks For Free",
+    "How to Analyze Your Competitor’s Backlinks",
+    "Site-Wide Analysis",
+    "Specific URL Analysis",
+    "Why You Should Analyze Your Competitors Backlinks",
+    "See What Type of Content Is Popular",
+    "See Why Their Content Has Been Linked To",
+    "Reverse Engineer How Their Content Was Linked To",
+    "What Is Considered a Good Backlink?",
+    "Authority",
+    "Relevance",
+    "Natural vs Unnatural",
+    "Link Position",
+    "Anchor Text",
+    "Link Attribute",
+    "Top Backlink Checker Tools: An In-Depth Comparison",
+    "#1: Original Data Provider",
+    "#2: Speed of Backlinks Discovery",
+    "#3: Quantity of Backlinks Discovered",
+    "#4: Quality of Backlinks Discovered",
+    "How to Get High-Quality Backlinks",
+    "Written by Backlinko Team",
+    "Backlinks boost your search engine rank by demonstrating your site’s credibility.",
+    "Get an overview of the websites linking to your domain and those of your closest competitors.",
+    "Powered by Semrush’s database of 43 trillion backlinks, this tool provides valuable insights for your link-building strategy.",
+    "Our firsthand experience at Backlinko.com is a testament to the impact of helpful and unique content as a backlink growth engine.",
+    "Using the backlink analysis tool, you can see Backlinko.com has earned 2.2 million backlinks from over 69.4K unique domains.",
+    "In this guide, you’ll learn what backlinks are and how to use the free tool to find them.",
+    "Then when you’re ready to start link building, we show you how to evaluate backlinks. This ensures you have enough high-quality ones to help your pages rank.",
+    "Backlinks—high-quality ones, push your content ahead of others in the search results.",
+    "But that’s not all. Good backlinks bring the right type of audience to your content.",
+    "What is meant by high-quality backlinks?",
+    "We’ll get to that soon enough. But if you already know what a backlink is, .",
+    "A backlink is when a website (e.g., Backlinko) links to another website (e.g., Semrush) through a hyperlink.",
+    "For example, here is a high-quality link from Hubspot to Backlinko.",
+    "Because the link from Hubspot points directly to a page on Backlinko, it’s called a “backlink.”",
+    "More importantly, this is a high-quality backlink because Hubspot is a well-known company that has consistently published expert content. This makes their link to Backlinko count more because Hubspot has authority and reputation.",
+    "The backlink from Hubspot is a strong vote of confidence in Backlinko which can improve search rankings for the target URL.",
+    "But not all backlinks will help with keyword rankings—only high-quality or highly relevant backlinks will move the needle.",
+    "For example, backlinks can be marked as “nofollow,” “sponsored” or “UGC”. Having these attributes on your backlinks isn’t necessarily a bad thing, but they will do little to improve search rankings.",
+    "This doesn’t mean they’re useless as these backlinks can still bring visibility, brand awareness, and referral traffic.",
+    "This is a good segway to get a few things straight.",
+    "There’s no such thing as a “dofollow” backlink—this is simply a term SEO tools created.",
+    "There are only “nofollow,” “sponsored,” “UGC,” and everything else that has not been marked as these three attributes.",
+    "Confused?",
+    "Don’t worry, let’s fix that right now.",
+    "Nofollow links are links with a rel=”nofollow” HTML tag applied to them. The nofollow tag tells search engines to ignore that link.",
+    "You can usually tell if a backlink is nofollow by looking at the page source (HTML).",
+    "This means that nofollow links aren’t supposed to pass PageRank, hence, they should not impact search engine rankings.",
+    "But here’s the thing.",
+    "Contrary to popular opinion, nofollow links can directly help with your search rankings.",
+    "And when placed on a high-traffic page, a nofollow link will most likely bring you substantial referral traffic.",
+    "Nofollow links are fine as long as not all your inbound backlinks are nofollow links.",
+    "Nofollow links are fine as long as not all your inbound backlinks are nofollow links.",
+    "In fact, we’ve covered this topic in detail over here, “What Is a Nofollow Link? Here’s A Simple Plain English Answer.”",
+    "So what’s the deal with sponsored and UGC links?",
+    "Without writing an essay, they fall into the same bucket as nofollow links.",
+    "A well-placed backlink flagged as sponsored, or UGC can assist your marketing goals. But it will not necessarily push your content higher in SERP rankings.",
+    "If there’s one takeaway from this, it’s that every backlink type and classification has its place in your SEO roadmap.",
+    "However, a word of caution.",
+    "Don’t overdo pursuing only backlinks that someone on the Internet says will help your content rank better.",
+    "You still need helpful and unique content.",
+    "You still need to understand your audience’s search intent and the problem they hope to solve.",
+    "You still need a way to move visitors along their journey once they land on your content.",
+    "There are three primary reasons why backlinks are critical for SEO success:",
+    "They provide a vote of confidence in your website",
+    "They improve search rankings",
+    "They drive referral traffic to your content",
+    "Each backlink you get from an authoritative and trusted website is a vote of confidence in your content.",
+    "Google treats relevant backlinks as an endorsement that your site is valuable. So much so that backlinks are a part of Google E-E-A-T, specifically, authoritativeness.",
+    "This is why getting backlinks from relevant websites is important for SEO. Each of them provides you with a boost in the credibility and reliability of the information presented.",
+    "And this explains why top-ranking content tends to have more backlinks than results further down the page.",
+    "This isn’t a coincidence because backlinks are part of Google’s ranking system.",
+    "There’s a strong reason why link building still matters.",
+    "Take the following visual, for example.",
+    "The first organic result on Google has an average CTR of 27.6%.",
+    "This means your content is 10x more likely to get engagement when it ranks #1 than if it were in 10th position.",
+    "As a website owner, you want your target audience to land on your content.",
+    "And in order to do so, (in addition to keyword research and optimizing for featured snippets) your content needs backlinks.",
+    "Top-ranking pages have more backlinks than lower-ranking pages.",
+    "The data tells a clear story—backlinks improve search rankings by building upon strong foundations of technical SEO and on-page SEO.",
+    "And backlinks are the only way trust can be measured in Google’s E-E-A-T framework found in its Quality Raters Guide.",
+    "Search ranking is just one way to increase traffic to your content, services, or products.",
+    "Referral traffic is another.",
+    "And the beauty of quality backlinks is that they can bring relevant and qualified visitors to you.",
+    "Even when the backlink has a nofollow or sponsored attribute.",
+    "If you haven’t already done so, put your website’s URL in the above tool.",
+    "You can choose from three options:",
+    "*.domain.com/*: the tool will gather all known backlinks across the entire website, including subdomains",
+    "domain.com/*: the tool with gather all known backlinks on the root domain",
+    "URL: the tool will analyze the exact path you’ve provided an nothing else on the website",
+    "For the most comprehensive result, use *.domain.com/* so you may capture any inbound links that may have linked to your site with or without -www.",
+    "You’ll then see a row of key metrics and a table of individual backlinks.",
+    "This is what it all means:",
+    "Authority Score: proprietary metric used to represent the level of trust of your website",
+    "Total Referring Domains: total number of unique websites linking to your website",
+    "Backlinks: total number of individual backlinks the tool has found for your website",
+    "Referring IPs: total number of unique IP addresses linking to your website",
+    "Backlink: source of your website’s backlinks provided as a full URL",
+    "Anchor Text: text used to link from the source of the backlink to your website",
+    "Follow: indicates if a nofollow, UGC, or sponsored attribute has been applied",
+    "Score: level of trust of the referring domain",
+    "So how do you use all this information?",
+    "First things first, you see some backlinks shown for your website, right?",
+    "This is a good start—but what are these links, where do they come from, and are they any good?",
+    "That’s what you’re going to find out.",
+    "Scroll down to the table, where you’ll find a column labeled Backlink.",
+    "This is where the top backlinks to your website are displayed.",
+    "You’ll notice two lines per row.",
+    "The first URL (in blue) is the source of your backlink,which is showing who has linked to you",
+    "The second line is where they’ve linked to on your website",
+    "So now you know the source, the exact location where it has linked to you, and where they’ve linked to your content.",
+    "But in what context have you been linked to?",
+    "Ah, this is what the Anchor text column reveals.",
+    "Anchor text is the clickable text section of a hyperlink.",
+    "As it turns out, Google uses anchor text as a ranking signal.",
+    "So when you look at your backlinks, the anchor text gives you an indication of the vote in confidence you’ve received.",
+    "This may be a vote of confidence in your brand name (e.g., “backlinko”).",
+    "Or better yet, a vote of confidence in what you do, sell, or know (e.g., “HVAC technician”, “smart doorlock”, “study by Backlinko”).",
+    "Now, if ranking for keywords is important to you, you’re going to pay a lot of attention to the Follow column.",
+    "The Follow column tells you how they’ve linked to you.",
+    "Green signals the backlink will help in some way with your content ranking. Whereas gray tells you the backlink has minimal impact on search rankings.",
+    "But remember, not all backlinks are created equal.",
+    "This is why the tool includes a Score column to help you identify dofollow backlinks from trusted websites.",
+    "But what if you didn’t see any backlinks shown?",
+    "First, don’t panic.",
+    "Go back to the tool and make sure you have put in the correct URL.",
+    "Second, select *.domain.com/* from the drop-down.",
+    "If you still don’t see any backlinks shown, this can be for a few reasons:",
+    "Your website is relatively new",
+    "Your website may be blocking SEO tool crawlers in its robots.txt",
+    "By the way, the free website backlink checker will show you the top backlinks.",
+    "To see a full list of all your backlinks, click View All Backlinks.",
+    "Doing so will navigate you to Semrush Backlink Analytics, where you can pull 10 requests in total (per day).",
+    "Use the free backlink checker to reverse engineer what’s working for your competitors.",
+    "You may do this in two ways:",
+    "Taking a peek behind the curtains across the entire website, or",
+    "Laser focusing on one specific URL",
+    "Start by pasting the homepage URL of a competitor into the tool.",
+    "Make sure you’ve selected *.domain.com/* from the drop-down and click on Analyze.",
+    "The tool will show you the top backlinks your competitor has. And it will do so by displaying backlinks from websites with the highest trust.",
+    "At a high level, this information will give you an overall idea:",
+    "Who has linked to your competitor (Backlink column, row 1) and their authority score",
+    "Where they’ve linked from (Backlink column, row 1)",
+    "Where they’ve linked to (Backlink column, row 2)",
+    "The context in which they’ve linked to your competitor (Anchor text column)",
+    "How they’ve linked to them (Follow column)",
+    "Now you have evidence your competitors have been active with outreach and link building. It’s time to deep dive into the specifics of their backlink strategy.",
+    "For this, you’ll use the URL feature to inspect individual content paths.",
+    "In the previous screenshot you can see Ahrefs ecommerce product page SEO guide has attracted a number of links.",
+    "Grab the URL and paste it into the Free Backlink Checker.",
+    "Next, select “URL” from the dropdown and run the analysis.",
+    "At first glance, you’ll see how many unique websites are linking to the guide.",
+    "There are 63 unique referring domains sending 139 backlinks to the content. Plus, many aren’t nofollow or sponsored links.",
+    "This tells you some websites are linking to the guide more than once.",
+    "More importantly, it’s likely these 63 websites will also link to you.",
+    "All you have to do is work out the how and why.",
+    "Alternatively, Google one of your priority keywords to get a view of who your ranking competitors are.",
+    "Then do the same process from one competitor to another. Find the type of links your competitors have and how you can replicate their success.",
+    "For example, the keyword “backlink checker” reveals Ahrefs, Semrush, and Neil Patel as SERP competitors.",
+    "Taking the Neil Patel URL and putting it into the free backlink checker, you can see the top URLs linking to them.",
+    "You’ll notice a number of things:",
+    "Overuse of exact match keyword in their anchor text",
+    "A mixture of nofollow and non-nofollow backlinks",
+    "Not many trusted sites are linking to them",
+    "But their URL has a lot of backlinks from 1000 unique websites",
+    "If you want more granular information and a full list of a competitor’s backlinks, you’ll need a Semrush subscription (click here to start your 7-day trial).",
+    "Semrush will provide you with a breakdown of follow and nofollow backlinks and backlink types.",
+    "There are three reasons to review your competitors backlink profile:",
+    "To see what content is popular",
+    "To understand why their content is being linked to",
+    "To reverse engineer how they’re getting links",
+    "Let’s break this down.",
+    "People link to another website only if it helps their story or benefits their audience.",
+    "When you see many websites refer to the same URL on your competitor’s site, it’s a telling sign.",
+    "It’s a sign that their content is considered valuable.",
+    "As a result, you may target the same keyword and search intent.",
+    "Now that you know what content has gotten backlinks and who has linked to them, your job is to figure out why.",
+    "What did your competitor do right to grab the attention of the author?",
+    "Was it a particular angle or perspective that was contrary to mainstream opinion?",
+    "Did they present first-hand data?",
+    "Did they provide commentary, and was this quoted by the referring website?",
+    "Understanding the motivation to share a link to competing pages will is useful intel. It will help you add elements to your content that are more likely to attract links.",
+    "The content type and anchor text can be very revealing and help inform your next steps.",
+    "Did the link originate from a guest post?",
+    "If so, can you pitch an engaging topic to the referring domain?",
+    "Was it a link to their homepage?",
+    "If so, do you have resources for a digital PR or a Help a Reporter Out campaign?",
+    "Did the link point to a study that your competitor published?",
+    "If so, can you do something similar?",
+    "The measure of a good backlink comes down to six factors:",
+    "The authority of the referring domain",
+    "Its relevance to your content",
+    "How naturally the backlink fits within the content",
+    "Its placement within the content",
+    "The choice of anchor text",
+    "The use of nofollow or dofollow tags",
+    "Generally speaking, a link from a site like The New York Times will carry far more weight than an unknown blogger.",
+    "This is why links from high-authority pages impact rankings more than links from low-authority pages.",
+    "Unfortunately, Google no longer discloses the perceived authority of a website. But third-party tools such as Ahrefs, Moz Pro, Majestic, and Semrush offer their own proxies.",
+    "For example, Semrush uses the Authority Score (AS), whereas Ahrefs refers to Domain Rating (DR) and Moz created Domain Authority (DA).",
+    "You can check the authority of any website with Backlinko’s free website authority tool.",
+    "And our free backlink checker provides Semrush scores for all the backlinks it finds.",
+    "Again, these are purely proxies—Google doesn’t use them. Google has its own way of calculating PageRank and domain authority.",
+    "Instead, use the number as one factor of many when evaluating a backlink.",
+    "A link originating from a website with high authority score doesn’t necessarily make it good.",
+    "Similarly, a link from a website with low authority score doesn’t automatically disqualify it as being good.",
+    "Why?",
+    "Well, there’s this concept of relevance.",
+    "A backlink is considered relevant when it comes from a website that is related to your industry or niche.",
+    "To put it simply, a link from a direct competitor is probably going to be the best backlink you can get for your website.",
+    "This is because your competitor operates in the same industry and probably is going after the same audience and search queries.",
+    "This makes them highly relevant in Google’s eyes.",
+    "But landing a link from a competitor is extremely difficult.",
+    "Therefore, what other websites could be viewed as being relevant to your content?",
+    "In his article for Search Engine Land, Brad Smith proposes an interesting framework titled “The 5 Degrees of Link Relevance.”",
+    "Since getting a backlink from a direct competitor is unlikely and paying for inclusion can be cost-prohibitive, Brad suggests other varying types of relevant websites.",
+    "In short, a high-quality backlink comes from a topically relevant or audience-relevant website.",
+    "For instance, if you’re an affiliate website promoting smart home technology products, a topical relevant website would be the manufacturer of smart home products.",
+    "And an audience-relevant website could be one that covers informational topics on smart home products—even a niche website monetized by display ads.",
+    "But avoid low-trust and irrelevant websites even when they have attractive authority metrics.",
+    "SEOs have long tried to manipulate Google search rankings, and backlinks are a known ranking signal.",
+    "So much so Google considers unnatural links a violation of their guidelines.",
+    "A good backlink is one that looks natural. That is, it doesn’t stand out.",
+    "What does this mean?",
+    "You want your reader to notice the backlink, but not because it seems off. But rather, a good backlink uses anchor text that reflects the tone and usual language of the author.",
+    "Because when it doesn’t, the link can send the wrong message. Instead of trust and curiosity to learn more, a user can be pushed away.",
+    "And search engines can probably spot the pattern and devalue the backlink anyway.",
+    "A good backlink will come from the main body of the referring page.",
+    "This is because your link’s position on a page is important.",
+    "For example, a backlink on a user’s forum signature will carry little weight. Just as a footer link or site-wide sidebar link will have no impact on your search rankings.",
+    "But above all else, it needs to make sense otherwise, it will stand out like a sore thumb. Especially if you’re using aggressive exact-match keywords as the anchor text.",
+    "A good backlink uses anchor text that makes the reader want to click on it.",
+    "The above screenshot is an example of a typical optimized-for-search anchor text.",
+    "While it may help with boosting ranking signals to your target page, it lacks any real reason for someone to click on it.",
+    "Instead of relying on generic phrases stuffed with keywords, craft anchor text that:",
+    "Provides clear context about the linked content",
+    "Piques the reader’s interest or curiosity",
+    "Demonstrates value they’ll gain by clicking",
+    "As mentioned earlier, rel=”nofollow” is a tag added to a link that tells search engines: “Don’t count this link as an endorsement.”",
+    "A good backlink, if ranking is your ultimate goal, will not have a nofollow, sponsored, or UGC tag.",
+    "However, if the referring page is highly relevant and will attract a high volume of relevant visitors, a nofollow, sponsored, or UGC backlink is absolutely fine because of the potential referral traffic it’ll attract.",
+    "Choosing the right tool to check backlinks is about knowing what each tool can do.",
+    "Remember, no backlink check tool can find every link on the web, not even Google.",
+    "But, we can still pick the best one by looking at how they perform.",
+    "We’re talking about things like how many links they find, how fast they find them, and if they’re good at getting it right.",
+    "The folks at Xamsor took a close look at this.",
+    "For six months, they tested the top SEO tools out there. Their research was all about seeing which tools do the best job.",
+    "What they found out is really helpful for anyone looking to choose a backlink checker.",
+    "Xamsor’s team started with a selection of 14 backlink tools, ranging from well-known to lesser-known options. They aimed to comprehensively assess each tool’s capabilities.",
+    "Semrush",
+    "SEO Review Tools",
+    "SmallSEOTools",
+    "The HOTH",
+    "Ahrefs",
+    "Moz",
+    "Ubersuggest",
+    "LinkResearch",
+    "Majestic",
+    "Seobility",
+    "BACKLINKTOOL.org",
+    "Mangools",
+    "SE Ranking",
+    "SEO SpyGlass",
+    "Serpstat",
+    "Their experiment involved purchasing several thousand backlinks to see how effectively each tool identified them on test domains.",
+    "What they discovered was most of them use data from other sources.",
+    "This became obvious when they noticed the number of backlinks and referring domains reported were identical in many of these tools.",
+    "These were identified based on their market standing and available documentation, indicating they likely use original data.",
+    "Further experiments were conducted to validate these observations.",
+    "Ultimately, this process narrowed down our initial list of 14 SEO tools to just four major contenders: Semrush, Ahrefs, Moz, and Majestic.",
+    "Next, from the four SEO tools, their team stress-tested how fast these tools discover new backlinks. Speed is the name of the game here.",
+    "They purchased several new domains and thousands of backlinks for these domains.",
+    "Here is how the speed test looked for one of the domains:",
+    "Like the chart above, Semrush won most cases. Ahrefs won some. Moz won one. Majestic and others won none.",
+    "However:",
+    "Semrush and Ahrefs are miles ahead in backlinks discovery compared to other SEO tools.",
+    "Moz was inconsistent. While it discovered most backlinks for one domain, it didn’t discover backlinks for a few others for a long time.",
+    "Here are the speed test results after a full month of the experiment:",
+    "As you can see, Semrush and Ahrefs stand above the rest.",
+    "Both tools were stable in leading both in quantitative and speed tests so far. Semrush won more cases, but gap with Ahrefs wasn’t that significant to claim the total leadership.",
+    "It will also be fair to say that experiments built around only ten domains are not statistically reliable. And this is where the next experiment comes into play.",
+    "In February 2024, Xamsor partnered with Empire Flippers, the largest US-based marketplace for selling online businesses, including websites.",
+    "They ran an experiment to compare the number of backlinks and referring domains Semrush and Ahrefs discovered for 107 websites listed on Empire Flippers.",
+    "Here is what they found:",
+    "In total, Semrush discovered 6.93M links and Ahrefs discovered 2.43M links.",
+    "On the website level, Semrush found more backlinks for 93 out of 107 websites (87%). Whereas Ahrefs discovered more links for the remaining 14 sites (13%).",
+    "For a majority of sites (65%), Semrush discovered more than 3X the number of backlinks Ahrefs discovered.",
+    "Counting backlinks only tells part of the story.",
+    "To understand backlink quality, the team looked into how SEO tools measure it using authority metrics. They focused on two main metrics for this study: Semrush’s Authority Score (AS) and Ahrefs’ Domain Rating (DR).",
+    "These metrics evaluate the strength and quality of backlinks, suggesting that higher authority equals higher quality.",
+    "To test these metrics, they hired freelancers on Upwork. Their task was to increase the authority scores of five new domains with no content, organic traffic, or keyword rankings, just a lot of backlinks.",
+    "After waiting two months, here are the results for each domain’s authority metrics.",
+    "The data clearly indicates that the “authority” or perceived “quality” of websites, as determined by Ahrefs, is susceptible to manipulation.",
+    "On the other hand, the Semrush score remained resilient against attempts by “authority hackers.” Semrush stands out for its robust performance in backlink discovery, excelling in speed, quantity, and quality.",
+    "Now that you’ve seen what the competition is doing compared to your own efforts, the next step is to develop a plan to get those links.",
+    "One strategy that always attracts links from big publications is creating what Backlinko’s founder Brian Dean calls “be the source” content. This is one of seven proven strategies in our guide to earning high-quality backlinks."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Cookie Policy.",
+      "href": "https://www.semrush.com/company/legal/cookie-policy/"
+    },
+    {
+      "label": "Allow all cookies",
+      "href": null
+    },
+    {
+      "label": "Deny all",
+      "href": null
+    },
+    {
+      "label": "Cookie settings",
+      "href": null
+    },
+    {
+      "label": "Watch Now",
+      "href": "https://www.youtube.com/watch?v=rIGzcovF6cM"
+    },
+    {
+      "label": "Close",
+      "href": null
+    },
+    {
+      "label": "Articles",
+      "href": null
+    },
+    {
+      "label": "Tools",
+      "href": null
+    },
+    {
+      "label": "Templates",
+      "href": "/templates/marketing"
+    },
+    {
+      "label": "About",
+      "href": "/about-backlinko"
+    },
+    {
+      "label": "Newsletter",
+      "href": "/newsletter"
+    },
+    {
+      "label": "Tools",
+      "href": "/tools"
+    },
+    {
+      "label": "*.domain.com/*Domain with subdomains",
+      "href": null
+    },
+    {
+      "label": "Analyze",
+      "href": null
+    },
+    {
+      "label": "What are Backlinks?",
+      "href": "#what-are-backlinks"
+    },
+    {
+      "label": "What Are They Important for SEO?",
+      "href": "#what-are-they-important-for-seo"
+    },
+    {
+      "label": "1. Provide a Vote of Confidence in Your Site",
+      "href": "#1-provide-a-vote-of-confidence-in-your-site"
+    },
+    {
+      "label": "2. Improve Search Rankings",
+      "href": "#2-improve-search-rankings"
+    },
+    {
+      "label": "3. Drive Referral Traffic to Your Site",
+      "href": "#3-drive-referral-traffic-to-your-site"
+    },
+    {
+      "label": "How to Analyze Your Site’s Backlinks For Free",
+      "href": "#how-to-analyze-your-sites-backlinks-for-free"
+    },
+    {
+      "label": "How to Analyze Your Competitor’s Backlinks",
+      "href": "#how-to-analyze-your-competitors-backlinks"
+    },
+    {
+      "label": "Site-Wide Analysis",
+      "href": "#site-wide-analysis"
+    },
+    {
+      "label": "Specific URL Analysis",
+      "href": "#specific-url-analysis"
+    },
+    {
+      "label": "Why You Should Analyze Your Competitors Backlinks",
+      "href": "#why-you-should-analyze-your-competitors-backlinks"
+    },
+    {
+      "label": "See What Type of Content Is Popular",
+      "href": "#see-what-type-of-content-is-popular"
+    },
+    {
+      "label": "See Why Their Content Has Been Linked To",
+      "href": "#see-why-their-content-has-been-linked-to"
+    },
+    {
+      "label": "Reverse Engineer How Their Content Was Linked To",
+      "href": "#reverse-engineer-how-their-content-was-linked-to"
+    },
+    {
+      "label": "What Is Considered a Good Backlink?",
+      "href": "#what-is-considered-a-good-backlink"
+    },
+    {
+      "label": "Authority",
+      "href": "#authority"
+    },
+    {
+      "label": "Relevance",
+      "href": "#relevance"
+    },
+    {
+      "label": "Natural vs Unnatural",
+      "href": "#natural-vs-unnatural"
+    },
+    {
+      "label": "Link Position",
+      "href": "#link-position"
+    },
+    {
+      "label": "Anchor Text",
+      "href": "#anchor-text"
+    },
+    {
+      "label": "Link Attribute",
+      "href": "#link-attribute"
+    },
+    {
+      "label": "Top Backlink Checker Tools: An In-Depth Comparison",
+      "href": "#top-backlink-checker-tools-an-in-depth-comparison"
+    },
+    {
+      "label": "#1: Original Data Provider",
+      "href": "#1-original-data-provider"
+    },
+    {
+      "label": "#2: Speed of Backlinks Discovery",
+      "href": "#2-speed-of-backlinks-discovery"
+    },
+    {
+      "label": "#3: Quantity of Backlinks Discovered",
+      "href": "#3-quantity-of-backlinks-discovered"
+    },
+    {
+      "label": "#4: Quality of Backlinks Discovered",
+      "href": "#4-quality-of-backlinks-discovered"
+    },
+    {
+      "label": "How to Get High-Quality Backlinks",
+      "href": "#how-to-get-high-quality-backlinks"
+    },
+    {
+      "label": "Backlinko Team",
+      "href": "/blog/authors/backlinko-team"
+    },
+    {
+      "label": "Backlinko.com",
+      "href": "http://Backlinko.com"
+    },
+    {
+      "label": "Backlinks",
+      "href": "https://backlinko.com/hub/seo/backlinks"
+    },
+    {
+      "label": ".",
+      "href": "#analyze-competitor-backlinks"
+    },
+    {
+      "label": "HTML tag",
+      "href": "https://backlinko.com/html-tags"
+    },
+    {
+      "label": "PageRank",
+      "href": "https://www.semrush.com/blog/pagerank/?utm_campaign=free-backlink-checker&utm_source=backlinko.com&utm_medium=referral"
+    },
+    {
+      "label": "What Is a Nofollow Link? Here’s A Simple Plain English Answer",
+      "href": "https://backlinko.com/nofollow-link"
+    },
+    {
+      "label": "they fall into the same bucket as nofollow links",
+      "href": "https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links"
+    },
+    {
+      "label": "SEO roadmap",
+      "href": "https://backlinko.com/seo-roadmap"
+    },
+    {
+      "label": "They provide a vote of confidence in your website",
+      "href": "#vote-of-confidence"
+    },
+    {
+      "label": "They improve search rankings",
+      "href": "#improve-search-rankings"
+    },
+    {
+      "label": "They drive referral traffic to your content",
+      "href": "#drive-referral-traffic"
+    },
+    {
+      "label": "E-E-A-T",
+      "href": "https://backlinko.com/google-e-e-a-t"
+    },
+    {
+      "label": "Google’s ranking system",
+      "href": "https://backlinko.com/google-rankbrain-seo"
+    },
+    {
+      "label": "why link building still matters",
+      "href": "https://backlinko.com/link-building"
+    },
+    {
+      "label": "CTR",
+      "href": "https://backlinko.com/google-ctr-stats"
+    },
+    {
+      "label": "optimizing for featured snippets",
+      "href": "https://www.searchenginejournal.com/featured-snippets-optimization/410622/"
+    },
+    {
+      "label": "technical SEO",
+      "href": "https://backlinko.com/technical-seo-guide"
+    },
+    {
+      "label": "on-page SEO",
+      "href": "https://backlinko.com/on-page-seo"
+    },
+    {
+      "label": "Quality Raters Guide",
+      "href": "https://services.google.com/fh/files/misc/hsw-sqrg.pdf"
+    },
+    {
+      "label": "increase traffic",
+      "href": "https://backlinko.com/increase-website-traffic"
+    },
+    {
+      "label": "robots.txt",
+      "href": "https://backlinko.com/hub/seo/robots-txt"
+    },
+    {
+      "label": "click here to start your 7-day trial",
+      "href": "https://www.semrush.com/signup/?utm_campaign=free-backlink-checker&utm_source=backlinko.com&utm_medium=referral"
+    },
+    {
+      "label": "guest post",
+      "href": "https://backlinko.com/the-definitive-guide-to-guest-blogging"
+    },
+    {
+      "label": "free website authority tool",
+      "href": "https://backlinko.com/tools/website-authority"
+    },
+    {
+      "label": "The 5 Degrees of Link Relevance",
+      "href": "https://searchengineland.com/link-relevance-degrees-430966"
+    },
+    {
+      "label": "violation of their guidelines",
+      "href": "https://developers.google.com/search/docs/essentials/spam-policies?hl=en&visit_id=638444473366346153-978037645&rd=1#link-spam"
+    },
+    {
+      "label": "Xamsor",
+      "href": "https://xamsor.com/"
+    },
+    {
+      "label": "Ubersuggest",
+      "href": "https://backlinko.com/hub/seo/ubersuggest"
+    },
+    {
+      "label": "guide to earning high-quality backlinks",
+      "href": "https://backlinko.com/high-quality-backlinks#become-a-source-for-reporters-and-bloggers"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Newsletter",
+      "href": "/newsletter"
+    },
+    {
+      "label": "Templates",
+      "href": "https://backlinko.com/templates/marketing"
+    },
+    {
+      "label": "Best SEO Tools",
+      "href": "/best-free-seo-tools"
+    },
+    {
+      "label": "About",
+      "href": "/about-backlinko"
+    },
+    {
+      "label": "Semrush AI Visiblity",
+      "href": "https://www.semrush.com/ai-seo/overview/"
+    },
+    {
+      "label": "Semrush Free Trial",
+      "href": "https://backlinko.com/deals/semrush-coupon"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    },
+    {
+      "label": "Twitter",
+      "href": "https://twitter.com/backlinko"
+    },
+    {
+      "label": "YouTube",
+      "href": "https://www.youtube.com/@BacklinkoTeam"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/briandean/"
+    },
+    {
+      "label": "Terms of Service",
+      "href": "https://www.semrush.com/company/legal/terms-of-service/?utm_source=backlinko.com&utm_medium=referral"
+    }
+  ],
+  "links": [
+    "https://www.semrush.com/company/legal/cookie-policy/",
+    "https://backlinko.com/tools/backlink-checker#",
+    "https://www.youtube.com/watch?v=rIGzcovF6cM",
+    "https://backlinko.com/",
+    "https://backlinko.com/ai-search-strategy",
+    "https://backlinko.com/llm-seeding",
+    "https://backlinko.com/generative-engine-optimization-geo",
+    "https://backlinko.com/hub/seo/what-is-seo",
+    "https://backlinko.com/improve-your-seo",
+    "https://backlinko.com/seo-checklist",
+    "https://backlinko.com/seo-strategy",
+    "https://backlinko.com/?p=165994",
+    "https://backlinko.com/google-e-e-a-t",
+    "https://backlinko.com/hub/seo/internal-links",
+    "https://backlinko.com/technical-seo-guide",
+    "https://backlinko.com/on-page-seo",
+    "https://backlinko.com/ecommerce-seo",
+    "https://backlinko.com/seo-certification-guide",
+    "https://backlinko.com/ai-optimization",
+    "https://backlinko.com/ai-seo",
+    "https://backlinko.com/entity-seo",
+    "https://backlinko.com/audience-research",
+    "https://backlinko.com/reddit-marketing",
+    "https://backlinko.com/?p=193164",
+    "https://backlinko.com/answer-engine-optimization-aeo",
+    "https://backlinko.com/seo-basics-for-beginners",
+    "https://backlinko.com/seo-tutorial",
+    "https://backlinko.com/pillar-pages",
+    "https://backlinko.com/?p=175006",
+    "https://backlinko.com/actionable-seo-tips",
+    "https://backlinko.com/small-business-seo",
+    "https://backlinko.com/schema-markup-guide",
+    "https://backlinko.com/website-migration-checklist",
+    "https://backlinko.com/hub/content/what-is-content-marketing",
+    "https://backlinko.com/seo-copywriting",
+    "https://backlinko.com/?p=103911",
+    "https://backlinko.com/content-marketing-this-year",
+    "https://backlinko.com/?p=190262",
+    "https://backlinko.com/?p=172343",
+    "https://backlinko.com/scale-content",
+    "https://backlinko.com/hub/content/writing",
+    "https://backlinko.com/link-building",
+    "https://backlinko.com/hub/seo/backlinks",
+    "https://backlinko.com/high-quality-backlinks",
+    "https://backlinko.com/link-building-strategies",
+    "https://backlinko.com/link-building-services",
+    "https://backlinko.com/step-by-step-backlink-audit",
+    "https://backlinko.com/skyscraper-technique",
+    "https://backlinko.com/increase-domain-authority",
+    "https://backlinko.com/competitor-analysis",
+    "https://backlinko.com/?p=173056",
+    "https://backlinko.com/?p=174557",
+    "https://backlinko.com/how-to-create-a-website",
+    "https://backlinko.com/tools/seo-checker",
+    "https://backlinko.com/tools/backlink-checker",
+    "https://backlinko.com/tools/website-authority",
+    "https://backlinko.com/tools/website-traffic-checker",
+    "https://backlinko.com/tools/keyword",
+    "https://backlinko.com/tools/keyword-difficulty-checker",
+    "https://backlinko.com/tools/competitor-analysis",
+    "https://backlinko.com/tools/schema-markup-generator",
+    "https://backlinko.com/tools/ai-visibility-checker",
+    "https://backlinko.com/tools/ai-agent-readiness",
+    "https://backlinko.com/tools/agentic-browsing-readiness",
+    "https://backlinko.com/best-free-seo-tools",
+    "https://backlinko.com/llm-tracking-tools",
+    "https://backlinko.com/keyword-research-tools",
+    "https://backlinko.com/?p=98736",
+    "https://backlinko.com/link-building-tools",
+    "https://backlinko.com/best-rank-tracking-tools",
+    "https://backlinko.com/?p=171633",
+    "https://backlinko.com/seo-software-agencies",
+    "https://backlinko.com/ai-seo-tools",
+    "https://backlinko.com/sitemap-generator-tools",
+    "https://backlinko.com/best-digital-marketing-tools",
+    "https://backlinko.com/?p=170722",
+    "https://backlinko.com/semrush-review",
+    "https://backlinko.com/ahrefs-review",
+    "https://backlinko.com/ahrefs-vs-semrush",
+    "https://backlinko.com/clearscope-review",
+    "https://backlinko.com/majestic-seo-review",
+    "https://backlinko.com/surfer-seo",
+    "https://backlinko.com/serpstat-review",
+    "https://backlinko.com/sparktoro-review",
+    "https://backlinko.com/templates/marketing",
+    "https://backlinko.com/about-backlinko",
+    "https://backlinko.com/newsletter",
+    "https://backlinko.com/tools",
+    "https://backlinko.com/tools/backlink-checker#what-are-backlinks",
+    "https://backlinko.com/tools/backlink-checker#what-are-they-important-for-seo",
+    "https://backlinko.com/tools/backlink-checker#1-provide-a-vote-of-confidence-in-your-site",
+    "https://backlinko.com/tools/backlink-checker#2-improve-search-rankings",
+    "https://backlinko.com/tools/backlink-checker#3-drive-referral-traffic-to-your-site",
+    "https://backlinko.com/tools/backlink-checker#how-to-analyze-your-sites-backlinks-for-free",
+    "https://backlinko.com/tools/backlink-checker#how-to-analyze-your-competitors-backlinks",
+    "https://backlinko.com/tools/backlink-checker#site-wide-analysis",
+    "https://backlinko.com/tools/backlink-checker#specific-url-analysis",
+    "https://backlinko.com/tools/backlink-checker#why-you-should-analyze-your-competitors-backlinks",
+    "https://backlinko.com/tools/backlink-checker#see-what-type-of-content-is-popular",
+    "https://backlinko.com/tools/backlink-checker#see-why-their-content-has-been-linked-to",
+    "https://backlinko.com/tools/backlink-checker#reverse-engineer-how-their-content-was-linked-to",
+    "https://backlinko.com/tools/backlink-checker#what-is-considered-a-good-backlink",
+    "https://backlinko.com/tools/backlink-checker#authority",
+    "https://backlinko.com/tools/backlink-checker#relevance",
+    "https://backlinko.com/tools/backlink-checker#natural-vs-unnatural",
+    "https://backlinko.com/tools/backlink-checker#link-position",
+    "https://backlinko.com/tools/backlink-checker#anchor-text",
+    "https://backlinko.com/tools/backlink-checker#link-attribute",
+    "https://backlinko.com/tools/backlink-checker#top-backlink-checker-tools-an-in-depth-comparison",
+    "https://backlinko.com/tools/backlink-checker#1-original-data-provider",
+    "https://backlinko.com/tools/backlink-checker#2-speed-of-backlinks-discovery",
+    "https://backlinko.com/tools/backlink-checker#3-quantity-of-backlinks-discovered",
+    "https://backlinko.com/tools/backlink-checker#4-quality-of-backlinks-discovered",
+    "https://backlinko.com/tools/backlink-checker#how-to-get-high-quality-backlinks",
+    "https://backlinko.com/blog/authors/backlinko-team",
+    "http://backlinko.com/",
+    "https://backlinko.com/tools/backlink-checker#analyze-competitor-backlinks",
+    "https://backlinko.com/html-tags",
+    "https://www.semrush.com/blog/pagerank/?utm_campaign=free-backlink-checker&utm_source=backlinko.com&utm_medium=referral",
+    "https://backlinko.com/nofollow-link",
+    "https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links",
+    "https://backlinko.com/seo-roadmap",
+    "https://backlinko.com/tools/backlink-checker#vote-of-confidence",
+    "https://backlinko.com/tools/backlink-checker#improve-search-rankings",
+    "https://backlinko.com/tools/backlink-checker#drive-referral-traffic",
+    "https://backlinko.com/google-rankbrain-seo",
+    "https://backlinko.com/google-ctr-stats",
+    "https://www.searchenginejournal.com/featured-snippets-optimization/410622/",
+    "https://services.google.com/fh/files/misc/hsw-sqrg.pdf",
+    "https://backlinko.com/increase-website-traffic",
+    "https://backlinko.com/hub/seo/robots-txt",
+    "https://www.semrush.com/signup/?utm_campaign=free-backlink-checker&utm_source=backlinko.com&utm_medium=referral",
+    "https://backlinko.com/the-definitive-guide-to-guest-blogging",
+    "https://searchengineland.com/link-relevance-degrees-430966",
+    "https://developers.google.com/search/docs/essentials/spam-policies?hl=en&visit_id=638444473366346153-978037645&rd=1#link-spam",
+    "https://xamsor.com/",
+    "https://backlinko.com/hub/seo/ubersuggest",
+    "https://backlinko.com/high-quality-backlinks#become-a-source-for-reporters-and-bloggers",
+    "https://twitter.com/share?text=Free%20Backlink%20Checker%3A%20See%20Who%20Links%20to%20Any%20Site&url=https%3A%2F%2Fbacklinko.com%2Ftools%2Fbacklink-checker&via=Backlinko",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbacklinko.com%2Ftools%2Fbacklink-checker",
+    "https://www.reddit.com/submit?url=https%3A%2F%2Fbacklinko.com%2Ftools%2Fbacklink-checker&title=Free%20Backlink%20Checker%3A%20See%20Who%20Links%20to%20Any%20Site",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fbacklinko.com%2Ftools%2Fbacklink-checker&summary=Free%20Backlink%20Checker%3A%20See%20Who%20Links%20to%20Any%20Site",
+    "https://backlinko.com/blog",
+    "https://www.semrush.com/ai-seo/overview/",
+    "https://backlinko.com/deals/semrush-coupon",
+    "https://backlinko.com/contact",
+    "https://twitter.com/backlinko",
+    "https://www.youtube.com/@BacklinkoTeam",
+    "https://www.instagram.com/briandean/",
+    "https://www.semrush.com/company/legal/terms-of-service/?utm_source=backlinko.com&utm_medium=referral",
+    "https://www.semrush.com/company/legal/privacy-policy/?utm_source=backlinko.com&utm_medium=referral"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://backlinko.com/_next/image?url=https%3A%2F%2Fapi.backlinko.com%2Fapp%2Fuploads%2F2024%2F01%2Fteam-avatar.jpg&w=640&q=75",
+        "alt": "team-avatar",
+        "w": 140,
+        "h": 140
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2024/03/backlink-checker-backlinko-e1711649711724-768x307.png",
+        "alt": "Backlink Checker – Backlinko",
+        "w": 700,
+        "h": 279
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2024/03/what-are-backlinks-768x305.webp",
+        "alt": "What are backlinks",
+        "w": 700,
+        "h": 277
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2024/03/backlink-checker-list-of-backlinks-768x707.webp",
+        "alt": "Backlink Checker – List of backlinks",
+        "w": 650,
+        "h": 598
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2024/03/anchor-links-768x736.webp",
+        "alt": "Anchor links",
+        "w": 700,
+        "h": 670
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2024/03/backlink-checker-attributes-640x669.webp",
+        "alt": "Backlink Checker – Attributes",
+        "w": 599,
+        "h": 627
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2024/03/high-authority-pages-backlinks-768x943.webp",
+        "alt": "High authority pages backlinks",
+        "w": 700,
+        "h": 859
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2024/02/backlinko-authority-score-640x493.webp",
+        "alt": "Backlinko Authority Score",
+        "w": 550,
+        "h": 423
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2024/03/backlink-checker-authority-score-640x669.webp",
+        "alt": "Backlink Checker – Authority score",
+        "w": 599,
+        "h": 627
+      }
+    ],
+    "allImgCount": 29,
+    "cssBackgrounds": [],
+    "modals": [
+      "About cookies on this siteWe use cookies to run our website, analyze your use of our services, manage your online preferences & personalize ad content. By accepting our cookies, you'll get relevant content and social media features, personalized ads, and an enhanced browsing experience. To manage your choices, click “Cookie Settings.” Necessary cookies are required for the core website functionality and cannot be rejected. For more information, see ourCookie Policy.Allow all cookiesDeny allCookie settings"
+    ],
+    "videos": [],
+    "iframes": [
+      {
+        "src": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LekP9gtAAAAAAZpR5vPPD0Berfc7RjjEUP2yXju&co=aHR0cHM6Ly9iYWNrbGlua28uY29tOjQ0Mw..&hl=en&v=NhfdZHzre16wrc2m6BxEdu7J&size=invisible&anchor-ms=20000&execute-ms=30000&cb=yegy89ibcjx9",
+        "title": "reCAPTCHA"
+      }
+    ]
+  },
+  "customProps": {
+    "--fa-font-solid": "normal 900 1em/1 \"Font Awesome 6 Free\"",
+    "--fa-font-regular": "normal 400 1em/1 \"Font Awesome 6 Free\"",
+    "--fa-font-light": "normal 300 1em/1 \"Font Awesome 6 Pro\"",
+    "--fa-font-thin": "normal 100 1em/1 \"Font Awesome 6 Pro\"",
+    "--fa-font-duotone": "normal 900 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-regular": "normal 400 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-light": "normal 300 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-thin": "normal 100 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-brands": "normal 400 1em/1 \"Font Awesome 6 Brands\"",
+    "--fa-font-sharp-solid": "normal 900 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-regular": "normal 400 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-light": "normal 300 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-thin": "normal 100 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-duotone-solid": "normal 900 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-regular": "normal 400 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-light": "normal 300 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-thin": "normal 100 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--app-height": "100svh",
+    "--backlinko-bar-height": "62px",
+    "--sl-widgets-font-family": "-apple-system, system-ui",
+    "--sl-widgets-base-unit": "16px"
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 33,
+    "mainTextLen": 25824,
+    "realImageCount": 9,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "dev.visualwebsiteoptimizer.com",
+        "path": "/j.php",
+        "query": [
+          "a",
+          "ph",
+          "st",
+          "u",
+          "vn",
+          "x"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://dev.visualwebsiteoptimizer.com/j.php",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "pagead2.googlesyndication.com",
+        "path": "/ccm/collect",
+        "query": [
+          "ae",
+          "apvc",
+          "dl",
+          "dma",
+          "dma_cps",
+          "en",
+          "ep.ads_data_redaction",
+          "fmt",
+          "frm",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "navt",
+          "npa",
+          "rcb",
+          "rnd",
+          "scrsrc",
+          "tag_exp",
+          "tfd",
+          "tft"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "status": 200,
+        "bytes": null,
+        "hits": 3,
+        "example": "https://pagead2.googlesyndication.com/ccm/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "api.backlinko.com",
+        "path": "/wp-json/backlinkostats/v1/shares/{n}",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://api.backlinko.com/wp-json/backlinkostats/v1/shares/170197",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 15357,
+        "hits": 2,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 37534,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 37477,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 32644,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 43996,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 46193,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 56664,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 43849,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 47430,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 33690,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 51593,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 57075,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 20964,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 24450,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 15710,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 11219,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 26516,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 10501,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 19744,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 8983,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+        "query": [
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 6751,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 9037,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/backlinko-team.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/backlinko-team.json",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "www.semrush.com",
+        "path": "/olaf/init",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://www.semrush.com/olaf/init",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "region-eu.cookiehub.net",
+        "path": "/",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 28,
+        "hits": 1,
+        "example": "https://region-eu.cookiehub.net/",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "cdn.cookiehub.eu",
+        "path": "/client/7417b56b/en.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://cdn.cookiehub.eu/client/7417b56b/en.json",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "region1.google-analytics.com",
+        "path": "/g/collect",
+        "query": [
+          "_eu",
+          "_fv",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "cid",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dp",
+          "dt",
+          "en",
+          "ep.container_id",
+          "ep.page_language",
+          "ep.user_agent",
+          "frm",
+          "gaf",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "status": 204,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://region1.google-analytics.com/g/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "streaming.bi.owox.com",
+        "path": "/ga4/{hash}/g/collect",
+        "query": [
+          "_eu",
+          "_fplc",
+          "_fv",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "cid",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dp",
+          "dt",
+          "ecid",
+          "en",
+          "ep.container_id",
+          "ep.page_language",
+          "ep.user_agent",
+          "frm",
+          "gaf",
+          "gap.sstd",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "richsstsse",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "sst.etld",
+          "sst.gch",
+          "sst.gcsub",
+          "sst.lpc",
+          "sst.navt",
+          "sst.rnd",
+          "sst.tft",
+          "sst.ude",
+          "sst.us_privacy",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "ur",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/gif",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://streaming.bi.owox.com/ga4/9bb752a08674f116753ca5719dda03ed/g/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "rum-collector-2.pingdom.net",
+        "path": "/img/beacon.gif",
+        "query": [
+          "bIH",
+          "bIW",
+          "cE",
+          "cS",
+          "dC",
+          "dCLEE",
+          "dCLES",
+          "dI",
+          "dL",
+          "dLE",
+          "dLS",
+          "dPR",
+          "fS",
+          "hS",
+          "id",
+          "lEE",
+          "lES",
+          "nS",
+          "nT",
+          "or",
+          "pD",
+          "path",
+          "rC",
+          "rE",
+          "rS",
+          "rV",
+          "reS",
+          "ref",
+          "resE",
+          "resS",
+          "s",
+          "sAH",
+          "sAW",
+          "sIS",
+          "sId",
+          "sST",
+          "title",
+          "uEE",
+          "uES",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": null,
+        "status": 200,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://rum-collector-2.pingdom.net/img/beacon.gif",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "js.sparkloop.app",
+        "path": "/team_d05f5749d84d/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "status": 301,
+        "bytes": 167,
+        "hits": 1,
+        "example": "https://js.sparkloop.app/team_d05f5749d84d/settings",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "script-settings.sparkloop.app",
+        "path": "/team_d05f5749d84d/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://script-settings.sparkloop.app/team_d05f5749d84d/settings",
+        "sameSite": false
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "www.googletagmanager.com",
+        "count": 5
+      },
+      {
+        "host": "rum-static.pingdom.net",
+        "count": 2
+      },
+      {
+        "host": "www.google.com",
+        "count": 2
+      },
+      {
+        "host": "www.gstatic.com",
+        "count": 2
+      },
+      {
+        "host": "cdn.cookiehub.eu",
+        "count": 1
+      },
+      {
+        "host": "js.sparkloop.app",
+        "count": 1
+      },
+      {
+        "host": "script.sparkloop.app",
+        "count": 1
+      },
+      {
+        "host": "www.semrush.com",
+        "count": 1
+      }
+    ],
+    "truncated": false,
+    "inlineData": [
+      {
+        "id": "__NEXT_DATA__",
+        "type": "application/json",
+        "bytes": 162210,
+        "topLevelKeys": [
+          "props",
+          "page",
+          "query",
+          "buildId",
+          "isFallback",
+          "isExperimentalCompile",
+          "gsp",
+          "scriptLoader"
+        ]
+      }
+    ],
+    "globalState": [
+      "__NEXT_DATA__",
+      "dataLayer"
+    ],
+    "frameworkHints": [
+      "next"
+    ],
+    "forms": [
+      {
+        "action": "https://backlinko.com/tools/backlink-checker",
+        "hasAction": false,
+        "method": "get",
+        "sameOrigin": true,
+        "fieldCount": 1,
+        "fieldNames": [],
+        "search": false
+      }
+    ],
+    "ariaLiveRegions": 1,
+    "triggers": [
+      {
+        "marker": "aria-haspopup",
+        "href": null
+      },
+      {
+        "marker": "aria-haspopup",
+        "href": null
+      }
+    ],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 26,
+      "thirdPartyEndpoints": 10,
+      "thirdPartyScriptHosts": 8,
+      "inlineDataBlobs": 1,
+      "forms": 1,
+      "searchForms": 0,
+      "hydrated": true
+    }
+  },
+  "screenshot": "assets/screenshots/tools-backlink-checker.png",
+  "renderedHtml": "pages/tools-backlink-checker.html"
+}

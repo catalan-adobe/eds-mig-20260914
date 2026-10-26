@@ -1,0 +1,2306 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics detect",
+  "writtenAt": "2026-10-26T15:09:29.900Z",
+  "settleMs": 5000,
+  "width": 1440,
+  "urls": [
+   "https://backlinko.com/"
+  ]
+ },
+ "pages": {
+  "/": {
+   "url": "https://backlinko.com/",
+   "status": 200,
+   "host": "backlinko.com",
+   "title": "Backlinko: SEO, Content Marketing, & Link Building Strategies",
+   "forms": [
+    {
+     "name": "",
+     "action": null,
+     "method": "get",
+     "role": "",
+     "inChrome": true,
+     "fields": 1,
+     "signature": [
+      "text:"
+     ],
+     "hidden": [],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    },
+    {
+     "name": "ranking-modal-form",
+     "action": "https://www.semrush.com/analytics/keywordoverview/?q=&db=us&utm_source=backlinko.com&utm_medium=referral&utm_campaign=home-nav-modal",
+     "method": "get",
+     "role": "",
+     "inChrome": false,
+     "fields": 1,
+     "signature": [
+      "text:url"
+     ],
+     "hidden": [],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    },
+    {
+     "name": "",
+     "action": "https://www.aweber.com/scripts/addlead.pl",
+     "method": "post",
+     "role": "",
+     "inChrome": false,
+     "fields": 1,
+     "signature": [
+      "email:email"
+     ],
+     "hidden": [
+      "listname",
+      "redirect",
+      "meta_redirect_onlist",
+      "meta_tags",
+      "meta_required"
+     ],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    }
+   ],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "US",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "button",
+      "heading": "",
+      "textLen": 2,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    }
+   ],
+   "dialogs": [
+    {
+     "role": "dialog",
+     "heading": "About cookies on this site",
+     "textLen": 510,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    }
+   ],
+   "dialogCount": 1,
+   "media": [
+    {
+     "tag": "script",
+     "src": "https://c333cd.backlinko.com/app/js/api.min.js",
+     "account": "3566",
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": null,
+     "title": null,
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [],
+   "auth": [
+    "https://www.semrush.com/blog/what-can-i-do-with-a-free-account-from-semrush/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=navigation"
+   ],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en-US",
+    "hreflang": [],
+    "switcher": []
+   },
+   "cms": {
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "11",
+     "12",
+     "13",
+     "push"
+    ],
+    "__NEXT_DATA__": [
+     "props",
+     "page",
+     "query",
+     "buildId",
+     "isFallback",
+     "isExperimentalCompile",
+     "gsp",
+     "scriptLoader"
+    ]
+   },
+   "framework": "next",
+   "globals": [
+    "google_tag_manager"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [
+    {
+     "cls": "css-yw0cdh",
+     "cards": 4,
+     "sameSite": 4,
+     "hasDate": true
+    },
+    {
+     "cls": "css-1aclb7b",
+     "cards": 5,
+     "sameSite": 5,
+     "hasDate": true
+    },
+    {
+     "cls": "css-1o1v5h",
+     "cards": 6,
+     "sameSite": 6,
+     "hasDate": false
+    },
+    {
+     "cls": "css-1aclb7b",
+     "cards": 6,
+     "sameSite": 6,
+     "hasDate": true
+    },
+    {
+     "cls": "css-ko0t2v",
+     "cards": 4,
+     "sameSite": 4,
+     "hasDate": true
+    },
+    {
+     "cls": "hub-topic-resources-list resources-list",
+     "cards": 10,
+     "sameSite": 10,
+     "hasDate": false
+    },
+    {
+     "cls": "hub-topic-resources-list resources-list",
+     "cards": 4,
+     "sameSite": 4,
+     "hasDate": true
+    },
+    {
+     "cls": "hub-topic-resources-list resources-list",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": false
+    },
+    {
+     "cls": "hub-topic-resources-list resources-list",
+     "cards": 4,
+     "sameSite": 4,
+     "hasDate": false
+    }
+   ],
+   "inlineScripts": 6,
+   "inlineFetch": true,
+   "mainText": 3725,
+   "domAddedAfterLoad": 25,
+   "hosts": {
+    "backlinko.com": 123,
+    "dev.visualwebsiteoptimizer.com": 2,
+    "api.backlinko.com": 28,
+    "www.googletagmanager.com": 5,
+    "js.sparkloop.app": 2,
+    "rum-static.pingdom.net": 2,
+    "pagead2.googlesyndication.com": 3,
+    "cdn.cookiehub.eu": 4,
+    "script.sparkloop.app": 1,
+    "www.semrush.com": 2,
+    "region1.google-analytics.com": 2,
+    "streaming.bi.owox.com": 2,
+    "region-eu.cookiehub.net": 1,
+    "rum-collector-2.pingdom.net": 2,
+    "script-settings.sparkloop.app": 1,
+    "dash.sparkloop.app": 1
+   },
+   "thirdPartyHosts": [
+    "dev.visualwebsiteoptimizer.com",
+    "www.googletagmanager.com",
+    "js.sparkloop.app",
+    "rum-static.pingdom.net",
+    "pagead2.googlesyndication.com",
+    "cdn.cookiehub.eu",
+    "script.sparkloop.app",
+    "www.semrush.com",
+    "region1.google-analytics.com",
+    "streaming.bi.owox.com",
+    "region-eu.cookiehub.net",
+    "rum-collector-2.pingdom.net",
+    "script-settings.sparkloop.app",
+    "dash.sparkloop.app"
+   ],
+   "scripts": [
+    "https://backlinko.com/_next/static/chunks/webpack-704e8ee699c2fdfd.js",
+    "https://backlinko.com/_next/static/chunks/pages/_app-e0c95721643d087f.js",
+    "https://backlinko.com/_next/static/chunks/framework-0203c421f2bfabf7.js",
+    "https://backlinko.com/_next/static/chunks/98bef5de-4abd22430e84aa9f.js",
+    "https://backlinko.com/_next/static/chunks/main-ecf40d1368e5c252.js",
+    "https://backlinko.com/_next/static/chunks/2867-05fbb03ac3179292.js",
+    "https://backlinko.com/_next/static/chunks/2399-adbe4d9bf9c0d587.js",
+    "https://backlinko.com/_next/static/chunks/7011-9004e8746d19cbbf.js",
+    "https://backlinko.com/_next/static/98eJ4qW-QitTETEyYF6Wn/_buildManifest.js",
+    "https://backlinko.com/_next/static/chunks/7e42aecb-d9303370876fba7e.js",
+    "https://backlinko.com/_next/static/chunks/9357-845555a3cf01f8b7.js",
+    "https://backlinko.com/_next/static/chunks/9223-c47dde912fd2f5fa.js",
+    "https://backlinko.com/_next/static/chunks/pages/index-65b007a1de994c33.js",
+    "https://backlinko.com/_next/static/chunks/2519-17de3a579da8c918.js",
+    "https://backlinko.com/_next/static/98eJ4qW-QitTETEyYF6Wn/_ssgManifest.js",
+    "https://backlinko.com/_next/static/chunks/6759-cb6020a4f000e0b8.js",
+    "https://backlinko.com/_next/static/chunks/2f165a39-9ddcdb8151a558ba.js",
+    "https://backlinko.com/_next/static/chunks/5473-20cf7257d9ce11f3.js",
+    "https://backlinko.com/_next/static/chunks/2095-690e9fb8d1b360f3.js",
+    "https://backlinko.com/_next/static/chunks/7543-3a7adcb08b3a8084.js",
+    "https://backlinko.com/_next/static/chunks/8830-73cb8c5f7c7d1104.js",
+    "https://backlinko.com/_next/static/chunks/9931-3c5c9e984dd0d96d.js",
+    "https://backlinko.com/_next/static/chunks/1219-01c097b781c3b271.js",
+    "https://backlinko.com/_next/static/chunks/1344.d0fab8f38a55b22c.js",
+    "https://backlinko.com/_next/static/chunks/6356.4fee7efe0346927b.js",
+    "https://backlinko.com/_next/static/chunks/8230-75270301e8b6ef4e.js",
+    "https://backlinko.com/_next/static/chunks/1578-f4ce4592e319cf45.js",
+    "https://backlinko.com/_next/static/chunks/pages/%5Bslug%5D-d14e5df178ed66d2.js",
+    "https://backlinko.com/_next/static/chunks/1309-d3ad60c280a1bd81.js",
+    "https://backlinko.com/_next/static/chunks/pages/tools/%5Bslug%5D-6fb3d216f2117d60.js",
+    "https://backlinko.com/_next/static/chunks/pages/hub/%5Btopic%5D/%5Bslug%5D-7013d85b5b87552c.js",
+    "https://backlinko.com/_next/static/chunks/4143-2fe67b11ee83a7b2.js",
+    "https://backlinko.com/_next/static/chunks/8054-1965ce7747565caa.js",
+    "https://backlinko.com/_next/static/chunks/pages/templates/%5Btopic%5D-4dab4758cd266c1e.js",
+    "https://backlinko.com/_next/static/chunks/283-bbde7dfb85796713.js",
+    "https://www.googletagmanager.com/gtm.js?id=GTM-PQRPZST",
+    "https://js.sparkloop.app/team_d05f5749d84d.js",
+    "https://rum-static.pingdom.net/prum.min.js",
+    "https://rum-static.pingdom.net/pa-5a1c4da26f8fe50008000010.js",
+    "https://www.googletagmanager.com/gtag/js?id=AW-951049332&cx=c&gtm=4e6al1",
+    "https://cdn.cookiehub.eu/c2/7417b56b.js",
+    "https://script.sparkloop.app/team_d05f5749d84d.js",
+    "https://www.googletagmanager.com/gtag/js?id=G-BPNLXP3JQG&cx=c&gtm=4e6al1",
+    "https://www.googletagmanager.com/gtag/js?id=G-TZP6X1P137&cx=c&gtm=4e6al1",
+    "https://www.googletagmanager.com/gtag/js?id=G-HYWKMHR981&cx=c&gtm=4e6al1",
+    "https://www.semrush.com/olaf",
+    "https://backlinko.com/_next/static/chunks/pages/blog/authors/%5Bslug%5D-69671fa4e714d820.js",
+    "https://backlinko.com/_next/static/chunks/6-ffa85361eaa501b0.js",
+    "https://backlinko.com/_next/static/chunks/pages/hub/%5Btopic%5D-39f7b741bf6d1fd7.js",
+    "https://backlinko.com/_next/static/chunks/pages/deals/%5Bslug%5D-c89d9db3b9317671.js",
+    "https://backlinko.com/_next/static/chunks/1238-dabce9e71b60e6d3.js",
+    "https://backlinko.com/_next/static/chunks/2838-1089fcd4042cb4ac.js",
+    "https://backlinko.com/_next/static/chunks/pages/blog-f14112f342b01911.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+     "query": [
+      "topic"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+     "query": [
+      "slug",
+      "topic"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+     "query": [
+      "slug",
+      "topic"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/best-free-seo-tools.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/best-free-seo-tools.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/leigh-mckenzie.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/leigh-mckenzie.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/increase-website-traffic.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/increase-website-traffic.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/increase-domain-authority.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/increase-domain-authority.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/high-quality-backlinks.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/high-quality-backlinks.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/rank-high-on-google.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/rank-high-on-google.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seoquake-page-audit.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seoquake-page-audit.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/architecture.json",
+     "query": [
+      "slug",
+      "topic"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/architecture.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/website-marketing.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/website-marketing.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/brand-mentions.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/brand-mentions.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/query-fan-out.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/query-fan-out.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-prompt-tracking.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-prompt-tracking.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/link-building-seo.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/link-building-seo.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/digital-pr-strategies.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/digital-pr-strategies.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/how-to-rank-youtube-videos.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/how-to-rank-youtube-videos.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-generator.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-generator.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/writing.json",
+     "query": [
+      "slug",
+      "topic"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/writing.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/get-youtube-views.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/get-youtube-views.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/broken-link-building.json",
+     "query": [
+      "slug",
+      "topic"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/broken-link-building.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/content-audits.json",
+     "query": [
+      "slug",
+      "topic"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/content-audits.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seo-vs-sem.json",
+     "query": [
+      "slug",
+      "topic"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seo-vs-sem.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/how-to-get-youtube-subscribers.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/how-to-get-youtube-subscribers.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/deals/semrush-coupon.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/deals/semrush-coupon.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/link-building-services.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/link-building-services.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/serps.json",
+     "query": [
+      "slug",
+      "topic"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/serps.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/contact.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/contact.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/ranking-factors.json",
+     "query": [
+      "slug",
+      "topic"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/ranking-factors.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/link-building.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/link-building.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/link-building-strategies.json",
+     "query": [
+      "slug"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/link-building-strategies.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/what-is-content-marketing.json",
+     "query": [
+      "slug",
+      "topic"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/what-is-content-marketing.json"
+    },
+    {
+     "method": "GET",
+     "host": "backlinko.com",
+     "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/name.json",
+     "query": [
+      "slug",
+      "topic"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/name.json"
+    }
+   ],
+   "thirdPartyXhr": [
+    "GET dev.visualwebsiteoptimizer.com/j.php",
+    "POST pagead2.googlesyndication.com/ccm/collect",
+    "POST region1.google-analytics.com/g/collect",
+    "GET streaming.bi.owox.com/ga4/9bb752a08674f116753ca5719dda03ed/g/collect",
+    "POST www.semrush.com/olaf/init",
+    "POST region-eu.cookiehub.net/",
+    "GET rum-collector-2.pingdom.net/img/beacon.gif",
+    "GET cdn.cookiehub.eu/client/7417b56b/en.json",
+    "GET js.sparkloop.app/team_d05f5749d84d/settings",
+    "GET script-settings.sparkloop.app/team_d05f5749d84d/settings"
+   ],
+   "postBodies": [
+    {
+     "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=8&frm=0&apvc=1&ae=g&en=page_view&dl=https%3A%2F%2Fbacklinko.com%2F&scrsrc=www.googletagmanager.com&rnd=682433314.1793027371&navt=n&npa=1&ep.ads_da",
+     "body": ""
+    },
+    {
+     "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=19&frm=0&apvc=0&tid=AW-951049332&en=page_view&dl=https%3A%2F%2Fbacklinko.com%2F&scrsrc=www.googletagmanager.com&rnd=682433314.1793027371&navt=n&np",
+     "body": ""
+    },
+    {
+     "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=19&frm=0&apvc=0&ae=g&tid=AW-951049332&dl=https%3A%2F%2Fbacklinko.com%2F&scrsrc=www.googletagmanager.com&rnd=682433314.1793027371&navt=n&npa=1&did=",
+     "body": ""
+    },
+    {
+     "url": "https://region-eu.cookiehub.net/",
+     "body": ""
+    },
+    {
+     "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-TZP6X1P137&gtm=45je6al1v878079742za20ozb76266538zd76266538xf1&_p=1793027370215&gcs=G100&gcd=13p3pPp2p5l1&npa=1&dma_cps=-&dma=1&gdid=dMzY0Yz&_eu",
+     "body": ""
+    },
+    {
+     "url": "https://www.semrush.com/olaf/init",
+     "body": ""
+    },
+    {
+     "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-HYWKMHR981&gtm=45je6al1v887395976za20ozb76266538zd76266538xf1&_p=1793027370215&gcs=G100&gcd=13p3pPp2p5l1&npa=1&dma_cps=-&dma=1&gdid=dMzY0Yz&_eu",
+     "body": ""
+    }
+   ],
+   "textAtLoad": 3725,
+   "mainEmptyAtLoad": false
+  }
+ },
+ "findings": [
+  {
+   "id": "a-unknown-third-party-host-dev-visualwebsiteoptimizer-com",
+   "class": "A",
+   "feature": "unknown third-party host dev.visualwebsiteoptimizer.com",
+   "hint": "inspect",
+   "evidence": [
+    "dev.visualwebsiteoptimizer.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-unknown-third-party-host-js-sparkloop-app",
+   "class": "A",
+   "feature": "unknown third-party host js.sparkloop.app",
+   "hint": "inspect",
+   "evidence": [
+    "js.sparkloop.app"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-unknown-third-party-host-cdn-cookiehub-eu",
+   "class": "A",
+   "feature": "unknown third-party host cdn.cookiehub.eu",
+   "hint": "inspect",
+   "evidence": [
+    "cdn.cookiehub.eu"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-unknown-third-party-host-www-semrush-com",
+   "class": "A",
+   "feature": "unknown third-party host www.semrush.com",
+   "hint": "inspect",
+   "evidence": [
+    "www.semrush.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-unknown-third-party-host-streaming-bi-owox-com",
+   "class": "A",
+   "feature": "unknown third-party host streaming.bi.owox.com",
+   "hint": "inspect",
+   "evidence": [
+    "streaming.bi.owox.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-unknown-third-party-host-region-eu-cookiehub-net",
+   "class": "A",
+   "feature": "unknown third-party host region-eu.cookiehub.net",
+   "hint": "inspect",
+   "evidence": [
+    "region-eu.cookiehub.net"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-unknown-third-party-host-rum-collector-2-pingdom-net",
+   "class": "A",
+   "feature": "unknown third-party host rum-collector-2.pingdom.net",
+   "hint": "inspect",
+   "evidence": [
+    "rum-collector-2.pingdom.net"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-unknown-third-party-host-script-settings-sparkloop-app",
+   "class": "A",
+   "feature": "unknown third-party host script-settings.sparkloop.app",
+   "hint": "inspect",
+   "evidence": [
+    "script-settings.sparkloop.app"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-templa",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json?topic → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-index-",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/index.json → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-genera",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-tools-",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-tools-",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-google",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-hub-se",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json?slug,topic → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-improv",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-about-",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-tools-",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-seo-st",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-tools-",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-on-pag",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-tools-",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-tools-",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-hub-se",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json?slug,topic → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-ecomme",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-llm-se",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-seo-ch",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-seo-ce",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-techni",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-newsle",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-tools-",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-best-f",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/best-free-seo-tools.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/best-free-seo-tools.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/best-free-seo-tools.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-blog-a",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/leigh-mckenzie.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/leigh-mckenzie.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/leigh-mckenzie.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-increa",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/increase-website-traffic.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/increase-website-traffic.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/increase-website-traffic.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-increa",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/increase-domain-authority.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/increase-domain-authority.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/increase-domain-authority.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-high-q",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/high-quality-backlinks.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/high-quality-backlinks.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/high-quality-backlinks.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-hub-se",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo.json → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-rank-h",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/rank-high-on-google.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/rank-high-on-google.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/rank-high-on-google.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-seoqua",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/seoquake-page-audit.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seoquake-page-audit.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/seoquake-page-audit.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-hub-se",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/architecture.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/architecture.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/architecture.json?slug,topic → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-websit",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/website-marketing.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/website-marketing.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/website-marketing.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-brand-",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/brand-mentions.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/brand-mentions.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/brand-mentions.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-query-",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/query-fan-out.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/query-fan-out.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/query-fan-out.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-llm-pr",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/llm-prompt-tracking.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-prompt-tracking.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/llm-prompt-tracking.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-hub-se",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/link-building-seo.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/link-building-seo.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/link-building-seo.json → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-hub-yo",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube.json → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-hub-co",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content.json → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-digita",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/digital-pr-strategies.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/digital-pr-strategies.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/digital-pr-strategies.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-how-to",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/how-to-rank-youtube-videos.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/how-to-rank-youtube-videos.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/how-to-rank-youtube-videos.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-tools-",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-generator.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-generator.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-generator.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-hub-co",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/writing.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/writing.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/writing.json?slug,topic → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-get-yo",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/get-youtube-views.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/get-youtube-views.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/get-youtube-views.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-hub-se",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/broken-link-building.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/broken-link-building.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/broken-link-building.json?slug,topic → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-hub-se",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/content-audits.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/content-audits.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/content-audits.json?slug,topic → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-hub-se",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seo-vs-sem.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seo-vs-sem.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seo-vs-sem.json?slug,topic → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-how-to",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/how-to-get-youtube-subscribers.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/how-to-get-youtube-subscribers.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/how-to-get-youtube-subscribers.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-deals-",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/deals/semrush-coupon.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/deals/semrush-coupon.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/deals/semrush-coupon.json → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-link-b",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/link-building-services.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/link-building-services.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/link-building-services.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-hub-se",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/serps.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/serps.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/serps.json?slug,topic → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-blog-j",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/blog.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/blog.json → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-contac",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/contact.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/contact.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/contact.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-hub-se",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/ranking-factors.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/ranking-factors.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/ranking-factors.json?slug,topic → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-link-b",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/link-building.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/link-building.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/link-building.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-link-b",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/link-building-strategies.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/link-building-strategies.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/link-building-strategies.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-hub-co",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/what-is-content-marketing.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/what-is-content-marketing.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/what-is-content-marketing.json?slug,topic → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-hub-yo",
+   "class": "A",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/name.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/name.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/name.json?slug,topic → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-cms-app-settings-object-datalayer",
+   "class": "A",
+   "feature": "CMS / app settings object dataLayer",
+   "hint": "settings",
+   "evidence": [],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-cms-app-settings-object-next-data",
+   "class": "A",
+   "feature": "CMS / app settings object __NEXT_DATA__",
+   "hint": "settings",
+   "evidence": [],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-framework-next",
+   "class": "CR",
+   "feature": "client framework next",
+   "hint": "framework",
+   "evidence": [],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "f-form-text-no-action-js-wired-1-fields",
+   "class": "F",
+   "feature": "form \"text:\" → no action (JS-wired) (1 fields)",
+   "signature": [
+    "text:"
+   ],
+   "hint": "forms",
+   "evidence": [
+    "text:"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "f-form-ranking-modal-form-third-party-www-semrush-com-1-fiel",
+   "class": "F",
+   "feature": "form \"ranking-modal-form\" → third-party www.semrush.com (1 fields)",
+   "signature": [
+    "text:url"
+   ],
+   "hint": "forms",
+   "evidence": [
+    "text:url"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "f-form-email-email-third-party-www-aweber-com-1-fields",
+   "class": "F",
+   "feature": "form \"email:email\" → third-party www.aweber.com (1 fields)",
+   "signature": [
+    "email:email"
+   ],
+   "hint": "forms",
+   "evidence": [
+    "email:email",
+    "listname,redirect,meta_redirect_onlist,meta_tags,meta_required"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-css-yw0cdh-4-cards",
+   "class": "L",
+   "feature": "listing candidate css-yw0cdh (4 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-css-1aclb7b-5-cards",
+   "class": "L",
+   "feature": "listing candidate css-1aclb7b (5 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-css-1o1v5h-6-cards",
+   "class": "L",
+   "feature": "listing candidate css-1o1v5h (6 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-css-1aclb7b-6-cards",
+   "class": "L",
+   "feature": "listing candidate css-1aclb7b (6 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-css-ko0t2v-4-cards",
+   "class": "L",
+   "feature": "listing candidate css-ko0t2v (4 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-hub-topic-resources-list-resources-list-",
+   "class": "L",
+   "feature": "listing candidate hub-topic-resources-list resources-list (10 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-hub-topic-resources-list-resources-list-",
+   "class": "L",
+   "feature": "listing candidate hub-topic-resources-list resources-list (4 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "m-modal-trigger-aria-haspopup-button-content",
+   "class": "M",
+   "feature": "modal trigger aria-haspopup → button:content",
+   "hint": "modal",
+   "evidence": [
+    "US"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "s-first-party-api-get-next-data-98ej4qw-qitteteyyf6wn-ai-sea",
+   "class": "S",
+   "feature": "first-party API GET /_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+   "api": {
+    "method": "GET",
+    "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json"
+   },
+   "hint": "search",
+   "evidence": [
+    "GET /_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json?slug → 200"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-tag-manager-google-tag-manager",
+   "class": "T",
+   "feature": "tag manager: Google Tag Manager",
+   "role": "tag manager: Google Tag Manager",
+   "hint": "tags",
+   "evidence": [
+    "www.googletagmanager.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-rum-static-pingdom-net",
+   "class": "T",
+   "feature": "unknown third-party host rum-static.pingdom.net",
+   "hint": "inspect",
+   "evidence": [
+    "rum-static.pingdom.net"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-marketing-ad-retargeting-pixel",
+   "class": "T",
+   "feature": "marketing: ad / retargeting pixel",
+   "role": "marketing: ad / retargeting pixel",
+   "hint": "tags",
+   "evidence": [
+    "pagead2.googlesyndication.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-script-sparkloop-app",
+   "class": "T",
+   "feature": "unknown third-party host script.sparkloop.app",
+   "hint": "inspect",
+   "evidence": [
+    "script.sparkloop.app"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-analytics-google-analytics-ads",
+   "class": "T",
+   "feature": "analytics: Google Analytics / Ads",
+   "role": "analytics: Google Analytics / Ads",
+   "hint": "tags",
+   "evidence": [
+    "region1.google-analytics.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-dash-sparkloop-app",
+   "class": "T",
+   "feature": "unknown third-party host dash.sparkloop.app",
+   "hint": "inspect",
+   "evidence": [
+    "dash.sparkloop.app"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "v-iframe-without-src-runtime-injected-embed",
+   "class": "V",
+   "feature": "iframe without src (runtime-injected embed)",
+   "hint": "embed-runtime",
+   "evidence": [
+    "0×0"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "x-sign-in-account-links",
+   "class": "X",
+   "feature": "sign-in / account links",
+   "hint": "decided-out",
+   "evidence": [
+    "https://www.semrush.com/blog/what-can-i-do-with-a-free-account-from-semrush/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=navigation"
+   ],
+   "pages": [
+    "/"
+   ]
+  }
+ ]
+}

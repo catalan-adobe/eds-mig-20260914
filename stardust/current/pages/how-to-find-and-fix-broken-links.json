@@ -1,0 +1,1465 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-26T14:59:42.034Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "how-to-find-and-fix-broken-links",
+  "url": "https://backlinko.com/how-to-find-and-fix-broken-links",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-26T14:59:42.034Z",
+  "finalUrl": "https://backlinko.com/how-to-find-and-fix-broken-links",
+  "title": "Broken Link Overview: How to Fix | Backlinko",
+  "description": "A guide on how to locate and fix, replace, or remove broken links. Internal, external, and backlinks included.",
+  "og": {
+    "title": "Broken Link Overview: How to Fix | Backlinko",
+    "description": "A guide on how to locate and fix, replace, or remove broken links. Internal, external, and backlinks included.",
+    "image": "https://api.backlinko.com/app/uploads/2023/06/Broken-Links.jpg",
+    "type": "article"
+  },
+  "headings": [
+    {
+      "tag": "h2",
+      "text": "About cookies on this site"
+    },
+    {
+      "tag": "h3",
+      "text": ".semrush_svg__cls-2{fill:#181e15}Semrush helps you:"
+    },
+    {
+      "tag": "h3",
+      "text": "Backlinko readers get:"
+    },
+    {
+      "tag": "h6",
+      "text": "AI Keyword Ideas in Seconds"
+    },
+    {
+      "tag": "h1",
+      "text": "How to Find (and Fix) Broken Links"
+    },
+    {
+      "tag": "h2",
+      "text": "What Are Broken Links?"
+    },
+    {
+      "tag": "h3",
+      "text": "What Causes A Link To “Break”?"
+    },
+    {
+      "tag": "h3",
+      "text": "Types of Broken Links"
+    },
+    {
+      "tag": "h2",
+      "text": "The Dangers of Broken Links"
+    },
+    {
+      "tag": "h2",
+      "text": "How to Find Broken Links"
+    },
+    {
+      "tag": "h3",
+      "text": "How to find broken links using Google Search Console"
+    },
+    {
+      "tag": "h3",
+      "text": "Find Broken Internal & External Links Using Semrush"
+    },
+    {
+      "tag": "h3",
+      "text": "How to Find Broken Backlinks"
+    },
+    {
+      "tag": "h3",
+      "text": "Encourage User Feedback and Reporting"
+    },
+    {
+      "tag": "h2",
+      "text": "How to Fix Broken Links"
+    },
+    {
+      "tag": "h3",
+      "text": "Internal & External Links"
+    },
+    {
+      "tag": "h4",
+      "text": "Updating or removing"
+    },
+    {
+      "tag": "h4",
+      "text": "Inserting a 301 redirect"
+    },
+    {
+      "tag": "h3",
+      "text": "Broken External Links"
+    },
+    {
+      "tag": "h3",
+      "text": "Backlinks"
+    },
+    {
+      "tag": "h2",
+      "text": "Monitoring and Regular Maintenance of Your Links"
+    },
+    {
+      "tag": "h2",
+      "text": "Bonus Tip: Broken Link Building"
+    },
+    {
+      "tag": "h4",
+      "text": "Learn"
+    },
+    {
+      "tag": "h4",
+      "text": "Company"
+    },
+    {
+      "tag": "h4",
+      "text": "Connect"
+    }
+  ],
+  "body": [
+    "Written by Backlinko Team",
+    "On this page",
+    "What Are Broken Links?",
+    "The Dangers of Broken Links",
+    "How to Find Broken Links",
+    "How to Fix Broken Links",
+    "Monitoring and Regular Maintenance of Your Links",
+    "Bonus Tip: Broken Link Building",
+    "Broken links are a surefire way to destroy your credibility and waste your SEO efforts, but thankfully, they’re pretty easy to fix.",
+    "This guide will show you exactly how to identify and fix these links, whether they’re backlinks or links within your content. I’ll show you:",
+    "What causes links to ‘break’",
+    "Why they’re so harmful for your site",
+    "How to identify them with tools like Semrush, including a simple step-by-step guide",
+    "And, most importantly, how to fix them, so your SEO efforts can be restored",
+    "I’ve even got a bonus tip that shows you how broken links (well, your competitors’ anyway) can actually be advantageous.",
+    "Ready to fix those links? Let’s get to it!",
+    "Broken links are essentially links that don’t take you to the intended page. Backlinks, internal links, and external links can all be broken. No matter which type of broken link you’re dealing with, they have some common causes:",
+    "You’re not alone if you’ve got some broken links on your site. It’s actually pretty common, perhaps because there are SO many causes.",
+    "Take a look:",
+    "Misspelled URL: Of course, if you misspelled the URL of the page you’re linking to, the link isn’t going to work. It could be a simple typo, or maybe: You forgot to include the “https://” or “http://” part of the URL. You included an extra space in the URL. The page you are linking to might have a misspelling in its URL.",
+    "You forgot to include the “https://” or “http://” part of the URL.",
+    "You included an extra space in the URL.",
+    "The page you are linking to might have a misspelling in its URL.",
+    "Updated URL: As mentioned above, maybe one of your pages had a misspelled URL, so maybe you decided to change it to get rid of the typo. If you didn’t set up a redirect before making the change, any links (both backlinks and internal links) pointing to the old, now incorrect URL will now appear broken. If you’re dealing with an external link, it could be that the other site has changed the URL of the content you were linking to, or removed the page.",
+    "Lost Pages: Although somewhat rarer than previous causes, it could be that some of your pages were lost or renamed if you’ve done a website migration.",
+    "Firewall or Geolocation Restrictions: It could be that the link isn’t broken to everyone, but instead is only accessible from certain parts of the world. I’m sure you’ve seen the “This video is not available in your country” error on YouTube, right? Sometimes, content is blocked internationally to comply with local laws.",
+    "Moved Content: Your link to a video or document might be broken if the file has been either removed from the server or moved to another location.",
+    "Malfunctioning Plugins: Links may not work due to malfunctioning plugins on your site, or a HTML or JavaScript error causing elements on the page to break.",
+    "The Site is Down: This can affect all types of links—depending on whether it’s your site that’s down or the external site. If you have one broken external (or inbound) link, it could be that the entire site you’re linking to (or that your link is from) is down. However, if NO links to your site are working, your entire site is possibly down. You don’t need me to tell you that you’ll need to remedy this ASAP before you experience a huge loss in traffic and rankings.",
+    "Change in URL Structure: If you’ve recently changed the URL structure of your site but haven’t implemented 301 redirects, your internal and inbound links to these pages will be broken. For example, if you’re changing https://www.example.com/product-name to https://www.example.com/products/category/product-name You’ll need to set up 301 redirects to reflect the changes so that search engines and users land on the new page when following a link.",
+    "If you follow a broken link, you’ll most often encounter a 404 Page Not Found error. This is a generic error that says the page isn’t available for now, but it might return at some point.",
+    "It’s not the only 4xx status code that indicates a broken link, however:",
+    "400 Bad Request: These arise when the host server doesn’t understand the URL on your page, usually due to a syntax error or invalid request. For example, if you are trying to link to a page with the URL https://www.example.com/products/product123 But instead, you use https://www.example.com/products/product123/ When linking to the page, you’ll find a 400 error when trying to follow the link.",
+    "410 Gone: This is similar to a 404 error, as it indicates that the resource you are linking to is no longer available on the server. However, unlike a 404 which essentially says “although this page isn’t available right now, we’re not sure if it will be back or not”, a 410 says “this page is never coming back.”",
+    "404, 400, and 410 errors all have a negative effect on both user experience and SEO, as I’ll show you next. However, as 410s are a sign of permanently removed content, search engines may treat these even more negatively than 400 or 404 errors.",
+    "Google considers internal links a key ranking factor, so you don’t need me to tell you that looking after them is pretty darn important.",
+    "Broken internal links can have a spiral effect on your site, like this…",
+    "If a user clicks on a broken link, they’ll land on one of the error pages listed above. We’ve all been there, it’s pretty much the worst thing that can happen when you’re visiting a site, right?",
+    "So, it comes as no surprise that they’ll often then leave your website and look for the information they need elsewhere.",
+    "Of course, we never want our site visitors to leave unsatisfied, but it could really be doing more harm than you think. Once they’ve had a negative experience on your site once, they might think twice about visiting it again—lowering your reputation.",
+    "Google also allocates what’s known as crawl budget.",
+    "Crawl budget refers to the amount of time crawlers spend on your page. They don’t have enough to make it around your entire domain, so you better make the most important pages as accessible as possible for them.",
+    "Internal links send Googlebot to other pages on your site, which can help them understand your site’s structure and index pages. So, broken internal links essentially hinder Googlebot’s ability to crawl your site in much the same way as a lack of internal links.",
+    "The bottom line is, if your pages aren’t indexed, they’re not going to rank. So, all that effort you spent into creating a killer piece of content isn’t going to get you any results (rankings, traffic, and subsequent conversions) if Google can’t find and index it.",
+    "But that’s not all.",
+    "Remember those unhappy users I mentioned above? Well, they’re bouncing off your site faster than you can say “broken links,” which increases your bounce rate and lowers the time on site.",
+    "This is a huge red flag for Google. Why are people leaving your pages so quickly? Is your content terrible and not relevant to their search intent?",
+    "So, broken internal links can have indirect results on your site’s SEO. Broken external and inbound links can also have more direct results, by suggesting to Google that your site is old and not maintained.",
+    "How?",
+    "If you’re linking to a lot of pages that have since been removed, it would seem that your content isn’t up-to-date anymore. Similarly, if you have a lot of broken inbound links, webmasters have perhaps found better, more recent pages to link to than yours.",
+    "And that’s not all; multiple 400 errors suggest to Google poor website maintenance, and also hinder search engine crawling and indexing.",
+    "All of that from just one little typo in a URL—now you can see why it’s so worth your time to look after your links!",
+    "And that’s exactly what I’m going to show you next…",
+    "Before you fix broken links, you need to find them first (if your site actually has any, that is).",
+    "Luckily, you don’t have to manually click on every individual link on your domain to check if they’re broken or not. There is a wide range of tools you can use to determine the current health of your internal, external and inbound links.",
+    "I’d recommend premium tools first and foremost, such as Semrush’s Site Audit or the Backlink Audit tool. You can also use Screaming Frog’s SEO Spider, SEO PowerSuite’s Link Assistant, or the Broken Link Checker.",
+    "On a budget? You can find broken links for free using Google Analytics.",
+    "In this demonstration, I’ll show you how to use Google Analytics 4 to find broken links, as Universal Analytics (the previous generation of Google Analytics) is due to be phased out on July 1st, 2023.",
+    "First, head over to “Reports”. Click on “Engagement” on the left-hand side, and then “Pages and screens” from the drop-down menu, as shown below:",
+    "Next, scroll down to the bottom of the page where you’ll find data on all your URLs.",
+    "In the search bar shown above, type in “page not found”, or “404”, or whatever your error pages are normally titled.",
+    "Make sure you select “page title and screen class” from the drop-down menu below the search bar. You also need to add the secondary dimension “page path and screen class”, as shown below:",
+    "By searching this, you’ll be shown your 404 error pages (if you have any) as well as the pages that are linked with the broken pages.",
+    "Note: If after selecting “Page path and screen class” Google Analytics displays “No data available”, you could create your own custom report on Google Analytics 4.",
+    "I’d recommend exporting this data to a spreadsheet if you have lots of 404 errors. This way, you can easily review which links need fixing and tick them off as you go.",
+    "You can also use Google Search Console to detect broken links. Best of all: Google Search Console (GSC) is also free to use.",
+    "Once you’ve logged into GSC, select or add the property you wish to audit for broken links.",
+    "In the “Overview” page, click on “Pages” under “Indexing” on the left-hand side.",
+    "Scroll to the bottom of this page to the section titled “Why pages aren’t indexed” and click on “Not Found (404)”, as shown below:",
+    "You’ll then be shown all the instances of 404 errors within your domain:",
+    "So, these are the pages that Google can’t find and users can’t see.",
+    "You could go a step further by clicking on an individual link. After which, a window to the right should appear. In this window, hit “Inspect URL”:",
+    "You’ll then be shown a rundown of the data Google has on the link, as shown here:",
+    "This gives you a clearer idea of why the link leads to a 404 error page, and how you can fix it later.",
+    "While Google Analytics 4 gives you some data on broken links, it’s not as comprehensive as the likes of Semrush’s Site Audit tool.",
+    "To use Site Audit, add the website you want to analyze as a new project in Semrush.",
+    "Once you’ve run the site audit, head over to the “Issues” tab.",
+    "Instead of scrolling through all issues, you can simply search for “broken”.",
+    "Under “Errors”, you can check if you have any broken internal links, as shown below:",
+    "And under “Warnings”, you can review external links your page currently has:",
+    "Again, I currently don’t have any internal or external link issues, so don’t have anything to fix.",
+    "However, if you did find you had issues, you can click on the error number and title (for example, “3 internal links”) and find out where these errors are.",
+    "If you find you have lots of errors, you could export this data to an Excel spreadsheet, or a CSV file.",
+    "Pro tip: While you’re in Site Audit, check the “AI Search Health” and “Blocked from AI Search” widgets too. They help you spot technical issues and robots.txt rules that restrict AI crawlers. Open the Issues tab and filter for “AI Search” to investigate the findings. This adds a generative engine optimization (GEO) check to your SEO maintenance.",
+    "Pro tip: While you’re in Site Audit, check the “AI Search Health” and “Blocked from AI Search” widgets too. They help you spot technical issues and robots.txt rules that restrict AI crawlers.",
+    "Open the Issues tab and filter for “AI Search” to investigate the findings. This adds a generative engine optimization (GEO) check to your SEO maintenance.",
+    "Broken backlinks – i.e., incoming links from external domains – occur when another site links to one of your pages that is currently broken or no longer exists.",
+    "To find broken backlinks, you can use Semrush’s Backlink Audit tool.",
+    "After you launch a backlink audit, the main dashboard will give you a general idea of how many broken backlinks you have. As shown here:",
+    "For more information, head over to the “Target Pages” tab:",
+    "Tick the “Target URL error” box:",
+    "This will narrow down the list of Target Page URLs. Next to the URL Target Page URLs, click on the active keyword number (the blue highlighted part).",
+    "You’ll then be able to see and review all the backlinks that lead to an error page on your site.",
+    "You can’t be expected to find all the broken links yourself, can you?",
+    "Well, you should be responsible for finding the vast majority. However, for whatever reason, some may slip your grasp.",
+    "Broken links create a negative user experience. But you can encourage users who do find broken links on your domain to alert you about them. This way, at least the users know that you’re trying your best to create a user-friendly website.",
+    "The best way to do this would be to create a custom 404 error page that includes a contact form. Or, you could provide instructions on how to report a broken link, such as an email address web users can reach you by.",
+    "Once you’ve found your broken links, it’s time to fix them. The process differs slightly depending on whether you’re fixing broken links on your site (internal and external links) or to your site (backlinks).",
+    "Here’s what you can do about them:",
+    "There are two types of links that you, as a webmaster, have direct control over – internal and external links.",
+    "If you’ve identified instances of internal/external links, it’s time for you to fix them.",
+    "There are three ways to fix broken internal links: Redirects, updating the link, or removing the link.",
+    "Updating is the simplest fix; if there’s a typo in the URL, you just need to swap it out for the correct URL and the link will work as expected. Of course, this method only works if a misspelled URL was the cause of the broken link!",
+    "Removing the link is also an option. If the link is no longer needed, simply take it out. This could be the case if you’ve updated the content on either the page containing the link or the page being linked to.",
+    "Inserting a 301 redirect is the most complicated fix, but it could be the best option for SEO purposes.",
+    "You should use a 301 redirect if you’ve moved a page; or, if you’ve stopped selling a product or service, but have a similar product/service on another page.",
+    "For example, if one of your broken links is meant to lead to a product that you no longer stock, you can insert a 301 redirect to lead users to a similar product that you do stock. This way, you no longer have a broken link to deal with.",
+    "If your situation doesn’t fit either of the above examples, you shouldn’t insert a 301. A 301 that leads to an irrelevant page can damage your rankings and ruin your user experience.",
+    "It is frustrating to click on one thing and to be led to another thing, after all.",
+    "If your situation does fit the above examples, you can insert a 301 redirect on WordPress using a redirection plugin, such as RankMath. Alternatively, 301s can be inserted using .htaccess, Nginx, or PHP. The benefit of using a 301 redirect is that most of your ranking power gets passed over to the new page (if you insert it correctly, that is).",
+    "However, please note: 301 redirects are permanent, unlike 302s.",
+    "So, before you insert one, be sure that you definitely want to redirect users to the chosen location forever. Or, use a 302 if you plan on restoring the original page at some point down the line.",
+    "If you’ve got external links leading to nowhere, they’re serving no purpose and adding no value to your content.",
+    "So, you need to either check the link for accuracy, replace it with an active link, or remove it altogether.",
+    "Firstly, check that you’ve typed out the external link correctly. An extra digit, letter, or dash could send users to a 404 page. If the page you intended to link towards is actually still live, copy and paste its URL over again to ensure accuracy.",
+    "If you find that the page you linked to no longer exists, you should remove the link. But what if the external link added a significant amount of value to your site? For example, perhaps it acted as a source for the facts and figures used in your copy.",
+    "In this case, you would need to look for an alternative source and replace the external link with it. Hopefully, the information you need is available elsewhere. If not, consider removing the section from your copy.",
+    "It’s not quite as simple to fix a broken backlink as it is to fix a broken link on your site, as you’ll generally need to contact the referring domain’s webmaster and ask them to update it for you.",
+    "Well, it is pretty simple in that you just have to email them, but it’s all about wording it correctly.",
+    "Here are some tips to help you craft the perfect email that will get you results:",
+    "The Greeting: If you know the recipient’s name, use it!",
+    "The Introduction: Introduce yourself and the website that you’re working with by name.",
+    "The Issue: Let the recipient know what page on their site you’re referring to (provide the URL), and tell them which link is broken.",
+    "The Solution: Provide them with the URL you want the link to point to.",
+    "The Benefit: Of course, you’re mainly doing this for your own benefit, but remember (as I said above) that broken backlinks are also harmful for a site. So, stress to the webmaster how fixing the broken link on their site will also help their SEO efforts.",
+    "Keep it Short: No one likes to receive an email that more closely resembles an essay. A few short and simple paragraphs covering the above points are all you’ll need.",
+    "Be Patient: Website owners are busy people, so give them a few days to respond to your email. Don’t be afraid to follow up in case they missed it, but please avoid spamming anyone’s inbox daily for three weeks!",
+    "I told you above how much harm broken links can do to your site, so it should come as no surprise that you’ll want to check for these issues pretty regularly.",
+    "You can set Semrush’s Site Audit to automatically run daily or weekly (on a day of your choosing) instead of just once so you don’t need to try and remember when to do it. As if that wasn’t convenient enough, you have the option to have the report emailed to you every time an audit is complete, too.",
+    "If you have a huge site, daily could be a better option, but otherwise, I think weekly is just fine. It’s frequent enough for you to quickly identify new broken links and resolve any issues they might cause before they have a chance to do any real harm to your rankings and UX.",
+    "For your backlinks, you’ll want to keep a regular eye on their quality as well as whether or not they are active.",
+    "Remember at the start I told you I’d show you how you can use broken links to your advantage? Well, here it is: broken link building.",
+    "This is a super useful link building technique that allows you to make the most of your competitors’ broken links AND offer the webmasters something useful in return—a valuable page to link to.",
+    "You can identify these links in much the same way as you found your own broken backlinks on Semrush; just plug your competitors’ domains into the tool instead of your own.",
+    "Once you’ve found a good opportunity, reach out to the webmaster and suggest they link to your page on the same topic instead. Congratulations, you just stole some link juice from your competitor!",
+    "Backlinko is owned by Semrush. We’re still obsessed with bringing you world-class SEO insights, backed by hands-on experience. Unless otherwise noted, this content was written by either an employee or paid contractor of Semrush Inc."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Cookie Policy.",
+      "href": "https://www.semrush.com/company/legal/cookie-policy/"
+    },
+    {
+      "label": "Allow all cookies",
+      "href": null
+    },
+    {
+      "label": "Deny all",
+      "href": null
+    },
+    {
+      "label": "Cookie settings",
+      "href": null
+    },
+    {
+      "label": "Watch Now",
+      "href": "https://www.youtube.com/watch?v=rIGzcovF6cM"
+    },
+    {
+      "label": "Close",
+      "href": null
+    },
+    {
+      "label": "Articles",
+      "href": null
+    },
+    {
+      "label": "Tools",
+      "href": null
+    },
+    {
+      "label": "Templates",
+      "href": "/templates/marketing"
+    },
+    {
+      "label": "About",
+      "href": "/about-backlinko"
+    },
+    {
+      "label": "Newsletter",
+      "href": "/newsletter"
+    },
+    {
+      "label": "Check My Site's SEO",
+      "href": null
+    },
+    {
+      "label": "Close",
+      "href": null
+    },
+    {
+      "label": "Free access",
+      "href": "https://www.semrush.com/blog/what-can-i-do-with-a-free-account-from-semrush/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=navigation"
+    },
+    {
+      "label": "Backlinko Team",
+      "href": "/blog/authors/backlinko-team"
+    },
+    {
+      "label": "What Are Broken Links?",
+      "href": "#what-are-broken-links"
+    },
+    {
+      "label": "The Dangers of Broken Links",
+      "href": "#the-dangers-of-broken-links"
+    },
+    {
+      "label": "How to Find Broken Links",
+      "href": "#how-to-find-broken-links"
+    },
+    {
+      "label": "How to Fix Broken Links",
+      "href": "#how-to-fix-broken-links"
+    },
+    {
+      "label": "Monitoring and Regular Maintenance of Your Links",
+      "href": "#monitoring-and-regular-maintenance-of-your-links"
+    },
+    {
+      "label": "Bonus Tip: Broken Link Building",
+      "href": "#bonus-tip-broken-link-building"
+    },
+    {
+      "label": "Backlinks",
+      "href": "https://backlinko.com/hub/seo/backlinks"
+    },
+    {
+      "label": "internal links",
+      "href": "https://backlinko.com/hub/seo/internal-links"
+    },
+    {
+      "label": "redirects",
+      "href": "https://backlinko.com/redirects"
+    },
+    {
+      "label": "key ranking factor",
+      "href": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=en&visit_id=638204316800660858-3280249983&rd=1#createsimplenavpage"
+    },
+    {
+      "label": "crawl budget",
+      "href": "https://backlinko.com/hub/seo/crawl-budget"
+    },
+    {
+      "label": "website maintenance",
+      "href": "https://backlinko.com/seo-maintenance"
+    },
+    {
+      "label": "Google Analytics 4",
+      "href": "https://backlinko.com/google-analytics-4"
+    },
+    {
+      "label": "Google Search Console",
+      "href": "https://backlinko.com/google-search-console"
+    },
+    {
+      "label": "Semrush’s Site Audit tool",
+      "href": "https://www.semrush.com/siteaudit/?utm_campaign=how-to-find-and-fix-broken-links&utm_source=backlinko.com&utm_medium=referral"
+    },
+    {
+      "label": "Semrush’s Backlink Audit tool",
+      "href": "https://www.semrush.com/backlink_audit/?utm_campaign=how-to-find-and-fix-broken-links&utm_source=backlinko.com&utm_medium=referral"
+    },
+    {
+      "label": "backlink audit",
+      "href": "https://backlinko.com/step-by-step-backlink-audit"
+    },
+    {
+      "label": ".htaccess",
+      "href": "https://backlinko.com/htaccess-redirect"
+    },
+    {
+      "label": "Semrush’s Site Audit",
+      "href": "https://www.semrush.com/siteaudit/?utm_campaign=how-to-find-and-fix-broken-links&utm_campaign=how-to-find-and-fix-broken-links&utm_source=backlinko.com&utm_medium=referral"
+    },
+    {
+      "label": "broken link building",
+      "href": "https://backlinko.com/hub/seo/broken-link-building"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Newsletter",
+      "href": "/newsletter"
+    },
+    {
+      "label": "Templates",
+      "href": "https://backlinko.com/templates/marketing"
+    },
+    {
+      "label": "Best SEO Tools",
+      "href": "/best-free-seo-tools"
+    },
+    {
+      "label": "About",
+      "href": "/about-backlinko"
+    },
+    {
+      "label": "Semrush AI Visiblity",
+      "href": "https://www.semrush.com/ai-seo/overview/"
+    },
+    {
+      "label": "Semrush Free Trial",
+      "href": "https://backlinko.com/deals/semrush-coupon"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    },
+    {
+      "label": "Twitter",
+      "href": "https://twitter.com/backlinko"
+    },
+    {
+      "label": "YouTube",
+      "href": "https://www.youtube.com/@BacklinkoTeam"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/briandean/"
+    },
+    {
+      "label": "Terms of Service",
+      "href": "https://www.semrush.com/company/legal/terms-of-service/?utm_source=backlinko.com&utm_medium=referral"
+    }
+  ],
+  "links": [
+    "https://www.semrush.com/company/legal/cookie-policy/",
+    "https://backlinko.com/how-to-find-and-fix-broken-links#",
+    "https://www.youtube.com/watch?v=rIGzcovF6cM",
+    "https://backlinko.com/",
+    "https://backlinko.com/ai-search-strategy",
+    "https://backlinko.com/llm-seeding",
+    "https://backlinko.com/generative-engine-optimization-geo",
+    "https://backlinko.com/hub/seo/what-is-seo",
+    "https://backlinko.com/improve-your-seo",
+    "https://backlinko.com/seo-checklist",
+    "https://backlinko.com/seo-strategy",
+    "https://backlinko.com/?p=165994",
+    "https://backlinko.com/google-e-e-a-t",
+    "https://backlinko.com/hub/seo/internal-links",
+    "https://backlinko.com/technical-seo-guide",
+    "https://backlinko.com/on-page-seo",
+    "https://backlinko.com/ecommerce-seo",
+    "https://backlinko.com/seo-certification-guide",
+    "https://backlinko.com/ai-optimization",
+    "https://backlinko.com/ai-seo",
+    "https://backlinko.com/entity-seo",
+    "https://backlinko.com/audience-research",
+    "https://backlinko.com/reddit-marketing",
+    "https://backlinko.com/?p=193164",
+    "https://backlinko.com/answer-engine-optimization-aeo",
+    "https://backlinko.com/seo-basics-for-beginners",
+    "https://backlinko.com/seo-tutorial",
+    "https://backlinko.com/pillar-pages",
+    "https://backlinko.com/?p=175006",
+    "https://backlinko.com/actionable-seo-tips",
+    "https://backlinko.com/small-business-seo",
+    "https://backlinko.com/schema-markup-guide",
+    "https://backlinko.com/website-migration-checklist",
+    "https://backlinko.com/hub/content/what-is-content-marketing",
+    "https://backlinko.com/seo-copywriting",
+    "https://backlinko.com/?p=103911",
+    "https://backlinko.com/content-marketing-this-year",
+    "https://backlinko.com/?p=190262",
+    "https://backlinko.com/?p=172343",
+    "https://backlinko.com/scale-content",
+    "https://backlinko.com/hub/content/writing",
+    "https://backlinko.com/link-building",
+    "https://backlinko.com/hub/seo/backlinks",
+    "https://backlinko.com/high-quality-backlinks",
+    "https://backlinko.com/link-building-strategies",
+    "https://backlinko.com/link-building-services",
+    "https://backlinko.com/step-by-step-backlink-audit",
+    "https://backlinko.com/skyscraper-technique",
+    "https://backlinko.com/increase-domain-authority",
+    "https://backlinko.com/competitor-analysis",
+    "https://backlinko.com/?p=173056",
+    "https://backlinko.com/?p=174557",
+    "https://backlinko.com/how-to-create-a-website",
+    "https://backlinko.com/tools/seo-checker",
+    "https://backlinko.com/tools/backlink-checker",
+    "https://backlinko.com/tools/website-authority",
+    "https://backlinko.com/tools/website-traffic-checker",
+    "https://backlinko.com/tools/keyword",
+    "https://backlinko.com/tools/keyword-difficulty-checker",
+    "https://backlinko.com/tools/competitor-analysis",
+    "https://backlinko.com/tools/schema-markup-generator",
+    "https://backlinko.com/tools/ai-visibility-checker",
+    "https://backlinko.com/tools/ai-agent-readiness",
+    "https://backlinko.com/tools/agentic-browsing-readiness",
+    "https://backlinko.com/best-free-seo-tools",
+    "https://backlinko.com/llm-tracking-tools",
+    "https://backlinko.com/keyword-research-tools",
+    "https://backlinko.com/?p=98736",
+    "https://backlinko.com/link-building-tools",
+    "https://backlinko.com/best-rank-tracking-tools",
+    "https://backlinko.com/?p=171633",
+    "https://backlinko.com/seo-software-agencies",
+    "https://backlinko.com/ai-seo-tools",
+    "https://backlinko.com/sitemap-generator-tools",
+    "https://backlinko.com/best-digital-marketing-tools",
+    "https://backlinko.com/?p=170722",
+    "https://backlinko.com/semrush-review",
+    "https://backlinko.com/ahrefs-review",
+    "https://backlinko.com/ahrefs-vs-semrush",
+    "https://backlinko.com/clearscope-review",
+    "https://backlinko.com/majestic-seo-review",
+    "https://backlinko.com/surfer-seo",
+    "https://backlinko.com/serpstat-review",
+    "https://backlinko.com/sparktoro-review",
+    "https://backlinko.com/templates/marketing",
+    "https://backlinko.com/about-backlinko",
+    "https://backlinko.com/newsletter",
+    "https://www.semrush.com/blog/what-can-i-do-with-a-free-account-from-semrush/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=navigation",
+    "https://backlinko.com/blog/authors/backlinko-team",
+    "https://backlinko.com/how-to-find-and-fix-broken-links#what-are-broken-links",
+    "https://backlinko.com/how-to-find-and-fix-broken-links#the-dangers-of-broken-links",
+    "https://backlinko.com/how-to-find-and-fix-broken-links#how-to-find-broken-links",
+    "https://backlinko.com/how-to-find-and-fix-broken-links#how-to-fix-broken-links",
+    "https://backlinko.com/how-to-find-and-fix-broken-links#monitoring-and-regular-maintenance-of-your-links",
+    "https://backlinko.com/how-to-find-and-fix-broken-links#bonus-tip-broken-link-building",
+    "https://backlinko.com/redirects",
+    "https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=en&visit_id=638204316800660858-3280249983&rd=1#createsimplenavpage",
+    "https://backlinko.com/hub/seo/crawl-budget",
+    "https://backlinko.com/seo-maintenance",
+    "https://backlinko.com/google-analytics-4",
+    "https://backlinko.com/google-search-console",
+    "https://www.semrush.com/siteaudit/?utm_campaign=how-to-find-and-fix-broken-links&utm_source=backlinko.com&utm_medium=referral",
+    "https://www.semrush.com/backlink_audit/?utm_campaign=how-to-find-and-fix-broken-links&utm_source=backlinko.com&utm_medium=referral",
+    "https://backlinko.com/htaccess-redirect",
+    "https://www.semrush.com/siteaudit/?utm_campaign=how-to-find-and-fix-broken-links&utm_campaign=how-to-find-and-fix-broken-links&utm_source=backlinko.com&utm_medium=referral",
+    "https://backlinko.com/hub/seo/broken-link-building",
+    "https://twitter.com/share?text=Broken%20Link%20Overview%3A%20How%20to%20Fix%20%7C%20Backlinko&url=https%3A%2F%2Fbacklinko.com%2Fhow-to-find-and-fix-broken-links&via=Backlinko",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbacklinko.com%2Fhow-to-find-and-fix-broken-links",
+    "https://www.reddit.com/submit?url=https%3A%2F%2Fbacklinko.com%2Fhow-to-find-and-fix-broken-links&title=Broken%20Link%20Overview%3A%20How%20to%20Fix%20%7C%20Backlinko",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fbacklinko.com%2Fhow-to-find-and-fix-broken-links&summary=Broken%20Link%20Overview%3A%20How%20to%20Fix%20%7C%20Backlinko",
+    "https://backlinko.com/blog",
+    "https://www.semrush.com/ai-seo/overview/",
+    "https://backlinko.com/deals/semrush-coupon",
+    "https://backlinko.com/contact",
+    "https://twitter.com/backlinko",
+    "https://www.youtube.com/@BacklinkoTeam",
+    "https://www.instagram.com/briandean/",
+    "https://www.semrush.com/company/legal/terms-of-service/?utm_source=backlinko.com&utm_medium=referral",
+    "https://www.semrush.com/company/legal/privacy-policy/?utm_source=backlinko.com&utm_medium=referral"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://backlinko.com/_next/image?url=https%3A%2F%2Fapi.backlinko.com%2Fapp%2Fuploads%2F2024%2F01%2Fteam-avatar.jpg&w=640&q=75",
+        "alt": "team-avatar",
+        "w": 140,
+        "h": 140
+      },
+      {
+        "src": "https://backlinko.com/_next/image?url=https%3A%2F%2Fapi.backlinko.com%2Fapp%2Fuploads%2F2023%2F06%2FBroken-Links.jpg&w=1080&q=75",
+        "alt": "Broken Links",
+        "w": 960,
+        "h": 505
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/04/ga-engagement-pages-and-screens-768x345.webp",
+        "alt": "GA4 – Engagement – Pages & Screens",
+        "w": 700,
+        "h": 314
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/04/ga4-pages-and-screens-search-768x403.webp",
+        "alt": "GA4 – Pages & Screens – Search",
+        "w": 700,
+        "h": 367
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/04/ga4-pages-and-screens-page-not-found-768x369.webp",
+        "alt": "GA4 – Pages & Screens – Page Not Found",
+        "w": 700,
+        "h": 336
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/04/gsc-pages-768x384.webp",
+        "alt": "GSC – Pages",
+        "w": 700,
+        "h": 350
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/04/gsc-pages-not-found-768x429.webp",
+        "alt": "GSC – Pages not Found",
+        "w": 700,
+        "h": 391
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/04/gsc-pages-not-found-examples-768x604.webp",
+        "alt": "GSC – Pages not Found – Examples",
+        "w": 700,
+        "h": 550
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/03/icon-remember-v2.png",
+        "alt": "",
+        "w": 2500,
+        "h": 2500
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/03/icon-remember-v2.png",
+        "alt": "",
+        "w": 2500,
+        "h": 2500
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/04/backlink-audit-backlinko-referring-domains-768x486.webp",
+        "alt": "Backlink Audit – Backlinko – Referring Domains",
+        "w": 700,
+        "h": 442
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/04/backlink-audit-target-pages-768x460.webp",
+        "alt": "Backlink Audit – Target Pages",
+        "w": 700,
+        "h": 419
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/04/backlink-audit-backlinko-target-url-error-768x450.webp",
+        "alt": "Backlink Audit – Backlinko – Target URL Error",
+        "w": 700,
+        "h": 410
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/04/backlink-audit-backlinko-target-url-error-overview-768x600.webp",
+        "alt": "Backlink Audit – Backlinko – Target URL Error – Overview",
+        "w": 700,
+        "h": 546
+      }
+    ],
+    "allImgCount": 18,
+    "cssBackgrounds": [],
+    "modals": [
+      "About cookies on this siteWe use cookies to run our website, analyze your use of our services, manage your online preferences & personalize ad content. By accepting our cookies, you'll get relevant content and social media features, personalized ads, and an enhanced browsing experience. To manage your choices, click “Cookie Settings.” Necessary cookies are required for the core website functionality and cannot be rejected. For more information, see ourCookie Policy.Allow all cookiesDeny allCookie settings"
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {
+    "--fa-font-solid": "normal 900 1em/1 \"Font Awesome 6 Free\"",
+    "--fa-font-regular": "normal 400 1em/1 \"Font Awesome 6 Free\"",
+    "--fa-font-light": "normal 300 1em/1 \"Font Awesome 6 Pro\"",
+    "--fa-font-thin": "normal 100 1em/1 \"Font Awesome 6 Pro\"",
+    "--fa-font-duotone": "normal 900 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-regular": "normal 400 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-light": "normal 300 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-thin": "normal 100 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-brands": "normal 400 1em/1 \"Font Awesome 6 Brands\"",
+    "--fa-font-sharp-solid": "normal 900 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-regular": "normal 400 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-light": "normal 300 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-thin": "normal 100 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-duotone-solid": "normal 900 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-regular": "normal 400 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-light": "normal 300 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-thin": "normal 100 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--app-height": "100svh",
+    "--backlinko-bar-height": "62px",
+    "--sl-widgets-font-family": "-apple-system, system-ui",
+    "--sl-widgets-base-unit": "16px"
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 25,
+    "mainTextLen": 19870,
+    "realImageCount": 14,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "dev.visualwebsiteoptimizer.com",
+        "path": "/j.php",
+        "query": [
+          "a",
+          "ph",
+          "st",
+          "u",
+          "vn",
+          "x"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://dev.visualwebsiteoptimizer.com/j.php",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "pagead2.googlesyndication.com",
+        "path": "/ccm/collect",
+        "query": [
+          "ae",
+          "apvc",
+          "dl",
+          "dma",
+          "dma_cps",
+          "en",
+          "ep.ads_data_redaction",
+          "fmt",
+          "frm",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "navt",
+          "npa",
+          "rcb",
+          "rnd",
+          "scrsrc",
+          "tag_exp",
+          "tfd",
+          "tft"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "status": 200,
+        "bytes": null,
+        "hits": 3,
+        "example": "https://pagead2.googlesyndication.com/ccm/collect",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "region-eu.cookiehub.net",
+        "path": "/",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 28,
+        "hits": 1,
+        "example": "https://region-eu.cookiehub.net/",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "cdn.cookiehub.eu",
+        "path": "/client/7417b56b/en.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://cdn.cookiehub.eu/client/7417b56b/en.json",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 56682,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 15888,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+        "query": [
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 6685,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 10392,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 11235,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 8253,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "region1.google-analytics.com",
+        "path": "/g/collect",
+        "query": [
+          "_eu",
+          "_fv",
+          "_nsi",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "cid",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dp",
+          "dt",
+          "en",
+          "ep.container_id",
+          "frm",
+          "gaf",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "status": 204,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://region1.google-analytics.com/g/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 32592,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 37436,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 51691,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 56812,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 47134,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+        "query": [
+          "p"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 15298,
+        "hits": 2,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 46515,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 20906,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 9091,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 9032,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "streaming.bi.owox.com",
+        "path": "/ga4/{hash}/g/collect",
+        "query": [
+          "_eu",
+          "_fplc",
+          "_fv",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "cid",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dp",
+          "dt",
+          "ecid",
+          "en",
+          "ep.container_id",
+          "ep.page_language",
+          "ep.user_agent",
+          "frm",
+          "gaf",
+          "gap.sstd",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "richsstsse",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "sst.etld",
+          "sst.gch",
+          "sst.gcsub",
+          "sst.lpc",
+          "sst.navt",
+          "sst.rnd",
+          "sst.tft",
+          "sst.ude",
+          "sst.us_privacy",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "ur",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/gif",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://streaming.bi.owox.com/ga4/9bb752a08674f116753ca5719dda03ed/g/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "rum-collector-2.pingdom.net",
+        "path": "/img/beacon.gif",
+        "query": [
+          "bIH",
+          "bIW",
+          "cE",
+          "cS",
+          "dC",
+          "dCLEE",
+          "dCLES",
+          "dI",
+          "dL",
+          "dLE",
+          "dLS",
+          "dPR",
+          "fS",
+          "hS",
+          "id",
+          "lEE",
+          "lES",
+          "nS",
+          "nT",
+          "or",
+          "pD",
+          "path",
+          "rC",
+          "rE",
+          "rS",
+          "rV",
+          "reS",
+          "ref",
+          "resE",
+          "resS",
+          "s",
+          "sAH",
+          "sAW",
+          "sIS",
+          "sId",
+          "sST",
+          "title",
+          "uEE",
+          "uES",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": null,
+        "status": 200,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://rum-collector-2.pingdom.net/img/beacon.gif",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 44155,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/backlinko-team.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/backlinko-team.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 24460,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "www.semrush.com",
+        "path": "/olaf/init",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://www.semrush.com/olaf/init",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 26528,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 19793,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 37803,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 43844,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "api.backlinko.com",
+        "path": "/wp-json/backlinkostats/v1/shares/{n}",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://api.backlinko.com/wp-json/backlinkostats/v1/shares/165641",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "js.sparkloop.app",
+        "path": "/team_d05f5749d84d/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "status": 301,
+        "bytes": 167,
+        "hits": 1,
+        "example": "https://js.sparkloop.app/team_d05f5749d84d/settings",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "script-settings.sparkloop.app",
+        "path": "/team_d05f5749d84d/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://script-settings.sparkloop.app/team_d05f5749d84d/settings",
+        "sameSite": false
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "www.googletagmanager.com",
+        "count": 5
+      },
+      {
+        "host": "rum-static.pingdom.net",
+        "count": 2
+      },
+      {
+        "host": "cdn.cookiehub.eu",
+        "count": 1
+      },
+      {
+        "host": "js.sparkloop.app",
+        "count": 1
+      },
+      {
+        "host": "script.sparkloop.app",
+        "count": 1
+      },
+      {
+        "host": "www.semrush.com",
+        "count": 1
+      }
+    ],
+    "truncated": false,
+    "inlineData": [
+      {
+        "id": "__NEXT_DATA__",
+        "type": "application/json",
+        "bytes": 110133,
+        "topLevelKeys": [
+          "props",
+          "page",
+          "query",
+          "buildId",
+          "isFallback",
+          "isExperimentalCompile",
+          "gsp",
+          "scriptLoader"
+        ]
+      }
+    ],
+    "globalState": [
+      "__NEXT_DATA__",
+      "dataLayer"
+    ],
+    "frameworkHints": [
+      "next"
+    ],
+    "forms": [],
+    "ariaLiveRegions": 1,
+    "triggers": [
+      {
+        "marker": "aria-haspopup",
+        "href": null
+      }
+    ],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 26,
+      "thirdPartyEndpoints": 10,
+      "thirdPartyScriptHosts": 6,
+      "inlineDataBlobs": 1,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": true
+    }
+  },
+  "screenshot": "assets/screenshots/how-to-find-and-fix-broken-links.png",
+  "renderedHtml": "pages/how-to-find-and-fix-broken-links.html"
+}

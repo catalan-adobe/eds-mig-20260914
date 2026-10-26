@@ -1,0 +1,1535 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-26T14:58:46.350Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "voice-search-seo-study",
+  "url": "https://backlinko.com/voice-search-seo-study",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-26T14:58:46.350Z",
+  "finalUrl": "https://backlinko.com/voice-search-seo-study",
+  "title": "Voice Search SEO Study: Results From 10k Voice Searches",
+  "description": "This guide (and industry study) will show you how to optimize your site for voice search.",
+  "og": {
+    "title": "Voice Search SEO Study: Results From 10k Voice Searches",
+    "description": "This guide (and industry study) will show you how to optimize your site for voice search.",
+    "image": "https://api.backlinko.com/app/uploads/2020/06/voice-search-seo-study-social.png",
+    "type": "article"
+  },
+  "headings": [
+    {
+      "tag": "h2",
+      "text": "About cookies on this site"
+    },
+    {
+      "tag": "h3",
+      "text": ".semrush_svg__cls-2{fill:#181e15}Semrush helps you:"
+    },
+    {
+      "tag": "h3",
+      "text": "Backlinko readers get:"
+    },
+    {
+      "tag": "h1",
+      "text": "We Analyzed 10,000 Google Home Results. Here’s What We Learned About Voice Search SEO"
+    },
+    {
+      "tag": "h2",
+      "text": "A Summary of Our Most Interesting Findings Are As Follows:"
+    },
+    {
+      "tag": "h2",
+      "text": "Fast-Loading Websites Appear To Have an Edge in Google Voice Search Results"
+    },
+    {
+      "tag": "h2",
+      "text": "HTTPS-Secured Websites Dominate Google Voice Search Results"
+    },
+    {
+      "tag": "h2",
+      "text": "Voice Search Results Tend to Be Short and Concise"
+    },
+    {
+      "tag": "h2",
+      "text": "Using Schema.org Markup May Not Help Your Voice Search Rankings"
+    },
+    {
+      "tag": "h2",
+      "text": "Websites With Strong Link Authority Tend to Rank Best In Voice Search"
+    },
+    {
+      "tag": "h2",
+      "text": "Highly Shared Content Appears Often in Voice Search"
+    },
+    {
+      "tag": "h2",
+      "text": "Content That’s Easy to Read and Understand Ranks Well in Voice Search"
+    },
+    {
+      "tag": "h2",
+      "text": "Very Few Voice Search Results Contain The Exact Keyword In Their Title Tag"
+    },
+    {
+      "tag": "h2",
+      "text": "Long-Form Content Tends to Rank Best in Google Home Searches"
+    },
+    {
+      "tag": "h2",
+      "text": "Higher Rankings=Increased Likelihood of Being a Voice Search Result"
+    },
+    {
+      "tag": "h2",
+      "text": "Appearing In Featured Snippets Appears to Be Extremely Helpful for Voice Search SEO"
+    },
+    {
+      "tag": "h2",
+      "text": "Putting It All Together, Here’s an Anatomy of a Page Optimized for Voice Search SEO:"
+    },
+    {
+      "tag": "h2",
+      "text": "Summary and Conclusion"
+    },
+    {
+      "tag": "h3",
+      "text": "Reveal Your Competitor Secrets for Free"
+    },
+    {
+      "tag": "h4",
+      "text": "Learn"
+    },
+    {
+      "tag": "h4",
+      "text": "Company"
+    },
+    {
+      "tag": "h4",
+      "text": "Connect"
+    }
+  ],
+  "body": [
+    "Written by Brian Dean",
+    "5448 shares",
+    "We analyzed 10,000 Google Home search results to answer the question:",
+    "How do you optimize your site for voice search?",
+    "Specifically, we investigated the role of 11 potential ranking factors (including Page speed, Schema, and HTTPS) on voice search results.",
+    "And in this post I’m going to share what we discovered.",
+    "1. PageSpeed appears to play a major role in voice search SEO. The average voice search result page loads in 4.6 seconds (52% faster than the average page).",
+    "2. HTTPS websites dominate Google’s voice search results. In fact, 70.4% of Google Home result pages are secured with HTTPS.",
+    "3. Google prefers short, concise answers to voice search queries. The typical voice search result is only 29 words in length.",
+    "4. Schema may not play a key role in voice search rankings. 36.4% of voice search results come from pages that use Schema (which is only slightly higher than the worldwide average of 31.3%).",
+    "5. Authoritative domains tend to produce voice search results significantly more than non-authoritative domains. In fact, the mean Ahrefs Domain Rating of a Google Home result is 76.8.",
+    "6. Content with high levels of social engagement tends to perform well in voice search. In fact, the average voice search result has 1,199 Facebook shares and 44 Tweets.",
+    "7. Simple, easy-to-read content may help with voice search SEO. The average Google voice search result is written at a 9th grade level.",
+    "8. We found that very few voice search results had the exact query in their title tag. Therefore, creating individual pages for each voice search query doesn’t appear to be an effective voice search SEO strategy.",
+    "9. The average word count of a voice search result page is 2,312 words. Therefore, Google tends to source voice search answers from long form content.",
+    "10. Content that ranks highly in desktop search is also very likely to appear as a voice search answer. In fact, approximately 75% of voice search results rank in the top 3 for that query.",
+    "11. Appearing in a Featured Snippet may help you rank in voice search. 40.7% of all voice search answers came from a Featured Snippet.",
+    "I have detailed data and insights from our findings below.",
+    "To uncover the relationship between website loading speed and voice search, we analyzed the PageSpeed of the results in our data set.",
+    "And we found that the typical loading speed of a voice search result was much faster than most webpages.",
+    "Specifically, our data found that the average Time to First Byte (TTFB) of a voice search result was .54 seconds (vs. the worldwide average of 2.1 seconds).",
+    "We also found that the time it took for a search result page to load completely (4.6 seconds) was significantly faster than most pages (8.8 seconds).",
+    "As you might have heard, Google recently unveiled their “Speed Update“.",
+    "This update makes a site’s loading speed a more important ranking signal than ever before. In fact, in the post announcing the algorithm update, Google states:",
+    "And this philosophy likely also applies to Voice Search results.",
+    "When you ask Google Home or Google Assistant a question, you don’t want to stand around waiting for device to spit out an answer. You want your answer ASAP. Therefore, it’s plausible that Google’s voice search algorithm would use page loading speed as an important ranking factor.",
+    "And our data supports this theory: voice search results tend to load significantly faster than most web pages.",
+    "Key Takeaway: Google’s voice search algorithm may use PageSpeed as a key ranking signal. In fact, the average voice search result page loads in 4.6 seconds (which is 52% faster than the worldwide average). Therefore, if you want to rank in voice search, make sure your site loads as quickly as possible.",
+    "Google has stated that HTTPS can give your website a “minimal boost” in the search results.",
+    "But does this also apply to voice search?",
+    "Our data suggests that HTTPS might play an even more important role in voice search than in desktop or mobile search.",
+    "In fact, we discovered that 70.4% of voice search result URLs have adopted HTTPS (compared to only 50% of Google desktop results).",
+    "As with many of the other factors we investigated, this relationship could be chance correlation. After all, if you take the time to write search engine optimized content, you’re also willing to spend the time and money required to set up HTTPS.",
+    "The counterpoint to that is that voice search results tend to use HTTPS significant more (70.4% vs. 50%) than the other results on Google’s first page, which are also presumably optimized for SEO.",
+    "Does Google consider HTTPS more important for voice search results? It’s impossible to tell from our data alone. However, if you want to rank in voice search, HTTPS may help.",
+    "Key Takeaway: Voice search results are significantly more likely to use HTTPS than other websites ranking on Google’s first page. Therefore, implementing HTTPS may improve your chances of appearing as a voice search result.",
+    "It’s clear from reading Google’s Voice Search rater guidelines that they want voice search results that are very brief and to-the-point.",
+    "In my opinion, the examples given in the rater guidelines are an appropriate length. However, Google disagrees. They want voice search answers to be as concise as possible.",
+    "And our data supports this. In fact, we discovered that the average voice search answer is 29 words.",
+    "For example, here is a query and answer from one of the 10,000 searches we performed for this study:",
+    "That answer is representative of a typical Google Home answer (in fact, it’s exactly 29 words).",
+    "So if you’re optimizing your content to rank in Google Home or Google Assistant, make your answer snippet as short as possible (while still providing a thorough answer to that query).",
+    "Key Takeaway: Google voice results tend to be very concise. In fact, the average voice search result is only 29 words long. So to optimize for voice search SEO, aim to make your answer snippets approximately 29 words long.",
+    "You probably already know that Schema.org markup can help search engines better understand your content.",
+    "But does using Schema have an impact on voice search results?",
+    "Probably not.",
+    "Our data discovered that 36.4% of voice search result pages used Schema markup (vs. 31.3% for the average page on the internet).",
+    "Although voice search result pages tend to use Schema slightly more often than your average web page, the difference is not significant. Also, 63.6% of voice search results don’t use Schema at all. Therefore, it’s unlikely that Schema has a direct impact on voice search rankings.",
+    "We also analyzed the type of Schema used most often on voice search result pages. Here’s what we found:",
+    "It’s impossible to say from our data alone whether Schema can help you rank better for voice search queries.",
+    "That said, when used properly, Schema can improve your search visibility on any platform. So it makes sense to use it, even if it won’t necessarily help with voice search SEO.",
+    "Key Takeaway: Schema can help your overall SEO efforts. However, our data suggests that it doesn’t appear to impact voice search rankings.",
+    "We all know that backlinks form the foundation of Google’s desktop and mobile algorithm.",
+    "To see if backlinks play a role in voice search, we analyzed each result for its Domain Rating and Page Rating (two metrics developed by Ahrefs to evaluate website and page-level link authority).",
+    "And we discovered that the average Domain Rating of a voice search result was 76.8.",
+    "Needless to say to anyone that works in the SEO industry, this is a considerably high DR.",
+    "Interestingly, we found that the link authority of voice search result pages were significantly lower. In fact, the mean Page Rating of a voice search result was only 21.1.",
+    "What might explain this?",
+    "Unlike with a traditional search, where you get a list of 10 blue links, Google Home gives you a single answer to your question. This means that Google needs to be extremely confident that they’re giving you accurate information.",
+    "And to help ensure accuracy, the voice search algorithm may rely on domain authority over page authority.",
+    "In other words, once Google finds a plausible voice search answer on a trusted website, they don’t care how many links are pointing to the page itself.",
+    "For example, here is one of the voice search results from our study:",
+    "The DR of the site that result comes from (WashingtonPost.com) is 93. But the authority of the page is only 14.",
+    "Key Takeaway: The average Domain Rating of a voice search result is 76.8. Therefore, Google’s Voice Search Algorithm may emphasize trusted, authoritative domains.",
+    "Our study found that voice search results tend to have a relatively high number of social media shares.",
+    "Considering that half of all content on the web gets 2 Facebook shares or less, an average Facebook share count of 1,199 is striking.",
+    "With that, I should be clear about something: it’s extremely unlikely that the voice search algorithm uses social signals. This is likely a case of correlation, not causation.",
+    "In fact, Google has gone on the record several times to say that social signals aren’t used in their algorithm.",
+    "And it’s hard to come up with a reason that the voice search algorithm would use social signals.",
+    "That said, this data does tell us something: valuable, engaging content performs well in any search engine environment. And voice search is no exception.",
+    "Key Takeaway: Publishing valuable, highly-shareable content may improve your chances of ranking as a voice search result.",
+    "Google’s official Voice Search Rater Guidelines emphasize “Elocution”:",
+    "This is basically: “Was it easy to understand the answer to your voice search?”.",
+    "Needless to say, the simpler the language used, the easier it is for Google to nail the Elocution factor.",
+    "Indeed, we found that the average Google Voice Search result was written at a 9th grade reading level.",
+    "For example, here is a query and result from our data set:",
+    "The readability of that result is at a 3rd grade level.",
+    "That said, our data doesn’t prove that Google uses reading level as a ranking factor in their voice search algorithm. But it’s possible. After all, it would make sense for the voice search algorithm to rank content that’s easy to understand.",
+    "Just think about how radically different a Google Home result is vs. a list of 10 blue links:",
+    "It needs to contain simple words that are easy for Google to pronounce",
+    "You need to comprehend the information without any visual reference",
+    "You’re not easily able to look up challenging words or phrases",
+    "With that in mind, it’s plausible that Google may measure reading level and use it as a voice search ranking factor.",
+    "Key Takeaway: The mean voice search result is written at a 9th grade reading level. Publishing simple, easy-to-understand content may help with voice search SEO.",
+    "Should you create a piece of content for every single keyword that you want to rank for?",
+    "When it comes to voice search at least, the answer appears to be: “no”.",
+    "In fact, only 1.71% of voice search results use the exact keyword in their title tag.",
+    "For example, this is a representative query and result from our data set:",
+    "The text that matches the voice search query is smack dab in the middle of the page (not in the title tag):",
+    "It appears that Google may de-emphasize the importance of a page’s title tag in the voice search algorithm (at least compared to desktop search, where it still plays a role).",
+    "If true, this would make sense for two reasons:",
+    "First, approximately 20% of all mobile searches are now voice searches (and according to Comscore, 50% of all searches will be voice searches by 2020). With so many voice searches, it’s impossible for Google to find a page dedicated to every query. Instead, Google explores the entire page for the best match for that particular voice search.",
+    "Second, people use voice and desktop searches in different ways. Specifically, voice searches are 76.1% longer than text-based searches. Longer searches make it even less likely that the exact phrase is going to appear in the limited space of a title tag. Again, Google voice search may largely ignore the title tag and find the nugget of information that it needs in the main body content.",
+    "In short, don’t worry about creating individual pages that are each optimized around individual keywords. Instead, write in-depth content that can answer several different voice search queries on a single page.",
+    "Key Takeaway: Title tag optimization doesn’t appear to play an important role on voice search SEO.",
+    "We set out to see if longer content (>1,000 words) ranks best in voice search.",
+    "We did, in fact, discover that Google voice search results predominately come from pages with a high word count.",
+    "Specifically, we found the average word count of a Google voice search results page to be 2,312 words.",
+    "Does this mean that, like with desktop searches, that Google Home has a preference for pages that have a certain word count? Unlikely.",
+    "After all, as we previously outlined, voice search results are relatively brief (averaging at 29 words). So there’s no reason for Google to prefer that such a small snippet comes from such a large page.",
+    "Instead, this is likely due to chance: more words=more opportunities to “match” as a voice search result.",
+    "That said, for that reason alone, you may want to publish longer content in order to rank more often for voice searches.",
+    "In addition to the sheer number of words, the structure of your content may play a role in voice search SEO.",
+    "We found that, for results where Google provided a source for their answer, 2.68% of voice results came from FAQ pages.",
+    "This makes sense. A good chunk of voice searches are long, question-based queries. In other words, the exact type of questions that are likely to find a match on an FAQ page.",
+    "Also, FAQ pages are in a format that’s perfect for voice search: a conversational question and a brief answer right underneath it.",
+    "Here’s an example search from our dataset:",
+    "And the source of the answer (an FAQ page):",
+    "Key Takeaway: Longer content means more opportunities for the text on your page to “match” a voice search query. Also, FAQ pages tend to perform particularly well in voice search.",
+    "Our research found a clear connection between rankings and being chosen as an answer for Google Home queries:",
+    "Specifically, we found that 74.9% of Google Home results came from a page ranking in the top 3 for that keyword.",
+    "In other words, the higher a page ranks for a specific keyword, the more likely Google will choose that page as the voice search result.",
+    "I should point out that there’s a strong probability that this finding is pure correlation and not causation. After all, as we previously discussed, sites with high domain authority are preferred sources of voice search answers. And websites with a high domain authority also tend to rank well in Google.",
+    "Or it could be that Google wants to give voice searchers content that’s already proven in the traditional SERPs. Therefore, they prefer to grab voice search results from high-ranking content. It’s impossible to say from our data alone.",
+    "Regardless, the relationship is clear: higher rankings in desktop search=higher chances of being a Google Home voice search result.",
+    "Key Takeaway: Pages that rank in the top 3 results in desktop tend to dominate voice search results. 74.9% of Google Home results are sourced from a page that also ranks in the top 3 for that keyword in the desktop SERPs.",
+    "In many ways Featured Snippets are ideal voice search results. They’re concise answers pulled from trusted, authoritative sources.",
+    "So we set out to see how many voice search answers were simply pulled from the Featured Snippet for that keyword (in desktop search).",
+    "And we discovered that 40.7% of all voice search results came from a Featured Snippet.",
+    "I should point out that, for this particular analysis, we only looked at voice search results that cited a source (for example, “According to Backlinko.com…”).",
+    "(That said, 70% of Google Home answers from our data set cited a website source. So this is representative of most voice search results).",
+    "For example, here is an example of a Google Home question and answer from our study:",
+    "And sure enough, when you search for that keyword in Google, that exact answer is also found as a Featured Snippet.",
+    "Key Takeaway: Appearing in a featured snippet seems to help, but isn’t necessarily required, to rank in voice search. 40.7% of voice search results are pulled from Featured Snippets.",
+    "I’d like to give a big “thank you!” to Backlinko’s CTO, Lloyd Jones, for collecting and analyzing all of our data. This study would not have been possible without his hard work and dedication.",
+    "And here’s a link to our study methods.",
+    "Backlinko is owned by Semrush. We’re still obsessed with bringing you world-class SEO insights, backed by hands-on experience. Unless otherwise noted, this content was written by either an employee or paid contractor of Semrush Inc.",
+    "On This Page",
+    "A Summary of Our Most Interesting Findings Are As Follows:",
+    "Fast-Loading Websites Appear To Have an Edge in Google Voice Search Results",
+    "HTTPS-Secured Websites Dominate Google Voice Search Results",
+    "Voice Search Results Tend to Be Short and Concise",
+    "Using Schema.org Markup May Not Help Your Voice Search Rankings",
+    "Websites With Strong Link Authority Tend to Rank Best In Voice Search",
+    "Highly Shared Content Appears Often in Voice Search",
+    "Content That’s Easy to Read and Understand Ranks Well in Voice Search",
+    "Very Few Voice Search Results Contain The Exact Keyword In Their Title Tag",
+    "Long-Form Content Tends to Rank Best in Google Home Searches",
+    "Higher Rankings=Increased Likelihood of Being a Voice Search Result",
+    "Appearing In Featured Snippets Appears to Be Extremely Helpful for Voice Search SEO",
+    "Putting It All Together, Here’s an Anatomy of a Page Optimized for Voice Search SEO:",
+    "Summary and Conclusion",
+    "Get instant insights into strengths and weaknesses of your competitors or prospective customers with Semrush"
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Cookie Policy.",
+      "href": "https://www.semrush.com/company/legal/cookie-policy/"
+    },
+    {
+      "label": "Allow all cookies",
+      "href": null
+    },
+    {
+      "label": "Deny all",
+      "href": null
+    },
+    {
+      "label": "Cookie settings",
+      "href": null
+    },
+    {
+      "label": "Watch Now",
+      "href": "https://www.youtube.com/watch?v=rIGzcovF6cM"
+    },
+    {
+      "label": "Close",
+      "href": null
+    },
+    {
+      "label": "Articles",
+      "href": null
+    },
+    {
+      "label": "Tools",
+      "href": null
+    },
+    {
+      "label": "Templates",
+      "href": "/templates/marketing"
+    },
+    {
+      "label": "About",
+      "href": "/about-backlinko"
+    },
+    {
+      "label": "Newsletter",
+      "href": "/newsletter"
+    },
+    {
+      "label": "Check My Site's SEO",
+      "href": null
+    },
+    {
+      "label": "Close",
+      "href": null
+    },
+    {
+      "label": "Free access",
+      "href": "https://www.semrush.com/blog/what-can-i-do-with-a-free-account-from-semrush/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=navigation"
+    },
+    {
+      "label": "Brian Dean",
+      "href": "/blog/authors/brian-dean"
+    },
+    {
+      "label": "Page speed",
+      "href": "https://backlinko.com/hub/seo/pagespeed"
+    },
+    {
+      "label": "Featured Snippet",
+      "href": "https://backlinko.com/hub/seo/featured-snippets"
+    },
+    {
+      "label": "2.1 seconds",
+      "href": "https://www.machmetrics.com/speed-blog/average-page-load-times-websites-2018/"
+    },
+    {
+      "label": "8.8 seconds",
+      "href": "https://www.machmetrics.com/speed-blog/average-page-load-times-websites-2018/"
+    },
+    {
+      "label": "Speed Update",
+      "href": "https://webmasters.googleblog.com/2018/01/using-page-speed-in-mobile-search.html"
+    },
+    {
+      "label": "minimal boost",
+      "href": "https://searchengineland.com/googles-https-algorithm-two-years-later-still-looks-url-give-ranking-boost-261156"
+    },
+    {
+      "label": "50% of Google desktop results",
+      "href": "https://searchengineland.com/moz-report-50-page-one-search-results-are-https-273659"
+    },
+    {
+      "label": "Google’s Voice Search rater guidelines",
+      "href": "https://storage.googleapis.com/guidelines-eyesfree/evaluation_of_search_speech_guidelines_v1.0.pdf"
+    },
+    {
+      "label": "Schema.org",
+      "href": "http://schema.org/docs/gs.html"
+    },
+    {
+      "label": "31.3% for the average page on the internet",
+      "href": "https://queue.acm.org/detail.cfm?id=2857276"
+    },
+    {
+      "label": "form the foundation",
+      "href": "https://searchengineland.com/now-know-googles-top-three-search-ranking-factors-245882"
+    },
+    {
+      "label": "Ahrefs",
+      "href": "https://ahrefs.com/"
+    },
+    {
+      "label": "half of all content on the web",
+      "href": "https://d380wq8lfryn3c.cloudfront.net/app/uploads/2015/09/04144737/BuzzSumo-LinksSharesReport-v6.pdf"
+    },
+    {
+      "label": "aren’t used in their algorithm",
+      "href": "https://www.seroundtable.com/again-google-doesnt-use-social-media-for-ranking-22200.html"
+    },
+    {
+      "label": "official Voice Search Rater Guidelines",
+      "href": "https://storage.googleapis.com/guidelines-eyesfree/evaluation_of_search_speech_guidelines_v1.0.pdf"
+    },
+    {
+      "label": "where it still plays a role",
+      "href": "https://backlinko.com/search-engine-ranking"
+    },
+    {
+      "label": "20% of all mobile searches",
+      "href": "https://searchengineland.com/google-reveals-20-percent-queries-voice-queries-249917"
+    },
+    {
+      "label": "Comscore",
+      "href": "https://www.campaignlive.co.uk/article/just-say-it-future-search-voice-personal-digital-assistants/1392459"
+    },
+    {
+      "label": "76.1% longer",
+      "href": "https://www.bruceclay.com/blog/learn-how-to-optimize-for-voice-search-now/"
+    },
+    {
+      "label": "like with desktop searches",
+      "href": "https://backlinko.com/search-engine-ranking"
+    },
+    {
+      "label": "also tend to rank well in Google",
+      "href": "https://backlinko.com/search-engine-ranking"
+    },
+    {
+      "label": "And here’s a link to our study methods.",
+      "href": "https://backlinko.com/app/uploads/2018/02/voice-search-seo-study.pdf"
+    },
+    {
+      "label": "A Summary of Our Most Interesting Findings Are As Follows:",
+      "href": "#a-summary-of-our-most-interesting-findings-are-as-follows"
+    },
+    {
+      "label": "Fast-Loading Websites Appear To Have an Edge in Google Voice Search Results",
+      "href": "#fast-loading-websites-appear-to-have-an-edge-in-google-voice-search-results"
+    },
+    {
+      "label": "HTTPS-Secured Websites Dominate Google Voice Search Results",
+      "href": "#https-secured-websites-dominate-google-voice-search-results"
+    },
+    {
+      "label": "Voice Search Results Tend to Be Short and Concise",
+      "href": "#voice-search-results-tend-to-be-short-and-concise"
+    },
+    {
+      "label": "Using Schema.org Markup May Not Help Your Voice Search Rankings",
+      "href": "#using-schema-org-markup-may-not-help-your-voice-search-rankings"
+    },
+    {
+      "label": "Websites With Strong Link Authority Tend to Rank Best In Voice Search",
+      "href": "#websites-with-strong-link-authority-tend-to-rank-best-in-voice-search"
+    },
+    {
+      "label": "Highly Shared Content Appears Often in Voice Search",
+      "href": "#highly-shared-content-appears-often-in-voice-search"
+    },
+    {
+      "label": "Content That’s Easy to Read and Understand Ranks Well in Voice Search",
+      "href": "#content-thats-easy-to-read-and-understand-ranks-well-in-voice-search"
+    },
+    {
+      "label": "Very Few Voice Search Results Contain The Exact Keyword In Their Title Tag",
+      "href": "#very-few-voice-search-results-contain-the-exact-keyword-in-their-title-tag"
+    },
+    {
+      "label": "Long-Form Content Tends to Rank Best in Google Home Searches",
+      "href": "#long-form-content-tends-to-rank-best-in-google-home-searches"
+    },
+    {
+      "label": "Higher Rankings=Increased Likelihood of Being a Voice Search Result",
+      "href": "#higher-rankings-increased-likelihood-of-being-a-voice-search-result"
+    },
+    {
+      "label": "Appearing In Featured Snippets Appears to Be Extremely Helpful for Voice Search SEO",
+      "href": "#appearing-in-featured-snippets-appears-to-be-extremely-helpful-for-voice-search-seo"
+    },
+    {
+      "label": "Putting It All Together, Here’s an Anatomy of a Page Optimized for Voice Search SEO:",
+      "href": "#putting-it-all-together-heres-an-anatomy-of-a-page-optimized-for-voice-search-seo"
+    },
+    {
+      "label": "Summary and Conclusion",
+      "href": "#summary-and-conclusion"
+    },
+    {
+      "label": "Get My Free Data",
+      "href": "https://www.semrush.com/analytics/overview/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=voice-search-seo-study"
+    },
+    {
+      "label": "Why Try Semrush?",
+      "href": "https://backlinko.com/lp/seo-ai-search-tool-v1?utm_source=backlinko.com&utm_medium=referral&utm_campaign=voice-search-seo-study"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Newsletter",
+      "href": "/newsletter"
+    },
+    {
+      "label": "Templates",
+      "href": "https://backlinko.com/templates/marketing"
+    },
+    {
+      "label": "Best SEO Tools",
+      "href": "/best-free-seo-tools"
+    },
+    {
+      "label": "About",
+      "href": "/about-backlinko"
+    },
+    {
+      "label": "Semrush AI Visiblity",
+      "href": "https://www.semrush.com/ai-seo/overview/"
+    },
+    {
+      "label": "Semrush Free Trial",
+      "href": "https://backlinko.com/deals/semrush-coupon"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    },
+    {
+      "label": "Twitter",
+      "href": "https://twitter.com/backlinko"
+    },
+    {
+      "label": "YouTube",
+      "href": "https://www.youtube.com/@BacklinkoTeam"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/briandean/"
+    },
+    {
+      "label": "Terms of Service",
+      "href": "https://www.semrush.com/company/legal/terms-of-service/?utm_source=backlinko.com&utm_medium=referral"
+    }
+  ],
+  "links": [
+    "https://www.semrush.com/company/legal/cookie-policy/",
+    "https://backlinko.com/voice-search-seo-study#",
+    "https://www.youtube.com/watch?v=rIGzcovF6cM",
+    "https://backlinko.com/",
+    "https://backlinko.com/ai-search-strategy",
+    "https://backlinko.com/llm-seeding",
+    "https://backlinko.com/generative-engine-optimization-geo",
+    "https://backlinko.com/hub/seo/what-is-seo",
+    "https://backlinko.com/improve-your-seo",
+    "https://backlinko.com/seo-checklist",
+    "https://backlinko.com/seo-strategy",
+    "https://backlinko.com/?p=165994",
+    "https://backlinko.com/google-e-e-a-t",
+    "https://backlinko.com/hub/seo/internal-links",
+    "https://backlinko.com/technical-seo-guide",
+    "https://backlinko.com/on-page-seo",
+    "https://backlinko.com/ecommerce-seo",
+    "https://backlinko.com/seo-certification-guide",
+    "https://backlinko.com/ai-optimization",
+    "https://backlinko.com/ai-seo",
+    "https://backlinko.com/entity-seo",
+    "https://backlinko.com/audience-research",
+    "https://backlinko.com/reddit-marketing",
+    "https://backlinko.com/?p=193164",
+    "https://backlinko.com/answer-engine-optimization-aeo",
+    "https://backlinko.com/seo-basics-for-beginners",
+    "https://backlinko.com/seo-tutorial",
+    "https://backlinko.com/pillar-pages",
+    "https://backlinko.com/?p=175006",
+    "https://backlinko.com/actionable-seo-tips",
+    "https://backlinko.com/small-business-seo",
+    "https://backlinko.com/schema-markup-guide",
+    "https://backlinko.com/website-migration-checklist",
+    "https://backlinko.com/hub/content/what-is-content-marketing",
+    "https://backlinko.com/seo-copywriting",
+    "https://backlinko.com/?p=103911",
+    "https://backlinko.com/content-marketing-this-year",
+    "https://backlinko.com/?p=190262",
+    "https://backlinko.com/?p=172343",
+    "https://backlinko.com/scale-content",
+    "https://backlinko.com/hub/content/writing",
+    "https://backlinko.com/link-building",
+    "https://backlinko.com/hub/seo/backlinks",
+    "https://backlinko.com/high-quality-backlinks",
+    "https://backlinko.com/link-building-strategies",
+    "https://backlinko.com/link-building-services",
+    "https://backlinko.com/step-by-step-backlink-audit",
+    "https://backlinko.com/skyscraper-technique",
+    "https://backlinko.com/increase-domain-authority",
+    "https://backlinko.com/competitor-analysis",
+    "https://backlinko.com/?p=173056",
+    "https://backlinko.com/?p=174557",
+    "https://backlinko.com/how-to-create-a-website",
+    "https://backlinko.com/tools/seo-checker",
+    "https://backlinko.com/tools/backlink-checker",
+    "https://backlinko.com/tools/website-authority",
+    "https://backlinko.com/tools/website-traffic-checker",
+    "https://backlinko.com/tools/keyword",
+    "https://backlinko.com/tools/keyword-difficulty-checker",
+    "https://backlinko.com/tools/competitor-analysis",
+    "https://backlinko.com/tools/schema-markup-generator",
+    "https://backlinko.com/tools/ai-visibility-checker",
+    "https://backlinko.com/tools/ai-agent-readiness",
+    "https://backlinko.com/tools/agentic-browsing-readiness",
+    "https://backlinko.com/best-free-seo-tools",
+    "https://backlinko.com/llm-tracking-tools",
+    "https://backlinko.com/keyword-research-tools",
+    "https://backlinko.com/?p=98736",
+    "https://backlinko.com/link-building-tools",
+    "https://backlinko.com/best-rank-tracking-tools",
+    "https://backlinko.com/?p=171633",
+    "https://backlinko.com/seo-software-agencies",
+    "https://backlinko.com/ai-seo-tools",
+    "https://backlinko.com/sitemap-generator-tools",
+    "https://backlinko.com/best-digital-marketing-tools",
+    "https://backlinko.com/?p=170722",
+    "https://backlinko.com/semrush-review",
+    "https://backlinko.com/ahrefs-review",
+    "https://backlinko.com/ahrefs-vs-semrush",
+    "https://backlinko.com/clearscope-review",
+    "https://backlinko.com/majestic-seo-review",
+    "https://backlinko.com/surfer-seo",
+    "https://backlinko.com/serpstat-review",
+    "https://backlinko.com/sparktoro-review",
+    "https://backlinko.com/templates/marketing",
+    "https://backlinko.com/about-backlinko",
+    "https://backlinko.com/newsletter",
+    "https://www.semrush.com/blog/what-can-i-do-with-a-free-account-from-semrush/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=navigation",
+    "https://backlinko.com/blog/authors/brian-dean",
+    "https://twitter.com/share?text=Voice%20Search%20SEO%20Study%3A%20Results%20From%2010k%20Voice%20Searches&url=https%3A%2F%2Fbacklinko.com%2Fvoice-search-seo-study&via=Backlinko",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbacklinko.com%2Fvoice-search-seo-study",
+    "https://www.reddit.com/submit?url=https%3A%2F%2Fbacklinko.com%2Fvoice-search-seo-study&title=Voice%20Search%20SEO%20Study%3A%20Results%20From%2010k%20Voice%20Searches",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fbacklinko.com%2Fvoice-search-seo-study&summary=Voice%20Search%20SEO%20Study%3A%20Results%20From%2010k%20Voice%20Searches",
+    "https://backlinko.com/hub/seo/pagespeed",
+    "https://backlinko.com/hub/seo/featured-snippets",
+    "https://www.machmetrics.com/speed-blog/average-page-load-times-websites-2018/",
+    "https://webmasters.googleblog.com/2018/01/using-page-speed-in-mobile-search.html",
+    "https://searchengineland.com/googles-https-algorithm-two-years-later-still-looks-url-give-ranking-boost-261156",
+    "https://searchengineland.com/moz-report-50-page-one-search-results-are-https-273659",
+    "https://storage.googleapis.com/guidelines-eyesfree/evaluation_of_search_speech_guidelines_v1.0.pdf",
+    "http://schema.org/docs/gs.html",
+    "https://queue.acm.org/detail.cfm?id=2857276",
+    "https://searchengineland.com/now-know-googles-top-three-search-ranking-factors-245882",
+    "https://ahrefs.com/",
+    "https://d380wq8lfryn3c.cloudfront.net/app/uploads/2015/09/04144737/BuzzSumo-LinksSharesReport-v6.pdf",
+    "https://www.seroundtable.com/again-google-doesnt-use-social-media-for-ranking-22200.html",
+    "https://backlinko.com/search-engine-ranking",
+    "https://searchengineland.com/google-reveals-20-percent-queries-voice-queries-249917",
+    "https://www.campaignlive.co.uk/article/just-say-it-future-search-voice-personal-digital-assistants/1392459",
+    "https://www.bruceclay.com/blog/learn-how-to-optimize-for-voice-search-now/",
+    "https://backlinko.com/app/uploads/2018/02/voice-search-seo-study.pdf",
+    "https://backlinko.com/voice-search-seo-study#a-summary-of-our-most-interesting-findings-are-as-follows",
+    "https://backlinko.com/voice-search-seo-study#fast-loading-websites-appear-to-have-an-edge-in-google-voice-search-results",
+    "https://backlinko.com/voice-search-seo-study#https-secured-websites-dominate-google-voice-search-results",
+    "https://backlinko.com/voice-search-seo-study#voice-search-results-tend-to-be-short-and-concise",
+    "https://backlinko.com/voice-search-seo-study#using-schema-org-markup-may-not-help-your-voice-search-rankings",
+    "https://backlinko.com/voice-search-seo-study#websites-with-strong-link-authority-tend-to-rank-best-in-voice-search",
+    "https://backlinko.com/voice-search-seo-study#highly-shared-content-appears-often-in-voice-search",
+    "https://backlinko.com/voice-search-seo-study#content-thats-easy-to-read-and-understand-ranks-well-in-voice-search",
+    "https://backlinko.com/voice-search-seo-study#very-few-voice-search-results-contain-the-exact-keyword-in-their-title-tag",
+    "https://backlinko.com/voice-search-seo-study#long-form-content-tends-to-rank-best-in-google-home-searches",
+    "https://backlinko.com/voice-search-seo-study#higher-rankings-increased-likelihood-of-being-a-voice-search-result",
+    "https://backlinko.com/voice-search-seo-study#appearing-in-featured-snippets-appears-to-be-extremely-helpful-for-voice-search-seo",
+    "https://backlinko.com/voice-search-seo-study#putting-it-all-together-heres-an-anatomy-of-a-page-optimized-for-voice-search-seo",
+    "https://backlinko.com/voice-search-seo-study#summary-and-conclusion",
+    "https://www.semrush.com/analytics/overview/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=voice-search-seo-study",
+    "https://backlinko.com/lp/seo-ai-search-tool-v1?utm_source=backlinko.com&utm_medium=referral&utm_campaign=voice-search-seo-study",
+    "https://backlinko.com/blog",
+    "https://www.semrush.com/ai-seo/overview/",
+    "https://backlinko.com/deals/semrush-coupon",
+    "https://backlinko.com/contact",
+    "https://twitter.com/backlinko",
+    "https://www.youtube.com/@BacklinkoTeam",
+    "https://www.instagram.com/briandean/",
+    "https://www.semrush.com/company/legal/terms-of-service/?utm_source=backlinko.com&utm_medium=referral",
+    "https://www.semrush.com/company/legal/privacy-policy/?utm_source=backlinko.com&utm_medium=referral"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://secure.gravatar.com/avatar/609c0e567577ac8c2c617f9062376394033fd851ca930c40bdc6aea2fa20fe2a?s=96&d=mm&r=g",
+        "alt": "Brian Dean",
+        "w": 96,
+        "h": 96
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2018/02/speed-update-960x713.png",
+        "alt": "speed update",
+        "w": 801,
+        "h": 595
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2018/02/9-using-schema-markup-1-768x423.webp",
+        "alt": "Using Schema markup",
+        "w": 701,
+        "h": 386
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2018/02/10-analyzing-schema-results-768x688.webp",
+        "alt": "Analyzing Schema results",
+        "w": 701,
+        "h": 628
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2018/02/11-average-domain-rating-768x285.webp",
+        "alt": "Average domain rating",
+        "w": 701,
+        "h": 260
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2018/02/12-average-page-rating-768x284.webp",
+        "alt": "Average page rating",
+        "w": 701,
+        "h": 259
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2018/02/13-google-home-question-answer-768x661.webp",
+        "alt": "Google Home – Question/Answer",
+        "w": 701,
+        "h": 604
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2018/02/social-signals-seo-post-768x526.png",
+        "alt": "social signals seo post",
+        "w": 760,
+        "h": 520
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2018/02/20-average-word-count-768x285.webp",
+        "alt": "Average word count",
+        "w": 701,
+        "h": 260
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2018/02/21-results-from-faq-pages-768x423.webp",
+        "alt": "Results from FAQ pages",
+        "w": 701,
+        "h": 386
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2018/02/22-google-home-question-answer-768x661.webp",
+        "alt": "Google Home – Question/Answer",
+        "w": 701,
+        "h": 604
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2018/02/23-progressive-faq-page-1-768x377.webp",
+        "alt": "Progressive FAQ page",
+        "w": 701,
+        "h": 344
+      }
+    ],
+    "allImgCount": 32,
+    "cssBackgrounds": [],
+    "modals": [
+      "About cookies on this siteWe use cookies to run our website, analyze your use of our services, manage your online preferences & personalize ad content. By accepting our cookies, you'll get relevant content and social media features, personalized ads, and an enhanced browsing experience. To manage your choices, click “Cookie Settings.” Necessary cookies are required for the core website functionality and cannot be rejected. For more information, see ourCookie Policy.Allow all cookiesDeny allCookie settings"
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {
+    "--fa-font-solid": "normal 900 1em/1 \"Font Awesome 6 Free\"",
+    "--fa-font-regular": "normal 400 1em/1 \"Font Awesome 6 Free\"",
+    "--fa-font-light": "normal 300 1em/1 \"Font Awesome 6 Pro\"",
+    "--fa-font-thin": "normal 100 1em/1 \"Font Awesome 6 Pro\"",
+    "--fa-font-duotone": "normal 900 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-regular": "normal 400 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-light": "normal 300 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-thin": "normal 100 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-brands": "normal 400 1em/1 \"Font Awesome 6 Brands\"",
+    "--fa-font-sharp-solid": "normal 900 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-regular": "normal 400 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-light": "normal 300 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-thin": "normal 100 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-duotone-solid": "normal 900 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-regular": "normal 400 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-light": "normal 300 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-thin": "normal 100 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--app-height": "100svh",
+    "--backlinko-bar-height": "62px",
+    "--sl-widgets-font-family": "-apple-system, system-ui",
+    "--sl-widgets-base-unit": "16px"
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 22,
+    "mainTextLen": 18861,
+    "realImageCount": 12,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "dev.visualwebsiteoptimizer.com",
+        "path": "/j.php",
+        "query": [
+          "a",
+          "ph",
+          "st",
+          "u",
+          "vn",
+          "x"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://dev.visualwebsiteoptimizer.com/j.php",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "pagead2.googlesyndication.com",
+        "path": "/ccm/collect",
+        "query": [
+          "ae",
+          "apvc",
+          "dl",
+          "dma",
+          "dma_cps",
+          "en",
+          "ep.ads_data_redaction",
+          "fmt",
+          "frm",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "navt",
+          "npa",
+          "rcb",
+          "rnd",
+          "scrsrc",
+          "tag_exp",
+          "tfd",
+          "tft"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "status": 200,
+        "bytes": null,
+        "hits": 3,
+        "example": "https://pagead2.googlesyndication.com/ccm/collect",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "region1.google-analytics.com",
+        "path": "/g/collect",
+        "query": [
+          "_eu",
+          "_fv",
+          "_nsi",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "cid",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dp",
+          "dt",
+          "en",
+          "ep.container_id",
+          "frm",
+          "gaf",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "status": 204,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://region1.google-analytics.com/g/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 43844,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 56682,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/brian-dean.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 7951,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/brian-dean.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+        "query": [
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 6685,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 8253,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 15888,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 9091,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 43911,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "region-eu.cookiehub.net",
+        "path": "/",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 28,
+        "hits": 1,
+        "example": "https://region-eu.cookiehub.net/",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "cdn.cookiehub.eu",
+        "path": "/client/7417b56b/en.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://cdn.cookiehub.eu/client/7417b56b/en.json",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 37803,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 10392,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 11235,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "streaming.bi.owox.com",
+        "path": "/ga4/{hash}/g/collect",
+        "query": [
+          "_eu",
+          "_fplc",
+          "_fv",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "cid",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dp",
+          "dt",
+          "ecid",
+          "en",
+          "ep.container_id",
+          "ep.page_language",
+          "ep.user_agent",
+          "frm",
+          "gaf",
+          "gap.sstd",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "richsstsse",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "sst.etld",
+          "sst.gch",
+          "sst.gcsub",
+          "sst.lpc",
+          "sst.navt",
+          "sst.rnd",
+          "sst.tft",
+          "sst.ude",
+          "sst.us_privacy",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "ur",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/gif",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://streaming.bi.owox.com/ga4/9bb752a08674f116753ca5719dda03ed/g/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 15298,
+        "hits": 2,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "rum-collector-2.pingdom.net",
+        "path": "/img/beacon.gif",
+        "query": [
+          "bIH",
+          "bIW",
+          "cE",
+          "cS",
+          "dC",
+          "dCLEE",
+          "dCLES",
+          "dI",
+          "dL",
+          "dLE",
+          "dLS",
+          "dPR",
+          "fS",
+          "hS",
+          "id",
+          "lEE",
+          "lES",
+          "nS",
+          "nT",
+          "or",
+          "pD",
+          "path",
+          "rC",
+          "rE",
+          "rS",
+          "rV",
+          "reS",
+          "ref",
+          "resE",
+          "resS",
+          "s",
+          "sAH",
+          "sAW",
+          "sIS",
+          "sId",
+          "sST",
+          "title",
+          "uEE",
+          "uES",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": null,
+        "status": 200,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://rum-collector-2.pingdom.net/img/beacon.gif",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 37436,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 44155,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 47134,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 56812,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 51691,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 32592,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "www.semrush.com",
+        "path": "/olaf/init",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://www.semrush.com/olaf/init",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 19793,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 9032,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 24460,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 46515,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 26528,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 20906,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "api.backlinko.com",
+        "path": "/wp-json/backlinkostats/v1/shares/{n}",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://api.backlinko.com/wp-json/backlinkostats/v1/shares/43798",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "js.sparkloop.app",
+        "path": "/team_d05f5749d84d/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "status": 301,
+        "bytes": 167,
+        "hits": 1,
+        "example": "https://js.sparkloop.app/team_d05f5749d84d/settings",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "script-settings.sparkloop.app",
+        "path": "/team_d05f5749d84d/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://script-settings.sparkloop.app/team_d05f5749d84d/settings",
+        "sameSite": false
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "www.googletagmanager.com",
+        "count": 5
+      },
+      {
+        "host": "rum-static.pingdom.net",
+        "count": 2
+      },
+      {
+        "host": "cdn.cookiehub.eu",
+        "count": 1
+      },
+      {
+        "host": "js.sparkloop.app",
+        "count": 1
+      },
+      {
+        "host": "script.sparkloop.app",
+        "count": 1
+      },
+      {
+        "host": "www.semrush.com",
+        "count": 1
+      }
+    ],
+    "truncated": false,
+    "inlineData": [
+      {
+        "id": "__NEXT_DATA__",
+        "type": "application/json",
+        "bytes": 183691,
+        "topLevelKeys": [
+          "props",
+          "page",
+          "query",
+          "buildId",
+          "isFallback",
+          "isExperimentalCompile",
+          "gsp",
+          "scriptLoader"
+        ]
+      }
+    ],
+    "globalState": [
+      "__NEXT_DATA__",
+      "dataLayer"
+    ],
+    "frameworkHints": [
+      "next"
+    ],
+    "forms": [],
+    "ariaLiveRegions": 1,
+    "triggers": [
+      {
+        "marker": "aria-haspopup",
+        "href": null
+      }
+    ],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 26,
+      "thirdPartyEndpoints": 10,
+      "thirdPartyScriptHosts": 6,
+      "inlineDataBlobs": 1,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": true
+    }
+  },
+  "screenshot": "assets/screenshots/voice-search-seo-study.png",
+  "renderedHtml": "pages/voice-search-seo-study.html"
+}

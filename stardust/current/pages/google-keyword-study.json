@@ -1,0 +1,1409 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-26T14:59:28.309Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "google-keyword-study",
+  "url": "https://backlinko.com/google-keyword-study",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-26T14:59:28.309Z",
+  "finalUrl": "https://backlinko.com/google-keyword-study",
+  "title": "We Analyzed 306M Keywords. Here's What We Learned About Google Searches",
+  "description": "Large-scale analysis of the current Google keyword landscape.",
+  "og": {
+    "title": "We Analyzed 306M Keywords. Here's What We Learned About Google Searches",
+    "description": "Large-scale analysis of the current Google keyword landscape.",
+    "image": "https://api.backlinko.com/app/uploads/2020/12/google-keyword-study-social.png",
+    "type": "article"
+  },
+  "headings": [
+    {
+      "tag": "h2",
+      "text": "About cookies on this site"
+    },
+    {
+      "tag": "h3",
+      "text": ".semrush_svg__cls-2{fill:#181e15}Semrush helps you:"
+    },
+    {
+      "tag": "h3",
+      "text": "Backlinko readers get:"
+    },
+    {
+      "tag": "h1",
+      "text": "We Analyzed 306M Keywords. Here’s What We Learned About Google Searches"
+    },
+    {
+      "tag": "h2",
+      "text": "91.8% of Search Terms Are Long Tail Keywords"
+    },
+    {
+      "tag": "h2",
+      "text": "Search Demand is Largely Concentrated Among a Relatively Small Number of Keywords"
+    },
+    {
+      "tag": "h2",
+      "text": "Average Search Volume for a Keyword Is 989 Searches Per Month"
+    },
+    {
+      "tag": "h2",
+      "text": "14.1% of Search Queries are Question Keywords"
+    },
+    {
+      "tag": "h2",
+      "text": "The Average Keyword Has a CPC of $0.61"
+    },
+    {
+      "tag": "h2",
+      "text": "The US Has Higher Average Search Volumes and CPCs Compared to Other English-Speaking Countries"
+    },
+    {
+      "tag": "h2",
+      "text": "Mean Keyword Length is 1.9 Words and 8.5 Characters"
+    },
+    {
+      "tag": "h2",
+      "text": "Industries With The Highest Mean Search Volume Keywords Include Internet & Telecom, News and Media, and Consumer Electronics"
+    },
+    {
+      "tag": "h2",
+      "text": "Popular Keywords Have Higher Keyword Difficulty Scores"
+    },
+    {
+      "tag": "h2",
+      "text": "People Also Ask Boxes, Image Packs and Videos are The Most Common SERP Features In Google Search"
+    },
+    {
+      "tag": "h3",
+      "text": "Reveal Your Competitor Secrets for Free"
+    },
+    {
+      "tag": "h4",
+      "text": "Learn"
+    },
+    {
+      "tag": "h4",
+      "text": "Company"
+    },
+    {
+      "tag": "h4",
+      "text": "Connect"
+    }
+  ],
+  "body": [
+    "Written by Brian Dean",
+    "1940 shares",
+    "We analyzed 306M keywords to understand the types of queries that people use in Google search.",
+    "Specifically, we looked at keyword distribution, query length, keyword difficulty, CPC, SERP features, and more.",
+    "Using data from DataForSEO and Ahrefs, we uncovered some very interesting findings.",
+    "Now it’s time to share what we found.",
+    "Here is a Summary of Our Key Findings:",
+    "1. 91.8% of all search queries are long tail keywords. However, long tails are responsible for a relatively small percentage of total search volume (3.3%).",
+    "2. Search demand is concentrated in a small percentage of high volume terms. In fact, the top 500 most popular search terms make up 8.4% of all search volume. And the top 2000 keywords are responsible for 12.2% of all searches conducted in Google.",
+    "3. The average keyword gets 989 searches per month. However, the median search volume for a keyword is only 10 searches per month. Which shows that low-volume long tail keywords are extremely prevalent in Google search.",
+    "4. 14.1% of searches are in the form of a question.",
+    "5. “How” keywords are the most common type of question keyword. Followed by “what”, “where” and “who”.",
+    "6. The mean CPC of a keyword is $0.61. Search terms related to finance and real estate have the highest average CPC.",
+    "7. The average keyword is 1.9 total words.",
+    "8. Not surprisingly, longer keywords get searched for less often than shorter keywords. In fact, keywords with 5+ words get an average of 10x fewer searches than search terms that are 1-3 words in length.",
+    "9. Industries with the highest search volume are “News and Media”, “Internet & Telecom”, “Arts & Entertainment” and “Consumer Electronics”.",
+    "10. Popular keywords have significantly higher keyword difficulty scores. In fact, each time search volume doubles, keyword difficulty goes up by 1.63.",
+    "11. SERP features are extremely common in Google search. In fact, only 2.4% of all Google search results don’t contain at least one SERP feature.",
+    "12. The most common SERP features present in Google are People Also Ask (19.5%), image packs (19.4%), video results (17.9%) and Top Stories (15.5%).",
+    "We have detailed data and information on our findings below.",
+    "According to our analysis of 306M US keywords, the vast majority of search terms (91.8%) are long tail keywords.",
+    "However, we also discovered that long tails don’t account for a large percentage of search volume.",
+    "In fact, all long tails combined only account for 3.3% of total search volume.",
+    "In other words, we found that most keywords tend to be long tails. But even when added together, long tails only make up a small part of global search demand.",
+    "(For this study we considered any keyword with 1-100 searches per month as “long tail”).",
+    "This finding is largely in-line with a keyword analysis conducted by Ahrefs earlier this year.",
+    "Like the Ahrefs analysis, we defined long tail keywords as any keyword getting less than 100 searches per month. The exact numbers differed due to differences in sample size and analysis. But we both found that a) long tails account for most keywords and b) long tail keywords represent a relatively small slice of the search demand pie.",
+    "Key Takeaway: 91.8% of keywords are long tail keywords. However, even when added together, long tails only account for 3.3% of overall search demand.",
+    "A relatively small number of search terms make up a large percentage of total search demand.",
+    "Specifically, the 500 most popular search terms make up 8.4% of all search volume.",
+    "It’s not surprising to see that monthly search volume is not evenly distributed. But we were surprised to see how skewed search behavior is towards a small number of search terms.",
+    "For example, when including misspellings, 2-3% of all searches conducted in Google are for 4 keywords: YouTube, Facebook, Amazon and Google.",
+    "This finding is interesting for two reasons. First, it shows that a large amount of Google searches are navigational.",
+    "Second, it demonstrates the popularity of the four dominant internet brands compared to all other brands.",
+    "Key Takeaway: The 500 top keywords account for 8.4% of all search volume.",
+    "The typical keyword gets an average of 989 monthly searches.",
+    "However, this number is slightly skewed due to the concentration of extremely high-volume terms that we just talked about. Which is why we decided to also analyze median search volume.",
+    "And we discovered that median search volume is only 10 searches per month.",
+    "This shows that, again, the vast majority of keywords are “long tails” with relatively low monthly search volume.",
+    "Key Takeaway: The average keyword in Google gets searched for 989 times per month. However, it’s likely that this number is impacted by the top 500 search terms. And when we analyzed the median search volume, we found that the typical search volume for a keyword was only 10 searches per month.",
+    "As the name suggests, a question keyword is any keyword that contains “who”, “what”, “where”, “why” or “how”.",
+    "Considering that many people use Google to search for information, it should come as no surprise that question keywords are relatively common.",
+    "Indeed, we found that 14.1% of searches in Google were conducted via a question keyword.",
+    "We also brokedown the most common types of questions that people used.",
+    "As you can see, the most common types of question keywords were: “how” (8.07%), “what” (3.4%), “where” (.88%), “why” (.82%), “who” (.6%), and “which” (.33%).",
+    "Questions, by their nature of being relatively long and specific, are typically long tail terms. And as we also previously outlined, long tails are common in terms of keyword frequency. But they typically have low search volume (even when added together).",
+    "Key Takeaway: Making up 14.1% of all search terms, question keywords are relatively common in Google search.",
+    "One of the main insights we wanted to look at for this research was Google Ads cost per click (CPC). And how CPCs varied between different industries.",
+    "We found that the typical keyword has a Google Ad CPC of $0.61.",
+    "We also broke down CPC by industry.",
+    "Overall, keywords in the real estate, finance, health, legal and home have the highest average CPCs.",
+    "On the other side of the spectrum, keywords related to the news, arts & entertainment, food and fitness have the lowest CPCs.",
+    "Key Takeaway: CPCs vary greatly between different keywords. When averaged together, the typical keyword costs $.61 per click. The finance, real estate and health verticals have the highest Google Ads CPCs. While fitness, food, and arts have relatively low CPCs.",
+    "For this analysis, we used a dataset of English language keywords from 5 countries: the US, UK, Australia, Canada and New Zealand.",
+    "When adjusted for population size, Americans search in Google far more often than any other English-speaking country.",
+    "In fact, Americans use Google 38% more than the UK. And 90% more than Australia.",
+    "The US also has significantly higher CPCs on average.",
+    "While the absolute numbers are different between the US and other countries, search patterns tend to be fairly similar.",
+    "For example, with some exceptions, searches that have high US volume tend to have high international volume, and vice versa.",
+    "Key Takeaway: The US uses Google far more than other English speaking countries. In fact, Americans search in Google 38% more than the UK and 90% more than Australia.",
+    "Our analysis found that, among the 306M keywords that we looked at, the average keyword is 1.9 words and 8.5 characters in length.",
+    "We also looked at the relationship between keyword length and search volume. When looking at character count, extremely long and short keywords get relatively few searches.",
+    "We found that keywords between 5-10 characters tend to get searched for most often.",
+    "And that 1-2 word terms have the highest average search volume.",
+    "Key Takeaway: Mean keyword length in Google search is 8.5 characters and 1.9 words in length. We also found that shorter keywords (in terms of word count) have higher search volumes. In fact, short keywords (between 1-3 words) get 10x more searches than longer keywords (5+ words).",
+    "We decided to categorize each keyword in our data set. And investigate which industries had relatively high and low volume search terms.",
+    "Here’s what we discovered:",
+    "When it comes to mean search volume, the most popular keywords in Google tend to fall under the categories: Internet & Telecom, Retailers, News, Arts & Entertainment, and Consumer Electronics.",
+    "On the other hand, keywords related to Real Estate, Vehicles, Occasions & Gifts, Home & Garden, and Law get relatively few searches.",
+    "We also ran the same analysis with a focus on total searches. In other words, instead of analyzing each keyword’s mean search volume, we looked at the total number of searches conducted under each category.",
+    "As the chart indicates, the results are similar. But not identical.",
+    "Specifically, at 19.5% of all searches, “News & Media” is the most popular search category in Google. With “Internet & Telecom” (17.5%) and “Arts & Entertainment” (17.4%) 2nd and 3rd.",
+    "These findings make logical sense. Millions of people use Google to find information on current events. Which is why news-related searches make up nearly 1 out of 5 Google searches. However, each term isn’t going to rack up significant search volume. Which is why mean search volume for news-related keywords tend to be low.",
+    "Key Takeaway: “Internet & Telecom” is the most popular search category in terms of average search volume per keyword. However, when looking at the total number of searches per category, “News & Media” comes out on top. In fact, 19.5% of all Google searches fall under the “News & Media” category.",
+    "To get keyword difficulty data on our data set 306M keywords, we analyzed a subset of terms (approximately 2.5M) using Ahrefs.",
+    "Perhaps not surprisingly, popular search terms have higher average keyword difficulty scores compared to keywords with low search volume.",
+    "For this analysis, we ran a subset of keywords from our dataset in Ahrefs. Although each SEO tool has a different approach for analyzing keyword difficulty, the keyword difficulty measurement in Ahrefs is considered reliable. They’re also transparent about how the metric is calculated.",
+    "Overall, we found that popular search terms tend to have more competition in the SERPs.",
+    "Specifically, each time search volume doubles, keyword difficulty goes up by approximately 1.63.",
+    "For example, as search volume goes from 100 to 3200 (6 doublings), the difficulty increases by roughly 10 (1.63 * 6).",
+    "This is likely due to the fact that popular keywords are attractive to SEOs and content marketers. Which leads to heightened SEO competition for those terms.",
+    "We also looked into the relationship between keyword difficulty and CPC. We found a clear relationship between those two variables. Specifically, the more competitive the terms, the higher the CPC.",
+    "Again, this finding is something that most digital marketers would expect. Keywords with high CPCs tend to have strong buyer intent. While many businesses are willing to pay to get in front of those searchers via Google Ads, others prefer to rank organically. Which leads to a glut of competition for high CPC terms.",
+    "Key Takeaway: Popular keywords have higher average keyword difficulty scores compared to keywords with low search volume. We also found a relationship between keyword difficulty and CPC. Specifically, keywords with high CPCs tend to have higher SERP competition levels.",
+    "Next, we looked at the prevalence of SERP features. And the relationship between SERP features and keyword difficulty.",
+    "Firstly, we looked at which SERP features appear most often in Google’s search results.",
+    "We found that the most prevalent search features in Google’s organic results are People Also Ask (19.4%), image packs (19.4%), video results (17.9%), Top Stories (15.4%) and Sitelinks (11.0%).",
+    "And the least common SERP features include Tweet boxes, Google Shopping results and Knowledge cards.",
+    "We also looked at which SERP features appeared together in the search results. Here are the most common SERP feature pairings.",
+    "Interestingly, keywords that bring up SERP features tend to be more competitive than those without SERP features.",
+    "And Google search results with more SERP features have higher mean keyword difficulty.",
+    "All in all, SERP features appear in almost all Google search results. In fact, 97.6% of searches contain at least one SERP feature.",
+    "We also noticed that searches without SERP features tend to have low volume.",
+    "This is likely due to the fact that these low-volume queries are extremely specific long tails. Which means there’s less likely to be a “match” in terms of a relevant YouTube video or Google Shopping result to use as part of a SERP feature.",
+    "We also looked into the impact that various SERP features have on clicks. Interestingly, knowledge cards tend to significantly reduce clicks-per-search. While the other SERP features appear to have limited effect on drawing clicks away from the “10 blue link” organic results.",
+    "Key Takeaway: 97.6% of all Google searches result in a SERP feature. “People also ask” is the most popular SERP feature in Google.",
+    "Conclusion",
+    "I hope you found this analysis interesting.",
+    "I’d like to thank DataForSEO for providing the data on 306M keywords that made up the bulk of this research.",
+    "For those that are interested, here is a PDF of our study methods. And a link to a GitHub repository with all of the raw data.",
+    "Backlinko is owned by Semrush. We’re still obsessed with bringing you world-class SEO insights, backed by hands-on experience. Unless otherwise noted, this content was written by either an employee or paid contractor of Semrush Inc.",
+    "On This Page",
+    "91.8% of Search Terms Are Long Tail Keywords",
+    "Search Demand is Largely Concentrated Among a Relatively Small Number of Keywords",
+    "Average Search Volume for a Keyword Is 989 Searches Per Month",
+    "14.1% of Search Queries are Question Keywords",
+    "The Average Keyword Has a CPC of $0.61",
+    "The US Has Higher Average Search Volumes and CPCs Compared to Other English-Speaking Countries",
+    "Mean Keyword Length is 1.9 Words and 8.5 Characters",
+    "Industries With The Highest Mean Search Volume Keywords Include Internet & Telecom, News and Media, and Consumer Electronics",
+    "Popular Keywords Have Higher Keyword Difficulty Scores",
+    "People Also Ask Boxes, Image Packs and Videos are The Most Common SERP Features In Google Search",
+    "Get instant insights into strengths and weaknesses of your competitors or prospective customers with Semrush"
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Cookie Policy.",
+      "href": "https://www.semrush.com/company/legal/cookie-policy/"
+    },
+    {
+      "label": "Allow all cookies",
+      "href": null
+    },
+    {
+      "label": "Deny all",
+      "href": null
+    },
+    {
+      "label": "Cookie settings",
+      "href": null
+    },
+    {
+      "label": "Watch Now",
+      "href": "https://www.youtube.com/watch?v=rIGzcovF6cM"
+    },
+    {
+      "label": "Close",
+      "href": null
+    },
+    {
+      "label": "Articles",
+      "href": null
+    },
+    {
+      "label": "Tools",
+      "href": null
+    },
+    {
+      "label": "Templates",
+      "href": "/templates/marketing"
+    },
+    {
+      "label": "About",
+      "href": "/about-backlinko"
+    },
+    {
+      "label": "Newsletter",
+      "href": "/newsletter"
+    },
+    {
+      "label": "Check My Site's SEO",
+      "href": null
+    },
+    {
+      "label": "Close",
+      "href": null
+    },
+    {
+      "label": "Free access",
+      "href": "https://www.semrush.com/blog/what-can-i-do-with-a-free-account-from-semrush/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=navigation"
+    },
+    {
+      "label": "Brian Dean",
+      "href": "/blog/authors/brian-dean"
+    },
+    {
+      "label": "DataForSEO",
+      "href": "https://dataforseo.com/"
+    },
+    {
+      "label": "Ahrefs",
+      "href": "https://ahrefs.com/"
+    },
+    {
+      "label": "search terms",
+      "href": "https://backlinko.com/hub/seo/search-terms"
+    },
+    {
+      "label": "long tail keywords",
+      "href": "https://www.semrush.com/blog/how-to-choose-long-tail-keywords/?utm_campaign=google-keyword-study&utm_source=backlinko.com&utm_medium=referral"
+    },
+    {
+      "label": "real estate",
+      "href": "https://backlinko.com/real-estate-seo"
+    },
+    {
+      "label": "People Also Ask",
+      "href": "https://backlinko.com/tools/people-also-ask"
+    },
+    {
+      "label": "a keyword analysis conducted by Ahrefs",
+      "href": "https://ahrefs.com/blog/long-tail-keywords/"
+    },
+    {
+      "label": "use Google to find information on current events",
+      "href": "https://rucore.libraries.rutgers.edu/rutgers-lib/62647/"
+    },
+    {
+      "label": "has a different approach for analyzing keyword difficulty",
+      "href": "https://backlinko.com/tools/keyword-tool-analysis"
+    },
+    {
+      "label": "transparent about how the metric is calculated",
+      "href": "https://ahrefs.com/blog/seo-metrics/#section5"
+    },
+    {
+      "label": "DataForSEO",
+      "href": "https://dataforseo.com/"
+    },
+    {
+      "label": "PDF of our study methods",
+      "href": "https://backlinko.com/app/uploads/2020/11/backlinko-google-keywords-study-methods.pdf"
+    },
+    {
+      "label": "GitHub repository",
+      "href": "https://github.com/Backlinko-LLC/2020-google-searches"
+    },
+    {
+      "label": "91.8% of Search Terms Are Long Tail Keywords",
+      "href": "#91-8-of-search-terms-are-long-tail-keywords"
+    },
+    {
+      "label": "Search Demand is Largely Concentrated Among a Relatively Small Number of Keywords",
+      "href": "#search-demand-is-largely-concentrated-among-a-relatively-small-number-of-keywords"
+    },
+    {
+      "label": "Average Search Volume for a Keyword Is 989 Searches Per Month",
+      "href": "#average-search-volume-for-a-keyword-is-989-searches-per-month"
+    },
+    {
+      "label": "14.1% of Search Queries are Question Keywords",
+      "href": "#14-1-of-search-queries-are-question-keywords"
+    },
+    {
+      "label": "The Average Keyword Has a CPC of $0.61",
+      "href": "#the-average-keyword-has-a-cpc-of-0-61"
+    },
+    {
+      "label": "The US Has Higher Average Search Volumes and CPCs Compared to Other English-Speaking Countries",
+      "href": "#the-us-has-higher-average-search-volumes-and-cp-cs-compared-to-other-english-speaking-countries"
+    },
+    {
+      "label": "Mean Keyword Length is 1.9 Words and 8.5 Characters",
+      "href": "#mean-keyword-length-is-1-9-words-and-8-5-characters"
+    },
+    {
+      "label": "Industries With The Highest Mean Search Volume Keywords Include Internet & Telecom, News and Media, and Consumer Electronics",
+      "href": "#industries-with-the-highest-mean-search-volume-keywords-include-internet-telecom-news-and-media-and-consumer-electronics"
+    },
+    {
+      "label": "Popular Keywords Have Higher Keyword Difficulty Scores",
+      "href": "#popular-keywords-have-higher-keyword-difficulty-scores"
+    },
+    {
+      "label": "People Also Ask Boxes, Image Packs and Videos are The Most Common SERP Features In Google Search",
+      "href": "#people-also-ask-boxes-image-packs-and-videos-are-the-most-common-serp-features-in-google-search"
+    },
+    {
+      "label": "Get My Free Data",
+      "href": "https://www.semrush.com/analytics/overview/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=google-keyword-study"
+    },
+    {
+      "label": "Why Try Semrush?",
+      "href": "https://backlinko.com/lp/seo-ai-search-tool-v1?utm_source=backlinko.com&utm_medium=referral&utm_campaign=google-keyword-study"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Newsletter",
+      "href": "/newsletter"
+    },
+    {
+      "label": "Templates",
+      "href": "https://backlinko.com/templates/marketing"
+    },
+    {
+      "label": "Best SEO Tools",
+      "href": "/best-free-seo-tools"
+    },
+    {
+      "label": "About",
+      "href": "/about-backlinko"
+    },
+    {
+      "label": "Semrush AI Visiblity",
+      "href": "https://www.semrush.com/ai-seo/overview/"
+    },
+    {
+      "label": "Semrush Free Trial",
+      "href": "https://backlinko.com/deals/semrush-coupon"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    },
+    {
+      "label": "Twitter",
+      "href": "https://twitter.com/backlinko"
+    },
+    {
+      "label": "YouTube",
+      "href": "https://www.youtube.com/@BacklinkoTeam"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/briandean/"
+    },
+    {
+      "label": "Terms of Service",
+      "href": "https://www.semrush.com/company/legal/terms-of-service/?utm_source=backlinko.com&utm_medium=referral"
+    }
+  ],
+  "links": [
+    "https://www.semrush.com/company/legal/cookie-policy/",
+    "https://backlinko.com/google-keyword-study#",
+    "https://www.youtube.com/watch?v=rIGzcovF6cM",
+    "https://backlinko.com/",
+    "https://backlinko.com/ai-search-strategy",
+    "https://backlinko.com/llm-seeding",
+    "https://backlinko.com/generative-engine-optimization-geo",
+    "https://backlinko.com/hub/seo/what-is-seo",
+    "https://backlinko.com/improve-your-seo",
+    "https://backlinko.com/seo-checklist",
+    "https://backlinko.com/seo-strategy",
+    "https://backlinko.com/?p=165994",
+    "https://backlinko.com/google-e-e-a-t",
+    "https://backlinko.com/hub/seo/internal-links",
+    "https://backlinko.com/technical-seo-guide",
+    "https://backlinko.com/on-page-seo",
+    "https://backlinko.com/ecommerce-seo",
+    "https://backlinko.com/seo-certification-guide",
+    "https://backlinko.com/ai-optimization",
+    "https://backlinko.com/ai-seo",
+    "https://backlinko.com/entity-seo",
+    "https://backlinko.com/audience-research",
+    "https://backlinko.com/reddit-marketing",
+    "https://backlinko.com/?p=193164",
+    "https://backlinko.com/answer-engine-optimization-aeo",
+    "https://backlinko.com/seo-basics-for-beginners",
+    "https://backlinko.com/seo-tutorial",
+    "https://backlinko.com/pillar-pages",
+    "https://backlinko.com/?p=175006",
+    "https://backlinko.com/actionable-seo-tips",
+    "https://backlinko.com/small-business-seo",
+    "https://backlinko.com/schema-markup-guide",
+    "https://backlinko.com/website-migration-checklist",
+    "https://backlinko.com/hub/content/what-is-content-marketing",
+    "https://backlinko.com/seo-copywriting",
+    "https://backlinko.com/?p=103911",
+    "https://backlinko.com/content-marketing-this-year",
+    "https://backlinko.com/?p=190262",
+    "https://backlinko.com/?p=172343",
+    "https://backlinko.com/scale-content",
+    "https://backlinko.com/hub/content/writing",
+    "https://backlinko.com/link-building",
+    "https://backlinko.com/hub/seo/backlinks",
+    "https://backlinko.com/high-quality-backlinks",
+    "https://backlinko.com/link-building-strategies",
+    "https://backlinko.com/link-building-services",
+    "https://backlinko.com/step-by-step-backlink-audit",
+    "https://backlinko.com/skyscraper-technique",
+    "https://backlinko.com/increase-domain-authority",
+    "https://backlinko.com/competitor-analysis",
+    "https://backlinko.com/?p=173056",
+    "https://backlinko.com/?p=174557",
+    "https://backlinko.com/how-to-create-a-website",
+    "https://backlinko.com/tools/seo-checker",
+    "https://backlinko.com/tools/backlink-checker",
+    "https://backlinko.com/tools/website-authority",
+    "https://backlinko.com/tools/website-traffic-checker",
+    "https://backlinko.com/tools/keyword",
+    "https://backlinko.com/tools/keyword-difficulty-checker",
+    "https://backlinko.com/tools/competitor-analysis",
+    "https://backlinko.com/tools/schema-markup-generator",
+    "https://backlinko.com/tools/ai-visibility-checker",
+    "https://backlinko.com/tools/ai-agent-readiness",
+    "https://backlinko.com/tools/agentic-browsing-readiness",
+    "https://backlinko.com/best-free-seo-tools",
+    "https://backlinko.com/llm-tracking-tools",
+    "https://backlinko.com/keyword-research-tools",
+    "https://backlinko.com/?p=98736",
+    "https://backlinko.com/link-building-tools",
+    "https://backlinko.com/best-rank-tracking-tools",
+    "https://backlinko.com/?p=171633",
+    "https://backlinko.com/seo-software-agencies",
+    "https://backlinko.com/ai-seo-tools",
+    "https://backlinko.com/sitemap-generator-tools",
+    "https://backlinko.com/best-digital-marketing-tools",
+    "https://backlinko.com/?p=170722",
+    "https://backlinko.com/semrush-review",
+    "https://backlinko.com/ahrefs-review",
+    "https://backlinko.com/ahrefs-vs-semrush",
+    "https://backlinko.com/clearscope-review",
+    "https://backlinko.com/majestic-seo-review",
+    "https://backlinko.com/surfer-seo",
+    "https://backlinko.com/serpstat-review",
+    "https://backlinko.com/sparktoro-review",
+    "https://backlinko.com/templates/marketing",
+    "https://backlinko.com/about-backlinko",
+    "https://backlinko.com/newsletter",
+    "https://www.semrush.com/blog/what-can-i-do-with-a-free-account-from-semrush/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=navigation",
+    "https://backlinko.com/blog/authors/brian-dean",
+    "https://twitter.com/share?text=We%20Analyzed%20306M%20Keywords.%20Here%27s%20What%20We%20Learned%20About%20Google%20Searches&url=https%3A%2F%2Fbacklinko.com%2Fgoogle-keyword-study&via=Backlinko",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbacklinko.com%2Fgoogle-keyword-study",
+    "https://www.reddit.com/submit?url=https%3A%2F%2Fbacklinko.com%2Fgoogle-keyword-study&title=We%20Analyzed%20306M%20Keywords.%20Here%27s%20What%20We%20Learned%20About%20Google%20Searches",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fbacklinko.com%2Fgoogle-keyword-study&summary=We%20Analyzed%20306M%20Keywords.%20Here%27s%20What%20We%20Learned%20About%20Google%20Searches",
+    "https://dataforseo.com/",
+    "https://ahrefs.com/",
+    "https://backlinko.com/hub/seo/search-terms",
+    "https://www.semrush.com/blog/how-to-choose-long-tail-keywords/?utm_campaign=google-keyword-study&utm_source=backlinko.com&utm_medium=referral",
+    "https://backlinko.com/real-estate-seo",
+    "https://backlinko.com/tools/people-also-ask",
+    "https://ahrefs.com/blog/long-tail-keywords/",
+    "https://rucore.libraries.rutgers.edu/rutgers-lib/62647/",
+    "https://backlinko.com/tools/keyword-tool-analysis",
+    "https://ahrefs.com/blog/seo-metrics/#section5",
+    "https://backlinko.com/app/uploads/2020/11/backlinko-google-keywords-study-methods.pdf",
+    "https://github.com/Backlinko-LLC/2020-google-searches",
+    "https://backlinko.com/google-keyword-study#91-8-of-search-terms-are-long-tail-keywords",
+    "https://backlinko.com/google-keyword-study#search-demand-is-largely-concentrated-among-a-relatively-small-number-of-keywords",
+    "https://backlinko.com/google-keyword-study#average-search-volume-for-a-keyword-is-989-searches-per-month",
+    "https://backlinko.com/google-keyword-study#14-1-of-search-queries-are-question-keywords",
+    "https://backlinko.com/google-keyword-study#the-average-keyword-has-a-cpc-of-0-61",
+    "https://backlinko.com/google-keyword-study#the-us-has-higher-average-search-volumes-and-cp-cs-compared-to-other-english-speaking-countries",
+    "https://backlinko.com/google-keyword-study#mean-keyword-length-is-1-9-words-and-8-5-characters",
+    "https://backlinko.com/google-keyword-study#industries-with-the-highest-mean-search-volume-keywords-include-internet-telecom-news-and-media-and-consumer-electronics",
+    "https://backlinko.com/google-keyword-study#popular-keywords-have-higher-keyword-difficulty-scores",
+    "https://backlinko.com/google-keyword-study#people-also-ask-boxes-image-packs-and-videos-are-the-most-common-serp-features-in-google-search",
+    "https://www.semrush.com/analytics/overview/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=google-keyword-study",
+    "https://backlinko.com/lp/seo-ai-search-tool-v1?utm_source=backlinko.com&utm_medium=referral&utm_campaign=google-keyword-study",
+    "https://backlinko.com/blog",
+    "https://www.semrush.com/ai-seo/overview/",
+    "https://backlinko.com/deals/semrush-coupon",
+    "https://backlinko.com/contact",
+    "https://twitter.com/backlinko",
+    "https://www.youtube.com/@BacklinkoTeam",
+    "https://www.instagram.com/briandean/",
+    "https://www.semrush.com/company/legal/terms-of-service/?utm_source=backlinko.com&utm_medium=referral",
+    "https://www.semrush.com/company/legal/privacy-policy/?utm_source=backlinko.com&utm_medium=referral"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://secure.gravatar.com/avatar/609c0e567577ac8c2c617f9062376394033fd851ca930c40bdc6aea2fa20fe2a?s=96&d=mm&r=g",
+        "alt": "Brian Dean",
+        "w": 96,
+        "h": 96
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2020/11/91-percent-of-search-terms-are-long-tail-keywords-768x528.webp",
+        "alt": "91 Percent Of Search Terms Are Long Tail Keywords",
+        "w": 700,
+        "h": 481
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2020/11/14-percent-of-search-queries-are-question-keywords-768x344.webp",
+        "alt": "14 Percent Of Search Queries Are Question Keywords",
+        "w": 700,
+        "h": 313
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2020/11/how-what-where-are-the-most-common-types-of-question-keywords-768x552.webp",
+        "alt": "How What Where Are The Most Common Types Of Question Keywords",
+        "w": 700,
+        "h": 503
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2020/11/the-average-keyword-has-a-cpc-of-61-cents-768x276.webp",
+        "alt": "The Average Keyword Has A CPC Of 61 Cents",
+        "w": 700,
+        "h": 251
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2020/11/finance-real-estate-and-health-industries-have-the-highest-cpc-768x1149.webp",
+        "alt": "Finance Real Estate And Health Industries Have The Highest CPC",
+        "w": 700,
+        "h": 1047
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2020/11/industries-with-the-greatest-total-search-volume-768x1175.webp",
+        "alt": "Industries With The Greatest Total Search Volume",
+        "w": 700,
+        "h": 1070
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2020/11/popular-keywords-have-higher-keyword-difficulty-scores-768x553.webp",
+        "alt": "Popular Keywords Have Higher Keyword Difficulty Scores",
+        "w": 700,
+        "h": 504
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2020/11/keywords-with-high-keyword-difficulty-scores-have-higher-cpcs-768x565.webp",
+        "alt": "Keywords With High Keyword Difficulty Scores Have Higher CPCs",
+        "w": 700,
+        "h": 514
+      }
+    ],
+    "allImgCount": 27,
+    "cssBackgrounds": [],
+    "modals": [
+      "About cookies on this siteWe use cookies to run our website, analyze your use of our services, manage your online preferences & personalize ad content. By accepting our cookies, you'll get relevant content and social media features, personalized ads, and an enhanced browsing experience. To manage your choices, click “Cookie Settings.” Necessary cookies are required for the core website functionality and cannot be rejected. For more information, see ourCookie Policy.Allow all cookiesDeny allCookie settings"
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {
+    "--fa-font-solid": "normal 900 1em/1 \"Font Awesome 6 Free\"",
+    "--fa-font-regular": "normal 400 1em/1 \"Font Awesome 6 Free\"",
+    "--fa-font-light": "normal 300 1em/1 \"Font Awesome 6 Pro\"",
+    "--fa-font-thin": "normal 100 1em/1 \"Font Awesome 6 Pro\"",
+    "--fa-font-duotone": "normal 900 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-regular": "normal 400 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-light": "normal 300 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-thin": "normal 100 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-brands": "normal 400 1em/1 \"Font Awesome 6 Brands\"",
+    "--fa-font-sharp-solid": "normal 900 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-regular": "normal 400 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-light": "normal 300 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-thin": "normal 100 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-duotone-solid": "normal 900 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-regular": "normal 400 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-light": "normal 300 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-thin": "normal 100 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--app-height": "100svh",
+    "--backlinko-bar-height": "62px",
+    "--sl-widgets-font-family": "-apple-system, system-ui",
+    "--sl-widgets-base-unit": "16px"
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 18,
+    "mainTextLen": 16115,
+    "realImageCount": 9,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "dev.visualwebsiteoptimizer.com",
+        "path": "/j.php",
+        "query": [
+          "a",
+          "ph",
+          "st",
+          "u",
+          "vn",
+          "x"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://dev.visualwebsiteoptimizer.com/j.php",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "pagead2.googlesyndication.com",
+        "path": "/ccm/collect",
+        "query": [
+          "ae",
+          "apvc",
+          "dl",
+          "dma",
+          "dma_cps",
+          "en",
+          "ep.ads_data_redaction",
+          "fmt",
+          "frm",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "navt",
+          "npa",
+          "rcb",
+          "rnd",
+          "scrsrc",
+          "tag_exp",
+          "tfd",
+          "tft"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "status": 200,
+        "bytes": null,
+        "hits": 3,
+        "example": "https://pagead2.googlesyndication.com/ccm/collect",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "region-eu.cookiehub.net",
+        "path": "/",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 28,
+        "hits": 1,
+        "example": "https://region-eu.cookiehub.net/",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "cdn.cookiehub.eu",
+        "path": "/client/7417b56b/en.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://cdn.cookiehub.eu/client/7417b56b/en.json",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 37803,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 56682,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 43844,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/brian-dean.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 7951,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/brian-dean.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+        "query": [
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 6685,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 9091,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 43911,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 9032,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 8253,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 11235,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 15888,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 10392,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "region1.google-analytics.com",
+        "path": "/g/collect",
+        "query": [
+          "_eu",
+          "_fv",
+          "_nsi",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "cid",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dp",
+          "dt",
+          "en",
+          "ep.container_id",
+          "frm",
+          "gaf",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "status": 204,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://region1.google-analytics.com/g/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 37436,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 32592,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 47134,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 26528,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 46515,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 51691,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 15298,
+        "hits": 2,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 56812,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "www.semrush.com",
+        "path": "/olaf/init",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://www.semrush.com/olaf/init",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 19793,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "rum-collector-2.pingdom.net",
+        "path": "/img/beacon.gif",
+        "query": [
+          "bIH",
+          "bIW",
+          "cE",
+          "cS",
+          "dC",
+          "dCLEE",
+          "dCLES",
+          "dI",
+          "dL",
+          "dLE",
+          "dLS",
+          "dPR",
+          "fS",
+          "hS",
+          "id",
+          "lEE",
+          "lES",
+          "nS",
+          "nT",
+          "or",
+          "pD",
+          "path",
+          "rC",
+          "rE",
+          "rS",
+          "rV",
+          "reS",
+          "ref",
+          "resE",
+          "resS",
+          "s",
+          "sAH",
+          "sAW",
+          "sIS",
+          "sId",
+          "sST",
+          "title",
+          "uEE",
+          "uES",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": null,
+        "status": 200,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://rum-collector-2.pingdom.net/img/beacon.gif",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "streaming.bi.owox.com",
+        "path": "/ga4/{hash}/g/collect",
+        "query": [
+          "_eu",
+          "_fplc",
+          "_fv",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "cid",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dp",
+          "dt",
+          "ecid",
+          "en",
+          "ep.container_id",
+          "ep.page_language",
+          "ep.user_agent",
+          "frm",
+          "gaf",
+          "gap.sstd",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "richsstsse",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "sst.etld",
+          "sst.gch",
+          "sst.gcsub",
+          "sst.lpc",
+          "sst.navt",
+          "sst.rnd",
+          "sst.tft",
+          "sst.ude",
+          "sst.us_privacy",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "ur",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/gif",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://streaming.bi.owox.com/ga4/9bb752a08674f116753ca5719dda03ed/g/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 44155,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 24460,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 20906,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "api.backlinko.com",
+        "path": "/wp-json/backlinkostats/v1/shares/{n}",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://api.backlinko.com/wp-json/backlinkostats/v1/shares/157010",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "js.sparkloop.app",
+        "path": "/team_d05f5749d84d/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "status": 301,
+        "bytes": 167,
+        "hits": 1,
+        "example": "https://js.sparkloop.app/team_d05f5749d84d/settings",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "script-settings.sparkloop.app",
+        "path": "/team_d05f5749d84d/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://script-settings.sparkloop.app/team_d05f5749d84d/settings",
+        "sameSite": false
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "www.googletagmanager.com",
+        "count": 5
+      },
+      {
+        "host": "rum-static.pingdom.net",
+        "count": 2
+      },
+      {
+        "host": "cdn.cookiehub.eu",
+        "count": 1
+      },
+      {
+        "host": "js.sparkloop.app",
+        "count": 1
+      },
+      {
+        "host": "script.sparkloop.app",
+        "count": 1
+      },
+      {
+        "host": "www.semrush.com",
+        "count": 1
+      }
+    ],
+    "truncated": false,
+    "inlineData": [
+      {
+        "id": "__NEXT_DATA__",
+        "type": "application/json",
+        "bytes": 225267,
+        "topLevelKeys": [
+          "props",
+          "page",
+          "query",
+          "buildId",
+          "isFallback",
+          "isExperimentalCompile",
+          "gsp",
+          "scriptLoader"
+        ]
+      }
+    ],
+    "globalState": [
+      "__NEXT_DATA__",
+      "dataLayer"
+    ],
+    "frameworkHints": [
+      "next"
+    ],
+    "forms": [],
+    "ariaLiveRegions": 1,
+    "triggers": [
+      {
+        "marker": "aria-haspopup",
+        "href": null
+      }
+    ],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 26,
+      "thirdPartyEndpoints": 10,
+      "thirdPartyScriptHosts": 6,
+      "inlineDataBlobs": 1,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": true
+    }
+  },
+  "screenshot": "assets/screenshots/google-keyword-study.png",
+  "renderedHtml": "pages/google-keyword-study.html"
+}

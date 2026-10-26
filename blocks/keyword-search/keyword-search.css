@@ -1,0 +1,184 @@
+/* stylelint-disable no-descending-specificity -- component selectors are independent; order mirrors the lifted source */
+
+/* Keyword search — lifted from backlinko.com (11zhy3w / 1r9do01 / 93tl4h / 1181h5a) */
+
+main > .section.keyword-search-container {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 67.5px;
+}
+
+main > .section.keyword-search-container::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 50%;
+  background-color: var(--tint);
+}
+
+main > .section.keyword-search-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: calc(50% + 350px);
+  width: 575px;
+  height: 575px;
+  background: url('/icons/keyword-deco.svg') no-repeat 0 0 / 575px 575px;
+  transform: translateX(-50%);
+}
+
+.keyword-search .keyword-box {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  border: 1px solid var(--line-2);
+  border-radius: 6px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.keyword-search .keyword-head {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  margin-bottom: 30px;
+}
+
+.keyword-search .keyword-head h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.keyword-search .keyword-head p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.keyword-search .keyword-search-field {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.keyword-search .keyword-search-field input {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid var(--line-2);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.4;
+  transition: all 0.2s ease-in-out;
+}
+
+.keyword-search .keyword-search-field input:focus {
+  border-color: var(--green);
+  outline: none;
+}
+
+.keyword-search .keyword-search-field button {
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  width: 48px;
+  height: 48px;
+  padding: 1px 6px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--green);
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.keyword-search .keyword-search-field button img {
+  width: auto;
+  height: 28px;
+  transform: scaleX(-1);
+}
+
+.keyword-search .keyword-by {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.keyword-search .keyword-by p {
+  margin: 0 12px 0 0;
+}
+
+.keyword-search .keyword-by p:last-child {
+  margin: 0;
+}
+
+.keyword-search .keyword-by img {
+  width: auto;
+  height: 20px;
+}
+
+@media (width >= 768px) {
+  main > .section.keyword-search-container {
+    padding-bottom: 75px;
+  }
+
+  main > .section.keyword-search-container::after {
+    top: 10px;
+  }
+
+  .keyword-search .keyword-box {
+    padding: 60px 30px;
+  }
+
+  .keyword-search .keyword-head {
+    margin-bottom: 34px;
+  }
+
+  .keyword-search .keyword-head h2 {
+    font-size: 24px;
+  }
+
+  .keyword-search .keyword-head p {
+    font-size: 19px;
+  }
+
+  .keyword-search .keyword-by {
+    margin-top: 34px;
+  }
+}
+
+@media (width >= 992px) {
+  main > .section.keyword-search-container {
+    padding-bottom: 90px;
+  }
+
+  main > .section.keyword-search-container::after {
+    top: 30px;
+  }
+
+  .keyword-search .keyword-head {
+    margin-bottom: 40px;
+  }
+
+  .keyword-search .keyword-by {
+    margin-top: 40px;
+  }
+}
+
+@media (width >= 1200px) {
+  .keyword-search .keyword-head h2 {
+    font-size: 28px;
+  }
+
+  .keyword-search .keyword-head p {
+    font-size: 20px;
+  }
+}

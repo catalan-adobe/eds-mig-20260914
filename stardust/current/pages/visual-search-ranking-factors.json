@@ -1,0 +1,1595 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-26T14:59:14.930Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "visual-search-ranking-factors",
+  "url": "https://backlinko.com/visual-search-ranking-factors",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-26T14:59:14.930Z",
+  "finalUrl": "https://backlinko.com/visual-search-ranking-factors",
+  "title": "Google Lens Study: Results From 65,388 Visual Searches",
+  "description": "The first large-scale analysis of potential Google Lens ranking factors. We looked at mobile optimization, alt text, title tags, and more.",
+  "og": {
+    "title": "Google Lens Study: Results From 65,388 Visual Searches",
+    "description": "The first large-scale analysis of potential Google Lens ranking factors. We looked at mobile optimization, alt text, title tags, and more.",
+    "image": "https://api.backlinko.com/app/uploads/2020/04/visual-search-ranking-factors-social.png",
+    "type": "article"
+  },
+  "headings": [
+    {
+      "tag": "h2",
+      "text": "About cookies on this site"
+    },
+    {
+      "tag": "h3",
+      "text": ".semrush_svg__cls-2{fill:#181e15}Semrush helps you:"
+    },
+    {
+      "tag": "h3",
+      "text": "Backlinko readers get:"
+    },
+    {
+      "tag": "h1",
+      "text": "Google Lens Study: Results From 65,388 Visual Searches"
+    },
+    {
+      "tag": "h2",
+      "text": "Keyword-Rich Title Tags and URLs Correlate With Google Lens Rankings"
+    },
+    {
+      "tag": "h2",
+      "text": "33% of Google Lens Result Images Appear Towards The Top of a Page"
+    },
+    {
+      "tag": "h2",
+      "text": "A Fairly Low Number of Google Lens Result Images Contain Matching Alt Text"
+    },
+    {
+      "tag": "h2",
+      "text": "Google Lens Results Have a High Page Authority and Domain Authority"
+    },
+    {
+      "tag": "h2",
+      "text": "The Vast Majority of Google Lens Results Come From Mobile-Friendly Sites"
+    },
+    {
+      "tag": "h2",
+      "text": "The Average First Contentful Paint Loading Speed of a Google Lens Result is 3,186ms"
+    },
+    {
+      "tag": "h2",
+      "text": "Pinterest and Amazon Rank For a Large Number of Visual Searches"
+    },
+    {
+      "tag": "h2",
+      "text": "Relatively Few Google Lens Images Are Responsive"
+    },
+    {
+      "tag": "h2",
+      "text": "Descriptive Image Filenames May Play a Role in Google Lens Results"
+    },
+    {
+      "tag": "h2",
+      "text": "Google Lens Results Often Also Rank in Google Organic"
+    },
+    {
+      "tag": "h2",
+      "text": "The Average Word Count of a Google Lens Result Page is 1,631 Words"
+    },
+    {
+      "tag": "h3",
+      "text": "Reveal Your Competitor Secrets for Free"
+    },
+    {
+      "tag": "h4",
+      "text": "Learn"
+    },
+    {
+      "tag": "h4",
+      "text": "Company"
+    },
+    {
+      "tag": "h4",
+      "text": "Connect"
+    }
+  ],
+  "body": [
+    "Written by Brian Dean",
+    "692 shares",
+    "We analyzed 65,388 Google Lens search results to better understand how visual search works.",
+    "Specifically, we looked at potential ranking factors that Google may use in its Lens algorithm, including:",
+    "Alt text",
+    "Domain Authority",
+    "URLs",
+    "Title tags",
+    "Responsive design",
+    "And in this post I’m going to share what we discovered.",
+    "A Summary of Our Most Interesting Findings is As Follows:",
+    "1. 32.5% of all Google Lens results have a “matching” keyword in the page’s title tag. Therefore, keyword-optimized title tags may help a page rank in Google Lens.",
+    "2. A high proportion of Google Lens results are pulled from images high up on a page. In fact, approximately 1/3rd of all Google Lens image results appear in the top 25% of a web page.",
+    "3. 11.4% of all Google Lens result images contain alt text terms that match the keyword someone just searched for.",
+    "4. Authoritative pages and websites appear to have a ranking advantage in Google Lens. Google Lens results have an average Moz Page Authority of 35.2 and a Domain Authority of 64.4.",
+    "5. Google Lens may confer a ranking advantage to sites that work well on mobile devices. 90.6% of all Google Lens results come from mobile-friendly websites.",
+    "6. Google Lens results come from relatively slow-loading pages. In fact, the average First Contentful Paint load time for a Google Lens result is 3,186ms.",
+    "7. Pinterest and Amazon are the two top-performing websites in Google Lens. 7.2% of all Google Lens results come from Pinterest, while 4.1% are from Amazon.",
+    "8. Keyword-rich URLs correlate with Google Lens rankings. 29.9% of the Google Lens results in our analysis had an associated keyword in the page’s URL.",
+    "9. Responsive images don’t appear to confer a major ranking advantage in Google Lens. Only 13.1% of Google Lens images are responsive.",
+    "10. Images with filenames that “match” a Google Lens search appear to rank more often than images with a missing or irrelevant filename. We found that 22.6% of Google Lens result images had a filename that matched the Google Lens search.",
+    "11. Websites that rank seem to have an edge in Google Lens. We discovered that 15% of all Google Lens results also rank on the first page of Google organic for the same search term.",
+    "12. The average visual search result page contains 1,631 words. Considering that Google uses text around an image to understand an image’s content and context, this finding makes sense.",
+    "With Google Lens, the image that you search with is your “keyword”.",
+    "We used the Google Vision API to turn those visual searches into text-based keywords.",
+    "This allowed us to analyze visual search terms as text-based entities (using labels from Google themselves).",
+    "For example, take this Google Lens “keyword”:",
+    "The Google Vision API turned that image into a “best guess label”: “cat”.",
+    "We then looked at whether that text-based label correlated with potential Google Lens ranking factors.",
+    "In fact, that’s how we were able to correlate title tag keywords and Google Lens rankings.",
+    "We found 32.5% of pages that rank in Google Lens have a keyword in their title tag that matches the search image’s Google Vision label.",
+    "For example, here is one of the visual searches from our dataset.",
+    "Sure enough, Google Vision’s label (“tesla cybertruck”), appears in the title tag for that page.",
+    "Google has previously stated that they use a page’s title tag to rank Google Images results.",
+    "It would make sense that they’d also use keywords in a page’s title tag for Google Lens rankings.",
+    "In other words, Google may prefer images on pages “about” that image vs. pages that have a matching image in the middle of an otherwise irrelevant page.",
+    "Indeed, that’s what our data showed.",
+    "Key Takeaway: Pages with titles and URLs that “match” a Google Lens search term may have a rankings advantage over those that don’t. With visual search, the image that you search with is your “keyword”.",
+    "We found that 33.1% Google Lens results are from images from the top 25% of a webpage.",
+    "For example, take this result from our data set.",
+    "If you look at the page this image is pulled from, you can see that the image appears quite high on the page (well above the fold).",
+    "This finding is in line with Google’s “Making visual content more useful in Search” blog post.",
+    "In that post they state that the algorithm “prioritizes” images high up on the page.",
+    "Our findings here are consistent with that statement.",
+    "Key Takeaway: Images that are higher up on a web page appear to have a significant ranking advantage in Google Lens.",
+    "Google’s Search Engine Optimization Starter Guide states that they use alt text to understand images in their index.",
+    "However, it’s not clear how important alt text is. Or whether it’s used in the Google Lens algorithm at all. Which is why we decided to see how often Google Lens result images had alt text that matched the visual search term that they ranked for.",
+    "We found that 11.4% of all Google Lens results contain alt text that “matches” the best-guess label for the search image.",
+    "For example, the best-guess label for this visual search is “yoga poses”.",
+    "And here are the results for that Google Lens search.",
+    "In this case, 2 out of the 4 Google Lens results contain “yoga poses” in their alt text.",
+    "11.4% isn’t an insignificant number. But it doesn’t suggest a strong relationship. If alt text was an important part of the Google Lens algorithm, we would expect to see more of the results to have exact match or partial match anchor text.",
+    "Key Takeaway: 11.4% of Google Lens image alt text match the search term that they rank for. Therefore, alt text may play a minimal role in Google Lens optimization.",
+    "It’s no secret that, all things being equal, an authority page on an authority site will outrank pages with less authority.",
+    "We wanted to know whether this same rule applied to Google Lens.",
+    "After all, Google themselves state that a recent visual search algorithm update made it so that authority pages had an edge in the results.",
+    "So we looked up Moz’s Domain Authority and Page Authority for each of our 65,388 Google Lens results.",
+    "And we found that Google Lens results tend to come from fairly authoritative sites and pages.",
+    "In fact, an average Google Lens result has a Page Authority of 35 and a Domain Authority of 64. Both fairly high.",
+    "It may be that Google directly uses link authority in the Google Lens algorithm. Or this relationship could simply be a case of “correlation not equaling causation”.",
+    "That’s because a high DA and PA tend to be byproducts of publishing high-quality content. And high-quality content is something that Google states is extremely important for visual search rankings.",
+    "In fact, in Google’s “Google Image best practices” documentation, they go as far as to say the quality of the content on the page is as important as the image itself.",
+    "Key Takeaway: We found that pages with a high Moz Domain Authority and Page Authority tend to rank well in Google Lens. This may be because Google Lens ranks pages with lots of backlinks. Or it could be that DA and PA are byproducts of publishing high-quality content.",
+    "We found that 90.6% of all Google Lens image results are pages that pass Google’s Mobile-Friendly Test.",
+    "It makes sense that Google Lens would prefer to rank sites that are optimized for mobile. After all, essentially 100% of Google Lens searches are done on mobile devices.",
+    "And it would be a pretty poor user experience to send users to sites that didn’t work well on mobile, even if the image itself was a great result for the search.",
+    "In fact, Google’s recommendations for image SEO emphasize the importance of “device-friendly” web design.",
+    "Key Takeaway: Approximately 90% of all pages with images ranking in Google Lens are mobile-friendly.",
+    "We decided to see if page loading speed played a role in Google Lens rankings.",
+    "For this analysis we measured First Contentful Paint (FCP) speed for our 65,388 Google Lens results.",
+    "We chose FCP for the simple reason that FCP is the time that many of a page’s assets (including images) appear. This is likely more important to someone conducting a visual search than Time to First Byte (TTFB), which doesn’t affect what users see on a page.",
+    "And we found that the average FCP for a Google Lens result was 3,186ms.",
+    "Based on recent page speed benchmarks, a 3,000+ FPC can be considered somewhat slow. However, this finding needs to be taken into context.",
+    "Pages that rank well in visual search tend to be image-heavy. Which adds significant size to any page.",
+    "In fact, we found that the average Google lens result contains an average of 34 total images.",
+    "That’s a lot of images on a single page. And when you take that fact into account, an image-heavy page that takes 3,000ms to reach FCP isn’t so bad.",
+    "While Google hasn’t said whether speed plays a role in their visual search algorithm, they do recommend that people that want to rank in Google Images should speed things up.",
+    "So it could be that Google uses page speed as a visual search ranking signal. And that, due to the image-heavy nature of the pages that appear in visual search, 3,186ms puts a page into the top tier in terms of FCP.",
+    "Key Takeaway: Google Lens results don’t load significantly faster than the average webpage. In fact, the average Google Lens result FPC load time is 3,186ms. This may be due to the fact that visual search results tend to contain several high-quality images.",
+    "Next, we decided to look at the distribution of websites that appear in Google Lens results.",
+    "Here’s the full breakdown:",
+    "As you can see, Pinterest and Amazon rank significantly more often than any other site.",
+    "In fact, 1/10 Google Lens results come from these two sites alone.",
+    "This finding aligns with a lot of our findings thus far. Amazon.com and Pinterest.com both have a high Moz Domain Authority (96 and 94 respectively).",
+    "They also have fast loading times. And are built to be mobile friendly.",
+    "Importantly, both sites tend to have images appear at the very top of the page (usually above the fold).",
+    "However, outside of these outliers, Google Lens results are fairly diverse. 80.2% of Google Lens results are from the “other” category. Which means that no single set (or set of sites) completely dominates Google Lens results.",
+    "Key Takeaway: Pinterest and Amazon tend to rank most often Google Lens results. 11.3% of all visual search results are from these two websites.",
+    "Unlike some of the other factors that we analyzed, Google hasn’t stated that responsive images play a role in their visual search algorithm. But they do consider responsive images a Google Image SEO best practice because they “lead to better user experience”.",
+    "While that may be the case, we didn’t find a strong relationship between responsive images and visual search rankings.",
+    "In fact, only 13% of the results in Google Lens are responsive.",
+    "Key Takeaway: While responsive images may improve UX, they don’t appear to directly influence visual search.",
+    "Filenames have been an important Google Images ranking factor since its inception. Before Google gained the ability to recognize images with AI, they blindly trusted alt text and image filenames to understand the content of an image.",
+    "However, despite Google’s image recognition technology coming a long way, they still rely on filenames.",
+    "Which may explain the fact that a high number of images in the visual search results (22.6%) have a filename that aligns with what the person searched for in Google Lens.",
+    "For example, this Google Lens result has a filename (astronaut-deep-space-image-science-fiction-fantasy-in-high-resolution-picture) that closely matches one of the Google Vision labels (“space astronaut”) for the search image.",
+    "Key Takeaway: Google may use keywords that appear in an image’s filename as part of the Google Lens algorithm.",
+    "Google’s visual search algorithm takes the relevancy of the page and website into account.",
+    "Here’s an example that Google recently gave to explain how site relevancy impacts visual search results:",
+    "We wanted to understand how this potentially important ranking factor may impact Google Lens searches.",
+    "Unfortunately, there’s no way to “look up” the relevancy of a website. But we can use a site’s organic Google rankings as a proxy measurement of relevancy.",
+    "For example, a site ranking highly in Google’s organic search results for the keyword “organic gardening” is considered by Google to be a relevant result for “organic gardening”.",
+    "And that may give that site a visual search SEO edge for searches related to organic gardening.",
+    "Indeed, that’s what the data in our analysis showed.",
+    "15% of the websites that rank in Google Lens also rank in Google’s organic top 10 results for that same term.",
+    "For example, look at the #1 result in Google Lens when searching with an image of a mouse:",
+    "That result comes from corkyspest.com.",
+    "Google Vision describes this image as “common california mice”.",
+    "Sure enough, when you search for “common california mice” in Google organic, corkyspest.com ranks #1 for that same term:",
+    "Key Takeaway: 15% of all Google Lens results also rank on the first page of Google’s “normal” organic search results.",
+    "Our analysis found that Google Lens result pages tend to be fairly text-heavy. In fact, Google Lens images come from pages that contain an average of 1,631 words of text.",
+    "Why the relationship?",
+    "Well, Google officially recommends that “images are placed near relevant text”.",
+    "That’s because Google uses the text around an image to understand the content and context of that image.",
+    "Therefore, a page with considerable supporting text is going to have an advantage in visual search compared to a page that’s made up of 100% images.",
+    "Key Takeaway: Pages with a large amount of supporting text may perform best in visual search. Google Lens result pages contain an average of 1,631 words.",
+    "Summary and Conclusion",
+    "I’d like to thank Backlinko’s CTO, Lloyd Jones, for leading this study.",
+    "And if you’d like to learn more about how we conducted this analysis, here’s a PDF that details our methods.",
+    "Backlinko is owned by Semrush. We’re still obsessed with bringing you world-class SEO insights, backed by hands-on experience. Unless otherwise noted, this content was written by either an employee or paid contractor of Semrush Inc.",
+    "On This Page",
+    "Keyword-Rich Title Tags and URLs Correlate With Google Lens Rankings",
+    "33% of Google Lens Result Images Appear Towards The Top of a Page",
+    "A Fairly Low Number of Google Lens Result Images Contain Matching Alt Text",
+    "Google Lens Results Have a High Page Authority and Domain Authority",
+    "The Vast Majority of Google Lens Results Come From Mobile-Friendly Sites",
+    "The Average First Contentful Paint Loading Speed of a Google Lens Result is 3,186ms",
+    "Pinterest and Amazon Rank For a Large Number of Visual Searches",
+    "Relatively Few Google Lens Images Are Responsive",
+    "Descriptive Image Filenames May Play a Role in Google Lens Results",
+    "Google Lens Results Often Also Rank in Google Organic",
+    "The Average Word Count of a Google Lens Result Page is 1,631 Words",
+    "Get instant insights into strengths and weaknesses of your competitors or prospective customers with Semrush"
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Cookie Policy.",
+      "href": "https://www.semrush.com/company/legal/cookie-policy/"
+    },
+    {
+      "label": "Allow all cookies",
+      "href": null
+    },
+    {
+      "label": "Deny all",
+      "href": null
+    },
+    {
+      "label": "Cookie settings",
+      "href": null
+    },
+    {
+      "label": "Watch Now",
+      "href": "https://www.youtube.com/watch?v=rIGzcovF6cM"
+    },
+    {
+      "label": "Close",
+      "href": null
+    },
+    {
+      "label": "Articles",
+      "href": null
+    },
+    {
+      "label": "Tools",
+      "href": null
+    },
+    {
+      "label": "Templates",
+      "href": "/templates/marketing"
+    },
+    {
+      "label": "About",
+      "href": "/about-backlinko"
+    },
+    {
+      "label": "Newsletter",
+      "href": "/newsletter"
+    },
+    {
+      "label": "Check My Site's SEO",
+      "href": null
+    },
+    {
+      "label": "Close",
+      "href": null
+    },
+    {
+      "label": "Free access",
+      "href": "https://www.semrush.com/blog/what-can-i-do-with-a-free-account-from-semrush/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=navigation"
+    },
+    {
+      "label": "Brian Dean",
+      "href": "/blog/authors/brian-dean"
+    },
+    {
+      "label": "Google Lens",
+      "href": "https://lens.google.com/"
+    },
+    {
+      "label": "the Google Vision API",
+      "href": "https://cloud.google.com/vision"
+    },
+    {
+      "label": "search terms",
+      "href": "https://backlinko.com/hub/seo/search-terms"
+    },
+    {
+      "label": "“Making visual content more useful in Search” blog post",
+      "href": "https://www.blog.google/products/search/making-visual-content-more-useful-search/"
+    },
+    {
+      "label": "Google’s Search Engine Optimization Starter Guide",
+      "href": "https://support.google.com/webmasters/answer/7451184?hl=en"
+    },
+    {
+      "label": "Moz’s Domain Authority",
+      "href": "https://moz.com/learn/seo/domain-authority"
+    },
+    {
+      "label": "Google Image best practices” documentation",
+      "href": "https://support.google.com/webmasters/answer/114016?hl=en"
+    },
+    {
+      "label": "image SEO",
+      "href": "https://backlinko.com/image-seo"
+    },
+    {
+      "label": "recent page speed benchmarks",
+      "href": "https://backlinko.com/page-speed-stats"
+    },
+    {
+      "label": "Lloyd Jones",
+      "href": "https://twitter.com/joneslloyd?lang=en"
+    },
+    {
+      "label": "here’s a PDF that details our methods",
+      "href": "https://backlinko.com/app/uploads/2020/04/visual-search-ranking-factors-methods.pdf"
+    },
+    {
+      "label": "Keyword-Rich Title Tags and URLs Correlate With Google Lens Rankings",
+      "href": "#keyword-rich-title-tags-and-ur-ls-correlate-with-google-lens-rankings"
+    },
+    {
+      "label": "33% of Google Lens Result Images Appear Towards The Top of a Page",
+      "href": "#33-of-google-lens-result-images-appear-towards-the-top-of-a-page"
+    },
+    {
+      "label": "A Fairly Low Number of Google Lens Result Images Contain Matching Alt Text",
+      "href": "#a-fairly-low-number-of-google-lens-result-images-contain-matching-alt-text"
+    },
+    {
+      "label": "Google Lens Results Have a High Page Authority and Domain Authority",
+      "href": "#google-lens-results-have-a-high-page-authority-and-domain-authority"
+    },
+    {
+      "label": "The Vast Majority of Google Lens Results Come From Mobile-Friendly Sites",
+      "href": "#the-vast-majority-of-google-lens-results-come-from-mobile-friendly-sites"
+    },
+    {
+      "label": "The Average First Contentful Paint Loading Speed of a Google Lens Result is 3,186ms",
+      "href": "#the-average-first-contentful-paint-loading-speed-of-a-google-lens-result-is-3-186-ms"
+    },
+    {
+      "label": "Pinterest and Amazon Rank For a Large Number of Visual Searches",
+      "href": "#pinterest-and-amazon-rank-for-a-large-number-of-visual-searches"
+    },
+    {
+      "label": "Relatively Few Google Lens Images Are Responsive",
+      "href": "#relatively-few-google-lens-images-are-responsive"
+    },
+    {
+      "label": "Descriptive Image Filenames May Play a Role in Google Lens Results",
+      "href": "#descriptive-image-filenames-may-play-a-role-in-google-lens-results"
+    },
+    {
+      "label": "Google Lens Results Often Also Rank in Google Organic",
+      "href": "#google-lens-results-often-also-rank-in-google-organic"
+    },
+    {
+      "label": "The Average Word Count of a Google Lens Result Page is 1,631 Words",
+      "href": "#the-average-word-count-of-a-google-lens-result-page-is-1-631-words"
+    },
+    {
+      "label": "Get My Free Data",
+      "href": "https://www.semrush.com/analytics/overview/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=visual-search-ranking-factors"
+    },
+    {
+      "label": "Why Try Semrush?",
+      "href": "https://backlinko.com/lp/seo-ai-search-tool-v1?utm_source=backlinko.com&utm_medium=referral&utm_campaign=visual-search-ranking-factors"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Newsletter",
+      "href": "/newsletter"
+    },
+    {
+      "label": "Templates",
+      "href": "https://backlinko.com/templates/marketing"
+    },
+    {
+      "label": "Best SEO Tools",
+      "href": "/best-free-seo-tools"
+    },
+    {
+      "label": "About",
+      "href": "/about-backlinko"
+    },
+    {
+      "label": "Semrush AI Visiblity",
+      "href": "https://www.semrush.com/ai-seo/overview/"
+    },
+    {
+      "label": "Semrush Free Trial",
+      "href": "https://backlinko.com/deals/semrush-coupon"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    },
+    {
+      "label": "Twitter",
+      "href": "https://twitter.com/backlinko"
+    },
+    {
+      "label": "YouTube",
+      "href": "https://www.youtube.com/@BacklinkoTeam"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/briandean/"
+    },
+    {
+      "label": "Terms of Service",
+      "href": "https://www.semrush.com/company/legal/terms-of-service/?utm_source=backlinko.com&utm_medium=referral"
+    }
+  ],
+  "links": [
+    "https://www.semrush.com/company/legal/cookie-policy/",
+    "https://backlinko.com/visual-search-ranking-factors#",
+    "https://www.youtube.com/watch?v=rIGzcovF6cM",
+    "https://backlinko.com/",
+    "https://backlinko.com/ai-search-strategy",
+    "https://backlinko.com/llm-seeding",
+    "https://backlinko.com/generative-engine-optimization-geo",
+    "https://backlinko.com/hub/seo/what-is-seo",
+    "https://backlinko.com/improve-your-seo",
+    "https://backlinko.com/seo-checklist",
+    "https://backlinko.com/seo-strategy",
+    "https://backlinko.com/?p=165994",
+    "https://backlinko.com/google-e-e-a-t",
+    "https://backlinko.com/hub/seo/internal-links",
+    "https://backlinko.com/technical-seo-guide",
+    "https://backlinko.com/on-page-seo",
+    "https://backlinko.com/ecommerce-seo",
+    "https://backlinko.com/seo-certification-guide",
+    "https://backlinko.com/ai-optimization",
+    "https://backlinko.com/ai-seo",
+    "https://backlinko.com/entity-seo",
+    "https://backlinko.com/audience-research",
+    "https://backlinko.com/reddit-marketing",
+    "https://backlinko.com/?p=193164",
+    "https://backlinko.com/answer-engine-optimization-aeo",
+    "https://backlinko.com/seo-basics-for-beginners",
+    "https://backlinko.com/seo-tutorial",
+    "https://backlinko.com/pillar-pages",
+    "https://backlinko.com/?p=175006",
+    "https://backlinko.com/actionable-seo-tips",
+    "https://backlinko.com/small-business-seo",
+    "https://backlinko.com/schema-markup-guide",
+    "https://backlinko.com/website-migration-checklist",
+    "https://backlinko.com/hub/content/what-is-content-marketing",
+    "https://backlinko.com/seo-copywriting",
+    "https://backlinko.com/?p=103911",
+    "https://backlinko.com/content-marketing-this-year",
+    "https://backlinko.com/?p=190262",
+    "https://backlinko.com/?p=172343",
+    "https://backlinko.com/scale-content",
+    "https://backlinko.com/hub/content/writing",
+    "https://backlinko.com/link-building",
+    "https://backlinko.com/hub/seo/backlinks",
+    "https://backlinko.com/high-quality-backlinks",
+    "https://backlinko.com/link-building-strategies",
+    "https://backlinko.com/link-building-services",
+    "https://backlinko.com/step-by-step-backlink-audit",
+    "https://backlinko.com/skyscraper-technique",
+    "https://backlinko.com/increase-domain-authority",
+    "https://backlinko.com/competitor-analysis",
+    "https://backlinko.com/?p=173056",
+    "https://backlinko.com/?p=174557",
+    "https://backlinko.com/how-to-create-a-website",
+    "https://backlinko.com/tools/seo-checker",
+    "https://backlinko.com/tools/backlink-checker",
+    "https://backlinko.com/tools/website-authority",
+    "https://backlinko.com/tools/website-traffic-checker",
+    "https://backlinko.com/tools/keyword",
+    "https://backlinko.com/tools/keyword-difficulty-checker",
+    "https://backlinko.com/tools/competitor-analysis",
+    "https://backlinko.com/tools/schema-markup-generator",
+    "https://backlinko.com/tools/ai-visibility-checker",
+    "https://backlinko.com/tools/ai-agent-readiness",
+    "https://backlinko.com/tools/agentic-browsing-readiness",
+    "https://backlinko.com/best-free-seo-tools",
+    "https://backlinko.com/llm-tracking-tools",
+    "https://backlinko.com/keyword-research-tools",
+    "https://backlinko.com/?p=98736",
+    "https://backlinko.com/link-building-tools",
+    "https://backlinko.com/best-rank-tracking-tools",
+    "https://backlinko.com/?p=171633",
+    "https://backlinko.com/seo-software-agencies",
+    "https://backlinko.com/ai-seo-tools",
+    "https://backlinko.com/sitemap-generator-tools",
+    "https://backlinko.com/best-digital-marketing-tools",
+    "https://backlinko.com/?p=170722",
+    "https://backlinko.com/semrush-review",
+    "https://backlinko.com/ahrefs-review",
+    "https://backlinko.com/ahrefs-vs-semrush",
+    "https://backlinko.com/clearscope-review",
+    "https://backlinko.com/majestic-seo-review",
+    "https://backlinko.com/surfer-seo",
+    "https://backlinko.com/serpstat-review",
+    "https://backlinko.com/sparktoro-review",
+    "https://backlinko.com/templates/marketing",
+    "https://backlinko.com/about-backlinko",
+    "https://backlinko.com/newsletter",
+    "https://www.semrush.com/blog/what-can-i-do-with-a-free-account-from-semrush/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=navigation",
+    "https://backlinko.com/blog/authors/brian-dean",
+    "https://twitter.com/share?text=Google%20Lens%20Study%3A%20Results%20From%2065%2C388%20Visual%20Searches&url=https%3A%2F%2Fbacklinko.com%2Fvisual-search-ranking-factors&via=Backlinko",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbacklinko.com%2Fvisual-search-ranking-factors",
+    "https://www.reddit.com/submit?url=https%3A%2F%2Fbacklinko.com%2Fvisual-search-ranking-factors&title=Google%20Lens%20Study%3A%20Results%20From%2065%2C388%20Visual%20Searches",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fbacklinko.com%2Fvisual-search-ranking-factors&summary=Google%20Lens%20Study%3A%20Results%20From%2065%2C388%20Visual%20Searches",
+    "https://lens.google.com/",
+    "https://cloud.google.com/vision",
+    "https://backlinko.com/hub/seo/search-terms",
+    "https://www.blog.google/products/search/making-visual-content-more-useful-search/",
+    "https://support.google.com/webmasters/answer/7451184?hl=en",
+    "https://moz.com/learn/seo/domain-authority",
+    "https://support.google.com/webmasters/answer/114016?hl=en",
+    "https://backlinko.com/image-seo",
+    "https://backlinko.com/page-speed-stats",
+    "https://twitter.com/joneslloyd?lang=en",
+    "https://backlinko.com/app/uploads/2020/04/visual-search-ranking-factors-methods.pdf",
+    "https://backlinko.com/visual-search-ranking-factors#keyword-rich-title-tags-and-ur-ls-correlate-with-google-lens-rankings",
+    "https://backlinko.com/visual-search-ranking-factors#33-of-google-lens-result-images-appear-towards-the-top-of-a-page",
+    "https://backlinko.com/visual-search-ranking-factors#a-fairly-low-number-of-google-lens-result-images-contain-matching-alt-text",
+    "https://backlinko.com/visual-search-ranking-factors#google-lens-results-have-a-high-page-authority-and-domain-authority",
+    "https://backlinko.com/visual-search-ranking-factors#the-vast-majority-of-google-lens-results-come-from-mobile-friendly-sites",
+    "https://backlinko.com/visual-search-ranking-factors#the-average-first-contentful-paint-loading-speed-of-a-google-lens-result-is-3-186-ms",
+    "https://backlinko.com/visual-search-ranking-factors#pinterest-and-amazon-rank-for-a-large-number-of-visual-searches",
+    "https://backlinko.com/visual-search-ranking-factors#relatively-few-google-lens-images-are-responsive",
+    "https://backlinko.com/visual-search-ranking-factors#descriptive-image-filenames-may-play-a-role-in-google-lens-results",
+    "https://backlinko.com/visual-search-ranking-factors#google-lens-results-often-also-rank-in-google-organic",
+    "https://backlinko.com/visual-search-ranking-factors#the-average-word-count-of-a-google-lens-result-page-is-1-631-words",
+    "https://www.semrush.com/analytics/overview/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=visual-search-ranking-factors",
+    "https://backlinko.com/lp/seo-ai-search-tool-v1?utm_source=backlinko.com&utm_medium=referral&utm_campaign=visual-search-ranking-factors",
+    "https://backlinko.com/blog",
+    "https://www.semrush.com/ai-seo/overview/",
+    "https://backlinko.com/deals/semrush-coupon",
+    "https://backlinko.com/contact",
+    "https://twitter.com/backlinko",
+    "https://www.youtube.com/@BacklinkoTeam",
+    "https://www.instagram.com/briandean/",
+    "https://www.semrush.com/company/legal/terms-of-service/?utm_source=backlinko.com&utm_medium=referral",
+    "https://www.semrush.com/company/legal/privacy-policy/?utm_source=backlinko.com&utm_medium=referral"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://secure.gravatar.com/avatar/609c0e567577ac8c2c617f9062376394033fd851ca930c40bdc6aea2fa20fe2a?s=96&d=mm&r=g",
+        "alt": "Brian Dean",
+        "w": 96,
+        "h": 96
+      },
+      {
+        "src": "https://embed-ssl.wistia.com/deliveries/dbe20317cc3cf8597f8f60a844f6dd9bd2ef14bf.jpg",
+        "alt": "",
+        "w": 960,
+        "h": 1920
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2020/04/google-lens-example-position-on-web-page-2-768x616.webp",
+        "alt": "Google Lens Example – Position On Web Page",
+        "w": 700,
+        "h": 561
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2020/04/google-algorithm-prioritizes-images-high-on-page-1-480x380.webp",
+        "alt": "Google Algorithm Prioritizes Images High On Page",
+        "w": 400,
+        "h": 316
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2020/04/google-alt-text-makes-it-easier-1-480x460.webp",
+        "alt": "Google Alt Text Makes It Easier",
+        "w": 400,
+        "h": 383
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2020/04/google-lens-results-contain-alt-text-that-matches-the-best-guess-label-768x344.webp",
+        "alt": "Google Lens Results Contain Alt Text That Matches The Best Guess Label",
+        "w": 700,
+        "h": 313
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2020/04/yoga-poses-example-search-768x576.webp",
+        "alt": "Yoga Poses Example Search",
+        "w": 700,
+        "h": 525
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2020/04/google-lens-yoga-image-results-480x891.webp",
+        "alt": "Google Lens – Yoga Image Results",
+        "w": 400,
+        "h": 742
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2020/04/pinterest-and-amazon-rank-for-a-large-number-of-visual-searches-768x673.webp",
+        "alt": "Pinterest And Amazon Rank For A Large Number Of Visual Searches",
+        "w": 700,
+        "h": 613
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2020/04/amazon-pinterest-home-pages-1-768x1116.webp",
+        "alt": "Amazon Pinterest – Home Pages",
+        "w": 700,
+        "h": 1017
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2020/04/google-blog-responsive-images-1-640x723.webp",
+        "alt": "Google Blog – Responsive Images",
+        "w": 500,
+        "h": 564
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2020/04/only-13-percent-of-the-results-in-google-lens-are-responsive-768x344.webp",
+        "alt": "Only 13% Of The Results In Google Lens Are Responsive",
+        "w": 700,
+        "h": 313
+      }
+    ],
+    "allImgCount": 41,
+    "cssBackgrounds": [],
+    "modals": [
+      "About cookies on this siteWe use cookies to run our website, analyze your use of our services, manage your online preferences & personalize ad content. By accepting our cookies, you'll get relevant content and social media features, personalized ads, and an enhanced browsing experience. To manage your choices, click “Cookie Settings.” Necessary cookies are required for the core website functionality and cannot be rejected. For more information, see ourCookie Policy.Allow all cookiesDeny allCookie settings"
+    ],
+    "videos": [
+      {
+        "src": "blob:https://backlinko.com/47a255a7-7b89-483c-ac0b-4d895de8f967",
+        "poster": "https://fast.wistia.com/assets/images/blank.gif",
+        "autoplay": false,
+        "loop": true,
+        "muted": false
+      }
+    ],
+    "iframes": []
+  },
+  "customProps": {
+    "--fa-font-solid": "normal 900 1em/1 \"Font Awesome 6 Free\"",
+    "--fa-font-regular": "normal 400 1em/1 \"Font Awesome 6 Free\"",
+    "--fa-font-light": "normal 300 1em/1 \"Font Awesome 6 Pro\"",
+    "--fa-font-thin": "normal 100 1em/1 \"Font Awesome 6 Pro\"",
+    "--fa-font-duotone": "normal 900 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-regular": "normal 400 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-light": "normal 300 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-thin": "normal 100 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-brands": "normal 400 1em/1 \"Font Awesome 6 Brands\"",
+    "--fa-font-sharp-solid": "normal 900 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-regular": "normal 400 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-light": "normal 300 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-thin": "normal 100 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-duotone-solid": "normal 900 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-regular": "normal 400 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-light": "normal 300 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-thin": "normal 100 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--app-height": "100svh",
+    "--backlinko-bar-height": "62px",
+    "--sl-widgets-font-family": "-apple-system, system-ui",
+    "--sl-widgets-base-unit": "16px"
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 19,
+    "mainTextLen": 40338,
+    "realImageCount": 12,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "dev.visualwebsiteoptimizer.com",
+        "path": "/j.php",
+        "query": [
+          "a",
+          "ph",
+          "st",
+          "u",
+          "vn",
+          "x"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://dev.visualwebsiteoptimizer.com/j.php",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 37708,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 56343,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 42872,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 43878,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "pagead2.googlesyndication.com",
+        "path": "/ccm/collect",
+        "query": [
+          "ae",
+          "apvc",
+          "dl",
+          "dma",
+          "dma_cps",
+          "en",
+          "ep.ads_data_redaction",
+          "fmt",
+          "frm",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "navt",
+          "npa",
+          "rcb",
+          "rnd",
+          "scrsrc",
+          "tag_exp",
+          "tfd",
+          "tft"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "status": 200,
+        "bytes": null,
+        "hits": 3,
+        "example": "https://pagead2.googlesyndication.com/ccm/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/brian-dean.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/brian-dean.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+        "query": [
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 6695,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 9086,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 10416,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 15801,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "region-eu.cookiehub.net",
+        "path": "/",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 28,
+        "hits": 1,
+        "example": "https://region-eu.cookiehub.net/",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "api.backlinko.com",
+        "path": "/wp-json/backlinkostats/v1/shares/{n}",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://api.backlinko.com/wp-json/backlinkostats/v1/shares/141024",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "region1.google-analytics.com",
+        "path": "/g/collect",
+        "query": [
+          "_eu",
+          "_fv",
+          "_nsi",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "cid",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dp",
+          "dt",
+          "en",
+          "ep.container_id",
+          "frm",
+          "gaf",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "status": 204,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://region1.google-analytics.com/g/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "cdn.cookiehub.eu",
+        "path": "/client/7417b56b/en.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://cdn.cookiehub.eu/client/7417b56b/en.json",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 44227,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 21088,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 15368,
+        "hits": 2,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 51872,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 47465,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 26509,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 11092,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 37237,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "fast.wistia.com",
+        "path": "/embed/medias/2lecvsc0ql.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 1573,
+        "hits": 1,
+        "example": "https://fast.wistia.com/embed/medias/2lecvsc0ql.json",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 32531,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 56858,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 46349,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 24511,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 9030,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 19882,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "streaming.bi.owox.com",
+        "path": "/ga4/{hash}/g/collect",
+        "query": [
+          "_eu",
+          "_fplc",
+          "_fv",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "cid",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dp",
+          "dt",
+          "ecid",
+          "en",
+          "ep.container_id",
+          "ep.page_language",
+          "ep.user_agent",
+          "frm",
+          "gaf",
+          "gap.sstd",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "richsstsse",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "sst.etld",
+          "sst.gch",
+          "sst.gcsub",
+          "sst.lpc",
+          "sst.navt",
+          "sst.rnd",
+          "sst.tft",
+          "sst.ude",
+          "sst.us_privacy",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "ur",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/gif",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://streaming.bi.owox.com/ga4/9bb752a08674f116753ca5719dda03ed/g/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 8313,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "www.semrush.com",
+        "path": "/olaf/init",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://www.semrush.com/olaf/init",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "rum-collector-2.pingdom.net",
+        "path": "/img/beacon.gif",
+        "query": [
+          "bIH",
+          "bIW",
+          "cE",
+          "cS",
+          "dC",
+          "dCLEE",
+          "dCLES",
+          "dI",
+          "dL",
+          "dLE",
+          "dLS",
+          "dPR",
+          "fS",
+          "hS",
+          "id",
+          "lEE",
+          "lES",
+          "nS",
+          "nT",
+          "or",
+          "pD",
+          "path",
+          "rC",
+          "rE",
+          "rS",
+          "rV",
+          "reS",
+          "ref",
+          "resE",
+          "resS",
+          "s",
+          "sAH",
+          "sAW",
+          "sIS",
+          "sId",
+          "sST",
+          "title",
+          "uEE",
+          "uES",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": null,
+        "status": 200,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://rum-collector-2.pingdom.net/img/beacon.gif",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "fast.wistia.com",
+        "path": "/embed/medias/2lecvsc0ql.m3u8",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/x-mpegurl",
+        "status": 200,
+        "bytes": 577,
+        "hits": 1,
+        "example": "https://fast.wistia.com/embed/medias/2lecvsc0ql.m3u8",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "embed-cloudfront.wistia.com",
+        "path": "/deliveries/ff7cc8b2ffa75a49803a64f6e450502968bb3fa1.m3u8",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/vnd.apple.mpegurl",
+        "status": 200,
+        "bytes": 576,
+        "hits": 1,
+        "example": "https://embed-cloudfront.wistia.com/deliveries/ff7cc8b2ffa75a49803a64f6e450502968bb3fa1.m3u8",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "distillery.wistia.com",
+        "path": "/x",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": null,
+        "status": 204,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://distillery.wistia.com/x",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "embed-cloudfront.wistia.com",
+        "path": "/deliveries/ff7cc8b2ffa75a49803a64f6e450502968bb3fa1.m3u8/seg-1-v1-a1.ts",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "video/mp2t",
+        "status": 200,
+        "bytes": 289144,
+        "hits": 1,
+        "example": "https://embed-cloudfront.wistia.com/deliveries/ff7cc8b2ffa75a49803a64f6e450502968bb3fa1.m3u8/seg-1-v1-a1.ts",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "pipedream.wistia.com",
+        "path": "/mput",
+        "query": [
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "status": 200,
+        "bytes": 2,
+        "hits": 4,
+        "example": "https://pipedream.wistia.com/mput",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "js.sparkloop.app",
+        "path": "/team_d05f5749d84d/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "status": 301,
+        "bytes": 167,
+        "hits": 1,
+        "example": "https://js.sparkloop.app/team_d05f5749d84d/settings",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "script-settings.sparkloop.app",
+        "path": "/team_d05f5749d84d/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://script-settings.sparkloop.app/team_d05f5749d84d/settings",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "embed-cloudfront.wistia.com",
+        "path": "/deliveries/ff7cc8b2ffa75a49803a64f6e450502968bb3fa1.m3u8/seg-2-v1-a1.ts",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "video/mp2t",
+        "status": 200,
+        "bytes": 156792,
+        "hits": 1,
+        "example": "https://embed-cloudfront.wistia.com/deliveries/ff7cc8b2ffa75a49803a64f6e450502968bb3fa1.m3u8/seg-2-v1-a1.ts",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "embed-cloudfront.wistia.com",
+        "path": "/deliveries/ff7cc8b2ffa75a49803a64f6e450502968bb3fa1.m3u8/seg-3-v1-a1.ts",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "video/mp2t",
+        "status": 200,
+        "bytes": 159800,
+        "hits": 1,
+        "example": "https://embed-cloudfront.wistia.com/deliveries/ff7cc8b2ffa75a49803a64f6e450502968bb3fa1.m3u8/seg-3-v1-a1.ts",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "embed-cloudfront.wistia.com",
+        "path": "/deliveries/ff7cc8b2ffa75a49803a64f6e450502968bb3fa1.m3u8/seg-4-v1-a1.ts",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "video/mp2t",
+        "status": 200,
+        "bytes": 156792,
+        "hits": 1,
+        "example": "https://embed-cloudfront.wistia.com/deliveries/ff7cc8b2ffa75a49803a64f6e450502968bb3fa1.m3u8/seg-4-v1-a1.ts",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "embed-cloudfront.wistia.com",
+        "path": "/deliveries/ff7cc8b2ffa75a49803a64f6e450502968bb3fa1.m3u8/seg-5-v1-a1.ts",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "video/mp2t",
+        "status": 200,
+        "bytes": 99640,
+        "hits": 1,
+        "example": "https://embed-cloudfront.wistia.com/deliveries/ff7cc8b2ffa75a49803a64f6e450502968bb3fa1.m3u8/seg-5-v1-a1.ts",
+        "sameSite": false
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "www.googletagmanager.com",
+        "count": 5
+      },
+      {
+        "host": "fast.wistia.com",
+        "count": 5
+      },
+      {
+        "host": "rum-static.pingdom.net",
+        "count": 2
+      },
+      {
+        "host": "cdn.cookiehub.eu",
+        "count": 1
+      },
+      {
+        "host": "js.sparkloop.app",
+        "count": 1
+      },
+      {
+        "host": "script.sparkloop.app",
+        "count": 1
+      },
+      {
+        "host": "www.semrush.com",
+        "count": 1
+      },
+      {
+        "host": "browser.sentry-cdn.com",
+        "count": 1
+      }
+    ],
+    "truncated": false,
+    "inlineData": [
+      {
+        "id": "__NEXT_DATA__",
+        "type": "application/json",
+        "bytes": 249459,
+        "topLevelKeys": [
+          "props",
+          "page",
+          "query",
+          "buildId",
+          "isFallback",
+          "isExperimentalCompile",
+          "gsp",
+          "scriptLoader"
+        ]
+      }
+    ],
+    "globalState": [
+      "__NEXT_DATA__",
+      "dataLayer"
+    ],
+    "frameworkHints": [
+      "next"
+    ],
+    "forms": [],
+    "ariaLiveRegions": 2,
+    "triggers": [
+      {
+        "marker": "aria-haspopup",
+        "href": null
+      }
+    ],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 26,
+      "thirdPartyEndpoints": 20,
+      "thirdPartyScriptHosts": 8,
+      "inlineDataBlobs": 1,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": true
+    }
+  },
+  "screenshot": "assets/screenshots/visual-search-ranking-factors.png",
+  "renderedHtml": "pages/visual-search-ranking-factors.html"
+}

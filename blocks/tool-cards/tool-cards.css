@@ -1,0 +1,105 @@
+/* Tool cards — lifted from backlinko.com (1o1v5h / 1qe7gkt / 2iio8 / 1k5j6o3) */
+
+.tool-cards .tools-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.tool-cards .tool-item {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.tool-cards .tool-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 100%;
+  padding: 29px 20px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgb(25 27 35 / 12%), 0 0 1px rgb(25 27 35 / 16%);
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.tool-cards .tool-card:hover {
+  transform: translateY(-2px);
+}
+
+.tool-cards .tool-icon {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  padding: 6px;
+}
+
+.tool-cards .tool-icon picture {
+  display: contents;
+}
+
+.tool-cards .tool-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.tool-cards .tool-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tool-cards .tool-text h3 {
+  margin: 0;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.tool-cards .tool-text p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+@media (width >= 992px) {
+  .tool-cards .tool-item {
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+
+  .tool-cards .tool-card {
+    gap: 32px;
+    padding: 44px 40px;
+  }
+
+  .tool-cards .tool-icon {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+  }
+
+  .tool-cards .tool-text {
+    gap: 8px;
+  }
+
+  .tool-cards .tool-text h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .tool-cards .tool-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}

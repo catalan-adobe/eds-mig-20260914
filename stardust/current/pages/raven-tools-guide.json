@@ -1,0 +1,2141 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-26T14:59:43.297Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "raven-tools-guide",
+  "url": "https://backlinko.com/raven-tools-guide",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-26T14:59:43.297Z",
+  "finalUrl": "https://backlinko.com/raven-tools-guide",
+  "title": "An In-Depth Guide To Raven Tools",
+  "description": "Leverage Raven Tools' powerful features to boost your SEO results. Learn everything you need to know about this all-in-one marketing tool.",
+  "og": {
+    "title": "An In-Depth Guide To Raven Tools",
+    "description": "Leverage Raven Tools' powerful features to boost your SEO results. Learn everything you need to know about this all-in-one marketing tool.",
+    "image": "https://api.backlinko.com/app/uploads/2023/08/raven-tools-featured-image-1.png",
+    "type": "article"
+  },
+  "headings": [
+    {
+      "tag": "h2",
+      "text": "About cookies on this site"
+    },
+    {
+      "tag": "h3",
+      "text": ".semrush_svg__cls-2{fill:#181e15}Semrush helps you:"
+    },
+    {
+      "tag": "h3",
+      "text": "Backlinko readers get:"
+    },
+    {
+      "tag": "h6",
+      "text": "AI Keyword Ideas in Seconds"
+    },
+    {
+      "tag": "h1",
+      "text": "An In-Depth Guide To Raven Tools"
+    },
+    {
+      "tag": "h2",
+      "text": "What Is Raven Tools?"
+    },
+    {
+      "tag": "h2",
+      "text": "Raven Tools Features"
+    },
+    {
+      "tag": "h3",
+      "text": "Dashboard"
+    },
+    {
+      "tag": "h3",
+      "text": "SEO Research"
+    },
+    {
+      "tag": "h4",
+      "text": "Site Auditor Classic"
+    },
+    {
+      "tag": "h4",
+      "text": "Site Auditor Studio"
+    },
+    {
+      "tag": "h4",
+      "text": "Google Analytics 4"
+    },
+    {
+      "tag": "h3",
+      "text": "Rank Tracking"
+    },
+    {
+      "tag": "h4",
+      "text": "SERP Tracker"
+    },
+    {
+      "tag": "h4",
+      "text": "Google Search Analytics"
+    },
+    {
+      "tag": "h3",
+      "text": "Link Building"
+    },
+    {
+      "tag": "h4",
+      "text": "Link Manager"
+    },
+    {
+      "tag": "h4",
+      "text": "Link Spy"
+    },
+    {
+      "tag": "h4",
+      "text": "Website Directory"
+    },
+    {
+      "tag": "h3",
+      "text": "Competitor Research"
+    },
+    {
+      "tag": "h4",
+      "text": "Site Performance"
+    },
+    {
+      "tag": "h4",
+      "text": "Competitor Manager"
+    },
+    {
+      "tag": "h4",
+      "text": "Domain Research Central"
+    },
+    {
+      "tag": "h3",
+      "text": "Keyword Research"
+    },
+    {
+      "tag": "h4",
+      "text": "Keyword Manager"
+    },
+    {
+      "tag": "h3",
+      "text": "Social Media"
+    },
+    {
+      "tag": "h4",
+      "text": "Twitter"
+    },
+    {
+      "tag": "h4",
+      "text": "Facebook"
+    },
+    {
+      "tag": "h4",
+      "text": "YouTube"
+    },
+    {
+      "tag": "h4",
+      "text": "LinkedIn"
+    },
+    {
+      "tag": "h3",
+      "text": "Ads"
+    },
+    {
+      "tag": "h4",
+      "text": "Google Ads"
+    },
+    {
+      "tag": "h4",
+      "text": "Bing Ads"
+    },
+    {
+      "tag": "h4",
+      "text": "Facebook Ads"
+    },
+    {
+      "tag": "h3",
+      "text": "Communication"
+    },
+    {
+      "tag": "h4",
+      "text": "CallRail"
+    },
+    {
+      "tag": "h4",
+      "text": "Email"
+    },
+    {
+      "tag": "h3",
+      "text": "Manage Content"
+    },
+    {
+      "tag": "h4",
+      "text": "Content Manager"
+    },
+    {
+      "tag": "h4",
+      "text": "WordPress"
+    },
+    {
+      "tag": "h4",
+      "text": "Order Content"
+    },
+    {
+      "tag": "h3",
+      "text": "WYSIWYG Reports"
+    },
+    {
+      "tag": "h2",
+      "text": "Raven Tools Pricing"
+    },
+    {
+      "tag": "h3",
+      "text": "Small Biz"
+    },
+    {
+      "tag": "h4",
+      "text": "Price"
+    },
+    {
+      "tag": "h4",
+      "text": "What you get"
+    },
+    {
+      "tag": "h3",
+      "text": "Start"
+    },
+    {
+      "tag": "h4",
+      "text": "Price"
+    },
+    {
+      "tag": "h4",
+      "text": "What you get"
+    },
+    {
+      "tag": "h3",
+      "text": "Grow"
+    },
+    {
+      "tag": "h4",
+      "text": "Price"
+    },
+    {
+      "tag": "h4",
+      "text": "What you get"
+    },
+    {
+      "tag": "h3",
+      "text": "Thrive"
+    },
+    {
+      "tag": "h4",
+      "text": "Price"
+    },
+    {
+      "tag": "h4",
+      "text": "What you get"
+    },
+    {
+      "tag": "h3",
+      "text": "Lead"
+    },
+    {
+      "tag": "h4",
+      "text": "Price"
+    },
+    {
+      "tag": "h4",
+      "text": "What you get"
+    },
+    {
+      "tag": "h2",
+      "text": "Raven Tools Pros and Cons"
+    },
+    {
+      "tag": "h3",
+      "text": "Pros"
+    },
+    {
+      "tag": "h3",
+      "text": "Cons"
+    },
+    {
+      "tag": "h2",
+      "text": "Raven Tools Vs Competitors"
+    },
+    {
+      "tag": "h3",
+      "text": "Raven Tools Vs Semrush"
+    },
+    {
+      "tag": "h3",
+      "text": "Raven Tools Vs Moz Pro"
+    },
+    {
+      "tag": "h3",
+      "text": "Raven Tools Vs SpyFu"
+    },
+    {
+      "tag": "h2",
+      "text": "FAQs"
+    },
+    {
+      "tag": "h3",
+      "text": "What level of customer support does Raven Tools offer?"
+    },
+    {
+      "tag": "h3",
+      "text": "Does Raven Tools have a free trial?"
+    },
+    {
+      "tag": "h3",
+      "text": "What integrations does Raven Tools have?"
+    },
+    {
+      "tag": "h4",
+      "text": "Learn"
+    },
+    {
+      "tag": "h4",
+      "text": "Company"
+    },
+    {
+      "tag": "h4",
+      "text": "Connect"
+    }
+  ],
+  "body": [
+    "Written by Backlinko Team",
+    "On this page",
+    "What Is Raven Tools?",
+    "Raven Tools Features",
+    "Raven Tools Pricing",
+    "Raven Tools Pros and Cons",
+    "Raven Tools Vs Competitors",
+    "FAQs",
+    "Raven Tools is an SEO, marketing, and auditing tool.",
+    "It’s cloud-based and is designed to be used by agencies, media companies, in-house marketers, and freelancers.",
+    "It’s a useful tool but it can be a little tricky to get used to at first.",
+    "That’s why I’ve put together this comprehensive guide.",
+    "I’ll show you how to use all of Raven Tools’ best features and take a look at how it stacks up against some of its competitors.",
+    "Ready to learn everything you need to know about Raven Tools?",
+    "Good!",
+    "Let’s get started.",
+    "So, before I start my deep dive into Raven Tools’ many features let’s first take a quick look at what it actually is.",
+    "Raven Tools was founded in 2004 and it was acquired by TapClicks in 2017.",
+    "It includes features for:",
+    "Keyword research and analysis",
+    "Rank tracking",
+    "Campaign analytics",
+    "Compiling marketing data",
+    "Link building",
+    "Competitor research",
+    "Communication",
+    "Managing your inbound and outbound reporting",
+    "Managing content",
+    "Ordering, optimizing, and publishing content directly from the tool",
+    "It’s a useful online marketing reporting tool that can save you LOADS of time.",
+    "Plus, it offers plenty of integrations with email accounts, social media accounts, and ad campaigns for comprehensive data analysis.",
+    "As far as SEO tools go, it’s pretty affordable and it’s relatively easy to get used to.",
+    "The Raven Tools dashboard is nice and simple.",
+    "It gives you a quick overview of some of your site’s performance metrics:",
+    "External Backlinks",
+    "Citation Flow",
+    "Trust Flow",
+    "Domain Authority",
+    "Load Time",
+    "Page Speed",
+    "Below, I can see a graph of my total links since 2011.",
+    "Each line on the graph is color-coded to represent the trend of a different year.",
+    "This allows me to quickly see how many backlinks I’ve gained or lost over the years.",
+    "At the bottom of the page, there’s a summary of “Identified On-Page SEO Opportunities”.",
+    "This highlights:",
+    "Visibility Issues",
+    "Meta Issues",
+    "Content Issues",
+    "Link Issues",
+    "Image Issues",
+    "Semantic Issues",
+    "Desktop Speed Score",
+    "Mobile Speed Score",
+    "This alerts you to any issues on your site that might be hampering its performance.",
+    "If you want to view any of these issues in more detail then you simply click on a specific issue and you’ll be taken to the Site Auditor tool (more on this later).",
+    "For example, say you wanted to view the data about “Meta Issues” on your site, you’ll need to click “Connect to Site Auditor” first.",
+    "Then, if you scroll to the bottom of the page you’ll see a summary of any “Meta Issues” your site has.",
+    "By clicking “Learn More” you’ll be taken to a Google Search Central page that gives you advice on resolving the issue.",
+    "On the left side of the page, there’s an option to “Add More Metrics”.",
+    "When you click on this, you can choose to add metrics from other platforms to your dashboard, for example, Google Analytics.",
+    "This means you can take a quick glance at all of your Google Analytics metrics in one place.",
+    "Sweet.",
+    "The SEO Research tool has several features that allow you to audit your site and keep track of your Google Analytics data. Let’s take a look at everything this tool has to offer.",
+    "The Site Auditor Classic lets you perform SEO site audits.",
+    "This is the best way to fully analyze your site’s strengths and weaknesses, and identify areas where you need to improve its performance.",
+    "You can also use this feature to analyze your competitors’ domains.",
+    "Once Raven Tools has audited your site, you’ll see a summary page.",
+    "Here, I can see issues on my site broken down into six categories:",
+    "Visibility issues",
+    "Meta issues",
+    "Content issues",
+    "Link issues",
+    "Image issues",
+    "Semantic issues",
+    "As you can see, the majority of the issues the Site Auditor found appear to be image-related.",
+    "By clicking on the “Image Issues” tab I can see what the actual issues are.",
+    "Missing ALT text and title text are clearly the biggest issues, and now that I know this, I can look at addressing these.",
+    "On the left-hand side, there are more tabs for you to explore.",
+    "These include:",
+    "Visibility: how easily a web page can be found and displayed on the SERPs when a relevant keyword is searched by a user",
+    "Meta: provides information about a page to users and search engines. They usually include metadata such as meta titles and meta descriptions",
+    "Content: the visual, textual, or interactive elements on a page",
+    "Links: hyperlinks that connect a site’s pages to each other or link to or from external sites",
+    "Images: the images, illustrations, and graphics used on a site",
+    "Semantics: relates to the structure and meaning of content on a page. For example, how different elements are organized to communicate certain information to the user",
+    "Desktop Page Speed: how long it takes for a page to load and be fully functional on a desktop computer",
+    "Mobile Page Speed: the same as above but for mobile devices",
+    "Crawl Comparison: involves comparing two or more different pages to see how search engines crawl them. This helps to identify any crawlability issues",
+    "So, for example, when I click on “Mobile Page Speed” I get some useful data.",
+    "The report showed me that I have an issue with “Total Blocking Time”.",
+    "“Total Blocking Time” is the amount of time a browser’s main thread is blocked by long tasks.",
+    "This prevents the page from responding to user input.",
+    "When this happens, the web page feels sluggish and unresponsive which obviously isn’t great for the user experience (UX).",
+    "My “Total Blocking Time” is 1,250 ms.",
+    "Google considers anything over 600 ms to be slow. So Raven Tools has identified an area I can work on to improve my site’s UX.",
+    "Along with the data, you’ll also get recommendations on how to fix the issues. That’s super useful.",
+    "The Site Auditor Studio is a fairly simple tool that gives you a list of issues with your site and ranks them by importance.",
+    "The classifications are “Critical”, “Warning”, and “Needs Attention.”",
+    "Here, I can see my site score out of 100 and issues relating to “Page Errors”, “Redirects”, and “Internal Broken Links.”",
+    "By clicking on the specific issue you’ll get more detailed info.",
+    "For example, when I click on “Page Errors” I can see the type of error and the page URLs.",
+    "As you can see, I have two pages with 404 errors. These errors can occur when the pages no longer exist or have been moved.",
+    "Now that Raven Tools has made me aware of this issue I can check out these two pages and try to fix the problem.",
+    "If you’re not sure how to fix the problem, you can click on “Learn how to fix this” to be taken to a help page in Google’s Search Console.",
+    "Google Analytics 4 has been the default version of Google Analytics since 07/01/2023.",
+    "Still, some users haven’t made the switch yet so Raven Tools has separate tools for each.",
+    "The Google Analytics 4 “Overview” page looks the same as the Google Analytics. The only difference is the options on the left of the page.",
+    "The tabs are:",
+    "Overview",
+    "All Traffic",
+    "All Referrals",
+    "All Landing Pages",
+    "All Social Network Referrals",
+    "All Events",
+    "If you click on “All Landing Pages” for example, and scroll down, you see a table with a list of your landing pages.",
+    "You also see a lot of metrics.",
+    "These are:",
+    "Users",
+    "Sessions",
+    "Engaged Sessions",
+    "Average Engagement Time Per Session",
+    "Sessions Per User",
+    "Events Per Session",
+    "Engagement Rate",
+    "Event Count",
+    "Conversions",
+    "Let’s focus on the “Engagement Rate” metric.",
+    "This is calculated by dividing “Engaged Sessions” by “Sessions.”",
+    "The “Engaged Sessions” metric represents sessions that were longer than 10 seconds, or, sessions that involved two or more screen views or a conversion event.",
+    "The “Sessions” metric shows you how many sessions began on your site.",
+    "I can see that the “Engagement Rate” for this landing page is 21.04%",
+    "Now, a good percentage for this metric is generally considered to be between 60% to 70%. So, clearly the percentage for this page is quite low.",
+    "There could be several reasons for this, such as:",
+    "The page might have an unappealing design",
+    "It could lack a clear purpose or provide dull and irrelevant content",
+    "Maybe there are long blocks of text that are overwhelming which deter users from engaging with it",
+    "It possibly takes too long to load",
+    "There could be no clear call-to-action (CTA)",
+    "This is why the “Engagement Rate” metric is super useful because it makes you aware of on-page elements that are causing low engagement rates. Armed with these insights, you could then take the necessary steps to optimize the page.",
+    "The Rank Tracking tool gives you the ability to keep tabs on your and your competitors’ search engine rankings. You can also track how specific keywords are performing in the SERPs.",
+    "This feature allows you to gather information about how specific keywords and domains are ranking in the SERPs. You can track your own domain as well as the domains of your competitors.",
+    "The SERP Tracker tool has four different features:",
+    "Keyword Suggestions",
+    "Keywords",
+    "Competitors",
+    "Rank Checker",
+    "The “Keyword Suggestions” feature is a super fast way to find some terms you could target to optimize your site.",
+    "All you need to do is type in a keyword and then hit “Research.”",
+    "Raven Tools then gives you a list of related keywords along with data about search volume, competition, and cost-per-click (CPC).",
+    "Now, let’s say you want to keep track of the keyword rankings for these terms over time.",
+    "You need to select the keywords you like and then choose the “Add To SERP Tracker” option.",
+    "Then, you need to choose the tracking frequency. This means how often you want the terms to be tracked, whether it be daily, weekly, or monthly.",
+    "Next, you select which search engines you want the tool to use for its keyword tracking.",
+    "Then, just click “Review and Publish”",
+    "The downside to this tool is that you have to wait up to 24 hours for the tracking report to come through.",
+    "Still, it’s worth the wait.",
+    "By reviewing the ranking positions of your targeted keywords you can:",
+    "Assess the effectiveness of your optimization efforts.",
+    "Identify fluctuations",
+    "Make data-driven decisions to improve your site’s visibility in SERPs.",
+    "For this tool, you need to link Raven Tools to your Google Search Console account.",
+    "The tool then pulls in data from GSC which gives you insights into how your site is performing in Google organic search results.",
+    "When you open this feature, you’ll see a graph.",
+    "It compares your Average Position for related queries over the past month to the previous month.",
+    "There are also three other graphs you can view data for:",
+    "Clicks",
+    "Impressions",
+    "Click-through-rate (CTR)",
+    "Here’s what the CTR graph looks like.",
+    "You can get a quick overview to see if your CTR has increased or decreased over a certain period of time. Luckily for me, mine has improved by 3% in the past month compared to the previous month.",
+    "On the left of the page, you’ll see:",
+    "Queries",
+    "Pages",
+    "Countries",
+    "Devices",
+    "Search Appearance",
+    "If you click on “Queries” and scroll down you’ll see a list of your site’s keywords.",
+    "Raven Tools provides you with the following metrics:",
+    "Clicks",
+    "Impressions",
+    "CTR",
+    "Position",
+    "Position Change",
+    "Here I can see the number of clicks I’m getting for specific keywords and what ranking positions they’re in.",
+    "I can also see which keywords have moved up or down in the SERPs.",
+    "If you click on “Pages” you’ll see a list of your site’s pages along with the same metrics as above.",
+    "Clicks:",
+    "You can view data for the amount of clicks your pages are earning. Pages with a higher number of clicks are obviously more popular.",
+    "By analyzing these pages you can gain insight into what content or topics appeal to your target audience. Therefore, you can focus on creating similar content in the future to drive more clicks and traffic to your site.",
+    "You should also analyze the pages that receive fewer clicks as this will help you identify optimization opportunities. It could be possible that your meta titles and meta descriptions don’t align with the users’ interests.",
+    "Work on improving them so that they meet the user’s search intent. This could increase your clicks.",
+    "Moving on.",
+    "If you click on the “Countries” tab, you can see how many “Clicks” and “Impressions” you’re getting from specific countries.",
+    "Once you’ve identified the regions that hold your biggest audience, you can focus on creating content that resonates with users from these countries.",
+    "The “Devices” tab shows you the same metrics for desktop, mobile, and tablet devices.",
+    "This allows you to gain insights into how the majority of your users are accessing your site.",
+    "If they’re mostly visiting your site on mobile devices then clearly you need to make sure your site is fully optimized for mobile.",
+    "Position and Position Change:",
+    "The “Position” metric is helpful as it shows you what position your pages are currently ranking in.",
+    "The “Position Change” metric tells you if your rankings for these pages have moved up or down in the SERPs.",
+    "If one or more of your pages has moved down the rankings, then you need to find out why. One possible reason could be due to an algorithm update. So, you’ll need to check when the update took place and see if it matches up with the time period when your pages lost rankings.",
+    "CTR:",
+    "Here you can see the click-through rate of your pages.",
+    "It’s a super helpful metric because it shows you which pages have an improved “CTR” and which ones aren’t performing as well.",
+    "There are a couple of reasons why your pages might have a low CTR. The first one being, they rank outside of the top ten search results on page one. If this is the case for some of your pages then you’ll need to optimize them to improve their rankings to get on page one. The higher your pages rank on the first page of Google, the better your CTR will be.",
+    "Before I talk about the second reason, you first need to understand what “Impressions” are.",
+    "The “Impressions” metric measures how many times search engine users have been exposed to your pages in the SERPs. You should analyze this metric alongside your “CTR” metrics.",
+    "Here’s why:",
+    "If a page has a high number of “Impressions” but a low “CTR” this could mean that your meta titles and descriptions are poorly optimized. This is the second reason why your pages might have a low CTR.",
+    "Think about it, if your pages are showing up in the SERPs for search queries but users are choosing not to click on your link, then it’s quite obvious your titles and meta descriptions are the problem. You need to analyze them and ask yourself, are these page titles and descriptions compelling enough to attract users’ interests and entice them to click on your links?",
+    "On top of that, you should implement schema markup on your pages if you haven’t done so. This increases the chances of search engines displaying rich snippets under your link which makes it more attractive to click on. This can potentially increase your click-through rates too.",
+    "Pretty neat.",
+    "The Link Building tool helps you analyze the backlink profiles of your and your competitors’ domains. You can also save any backlink data you uncover and organize it effectively for different campaigns.",
+    "Backlink Explorer",
+    "This tool shows you the sites that are linking to your or your competitors’ pages and gives you an indication of the quality of those sites. It also provides you with data on up to 50,000 backlinks.",
+    "Now, I must say. The Link Building section is laid out in a slightly confusing way.",
+    "The first tool you’ll see is the “Link Manager.”",
+    "The thing is, you probably won’t have any links to manage yet in Raven Tools.",
+    "So, the first thing to do is click Backlink Explorer instead.",
+    "The Backlink Explorer allows you to view your own site’s backlinks or the backlinks of your competitors.",
+    "To get going, enter a domain and hit “Explore.”",
+    "Next, click on the domain.",
+    "Then, you’ll see a list of the source URLs for that site’s backlinks. Source URLs are the sites that the backlinks are coming from.",
+    "You’ll also see the “Target URL”, “Citation Flow”, and the “Anchor Text” that was used for the link.",
+    "The “Citation Flow” metric represents a numerical value from 0 to 100. It highlights how much influence the source URL is expected to have. The number is calculated based on:",
+    "the number of sites that link to the source URLs",
+    "and the quality and authority of these sites",
+    "So, if the score is closer to 100, then that would indicate a better-quality link coming from the source URLs.",
+    "The tool also has a filter option that you can use to see only Nofollow links as well as image links.",
+    "Overall, it isn’t a bad backlink analysis tool but it’s definitely nothing compared to the likes of",
+    "Semrush’s Backlink Audit and Analysis tools offer much more detailed data.",
+    "That being said, if you want to keep track of your or your competitors’ links from Backlink Explorer then you can use the Link Manager tool to keep them organized.",
+    "Here’s how you do it: select the boxes next to the links and then choose the “Add to Link Manager” option in the drop-down.",
+    "It’s that easy.",
+    "Once you’ve added your links, you can go into the Link Manager tool to get them nice and organized.",
+    "You can add:",
+    "A status",
+    "A link type",
+    "A website type",
+    "A link owner",
+    "A link currency",
+    "To do this, click on the link you want to edit.",
+    "At the top of the page you can change the:",
+    "Type—classifies the links based on certain criteria and characteristics such as whether the link comes from an affiliate site",
+    "Status—what state the link is in such as active or inactive",
+    "Owner—which member of your team is managing these links",
+    "To make more changes, click the “Edit Link” button.",
+    "Then, you can add contact details and notes.",
+    "On the left side of the page, there are tabs where you can view the info you’ve added.",
+    "These are:",
+    "Contact",
+    "Monitor",
+    "Tasks",
+    "Notes",
+    "History",
+    "If you click the “Monitor” tab then you can set up link monitoring for individual links by clicking “Check Link Status.”",
+    "You’ll then see info like “Anchor [Link] Text Match” and “URL Match.”",
+    "The “Anchor [Link] Text Match” tells you if the link’s anchor text matches the context of the page it’s linking to.",
+    "If the answer is no, then you should change the anchor text.",
+    "Relevance is important to both search engines and users.",
+    "By making sure your anchor text is relevant, you improve the user experience and provide more context for search engines about the page you’re linking to.",
+    "The Link Manager tool is also particularly useful if you need to create marketing reports for clients.",
+    "It helps you to keep records of acquired links and makes team collaboration easier as you can leave notes for your colleagues.",
+    "The Link Spy feature allows you to discover high-quality backlinks by analyzing websites that are already ranking for your focus keywords.",
+    "To use the tool, enter a keyword or phrase and hit “Find.”",
+    "Then, you’ll see a list of domains. You can either add to this list or click “Run”.",
+    "Link Spy then finds and ranks domains that have links pointing to the top 10 results on Bing for that keyword or phrase.",
+    "You can add domains that you want to acquire links from to the Link Manager by selecting the links and then clicking “Add Link”.",
+    "By seeing which domains are linking to the top-ranking pages on Bing for your keyword, you can identify potential backlink opportunities.",
+    "The Website Directory feature stores data about the domains that are saved in the Link Manager.",
+    "This data includes:",
+    "Quality Score",
+    "Active Links",
+    "Paid Links",
+    "Total Pages",
+    "Total Links",
+    "Page Authority",
+    "Domain Authority",
+    "Domain Creation",
+    "When the domain expires",
+    "When it was last updated",
+    "To view the various data points about a domain click “View Website Record” on the right side of the page.",
+    "You can also add tags and notes to help keep your lists organized into groups.",
+    "If you scroll down, you see a graph representing the site’s backlink profile.",
+    "You can view graphs for:",
+    "Total Links",
+    "Image Links",
+    "NoFollows",
+    "Crawled Pages",
+    "Referring Domains",
+    "Domain URLs",
+    "Having access to data like your competitors’ “Page Authority” and “Domain Authority” scores helps you assess the quality and authority of the domains.",
+    "Backlinks from sites with high PA and DA scores are generally considered to be high quality.",
+    "You may want to reach out to these domains and ask for a link. You should only do this if you have high-quality content that’s relevant to the domains you want to get links from.",
+    "You could also target the sites that these domains are building links with, as long as those sites are relevant to your niche and the topics you’re writing about.",
+    "You can use this tool to analyze the performance of your competitors’ sites. It allows you to view loads of useful metrics about their sites and store your data for more in-depth analysis.",
+    "The Site Performance section of the Competitor Research tool allows you to compare your site to your competitors.",
+    "It’s split into three categories:",
+    "SEO Metrics",
+    "Site Metrics",
+    "Social Metrics",
+    "To use the “Site Metrics” table, select your competitors.",
+    "The table then shows you how well your site is optimized compared to your competitors’ sites.",
+    "If you click the “i” symbol, you’ll get some suggestions about how to improve these metrics.",
+    "For example, to improve your “Citation Flow” score the tool suggests building more inbound links from high quality authority sites. This helps to improve the authority of your domain.",
+    "“Site Metrics” tell you how well your site is performing in terms of “Load Time” and “Page Speed.”",
+    "These are vital for the user experience. If your pages take ages to load then users are more likely to bounce off these pages.",
+    "This could increase your bounce rates, and trust me, having high bounce rates is not a good thing. Google uses various user experience signals to assess a page, and bounce rate is one of them.",
+    "As with the “SEO Metrics” table, you can get some good advice by clicking the “i” symbol next to a metric.",
+    "This is one of my favorite features that Raven Tools has to offer.",
+    "I REALLY like the fact that it gives you actionable tips on how to improve your site’s performance.",
+    "Competitor Manager is one of the more basic features that Raven Tools offers.",
+    "It stores your competitors’ domains and gives you some data about them such as:",
+    "Authority",
+    "Number of pages on the site",
+    "The total number of links",
+    "By comparing your domain authority with competing domains you can assess your site’s credibility and influence within your niche.",
+    "The number of pages on the site will give you insights into how big the site is.",
+    "The total number of links your competitors have is good to know about, but that doesn’t tell you the whole story in terms of the quality of the links. Quality always trumps quantity. Therefore, you’d need to perform a backlink audit to get a better understanding of the links they have.",
+    "Moving on.",
+    "When you open the tool, you’ll see a list of your competitors’ domains.",
+    "If you want to save more competitors then click “Add Competitors”, type in the domains, and hit “Add.” You can also add tags to put your competitors into different groups.",
+    "If you want to compare these competitors to each other and your own site, then choose the “Compare in Research Central” option at the top right.",
+    "This tool is mostly used for organizing your lists of competitors so that you can analyze them with the Domain Research Central feature.",
+    "Let’s take a look at that now.",
+    "When you open the Domain Research Central feature there are nine different tabs on the left side of the page.",
+    "These are:",
+    "Summary: gives you in-depth data on your domain and your competitors’ domains",
+    "Quality: gives you insights into the quality of your or your competitors’ domains with metrics such as “Domain Authority” and “Page Authority”",
+    "Keywords: provides insightful data about the keywords your competitors are targeting",
+    "Pages: gives you metrics such as “Page Authority” and “Linking Root Domains” about your or your competitors’ pages",
+    "Backlinks: helps you to analyze your backlink profile or the profiles of your competitors",
+    "Neighborhood: shows you the relative location of domains to your site",
+    "Compare: allows you to make metric comparisons between domains",
+    "Semantic: this feature uses IBM Watson technology and analyzes your competitors’ sites for semantic information such as semantically related keywords",
+    "Design: gives you insight into the content and semantic structure of your web pages. It also analyzes your pages HTML and informs you of any issues that might be present",
+    "When you click on the “Summary” tab it loads up one of your saved competitors automatically.",
+    "It then gives you the following metrics:",
+    "Domain Authority",
+    "Page Authority",
+    "Citation Flow",
+    "Total Links",
+    "And these, which I’ll explain briefly:",
+    "External Followed Links – Root: the number of “Dofollow” links from sites that point to the homepage of a domain.",
+    "External Backlinks – Root: the number of all “Dofollow” and “Nofollow links” from sites that point to a domain’s homepage",
+    "Referring Domains – Root: the total number of Referring Domains pointing to the homepage of a site",
+    "Total Juice-Passing Links: the total number of internal links and external links that pass authority from one page to another",
+    "Trust Flow: a metric used to assess how trustworthy and authoritative a site is",
+    "Shares: the number of times a link to a page has been shared on social media platforms",
+    "When you scroll down, you’ll get the following data for your competitor’s site in the form of graphs:",
+    "Total Links",
+    "Image Links",
+    "NoFollows",
+    "Crawled Pages",
+    "Referring Domains",
+    "Domain URLs",
+    "Here, I wanted to view the “Referring Domains.” These are the unique domains linking to a site.",
+    "The lines of the graph are color-coordinated by year. This makes it easy to compare the data from different years to see how my competitor has fared over a longer time period.",
+    "But how does this help you?",
+    "Well, you can use this data to see how many new Referring domains your competitor gained during a specific time period, and how many they’re typically gaining in a month.",
+    "You should compare this data to your own site to see how many new Referring domains you are acquiring each month. This will inform you of whether you’re keeping up with your competitors or need to up your link building game to acquire new Referring domains in order to stay competitive.",
+    "At the very bottom of the Domain Research Central page, you’ll find another graph for “Domain Link Distribution.”",
+    "This shows you the percentage of links pointing to a site from various top-level domains (TLDs).",
+    "Top-level domains are the last parts of a site’s URL (.com, .edu, and .org for example).",
+    "If a site has loads of links from .edu domains then its content is clearly valuable. Links from these domains are high quality and if your competitors have some of these, then you need to amp up your link building efforts and try to acquire some for your site too.",
+    "If they have a lot of links from country-specific domains, such as .uk or .ca, then their content clearly appeals to audiences from those countries.",
+    "This data gives you a better understanding of your competitors’ target audiences.",
+    "You can use it to make sure you’re targeting similar audiences with your own content strategies.",
+    "This tool is designed for finding, analyzing, and storing the keywords you want to target in your SEO and PPC campaigns. You can use it to view various keyword stats and trends to make sure you’re focusing on the most valuable terms.",
+    "Keyword Research Central",
+    "Keyword Research Central gives you lots of useful data about search terms you might want to target. The keyword data is collected from several sources including Google, Moz, Majestic, Open Calais, and Bing.",
+    "By analyzing the data you can make informed decisions as to which keywords are best to include in your SEO campaigns.",
+    "To get started, you simply enter a keyword.",
+    "I typed in “SEO Tools.”",
+    "The first thing you see is the summary page with stats like “Global Average Volume” and “Local Average Volume.”",
+    "If you scroll down the page you see a nice graph for “Google Search Volume Trends.”",
+    "This allows you to see if the search term is gaining or losing interest which helps you decide whether it’s worth targeting or not.",
+    "But what if you want to see data about the competing domains that are also ranking for this keyword?",
+    "To find out, click the “Competitors” tab.",
+    "You’ll then see metrics like “External Links to URL”, “Juice-Passing Links”, and “Domain Authority.”",
+    "“External Links to URL” are backlinks from other sites that are pointing to the pages you see in the table below.",
+    "“Juice-Passing Links” are backlinks from other sites that are passing on some authority to these pages.",
+    "Now you’ll be able to get a better idea of the domains competing for the same keyword you’re targeting.",
+    "For an even closer look at your keyword, you can click on the “Search Volume” tab.",
+    "You’ll then see the search volume for the term and a bar representing the “Advertiser Difficulty.”",
+    "The fuller the bar, the more competition there is for the keyword in regard to PPC advertising.",
+    "To save any keywords, just select them and click “Add to Manager.” They’ll then be added to the Keyword Manager tool.",
+    "The Keyword Manager tool is where you add and keep track of the keywords you choose to target.",
+    "You’ll probably already have some keywords that you’ve added with the Keyword Research Central feature.",
+    "But you can still add more.",
+    "Once you’re in the tool, click “Add Keywords” and then type them in.",
+    "You can also add tags to categorize your keyword groups. This makes it much easier to organize your keyword research.",
+    "Once you’ve added your keywords they’ll be stored in the Keyword Manager for you to access any time.",
+    "If you’ve added tags, then they’ll be grouped according to the tags.",
+    "The social media feature allows you to connect various social media accounts to Raven Tools.",
+    "This helps you to streamline your social media marketing efforts.",
+    "Once you’ve connected your Twitter account to Raven Tools, there are plenty of things you can do with this feature.",
+    "One of the best tools is the “Personas” feature. This allows you to add and track your Twitter account.",
+    "Then, you can closely monitor many aspects of your Twitter activity such as friends and followers, retweets, recent mentions, and posts.",
+    "This feature also has graphs and tables that help you keep track of how engaged your audience is with your content.",
+    "By tracking this, you can identify which types of tweets or topics resonate best with your audience and adjust your social media strategy accordingly.",
+    "By connecting your Facebook account to Raven Tools you can:",
+    "Analyze Facebook traffic data and insights",
+    "Create scheduled posts and edit them",
+    "You’re able to add both business and personal Facebook accounts to Raven Tools.",
+    "You can connect multiple YouTube accounts to Raven Tools.",
+    "When you’ve done this, you can use the tool to:",
+    "View your YouTube traffic data.",
+    "Analyze advanced metrics for up to 10 videos.",
+    "Syncing YouTube with Raven Tools gives you access to comments, views, and favorites within one feature.",
+    "The tool uses Google Analytics data to help you see if your YouTube campaign is leading to increased traffic to your site.",
+    "By analyzing this data, you can make informed decisions about optimizing your YouTube channels to get the best results.",
+    "After you’ve connected your LinkedIn account you can:",
+    "Interact with groups, connections, and companies",
+    "Carry out analysis of LinkedIn metrics",
+    "Create scheduled posts",
+    "The ads feature lets you connect your Google Ads and Bing Ads accounts to Raven Tools. This means you can keep track of your ad campaigns in one place.",
+    "First, add your Google Ads account to RavenTools. Then you can:",
+    "Use the tool to track your PPC campaigns",
+    "Easily create campaign performance reports",
+    "Create your ads, ad groups, and campaigns within Raven Tools",
+    "As with the Google Ads feature, by connecting your Bing Ads account you can keep track of the performance of your PPC campaigns.",
+    "Raven Tools gives you access to three levels of data when it comes to Facebook Ads:",
+    "Campaign: This is the highest level where you can store all of your Facebook Ads campaigns. It has its own tab, and you can select specific campaigns to view the associated “Ad Sets” and “Ads.”",
+    "Ad Set: “Ad Sets” represent groups of ads. Each ad set is linked to a campaign. By examining them, you can get insights into how different groups of ads perform together. You can group “Ad Sets” by criteria like agent, location, and client.",
+    "Ad Level: This is the foundational level of data. At this level, you can access all the Facebook insight statistics for each individual ad. You can also now group ads within “Ad Sets” and campaigns. This allows for more comprehensive metrics and analysis.",
+    "This tool allows you to connect your CallRail and email accounts to Raven Tools.",
+    "CallRail is a call tracking and analytics software. It helps you to track and analyze phone calls generated from various marketing campaigns and channels.",
+    "It’s useful for businesses as it can give you insights into the effectiveness of your marketing efforts, therefore helping them to make data-driven decisions and optimize their marketing strategies.",
+    "Once you’ve connected your account, you can monitor the performance of your CallRail campaigns.",
+    "With this feature you can connect your email accounts so you can track your metrics and campaigns within Raven Tools.",
+    "You can connect to:",
+    "Constant Contact",
+    "AWeber",
+    "MailChimp",
+    "Emma",
+    "Campaign Monitor",
+    "This tool allows you to create and optimize content which you can then publish on your site. You can also sync this feature with your WordPress account and use it to order bespoke content from Textbroker.",
+    "Raven Tools’ content manager feature is a hub where you can store and organize your content for your campaigns.",
+    "You can either use the tool to create content or copy and paste your existing content into it. To get started, click “Add Content.”",
+    "Then, you add an author and a title and start typing or pasting your content.",
+    "To be honest, I’d recommend writing your content first and then copying it over.",
+    "Raven Tools’ content tool is VERY basic and it can slow down the writing process quite a bit.",
+    "When you’ve written or pasted your content, you scroll down and add a meta description. The tool then gives you a preview of what that’ll look like in the SERPs.",
+    "That’s a neat little touch. Usually, you need to use a separate tool to get a SERP preview like that.",
+    "Next, you can add some tags and some keywords. This helps you group your content with other relevant articles.",
+    "Then, you click “Save.”",
+    "You’ll then see a preview of your content and you can also view it as HTML.",
+    "This isn’t exactly the flashiest feature that Raven Tools offers but it’s handy for keeping your content neatly grouped and organized.",
+    "You can use this feature to publish content directly from Raven Tools to your WordPress site. It helps you to organize your content and keep it stored in the same place.",
+    "This feature allows you to order content from a freelance writing service called Textbroker.",
+    "This is a great way to save yourself time when it comes to content creation.",
+    "Still, you’ll need to factor the expense of Textbroker into your budget if you plan to use it.",
+    "The nice thing about this feature is that you don’t need to communicate directly with Textbroker.",
+    "You simply fill in the form that Raven Tools gives you and you’ll be given an estimated price for your content.",
+    "The form allows you to add:",
+    "A language",
+    "A category",
+    "A title",
+    "A description",
+    "Target keywords",
+    "Minimum and maximum word count",
+    "The order date",
+    "Raven Tools has a feature that generates WYSIWYG (What You See Is What You Get) reports.",
+    "These are reports that break down all of the data Raven Tools gathers for you into different sections.",
+    "You can use them to keep track of your site’s progress.",
+    "Or, you can present them to your clients to show them the work you’ve been doing for their domains.",
+    "To create your report, click “New Report.”",
+    "Then you can either build your own custom report by clicking “Add More Metrics” or you can use a pre-made template.",
+    "The templates are white-label reports created by Raven Tools that can then be re-branded.",
+    "I chose to build my own report.",
+    "When you click, “Add More Metrics” you’ll see all the metrics you can add to your report.",
+    "I started with Google Analytics.",
+    "This is part of the Google Analytics section of my report.",
+    "To brand your report click “Add Logo”.",
+    "If you click “Report Settings” then you can alter things like the frequency of the reports and the time period.",
+    "Finally, you can choose to email the report to a client or publish the report.",
+    "Once you’ve published it, you can view it and export it as a PDF.",
+    "WYSIWYG reports are SUPER useful.",
+    "You can edit them as you go so that there’s no back-and-forth between you and the client once the report is published.",
+    "This saves you plenty of time and hassle.",
+    "The fact you can customize and brand your reports is great too…",
+    "Raven Tools’ pricing is split into five different plans:",
+    "Small Biz",
+    "Start",
+    "Grow",
+    "Thrive",
+    "Lead",
+    "It’s pretty affordable when compared to other tools out there.",
+    "So, how much do the plans cost and what do you get with each one?",
+    "$49/month when paid monthly",
+    "$39/month when paid annually",
+    "1,500 position checks",
+    "2 users",
+    "2 domains/campaigns",
+    "$109/month when paid monthly",
+    "$79/month when paid monthly",
+    "15,000 position checks",
+    "4 users",
+    "20 domains/campaigns",
+    "$199/month when paid monthly",
+    "$139/month when paid annually",
+    "20,000 position checks",
+    "8 users",
+    "80 domains/campaigns",
+    "$299/month when paid monthly",
+    "$249/month when paid annually",
+    "25,000 position checks",
+    "20 users",
+    "160 domains/campaigns",
+    "$479/month when paid monthly",
+    "$399/month when paid annually",
+    "30,000 position checks",
+    "40 users",
+    "320 domains/campaigns",
+    "It’s easy to set up",
+    "Allows scheduling of reports",
+    "Integrates with many other platforms such as Google Analytics which means it’s perfect for managing multiple campaigns from one tool",
+    "Affordable",
+    "A 7-day free trial that doesn’t require any credit card details when you sign up",
+    "Certain features are confusing to navigate",
+    "The ability to customize reports is limited",
+    "Its features aren’t as powerful as some competitors like Semrush",
+    "There aren’t many guides within Raven Tools on how to use the features",
+    "Semrush offers much more comprehensive features than Raven Tools",
+    "Semrush’s Backlink Gap, Backlink Analytics, and Link Building Tool make it a much better choice than Raven Tools for link building",
+    "Semrush’s full Keyword Research Suite, including the Keyword Magic Tool, also make it far superior when it comes to keyword research",
+    "Although Raven Tools’ Content Manager is alright for creating content, Semrush offers an AI Writing Assistant that speeds up the process. Plus, Semrush’s Content Marketing Tool gives you access to SEO Content Templates, an SEO Writing Assistant, and an in-depth Topic Research tool.",
+    "Semrush’s Site Audit Tool is far more detailed than Raven Tools. It gives you data on vital metrics like crawlability and core web vitals.",
+    "Semrush also allows you to create more insightful reports than Raven Tools. The My Reports feature lets you customize every aspect of your reports. Plus, like with Raven Tools’ WYSIWYG reports, you can white-label and brand them.",
+    "Both tools are good for social media management but Semrush offers more functionality Semrush is more suited to businesses and marketers looking for an all-in-one toolset with advanced features",
+    "Raven Tools is best suited to small to medium-sized businesses or marketers on a budget",
+    "Raven Tools’ cheapest plan starts at $39 per month (paid annually) and Semrush’s cheapest plan starts at $108.33 per month (paid annually)",
+    "Raven Tools has less advanced features and data depth than Moz Pro",
+    "Raven Tools is a simpler tool with fairly basic SEO and marketing capabilities",
+    "Moz Pro is more expensive than Raven Tools. Its cheapest plan starts at $79 per month (paid annually)",
+    "SpyFu is better at competitive analysis than Raven Tools. It allows users to spy on their competitors’ keywords, ad campaigns, and SEO strategies in great detail",
+    "SpyFu also offers more in-depth competitor insights than Raven Tools",
+    "SpyFu is easier to navigate than Raven Tools and the tool has helpful guides for every feature",
+    "SpyFu is even more affordable than Raven Tools. Its cheapest plan starts at $16 per month (paid annually)",
+    "Raven Tools offers customer support via email. The email address to use is help@raventools.com.",
+    "Raven Tools doesn’t appear to have a phone number for its support team. Still, most of the reviews online for Raven Tools’ customer support team are positive. They tend to focus on the fact that the team is fairly responsive and usually knows how to resolve the issues customers have.",
+    "Yes, Raven Tools offers a 7-day free trial. Unlike many SEO tools, Raven Tools doesn’t require any credit card details when you sign up for the trial.",
+    "The trial itself is also pretty generous. You can use all of the Raven Tools features and the credit limits you receive for each feature are quite high.",
+    "Raven Tools integrates with:",
+    "LinkedIn",
+    "Bing Ads",
+    "Bing Webmaster Tools",
+    "Constant Contact",
+    "Campaign Monitor",
+    "Mailchimp",
+    "Google Ads",
+    "Google Analytics",
+    "Facebook",
+    "Facebook Ads",
+    "Google Search Console",
+    "Twitter",
+    "Zapier",
+    "YouTube",
+    "Backlinko is owned by Semrush. We’re still obsessed with bringing you world-class SEO insights, backed by hands-on experience. Unless otherwise noted, this content was written by either an employee or paid contractor of Semrush Inc."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Cookie Policy.",
+      "href": "https://www.semrush.com/company/legal/cookie-policy/"
+    },
+    {
+      "label": "Allow all cookies",
+      "href": null
+    },
+    {
+      "label": "Deny all",
+      "href": null
+    },
+    {
+      "label": "Cookie settings",
+      "href": null
+    },
+    {
+      "label": "Watch Now",
+      "href": "https://www.youtube.com/watch?v=rIGzcovF6cM"
+    },
+    {
+      "label": "Close",
+      "href": null
+    },
+    {
+      "label": "Articles",
+      "href": null
+    },
+    {
+      "label": "Tools",
+      "href": null
+    },
+    {
+      "label": "Templates",
+      "href": "/templates/marketing"
+    },
+    {
+      "label": "About",
+      "href": "/about-backlinko"
+    },
+    {
+      "label": "Newsletter",
+      "href": "/newsletter"
+    },
+    {
+      "label": "Check My Site's SEO",
+      "href": null
+    },
+    {
+      "label": "Close",
+      "href": null
+    },
+    {
+      "label": "Free access",
+      "href": "https://www.semrush.com/blog/what-can-i-do-with-a-free-account-from-semrush/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=navigation"
+    },
+    {
+      "label": "Backlinko Team",
+      "href": "/blog/authors/backlinko-team"
+    },
+    {
+      "label": "What Is Raven Tools?",
+      "href": "#what-is-raven-tools"
+    },
+    {
+      "label": "Raven Tools Features",
+      "href": "#raven-tools-features"
+    },
+    {
+      "label": "Raven Tools Pricing",
+      "href": "#raven-tools-pricing"
+    },
+    {
+      "label": "Raven Tools Pros and Cons",
+      "href": "#raven-tools-pros-and-cons"
+    },
+    {
+      "label": "Raven Tools Vs Competitors",
+      "href": "#raven-tools-vs-competitors"
+    },
+    {
+      "label": "FAQs",
+      "href": "#fa-qs"
+    },
+    {
+      "label": "analysis",
+      "href": "https://backlinko.com/conduct-keyword-analysis"
+    },
+    {
+      "label": "backlinks",
+      "href": "https://backlinko.com/hub/seo/backlinks"
+    },
+    {
+      "label": "SEO site audits",
+      "href": "https://backlinko.com/tools/seo-checker"
+    },
+    {
+      "label": "Redirects",
+      "href": "https://backlinko.com/redirects"
+    },
+    {
+      "label": "Google Analytics 4",
+      "href": "https://backlinko.com/google-analytics-4"
+    },
+    {
+      "label": "Rank Tracking tool",
+      "href": "https://backlinko.com/best-rank-tracking-tools"
+    },
+    {
+      "label": "keywords are performing",
+      "href": "https://backlinko.com/hub/seo/seo-keywords"
+    },
+    {
+      "label": "ranking in the SERPs",
+      "href": "https://backlinko.com/hub/seo/serps"
+    },
+    {
+      "label": "Google Search Console",
+      "href": "https://backlinko.com/google-search-console"
+    },
+    {
+      "label": "CTR",
+      "href": "https://backlinko.com/hub/seo/organic-ctr"
+    },
+    {
+      "label": "meta titles and meta descriptions",
+      "href": "https://backlinko.com/hub/seo/meta-descriptions"
+    },
+    {
+      "label": "meet the user’s search intent",
+      "href": "https://backlinko.com/hub/seo/search-intent"
+    },
+    {
+      "label": "rich snippets",
+      "href": "https://backlinko.com/hub/seo/snippets"
+    },
+    {
+      "label": "bad backlink",
+      "href": "https://backlinko.com/bad-backlinks"
+    },
+    {
+      "label": "Semrush’s Backlink Audit",
+      "href": "https://www.semrush.com/backlink_audit/"
+    },
+    {
+      "label": "Analysis tools",
+      "href": "https://www.semrush.com/analytics/backlinks/?utm_campaign=raven-tools-guide&utm_source=backlinko.com&utm_medium=referral"
+    },
+    {
+      "label": "discover high-quality backlinks",
+      "href": "https://backlinko.com/high-quality-backlinks"
+    },
+    {
+      "label": "bounce rates",
+      "href": "https://backlinko.com/hub/seo/bounce-rate"
+    },
+    {
+      "label": "user experience signals",
+      "href": "https://backlinko.com/hub/seo/ux"
+    },
+    {
+      "label": "perform a backlink audit",
+      "href": "https://backlinko.com/step-by-step-backlink-audit"
+    },
+    {
+      "label": "Nofollow links",
+      "href": "https://backlinko.com/nofollow-link"
+    },
+    {
+      "label": "link building",
+      "href": "https://backlinko.com/link-building"
+    },
+    {
+      "label": "content strategies",
+      "href": "https://backlinko.com/hub/content/content-strategy"
+    },
+    {
+      "label": "organize your keyword research",
+      "href": "https://backlinko.com/tools/keyword"
+    },
+    {
+      "label": "Facebook insight statistics",
+      "href": "https://backlinko.com/facebook-ads-stats"
+    },
+    {
+      "label": "Semrush",
+      "href": "https://backlinko.com/hub/seo/semrush"
+    },
+    {
+      "label": "Semrush’s Backlink Gap",
+      "href": "https://www.semrush.com/analytics/gap/backlinks/"
+    },
+    {
+      "label": "Backlink Analytics",
+      "href": "https://www.semrush.com/analytics/backlinks/"
+    },
+    {
+      "label": "Link Building Tool",
+      "href": "https://www.semrush.com/link_building/?utm_campaign=raven-tools-guide&utm_source=backlinko.com&utm_medium=referral"
+    },
+    {
+      "label": "AI Writing",
+      "href": "https://backlinko.com/ai-for-writing"
+    },
+    {
+      "label": "Semrush’s Site Audit Tool",
+      "href": "https://www.semrush.com/siteaudit/?utm_campaign=raven-tools-guide&utm_source=backlinko.com&utm_medium=referral"
+    },
+    {
+      "label": "core web vitals",
+      "href": "https://backlinko.com/hub/seo/core-web-vitals"
+    },
+    {
+      "label": "Moz Pro",
+      "href": "https://backlinko.com/hub/seo/moz-pro"
+    },
+    {
+      "label": "competitors’ keywords",
+      "href": "https://backlinko.com/find-competitors-keywords"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Newsletter",
+      "href": "/newsletter"
+    },
+    {
+      "label": "Templates",
+      "href": "https://backlinko.com/templates/marketing"
+    },
+    {
+      "label": "Best SEO Tools",
+      "href": "/best-free-seo-tools"
+    },
+    {
+      "label": "About",
+      "href": "/about-backlinko"
+    },
+    {
+      "label": "Semrush AI Visiblity",
+      "href": "https://www.semrush.com/ai-seo/overview/"
+    },
+    {
+      "label": "Semrush Free Trial",
+      "href": "https://backlinko.com/deals/semrush-coupon"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    },
+    {
+      "label": "Twitter",
+      "href": "https://twitter.com/backlinko"
+    },
+    {
+      "label": "YouTube",
+      "href": "https://www.youtube.com/@BacklinkoTeam"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/briandean/"
+    },
+    {
+      "label": "Terms of Service",
+      "href": "https://www.semrush.com/company/legal/terms-of-service/?utm_source=backlinko.com&utm_medium=referral"
+    }
+  ],
+  "links": [
+    "https://www.semrush.com/company/legal/cookie-policy/",
+    "https://backlinko.com/raven-tools-guide#",
+    "https://www.youtube.com/watch?v=rIGzcovF6cM",
+    "https://backlinko.com/",
+    "https://backlinko.com/ai-search-strategy",
+    "https://backlinko.com/llm-seeding",
+    "https://backlinko.com/generative-engine-optimization-geo",
+    "https://backlinko.com/hub/seo/what-is-seo",
+    "https://backlinko.com/improve-your-seo",
+    "https://backlinko.com/seo-checklist",
+    "https://backlinko.com/seo-strategy",
+    "https://backlinko.com/?p=165994",
+    "https://backlinko.com/google-e-e-a-t",
+    "https://backlinko.com/hub/seo/internal-links",
+    "https://backlinko.com/technical-seo-guide",
+    "https://backlinko.com/on-page-seo",
+    "https://backlinko.com/ecommerce-seo",
+    "https://backlinko.com/seo-certification-guide",
+    "https://backlinko.com/ai-optimization",
+    "https://backlinko.com/ai-seo",
+    "https://backlinko.com/entity-seo",
+    "https://backlinko.com/audience-research",
+    "https://backlinko.com/reddit-marketing",
+    "https://backlinko.com/?p=193164",
+    "https://backlinko.com/answer-engine-optimization-aeo",
+    "https://backlinko.com/seo-basics-for-beginners",
+    "https://backlinko.com/seo-tutorial",
+    "https://backlinko.com/pillar-pages",
+    "https://backlinko.com/?p=175006",
+    "https://backlinko.com/actionable-seo-tips",
+    "https://backlinko.com/small-business-seo",
+    "https://backlinko.com/schema-markup-guide",
+    "https://backlinko.com/website-migration-checklist",
+    "https://backlinko.com/hub/content/what-is-content-marketing",
+    "https://backlinko.com/seo-copywriting",
+    "https://backlinko.com/?p=103911",
+    "https://backlinko.com/content-marketing-this-year",
+    "https://backlinko.com/?p=190262",
+    "https://backlinko.com/?p=172343",
+    "https://backlinko.com/scale-content",
+    "https://backlinko.com/hub/content/writing",
+    "https://backlinko.com/link-building",
+    "https://backlinko.com/hub/seo/backlinks",
+    "https://backlinko.com/high-quality-backlinks",
+    "https://backlinko.com/link-building-strategies",
+    "https://backlinko.com/link-building-services",
+    "https://backlinko.com/step-by-step-backlink-audit",
+    "https://backlinko.com/skyscraper-technique",
+    "https://backlinko.com/increase-domain-authority",
+    "https://backlinko.com/competitor-analysis",
+    "https://backlinko.com/?p=173056",
+    "https://backlinko.com/?p=174557",
+    "https://backlinko.com/how-to-create-a-website",
+    "https://backlinko.com/tools/seo-checker",
+    "https://backlinko.com/tools/backlink-checker",
+    "https://backlinko.com/tools/website-authority",
+    "https://backlinko.com/tools/website-traffic-checker",
+    "https://backlinko.com/tools/keyword",
+    "https://backlinko.com/tools/keyword-difficulty-checker",
+    "https://backlinko.com/tools/competitor-analysis",
+    "https://backlinko.com/tools/schema-markup-generator",
+    "https://backlinko.com/tools/ai-visibility-checker",
+    "https://backlinko.com/tools/ai-agent-readiness",
+    "https://backlinko.com/tools/agentic-browsing-readiness",
+    "https://backlinko.com/best-free-seo-tools",
+    "https://backlinko.com/llm-tracking-tools",
+    "https://backlinko.com/keyword-research-tools",
+    "https://backlinko.com/?p=98736",
+    "https://backlinko.com/link-building-tools",
+    "https://backlinko.com/best-rank-tracking-tools",
+    "https://backlinko.com/?p=171633",
+    "https://backlinko.com/seo-software-agencies",
+    "https://backlinko.com/ai-seo-tools",
+    "https://backlinko.com/sitemap-generator-tools",
+    "https://backlinko.com/best-digital-marketing-tools",
+    "https://backlinko.com/?p=170722",
+    "https://backlinko.com/semrush-review",
+    "https://backlinko.com/ahrefs-review",
+    "https://backlinko.com/ahrefs-vs-semrush",
+    "https://backlinko.com/clearscope-review",
+    "https://backlinko.com/majestic-seo-review",
+    "https://backlinko.com/surfer-seo",
+    "https://backlinko.com/serpstat-review",
+    "https://backlinko.com/sparktoro-review",
+    "https://backlinko.com/templates/marketing",
+    "https://backlinko.com/about-backlinko",
+    "https://backlinko.com/newsletter",
+    "https://www.semrush.com/blog/what-can-i-do-with-a-free-account-from-semrush/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=navigation",
+    "https://backlinko.com/blog/authors/backlinko-team",
+    "https://backlinko.com/raven-tools-guide#what-is-raven-tools",
+    "https://backlinko.com/raven-tools-guide#raven-tools-features",
+    "https://backlinko.com/raven-tools-guide#raven-tools-pricing",
+    "https://backlinko.com/raven-tools-guide#raven-tools-pros-and-cons",
+    "https://backlinko.com/raven-tools-guide#raven-tools-vs-competitors",
+    "https://backlinko.com/raven-tools-guide#fa-qs",
+    "https://backlinko.com/conduct-keyword-analysis",
+    "https://backlinko.com/redirects",
+    "https://backlinko.com/google-analytics-4",
+    "https://backlinko.com/hub/seo/seo-keywords",
+    "https://backlinko.com/hub/seo/serps",
+    "https://backlinko.com/google-search-console",
+    "https://backlinko.com/hub/seo/organic-ctr",
+    "https://backlinko.com/hub/seo/meta-descriptions",
+    "https://backlinko.com/hub/seo/search-intent",
+    "https://backlinko.com/hub/seo/snippets",
+    "https://backlinko.com/bad-backlinks",
+    "https://www.semrush.com/backlink_audit/",
+    "https://www.semrush.com/analytics/backlinks/?utm_campaign=raven-tools-guide&utm_source=backlinko.com&utm_medium=referral",
+    "https://backlinko.com/hub/seo/bounce-rate",
+    "https://backlinko.com/hub/seo/ux",
+    "https://backlinko.com/nofollow-link",
+    "https://backlinko.com/hub/content/content-strategy",
+    "https://backlinko.com/facebook-ads-stats",
+    "https://backlinko.com/hub/seo/semrush",
+    "https://www.semrush.com/analytics/gap/backlinks/",
+    "https://www.semrush.com/analytics/backlinks/",
+    "https://www.semrush.com/link_building/?utm_campaign=raven-tools-guide&utm_source=backlinko.com&utm_medium=referral",
+    "https://backlinko.com/ai-for-writing",
+    "https://www.semrush.com/siteaudit/?utm_campaign=raven-tools-guide&utm_source=backlinko.com&utm_medium=referral",
+    "https://backlinko.com/hub/seo/core-web-vitals",
+    "https://backlinko.com/hub/seo/moz-pro",
+    "https://backlinko.com/find-competitors-keywords",
+    "https://twitter.com/share?text=An%20In-Depth%20Guide%20To%20Raven%20Tools&url=https%3A%2F%2Fbacklinko.com%2Fraven-tools-guide&via=Backlinko",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbacklinko.com%2Fraven-tools-guide",
+    "https://www.reddit.com/submit?url=https%3A%2F%2Fbacklinko.com%2Fraven-tools-guide&title=An%20In-Depth%20Guide%20To%20Raven%20Tools",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fbacklinko.com%2Fraven-tools-guide&summary=An%20In-Depth%20Guide%20To%20Raven%20Tools",
+    "https://backlinko.com/blog",
+    "https://www.semrush.com/ai-seo/overview/",
+    "https://backlinko.com/deals/semrush-coupon",
+    "https://backlinko.com/contact",
+    "https://twitter.com/backlinko",
+    "https://www.youtube.com/@BacklinkoTeam",
+    "https://www.instagram.com/briandean/",
+    "https://www.semrush.com/company/legal/terms-of-service/?utm_source=backlinko.com&utm_medium=referral",
+    "https://www.semrush.com/company/legal/privacy-policy/?utm_source=backlinko.com&utm_medium=referral"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://backlinko.com/_next/image?url=https%3A%2F%2Fapi.backlinko.com%2Fapp%2Fuploads%2F2024%2F01%2Fteam-avatar.jpg&w=640&q=75",
+        "alt": "team-avatar",
+        "w": 140,
+        "h": 140
+      },
+      {
+        "src": "https://backlinko.com/_next/image?url=https%3A%2F%2Fapi.backlinko.com%2Fapp%2Fuploads%2F2023%2F08%2Fraven-tools-featured-image-1.png&w=1080&q=75",
+        "alt": "Raven Tools – Featured image",
+        "w": 960,
+        "h": 536
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/05/raventools-pages-768x420.webp",
+        "alt": "RavenTools – Pages",
+        "w": 700,
+        "h": 382
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/05/raventools-search-analytics-position-768x438.webp",
+        "alt": "RavenTools – Search Analytics – Position",
+        "w": 700,
+        "h": 399
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/05/raventools-search-analytics-ctr-768x428.webp",
+        "alt": "RavenTools – Search Analytics – CTR",
+        "w": 700,
+        "h": 390
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/05/raventools-search-analytics-impressions-768x428.webp",
+        "alt": "RavenTools – Search Analytics – Impressions",
+        "w": 700,
+        "h": 390
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/05/raventools-keyword-research-seo-tools-overview-768x470.webp",
+        "alt": "Raven Tools – Keyword Research – SEO Tools – Overview",
+        "w": 700,
+        "h": 428
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/05/raventools-keyword-research-seo-tools-search-volume-768x252.webp",
+        "alt": "Raven Tools – Keyword Research – SEO Tools – Search Volume",
+        "w": 700,
+        "h": 229
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/05/raventools-keyword-research-seo-tools-competitors-768x515.webp",
+        "alt": "Raven Tools – Keyword Research – SEO Tools – Competitors",
+        "w": 700,
+        "h": 469
+      }
+    ],
+    "allImgCount": 67,
+    "cssBackgrounds": [],
+    "modals": [
+      "About cookies on this siteWe use cookies to run our website, analyze your use of our services, manage your online preferences & personalize ad content. By accepting our cookies, you'll get relevant content and social media features, personalized ads, and an enhanced browsing experience. To manage your choices, click “Cookie Settings.” Necessary cookies are required for the core website functionality and cannot be rejected. For more information, see ourCookie Policy.Allow all cookiesDeny allCookie settings"
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {
+    "--fa-font-solid": "normal 900 1em/1 \"Font Awesome 6 Free\"",
+    "--fa-font-regular": "normal 400 1em/1 \"Font Awesome 6 Free\"",
+    "--fa-font-light": "normal 300 1em/1 \"Font Awesome 6 Pro\"",
+    "--fa-font-thin": "normal 100 1em/1 \"Font Awesome 6 Pro\"",
+    "--fa-font-duotone": "normal 900 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-regular": "normal 400 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-light": "normal 300 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-thin": "normal 100 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-brands": "normal 400 1em/1 \"Font Awesome 6 Brands\"",
+    "--fa-font-sharp-solid": "normal 900 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-regular": "normal 400 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-light": "normal 300 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-thin": "normal 100 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-duotone-solid": "normal 900 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-regular": "normal 400 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-light": "normal 300 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-thin": "normal 100 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--app-height": "100svh",
+    "--backlinko-bar-height": "62px",
+    "--sl-widgets-font-family": "-apple-system, system-ui",
+    "--sl-widgets-base-unit": "16px"
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 64,
+    "mainTextLen": 41597,
+    "realImageCount": 9,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "dev.visualwebsiteoptimizer.com",
+        "path": "/j.php",
+        "query": [
+          "a",
+          "ph",
+          "st",
+          "u",
+          "vn",
+          "x"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://dev.visualwebsiteoptimizer.com/j.php",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "region1.google-analytics.com",
+        "path": "/g/collect",
+        "query": [
+          "_eu",
+          "_fv",
+          "_nsi",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "cid",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dp",
+          "dt",
+          "en",
+          "ep.container_id",
+          "frm",
+          "gaf",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "status": 204,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://region1.google-analytics.com/g/collect",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "pagead2.googlesyndication.com",
+        "path": "/ccm/collect",
+        "query": [
+          "ae",
+          "apvc",
+          "dl",
+          "dma",
+          "dma_cps",
+          "en",
+          "ep.ads_data_redaction",
+          "fmt",
+          "frm",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "navt",
+          "npa",
+          "rcb",
+          "rnd",
+          "scrsrc",
+          "tag_exp",
+          "tfd",
+          "tft"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "status": 200,
+        "bytes": null,
+        "hits": 3,
+        "example": "https://pagead2.googlesyndication.com/ccm/collect",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "region-eu.cookiehub.net",
+        "path": "/",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 28,
+        "hits": 1,
+        "example": "https://region-eu.cookiehub.net/",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "cdn.cookiehub.eu",
+        "path": "/client/7417b56b/en.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://cdn.cookiehub.eu/client/7417b56b/en.json",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 37436,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 32592,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 44155,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 46515,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 56682,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 47134,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/backlinko-team.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 7363,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/backlinko-team.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 9032,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+        "query": [
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 6685,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 11235,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 9091,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 8253,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 15888,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 10392,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 15298,
+        "hits": 2,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "streaming.bi.owox.com",
+        "path": "/ga4/{hash}/g/collect",
+        "query": [
+          "_eu",
+          "_fplc",
+          "_fv",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "cid",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dp",
+          "dt",
+          "ecid",
+          "en",
+          "ep.container_id",
+          "ep.page_language",
+          "ep.user_agent",
+          "frm",
+          "gaf",
+          "gap.sstd",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "richsstsse",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "sst.etld",
+          "sst.gch",
+          "sst.gcsub",
+          "sst.lpc",
+          "sst.navt",
+          "sst.rnd",
+          "sst.tft",
+          "sst.ude",
+          "sst.us_privacy",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "ur",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/gif",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://streaming.bi.owox.com/ga4/9bb752a08674f116753ca5719dda03ed/g/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 26528,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 24460,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "rum-collector-2.pingdom.net",
+        "path": "/img/beacon.gif",
+        "query": [
+          "bIH",
+          "bIW",
+          "cE",
+          "cS",
+          "dC",
+          "dCLEE",
+          "dCLES",
+          "dI",
+          "dL",
+          "dLE",
+          "dLS",
+          "dPR",
+          "fS",
+          "hS",
+          "id",
+          "lEE",
+          "lES",
+          "nS",
+          "nT",
+          "or",
+          "pD",
+          "path",
+          "rC",
+          "rE",
+          "rS",
+          "rV",
+          "reS",
+          "ref",
+          "resE",
+          "resS",
+          "s",
+          "sAH",
+          "sAW",
+          "sIS",
+          "sId",
+          "sST",
+          "title",
+          "uEE",
+          "uES",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": null,
+        "status": 200,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://rum-collector-2.pingdom.net/img/beacon.gif",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 51691,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "www.semrush.com",
+        "path": "/olaf/init",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://www.semrush.com/olaf/init",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 56812,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 19793,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 20906,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 37803,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 44287,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "api.backlinko.com",
+        "path": "/wp-json/backlinkostats/v1/shares/{n}",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://api.backlinko.com/wp-json/backlinkostats/v1/shares/166086",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 43844,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "js.sparkloop.app",
+        "path": "/team_d05f5749d84d/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "status": 301,
+        "bytes": 167,
+        "hits": 1,
+        "example": "https://js.sparkloop.app/team_d05f5749d84d/settings",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "script-settings.sparkloop.app",
+        "path": "/team_d05f5749d84d/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://script-settings.sparkloop.app/team_d05f5749d84d/settings",
+        "sameSite": false
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "www.googletagmanager.com",
+        "count": 5
+      },
+      {
+        "host": "rum-static.pingdom.net",
+        "count": 2
+      },
+      {
+        "host": "cdn.cookiehub.eu",
+        "count": 1
+      },
+      {
+        "host": "js.sparkloop.app",
+        "count": 1
+      },
+      {
+        "host": "script.sparkloop.app",
+        "count": 1
+      },
+      {
+        "host": "www.semrush.com",
+        "count": 1
+      }
+    ],
+    "truncated": false,
+    "inlineData": [
+      {
+        "id": "__NEXT_DATA__",
+        "type": "application/json",
+        "bytes": 328286,
+        "topLevelKeys": [
+          "props",
+          "page",
+          "query",
+          "buildId",
+          "isFallback",
+          "isExperimentalCompile",
+          "gsp",
+          "scriptLoader"
+        ]
+      }
+    ],
+    "globalState": [
+      "__NEXT_DATA__",
+      "dataLayer"
+    ],
+    "frameworkHints": [
+      "next"
+    ],
+    "forms": [],
+    "ariaLiveRegions": 1,
+    "triggers": [
+      {
+        "marker": "aria-haspopup",
+        "href": null
+      }
+    ],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 26,
+      "thirdPartyEndpoints": 10,
+      "thirdPartyScriptHosts": 6,
+      "inlineDataBlobs": 1,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": true
+    }
+  },
+  "screenshot": "assets/screenshots/raven-tools-guide.png",
+  "renderedHtml": "pages/raven-tools-guide.html"
+}

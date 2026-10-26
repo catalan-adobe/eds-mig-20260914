@@ -1,0 +1,1972 @@
+{
+  "_provenance": {
+    "writtenBy": "skills/replica/scripts/measure.mjs",
+    "writtenAt": "2026-10-26T15:01:38.484Z",
+    "urls": [
+      "https://backlinko.com/"
+    ],
+    "widths": [
+      1440,
+      360
+    ],
+    "selectors": [
+      "header",
+      ".header-new",
+      ".header-new nav",
+      ".header-new nav > ul > li > a",
+      ".header-new nav > ul > li > button",
+      "main > section:nth-of-type(1)",
+      "main > section:nth-of-type(1) h2",
+      "main > section:nth-of-type(1) h1",
+      "main > section:nth-of-type(1) blockquote p",
+      "main > section:nth-of-type(1) cite",
+      "main > section:nth-of-type(1) input[type=email]",
+      "main > section:nth-of-type(1) button[type=submit]",
+      "main > section:nth-of-type(2)",
+      "article.css-10svfql",
+      "article.css-10svfql h3",
+      "article.css-10svfql > a > div",
+      "article.css-1gmoqx4",
+      "article.css-1gmoqx4 h3",
+      "article.css-1gmoqx4 img",
+      "main > section:nth-of-type(3)",
+      ".css-r6z6n4 h2",
+      ".css-r6z6n4 p",
+      ".css-1gmiqn5"
+    ],
+    "props": [
+      "display",
+      "position",
+      "boxSizing",
+      "width",
+      "height",
+      "maxWidth",
+      "margin",
+      "padding",
+      "gap",
+      "backgroundColor",
+      "backgroundImage",
+      "color",
+      "fontFamily",
+      "fontSize",
+      "fontWeight",
+      "lineHeight",
+      "letterSpacing",
+      "textTransform",
+      "textAlign",
+      "borderRadius",
+      "border",
+      "boxShadow",
+      "opacity",
+      "objectFit"
+    ],
+    "allMatches": false,
+    "failed": [],
+    "warnings": []
+  },
+  "widths": [
+    1440,
+    360
+  ],
+  "selectors": [
+    "header",
+    ".header-new",
+    ".header-new nav",
+    ".header-new nav > ul > li > a",
+    ".header-new nav > ul > li > button",
+    "main > section:nth-of-type(1)",
+    "main > section:nth-of-type(1) h2",
+    "main > section:nth-of-type(1) h1",
+    "main > section:nth-of-type(1) blockquote p",
+    "main > section:nth-of-type(1) cite",
+    "main > section:nth-of-type(1) input[type=email]",
+    "main > section:nth-of-type(1) button[type=submit]",
+    "main > section:nth-of-type(2)",
+    "article.css-10svfql",
+    "article.css-10svfql h3",
+    "article.css-10svfql > a > div",
+    "article.css-1gmoqx4",
+    "article.css-1gmoqx4 h3",
+    "article.css-1gmoqx4 img",
+    "main > section:nth-of-type(3)",
+    ".css-r6z6n4 h2",
+    ".css-r6z6n4 p",
+    ".css-1gmiqn5"
+  ],
+  "root": {
+    "https://backlinko.com/": {
+      "360": {
+        "viewport": 360,
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "scrollHeight": 9404,
+        "overflowX": 0
+      },
+      "1440": {
+        "viewport": 1440,
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "scrollHeight": 6678,
+        "overflowX": 0
+      }
+    }
+  },
+  "pages": {
+    "https://backlinko.com/": {
+      "360": {
+        "header": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 0,
+              "y": 111,
+              "w": 360,
+              "h": 60
+            },
+            "visible": true,
+            "text": "Menu",
+            "props": {
+              "display": "block",
+              "position": "relative",
+              "boxSizing": "border-box",
+              "width": "360px",
+              "height": "60px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".header-new": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 110,
+              "w": 360,
+              "h": 61
+            },
+            "visible": true,
+            "text": "Menu",
+            "props": {
+              "display": "block",
+              "position": "relative",
+              "boxSizing": "border-box",
+              "width": "360px",
+              "height": "61px",
+              "maxWidth": "none",
+              "margin": "-1px 0px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".header-new nav": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "ArticlesArticlesPopularAI SearchSEO Fun…",
+            "props": {
+              "display": "none",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".header-new nav > ul > li > a": [
+          {
+            "index": 0,
+            "of": 6,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "Templates",
+            "props": {
+              "display": "flex",
+              "position": "relative",
+              "boxSizing": "border-box",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px 9px",
+              "padding": "0px 5.33333px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".header-new nav > ul > li > button": [
+          {
+            "index": 0,
+            "of": 4,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "Articles",
+            "props": {
+              "display": "flex",
+              "position": "relative",
+              "boxSizing": "border-box",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px 9px 0px 0px",
+              "padding": "0px 5.33333px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main > section:nth-of-type(1)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 171,
+              "w": 360,
+              "h": 657
+            },
+            "visible": true,
+            "text": "WELCOME TO BACKLINKO Learn How to Win i…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "360px",
+              "height": "656.812px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "32.4px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main > section:nth-of-type(1) h2": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 20,
+              "y": 221,
+              "w": 320,
+              "h": 22
+            },
+            "visible": true,
+            "text": "WELCOME TO BACKLINKO",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "320px",
+              "height": "22.0938px",
+              "maxWidth": "none",
+              "margin": "0px 0px 15px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 188, 152)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+              "fontSize": "17px",
+              "fontWeight": "700",
+              "lineHeight": "22.1px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 188, 152)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main > section:nth-of-type(1) h1": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 20,
+              "y": 258,
+              "w": 320,
+              "h": 143
+            },
+            "visible": true,
+            "text": "Learn How to Win in the Future of AI Se…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "320px",
+              "height": "142.781px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+              "fontSize": "34px",
+              "fontWeight": "800",
+              "lineHeight": "47.6px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main > section:nth-of-type(1) blockquote p": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "“I thought the blog was good. But the n…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(29, 43, 53)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "25.6px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(29, 43, 53)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main > section:nth-of-type(1) cite": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "Kieran Flanagan, SVP Marketing at HubSp…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "auto",
+              "height": "auto",
+              "maxWidth": "none",
+              "margin": "10px 0px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(29, 43, 53)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "25.6px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(29, 43, 53)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main > section:nth-of-type(1) input[type=email]": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 20,
+              "y": 464,
+              "w": 320,
+              "h": 61
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "320px",
+              "height": "60.7812px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "16.8px 19.2px",
+              "gap": "normal",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "25.2px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "6px",
+              "border": "1px solid rgb(204, 211, 232)",
+              "boxShadow": "rgba(0, 0, 0, 0.075) 0px 1px 1px 0px inset",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main > section:nth-of-type(1) button[type=submit]": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 20,
+              "y": 535,
+              "w": 320,
+              "h": 61
+            },
+            "visible": true,
+            "text": "Try It",
+            "props": {
+              "display": "inline-flex",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "320px",
+              "height": "60.7812px",
+              "maxWidth": "none",
+              "margin": "10px 0px 0px",
+              "padding": "16.8px 19.2px",
+              "gap": "normal",
+              "backgroundColor": "rgb(0, 188, 152)",
+              "backgroundImage": "none",
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "600",
+              "lineHeight": "25.2px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "6px",
+              "border": "1px solid rgb(0, 188, 152)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main > section:nth-of-type(2)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 828,
+              "w": 360,
+              "h": 843
+            },
+            "visible": true,
+            "text": "How to Create an Effective SEO Strategy…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "360px",
+              "height": "843.031px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "32.4px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "article.css-10svfql": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 20,
+              "y": 903,
+              "w": 320,
+              "h": 343
+            },
+            "visible": true,
+            "text": "How to Create an Effective SEO Strategy…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "320px",
+              "height": "343.469px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "32.4px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "article.css-10svfql h3": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 20,
+              "y": 1086,
+              "w": 320,
+              "h": 62
+            },
+            "visible": true,
+            "text": "How to Create an Effective SEO Strategy…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "320px",
+              "height": "62.375px",
+              "maxWidth": "none",
+              "margin": "0px 0px 8px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+              "fontSize": "24px",
+              "fontWeight": "800",
+              "lineHeight": "31.2px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "article.css-10svfql > a > div": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 20,
+              "y": 1156,
+              "w": 320,
+              "h": 54
+            },
+            "visible": true,
+            "text": "Ranking isn’t enough. This SEO strategy…",
+            "props": {
+              "display": "flow-root",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "320px",
+              "height": "54px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(100, 101, 104)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "15px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(100, 101, 104)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "article.css-1gmoqx4": [
+          {
+            "index": 0,
+            "of": 15,
+            "rect": {
+              "x": 20,
+              "y": 1274,
+              "w": 320,
+              "h": 73
+            },
+            "visible": true,
+            "text": "12 Best SEO Tools for 2026 (Used by Our…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "320px",
+              "height": "73.0938px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "32.4px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "article.css-1gmoqx4 h3": [
+          {
+            "index": 0,
+            "of": 15,
+            "rect": {
+              "x": 176,
+              "y": 1280,
+              "w": 164,
+              "h": 62
+            },
+            "visible": true,
+            "text": "12 Best SEO Tools for 2026 (Used by Our…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "164px",
+              "height": "62.3906px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+              "fontSize": "16px",
+              "fontWeight": "600",
+              "lineHeight": "20.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "article.css-1gmoqx4 img": [
+          {
+            "index": 0,
+            "of": 15,
+            "rect": {
+              "x": 20,
+              "y": 1274,
+              "w": 140,
+              "h": 73
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "140px",
+              "height": "73.0938px",
+              "maxWidth": "100%",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(187, 74, 3)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "32.4px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(187, 74, 3)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 360,
+              "naturalHeight": 188,
+              "currentSrc": "https://api.backlinko.com/app/uploads/2020/04/best-free-seo-tools-960x502.webp"
+            }
+          }
+        ],
+        "main > section:nth-of-type(3)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 1671,
+              "w": 360,
+              "h": 740
+            },
+            "visible": true,
+            "text": "Editor’s Picks Our best articles and gu…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "360px",
+              "height": "739.953px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "32.4px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".css-r6z6n4 h2": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 20,
+              "y": 1746,
+              "w": 320,
+              "h": 45
+            },
+            "visible": true,
+            "text": "Editor’s Picks",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "320px",
+              "height": "44.7969px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+              "fontSize": "32px",
+              "fontWeight": "800",
+              "lineHeight": "44.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".css-r6z6n4 p": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 20,
+              "y": 1807,
+              "w": 320,
+              "h": 77
+            },
+            "visible": true,
+            "text": "Our best articles and guides on all thi…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "320px",
+              "height": "76.5px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "25.5px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".css-1gmiqn5": [
+          {
+            "index": 0,
+            "of": 12,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "visible": false,
+            "text": "ArticlesPopularAI SearchSEO Fundamental…",
+            "props": {
+              "display": "flex",
+              "position": "relative",
+              "boxSizing": "border-box",
+              "width": "100%",
+              "height": "100%",
+              "maxWidth": "none",
+              "margin": "0px auto",
+              "padding": "0px 20px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ]
+      },
+      "1440": {
+        "header": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 0,
+              "y": 62,
+              "w": 1440,
+              "h": 80
+            },
+            "visible": true,
+            "text": "Articles Tools Templates About Newslett…",
+            "props": {
+              "display": "block",
+              "position": "relative",
+              "boxSizing": "border-box",
+              "width": "1440px",
+              "height": "80px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".header-new": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 61,
+              "w": 1440,
+              "h": 81
+            },
+            "visible": true,
+            "text": "Articles Tools Templates About Newslett…",
+            "props": {
+              "display": "block",
+              "position": "relative",
+              "boxSizing": "border-box",
+              "width": "1440px",
+              "height": "81px",
+              "maxWidth": "none",
+              "margin": "-1px 0px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".header-new nav": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 536,
+              "y": 87,
+              "w": 504,
+              "h": 29
+            },
+            "visible": true,
+            "text": "Articles Tools Templates About Newslett…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "503.906px",
+              "height": "28.7969px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".header-new nav > ul > li > a": [
+          {
+            "index": 0,
+            "of": 6,
+            "rect": {
+              "x": 724,
+              "y": 87,
+              "w": 98,
+              "h": 29
+            },
+            "visible": true,
+            "text": "Templates",
+            "props": {
+              "display": "flex",
+              "position": "relative",
+              "boxSizing": "border-box",
+              "width": "98.2188px",
+              "height": "28.7969px",
+              "maxWidth": "none",
+              "margin": "0px 15px",
+              "padding": "0px 10px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".header-new nav > ul > li > button": [
+          {
+            "index": 0,
+            "of": 4,
+            "rect": {
+              "x": 526,
+              "y": 87,
+              "w": 77,
+              "h": 29
+            },
+            "visible": true,
+            "text": "Articles",
+            "props": {
+              "display": "flex",
+              "position": "relative",
+              "boxSizing": "border-box",
+              "width": "77.3438px",
+              "height": "28.7969px",
+              "maxWidth": "none",
+              "margin": "0px 15px 0px 0px",
+              "padding": "0px 10px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main > section:nth-of-type(1)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 142,
+              "w": 1440,
+              "h": 545
+            },
+            "visible": true,
+            "text": "WELCOME TO BACKLINKO Learn How to Win i…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1440px",
+              "height": "544.953px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "32.4px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main > section:nth-of-type(1) h2": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 470,
+              "y": 207,
+              "w": 500,
+              "h": 23
+            },
+            "visible": true,
+            "text": "WELCOME TO BACKLINKO",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "500px",
+              "height": "23.3906px",
+              "maxWidth": "none",
+              "margin": "0px 0px 15px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 188, 152)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+              "fontSize": "18px",
+              "fontWeight": "700",
+              "lineHeight": "23.4px",
+              "letterSpacing": "normal",
+              "textTransform": "uppercase",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 188, 152)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main > section:nth-of-type(1) h1": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 420,
+              "y": 245,
+              "w": 600,
+              "h": 112
+            },
+            "visible": true,
+            "text": "Learn How to Win in the Future of AI Se…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "600px",
+              "height": "112px",
+              "maxWidth": "none",
+              "margin": "0px -50px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+              "fontSize": "40px",
+              "fontWeight": "800",
+              "lineHeight": "56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main > section:nth-of-type(1) blockquote p": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 566,
+              "y": 408,
+              "w": 378,
+              "h": 51
+            },
+            "visible": true,
+            "text": "“I thought the blog was good. But the n…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "378px",
+              "height": "51.1875px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(29, 43, 53)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "25.6px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(29, 43, 53)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main > section:nth-of-type(1) cite": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 566,
+              "y": 470,
+              "w": 378,
+              "h": 26
+            },
+            "visible": true,
+            "text": "Kieran Flanagan, SVP Marketing at HubSp…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "378px",
+              "height": "25.5938px",
+              "maxWidth": "none",
+              "margin": "10px 0px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(29, 43, 53)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "25.6px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(29, 43, 53)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main > section:nth-of-type(1) input[type=email]": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 470,
+              "y": 561,
+              "w": 500,
+              "h": 61
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "500px",
+              "height": "60.7812px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "16.8px 19.2px",
+              "gap": "normal",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "25.2px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "6px",
+              "border": "1px solid rgb(204, 211, 232)",
+              "boxShadow": "rgba(0, 0, 0, 0.075) 0px 1px 1px 0px inset",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main > section:nth-of-type(1) button[type=submit]": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 800,
+              "y": 561,
+              "w": 170,
+              "h": 61
+            },
+            "visible": true,
+            "text": "Try It",
+            "props": {
+              "display": "flex",
+              "position": "absolute",
+              "boxSizing": "border-box",
+              "width": "170px",
+              "height": "60.7812px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "16.8px 19.2px",
+              "gap": "normal",
+              "backgroundColor": "rgb(0, 188, 152)",
+              "backgroundImage": "none",
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "600",
+              "lineHeight": "25.2px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "6px",
+              "border": "1px solid rgb(0, 188, 152)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main > section:nth-of-type(2)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 687,
+              "w": 1440,
+              "h": 579
+            },
+            "visible": true,
+            "text": "How to Create an Effective SEO Strategy…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1440px",
+              "height": "578.766px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "32.4px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "article.css-10svfql": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 160,
+              "y": 797,
+              "w": 540,
+              "h": 469
+            },
+            "visible": true,
+            "text": "How to Create an Effective SEO Strategy…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "540px",
+              "height": "468.766px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "32.4px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "article.css-10svfql h3": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 160,
+              "y": 1095,
+              "w": 540,
+              "h": 73
+            },
+            "visible": true,
+            "text": "How to Create an Effective SEO Strategy…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "540px",
+              "height": "72.7812px",
+              "maxWidth": "none",
+              "margin": "0px 0px 8px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+              "fontSize": "28px",
+              "fontWeight": "800",
+              "lineHeight": "36.4px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "article.css-10svfql > a > div": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 160,
+              "y": 1176,
+              "w": 540,
+              "h": 54
+            },
+            "visible": true,
+            "text": "Ranking isn’t enough. This SEO strategy…",
+            "props": {
+              "display": "flow-root",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "540px",
+              "height": "54px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(100, 101, 104)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "15px",
+              "fontWeight": "400",
+              "lineHeight": "27px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(100, 101, 104)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "article.css-1gmoqx4": [
+          {
+            "index": 0,
+            "of": 15,
+            "rect": {
+              "x": 740,
+              "y": 797,
+              "w": 540,
+              "h": 84
+            },
+            "visible": true,
+            "text": "12 Best SEO Tools for 2026 (Used by Our…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "540px",
+              "height": "83.5469px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "32.4px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "article.css-1gmoqx4 h3": [
+          {
+            "index": 0,
+            "of": 15,
+            "rect": {
+              "x": 916,
+              "y": 815,
+              "w": 364,
+              "h": 47
+            },
+            "visible": true,
+            "text": "12 Best SEO Tools for 2026 (Used by Our…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "364px",
+              "height": "46.7812px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+              "fontSize": "18px",
+              "fontWeight": "600",
+              "lineHeight": "23.4px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "article.css-1gmoqx4 img": [
+          {
+            "index": 0,
+            "of": 15,
+            "rect": {
+              "x": 740,
+              "y": 797,
+              "w": 160,
+              "h": 84
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "inline",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "160px",
+              "height": "83.5469px",
+              "maxWidth": "100%",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(187, 74, 3)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "32.4px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(187, 74, 3)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "cover"
+            },
+            "img": {
+              "naturalWidth": 960,
+              "naturalHeight": 502,
+              "currentSrc": "https://api.backlinko.com/app/uploads/2020/04/best-free-seo-tools-960x502.webp"
+            }
+          }
+        ],
+        "main > section:nth-of-type(3)": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 1266,
+              "w": 1440,
+              "h": 564
+            },
+            "visible": true,
+            "text": "Editor’s Picks Our best articles and gu…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1440px",
+              "height": "563.828px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "18px",
+              "fontWeight": "400",
+              "lineHeight": "32.4px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".css-r6z6n4 h2": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 160,
+              "y": 1376,
+              "w": 1120,
+              "h": 53
+            },
+            "visible": true,
+            "text": "Editor’s Picks",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1120px",
+              "height": "53.1875px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+              "fontSize": "38px",
+              "fontWeight": "800",
+              "lineHeight": "53.2px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".css-r6z6n4 p": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 160,
+              "y": 1445,
+              "w": 1120,
+              "h": 30
+            },
+            "visible": true,
+            "text": "Our best articles and guides on all thi…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1120px",
+              "height": "30px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "20px",
+              "fontWeight": "400",
+              "lineHeight": "30px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".css-1gmiqn5": [
+          {
+            "index": 0,
+            "of": 12,
+            "rect": {
+              "x": 60,
+              "y": 142,
+              "w": 1320,
+              "h": 758
+            },
+            "visible": false,
+            "text": "",
+            "props": {
+              "display": "flex",
+              "position": "relative",
+              "boxSizing": "border-box",
+              "width": "1320px",
+              "height": "758px",
+              "maxWidth": "1320px",
+              "margin": "0px 60px",
+              "padding": "0px 30px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "28.8px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

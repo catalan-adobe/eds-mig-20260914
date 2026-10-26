@@ -1,0 +1,166 @@
+{
+  "extensions": {
+    "breakpoints": {
+      "containerMaxWidth": "1140px",
+      "probeWidth": 2560,
+      "shellMaxWidth": null,
+      "caps": [
+        {
+          "kind": "module",
+          "px": 1140,
+          "via": "max-width",
+          "selector": "main.css-1avyp1d > section > div.css-17mdh0m > div.css-1gmiqn5",
+          "pages": [
+            "https://backlinko.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 760,
+          "via": "max-width",
+          "selector": "#find-keyword > div.css-1r9do01 > div.css-1gmiqn5 > div.css-93tl4h",
+          "pages": [
+            "https://backlinko.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 700,
+          "via": "max-width",
+          "selector": "section > div > div.css-1gmiqn5 > h2.css-h4jkju",
+          "pages": [
+            "https://backlinko.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 580,
+          "via": "fixed",
+          "selector": "div.css-1gmiqn5 > div > div.css-1aclb7b > div.css-yw0cdh",
+          "pages": [
+            "https://backlinko.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 540,
+          "via": "fixed",
+          "selector": "div.css-11utl4o > div > div.css-1o1v5h > div.css-1qe7gkt",
+          "pages": [
+            "https://backlinko.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 500,
+          "via": "max-width",
+          "selector": "section > div.css-17mdh0m > div.css-1gmiqn5 > div.css-14ccikl",
+          "pages": [
+            "https://backlinko.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 400,
+          "via": "max-width",
+          "selector": "div.css-1r9do01 > div.css-1gmiqn5 > div.css-93tl4h > div",
+          "pages": [
+            "https://backlinko.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 364,
+          "via": "fixed",
+          "selector": "div.css-yw0cdh > article.css-1gmoqx4 > a > h3",
+          "pages": [
+            "https://backlinko.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 290,
+          "via": "fixed",
+          "selector": "div > ul.hub-topic-resources-list.resources-list > li.css-0 > a",
+          "pages": [
+            "https://backlinko.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 262,
+          "via": "fixed",
+          "selector": "div > ul.hub-topic-resources-list.resources-list > li.css-0 > a",
+          "pages": [
+            "https://backlinko.com/"
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "url": "https://backlinko.com/",
+          "section": 0,
+          "selector": "div > div.wrap > main.css-1avyp1d > section",
+          "px": 1140
+        },
+        {
+          "url": "https://backlinko.com/",
+          "section": 1,
+          "selector": "div > div.wrap > main.css-1avyp1d > section",
+          "px": 1140
+        },
+        {
+          "url": "https://backlinko.com/",
+          "section": 2,
+          "selector": "div > div.wrap > main.css-1avyp1d > section",
+          "px": 1140
+        },
+        {
+          "url": "https://backlinko.com/",
+          "section": 3,
+          "selector": "div > div.wrap > main.css-1avyp1d > section",
+          "px": null
+        },
+        {
+          "url": "https://backlinko.com/",
+          "section": 4,
+          "selector": "div > div.wrap > main.css-1avyp1d > section",
+          "px": 1140
+        },
+        {
+          "url": "https://backlinko.com/",
+          "section": 5,
+          "selector": "#find-keyword",
+          "px": 1140
+        },
+        {
+          "url": "https://backlinko.com/",
+          "section": 6,
+          "selector": "#free-tools-cats",
+          "px": 1140
+        },
+        {
+          "url": "https://backlinko.com/",
+          "section": 7,
+          "selector": "div > div.wrap > main.css-1avyp1d > section",
+          "px": 1140
+        },
+        {
+          "url": "https://backlinko.com/",
+          "section": 8,
+          "selector": "div > div.wrap > main.css-1avyp1d > section",
+          "px": 1140
+        }
+      ],
+      "capRegister": [],
+      "capProvenance": {
+        "writtenBy": "skills/replica/scripts/cap-probe.mjs",
+        "writtenAt": "2026-10-26T15:00:11.331Z",
+        "baseWidth": 1440,
+        "urls": [
+          "https://backlinko.com/"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,3802 @@
+{
+  "discovery": {
+    "fetchTechnique": "headless",
+    "count": 23,
+    "concurrency": 2
+  },
+  "consent": {
+    "method": "auto"
+  },
+  "favicon": {
+    "url": "https://backlinko.com/favicon-32x32.png?v=KmwbmdMLo6",
+    "file": "assets/favicon.png"
+  },
+  "crawl": {
+    "failures": []
+  },
+  "captureGaps": {
+    "roots": [
+      {
+        "root": "/hub/seo",
+        "slug": "hub-seo",
+        "linked": 57,
+        "uncaptured": [
+          "/hub/seo/advanced",
+          "/hub/seo/architecture",
+          "/hub/seo/backlinks",
+          "/hub/seo/best-practices",
+          "/hub/seo/bounce-rate",
+          "/hub/seo/broken-link-building",
+          "/hub/seo/choosing-keywords",
+          "/hub/seo/content-audits",
+          "/hub/seo/core-web-vitals",
+          "/hub/seo/dwell-time",
+          "/hub/seo/enterprise",
+          "/hub/seo/featured-snippets",
+          "/hub/seo/fundamentals",
+          "/hub/seo/internal-links",
+          "/hub/seo/irrelevant-keywords",
+          "/hub/seo/keyword-difficulty",
+          "/hub/seo/keyword-research-strategies",
+          "/hub/seo/linkbait",
+          "/hub/seo/long-tail-keywords",
+          "/hub/seo/lsi",
+          "/hub/seo/moz-pro",
+          "/hub/seo/optimizing-content",
+          "/hub/seo/organic-ctr",
+          "/hub/seo/original-research",
+          "/hub/seo/pagespeed",
+          "/hub/seo/ranking-factors",
+          "/hub/seo/raven-tools",
+          "/hub/seo/robots-txt",
+          "/hub/seo/search-intent",
+          "/hub/seo/semantic-seo",
+          "/hub/seo/semrush",
+          "/hub/seo/seo-keywords",
+          "/hub/seo/seo-results",
+          "/hub/seo/seo-vs-sem",
+          "/hub/seo/seo-writing",
+          "/hub/seo/seoquake",
+          "/hub/seo/seoquake-audit-checks",
+          "/hub/seo/seoquake-configuration",
+          "/hub/seo/seoquake-parameters",
+          "/hub/seo/seoquake-semrush",
+          "/hub/seo/seoquake-troubleshooting",
+          "/hub/seo/seoquake-usage",
+          "/hub/seo/seoquake-whats-new",
+          "/hub/seo/serp-features",
+          "/hub/seo/serps",
+          "/hub/seo/sitemaps",
+          "/hub/seo/snippets",
+          "/hub/seo/software",
+          "/hub/seo/spam-link",
+          "/hub/seo/team",
+          "/hub/seo/technical",
+          "/hub/seo/ubersuggest",
+          "/hub/seo/url-slug",
+          "/hub/seo/ux",
+          "/hub/seo/visibility"
+        ]
+      }
+    ],
+    "detail": "uncaptured first-level targets: hub/seo 55"
+  },
+  "dynamicSurface": {
+    "pages": 23,
+    "pagesWithSameSiteData": 22,
+    "pagesWithSearchForm": 6,
+    "pagesHydrated": 22,
+    "truncatedPages": 0,
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "dev.visualwebsiteoptimizer.com",
+        "path": "/j.php",
+        "query": [
+          "a",
+          "ph",
+          "st",
+          "u",
+          "vn",
+          "x"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/javascript",
+        "sameSite": false,
+        "example": "https://dev.visualwebsiteoptimizer.com/j.php",
+        "pages": 23,
+        "examples": [
+          "index",
+          "blog",
+          "newsletter"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "pagead2.googlesyndication.com",
+        "path": "/ccm/collect",
+        "query": [
+          "ae",
+          "apvc",
+          "dl",
+          "dma",
+          "dma_cps",
+          "en",
+          "ep.ads_data_redaction",
+          "fmt",
+          "frm",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "navt",
+          "npa",
+          "rcb",
+          "rnd",
+          "scrsrc",
+          "tag_exp",
+          "tfd",
+          "tft"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "sameSite": false,
+        "example": "https://pagead2.googlesyndication.com/ccm/collect",
+        "pages": 23,
+        "examples": [
+          "index",
+          "blog",
+          "newsletter"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "region1.google-analytics.com",
+        "path": "/g/collect",
+        "query": [
+          "_eu",
+          "_fv",
+          "_nsi",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "cid",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dp",
+          "dt",
+          "en",
+          "ep.container_id",
+          "frm",
+          "gaf",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "sameSite": false,
+        "example": "https://region1.google-analytics.com/g/collect",
+        "pages": 23,
+        "examples": [
+          "index",
+          "blog",
+          "newsletter"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "streaming.bi.owox.com",
+        "path": "/ga4/{hash}/g/collect",
+        "query": [
+          "_eu",
+          "_fplc",
+          "_fv",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "cid",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dp",
+          "dt",
+          "ecid",
+          "en",
+          "ep.container_id",
+          "ep.page_language",
+          "ep.user_agent",
+          "frm",
+          "gaf",
+          "gap.sstd",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "richsstsse",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "sst.etld",
+          "sst.gch",
+          "sst.gcsub",
+          "sst.lpc",
+          "sst.navt",
+          "sst.rnd",
+          "sst.tft",
+          "sst.ude",
+          "sst.us_privacy",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "ur",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/gif",
+        "sameSite": false,
+        "example": "https://streaming.bi.owox.com/ga4/9bb752a08674f116753ca5719dda03ed/g/collect",
+        "pages": 23,
+        "examples": [
+          "index",
+          "blog",
+          "newsletter"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "region-eu.cookiehub.net",
+        "path": "/",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://region-eu.cookiehub.net/",
+        "pages": 23,
+        "examples": [
+          "index",
+          "blog",
+          "newsletter"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "rum-collector-2.pingdom.net",
+        "path": "/img/beacon.gif",
+        "query": [
+          "bIH",
+          "bIW",
+          "cE",
+          "cS",
+          "dC",
+          "dCLEE",
+          "dCLES",
+          "dI",
+          "dL",
+          "dLE",
+          "dLS",
+          "dPR",
+          "fS",
+          "hS",
+          "id",
+          "lEE",
+          "lES",
+          "nS",
+          "nT",
+          "or",
+          "pD",
+          "path",
+          "rC",
+          "rE",
+          "rS",
+          "rV",
+          "reS",
+          "ref",
+          "resE",
+          "resS",
+          "s",
+          "sAH",
+          "sAW",
+          "sIS",
+          "sId",
+          "sST",
+          "title",
+          "uEE",
+          "uES",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": null,
+        "sameSite": false,
+        "example": "https://rum-collector-2.pingdom.net/img/beacon.gif",
+        "pages": 23,
+        "examples": [
+          "index",
+          "blog",
+          "newsletter"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.semrush.com",
+        "path": "/olaf/init",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/javascript",
+        "sameSite": false,
+        "example": "https://www.semrush.com/olaf/init",
+        "pages": 23,
+        "examples": [
+          "index",
+          "blog",
+          "newsletter"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "cdn.cookiehub.eu",
+        "path": "/client/7417b56b/en.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://cdn.cookiehub.eu/client/7417b56b/en.json",
+        "pages": 23,
+        "examples": [
+          "index",
+          "blog",
+          "newsletter"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "js.sparkloop.app",
+        "path": "/team_d05f5749d84d/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "sameSite": false,
+        "example": "https://js.sparkloop.app/team_d05f5749d84d/settings",
+        "pages": 23,
+        "examples": [
+          "index",
+          "blog",
+          "newsletter"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "script-settings.sparkloop.app",
+        "path": "/team_d05f5749d84d/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://script-settings.sparkloop.app/team_d05f5749d84d/settings",
+        "pages": 23,
+        "examples": [
+          "index",
+          "blog",
+          "newsletter"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+        "pages": 22,
+        "examples": [
+          "index",
+          "blog",
+          "newsletter"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+        "query": [
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+        "pages": 21,
+        "examples": [
+          "index",
+          "blog",
+          "about-backlinko"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+        "pages": 21,
+        "examples": [
+          "index",
+          "blog",
+          "about-backlinko"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+        "pages": 21,
+        "examples": [
+          "index",
+          "blog",
+          "about-backlinko"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+        "pages": 21,
+        "examples": [
+          "index",
+          "blog",
+          "about-backlinko"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+        "pages": 21,
+        "examples": [
+          "index",
+          "blog",
+          "about-backlinko"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+        "pages": 21,
+        "examples": [
+          "index",
+          "blog",
+          "about-backlinko"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+        "pages": 21,
+        "examples": [
+          "index",
+          "blog",
+          "about-backlinko"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+        "pages": 21,
+        "examples": [
+          "index",
+          "blog",
+          "about-backlinko"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+        "pages": 21,
+        "examples": [
+          "index",
+          "blog",
+          "about-backlinko"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+        "pages": 21,
+        "examples": [
+          "index",
+          "blog",
+          "about-backlinko"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+        "pages": 21,
+        "examples": [
+          "index",
+          "blog",
+          "about-backlinko"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+        "pages": 21,
+        "examples": [
+          "index",
+          "blog",
+          "about-backlinko"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+        "pages": 21,
+        "examples": [
+          "index",
+          "blog",
+          "about-backlinko"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+        "pages": 21,
+        "examples": [
+          "index",
+          "blog",
+          "about-backlinko"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+        "pages": 21,
+        "examples": [
+          "index",
+          "blog",
+          "about-backlinko"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+        "pages": 21,
+        "examples": [
+          "index",
+          "blog",
+          "about-backlinko"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+        "pages": 21,
+        "examples": [
+          "index",
+          "blog",
+          "about-backlinko"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+        "pages": 21,
+        "examples": [
+          "index",
+          "blog",
+          "about-backlinko"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+        "pages": 21,
+        "examples": [
+          "index",
+          "blog",
+          "about-backlinko"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+        "pages": 21,
+        "examples": [
+          "index",
+          "blog",
+          "about-backlinko"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+        "pages": 21,
+        "examples": [
+          "index",
+          "blog",
+          "about-backlinko"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+        "pages": 21,
+        "examples": [
+          "index",
+          "blog",
+          "about-backlinko"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json",
+        "pages": 17,
+        "examples": [
+          "index",
+          "blog",
+          "about-backlinko"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/best-free-seo-tools.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/best-free-seo-tools.json",
+        "pages": 9,
+        "examples": [
+          "index",
+          "blog",
+          "about-backlinko"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/leigh-mckenzie.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/leigh-mckenzie.json",
+        "pages": 7,
+        "examples": [
+          "blog",
+          "best-free-seo-tools",
+          "deals-semrush-coupon"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog.json",
+        "pages": 7,
+        "examples": [
+          "about-backlinko",
+          "contact",
+          "templates-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/deals/semrush-coupon.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/deals/semrush-coupon.json",
+        "pages": 7,
+        "examples": [
+          "about-backlinko",
+          "contact",
+          "templates-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/contact.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/contact.json",
+        "pages": 7,
+        "examples": [
+          "about-backlinko",
+          "contact",
+          "templates-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "api.backlinko.com",
+        "path": "/wp-json/backlinkostats/v1/shares/{n}",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://api.backlinko.com/wp-json/backlinkostats/v1/shares/63397",
+        "pages": 7,
+        "examples": [
+          "best-free-seo-tools",
+          "tools-keyword",
+          "tools-backlink-checker"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-generator.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-generator.json",
+        "pages": 4,
+        "examples": [
+          "index",
+          "hub-seo-link-building-seo",
+          "hub-seo-what-is-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/brian-dean.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/brian-dean.json",
+        "pages": 4,
+        "examples": [
+          "blog",
+          "hub-seo-what-is-seo",
+          "hub-content-what-is-content-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo.json",
+        "pages": 3,
+        "examples": [
+          "index",
+          "hub-seo-link-building-seo",
+          "hub-seo-what-is-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/ranking-factors.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/ranking-factors.json",
+        "pages": 3,
+        "examples": [
+          "index",
+          "hub-seo",
+          "hub-seo-what-is-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seo-vs-sem.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seo-vs-sem.json",
+        "pages": 3,
+        "examples": [
+          "index",
+          "hub-seo",
+          "hub-seo-what-is-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/broken-link-building.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/broken-link-building.json",
+        "pages": 3,
+        "examples": [
+          "index",
+          "hub-seo",
+          "hub-seo-link-building-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/serps.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/serps.json",
+        "pages": 3,
+        "examples": [
+          "index",
+          "hub-seo",
+          "hub-seo-what-is-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/what-is-content-marketing.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/what-is-content-marketing.json",
+        "pages": 3,
+        "examples": [
+          "index",
+          "hub-content",
+          "hub-content-what-is-content-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/fundamentals.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/fundamentals.json",
+        "pages": 3,
+        "examples": [
+          "hub-seo",
+          "hub-seo-link-building-seo",
+          "hub-seo-what-is-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-search-ads.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-search-ads.json",
+        "pages": 3,
+        "examples": [
+          "hub-seo-link-building-seo",
+          "hub-seo-what-is-seo",
+          "hub-content-what-is-content-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ecommerce-keywords.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ecommerce-keywords.json",
+        "pages": 3,
+        "examples": [
+          "hub-seo-link-building-seo",
+          "hub-seo-what-is-seo",
+          "hub-content-what-is-content-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools.json",
+        "pages": 3,
+        "examples": [
+          "tools-keyword",
+          "tools-backlink-checker",
+          "keyword-research-tools"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content.json",
+        "pages": 2,
+        "examples": [
+          "index",
+          "hub-content-what-is-content-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/writing.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/writing.json",
+        "pages": 2,
+        "examples": [
+          "index",
+          "hub-content"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/link-building-seo.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/link-building-seo.json",
+        "pages": 2,
+        "examples": [
+          "index",
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/content-audits.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/content-audits.json",
+        "pages": 2,
+        "examples": [
+          "index",
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/backlinko-team.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/backlinko-team.json",
+        "pages": 2,
+        "examples": [
+          "blog",
+          "tools-backlink-checker"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/best-practices.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/best-practices.json",
+        "pages": 2,
+        "examples": [
+          "hub-seo",
+          "hub-seo-what-is-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/linkbait.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/linkbait.json",
+        "pages": 2,
+        "examples": [
+          "hub-seo",
+          "hub-seo-link-building-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/original-research.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/original-research.json",
+        "pages": 2,
+        "examples": [
+          "hub-seo",
+          "hub-seo-link-building-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/optimizing-content.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/optimizing-content.json",
+        "pages": 2,
+        "examples": [
+          "hub-seo",
+          "hub-seo-link-building-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/spam-link.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/spam-link.json",
+        "pages": 2,
+        "examples": [
+          "hub-seo",
+          "hub-seo-link-building-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/backlinks.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/backlinks.json",
+        "pages": 2,
+        "examples": [
+          "hub-seo",
+          "hub-seo-link-building-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/content-marketing-fundamentals.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/content-marketing-fundamentals.json",
+        "pages": 2,
+        "examples": [
+          "hub-content",
+          "hub-content-what-is-content-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/link-building-services.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/link-building-services.json",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/link-building-strategies.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/link-building-strategies.json",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/link-building.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/link-building.json",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/scale-content.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/scale-content.json",
+        "pages": 1,
+        "examples": [
+          "blog"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/rosanna-campbell.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/rosanna-campbell.json",
+        "pages": 1,
+        "examples": [
+          "blog"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/michael-ofei.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/michael-ofei.json",
+        "pages": 1,
+        "examples": [
+          "blog"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/high-quality-backlinks.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/high-quality-backlinks.json",
+        "pages": 1,
+        "examples": [
+          "blog"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seoquake-page-audit.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seoquake-page-audit.json",
+        "pages": 1,
+        "examples": [
+          "blog"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seoquake-semrush.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seoquake-semrush.json",
+        "pages": 1,
+        "examples": [
+          "blog"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/page/1.json",
+        "query": [
+          "page"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/page/1.json",
+        "pages": 1,
+        "examples": [
+          "blog"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/ankit-vora.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/ankit-vora.json",
+        "pages": 1,
+        "examples": [
+          "blog"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/categories/seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/categories/seo.json",
+        "pages": 1,
+        "examples": [
+          "blog"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/yongi-barnard.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/yongi-barnard.json",
+        "pages": 1,
+        "examples": [
+          "blog"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seoquake-audit-checks.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seoquake-audit-checks.json",
+        "pages": 1,
+        "examples": [
+          "blog"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/affiliate-marketing.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/affiliate-marketing.json",
+        "pages": 1,
+        "examples": [
+          "blog"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/chris-hanna.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/chris-hanna.json",
+        "pages": 1,
+        "examples": [
+          "blog"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/content-marketing-tips.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/content-marketing-tips.json",
+        "pages": 1,
+        "examples": [
+          "blog"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/affiliate-marketing-website-examples.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/affiliate-marketing-website-examples.json",
+        "pages": 1,
+        "examples": [
+          "blog"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/affiliate-marketing-niches.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/affiliate-marketing-niches.json",
+        "pages": 1,
+        "examples": [
+          "blog"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/content-marketing-this-year.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/content-marketing-this-year.json",
+        "pages": 1,
+        "examples": [
+          "blog"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/seo.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/seo.json",
+        "pages": 1,
+        "examples": [
+          "templates-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/seo-audit.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/seo-audit.json",
+        "pages": 1,
+        "examples": [
+          "templates-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/content-marketing-plan.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/content-marketing-plan.json",
+        "pages": 1,
+        "examples": [
+          "templates-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/case-study.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/case-study.json",
+        "pages": 1,
+        "examples": [
+          "templates-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/content-calendar.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/content-calendar.json",
+        "pages": 1,
+        "examples": [
+          "templates-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/outreach-email.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/outreach-email.json",
+        "pages": 1,
+        "examples": [
+          "templates-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/sales-funnel.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/sales-funnel.json",
+        "pages": 1,
+        "examples": [
+          "templates-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/linkedin-summary.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/linkedin-summary.json",
+        "pages": 1,
+        "examples": [
+          "templates-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/content.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/content.json",
+        "pages": 1,
+        "examples": [
+          "templates-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/landing-page.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/landing-page.json",
+        "pages": 1,
+        "examples": [
+          "templates-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/welcome-email.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/welcome-email.json",
+        "pages": 1,
+        "examples": [
+          "templates-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/email-newsletter.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/email-newsletter.json",
+        "pages": 1,
+        "examples": [
+          "templates-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/youtube-thumbnail.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/youtube-thumbnail.json",
+        "pages": 1,
+        "examples": [
+          "templates-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/email.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/email.json",
+        "pages": 1,
+        "examples": [
+          "templates-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/blog-post.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/blog-post.json",
+        "pages": 1,
+        "examples": [
+          "templates-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/facebook-page.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/facebook-page.json",
+        "pages": 1,
+        "examples": [
+          "templates-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/social.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/social.json",
+        "pages": 1,
+        "examples": [
+          "templates-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/journalist-pitch.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/journalist-pitch.json",
+        "pages": 1,
+        "examples": [
+          "templates-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/pr.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/pr.json",
+        "pages": 1,
+        "examples": [
+          "templates-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/facebook-ad.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/facebook-ad.json",
+        "pages": 1,
+        "examples": [
+          "templates-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/press-release.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/press-release.json",
+        "pages": 1,
+        "examples": [
+          "templates-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/social-media-audit.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing/social-media-audit.json",
+        "pages": 1,
+        "examples": [
+          "templates-marketing"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/lsi.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/lsi.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/featured-snippets.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/featured-snippets.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/robots-txt.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/robots-txt.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/semantic-seo.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/semantic-seo.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seo-writing.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seo-writing.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/pagespeed.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/pagespeed.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/architecture.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/architecture.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/technical.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/technical.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/sitemaps.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/sitemaps.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/url-slug.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/url-slug.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/snippets.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/snippets.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/serp-features.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/serp-features.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seoquake.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seoquake.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seoquake-audit-checks.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seoquake-audit-checks.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/semrush.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/semrush.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/raven-tools.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/raven-tools.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seoquake-parameters.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seoquake-parameters.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/enterprise.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/enterprise.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/software.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/software.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/team.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/team.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/visibility.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/visibility.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seoquake-configuration.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seoquake-configuration.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/moz-pro.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/moz-pro.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seoquake-semrush.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seoquake-semrush.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seo-results.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seo-results.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/ubersuggest.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/ubersuggest.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/advanced.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/advanced.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seoquake-whats-new.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seoquake-whats-new.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seoquake-troubleshooting.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seoquake-troubleshooting.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seoquake-usage.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/seoquake-usage.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/written-content.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/written-content.json",
+        "pages": 1,
+        "examples": [
+          "hub-content"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/production.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/production.json",
+        "pages": 1,
+        "examples": [
+          "hub-content"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/podcasting.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/podcasting.json",
+        "pages": 1,
+        "examples": [
+          "hub-content"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/interactive.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/interactive.json",
+        "pages": 1,
+        "examples": [
+          "hub-content"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/multimedia.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/multimedia.json",
+        "pages": 1,
+        "examples": [
+          "hub-content"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/10x.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/10x.json",
+        "pages": 1,
+        "examples": [
+          "hub-content"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/curation.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/curation.json",
+        "pages": 1,
+        "examples": [
+          "hub-content"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/blog-design.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/blog-design.json",
+        "pages": 1,
+        "examples": [
+          "hub-content"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/evergreen.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/evergreen.json",
+        "pages": 1,
+        "examples": [
+          "hub-content"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/calendar.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/calendar.json",
+        "pages": 1,
+        "examples": [
+          "hub-content"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/blog-seo.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/blog-seo.json",
+        "pages": 1,
+        "examples": [
+          "hub-content"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/email-outreach.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/email-outreach.json",
+        "pages": 1,
+        "examples": [
+          "hub-content"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/google-trends.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/google-trends.json",
+        "pages": 1,
+        "examples": [
+          "hub-content"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/buffer.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/buffer.json",
+        "pages": 1,
+        "examples": [
+          "hub-content"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/tools.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/tools.json",
+        "pages": 1,
+        "examples": [
+          "hub-content"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/social-promotion.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/social-promotion.json",
+        "pages": 1,
+        "examples": [
+          "hub-content"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/promotion.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/promotion.json",
+        "pages": 1,
+        "examples": [
+          "hub-content"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/lead-magnets.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/lead-magnets.json",
+        "pages": 1,
+        "examples": [
+          "hub-content"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/viral.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/viral.json",
+        "pages": 1,
+        "examples": [
+          "hub-content"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/hootsuite.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/content/hootsuite.json",
+        "pages": 1,
+        "examples": [
+          "hub-content"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/positioning.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/positioning.json",
+        "pages": 1,
+        "examples": [
+          "hub-youtube"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/create-channel.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/create-channel.json",
+        "pages": 1,
+        "examples": [
+          "hub-youtube"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/trailer.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/trailer.json",
+        "pages": 1,
+        "examples": [
+          "hub-youtube"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/name.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/name.json",
+        "pages": 1,
+        "examples": [
+          "hub-youtube"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/art.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/art.json",
+        "pages": 1,
+        "examples": [
+          "hub-youtube"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/engagement.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/engagement.json",
+        "pages": 1,
+        "examples": [
+          "hub-youtube"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/grow.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/grow.json",
+        "pages": 1,
+        "examples": [
+          "hub-youtube"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/create-videos.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/create-videos.json",
+        "pages": 1,
+        "examples": [
+          "hub-youtube"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/subscribers.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/subscribers.json",
+        "pages": 1,
+        "examples": [
+          "hub-youtube"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/thumbnail.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/thumbnail.json",
+        "pages": 1,
+        "examples": [
+          "hub-youtube"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/playlists.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/playlists.json",
+        "pages": 1,
+        "examples": [
+          "hub-youtube"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/optimize.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/optimize.json",
+        "pages": 1,
+        "examples": [
+          "hub-youtube"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/community.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/community.json",
+        "pages": 1,
+        "examples": [
+          "hub-youtube"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/watch-time.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/watch-time.json",
+        "pages": 1,
+        "examples": [
+          "hub-youtube"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/end-screen.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/end-screen.json",
+        "pages": 1,
+        "examples": [
+          "hub-youtube"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/editing.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/editing.json",
+        "pages": 1,
+        "examples": [
+          "hub-youtube"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/filming.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/filming.json",
+        "pages": 1,
+        "examples": [
+          "hub-youtube"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/crowdfunding.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/crowdfunding.json",
+        "pages": 1,
+        "examples": [
+          "hub-youtube"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/monetize.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/monetize.json",
+        "pages": 1,
+        "examples": [
+          "hub-youtube"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/selling.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/selling.json",
+        "pages": 1,
+        "examples": [
+          "hub-youtube"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/traffic.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/youtube/traffic.json",
+        "pages": 1,
+        "examples": [
+          "hub-youtube"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/keyword-research-strategies.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/keyword-research-strategies.json",
+        "pages": 1,
+        "examples": [
+          "hub-seo-link-building-seo"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/reddit-marketing.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/reddit-marketing.json",
+        "pages": 1,
+        "examples": [
+          "blog-authors-leigh-mckenzie"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/answer-engine-optimization-aeo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/answer-engine-optimization-aeo.json",
+        "pages": 1,
+        "examples": [
+          "blog-authors-leigh-mckenzie"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-seo.json",
+        "pages": 1,
+        "examples": [
+          "blog-authors-leigh-mckenzie"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/leigh-mckenzie/page/2.json",
+        "query": [
+          "page",
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/leigh-mckenzie/page/2.json",
+        "pages": 1,
+        "examples": [
+          "blog-authors-leigh-mckenzie"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/shannon-willoby.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/shannon-willoby.json",
+        "pages": 1,
+        "examples": [
+          "llm-seeding"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "fast.wistia.com",
+        "path": "/embed/medias/r5f379t1w8.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://fast.wistia.com/embed/medias/r5f379t1w8.json",
+        "pages": 1,
+        "examples": [
+          "llm-seeding"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "fast.wistia.com",
+        "path": "/embed/medias/r5f379t1w8.m3u8",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/x-mpegurl",
+        "sameSite": false,
+        "example": "https://fast.wistia.com/embed/medias/r5f379t1w8.m3u8",
+        "pages": 1,
+        "examples": [
+          "llm-seeding"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "embed-cloudfront.wistia.com",
+        "path": "/deliveries/3f52d0158dae568ed846a076c218fb56657ee52e.m3u8",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/vnd.apple.mpegurl",
+        "sameSite": false,
+        "example": "https://embed-cloudfront.wistia.com/deliveries/3f52d0158dae568ed846a076c218fb56657ee52e.m3u8",
+        "pages": 1,
+        "examples": [
+          "llm-seeding"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "embed-cloudfront.wistia.com",
+        "path": "/deliveries/3f52d0158dae568ed846a076c218fb56657ee52e.m3u8/seg-1-v1-a1.ts",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "video/mp2t",
+        "sameSite": false,
+        "example": "https://embed-cloudfront.wistia.com/deliveries/3f52d0158dae568ed846a076c218fb56657ee52e.m3u8/seg-1-v1-a1.ts",
+        "pages": 1,
+        "examples": [
+          "llm-seeding"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "distillery.wistia.com",
+        "path": "/x",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": null,
+        "sameSite": false,
+        "example": "https://distillery.wistia.com/x",
+        "pages": 1,
+        "examples": [
+          "llm-seeding"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "pipedream.wistia.com",
+        "path": "/mput",
+        "query": [
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "sameSite": false,
+        "example": "https://pipedream.wistia.com/mput",
+        "pages": 1,
+        "examples": [
+          "llm-seeding"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "embed-cloudfront.wistia.com",
+        "path": "/deliveries/3f52d0158dae568ed846a076c218fb56657ee52e.m3u8/seg-2-v1-a1.ts",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "video/mp2t",
+        "sameSite": false,
+        "example": "https://embed-cloudfront.wistia.com/deliveries/3f52d0158dae568ed846a076c218fb56657ee52e.m3u8/seg-2-v1-a1.ts",
+        "pages": 1,
+        "examples": [
+          "llm-seeding"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "embed-cloudfront.wistia.com",
+        "path": "/deliveries/3f52d0158dae568ed846a076c218fb56657ee52e.m3u8/seg-3-v1-a1.ts",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "video/mp2t",
+        "sameSite": false,
+        "example": "https://embed-cloudfront.wistia.com/deliveries/3f52d0158dae568ed846a076c218fb56657ee52e.m3u8/seg-3-v1-a1.ts",
+        "pages": 1,
+        "examples": [
+          "llm-seeding"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "embed-cloudfront.wistia.com",
+        "path": "/deliveries/3f52d0158dae568ed846a076c218fb56657ee52e.m3u8/seg-4-v1-a1.ts",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "video/mp2t",
+        "sameSite": false,
+        "example": "https://embed-cloudfront.wistia.com/deliveries/3f52d0158dae568ed846a076c218fb56657ee52e.m3u8/seg-4-v1-a1.ts",
+        "pages": 1,
+        "examples": [
+          "llm-seeding"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "embed-cloudfront.wistia.com",
+        "path": "/deliveries/3f52d0158dae568ed846a076c218fb56657ee52e.m3u8/seg-5-v1-a1.ts",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "video/mp2t",
+        "sameSite": false,
+        "example": "https://embed-cloudfront.wistia.com/deliveries/3f52d0158dae568ed846a076c218fb56657ee52e.m3u8/seg-5-v1-a1.ts",
+        "pages": 1,
+        "examples": [
+          "llm-seeding"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "embed-cloudfront.wistia.com",
+        "path": "/deliveries/3f52d0158dae568ed846a076c218fb56657ee52e.m3u8/seg-6-v1-a1.ts",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "video/mp2t",
+        "sameSite": false,
+        "example": "https://embed-cloudfront.wistia.com/deliveries/3f52d0158dae568ed846a076c218fb56657ee52e.m3u8/seg-6-v1-a1.ts",
+        "pages": 1,
+        "examples": [
+          "llm-seeding"
+        ]
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "www.googletagmanager.com",
+        "pages": 23,
+        "examples": [
+          "index",
+          "blog",
+          "newsletter"
+        ]
+      },
+      {
+        "host": "rum-static.pingdom.net",
+        "pages": 23,
+        "examples": [
+          "index",
+          "blog",
+          "newsletter"
+        ]
+      },
+      {
+        "host": "js.sparkloop.app",
+        "pages": 23,
+        "examples": [
+          "index",
+          "blog",
+          "newsletter"
+        ]
+      },
+      {
+        "host": "cdn.cookiehub.eu",
+        "pages": 23,
+        "examples": [
+          "index",
+          "blog",
+          "newsletter"
+        ]
+      },
+      {
+        "host": "www.semrush.com",
+        "pages": 23,
+        "examples": [
+          "index",
+          "blog",
+          "newsletter"
+        ]
+      },
+      {
+        "host": "script.sparkloop.app",
+        "pages": 23,
+        "examples": [
+          "index",
+          "blog",
+          "newsletter"
+        ]
+      },
+      {
+        "host": "www.google.com",
+        "pages": 5,
+        "examples": [
+          "contact",
+          "tools-seo-checker",
+          "tools-keyword"
+        ]
+      },
+      {
+        "host": "www.gstatic.com",
+        "pages": 5,
+        "examples": [
+          "contact",
+          "tools-seo-checker",
+          "tools-keyword"
+        ]
+      },
+      {
+        "host": "dev.visualwebsiteoptimizer.com",
+        "pages": 1,
+        "examples": [
+          "blog-authors-leigh-mckenzie"
+        ]
+      },
+      {
+        "host": "fast.wistia.com",
+        "pages": 1,
+        "examples": [
+          "llm-seeding"
+        ]
+      },
+      {
+        "host": "browser.sentry-cdn.com",
+        "pages": 1,
+        "examples": [
+          "llm-seeding"
+        ]
+      }
+    ],
+    "frameworkHints": [
+      {
+        "hint": "next",
+        "pages": 22,
+        "examples": [
+          "index",
+          "blog",
+          "newsletter"
+        ]
+      }
+    ],
+    "globalState": [
+      {
+        "name": "dataLayer",
+        "pages": 23,
+        "examples": [
+          "index",
+          "blog",
+          "newsletter"
+        ]
+      },
+      {
+        "name": "__NEXT_DATA__",
+        "pages": 22,
+        "examples": [
+          "index",
+          "blog",
+          "newsletter"
+        ]
+      }
+    ],
+    "formTargets": [
+      {
+        "action": "https://www.aweber.com/scripts/addlead.pl",
+        "method": "post",
+        "sameOrigin": false,
+        "search": false,
+        "fieldNames": [
+          "email"
+        ],
+        "pages": 6,
+        "examples": [
+          "index",
+          "blog",
+          "newsletter"
+        ]
+      },
+      {
+        "action": "https://www.semrush.com/ai-seo/overview/",
+        "method": "get",
+        "sameOrigin": false,
+        "search": true,
+        "fieldNames": [
+          "q"
+        ],
+        "pages": 5,
+        "examples": [
+          "seo-strategy",
+          "seo-strategy",
+          "llm-seeding"
+        ]
+      },
+      {
+        "action": "https://www.semrush.com/analytics/keywordoverview/",
+        "method": "get",
+        "sameOrigin": false,
+        "search": true,
+        "fieldNames": [
+          "q"
+        ],
+        "pages": 4,
+        "examples": [
+          "tools-keyword",
+          "seo-strategy",
+          "on-page-seo"
+        ]
+      },
+      {
+        "action": "https://backlinko.com/tools/seo-checker",
+        "method": "get",
+        "sameOrigin": true,
+        "search": false,
+        "fieldNames": [],
+        "pages": 3,
+        "examples": [
+          "tools-seo-checker",
+          "tools-seo-checker",
+          "tools-seo-checker"
+        ]
+      },
+      {
+        "action": "https://www.semrush.com/semrush-ai-toolkit/",
+        "method": "get",
+        "sameOrigin": false,
+        "search": false,
+        "fieldNames": [
+          "url"
+        ],
+        "pages": 2,
+        "examples": [
+          "hub-seo-what-is-seo",
+          "hub-content-what-is-content-marketing"
+        ]
+      },
+      {
+        "action": "https://backlinko.com/tools/keyword",
+        "method": "get",
+        "sameOrigin": true,
+        "search": false,
+        "fieldNames": [],
+        "pages": 2,
+        "examples": [
+          "tools-keyword",
+          "keyword-research-tools"
+        ]
+      },
+      {
+        "action": "https://backlinko.com/blog",
+        "method": "get",
+        "sameOrigin": true,
+        "search": false,
+        "fieldNames": [],
+        "pages": 1,
+        "examples": [
+          "blog"
+        ]
+      },
+      {
+        "action": "https://backlinko.com/contact",
+        "method": "post",
+        "sameOrigin": true,
+        "search": false,
+        "fieldNames": [
+          "input_5",
+          "input_2",
+          "input_7",
+          "input_4",
+          "input_8"
+        ],
+        "pages": 1,
+        "examples": [
+          "contact"
+        ]
+      },
+      {
+        "action": "https://tools.backlinko.com/seo-checker",
+        "method": "get",
+        "sameOrigin": false,
+        "search": true,
+        "fieldNames": [
+          "q"
+        ],
+        "pages": 1,
+        "examples": [
+          "tools"
+        ]
+      },
+      {
+        "action": "https://backlinko.com/tools/backlink-checker",
+        "method": "get",
+        "sameOrigin": true,
+        "search": false,
+        "fieldNames": [],
+        "pages": 1,
+        "examples": [
+          "tools-backlink-checker"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1536 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-26T15:00:10.929Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "nofollow-link",
+  "url": "https://backlinko.com/nofollow-link",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-26T15:00:10.929Z",
+  "finalUrl": "https://backlinko.com/nofollow-link",
+  "title": "What Is a Nofollow Link? Here's A Simple Plain English Answer",
+  "description": "What are nofollow links? Do they help with SEO? Learn everything you need to know about nofollow right here.",
+  "og": {
+    "title": "What Is a Nofollow Link? Here's A Simple Plain English Answer",
+    "description": "What are nofollow links? Do they help with SEO? Learn everything you need to know about nofollow right here.",
+    "image": "https://api.backlinko.com/app/uploads/2020/04/nofollow-link.png",
+    "type": "article"
+  },
+  "headings": [
+    {
+      "tag": "h2",
+      "text": "About cookies on this site"
+    },
+    {
+      "tag": "h3",
+      "text": ".semrush_svg__cls-2{fill:#181e15}Semrush helps you:"
+    },
+    {
+      "tag": "h3",
+      "text": "Backlinko readers get:"
+    },
+    {
+      "tag": "h6",
+      "text": "AI Keyword Ideas in Seconds"
+    },
+    {
+      "tag": "h1",
+      "text": "What Is a Nofollow Link? Here’s A Simple Plain English Answer"
+    },
+    {
+      "tag": "h2",
+      "text": "What Are Nofollow Links?"
+    },
+    {
+      "tag": "h2",
+      "text": "Nofollow vs. Dofollow Links — What’s the Difference?"
+    },
+    {
+      "tag": "h2",
+      "text": "How Do You Check If a Link is Nofollow?"
+    },
+    {
+      "tag": "h2",
+      "text": "Why Did Search Engines Create the Nofollow Tag?"
+    },
+    {
+      "tag": "h2",
+      "text": "What Types of Links Are Nofollow?"
+    },
+    {
+      "tag": "h2",
+      "text": "Do Nofollow Links Help With SEO?"
+    },
+    {
+      "tag": "h2",
+      "text": "What Are the Benefits of Nofollow Links?"
+    },
+    {
+      "tag": "h2",
+      "text": "What’s the Difference Between Nofollow and Noindex?"
+    },
+    {
+      "tag": "h2",
+      "text": "How Do I Use Nofollow Links on My Site?"
+    },
+    {
+      "tag": "h4",
+      "text": "Learn"
+    },
+    {
+      "tag": "h4",
+      "text": "Company"
+    },
+    {
+      "tag": "h4",
+      "text": "Connect"
+    }
+  ],
+  "body": [
+    "Written by Brian Dean",
+    "On this page",
+    "What Are Nofollow Links?",
+    "Nofollow vs. Dofollow Links — What’s the Difference?",
+    "How Do You Check If a Link is Nofollow?",
+    "Why Did Search Engines Create the Nofollow Tag?",
+    "What Types of Links Are Nofollow?",
+    "Do Nofollow Links Help With SEO?",
+    "What Are the Benefits of Nofollow Links?",
+    "What’s the Difference Between Nofollow and Noindex?",
+    "How Do I Use Nofollow Links on My Site?",
+    "This post will break down everything you need to know about nofollow links.",
+    "What they are.",
+    "Why they’re important.",
+    "And whether or not they help with SEO.",
+    "Let’s dive right in.",
+    "Nofollow links are links with a rel=”nofollow” HTML tag applied to them. The nofollow tag tells search engines to ignore that link. Because nofollow links do not pass PageRank they likely don’t impact search engine rankings.",
+    "The only technical difference between the two is that a nofollow link has a nofollow tag.",
+    "As a user, it’s impossible to tell the difference between a nofollow and dofollow link. You can click on, copy and use a nofollow link like any other link on the web.",
+    "However, when it comes to search engine optimization, there’s a big difference between nofollow and dofollow links.",
+    "That difference is this:",
+    "Dofollow links help your search engine rankings. Nofollow links (generally) don’t.",
+    "I’ll explain:",
+    "You see, Google and alternate search engines use links as a key ranking signal.",
+    "However, they only count dofollow links in their algorithm. In fact, according to Google, nofollow links don’t pass any PageRank.",
+    "And if a link doesn’t send PageRank (aka “link authority”) your way, it’s not going to help your Google rankings.",
+    "(That said, there might be some exceptions to this rule. More on that later.)",
+    "That’s why, when it comes to link building, you want to get dofollow links whenever possible.",
+    "Let’s quickly look at a real-life example…",
+    "Here are two backlinks pointing to my site:",
+    "and",
+    "The first link is from the homepage of an authority website.",
+    "But when you look at the HTML of that page, you can see that the link is nofollow:",
+    "This means that the link isn’t going to help with my SEO.",
+    "The second link is from a blog post on a site that doesn’t have nearly as much authority.",
+    "However, the link is dofollow:",
+    "This means that link will likely have an impact on my Google rankings.",
+    "Here’s how to check if a link is nofollow:",
+    "Right click on your browser and click “View page source”.",
+    "Next, look for the link in the HTML of the page.",
+    "If you see a rel=”nofollow” attribute, that link is nofollowed. Otherwise, the link is dofollow.",
+    "You can also use the “Strike Out Nofollow Links” SEO Chrome extension.",
+    "This handy tool automatically puts a line through any nofollow links on a page.",
+    "(That way, you don’t need to manually check the HTML.)",
+    "Find all of your backlinks",
+    "Explore the largest, fastest, and freshest backlink management tool.",
+    "The nofollow tag was originally created by Google to combat blog comment spam.",
+    "As the popularity of blogs grew, so did comment spam. Specifically, spammers would leave links back to their site in the comments:",
+    "This caused two major problems:",
+    "First, spammy sites started to rank really well in Google. This pushed high-quality sites out of the search results.",
+    "Because the tactic worked so well, blog comment spam quickly spun out of control.",
+    "In 2005, Google helped develop the nofollow tag… and rolled it into their algorithm.",
+    "The tag was ultimately adopted by other search engines (like Bing and Yahoo).",
+    "Any link that has the nofollow tag is technically a nofollow link.",
+    "But in general, inbound links from these sources tend to be nofollow:",
+    "Blog comments",
+    "Social media (for example, links in Facebook posts or YouTube video descriptions)",
+    "Links in forum posts or other forms of user generated content",
+    "Certain blogs and news sites (like the Huffington Post)",
+    "Links from “widgets”",
+    "Links in press releases",
+    "And these popular websites use the rel=”nofollow” tag on all of their outbound links:",
+    "Quora",
+    "YouTube",
+    "Wikipedia",
+    "Reddit",
+    "Twitch",
+    "Medium",
+    "And there’s one more category of links that should be nofollow:",
+    "Paid links.",
+    "According to Google’s Webmaster Guidelines, any links that you pay for should be nofollowed (or use the newer “rel=sponsored” attribute).",
+    "(Why? Google wants all of your links to be earned.)",
+    "For example, if you pay for a banner ad on a website, Google requires the link in the banner to be nofollowed.",
+    "Otherwise, your site could get penalized by Big G.",
+    "Some people say: “Nofollow links have zero impact on SEO”.",
+    "And others claim: “Nofollow links aren’t as powerful as dofollow links… but they still help.”",
+    "What’s the truth?",
+    "First, what does Google say about nofollow links?",
+    "“In general, we don’t follow them.”",
+    "“In general, we don’t follow them.”",
+    "“In general”?",
+    "That implies that they do follow them in certain cases.",
+    "Next, let’s look at a really interesting case study.",
+    "Adam White wanted to rank his blog for the keyword “backlink software”.",
+    "What did he do?",
+    "He bought a bunch of nofollowed links from a high-quality site in the SEO space.",
+    "And all of those links had “backlink software” as their anchor text.",
+    "So: what happened?",
+    "His ranking shot up from #19… to #1 in Google for his target keyword.",
+    "Third, let’s check out another cool little experiment.",
+    "This time, the head of SEO at SurveyMonkey decided to answer the question: “Does Google actually follow nofollow links”.",
+    "To find out, he added a nofollow link to one of SurveyMonkey’s 404 pages.",
+    "That link led to a page that wasn’t indexed yet.",
+    "In theory, Google should ignore that link.",
+    "But that’s not what happened.",
+    "Instead, Google followed the link… and indexed the page within 48 hours.",
+    "Finally, let’s check out the results from an industry study that analyzed factors that influence the “power” of a backlink.",
+    "And they discovered that both dofollow and total backlinks (including nofollow links) had similar impact on rankings.",
+    "Bottom Line? Nofollow links seem to have some SEO value… especially if those links are from related sites. Google may also use anchor text from nofollow links in their algorithm.",
+    "Let’s take a look:",
+    "1. Nofollow links can directly help with your SEO.",
+    "As you just saw, experiments and industry studies have found that nofollow links can lead to higher rankings in Google. Although the data isn’t clear on that.",
+    "2. Nofollow links can bring you traffic.",
+    "Don’t forget: the right nofollow link can send targeted traffic to your site.",
+    "For example, I posted this to Facebook a while back:",
+    "As you can see, it has a nofollow link to my site.",
+    "Will this type of nofollow link help with my SEO?",
+    "Probably not.",
+    "That said, the link sent me 2,745 visitors:",
+    "The same approach applies to leaving helpful blog comments.",
+    "Even though they’re nofollow, comment links can send you a decent chunk of targeted traffic.",
+    "(Especially if you’re one of the first people to comment on the post.)",
+    "For example, when I first started my blog, I left helpful comments on SEO and marketing blogs.",
+    "And these comments brought me a handful of targeted visitors.",
+    "3. Nofollow links can = dofollow links.",
+    "A nofollow from a popular site can lead to dozens of dofollow links.",
+    "I’ll explain with an example…",
+    "A while back I wrote a guest post for Noah Kagan’s blog.",
+    "I’m not 100% sure why, but Noah nofollows all of his outbound links…",
+    "….including the link back to my site.",
+    "So, is that link totally worthless?",
+    "Fortunately not.",
+    "I got a boatload of referral traffic from that post.",
+    "But more important than that:",
+    "Lots of people that found me from that post ended up linking to me:",
+    "(With dofollow links.)",
+    "And those dofollow links did help my rankings in the SERPs.",
+    "Let’s look at one more example…",
+    "A while back I published a massive Google ranking factors study.",
+    "Thanks to a successful PR campaign, my study got mentioned on Forbes.com.",
+    "But that link was… nofollow.",
+    "Fortunately, lots of people read my study thanks to that nofollow link.",
+    "And those people cited my study on their blog… with dofollow links:",
+    "4. Nofollow links are part of a natural link profile.",
+    "If your link profile looks unnatural, you’re at risk for a Google penalty. To avoid such penalties, you can undertake a simple but detailed backlink audit on your site. A domain with quality backlinks ranks higher.",
+    "As it turns out, nofollow links are an important part of a natural link profile.",
+    "For example, look at YouTube.",
+    "According to Semrush, 23% of their links are nofollow.",
+    "That’s not to say that you need 23% of your links to be nofollow.",
+    "It just goes to show that natural link profiles have a decent amount of nofollow links.",
+    "The noindex directive is a metatag that you add to certain pages on your website. This tag tells search engines to not add a specific page to their index.",
+    "On the other hand, nofollow links tell search engines to not follow a particular link. So if you don’t want a page indexed, a nofollow link isn’t going to work. Use the noindex tag instead.",
+    "Short answer: it depends on the technology your site runs on.",
+    "For example, if your site uses WordPress, all blog comment links automatically have the nofollow attribute.",
+    "There are also WordPress plugins that can make all of your links nofollow.",
+    "Otherwise, it’s a matter of working with a developer to manually or automatically add the rel=”nofollow” tag to your external links.",
+    "Backlinko is owned by Semrush. We’re still obsessed with bringing you world-class SEO insights, backed by hands-on experience. Unless otherwise noted, this content was written by either an employee or paid contractor of Semrush Inc.",
+    "234 shares"
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Cookie Policy.",
+      "href": "https://www.semrush.com/company/legal/cookie-policy/"
+    },
+    {
+      "label": "Allow all cookies",
+      "href": null
+    },
+    {
+      "label": "Deny all",
+      "href": null
+    },
+    {
+      "label": "Cookie settings",
+      "href": null
+    },
+    {
+      "label": "Watch Now",
+      "href": "https://www.youtube.com/watch?v=rIGzcovF6cM"
+    },
+    {
+      "label": "Close",
+      "href": null
+    },
+    {
+      "label": "Articles",
+      "href": null
+    },
+    {
+      "label": "Tools",
+      "href": null
+    },
+    {
+      "label": "Templates",
+      "href": "/templates/marketing"
+    },
+    {
+      "label": "About",
+      "href": "/about-backlinko"
+    },
+    {
+      "label": "Newsletter",
+      "href": "/newsletter"
+    },
+    {
+      "label": "Check My Site's SEO",
+      "href": null
+    },
+    {
+      "label": "Close",
+      "href": null
+    },
+    {
+      "label": "Free access",
+      "href": "https://www.semrush.com/blog/what-can-i-do-with-a-free-account-from-semrush/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=navigation"
+    },
+    {
+      "label": "Brian Dean",
+      "href": "/blog/authors/brian-dean"
+    },
+    {
+      "label": "What Are Nofollow Links?",
+      "href": "#what-are-nofollow-links"
+    },
+    {
+      "label": "Nofollow vs. Dofollow Links — What’s the Difference?",
+      "href": "#nofollow-vs-dofollow-links-whats-the-difference"
+    },
+    {
+      "label": "How Do You Check If a Link is Nofollow?",
+      "href": "#how-do-you-check-if-a-link-is-nofollow"
+    },
+    {
+      "label": "Why Did Search Engines Create the Nofollow Tag?",
+      "href": "#why-did-search-engines-create-the-nofollow-tag"
+    },
+    {
+      "label": "What Types of Links Are Nofollow?",
+      "href": "#what-types-of-links-are-nofollow"
+    },
+    {
+      "label": "Do Nofollow Links Help With SEO?",
+      "href": "#do-nofollow-links-help-with-seo"
+    },
+    {
+      "label": "What Are the Benefits of Nofollow Links?",
+      "href": "#what-are-the-benefits-of-nofollow-links"
+    },
+    {
+      "label": "What’s the Difference Between Nofollow and Noindex?",
+      "href": "#whats-the-difference-between-nofollow-and-noindex"
+    },
+    {
+      "label": "How Do I Use Nofollow Links on My Site?",
+      "href": "#how-do-i-use-nofollow-links-on-my-site"
+    },
+    {
+      "label": "HTML tag",
+      "href": "https://backlinko.com/html-tags"
+    },
+    {
+      "label": "search engine optimization",
+      "href": "https://en.wikipedia.org/wiki/Search_engine_optimization"
+    },
+    {
+      "label": "alternate search engines",
+      "href": "https://backlinko.com/search-engines"
+    },
+    {
+      "label": "ranking signal",
+      "href": "https://backlinko.com/google-ranking-factors"
+    },
+    {
+      "label": "according to Google",
+      "href": "https://support.google.com/webmasters/answer/96569?hl=en"
+    },
+    {
+      "label": "PageRank",
+      "href": "https://en.wikipedia.org/wiki/PageRank"
+    },
+    {
+      "label": "backlinks",
+      "href": "https://backlinko.com/hub/seo/backlinks"
+    },
+    {
+      "label": "Strike Out Nofollow Links",
+      "href": "https://chrome.google.com/webstore/detail/strike-out-nofollow-links/fkolbdohecbecliihaobiiamdmhhnaei?hl=en"
+    },
+    {
+      "label": "SEO Chrome extension",
+      "href": "https://backlinko.com/best-chrome-extensions-for-seo"
+    },
+    {
+      "label": "Analyze",
+      "href": null
+    },
+    {
+      "label": "blog comment spam",
+      "href": "https://support.google.com/webmasters/answer/81749"
+    },
+    {
+      "label": "widgets",
+      "href": "https://webmasters.googleblog.com/2016/09/a-reminder-about-widget-links.html"
+    },
+    {
+      "label": "Google’s Webmaster Guidelines",
+      "href": "https://support.google.com/webmasters/answer/35769?hl=en"
+    },
+    {
+      "label": "get penalized",
+      "href": "https://support.google.com/webmasters/answer/66356?hl=en"
+    },
+    {
+      "label": "anchor text",
+      "href": "https://en.wikipedia.org/wiki/Anchor_text"
+    },
+    {
+      "label": "to #1 in Google for his target keyword",
+      "href": "https://www.semrush.com/blog/are-nofollow-links-actually-good-for-seo-here-is-proof/?utm_campaign=nofollow-link&utm_source=backlinko.com&utm_medium=referral"
+    },
+    {
+      "label": "he added a nofollow link to one of SurveyMonkey’s 404 pages",
+      "href": "https://searchengineland.com/nofollow-links-not-useless-earning-central-good-seo-285412"
+    },
+    {
+      "label": "you’re at risk for a Google penalty",
+      "href": "https://searchengineland.com/link-profile-analysis-prevent-penalties-proactive-254512"
+    },
+    {
+      "label": "detailed backlink audit",
+      "href": "https://backlinko.com/step-by-step-backlink-audit"
+    },
+    {
+      "label": "WordPress plugins that can make all of your links nofollow",
+      "href": "https://wordpress.org/plugins/nofollow-for-external-link/"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Newsletter",
+      "href": "/newsletter"
+    },
+    {
+      "label": "Templates",
+      "href": "https://backlinko.com/templates/marketing"
+    },
+    {
+      "label": "Best SEO Tools",
+      "href": "/best-free-seo-tools"
+    },
+    {
+      "label": "About",
+      "href": "/about-backlinko"
+    },
+    {
+      "label": "Semrush AI Visiblity",
+      "href": "https://www.semrush.com/ai-seo/overview/"
+    },
+    {
+      "label": "Semrush Free Trial",
+      "href": "https://backlinko.com/deals/semrush-coupon"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    },
+    {
+      "label": "Twitter",
+      "href": "https://twitter.com/backlinko"
+    },
+    {
+      "label": "YouTube",
+      "href": "https://www.youtube.com/@BacklinkoTeam"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/briandean/"
+    },
+    {
+      "label": "Terms of Service",
+      "href": "https://www.semrush.com/company/legal/terms-of-service/?utm_source=backlinko.com&utm_medium=referral"
+    }
+  ],
+  "links": [
+    "https://www.semrush.com/company/legal/cookie-policy/",
+    "https://backlinko.com/nofollow-link#",
+    "https://www.youtube.com/watch?v=rIGzcovF6cM",
+    "https://backlinko.com/",
+    "https://backlinko.com/ai-search-strategy",
+    "https://backlinko.com/llm-seeding",
+    "https://backlinko.com/generative-engine-optimization-geo",
+    "https://backlinko.com/hub/seo/what-is-seo",
+    "https://backlinko.com/improve-your-seo",
+    "https://backlinko.com/seo-checklist",
+    "https://backlinko.com/seo-strategy",
+    "https://backlinko.com/?p=165994",
+    "https://backlinko.com/google-e-e-a-t",
+    "https://backlinko.com/hub/seo/internal-links",
+    "https://backlinko.com/technical-seo-guide",
+    "https://backlinko.com/on-page-seo",
+    "https://backlinko.com/ecommerce-seo",
+    "https://backlinko.com/seo-certification-guide",
+    "https://backlinko.com/ai-optimization",
+    "https://backlinko.com/ai-seo",
+    "https://backlinko.com/entity-seo",
+    "https://backlinko.com/audience-research",
+    "https://backlinko.com/reddit-marketing",
+    "https://backlinko.com/?p=193164",
+    "https://backlinko.com/answer-engine-optimization-aeo",
+    "https://backlinko.com/seo-basics-for-beginners",
+    "https://backlinko.com/seo-tutorial",
+    "https://backlinko.com/pillar-pages",
+    "https://backlinko.com/?p=175006",
+    "https://backlinko.com/actionable-seo-tips",
+    "https://backlinko.com/small-business-seo",
+    "https://backlinko.com/schema-markup-guide",
+    "https://backlinko.com/website-migration-checklist",
+    "https://backlinko.com/hub/content/what-is-content-marketing",
+    "https://backlinko.com/seo-copywriting",
+    "https://backlinko.com/?p=103911",
+    "https://backlinko.com/content-marketing-this-year",
+    "https://backlinko.com/?p=190262",
+    "https://backlinko.com/?p=172343",
+    "https://backlinko.com/scale-content",
+    "https://backlinko.com/hub/content/writing",
+    "https://backlinko.com/link-building",
+    "https://backlinko.com/hub/seo/backlinks",
+    "https://backlinko.com/high-quality-backlinks",
+    "https://backlinko.com/link-building-strategies",
+    "https://backlinko.com/link-building-services",
+    "https://backlinko.com/step-by-step-backlink-audit",
+    "https://backlinko.com/skyscraper-technique",
+    "https://backlinko.com/increase-domain-authority",
+    "https://backlinko.com/competitor-analysis",
+    "https://backlinko.com/?p=173056",
+    "https://backlinko.com/?p=174557",
+    "https://backlinko.com/how-to-create-a-website",
+    "https://backlinko.com/tools/seo-checker",
+    "https://backlinko.com/tools/backlink-checker",
+    "https://backlinko.com/tools/website-authority",
+    "https://backlinko.com/tools/website-traffic-checker",
+    "https://backlinko.com/tools/keyword",
+    "https://backlinko.com/tools/keyword-difficulty-checker",
+    "https://backlinko.com/tools/competitor-analysis",
+    "https://backlinko.com/tools/schema-markup-generator",
+    "https://backlinko.com/tools/ai-visibility-checker",
+    "https://backlinko.com/tools/ai-agent-readiness",
+    "https://backlinko.com/tools/agentic-browsing-readiness",
+    "https://backlinko.com/best-free-seo-tools",
+    "https://backlinko.com/llm-tracking-tools",
+    "https://backlinko.com/keyword-research-tools",
+    "https://backlinko.com/?p=98736",
+    "https://backlinko.com/link-building-tools",
+    "https://backlinko.com/best-rank-tracking-tools",
+    "https://backlinko.com/?p=171633",
+    "https://backlinko.com/seo-software-agencies",
+    "https://backlinko.com/ai-seo-tools",
+    "https://backlinko.com/sitemap-generator-tools",
+    "https://backlinko.com/best-digital-marketing-tools",
+    "https://backlinko.com/?p=170722",
+    "https://backlinko.com/semrush-review",
+    "https://backlinko.com/ahrefs-review",
+    "https://backlinko.com/ahrefs-vs-semrush",
+    "https://backlinko.com/clearscope-review",
+    "https://backlinko.com/majestic-seo-review",
+    "https://backlinko.com/surfer-seo",
+    "https://backlinko.com/serpstat-review",
+    "https://backlinko.com/sparktoro-review",
+    "https://backlinko.com/templates/marketing",
+    "https://backlinko.com/about-backlinko",
+    "https://backlinko.com/newsletter",
+    "https://www.semrush.com/blog/what-can-i-do-with-a-free-account-from-semrush/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=navigation",
+    "https://backlinko.com/blog/authors/brian-dean",
+    "https://backlinko.com/nofollow-link#what-are-nofollow-links",
+    "https://backlinko.com/nofollow-link#nofollow-vs-dofollow-links-whats-the-difference",
+    "https://backlinko.com/nofollow-link#how-do-you-check-if-a-link-is-nofollow",
+    "https://backlinko.com/nofollow-link#why-did-search-engines-create-the-nofollow-tag",
+    "https://backlinko.com/nofollow-link#what-types-of-links-are-nofollow",
+    "https://backlinko.com/nofollow-link#do-nofollow-links-help-with-seo",
+    "https://backlinko.com/nofollow-link#what-are-the-benefits-of-nofollow-links",
+    "https://backlinko.com/nofollow-link#whats-the-difference-between-nofollow-and-noindex",
+    "https://backlinko.com/nofollow-link#how-do-i-use-nofollow-links-on-my-site",
+    "https://backlinko.com/html-tags",
+    "https://en.wikipedia.org/wiki/Search_engine_optimization",
+    "https://backlinko.com/search-engines",
+    "https://backlinko.com/google-ranking-factors",
+    "https://support.google.com/webmasters/answer/96569?hl=en",
+    "https://en.wikipedia.org/wiki/PageRank",
+    "https://chrome.google.com/webstore/detail/strike-out-nofollow-links/fkolbdohecbecliihaobiiamdmhhnaei?hl=en",
+    "https://backlinko.com/best-chrome-extensions-for-seo",
+    "https://support.google.com/webmasters/answer/81749",
+    "https://webmasters.googleblog.com/2016/09/a-reminder-about-widget-links.html",
+    "https://support.google.com/webmasters/answer/35769?hl=en",
+    "https://support.google.com/webmasters/answer/66356?hl=en",
+    "https://en.wikipedia.org/wiki/Anchor_text",
+    "https://www.semrush.com/blog/are-nofollow-links-actually-good-for-seo-here-is-proof/?utm_campaign=nofollow-link&utm_source=backlinko.com&utm_medium=referral",
+    "https://searchengineland.com/nofollow-links-not-useless-earning-central-good-seo-285412",
+    "https://searchengineland.com/link-profile-analysis-prevent-penalties-proactive-254512",
+    "https://wordpress.org/plugins/nofollow-for-external-link/",
+    "https://twitter.com/share?text=What%20Is%20a%20Nofollow%20Link%3F%20Here%27s%20A%20Simple%20Plain%20English%20Answer&url=https%3A%2F%2Fbacklinko.com%2Fnofollow-link&via=Backlinko",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbacklinko.com%2Fnofollow-link",
+    "https://www.reddit.com/submit?url=https%3A%2F%2Fbacklinko.com%2Fnofollow-link&title=What%20Is%20a%20Nofollow%20Link%3F%20Here%27s%20A%20Simple%20Plain%20English%20Answer",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fbacklinko.com%2Fnofollow-link&summary=What%20Is%20a%20Nofollow%20Link%3F%20Here%27s%20A%20Simple%20Plain%20English%20Answer",
+    "https://backlinko.com/blog",
+    "https://www.semrush.com/ai-seo/overview/",
+    "https://backlinko.com/deals/semrush-coupon",
+    "https://backlinko.com/contact",
+    "https://twitter.com/backlinko",
+    "https://www.youtube.com/@BacklinkoTeam",
+    "https://www.instagram.com/briandean/",
+    "https://www.semrush.com/company/legal/terms-of-service/?utm_source=backlinko.com&utm_medium=referral",
+    "https://www.semrush.com/company/legal/privacy-policy/?utm_source=backlinko.com&utm_medium=referral"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://secure.gravatar.com/avatar/609c0e567577ac8c2c617f9062376394033fd851ca930c40bdc6aea2fa20fe2a?s=96&d=mm&r=g",
+        "alt": "Brian Dean",
+        "w": 96,
+        "h": 96
+      },
+      {
+        "src": "https://backlinko.com/_next/image?url=https%3A%2F%2Fapi.backlinko.com%2Fapp%2Fuploads%2F2020%2F04%2Fnofollow-link.png&w=1080&q=75",
+        "alt": "What Is a Nofollow Link? Here’s A Simple Plain English Answer",
+        "w": 960,
+        "h": 501
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2018/10/no-follow-link-techinical-640x125.webp",
+        "alt": "Nofollow link – Technical",
+        "w": 550,
+        "h": 107
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2020/06/top-ranking-pages-have-more-backlinks-than-lower-ranking-page-768x587.webp",
+        "alt": "Top ranking pages have more backlinks than lower ranking page",
+        "w": 700,
+        "h": 535
+      },
+      {
+        "src": "https://api.backlinko.com/app/themes/backlinko/dist/images/semrush-logo_50c66e41.svg",
+        "alt": "Semrush Logo",
+        "w": 196,
+        "h": 26
+      },
+      {
+        "src": "https://api.backlinko.com/app/themes/backlinko/dist/images/backlinko-logo_fcd71cff.svg",
+        "alt": "Backlinko Logo",
+        "w": 140,
+        "h": 19
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2021/10/google-guidelines-on-nofollow-links-768x381.webp",
+        "alt": "Google guidelines on nofollow links",
+        "w": 700,
+        "h": 347
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2018/10/website-ad-has-to-be-nofollow-768x286.webp",
+        "alt": "Google banner ads – Nofollow",
+        "w": 700,
+        "h": 260
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2021/10/google-guidelines-link-schemes-768x695.webp",
+        "alt": "Google guidelines – Link schemes",
+        "w": 700,
+        "h": 633
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2018/03/google-logo-square.png",
+        "alt": "",
+        "w": 100,
+        "h": 100
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2018/03/google-logo-square.png",
+        "alt": "",
+        "w": 100,
+        "h": 100
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2018/09/backlink-software-anchor-text-768x42.webp",
+        "alt": "Backlink software – Anchor text",
+        "w": 690,
+        "h": 37
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2018/10/number-1-ranking-for-target-keyword-768x598.webp",
+        "alt": "Number 1 ranking for target keyword",
+        "w": 700,
+        "h": 545
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2021/05/brian-facebook-post-visitors-480x247.webp",
+        "alt": "Brian Facebook post – Visitors",
+        "w": 449,
+        "h": 231
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2018/09/brian-site-comment-768x424.webp",
+        "alt": "Brian site comment",
+        "w": 700,
+        "h": 386
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2018/09/brian-site-comment-visitors-768x150.webp",
+        "alt": "Brian site comment – Visitors",
+        "w": 700,
+        "h": 136
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2021/10/okdork-brians-guestpost-768x825.webp",
+        "alt": "OkDork – Brian's guest post",
+        "w": 700,
+        "h": 751
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2021/10/okdork-nofollow-backlink-640x359.webp",
+        "alt": "OkDork – Nofollow backlink",
+        "w": 550,
+        "h": 308
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2018/09/brian-okdork-guest-post-traffic-increase-768x193.webp",
+        "alt": "Backlinko – OKDork guest post – Traffic increase",
+        "w": 700,
+        "h": 175
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2021/05/wordstream-okdork-post-backlik-640x171.webp",
+        "alt": "Backlinko – OKDork guest post – New links",
+        "w": 550,
+        "h": 146
+      }
+    ],
+    "allImgCount": 44,
+    "cssBackgrounds": [],
+    "modals": [
+      "About cookies on this siteWe use cookies to run our website, analyze your use of our services, manage your online preferences & personalize ad content. By accepting our cookies, you'll get relevant content and social media features, personalized ads, and an enhanced browsing experience. To manage your choices, click “Cookie Settings.” Necessary cookies are required for the core website functionality and cannot be rejected. For more information, see ourCookie Policy.Allow all cookiesDeny allCookie settings"
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {
+    "--fa-font-solid": "normal 900 1em/1 \"Font Awesome 6 Free\"",
+    "--fa-font-regular": "normal 400 1em/1 \"Font Awesome 6 Free\"",
+    "--fa-font-light": "normal 300 1em/1 \"Font Awesome 6 Pro\"",
+    "--fa-font-thin": "normal 100 1em/1 \"Font Awesome 6 Pro\"",
+    "--fa-font-duotone": "normal 900 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-regular": "normal 400 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-light": "normal 300 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-thin": "normal 100 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-brands": "normal 400 1em/1 \"Font Awesome 6 Brands\"",
+    "--fa-font-sharp-solid": "normal 900 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-regular": "normal 400 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-light": "normal 300 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-thin": "normal 100 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-duotone-solid": "normal 900 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-regular": "normal 400 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-light": "normal 300 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-thin": "normal 100 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--app-height": "100svh",
+    "--backlinko-bar-height": "62px",
+    "--sl-widgets-font-family": "-apple-system, system-ui",
+    "--sl-widgets-base-unit": "16px"
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 17,
+    "mainTextLen": 9744,
+    "realImageCount": 20,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "dev.visualwebsiteoptimizer.com",
+        "path": "/j.php",
+        "query": [
+          "a",
+          "ph",
+          "st",
+          "u",
+          "vn",
+          "x"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://dev.visualwebsiteoptimizer.com/j.php",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "pagead2.googlesyndication.com",
+        "path": "/ccm/collect",
+        "query": [
+          "ae",
+          "apvc",
+          "dl",
+          "dma",
+          "dma_cps",
+          "en",
+          "ep.ads_data_redaction",
+          "fmt",
+          "frm",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "navt",
+          "npa",
+          "rcb",
+          "rnd",
+          "scrsrc",
+          "tag_exp",
+          "tfd",
+          "tft"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "status": 200,
+        "bytes": null,
+        "hits": 3,
+        "example": "https://pagead2.googlesyndication.com/ccm/collect",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "region-eu.cookiehub.net",
+        "path": "/",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 28,
+        "hits": 1,
+        "example": "https://region-eu.cookiehub.net/",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "cdn.cookiehub.eu",
+        "path": "/client/7417b56b/en.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://cdn.cookiehub.eu/client/7417b56b/en.json",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 15368,
+        "hits": 2,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 9086,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+        "query": [
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 6695,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 8313,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "region1.google-analytics.com",
+        "path": "/g/collect",
+        "query": [
+          "_eu",
+          "_fv",
+          "_nsi",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "cid",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dp",
+          "dt",
+          "en",
+          "ep.container_id",
+          "frm",
+          "gaf",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "status": 204,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://region1.google-analytics.com/g/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 37708,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 44227,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "www.semrush.com",
+        "path": "/olaf/init",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://www.semrush.com/olaf/init",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "rum-collector-2.pingdom.net",
+        "path": "/img/beacon.gif",
+        "query": [
+          "bIH",
+          "bIW",
+          "cE",
+          "cS",
+          "dC",
+          "dCLEE",
+          "dCLES",
+          "dI",
+          "dL",
+          "dLE",
+          "dLS",
+          "dPR",
+          "fS",
+          "hS",
+          "id",
+          "lEE",
+          "lES",
+          "nS",
+          "nT",
+          "or",
+          "pD",
+          "path",
+          "rC",
+          "rE",
+          "rS",
+          "rV",
+          "reS",
+          "ref",
+          "resE",
+          "resS",
+          "s",
+          "sAH",
+          "sAW",
+          "sIS",
+          "sId",
+          "sST",
+          "title",
+          "uEE",
+          "uES",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": null,
+        "status": 200,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://rum-collector-2.pingdom.net/img/beacon.gif",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 37237,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 9030,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 11092,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 46349,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 32531,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 26509,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 56343,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 42872,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 47465,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 56858,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 51872,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 19882,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 21088,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 24511,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 10416,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "streaming.bi.owox.com",
+        "path": "/ga4/{hash}/g/collect",
+        "query": [
+          "_eu",
+          "_fplc",
+          "_fv",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "cid",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dp",
+          "dt",
+          "ecid",
+          "en",
+          "ep.container_id",
+          "ep.page_language",
+          "ep.user_agent",
+          "frm",
+          "gaf",
+          "gap.sstd",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "richsstsse",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "sst.etld",
+          "sst.gch",
+          "sst.gcsub",
+          "sst.lpc",
+          "sst.navt",
+          "sst.rnd",
+          "sst.tft",
+          "sst.ude",
+          "sst.us_privacy",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "ur",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/gif",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://streaming.bi.owox.com/ga4/9bb752a08674f116753ca5719dda03ed/g/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/brian-dean.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/brian-dean.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 15801,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "js.sparkloop.app",
+        "path": "/team_d05f5749d84d/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "status": 301,
+        "bytes": 167,
+        "hits": 1,
+        "example": "https://js.sparkloop.app/team_d05f5749d84d/settings",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "script-settings.sparkloop.app",
+        "path": "/team_d05f5749d84d/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://script-settings.sparkloop.app/team_d05f5749d84d/settings",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "api.backlinko.com",
+        "path": "/wp-json/backlinkostats/v1/shares/{n}",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://api.backlinko.com/wp-json/backlinkostats/v1/shares/73319",
+        "sameSite": true
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "www.googletagmanager.com",
+        "count": 5
+      },
+      {
+        "host": "rum-static.pingdom.net",
+        "count": 2
+      },
+      {
+        "host": "cdn.cookiehub.eu",
+        "count": 1
+      },
+      {
+        "host": "js.sparkloop.app",
+        "count": 1
+      },
+      {
+        "host": "script.sparkloop.app",
+        "count": 1
+      },
+      {
+        "host": "www.semrush.com",
+        "count": 1
+      }
+    ],
+    "truncated": false,
+    "inlineData": [
+      {
+        "id": "__NEXT_DATA__",
+        "type": "application/json",
+        "bytes": 215070,
+        "topLevelKeys": [
+          "props",
+          "page",
+          "query",
+          "buildId",
+          "isFallback",
+          "isExperimentalCompile",
+          "gsp",
+          "scriptLoader"
+        ]
+      }
+    ],
+    "globalState": [
+      "__NEXT_DATA__",
+      "dataLayer"
+    ],
+    "frameworkHints": [
+      "next"
+    ],
+    "forms": [
+      {
+        "action": "https://www.semrush.com/analytics/backlinks/overview/",
+        "hasAction": true,
+        "method": "get",
+        "sameOrigin": false,
+        "fieldCount": 1,
+        "fieldNames": [
+          "q"
+        ],
+        "search": true
+      }
+    ],
+    "ariaLiveRegions": 1,
+    "triggers": [
+      {
+        "marker": "aria-haspopup",
+        "href": null
+      }
+    ],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 26,
+      "thirdPartyEndpoints": 10,
+      "thirdPartyScriptHosts": 6,
+      "inlineDataBlobs": 1,
+      "forms": 1,
+      "searchForms": 1,
+      "hydrated": true
+    }
+  },
+  "screenshot": "assets/screenshots/nofollow-link.png",
+  "renderedHtml": "pages/nofollow-link.html"
+}

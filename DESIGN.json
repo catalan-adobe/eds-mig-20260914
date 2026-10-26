@@ -1,0 +1,230 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "mode": "bounded-single",
+    "writtenAt": "2026-10-26T15:09:16Z",
+    "synthesizedFrom": [
+      "stardust/first-page/current/pages/index.json",
+      "stardust/first-page/lift/rules-slim.css",
+      "stardust/prototypes/canon.css"
+    ]
+  },
+  "name": "Backlinko",
+  "colors": {
+    "brand": "#00bc98",
+    "brandHover": "#00ad8c",
+    "link": "#bb4a03",
+    "ink": "#000000",
+    "muted": "#646568",
+    "navy": "#1d2b35",
+    "line": "#ccd3e8",
+    "line2": "#ced4da",
+    "tint": "#f8f9fe",
+    "tint2": "#eef0f7",
+    "footerLink": "#94a1af",
+    "promo": "#ff642d",
+    "promoBar": "#f7f9ff",
+    "hubSeo": "#2ec4d8",
+    "hubLinks": "#f15e4a",
+    "hubContent": "#f7aa04",
+    "hubVideo": "#8256c5"
+  },
+  "typography": {
+    "family": "Inter (self-hosted variable woff2, /fonts/Inter-kern-latin.woff2)",
+    "body": {
+      "size": "16px (wrap 18px)",
+      "lineHeight": 1.8,
+      "weight": 400
+    },
+    "headings": {
+      "weight": 800,
+      "lineHeight": 1.4,
+      "h1": "34/36/38/40px @ 0/540/768/992",
+      "sectionH2": "32/36/38px @ 0/768/1200",
+      "cardLead": "24/28px @ 0/1200",
+      "card": "16/18px 600 @ 0/1200"
+    },
+    "textRendering": "optimizeSpeed; -webkit-font-smoothing: antialiased"
+  },
+  "layout": {
+    "container": "Bootstrap: 100% / 540 / 720 / 960 / 1140 @ 0/540/768/992/1200; gutter 20px <576, 10px >=576",
+    "headerRow": "1320px max, 30px padding @1200",
+    "sourceBreakpoints": [
+      540,
+      576,
+      768,
+      992,
+      1200
+    ]
+  },
+  "components": {
+    "buttonPrimary": "bg #00bc98, radius 6px, 1.05rem 1.2rem padding, 18px/600",
+    "buttonOutline": "1px #00bc98 border, radius 6px, 9px 24px, 16px/600, min-width 200px",
+    "card": "radius 5px image, aspect 52.22%",
+    "toolCard": "radius 6px, shadow 0 1px 2px rgba(25,27,35,.12), 0 0 1px rgba(25,27,35,.16)"
+  },
+  "extensions": {
+    "breakpoints": {
+      "containerMaxWidth": "1140px",
+      "probeWidth": 2560,
+      "shellMaxWidth": null,
+      "caps": [
+        {
+          "kind": "module",
+          "px": 1140,
+          "via": "max-width",
+          "selector": "main.css-1avyp1d > section > div.css-17mdh0m > div.css-1gmiqn5",
+          "pages": [
+            "https://backlinko.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 760,
+          "via": "max-width",
+          "selector": "#find-keyword > div.css-1r9do01 > div.css-1gmiqn5 > div.css-93tl4h",
+          "pages": [
+            "https://backlinko.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 700,
+          "via": "max-width",
+          "selector": "section > div > div.css-1gmiqn5 > h2.css-h4jkju",
+          "pages": [
+            "https://backlinko.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 580,
+          "via": "fixed",
+          "selector": "div.css-1gmiqn5 > div > div.css-1aclb7b > div.css-yw0cdh",
+          "pages": [
+            "https://backlinko.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 540,
+          "via": "fixed",
+          "selector": "div.css-11utl4o > div > div.css-1o1v5h > div.css-1qe7gkt",
+          "pages": [
+            "https://backlinko.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 500,
+          "via": "max-width",
+          "selector": "section > div.css-17mdh0m > div.css-1gmiqn5 > div.css-14ccikl",
+          "pages": [
+            "https://backlinko.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 400,
+          "via": "max-width",
+          "selector": "div.css-1r9do01 > div.css-1gmiqn5 > div.css-93tl4h > div",
+          "pages": [
+            "https://backlinko.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 364,
+          "via": "fixed",
+          "selector": "div.css-yw0cdh > article.css-1gmoqx4 > a > h3",
+          "pages": [
+            "https://backlinko.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 290,
+          "via": "fixed",
+          "selector": "div > ul.hub-topic-resources-list.resources-list > li.css-0 > a",
+          "pages": [
+            "https://backlinko.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 262,
+          "via": "fixed",
+          "selector": "div > ul.hub-topic-resources-list.resources-list > li.css-0 > a",
+          "pages": [
+            "https://backlinko.com/"
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "url": "https://backlinko.com/",
+          "section": 0,
+          "selector": "div > div.wrap > main.css-1avyp1d > section",
+          "px": 1140
+        },
+        {
+          "url": "https://backlinko.com/",
+          "section": 1,
+          "selector": "div > div.wrap > main.css-1avyp1d > section",
+          "px": 1140
+        },
+        {
+          "url": "https://backlinko.com/",
+          "section": 2,
+          "selector": "div > div.wrap > main.css-1avyp1d > section",
+          "px": 1140
+        },
+        {
+          "url": "https://backlinko.com/",
+          "section": 3,
+          "selector": "div > div.wrap > main.css-1avyp1d > section",
+          "px": null
+        },
+        {
+          "url": "https://backlinko.com/",
+          "section": 4,
+          "selector": "div > div.wrap > main.css-1avyp1d > section",
+          "px": 1140
+        },
+        {
+          "url": "https://backlinko.com/",
+          "section": 5,
+          "selector": "#find-keyword",
+          "px": 1140
+        },
+        {
+          "url": "https://backlinko.com/",
+          "section": 6,
+          "selector": "#free-tools-cats",
+          "px": 1140
+        },
+        {
+          "url": "https://backlinko.com/",
+          "section": 7,
+          "selector": "div > div.wrap > main.css-1avyp1d > section",
+          "px": 1140
+        },
+        {
+          "url": "https://backlinko.com/",
+          "section": 8,
+          "selector": "div > div.wrap > main.css-1avyp1d > section",
+          "px": 1140
+        }
+      ],
+      "capRegister": [],
+      "capProvenance": {
+        "writtenBy": "skills/replica/scripts/cap-probe.mjs",
+        "writtenAt": "2026-10-26T15:00:11.331Z",
+        "baseWidth": 1440,
+        "urls": [
+          "https://backlinko.com/"
+        ]
+      }
+    }
+  }
+}

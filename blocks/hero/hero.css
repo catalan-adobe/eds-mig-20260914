@@ -1,37 +1,294 @@
-.hero-container .hero-wrapper {
-  max-width: unset;
-  padding: 0;
+/* Hero — lifted from backlinko.com (17mdh0m / 14ccikl / 94fyca / 1rp1xv); prototype index.css */
+
+main > .section.hero-container {
+  overflow: hidden;
+  background-image: linear-gradient(180deg, #fff 10%, var(--tint-2));
+  background-repeat: repeat-x;
 }
 
-.hero {
+.hero .hero-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 50px auto 0;
+}
+
+.hero .hero-eyebrow :is(h2,
+p) {
+  margin: 0 0 15px;
+  color: var(--green);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero .hero-title h1 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.hero .quote-card {
+  order: 1;
+  margin-top: 50px;
+  padding: 25px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background-color: #fff;
+  color: var(--navy);
+  font-size: 1rem;
+}
+
+.hero .quote-card blockquote {
   position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
+  margin: 0;
+  line-height: 1.6;
 }
 
-.hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
-}
-
-.hero picture {
+.hero .quote-card figure {
   position: absolute;
-  z-index: -1;
-  inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  display: none;
+  overflow: hidden;
+  width: 45px;
+  height: 45px;
+  margin: 0;
+  border-radius: 50%;
 }
 
-.hero img {
-  object-fit: cover;
+.hero .quote-card figure img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
-@media (width >= 900px) {
-  .hero {
-    padding: 40px 32px;
+.hero .quote-text p {
+  margin: 0;
+}
+
+.hero .quote-cite p {
+  margin: 10px 0 0;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.hero .hero-form {
+  position: relative;
+  margin-top: 45px;
+  padding: 18px 0;
+}
+
+.hero .hero-form::before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: -50vw;
+  display: block;
+  width: 200vw;
+  height: 1px;
+  background-color: var(--line);
+}
+
+.hero .hero-form::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: -50vw;
+  display: block;
+  width: 200vw;
+  background-color: var(--tint-2);
+}
+
+.hero .hero-form form {
+  position: relative;
+  z-index: 3;
+  margin: 0;
+}
+
+.hero .form-field {
+  position: relative;
+}
+
+.hero .hero-form input {
+  display: block;
+  width: 100%;
+  padding: 1.05rem 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 7.5%);
+  color: #000;
+  font-family: inter, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.hero .hero-form input::placeholder {
+  color: #a5a5a5;
+  opacity: 1;
+}
+
+.hero .hero-form button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10px 0 0;
+  padding: 1.05rem 1.2rem;
+  border: 1px solid var(--green);
+  border-radius: 6px;
+  background-color: var(--green);
+  color: #fff;
+  font-family: var(--font);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero .hero-form button:hover {
+  background-color: var(--green-hover);
+}
+
+.hero .form-tooltip {
+  position: absolute;
+  z-index: 1;
+  top: calc((100% + 0.4rem) * -1);
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s, visibility 0.15s;
+}
+
+.hero .form-tooltip.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hero .form-tooltip-arrow {
+  position: absolute;
+  right: 0;
+  bottom: -0.4rem;
+  left: 0;
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  border-top: 0.4rem solid #000;
+  border-right: 0.4rem solid transparent;
+  border-left: 0.4rem solid transparent;
+}
+
+.hero .form-tooltip-inner {
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  background-color: #000;
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.hero .form-tooltip-inner p {
+  margin: 0;
+}
+
+@media (width >= 540px) {
+  .hero .hero-title h1 {
+    font-size: 36px;
+  }
+}
+
+@media (width >= 768px) {
+  .hero .hero-eyebrow :is(h2,
+  p) {
+    font-size: 18px;
+  }
+
+  .hero .hero-title h1 {
+    font-size: 38px;
+  }
+
+  .hero .quote-card {
+    order: 0;
+    max-width: 335px;
+    margin-top: 25px;
+  }
+
+  .hero .quote-card blockquote {
+    padding-left: 70px;
+  }
+
+  .hero .quote-card figure {
+    display: block;
+  }
+
+  .hero .hero-form {
+    margin-top: 65px;
+  }
+
+  .hero .hero-form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 170px;
+    margin: 0;
+  }
+}
+
+@media (width >= 768px) and (width < 992px) {
+  .hero .hero-form::after {
+    opacity: 0.9;
+  }
+}
+
+@media (width >= 992px) {
+  .hero .hero-content {
+    margin: 65px auto;
+  }
+
+  .hero .hero-title h1 {
+    margin: 0 -50px;
+    font-size: 40px;
+  }
+
+  .hero .quote-card {
+    max-width: 495px;
+  }
+
+  .hero .quote-card figure {
+    display: flex;
+  }
+
+  .hero .hero-form {
+    max-width: 495px;
+    margin-top: 40px;
+    padding: 0;
+  }
+
+  .hero .hero-form::before,
+  .hero .hero-form::after {
+    display: none;
+  }
+}
+
+@media (width >= 1200px) {
+  .hero .quote-card,
+  .hero .hero-form {
+    max-width: 505px;
   }
 }

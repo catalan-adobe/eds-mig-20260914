@@ -1,0 +1,1436 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-26T14:58:46.350Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "google-trustrank",
+  "url": "https://backlinko.com/google-trustrank",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-26T14:58:46.350Z",
+  "finalUrl": "https://backlinko.com/google-trustrank",
+  "title": "Google TrustRank: The Definitive Guide",
+  "description": "Everything you need to know about Google's TrustRank algorithm. And how it impacts SEO in 2018.",
+  "og": {
+    "title": "Google TrustRank: The Definitive Guide",
+    "description": "Everything you need to know about Google's TrustRank algorithm. And how it impacts SEO in 2018.",
+    "image": "https://api.backlinko.com/app/uploads/2020/06/google-trustrank.png",
+    "type": "article"
+  },
+  "headings": [
+    {
+      "tag": "h2",
+      "text": "About cookies on this site"
+    },
+    {
+      "tag": "h3",
+      "text": ".semrush_svg__cls-2{fill:#181e15}Semrush helps you:"
+    },
+    {
+      "tag": "h3",
+      "text": "Backlinko readers get:"
+    },
+    {
+      "tag": "h6",
+      "text": "AI Keyword Ideas in Seconds"
+    },
+    {
+      "tag": "h1",
+      "text": "Google TrustRank: The Definitive Guide"
+    },
+    {
+      "tag": "h2",
+      "text": "What is Google TrustRank?"
+    },
+    {
+      "tag": "h2",
+      "text": "How TrustRank Works"
+    },
+    {
+      "tag": "h2",
+      "text": "Can you Measure TrustRank?"
+    },
+    {
+      "tag": "h2",
+      "text": "Step 1: On-Page Trust Optimization"
+    },
+    {
+      "tag": "h2",
+      "text": "Step#2: Look and Act Like a Big Brand"
+    },
+    {
+      "tag": "h2",
+      "text": "Step 3: Trustworthy Domain Info"
+    },
+    {
+      "tag": "h2",
+      "text": "Step 4: Trusted Links"
+    },
+    {
+      "tag": "h2",
+      "text": "Step 5: Google News Site Backlinks"
+    },
+    {
+      "tag": "h4",
+      "text": "Learn"
+    },
+    {
+      "tag": "h4",
+      "text": "Company"
+    },
+    {
+      "tag": "h4",
+      "text": "Connect"
+    }
+  ],
+  "body": [
+    "Written by Brian Dean",
+    "On this page",
+    "What is Google TrustRank?",
+    "How TrustRank Works",
+    "Can you Measure TrustRank?",
+    "Step 1: On-Page Trust Optimization",
+    "Step#2: Look and Act Like a Big Brand",
+    "Step 3: Trustworthy Domain Info",
+    "Step 4: Trusted Links",
+    "Step 5: Google News Site Backlinks",
+    "In this guide you’ll learn everything you need to know about Google TrustRank.",
+    "What it is.",
+    "How it works.",
+    "(And most important of all) how to get it.",
+    "Let’s dive right in.",
+    "Google TrustRank helps Google and alternate search engines combat web spam. Specifically, TrustRank measures so-called “trust signals”. These trust signals help them evaluate whether or not core ranking signals (like links and content) are legitimate.",
+    "Even though TrustRank was initially created by Yahoo! and Stanford engineers, Google has revealed that they also use TrustRank in their algorithm.",
+    "For example, they filed a patent for: “A search engine system provides search results that are ranked according to a measure of the trust…”",
+    "Google has also made official statements like:",
+    "“So PageRank is the most well known type of trust. It’s looking at links and how important those links are. So if you have a lot of very high quality links, then you tend to earn a lot of trust with Google. There’s over 200 different signals that we use in our ranking. But you can kind of break them down into this notion of trust and how well you match a particular query. We use several words – reputation, trust, authority.”",
+    "“So PageRank is the most well known type of trust. It’s looking at links and how important those links are.",
+    "So if you have a lot of very high quality links, then you tend to earn a lot of trust with Google. There’s over 200 different signals that we use in our ranking.",
+    "But you can kind of break them down into this notion of trust and how well you match a particular query. We use several words – reputation, trust, authority.”",
+    "In other words: Google upranks websites that they trust. And they measure that trust in their algorithm with TrustRank.",
+    "But how does TrustRank actually work?",
+    "That leads us to our next section…",
+    "I’ll go into a lot more detail on how this works soon.",
+    "But you can look at TrustRank like a filter.",
+    "If Google sees your links and content as trustworthy, they pass the filter.",
+    "But if your TrustRank is low, these signals are seen as not legitimate…and are blocked.",
+    "Needless to say, you want Google to see your site as a trustworthy resource. If not, your rankings are going to suffer… big time.",
+    "Short answer: kind of.",
+    "Longer answer:",
+    "Moz has developed a metric called “Domain Authority“.",
+    "Domain Authority is the closet thing we have to measuring TrustRank directly.",
+    "It’s not perfect. But it’s a helpful starting point.",
+    "For example, here’s my Domain authority:",
+    "1 means that that your links are almost 100% spam. 100 would be a site like Harvard.edu. So 73 is actually pretty good.",
+    "With that, it’s time for me to show you how to maximize your site’s TrustRank…",
+    "Here’s how to generate on-page trust for your site.",
+    "1. Link Out to Authority Sites: I know you’ve seen those lame paper-thin affiliate sites in Google.",
+    "Did you ever notice that they NEVER link out to other sites?",
+    "Can you say red flag?",
+    "But look at any REAL site, like The Huffington Post or NYTimes.com: they’re linking out to sites left and right!",
+    "And so should you. Linking out is a fundamental on-page SEO strategy.",
+    "Plus, one well-done industry study found a correlation between linking out and higher Google rankings:",
+    "Keep in mind that the sites that you link to reflect on your site…",
+    "…so spread the link love to .edu, .gov and authority sites early and often.",
+    "After all, all Adsense publishers are required to have this info on their site, which tells me that Big G thinks it’s important.",
+    "3. Bounces and Blocked Sites: Google’s RankBrain algorithm now takes into account user interaction is a ranking factor.",
+    "In fact, Google even gone as far as to consider how many Chrome users block your site.",
+    "You can imagine how shady a site must be for people to actually block the entire site.",
+    "And the same goes for sites with high bounce rate: if your site provides trustworthy information why is everyone in such a rush to leave?",
+    "So make sure you keep an eye in your bounce rate and “Average engagement time per active user” in Google Analytics.",
+    "Then, do what you can to keep people sticking to your site like superglue.",
+    "4. References and Sources: Consider having a list of sources and references at the end of certain articles.",
+    "This shows Google that your content is well-researched (and therefore most trustworthy).",
+    "Google has been VERY big on brands lately.",
+    "How can you, some guy banging out WordPress sites in his underwear, possibly look like a big brand?",
+    "(Even if you are just some guy banging out WordPress sites in his underwear).",
+    "Easy. Build brand signals.",
+    "Remember: Google is just a site ranking machine (also known as an algorithm).",
+    "Google doesn’t know that Pepsi is a brand because it saw their Super Bowl commercial last year. They identify brands from online brand signals.",
+    "And they take brands VERY seriously because they trust brands.",
+    "In fact, here’s what Google CEO Eric Schmidt has this to say about brands:",
+    "“Brands are the solution, not the problem… brands are how you sort out the cesspool.”",
+    "“Brands are the solution, not the problem… brands are how you sort out the cesspool.”",
+    "Here’s how to step out the cesspool, take a long shower, and look like a big bad brand:",
+    "1. Branded Domain/Site Name: Forget exact match or phrase match domains. The EMD update made it very clear that exact match domains don’t do jack. Instead of MostComfortableMaleThongsX.com, go for ComfyThongs.com.",
+    "Rocking a branded domain sends the message that you’re a unique brand…not some SEO-obsessed loser trying to rank for one keyword.",
+    "2. Thorough About Us Page: Don’t skimp on your about page.",
+    "Real brands have MASSIVE about pages that talks about their company, mission statement, etc. Make an epic about us page that tells your story.",
+    "3. Active Social Media Accounts: All big brands are super-active on social media, including Facebook, LinkedIn, Pinterest and the like. Even if you run tiny site, get your social accounts rocking and rolling.",
+    "4. Branded Searches in Google: People search for brands, whether it be Ikea, YouTube or John Deere. You know that Google considers you a brand when you get sitelinks, like this:",
+    "But you don’t have to be on the Fortune 500 to get the brand treatment.",
+    "Sitelinks appear when you build killer backlinks AND get people to search for your brand in Google.",
+    "How do you do that, you ask?",
+    "The simple answer: create an awesome site 🙂",
+    "5. Brand Name Anchor Text: People naturally link to brands with brand name anchor text. So if your site is Thongs4Less.com, you better get some links with the anchor text: “Thongs 4 Less”.",
+    "Did you know that Google is a domain registrar?",
+    "But they don’t sell domains.",
+    "Weird right?",
+    "The reason they went through the trouble was to spy on your whois info. You see, when you’re an ICANN-approved registrar you can check whois information all day long, unlike us mere mortals.",
+    "Here’s what you can do to get more trust from your domain info:",
+    "Register your domain for 2+ Years: Google wants to see that you’re in this for the long haul. Although the influence of domain registration in SEO has been debated to death, it’s something that can’t possibly hurt you and might help you…so go for it. I personally register my domains for 5+ years.",
+    "Make it public: No real company has private whois (check if you don’t believe me). Make sure that the address is real or this can backfire.",
+    "Individually, these may seem like tiny things, but look at it this way:",
+    "Which site seems more trustworthy to you?",
+    "Site #1: Private whois and no contact page that’s expiring in 3-months.",
+    "Site #2: Real address and phone number that matches their site’s official contact info…AND has 5 more years before the domain expires?",
+    "Thought so.",
+    "And here’s the big one. Like everything in the Google universe, trust revolves around links.",
+    "And they do it based on an SEO version of Six Degrees of Kevin Bacon.",
+    "The trust you get from other sites is often referred to as TrustRank.",
+    "Here’s how it works:",
+    "Basically, there are a group of highly-trusted “seed sites”, such as .govs, .edus, NYTimes.com etc.",
+    "Google hand picks these sites and gives them a 10/10 TrustRank.",
+    "Obviously, getting links directly from these sites is best.",
+    "That said…",
+    "You can still get some of that trust by getting links from sites that have links from seed sites.",
+    "Or put another way:",
+    "Harvard.edu –> your site= best case scenario",
+    "Harvard.edu –>some other site –> your site = not too shabby",
+    "Harvard.edu –>some other site –>–>some other site –>–>some other site –>–>some other site –>–>some other site –>–>some other site –>–>some other site –>your site =not good",
+    "That’s why you should ALWAYS look at another site’s link profile before taking the time to get a link from them.",
+    "In fact, I focus a lot of my link building efforts on getting links directly from “seed sites”… or sites that have links from seed sites.",
+    "In my experience, these sites rank better AND are much more durable to updates.",
+    "Bottom line? You want the sites that link to you to be highly trusted sites.",
+    "In the eyes of Big G, Google News approved sites are some of the most trusted sites in the internet.",
+    "Think about it: news sites have to be trustworthy.",
+    "If you’re searching for “best rappers of all time” it’s possible that some guy will include Vanilla Ice on his list.",
+    "But news sites are held to a higher standard because their content has to be spot on.",
+    "If they post an article with the headline: “Justin Bieber Elected President of Ecuador”, then it better be true.",
+    "For a site to be included in Google News, they have to undergo a rigorous manual review before getting in (fun fact: I once submitted a site to Google News and was rejected).",
+    "That lends them a lot of trust in the eyes of big G.",
+    "The thing is, getting a real link from a Google News approved site isn’t easy.",
+    "You have to create something newsworthy… then promote it.",
+    "For example, a while back, I did a giant study of Google’s ranking signals.",
+    "Because that content contained something worth reporting on, several news sites wrote about it (and linked to the study):",
+    "Backlinko is owned by Semrush. We’re still obsessed with bringing you world-class SEO insights, backed by hands-on experience. Unless otherwise noted, this content was written by either an employee or paid contractor of Semrush Inc.",
+    "807 shares"
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Cookie Policy.",
+      "href": "https://www.semrush.com/company/legal/cookie-policy/"
+    },
+    {
+      "label": "Allow all cookies",
+      "href": null
+    },
+    {
+      "label": "Deny all",
+      "href": null
+    },
+    {
+      "label": "Cookie settings",
+      "href": null
+    },
+    {
+      "label": "Watch Now",
+      "href": "https://www.youtube.com/watch?v=rIGzcovF6cM"
+    },
+    {
+      "label": "Close",
+      "href": null
+    },
+    {
+      "label": "Articles",
+      "href": null
+    },
+    {
+      "label": "Tools",
+      "href": null
+    },
+    {
+      "label": "Templates",
+      "href": "/templates/marketing"
+    },
+    {
+      "label": "About",
+      "href": "/about-backlinko"
+    },
+    {
+      "label": "Newsletter",
+      "href": "/newsletter"
+    },
+    {
+      "label": "Check My Site's SEO",
+      "href": null
+    },
+    {
+      "label": "Close",
+      "href": null
+    },
+    {
+      "label": "Free access",
+      "href": "https://www.semrush.com/blog/what-can-i-do-with-a-free-account-from-semrush/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=navigation"
+    },
+    {
+      "label": "Brian Dean",
+      "href": "/blog/authors/brian-dean"
+    },
+    {
+      "label": "What is Google TrustRank?",
+      "href": "#what-is-google-trust-rank"
+    },
+    {
+      "label": "How TrustRank Works",
+      "href": "#how-trust-rank-works"
+    },
+    {
+      "label": "Can you Measure TrustRank?",
+      "href": "#can-you-measure-trust-rank"
+    },
+    {
+      "label": "Step 1: On-Page Trust Optimization",
+      "href": "#step-1-on-page-trust-optimization"
+    },
+    {
+      "label": "Step#2: Look and Act Like a Big Brand",
+      "href": "#step-2-look-and-act-like-a-big-brand"
+    },
+    {
+      "label": "Step 3: Trustworthy Domain Info",
+      "href": "#step-3-trustworthy-domain-info"
+    },
+    {
+      "label": "Step 4: Trusted Links",
+      "href": "#step-4-trusted-links"
+    },
+    {
+      "label": "Step 5: Google News Site Backlinks",
+      "href": "#step-5-google-news-site-backlinks"
+    },
+    {
+      "label": "alternate search engines",
+      "href": "https://backlinko.com/search-engines"
+    },
+    {
+      "label": "initially created by Yahoo! and Stanford engineers",
+      "href": "https://en.wikipedia.org/wiki/TrustRank"
+    },
+    {
+      "label": "they filed a patent",
+      "href": "http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&u=%2Fnetahtml%2FPTO%2Fsearch-adv.htm&r=1&p=1&f=G&l=50&d=PTXT&S1=7,603,350.PN.&OS=pn/7,603,350&RS=PN/7,603,350"
+    },
+    {
+      "label": "official statements",
+      "href": "https://www.youtube.com/watch?v=ALzSUeekQ2Q"
+    },
+    {
+      "label": "Domain Authority",
+      "href": "https://moz.com/learn/seo/moztrust"
+    },
+    {
+      "label": "The Huffington Post",
+      "href": "https://www.huffingtonpost.com"
+    },
+    {
+      "label": "NYTimes.com",
+      "href": "https://www.nytimes.com"
+    },
+    {
+      "label": "on-page SEO strategy",
+      "href": "https://backlinko.com/on-page-seo"
+    },
+    {
+      "label": "a correlation",
+      "href": "https://www.rebootonline.com/blog/long-term-outgoing-link-experiment/"
+    },
+    {
+      "label": "Google’s RankBrain algorithm",
+      "href": "https://backlinko.com/google-rankbrain-seo"
+    },
+    {
+      "label": "how many Chrome users block your site",
+      "href": "https://searchengineland.com/google-finally-discontinues-the-blocked-sites-feature-152885"
+    },
+    {
+      "label": "your bounce rate",
+      "href": "https://backlinko.com/hub/seo/bounce-rate"
+    },
+    {
+      "label": "The EMD update",
+      "href": "https://searchengineland.com/low-quality-exact-match-domains-are-googles-next-target-134889"
+    },
+    {
+      "label": "build killer backlinks",
+      "href": "https://backlinko.com/17-untapped-backlink-sources"
+    },
+    {
+      "label": "debated to death",
+      "href": "https://searchengineland.com/google-domain-registrations-dont-affect-seo-or-do-they-25483"
+    },
+    {
+      "label": "Google’s ranking signals",
+      "href": "https://backlinko.com/search-engine-ranking"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Newsletter",
+      "href": "/newsletter"
+    },
+    {
+      "label": "Templates",
+      "href": "https://backlinko.com/templates/marketing"
+    },
+    {
+      "label": "Best SEO Tools",
+      "href": "/best-free-seo-tools"
+    },
+    {
+      "label": "About",
+      "href": "/about-backlinko"
+    },
+    {
+      "label": "Semrush AI Visiblity",
+      "href": "https://www.semrush.com/ai-seo/overview/"
+    },
+    {
+      "label": "Semrush Free Trial",
+      "href": "https://backlinko.com/deals/semrush-coupon"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    },
+    {
+      "label": "Twitter",
+      "href": "https://twitter.com/backlinko"
+    },
+    {
+      "label": "YouTube",
+      "href": "https://www.youtube.com/@BacklinkoTeam"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/briandean/"
+    },
+    {
+      "label": "Terms of Service",
+      "href": "https://www.semrush.com/company/legal/terms-of-service/?utm_source=backlinko.com&utm_medium=referral"
+    }
+  ],
+  "links": [
+    "https://www.semrush.com/company/legal/cookie-policy/",
+    "https://backlinko.com/google-trustrank#",
+    "https://www.youtube.com/watch?v=rIGzcovF6cM",
+    "https://backlinko.com/",
+    "https://backlinko.com/ai-search-strategy",
+    "https://backlinko.com/llm-seeding",
+    "https://backlinko.com/generative-engine-optimization-geo",
+    "https://backlinko.com/hub/seo/what-is-seo",
+    "https://backlinko.com/improve-your-seo",
+    "https://backlinko.com/seo-checklist",
+    "https://backlinko.com/seo-strategy",
+    "https://backlinko.com/?p=165994",
+    "https://backlinko.com/google-e-e-a-t",
+    "https://backlinko.com/hub/seo/internal-links",
+    "https://backlinko.com/technical-seo-guide",
+    "https://backlinko.com/on-page-seo",
+    "https://backlinko.com/ecommerce-seo",
+    "https://backlinko.com/seo-certification-guide",
+    "https://backlinko.com/ai-optimization",
+    "https://backlinko.com/ai-seo",
+    "https://backlinko.com/entity-seo",
+    "https://backlinko.com/audience-research",
+    "https://backlinko.com/reddit-marketing",
+    "https://backlinko.com/?p=193164",
+    "https://backlinko.com/answer-engine-optimization-aeo",
+    "https://backlinko.com/seo-basics-for-beginners",
+    "https://backlinko.com/seo-tutorial",
+    "https://backlinko.com/pillar-pages",
+    "https://backlinko.com/?p=175006",
+    "https://backlinko.com/actionable-seo-tips",
+    "https://backlinko.com/small-business-seo",
+    "https://backlinko.com/schema-markup-guide",
+    "https://backlinko.com/website-migration-checklist",
+    "https://backlinko.com/hub/content/what-is-content-marketing",
+    "https://backlinko.com/seo-copywriting",
+    "https://backlinko.com/?p=103911",
+    "https://backlinko.com/content-marketing-this-year",
+    "https://backlinko.com/?p=190262",
+    "https://backlinko.com/?p=172343",
+    "https://backlinko.com/scale-content",
+    "https://backlinko.com/hub/content/writing",
+    "https://backlinko.com/link-building",
+    "https://backlinko.com/hub/seo/backlinks",
+    "https://backlinko.com/high-quality-backlinks",
+    "https://backlinko.com/link-building-strategies",
+    "https://backlinko.com/link-building-services",
+    "https://backlinko.com/step-by-step-backlink-audit",
+    "https://backlinko.com/skyscraper-technique",
+    "https://backlinko.com/increase-domain-authority",
+    "https://backlinko.com/competitor-analysis",
+    "https://backlinko.com/?p=173056",
+    "https://backlinko.com/?p=174557",
+    "https://backlinko.com/how-to-create-a-website",
+    "https://backlinko.com/tools/seo-checker",
+    "https://backlinko.com/tools/backlink-checker",
+    "https://backlinko.com/tools/website-authority",
+    "https://backlinko.com/tools/website-traffic-checker",
+    "https://backlinko.com/tools/keyword",
+    "https://backlinko.com/tools/keyword-difficulty-checker",
+    "https://backlinko.com/tools/competitor-analysis",
+    "https://backlinko.com/tools/schema-markup-generator",
+    "https://backlinko.com/tools/ai-visibility-checker",
+    "https://backlinko.com/tools/ai-agent-readiness",
+    "https://backlinko.com/tools/agentic-browsing-readiness",
+    "https://backlinko.com/best-free-seo-tools",
+    "https://backlinko.com/llm-tracking-tools",
+    "https://backlinko.com/keyword-research-tools",
+    "https://backlinko.com/?p=98736",
+    "https://backlinko.com/link-building-tools",
+    "https://backlinko.com/best-rank-tracking-tools",
+    "https://backlinko.com/?p=171633",
+    "https://backlinko.com/seo-software-agencies",
+    "https://backlinko.com/ai-seo-tools",
+    "https://backlinko.com/sitemap-generator-tools",
+    "https://backlinko.com/best-digital-marketing-tools",
+    "https://backlinko.com/?p=170722",
+    "https://backlinko.com/semrush-review",
+    "https://backlinko.com/ahrefs-review",
+    "https://backlinko.com/ahrefs-vs-semrush",
+    "https://backlinko.com/clearscope-review",
+    "https://backlinko.com/majestic-seo-review",
+    "https://backlinko.com/surfer-seo",
+    "https://backlinko.com/serpstat-review",
+    "https://backlinko.com/sparktoro-review",
+    "https://backlinko.com/templates/marketing",
+    "https://backlinko.com/about-backlinko",
+    "https://backlinko.com/newsletter",
+    "https://www.semrush.com/blog/what-can-i-do-with-a-free-account-from-semrush/?utm_source=backlinko.com&utm_medium=referral&utm_campaign=navigation",
+    "https://backlinko.com/blog/authors/brian-dean",
+    "https://backlinko.com/google-trustrank#what-is-google-trust-rank",
+    "https://backlinko.com/google-trustrank#how-trust-rank-works",
+    "https://backlinko.com/google-trustrank#can-you-measure-trust-rank",
+    "https://backlinko.com/google-trustrank#step-1-on-page-trust-optimization",
+    "https://backlinko.com/google-trustrank#step-2-look-and-act-like-a-big-brand",
+    "https://backlinko.com/google-trustrank#step-3-trustworthy-domain-info",
+    "https://backlinko.com/google-trustrank#step-4-trusted-links",
+    "https://backlinko.com/google-trustrank#step-5-google-news-site-backlinks",
+    "https://backlinko.com/search-engines",
+    "https://en.wikipedia.org/wiki/TrustRank",
+    "http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&u=%2Fnetahtml%2FPTO%2Fsearch-adv.htm&r=1&p=1&f=G&l=50&d=PTXT&S1=7,603,350.PN.&OS=pn/7,603,350&RS=PN/7,603,350",
+    "https://www.youtube.com/watch?v=ALzSUeekQ2Q",
+    "https://moz.com/learn/seo/moztrust",
+    "https://www.huffingtonpost.com/",
+    "https://www.nytimes.com/",
+    "https://www.rebootonline.com/blog/long-term-outgoing-link-experiment/",
+    "https://backlinko.com/google-rankbrain-seo",
+    "https://searchengineland.com/google-finally-discontinues-the-blocked-sites-feature-152885",
+    "https://backlinko.com/hub/seo/bounce-rate",
+    "https://searchengineland.com/low-quality-exact-match-domains-are-googles-next-target-134889",
+    "https://backlinko.com/17-untapped-backlink-sources",
+    "https://searchengineland.com/google-domain-registrations-dont-affect-seo-or-do-they-25483",
+    "https://backlinko.com/search-engine-ranking",
+    "https://twitter.com/share?text=Google%20TrustRank%3A%20The%20Definitive%20Guide&url=https%3A%2F%2Fbacklinko.com%2Fgoogle-trustrank&via=Backlinko",
+    "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbacklinko.com%2Fgoogle-trustrank",
+    "https://www.reddit.com/submit?url=https%3A%2F%2Fbacklinko.com%2Fgoogle-trustrank&title=Google%20TrustRank%3A%20The%20Definitive%20Guide",
+    "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fbacklinko.com%2Fgoogle-trustrank&summary=Google%20TrustRank%3A%20The%20Definitive%20Guide",
+    "https://backlinko.com/blog",
+    "https://www.semrush.com/ai-seo/overview/",
+    "https://backlinko.com/deals/semrush-coupon",
+    "https://backlinko.com/contact",
+    "https://twitter.com/backlinko",
+    "https://www.youtube.com/@BacklinkoTeam",
+    "https://www.instagram.com/briandean/",
+    "https://www.semrush.com/company/legal/terms-of-service/?utm_source=backlinko.com&utm_medium=referral",
+    "https://www.semrush.com/company/legal/privacy-policy/?utm_source=backlinko.com&utm_medium=referral"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://secure.gravatar.com/avatar/609c0e567577ac8c2c617f9062376394033fd851ca930c40bdc6aea2fa20fe2a?s=96&d=mm&r=g",
+        "alt": "Brian Dean",
+        "w": 96,
+        "h": 96
+      },
+      {
+        "src": "https://backlinko.com/_next/image?url=https%3A%2F%2Fapi.backlinko.com%2Fapp%2Fuploads%2F2020%2F06%2Fgoogle-trustrank.png&w=1080&q=75",
+        "alt": "Google TrustRank: The Definitive Guide",
+        "w": 960,
+        "h": 501
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/03/google-patent-640x717.webp",
+        "alt": "Google Patent",
+        "w": 599,
+        "h": 672
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2018/03/google-logo-square.png",
+        "alt": "",
+        "w": 100,
+        "h": 100
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2018/03/google-logo-square.png",
+        "alt": "",
+        "w": 100,
+        "h": 100
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/03/moz-domain-authority-checker-768x269.webp",
+        "alt": "Moz – Domain Authority Checker",
+        "w": 700,
+        "h": 245
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/03/reboot-link-flow-blog-768x517.webp",
+        "alt": "Reboot – Link Flow – Blog",
+        "w": 700,
+        "h": 471
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/03/sel-google-blocked-sites-blog-768x386.webp",
+        "alt": "SEL – Google Blocked Sites – Blog",
+        "w": 650,
+        "h": 326
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/03/ga4-bounce-rate-time-per-user-768x153.webp",
+        "alt": "GA4 – Bounce Rate & Time per User",
+        "w": 700,
+        "h": 139
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/03/references-section-768x580.webp",
+        "alt": "References section",
+        "w": 700,
+        "h": 528
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2018/03/eric-schmidt.png",
+        "alt": "",
+        "w": 448,
+        "h": 448
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2018/03/eric-schmidt.png",
+        "alt": "",
+        "w": 448,
+        "h": 448
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/03/google-serp-backlinko-768x690.webp",
+        "alt": "Google SERP – Backlinko",
+        "w": 700,
+        "h": 628
+      },
+      {
+        "src": "https://api.backlinko.com/app/uploads/2025/03/trusted_links-768x343.webp",
+        "alt": "Trusted Links",
+        "w": 700,
+        "h": 312
+      }
+    ],
+    "allImgCount": 17,
+    "cssBackgrounds": [],
+    "modals": [
+      "About cookies on this siteWe use cookies to run our website, analyze your use of our services, manage your online preferences & personalize ad content. By accepting our cookies, you'll get relevant content and social media features, personalized ads, and an enhanced browsing experience. To manage your choices, click “Cookie Settings.” Necessary cookies are required for the core website functionality and cannot be rejected. For more information, see ourCookie Policy.Allow all cookiesDeny allCookie settings"
+    ],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {
+    "--fa-font-solid": "normal 900 1em/1 \"Font Awesome 6 Free\"",
+    "--fa-font-regular": "normal 400 1em/1 \"Font Awesome 6 Free\"",
+    "--fa-font-light": "normal 300 1em/1 \"Font Awesome 6 Pro\"",
+    "--fa-font-thin": "normal 100 1em/1 \"Font Awesome 6 Pro\"",
+    "--fa-font-duotone": "normal 900 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-regular": "normal 400 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-light": "normal 300 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-duotone-thin": "normal 100 1em/1 \"Font Awesome 6 Duotone\"",
+    "--fa-font-brands": "normal 400 1em/1 \"Font Awesome 6 Brands\"",
+    "--fa-font-sharp-solid": "normal 900 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-regular": "normal 400 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-light": "normal 300 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-thin": "normal 100 1em/1 \"Font Awesome 6 Sharp\"",
+    "--fa-font-sharp-duotone-solid": "normal 900 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-regular": "normal 400 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-light": "normal 300 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--fa-font-sharp-duotone-thin": "normal 100 1em/1 \"Font Awesome 6 Sharp Duotone\"",
+    "--app-height": "100svh",
+    "--backlinko-bar-height": "62px",
+    "--sl-widgets-font-family": "-apple-system, system-ui",
+    "--sl-widgets-base-unit": "16px"
+  },
+  "_signals": {
+    "filteredInterstitials": 2,
+    "distinctHeadings": 16,
+    "mainTextLen": 10666,
+    "realImageCount": 14,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "POST",
+        "host": "pagead2.googlesyndication.com",
+        "path": "/ccm/collect",
+        "query": [
+          "ae",
+          "apvc",
+          "dl",
+          "dma",
+          "dma_cps",
+          "en",
+          "ep.ads_data_redaction",
+          "fmt",
+          "frm",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "navt",
+          "npa",
+          "rcb",
+          "rnd",
+          "scrsrc",
+          "tag_exp",
+          "tfd",
+          "tft"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "status": 200,
+        "bytes": null,
+        "hits": 3,
+        "example": "https://pagead2.googlesyndication.com/ccm/collect",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "region-eu.cookiehub.net",
+        "path": "/",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 28,
+        "hits": 1,
+        "example": "https://region-eu.cookiehub.net/",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "region1.google-analytics.com",
+        "path": "/g/collect",
+        "query": [
+          "_eu",
+          "_fv",
+          "_nsi",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "cid",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dp",
+          "dt",
+          "en",
+          "ep.container_id",
+          "frm",
+          "gaf",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "status": 204,
+        "bytes": null,
+        "hits": 3,
+        "example": "https://region1.google-analytics.com/g/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "dev.visualwebsiteoptimizer.com",
+        "path": "/j.php",
+        "query": [
+          "a",
+          "ph",
+          "st",
+          "u",
+          "vn",
+          "x"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://dev.visualwebsiteoptimizer.com/j.php",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "cdn.cookiehub.eu",
+        "path": "/client/7417b56b/en.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://cdn.cookiehub.eu/client/7417b56b/en.json",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 56682,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-checklist.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 43844,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-strategy.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 56812,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ecommerce-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/brian-dean.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/blog/authors/brian-dean.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 9032,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/ai-visibility-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+        "query": [
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 6685,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/templates/marketing.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 37803,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/ai-search-strategy.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 43911,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/technical-seo-guide.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 15888,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-authority.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 11235,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/website-traffic-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 8253,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/newsletter.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 9091,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/about-backlinko.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 10392,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword-difficulty-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "streaming.bi.owox.com",
+        "path": "/ga4/{hash}/g/collect",
+        "query": [
+          "_eu",
+          "_fplc",
+          "_fv",
+          "_p",
+          "_s",
+          "_ss",
+          "_tu",
+          "cid",
+          "dl",
+          "dma",
+          "dma_cps",
+          "dp",
+          "dt",
+          "ecid",
+          "en",
+          "ep.container_id",
+          "ep.page_language",
+          "ep.user_agent",
+          "frm",
+          "gaf",
+          "gap.sstd",
+          "gcd",
+          "gcs",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "richsstsse",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "sst.etld",
+          "sst.gch",
+          "sst.gcsub",
+          "sst.lpc",
+          "sst.navt",
+          "sst.rnd",
+          "sst.tft",
+          "sst.ude",
+          "sst.us_privacy",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "ur",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/gif",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://streaming.bi.owox.com/ga4/9bb752a08674f116753ca5719dda03ed/g/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 33380,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/internal-links.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 32592,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/generative-engine-optimization-geo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 37436,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/llm-seeding.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 47134,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/google-e-e-a-t.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+        "query": [
+          "p"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 15298,
+        "hits": 2,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/index.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 19793,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/competitor-analysis.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 46515,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/improve-your-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 51691,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/on-page-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 24460,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/backlink-checker.json",
+        "sameSite": true
+      },
+      {
+        "method": "POST",
+        "host": "www.semrush.com",
+        "path": "/olaf/init",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://www.semrush.com/olaf/init",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+        "query": [
+          "slug",
+          "topic"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 44155,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/hub/seo/what-is-seo.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 26528,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/tools/keyword.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "backlinko.com",
+        "path": "/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+        "query": [
+          "slug"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 20906,
+        "hits": 1,
+        "example": "https://backlinko.com/_next/data/98eJ4qW-QitTETEyYF6Wn/seo-certification-guide.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "rum-collector-2.pingdom.net",
+        "path": "/img/beacon.gif",
+        "query": [
+          "bIH",
+          "bIW",
+          "cE",
+          "cS",
+          "dC",
+          "dCLEE",
+          "dCLES",
+          "dI",
+          "dL",
+          "dLE",
+          "dLS",
+          "dPR",
+          "fS",
+          "hS",
+          "id",
+          "lEE",
+          "lES",
+          "nS",
+          "nT",
+          "or",
+          "pD",
+          "path",
+          "rC",
+          "rE",
+          "rS",
+          "rV",
+          "reS",
+          "ref",
+          "resE",
+          "resS",
+          "s",
+          "sAH",
+          "sAW",
+          "sIS",
+          "sId",
+          "sST",
+          "title",
+          "uEE",
+          "uES",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": null,
+        "status": 200,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://rum-collector-2.pingdom.net/img/beacon.gif",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "api.backlinko.com",
+        "path": "/wp-json/backlinkostats/v1/shares/{n}",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://api.backlinko.com/wp-json/backlinkostats/v1/shares/184",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "js.sparkloop.app",
+        "path": "/team_d05f5749d84d/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "status": 301,
+        "bytes": 167,
+        "hits": 1,
+        "example": "https://js.sparkloop.app/team_d05f5749d84d/settings",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "script-settings.sparkloop.app",
+        "path": "/team_d05f5749d84d/settings",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://script-settings.sparkloop.app/team_d05f5749d84d/settings",
+        "sameSite": false
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "www.googletagmanager.com",
+        "count": 5
+      },
+      {
+        "host": "rum-static.pingdom.net",
+        "count": 2
+      },
+      {
+        "host": "cdn.cookiehub.eu",
+        "count": 1
+      },
+      {
+        "host": "js.sparkloop.app",
+        "count": 1
+      },
+      {
+        "host": "script.sparkloop.app",
+        "count": 1
+      },
+      {
+        "host": "www.semrush.com",
+        "count": 1
+      }
+    ],
+    "truncated": false,
+    "inlineData": [
+      {
+        "id": "__NEXT_DATA__",
+        "type": "application/json",
+        "bytes": 138876,
+        "topLevelKeys": [
+          "props",
+          "page",
+          "query",
+          "buildId",
+          "isFallback",
+          "isExperimentalCompile",
+          "gsp",
+          "scriptLoader"
+        ]
+      }
+    ],
+    "globalState": [
+      "__NEXT_DATA__",
+      "dataLayer"
+    ],
+    "frameworkHints": [
+      "next"
+    ],
+    "forms": [],
+    "ariaLiveRegions": 1,
+    "triggers": [
+      {
+        "marker": "aria-haspopup",
+        "href": null
+      }
+    ],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 26,
+      "thirdPartyEndpoints": 10,
+      "thirdPartyScriptHosts": 6,
+      "inlineDataBlobs": 1,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": true
+    }
+  },
+  "screenshot": "assets/screenshots/google-trustrank.png",
+  "renderedHtml": "pages/google-trustrank.html"
+}

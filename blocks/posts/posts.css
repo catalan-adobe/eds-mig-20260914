@@ -1,0 +1,163 @@
+/* stylelint-disable no-descending-specificity -- component selectors are independent; order mirrors the lifted source */
+
+/* Posts — lifted from backlinko.com (1aclb7b / yw0cdh / 1gmoqx4 / 10svfql) */
+
+.posts .post-grid {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 28px;
+  margin: 0 -15px;
+}
+
+.posts .post-col {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
+  width: 100%;
+  min-height: 1px;
+  padding: 0 15px;
+}
+
+.posts .post-card > a {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.posts figure {
+  position: relative;
+  overflow: hidden;
+  align-self: start;
+  margin: 0;
+  border-radius: 5px;
+  background-color: var(--tint);
+}
+
+.posts .post-card figure {
+  width: 140px;
+  min-width: 140px;
+}
+
+.posts .post-card-lead > a figure {
+  margin: 0 0 16px;
+}
+
+.posts .post-card > a figure > span,
+.posts .post-card-lead > a figure > span {
+  display: block;
+  width: 100%;
+  padding-top: 52.22%;
+}
+
+.posts .post-card > a picture,
+.posts .post-card-lead > a picture {
+  position: absolute;
+  inset: 0;
+}
+
+.posts .post-card > a img,
+.posts .post-card-lead > a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.posts .post-card h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.posts .post-card-lead > a {
+  display: block;
+}
+
+.posts .post-card-lead h3 {
+  margin-bottom: 8px;
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.posts .post-teaser {
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.posts .post-teaser p {
+  margin: 0;
+}
+
+.posts .post-byline {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-top: 8px;
+}
+
+.posts .post-byline figure {
+  display: inline-flex;
+  width: 28px;
+  min-width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: none;
+}
+
+.posts .post-byline img {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+}
+
+.posts .post-byline-text p {
+  margin: 0;
+  color: #000;
+  font-size: 13px;
+}
+
+.posts .post-byline-text p a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@media (width >= 768px) {
+  .posts .post-grid {
+    row-gap: 32px;
+  }
+
+  .posts .post-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+    row-gap: 32px;
+  }
+}
+
+@media (width >= 1200px) {
+  .posts .post-grid {
+    margin: 0 -20px;
+  }
+
+  .posts .post-col {
+    padding: 0 20px;
+  }
+
+  .posts .post-card figure {
+    width: 160px;
+    min-width: 160px;
+  }
+
+  .posts .post-card h3 {
+    font-size: 18px;
+  }
+
+  .posts .post-card-lead h3 {
+    font-size: 28px;
+  }
+}

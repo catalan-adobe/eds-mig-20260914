@@ -1,0 +1,9 @@
+{"ts":"2026-10-26T14:58:17Z","skill":"stardust:stardust","phase":"setup","event":"start"}
+{"ts":"2026-10-26T14:58:17Z","skill":"stardust:stardust","phase":"hands-off","event":"start","detail":"hands-off activated by user answer"}
+{"ts":"2026-10-26T14:58:17Z","skill":"stardust:stardust","phase":"setup","event":"end","detail":"flow replica, hands-off, deps ok"}
+{"ts":"2026-10-26T14:58:28Z","skill":"stardust:replica","phase":"first-page","event":"start","track":"first-page","detail":"home https://backlinko.com/"}
+{"ts":"2026-10-26T14:58:28Z","skill":"stardust:replica","phase":"extract","event":"start","track":"site-scope"}
+{"ts":"2026-10-26T14:58:28Z","skill":"stardust:extract","phase":"prep","event":"start","track":"site-scope"}
+{"ts":"2026-10-26T15:08:55Z","skill":"stardust:replica","phase":"preserve-direction","event":"start","track":"first-page"}
+{"ts":"2026-10-26T15:08:55Z","skill":"stardust:replica","phase":"recreate","event":"start","track":"first-page"}
+{"ts":"2026-10-26T15:08:55Z","skill":"stardust:replica","phase":"source-fidelity-gate","event":"start","track":"first-page"}
