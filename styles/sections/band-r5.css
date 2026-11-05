@@ -1,1 +1,127 @@
-/* section style "band-r5": main .section.band-r5 */
+main .section.band-r5 {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  background-color: #0d1738;
+}
+
+main .section.band-r5::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 1218px;
+  height: 936px;
+  transform: translateX(-50%);
+  background: radial-gradient(155.66% 78.1% at 50% 104.07%, rgb(175 255 234) 1.11%, rgb(103 99 228) 22.58%, rgb(51 36 150) 42.92%, rgb(41 34 125) 61.78%, rgb(30 32 100) 80.71%, rgb(20 30 75) 100%);
+}
+
+main .section.band-r5 > div {
+  position: relative;
+  z-index: 1;
+  max-width: 1266px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+main .section.band-r5 > .default-content-wrapper:first-of-type {
+  padding-top: 56px;
+}
+
+main .section.band-r5 h2 {
+  max-width: 340px;
+  margin: 0 auto;
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 35.02px;
+  letter-spacing: -0.68px;
+  text-align: center;
+  color: #fff;
+}
+
+main .section.band-r5 .stats-band-wrapper {
+  margin-top: 40px;
+}
+
+main .section.band-r5 p {
+  margin: 0;
+}
+
+main .section.band-r5 p:has(img[src*="stats-dataviz"]) {
+  display: none;
+}
+
+main .section.band-r5 p:has(img[src*="stats-globe"]) {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  height: 300px;
+  margin: 40px -16px 0;
+}
+
+main .section.band-r5 p:has(img[src*="stats-globe"]) img {
+  width: 768px;
+  max-width: none;
+  height: 300px;
+  flex-shrink: 0;
+}
+
+@media (width >= 600px) {
+  main .section.band-r5 {
+    padding: 0 16px;
+  }
+
+  main .section.band-r5 h2 {
+    max-width: 479px;
+    font-size: 48px;
+    line-height: 49.44px;
+    letter-spacing: -0.96px;
+  }
+
+  main .section.band-r5 .stats-band-wrapper {
+    margin-top: 56px;
+  }
+}
+
+@media (width >= 1024px) {
+  main .section.band-r5 {
+    background-color: transparent;
+    background-image: radial-gradient(102.82% 106.44% at 50% 106.44%, rgb(252 253 254) 1.11%, rgb(103 99 228) 28.73%, rgb(69 59 179) 45.76%, rgb(41 34 125) 63.37%, rgb(30 32 100) 78.67%, rgb(20 30 75) 100%);
+  }
+
+  main .section.band-r5::before {
+    display: none;
+  }
+
+  main .section.band-r5 > .default-content-wrapper:first-of-type {
+    padding-top: 80px;
+  }
+
+  main .section.band-r5 h2 {
+    max-width: 559px;
+    font-size: 56px;
+    line-height: 57.68px;
+    letter-spacing: -1.4px;
+    color: #061b31;
+  }
+
+  main .section.band-r5 .stats-band-wrapper {
+    margin-top: 80px;
+  }
+
+  main .section.band-r5 p:has(img[src*="stats-globe"]) {
+    display: none;
+  }
+
+  main .section.band-r5 p:has(img[src*="stats-dataviz"]) {
+    display: block;
+    height: 519px;
+  }
+
+  main .section.band-r5 p:has(img[src*="stats-dataviz"]) img {
+    display: block;
+    width: 1234px;
+    max-width: 100%;
+    height: 519px;
+  }
+}
