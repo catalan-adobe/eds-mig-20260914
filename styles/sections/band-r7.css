@@ -1,0 +1,4 @@
+/* level 1: the section "band-r7" (region r7), shared by its slices' sections */
+main .section.band-r7 {
+  background-color: rgb(13 23 56);
+}
