@@ -1,1 +1,62 @@
-/* section style "band-r10": main .section.band-r10 */
+main .section.band-r10 {
+  padding: 75px 0;
+}
+
+main .section.band-r10 > div {
+  box-sizing: border-box;
+  max-width: none;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+main .section.band-r10 h2 {
+  margin: 0 0 16px;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+main .section.band-r10 .default-content-wrapper p {
+  margin: 0 0 30px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+@media (width >= 768px) {
+  main .section.band-r10 {
+    padding: 85px 0;
+  }
+
+  main .section.band-r10 > div {
+    max-width: 720px;
+    padding: 0 10px;
+  }
+
+  main .section.band-r10 h2 {
+    font-size: 36px;
+  }
+
+  main .section.band-r10 .default-content-wrapper p {
+    margin-bottom: 34px;
+    font-size: 19px;
+  }
+}
+
+@media (width >= 992px) {
+  main .section.band-r10 {
+    padding: 110px 0;
+  }
+
+  main .section.band-r10 > div {
+    max-width: 1140px;
+  }
+
+  main .section.band-r10 h2 {
+    font-size: 38px;
+  }
+
+  main .section.band-r10 .default-content-wrapper p {
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+}
