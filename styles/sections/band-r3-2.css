@@ -1,1 +1,23 @@
-/* section style "band-r3-2": main .section.band-r3-2 */
+main .section.band-r3-2 > .product-bento-wrapper {
+  box-sizing: border-box;
+  max-width: 1266px;
+  padding: 0 16px 56px;
+}
+
+@media (width >= 640px) {
+  main .section.band-r3-2 {
+    padding: 0 16px;
+  }
+
+  main .section.band-r3-2 > .product-bento-wrapper {
+    padding-bottom: 64px;
+    border-right: 1px solid var(--light-color);
+    border-left: 1px solid var(--light-color);
+  }
+}
+
+@media (width >= 940px) {
+  main .section.band-r3-2 > .product-bento-wrapper {
+    padding-bottom: 96px;
+  }
+}
