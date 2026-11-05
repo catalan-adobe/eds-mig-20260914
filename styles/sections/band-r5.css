@@ -1,1 +1,58 @@
-/* section style "band-r5": main .section.band-r5 */
+main .section.band-r5 {
+  padding: 75px 0 0;
+}
+
+main .section.band-r5 > div {
+  box-sizing: border-box;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (width >= 768px) {
+  main .section.band-r5 > div { padding: 0 10px; }
+}
+
+@media (width >= 1200px) {
+  main .section.band-r5 > div { max-width: 1140px; }
+}
+
+main .section.band-r5 h2 {
+  margin: 0 0 16px;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+main .section.band-r5 h2 + p {
+  margin: 0 0 30px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+@media (width >= 768px) {
+  main .section.band-r5 {
+    padding: 85px 0 0;
+  }
+
+  main .section.band-r5 h2 { font-size: 36px; }
+
+  main .section.band-r5 h2 + p {
+    margin-bottom: 34px;
+    font-size: 19px;
+  }
+}
+
+@media (width >= 1200px) {
+  main .section.band-r5 {
+    padding: 110px 0 0;
+  }
+
+  main .section.band-r5 h2 { font-size: 38px; }
+
+  main .section.band-r5 h2 + p {
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
