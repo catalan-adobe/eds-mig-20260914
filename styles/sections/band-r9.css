@@ -1,1 +1,164 @@
-/* section style "band-r9": main .section.band-r9 */
+main .section.band-r9 {
+  --chevron: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0.5 5 8"><path d="M4.848 3.634 5.459 4.25 4.848 4.866 1.242 8.499 0 7.267 2.993 4.249 0 1.232 1.242 0z"/></svg>');
+  --edge: 0px;
+
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 56px 16px;
+  padding: 56px 16px 57px;
+  background-color: #f8fafd;
+}
+
+main .section.band-r9::before {
+  content: "";
+  position: absolute;
+  inset: 0 var(--edge);
+  box-sizing: border-box;
+  border-bottom: 1px dashed var(--light-color);
+  pointer-events: none;
+}
+
+main .section.band-r9 > div {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  grid-column: 1 / -1;
+}
+
+main .section.band-r9 .default-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-right: 16px;
+}
+
+main .section.band-r9 .default-content-wrapper > h2 {
+  flex: 0 0 100%;
+  margin: 0 0 8px;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 26.4px;
+  letter-spacing: -0.22px;
+}
+
+main .section.band-r9 .default-content-wrapper > p:not(.button-wrapper) {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  margin: 0 0 16px;
+  padding-right: max(0px, calc(100% - 42ch));
+  color: var(--text-muted-color);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25.2px;
+  text-wrap: pretty;
+}
+
+main .section.band-r9 .default-content-wrapper > p.button-wrapper {
+  flex: 0 0 100%;
+  margin: 0;
+}
+
+main .section.band-r9 a.button {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 8px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-overflow: clip;
+}
+
+main .section.band-r9 a.button.primary {
+  border: 0;
+  padding: 13.5px 24px 14.5px;
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+main .section.band-r9 a.button.secondary {
+  border: 1px solid #b9b9f9;
+  padding: 12.5px 24px 13.5px;
+  background-color: transparent;
+  color: var(--accent-color);
+}
+
+main .section.band-r9 a.button.primary::after {
+  content: "";
+  align-self: center;
+  width: 5px;
+  height: 8px;
+  background: currentcolor;
+  mask: var(--chevron) center / contain no-repeat;
+}
+
+@media (width >= 768px) {
+  main .section.band-r9 {
+    --edge: max(16px, calc((100% - 1266px) / 2));
+
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    padding: 64px calc(var(--edge) + 17px) 65px;
+  }
+
+  main .section.band-r9::before {
+    border-inline: 1px solid var(--light-color);
+  }
+
+  main .section.band-r9 .default-content-wrapper > h2 {
+    margin-bottom: 8px;
+    font-size: 28px;
+    line-height: 29.96px;
+    letter-spacing: -0.28px;
+  }
+
+  main .section.band-r9 .default-content-wrapper > p:not(.button-wrapper) {
+    margin-bottom: 24px;
+  }
+
+  main .section.band-r9 .default-content-wrapper > p.button-wrapper {
+    flex: 0 0 auto;
+  }
+
+    main .section.band-r9 a.button {
+    display: inline-flex;
+    width: auto;
+  }
+
+  main .section.band-r9 a.button.primary {
+    padding: 15.5px 24px 16.5px;
+  }
+
+  main .section.band-r9 a.button.secondary {
+    padding: 14.5px 24px 15.5px;
+  }
+}
+
+@media (width >= 1200px) {
+  main .section.band-r9 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    padding-top: 96px;
+    padding-bottom: 97px;
+  }
+
+  main .section.band-r9 .default-content-wrapper {
+    grid-column: 1 / span 6;
+  }
+
+  main .section.band-r9 > div:last-of-type {
+    grid-column: 7 / span 6;
+  }
+
+  main .section.band-r9 .default-content-wrapper > h2 {
+    font-size: 32px;
+    line-height: 35.2px;
+    letter-spacing: -0.64px;
+  }
+
+  main .section.band-r9 .default-content-wrapper > p:not(.button-wrapper) {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+  }
+}
