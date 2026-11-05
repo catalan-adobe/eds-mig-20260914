@@ -1,1 +1,29 @@
-/* section style "band-r11-2": main .section.band-r11-2 */
+main .section.band-r11-2 {
+  padding-bottom: 75px;
+  background: #f8f9fe;
+}
+
+main .section.band-r11-2 > div {
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+main .section.band-r11-2 .resource-hub-wrapper:last-of-type .resource-hub {
+  margin-bottom: 32px;
+}
+
+@media (width >= 768px) {
+  main .section.band-r11-2 {
+    padding-bottom: 85px;
+  }
+}
+
+@media (width >= 992px) {
+  main .section.band-r11-2 {
+    padding-bottom: 110px;
+  }
+
+  main .section.band-r11-2 > div {
+    max-width: 1120px;
+  }
+}
