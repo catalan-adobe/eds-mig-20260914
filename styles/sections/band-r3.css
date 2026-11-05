@@ -1,1 +1,110 @@
-/* section style "band-r3": main .section.band-r3 */
+main .section.band-r3 {
+  display: grid;
+  grid-template-columns: minmax(20px, 1fr) minmax(0, 500px) minmax(20px, 1fr);
+  isolation: isolate;
+}
+
+main .section.band-r3 > div {
+  grid-column: 2;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+main .section.band-r3::before {
+  content: '';
+  z-index: -1;
+  grid-area: 1 / 1 / 4 / -1;
+  background-image: linear-gradient(#fff 10%, #eef0f7);
+}
+
+main .section.band-r3 > div:first-child {
+  grid-row: 1;
+}
+
+main .section.band-r3 h2 {
+  margin: 50px 0 15px;
+  color: #00bc98;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 22.1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main .section.band-r3 h1 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 47.6px;
+  text-align: center;
+}
+
+main .section.band-r3 .quote-card-wrapper {
+  grid-row: 4;
+  margin-top: 50px;
+}
+
+main .section.band-r3 .email-signup-wrapper {
+  position: relative;
+  grid-row: 3;
+  margin-top: 45px;
+  padding: 18px 0;
+}
+
+@media (width >= 768px) {
+  main .section.band-r3::before {
+    grid-row-end: -1;
+  }
+
+  main .section.band-r3 h2 {
+    font-size: 18px;
+    line-height: 23.4px;
+  }
+
+  main .section.band-r3 h1 {
+    font-size: 38px;
+    line-height: 53.2px;
+  }
+
+  main .section.band-r3 .quote-card-wrapper {
+    grid-row: 2;
+    margin-top: 25px;
+  }
+
+  main .section.band-r3 .email-signup-wrapper {
+    grid-row: 3;
+    margin-top: 65px;
+  }
+
+  main .section.band-r3 .email-signup-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(-50vw + 50%);
+    width: 100vw;
+    height: 1px;
+    background: #ccd3e8;
+  }
+}
+
+@media (width >= 992px) {
+  main .section.band-r3 h2 {
+    margin-top: 65px;
+  }
+
+  main .section.band-r3 h1 {
+    margin: 0 -50px;
+    font-size: 40px;
+    line-height: 56px;
+  }
+
+  main .section.band-r3 .email-signup-wrapper {
+    margin: 40px 0 65px;
+    padding: 0;
+  }
+
+  main .section.band-r3 .email-signup-wrapper::before {
+    display: none;
+  }
+}

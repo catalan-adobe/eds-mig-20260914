@@ -1,0 +1,55 @@
+.quote-card {
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #ccd3e8;
+  border-radius: 6px;
+  padding: 25px;
+  color: #1d2b35;
+  font-size: 16px;
+  line-height: 28.8px;
+}
+
+.quote-card blockquote {
+  position: relative;
+  margin: 0;
+  line-height: 25.6px;
+}
+
+.quote-card figure {
+  display: none;
+  margin: 0;
+}
+
+.quote-card p {
+  margin: 0;
+}
+
+.quote-card cite {
+  display: block;
+  margin-top: 10px;
+  font-style: normal;
+}
+
+@media (width >= 768px) {
+  .quote-card blockquote {
+    padding-left: 70px;
+  }
+
+  .quote-card figure {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .quote-card img {
+    display: block;
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+  }
+}

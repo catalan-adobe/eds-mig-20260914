@@ -1,0 +1,48 @@
+.email-signup form {
+  position: relative;
+}
+
+.email-signup input[type='email'] {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 61px;
+  padding: 16.8px 19.2px;
+  border: 1px solid #ccd3e8;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 7.5%);
+  font: inherit;
+  font-size: 18px;
+  line-height: 25.2px;
+}
+
+.email-signup button {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 61px;
+  margin: 10px 0 0;
+  padding: 16.8px 19.2px;
+  border: 1px solid #00bc98;
+  border-radius: 6px;
+  background: #00bc98;
+  color: #fff;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25.2px;
+  cursor: pointer;
+}
+
+@media (width >= 768px) {
+  .email-signup button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 170px;
+    margin: 0;
+  }
+}
