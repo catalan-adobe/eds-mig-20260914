@@ -1,0 +1,112 @@
+.program-cards {
+  --program-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0.5 5 8'%3E%3Cpath d='M4.84766 3.63379L5.45898 4.25L4.84766 4.86621L1.24219 8.49902L0 7.2666L2.99316 4.24902L0 1.23242L1.24219 0L4.84766 3.63379Z'/%3E%3C/svg%3E");
+
+  display: grid;
+  gap: 16px;
+}
+
+.program-cards .program-card {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 6px;
+  outline: 1px solid var(--light-color);
+  background-color: rgb(248 250 253);
+  overflow: hidden;
+}
+
+.program-cards .program-card-text {
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 390px;
+  min-height: 120px;
+  padding: 16px;
+}
+
+.program-cards .program-card-text p {
+  margin: 0;
+  color: var(--text-muted-color);
+  font-weight: 300;
+  text-wrap: pretty;
+}
+
+.program-cards .program-card-text strong {
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.program-cards .program-card-text p:last-child {
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.program-cards .program-card-text a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.program-cards .program-card-text a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.program-cards .program-card-text a::after {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 8px;
+  margin-left: 6px;
+  background-color: currentcolor;
+  mask: var(--program-chevron) center / contain no-repeat;
+}
+
+.program-cards .program-card-graphic {
+  display: none;
+}
+
+@media (width >= 768px) {
+  .program-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (width >= 1200px) {
+  .program-cards .program-card-text {
+    min-height: 160px;
+    padding: 32px 24px;
+  }
+
+  .program-cards .program-card-graphic {
+    display: block;
+  }
+
+  .program-cards .program-card-graphic p {
+    margin: 0;
+  }
+
+  .program-cards .program-card-graphic img {
+    position: absolute;
+    max-width: none;
+  }
+
+  .program-cards .program-card:first-child .program-card-graphic img {
+    top: 0;
+    left: 144px;
+    width: 585px;
+    height: 236px;
+  }
+
+  .program-cards .program-card:last-child .program-card-graphic img {
+    top: -117px;
+    left: 349px;
+    width: 360px;
+    height: 360px;
+  }
+}
