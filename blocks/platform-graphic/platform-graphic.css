@@ -1,0 +1,10 @@
+.platform-graphic picture,
+.platform-graphic img {
+  display: block;
+  width: 100%;
+}
+
+.platform-graphic img {
+  height: auto;
+  border-radius: 6px;
+}
