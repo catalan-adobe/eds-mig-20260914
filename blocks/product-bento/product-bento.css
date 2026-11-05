@@ -1,0 +1,112 @@
+.product-bento {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.product-bento .product-bento-card {
+  position: relative;
+  flex: 1 1 100%;
+  aspect-ratio: 358 / 524.5;
+  border-radius: 6px;
+}
+
+.product-bento .product-bento-media {
+  height: 100%;
+}
+
+.product-bento .product-bento-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.product-bento .product-bento-text {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  max-width: min(100% - 80px, 265px);
+}
+
+.product-bento .product-bento-text h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: var(--text-color);
+  text-wrap: balance;
+}
+
+.product-bento .product-bento-expand {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 38px;
+  height: 38px;
+  border-radius: 4px;
+  background: rgb(255 255 255 / 70%) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23533afd' d='M13.75 6.75h-3.5V5h5.25v5.25h-1.75zM6.75 10.25H5v5.25h5.25v-1.75h-3.5z'/%3E%3C/svg%3E") center / 20px no-repeat;
+}
+
+@media (width >= 640px) {
+  .product-bento .product-bento-card {
+    flex-basis: calc(50% - 8px);
+    aspect-ratio: 369 / 540.625;
+  }
+
+  .product-bento .product-bento-text {
+    max-width: min(100% - 100px, 291px);
+  }
+
+  .product-bento .product-bento-text h3 {
+    font-size: 22px;
+    line-height: 24.2px;
+    letter-spacing: -0.22px;
+  }
+}
+
+@media (width >= 940px) {
+  .product-bento .product-bento-card {
+    flex-basis: calc(33.333% - 11px);
+    aspect-ratio: 400 / 676;
+  }
+
+  .product-bento .product-bento-card-wide {
+    flex-basis: calc(66.667% - 5px);
+    aspect-ratio: 816 / 676;
+  }
+
+  .product-bento .product-bento-card-full {
+    flex-basis: 100%;
+    aspect-ratio: 1232 / 450;
+  }
+
+  .product-bento .product-bento-media {
+    height: calc(100% + 12px);
+    margin: -6px;
+  }
+
+  .product-bento .product-bento-text {
+    top: 24px;
+    left: 24px;
+    max-width: calc(100% - 48px);
+    padding-right: 60px;
+    box-sizing: border-box;
+  }
+
+  .product-bento .product-bento-card:not(.product-bento-card-wide, .product-bento-card-full)
+    .product-bento-text {
+    max-width: 344px;
+  }
+
+  .product-bento .product-bento-text h3 {
+    font-size: 26px;
+    line-height: 29.12px;
+    letter-spacing: -0.26px;
+  }
+
+  .product-bento .product-bento-expand {
+    top: 16px;
+    right: 16px;
+  }
+}
