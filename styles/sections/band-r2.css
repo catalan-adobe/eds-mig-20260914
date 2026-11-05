@@ -1,1 +1,18 @@
 /* section style "band-r2": main .section.band-r2 */
+main .section.band-r2 {
+  position: relative;
+  padding: 0;
+  background-color: #fff;
+}
+
+main .section.band-r2 > div {
+  max-width: unset;
+  margin: 0;
+  padding: 0;
+}
+
+@media (width >= 640px) {
+  main .section.band-r2 {
+    padding: 0 16px;
+  }
+}

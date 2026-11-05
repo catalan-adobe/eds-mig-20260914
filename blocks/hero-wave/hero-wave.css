@@ -1,0 +1,235 @@
+.hero-wave {
+  display: contents;
+}
+
+.hero-wave-wrapper {
+  max-width: unset;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-wave .hero-wave-backdrop {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero-wave .hero-wave-backdrop::before,
+.hero-wave .hero-wave-backdrop::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background-color: var(--light-color);
+}
+
+.hero-wave .hero-wave-backdrop::before {
+  top: 0;
+}
+
+.hero-wave .hero-wave-backdrop::after {
+  bottom: 0;
+}
+
+.hero-wave .hero-wave-backdrop p {
+  margin: 0;
+}
+
+.hero-wave .hero-wave-backdrop img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: auto;
+  max-width: none;
+  height: auto;
+  transform: translateX(-50%);
+}
+
+.hero-wave .hero-wave-layout {
+  position: relative;
+  display: grid;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 1266px;
+  margin: 0 auto;
+  padding: 72px 16px 88px;
+}
+
+.hero-wave .hero-wave-grid {
+  display: grid;
+  gap: 32px 16px;
+}
+
+.hero-wave .hero-wave-eyebrow {
+  position: relative;
+  margin: 0;
+  font-size: 12px;
+  line-height: 21px;
+  color: var(--text-color);
+}
+
+.hero-wave .hero-wave-eyebrow em {
+  margin-left: 2px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: -0.36px;
+  font-feature-settings: "tnum";
+}
+
+.hero-wave .hero-wave-eyebrow .hero-wave-eyebrow-next {
+  position: absolute;
+  opacity: 0;
+}
+
+.hero-wave .hero-wave-title {
+  position: relative;
+}
+
+.hero-wave .hero-wave-title h1 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 1.03;
+  letter-spacing: -0.34px;
+  color: rgb(129 184 26);
+}
+
+.hero-wave .hero-wave-title em {
+  font-style: normal;
+  color: var(--text-color);
+}
+
+.hero-wave .hero-wave-title-copy {
+  display: none;
+}
+
+.hero-wave .hero-wave-title .hero-wave-title-foreground {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  mix-blend-mode: hard-light;
+  color: rgb(0 14 255 / 50%);
+}
+
+.hero-wave .hero-wave-title-foreground em {
+  color: rgb(45 37 100);
+}
+
+.hero-wave .hero-wave-actions {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.hero-wave .hero-wave-actions .button-wrapper {
+  display: flex;
+  margin: 0;
+}
+
+.hero-wave .hero-wave-actions a.button:any-link {
+  flex: 1;
+  gap: 8px;
+  min-height: 44px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 0 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: normal;
+}
+
+.hero-wave .hero-wave-actions a.button.primary:any-link {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.hero-wave .hero-wave-actions a.button.primary:any-link::after {
+  content: "";
+  width: 5px;
+  height: 8px;
+  background-color: currentcolor;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0.5 5 8'%3E%3Cpath d='M4.85 3.63 5.46 4.25 4.85 4.87 1.24 8.5 0 7.27 2.99 4.25 0 1.23 1.24 0Z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.hero-wave .hero-wave-actions a.button.secondary:any-link {
+  border-color: #b9b9f9;
+  background-color: rgb(255 255 255 / 65%);
+  color: var(--accent-color);
+}
+
+.hero-wave .hero-wave-actions a.button.secondary:any-link::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: url("../../icons/band-r2-google.svg") center / contain no-repeat;
+}
+
+@media (width >= 640px) {
+  .hero-wave .hero-wave-title-copy {
+    display: inline;
+  }
+
+  .hero-wave .hero-wave-layout {
+    min-height: 68svh;
+    padding: 64px 16px;
+    border-right: 1px solid var(--light-color);
+    border-left: 1px solid var(--light-color);
+  }
+
+  .hero-wave .hero-wave-grid {
+    gap: 40px 16px;
+  }
+
+  .hero-wave .hero-wave-title h1 {
+    line-height: 1.15;
+    letter-spacing: -0.68px;
+  }
+
+  .hero-wave .hero-wave-actions {
+    flex-flow: row wrap;
+    margin-top: 0;
+  }
+
+  .hero-wave .hero-wave-actions .button-wrapper {
+    display: block;
+  }
+
+  .hero-wave .hero-wave-actions a.button:any-link {
+    min-height: 48px;
+  }
+}
+
+@media (width >= 1264px) {
+  .hero-wave .hero-wave-layout {
+    padding: 36px 16px;
+  }
+
+  .hero-wave .hero-wave-grid {
+    padding: 0 104px;
+  }
+
+  .hero-wave .hero-wave-eyebrow {
+    font-size: 14px;
+    letter-spacing: normal;
+  }
+
+  .hero-wave .hero-wave-eyebrow em {
+    color: #64748d;
+    letter-spacing: -0.42px;
+  }
+
+  .hero-wave .hero-wave-title h1 {
+    font-size: 40px;
+    line-height: 46px;
+    letter-spacing: -0.8px;
+  }
+}
