@@ -1,0 +1,143 @@
+.featured-posts {
+  display: grid;
+  gap: 28px;
+}
+
+.featured-posts a {
+  display: block;
+  color: rgb(187 74 3);
+  text-decoration: none;
+}
+
+.featured-posts figure {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: var(--light-color);
+}
+
+.featured-posts picture {
+  display: block;
+}
+
+.featured-posts figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured-posts h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.8px;
+  color: #000;
+}
+
+.featured-posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.featured-posts-list a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.featured-posts-list figure {
+  width: 140px;
+  flex: none;
+  aspect-ratio: 960 / 502;
+}
+
+.featured-posts-byline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.featured-posts-byline figure {
+  width: 28px;
+  height: 28px;
+  flex: none;
+  border-radius: 50%;
+}
+
+.featured-posts-byline p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 23.4px;
+}
+
+.featured-posts-byline a {
+  display: inline;
+  color: #000;
+  text-decoration: underline;
+}
+
+.featured-posts-lead a > figure {
+  aspect-ratio: 960 / 502;
+  margin-bottom: 16px;
+}
+
+.featured-posts-lead h3 {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 31.2px;
+}
+
+.featured-posts-summary {
+  margin: 0;
+  max-height: 54px;
+  overflow: hidden;
+  font-size: 15px;
+  line-height: 27px;
+  color: rgb(100 101 104);
+}
+
+.featured-posts a:hover {
+  color: rgb(187 74 3);
+  text-decoration: none;
+}
+
+.featured-posts-byline a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+@media (width >= 768px) {
+  .featured-posts {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .featured-posts-list {
+    gap: 32px;
+  }
+}
+
+@media (width >= 992px) {
+  .featured-posts {
+    gap: 40px;
+  }
+
+  .featured-posts-lead h3 {
+    font-size: 28px;
+    line-height: 36.4px;
+  }
+
+  .featured-posts-list h3 {
+    font-size: 18px;
+    line-height: 23.4px;
+  }
+
+  .featured-posts-list figure {
+    width: 160px;
+  }
+}
