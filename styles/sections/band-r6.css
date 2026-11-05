@@ -1,1 +1,34 @@
-/* section style "band-r6": main .section.band-r6 */
+main .section.band-r6 {
+  padding: 57.6px 0 0;
+  overflow: hidden;
+}
+
+main .section.band-r6 > div {
+  margin: 0;
+  padding: 0;
+}
+
+main .section.band-r6 p {
+  display: flex;
+  justify-content: center;
+  height: 32px;
+  margin: 0;
+}
+
+main .section.band-r6 picture {
+  display: block;
+  padding-top: 8px;
+}
+
+main .section.band-r6 img {
+  display: block;
+  width: 115px;
+  max-width: 100%;
+  height: 18px;
+}
+
+@media (width >= 600px) {
+  main .section.band-r6 {
+    padding-top: 87px;
+  }
+}
