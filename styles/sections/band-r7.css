@@ -1,1 +1,47 @@
-/* section style "band-r7": main .section.band-r7 */
+main .section.band-r7 {
+  text-align: center;
+  padding: 0 0 28.8px;
+}
+
+main .section.band-r7 > div {
+  padding: 0 20px;
+}
+
+main .section.band-r7 h2 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 44.8px;
+}
+
+main .section.band-r7 p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+@media (width >= 600px) {
+  main .section.band-r7 {
+    padding-bottom: 43.2px;
+  }
+
+  main .section.band-r7 > div {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  main .section.band-r7 h2 {
+    font-size: 38px;
+    line-height: 53.2px;
+  }
+
+  main .section.band-r7 p {
+    font-size: 20px;
+    line-height: 36px;
+  }
+}
+
+@media (width >= 1000px) {
+  main .section.band-r7 > div {
+    max-width: 1140px;
+  }
+}
