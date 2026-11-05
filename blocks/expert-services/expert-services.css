@@ -1,0 +1,81 @@
+.expert-services {
+  display: grid;
+  gap: 24px 16px;
+}
+
+.expert-services > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.expert-services .expert-services-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #d6d9fc;
+  border-radius: 4px;
+}
+
+.expert-services .expert-services-icon p {
+  display: flex;
+  margin: 0;
+}
+
+.expert-services .expert-services-icon .icon {
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+.expert-services .expert-services-text {
+  max-width: 400px;
+  padding-right: 32px;
+}
+
+.expert-services .expert-services-text p {
+  margin: 0;
+  font-weight: 300;
+  color: var(--text-muted-color);
+}
+
+.expert-services .expert-services-text p + p {
+  margin-top: 16px;
+  line-height: 21px;
+}
+
+.expert-services .expert-services-text strong {
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.expert-services .expert-services-text a:any-link {
+  font-weight: 400;
+}
+
+.expert-services .expert-services-text a:any-link::after {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 8px;
+  margin-left: 6px;
+  background-color: currentcolor;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0.5 5 8'%3E%3Cpath d='M4.84766 3.63379L5.45898 4.25L4.84766 4.86621L1.24219 8.49902L0 7.2666L2.99316 4.24902L0 1.23242L1.24219 0L4.84766 3.63379Z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+@media (width >= 768px) {
+  .expert-services {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px 16px;
+  }
+}
+
+@media (width >= 1200px) {
+  .expert-services {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
