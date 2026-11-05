@@ -1,1 +1,60 @@
-/* section style "band-r8": main .section.band-r8 */
+main .section.band-r8 {
+  position: relative;
+  padding: 0 0 67.5px;
+  overflow: hidden;
+}
+
+main .section.band-r8::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 50%;
+  background-color: #f8f9fe;
+}
+
+main .section.band-r8::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(50% + 350px);
+  width: 575px;
+  height: 575px;
+  background: url("/backlinko/media/band-r8-rings.svg") no-repeat;
+  transform: translateX(-50%);
+}
+
+main .section.band-r8 > div {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (width >= 768px) {
+  main .section.band-r8 {
+    padding-bottom: 75px;
+  }
+
+  main .section.band-r8::after {
+    top: 10px;
+  }
+
+  main .section.band-r8 > div {
+    padding: 0 10px;
+  }
+}
+
+@media (width >= 992px) {
+  main .section.band-r8 {
+    padding-bottom: 90px;
+  }
+
+  main .section.band-r8::after {
+    top: 30px;
+  }
+
+  main .section.band-r8 > div {
+    max-width: 1140px;
+  }
+}
