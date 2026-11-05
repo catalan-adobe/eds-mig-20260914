@@ -1,0 +1,86 @@
+.integration-options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px 16px;
+}
+
+.integration-options .integration-option {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.integration-options .integration-option-image {
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.integration-options .integration-option-image p {
+  margin: 0;
+}
+
+.integration-options picture,
+.integration-options img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.integration-options .integration-option-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 16px;
+  padding-right: 32px;
+  font-size: 16px;
+  letter-spacing: normal;
+  font-weight: 300;
+  line-height: 22.4px;
+  color: rgb(163 181 214);
+}
+
+.integration-options .integration-option-content p {
+  margin: 0;
+}
+
+.integration-options .integration-option-content strong {
+  font-weight: 400;
+  color: rgb(255 255 255);
+}
+
+.integration-options .integration-option-content p:has(> a:only-child) {
+  line-height: 21px;
+}
+
+.integration-options .integration-option-content a {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 400;
+  line-height: 21px;
+  color: rgb(115 137 255);
+  text-decoration: none;
+}
+
+.integration-options .integration-option-content a::after {
+  content: "";
+  width: 5px;
+  height: 8px;
+  margin-left: 6px;
+  background-color: currentcolor;
+  mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='5' height='8' fill='none' stroke='black' stroke-width='1.5'><path d='M.5.5 4 4 .5 7.5'/></svg>") no-repeat center;
+}
+
+@media (width >= 768px) {
+  .integration-options {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 16px;
+  }
+}
+
+@media (width >= 1200px) {
+  .integration-options {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
