@@ -1,0 +1,108 @@
+.tool-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.tool-links > div {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+.tool-links a {
+  display: flex;
+  height: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  gap: 16px;
+  padding: 29px 20px;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgb(25 27 35 / 12%), 0 0 1px 0 rgb(25 27 35 / 16%);
+}
+
+.tool-links a:hover {
+  text-decoration: none;
+}
+
+.tool-links .tool-links-icon {
+  display: flex;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+}
+
+.tool-links .tool-links-icon picture {
+  display: flex;
+}
+
+.tool-links .tool-links-icon img {
+  display: block;
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.tool-links .tool-links-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tool-links h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+  color: var(--text-color);
+}
+
+.tool-links p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 19.6px;
+  color: #646568;
+}
+
+.tool-links .tool-links-icon p {
+  display: flex;
+  margin: 0;
+}
+
+@media (width >= 900px) {
+  .tool-links > div {
+    flex-basis: calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+
+  .tool-links a {
+    gap: 32px;
+    padding: 44px 40px;
+  }
+
+  .tool-links .tool-links-icon {
+    padding: 10px;
+  }
+
+  .tool-links .tool-links-icon img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .tool-links h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  .tool-links p {
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+
+  .tool-links .tool-links-text {
+    gap: 8px;
+  }
+}
