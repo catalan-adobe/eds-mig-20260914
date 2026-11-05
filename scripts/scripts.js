@@ -143,6 +143,19 @@ function decorateButtons(main) {
 }
 
 /**
+ * Loads styles/sections/<style>.css for the section styles used by the given sections, so
+ * section-level CSS lives in one file per style instead of the render-blocking styles.css.
+ * @param {Element[]} sections The sections about to be shown
+ */
+async function loadSectionStyles(sections) {
+  const styles = new Set(sections.filter(Boolean).flatMap((s) => [...s.classList])
+    .filter((c) => c !== 'section' && !c.endsWith('-container')));
+  // a style without its own file (404) simply has no section CSS
+  await Promise.all([...styles].map((s) => loadCSS(`${window.hlx.codeBasePath}/styles/sections/${s}.css`)
+    .catch(() => {})));
+}
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
@@ -166,6 +179,7 @@ async function loadEager(doc) {
   if (main) {
     decorateMain(main);
     document.body.classList.add('appear');
+    await loadSectionStyles([main.querySelector('.section')]);
     await loadSection(main.querySelector('.section'), waitForFirstImage);
   }
 
@@ -187,6 +201,7 @@ async function loadLazy(doc) {
   loadHeader(doc.querySelector('body > header'));
 
   const main = doc.querySelector('main');
+  await loadSectionStyles([...main.querySelectorAll(':scope > .section')]);
   await loadSections(main);
 
   const { hash } = window.location;
