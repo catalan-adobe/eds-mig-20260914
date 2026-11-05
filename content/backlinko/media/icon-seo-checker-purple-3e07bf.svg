@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45.3 58.3">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eef;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        stroke-width: 1.3px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-6 {
+        stroke: #491782;
+      }
+
+      .cls-1, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-3, .cls-5 {
+        fill: none;
+        stroke-linecap: round;
+      }
+
+      .cls-2, .cls-5 {
+        stroke-linejoin: round;
+      }
+
+      .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-4, .cls-6 {
+        fill: #9d9de1;
+      }
+
+      .cls-8 {
+        fill: #00bc98;
+        isolation: isolate;
+        opacity: .4;
+      }
+
+      .cls-5 {
+        stroke: #00bc98;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <path class="cls-1" d="M4.65,3.65h36c2.21,0,4,1.79,4,4v46c0,2.21-1.79,4-4,4H4.65c-2.21,0-4-1.79-4-4V7.65c0-2.21,1.79-4,4-4Z"/>
+      <path class="cls-4" d="M14.65.65h16c1.1,0,2,.9,2,2v6H12.65V2.65c0-1.1.9-2,2-2Z"/>
+      <path class="cls-7" d="M8.65,47.65c0-7.73,6.49-14,14.5-14s14.5,6.27,14.5,14"/>
+      <path class="cls-2" d="M8.65,47.65c0-7.73,6.49-14,14.5-14s14.5,6.27,14.5,14"/>
+      <path class="cls-8" d="M22.24,47.15c-.28.23-.32.64-.09.91.23.28.64.32.91.09l-.41-.5-.41-.5ZM22.65,47.65l.41.5,11-9-.41-.5-.41-.5-11,9,.41.5Z"/>
+      <path class="cls-6" d="M23.15,51.65c1.93,0,3.5-1.57,3.5-3.5s-1.57-3.5-3.5-3.5-3.5,1.57-3.5,3.5,1.57,3.5,3.5,3.5Z"/>
+      <path class="cls-3" d="M23.65,25.65h11"/>
+      <path class="cls-5" d="M9.65,25.59l3.26,2.8,5.74-5.74"/>
+      <path class="cls-3" d="M23.65,17.65h11"/>
+      <path class="cls-5" d="M9.65,17.59l3.26,2.8,5.74-5.74"/>
+    </g>
+  </g>
+</svg>
