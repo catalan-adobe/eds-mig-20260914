@@ -1,1 +1,109 @@
-/* section style "band-r8": main .section.band-r8 */
+main .section.band-r8 {
+  box-sizing: border-box;
+  padding: 56px 16px;
+  font-feature-settings: "ss01";
+  text-wrap: pretty;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+main .section.band-r8 > div {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+main .section.band-r8 .default-content-wrapper h2,
+main .section.band-r8 .default-content-wrapper h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 26.4px;
+  letter-spacing: -0.22px;
+  color: var(--text-color);
+}
+
+main .section.band-r8 .default-content-wrapper p {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 26.4px;
+  letter-spacing: -0.22px;
+  color: #64748b;
+}
+
+main .section.band-r8 .news-carousel-wrapper {
+  margin-top: 40px;
+}
+
+main .section.band-r8 .news-carousel-wrapper + .default-content-wrapper {
+  margin: 40px -16px 0 0;
+  border-top: 1px solid var(--light-color);
+  padding: 39px 16px 0 0;
+}
+
+main .section.band-r8 .news-carousel-wrapper + .default-content-wrapper p {
+  max-width: 608px;
+}
+
+main .section.band-r8 .book-feature-wrapper {
+  margin-top: 40px;
+}
+
+@media (width >= 768px) {
+  main .section.band-r8 {
+    width: calc(100% - 32px);
+    max-width: 1266px;
+    margin: 0 auto;
+    border-inline: 1px solid var(--light-color);
+    padding: 64px 16px;
+  }
+
+  main .section.band-r8 .default-content-wrapper h2,
+  main .section.band-r8 .default-content-wrapper h3,
+  main .section.band-r8 .default-content-wrapper p {
+    font-size: 28px;
+    line-height: 29.96px;
+    letter-spacing: -0.28px;
+  }
+
+  main .section.band-r8 .news-carousel-wrapper {
+    margin-top: 48px;
+  }
+
+  main .section.band-r8 .news-carousel-wrapper + .default-content-wrapper {
+    margin: 48px -16px 0;
+    padding: 47px 16px 0;
+  }
+
+  main .section.band-r8 .book-feature-wrapper {
+    margin-top: 48px;
+  }
+}
+
+@media (width >= 1200px) {
+  main .section.band-r8 {
+    padding: 96px 16px;
+  }
+
+  main .section.band-r8 .default-content-wrapper h2,
+  main .section.band-r8 .default-content-wrapper h3,
+  main .section.band-r8 .default-content-wrapper p {
+    font-size: 32px;
+    line-height: 35.2px;
+    letter-spacing: -0.64px;
+  }
+
+  main .section.band-r8 .news-carousel-wrapper {
+    margin-top: 64px;
+  }
+
+  main .section.band-r8 .news-carousel-wrapper + .default-content-wrapper {
+    margin-top: 64px;
+    padding-top: 63px;
+  }
+
+  main .section.band-r8 .book-feature-wrapper {
+    margin-top: 64px;
+  }
+}
