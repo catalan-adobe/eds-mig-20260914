@@ -1,1 +1,24 @@
 /* section style "band-r4": main .section.band-r4 */
+main .section.band-r4 > div {
+  box-sizing: border-box;
+  max-width: 1266px;
+  margin: 0 auto;
+  padding: 48px 16px;
+}
+
+@media (width >= 640px) {
+  main .section.band-r4 {
+    padding: 0 16px;
+  }
+
+  main .section.band-r4 > div {
+    padding: 56px 16px;
+    border-inline: 1px solid #e5edf5;
+  }
+}
+
+@media (width >= 900px) {
+  main .section.band-r4 > div {
+    padding: 80px 16px;
+  }
+}
