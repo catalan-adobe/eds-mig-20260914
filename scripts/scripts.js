@@ -105,6 +105,18 @@ function decorateButtons(main) {
 }
 
 /**
+ * Marks a paragraph of plain italics right after a picture as its caption.
+ * @param {Element} main The container element
+ */
+function decorateCaptions(main) {
+  main.querySelectorAll('p:has(> picture) + p > em:only-child').forEach((em) => {
+    const p = em.parentElement;
+    if (em.children.length || p.textContent.trim() !== em.textContent.trim()) return;
+    p.classList.add('caption');
+  });
+}
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
@@ -114,6 +126,7 @@ export function decorateMain(main) {
   decorateSections(main);
   decorateBlocks(main);
   decorateButtons(main);
+  decorateCaptions(main);
 }
 
 /**

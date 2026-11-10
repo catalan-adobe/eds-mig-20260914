@@ -351,7 +351,9 @@ function contentFragment($, $c, doc, walk) {
   if ($c.hasClass('cmp-contentfragment--elements')) {
     const rows = $c.find('.cmp-contentfragment__element').toArray()
       .map((e) => [esc(text($(e).find('dt'))), esc(text($(e).find('dd')))]);
-    doc.push(block('adventure-details', rows));
+    // not a grid column on eight adventures: the foundation lays these pages out differently
+    const variants = $c.hasClass('aem-GridColumn') ? [] : ['wide'];
+    doc.push(block('adventure-details', rows, ...variants));
     return;
   }
   $c.find('.cmp-contentfragment__elements').first().children().contents()

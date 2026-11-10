@@ -53,6 +53,14 @@ All custom properties of contract section c are on `:root`, with the same names 
 - `.hero-wrapper` has no max-width and no padding.
 - `grid-4`, `sidebar`, the adventure grid, the article inset quirk and the FAQ quirks are done.
   Block CSS must not style a `-wrapper` or `-container`.
+- `adventure-details (wide)`: authored on the eight adventures (us and ca) whose source
+  details are not in grid columns (beervana-portland, climbing-new-zealand, cycling-tuscany,
+  downhill-skiing-wyoming, riverside-camping-australia, ski-touring-mont-blanc,
+  surf-camp-costa-rica, whistler-mountain-biking). Foundation reads the class with
+  `.section:has(.adventure-details.wide)` and changes the wrappers only; the block needs no
+  style for it.
+- A paragraph of plain italics right after a picture gets the class `caption` in
+  `decorateMain`; the caption style hangs on that class.
 - FAQ sidebar (`body.content .section.sidebar`): wrappers are plain blocks without padding, so
   the `separator` there must keep its margins on the `<hr>` itself.
 - Mobile menu: the header toggles `nav-open` on `body`; foundation shifts `main` and `footer`

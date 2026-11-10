@@ -258,8 +258,7 @@ a.button.primary:any-link {
 }
 
 /* picture caption: a paragraph of plain italics right after a picture */
-:is(.default-content-wrapper, .rich-text)
-  p:has(> picture) + p:has(> em:only-child):not(:has(em > *)) {
+:is(.default-content-wrapper, .rich-text) p.caption {
   margin: -0.25em 0 0;
   font-size: var(--font-size-small);
   font-weight: var(--font-weight-bold);
@@ -268,9 +267,20 @@ a.button.primary:any-link {
   text-transform: uppercase;
 }
 
-:is(.default-content-wrapper, .rich-text)
-  p:has(> picture) + p:not(:has(em > *)) > em:only-child {
+:is(.default-content-wrapper, .rich-text) p.caption > em {
   font-style: normal;
+}
+
+/* a quote without the quote style has browser defaults on the source: undo the paragraph
+   that the pipeline puts inside */
+.default-content-wrapper > blockquote {
+  margin: 1em 40px;
+}
+
+.default-content-wrapper > blockquote p {
+  margin: 0;
+  line-height: var(--line-height-body);
+  text-align: left;
 }
 
 /* sections: wrappers contain their margins, as the floated grid columns of the source do */
@@ -296,6 +306,12 @@ main .section > .hero-wrapper {
 /* source quirk: the title above the hero of a landing page has no inset */
 body.landing main > .section:first-child
   > .default-content-wrapper:first-child:has(+ .hero-wrapper) {
+  padding: 0;
+}
+
+/* source quirk: the members-only listing is not in a grid, so nothing there has the inset */
+body.content main .section > .default-content-wrapper:first-child:has(+ .cards-wrapper),
+body.content main .section > .default-content-wrapper:first-child + .cards-wrapper {
   padding: 0;
 }
 
@@ -355,6 +371,11 @@ main .section.grid-4 > div {
   }
 }
 
+/* the last margin of a stacked sidebar stays inside it, as in the clearfixed source column */
+main > .section.sidebar {
+  display: flow-root;
+}
+
 /* template: content. The sidebar of the FAQ page is a plain container on the source:
    no inset, margins collapse, text left-aligned */
 body.content main .section.sidebar > div {
@@ -391,10 +412,15 @@ body.article main .section:has(+ .sidebar) > .default-content-wrapper > h1:has(+
 
 body.article main .section:has(+ .sidebar) > .default-content-wrapper
   > :is(:is(h1, h2, h3):has(> u:only-child), p:has(> picture)),
-body.article main .section:has(+ .sidebar) > .default-content-wrapper
-  > p:has(> picture) + p:has(> em:only-child):not(:has(em > *)) {
+body.article main .section:has(+ .sidebar) > .default-content-wrapper > p.caption {
   margin-right: var(--gutter);
   margin-left: var(--gutter);
+}
+
+/* the source quote sits inside the inset of its text component */
+body.article main .section:has(+ .sidebar) > .default-content-wrapper > blockquote {
+  margin-right: calc(40px + var(--gutter));
+  margin-left: calc(40px + var(--gutter));
 }
 
 /* template: adventure */
@@ -436,6 +462,37 @@ body.adventure main .section:has(> .tabs-wrapper) > .tabs-wrapper {
   body.adventure main .section:has(> .tabs-wrapper) > .tabs-wrapper {
     grid-column: 2;
     grid-row: 2 / span 2;
+  }
+}
+
+/* adventure-details (wide): on eight adventures the source details are not in grid columns.
+   They have no inset, the share title follows them and its top margin moves above them;
+   below desktop both are full width and the title and tabs are inset twice */
+body.adventure main .section:has(.adventure-details.wide) > .adventure-details-wrapper {
+  margin-top: calc(1.67 * var(--font-size-h5));
+}
+
+body.adventure main .section:has(.adventure-details.wide) > .default-content-wrapper > h5 {
+  margin-top: 0;
+}
+
+@media (width < 1025px) {
+  body.adventure main .section:has(.adventure-details.wide) > div {
+    grid-column: 1 / -1;
+    width: auto;
+  }
+
+  body.adventure main .section:has(.adventure-details.wide) > .default-content-wrapper:first-child,
+  body.adventure main .section:has(.adventure-details.wide) > .tabs-wrapper {
+    margin: 0 var(--gutter);
+  }
+}
+
+@media (width >= 1025px) {
+  body.adventure main .section:has(.adventure-details.wide) > .adventure-details-wrapper,
+  body.adventure main .section:has(.adventure-details.wide)
+    > .adventure-details-wrapper + .default-content-wrapper {
+    padding-left: 0;
   }
 }
 
