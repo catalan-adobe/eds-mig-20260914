@@ -29,18 +29,19 @@
   text-transform: uppercase;
 }
 
+/* the source sets the icon font on the span itself, so the float is 20px high */
 .accordion .accordion-icon {
   float: right;
-}
-
-.accordion .accordion-icon::before {
-  content: "\e911";
   font-family: var(--font-family-icon);
   font-size: 1.25rem;
   font-weight: 400;
   font-style: normal;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
+}
+
+.accordion .accordion-icon::before {
+  content: "\e911";
 }
 
 .accordion .accordion-button[aria-expanded="true"] .accordion-icon::before {

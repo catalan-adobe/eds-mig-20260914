@@ -24,8 +24,27 @@ function buildHeader(label, id) {
   return header;
 }
 
+const FOCUS_TARGET = {
+  ArrowDown: (index) => index + 1,
+  ArrowRight: (index) => index + 1,
+  ArrowUp: (index) => index - 1,
+  ArrowLeft: (index) => index - 1,
+  Home: () => 0,
+  End: (index, count) => count - 1,
+};
+
+function moveFocus(block, event) {
+  const target = FOCUS_TARGET[event.key];
+  const current = event.target.closest('.accordion-button');
+  if (!target || !current) return;
+  const buttons = [...block.querySelectorAll('.accordion-button')];
+  event.preventDefault();
+  buttons[target(buttons.indexOf(current), buttons.length)]?.focus();
+}
+
 export default function decorate(block) {
   accordionCount += 1;
+  block.addEventListener('keydown', (event) => moveFocus(block, event));
 
   [...block.children].forEach((row, index) => {
     const [label, body] = row.children;
