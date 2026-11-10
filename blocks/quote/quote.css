@@ -1,6 +1,6 @@
 .quote {
   margin: 1em 0;
-  padding: 1em;
+  padding: 1em calc(1em + 14px);
   background-color: var(--color-brand-third);
 }
 
