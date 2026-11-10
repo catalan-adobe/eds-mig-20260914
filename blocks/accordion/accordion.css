@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 14px;
-  padding: 13px 13px 13px 21px;
+  padding: 13.3333px;
   border-bottom: 2px solid var(--light-color);
   font-size: var(--heading-font-size-s);
   font-weight: 600;
@@ -19,6 +19,7 @@
 
 .accordion summary p {
   margin: 0;
+  padding-left: 8px;
   line-height: inherit;
   text-align: left;
 }

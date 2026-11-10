@@ -210,6 +210,11 @@ main > .section > div {
   padding: 0 var(--gutter);
 }
 
+main > .section.no-gutter > div {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 main > .section.divider::after {
   content: '';
   display: block;
@@ -240,6 +245,17 @@ main > .section.divider::after {
   padding-top: 27px;
 }
 
+/* a first heading, or one after text or a heading, keeps the box of the source: margin instead of padding */
+.default-content-wrapper > :is(h1, h2, h3):first-child {
+  margin-top: 27px;
+  padding-top: 0;
+}
+
+.default-content-wrapper > :is(p:not(:has(> picture)), h1, h2, h3) + :is(h1, h2, h3) {
+  margin-top: 40.5px;
+  padding-top: 0;
+}
+
 .default-content-wrapper picture {
   display: block;
 }
@@ -252,6 +268,11 @@ main > .section.divider::after {
   margin: 0;
   padding: 7px 0;
   line-height: 1.5;
+}
+
+/* a plain image keeps the line gap under it; a caption takes its place */
+.default-content-wrapper p:has(> picture):not(:has(> em)) {
+  padding-bottom: 14px;
 }
 
 /* text right after an image, in the same paragraph, is its caption */
@@ -367,6 +388,7 @@ main > .section.divider::after {
 /* a side column pairs with one neighbour: the section before `aside`, after `aside-left` */
 .section.aside h3 {
   margin-top: 45px;
+  padding-top: 0;
 }
 
 @media (width >= 1025px) {
@@ -397,7 +419,8 @@ main > .section.divider::after {
   }
 
   main > .section.aside > div {
-    padding-left: 111px;
+    padding-right: 0;
+    padding-left: 97px;
   }
 
   /* article text runs the full column; headings, images and quotes inside it are inset */

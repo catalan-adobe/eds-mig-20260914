@@ -94,6 +94,10 @@
   border-radius: 50%;
 }
 
+.cards.people .cards-card-body {
+  padding: 0 14px;
+}
+
 .cards.people h3 {
   margin: 0 0 6px;
 }
@@ -114,6 +118,11 @@
   display: flex;
   justify-content: center;
   margin-top: 21px;
+}
+
+/* the source rounds the icon row half a pixel lower in people cards */
+.cards.people .cards-card-body p:has(.icon) {
+  margin-top: 21.5px;
 }
 
 .cards.people .cards-card-body p a,
