@@ -32,7 +32,7 @@ function cleanInner(el, ctx) {
   Object.entries(RENAME).forEach(([from, to]) => {
     html = html.replace(new RegExp(`<(/?)${from}>`, 'gi'), `<$1${to}>`);
   });
-  return html.replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
+  return html.replace(/&nbsp;|&#160;|\u00a0/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
 function cleanEl(el, ctx) {
@@ -199,6 +199,7 @@ function experienceFragment(el, ctx) {
 
 function download(el, ctx) {
   const action = el.querySelector('.cmp-download__action');
+  if (!action) return [];
   return [
     `<h3>${esc(text(el.querySelector('.cmp-download__title')))}</h3>`,
     para(text(el.querySelector('.cmp-download__description'))),

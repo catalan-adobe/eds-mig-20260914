@@ -258,4 +258,10 @@ test('footer: brand, links, social and legal text', () => {
   );
   assert.match(text(legal), /WKND is a fictitious adventure and travel website/);
   assert.equal(legal.querySelectorAll('a').length, 5);
+  assert.doesNotMatch(convertFooter(fixture('home'), PREFIX), /&#160;|&nbsp;|\u00a0/);
+});
+
+test('an empty download component maps to nothing', () => {
+  const html = fixture('fr').replace('<div class="separator">', '<div class="download"> </div><div class="separator">');
+  assert.doesNotThrow(() => convertPage(html, '/fr/fr', PREFIX));
 });
