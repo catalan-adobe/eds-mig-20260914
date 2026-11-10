@@ -54,30 +54,6 @@ async function loadFonts() {
 }
 
 /**
- * Turns `/widgets/...` links into widget blocks.
- * @param {Element} main The container element
- */
-function buildWidgetAutoBlocks(main) {
-  const widgetLinks = [...main.querySelectorAll('a[href*="/widgets/"]')];
-  widgetLinks.forEach((link) => {
-    if (link.closest('.widget')) return;
-    const newLink = link.cloneNode(true);
-    const widgetBlock = buildBlock('widget', { elems: [newLink] });
-    const p = link.closest('p');
-    if (
-      p
-      && p.querySelectorAll('a').length === 1
-      && p.querySelector('a') === link
-      && p.textContent.trim() === link.textContent.trim()
-    ) {
-      p.replaceWith(widgetBlock);
-    } else {
-      link.replaceWith(widgetBlock);
-    }
-  });
-}
-
-/**
  * Returns the locale root of the current page, for example `/f52-1011-02/us/en`.
  * Unknown paths (the 404 page) fall back to `/us/en`, as on the source site.
  * @returns {string} The locale root path
@@ -107,7 +83,6 @@ function buildFragmentBlocks(main) {
 function buildAutoBlocks(main) {
   try {
     buildFragmentBlocks(main);
-    buildWidgetAutoBlocks(main);
   } catch (error) {
     // eslint-disable-next-line no-console
     console.error('Auto Blocking failed', error);
@@ -240,19 +215,9 @@ async function loadLazy(doc) {
   loadFonts();
 }
 
-/**
- * Loads everything that happens a lot later,
- * without impacting the user experience.
- */
-function loadDelayed() {
-  import('./consent-check.js');
-  // load anything that can be postponed to the latest here
-}
-
 async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
-  loadDelayed();
 }
 
 loadPage();
