@@ -1,0 +1,42 @@
+.facts dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 18px 0;
+}
+
+.facts dl > div {
+  height: 84px;
+  margin-bottom: 22.5px;
+  padding-right: 2em;
+  text-transform: uppercase;
+}
+
+.facts dt {
+  padding-top: 12px;
+  color: var(--muted-color);
+  font-size: var(--font-size-xs);
+}
+
+.facts dd {
+  margin: 0;
+  padding-top: 7px;
+  font-size: var(--font-size-s);
+  font-weight: 600;
+}
+
+@media (width >= 1025px) {
+  .facts dl {
+    display: block;
+  }
+
+  .facts dl > div {
+    padding: 0 18px;
+    border-left: 5px solid var(--light-color);
+  }
+}
+
+.facts p {
+  margin: 0;
+  line-height: inherit;
+  text-align: left;
+}

@@ -1,20 +1,130 @@
+/* stylelint-disable no-descending-specificity -- the rule compares selectors for unrelated elements */
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  padding: 16px 0 24px;
+  background-color: var(--dark-color);
+  color: var(--lighter-color);
 }
 
 footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+  max-width: calc(var(--content-width) + 2 * var(--gutter));
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+footer .footer .section > div {
+  max-width: none;
+  padding: 0;
 }
 
 footer .footer p {
   margin: 0;
+  line-height: 1.5;
+  text-align: left;
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+footer .footer a {
+  color: var(--inverse-text-color);
+}
+
+footer .footer .footer-brand .icon {
+  width: 128px;
+  height: auto;
+  margin: 7px 0;
+}
+
+footer .footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer .footer ul > li {
+  padding: 0;
+  line-height: 1.5;
+}
+
+footer .footer ul > li::before {
+  content: none;
+}
+
+footer .footer ul a {
+  display: block;
+  padding: 15px 17px;
+  font-size: var(--font-size-s);
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+footer .footer ul a:hover,
+footer .footer ul a.active,
+footer .footer ul a[aria-current] {
+  text-decoration: underline;
+}
+
+footer .footer .footer-follow {
+  margin: 21px 0;
+  padding: 0 14px;
+  font-size: var(--heading-font-size-s);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+footer .footer .footer-social {
+  display: flex;
+  padding: 0 14px;
+}
+
+footer .footer .footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--button-size);
+  height: var(--button-size);
+  background-color: var(--light-color);
+}
+
+footer .footer .footer-social .icon {
+  width: 22px;
+  height: 22px;
+}
+
+footer .footer .footer-legal {
+  margin-top: 30px;
+}
+
+footer .footer .footer-legal p {
+  margin-bottom: 13.5px;
+  font-size: var(--font-size-xs);
+  line-height: 15px;
+}
+
+footer .footer .footer-legal a {
+  color: var(--lighter-color);
+  text-decoration: underline;
+}
+
+@media (width >= 1025px) {
+  footer .footer .footer-top > div {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  footer .footer ul {
+    display: flex;
+    margin-left: 66px;
+  }
+
+  footer .footer .footer-follow {
+    margin-left: auto;
+    padding: 0;
+  }
+
+  footer .footer .footer-social {
+    margin-right: 36px;
+    padding: 0 0 0 14px;
+  }
+
+  footer .footer .footer-legal {
+    margin-top: 57px;
   }
 }

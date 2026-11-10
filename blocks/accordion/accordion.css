@@ -1,0 +1,50 @@
+.accordion summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 13px 13px 13px 21px;
+  border-bottom: 2px solid var(--light-color);
+  font-size: var(--heading-font-size-s);
+  font-weight: 600;
+  line-height: 20px;
+  list-style: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion summary p {
+  margin: 0;
+  line-height: inherit;
+  text-align: left;
+}
+
+.accordion summary::after {
+  content: '';
+  flex: none;
+  width: 21px;
+  height: 20px;
+  background-color: var(--text-color);
+  mask: url('../../icons/plus.svg') center / contain no-repeat;
+}
+
+.accordion details[open] > summary {
+  border-bottom-color: transparent;
+}
+
+.accordion details[open] > summary::after {
+  mask-image: url('../../icons/minus.svg');
+}
+
+.accordion .accordion-item-body {
+  padding: 0.5em 0 0 0.5em;
+  font-size: var(--font-size-s);
+}
+
+.accordion .accordion-item-body p {
+  line-height: 1.75;
+}

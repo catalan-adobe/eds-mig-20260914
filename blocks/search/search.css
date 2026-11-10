@@ -1,0 +1,57 @@
+.search form {
+  margin-bottom: 39px;
+}
+
+.search input[type='search'] {
+  display: block;
+  width: 100%;
+  height: 32px;
+  padding: 1px 32px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  background: #fff url('../../icons/search.svg') 8px center / 16px no-repeat;
+  color: #000;
+  font: inherit;
+  appearance: none;
+}
+
+.search label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  font-size: var(--font-size-s);
+  line-height: 1.25;
+  cursor: pointer;
+}
+
+.search input[type='checkbox'] {
+  position: relative;
+  width: 36px;
+  height: 20px;
+  margin: 0;
+  border-radius: 16px;
+  background-color: #ccc;
+  cursor: pointer;
+  appearance: none;
+}
+
+.search input[type='checkbox']::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.search input[type='checkbox']:checked {
+  background-color: var(--brand-color);
+}
+
+.search input[type='checkbox']:checked::after {
+  transform: translateX(16px);
+}

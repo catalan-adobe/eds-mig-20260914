@@ -1,27 +1,303 @@
-.cards > ul {
-  list-style: none;
+/* stylelint-disable no-descending-specificity -- the rule compares selectors across unrelated variants */
+.cards ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  gap: 24px;
+  list-style: none;
 }
 
-.cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+.cards li {
+  flex: 0 1 274px;
+  min-width: 0;
+  margin: 0 0 2rem;
+  padding-right: 14px;
 }
 
-.cards .cards-card-body {
-  margin: 16px;
+.cards li[hidden] {
+  display: none;
 }
 
-.cards .cards-card-image {
-  line-height: 0;
-}
-
-.cards > ul > li img {
+.cards .cards-card-image img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 200px;
   object-fit: cover;
+}
+
+.cards p {
+  margin: 0;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.cards .cards-card-body a {
+  color: var(--text-color);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.cards .cards-card-body p:first-child {
+  margin-top: 7px;
+}
+
+.cards .cards-card-body p + p {
+  margin-top: 1rem;
+  overflow: hidden;
+  color: var(--muted-color);
+  font-size: var(--font-size-s);
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* filter: category buttons above the cards */
+.cards .cards-filter {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 22px 0 18px;
+}
+
+.cards .cards-filter button {
+  height: var(--button-size);
+  padding: 0 14px;
+  border: 0;
+  background: none;
+  color: var(--text-color);
+  font: inherit;
+  font-size: var(--font-size-s);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.cards .cards-filter button[aria-pressed='true'] {
+  background-color: var(--dark-color);
+  color: var(--inverse-text-color);
+}
+
+/* people: contributors with a round portrait */
+.cards.people ul {
+  margin: 0 calc(-1 * var(--gutter));
+}
+
+.cards.people li {
+  flex-basis: 291px;
+  margin: 0;
+  padding: 9px 14px 18px;
+  text-align: center;
+}
+
+.cards.people .cards-card-image img {
+  width: 164px;
+  height: 164px;
+  margin: 7px auto 14px;
+  border-radius: 50%;
+}
+
+.cards.people h3 {
+  margin: 0 0 6px;
+}
+
+.cards.people .cards-card-body p {
+  margin: 0;
+  overflow: visible;
+  color: var(--text-color);
+  font-size: var(--font-size-s);
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: normal;
+}
+
+.cards.people .cards-card-body p:has(.icon),
+.cards.byline .cards-card-body p:has(.icon) {
+  display: flex;
+  justify-content: center;
+  margin-top: 21px;
+}
+
+.cards.people .cards-card-body p a,
+.cards.byline .cards-card-body p a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--button-size);
+  height: var(--button-size);
+  background-color: var(--dark-color);
+}
+
+.cards.people .icon,
+.cards.byline .icon {
+  width: 20px;
+  height: 20px;
+  filter: invert(1);
+}
+
+/* byline: the author under an article */
+.cards.byline {
+  margin-top: 64px;
+  padding-top: 64px;
+  border-top: 2px solid var(--light-color);
+}
+
+.cards.byline li {
+  display: flex;
+  flex: 1 1 100%;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.cards.byline .cards-card-image img {
+  width: 60px;
+  height: 60px;
+  margin: 7px 0;
+  border-radius: 50%;
+}
+
+.cards.byline .cards-card-body {
+  display: grid;
+  flex: 1;
+  grid-template-columns: minmax(0, 469px) auto;
+  justify-content: start;
+  column-gap: 14px;
+}
+
+.cards.byline h3 {
+  margin: 0 0 4px;
+  padding-top: 8px;
+}
+
+.cards.byline .cards-card-body p {
+  margin: 0;
+  overflow: visible;
+  color: var(--muted-color);
+  font-size: var(--font-size-xs);
+  line-height: 30px;
+  text-transform: uppercase;
+  white-space: normal;
+}
+
+.cards.byline .cards-card-body p:has(.icon) {
+  grid-area: 1 / 2 / 3 / 3;
+  align-self: start;
+  margin: 0;
+}
+
+/* list: related articles beside an article */
+.cards.list ul {
+  display: block;
+  padding-top: 2rem;
+}
+
+.cards.list li {
+  margin: 0 0 1em;
+  padding: 0;
+}
+
+.cards.list a {
+  display: block;
+  min-height: 136px;
+  padding: 8px 16px;
+  border-left: 5px solid var(--light-color);
+  color: var(--text-color);
+}
+
+.cards.list a:hover,
+.cards.list a:focus {
+  border-color: var(--text-color);
+  background-color: var(--brand-color);
+}
+
+.cards.list span {
+  display: block;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.cards.list .cards-list-date {
+  color: var(--muted-color);
+  font-size: var(--font-size-xs);
+}
+
+/* locked: members-only teasers */
+.cards.locked ul {
+  margin: 0 calc(-1 * var(--gutter));
+}
+
+.cards.locked li {
+  display: flex;
+  position: relative;
+  flex-basis: 388px;
+  flex-direction: column-reverse;
+  padding: 48px 14px 0;
+}
+
+.cards.locked li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 14px;
+  width: 48px;
+  height: 48px;
+  background:
+    url('../../icons/lock.svg') 6px 6px / 20px no-repeat,
+    linear-gradient(to top left, transparent 50%, var(--brand-color) 50%);
+}
+
+.cards.locked li > div {
+  opacity: 0.65;
+}
+
+.cards.locked h2 {
+  margin: 9px 0;
+  font-family: var(--body-font-family);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.cards.locked .cards-card-body p {
+  margin: 0;
+  overflow: visible;
+  color: var(--muted-color);
+  font-size: var(--font-size-s);
+  line-height: 1.75;
+  text-transform: uppercase;
+  white-space: normal;
+}
+
+.cards.locked .cards-card-body p:last-child {
+  display: inline-block;
+  margin: 14px 0;
+  padding: 7px 14px;
+  background-color: var(--light-color);
+  line-height: 1.5;
+}
+
+.cards.locked .cards-card-image img {
+  margin: 7px 0;
+}
+
+@media (width < 768px) {
+  .cards ul {
+    justify-content: space-between;
+  }
+
+  .cards li {
+    padding-right: 0;
+  }
+
+  .cards.people li {
+    flex-basis: 100%;
+  }
+
+  .cards.byline .cards-card-body {
+    display: block;
+  }
+
+  .cards.byline .cards-card-body p:has(.icon) {
+    justify-content: flex-start;
+    margin-top: 14px;
+  }
 }

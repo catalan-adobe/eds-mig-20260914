@@ -31,3 +31,66 @@
     order: unset;
   }
 }
+
+/* featured: image beside a grey panel with pretitle, title, text and button */
+.columns.featured > div {
+  flex-direction: column-reverse;
+  gap: 0;
+  margin-bottom: 1em;
+}
+
+.columns.featured > div > div {
+  order: unset;
+}
+
+.columns.featured .columns-img-col picture,
+.columns.featured .columns-img-col img {
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.columns.featured > div > div:not(.columns-img-col) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3.5em 2em 2em;
+  background-color: var(--light-color);
+}
+
+.columns.featured h2 {
+  margin: 0.5em 0;
+}
+
+.columns.featured p {
+  margin: 0;
+  font-size: var(--font-size-s);
+  line-height: 1.75;
+  text-align: left;
+}
+
+.columns.featured p:first-child:not(:only-child) {
+  margin-bottom: 13.5px;
+  font-size: var(--font-size-m);
+  font-weight: 700;
+  line-height: 2.5;
+}
+
+.columns.featured p.button-wrapper {
+  margin: 18px 0;
+}
+
+@media (width >= 768px) {
+  .columns.featured > div {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .columns.featured > div > .columns-img-col {
+    flex: 2;
+  }
+
+  .columns.featured > div > div:not(.columns-img-col) {
+    flex: 1;
+  }
+}

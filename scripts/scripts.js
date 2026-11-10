@@ -10,7 +10,9 @@ import {
   loadSections,
   loadCSS,
   buildBlock,
+  getMetadata,
 } from './aem.js';
+import { getBreadcrumb, getLocaleRoot } from './locale.js';
 
 if (window.trustedTypes && window.trustedTypes.createPolicy) {
   const innerTT = window.trustedTypes.createPolicy('tt-inner', {
@@ -74,6 +76,37 @@ function buildWidgetAutoBlocks(main) {
 }
 
 /**
+ * Adds a breadcrumb to adventure and article pages, built from the URL.
+ * Articles show it between the lead image and the title.
+ * @param {Element} main The container element
+ */
+function buildBreadcrumb(main) {
+  const template = getMetadata('template');
+  const trail = getBreadcrumb(window.location.pathname);
+  if (!['adventure', 'article'].includes(template) || !trail.length || !main.firstElementChild) return;
+  const nav = document.createElement('nav');
+  nav.className = 'breadcrumb';
+  nav.setAttribute('aria-label', 'Breadcrumb');
+  const list = document.createElement('ol');
+  trail.forEach(({ href, label }) => {
+    const item = document.createElement('li');
+    const link = document.createElement('a');
+    link.href = href;
+    link.textContent = label;
+    item.append(link);
+    list.append(item);
+  });
+  const current = document.createElement('li');
+  current.textContent = document.title;
+  current.setAttribute('aria-current', 'page');
+  list.append(current);
+  nav.append(list);
+  const beforeTitle = main.querySelector('h1')?.parentElement.previousElementSibling;
+  if (template === 'article' && beforeTitle) beforeTitle.append(nav);
+  else main.firstElementChild.prepend(nav);
+}
+
+/**
  * Builds all synthetic blocks in a container element.
  * @param {Element} main The container element
  */
@@ -97,6 +130,7 @@ function buildAutoBlocks(main) {
       });
     }
     buildWidgetAutoBlocks(main);
+    if (main === document.querySelector('main')) buildBreadcrumb(main);
   } catch (error) {
     // eslint-disable-next-line no-console
     console.error('Auto Blocking failed', error);
@@ -160,7 +194,8 @@ export function decorateMain(main) {
  * @param {Element} doc The container element
  */
 async function loadEager(doc) {
-  document.documentElement.lang = 'en';
+  const [country, language] = (getLocaleRoot(window.location.pathname) || '/us/en').split('/').slice(-2);
+  document.documentElement.lang = `${language}-${country.toUpperCase()}`;
   decorateTemplateAndTheme();
   const main = doc.querySelector('main');
   if (main) {
@@ -180,7 +215,7 @@ async function loadEager(doc) {
 }
 
 /**
- * Loads everything that doesn't need to be delayed.
+ * Loads everything that does not need to be delayed.
  * @param {Element} doc The container element
  */
 async function loadLazy(doc) {

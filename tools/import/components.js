@@ -70,15 +70,21 @@ function title(el, ctx) {
 }
 
 function textComponent(el, ctx) {
-  const html = [...el.querySelector('.cmp-text').children].map((child) => cleanEl(child, ctx)).join('');
-  const quote = el.classList.contains('cmp-text--quote') && !html.includes('<blockquote>');
-  return [quote ? `<blockquote>${html}</blockquote>` : html];
+  const content = el.querySelector('.cmp-text');
+  if (!el.classList.contains('cmp-text--quote')) {
+    const small = el.classList.contains('cmp-text--font-small') && { style: 'small-text' };
+    return [[...content.children].map((child) => cleanEl(child, ctx)).join(''), small];
+  }
+  const quotation = content.querySelector('blockquote');
+  const attribution = [...content.children].filter((child) => child !== quotation).map(text).join(' ');
+  return [{ block: 'quote', rows: [[esc(text(quotation || content))], [esc(attribution)]].filter(([cell]) => cell) }];
 }
 
 function image(el) {
+  const img = el.querySelector('img');
+  if (!img) return [];
   const caption = text(el.querySelector('.cmp-image__title'));
-  if (!el.querySelector('img')) return [];
-  return [`<p>${picture(el.querySelector('img'))}</p>`, caption ? `<p><em>${esc(caption)}</em></p>` : ''];
+  return [`<p>${picture(img)}${caption ? `<em>${esc(caption)}</em>` : ''}</p>`];
 }
 
 function buttonComponent(el, ctx) {
@@ -128,7 +134,8 @@ function cardRow(item, ctx) {
   const a = item.querySelector('.cmp-image-list__item-title-link');
   return [
     picture(item.querySelector('img')),
-    `<p><strong>${link(a, ctx)}</strong></p>${para(text(item.querySelector('.cmp-image-list__item-description')))}`,
+    // a plain link: bold links are buttons
+    `<p>${link(a, ctx)}</p>${para(text(item.querySelector('.cmp-image-list__item-description')))}`,
   ];
 }
 
@@ -200,15 +207,20 @@ function experienceFragment(el, ctx) {
 function download(el, ctx) {
   const action = el.querySelector('.cmp-download__action');
   if (!action) return [];
+  const description = text(el.querySelector('.cmp-download__description'));
+  const properties = [...el.querySelectorAll('.cmp-download__property-content')].map(text).join(', ');
   return [
-    `<h3>${esc(text(el.querySelector('.cmp-download__title')))}</h3>`,
-    para(text(el.querySelector('.cmp-download__description'))),
-    button(action, ctx),
+    `<h5>${esc(text(el.querySelector('.cmp-download__title')))}</h5>`,
+    description && `<p><strong>${esc(description)}</strong></p>`,
+    para(properties),
+    `<p><em>${link(action, ctx, `:download: ${esc(text(action))}`)}</em></p>`,
   ];
 }
 
 function search(el) {
-  return [{ block: 'search', rows: [[esc(el.querySelector('input[type="text"]').getAttribute('placeholder'))]] }];
+  const placeholder = el.querySelector('input[type="text"]').getAttribute('placeholder');
+  const toggle = text(el.querySelector('.cmp-contentaisearch__ai-toggle'));
+  return [{ block: 'search', rows: [[esc(placeholder)], [esc(toggle)]].filter(([cell]) => cell) }];
 }
 
 const MAPPERS = {

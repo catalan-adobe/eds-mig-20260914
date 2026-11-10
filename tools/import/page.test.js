@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { parseHTML } from 'linkedom';
 import { block, rewriteLink } from './html.js';
+import { walk } from './components.js';
 import { convertPage, convertNav, convertFooter } from './page.js';
 
 const PREFIX = '/f52-1011-01';
@@ -77,7 +78,8 @@ test('home: image lists become cards with linked title and description', () => {
   assert.equal(doc.querySelectorAll('.cards').length, 2);
   const [image, body] = cells(rows(doc, '.cards')[0]);
   assert.ok(image.querySelector('picture img'));
-  const link = body.querySelector('p > strong > a');
+  const link = body.querySelector('p > a');
+  assert.equal(body.querySelector('strong'), null);
   assert.equal(text(link), 'Ultimate Guide to LA Skateparks');
   assert.equal(link.getAttribute('href'), '/f52-1011-01/us/en/magazine/guide-la-skateparks');
   assert.match(text(body.querySelectorAll('p')[1]), /^Breaking down the top skate/);
@@ -178,8 +180,11 @@ test('article: author byline shares the body section', () => {
 
 test('article: download becomes a heading, description and button to the source file', () => {
   const doc = convert('la-skateparks', '/us/en/magazine/guide-la-skateparks');
-  const link = [...doc.querySelectorAll('p > strong > a')].find((a) => text(a) === 'Download PDF');
-  assert.match(link.getAttribute('href'), /^https:\/\/wknd\.site\/.+/);
+  const link = doc.querySelector('p > em > a');
+  assert.equal(text(link), ':download: Download PDF');
+  assert.match(link.getAttribute('href'), /^https:\/\/wknd\.site\/.+\.pdf$/);
+  assert.equal(text(doc.querySelectorAll('h5')[1]), 'Download PDF');
+  assert.equal(text(link.closest('p').previousElementSibling), 'ultimateguidetolaskateparks.pdf, 139 KB, application/pdf');
 });
 
 test('faqs: accordion rows, underlined title, right aside', () => {
@@ -190,7 +195,7 @@ test('faqs: accordion rows, underlined title, right aside', () => {
   assert.match(text(cells(items[0])[1]), /^We believe the best adventures/);
   assert.equal(sectionStyle(doc.querySelector('h1')), 'underline');
   const help = [...doc.querySelectorAll('h3')].find((h) => text(h) === 'Need more help?');
-  assert.equal(sectionStyle(help), 'aside');
+  assert.equal(sectionStyle(help), 'small-text, aside');
 });
 
 test('about us: contributors merge into people cards with icon links', () => {
@@ -204,6 +209,7 @@ test('about us: contributors merge into people cards with icon links', () => {
   const icons = [...body.querySelectorAll('p')[1].querySelectorAll('a')];
   assert.deepEqual(icons.map(text), [':facebook:', ':twitter:', ':instagram:']);
   assert.equal(icons[0].getAttribute('href'), '#facebook-staceyroswell');
+  assert.equal(sectionStyle(groups[0]), 'small-text');
 });
 
 test('magazine: locked teasers merge into one cards locked block', () => {
@@ -214,9 +220,11 @@ test('magazine: locked teasers merge into one cards locked block', () => {
   assert.equal(locked[0].querySelector('a'), null);
 });
 
-test('search page becomes a search block with the placeholder', () => {
+test('search page becomes a search block with the placeholder and the toggle label', () => {
   const doc = convert('search', '/us/en/ai-powered-search');
-  assert.match(text(doc.querySelector('.search')), /^Search WKND adventures/);
+  const [placeholder, toggle] = rows(doc, '.search').map(text);
+  assert.match(placeholder, /^Search WKND adventures/);
+  assert.equal(toggle, 'Show AI-generated summary');
 });
 
 test('language stub: one-slide carousel without button', () => {
@@ -238,7 +246,7 @@ test('nav: brand, links and tools sections', () => {
   assert.equal(text(brand), ':wknd-logo-dk:');
   assert.deepEqual(
     [...links.querySelectorAll('a')].map((a) => `${text(a)}=${a.getAttribute('href')}`),
-    ['Magazine=/f52-1011-01/us/en/magazine', 'Adventures=/f52-1011-01/us/en/adventures',
+    ['Home=/f52-1011-01/us/en', 'Magazine=/f52-1011-01/us/en/magazine', 'Adventures=/f52-1011-01/us/en/adventures',
       'FAQs=/f52-1011-01/us/en/faqs', 'About Us=/f52-1011-01/us/en/about-us'],
   );
   assert.equal(text(tools.querySelector('p a')), 'Sign In');
@@ -264,4 +272,24 @@ test('footer: brand, links, social and legal text', () => {
 test('an empty download component maps to nothing', () => {
   const html = fixture('fr').replace('<div class="separator">', '<div class="download"> </div><div class="separator">');
   assert.doesNotThrow(() => convertPage(html, '/fr/fr', PREFIX));
+});
+
+test('pull quotes become a quote block, plain blockquotes stay default content', () => {
+  const doc = convert('la-skateparks', '/us/en/magazine/guide-la-skateparks');
+  const [quotation, attribution] = rows(doc, '.quote');
+  assert.equal(text(quotation), '"There is no better place to shred then Los Angeles"');
+  assert.equal(text(attribution), 'Jacob Wester - Pro Skater');
+  assert.equal(doc.querySelector('.quote blockquote, .quote u'), null);
+  const plain = convert('arctic-surfing', '/us/en/magazine/arctic-surfing');
+  assert.equal(plain.querySelectorAll('.quote').length, 0);
+  assert.equal(plain.querySelectorAll('main > div > blockquote').length, 1);
+});
+
+test('an image title becomes a caption in the same paragraph as the image', () => {
+  const { document } = parseHTML(`<div class="image"><div class="cmp-image" data-cmp-widths="100,1600"
+    data-cmp-src="/a{.width}.jpeg"><img class="cmp-image__image" src="/a.jpeg" alt="A">
+    <span class="cmp-image__title">Hello</span></div></div>`);
+  assert.deepEqual(walk(document.querySelector('.image'), { path: '/x', prefix: PREFIX }), [
+    '<p><picture><img src="https://wknd.site/a.1600.jpeg" alt="A"></picture><em>Hello</em></p>',
+  ]);
 });

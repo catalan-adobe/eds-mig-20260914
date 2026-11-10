@@ -63,13 +63,16 @@ export function convertPage(html, path, prefix) {
   const { document } = parseHTML(html);
   document.querySelectorAll(FRAGMENTS).forEach((el) => el.remove());
   const sections = assemble(walk(document.querySelector('body > .root'), { path, prefix }), path)
-    .map(({ parts, styles }) => section(parts.map(render), styles.join(', ')));
+    .map(({ parts, styles }) => section(parts.map(render), [...new Set(styles)].join(', ')));
   return pageHtml([...sections, section([metadata(document)])]);
 }
 
-function navLinks(fragment, prefix) {
-  const level1 = [...fragment.querySelectorAll('.cmp-navigation__item--level-1 > a')];
-  const items = level1.length ? level1 : [...fragment.querySelectorAll('.cmp-navigation__item--level-0 > a')];
+/** The header lists the home page first: only the mobile menu shows it. The footer never does. */
+function navLinks(fragment, prefix, withHome) {
+  const levels = withHome ? '--level-0, --level-1' : '--level-1';
+  const selector = levels.split(', ').map((level) => `.cmp-navigation__item${level} > a`).join(', ');
+  const items = [...fragment.querySelectorAll(selector)];
+  if (!items.length) return '';
   return `<ul>${items.map((a) => `<li>${link(a, { prefix })}</li>`).join('')}</ul>`;
 }
 
@@ -97,7 +100,7 @@ export function convertNav(html, prefix) {
   ].filter(Boolean);
   return pageHtml([
     section([brand(fragment, prefix, 'wknd-logo-dk')]),
-    section([navLinks(fragment, prefix)]),
+    section([navLinks(fragment, prefix, true)]),
     section(tools),
   ]);
 }
