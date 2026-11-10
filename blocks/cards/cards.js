@@ -59,6 +59,15 @@ function buildListItem(li) {
   li.replaceChildren(a);
 }
 
+/** Links that hold only an icon are named after the icon. */
+function nameIconLinks(ul) {
+  ul.querySelectorAll('a:has(.icon)').forEach((a) => {
+    if (a.textContent.trim()) return;
+    const name = [...a.querySelector('.icon').classList].find((c) => c.startsWith('icon-'))?.slice(5);
+    if (name) a.setAttribute('aria-label', name);
+  });
+}
+
 function buildFilter(block, ul) {
   const cards = [...ul.children];
   const split = (li) => li.dataset.categories.split(',').map((c) => c.trim()).filter(Boolean);
@@ -92,6 +101,7 @@ export default function decorate(block) {
   });
   if (block.classList.contains('list')) ul.querySelectorAll('li').forEach(buildListItem);
   else if (!block.classList.contains('locked')) ul.querySelectorAll('li').forEach(linkImage);
+  nameIconLinks(ul);
   block.replaceChildren(ul);
   if (isFilter) buildFilter(block, ul);
 }
