@@ -228,11 +228,16 @@ function teaserCells($, $c, doc) {
 function secureCard($, $c, doc) {
   const $img = $c.find('.cmp-teaser__image img');
   const $action = $c.find('.cmp-teaser__action-link');
+  const $description = $c.find('.cmp-teaser__description');
+  const title = esc(text($c.find('.cmp-teaser__title')));
+  const description = esc(text($description));
+  // The source renders a description without a <p> with no paragraph margin.
+  const bare = description && !$description.find('p').length;
   const lines = [
-    text($c.find('.cmp-teaser__title')),
-    text($c.find('.cmp-teaser__description')),
-    $action.length ? '' : text($c.find('.cmp-teaser__action-container')),
-  ].filter(Boolean).map((line) => `<p>${esc(line)}</p>`);
+    bare ? `${title}<br>${description}` : title,
+    bare ? '' : description,
+    $action.length ? '' : esc(text($c.find('.cmp-teaser__action-container'))),
+  ].filter(Boolean).map((line) => `<p>${line}</p>`);
   return [$img.length ? picture(doc, $img) : '', lines.join('') + linkParagraph($action)];
 }
 

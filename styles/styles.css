@@ -76,6 +76,13 @@ body {
   text-align: left;
 }
 
+/* the source page root (.root.responsivegrid) is 1px taller below desktop */
+@media (width < 1025px) {
+  body {
+    padding-bottom: 1px;
+  }
+}
+
 body.appear {
   display: block;
 }

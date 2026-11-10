@@ -677,6 +677,8 @@ label; the card rows after it belong to that tab:
 
 - Only on `/ca/en/magazine`. The last paragraph holding only a link is the call to action
   (optional), as on the source (`a.cmp-teaser__action-link`). Title and image are not linked.
+- A description the source holds without a `<p>` ("Fly Fishing the Amazon") has no paragraph
+  margin there. It is authored as a second line of the title: `<p>Title<br>Description</p>`.
 - Card is 4/12 on desktop, 6/12 on tablet, 12/12 on phone, with the inset. Order inside a
   card: title, description, "Read More", then the image BELOW (max-height 200 px, cover).
 - Whole card at 65% opacity. A yellow triangle with the lock glyph (24 px, black) sits on
