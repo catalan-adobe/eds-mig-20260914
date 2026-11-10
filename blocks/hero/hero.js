@@ -52,8 +52,28 @@ function addControls(block, slides) {
   const show = (index) => {
     current = (index + slides.length) % slides.length;
     slides.forEach((slide, i) => slide.classList.toggle('active', i === current));
-    dotButtons.forEach((dot, i) => dot.setAttribute('aria-current', i === current));
+    dotButtons.forEach((dot, i) => {
+      dot.setAttribute('aria-current', i === current);
+      dot.tabIndex = i === current ? 0 : -1;
+    });
   };
+  // as on the source, keys stop at the first and last slide instead of wrapping
+  const last = slides.length - 1;
+  const keyTargets = {
+    ArrowLeft: () => Math.max(current - 1, 0),
+    ArrowUp: () => Math.max(current - 1, 0),
+    ArrowRight: () => Math.min(current + 1, last),
+    ArrowDown: () => Math.min(current + 1, last),
+    Home: () => 0,
+    End: () => last,
+  };
+  dots.addEventListener('keydown', (event) => {
+    const target = keyTargets[event.key];
+    if (!target) return;
+    event.preventDefault();
+    show(target());
+    dotButtons[current].focus();
+  });
 
   previous.addEventListener('click', () => show(current - 1));
   next.addEventListener('click', () => show(current + 1));
