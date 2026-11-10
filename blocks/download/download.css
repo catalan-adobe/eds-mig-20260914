@@ -1,0 +1,84 @@
+.download {
+  display: flow-root;
+  line-height: 1;
+}
+
+.download .download-title {
+  margin: 0.5em 0 0;
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-body);
+  text-transform: uppercase;
+}
+
+.download .download-title a {
+  color: var(--color-text);
+}
+
+.download .download-title a:hover {
+  text-decoration: none;
+}
+
+.download .download-description {
+  margin: 0;
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-text);
+  text-transform: uppercase;
+}
+
+.download .download-properties {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.25em 0 1em;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+}
+
+.download .download-properties > div {
+  font-size: var(--font-size-xsmall);
+}
+
+.download .download-properties dt {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.download .download-properties dd {
+  margin: 0 1em 0 0;
+}
+
+.download .download-action {
+  display: block;
+  width: fit-content;
+  height: var(--button-size);
+  background-color: var(--color-brand-secondary);
+  color: var(--color-background);
+  font-size: var(--font-size-small);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.download .download-action span {
+  display: block;
+  padding: 16px 2.5em 0 2.25em;
+}
+
+.download .download-action span::before {
+  content: "\e907";
+  float: left;
+  margin-top: -0.1em;
+  padding-right: 0.5em;
+  font-family: var(--font-family-icon);
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}

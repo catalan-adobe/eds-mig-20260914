@@ -1,0 +1,123 @@
+/* card, source: .cmp-experience-fragment--contributor */
+.contributor {
+  padding: 0.5em 0 1em;
+  text-align: center;
+}
+
+.contributor .contributor-image img {
+  width: 164px;
+  height: 164px;
+  margin: 7px 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.contributor .contributor-name {
+  margin: 0 0 0.25em;
+  font-size: var(--font-size-large);
+}
+
+/* an h5 title on the source */
+.contributor .contributor-roles {
+  margin: 0 0 0.25em;
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-body);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* social buttons, source: .cmp-buildingblock--btn-list, .cmp-button--secondary,
+   .cmp-button--icononly */
+.contributor .contributor-social {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 1em var(--gutter) 0;
+  list-style: none;
+}
+
+.contributor .contributor-social a {
+  display: block;
+  box-sizing: border-box;
+  width: var(--button-size);
+  height: var(--button-size);
+  padding: 18px 0 0 14px;
+  background-color: var(--color-brand-secondary);
+  color: var(--color-text-inverse);
+  font-size: var(--font-size-small);
+  text-align: left;
+}
+
+.contributor .contributor-social a::before {
+  display: block;
+  font-family: var(--font-family-icon);
+  font-size: 1.25em;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.contributor .contributor-social-facebook::before {
+  content: "\e902";
+}
+
+.contributor .contributor-social-twitter::before {
+  content: "\e901";
+}
+
+.contributor .contributor-social-instagram::before {
+  content: "\e903";
+}
+
+/* byline, source: .cmp-byline */
+.contributor.byline {
+  padding: 0;
+  text-align: left;
+}
+
+.contributor.byline .contributor-info {
+  display: flow-root;
+}
+
+.contributor.byline .contributor-image {
+  float: left;
+}
+
+.contributor.byline .contributor-image img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+
+.contributor.byline .contributor-name {
+  margin: 0 0 0.25rem 85px;
+  padding-top: 0.5rem;
+}
+
+.contributor.byline .contributor-roles {
+  margin: 0 0 13.5px 85px;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-xsmall);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-text);
+  text-align: left;
+}
+
+.contributor.byline .contributor-social {
+  justify-content: flex-start;
+  padding: 0;
+}
+
+@media (width >= 1025px) {
+  .contributor.byline {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  /* 9/12 of the source grid, which is one gutter wider than the block on each side */
+  .contributor.byline .contributor-info {
+    flex: 0 0 calc(75% + var(--gutter) / 2);
+  }
+}

@@ -21,12 +21,14 @@ if (window.trustedTypes && window.trustedTypes.createPolicy) {
     createHTML: (input, type, sink) => {
       let processedInput = input;
       if (/srcdoc\s*=/i.test(processedInput)) {
-        const doc = new DOMParser().parseFromString(innerTT.createHTML(processedInput), 'text/html');
+        const doc = new DOMParser()
+          .parseFromString(innerTT.createHTML(processedInput), 'text/html');
         doc.querySelectorAll('iframe[srcdoc]').forEach((el) => el.removeAttribute('srcdoc'));
         processedInput = doc.body.innerHTML;
       }
       if (sink.includes('createContextualFragment') || sink.includes('Document write')) {
-        const doc = new DOMParser().parseFromString(innerTT.createHTML(processedInput), 'text/html');
+        const doc = new DOMParser()
+          .parseFromString(innerTT.createHTML(processedInput), 'text/html');
         doc.querySelectorAll('script').forEach((el) => el.remove());
         processedInput = doc.body.innerHTML;
       }
@@ -43,33 +45,34 @@ if (window.trustedTypes && window.trustedTypes.createPolicy) {
 async function loadFonts() {
   await loadCSS(`${window.hlx.codeBasePath}/styles/fonts.css`);
   try {
-    if (!window.location.hostname.includes('localhost')) sessionStorage.setItem('fonts-loaded', 'true');
+    if (!window.location.hostname.includes('localhost')) {
+      sessionStorage.setItem('fonts-loaded', 'true');
+    }
   } catch (e) {
     // do nothing
   }
 }
 
 /**
- * Turns `/widgets/...` links into widget blocks.
+ * Returns the locale root of the current page, for example `/f52-1011-02/us/en`.
+ * Unknown paths (the 404 page) fall back to `/us/en`, as on the source site.
+ * @returns {string} The locale root path
+ */
+export function getLocaleRoot() {
+  const [root] = window.location.pathname.match(/^\/f52-1011-02\/[a-z]{2}\/[a-z]{2}/)
+    || ['/f52-1011-02/us/en'];
+  return root;
+}
+
+/**
+ * Turns a paragraph that only holds a link to a fragment into a fragment block.
  * @param {Element} main The container element
  */
-function buildWidgetAutoBlocks(main) {
-  const widgetLinks = [...main.querySelectorAll('a[href*="/widgets/"]')];
-  widgetLinks.forEach((link) => {
-    if (link.closest('.widget')) return;
-    const newLink = link.cloneNode(true);
-    const widgetBlock = buildBlock('widget', { elems: [newLink] });
-    const p = link.closest('p');
-    if (
-      p
-      && p.querySelectorAll('a').length === 1
-      && p.querySelector('a') === link
-      && p.textContent.trim() === link.textContent.trim()
-    ) {
-      p.replaceWith(widgetBlock);
-    } else {
-      link.replaceWith(widgetBlock);
-    }
+function buildFragmentBlocks(main) {
+  main.querySelectorAll('p > a[href^="/f52-1011-02/fragments/"]:only-child').forEach((a) => {
+    const p = a.parentElement;
+    if (p.textContent.trim() !== a.textContent.trim() || p.closest('.fragment')) return;
+    p.replaceWith(buildBlock('fragment', [[a]]));
   });
 }
 
@@ -79,24 +82,7 @@ function buildWidgetAutoBlocks(main) {
  */
 function buildAutoBlocks(main) {
   try {
-    // auto load `*/fragments/*` references
-    const fragments = [...main.querySelectorAll('a[href*="/fragments/"]')].filter((f) => !f.closest('.fragment'));
-    if (fragments.length > 0) {
-      // eslint-disable-next-line import/no-cycle
-      import('../blocks/fragment/fragment.js').then(({ loadFragment }) => {
-        fragments.forEach(async (fragment) => {
-          try {
-            const { pathname } = new URL(fragment.href);
-            const frag = await loadFragment(pathname);
-            fragment.parentElement.replaceWith(...frag.children);
-          } catch (error) {
-            // eslint-disable-next-line no-console
-            console.error('Fragment loading failed', error);
-          }
-        });
-      });
-    }
-    buildWidgetAutoBlocks(main);
+    buildFragmentBlocks(main);
   } catch (error) {
     // eslint-disable-next-line no-console
     console.error('Auto Blocking failed', error);
@@ -104,41 +90,29 @@ function buildAutoBlocks(main) {
 }
 
 /**
- * Decorates formatted links to style them as buttons.
+ * Turns a bold link that is alone in its paragraph into a primary button.
  * @param {HTMLElement} main The main container element
  */
 function decorateButtons(main) {
-  main.querySelectorAll('p a[href]').forEach((a) => {
-    a.title = a.title || a.textContent;
-    const p = a.closest('p');
-    const text = a.textContent.trim();
-
-    // quick structural checks
-    if (a.querySelector('img') || p.textContent.trim() !== text) return;
-
-    // skip URL display links
-    try {
-      if (new URL(a.href).href === new URL(text, window.location).href) return;
-    } catch { /* continue */ }
-
-    // require authored formatting for buttonization
-    const strong = a.closest('strong');
-    const em = a.closest('em');
-    if (!strong && !em) return;
-
+  main.querySelectorAll('p > strong:only-child > a[href]:only-child').forEach((a) => {
+    const strong = a.parentElement;
+    const p = strong.parentElement;
+    if (p.textContent.trim() !== a.textContent.trim()) return;
     p.className = 'button-wrapper';
-    a.className = 'button';
-    if (strong && em) { // high-impact call-to-action
-      a.classList.add('accent');
-      const outer = strong.contains(em) ? strong : em;
-      outer.replaceWith(a);
-    } else if (strong) {
-      a.classList.add('primary');
-      strong.replaceWith(a);
-    } else {
-      a.classList.add('secondary');
-      em.replaceWith(a);
-    }
+    a.className = 'button primary';
+    strong.replaceWith(a);
+  });
+}
+
+/**
+ * Marks a paragraph of plain italics right after a picture as its caption.
+ * @param {Element} main The container element
+ */
+function decorateCaptions(main) {
+  main.querySelectorAll('p:has(> picture) + p > em:only-child').forEach((em) => {
+    const p = em.parentElement;
+    if (em.children.length || p.textContent.trim() !== em.textContent.trim()) return;
+    p.classList.add('caption');
   });
 }
 
@@ -146,13 +120,64 @@ function decorateButtons(main) {
  * Decorates the main element.
  * @param {Element} main The main element
  */
-// eslint-disable-next-line import/prefer-default-export
 export function decorateMain(main) {
   decorateIcons(main);
   buildAutoBlocks(main);
   decorateSections(main);
   decorateBlocks(main);
   decorateButtons(main);
+  decorateCaptions(main);
+}
+
+/**
+ * Builds the breadcrumb of adventure and article pages from the path.
+ * @param {Element} main The main element
+ */
+function buildBreadcrumb(main) {
+  const { classList } = document.body;
+  const section = main.querySelector('.section');
+  if (!section || !(classList.contains('adventure') || classList.contains('article'))) return;
+
+  const root = getLocaleRoot();
+  const segments = window.location.pathname.slice(root.length).split('/').filter(Boolean);
+  const ol = document.createElement('ol');
+  segments.slice(0, -1).forEach((segment, i) => {
+    const a = document.createElement('a');
+    a.href = `${root}/${segments.slice(0, i + 1).join('/')}`;
+    a.textContent = segment.replaceAll('-', ' ');
+    const li = document.createElement('li');
+    // white space as in the source markup: it sets the gaps between items and after the icon
+    li.append(' ', a);
+    ol.append(li, ' ');
+  });
+  const current = document.createElement('li');
+  current.setAttribute('aria-current', 'page');
+  current.textContent = ` ${document.title}`;
+  ol.append(current);
+
+  const nav = document.createElement('nav');
+  nav.className = 'breadcrumb';
+  nav.setAttribute('aria-label', 'Breadcrumb');
+  nav.append(ol);
+  const wrapper = document.createElement('div');
+  wrapper.className = 'breadcrumb-wrapper';
+  wrapper.append(nav);
+  if (classList.contains('adventure')) section.prepend(wrapper);
+  else section.append(wrapper);
+}
+
+/**
+ * Shows the migrated 404 page of the source site in place of the static fallback.
+ * @param {Element} main The main element
+ * @returns {Promise<boolean>} true when the content was loaded
+ */
+async function loadErrorPage(main) {
+  // eslint-disable-next-line import/no-cycle
+  const { loadFragment } = await import('../blocks/fragment/fragment.js');
+  const page = await loadFragment('/f52-1011-02/us/en/errors/404');
+  if (!page) return false;
+  main.replaceChildren(...page.children);
+  return true;
 }
 
 /**
@@ -160,11 +185,15 @@ export function decorateMain(main) {
  * @param {Element} doc The container element
  */
 async function loadEager(doc) {
-  document.documentElement.lang = 'en';
+  const [, country, language] = getLocaleRoot().split('/').slice(1);
+  document.documentElement.lang = `${language}-${country.toUpperCase()}`;
   decorateTemplateAndTheme();
   const main = doc.querySelector('main');
   if (main) {
-    decorateMain(main);
+    if (!window.isErrorPage || !await loadErrorPage(main)) {
+      decorateMain(main);
+      buildBreadcrumb(main);
+    }
     document.body.classList.add('appear');
     await loadSection(main.querySelector('.section'), waitForFirstImage);
   }
@@ -199,19 +228,9 @@ async function loadLazy(doc) {
   loadFonts();
 }
 
-/**
- * Loads everything that happens a lot later,
- * without impacting the user experience.
- */
-function loadDelayed() {
-  import('./consent-check.js');
-  // load anything that can be postponed to the latest here
-}
-
 async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
-  loadDelayed();
 }
 
 loadPage();

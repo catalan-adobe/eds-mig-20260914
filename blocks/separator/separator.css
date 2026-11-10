@@ -1,0 +1,30 @@
+/* The margins sit on the <hr>: they collapse through the block, as on the source. */
+.separator hr {
+  margin: 4rem 0;
+  border: 1px solid #ebebeb;
+}
+
+.separator.small hr {
+  margin: 1em 0;
+}
+
+.separator.medium hr {
+  margin: 2em 0;
+}
+
+.separator.hidden hr {
+  border: none;
+}
+
+/* source quirk: right below the hero of a locale root the rule spans the whole container,
+   so it gives back the wrapper gutter once the viewport is wider than the container */
+.hero-wrapper + .separator-wrapper .separator hr {
+  margin-right: clamp(-1 * var(--gutter), (var(--container-width) - 100vw) / 2, 0px);
+  margin-left: clamp(-1 * var(--gutter), (var(--container-width) - 100vw) / 2, 0px);
+}
+
+/* source quirk: the article body column has no inset, its separator keeps the gutter */
+body.article .section:has(+ .sidebar) .separator hr {
+  margin-right: var(--gutter);
+  margin-left: var(--gutter);
+}
