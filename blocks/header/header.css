@@ -186,19 +186,14 @@ header .header-main-inner {
   padding: 0 var(--gutter);
 }
 
-/* the 7px at the bottom is the gap under the baseline of the source's inline image */
+/* link and image stay inline, as on the source: the focus ring is the 128px wide line box */
 header .header-logo {
   box-sizing: border-box;
   flex: 0 0 calc(200% / 12);
-  padding: 0 var(--gutter) 7px;
-}
-
-header .header-logo a {
-  display: block;
+  padding: 0 var(--gutter);
 }
 
 header .header-logo img {
-  display: block;
   width: 8rem;
   max-width: 8rem;
   height: auto;

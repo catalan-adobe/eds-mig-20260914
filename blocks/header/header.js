@@ -101,7 +101,7 @@ function buildLanguage(list, root) {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') toggle.setAttribute('aria-expanded', 'false');
   });
-  toggle.addEventListener('click', () => linkToSamePage(panel, root), { once: true });
+  linkToSamePage(panel, root);
 
   return el('div', { class: 'header-lang' }, el('div', { class: 'header-lang-anchor' }, toggle, panel));
 }
