@@ -54,6 +54,10 @@ main > .section > .carousel-wrapper {
   height: 400px;
 }
 
+.carousel.image-bottom .carousel-slide-image img {
+  object-position: 50% 100%;
+}
+
 .carousel .carousel-slide-content {
   width: 100%;
   padding: 0 var(--gutter);
@@ -71,6 +75,10 @@ main > .section > .carousel-wrapper {
 
 .carousel .carousel-slide-content p.button-wrapper {
   margin: 1em 0;
+}
+
+.carousel .carousel-slide-content a.button:any-link {
+  padding: 14px 35px;
 }
 
 /* controls: dots in the middle, arrows at the right */

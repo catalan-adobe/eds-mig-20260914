@@ -55,24 +55,25 @@
 .cards .cards-filter {
   display: flex;
   flex-wrap: wrap;
-  margin: 22px 0 18px;
+  margin: 18px 0;
 }
 
 .cards .cards-filter button {
-  height: var(--button-size);
-  padding: 0 14px;
+  padding: 8px 16px;
   border: 0;
+  border-bottom: 1px solid transparent;
   background: none;
   color: var(--text-color);
   font: inherit;
   font-size: var(--font-size-s);
+  line-height: 21px;
   text-transform: uppercase;
   cursor: pointer;
 }
 
 .cards .cards-filter button[aria-pressed='true'] {
   background-color: var(--dark-color);
-  color: var(--inverse-text-color);
+  color: #fff;
 }
 
 /* people: contributors with a round portrait */
@@ -240,22 +241,27 @@
   flex-basis: 388px;
   flex-direction: column-reverse;
   margin-bottom: 0;
-  padding: 48px 14px 0;
+  padding: 29px 14px 0;
 }
 
 .cards.locked li::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: 36px;
   left: 14px;
+  z-index: 1;
   width: 48px;
   height: 48px;
   background:
-    url('../../icons/lock.svg') 6px 6px / 20px no-repeat,
+    url('../../icons/lock.svg') 12px 14px / 24px no-repeat,
     linear-gradient(to top left, transparent 50%, var(--brand-color) 50%);
 }
 
 .cards.locked li > div {
+  color: var(--muted-color);
+  font-size: var(--font-size-s);
+  line-height: 1.75;
+  text-transform: uppercase;
   opacity: 0.65;
 }
 
@@ -268,7 +274,7 @@
 }
 
 .cards.locked .cards-card-body p {
-  margin: 0;
+  margin: 0 0 27.5px;
   overflow: visible;
   color: var(--muted-color);
   font-size: var(--font-size-s);
@@ -277,8 +283,21 @@
   white-space: normal;
 }
 
+.cards.locked .cards-card-body p:has(> em) {
+  margin-bottom: 0;
+}
+
+.cards.locked .cards-card-body em {
+  font-style: normal;
+}
+
+.cards.locked a.button:any-link {
+  padding: 14px 35px;
+}
+
 .cards.locked .cards-card-body p:last-child {
-  display: inline-block;
+  display: block;
+  width: fit-content;
   margin: 14px 0;
   padding: 7px 14px;
   background-color: var(--light-color);
@@ -286,7 +305,7 @@
 }
 
 .cards.locked .cards-card-image img {
-  margin: 7px 0;
+  margin: 7px 0 14px;
 }
 
 @media (width < 768px) {

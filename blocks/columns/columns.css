@@ -80,6 +80,10 @@
   margin: 18px 0;
 }
 
+.columns.featured a.button:any-link {
+  padding: 14px 35px;
+}
+
 @media (width >= 768px) {
   .columns.featured > div {
     flex-direction: row;

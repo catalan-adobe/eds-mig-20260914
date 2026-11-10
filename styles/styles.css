@@ -160,6 +160,7 @@ img {
 
 /* buttons */
 p.button-wrapper {
+  margin-bottom: 0;
   line-height: 1.5;
   text-align: left;
 }
@@ -215,7 +216,7 @@ main > .section.no-gutter > div {
   padding-left: 0;
 }
 
-main > .section.divider::after {
+main > .section:is(.divider, .divider-medium)::after {
   content: '';
   display: block;
   max-width: var(--content-width);
@@ -223,9 +224,17 @@ main > .section.divider::after {
   border-top: 2px solid var(--light-color);
 }
 
+main > .section.divider-medium::after {
+  margin: 36px auto;
+}
+
 @media (width < 1164px) {
   main > .section.divider::after {
     margin: 64px var(--gutter);
+  }
+
+  main > .section.divider-medium::after {
+    margin: 36px var(--gutter);
   }
 }
 
