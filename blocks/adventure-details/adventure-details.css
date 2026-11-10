@@ -8,7 +8,7 @@
 }
 
 .adventure-details dl > div {
-  box-sizing: border-box;
+  box-sizing: content-box;
   float: left;
   width: 100%;
   height: 84px;
