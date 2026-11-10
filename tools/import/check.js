@@ -10,6 +10,7 @@ const PREFIX = `/${RUN}`;
 const base = (process.argv[2] || '').replace(/\/$/, '');
 if (!base) throw new Error('Usage: node tools/import/check.js <base-url>');
 
+// Empty headings count on neither side: the importer keeps the source's empty h3 for its height.
 // Source headings that are not headings after migration, each for a stated reason.
 const NOT_HEADINGS = [
   '.cmp-contentfragment__title', // hidden by the source CSS
@@ -69,7 +70,7 @@ async function checkPage(path) {
   const imported = importedImages(await readFile(join(OUT, `${PREFIX}${path}.html`), 'utf8'));
   const { document } = parseHTML(await get(`${base}${PREFIX}${path}`));
   const main = document.querySelector('main');
-  const headings = [...main.querySelectorAll('h1, h2, h3')].map(text);
+  const headings = [...main.querySelectorAll('h1, h2, h3')].map(text).filter(Boolean);
   if (headings.join('|') !== source.headings.join('|')) {
     const lines = [`source:   ${source.headings.join(' | ')}`, `migrated: ${headings.join(' | ')}`];
     problems.push(`headings differ:\n    ${lines.join('\n    ')}`);

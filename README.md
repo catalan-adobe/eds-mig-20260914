@@ -23,15 +23,16 @@ Each locale folder, such as `/us/en`, has its own `nav` and `footer` page.
 
 | Block | Rows |
 |-------|------|
-| `carousel` | One row per slide: image, then title, text and a button. Shows a dot and two arrows, also with one slide |
+| `carousel` | One row per slide: image, then title, text and a button. Shows a dot and two arrows. With one slide the buttons are disabled |
 | `carousel (static)` | A single hero teaser: image, then title, text and a button. It has no controls |
+| `carousel (image-bottom, static)` | As `carousel (static)`. A tall image is cropped at the top, so its bottom edge stays |
 | `columns (featured)` | Image, then a small title, a heading, text and a button |
 | `cards` | Image, then a linked title and a description |
 | `cards (filter)` | As `cards`, plus a last cell with categories, split by commas |
 | `cards (people)` | Portrait, then name (heading 3), roles and icon links |
 | `cards (byline)` | As `cards (people)`, for the author under an article |
 | `cards (list)` | A linked title, then a date |
-| `cards (locked)` | Image, then title (heading 2), text and a label. Italic text has no space below it |
+| `cards (locked)` | Image, then title (heading 2), text and a label. Italic text was bare text in the source. It has no space below it |
 | `tabs` | Label, then the panel content |
 | `accordion` | Question, then answer |
 | `facts` | Label, then value |
@@ -43,6 +44,8 @@ Rules for default content:
 - A bold link is a yellow button. An italic link is a dark button.
   Card titles are plain links for that reason.
 - Italic text after an image, in the same paragraph, is its caption.
+- A single non-breaking space between words stays, so the words wrap together.
+  A run of them next to a space keeps the gap, and a run without one becomes one space.
 - Icons are written as `:name:`. The files are in `/icons`.
 - Every heading 2 has a yellow underline, unless the section has `plain-headings`.
 
@@ -50,6 +53,7 @@ Section styles, set in `Section Metadata`:
 
 | Style | Effect |
 |-------|--------|
+| `flat` | The source page has no outer grid, so its first columns have no gutter. The importer sets it on every section of such a page |
 | `divider` | A rule below the section |
 | `divider-medium` | A rule below the section, with less space around it |
 | `underline` | The heading 1 has a yellow underline |
