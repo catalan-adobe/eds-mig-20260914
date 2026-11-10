@@ -178,6 +178,19 @@ function decorateButtons(main) {
   });
 }
 
+const PHONE_RENDITION_WIDTH = 400;
+
+/**
+ * Sets --image-ratio from the authored size, as a phone-width rendition with whole-pixel height.
+ * @param {Element} main The main element
+ */
+function setImageRatios(main) {
+  main.querySelectorAll('img[width][height]').forEach((img) => {
+    const rows = Math.floor((PHONE_RENDITION_WIDTH * img.getAttribute('height')) / img.getAttribute('width'));
+    img.style.setProperty('--image-ratio', `${PHONE_RENDITION_WIDTH} / ${rows}`);
+  });
+}
+
 /**
  * Decorates the main element.
  * @param {Element} main The main element
@@ -189,6 +202,7 @@ export function decorateMain(main) {
   decorateSections(main);
   decorateBlocks(main);
   decorateButtons(main);
+  setImageRatios(main);
 }
 
 /**

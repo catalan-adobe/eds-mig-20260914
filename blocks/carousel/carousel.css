@@ -144,10 +144,15 @@ main > .section > .carousel-wrapper {
 @media (width < 768px) {
   .carousel .carousel-slide-image:not(:only-child) img {
     display: inline;
+    aspect-ratio: var(--image-ratio, auto);
   }
 
   .carousel.carousel-controlled {
-    margin-bottom: 14px;
+    margin-bottom: 72px;
+  }
+
+  .carousel.carousel-controlled .carousel-controls {
+    height: 0;
   }
 
   .carousel .carousel-indicators {

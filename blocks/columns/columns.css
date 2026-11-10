@@ -98,3 +98,16 @@
     flex: 1;
   }
 }
+
+@media (width < 768px) {
+  .columns.featured > div > div:not(.columns-img-col) {
+    align-items: stretch;
+    margin-top: -18px;
+  }
+
+  .columns.featured .columns-img-col img {
+    display: inline;
+    height: auto;
+    aspect-ratio: var(--image-ratio, auto);
+  }
+}
