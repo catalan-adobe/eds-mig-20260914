@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
-import { mkdtempSync } from 'node:fs';
+import { mkdtempSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { after, before, test } from 'node:test';
@@ -21,7 +21,7 @@ before(() => {
 });
 
 after(() => {
-  execFileSync('trash', [dir]);
+  rmSync(dir, { recursive: true, force: true });
 });
 
 test('score of an image with itself passes with no difference', () => {

@@ -205,6 +205,18 @@ function usePhoneRendition(main) {
 }
 
 /**
+ * Hides headings without text or image name from assistive technology.
+ * The empty headings stay in the page because they hold space.
+ * @param {Element} main The main element
+ */
+function hideEmptyHeadings(main) {
+  main.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach((heading) => {
+    const named = heading.textContent.trim() || heading.querySelector('img[alt]:not([alt=""])');
+    if (!named) heading.setAttribute('aria-hidden', 'true');
+  });
+}
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
@@ -217,6 +229,7 @@ export function decorateMain(main) {
   decorateButtons(main);
   setImageRatios(main);
   usePhoneRendition(main);
+  hideEmptyHeadings(main);
 }
 
 /**
