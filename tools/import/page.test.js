@@ -148,6 +148,16 @@ test('bali: facts block sits in a left aside section', () => {
   assert.equal(meta(doc, 'Template'), 'adventure');
 });
 
+test('a page without an outer grid marks every section flat, a page with one does not', () => {
+  const flat = convert('downhill', '/us/en/adventures/downhill-skiing-wyoming');
+  const sections = [...flat.querySelectorAll('main > div')];
+  assert.match(sectionStyle(flat.querySelector('.facts')), /aside-left, flat/);
+  assert.match(sectionStyle(flat.querySelector('.carousel')), /flat/);
+  assert.ok(sections.length > 2);
+  const grid = convert('bali', '/us/en/adventures/bali-surf-camp');
+  assert.equal(sectionStyle(grid.querySelector('.facts')), 'aside-left');
+});
+
 test('bali: a carousel with one slide is not static', () => {
   const doc = convert('bali', '/us/en/adventures/bali-surf-camp');
   assert.equal(doc.querySelectorAll('.carousel').length, 1);

@@ -394,6 +394,23 @@ main > .section.divider-medium::after {
   }
 }
 
+/* a flat page has no column gutter: its breadcrumb and left aside sit 14px further left */
+@media (width >= 1025px) {
+  main > .section.flat .breadcrumb {
+    margin-left: -14px;
+  }
+
+  main > .section.aside-left.flat > div {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* the heading below the facts keeps its place: the facts move down 23px, as its margin collapses up there */
+  main > .section.aside-left.flat > .facts-wrapper {
+    margin: 23.38px 0 -23.38px;
+  }
+}
+
 /* a side column pairs with one neighbour: the section before `aside`, after `aside-left` */
 .section.aside h3 {
   margin-top: 45px;

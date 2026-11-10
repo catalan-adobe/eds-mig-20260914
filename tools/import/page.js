@@ -59,13 +59,19 @@ function metadata(document) {
   ].filter(([, value]) => value));
 }
 
+/** A page whose outer container holds no grid has no column gutter on its first columns. */
+const hasOuterGrid = (main) => [...main.children]
+  .filter((el) => el.classList.contains('cmp-container'))
+  .some((container) => [...container.children].some((el) => el.classList.contains('aem-Grid')));
+
 export function convertPage(html, path, prefix) {
   const { document } = parseHTML(html);
   document.querySelectorAll(FRAGMENTS).forEach((el) => el.remove());
   const noGrid = !document.querySelector('main [class*="aem-Grid--"]');
+  const flat = !noGrid && !hasOuterGrid(document.querySelector('main'));
   const sections = assemble(walk(document.querySelector('body > .root'), { path, prefix }), path)
     .map(({ parts, styles }) => {
-      const all = noGrid ? [...styles, 'no-gutter'] : styles;
+      const all = [...styles, ...(noGrid ? ['no-gutter'] : []), ...(flat ? ['flat'] : [])];
       return section(parts.map(render), [...new Set(all)].join(', '));
     });
   return pageHtml([...sections, section([metadata(document)])]);
