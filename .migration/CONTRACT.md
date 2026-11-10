@@ -773,6 +773,11 @@ Pages: 32 adventure pages. Source: `.cmp-contentfragment--elements` and
   padding 0 1em, `margin-bottom: 1.25em`, uppercase. Label 12 px dimgray, `padding-top: 1em`.
   Value 14 px weight 600, `padding-top: .5em`. Values are shown as authored ("5000.0").
 - Tablet and phone: items flow in a row and wrap, no border, padding 0 2em 0 0, auto width.
+- Variant `wide` (`<div class="adventure-details wide">`): authored on the eight adventures
+  (us and ca) whose source details are not in a grid column. The importer adds it; foundation
+  CSS reads it with `.section:has(.adventure-details.wide)` and changes the wrappers only, the
+  block has no style for it.
+- A paragraph of plain italics right after a picture gets the class `caption` in `decorateMain`.
 
 ### 10. `contributor`
 
