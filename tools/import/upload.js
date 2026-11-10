@@ -23,16 +23,28 @@ async function call(method, url, token, body) {
   return resp.status;
 }
 
+/**
+ * A preview call purges the cache of one hostname only.
+ * `main` serves the local dev server. The branch serves the review link.
+ */
+export function previewUrls(path) {
+  return ['main', RUN].map((ref) => `https://admin.hlx.page/preview/${SITE}/${ref}${path}`);
+}
+
+async function preview(path, token) {
+  let worst = 0;
+  for (const url of previewUrls(path)) worst = Math.max(worst, await call('POST', url, token));
+  return worst;
+}
+
 async function publish(file, token) {
   const path = toWebPath(file);
   const form = new FormData();
   form.set('data', new Blob([await readFile(join(OUT, file))], { type: 'text/html' }));
   const da = await call('PUT', `https://admin.da.live/source/${SITE}${path}.html`, token, form);
-  const preview = da < 300
-    ? await call('POST', `https://admin.hlx.page/preview/${SITE}/main${path}`, token)
-    : 'skipped';
-  console.log(`${path} da=${da} preview=${preview}`);
-  return da < 300 && preview < 300;
+  const previewed = da < 300 ? await preview(path, token) : 'skipped';
+  console.log(`${path} da=${da} preview=${previewed}`);
+  return da < 300 && previewed < 300;
 }
 
 async function main() {

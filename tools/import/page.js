@@ -110,8 +110,8 @@ export function convertNav(html, prefix) {
 
 export function convertFooter(html, prefix) {
   const fragment = parseHTML(html).document.querySelector('footer.experiencefragment');
-  const paragraphs = [...fragment.querySelector('.cmp-text').children];
-  const legal = paragraphs.map((el) => cleanEl(el, { prefix }));
+  const texts = [...fragment.querySelectorAll('.cmp-text')];
+  const legal = texts.flatMap((el) => [...el.children]).map((el) => cleanEl(el, { prefix }));
   return pageHtml([
     section([
       brand(fragment, prefix, 'wknd-logo-light'),

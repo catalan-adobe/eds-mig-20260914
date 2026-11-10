@@ -293,3 +293,12 @@ test('an image title becomes a caption in the same paragraph as the image', () =
     '<p><picture><img src="https://wknd.site/a.1600.jpeg" alt="A"></picture><em>Hello</em></p>',
   ]);
 });
+
+test('footer: every text component is kept, in order', () => {
+  const { document: doc } = parseHTML(convertFooter(fixture('members-only'), PREFIX));
+  const legal = [...doc.querySelectorAll('main > div')][1];
+  const paragraphs = [...legal.querySelectorAll('p')].map(text);
+  assert.match(paragraphs[0], /^Canadian specific footer/);
+  assert.match(paragraphs[1], /2019, WKND Site/);
+  assert.match(paragraphs[paragraphs.length - 1], /Adobe Stock/);
+});

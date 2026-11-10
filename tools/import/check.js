@@ -86,10 +86,21 @@ async function checkPage(path) {
   };
 }
 
-async function checkFragment(path) {
-  const { document } = parseHTML(await get(`${base}${PREFIX}${path}`));
+async function footerText(root, document) {
+  const source = parseHTML(await get(`${SOURCE}${root}.html`)).document;
+  const want = [...source.querySelectorAll('footer.experiencefragment .cmp-text p')]
+    .map(text).filter(Boolean);
+  const got = [...document.querySelectorAll('main > div:last-child p')].map(text);
+  if (want.join('|') === got.join('|')) return [];
+  return [`footer text differs: source has ${want.length} paragraphs, migrated has ${got.length}`];
+}
+
+async function checkFragment(root, name) {
+  const { document } = parseHTML(await get(`${base}${PREFIX}${root}/${name}`));
+  const problems = await checkLinks(document);
+  if (name === 'footer') problems.push(...await footerText(root, document));
   return {
-    path, problems: await checkLinks(document), headings: 0, images: 0,
+    path: `${root}/${name}`, problems, headings: 0, images: 0,
   };
 }
 
@@ -99,8 +110,8 @@ const roots = pages.filter((path) => /^\/[a-z]{2}\/[a-z]{2}$/.test(path));
 const jobs = [
   ...pages.map((path) => () => checkPage(path)),
   ...roots.flatMap((root) => [
-    () => checkFragment(`${root}/nav`),
-    () => checkFragment(`${root}/footer`),
+    () => checkFragment(root, 'nav'),
+    () => checkFragment(root, 'footer'),
   ]),
 ];
 const results = [];
