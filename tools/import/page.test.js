@@ -92,6 +92,13 @@ test('home: separators end a section with the divider style', () => {
   assert.deepEqual(styles, [['Style', 'divider'], ['Style', 'divider']]);
 });
 
+test('magazine: a medium separator ends its section with the divider-medium style', () => {
+  const doc = convert('magazine', '/us/en/magazine');
+  const styles = [...doc.querySelectorAll('.section-metadata > div')].map((r) => text(cells(r)[1]));
+  assert.ok(styles.includes('divider-medium'));
+  assert.ok(!styles.includes('divider'));
+});
+
 test('home: titles and primary buttons are default content', () => {
   const doc = convert('home', '/us/en');
   assert.deepEqual([...doc.querySelectorAll('main > div > h2')].map(text), ['Recent Articles', 'Next Adventures']);
@@ -122,6 +129,14 @@ test('adventures: tabs of image lists become one filterable cards block', () => 
   const bali = cards.find((r) => text(r.querySelector('a')) === 'Bali Surf Camp');
   assert.equal(text(cells(bali)[2]), 'Surfing');
   assert.equal(doc.querySelectorAll('.tabs').length, 0);
+});
+
+test('adventures: a title in a container without a grid is its own no-gutter section', () => {
+  const doc = convert('adventures', '/us/en/adventures');
+  const title = doc.querySelector('h1');
+  assert.equal(sectionStyle(title), 'no-gutter');
+  assert.equal(title.parentElement.querySelectorAll('.carousel').length, 0);
+  assert.equal(sectionStyle(doc.querySelector('h2')), 'divider');
 });
 
 test('bali: facts block sits in a left aside section', () => {
@@ -225,6 +240,11 @@ test('magazine: locked teasers merge into one cards locked block', () => {
   assert.equal(locked.length, 2);
   assert.equal(text(locked[0].querySelector('h2')), 'Alaskan Adventure');
   assert.equal(locked[0].querySelector('a'), null);
+  const [first, second] = locked.map((row) => cells(row)[1]);
+  assert.equal(first.querySelectorAll('p').length, 2);
+  assert.equal(second.querySelectorAll('p').length, 2);
+  assert.equal(first.querySelectorAll('em').length, 0);
+  assert.equal(text(second.querySelector('p > em')), 'Experience the Amazon like never before');
 });
 
 test('a page without a grid has no-gutter sections; a page with a grid has none', () => {

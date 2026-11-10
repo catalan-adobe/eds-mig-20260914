@@ -30,7 +30,7 @@ function assemble(items, path) {
   };
   items.forEach((item) => {
     if (item.divider) {
-      current.styles.push('divider');
+      current.styles.push(item.divider === 'medium' ? 'divider-medium' : 'divider');
       flush();
     } else if (item.style) {
       current.styles.push(item.style);

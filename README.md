@@ -31,7 +31,7 @@ Each locale folder, such as `/us/en`, has its own `nav` and `footer` page.
 | `cards (people)` | Portrait, then name (heading 3), roles and icon links |
 | `cards (byline)` | As `cards (people)`, for the author under an article |
 | `cards (list)` | A linked title, then a date |
-| `cards (locked)` | Image, then title (heading 2), text and a label |
+| `cards (locked)` | Image, then title (heading 2), text and a label. Italic text has no space below it |
 | `tabs` | Label, then the panel content |
 | `accordion` | Question, then answer |
 | `facts` | Label, then value |
@@ -51,9 +51,10 @@ Section styles, set in `Section Metadata`:
 | Style | Effect |
 |-------|--------|
 | `divider` | A rule below the section |
+| `divider-medium` | A rule below the section, with less space around it |
 | `underline` | The heading 1 has a yellow underline |
 | `small-text` | Paragraphs are small |
-| `no-gutter` | No side padding. The page has no grid |
+| `no-gutter` | No side padding. The page, or the title container, has no grid |
 | `aside` | A right column. It sits beside the section before it |
 | `aside-left` | A left column. It sits beside the section after it |
 

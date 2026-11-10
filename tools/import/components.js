@@ -1,7 +1,7 @@
 // One mapper per AEM Core Component. A mapper returns a list of items:
 //   string                      default content HTML
 //   { block, rows }             a block
-//   { divider: true }           ends the section with a rule
+//   { divider: true|'medium' }  ends the section with a rule, a tighter one for 'medium'
 //   { style }                   adds a style to the current section
 //   { group, items }            a column that becomes its own section (group is its style)
 import { picture, rewriteLink } from './html.js';
@@ -101,7 +101,18 @@ function buttonComponent(el, ctx) {
 }
 
 function separator(el) {
-  return el.classList.contains('cmp-separator--hidden') ? [] : [{ divider: true }];
+  if (el.classList.contains('cmp-separator--hidden')) return [];
+  return [{ divider: el.classList.contains('cmp-separator--space-medium') ? 'medium' : true }];
+}
+
+/**
+ * A list teaser description without a paragraph has no paragraph margin below it.
+ * The content pipeline wraps bare text in a paragraph, so italics mark that case.
+ */
+function teaserDescription(el, description, ctx) {
+  if (description?.querySelector('p')) return cleanInner(description, ctx);
+  const plain = el.classList.contains('cmp-teaser--list');
+  return plain ? `<p><em>${esc(text(description))}</em></p>` : para(text(description));
 }
 
 function teaserContent(el, ctx) {
@@ -112,7 +123,7 @@ function teaserContent(el, ctx) {
   return [
     para(text(el.querySelector('.cmp-teaser__pretitle'))),
     heading ? cleanEl(heading, ctx) : '',
-    description?.querySelector('p') ? cleanInner(description, ctx) : para(text(description)),
+    teaserDescription(el, description, ctx),
     links.map((a) => button(a, ctx)).join('') || para(text(actions)),
   ].filter(Boolean).join('');
 }
@@ -260,8 +271,15 @@ const MAPPERS = {
   sharing: () => [],
 };
 
+/** A container with a title and no grid has no side gutter. */
+const onlyTitle = (items) => items.length > 0
+  && items.every((item) => item.style || (typeof item === 'string' && /^<h[1-6][\s>]/.test(item)));
+
 /** A 3-wide grid column is an aside. The 8- or 9-wide column beside it is its partner. */
 function column(el, items) {
+  if (!el.querySelector('[class*="aem-Grid--"]') && onlyTitle(items)) {
+    return [{ group: 'no-gutter', items }];
+  }
   const span = [...el.classList].find((c) => /^aem-GridColumn--default--\d+$/.test(c));
   const width = span?.split('--')[2];
   if (width === '3') {
