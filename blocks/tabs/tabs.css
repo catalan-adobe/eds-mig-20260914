@@ -29,11 +29,6 @@
   outline: none;
 }
 
-.tabs .tabs-tab:focus-visible {
-  outline: 2px solid var(--color-text);
-  outline-offset: 2px;
-}
-
 .tabs .tabs-tab[aria-selected="true"] {
   background-color: var(--color-brand-secondary);
   color: var(--color-background);
