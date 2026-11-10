@@ -265,6 +265,21 @@ main > .section.divider-medium::after {
   padding-top: 0;
 }
 
+/* headings written in the body text: full column width, no underline, no inset */
+.section.plain-headings .default-content-wrapper h2::after {
+  content: none;
+}
+
+.article main > .section.plain-headings > .default-content-wrapper > h2 {
+  margin: 27px 0 13.5px;
+  padding: 0;
+}
+
+/* an empty block between the text and the heading keeps the two margins apart */
+.article main > .section.plain-headings > .default-content-wrapper > p:not(:has(> picture)) + h2 {
+  margin-top: 40.5px;
+}
+
 .default-content-wrapper picture {
   display: block;
 }
@@ -274,20 +289,21 @@ main > .section.divider-medium::after {
 }
 
 .default-content-wrapper p:has(> picture) {
+  display: flow-root;
   margin: 0;
-  padding: 7px 0;
+  padding: 7px 0 0;
   line-height: 1.5;
 }
 
-/* a plain image keeps the line gap under it; a caption takes its place */
-.default-content-wrapper p:has(> picture):not(:has(> em)) {
-  padding-bottom: 14px;
+.default-content-wrapper p:has(> picture) > picture {
+  margin-bottom: 14px;
 }
 
-/* text right after an image, in the same paragraph, is its caption */
+/* text right after an image, in the same paragraph, is its caption, floated under the image */
 .default-content-wrapper p:has(> picture) > em,
 .rich-text p:has(> picture) > em {
   display: block;
+  float: left;
   margin-top: -0.25em;
   font-size: var(--font-size-s);
   font-style: normal;
@@ -302,6 +318,12 @@ main > .section.divider-medium::after {
 
 .default-content-wrapper blockquote {
   margin: 18px 40px;
+}
+
+/* the source keeps a quote in its own column: its margin does not collapse, and it sits 14px in from the gutter */
+.article .default-content-wrapper blockquote {
+  margin: 0 54px;
+  padding: 18px 0;
 }
 
 .default-content-wrapper blockquote p {
@@ -356,8 +378,13 @@ main > .section.divider-medium::after {
 }
 
 .article .breadcrumb ol {
-  margin-top: 28px;
+  margin-top: 14px;
   padding-top: 12px;
+}
+
+/* the lead image sits on a text line: 7px above it, the line gap below */
+.article .default-content-wrapper > picture {
+  padding: 7px 0 14px;
 }
 
 .breadcrumb ol > li {
@@ -449,6 +476,12 @@ main > .section.divider-medium::after {
     padding-left: 97px;
   }
 
+  /* the article side column keeps its 14px column gutter inside the 97px offset */
+  .article main > .section.aside > div {
+    padding-right: var(--gutter);
+    padding-left: calc(97px + var(--gutter));
+  }
+
   /* article text runs the full column; headings, images and quotes inside it are inset */
   .article main > .section:has(+ .section.aside) > .default-content-wrapper {
     padding: 0;
@@ -458,4 +491,46 @@ main > .section.divider-medium::after {
     margin-right: var(--gutter);
     margin-left: var(--gutter);
   }
+
+  .article main > .section.plain-headings:has(+ .section.aside) > .default-content-wrapper > h2 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+/* the side column of an article: a gap below its heading, then related list or download */
+.article main > .section.aside.spaced > .default-content-wrapper > h5:first-child {
+  padding-bottom: 36px;
+}
+
+.article main > .section.aside > .default-content-wrapper > h5 + h5 {
+  margin-top: 30.38px;
+  margin-bottom: 0;
+}
+
+.article main > .section.aside > .default-content-wrapper > p:has(> strong:only-child) {
+  margin: 0;
+  font-size: var(--font-size-s);
+  line-height: 40px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.article main > .section.aside > .default-content-wrapper > ul {
+  display: flow-root;
+  margin: 4.5px 0 18px;
+}
+
+.article main > .section.aside > .default-content-wrapper > ul > li {
+  float: left;
+  margin-right: 12px;
+  padding: 0;
+  color: var(--muted-color);
+  font-size: var(--font-size-xs);
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.article main > .section.aside > .default-content-wrapper > ul > li::before {
+  content: none;
 }

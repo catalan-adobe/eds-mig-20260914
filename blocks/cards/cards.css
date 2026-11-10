@@ -145,7 +145,7 @@
 
 /* byline: the author under an article */
 .cards.byline {
-  margin-top: 64px;
+  margin: 64px 0 13.5px;
   padding-top: 64px;
   border-top: 2px solid var(--light-color);
 }
@@ -196,8 +196,8 @@
 
 /* list: related articles beside an article */
 .cards.list ul {
-  display: block;
-  padding-top: 2rem;
+  display: flow-root;
+  padding: 50px 0 18px;
 }
 
 .cards.list li {
@@ -221,6 +221,8 @@
 
 .cards.list span {
   display: block;
+  box-sizing: content-box;
+  width: 100%;
   padding: 5px;
   text-transform: uppercase;
 }

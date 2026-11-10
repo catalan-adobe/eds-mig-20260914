@@ -149,8 +149,8 @@ function decorateButtons(main) {
     const p = a.closest('p');
     const text = a.textContent.trim();
 
-    // quick structural checks
-    if (a.querySelector('img') || p.textContent.trim() !== text) return;
+    // quick structural checks: a linked image is no button, an icon next to the text is fine
+    if (a.querySelector('img:not(.icon img)') || p.textContent.trim() !== text) return;
 
     // skip URL display links
     try {
