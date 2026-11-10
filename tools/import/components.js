@@ -101,7 +101,7 @@ function buttonComponent(el, ctx) {
 }
 
 function separator(el) {
-  if (el.classList.contains('cmp-separator--hidden')) return [];
+  if (el.classList.contains('cmp-separator--hidden')) return [{ style: 'spaced' }];
   return [{ divider: el.classList.contains('cmp-separator--space-medium') ? 'medium' : true }];
 }
 
@@ -236,11 +236,11 @@ function download(el, ctx) {
   if (!action) return [];
   const description = text(el.querySelector('.cmp-download__description'));
   const values = [...el.querySelectorAll('.cmp-download__property-content')];
-  const properties = values.map(text).join(', ');
+  const properties = values.map((value) => `<li>${esc(text(value))}</li>`).join('');
   return [
     `<h5>${esc(text(el.querySelector('.cmp-download__title')))}</h5>`,
     description && `<p><strong>${esc(description)}</strong></p>`,
-    para(properties),
+    properties && `<ul>${properties}</ul>`,
     `<p><em>${link(action, ctx, `:download: ${esc(text(action))}`)}</em></p>`,
   ];
 }
@@ -293,7 +293,10 @@ export function walk(el, ctx) {
   const [name] = [...el.classList]; // linkedom has no indexed access on classList
   if (MAPPERS[name]) return MAPPERS[name](el, ctx).filter(Boolean);
   if (!name || WRAPPERS.has(name) || name.startsWith('cmp-experiencefragment')) {
-    if (!name && RAW_TAGS.has(el.tagName)) return [cleanEl(el, ctx)].filter(Boolean);
+    if (!name && RAW_TAGS.has(el.tagName)) {
+      const plain = el.tagName === 'H2' && { style: 'plain-headings' };
+      return [cleanEl(el, ctx), plain].filter(Boolean);
+    }
     if (!name && !CONTAINER_TAGS.has(el.tagName)) {
       if (!text(el)) return [];
       const tag = el.tagName.toLowerCase();

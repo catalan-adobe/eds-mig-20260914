@@ -44,7 +44,7 @@ Rules for default content:
   Card titles are plain links for that reason.
 - Italic text after an image, in the same paragraph, is its caption.
 - Icons are written as `:name:`. The files are in `/icons`.
-- Every heading 2 has a yellow underline.
+- Every heading 2 has a yellow underline, unless the section has `plain-headings`.
 
 Section styles, set in `Section Metadata`:
 
@@ -53,6 +53,8 @@ Section styles, set in `Section Metadata`:
 | `divider` | A rule below the section |
 | `divider-medium` | A rule below the section, with less space around it |
 | `underline` | The heading 1 has a yellow underline |
+| `plain-headings` | Heading 2 has no underline and uses the full column width |
+| `spaced` | The source has a hidden separator. On articles, a gap of 36px below the first heading |
 | `small-text` | Paragraphs are small |
 | `no-gutter` | No side padding. The page, or the title container, has no grid |
 | `aside` | A right column. It sits beside the section before it |

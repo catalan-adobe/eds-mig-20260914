@@ -188,6 +188,14 @@ test('article: body, quote, headings and template', () => {
   assert.equal(meta(doc, 'Title'), 'Arctic Surfing');
 });
 
+test('article: headings written in the body text are plain, title components are not', () => {
+  const plain = convert('san-diego-surf', '/us/en/magazine/san-diego-surf');
+  assert.equal(text(plain.querySelectorAll('h2')[0]), "Swami's");
+  assert.match(sectionStyle(plain.querySelector('h2')), /plain-headings/);
+  const titled = convert('arctic-surfing', '/us/en/magazine/arctic-surfing');
+  assert.doesNotMatch(sectionStyle(titled.querySelector('h2')) ?? '', /plain-headings/);
+});
+
 test('article: related list sits in an aside section after the body', () => {
   const doc = convert('arctic-surfing', '/us/en/magazine/arctic-surfing');
   const list = rows(doc, '.cards.list');
@@ -216,7 +224,15 @@ test('article: download becomes a heading, description and button to the source 
   assert.equal(text(link), ':download: Download PDF');
   assert.match(link.getAttribute('href'), /^https:\/\/wknd\.site\/.+\.pdf$/);
   assert.equal(text(doc.querySelectorAll('h5')[1]), 'Download PDF');
-  assert.equal(text(link.closest('p').previousElementSibling), 'ultimateguidetolaskateparks.pdf, 139 KB, application/pdf');
+  const properties = [...link.closest('p').previousElementSibling.querySelectorAll('li')].map(text);
+  assert.deepEqual(properties, ['ultimateguidetolaskateparks.pdf', '139 KB', 'application/pdf']);
+});
+
+test('article: a hidden separator in the side column adds the spaced style', () => {
+  const doc = convert('la-skateparks', '/us/en/magazine/guide-la-skateparks');
+  const aside = [...doc.querySelectorAll('h5')].find((h) => text(h) === 'SHARE THIS STORY');
+  assert.equal(sectionStyle(aside), 'spaced, aside');
+  assert.doesNotMatch(sectionStyle(doc.querySelector('h1')) ?? '', /spaced/);
 });
 
 test('faqs: accordion rows, underlined title, right aside', () => {
@@ -227,7 +243,7 @@ test('faqs: accordion rows, underlined title, right aside', () => {
   assert.match(text(cells(items[0])[1]), /^We believe the best adventures/);
   assert.equal(sectionStyle(doc.querySelector('h1')), 'underline');
   const help = [...doc.querySelectorAll('h3')].find((h) => text(h) === 'Need more help?');
-  assert.equal(sectionStyle(help), 'small-text, aside');
+  assert.equal(sectionStyle(help), 'spaced, small-text, aside');
 });
 
 test('about us: contributors merge into people cards with icon links', () => {
