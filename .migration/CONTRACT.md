@@ -24,6 +24,14 @@ Facts checked against DA and the preview pipeline while writing this contract:
 - The `title` attribute on links survives.
 - A `Template` row in the metadata block becomes `<meta name="template">`, which the
   boilerplate turns into a body class.
+- Section Metadata is applied by the pipeline: `.plain.html` has no `section-metadata` block,
+  the section `div` already carries the classes (`<div class="sidebar text-small">`).
+- `<blockquote>text</blockquote>` in default content survives as
+  `<blockquote><p>text</p></blockquote>`.
+- A list item that holds a nested list gets its own content wrapped in a `<p>`
+  (`<li><p><a>Home</a></p><ul>...</ul></li>`).
+- A page without `Description` or `Image` metadata still gets `meta description` and
+  `og:image` from the pipeline (first long paragraph, first picture).
 
 ---
 
@@ -319,6 +327,7 @@ Delete the boilerplate `icons/search.svg`.
 | Text | paragraphs, `<strong>`, `<em>`, links, lists | base typography; lists as `.cmp-text ul`, `.cmp-text ul li`, `.cmp-text ul li:before`, `.cmp-text ol`, `.cmp-text li` |
 | Text `cmp-text--font-small` | section style `text-small` | paragraphs 14 px |
 | Text `cmp-text--quote` | `quote` block | section e |
+| Text with a `<blockquote>` and no quote style (arctic-surfing only) | `<blockquote>` in default content | Browser defaults, there is no source rule: margin 1em 40px, 18 px, line-height 1.5, left-aligned. The pipeline adds a `<p>` inside, so foundation resets it: `main blockquote p { margin: 0; line-height: 1.5; text-align: left }`. |
 | Button `cmp-button--primary` | link alone in a paragraph, bold: `<p><strong><a href="...">All Articles</a></strong></p>` | `a.button.primary`: yellow, 48 px high, 14 px, weight 600, uppercase, padding 1rem 2rem, no radius (`.cmp-button`, `.cmp-button--primary .cmp-button`, `.cmp-button__text`). 146 x 48 for "All Articles". |
 | Image | picture alone in a paragraph | 100% of its column, auto height, margin 7px 0 (`.cmp-image__image`) |
 | Image with caption | picture paragraph followed by a paragraph that holds only italics: `<p><em>Caption</em></p>` | caption: sans 14 px, weight 600, uppercase, no italics, left (`.cmp-image__title`) |
@@ -411,8 +420,9 @@ Content, `${root}/nav`, three sections:
 </div>
 ```
 
-The pipeline may wrap the country name in a `<p>`; read it with `li.firstChild` text or
-`li > p`. Single-page locales have one top item and no nested list
+The pipeline wraps the content of every list item that has a nested list in a `<p>`: the
+country name (`li > p`) and also the top nav link (`li > p > a` for "Home", here and in the
+footer). Select links with `li a`, not `li > a`. Single-page locales have one top item and no nested list
 (`<li><a href="/f52-1011-02/fr/fr">Français</a></li>`); the desktop nav is then empty.
 
 Structure to render:
@@ -734,6 +744,8 @@ Pages: 7 article pages. Source: `.cmp-text--quote`.
 ```
 
 - First paragraph becomes a `blockquote`; the optional second is the attribution.
+- Both may hold `<strong>`, `<em>` and `<br>` (western-australia: a bold two-line quote and
+  the attribution "noun" in bold italics). Keep the inline markup when rebuilding.
 - Box: background #ebebeb, margin 1em 0, padding 1em. Blockquote: serif 36 px, margin
   0 0 .5em, padding 14px, followed by an 80 px (5pc) wide 2 px yellow line. Attribution:
   sans 18 px, no underline. Reference: 776 x 251 at 1440 for a two-line quote.
@@ -769,7 +781,7 @@ through a fragment (section g). Source: `.cmp-experience-fragment--contributor` 
 ```html
 <div class="contributor">
   <div>
-    <div><picture><img src="..." alt="Stacey Roswells"></picture></div>
+    <div><picture><img src="..." alt=""></picture></div>
     <div>
       <h3>Stacey Roswells</h3>
       <p>Artist | Photographer | Traveler</p>
@@ -1087,12 +1099,15 @@ Last block of the last section of every page (not in fragments, nav or footer).
   `/f52-1011-02/media/`, then referenced in the document as
   `https://content.da.live/catalan-adobe/eds-mig-20260914/f52-1011-02/media/<file>`.
   Preview turns it into a `./media_<hash>` picture.
-- Rendition: the `src` attribute of the source `<img>` (the URL without a width, for example
-  `.../image.coreimg.jpeg/<timestamp>/<name>.jpeg`). It is the original size. Do not use the
-  `srcset` renditions.
-- File name: `<dam file name>` from `data-cmp-filereference` when present, otherwise the last
-  segment of `src`; when two different images share a name, prefix the second with its page
-  slug. The same source image is uploaded once and reused.
+- Rendition: the DAM original, `https://wknd.site` + `data-cmp-filereference` of the image
+  component (for example 1600 x 900 for the home hero). The `src` attribute of the `<img>`
+  is NOT the original: it is capped at 1280 px wide. `src` is used only where the component
+  has no file reference (the six byline portraits). No content image is cropped by its
+  component (checked: every `width`/`height` pair in `main` has the aspect ratio of its
+  original).
+- File name: the last path segment of the downloaded URL; when two different images share a
+  name, prefix the second with its document slug. The same source image is uploaded once
+  and reused (119 files, including the PDF).
 - `alt`: copied as is. An empty or missing `alt` stays empty. The `title` attribute is not
   migrated, except as the caption where the source shows `.cmp-image__title`.
 - Authored markup: `<picture><img src="..." alt="..."></picture>`, in its own paragraph in
@@ -1102,7 +1117,14 @@ Last block of the last section of every page (not in fragments, nav or footer).
   `/content/dam/wknd-shared/en/magazine/la-skateparks/ultimateguidetolaskateparks.pdf`) is
   uploaded to `/f52-1011-02/media/ultimateguidetolaskateparks.pdf` and previewed.
 - Components that render nothing on the source (empty download on western-australia, the
-  sharing widget, empty rich-text paragraphs) are skipped.
+  sharing widget, empty rich-text paragraphs and headings) are skipped.
+- Non-breaking spaces of the source text are kept (for example the two in
+  "Ⓒ 2019,&nbsp;&nbsp;WKND Site."), because they change the rendered width.
+- The contributor portraits have an empty `alt` on the source, so they have one here.
+- One source text is a bare `<div>` instead of a `<p>` (cycling-tuscany, "What to Bring",
+  first paragraph; line-height 1.5 on the source). It is authored as a normal paragraph.
+- The `/ca/en` footer has one more legal paragraph than the others ("Canadian specific
+  footer ..."), before the copyright line.
 
 ---
 
