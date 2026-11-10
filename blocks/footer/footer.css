@@ -134,12 +134,15 @@ footer .footer .footer-legal a {
 
   footer .footer ul {
     display: flex;
+    margin-top: 6px;
     margin-left: 66px;
   }
 
   footer .footer .footer-follow {
+    width: calc((100% + 28px) / 6 - 28px);
     margin-left: auto;
     padding: 0;
+    text-align: right;
   }
 
   footer .footer .footer-social {
@@ -148,6 +151,6 @@ footer .footer .footer-legal a {
   }
 
   footer .footer .footer-legal {
-    margin-top: 40px;
+    margin-top: 36px;
   }
 }

@@ -34,10 +34,10 @@ function buildLanguage(list, root) {
   const button = document.createElement('button');
   button.type = 'button';
   button.setAttribute('aria-controls', 'nav-language-menu');
-  button.setAttribute('aria-label', `Change language, current ${language}-${country}`);
-  const label = document.createElement('span');
-  label.textContent = `${language}-${country}`;
-  button.append(icon(`flag-${country}`), label);
+  const label = `${language}-${country.toUpperCase()}`;
+  button.setAttribute('aria-label', `Change language, current ${label}`);
+  button.style.setProperty('--flag', `url(${window.hlx.codeBasePath}/icons/flag-${country}.svg)`);
+  button.textContent = label;
   setExpanded(button, false);
   list.id = 'nav-language-menu';
   list.querySelectorAll(':scope > li').forEach((item) => {
@@ -95,7 +95,7 @@ function buildUtility(tools, root) {
   const signIn = tools?.querySelector('p > a:not(:has(.icon))');
   const languages = tools?.querySelector('ul');
   const menu = languages && root && buildLanguage(languages, root);
-  return el('div', 'nav-utility', el('div', '', signIn, menu));
+  return el('div', 'nav-utility', el('div', '', el('div', 'nav-sign-in', signIn), menu));
 }
 
 function buildMain(brand, sections, tools, root) {
@@ -103,6 +103,7 @@ function buildMain(brand, sections, tools, root) {
   if (brandLink) {
     brandLink.className = 'nav-brand';
     brandLink.setAttribute('aria-label', 'WKND home');
+    brandLink.querySelector('img')?.setAttribute('alt', 'WKND Logo');
   }
   const list = sections?.querySelector('ul');
   if (list) markCurrent(list.querySelectorAll('a'), root);

@@ -17,7 +17,7 @@ header .nav-utility {
   min-height: 25px;
   background-color: var(--dark-color);
   font-size: var(--font-size-s);
-  line-height: 25px;
+  line-height: 21px;
 }
 
 header .nav-utility > div {
@@ -39,37 +39,33 @@ header .nav-language {
 }
 
 header .nav-language button {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  height: 25px;
-  padding: 0 14px 0 0;
+  position: relative;
+  height: 21px;
+  margin: 0;
+  padding: 0 14px 0 35px;
   border: 0;
-  background: none;
+  background: var(--flag) 0 -1px / 25px auto no-repeat;
   color: var(--inverse-text-color);
   font: inherit;
   text-transform: uppercase;
   cursor: pointer;
 }
 
-header .nav-language button img {
-  width: 25px;
-  height: 17px;
-  object-fit: cover;
-}
-
 header .nav-language button::after {
   content: '';
-  width: 0.45em;
-  height: 0.45em;
-  margin-top: -0.3em;
+  position: relative;
+  top: -1px;
+  left: 6.3px;
+  display: inline-block;
+  width: 6.3px;
+  height: 6.3px;
   transform: rotate(135deg);
   border: solid currentcolor;
-  border-width: 0.1em 0.1em 0 0;
+  border-width: 1px 1px 0 0;
 }
 
 header .nav-language button[aria-expanded='true']::after {
-  margin-top: 0.3em;
+  top: 2px;
   transform: rotate(-45deg);
 }
 
@@ -253,19 +249,32 @@ header .nav-sections a {
 }
 
 @media (width <= 475px) {
-  header .nav-language button span {
-    display: none;
+  header .nav-language button {
+    padding-left: 25px;
+    font-size: 0;
   }
 }
 
 @media (width >= 1025px) {
   header .nav-utility > div {
     justify-content: flex-end;
-    gap: 28px;
+    align-items: flex-start;
+  }
+
+  header .nav-sign-in {
+    flex: 1;
+    padding-right: 14px;
+    text-align: right;
   }
 
   header .nav-language {
-    margin-right: 63px;
+    flex: 0 0 calc((100% + 28px) / 6);
+    margin-right: -14px;
+    padding: 0 14px;
+  }
+
+  header .nav-language > ul {
+    right: 60px;
   }
 
   header .nav-main {

@@ -1,3 +1,7 @@
+.search form {
+  position: relative;
+}
+
 .search input[type='search'] {
   display: block;
   width: 100%;
@@ -5,16 +9,25 @@
   padding: 1px 32px;
   border: 1px solid #ccc;
   border-radius: 0;
-  background: #fff url('../../icons/search.svg') 8px center / 16px no-repeat;
+  background: #fff url('../../icons/search-field.svg') 8px center / 16px no-repeat;
   color: #000;
   font: inherit;
   appearance: none;
 }
 
-.search label {
+.search .search-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+.search label:not(.search-label) {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   margin-top: 12px;
   font-size: var(--font-size-s);
   line-height: 1.25;

@@ -29,6 +29,7 @@ export default async function decorate(block) {
     else p.className = 'footer-social';
   });
   top?.querySelector('.footer-brand a')?.setAttribute('aria-label', 'WKND home');
+  top?.querySelector('.footer-brand img')?.setAttribute('alt', 'WKND Logo');
   top?.querySelectorAll('.footer-social a').forEach((a) => {
     const icon = [...a.querySelector('.icon').classList].find((c) => c.startsWith('icon-'));
     a.setAttribute('aria-label', icon.slice(5));
