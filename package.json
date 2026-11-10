@@ -9,7 +9,7 @@
     "lint:css": "stylelint \"blocks/**/*.css\" \"styles/*.css\"",
     "lint": "npm run lint:js && npm run lint:css",
     "lint:fix": "npm run lint:js -- --fix && npm run lint:css -- --fix",
-    "test": "node --test \"tools/import/*.test.js\""
+    "test": "node --test \"tools/**/*.test.js\""
   },
   "repository": {
     "type": "git",
