@@ -124,10 +124,10 @@ function teaserRow(el, ctx) {
 
 function teaser(el, ctx) {
   const has = (variant) => el.classList.contains(`cmp-teaser--${variant}`);
-  let name = 'carousel';
+  let name = 'carousel static';
   if (has('featured')) name = 'columns featured';
   else if (has('list')) name = 'cards locked';
-  else if (has('imagebottom')) name = 'carousel image-bottom';
+  else if (has('imagebottom')) name = 'carousel image-bottom static';
   return [{ block: name, rows: [teaserRow(el, ctx)] }];
 }
 

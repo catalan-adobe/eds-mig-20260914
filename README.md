@@ -23,7 +23,8 @@ Each locale folder, such as `/us/en`, has its own `nav` and `footer` page.
 
 | Block | Rows |
 |-------|------|
-| `carousel` | One row per slide: image, then title, text and a button. One slide shows no controls |
+| `carousel` | One row per slide: image, then title, text and a button. Shows a dot and two arrows, also with one slide |
+| `carousel (static)` | A single hero teaser: image, then title, text and a button. It has no controls |
 | `columns (featured)` | Image, then a small title, a heading, text and a button |
 | `cards` | Image, then a linked title and a description |
 | `cards (filter)` | As `cards`, plus a last cell with categories, split by commas |

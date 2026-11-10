@@ -57,8 +57,9 @@ test('home: carousel has one row per slide with image, heading and button', () =
   assert.equal(content.querySelector('p > strong > a').getAttribute('href'), '/f52-1011-01/us/en/adventures');
 });
 
-test('home: single hero teaser becomes a one-slide carousel', () => {
+test('home: single hero teaser becomes a one-slide static carousel', () => {
   const doc = convert('home', '/us/en');
+  assert.ok(doc.querySelector('.carousel.image-bottom.static'));
   const slides = rows(doc, '.carousel.image-bottom');
   assert.equal(slides.length, 1);
   assert.equal(text(slides[0].querySelector('h2')), 'Climbing New Zealand');
@@ -130,6 +131,12 @@ test('bali: facts block sits in a left aside section', () => {
   assert.deepEqual(cells(facts[5]).map(text), ['Price', '5000.0']);
   assert.equal(sectionStyle(doc.querySelector('.facts')), 'aside-left');
   assert.equal(meta(doc, 'Template'), 'adventure');
+});
+
+test('bali: a carousel with one slide is not static', () => {
+  const doc = convert('bali', '/us/en/adventures/bali-surf-camp');
+  assert.equal(doc.querySelectorAll('.carousel').length, 1);
+  assert.equal(doc.querySelector('.carousel.static'), null);
 });
 
 test('bali: tabs keep labels and panel content, image carousel has no text cell', () => {
@@ -227,8 +234,9 @@ test('search page becomes a search block with the placeholder and the toggle lab
   assert.equal(toggle, 'Show AI-generated summary');
 });
 
-test('language stub: one-slide carousel without button', () => {
+test('language stub: static hero without button', () => {
   const doc = convert('fr', '/fr/fr');
+  assert.ok(doc.querySelector('.carousel.static'));
   const slide = rows(doc, '.carousel')[0];
   assert.equal(text(slide.querySelector('h2')), 'WKND Adventures and Travel - Coming Soon!');
   assert.equal(slide.querySelector('a'), null);

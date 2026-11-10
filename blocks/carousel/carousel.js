@@ -59,7 +59,9 @@ function buildControls(block, slides) {
 
 /**
  * Rows are slides: an image, then optional content (title, text, button).
- * One slide is a plain hero with no controls. Slides never advance on their own.
+ * The `static` variant is a plain hero with no controls.
+ * Any other carousel shows a dot and two arrows, also with one slide.
+ * Slides never advance on their own.
  * @param {Element} block The carousel block element
  */
 export default function decorate(block) {
@@ -68,8 +70,8 @@ export default function decorate(block) {
   list.className = 'carousel-slides';
   list.append(...slides);
   block.replaceChildren(list);
-  if (slides.length < 2) return;
-  block.classList.add('carousel-multiple');
+  if (block.classList.contains('static')) return;
+  block.classList.add('carousel-controlled');
   block.setAttribute('role', 'region');
   block.setAttribute('aria-roledescription', 'carousel');
   block.setAttribute('aria-label', 'Featured');

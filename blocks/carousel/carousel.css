@@ -4,8 +4,17 @@ main > .section > .carousel-wrapper {
   padding: 0;
 }
 
-.carousel.carousel-multiple {
+.carousel.carousel-controlled {
   margin-bottom: 4em;
+}
+
+/* an image-only slide sits 7px down, and its controls fit in the 40px below the image */
+.carousel.carousel-controlled:has(.carousel-slide-image:only-child) {
+  margin-bottom: 0;
+}
+
+.carousel.carousel-controlled .carousel-slide-image:only-child {
+  margin: 7px 0 14px;
 }
 
 .carousel .carousel-slides {
@@ -43,11 +52,6 @@ main > .section > .carousel-wrapper {
 
 .carousel .carousel-slide-image:only-child img {
   height: 400px;
-}
-
-/* a lone image keeps the space its controls took on the source site */
-.carousel:not(.carousel-multiple) .carousel-slide-image:only-child {
-  margin: 7px 0 33px;
 }
 
 .carousel .carousel-slide-content {
@@ -119,7 +123,7 @@ main > .section > .carousel-wrapper {
 }
 
 @media (width < 768px) {
-  .carousel.carousel-multiple {
+  .carousel.carousel-controlled {
     margin-bottom: 14px;
   }
 
