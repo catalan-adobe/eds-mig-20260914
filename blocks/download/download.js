@@ -37,6 +37,7 @@ export default function decorate(block) {
     const title = document.createElement('h3');
     title.className = 'download-title';
     link.className = '';
+    link.setAttribute('download', '');
     title.append(link);
     content.push(title);
   }
