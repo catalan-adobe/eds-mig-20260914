@@ -92,11 +92,6 @@
   outline: none;
 }
 
-.cards.tabs .cards-tab:focus-visible {
-  outline: 2px solid var(--color-text);
-  outline-offset: 2px;
-}
-
 .cards.tabs .cards-tabpanel[hidden] {
   display: none;
 }

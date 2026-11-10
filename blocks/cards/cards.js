@@ -54,11 +54,20 @@ function buildCard(row) {
 function buildSecureCard(row) {
   const picture = optimizedPicture(row);
   const [title, ...rest] = [...(textCell(row)?.children || [])];
-  const action = rest.length > 1 ? rest.pop() : null;
+  // Text after a line break in the title is a description without a paragraph (and its margin).
+  const lineBreak = title?.querySelector('br');
+  const inline = [];
+  while (lineBreak?.nextSibling) {
+    inline.push(lineBreak.nextSibling);
+    lineBreak.nextSibling.remove();
+  }
+  lineBreak?.remove();
+  const action = rest.length > (inline.length ? 0 : 1) ? rest.pop() : null;
+  const description = [...inline, ...rest];
   const body = el('div', 'cards-card-body');
 
   if (title) body.append(el('h3', 'cards-card-title', ...title.childNodes));
-  if (rest.length) body.append(el('div', 'cards-card-description', ...rest));
+  if (description.length) body.append(el('div', 'cards-card-description', ...description));
   if (action) body.append(el('div', 'cards-card-action', ...action.childNodes));
 
   const content = el('div', 'cards-card-content', body);
@@ -111,11 +120,19 @@ function buildTabs(block, rows) {
   });
 
   tablist.addEventListener('keydown', (event) => {
-    const step = { ArrowRight: 1, ArrowLeft: -1 }[event.key];
     const current = tabs.indexOf(event.target);
-    if (!step || current < 0) return;
+    const last = tabs.length - 1;
+    const target = {
+      ArrowRight: Math.min(current + 1, last),
+      ArrowDown: Math.min(current + 1, last),
+      ArrowLeft: Math.max(current - 1, 0),
+      ArrowUp: Math.max(current - 1, 0),
+      Home: 0,
+      End: last,
+    }[event.key];
+    if (target === undefined || current < 0) return;
     event.preventDefault();
-    selectTab(tabs, panels, (current + step + tabs.length) % tabs.length, true);
+    selectTab(tabs, panels, target, true);
   });
 
   if (tabs.length) selectTab(tabs, panels, 0);
