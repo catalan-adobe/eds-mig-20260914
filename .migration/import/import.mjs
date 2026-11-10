@@ -97,7 +97,7 @@ function searchIndex(pages, htmlByPath) {
     && !INDEX_SKIP.test(doc.path)).map(({ doc, meta }) => {
     const $ = load(htmlByPath.get(doc.path).replace(/</g, ' <'));
     $(`.metadata, .section-metadata, a[href^="${FOLDER}/fragments/"]`).remove();
-    const text = $('main').text().replace(/\s+/g, ' ').trim()
+    const text = $('main').text().replace(/[\s\u200b]+/g, ' ').trim()
       .slice(0, 5000);
     return { path: FOLDER + doc.path, ...meta, text };
   });

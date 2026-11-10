@@ -28,6 +28,10 @@ Facts checked against DA and the preview pipeline while writing this contract:
   the section `div` already carries the classes (`<div class="sidebar text-small">`).
 - `<blockquote>text</blockquote>` in default content survives as
   `<blockquote><p>text</p></blockquote>`.
+- `<h3>&nbsp;</h3>` arrives as an empty `<h3>`; `<h3>&#8203;</h3>` (zero-width space)
+  survives, also as `<p>&#8203;</p>` and at the end of a paragraph or list item.
+- `a&nbsp;<strong>b</strong>&nbsp;c` arrives as `a&nbsp; <strong>b</strong> &nbsp;c`. With a
+  plain space on one side (`a&nbsp;<strong>b</strong> c`) it arrives unchanged.
 - A list item that holds a nested list gets its own content wrapped in a `<p>`
   (`<li><p><a>Home</a></p><ul>...</ul></li>`).
 - A page without `Description` or `Image` metadata still gets `meta description` and
@@ -1134,8 +1138,20 @@ Last block of the last section of every page (not in fragments, nav or footer).
   uploaded to `/f52-1011-02/media/ultimateguidetolaskateparks.pdf` and previewed.
 - Components that render nothing on the source (empty download on western-australia, the
   sharing widget, empty rich-text paragraphs and headings) are skipped.
+- A paragraph or heading that holds only a non-breaking space keeps its line on the source
+  (FAQs item 2, surf-camp-costa-rica "Itinerary" and "What to Bring"). The pipeline empties
+  it, so it is authored with a zero-width space instead: `<h3>&#8203;</h3>`.
 - Non-breaking spaces of the source text are kept (for example the two in
-  "Ⓒ 2019,&nbsp;&nbsp;WKND Site."), because they change the rendered width.
+  "Ⓒ 2019,&nbsp;&nbsp;WKND Site."), because they change the rendered width. Two cases need
+  help to survive the pipeline:
+  - At the end of a paragraph or list item they are trimmed, but on the source they can wrap
+    to a line of their own (FAQs item 5 at 375 px). A zero-width space is authored after
+    them: `possible.&nbsp; &nbsp;&nbsp;&#8203;</p>`.
+  - Spaces just inside `<strong>` or `<em>` are moved outside, and when a non-breaking
+    space then sits on both sides of the element the pipeline adds a plain space to each.
+    Spaces are authored outside the element, and in that case the one after it is a plain
+    space: `to&nbsp;<strong>Lorenzo Buosi</strong> and&nbsp;<strong>Kilian Amendola</strong>
+    who&nbsp;created`.
 - The contributor portraits have an empty `alt` on the source, so they have one here.
 - One source text is a bare `<div>` instead of a `<p>` (cycling-tuscany, "What to Bring",
   first paragraph; line-height 1.5 on the source). It is authored as a normal paragraph.

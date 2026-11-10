@@ -21,6 +21,7 @@ export const esc = (s) => String(s)
   .replace(/"/g, '&quot;');
 const clean = (s) => s.replace(/\s+/g, ' ').trim();
 const text = ($el) => clean($el.text());
+const SPACER = '&#8203;';
 const isEmpty = (s) => !clean(s.replace(/\u00a0/g, ' '));
 
 /** Source href to final href: internal pages lose the host and .html, the PDF moves to media. */
@@ -122,6 +123,26 @@ function picture(doc, $img) {
   return `<picture><img src="${esc(url)}" alt="${esc(alt)}"></picture>`;
 }
 
+/**
+ * The pipeline moves spaces out of bold and italics, and when a non-breaking space then
+ * sits on both sides it adds a plain space to each. Authoring the spaces outside, with a
+ * plain one after the element, keeps every gap one space wide.
+ */
+function spaceAroundBold(html) {
+  const space = '(?:&nbsp;| )+';
+  return html
+    .replace(new RegExp(`((?:<(?:strong|em)>)+)(${space})`, 'g'), '$2$1')
+    .replace(new RegExp(`(${space})((?:</(?:strong|em)>)+)`, 'g'), '$2$1')
+    .replace(/(&nbsp;(?:<(?:strong|em)>)+[^<]*(?:<\/(?:strong|em)>)+)&nbsp;/g, '$1 ');
+}
+
+/**
+ * The pipeline trims a text block, but non-breaking spaces at its end can take a line of
+ * their own on the source. A zero-width space after them makes the pipeline keep them.
+ */
+const keepTrailingSpace = (html) => html
+  .replace(/&nbsp;(?=<\/(?:p|li)>|$)/g, `&nbsp;${SPACER}`);
+
 /** Reduces an element to the tags an author can write; returns '' when nothing is left. */
 function rich($, el, { noUnderline = false } = {}) {
   const $el = $(el).clone();
@@ -144,7 +165,7 @@ function rich($, el, { noUnderline = false } = {}) {
   });
   let inner = $el.html().replace(/\s+/g, ' ').trim();
   inner = inner.replace(/^(<br>\s*)+|(\s*<br>)+$/g, '');
-  return isEmpty($el.text()) ? '' : inner;
+  return isEmpty($el.text()) ? '' : keepTrailingSpace(spaceAroundBold(inner));
 }
 
 function richElement($, el) {
@@ -153,7 +174,9 @@ function richElement($, el) {
     throw new Error(`Unhandled rich text element <${tag}>`);
   }
   const inner = rich($, el, { noUnderline: tag.startsWith('h') });
-  return inner ? `<${tag}>${inner}</${tag}>` : '';
+  if (inner) return `<${tag}>${inner}</${tag}>`;
+  // a non-breaking space alone keeps its line on the source but is dropped by the pipeline
+  return $(el).text().includes('\u00a0') ? `<${tag}>${SPACER}</${tag}>` : '';
 }
 
 /** Paragraphs of a container that may hold bare text instead of <p> elements. */
