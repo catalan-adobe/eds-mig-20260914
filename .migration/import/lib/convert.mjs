@@ -84,10 +84,39 @@ export class Doc {
   }
 }
 
+/**
+ * Components whose source rendition is a crop of the DAM original (component path below the
+ * locale root). Found by comparing the aspect ratio of the largest rendition of every image
+ * component with its `width`/`height` attributes, which describe the original.
+ */
+const CROPPED = new Set([
+  '/adventures/climbing-new-zealand/_jcr_content/root/container/carousel/item_1571266094599',
+  '/adventures/beervana-portland/_jcr_content/root/container/container/tabs'
+    + '/item_1570890135033/par2/image',
+  '/adventures/cycling-tuscany/_jcr_content/root/container/carousel/item_1572023766858',
+  '/adventures/downhill-skiing-wyoming/_jcr_content/root/container/carousel/item_1572032225765',
+  '/adventures/downhill-skiing-wyoming/_jcr_content/root/container/container/tabs'
+    + '/item_1570890140330/par1/image',
+  '/adventures/ski-touring-mont-blanc/_jcr_content/root/container/carousel/item_1571168422510',
+  '/magazine/arctic-surfing/_jcr_content/root/container/image',
+  '/magazine/members-only/alaskan-adventure/_jcr_content/root/container/image',
+  '/magazine/members-only/fly-fishing-the-amazon/_jcr_content/root/container/image',
+  '/magazine/san-diego-surf/_jcr_content/root/container/image',
+]);
+
+/** The largest rendition of a cropped component, or undefined when it shows the original. */
+function croppedRendition($img) {
+  const $cmp = $img.closest('[data-cmp-src]');
+  const [component] = ($cmp.attr('data-cmp-src') || '').split('.coreimg');
+  if (!CROPPED.has(component.replace(/^\/[a-z]{2}\/[a-z]{2}/, ''))) return undefined;
+  const width = $cmp.attr('data-cmp-widths').split(',').pop();
+  return $cmp.attr('data-cmp-src').replace('{.width}', `.${width}`);
+}
+
 /** The DAM original is the best rendition: the component `src` is capped at 1280 px. */
 function picture(doc, $img) {
   const ref = $img.closest('[data-cmp-filereference]').attr('data-cmp-filereference');
-  const url = SOURCE + encodeURI(ref || $img.attr('src'));
+  const url = SOURCE + encodeURI(croppedRendition($img) || ref || $img.attr('src'));
   const alt = $img.attr('alt') || '';
   doc.images.push({ url, alt });
   return `<picture><img src="${esc(url)}" alt="${esc(alt)}"></picture>`;

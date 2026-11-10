@@ -77,6 +77,8 @@ function nameMedia(docs) {
   docs.forEach((doc) => doc.images.forEach(({ url }) => {
     if (names.has(url)) return;
     let name = decodeURI(path.basename(new URL(url).pathname)).replace(/[^\w.-]/g, '-');
+    // A cropped rendition must not take the name its DAM original already has in DA.
+    if (/\.coreimg\.\d+\.\d+\./.test(url)) name = `crop-${name}`;
     if (taken.has(name)) name = `${path.basename(doc.path)}-${name}`;
     if (taken.has(name)) throw new Error(`Media name clash: ${name} (${url})`);
     taken.add(name);

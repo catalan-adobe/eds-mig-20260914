@@ -1102,12 +1102,21 @@ Last block of the last section of every page (not in fragments, nav or footer).
 - Rendition: the DAM original, `https://wknd.site` + `data-cmp-filereference` of the image
   component (for example 1600 x 900 for the home hero). The `src` attribute of the `<img>`
   is NOT the original: it is capped at 1280 px wide. `src` is used only where the component
-  has no file reference (the six byline portraits). No content image is cropped by its
-  component (checked: every `width`/`height` pair in `main` has the aspect ratio of its
-  original).
+  has no file reference (the six byline portraits).
+- Exception, cropped components: ten image components show a crop of their original (the
+  `width`/`height` attributes describe the original, so the crop is only visible in the
+  rendition itself). For these the importer takes the largest rendition of the component
+  (`data-cmp-src` with the last `data-cmp-widths` value, 1600) and stores it as
+  `crop-<file>`. They are the lead picture of the articles san-diego-surf, arctic-surfing,
+  alaskan-adventure and fly-fishing-the-amazon; one carousel slide each of
+  climbing-new-zealand (also its card on the adventures landing page), cycling-tuscany,
+  downhill-skiing-wyoming and ski-touring-mont-blanc; and one tab picture each of
+  beervana-portland and downhill-skiing-wyoming. The list is `CROPPED` in
+  `.migration/import/lib/convert.mjs`; all 136 image components with renditions were
+  compared.
 - File name: the last path segment of the downloaded URL; when two different images share a
   name, prefix the second with its document slug. The same source image is uploaded once
-  and reused (119 files, including the PDF).
+  and reused. The us and ca copies of a cropped rendition are separate files.
 - `alt`: copied as is. An empty or missing `alt` stays empty. The `title` attribute is not
   migrated, except as the caption where the source shows `.cmp-image__title`.
 - Authored markup: `<picture><img src="..." alt="..."></picture>`, in its own paragraph in
