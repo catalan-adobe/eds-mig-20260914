@@ -1,19 +1,18 @@
-/* rows: quotation, then attribution */
 .quote {
   margin: 18px calc(-1 * var(--gutter));
   padding: 18px 32px;
   background-color: var(--light-color);
 }
 
-.quote > div:first-child {
-  margin-bottom: 18px;
+.quote blockquote {
+  margin: 0 0 18px;
   padding: 14px;
   font-family: var(--heading-font-family);
   font-size: var(--heading-font-size-l);
   line-height: 1.5;
 }
 
-.quote > div:first-child::after {
+.quote blockquote::after {
   content: '';
   display: block;
   position: relative;
@@ -22,7 +21,7 @@
   border-bottom: 2px solid var(--brand-color);
 }
 
-.quote > div:nth-child(2) {
+.quote .quote-attribution {
   margin-bottom: 13.5px;
   line-height: 2.5;
 }
