@@ -53,6 +53,26 @@ function buildLanguageRow(item, root) {
   return row;
 }
 
+/**
+ * As on the source, a locale links to its copy of the current page when it has one and to
+ * its root otherwise. Only the server knows which copies exist, so each one is probed.
+ */
+function linkToSamePage(panel, root) {
+  const { pathname } = window.location;
+  const below = pathname.replace(/\/$/, '').slice(root.length);
+  if (!pathname.startsWith(root) || !below) return;
+  panel.querySelectorAll('a').forEach(async (link) => {
+    if (link.hasAttribute('aria-current')) {
+      link.href = pathname;
+      return;
+    }
+    const twin = `${pathOf(link)}${below}`;
+    // GET, because the local dev server answers 502 to HEAD requests
+    const response = await fetch(`${twin}.plain.html`).catch(() => null);
+    if (response && response.ok) link.href = twin;
+  });
+}
+
 function buildLanguage(list, root) {
   const rows = [...list.children].map((item) => buildLanguageRow(item, root)).filter(Boolean);
   const current = list.querySelector(`a[href="${root}"]`);
@@ -81,6 +101,7 @@ function buildLanguage(list, root) {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') toggle.setAttribute('aria-expanded', 'false');
   });
+  toggle.addEventListener('click', () => linkToSamePage(panel, root), { once: true });
 
   return el('div', { class: 'header-lang' }, el('div', { class: 'header-lang-anchor' }, toggle, panel));
 }
@@ -158,8 +179,6 @@ function initSignIn(block, trigger) {
     // force a style flush so that the fade-in transition runs
     dialog.getBoundingClientRect();
     dialog.classList.add('open');
-    const input = dialog.querySelector('input');
-    if (input) input.focus();
   };
 
   trigger.addEventListener('click', (e) => {
@@ -307,8 +326,8 @@ export default async function decorate(block) {
 
   const { utility, search } = buildUtility(tools, root, block);
   const { panel, button } = buildMobileMenu(sections);
-  const bars = el('div', { class: 'header-bars' }, utility, buildMain(brand, sections, search, root), button);
+  const bars = el('div', { class: 'header-bars' }, utility, buildMain(brand, sections, search, root));
 
-  block.replaceChildren(bars, panel);
+  block.replaceChildren(bars, button, panel);
   watchScroll(block);
 }

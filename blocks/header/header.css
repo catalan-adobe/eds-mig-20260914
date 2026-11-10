@@ -417,17 +417,24 @@ header .header-modal hr {
     transition: transform 0.5s ease;
   }
 
-  body.nav-open header .header-bars {
+  body.nav-open header .header-bars,
+  body.nav-open header .header .header-menu-toggle {
     transform: translateX(var(--nav-panel-width));
+  }
+
+  /* as on the source: the bars scroll away with the pushed page, only the button stays */
+  body.nav-open header {
+    position: absolute;
   }
 
   header .header .header-menu-toggle {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 40px;
     left: 10px;
     width: 40px;
     height: 44px;
+    transition: transform 0.5s ease;
     border-radius: 0 2px 2px 0;
     color: var(--color-text);
   }
@@ -493,12 +500,8 @@ header .header-modal hr {
   }
 }
 
-/* phone: the source dialog is 340px wide */
+/* phone, as on the source: a 340px panel at the left of the 450px box, cut by the viewport */
 @media (width < 768px) {
-  header .header-modal {
-    width: 340px;
-  }
-
   header .header-modal-panel {
     max-width: 340px;
     margin: 0;
