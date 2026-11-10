@@ -72,6 +72,12 @@ body.appear {
   display: block;
 }
 
+@media (width < 1025px) {
+  body.appear {
+    padding-bottom: 1px;
+  }
+}
+
 header {
   height: var(--nav-height);
 }
@@ -413,6 +419,18 @@ main > .section.divider-medium::after {
 .breadcrumb a:any-link {
   color: var(--text-color);
   font-weight: 600;
+}
+
+/* an image in a two-thirds column: the column is 2/3 of the section, the image is inset by its padding */
+@media (width < 1025px) {
+  .section.inset-image .default-content-wrapper p:has(> picture) {
+    width: calc((100% + 2 * var(--gutter)) * 2 / 3 - 2 * var(--gutter));
+  }
+
+  /* the source serves this image 0.4px shorter than our rendition does */
+  .section.inset-image .default-content-wrapper p:has(> picture) > picture {
+    margin-bottom: 13.61px;
+  }
 }
 
 @media (width < 768px) {

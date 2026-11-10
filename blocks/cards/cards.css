@@ -316,6 +316,7 @@
   }
 
   .cards li {
+    flex-basis: 260px;
     padding-right: 0;
   }
 

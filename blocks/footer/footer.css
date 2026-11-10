@@ -62,7 +62,7 @@ footer .footer ul a[aria-current] {
 }
 
 footer .footer .footer-follow {
-  margin: 21px 0;
+  margin: 21.28px 0;
   padding: 0 14px;
   font-size: var(--heading-font-size-s);
   font-weight: 600;
@@ -89,7 +89,7 @@ footer .footer .footer-social .icon {
 }
 
 footer .footer .footer-legal {
-  margin-top: 30px;
+  margin-top: 36px;
 }
 
 footer .footer .footer-legal p {
@@ -107,22 +107,47 @@ footer .footer .footer-legal a {
 @media (width < 1025px) {
   footer .footer .footer-top > div {
     display: grid;
-    grid-template-columns: 110px 1fr;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  footer .footer .footer-brand {
     padding: 0 14px;
   }
 
   footer .footer .footer-brand .icon {
-    width: 96px;
+    width: 100%;
+  }
+
+  footer .footer ul {
+    margin: 10px 14px 0;
+  }
+
+  footer .footer ul > li {
+    margin-bottom: 16px;
+    line-height: 27px;
   }
 
   footer .footer ul a {
-    padding: 7px 17px;
+    display: inline;
+    line-height: 21px;
   }
 
   footer .footer .footer-follow,
   footer .footer .footer-social {
     grid-column: 1 / -1;
     padding: 0;
+  }
+
+  footer .footer .footer-follow {
+    margin: 21.28px 14px;
+  }
+
+  footer .footer .footer-social {
+    margin: 0 14px;
+  }
+
+  footer .footer .footer-legal .default-content-wrapper {
+    padding: 0 14px;
   }
 }
 
@@ -148,9 +173,5 @@ footer .footer .footer-legal a {
   footer .footer .footer-social {
     margin-right: 36px;
     padding: 0 0 0 14px;
-  }
-
-  footer .footer .footer-legal {
-    margin-top: 36px;
   }
 }

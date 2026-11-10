@@ -142,6 +142,10 @@ main > .section > .carousel-wrapper {
 }
 
 @media (width < 768px) {
+  .carousel .carousel-slide-image:not(:only-child) img {
+    display: inline;
+  }
+
   .carousel.carousel-controlled {
     margin-bottom: 14px;
   }

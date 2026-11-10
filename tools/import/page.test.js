@@ -241,9 +241,9 @@ test('faqs: accordion rows, underlined title, right aside', () => {
   assert.equal(items.length, 7);
   assert.equal(text(cells(items[0])[0]), "Who is WKND's intended audience?");
   assert.match(text(cells(items[0])[1]), /^We believe the best adventures/);
-  assert.equal(sectionStyle(doc.querySelector('h1')), 'underline');
+  assert.equal(sectionStyle(doc.querySelector('h1')), 'underline, inset-image');
   const help = [...doc.querySelectorAll('h3')].find((h) => text(h) === 'Need more help?');
-  assert.equal(sectionStyle(help), 'spaced, small-text, aside');
+  assert.equal(sectionStyle(help), 'spaced, small-text, aside, no-gutter');
 });
 
 test('about us: contributors merge into people cards with icon links', () => {
@@ -278,6 +278,18 @@ test('a page without a grid has no-gutter sections; a page with a grid has none'
   assert.match(sectionStyle(members.querySelector('h1')), /no-gutter/);
   const faqs = convert('faqs', '/us/en/faqs');
   assert.doesNotMatch(sectionStyle(faqs.querySelector('h1')), /no-gutter/);
+});
+
+test('an image in a two-thirds phone column makes its section inset-image', () => {
+  const faqs = convert('faqs', '/us/en/faqs');
+  assert.match(sectionStyle(faqs.querySelector('picture')), /inset-image/);
+  const about = convert('about-us', '/us/en/about-us');
+  assert.doesNotMatch(sectionStyle(about.querySelector('picture')) ?? '', /inset-image/);
+});
+
+test('an aside without a grid keeps its gutter on a flat page', () => {
+  const flat = convert('downhill', '/us/en/adventures/downhill-skiing-wyoming');
+  assert.equal(sectionStyle(flat.querySelector('.facts')), 'aside-left, flat');
 });
 
 test('search page becomes a search block with the placeholder and the toggle label', () => {

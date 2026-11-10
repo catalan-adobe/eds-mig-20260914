@@ -56,6 +56,7 @@ Section styles, set in `Section Metadata`:
 | `plain-headings` | Heading 2 has no underline and uses the full column width |
 | `spaced` | The source has a hidden separator. On articles, a gap of 36px below the first heading |
 | `small-text` | Paragraphs are small |
+| `inset-image` | On a phone or tablet, an image is two thirds of the column wide |
 | `no-gutter` | No side padding. The page, or the title container, has no grid |
 | `aside` | A right column. It sits beside the section before it |
 | `aside-left` | A left column. It sits beside the section after it |

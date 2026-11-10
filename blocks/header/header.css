@@ -22,7 +22,7 @@ header .nav-utility {
 
 header .nav-utility > div {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   max-width: calc(var(--content-width) + 2 * var(--gutter));
   margin: 0 auto;
@@ -143,14 +143,14 @@ header .nav-language li li a[aria-current] {
 header .nav-main {
   display: flex;
   position: relative;
-  align-items: center;
+  align-items: flex-start;
   padding: 15px 0;
   background-color: var(--background-color);
 }
 
 header .nav-brand {
   display: block;
-  margin: 12px 0 7px 60px;
+  margin: 12px 0 14px 60px;
   line-height: 0;
 }
 
@@ -221,12 +221,15 @@ header .nav-sections a {
 
   header .nav-sections a {
     display: block;
-    height: 44px;
+    height: 45px;
     padding: 0 1em;
     border-top: 1px solid rgb(255 255 255 / 5%);
     color: var(--inverse-text-color);
-    font-size: var(--font-size-m);
     line-height: 44px;
+  }
+
+  header .nav-sections ul {
+    padding-top: 15px;
   }
 
   header .nav-sections a:hover,
@@ -252,8 +255,22 @@ header .nav-sections a {
 
 @media (width <= 475px) {
   header .nav-language button {
-    padding-left: 25px;
+    display: block;
+    height: 25px;
+    margin: 0;
+    padding-left: 35px;
     font-size: 0;
+    line-height: 0;
+  }
+
+  header .nav-language button::after {
+    top: -4.4px;
+    font-size: 14px;
+    vertical-align: top;
+  }
+
+  header .nav-language button[aria-expanded='true']::after {
+    top: -0.2px;
   }
 }
 

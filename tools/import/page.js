@@ -39,7 +39,8 @@ function assemble(items, path) {
       const inner = assemble(item.items, path);
       if (inner.length > 1) throw new Error(`Divider inside a column on ${path}`);
       const [only] = inner;
-      if (only) sections.push({ ...only, styles: [...only.styles, item.group].filter(Boolean) });
+      const groups = [item.group].flat();
+      if (only) sections.push({ ...only, styles: [...only.styles, ...groups].filter(Boolean) });
     } else {
       add(current.parts, item);
     }
@@ -69,7 +70,7 @@ export function convertPage(html, path, prefix) {
   document.querySelectorAll(FRAGMENTS).forEach((el) => el.remove());
   const noGrid = !document.querySelector('main [class*="aem-Grid--"]');
   const flat = !noGrid && !hasOuterGrid(document.querySelector('main'));
-  const sections = assemble(walk(document.querySelector('body > .root'), { path, prefix }), path)
+  const sections = assemble(walk(document.querySelector('body > .root'), { path, prefix, flat }), path)
     .map(({ parts, styles }) => {
       const all = [...styles, ...(noGrid ? ['no-gutter'] : []), ...(flat ? ['flat'] : [])];
       return section(parts.map(render), [...new Set(all)].join(', '));

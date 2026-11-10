@@ -92,7 +92,8 @@ function image(el) {
   const img = el.querySelector('img');
   if (!img) return [];
   const caption = text(el.querySelector('.cmp-image__title'));
-  return [`<p>${picture(img)}${caption ? `<em>${esc(caption)}</em>` : ''}</p>`];
+  const inset = el.classList.contains('aem-GridColumn--phone--8') && { style: 'inset-image' };
+  return [`<p>${picture(img)}${caption ? `<em>${esc(caption)}</em>` : ''}</p>`, inset];
 }
 
 function buttonComponent(el, ctx) {
@@ -275,16 +276,19 @@ const MAPPERS = {
 const onlyTitle = (items) => items.length > 0
   && items.every((item) => item.style || (typeof item === 'string' && /^<h[1-6][\s>]/.test(item)));
 
-/** A 3-wide grid column is an aside. The 8- or 9-wide column beside it is its partner. */
-function column(el, items) {
-  if (!el.querySelector('[class*="aem-Grid--"]') && onlyTitle(items)) {
-    return [{ group: 'no-gutter', items }];
-  }
+/**
+ * A 3-wide grid column is an aside. The 8- or 9-wide column beside it is its partner.
+ * Without a grid inside, an aside of a page with an outer grid has no side gutter.
+ */
+function column(el, items, ctx) {
+  const gridless = !el.querySelector('[class*="aem-Grid--"]');
+  if (gridless && onlyTitle(items)) return [{ group: 'no-gutter', items }];
   const span = [...el.classList].find((c) => /^aem-GridColumn--default--\d+$/.test(c));
   const width = span?.split('--')[2];
   if (width === '3') {
     const left = el.classList.contains('aem-GridColumn--offset--default--0');
-    return [{ group: left ? 'aside-left' : 'aside', items }];
+    const aside = left ? 'aside-left' : 'aside';
+    return [{ group: gridless && !ctx.flat ? [aside, 'no-gutter'] : aside, items }];
   }
   return width === '8' || width === '9' ? [{ group: '', items }] : items;
 }
@@ -302,7 +306,7 @@ export function walk(el, ctx) {
       const tag = el.tagName.toLowerCase();
       throw new Error(`Unmapped <${tag}> "${text(el).slice(0, 40)}" on ${ctx.path}`);
     }
-    return name === 'container' ? column(el, walkChildren(el, ctx)) : walkChildren(el, ctx);
+    return name === 'container' ? column(el, walkChildren(el, ctx), ctx) : walkChildren(el, ctx);
   }
   throw new Error(`Unknown component "${name}" on ${ctx.path}`);
 }
