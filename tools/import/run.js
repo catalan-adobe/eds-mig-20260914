@@ -29,7 +29,10 @@ const list = await readFile(new URL('./pages.txt', import.meta.url), 'utf8');
 const paths = list.split('\n').filter(Boolean);
 const errors = [];
 for (let i = 0; i < paths.length; i += 8) {
-  await Promise.all(paths.slice(i, i + 8).map((path) => importPage(path).catch((e) => errors.push(`${path}: ${e.stack}`))));
+  const batch = paths.slice(i, i + 8);
+  await Promise.all(batch.map((path) => importPage(path).catch((e) => {
+    errors.push(`${path}: ${e.stack}`);
+  })));
 }
 errors.forEach((message) => console.error(message));
 console.log(`${paths.length - errors.length}/${paths.length} pages imported`);

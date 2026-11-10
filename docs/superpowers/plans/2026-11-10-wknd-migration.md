@@ -59,6 +59,8 @@ and global styles in this repo render that content to match the source.
 
 ## Content contract
 
+This table is the plan as first written. The final content model is in `README.md`.
+
 Every block is a `div` with the block class. Each row is a child `div`. Each cell is a
 `div` inside the row.
 

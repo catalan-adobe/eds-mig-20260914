@@ -28,7 +28,8 @@ async function get(url) {
 
 function sourceFacts(html) {
   const { document } = parseHTML(html);
-  document.querySelectorAll('header.experiencefragment, footer.experiencefragment').forEach((el) => el.remove());
+  const fragments = 'header.experiencefragment, footer.experiencefragment';
+  document.querySelectorAll(fragments).forEach((el) => el.remove());
   const headings = [...document.querySelectorAll('body h1, body h2, body h3')]
     .filter((h) => !h.matches(NOT_HEADINGS) && text(h)).map(text);
   const images = new Set([...document.querySelectorAll('body img')].map(imageSrc));
@@ -50,7 +51,8 @@ async function checkLink(href) {
 }
 
 async function checkLinks(document) {
-  const hrefs = [...new Set([...document.querySelectorAll('a[href]')].map((a) => a.getAttribute('href')))]
+  const all = [...document.querySelectorAll('a[href]')].map((a) => a.getAttribute('href'));
+  const hrefs = [...new Set(all)]
     .filter((href) => href.startsWith('/'));
   const problems = [];
   await Promise.all(hrefs.map(async (href) => {
@@ -69,12 +71,15 @@ async function checkPage(path) {
   const main = document.querySelector('main');
   const headings = [...main.querySelectorAll('h1, h2, h3')].map(text);
   if (headings.join('|') !== source.headings.join('|')) {
-    problems.push(`headings differ:\n    source:   ${source.headings.join(' | ')}\n    migrated: ${headings.join(' | ')}`);
+    const lines = [`source:   ${source.headings.join(' | ')}`, `migrated: ${headings.join(' | ')}`];
+    problems.push(`headings differ:\n    ${lines.join('\n    ')}`);
   }
   const missing = [...source.images].filter((src) => !imported.unique.has(src));
   if (missing.length) problems.push(`images not imported: ${missing.join(', ')}`);
   const previewed = main.querySelectorAll('img').length;
-  if (previewed !== imported.count) problems.push(`preview has ${previewed} images, import has ${imported.count}`);
+  if (previewed !== imported.count) {
+    problems.push(`preview has ${previewed} images, import has ${imported.count}`);
+  }
   problems.push(...await checkLinks(document));
   return {
     path, problems, headings: headings.length, images: previewed,
@@ -93,19 +98,25 @@ const pages = list.split('\n').filter(Boolean);
 const roots = pages.filter((path) => /^\/[a-z]{2}\/[a-z]{2}$/.test(path));
 const jobs = [
   ...pages.map((path) => () => checkPage(path)),
-  ...roots.flatMap((root) => ['nav', 'footer'].map((name) => () => checkFragment(`${root}/${name}`))),
+  ...roots.flatMap((root) => [
+    () => checkFragment(`${root}/nav`),
+    () => checkFragment(`${root}/footer`),
+  ]),
 ];
 const results = [];
 for (let i = 0; i < jobs.length; i += 6) {
-  const batch = jobs.slice(i, i + 6).map((job) => job().catch((e) => ({ path: '?', problems: [e.message] })));
+  const failedJob = (e) => ({ path: '?', problems: [e.message] });
+  const batch = jobs.slice(i, i + 6).map((job) => job().catch(failedJob));
   results.push(...await Promise.all(batch));
 }
 results.forEach(({
   path, problems, headings, images,
 }) => {
-  console.log(`${problems.length ? 'DIFF' : 'ok  '} ${path} (${headings} headings, ${images} images)`);
+  const status = problems.length ? 'DIFF' : 'ok  ';
+  console.log(`${status} ${path} (${headings} headings, ${images} images)`);
   problems.forEach((problem) => console.log(`  - ${problem}`));
 });
 const failed = results.filter((r) => r.problems.length).length;
-console.log(`${results.length - failed}/${results.length} clean, ${linkStatus.size} internal links checked`);
+const clean = `${results.length - failed}/${results.length} clean`;
+console.log(`${clean}, ${linkStatus.size} internal links checked`);
 if (failed) process.exit(1);

@@ -37,7 +37,8 @@ function buildControls(block, slides) {
     const title = slide.querySelector('h1, h2, h3, h4, h5, h6')?.textContent;
     const button = document.createElement('button');
     button.type = 'button';
-    button.setAttribute('aria-label', `Show slide ${i + 1} of ${slides.length}${title ? `: ${title}` : ''}`);
+    const label = `Show slide ${i + 1} of ${slides.length}`;
+    button.setAttribute('aria-label', title ? `${label}: ${title}` : label);
     button.addEventListener('click', () => show(i));
     item.append(button);
     indicators.append(item);

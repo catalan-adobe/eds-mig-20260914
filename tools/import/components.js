@@ -9,7 +9,9 @@ import { picture, rewriteLink } from './html.js';
 const WRAPPERS = new Set([
   'root', 'container', 'cmp-container', 'aem-Grid', 'xf-content-height', 'contentfragment',
 ]);
-const RAW_TAGS = new Set(['P', 'UL', 'OL', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'BLOCKQUOTE', 'TABLE']);
+const RAW_TAGS = new Set([
+  'P', 'UL', 'OL', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'BLOCKQUOTE', 'TABLE',
+]);
 const CONTAINER_TAGS = new Set(['DIV', 'MAIN', 'ASIDE', 'ARTICLE', 'SECTION']);
 const KEEP_ATTRS = new Set(['href', 'src', 'alt', 'colspan', 'rowspan']);
 const RENAME = { B: 'strong', I: 'em' };
@@ -25,7 +27,8 @@ function cleanInner(el, ctx) {
     [...node.attributes].forEach((attr) => {
       if (!KEEP_ATTRS.has(attr.name)) node.removeAttribute(attr.name);
     });
-    if (node.hasAttribute('href')) node.setAttribute('href', rewriteLink(node.getAttribute('href'), ctx.prefix));
+    const href = node.getAttribute('href');
+    if (href !== null) node.setAttribute('href', rewriteLink(href, ctx.prefix));
   });
   copy.querySelectorAll('img').forEach((img) => { img.outerHTML = picture(img); });
   let html = copy.innerHTML;
@@ -41,7 +44,10 @@ function cleanEl(el, ctx) {
   return inner ? `<${tag}>${inner}</${tag}>` : '';
 }
 
-const link = (a, ctx, label = text(a)) => `<a href="${rewriteLink(a.getAttribute('href'), ctx.prefix)}">${label}</a>`;
+function link(a, ctx, label = text(a)) {
+  return `<a href="${rewriteLink(a.getAttribute('href'), ctx.prefix)}">${label}</a>`;
+}
+
 const button = (a, ctx) => `<p><strong>${link(a, ctx)}</strong></p>`;
 
 function iconLinks(el, ctx) {
@@ -65,7 +71,8 @@ function inline(items, ctx, where) {
 function title(el, ctx) {
   const heading = el.querySelector('h1, h2, h3, h4, h5, h6');
   const items = [cleanEl(heading, ctx)];
-  if (heading.tagName === 'H1' && el.classList.contains('cmp-title--underline')) items.push({ style: 'underline' });
+  const underlined = el.classList.contains('cmp-title--underline');
+  if (heading.tagName === 'H1' && underlined) items.push({ style: 'underline' });
   return items;
 }
 
@@ -76,8 +83,9 @@ function textComponent(el, ctx) {
     return [[...content.children].map((child) => cleanEl(child, ctx)).join(''), small];
   }
   const quotation = content.querySelector('blockquote');
-  const attribution = [...content.children].filter((child) => child !== quotation).map(text).join(' ');
-  return [{ block: 'quote', rows: [[esc(text(quotation || content))], [esc(attribution)]].filter(([cell]) => cell) }];
+  const others = [...content.children].filter((child) => child !== quotation);
+  const rows = [[esc(text(quotation || content))], [esc(others.map(text).join(' '))]];
+  return [{ block: 'quote', rows: rows.filter(([cell]) => cell) }];
 }
 
 function image(el) {
@@ -104,13 +112,14 @@ function teaserContent(el, ctx) {
   return [
     para(text(el.querySelector('.cmp-teaser__pretitle'))),
     heading ? cleanEl(heading, ctx) : '',
-    description && (description.querySelector('p') ? cleanInner(description, ctx) : para(text(description))),
+    description?.querySelector('p') ? cleanInner(description, ctx) : para(text(description)),
     links.map((a) => button(a, ctx)).join('') || para(text(actions)),
   ].filter(Boolean).join('');
 }
 
 function teaserRow(el, ctx) {
-  return [picture(el.querySelector('.cmp-teaser__image img')), teaserContent(el, ctx)].filter(Boolean);
+  const teaserImage = picture(el.querySelector('.cmp-teaser__image img'));
+  return [teaserImage, teaserContent(el, ctx)].filter(Boolean);
 }
 
 function teaser(el, ctx) {
@@ -125,7 +134,8 @@ function teaser(el, ctx) {
 function carousel(el, ctx) {
   const rows = [...el.querySelectorAll('.cmp-carousel__item')].map((item) => {
     const slide = item.querySelector('.cmp-teaser');
-    return slide ? teaserRow(item.querySelector('.teaser'), ctx) : [picture(item.querySelector('img'))];
+    if (slide) return teaserRow(item.querySelector('.teaser'), ctx);
+    return [picture(item.querySelector('img'))];
   });
   return [{ block: 'carousel', rows }];
 }
@@ -161,9 +171,11 @@ function filterCards(labels, panels, ctx) {
 function tabs(el, ctx) {
   const labels = [...el.querySelectorAll('.cmp-tabs__tab')].map(text);
   const panels = [...el.querySelectorAll('.cmp-tabs__tabpanel')];
-  const onlyLists = panels.every((p) => p.children.length === 1 && p.querySelector(':scope > .image-list'));
+  const isList = (p) => p.children.length === 1 && p.querySelector(':scope > .image-list');
+  const onlyLists = panels.every(isList);
   if (onlyLists) return filterCards(labels, panels, ctx);
-  const rows = panels.map((panel, i) => [esc(labels[i]), inline(walkChildren(panel, ctx), ctx, 'tabs')]);
+  const content = (panel) => inline(walkChildren(panel, ctx), ctx, 'tabs');
+  const rows = panels.map((panel, i) => [esc(labels[i]), content(panel)]);
   return [{ block: 'tabs', rows }];
 }
 
@@ -176,9 +188,12 @@ function accordion(el, ctx) {
 }
 
 function list(el, ctx) {
+  const itemTitle = (item) => esc(text(item.querySelector('.cmp-list__item-title')));
   const rows = [...el.querySelectorAll('.cmp-list__item')].map((item) => [
-    `<p>${link(item.querySelector('a'), ctx, esc(text(item.querySelector('.cmp-list__item-title'))))}</p>${
-      para(text(item.querySelector('.cmp-list__item-date')))}`,
+    [
+      `<p>${link(item.querySelector('a'), ctx, itemTitle(item))}</p>`,
+      para(text(item.querySelector('.cmp-list__item-date'))),
+    ].join(''),
   ]);
   return [{ block: 'cards list', rows }];
 }
@@ -201,14 +216,16 @@ function experienceFragment(el, ctx) {
   if (!name || !el.querySelector('img')) return walkChildren(el, ctx);
   const roles = text(el.querySelector('.cmp-byline__occupations, h5'));
   const body = `<h3>${esc(name)}</h3>${para(roles)}${iconLinks(el, ctx)}`;
-  return [{ block: byline ? 'cards byline' : 'cards people', rows: [[picture(el.querySelector('img')), body]] }];
+  const block = byline ? 'cards byline' : 'cards people';
+  return [{ block, rows: [[picture(el.querySelector('img')), body]] }];
 }
 
 function download(el, ctx) {
   const action = el.querySelector('.cmp-download__action');
   if (!action) return [];
   const description = text(el.querySelector('.cmp-download__description'));
-  const properties = [...el.querySelectorAll('.cmp-download__property-content')].map(text).join(', ');
+  const values = [...el.querySelectorAll('.cmp-download__property-content')];
+  const properties = values.map(text).join(', ');
   return [
     `<h5>${esc(text(el.querySelector('.cmp-download__title')))}</h5>`,
     description && `<p><strong>${esc(description)}</strong></p>`,
@@ -245,7 +262,8 @@ const MAPPERS = {
 
 /** A 3-wide grid column is an aside. The 8- or 9-wide column beside it is its partner. */
 function column(el, items) {
-  const width = [...el.classList].find((c) => /^aem-GridColumn--default--\d+$/.test(c))?.split('--')[2];
+  const span = [...el.classList].find((c) => /^aem-GridColumn--default--\d+$/.test(c));
+  const width = span?.split('--')[2];
   if (width === '3') {
     const left = el.classList.contains('aem-GridColumn--offset--default--0');
     return [{ group: left ? 'aside-left' : 'aside', items }];
@@ -260,7 +278,8 @@ export function walk(el, ctx) {
     if (!name && RAW_TAGS.has(el.tagName)) return [cleanEl(el, ctx)].filter(Boolean);
     if (!name && !CONTAINER_TAGS.has(el.tagName)) {
       if (!text(el)) return [];
-      throw new Error(`Unmapped <${el.tagName.toLowerCase()}> "${text(el).slice(0, 40)}" on ${ctx.path}`);
+      const tag = el.tagName.toLowerCase();
+      throw new Error(`Unmapped <${tag}> "${text(el).slice(0, 40)}" on ${ctx.path}`);
     }
     return name === 'container' ? column(el, walkChildren(el, ctx)) : walkChildren(el, ctx);
   }

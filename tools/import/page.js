@@ -70,7 +70,8 @@ export function convertPage(html, path, prefix) {
 /** The header lists the home page first: only the mobile menu shows it. The footer never does. */
 function navLinks(fragment, prefix, withHome) {
   const levels = withHome ? '--level-0, --level-1' : '--level-1';
-  const selector = levels.split(', ').map((level) => `.cmp-navigation__item${level} > a`).join(', ');
+  const item = (level) => `.cmp-navigation__item${level} > a`;
+  const selector = levels.split(', ').map(item).join(', ');
   const items = [...fragment.querySelectorAll(selector)];
   if (!items.length) return '';
   return `<ul>${items.map((a) => `<li>${link(a, { prefix })}</li>`).join('')}</ul>`;
@@ -82,9 +83,11 @@ function brand(fragment, prefix, icon) {
 }
 
 function languages(fragment, prefix) {
-  const countries = [...fragment.querySelectorAll('.cmp-languagenavigation__item--level-0')].map((country) => {
-    const links = [...country.querySelectorAll('a')].map((a) => `<li>${link(a, { prefix })}</li>`).join('');
-    return `<li>${text(country.querySelector('.cmp-languagenavigation__item-title'))}<ul>${links}</ul></li>`;
+  const groups = [...fragment.querySelectorAll('.cmp-languagenavigation__item--level-0')];
+  const countries = groups.map((country) => {
+    const name = text(country.querySelector('.cmp-languagenavigation__item-title'));
+    const links = [...country.querySelectorAll('a')].map((a) => `<li>${link(a, { prefix })}</li>`);
+    return `<li>${name}<ul>${links.join('')}</ul></li>`;
   });
   return `<ul>${countries.join('')}</ul>`;
 }
@@ -107,7 +110,8 @@ export function convertNav(html, prefix) {
 
 export function convertFooter(html, prefix) {
   const fragment = parseHTML(html).document.querySelector('footer.experiencefragment');
-  const legal = [...fragment.querySelector('.cmp-text').children].map((el) => cleanEl(el, { prefix }));
+  const paragraphs = [...fragment.querySelector('.cmp-text').children];
+  const legal = paragraphs.map((el) => cleanEl(el, { prefix }));
   return pageHtml([
     section([
       brand(fragment, prefix, 'wknd-logo-light'),

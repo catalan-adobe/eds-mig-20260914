@@ -10,7 +10,9 @@ import { loadFragment } from '../fragment/fragment.js';
 export default async function decorate(block) {
   const root = getLocaleRoot(window.location.pathname);
   const footerMeta = getMetadata('footer');
-  const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : root && `${root}/footer`;
+  const footerPath = footerMeta
+    ? new URL(footerMeta, window.location).pathname
+    : root && `${root}/footer`;
   const fragment = footerPath && await loadFragment(footerPath);
   block.textContent = '';
   if (!fragment) return;
@@ -23,12 +25,13 @@ export default async function decorate(block) {
   top?.querySelectorAll('p').forEach((p) => {
     const icons = p.querySelectorAll('.icon').length;
     if (!icons) p.className = 'footer-follow';
-    else p.className = p.querySelector('[class*="icon-wknd-logo"]') ? 'footer-brand' : 'footer-social';
+    else if (p.querySelector('[class*="icon-wknd-logo"]')) p.className = 'footer-brand';
+    else p.className = 'footer-social';
   });
   top?.querySelector('.footer-brand a')?.setAttribute('aria-label', 'WKND home');
   top?.querySelectorAll('.footer-social a').forEach((a) => {
-    const name = [...a.querySelector('.icon').classList].find((c) => c.startsWith('icon-')).slice(5);
-    a.setAttribute('aria-label', name);
+    const icon = [...a.querySelector('.icon').classList].find((c) => c.startsWith('icon-'));
+    a.setAttribute('aria-label', icon.slice(5));
   });
   const here = window.location.pathname.replace(/\/$/, '');
   top?.querySelectorAll('ul a').forEach((a) => {

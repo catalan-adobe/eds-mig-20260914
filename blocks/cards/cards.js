@@ -63,7 +63,8 @@ function buildListItem(li) {
 function nameIconLinks(ul) {
   ul.querySelectorAll('a:has(.icon)').forEach((a) => {
     if (a.textContent.trim()) return;
-    const name = [...a.querySelector('.icon').classList].find((c) => c.startsWith('icon-'))?.slice(5);
+    const icon = [...a.querySelector('.icon').classList].find((c) => c.startsWith('icon-'));
+    const name = icon?.slice(5);
     if (name) a.setAttribute('aria-label', name);
   });
 }
@@ -97,7 +98,8 @@ export default function decorate(block) {
   [...block.children].forEach((row) => ul.append(buildCard(row, isFilter)));
   const width = IMAGE_WIDTH[variant(block)];
   ul.querySelectorAll('picture > img').forEach((img) => {
-    img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width }]));
+    const picture = createOptimizedPicture(img.src, img.alt, false, [{ width }]);
+    img.closest('picture').replaceWith(picture);
   });
   if (block.classList.contains('list')) ul.querySelectorAll('li').forEach(buildListItem);
   else if (!block.classList.contains('locked')) ul.querySelectorAll('li').forEach(linkImage);

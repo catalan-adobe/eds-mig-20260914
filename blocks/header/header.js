@@ -46,7 +46,9 @@ function buildLanguage(list, root) {
     if (code) item.prepend(icon(`flag-${code}`));
     item.querySelector(`a[href$="/${country}/${language}"]`)?.setAttribute('aria-current', 'true');
   });
-  button.addEventListener('click', () => setExpanded(button, button.getAttribute('aria-expanded') !== 'true'));
+  button.addEventListener('click', () => {
+    setExpanded(button, button.getAttribute('aria-expanded') !== 'true');
+  });
   wrapper.addEventListener('focusout', (e) => {
     if (!wrapper.contains(e.relatedTarget)) setExpanded(button, false);
   });
@@ -92,7 +94,8 @@ function el(tag, className, ...children) {
 function buildUtility(tools, root) {
   const signIn = tools?.querySelector('p > a:not(:has(.icon))');
   const languages = tools?.querySelector('ul');
-  return el('div', 'nav-utility', el('div', '', signIn, languages && root && buildLanguage(languages, root)));
+  const menu = languages && root && buildLanguage(languages, root);
+  return el('div', 'nav-utility', el('div', '', signIn, menu));
 }
 
 function buildMain(brand, sections, tools, root) {

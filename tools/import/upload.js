@@ -12,7 +12,9 @@ export const OUT = fileURLToPath(new URL('../../.import/', import.meta.url));
 
 export function toWebPath(file) {
   const path = `/${normalize(file).replace(/\.html$/, '')}`;
-  if (!path.startsWith(`/${RUN}/`)) throw new Error(`${file} is outside /${RUN}/, refusing to upload`);
+  if (!path.startsWith(`/${RUN}/`)) {
+    throw new Error(`${file} is outside /${RUN}/, refusing to upload`);
+  }
   return path;
 }
 
@@ -35,7 +37,8 @@ async function publish(file, token) {
 
 async function main() {
   const prefix = process.argv[2] || `/${RUN}/`;
-  const { access_token: token } = JSON.parse(await readFile(join(homedir(), '.aem/da-token.json'), 'utf8'));
+  const tokenFile = join(homedir(), '.aem/da-token.json');
+  const { access_token: token } = JSON.parse(await readFile(tokenFile, 'utf8'));
   const files = (await readdir(join(OUT, RUN), { recursive: true }))
     .filter((f) => f.endsWith('.html'))
     .map((f) => relative(OUT, join(OUT, RUN, f)))
