@@ -17,6 +17,11 @@
   cursor: pointer;
 }
 
+/* the source removes the focus ring: .cmp-accordion__button:focus */
+.accordion .accordion-button:focus {
+  outline: none;
+}
+
 .accordion .accordion-button[aria-expanded="true"] {
   border: none;
 }
