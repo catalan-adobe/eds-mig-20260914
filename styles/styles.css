@@ -438,6 +438,15 @@ main > .section.divider-medium::after {
     margin-top: 7px;
     font-size: var(--font-size-xs);
   }
+
+  .article .breadcrumb ol {
+    margin-top: 0;
+  }
+
+  /* the source sizes article images from a phone rendition with whole-pixel height */
+  .article .default-content-wrapper picture img {
+    aspect-ratio: var(--image-ratio, auto);
+  }
 }
 
 /* the facts take 7/12 of the width, the share heading floats beside them, the tabs follow below */
@@ -539,21 +548,21 @@ main > .section.divider-medium::after {
     padding-right: var(--gutter);
     padding-left: calc(97px + var(--gutter));
   }
+}
 
-  /* article text runs the full column; headings, images and quotes inside it are inset */
-  .article main > .section:has(+ .section.aside) > .default-content-wrapper {
-    padding: 0;
-  }
+/* article text runs the full column; headings, images and quotes inside it are inset */
+.article main > .section:has(+ .section.aside) > .default-content-wrapper {
+  padding: 0;
+}
 
-  .article main > .section:has(+ .section.aside) > .default-content-wrapper > :is(h2, h3, p:has(picture)) {
-    margin-right: var(--gutter);
-    margin-left: var(--gutter);
-  }
+.article main > .section:has(+ .section.aside) > .default-content-wrapper > :is(h2, h3, p:has(picture)) {
+  margin-right: var(--gutter);
+  margin-left: var(--gutter);
+}
 
-  .article main > .section.plain-headings:has(+ .section.aside) > .default-content-wrapper > h2 {
-    margin-right: 0;
-    margin-left: 0;
-  }
+.article main > .section.plain-headings:has(+ .section.aside) > .default-content-wrapper > h2 {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 /* the side column of an article: a gap below its heading, then related list or download */

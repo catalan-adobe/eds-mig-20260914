@@ -37,10 +37,12 @@ function cleanInner(el, ctx) {
     html = html.replace(new RegExp(`<(/?)${from}>`, 'gi'), `<$1${to}>`);
   });
   const marked = html.replace(/&nbsp;|&#160;|\u00a0/g, NBSP_MARK).replace(/\s+/g, ' ').trim();
-  // a non-breaking space beside a space keeps its gap two spaces wide; elsewhere it is a space
+  // a non-breaking space beside a space keeps its gap two spaces wide.
+  // A single one between words stays, so the words wrap together; a run of them is one space.
   return marked
     .replace(/ \uE000/g, ' &nbsp;')
     .replace(/\uE000 /g, '&nbsp; ')
+    .replace(/(?<!\uE000)\uE000(?!\uE000)/g, '&nbsp;')
     .replaceAll(NBSP_MARK, ' ')
     .replace(/ {2,}/g, ' ');
 }

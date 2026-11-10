@@ -339,7 +339,7 @@ test('footer: brand, links, social and legal text', () => {
   );
   assert.match(text(legal), /WKND is a fictitious adventure and travel website/);
   assert.equal(legal.querySelectorAll('a').length, 5);
-  assert.doesNotMatch(convertFooter(fixture('home'), PREFIX), /&#160;|&nbsp;|\u00a0/);
+  assert.match(convertFooter(fixture('home'), PREFIX), /Manager&nbsp;<a /);
 });
 
 test('an empty download component maps to nothing', () => {
@@ -367,10 +367,17 @@ test('an image title becomes a caption in the same paragraph as the image', () =
   ]);
 });
 
-test('a non-breaking space next to a space stays, so the gap is two spaces wide', () => {
+test('a non-breaking space next to a space stays, a run of them is one space', () => {
   const { document } = parseHTML('<p>attempt. &nbsp;During a&nbsp;phase&nbsp;&nbsp;end</p>');
   assert.deepEqual(walk(document.querySelector('p'), { path: '/x', prefix: PREFIX }), [
-    '<p>attempt. &nbsp;During a phase end</p>',
+    '<p>attempt. &nbsp;During a&nbsp;phase end</p>',
+  ]);
+});
+
+test('a single non-breaking space between words stays, so the words wrap together', () => {
+  const { document } = parseHTML('<p><b>Beach</b>&nbsp;located in a&nbsp;park</p>');
+  assert.deepEqual(walk(document.querySelector('p'), { path: '/x', prefix: PREFIX }), [
+    '<p><strong>Beach</strong>&nbsp;located in a&nbsp;park</p>',
   ]);
 });
 

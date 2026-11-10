@@ -328,8 +328,13 @@
     display: block;
   }
 
+  /* the occupations margin sits above the buttons, not below the block */
+  .cards.byline {
+    margin-bottom: 0;
+  }
+
   .cards.byline .cards-card-body p:has(.icon) {
     justify-content: flex-start;
-    margin-top: 14px;
+    margin-top: 13.5px;
   }
 }
