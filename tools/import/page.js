@@ -1,0 +1,117 @@
+// Turns one source page into the HTML document DA stores.
+import { parseHTML } from 'linkedom';
+import {
+  block, pageHtml, rewriteLink, section,
+} from './html.js';
+import {
+  cleanEl, iconLinks, link, text, walk,
+} from './components.js';
+
+const TEMPLATES = { 'adventure-page-template': 'adventure', 'article-page-template': 'article' };
+const MERGE = new Set(['cards people', 'cards locked']);
+const FRAGMENTS = 'header.experiencefragment, footer.experiencefragment';
+
+const render = (part) => (typeof part === 'string' ? part : block(part.block, part.rows));
+
+/** Adjacent blocks of the same mergeable kind are one block with more rows. */
+function add(parts, item) {
+  const last = parts[parts.length - 1];
+  const merge = item.block && MERGE.has(item.block) && last?.block === item.block;
+  if (merge) last.rows.push(...item.rows);
+  else parts.push(item.block ? { ...item, rows: [...item.rows] } : item);
+}
+
+function assemble(items, path) {
+  const sections = [];
+  let current = { parts: [], styles: [] };
+  const flush = () => {
+    if (current.parts.length) sections.push(current);
+    current = { parts: [], styles: [] };
+  };
+  items.forEach((item) => {
+    if (item.divider) {
+      current.styles.push('divider');
+      flush();
+    } else if (item.style) {
+      current.styles.push(item.style);
+    } else if (item.items) {
+      flush();
+      const inner = assemble(item.items, path);
+      if (inner.length > 1) throw new Error(`Divider inside a column on ${path}`);
+      const [only] = inner;
+      if (only) sections.push({ ...only, styles: [...only.styles, item.group].filter(Boolean) });
+    } else {
+      add(current.parts, item);
+    }
+  });
+  flush();
+  return sections;
+}
+
+function metadata(document) {
+  const content = (selector) => document.querySelector(selector)?.getAttribute('content');
+  const image = content('meta[property="og:image"]');
+  return block('metadata', [
+    ['Title', text(document.querySelector('title'))],
+    ['Description', content('meta[name="description"]')],
+    ['Image', image && `<img src="${image}">`],
+    ['Template', TEMPLATES[content('meta[name="template"]')]],
+  ].filter(([, value]) => value));
+}
+
+export function convertPage(html, path, prefix) {
+  const { document } = parseHTML(html);
+  document.querySelectorAll(FRAGMENTS).forEach((el) => el.remove());
+  const sections = assemble(walk(document.querySelector('body > .root'), { path, prefix }), path)
+    .map(({ parts, styles }) => section(parts.map(render), styles.join(', ')));
+  return pageHtml([...sections, section([metadata(document)])]);
+}
+
+function navLinks(fragment, prefix) {
+  const level1 = [...fragment.querySelectorAll('.cmp-navigation__item--level-1 > a')];
+  const items = level1.length ? level1 : [...fragment.querySelectorAll('.cmp-navigation__item--level-0 > a')];
+  return `<ul>${items.map((a) => `<li>${link(a, { prefix })}</li>`).join('')}</ul>`;
+}
+
+function brand(fragment, prefix, icon) {
+  const home = fragment.querySelector('.cmp-navigation__item--level-0 > a').getAttribute('href');
+  return `<p><a href="${rewriteLink(home, prefix)}">:${icon}:</a></p>`;
+}
+
+function languages(fragment, prefix) {
+  const countries = [...fragment.querySelectorAll('.cmp-languagenavigation__item--level-0')].map((country) => {
+    const links = [...country.querySelectorAll('a')].map((a) => `<li>${link(a, { prefix })}</li>`).join('');
+    return `<li>${text(country.querySelector('.cmp-languagenavigation__item-title'))}<ul>${links}</ul></li>`;
+  });
+  return `<ul>${countries.join('')}</ul>`;
+}
+
+export function convertNav(html, prefix) {
+  const fragment = parseHTML(html).document.querySelector('header.experiencefragment');
+  const signIn = fragment.querySelector('.wknd-sign-in-buttons__button--sign-in');
+  const search = fragment.querySelector('.cmp-button--header-search a');
+  const tools = [
+    signIn && `<p>${link(signIn, { prefix })}</p>`,
+    languages(fragment, prefix),
+    search && `<p>${link(search, { prefix }, ':search:')}</p>`,
+  ].filter(Boolean);
+  return pageHtml([
+    section([brand(fragment, prefix, 'wknd-logo-dk')]),
+    section([navLinks(fragment, prefix)]),
+    section(tools),
+  ]);
+}
+
+export function convertFooter(html, prefix) {
+  const fragment = parseHTML(html).document.querySelector('footer.experiencefragment');
+  const legal = [...fragment.querySelector('.cmp-text').children].map((el) => cleanEl(el, { prefix }));
+  return pageHtml([
+    section([
+      brand(fragment, prefix, 'wknd-logo-light'),
+      navLinks(fragment, prefix),
+      `<p>${text(fragment.querySelector('.cmp-title__text'))}</p>`,
+      iconLinks(fragment, { prefix }),
+    ]),
+    section(legal),
+  ]);
+}
