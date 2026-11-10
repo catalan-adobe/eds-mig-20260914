@@ -204,12 +204,13 @@ function teaserCells($, $c, doc) {
 
 function secureCard($, $c, doc) {
   const $img = $c.find('.cmp-teaser__image img');
+  const $action = $c.find('.cmp-teaser__action-link');
   const lines = [
     text($c.find('.cmp-teaser__title')),
     text($c.find('.cmp-teaser__description')),
-    text($c.find('.cmp-teaser__action-container')),
+    $action.length ? '' : text($c.find('.cmp-teaser__action-container')),
   ].filter(Boolean).map((line) => `<p>${esc(line)}</p>`);
-  return [$img.length ? picture(doc, $img) : '', lines.join('')];
+  return [$img.length ? picture(doc, $img) : '', lines.join('') + linkParagraph($action)];
 }
 
 function teaser($, $c, doc) {
@@ -358,7 +359,7 @@ function contentFragment($, $c, doc, walk) {
       if (node.type === 'text' && isEmpty(node.data)) return;
       if (node.type === 'text') throw new Error(`${doc.path}: bare text in content fragment`);
       if (node.name !== 'div') doc.push(richElement($, node));
-      else if ($(node).find('.aem-Grid').length) walk(node);
+      else if ($(node).is('.aem-Grid') || $(node).find('.aem-Grid').length) walk(node);
       else doc.push(paragraphs($, $(node)));
     });
 }

@@ -664,19 +664,22 @@ label; the card rows after it belong to that tab:
     <div>
       <p>Alaskan Adventure</p>
       <p>Discover the 49th state</p>
-      <p>Read More</p>
+      <p><a href="/f52-1011-02/ca/en/magazine/members-only/alaskan-adventure">Read More</a></p>
     </div>
   </div>
   <div>...Fly Fishing the Amazon...</div>
 </div>
 ```
 
-- No links (the source renders none for anonymous visitors, the only state it has).
+- Only on `/ca/en/magazine`. The last paragraph holding only a link is the call to action
+  (optional), as on the source (`a.cmp-teaser__action-link`). Title and image are not linked.
 - Card is 4/12 on desktop, 6/12 on tablet, 12/12 on phone, with the inset. Order inside a
   card: title, description, "Read More", then the image BELOW (max-height 200 px, cover).
 - Whole card at 65% opacity. A yellow triangle with the lock glyph (24 px, black) sits on
-  the top-left corner over the title (`:before` rule of `.cmp-teaser--secure`). "Read More"
-  is a grey label: background #ebebeb, dimgray, 14 px, uppercase, padding .5em 1em.
+  the top-left corner over the title (`:before` rule of `.cmp-teaser--secure`). The call to
+  action is the yellow link of `hero` (14 px, weight 600, uppercase, padding 1em 2.5em,
+  141 x 49 for "Read More") inside a grey box (`.cmp-teaser__action-container`: background
+  #ebebeb, padding .5em 1em, `float: left`, margin 1em 0; 169 x 63).
 - Title 18 px weight 600 uppercase sans; description 14 px uppercase dimgray.
 
 ### 6. `tabs`
@@ -1012,7 +1015,7 @@ answers 401 on the public site. "Sign Out" and the "Welcome" greeting never show
 
 The lock state of `cards secure` is the only state: it is static. The two members-only
 articles and their listing exist publicly under `/ca/en` and are migrated as normal pages.
-Nothing links to them from the magazine page, as on the source.
+The two cards on `/ca/en/magazine` link to them with "Read More", as on the source.
 
 ### Header search
 
