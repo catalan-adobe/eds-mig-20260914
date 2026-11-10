@@ -15,3 +15,16 @@
 .separator.hidden hr {
   border: none;
 }
+
+/* source quirk: right below the hero of a locale root the rule spans the whole container,
+   so it gives back the wrapper gutter once the viewport is wider than the container */
+.hero-wrapper + .separator-wrapper .separator hr {
+  margin-right: clamp(-1 * var(--gutter), (var(--container-width) - 100vw) / 2, 0px);
+  margin-left: clamp(-1 * var(--gutter), (var(--container-width) - 100vw) / 2, 0px);
+}
+
+/* source quirk: the article body column has no inset, its separator keeps the gutter */
+body.article .section:has(+ .sidebar) .separator hr {
+  margin-right: var(--gutter);
+  margin-left: var(--gutter);
+}
