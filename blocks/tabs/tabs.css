@@ -39,6 +39,10 @@
   color: var(--color-background);
 }
 
+.tabs .tabs-panel {
+  display: flow-root;
+}
+
 .tabs .tabs-panel[hidden] {
   display: none;
 }
