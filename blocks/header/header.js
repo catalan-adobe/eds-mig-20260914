@@ -53,10 +53,25 @@ function buildLanguageRow(item, root) {
   return row;
 }
 
+async function linksTo(page, path) {
+  const response = await fetch(`${page}.plain.html`);
+  if (!response.ok) return false;
+  const { links } = new DOMParser().parseFromString(await response.text(), 'text/html');
+  return [...links].some((a) => a.getAttribute('href') === path);
+}
+
 /**
  * As on the source, a locale links to its copy of the current page when it has one and to
- * its root otherwise. Only the server knows which copies exist, so each one is probed.
+ * its root otherwise. Asking for a copy that does not exist logs a console error, so the
+ * copy is looked up where it is linked: a section in the navigation of the locale, a deeper
+ * page on the landing page of its section.
  */
+async function hasTwin(localeRoot, below) {
+  const [section] = below.match(/^\/[^/]+/);
+  if (!await linksTo(`${localeRoot}/nav`, `${localeRoot}${section}`)) return false;
+  return below === section || linksTo(`${localeRoot}${section}`, `${localeRoot}${below}`);
+}
+
 function linkToSamePage(panel, root) {
   const { pathname } = window.location;
   const below = pathname.replace(/\/$/, '').slice(root.length);
@@ -66,10 +81,8 @@ function linkToSamePage(panel, root) {
       link.href = pathname;
       return;
     }
-    const twin = `${pathOf(link)}${below}`;
-    // GET, because the local dev server answers 502 to HEAD requests
-    const response = await fetch(`${twin}.plain.html`).catch(() => null);
-    if (response && response.ok) link.href = twin;
+    const localeRoot = pathOf(link);
+    if (await hasTwin(localeRoot, below).catch(() => false)) link.href = `${localeRoot}${below}`;
   });
 }
 
