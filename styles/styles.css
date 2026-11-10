@@ -435,7 +435,47 @@ main > .section.divider-medium::after {
 
 @media (width < 768px) {
   .breadcrumb ol {
+    margin-top: 7px;
     font-size: var(--font-size-xs);
+  }
+}
+
+/* the facts take 7/12 of the width, the share heading floats beside them, the tabs follow below */
+@media (width < 1025px) {
+  main > .section.aside-left {
+    display: flow-root;
+  }
+
+  main > .section.aside-left > div {
+    float: left;
+    box-sizing: border-box;
+    width: calc(100% * 5 / 12);
+  }
+
+  main > .section.aside-left > .facts-wrapper {
+    width: calc(100% * 7 / 12);
+  }
+
+  /* a flat page has one full-width column: the facts float in rows and the share heading runs below them */
+  main > .section.aside-left.flat > div {
+    float: none;
+    width: auto;
+  }
+
+  main > .section.aside-left.flat > :is(.facts-wrapper, .default-content-wrapper) {
+    display: block;
+  }
+
+  /* the padding keeps the empty facts column from collapsing its margin into the heading's */
+  main > .section.aside-left.flat > .facts-wrapper {
+    margin-bottom: -23.38px;
+    padding-top: 23.38px;
+  }
+
+  main > .section.flat > .tabs-wrapper,
+  main > .section.flat > .default-content-wrapper:has(> h1) {
+    padding-right: 28px;
+    padding-left: 28px;
   }
 }
 

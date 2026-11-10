@@ -367,6 +367,13 @@ test('an image title becomes a caption in the same paragraph as the image', () =
   ]);
 });
 
+test('a non-breaking space next to a space stays, so the gap is two spaces wide', () => {
+  const { document } = parseHTML('<p>attempt. &nbsp;During a&nbsp;phase&nbsp;&nbsp;end</p>');
+  assert.deepEqual(walk(document.querySelector('p'), { path: '/x', prefix: PREFIX }), [
+    '<p>attempt. &nbsp;During a phase end</p>',
+  ]);
+});
+
 test('footer: every text component is kept, in order', () => {
   const { document: doc } = parseHTML(convertFooter(fixture('members-only'), PREFIX));
   const legal = [...doc.querySelectorAll('main > div')][1];

@@ -192,6 +192,19 @@ function setImageRatios(main) {
 }
 
 /**
+ * Serves the phone-width rendition of adventure images to 1x screens.
+ * 2x screens keep the 750px one.
+ * @param {Element} main The main element
+ */
+function usePhoneRendition(main) {
+  const sources = main.querySelectorAll('.carousel source:not([media]), .tabs source:not([media])');
+  sources.forEach((source) => {
+    const large = source.srcset;
+    source.srcset = `${large.replace('width=750', 'width=390')} 1x, ${large} 2x`;
+  });
+}
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
@@ -203,6 +216,7 @@ export function decorateMain(main) {
   decorateBlocks(main);
   decorateButtons(main);
   setImageRatios(main);
+  usePhoneRendition(main);
 }
 
 /**

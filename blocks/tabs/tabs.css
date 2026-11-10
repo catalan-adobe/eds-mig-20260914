@@ -48,3 +48,10 @@
 .tabs .tabs-panel img {
   width: 100%;
 }
+
+/* the source shows a phone rendition: its ratio has a whole-pixel height */
+@media (width < 1025px) {
+  .tabs .tabs-panel img {
+    aspect-ratio: var(--image-ratio, auto);
+  }
+}

@@ -15,6 +15,7 @@ const RAW_TAGS = new Set([
 const CONTAINER_TAGS = new Set(['DIV', 'MAIN', 'ASIDE', 'ARTICLE', 'SECTION']);
 const KEEP_ATTRS = new Set(['href', 'src', 'alt', 'colspan', 'rowspan']);
 const RENAME = { B: 'strong', I: 'em' };
+const NBSP_MARK = '\uE000';
 
 const text = (el) => (el ? el.textContent.replace(/\s+/g, ' ').trim() : '');
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
@@ -35,7 +36,13 @@ function cleanInner(el, ctx) {
   Object.entries(RENAME).forEach(([from, to]) => {
     html = html.replace(new RegExp(`<(/?)${from}>`, 'gi'), `<$1${to}>`);
   });
-  return html.replace(/&nbsp;|&#160;|\u00a0/g, ' ').replace(/\s+/g, ' ').trim();
+  const marked = html.replace(/&nbsp;|&#160;|\u00a0/g, NBSP_MARK).replace(/\s+/g, ' ').trim();
+  // a non-breaking space beside a space keeps its gap two spaces wide; elsewhere it is a space
+  return marked
+    .replace(/ \uE000/g, ' &nbsp;')
+    .replace(/\uE000 /g, '&nbsp; ')
+    .replaceAll(NBSP_MARK, ' ')
+    .replace(/ {2,}/g, ' ');
 }
 
 function cleanEl(el, ctx) {

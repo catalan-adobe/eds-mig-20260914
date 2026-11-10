@@ -1,6 +1,4 @@
 .facts dl {
-  display: flex;
-  flex-wrap: wrap;
   margin: 18px 0;
 }
 
@@ -22,6 +20,14 @@
   padding-top: 7px;
   font-size: var(--font-size-s);
   font-weight: 600;
+}
+
+/* below the desktop layout the facts float: each one takes the width of its text */
+@media (width < 1025px) {
+  .facts dl,
+  .facts dl > div {
+    float: left;
+  }
 }
 
 @media (width >= 1025px) {

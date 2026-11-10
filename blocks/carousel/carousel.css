@@ -159,6 +159,11 @@ main > .section > .carousel-wrapper {
     justify-content: flex-start;
     padding: 14px 0 0 14px;
   }
+
+  .carousel.carousel-controlled:has(.carousel-slide-image:only-child) .carousel-indicators {
+    justify-content: center;
+    padding: 0;
+  }
 }
 
 @media (width >= 1165px) {
