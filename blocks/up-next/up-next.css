@@ -34,7 +34,8 @@
 
 .up-next .up-next-title,
 .up-next .up-next-date {
-  display: block;
+  float: left;
+  width: 100%;
   padding: 5px;
   text-transform: uppercase;
 }
