@@ -1,0 +1,9 @@
+{
+  "env": { "node": true, "browser": false },
+  "rules": {
+    "no-console": "off",
+    "no-restricted-syntax": "off",
+    "no-await-in-loop": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
+  }
+}
