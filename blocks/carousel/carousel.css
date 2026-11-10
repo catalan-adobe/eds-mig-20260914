@@ -8,9 +8,13 @@ main > .section > .carousel-wrapper {
   margin-bottom: 4em;
 }
 
-/* an image-only slide sits 7px down, and its controls fit in the 40px below the image */
+/* an image-only slide sits 7px down, and its controls fit in the 48px below the image */
 .carousel.carousel-controlled:has(.carousel-slide-image:only-child) {
   margin-bottom: 0;
+}
+
+.carousel.carousel-controlled:has(.carousel-slide-image:only-child) .carousel-controls {
+  height: 27px;
 }
 
 .carousel.carousel-controlled .carousel-slide-image:only-child {
@@ -118,6 +122,7 @@ main > .section > .carousel-wrapper {
 }
 
 .carousel .carousel-buttons button {
+  vertical-align: top;
   margin-right: 1em;
   padding: 1px 0 1px 6px;
   border: 0;
@@ -125,9 +130,15 @@ main > .section > .carousel-wrapper {
   cursor: pointer;
 }
 
+.carousel .carousel-buttons {
+  height: 27px;
+}
+
 .carousel .carousel-buttons img {
   width: 20px;
   height: 20px;
+  display: block;
+  margin-bottom: 2px;
 }
 
 @media (width < 768px) {

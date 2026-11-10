@@ -375,7 +375,7 @@ main > .section.divider-medium::after {
 .breadcrumb ol > li + li::before {
   content: '';
   display: inline-block;
-  width: 1em;
+  width: 1.2em;
   height: 1em;
   margin-right: 5px;
   background-color: var(--brand-color);

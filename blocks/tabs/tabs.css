@@ -22,17 +22,27 @@
   color: #fff;
 }
 
+.tabs .tabs-panel {
+  display: flow-root;
+}
+
 .tabs .tabs-panel[hidden] {
   display: none;
 }
 
 .tabs .tabs-panel picture {
   display: block;
-  margin: 7px 0;
+  margin: 7px 0 14px;
 }
 
 .tabs .tabs-panel p:has(> picture) {
+  display: flow-root;
+  margin-bottom: 0;
   line-height: 1.5;
+}
+
+.tabs .tabs-panel p:has(> picture) > em {
+  float: left;
 }
 
 .tabs .tabs-panel img {

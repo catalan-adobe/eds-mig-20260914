@@ -94,10 +94,12 @@ function buildBreadcrumb(main) {
     link.href = href;
     link.textContent = label;
     item.append(link);
-    list.append(item);
+    list.append(item, ' ');
   });
   const current = document.createElement('li');
-  current.textContent = document.title;
+  const title = document.createElement('span');
+  title.textContent = document.title;
+  current.append(title);
   current.setAttribute('aria-current', 'page');
   list.append(current);
   nav.append(list);

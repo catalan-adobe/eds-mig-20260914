@@ -49,11 +49,14 @@ function buildControls(block, slides) {
   next.addEventListener('click', () => show(current + 1));
   const buttons = document.createElement('div');
   buttons.className = 'carousel-buttons';
-  buttons.append(previous, next);
+  buttons.append(previous, ' ', next);
   const controls = document.createElement('div');
   controls.className = 'carousel-controls';
   controls.append(indicators, buttons);
   block.append(controls);
+  if (slides.length === 1) {
+    controls.querySelectorAll('button').forEach((button) => { button.disabled = true; });
+  }
   show(0);
 }
 
@@ -61,6 +64,7 @@ function buildControls(block, slides) {
  * Rows are slides: an image, then optional content (title, text, button).
  * The `static` variant is a plain hero with no controls.
  * Any other carousel shows a dot and two arrows, also with one slide.
+ * With one slide the buttons are disabled, so Tab skips them.
  * Slides never advance on their own.
  * @param {Element} block The carousel block element
  */
