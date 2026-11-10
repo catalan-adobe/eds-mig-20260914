@@ -53,6 +53,7 @@ Section styles, set in `Section Metadata`:
 | `divider` | A rule below the section |
 | `underline` | The heading 1 has a yellow underline |
 | `small-text` | Paragraphs are small |
+| `no-gutter` | No side padding. The page has no grid |
 | `aside` | A right column. It sits beside the section before it |
 | `aside-left` | A left column. It sits beside the section after it |
 

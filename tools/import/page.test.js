@@ -227,6 +227,13 @@ test('magazine: locked teasers merge into one cards locked block', () => {
   assert.equal(locked[0].querySelector('a'), null);
 });
 
+test('a page without a grid has no-gutter sections; a page with a grid has none', () => {
+  const members = convert('members-only', '/ca/en/magazine/members-only');
+  assert.match(sectionStyle(members.querySelector('h1')), /no-gutter/);
+  const faqs = convert('faqs', '/us/en/faqs');
+  assert.doesNotMatch(sectionStyle(faqs.querySelector('h1')), /no-gutter/);
+});
+
 test('search page becomes a search block with the placeholder and the toggle label', () => {
   const doc = convert('search', '/us/en/ai-powered-search');
   const [placeholder, toggle] = rows(doc, '.search').map(text);

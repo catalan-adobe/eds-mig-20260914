@@ -62,8 +62,12 @@ function metadata(document) {
 export function convertPage(html, path, prefix) {
   const { document } = parseHTML(html);
   document.querySelectorAll(FRAGMENTS).forEach((el) => el.remove());
+  const noGrid = !document.querySelector('main [class*="aem-Grid--"]');
   const sections = assemble(walk(document.querySelector('body > .root'), { path, prefix }), path)
-    .map(({ parts, styles }) => section(parts.map(render), [...new Set(styles)].join(', ')));
+    .map(({ parts, styles }) => {
+      const all = noGrid ? [...styles, 'no-gutter'] : styles;
+      return section(parts.map(render), [...new Set(all)].join(', '));
+    });
   return pageHtml([...sections, section([metadata(document)])]);
 }
 
