@@ -230,6 +230,7 @@
   position: relative;
   flex-basis: 388px;
   flex-direction: column-reverse;
+  margin-bottom: 0;
   padding: 48px 14px 0;
 }
 

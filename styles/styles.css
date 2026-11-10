@@ -358,6 +358,12 @@ main > .section.divider::after {
   font-weight: 600;
 }
 
+@media (width < 768px) {
+  .breadcrumb ol {
+    font-size: var(--font-size-xs);
+  }
+}
+
 /* a side column pairs with one neighbour: the section before `aside`, after `aside-left` */
 .section.aside h3 {
   margin-top: 45px;

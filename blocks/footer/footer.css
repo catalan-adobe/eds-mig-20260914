@@ -94,6 +94,7 @@ footer .footer .footer-legal {
 
 footer .footer .footer-legal p {
   margin-bottom: 13.5px;
+  text-align: justify;
   font-size: var(--font-size-xs);
   line-height: 15px;
 }
@@ -101,6 +102,28 @@ footer .footer .footer-legal p {
 footer .footer .footer-legal a {
   color: var(--lighter-color);
   text-decoration: underline;
+}
+
+@media (width < 1025px) {
+  footer .footer .footer-top > div {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    padding: 0 14px;
+  }
+
+  footer .footer .footer-brand .icon {
+    width: 96px;
+  }
+
+  footer .footer ul a {
+    padding: 7px 17px;
+  }
+
+  footer .footer .footer-follow,
+  footer .footer .footer-social {
+    grid-column: 1 / -1;
+    padding: 0;
+  }
 }
 
 @media (width >= 1025px) {
@@ -125,6 +148,6 @@ footer .footer .footer-legal a {
   }
 
   footer .footer .footer-legal {
-    margin-top: 57px;
+    margin-top: 40px;
   }
 }

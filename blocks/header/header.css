@@ -90,6 +90,7 @@ header .nav-language > ul {
   background-color: var(--dark-color);
   box-shadow: 0 5px 10px 0 rgb(0 0 0 / 25%);
   color: var(--inverse-text-color);
+  line-height: 1.5;
   text-transform: uppercase;
 }
 
@@ -183,8 +184,8 @@ header .nav-hamburger {
   position: absolute;
   top: 15px;
   left: 10px;
-  width: 40px;
-  height: 44px;
+  width: 50px;
+  height: 50px;
   padding: 8px;
   border: 0;
   background: none;
@@ -192,8 +193,8 @@ header .nav-hamburger {
 }
 
 header .nav-hamburger img {
-  width: 28px;
-  height: 28px;
+  width: 34px;
+  height: 34px;
 }
 
 header .nav-sections ul {

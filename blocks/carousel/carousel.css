@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity -- the rule compares selectors for unrelated elements */
 main > .section > .carousel-wrapper {
   max-width: 1680px;
   padding: 0;
@@ -36,8 +37,12 @@ main > .section > .carousel-wrapper {
 
 .carousel .carousel-slide-image img {
   width: 100%;
-  height: 400px;
+  max-height: 400px;
   object-fit: cover;
+}
+
+.carousel .carousel-slide-image:only-child img {
+  height: 400px;
 }
 
 /* a lone image keeps the space its controls took on the source site */
@@ -114,6 +119,10 @@ main > .section > .carousel-wrapper {
 }
 
 @media (width < 768px) {
+  .carousel.carousel-multiple {
+    margin-bottom: 14px;
+  }
+
   .carousel .carousel-indicators {
     justify-content: flex-start;
     padding: 14px 0 0 14px;
@@ -123,6 +132,7 @@ main > .section > .carousel-wrapper {
 @media (width >= 1165px) {
   .carousel .carousel-slide-image:not(:only-child) img {
     height: 640px;
+    max-height: none;
   }
 
   .carousel .carousel-slide-content {
