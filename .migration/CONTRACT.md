@@ -872,7 +872,7 @@ Page: `/us/en/ai-powered-search`. Source: `.cmp-contentaisearch` and
 ```
 
 The cell is the input placeholder. All other labels are fixed strings, as in the source:
-"Search", "Clear", "Show AI-generated summary", "Results layout", "Cards", "List",
+"Search", "Show AI-generated summary", "Results layout", "Cards", "List",
 "Search results", "Load more results".
 
 ### 14. `columns`
@@ -1052,8 +1052,7 @@ header is sent), so the migrated site cannot call them.
 - Initial state: only the search field and the toggle are visible. This is what visual QA
   compares.
 - Field: full width, 32 px high, 1 px #ccc border, search icon at the left (the source
-  SVG data URI), clear button (x) at the right when the field has text; clearing empties
-  the results.
+  SVG data URI). No clear button: the source hides its own.
 - Toggle "Show AI-generated summary": rendered, on by default, yellow when on. It has no
   effect: the generative answer is NOT reproduced (the source option
   `data-cmp-gensearch-error-fallback="RESULTS_ONLY"` shows results only when the answer
