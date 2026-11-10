@@ -1,0 +1,95 @@
+/* source: .cmp-teaser--featured, .cmp-teaser__* */
+.teaser > div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.teaser .teaser-image {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.teaser .teaser-image picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.teaser .teaser-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  object-position: top;
+}
+
+.teaser .teaser-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  padding: 3.5em 2em 2em;
+  background-color: var(--color-brand-third);
+}
+
+.teaser .teaser-pretitle {
+  font-weight: 700;
+}
+
+.teaser .teaser-title {
+  margin: 0.5em 0;
+  font-family: var(--font-family-serif);
+}
+
+.teaser .teaser-description {
+  margin: 0;
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-compact);
+  text-align: left;
+}
+
+/* as on the source, the floated link does not add to the height of its paragraph */
+.teaser .teaser-action {
+  margin: 1em 0;
+  line-height: var(--line-height-body);
+  text-align: left;
+}
+
+.teaser .teaser-action a {
+  float: left;
+  padding: 1em 2.5em;
+  background-color: var(--color-brand-primary);
+  color: var(--color-text);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+}
+
+@media (width < 768px) {
+  .teaser > div {
+    flex-direction: column-reverse;
+  }
+
+  .teaser .teaser-image {
+    flex: 1;
+  }
+
+  /* the image stays inline here: the gap under its baseline is part of the source layout */
+  .teaser .teaser-image picture {
+    height: auto;
+  }
+
+  .teaser .teaser-image img {
+    display: inline;
+    height: auto;
+  }
+
+  .teaser .teaser-content {
+    margin-top: -1em;
+  }
+}

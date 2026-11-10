@@ -1,0 +1,73 @@
+/* source: .cmp-accordion and .cmp-accordion__* */
+.accordion .accordion-header {
+  margin: 0;
+}
+
+/* the source button keeps the browser's own button font: 13.33px, line-height normal */
+.accordion .accordion-button {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid var(--color-brand-third);
+  padding: 1em;
+  background: none;
+  color: buttontext;
+  font: 400 13.3333px / normal arial, sans-serif;
+  text-align: left;
+  cursor: pointer;
+}
+
+.accordion .accordion-button[aria-expanded="true"] {
+  border: none;
+}
+
+.accordion .accordion-title {
+  padding-left: 0.5em;
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+}
+
+.accordion .accordion-icon {
+  float: right;
+}
+
+.accordion .accordion-icon::before {
+  content: "\e911";
+  font-family: var(--font-family-icon);
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.accordion .accordion-button[aria-expanded="true"] .accordion-icon::before {
+  content: "\e910";
+}
+
+.accordion .accordion-panel {
+  padding: 0.5em 0 0 0.5em;
+  font-size: var(--font-size-small);
+  animation: accordion-fade-in 0.5s both;
+}
+
+.accordion .accordion-panel[hidden] {
+  display: none;
+}
+
+.accordion .accordion-panel p {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-compact);
+}
+
+@keyframes accordion-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

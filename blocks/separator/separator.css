@@ -1,0 +1,17 @@
+/* The margins sit on the <hr>: they collapse through the block, as on the source. */
+.separator hr {
+  margin: 4rem 0;
+  border: 1px solid #ebebeb;
+}
+
+.separator.small hr {
+  margin: 1em 0;
+}
+
+.separator.medium hr {
+  margin: 2em 0;
+}
+
+.separator.hidden hr {
+  border: none;
+}

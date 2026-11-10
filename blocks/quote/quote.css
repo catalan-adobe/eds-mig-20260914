@@ -1,0 +1,30 @@
+.quote {
+  margin: 1em 0;
+  padding: 1em;
+  background-color: var(--color-brand-third);
+}
+
+.quote blockquote {
+  margin: 0 0 0.5em;
+  padding: 14px;
+  border: none;
+  font-family: var(--font-family-serif);
+  font-size: var(--font-size-h2);
+}
+
+.quote blockquote::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 0.25em;
+  width: 80px;
+  border-bottom: 2px solid var(--color-brand-primary);
+}
+
+.quote .quote-attribution {
+  font-family: var(--font-family-sans);
+}
+
+.quote .quote-attribution u {
+  text-decoration: none;
+}

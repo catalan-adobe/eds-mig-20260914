@@ -3,31 +3,40 @@
   flex-direction: column;
 }
 
-.columns img {
-  width: 100%;
-}
-
 .columns > div > div {
-  order: 1;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  padding: 0 var(--gutter);
 }
 
-.columns > div > .columns-img-col {
-  order: 0;
+/* the source has a hidden separator (4rem above and below) before the title */
+.columns > div > .columns-text {
+  padding-top: 8rem;
 }
 
-.columns > div > .columns-img-col img {
-  display: block;
+.columns > div > .columns-text > :first-child {
+  margin-top: 0;
 }
 
-@media (width >= 900px) {
+/* the picture stays inline: the gap under its baseline is part of the source layout */
+.columns > div > .columns-picture p {
+  margin: 0;
+  line-height: var(--line-height-body);
+}
+
+.columns > div > .columns-picture img {
+  width: 100%;
+  height: auto;
+  margin: 7px 0;
+}
+
+@media (width >= 768px) {
   .columns > div {
-    align-items: center;
-    flex-direction: unset;
-    gap: 24px;
+    flex-direction: row;
   }
 
   .columns > div > div {
-    flex: 1;
-    order: unset;
+    width: 50%;
   }
 }
