@@ -329,11 +329,19 @@ const mediaPrompt = `YOUR ROLE: media operator (label: media). A mechanical job:
 The importer can copy every image of the fetched pages into DA ahead of the page rollout. Read ${M}/import/README.md, then start: ${M}/bin/detach /tmp/f52s/media/run.log node ${M}/import/import.mjs --all --media (create /tmp/f52s/media first). Poll the log every few minutes with sleep 240 between polls until it ends; it can take over an hour. If the log shows FETCH-STOP or bot protection, stop polling and report it. If the command fails for another reason, report the error text; do not fix the importer.
 Return JSON: commit (empty string), status, summary (images copied, already present, failed), requests (errors the importer owner must fix, exact), remaining.`;
 
+// the operator moved block work to Opus (medium) mid-run: these groups had not completed yet
+const OPUS_GROUPS = ['listing', 'html', 'rail', 'tiles'];
 const blockJobs = [
-  ...groups.map((g) => ({ id: `group-${g.id}`, prompt: groupPrompt(g), model: FABLE })),
+  ...groups.map((g) => ({
+    id: `group-${g.id}`,
+    prompt: groupPrompt(g),
+    ...(OPUS_GROUPS.includes(g.id) ? { model: OPUS, thinking: 'medium' } : { model: FABLE }),
+  })),
   { id: 'media', prompt: mediaPrompt, model: SONNET },
 ];
-const blockResults = await parallel(blockJobs.map((job) => () => soft(job.id, run(job.prompt, { label: job.id, model: job.model, schema: buildSchema }))));
+const blockResults = await parallel(blockJobs.map((job) => () => soft(job.id, run(job.prompt, {
+  label: job.id, model: job.model, schema: buildSchema, ...(job.thinking ? { thinking: job.thinking } : {}),
+}))));
 blockResults.forEach((r, i) => {
   record(blockJobs[i].id, 'blocks', r);
   if (r !== null) r.requests.forEach((q) => pendingRequests.push(`${blockJobs[i].id}: ${q}`));
@@ -387,7 +395,7 @@ async function fixRound(tag, work) {
   const results = await parallel(owners.map((owner) => () => {
     const label = `fix-${tag}-${owner}`;
     const requests = owner === 'global' ? [...(requestsFor.get('global') ?? []), ...pendingRequests] : (requestsFor.get(owner) ?? []);
-    return soft(label, run(fixPrompt(label, owner, work.get(owner), acceptedFor(owner), requests), { label, model: FABLE, schema: fixSchema }));
+    return soft(label, run(fixPrompt(label, owner, work.get(owner), acceptedFor(owner), requests), { label, model: OPUS, thinking: 'medium', schema: fixSchema }));
   }));
   requestsFor.clear();
   pendingRequests = [];
