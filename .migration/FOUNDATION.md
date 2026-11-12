@@ -55,9 +55,9 @@ Media queries: `(width >= 730px)`, `(width < 730px)`, `(width >= 992px)`, `(widt
 2. Sections, then the **section grid**: neighbouring sections with `span-N` become
    `div.section-row > div.section-col.span-N[.offset-N] > div.section…`. A `stack` section
    joins the column before it. A row ends when the spans pass 12 or at a section with the style
-   `row`. The row takes `light-grey` / `white` of its first section and every `band-*` and
-   `divider` of its sections. To pin a rail: `.section-col:has(.toc) { position: sticky;
-   top: …; align-self: start; }`.
+   `row`. The row takes `light-grey` / `white`, `band-*` and `divider` of its **first**
+   section; `band-*` on a later section stays that section's own spacing. To pin a rail:
+   `.section-col:has(.toc) { position: sticky; top: …; align-self: start; }`.
 3. Blocks (`decorateBlocks`).
 4. Buttons, in default content and in block cells:
    - `<p><strong><a>` becomes `p.button-wrapper > a.button.primary`, `<em>` gives
@@ -91,10 +91,11 @@ All of CONTRACT.md a). Notes:
   container is `.site-content` in the source get 15 / 0 / 10 px: `body.site-content` (page
   metadata `theme`), and the templates that always have it (`campaign-landing-page`,
   `contact-us-landing-page`, `video-landing-page`, `form`, `marketo-thankyou-page`).
-- Also supported, and needed from the importer (see the foundation's requests): `no-title`
-  (a `text` without title whose body starts with `h2`), `row` (first section of a grid row
-  that follows a row narrower than 12), `cta` (`callToAction`: the Bootstrap button),
-  `buttons-left`.
+- Also supported, and needed from the importer (the foundation's requests): `no-title` (a
+  `text` without title whose body starts with `h2`), `row` (first section of a grid row that
+  follows a row narrower than 12), `cta` and `cta-full` (`callToAction`: the Bootstrap button,
+  and its `fullWidth` variant), the page metadata `theme: site-content`.
+- `buttons-left` is supported too (the importer writes it).
 
 ## Helpers
 

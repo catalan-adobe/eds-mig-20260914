@@ -37,8 +37,7 @@ if (window.trustedTypes && window.trustedTypes.createPolicy) {
   });
 }
 
-const ROW_STYLE = /^(band-(top|bottom)-(xs|sm|md)|divider)$/;
-const BACKGROUNDS = ['light-grey', 'white'];
+const ROW_STYLE = /^(band-(top|bottom)-(xs|sm|md)|divider|light-grey|white)$/;
 const ZOOM_LABEL = 'Click to see the detail';
 
 /**
@@ -160,7 +159,7 @@ function decorateDefaultContent(main) {
  * The section grid of the contract: neighbouring sections with a `span-N` style become one
  * `div.section-row` of `div.section-col` columns. A `stack` section stays in the column of the
  * section before it. A row ends when its spans pass 12, or at a section with the style `row`.
- * The row takes the background of its first section and every `band-*` and `divider` style.
+ * The row takes the background, the `band-*` spacing and the `divider` of its first section.
  * @param {HTMLElement} main The main container element
  */
 function buildSectionRows(main) {
@@ -182,7 +181,7 @@ function buildSectionRows(main) {
         row.className = 'section-row';
         section.before(row);
         width = 0;
-        BACKGROUNDS.filter((c) => styles.includes(c)).forEach((c) => {
+        styles.filter((c) => ROW_STYLE.test(c)).forEach((c) => {
           row.classList.add(c);
           section.classList.remove(c);
         });
@@ -193,10 +192,6 @@ function buildSectionRows(main) {
       row.append(col);
       row.style.setProperty('--cols', row.children.length);
     }
-    styles.filter((c) => ROW_STYLE.test(c)).forEach((c) => {
-      row.classList.add(c);
-      section.classList.remove(c);
-    });
     col.append(section);
   });
 }

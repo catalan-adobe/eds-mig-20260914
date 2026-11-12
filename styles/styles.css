@@ -262,7 +262,8 @@ footer .footer[data-block-status='loaded'] {
   text-decoration: underline;
 }
 
-:where(a:focus) {
+/* the source removes the focus ring; keyboard focus keeps it */
+:where(a:focus:not(:focus-visible)) {
   outline: 0;
 }
 
@@ -766,17 +767,24 @@ main .icon img {
   vertical-align: baseline;
 }
 
-/* `callToAction` (section style `cta`): the source's Bootstrap button */
-.section.cta .button-wrapper {
+/* `callToAction` (section styles `cta`, and `cta-full` for its full-width variant): the
+   source's Bootstrap button */
+.section:is(.cta, .cta-full) .button-wrapper {
   flex-direction: column;
   gap: 10px;
   margin: 20px 0 10px;
 }
 
-.section.cta a.button {
+.section.cta-full .button-wrapper {
+  display: inline-flex;
+  align-items: stretch;
+}
+
+.section:is(.cta, .cta-full) a.button {
   display: block;
   min-height: 0;
   overflow: hidden;
+  border: 0;
   border-radius: 3px;
   padding: 10px 30px;
   background-color: var(--color-purple-light);
@@ -789,12 +797,12 @@ main .icon img {
   white-space: nowrap;
 }
 
-.section.cta a.button:is(:hover, :active) {
+.section:is(.cta, .cta-full) a.button:is(:hover, :active) {
   text-decoration: underline;
 }
 
 @media (width >= 730px) {
-  .section.cta .button-wrapper {
+  .section:is(.cta, .cta-full) .button-wrapper {
     display: block;
     margin: 0;
     padding-top: 0.2em;
@@ -808,10 +816,19 @@ main .icon img {
     margin: 0 7.5px 10px;
     vertical-align: middle;
   }
+
+  .section.cta-full a.button {
+    max-width: none;
+    margin: 0 0 10px;
+  }
+
+  .section.cta-full a.button:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media (width >= 1200px) {
-  .section.cta a.button {
+  .section:is(.cta, .cta-full) a.button {
     font-size: 16px;
   }
 }
