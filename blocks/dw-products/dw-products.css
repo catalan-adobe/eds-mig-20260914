@@ -1,0 +1,172 @@
+.dw-products .dw-title {
+  text-align: center;
+}
+
+.dw-products .dw-title > * {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: var(--line-height-heading);
+  color: var(--color-purple);
+}
+
+.dw-products .dw-tabs {
+  margin-top: 40px;
+  padding-bottom: 60px;
+}
+
+.dw-products .dw-tabs-nav {
+  display: none;
+}
+
+.dw-products .dw-tabs-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  line-height: var(--line-height-body);
+}
+
+.dw-products .dw-panel:not(.active) .dw-panel-body {
+  display: none;
+}
+
+.dw-products .dw-panel-header {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-left: 3px solid #7921b0;
+  background-color: var(--color-bg-light);
+  font: inherit;
+  text-align: left;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.dw-products .dw-panel-title {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 28px 10px 10px;
+}
+
+.dw-products .dw-panel-header::after {
+  content: '+';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.dw-products .dw-panel.active .dw-panel-header::after {
+  content: '-';
+  font-size: 42px;
+}
+
+.dw-products .dw-products-section,
+.dw-products .dw-downloads-section {
+  margin: 16px 0 24px;
+}
+
+.dw-products table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #ccc;
+}
+
+.dw-products td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  text-align: left;
+}
+
+.dw-products .dw-downloads-section table {
+  margin-top: 15px;
+}
+
+.dw-products .dw-downloads-section td:first-child {
+  width: 25%;
+}
+
+.dw-products .dw-downloads-section tr:first-child > td:last-child {
+  font-weight: 400;
+}
+
+.dw-products .dw-documentation-type {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.dw-products .dw-toggle {
+  color: var(--color-link);
+  cursor: pointer;
+}
+
+@media (width >= 730px) {
+  .dw-products .dw-title > * {
+    font-size: 32px;
+  }
+
+  .dw-products .dw-tabs {
+    margin-top: 35px;
+    padding-bottom: 80px;
+  }
+
+  .dw-products .dw-tabs-nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .dw-products .dw-tab-item {
+    flex: 1;
+    border-bottom: 1px solid var(--color-grey-text);
+    text-align: center;
+  }
+
+  .dw-products .dw-tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 20px 24px;
+    border: 0;
+    border-bottom: 3px solid transparent;
+    background: none;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--color-text);
+    cursor: pointer;
+  }
+
+  .dw-products .dw-tab:hover,
+  .dw-products .dw-tab.active {
+    border-bottom-color: #7921b0;
+  }
+
+  .dw-products .dw-tab.active {
+    background-color: var(--color-bg-light);
+  }
+
+  .dw-products .dw-tabs-content {
+    display: block;
+    padding-top: 30px;
+  }
+
+  .dw-products .dw-panel-header {
+    display: none;
+  }
+
+  .dw-products .dw-products-section,
+  .dw-products .dw-downloads-section {
+    margin: 0;
+  }
+}
