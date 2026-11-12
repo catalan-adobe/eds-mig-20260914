@@ -1,0 +1,76 @@
+.author-profile .author-profile-image img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-profile h2 {
+  margin: 15px 0;
+  color: #3c3c3c;
+  font-size: 30px;
+  text-align: center;
+}
+
+.author-profile p {
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+.author-profile .author-profile-follow {
+  margin: 0 0 10px;
+  color: var(--color-purple-light);
+  font-size: 16px;
+}
+
+.author-profile .author-profile-links {
+  margin: 0;
+  font-size: var(--body-font-size);
+}
+
+.author-profile .author-profile-links a {
+  display: inline-block;
+  padding: 0 10px;
+  color: var(--color-purple-light);
+  text-decoration: none;
+}
+
+.author-profile .author-profile-links a:first-of-type {
+  padding-left: 0;
+}
+
+.author-profile .author-profile-links .icon {
+  font-size: 28px;
+}
+
+.author-profile .author-profile-links .icon:hover {
+  color: var(--color-purple);
+}
+
+@media (width >= 730px) {
+  .author-profile .author-profile-image img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .author-profile h2 {
+    font-size: 22px;
+  }
+
+  .author-profile p {
+    font-size: 14px;
+  }
+
+  .author-profile .author-profile-links a {
+    padding: 0 7.5px;
+  }
+}
+
+@media (width >= 992px) {
+  .author-profile .author-profile-image img {
+    width: 160px;
+    height: 160px;
+  }
+}

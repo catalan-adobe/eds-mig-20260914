@@ -1,0 +1,33 @@
+/* padding, not margin: the source's 30px never collapses with the content above */
+.spotlight-wrapper {
+  padding-top: 30px;
+}
+
+.spotlight {
+  padding: 30px;
+  border: 2px solid var(--color-purple);
+}
+
+.spotlight .spotlight-title {
+  margin: -46px 0 25px;
+  font-size: 30px;
+}
+
+.spotlight .spotlight-title span {
+  padding: 0 15px 30px;
+  background-color: #fff;
+  color: var(--color-purple);
+}
+
+.spotlight.left .spotlight-title {
+  margin-left: -32px;
+}
+
+.spotlight.left .spotlight-title span {
+  padding: 0 15px 15px 0;
+}
+
+/* the source's rows are clearfixed: the margins of the content stay inside */
+.spotlight .spotlight-content {
+  display: flow-root;
+}

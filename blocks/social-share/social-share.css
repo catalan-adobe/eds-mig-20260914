@@ -1,0 +1,29 @@
+/* next to a table of contents the source drops the component's own spacing on phones */
+@media (width <= 730px) {
+  main:has(.toc) .section.social-share-container {
+    --top: 0px;
+    --bottom: 0px;
+  }
+}
+
+.social-share a {
+  display: inline-block;
+  padding: 12px 10px 0;
+  color: var(--color-purple-light);
+  text-decoration: none;
+}
+
+.social-share a:first-child {
+  padding-left: 0;
+}
+
+.social-share .icon {
+  font-size: 28px;
+}
+
+@media (width >= 730px) {
+  .social-share a {
+    padding: 0 7.5px;
+    font-size: 24px;
+  }
+}
