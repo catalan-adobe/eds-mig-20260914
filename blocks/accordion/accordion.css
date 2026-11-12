@@ -1,0 +1,106 @@
+/* the source's `faq`: .component-faq .accordion-list. Its em values are the body's font size */
+.accordion {
+  margin-top: calc(2 * var(--body-font-size));
+  padding-bottom: calc(4 * var(--body-font-size));
+}
+
+.accordion .accordion-item {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.accordion .accordion-item.open {
+  padding-bottom: 0;
+}
+
+.accordion .accordion-heading {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: var(--font-weight-body);
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+/* the source's heading sits 1 px lower in its button: 9 px above, 7 px below */
+.accordion .accordion-title {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 9px 24px 7px 8px;
+  transition: 0.5s;
+  border: 0;
+  border-radius: var(--radius);
+  background: none;
+  color: inherit;
+  text-align: left;
+}
+
+.accordion .accordion-title:focus-visible {
+  outline: 1px dashed #2e3c4d;
+  outline-offset: -1px;
+}
+
+.accordion .accordion-item.open .accordion-title {
+  background: var(--color-bg-light);
+}
+
+/* Font Awesome's caret-up; closed, it is the same shape upside down (caret-down) */
+.accordion .accordion-title::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  width: 10px;
+  height: 16px;
+  transform: translateY(-50%) scaleY(-1);
+  background-color: currentcolor;
+  mask: url('../../icons/caret-up.svg') center / contain no-repeat;
+}
+
+.accordion .accordion-item.open .accordion-title::after {
+  transform: translateY(-50%);
+}
+
+.accordion .accordion-detail {
+  margin-top: 16px;
+  padding: 0 8px 24px;
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: var(--font-weight-body);
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+.accordion .accordion-detail > * {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+.accordion .accordion-detail ul {
+  list-style: disc;
+}
+
+/* a list that holds a list arrives with its items in paragraphs */
+.accordion .accordion-detail li > p {
+  margin: 0;
+  font-size: inherit;
+}
+
+@media (width <= 730px) {
+  .accordion .accordion-title {
+    padding: 9px 48px 7px 24px;
+  }
+
+  .accordion .accordion-title::after {
+    right: 24px;
+  }
+
+  .accordion .accordion-detail {
+    padding: 0 16px 24px;
+  }
+}

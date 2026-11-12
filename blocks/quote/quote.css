@@ -1,0 +1,362 @@
+/* the source's `quote`: .component-quote. Rows of one block are 30 px apart */
+.quote {
+  display: grid;
+  gap: var(--space-sm);
+}
+
+.quote .quote-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 0;
+}
+
+.quote .quote-card {
+  display: block;
+  width: 100%;
+  max-width: 1032px;
+  padding: 24px;
+  border: 1px solid rgb(85 85 85 / 5%);
+  border-radius: var(--radius);
+  background: var(--color-bg-page);
+  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+  color: var(--color-text);
+  font-weight: var(--font-weight-body);
+  line-height: var(--line-height-body);
+}
+
+/* a linked quote: name and role take the link colour, the text does not */
+.quote a.quote-card {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+.quote a.quote-card:hover {
+  color: var(--color-link-hover);
+}
+
+.quote a.quote-card:focus-visible {
+  outline: 1px dashed #2e3c4d;
+  outline-offset: 2px;
+}
+
+.quote .quote-text {
+  display: -webkit-box;
+  margin: 0 0 16px;
+  overflow: hidden;
+  color: var(--color-text);
+  font-size: 16px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+}
+
+.quote .quote-text::before {
+  content: ' ';
+  display: inline-block;
+  width: 28px;
+  height: 24px;
+  margin-right: 6px;
+  background: url('../../icons/quote-mark.svg') bottom / contain no-repeat;
+}
+
+.quote.cjk .quote-text::before {
+  width: 21px;
+  background-image: url('../../icons/quote-mark-cjk.svg');
+}
+
+.quote .quote-attribution {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  font-size: 12px;
+}
+
+.quote .quote-attribution p {
+  width: 100%;
+  margin: 0;
+  font-size: inherit;
+}
+
+.quote .quote-media {
+  display: flex;
+  align-items: center;
+  height: 45px;
+}
+
+.quote .quote-media:empty {
+  display: none;
+}
+
+.quote .quote-media picture {
+  display: contents;
+}
+
+.quote .quote-media img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 45px;
+}
+
+/* a portrait is square in the source: its 60 px box with round corners is the image */
+.quote.headshot .quote-media img {
+  border-radius: 60px;
+}
+
+/* carousel: one quote in view */
+.quote.carousel {
+  display: block;
+}
+
+/* the source's `carousel` component: the quotes are one height, the others fade */
+.quote.carousel:not(.fit) .slider {
+  padding-bottom: 24px;
+}
+
+.quote.carousel:not(.fit) .quote-list {
+  display: grid;
+  transform: none;
+}
+
+.quote.carousel:not(.fit) .quote-item {
+  grid-area: 1 / 1;
+  transition: opacity 0.2s linear, visibility 0.2s;
+}
+
+.quote.carousel:not(.fit) .quote-item[aria-hidden='true'] {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.quote.carousel:not(.fit) .quote-card {
+  width: 98%;
+  margin: 1%;
+}
+
+.quote.carousel:not(.fit) .quote-text {
+  height: 186px;
+}
+
+.quote.carousel:not(.fit) .quote-attribution {
+  min-height: 39px;
+}
+
+.quote.carousel:not(.fit) .quote-media {
+  display: flex;
+}
+
+/* `fit`, the source's `contentCarousel`: each quote keeps its height, and the quotes slide.
+   There the space below a quote lies inside its slide, above the dots */
+.quote.carousel.fit .slider {
+  margin-bottom: calc(-1 * var(--bottom));
+}
+
+.quote.carousel.fit .quote-list {
+  align-items: flex-start;
+}
+
+.quote.carousel.fit .quote-item {
+  padding-bottom: var(--bottom);
+}
+
+.quote .slider-prev,
+.quote .slider-next {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  bottom: 16px;
+  left: 15px;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 1px solid var(--color-grey-dark);
+  border-radius: 20px;
+  background: #fff;
+  color: var(--color-grey-dark);
+  font-size: 18px;
+}
+
+.quote .slider-next {
+  right: 15px;
+  left: auto;
+}
+
+.quote .slider-prev:is(:hover, :focus),
+.quote .slider-next:is(:hover, :focus) {
+  background: var(--color-bg-light);
+}
+
+.quote .slider-prev::before,
+.quote .slider-next::before {
+  content: '';
+  width: 0.625em;
+  height: 1em;
+  background-color: currentcolor;
+  mask: url('../../icons/chevron-left-light.svg') center / contain no-repeat;
+}
+
+.quote .slider-next::before {
+  mask-image: url('../../icons/chevron-right-light.svg');
+}
+
+.quote .slider-dots {
+  display: flex;
+  justify-content: center;
+  width: calc(100% - 112px);
+  max-width: 342px;
+  margin: 28px auto 0;
+}
+
+.quote .slider-dot {
+  position: relative;
+  flex: 0 1 50px;
+  min-width: 0;
+  height: 8px;
+  margin: 0 8px 0 0;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+.quote .slider-dot:last-child {
+  margin: 0;
+}
+
+.quote .slider-dot::before {
+  content: '';
+  position: absolute;
+  bottom: 2.5px;
+  left: 0;
+  width: 100%;
+  transition: 0.5s;
+  border-bottom: 2px solid var(--color-border-light);
+}
+
+.quote .slider-dot[aria-current]::before {
+  transition: 0.3s;
+  border-color: var(--color-grey-dark);
+}
+
+.quote.fit .slider-prev {
+  bottom: -10px;
+  left: 0;
+}
+
+.quote.fit .slider-next {
+  right: -5px;
+  bottom: -10px;
+}
+
+@media (width >= 730px) {
+  .quote .quote-card {
+    padding: 40px 32px;
+  }
+
+  .quote .quote-text {
+    margin-bottom: 24px;
+    -webkit-line-clamp: 4;
+  }
+
+  .quote .quote-text::before {
+    width: 46px;
+    height: 40px;
+    margin-right: 8px;
+  }
+
+  .quote .quote-attribution {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+
+  .quote .quote-attribution p {
+    width: auto;
+  }
+
+  .quote .quote-attribution p:first-child::after {
+    content: '|';
+    padding: 0 6px;
+  }
+
+  .quote .quote-media {
+    justify-content: flex-end;
+    height: 60px;
+  }
+
+  .quote .quote-media img {
+    max-height: 60px;
+  }
+
+  /* the arrows leave the row of the dots and sit beside the quote */
+  .quote.carousel:not(.fit) .slider {
+    padding: 0;
+  }
+
+  .quote.carousel .slider-viewport {
+    margin: 0 40px;
+  }
+
+  .quote.carousel:not(.fit) .quote-text {
+    height: 125px;
+  }
+
+  .quote.carousel:not(.fit) .quote-attribution {
+    min-height: 25px;
+  }
+
+  .quote.carousel.fit .quote-list {
+    align-items: center;
+  }
+
+  .quote .slider-prev,
+  .quote .slider-next {
+    top: calc(50% - 36px);
+    bottom: auto;
+    left: -9px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .quote .slider-next {
+    right: -9px;
+    left: auto;
+  }
+
+  /* the source centres them on the carousel and the space above its quotes */
+  .quote.fit .slider-prev,
+  .quote.fit .slider-next {
+    top: calc(50% - var(--top) / 2);
+    bottom: auto;
+    left: -10px;
+  }
+
+  .quote.fit .slider-next {
+    right: -10px;
+    left: auto;
+  }
+}
+
+@media (width >= 1400px) {
+  .quote.carousel .slider-viewport {
+    margin: 0;
+  }
+
+  .quote .slider-prev {
+    left: -95px;
+  }
+
+  .quote .slider-next {
+    right: -95px;
+  }
+
+  .quote.fit .slider-prev {
+    left: -96px;
+  }
+
+  .quote.fit .slider-next {
+    right: -96px;
+  }
+}
