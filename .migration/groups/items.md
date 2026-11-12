@@ -81,8 +81,9 @@ a box is read from its cell:
 - Event box colours `blue` and `orange` exist in the source CSS, no page uses them: only
   purple is built. The transform warns when it meets another colour.
 - `title` attribute of the event date.
-- Box links inside `floatingTabs` (55 rows, among them all on `/solutions/multi-die-design.html`) are
-  flattened to a list of links by the `tabs` transform: the `tabs` block draws them.
+- Box links inside `floatingTabs` (55 rows, among them all on
+  `/solutions/multi-die-design.html`) are flattened to a list of links by the `tabs`
+  transform: the `tabs` block draws them.
 - A row of box links or key benefits with uneven cells inside another row's cell (10 rows,
   `/company/resources/newsletters.html`) is stacked by `column.mjs`: see the request.
 
