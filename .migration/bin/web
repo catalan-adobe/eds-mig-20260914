@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# The web CLI of adobe/skills (plugins/web), pinned to the clone in .migration/vendor.
+set -euo pipefail
+exec node "$(cd "$(dirname "$0")/.." && pwd)/vendor/adobe-skills/plugins/web/cli/dist/web.mjs" "$@"

@@ -11,3 +11,15 @@ helix-importer-ui
 # Ensure these files are tracked
 !CLAUDE.md
 !AGENTS.md
+
+# migration working files (source cache, vendored tools, generated output, screenshots)
+.migration/source/
+.migration/vendor/
+.migration/out/
+.migration/drafts/
+.migration/shots/
+.migration/**/node_modules/
+.playwright-cli/
+.web/
+.pi/
+.migration/prior/

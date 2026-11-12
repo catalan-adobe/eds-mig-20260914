@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# Starts what is not running: the source cache gateways and the shared dev server. Idempotent.
+#   3540  source cache, online (fills the cache; only tools/lib/page.mjs and tools/source.mjs use it)
+#   3541  source cache, offline
+#   3520  aem up: this checkout's code with the previewed DA content. A hand-written
+#         .migration/drafts/x.plain.html is served at /f52-synopsys-1211-02/drafts/x
+set -euo pipefail
+M="$(cd "$(dirname "$0")/.." && pwd)"
+up() { lsof -nP -iTCP:"$1" -sTCP:LISTEN >/dev/null 2>&1; }
+# own session, no inherited pipe: the server outlives the shell (and the tool call) that starts it
+daemon() { perl -MPOSIX -e 'POSIX::setsid(); exec @ARGV' "$@" </dev/null >>"$LOG" 2>&1 & }
+CACHE=(cache serve --cache "$M/source/cache" --also https://images.synopsys.com)
+mkdir -p "$M/drafts"
+cd "$M/.."
+up 3540 || LOG="$M/source/cache-online.log" daemon "$M/bin/web" "${CACHE[@]}" --port 3540
+up 3541 || LOG="$M/source/cache-offline.log" daemon "$M/bin/web" "${CACHE[@]}" --port 3541 --offline
+up 3520 || LOG="$M/source/aem-up.log" daemon aem up --port 3520 --no-open --no-livereload \
+  --url https://main--eds-mig-20260914--catalan-adobe.aem.page \
+  --html-folder .migration/drafts --html-mount /f52-synopsys-1211-02/drafts
+for _ in 1 2 3 4 5 6 7 8 9 10; do
+  if up 3540 && up 3541 && up 3520; then echo "services up: 3540 3541 3520"; exit 0; fi
+  sleep 1
+done
+echo "a service did not start: see $M/source/*.log" >&2
+exit 1
