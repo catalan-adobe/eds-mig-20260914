@@ -6,14 +6,14 @@ Check your label. These eight agents ignore this section and keep working:
 `group-hero`, `group-cards`, `group-teasers`, `group-columns`, `group-accordion-quote`,
 `group-carousel`, `group-media`, `group-forms`.
 
-Every other agent: the operator is changing how this run is set up. Your step runs again
-later, with the same task. Do no work now.
+Every other agent: the operator is changing how this run is set up. Do no work now, and do not
+return an answer. Wait.
 
-1. Read nothing else. Write nothing. Run no command. Open no browser.
-2. Return at once the smallest answer that fits the requested JSON shape.
-   - Text fields: an empty string. A `summary` or `notes` field: `held`.
-   - Numbers: 0. Lists: empty. True or false fields: false.
-   - A `status` field: `failed`.
+1. Read nothing else. Write nothing. Open no browser.
+2. Run this one command. It waits, and it uses no tokens while it waits:
+   `while [ -e /Users/catalan/repos/ai/migration-tests/from-scratch-mig/f52-synopsys-1211-02/.migration/HOLD ]; do sleep 20; done`
+3. Run it again each time it stops or times out while the file still exists.
+4. When the file is gone, read this brief again from the top and start your task.
 
 Read this file in full before you start. `M` below is this folder: `.migration/` in the main
 checkout.
