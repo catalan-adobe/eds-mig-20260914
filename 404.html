@@ -7,64 +7,54 @@
     content="script-src 'nonce-aem' 'strict-dynamic' 'unsafe-inline' http: https:; base-uri 'self'; object-src 'none';"
     move-to-http-header="true"
   >
-  <title>Page not found</title>
+  <title>Page Not Found | Synopsys</title>
   <script nonce="aem" type="text/javascript">
     window.isErrorPage = true;
     window.errorCode = '404';
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Page not found">
+  <meta property="og:title" content="Page Not Found | Synopsys">
+  <meta name="template" content="error-page">
+  <meta name="theme" content="site-content">
   <script nonce="aem" src="/scripts/scripts.js" type="module"></script>
   <script nonce="aem" type="module">
-    window.addEventListener('load', () => {
-      if (document.referrer) {
-        const { origin, pathname } = new URL(document.referrer);
-        if (origin === window.location.origin) {
-          const backBtn = document.createElement('a');
-          backBtn.classList.add('button', 'error-button-back');
-          backBtn.href = pathname;
-          backBtn.textContent = 'Go back';
-          backBtn.title = 'Go back';
-          const btnContainer = document.querySelector('.button-container');
-          btnContainer.append(backBtn);
-        }
-      }
-    });
-  </script>
-  <script nonce="aem" type="module">
     import { sampleRUM } from '/scripts/aem.js';
+    import { siteRoot } from '/scripts/site.js';
     sampleRUM('404', { source: document.referrer });
+    document.querySelector('main a[href="/"]').href = `${siteRoot()}/`;
   </script>
   <link rel="stylesheet" href="/styles/styles.css">
   <style>
-    main.error {
-      min-height: calc(100vh - var(--nav-height));
-      display: flex;
-      align-items: center;
+    /* the source's error page: black bold headings, an illustration at 95 % of its column */
+    main .rich-text h2 strong {
+      color: #3c3c3c;
     }
 
-    main.error .error-number {
-      width: 100%;
+    main .error-image p {
+      font-size: var(--body-font-size);
     }
 
-    main.error .error-number text {
-      font-family: monospace;
+    main .error-image .default-content-wrapper.image img {
+      display: inline;
+      width: 95%;
+      vertical-align: baseline;
     }
   </style>
-  <link rel="stylesheet" href="/styles/lazy-styles.css">
 </head>
 
 <body>
   <header></header>
-  <main class="error">
-    <div class="section">
-      <svg viewBox="1 0 38 18" class="error-number">
-        <text x="0" y="17">404</text>
-      </svg>
-      <h2 class="error-message">Page Not Found</h2>
-      <p class="button-container">
-        <a href="/" class="button secondary error-button-home">Go home</a>
-      </p>
+  <main>
+    <div class="span-6 rich-text band-top-md band-bottom-md">
+      <h2><strong>Page not found. </strong></h2>
+      <h2><strong>Let's find what you need.</strong></h2>
+      <p>The page you wanted isn’t here anymore, but you don’t have to start over. Tell us what you need below and get an instant answer.</p>
+    </div>
+    <div class="span-6 stack">
+      <p><strong><a href="/">Browse the homepage</a></strong></p>
+    </div>
+    <div class="span-6 bottom-sm error-image">
+      <p><img src="/styles/404.svg" alt="404" width="1280" height="720"></p>
     </div>
   </main>
   <footer></footer>

@@ -9,8 +9,8 @@ import {
   loadSection,
   loadSections,
   loadCSS,
-  buildBlock,
 } from './aem.js';
+import { getLanguage, languageRoot } from './site.js';
 
 if (window.trustedTypes && window.trustedTypes.createPolicy) {
   const innerTT = window.trustedTypes.createPolicy('tt-inner', {
@@ -37,6 +37,10 @@ if (window.trustedTypes && window.trustedTypes.createPolicy) {
   });
 }
 
+const ROW_STYLE = /^(band-(top|bottom)-(xs|sm|md)|divider)$/;
+const BACKGROUNDS = ['light-grey', 'white'];
+const ZOOM_LABEL = 'Click to see the detail';
+
 /**
  * load fonts.css and set a session storage flag
  */
@@ -49,96 +53,151 @@ async function loadFonts() {
   }
 }
 
-/**
- * Turns `/widgets/...` links into widget blocks.
- * @param {Element} main The container element
- */
-function buildWidgetAutoBlocks(main) {
-  const widgetLinks = [...main.querySelectorAll('a[href*="/widgets/"]')];
-  widgetLinks.forEach((link) => {
-    if (link.closest('.widget')) return;
-    const newLink = link.cloneNode(true);
-    const widgetBlock = buildBlock('widget', { elems: [newLink] });
-    const p = link.closest('p');
-    if (
-      p
-      && p.querySelectorAll('a').length === 1
-      && p.querySelector('a') === link
-      && p.textContent.trim() === link.textContent.trim()
-    ) {
-      p.replaceWith(widgetBlock);
-    } else {
-      link.replaceWith(widgetBlock);
-    }
+/** Lets CSS draw an icon in the text colour: `--icon` is the file, used as a mask. */
+function decorateIconMasks(main) {
+  main.querySelectorAll('span.icon > img').forEach((img) => {
+    img.parentElement.style.setProperty('--icon', `url("${img.src}")`);
   });
 }
 
 /**
- * Builds all synthetic blocks in a container element.
- * @param {Element} main The container element
- */
-function buildAutoBlocks(main) {
-  try {
-    // auto load `*/fragments/*` references
-    const fragments = [...main.querySelectorAll('a[href*="/fragments/"]')].filter((f) => !f.closest('.fragment'));
-    if (fragments.length > 0) {
-      // eslint-disable-next-line import/no-cycle
-      import('../blocks/fragment/fragment.js').then(({ loadFragment }) => {
-        fragments.forEach(async (fragment) => {
-          try {
-            const { pathname } = new URL(fragment.href);
-            const frag = await loadFragment(pathname);
-            fragment.parentElement.replaceWith(...frag.children);
-          } catch (error) {
-            // eslint-disable-next-line no-console
-            console.error('Fragment loading failed', error);
-          }
-        });
-      });
-    }
-    buildWidgetAutoBlocks(main);
-  } catch (error) {
-    // eslint-disable-next-line no-console
-    console.error('Auto Blocking failed', error);
-  }
-}
-
-/**
- * Decorates formatted links to style them as buttons.
+ * Buttons and call-to-action links, as the contract writes them: a link alone in its paragraph
+ * is a primary button in `strong`, a secondary one in `em`, a call-to-action link when it ends
+ * with the chevron icon. Neighbouring button paragraphs become one row.
  * @param {HTMLElement} main The main container element
  */
 function decorateButtons(main) {
   main.querySelectorAll('p a[href]').forEach((a) => {
-    a.title = a.title || a.textContent;
     const p = a.closest('p');
-    const text = a.textContent.trim();
-
-    // quick structural checks
-    if (a.querySelector('img') || p.textContent.trim() !== text) return;
-
-    // skip URL display links
-    try {
-      if (new URL(a.href).href === new URL(text, window.location).href) return;
-    } catch { /* continue */ }
-
-    // require authored formatting for buttonization
-    const strong = a.closest('strong');
-    const em = a.closest('em');
-    if (!strong && !em) return;
-
+    if (a.querySelector('img:not([data-icon-name])')) return;
+    if (p.textContent.trim() !== a.textContent.trim()) return;
+    const emphasis = a.closest('strong, em');
+    if (emphasis && p.contains(emphasis)) {
+      a.className = `button ${emphasis.tagName === 'STRONG' ? 'primary' : 'secondary'}`;
+      p.replaceChildren(a);
+    } else if (a.lastChild === a.querySelector('.icon-chevron-right')) {
+      a.className = 'cta-link';
+    } else return;
     p.className = 'button-wrapper';
-    a.className = 'button';
-    if (strong && em) { // high-impact call-to-action
-      a.classList.add('accent');
-      const outer = strong.contains(em) ? strong : em;
-      outer.replaceWith(a);
-    } else if (strong) {
-      a.classList.add('primary');
-      strong.replaceWith(a);
-    } else {
-      a.classList.add('secondary');
-      em.replaceWith(a);
+  });
+  main.querySelectorAll('p.button-wrapper + p.button-wrapper').forEach((p) => {
+    p.previousElementSibling.append(...p.children);
+    p.remove();
+  });
+}
+
+const isImageOnly = (p) => p.tagName === 'P' && !p.textContent.trim()
+  && !!p.querySelector('picture, img:not([data-icon-name])');
+
+/** A paragraph with only a link whose text is its own URL: the link of the image before it. */
+function urlLink(p) {
+  const a = p?.tagName === 'P' && p.children.length === 1 && p.querySelector(':scope > a[href]');
+  if (!a) return null;
+  const text = p.textContent.trim();
+  return text === a.getAttribute('href') || text === a.href ? a : null;
+}
+
+/** The "Click to see the detail" button of the source: the image opens in the modal. */
+function decorateZoom(wrapper) {
+  const image = wrapper.querySelector('picture, img');
+  const zoom = document.createElement('p');
+  zoom.className = 'zoom-instructions';
+  const button = document.createElement('button');
+  button.type = 'button';
+  const icon = document.createElement('span');
+  icon.className = 'icon icon-magnifying-glass-plus';
+  button.append(icon, ZOOM_LABEL);
+  zoom.append(button);
+  wrapper.append(zoom);
+  decorateIcons(zoom);
+  decorateIconMasks(zoom);
+  const open = async () => {
+    const { default: openModal } = await import('./modal.js');
+    openModal(image.cloneNode(true));
+  };
+  image.addEventListener('click', open);
+  button.addEventListener('click', open);
+}
+
+/**
+ * Default content, as the source renders its components: the title of a `text`, an `image`
+ * with its link and its zoom, a `pageList`, the `socialLinks`.
+ * @param {HTMLElement} main The main container element
+ */
+function decorateDefaultContent(main) {
+  main.querySelectorAll('.default-content-wrapper').forEach((wrapper) => {
+    const section = wrapper.parentElement;
+    [...wrapper.children].filter(isImageOnly).forEach((p) => {
+      const a = urlLink(p.nextElementSibling);
+      if (!a) return;
+      a.parentElement.remove();
+      a.replaceChildren(...p.childNodes);
+      p.append(a);
+    });
+    const children = [...wrapper.children];
+    const first = children[0];
+    if (children.every(isImageOnly)) {
+      wrapper.classList.add('image');
+      if (section.classList.contains('zoom')) decorateZoom(wrapper);
+    } else if (first.tagName === 'H2' && !section.matches('.rich-text, .no-title')) {
+      first.classList.add('title');
     }
+    const list = children.at(-1);
+    const heading = children.length === 2 && first.tagName === 'H5';
+    if (list.tagName === 'UL' && (children.length === 1 || heading)
+      && [...list.children].every((li) => li.children.length === 1
+        && li.firstElementChild.tagName === 'A' && !li.querySelector('.icon')
+        && li.textContent.trim() === li.firstElementChild.textContent.trim())) {
+      wrapper.classList.add('link-list');
+    }
+    children.filter((p) => p.tagName === 'P' && p.children.length && !p.textContent.trim()
+      && [...p.children].every((a) => a.tagName === 'A' && a.querySelector(':scope > .icon')))
+      .forEach((p) => p.classList.add('social-links'));
+  });
+}
+
+/**
+ * The section grid of the contract: neighbouring sections with a `span-N` style become one
+ * `div.section-row` of `div.section-col` columns. A `stack` section stays in the column of the
+ * section before it. A row ends when its spans pass 12, or at a section with the style `row`.
+ * The row takes the background of its first section and every `band-*` and `divider` style.
+ * @param {HTMLElement} main The main container element
+ */
+function buildSectionRows(main) {
+  let row = null;
+  let col = null;
+  let width = 0;
+  [...main.children].forEach((section) => {
+    const styles = [...section.classList];
+    const span = styles.find((c) => /^span-\d+$/.test(c));
+    if (!span) {
+      row = null;
+      return;
+    }
+    if (!row || !styles.includes('stack')) {
+      const offset = styles.find((c) => /^offset-\d+$/.test(c));
+      const size = Number(span.slice(5)) + Number(offset?.slice(7) ?? 0);
+      if (!row || width + size > 12 || styles.includes('row')) {
+        row = document.createElement('div');
+        row.className = 'section-row';
+        section.before(row);
+        width = 0;
+        BACKGROUNDS.filter((c) => styles.includes(c)).forEach((c) => {
+          row.classList.add(c);
+          section.classList.remove(c);
+        });
+      }
+      width += size;
+      col = document.createElement('div');
+      col.className = ['section-col', span, offset].filter(Boolean).join(' ');
+      row.append(col);
+      row.style.setProperty('--cols', row.children.length);
+    }
+    styles.filter((c) => ROW_STYLE.test(c)).forEach((c) => {
+      row.classList.add(c);
+      section.classList.remove(c);
+    });
+    col.append(section);
   });
 }
 
@@ -149,10 +208,15 @@ function decorateButtons(main) {
 // eslint-disable-next-line import/prefer-default-export
 export function decorateMain(main) {
   decorateIcons(main);
-  buildAutoBlocks(main);
+  decorateIconMasks(main);
   decorateSections(main);
+  main.querySelectorAll(':scope > .section[data-id]').forEach((section) => {
+    section.id = section.dataset.id;
+  });
+  buildSectionRows(main);
   decorateBlocks(main);
   decorateButtons(main);
+  decorateDefaultContent(main);
 }
 
 /**
@@ -160,8 +224,12 @@ export function decorateMain(main) {
  * @param {Element} doc The container element
  */
 async function loadEager(doc) {
-  document.documentElement.lang = 'en';
+  document.documentElement.lang = getLanguage();
   decorateTemplateAndTheme();
+  // the source's `data-page-type="home-page"`: the five language home pages
+  if (window.location.pathname.replace(/\/$/, '') === languageRoot()) {
+    doc.body.classList.add('home-page');
+  }
   const main = doc.querySelector('main');
   if (main) {
     decorateMain(main);

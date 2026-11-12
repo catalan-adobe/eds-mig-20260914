@@ -1,1 +1,73 @@
-/* add global styles that can be loaded post LCP here */
+/* styles that can load after the largest contentful paint */
+
+/* modal of scripts/modal.js: the source's video and zoom modal */
+.modal {
+  position: fixed;
+  z-index: 1050;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0 0 0 / 75%);
+}
+
+/* the source centres the dialog, then its margin moves it down */
+.modal-dialog {
+  position: relative;
+  top: 10px;
+  width: calc(100% - 20px);
+  outline: 0;
+  animation: modal-in 0.3s ease-out;
+}
+
+.modal-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  border: 0;
+  padding: 0;
+  background: none;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1;
+  opacity: 0.85;
+}
+
+.modal-close:is(:hover, :focus) {
+  opacity: 0.5;
+}
+
+.modal-body {
+  aspect-ratio: 16 / 9;
+  overflow: hidden auto;
+}
+
+.modal-body > :is(img, picture, iframe, video),
+.modal-body > picture > img {
+  display: block;
+  width: 100%;
+  border: 0;
+}
+
+.modal-body > :is(iframe, video) {
+  height: 100%;
+}
+
+body:has(> .modal) {
+  overflow: hidden;
+}
+
+@keyframes modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(-25%);
+  }
+}
+
+@media (width >= 730px) {
+  .modal-dialog {
+    top: 30px;
+    width: 65%;
+  }
+}
