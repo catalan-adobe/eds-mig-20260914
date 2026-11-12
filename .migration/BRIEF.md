@@ -1,5 +1,20 @@
 # Agent brief: synopsys.com to Edge Delivery Services
 
+## HOLD: read this before anything else
+
+Check your label. These eight agents ignore this section and keep working:
+`group-hero`, `group-cards`, `group-teasers`, `group-columns`, `group-accordion-quote`,
+`group-carousel`, `group-media`, `group-forms`.
+
+Every other agent: the operator is changing how this run is set up. Your step runs again
+later, with the same task. Do no work now.
+
+1. Read nothing else. Write nothing. Run no command. Open no browser.
+2. Return at once the smallest answer that fits the requested JSON shape.
+   - Text fields: an empty string. A `summary` or `notes` field: `held`.
+   - Numbers: 0. Lists: empty. True or false fields: false.
+   - A `status` field: `failed`.
+
 Read this file in full before you start. `M` below is this folder: `.migration/` in the main
 checkout.
 
