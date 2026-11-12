@@ -213,6 +213,17 @@ Lessons from those runs that apply here:
   code. Comment only a why the code cannot show. Write the smallest code that does the job.
 - Write scratch files under `/tmp/f52s/<your label>/`, never in the repository.
 
+## Work that is already there
+
+This run was paused once and then resumed. Your own paths can hold files that your session did
+not write: changed files, new block folders, transform files, notes. They are the earlier work
+of your own role.
+
+- Run `git status --short` on your paths first.
+- Read what is there, check it against the source, and continue from it.
+- Do not start over and do not delete it. Commit it together with your own work.
+- Files in other owners' paths are theirs. Leave them alone.
+
 ## Reporting
 
 State what you verified and what you did not. A number you report comes from a tool run in your
