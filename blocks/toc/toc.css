@@ -1,0 +1,261 @@
+/* the source's tableOfContents: `bar` under the hero, default list in the article rail */
+.toc-wrapper {
+  position: relative;
+  min-height: 42px;
+}
+
+.toc-wrapper:has(> .toc.bar) {
+  max-width: none;
+  padding: 0;
+}
+
+.toc {
+  --toc-top: max(0px, calc(var(--utility-height) - 1px));
+}
+
+.toc ul {
+  margin: 0 0 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.toc ul a {
+  display: block;
+  padding: 8px 15px;
+  border-left: 2px solid var(--color-border);
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.toc ul a:hover,
+.toc ul a.active {
+  border-left-color: #000;
+  text-shadow: 0.5px 0 0 var(--color-text);
+}
+
+.toc .toc-title {
+  margin: 15px 0 0;
+  color: var(--color-text);
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.toc .toc-inner {
+  display: flow-root;
+  margin-top: 15px;
+}
+
+.toc .toc-toggle {
+  display: none;
+}
+
+/* bar */
+.toc.bar .toc-nav {
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid #c1c2c1;
+  background: var(--color-bg-light);
+}
+
+.toc.bar .toc-inner {
+  display: flex;
+  width: 100%;
+  max-width: var(--container);
+  margin: 0;
+  padding: 0 var(--container-padding);
+}
+
+.toc.bar ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 0 0;
+}
+
+.toc.bar li {
+  position: relative;
+  margin-right: 9px;
+}
+
+.toc.bar ul a {
+  display: flex;
+  align-items: center;
+  height: 53px;
+  padding: 0 24px 0 0;
+  border: 0;
+  white-space: nowrap;
+}
+
+/* the source's bold without a change of width: the regular label stays in the flow, unseen */
+.toc.bar ul a:hover,
+.toc.bar ul a.active {
+  color: #fff;
+  text-shadow: none;
+}
+
+.toc.bar ul a:hover::before,
+.toc.bar ul a.active::before {
+  content: attr(data-text);
+  position: absolute;
+  color: var(--color-text);
+  font-weight: 400;
+}
+
+.toc a.toc-button {
+  display: flex;
+  flex: none;
+  align-items: center;
+  width: max-content;
+  height: 40px;
+  margin: 6.5px 0 0 15px;
+  padding: 0 24px;
+  border-radius: 5px;
+  background: var(--color-text);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.toc a.toc-button:hover {
+  background: #555;
+  text-decoration: none;
+}
+
+.toc.bar.stuck .toc-nav {
+  position: fixed;
+  top: var(--toc-top);
+  left: 0;
+}
+
+/* the rail of an article stays in view */
+@media (width >= 730px) {
+  .section-col:has(.toc:not(.bar)) {
+    position: sticky;
+    z-index: 1;
+    top: 128px;
+    align-self: start;
+  }
+}
+
+/* both variants collapse to one line that opens the list */
+@media (width <= 730px) {
+  .toc-wrapper {
+    max-width: none;
+    padding: 0;
+  }
+
+  .section-col .toc-wrapper {
+    margin-inline: calc(-1 * var(--container-padding));
+  }
+
+  /* the source takes the spacing off the band of the rail when it follows the page's banner
+     (`tocSictkyArticlesMobile`) */
+  :is(.hero-container, .article-hero-container) + .section-row:has(> .section-col > .toc-container) {
+    --band-top: 0px;
+    --band-bottom: 0px;
+  }
+
+  .toc .toc-nav,
+  .toc.bar .toc-nav {
+    display: block;
+    overflow: hidden;
+    height: 42px;
+    background: var(--color-bg-light);
+    box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+  }
+
+  .toc.open .toc-nav {
+    height: auto;
+  }
+
+  .toc.stuck .toc-nav {
+    position: fixed;
+    z-index: 999;
+    top: var(--toc-top);
+    left: 0;
+    width: 100%;
+  }
+
+  .toc .toc-title {
+    display: none;
+  }
+
+  .toc .toc-inner,
+  .toc.bar .toc-inner {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .toc .toc-toggle {
+    display: block;
+    position: relative;
+    width: calc(100% - 48px);
+    min-height: 42px;
+    margin: 0 24px;
+    padding: 8px 12px 8px 0;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  .toc .toc-current {
+    display: block;
+    position: relative;
+    top: 1px;
+    overflow: hidden;
+    width: calc(100% - 20px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .toc .toc-toggle::after {
+    content: '';
+    position: absolute;
+    top: 13px;
+    right: 4px;
+    width: 10px;
+    height: 16px;
+    background: currentcolor;
+    mask: url('../../icons/caret-down.svg') center / contain no-repeat;
+  }
+
+  .toc.open .toc-toggle::after {
+    rotate: 180deg;
+  }
+
+  .toc ul,
+  .toc.bar ul {
+    display: block;
+    margin: 0;
+    padding: 0 24px;
+  }
+
+  .toc.bar li {
+    margin-right: 0;
+  }
+
+  .toc ul a,
+  .toc.bar ul a {
+    display: block;
+    position: relative;
+    height: auto;
+    min-height: 42px;
+    padding: 8px 0;
+    border: 0;
+    white-space: pre-line;
+  }
+
+  .toc a.toc-button {
+    margin: 16px 0 20px 15px;
+  }
+}
