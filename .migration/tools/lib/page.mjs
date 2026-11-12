@@ -92,7 +92,9 @@ const pw = (session, args, timeout) => execFileSync(
   { encoding: 'utf8', maxBuffer: 256e6 },
 );
 
-export const open = (session) => pw(session, ['open'], 60);
+// Playwright's own Chromium, never the operator's Google Chrome: headless instances of the
+// installed Chrome register as that app in macOS and keep the operator from starting theirs
+export const open = (session) => pw(session, ['open', '--browser=chromium'], 60);
 export const close = (session) => { try { pw(session, ['close'], 30); } catch { /* already closed */ } };
 
 const sleep = (ms) => Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, ms);
