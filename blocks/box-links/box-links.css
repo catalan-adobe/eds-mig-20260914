@@ -1,0 +1,217 @@
+/* the source's boxLink: a label and a round icon (link, or plus and minus for a list of links),
+   and its event box. The padded group with a title is the source's boxLinkContainer. */
+.box-links:has(> .box-links-title),
+.box-links.no-title {
+  padding: 20px 0;
+}
+
+/* 25 px, and 1 px for the source's empty title row */
+.box-links.no-title > .box-links-columns {
+  padding-top: 26px;
+}
+
+.box-links .box-links-title {
+  padding: 15px 0 25px;
+  font-size: 20px;
+}
+
+.box-links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.box-links .box-link {
+  padding: 16px 0;
+  color: var(--color-text);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.box-links .box-link-row {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.box-links a:any-link {
+  color: var(--color-link);
+}
+
+.box-links a:hover {
+  text-decoration: none;
+}
+
+.box-links .box-link-label {
+  display: -webkit-box;
+  flex: 1;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.box-links .dropdown .box-link-label {
+  cursor: pointer;
+}
+
+/* a box without a link */
+.box-links .box-link:not(.dropdown) > div.box-link-row {
+  cursor: default;
+}
+
+.box-links .box-link-icon {
+  position: relative;
+  flex: 0 0 36px;
+  height: 36px;
+  padding: 0;
+  border: 0;
+  border-radius: 90%;
+  background-color: #f0f0f4;
+}
+
+.box-links .box-link-icon::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-grey-dark);
+  mask: url('../../icons/link.svg') center / 16px auto no-repeat;
+}
+
+.box-links .dropdown .box-link-icon::after {
+  mask-image: url('../../icons/plus.svg');
+}
+
+.box-links .dropdown.open .box-link-icon::after {
+  mask-image: url('../../icons/minus.svg');
+}
+
+/* the list of a dropdown slides open, as the source's slideToggle */
+.box-links .box-link-menu {
+  display: grid;
+  grid-template-rows: 0fr;
+  visibility: hidden;
+  transition: grid-template-rows 0.4s, visibility 0.4s;
+}
+
+.box-links .open > .box-link-menu {
+  grid-template-rows: 1fr;
+  visibility: visible;
+}
+
+.box-links .box-link-menu > ul {
+  min-height: 0;
+  overflow: hidden;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.box-links .box-link-menu li {
+  display: flex;
+  margin-top: 16px;
+}
+
+.box-links .box-link-menu a {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+/* event box: date, title, place and a chevron; the whole box is the link */
+.box-links .box-link.event {
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.box-links .box-link.event + .event {
+  margin-top: 15px;
+}
+
+/* a flex box as in the source, so that its lines snap to whole pixels as the source's do */
+.box-links .event .box-link-event {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 12px 20px 12px 15px;
+  border-left: 4px solid var(--color-purple);
+  background-color: #f7f7f7;
+  color: #000;
+  text-decoration: none;
+}
+
+.box-links .box-link-event::after {
+  content: '\203A';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 50px;
+  transform: translateY(-50%);
+  color: var(--color-purple);
+  font-size: 35px;
+  line-height: 78px;
+  text-align: center;
+}
+
+.box-links .box-link-event p {
+  margin: 0;
+  padding: 0 30px 3px 0;
+  font-size: inherit;
+}
+
+.box-links .box-link-event .box-link-date {
+  color: var(--color-purple);
+}
+
+.box-links .box-link-event .box-link-title {
+  font-weight: 500;
+}
+
+.box-links .box-link-event .box-link-place {
+  padding-bottom: 0;
+}
+
+@media (width >= 730px) {
+  .box-links .box-links-title {
+    font-size: 22px;
+  }
+
+  .box-links .box-links-columns {
+    display: flex;
+    gap: var(--gutter);
+  }
+
+  .box-links .box-links-columns > ul {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .box-links .box-link-row {
+    column-gap: 20px;
+  }
+
+  .box-links .box-link-row,
+  .box-links .box-link-menu {
+    max-width: 342px;
+  }
+
+  .box-links .box-link-icon {
+    order: -1;
+  }
+
+  .box-links .box-link-label,
+  .box-links .box-link-menu a {
+    -webkit-line-clamp: 2;
+  }
+
+  .box-links .box-link-menu > ul {
+    padding-left: 56px;
+  }
+}
+
+@media (width >= 1200px) {
+  .box-links .box-links-title {
+    font-size: 30px;
+  }
+}
