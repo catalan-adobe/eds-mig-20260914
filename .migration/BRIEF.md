@@ -58,6 +58,7 @@ Its order is round-robin over URL groups, so the pages present are already a fai
   `M/source/census.json` after more pages arrived.
 - `component.mjs html|children|variants|pages <name>` and `component.mjs tree <page>`: the real
   markup of a source component, what it contains, its variant classes, the pages using it.
+  The tree prints `name.extraClass`: the name is the part before the first dot.
 - `css-rules.mjs '<selector regex>'`: the source's own CSS rules, de-minified, with their
   `@media`. `--breakpoints` gives the histogram. Build from these exact rules, not from values
   read off a screenshot.
@@ -70,6 +71,12 @@ Its order is round-robin over URL groups, so the pages present are already a fai
 - `compare.mjs`: screenshots a source page and its migrated twin. It prints the diff per 800 px
   band, names what sits in each band, and writes side-by-side band images.
   `--src-sel/--tgt-sel` compares one region. Source against source gives 0 %.
+  - The result is also in `<out>/result.json`. Do not pipe the output through `tail`.
+  - `compare.mjs`, `trace.mjs` and `sweep.mjs` open and close their session themselves. Only
+    `pw.mjs` needs `open` first and `close` at the end.
+- `sweep.mjs --name <n>`: `compare.mjs` over the representative pages at three widths, with
+  the bands grouped by owner. It takes 15 to 30 minutes: start it with `M/bin/detach`.
+- `bin/detach <log> <command>`: runs a long command so that it survives your tool call.
 - `trace.mjs <page> <width>`: pairs the texts of both pages and prints where the vertical offset
   changes. Use it first when heights differ: the first line where `dy` changes names the cause.
 - `da.mjs put|preview|rm`: DA upload, preview and delete, locked to the folder. Also a module
@@ -167,11 +174,13 @@ Lessons from those runs that apply here:
   - Page metadata is a block named `metadata`. Section metadata is a block named
     `section-metadata`. An icon is `:name:` in text.
 - Inside block cells the pipeline strips `<span>` and rewrites `<b>`, `<i>` to `<strong>`, `<em>`.
-- Images on `images.synopsys.com` (the Dynamic Media CDN): reference the URL directly. Preview
-  copies the image into the media bus.
-- Files on `www.synopsys.com` (SVG icons, `/content/dam`): read them with `source.mjs` and
-  upload them into DA with `da.mjs`. Then reference them as
-  `https://content.da.live/catalan-adobe/eds-mig-20260914/f52-synopsys-1211-02/...`
+- Every image is copied from the source exactly once.
+  - Read it with `source.mjs` and upload it into DA with `da.mjs`.
+  - Reference it as
+    `https://content.da.live/catalan-adobe/eds-mig-20260914/f52-synopsys-1211-02/...`
+  - The importer's media helper does this and keeps a manifest.
+  - Never put a `synopsys.com` host in an `<img src>`. Each preview fetches such an image from
+    the source again.
 - An SVG over 40 KB fails preview. An unreachable image becomes `about:error`: check for it.
 - PDFs and other downloads are not migrated: link to them at `https://www.synopsys.com/...`.
 - Icons: the source draws Font Awesome Pro icons as inline SVG, from a kit locked to its own

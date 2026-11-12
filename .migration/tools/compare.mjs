@@ -10,7 +10,10 @@
 // Options: --out <dir> (default .migration/shots/<name>-<width>), --session <name> (yours),
 //          --fuzz <pct> (default 6), --band <px> (default 800), --fresh (retake the source shot;
 //          a full-page source shot is otherwise taken once and kept in .migration/shots/source)
-// Prints JSON: heights, overall diff %, diff % per horizontal band. For each band above 0.5 %
+// Prints JSON (also written to <out>/result.json, so never pipe the output through tail):
+// overall diff %, heights, diff % per horizontal band. Rows that only one page has count as
+// fully different. A target that answers 404 is an error. The tool opens and closes its
+// browser session itself. For each band above 0.5 %
 // it writes band-<y>.png (source left, target right) and names what sits in the band: `source`
 // = AEM components, `target` = EDS blocks. Open an image with the read tool in the turn AFTER
 // this command. Source against source gives about 0 %, so a diff is real.
@@ -55,11 +58,14 @@ const OWNERS = `() => {
 
 function shoot(url, selector, file) {
   const sel = selector ? JSON.stringify(selector) : 'undefined';
-  return run(session, `async (page, { still, shot }) => {
-    await still(${JSON.stringify(url)}, ${width});
+  const { status, boxes } = run(session, `async (page, { still, shot }) => {
+    const status = await still(${JSON.stringify(url)}, ${width});
+    if (status >= 400) return { status };
     await shot(${JSON.stringify(file)}, ${sel});
-    return page.evaluate(${OWNERS});
+    return { status, boxes: await page.evaluate(${OWNERS}) };
   }`);
+  if (status >= 400) throw new Error(`${url} answers ${status}: the page does not exist (not imported or not previewed?)`);
+  return boxes;
 }
 
 const within = (boxes, y, h) => [...new Set(boxes.filter((b) => b.top < y + h && b.bottom > y).map((b) => b.name))];
@@ -98,14 +104,23 @@ function compare(srcUrl, tgtUrl, outDir) {
   const [tw, th] = size(tgt);
   const w = Math.max(sw, tw);
   const h = Math.max(sh, th);
-  // pad both to one canvas so a height mismatch shows up as a diff instead of an error
+  const common = Math.min(sh, th);
+  // pad both to one canvas so the band images line up; rows that only one page has count as
+  // fully different, whatever their colour
   [src, tgt].forEach((f) => magick(f, '-background', 'white', '-gravity', 'NorthWest', '-extent', `${w}x${h}`, f));
-  const total = diffPixels(src, tgt, join(outDir, 'diff.png'));
+  const rowsOf = (y, bh) => Math.max(0, Math.min(common, y + bh) - y);
+  const differing = (y, bh) => {
+    const shared = rowsOf(y, bh);
+    const inShared = shared ? diffPixels(`${src}[${w}x${shared}+0+${y}]`, `${tgt}[${w}x${shared}+0+${y}]`, 'null:') : 0;
+    return inShared + w * (bh - shared);
+  };
+  diffPixels(src, tgt, join(outDir, 'diff.png'));
+  const total = differing(0, h);
   const bands = [];
   for (let y = 0; y < h; y += bandHeight) {
     const bh = Math.min(bandHeight, h - y);
     const crop = `[${w}x${bh}+0+${y}]`;
-    const pct = +((100 * diffPixels(src + crop, tgt + crop, 'null:')) / (w * bh)).toFixed(2);
+    const pct = +((100 * differing(y, bh)) / (w * bh)).toFixed(2);
     const band = { y, pct };
     if (pct > 0.5) {
       band.source = within(srcBoxes, y, bh);
@@ -115,9 +130,11 @@ function compare(srcUrl, tgtUrl, outDir) {
     }
     bands.push(band);
   }
-  return {
-    srcUrl, tgtUrl, width, srcHeight: sh, tgtHeight: th, diffPct: +((100 * total) / (w * h)).toFixed(2), outDir, bands,
+  const result = {
+    diffPct: +((100 * total) / (w * h)).toFixed(2), srcHeight: sh, tgtHeight: th, srcUrl, tgtUrl, width, outDir, bands,
   };
+  writeFileSync(join(outDir, 'result.json'), JSON.stringify(result, null, 1));
+  return result;
 }
 
 function slug(page) {
@@ -151,6 +168,11 @@ function sweep() {
   if (args.json) writeFileSync(args.json, JSON.stringify(rows, null, 1));
 }
 
+if (args.help || process.argv.length < 3) {
+  const text = readFileSync(import.meta.filename, 'utf8');
+  console.log(text.slice(text.indexOf('//'), text.indexOf('\nimport ')));
+  process.exit(0);
+}
 open(session);
 try {
   if (args.pages) sweep();

@@ -59,10 +59,10 @@ const SETUP = `async (page, gateway) => {
 const HIDE_CSS = '#onetrust-consent-sdk,.onetrust-pc-dark-filter,#chat-bar,#floating-icon{display:none!important}';
 
 const HELPERS = `{
-  /** Loads url at width, held still: overlays hidden, lazy content loaded, fonts ready. */
+  /** Loads url at width, held still (overlays hidden, lazy content loaded). Returns the HTTP status. */
   still: async (url, width, height = 900) => {
     await page.setViewportSize({ width, height });
-    await page.goto(url, { waitUntil: 'load', timeout: 60000 });
+    const response = await page.goto(url, { waitUntil: 'load', timeout: 60000 });
     await page.addStyleTag({ content: '${HIDE_CSS}' });
     await page.evaluate(async () => {
       for (let y = 0; y < document.documentElement.scrollHeight; y += 600) {
@@ -74,6 +74,7 @@ const HELPERS = `{
     });
     await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
     await page.waitForTimeout(800);
+    return response ? response.status() : 0;
   },
   /** Screenshot (full page, or the first match of selector) with the pointer out of the way. */
   shot: async (path, selector) => {
