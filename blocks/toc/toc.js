@@ -53,11 +53,11 @@ function build(block, list, title) {
 /**
  * Marks the link of the section in view, as the source does: the first section whose top lies
  * in the upper half of the window, below the offset of the last jump (its anchor is 1 px high).
- * No match keeps the mark.
+ * No match keeps the mark. Only a scroll to 0 clears it first: opening the list keeps it.
  */
-function markActive(links, offset) {
+function markActive(links, offset, scrolled) {
   const sections = [...document.querySelectorAll('main .section[id]')];
-  if (window.scrollY === 0) links.forEach((a) => a.classList.remove('active'));
+  if (scrolled && window.scrollY === 0) links.forEach((a) => a.classList.remove('active'));
   const inView = sections.find((section) => {
     const top = section.getBoundingClientRect().top - offset;
     return top > -1 && top < window.innerHeight / 2;
@@ -82,10 +82,10 @@ export default function decorate(block) {
   };
 
   // as the source: the nav is fixed from the jump distance on, and its wrapper keeps 42 px
-  const update = () => {
+  const update = (event) => {
     if (!wrapper.offsetParent) return;
     block.classList.toggle('stuck', sticks() && wrapper.getBoundingClientRect().top <= jumpTop());
-    const active = markActive(links, offset);
+    const active = markActive(links, offset, event?.type === 'scroll');
     toggle.firstElementChild.textContent = active ? active.textContent : title;
   };
 

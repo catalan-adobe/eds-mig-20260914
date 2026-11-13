@@ -52,7 +52,7 @@ Behaviour, all taken from the source script and rules:
 - Click: scroll to the section, less the utility bar and, for `bar` and to 730, the nav.
   Smooth from 731. The hash is replaced.
 - Mark: the first section whose top is in the upper half of the window. No match keeps the
-  last mark. At scroll 0 the mark is removed first.
+  last mark. A scroll to 0 removes the mark first; opening the list at scroll 0 keeps it.
 - Below 1130 the source subtracts the height of its hidden utility bar (56.4 px, 58 px to 730)
   in jumps, marks and the fix line. The block does the same with these two constants.
 
