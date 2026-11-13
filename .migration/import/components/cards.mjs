@@ -13,12 +13,16 @@ const tight = (card) => (card.closest('.component-card-container .card-col').len
 const text = (node) => escapeHtml(node.text().replace(/[\uE000-\uF8FF]/g, '')
   .replace(/\s+/g, ' ').trim());
 
-/** The link paragraph of a card: its call to action, or the bare card link. */
+/**
+ * The link paragraph of a card: its call to action, or the bare card link. A card the source
+ * opens in a new tab (`data-new-tab`) has a link whose href ends with `#_blank`.
+ */
 function action(card, anchor, ctx) {
+  const blank = card.attr('data-new-tab') === 'true' ? '#_blank' : '';
   const cta = anchor.length ? ctx.clean(anchor, { inline: true }) : '';
-  if (/<a /.test(cta)) return para(cta);
+  if (/<a /.test(cta)) return para(cta.replace(/(<a [^>]*href="[^"]*)/, `$1${blank}`));
   const href = ctx.link(card.attr('data-link'));
-  return para(href ? `<a href="${href}">${href}</a>` : cta);
+  return para(href ? `<a href="${href}${blank}">${href}</a>` : cta);
 }
 
 /** Cell 1 of an asset card: its image, or the video thumbnail and the video link. */

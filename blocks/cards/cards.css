@@ -98,14 +98,23 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 15.75px;
-  height: 21px;
-  padding: 19.5px 22.125px;
+  width: var(--play-width, 15.75px);
+  height: var(--play-height, 21px);
+  padding: var(--play-padding, 19.5px 22.125px);
   transform: translate(-50%, -50%);
+  transition: var(--play-transition, all 0.1s ease-out);
   border: 2px solid rgb(0 0 0 / 75%);
   border-radius: 90px;
   background-color: rgb(0 0 0 / 75%);
   mask: none;
+}
+
+/* the source's button grows at once on hover and shrinks back in 0.1 s */
+.cards .cards-play:hover {
+  --play-width: 18px;
+  --play-height: 24px;
+  --play-padding: 20px 23px;
+  --play-transition: none;
 }
 
 .cards .cards-play .icon::before {
@@ -1014,6 +1023,11 @@
     --arrow-top: 50%;
     --arrow-side: -10px;
   }
+
+  /* in a shared fragment the source's arrows are placed from the cards' own column */
+  .fragment .cards.cards-sliding:not(.cards-rows) {
+    --arrow-side: 6px;
+  }
 }
 
 @media (width >= 992px) {
@@ -1104,6 +1118,10 @@
 
   .cards.cards-rows {
     --arrow-side: -96px;
+  }
+
+  .fragment .cards.cards-sliding:not(.cards-rows) {
+    --arrow-side: -80px;
   }
 }
 

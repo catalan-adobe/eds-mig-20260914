@@ -30,7 +30,9 @@ One row per card. The kind is a block class; no class is the asset card.
   width.
 - `carousel`: the source's card carousel. `cols-N` cards per view from 728, 2 from 600, 1
   below; it moves by a full view. Arrows beside the cards from 730 (outside the container from
-  1400), on the row of the dots below. Swipe and arrow keys come from `scripts/slider.js`.
+  1400), on the row of the dots below. In a fragment the source's arrows sit 15 px further in
+  (its column is the cards' width). A mouse drag does not move it (slick `draggable: false`);
+  a touch swipe does. Swipe and arrow keys come from `scripts/slider.js`.
 - `carousel` with `rows`, `no-mobile` or `autoplay[-N]`: the source's content carousel. Each
   view is one row of `cols-N` cards laid out as a block without `carousel` (30 px gutter); below
   730 the row is a stack. `no-mobile`: no carousel below 730, all rows follow each other.
@@ -43,9 +45,11 @@ One row per card. The kind is a block class; no class is the asset card.
 Behaviour:
 
 - Asset and event cards: a click anywhere on the card follows its link; an external link opens
-  in a new tab, as in the source. Hover changes the link colour only (the source has no card
+  in a new tab, as in the source. A card the source sets to open in a new tab (`data-new-tab`)
+  has a link whose href ends with `#_blank`: the block removes the hash and opens a new tab. Hover changes the link colour only (the source has no card
   hover). A card link without a label (its text is its URL) moves into the title.
-- Video card: the thumbnail is a button that opens the player (`scripts/modal.js`). Without an
+- Video card: the thumbnail is a button that opens the player (`scripts/modal.js`). Its play
+  button grows from 64 to 68 px on hover, as the source's. Without an
   authored thumbnail (221 of 249) the block reads the poster from Brightcove's playback API, as
   the source's player does.
 - Title and description share five lines: the description gets what the title leaves.

@@ -53,6 +53,15 @@ function onLayout(block, fn) {
   document.fonts.ready.then(() => block.offsetWidth && fn());
 }
 
+/** The importer marks a link the source opens in a new tab with the hash `#_blank`. */
+function openNewTabs(block) {
+  block.querySelectorAll('a[href$="#_blank"]').forEach((a) => {
+    a.href = a.getAttribute('href').replace(/#_blank$/, '');
+    a.target = '_blank';
+    a.rel = 'noopener';
+  });
+}
+
 /** A click anywhere on the card follows its link, as the source's cards do. */
 function linkCard(card, link) {
   if (link.hostname !== window.location.hostname) {
@@ -326,6 +335,10 @@ function slide(block, list, cols) {
   }
   // the source's slick: all columns from 728 px, two from 600 px, one below
   createSlider(list, { perView: { 0: 1, 600: Math.min(cols || 3, 2), 728: cols || 3 } });
+  // the source's slick is not draggable: a mouse drag must not reach the slider's swipe
+  block.addEventListener('pointerdown', (e) => {
+    if (e.pointerType === 'mouse') e.stopPropagation();
+  }, true);
   block.classList.toggle('cards-many', list.children.length > 9);
 }
 
@@ -334,6 +347,7 @@ export default function decorate(block) {
   const sliding = block.classList.contains('carousel');
   const cols = Number(block.className.match(/\bcols-([1-4])\b/)?.[1] ?? 0);
   const list = element('ul', 'cards-list');
+  openNewTabs(block);
   [...block.children].filter((row) => row.textContent.trim() || row.querySelector('img'))
     .forEach((row) => {
       list.append(element('li', 'cards-item', BUILD[kind]([...row.children])));
