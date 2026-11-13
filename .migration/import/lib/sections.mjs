@@ -33,13 +33,24 @@ const onlyBlock = (s) => (s.content.length === 1 && isBlock(s.content[0]) ? s.co
 const without = (styles, pattern) => styles.filter((s) => !pattern.test(s));
 const isEmpty = (s) => !s.content.length && !s.styles.includes('rule');
 
+/** Sizes whose spacing adds up to `px`, each size at most once, largest first: 90 is md, sm. */
+function sizesOf(px) {
+  let rest = px;
+  return [...SIZES].reverse().filter((size) => {
+    if (SPACE_PX[size] > rest) return false;
+    rest -= SPACE_PX[size];
+    return true;
+  });
+}
+
 function addStyle(target, style) {
-  const [, kind, size] = style.match(/^(band-top|band-bottom)-(\w+)$/) ?? [];
-  const old = kind && target.styles.find((s) => s.startsWith(`${kind}-`));
-  if (old) {
-    // two bands on one edge: the larger one stays
-    const larger = SIZES.indexOf(size) > SIZES.indexOf(old.slice(kind.length + 1)) ? style : old;
-    target.styles = [...without(target.styles, new RegExp(`^${kind}-`)), larger];
+  const [, kind] = style.match(/^(band-top|band-bottom)-(\w+)$/) ?? [];
+  const edge = kind && new RegExp(`^${kind}-`);
+  if (edge && target.styles.some((s) => edge.test(s))) {
+    // nested bands on one edge add up, as the paddings of the source's nested components
+    const px = [...target.styles, style].filter((s) => edge.test(s))
+      .reduce((sum, s) => sum + SPACE_PX[s.slice(kind.length + 1)], 0);
+    target.styles = [...without(target.styles, edge), ...sizesOf(px).map((z) => `${kind}-${z}`)];
   } else if (!target.styles.includes(style)) target.styles.push(style);
 }
 export const addStyles = (target, styles) => styles.forEach((s) => addStyle(target, s));
@@ -97,7 +108,7 @@ function bandHolder(out) {
  * `top` above the next section, `bottom` below the section before. The space goes where the
  * background is the dropped components' own: between two such sections their top padding goes
  * above and their bottom padding below (the two differ below 730). What one band cannot hold
- * moves to the other side; an edge that has a band already takes none.
+ * moves to the other side; an edge that has a band already takes the rest only.
  */
 function bandsOf(styles, before, next) {
   const sum = (side) => styles.map((s) => s.match(new RegExp(`^(?:band-)?${side}-(\\w+)$`)))
@@ -106,7 +117,7 @@ function bandsOf(styles, before, next) {
   const total = top + bottom;
   if (!total) return {};
   const own = backgroundOf(styles);
-  // an edge that has a band already would lose the smaller of the two
+  // an edge that has a band already is the last choice: the space keeps to its own background
   const free = (s, edge) => !s.styles.some((x) => x.startsWith(`band-${edge}-`));
   const canBefore = !!before && free(before, 'bottom');
   const canNext = free(next, 'top');

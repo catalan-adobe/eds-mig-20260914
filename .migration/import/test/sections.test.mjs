@@ -192,3 +192,14 @@ test('page: a shared fragment becomes a fragment block and a document of its own
   assert.doesNotMatch(doc.source.text(), /Contact/);
   assert.match(doc.fragments[0].source.text(), /Contact/);
 });
+
+test('nested bands on one edge add up, each size at most once', () => {
+  const s = section(['<p>x</p>']);
+  applyBand([s], ['bottom-md']);
+  applyBand([s], ['bottom-sm']);
+  assert.deepEqual(s.styles, ['band-bottom-md', 'band-bottom-sm']);
+  applyBand([s], ['bottom-xs']);
+  applyBand([s], ['top-sm']);
+  applyBand([s], ['top-sm']);
+  assert.deepEqual(s.styles, ['band-bottom-md', 'band-bottom-sm', 'band-bottom-xs', 'band-top-md']);
+});

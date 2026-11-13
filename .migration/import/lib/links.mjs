@@ -5,6 +5,8 @@ const INTERNAL = new Set(['www.synopsys.com', 'synopsys.com']);
 const AEM_CONTENT = /^\/content\/synopsys\/([a-z]{2}-[a-z]{2})(?=[/.]|$)/;
 const KEEP = /^(mailto:|tel:|sms:|#)/i;
 const EMAIL_PROTECTION = /\/cdn-cgi\/l\/email-protection#([0-9a-f]+)$/i;
+// the Coveo result page is not migrated (CONTRACT e, "Site search")
+export const SEARCH_PAGE = /^(\/[a-z]{2}-[a-z]{2})?\/search\.html$/i;
 
 // the Brightcove player of each account, as the source's player script chooses it
 const PLAYERS = {
@@ -59,7 +61,7 @@ export function rewriteLink(href, pagePath = '/') {
   }
   if (!/^https?:$/.test(url.protocol) || !INTERNAL.has(url.hostname)) return raw;
   const pathname = publicPath(url.pathname);
-  if (pathname.startsWith('/content/dam/') || isFile(pathname)) {
+  if (pathname.startsWith('/content/dam/') || isFile(pathname) || SEARCH_PAGE.test(pathname)) {
     return SOURCE_ORIGIN + pathname + url.search + url.hash;
   }
   // the source has links to /a.html.html: AEM serves the page for them

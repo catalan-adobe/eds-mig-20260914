@@ -22,6 +22,8 @@ const cases = [
   ['PDF, relative', '/content/dam/synopsys/ds/primesim.pdf', 'https://www.synopsys.com/content/dam/synopsys/ds/primesim.pdf'],
   ['file with a script extension', '/cgi-bin/dwtb/req1.cgi', 'https://www.synopsys.com/cgi-bin/dwtb/req1.cgi'],
   ['zip, absolute', 'https://www.synopsys.com/news/pubs/all-files.zip', 'https://www.synopsys.com/news/pubs/all-files.zip'],
+  ['site search, not migrated', '/search.html#tab=All&q=ip', 'https://www.synopsys.com/search.html#tab=All&q=ip'],
+  ['site search of a language', '/content/synopsys/zh-cn/search.html?q=a', 'https://www.synopsys.com/zh-cn/search.html?q=a'],
   ['mailto', 'mailto:info@synopsys.com', 'mailto:info@synopsys.com'],
   // eslint-disable-next-line no-script-url
   ['javascript', 'javascript:void(0)', ''],

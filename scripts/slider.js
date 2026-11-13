@@ -27,11 +27,12 @@ function control(className, label) {
  * @param {boolean} [options.dots] Default true
  * @param {boolean} [options.arrows] Default true
  * @param {boolean} [options.loop] Default true: the ends wrap around
+ * @param {boolean} [options.draggable] Default true: a mouse drag swipes. Touch always swipes
  * @returns {{go: Function, next: Function, prev: Function, destroy: Function}}
  */
 // eslint-disable-next-line import/prefer-default-export
 export function createSlider(track, {
-  perView = 1, autoplay = 0, dots = true, arrows = true, loop = true,
+  perView = 1, autoplay = 0, dots = true, arrows = true, loop = true, draggable = true,
 } = {}) {
   const slider = document.createElement('div');
   slider.className = 'slider';
@@ -91,7 +92,10 @@ export function createSlider(track, {
   };
 
   let startX = null;
-  const onDown = (e) => { startX = e.clientX; };
+  const onDown = (e) => {
+    if (draggable || e.pointerType !== 'mouse') startX = e.clientX;
+  };
+  // like slick, a swipe also ends when the pointer leaves the slides
   const onUp = (e) => {
     if (startX === null) return;
     const dx = e.clientX - startX;
@@ -107,6 +111,7 @@ export function createSlider(track, {
   const listeners = [
     [prevButton, 'click', prev], [nextButton, 'click', next],
     [viewport, 'pointerdown', onDown], [viewport, 'pointerup', onUp],
+    [viewport, 'pointerleave', onUp], [viewport, 'dragstart', (e) => e.preventDefault()],
     [viewport, 'pointercancel', () => { startX = null; }],
     [slider, 'keydown', onKey], [slider, 'mouseenter', stop], [slider, 'mouseleave', play],
     [slider, 'focusin', stop], [slider, 'focusout', play], [window, 'resize', onResize],

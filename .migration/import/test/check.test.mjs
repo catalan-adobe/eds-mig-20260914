@@ -13,7 +13,8 @@ const img = (alt) => `<img src="${MEDIA_BASE}a-123.png" alt="${alt}">`;
 test('a sound document has no failures', () => {
   const main = `<div><h1>T</h1><p>${img('A')}</p><p><a href="/f52-synopsys-1211-02/a/b">b</a></p>
     <p><a href="https://www.synopsys.com/content/dam/x.pdf">pdf</a> <a href="#top">top</a>
-    <a href="https://news.synopsys.com/a.html">news</a></p>
+    <a href="https://news.synopsys.com/a.html">news</a>
+    <a href="https://www.synopsys.com/zh-cn/search.html#q=x">search</a></p>
     <div class="cards"><div><div>x</div></div></div>
     <div class="section-metadata"><div><div>Style</div><div>top-sm</div></div></div></div>`;
   assert.deepEqual(check(main, ['A']), []);
@@ -58,6 +59,11 @@ test('a preview is fresh when it has the words of the document', () => {
   const fresh = '<div><h1 id="title">Title</h1><p><a href="/x">Go<span class="icon icon-chevron-right"></span></a></p></div>';
   assert.equal(isFresh(ours, fresh), true);
   assert.equal(isFresh(ours, '<div><h1>Title</h1><p>An older text of this page</p></div>'), false);
+});
+
+test('a preview is fresh when its text holds times', () => {
+  const ours = doc('<div><p>3:50pm-4:50pm at 09:09:09</p></div>');
+  assert.equal(isFresh(ours, '<div><p>3:50pm-4:50pm at 09:09:09</p></div>'), true);
 });
 
 test('the output text leaves out the metadata blocks and joins inline elements', () => {

@@ -1,6 +1,8 @@
 // A layout row. In the order of CONTRACT.md b): one cell is transparent; like items merge into
 // one block; cells of plain default content become a `columns` block; everything else is the
 // section grid (span-N, offset-N, stack).
+import { addStyles } from '../lib/sections.mjs';
+
 const WIDTHS = {
   '3,9': 'w-3-9', '9,3': 'w-9-3', '4,8': 'w-4-8', '8,4': 'w-8-4',
 };
@@ -147,6 +149,6 @@ export default function column(el, ctx) {
   const { sections, head } = grid(cells, ctx, { divider });
   // the row takes its background and band spacing from its first section
   ctx.band([head], band.filter((s) => !/^(top|bottom)-/.test(s)));
-  head.styles.push(...band.filter((s) => /^(top|bottom)-/.test(s)).map((s) => `band-${s}`));
+  addStyles(head, band.filter((s) => /^(top|bottom)-/.test(s)).map((s) => `band-${s}`));
   return sections;
 }

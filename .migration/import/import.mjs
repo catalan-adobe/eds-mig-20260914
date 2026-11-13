@@ -98,7 +98,15 @@ async function withMedia(html, media, report) {
   await pool(tags, 8, async (tag) => {
     const { src = '', alt = '' } = load(tag, null, false)('img').attr();
     const url = pickSource(src);
-    const copy = url ? await media.resolve(url) : { error: 'no source' };
+    let copy;
+    try {
+      copy = url ? await media.resolve(url) : { error: 'no source' };
+    } catch (e) {
+      if (!/bot|FETCH-STOP/i.test(e.message)) throw e;
+      // the tag keeps its source URL: the self-check fails it and it is not uploaded
+      report.warnings.push(`image not fetched (FETCH-STOP): ${src}`);
+      return;
+    }
     if (copy.error) report.warnings.push(`image dropped (${copy.error}): ${src}`);
     else assets.add(assetKey(url));
     if (copy.note) report.warnings.push(`${copy.note}: ${src}`);

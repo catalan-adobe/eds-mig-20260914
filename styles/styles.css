@@ -399,6 +399,9 @@ main .icon img {
   --slider-gap: 0px;
 
   position: relative;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .slider-viewport {
@@ -429,12 +432,19 @@ main .icon img {
 }
 
 /* sections: one per source component. --top and --bottom are its own spacing, --band-* the
-   spacing of the band around it; they add up. */
+   spacing of the band around it; they add up. Nested bands add up too: a section can hold
+   one band of each size per edge. */
 :where(.section, .section-row) {
   --top: 0px;
   --bottom: 0px;
-  --band-top: 0px;
-  --band-bottom: 0px;
+  --band-top-xs: 0px;
+  --band-top-sm: 0px;
+  --band-top-md: 0px;
+  --band-bottom-xs: 0px;
+  --band-bottom-sm: 0px;
+  --band-bottom-md: 0px;
+  --band-top: calc(var(--band-top-xs) + var(--band-top-sm) + var(--band-top-md));
+  --band-bottom: calc(var(--band-bottom-xs) + var(--band-bottom-sm) + var(--band-bottom-md));
   --title: var(--title-size);
   --title-color: var(--color-purple);
 }
@@ -469,19 +479,21 @@ main .icon img {
 .section.bottom-xs { --bottom: var(--space-xs); }
 .section.bottom-sm { --bottom: var(--space-sm); }
 .section.bottom-md { --bottom: var(--space-md); }
-:is(.section, .section-row).band-top-xs { --band-top: var(--space-xs); }
-:is(.section, .section-row).band-top-sm { --band-top: var(--space-sm); }
-:is(.section, .section-row).band-top-md { --band-top: var(--space-md); }
-:is(.section, .section-row).band-bottom-xs { --band-bottom: var(--space-xs); }
-:is(.section, .section-row).band-bottom-sm { --band-bottom: var(--space-sm); }
-:is(.section, .section-row).band-bottom-md { --band-bottom: var(--space-md); }
+:is(.section, .section-row).band-top-xs { --band-top-xs: var(--space-xs); }
+:is(.section, .section-row).band-top-sm { --band-top-sm: var(--space-sm); }
+:is(.section, .section-row).band-top-md { --band-top-md: var(--space-md); }
+:is(.section, .section-row).band-bottom-xs { --band-bottom-xs: var(--space-xs); }
+:is(.section, .section-row).band-bottom-sm { --band-bottom-sm: var(--space-sm); }
+:is(.section, .section-row).band-bottom-md { --band-bottom-md: var(--space-md); }
 .section.title-small { --title: var(--title-size-small); }
 .section.title-large { --title: var(--title-size-large); }
 .section.title-dark { --title-color: var(--color-text); }
 
 @media (width < 730px) {
   .section:is(.top-xs, .top-sm, .top-md) { --top: 40px; }
-  :is(.section, .section-row):is(.band-top-xs, .band-top-sm, .band-top-md) { --band-top: 40px; }
+  :is(.section, .section-row).band-top-xs { --band-top-xs: 40px; }
+  :is(.section, .section-row).band-top-sm { --band-top-sm: 40px; }
+  :is(.section, .section-row).band-top-md { --band-top-md: 40px; }
 }
 
 /* only pages whose root container is `.site-content` in the source shrink the bottom spacing */
@@ -496,8 +508,8 @@ main .icon img {
   ) {
     & .section.bottom-sm { --bottom: 0px; }
     & .section.bottom-md { --bottom: 10px; }
-    & :is(.section, .section-row).band-bottom-sm { --band-bottom: 0px; }
-    & :is(.section, .section-row).band-bottom-md { --band-bottom: 10px; }
+    & :is(.section, .section-row).band-bottom-sm { --band-bottom-sm: 0px; }
+    & :is(.section, .section-row).band-bottom-md { --band-bottom-md: 10px; }
   }
 }
 

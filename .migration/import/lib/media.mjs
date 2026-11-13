@@ -143,7 +143,10 @@ export function createMedia({ dry = false, noUpload = false } = {}) {
         entry = await running.get(url);
       } catch (e) {
         // not the image's fault (network, DA, a missing tool): nothing is recorded
-        if (/bot|FETCH-STOP/i.test(e.message)) throw e;
+        if (/bot|FETCH-STOP/i.test(e.message)) {
+          seen.delete(url);
+          throw e;
+        }
         seen.set(url, 'failed');
         return { error: e.message };
       }

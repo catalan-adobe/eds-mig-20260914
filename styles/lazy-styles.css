@@ -35,10 +35,6 @@ body > .modal {
   opacity: 0.85;
 }
 
-.modal-close:is(:hover, :focus) {
-  opacity: 0.5;
-}
-
 .modal-body {
   aspect-ratio: 16 / 9;
   overflow: hidden auto;

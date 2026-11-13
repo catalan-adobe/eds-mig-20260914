@@ -1,6 +1,7 @@
 // The self-check of a built document, and the content check against its source.
 import { load } from 'cheerio';
 import { MEDIA_BASE, SITE } from './config.mjs';
+import { SEARCH_PAGE } from './links.mjs';
 import { snapshot } from './snapshot.mjs';
 
 export const MIN_RECALL = 0.98;
@@ -34,7 +35,7 @@ const isFile = (path) => path.startsWith('/content/dam/')
 function linkProblem(href) {
   if (ON_SOURCE.test(href)) {
     const path = href.replace(ON_SOURCE, '/').replace(/[?#].*$/, '');
-    return isFile(path) ? '' : 'internal link still on synopsys.com';
+    return isFile(path) || SEARCH_PAGE.test(path) ? '' : 'internal link still on synopsys.com';
   }
   if (!href.startsWith('/') || href.startsWith('//')) return '';
   if (/^[^?#]*\.html?([?#]|$)/i.test(href)) return 'internal link ends in .html';
@@ -83,8 +84,9 @@ export function selfCheck(html, { blocks, alts = [] }) {
  * still holds: both have the same words (icons are elements in the preview, not text).
  */
 export function isFresh(html, plainHtml) {
+  // an icon name starts with a letter: times like 3:50pm-4:50pm are text
   // eslint-disable-next-line no-use-before-define
-  const ours = outputText(html).replace(/:[a-z0-9-]+:/g, ' ');
+  const ours = outputText(html).replace(/:[a-z][a-z0-9-]*:/g, ' ');
   const theirs = snapshot(load(`<main>${plainHtml}</main>`)('main')[0]).text();
   return recall(ours, theirs).recall >= 0.99 && recall(theirs, ours).recall >= 0.99;
 }
