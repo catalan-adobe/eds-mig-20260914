@@ -5,15 +5,38 @@
 // centred, `center-first-row` when only the first row is. `w-73-605` gives the authored widths of
 // the first row's cells (px, `p` for percent, 0 for none): they set the columns.
 // `paragraphs` when most cells hold paragraphs: they take the body size and paragraph spacing.
+// Merged cells are written as the grid they cover, see `gridRows`.
 
 const CENTER = /text-align:\s*center/;
 
-/** Rows of a table as cell html; empty rows and cells stay, as the source draws them. */
-function cellRows(node, ctx) {
-  return ctx.$(node).find('tr').toArray()
-    .map((tr) => tr.children.filter((c) => ['td', 'th'].includes(c.name))
-      .map((cell) => ctx.clean(cell)))
-    .filter((cells) => cells.length);
+const span = (value) => Math.max(1, Number.parseInt(value, 10) || 1);
+
+/**
+ * Rows of a table as cell html, merged cells spread over the grid (DA keeps no colspan or
+ * rowspan): a position a merged cell covers holds `<` (part of the cell on its left) or `^`
+ * (part of the cell above). Empty rows and cells stay, as the source draws them.
+ * @param {object} node the <table>
+ * @param {Function} $ cheerio of the page
+ * @param {Function} cellHtml the html of one td or th
+ */
+export function gridRows(node, $, cellHtml) {
+  const trs = $(node).find('tr').toArray();
+  const grid = trs.map(() => []);
+  trs.forEach((tr, r) => {
+    let c = 0;
+    tr.children.filter((cell) => ['td', 'th'].includes(cell.name)).forEach((cell) => {
+      while (grid[r][c] !== undefined) c += 1;
+      const cols = span(cell.attribs.colspan);
+      const rows = Math.min(span(cell.attribs.rowspan), trs.length - r);
+      for (let dr = 0; dr < rows; dr += 1) {
+        for (let dc = 0; dc < cols; dc += 1) {
+          grid[r + dr][c + dc] = (dr && '^') || (dc && '&lt;') || cellHtml(cell);
+        }
+      }
+      c += cols;
+    });
+  });
+  return grid.map((row) => Array.from(row, (cell) => cell ?? '')).filter((row) => row.length);
 }
 
 /** Is a cell centred, by its own style or by the style of all its paragraphs? */
@@ -60,11 +83,10 @@ export default function table(el, ctx) {
     box.attr('useauthoredwidth') && 'auto-width',
     box.hasClass('sticky') && 'sticky',
   ];
-  if (box.find('[colspan], [rowspan]').length) ctx.warn('merged cells are written unmerged');
   return tables.map((t) => {
     const header = ctx.$(t).find('tr').first().children('th').length ? ['header'] : [];
     const all = [...variants, ...header, ...alignment(t, ctx), ...widths(t, ctx),
       ...paragraphs(t, ctx)];
-    return ctx.block('table', all, cellRows(t, ctx));
+    return ctx.block('table', all, gridRows(t, ctx.$, (cell) => ctx.clean(cell)));
   });
 }

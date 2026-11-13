@@ -70,6 +70,12 @@
   background: inherit;
 }
 
+/* the source keeps a merged row's sticky first cell under the cell that spans into it */
+.table.sticky .merged-row :is(th, td):first-child {
+  position: relative;
+  z-index: -1;
+}
+
 .section:has(+ .section[class*='top-']) .table.striped {
   margin-bottom: 0;
 }

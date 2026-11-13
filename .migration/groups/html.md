@@ -22,7 +22,9 @@ Owner of `blocks/promo/`, `blocks/search-box/`, `blocks/table/` and the transfor
    whole card the link and darkens the image border on hover, as the source.
 5. Nothing visible (styles, scripts, chat styles): no section.
 6. Anything else: the importer's default content (tables become `table` blocks there), with the
-   warning `one-off HTML written as default content`.
+   warning `one-off HTML written as default content`. A Font Awesome icon drawn as inline SVG in
+   a link (`svg[data-icon]`, the `cta-link` chevrons of the language home pages) is written as
+   its `:name:` icon first.
 
 ## Authored model
 
@@ -50,6 +52,25 @@ Owner of `blocks/promo/`, `blocks/search-box/`, `blocks/table/` and the transfor
 
 `promo`: the image cell of the contract is supported (side by side, hidden up to 480 px). No
 source box has one: the 389 boxes all hide an empty image column, so the transform writes none.
+
+## Merged cells
+
+DA and the pipeline drop `colspan` and `rowspan` (tested on a previewed draft, also for a
+native `<table>`). `table.mjs` (`gridRows`) writes the full grid instead: a position that a
+merged cell covers holds `<` (part of the cell on its left) or `^` (part of the cell above). The
+block rebuilds `colspan` / `rowspan` from these marks. With a rowspan in a `striped` table it
+runs the source's colouring script: rows alternate by the colour of the row before, the rows of
+a rowspan take its colour and side borders (`merged-row`).
+
+```html
+<div class="table striped">
+  <div><div>Features</div><div>LPDDR5</div></div>
+  <div><div>Device size</div><div>2Gb to 32Gb</div></div>
+  <div><div>^</div><div>4, 8 and 16 bank devices</div></div>
+</div>
+```
+
+Tables in text (`lib/document.mjs`, global) still use `cleaner.rows` and lose their merges.
 
 ## Variants
 
@@ -91,8 +112,9 @@ source box has one: the 389 boxes all hide an empty image column, so the transfo
 
 ## Known gaps
 
-- `table`: merged cells (`colspan`, `rowspan`, about 20) are written unmerged (warning). The
-  source's merged-row colouring script is not ported. The one `✔` check-mark cell
+- `table`: the `height` attributes of pasted (Excel) cells and empty `<p>&nbsp;</p>` lines in
+  cells are not kept, so rows with them are lower than the source (designcon, roadmap at 375).
+  The one `✔` check-mark cell
   (`/glossary/what-is-3dic.html`) stays a text character.
 - Cells partly centred (12 tables) lose their alignment.
 - One-off HTML keeps its content, not its page styles: `/success-stories/view-all.html` cards

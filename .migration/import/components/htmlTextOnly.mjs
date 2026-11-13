@@ -124,6 +124,11 @@ export default function htmlTextOnly(el, ctx) {
   const block = known(box, visible, ctx);
   if (block) return block;
   if (!visible.text().trim() && !visible.find('img, svg, iframe, video, table').length) return [];
+  // a Font Awesome icon drawn as inline SVG (cta-link chevrons) is an <i> icon to the cleaner
+  box.find('a svg[data-icon]').each((_, svg) => {
+    const name = svg.attribs['data-icon'];
+    if (/^[a-z0-9-]+$/.test(name)) $(svg).replaceWith(`<i class="fa-${name}"></i>`);
+  });
   ctx.warn('one-off HTML written as default content');
   return ctx.fallback();
 }
