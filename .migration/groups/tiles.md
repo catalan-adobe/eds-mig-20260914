@@ -34,6 +34,8 @@ Source: `mosaicCardContainer` (19 on 10 pages), `mosaicCardColor` (24), `mosaicC
 - Text colour: white on a dark background, grey `#646e81` (colour cards) or `#111c24` (rich
   text) on a light one, as the source's inline styles.
 - The whole card is an `a` when it has a link; links inside it become their text.
+- A card the source opens in a new tab (`data-new-tab="true"`, colour and rich cards) has its
+  link end with `#_blank`; the block strips it and sets `target="_blank"`.
 - A video card loads the `video` block (`modal`) in its media box. Hover: shadow 0.15 to 0.3.
 - Heights 400 / 280 / 280 px (colour), 400 / 280 / auto (rich), 400 / 280 / 200 (media).
 - `cardContainer` (teasers) merges `mosaicCardRTE` items into `mosaic rich cols-3`.
@@ -58,6 +60,8 @@ Source: `contentTile` (27 on 6 pages). One row per tile; neighbouring tiles merg
   digit) and the type. After it: the author. Every part is optional.
 - Cell 1: image, or a video link (with an optional thumbnail): the `video` block, in the modal.
 - Variant `tight`: the source's `less-padding-10` (2 tiles).
+- Title and type underline on hover with or without a link (video tiles have none), as the
+  source's `.component-content-tile .content-tile-title:hover`.
 - From 730: image 193 x 110, date under it, type and title beside it. Below 730: full-width
   image, date on the right of the type. Title and type underline on hover; the tile is the link.
 - In the newsroom's featured story (`.spotlight-container`) the desktop date is hidden, as the

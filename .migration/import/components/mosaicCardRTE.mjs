@@ -1,5 +1,6 @@
 // A mosaic card of rich text: one `mosaic rich` row. Cell 1 the background colour, the colour
-// of its headings when the source sets one, and the card's link; cell 2 the text.
+// of its headings when the source sets one, and the card's link; cell 2 the text. The card's link
+// ends with `#_blank` when the card opens in a new tab.
 import { escapeHtml } from '../lib/clean.mjs';
 
 const COLOURS = {
@@ -39,12 +40,14 @@ export default function mosaicCardRTE(el, ctx) {
     ?.match(/text-color-([a-z-]+)/)?.[1];
   const colours = [background ?? (COLOURS[heading] && '#ffffff'), COLOURS[heading]];
   const href = ctx.link(card.attr('data-link'));
-  const body = text(card.find('.component-mosaicCardRTE').first(), ctx);
+  const mark = href && card.attr('data-new-tab') === 'true' ? '#_blank' : '';
+  let body = text(card.find('.component-mosaicCardRTE').first(), ctx);
   // the card's link, unless its text already holds it
   const own = href && !body.includes(`href="${href}"`);
+  if (!own && mark) body = body.replaceAll(`href="${href}"`, `href="${href}${mark}"`);
   const cell = [
     colours.some(Boolean) && `<p>${colours.filter(Boolean).join(' ')}</p>`,
-    own && `<p><a href="${href}">${escapeHtml(href)}</a></p>`,
+    own && `<p><a href="${href}${mark}">${escapeHtml(href)}</a></p>`,
   ];
   return ctx.block('mosaic', ['rich'], [[cell.filter(Boolean).join(''), body]], { merge: true });
 }

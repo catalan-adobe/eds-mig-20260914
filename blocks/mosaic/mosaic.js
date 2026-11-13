@@ -1,7 +1,8 @@
 /*
  * Mosaic: the source's mosaic cards. One row per card: cell 1 the background colour (and the
  * heading colour of a `rich` card, and the card's link), or the media: an image, or a video
- * link with an optional thumbnail; cell 2 the text. The whole card is its link.
+ * link with an optional thumbnail; cell 2 the text. The whole card is its link. The importer
+ * marks a card link the source opens in a new tab with the hash `#_blank`.
  */
 import { decorateBlock, loadBlock } from '../../scripts/aem.js';
 
@@ -55,7 +56,8 @@ function decorateCard(row, block) {
   const href = (!video && link?.href) || body.querySelector('a[href]')?.href;
   const card = element(href ? 'a' : 'div', 'mosaic-card');
   if (href) {
-    card.href = href;
+    card.href = href.replace(/#_blank$/, '');
+    if (href.endsWith('#_blank')) card.target = '_blank';
     unwrapLinks(body);
   }
   const [background, heading] = colours;

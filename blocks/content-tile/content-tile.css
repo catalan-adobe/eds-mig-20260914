@@ -78,8 +78,8 @@
   font-weight: 300;
 }
 
-.content-tile a .content-tile-type:hover,
-.content-tile a .content-tile-title:hover {
+.content-tile .content-tile-type:hover,
+.content-tile .content-tile-title:hover {
   text-decoration: underline;
 }
 
