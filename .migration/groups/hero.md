@@ -71,6 +71,14 @@ it from the cells.
 
 ## Known gaps
 
+- New tab: a button to another site opens in a new tab, as most of the source's do. The source
+  also opens about 300 of its own pages in a new tab, an author's choice per link that DA
+  cannot carry: those open in the same tab.
+- A video button of the source is `href="#"`: the page jumps to the top behind the modal. The
+  block keeps the scroll position.
+- Keyboard focus keeps the browser's ring (`styles/styles.css`, deliberate); the source shows
+  only the underline.
+
 - `/synopsys-ansys-united`: a script of the page moves the banner text and logo 5 px down.
   Per-page scripts are not migrated.
 - Images are resampled by another service: banners with fine line patterns differ up to 1 %

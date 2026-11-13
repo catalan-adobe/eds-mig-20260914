@@ -106,6 +106,10 @@ function buildButton(a) {
       const { default: openModal } = await import('../../scripts/modal.js');
       openModal(player(a.href));
     });
+  } else if (a.hostname !== window.location.hostname) {
+    // as the source: its buttons to other sites (news, events, careers) open in a new tab
+    a.target = '_blank';
+    a.rel = 'noopener';
   }
   return a;
 }
