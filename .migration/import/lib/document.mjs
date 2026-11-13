@@ -3,7 +3,7 @@
 import {
   SITE, languageRoot,
 } from './config.mjs';
-import { paragraphs, widths } from '../components/table.mjs';
+import { gridRows, paragraphs, widths } from '../components/table.mjs';
 import { createCleaner, escapeAttr, escapeHtml } from './clean.mjs';
 import { rewriteLink, videoLink } from './links.mjs';
 import { pickSource } from './media.mjs';
@@ -85,7 +85,7 @@ function helpers(page, warn) {
   const table = (node) => {
     const header = $(node).find('thead, th').length ? ['header'] : [];
     const variants = [...header, ...widths(node, { $ }), ...paragraphs(node, { $ })];
-    return block('table', variants, cleaner.rows(node));
+    return block('table', variants, gridRows(node, $, (cell) => cleaner.parts(cell).join('')));
   };
   return {
     link, image, cleaner, table,

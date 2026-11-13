@@ -88,6 +88,12 @@ function phrases(env) {
   let inline;
   const inner = (node) => node.children.map((c) => inline(c)).join('');
 
+  /** A link in or around a `span.component-button-gray` (purple, orange): an authored button. */
+  function inButtonSpan(node) {
+    const span = 'span[class*="component-button-"]';
+    return env.$(node).parent(span).length > 0 || env.$(node).find(span).length > 0;
+  }
+
   function anchor(node) {
     const own = node.attribs['data-cfemail'];
     const html = own ? escapeHtml(decodeEmail(own)) : inner(node);
@@ -106,9 +112,10 @@ function phrases(env) {
     const a = `${before}<a href="${escapeAttr(href)}">${text || escapeHtml(href)}</a>${after}`;
     if (images.length) return `${PARA}${images.join('')}${PARA}${a}${PARA}`;
     if (!text) return before || after;
-    if (cls.some((c) => ['component-button', 'btn'].includes(c))) {
+    if (cls.some((c) => ['component-button', 'btn'].includes(c)) || inButtonSpan(node)) {
       const tag = cls.some((c) => ['secondary', 'btn-secondary'].includes(c)) ? 'em' : 'strong';
-      return `${PARA}${BUTTON}<${tag}>${a}</${tag}>${PARA}`;
+      const label = a.replace(/<\/?(?:strong|em|u)>/g, '');
+      return `${PARA}${BUTTON}<${tag}>${label}</${tag}>${PARA}`;
     }
     return cls.includes('cta-link') ? `${PARA}${BUTTON}${a}${PARA}` : a;
   }
@@ -121,7 +128,8 @@ function phrases(env) {
 
   inline = (node) => {
     if (node.type === 'text') return escapeHtml(collapse(node.data));
-    if (node.type !== 'tag' || SKIP.has(node.name) || node.name === 'svg') return '';
+    if (node.type !== 'tag' || SKIP.has(node.name)) return '';
+    if (node.name === 'svg') return node.attribs['data-icon'] ? `:${node.attribs['data-icon']}:` : '';
     if (node.name === 'br') return '<br>';
     if (node.name === 'img') return env.image(node);
     if (node.name === 'a') return anchor(node);
@@ -209,6 +217,10 @@ function blockParts(root, options, env, { inner, inline, list }) {
     (html.match(/<img\b[^>]*>/g) ?? []).forEach((img) => push(`<p>${img}</p>`));
   };
   const svg = (node) => {
+    if (node.attribs['data-icon']) {
+      buffer += inline(node);
+      return;
+    }
     const labels = env.$(node).find('text').toArray().map((t) => env.$(t).text().trim());
     if (labels.some(Boolean)) env.warn('inline SVG: only its text is kept');
     labels.filter(Boolean).forEach((label) => push(`<p>${escapeHtml(label)}</p>`));
@@ -278,10 +290,5 @@ export function createCleaner(env) {
     /** A phrase element (a, strong) or the content of a block, inline: breaks become <br>. */
     inline: (node) => paragraphs(PHRASE.has(node.name) ? phrase.inline(node) : phrase.inner(node))
       .join('<br>'),
-    /** The rows of a table as lists of cell html. */
-    rows: (table) => env.$(table).find('tr').toArray()
-      .map((tr) => tr.children.filter((c) => ['td', 'th'].includes(c.name))
-        .map((cell) => parts(cell).join('')))
-      .filter((cells) => cells.some(Boolean)),
   };
 }

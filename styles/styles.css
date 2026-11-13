@@ -620,6 +620,32 @@ main .icon img {
   }
 }
 
+/* `card-cells`: a row from a `cardContainer`. Its cells have 15 px of padding, 10 px from 730:
+   the columns are 20 px apart and reach 5 px past the container. 1 px is its empty title row. */
+.section-row.card-cells {
+  padding-top: calc(var(--band-top) + 1px);
+}
+
+.section-row.card-cells > .section-col {
+  padding-block: 15px;
+}
+
+@media (width >= 730px) {
+  .section-row.card-cells {
+    column-gap: 20px;
+    padding-inline: calc(max(var(--container-padding), var(--row-inset)) - 5px);
+  }
+
+  .section-col .section-row.card-cells {
+    margin-inline: -5px;
+    padding-inline: 0;
+  }
+
+  .section-row.card-cells > .section-col {
+    padding-block: 10px;
+  }
+}
+
 /* default content of a section: the source's `text` component (title, body, buttons).
    A block gives a cell the same look with the class `text-content`, and `title` on its title.
    Not for `richTextEditor` (rich-text), `image` and `pageList`: they use the element defaults. */
@@ -669,6 +695,10 @@ main .icon img {
 .section.rich-text > .default-content-wrapper :is(ul, ol) {
   padding-left: 20px;
 }
+
+.section.heading-gray :is(h1, h2, h3, h4, h5, h6) { color: var(--color-grey-text); }
+.section.heading-black :is(h1, h2, h3, h4, h5, h6) { color: #3c3c3c; }
+.section.heading-green :is(h1, h2, h3, h4, h5, h6) { color: var(--color-green); }
 
 /* `image`: fills its column */
 .default-content-wrapper.image > p {

@@ -37,7 +37,7 @@ if (window.trustedTypes && window.trustedTypes.createPolicy) {
   });
 }
 
-const ROW_STYLE = /^(band-(top|bottom)-(xs|sm|md)|divider|light-grey|white)$/;
+const ROW_STYLE = /^(band-(top|bottom)-(xs|sm|md)|card-cells|divider|light-grey|white)$/;
 const ZOOM_LABEL = 'Click to see the detail';
 const TAG_LINK = /\/category\?tag=/;
 
