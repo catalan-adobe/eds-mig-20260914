@@ -262,9 +262,9 @@ footer .footer[data-block-status='loaded'] {
   text-decoration: underline;
 }
 
-/* the source removes the focus ring; keyboard focus keeps it */
-:where(a:focus:not(:focus-visible)) {
+:where(a:focus) {
   outline: 0;
+  outline-offset: 0;
 }
 
 :where(img) {
