@@ -52,6 +52,7 @@ Row = one slide. Cells = the cells of the slide's `column` or `cardContainer`, o
 | `w-4-8`, `w-8-4`, `w-3-9`, `w-9-3` | `col-sm-N` of the slide's row | cell widths from 730. Default: equal cells |
 | `rich-text` | cells of `richTextEditor` | element defaults. Without it a cell is a `text`: 16 px, first `h2` is the title |
 | `title-small`, `title-large`, `title-dark` | title styles of the `text` sections | as the section styles |
+| `heading-black` | `span.text-color-black` in most `h3` to `h6` of the slides | those headings `#3c3c3c` |
 | `image-pad-sm`, `-md`, `-lg` | `horizontal-padding-*` of the images | 5 / 25 / 100 px |
 | `media` | `imageTextCta` | second cell first below 730, 24 px below image and text |
 | `slide-top-*`, `slide-bottom-*` | spacing of the component in every slide | padding of the slide |
@@ -86,8 +87,10 @@ source switches it off up to 480). One slide: no controls.
 Cell 2: optional caption, optional link to the file. One image in view (16:9), counter,
 arrows, caption over the image (1 line below 730, 2 from 730), a strip of thumbnails (3, 4
 from 420, 5 from 640, 6 from 1024) that turns by pages. The expand button opens a dialog with
-the same gallery, a grid of all thumbnails and the download link. Escape, the close button and
-a click outside close it. Not migrated from the source: the dialog under the utility bar.
+the same gallery at its first image, whatever image is in view (the source clones its template), a grid of all thumbnails and the download link. Escape, the close button and
+a click outside close it. Not migrated from the source: the dialog under the utility bar. There
+the sticky header stays above the backdrop and covers the close button, so a click on the X does
+not close the dialog: a defect, not copied.
 
 ### carousel logos
 
@@ -128,14 +131,14 @@ Logo geometry and speed were also measured at 1440, 992, 768, 750 and 375: equal
 Checked on the target with one script: next, previous, wrap at both ends, dots, arrow keys,
 swipe both ways, `inert` on hidden slides, autoplay after 6 s, pause on hover and on focus,
 `no-mobile` at 375 and back at 1440, one slide without controls, empty `logos` and `images`
-blocks, the dialog (opens at the image in view, download link, Escape, close button, click
+blocks, the dialog (opens at image 1 after moving to 4/6, as the source, download link, Escape, close button, click
 outside, focus back on the expand button).
 
 ## Known gaps
 
 - `/ja-jp/implementation-and-signoff/ams-simulation`: the first slide has an `h2` whose text
-  is 14 px by an inline style, and a `text-color-black` span in an `h4`. DA has neither, so
-  the slide is 13 px higher at 1440 (10 px at 375) and the quote is purple. With the heading
+  is 14 px by an inline style. DA cannot keep it, so the slide is 13 px higher at 1440 (10 px
+  at 375). The `text-color-black` of the quotes is the variant `heading-black`. With the heading
   set to 14 px in the browser the block is as high as the source.
 - Spacing between two components in one cell is not carried (`/cloud`: 8 px text offset at
   1440, 27 px shorter at 768, 19 px at 375).

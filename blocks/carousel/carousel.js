@@ -183,7 +183,7 @@ function readImage(row) {
  * @param {Element} corner The button that opens the dialog, or the download link
  * @param {Function} onShow Called with the index of the image in view
  * @param {boolean} paged True when the thumbnails are a strip that follows the image in view
- * @returns {{nodes: Element[], go: Function}} what to place, and a way to show an image
+ * @returns {Element[]} what to place
  */
 function gallery(images, corner, onShow, paged) {
   const track = element('div', 'carousel-track', ...images.map(({ picture, caption }) => {
@@ -212,16 +212,19 @@ function gallery(images, corner, onShow, paged) {
   };
   onChange(track, show);
   show(0);
-  return { nodes: [stage, thumbs.closest('.slider') ?? thumbs], go: slider.go };
+  return [stage, thumbs.closest('.slider') ?? thumbs];
 }
 
-/** The dialog of an image carousel: the gallery over the page, with the download links. */
-function openZoom(block, images, index) {
+/**
+ * The dialog of an image carousel: the gallery over the page, with the download links. It
+ * opens at the first image, whatever image is in view, as the source's.
+ */
+function openZoom(block, images) {
   const dialog = element('dialog', 'carousel-zoom');
   const close = button('carousel-close', 'Close');
   const download = element('a', 'carousel-download');
   download.setAttribute('aria-label', 'Download');
-  const { nodes, go } = gallery(images, download, (i) => {
+  const nodes = gallery(images, download, (i) => {
     download.hidden = !images[i].href;
     if (images[i].href) download.href = images[i].href;
   }, false);
@@ -233,17 +236,15 @@ function openZoom(block, images, index) {
   dialog.addEventListener('close', () => dialog.remove());
   block.append(dialog);
   dialog.showModal();
-  go(index);
 }
 
 /** `images`: a row is the image, then its caption and the link to its file. */
 function decorateImages(block) {
   const images = [...block.children].map(readImage).filter((image) => image.picture);
   if (!images.length) return;
-  let index = 0;
   const expand = button('carousel-expand', 'Enlarge');
-  expand.addEventListener('click', () => openZoom(block, images, index));
-  block.replaceChildren(...gallery(images, expand, (i) => { index = i; }, true).nodes);
+  expand.addEventListener('click', () => openZoom(block, images));
+  block.replaceChildren(...gallery(images, expand, () => {}, true));
 }
 
 /** `logos`: a row is the logo, then its link. The strip runs without end. */

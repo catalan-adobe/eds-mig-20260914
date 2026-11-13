@@ -28,6 +28,11 @@
   --title-color: var(--color-text);
 }
 
+/* the source's `text-color-black` on the quote headings of the slides */
+.carousel[data-block-name='carousel'].heading-black :is(h3, h4, h5, h6) {
+  color: #3c3c3c;
+}
+
 /* the space the source's components have above and below them in every slide */
 .carousel[data-block-name='carousel'].slide-top-xs .carousel-slide,
 .carousel[data-block-name='carousel'].slide-top-sm .carousel-slide,

@@ -119,6 +119,16 @@ function contentLook(sections, ctx) {
   return [...most(texts, TEXT_LOOKS), ...most(images, IMAGE_LOOKS)];
 }
 
+/**
+ * `heading-black`: most headings below the slide titles are coloured by the source's
+ * `span.text-color-black`, a span DA cannot keep.
+ */
+function headingLook(slides, $) {
+  const headings = $(slides).find('h3, h4, h5, h6').toArray();
+  const black = headings.filter((h) => $(h).find('.text-color-black').length);
+  return headings.length && black.length * 2 >= headings.length ? ['heading-black'] : [];
+}
+
 const isFilled = ($, el) => !!($(el).text().trim() || $(el).find('img, [data-video-id]').length);
 
 /** The only filled component of a slide, looked for inside the containers around it. */
@@ -188,7 +198,8 @@ export function slideSections(slides, ctx, { variants = [], look = [], ...view }
   // an image beside a text (the source's imageTextCta) stacks in reverse below 730
   const media = rows.every((row) => row.media) && 'media';
   const names = [
-    ...look, width, media, ...contentLook(used, ctx), ...slideSpace(rows), ...variants,
+    ...look, width, media, ...contentLook(used, ctx), ...headingLook(filled, ctx.$),
+    ...slideSpace(rows), ...variants,
   ];
   const block = ctx.block('carousel', names, rows.map((row) => row.cells));
   return [ctx.section(block, { styles: band })];
