@@ -15,6 +15,8 @@ Authored model, one block per card, one section per card (no item merge):
 - Row 2, the links: a `ul`. Missing on the 37 cards that have only a flag. The block finds the
   list row by its `ul` and the flag row by elimination, so the order and missing rows do not matter.
 - `NEW` is the source's `span.label-new`, written as `<strong>` at the start of the link.
+- A link the source opens in a new tab (`target=_blank`) ends with `#_blank`; the block removes
+  the hash and sets `target=_blank`.
 - Variant `video` (17 cards, not in the contract): the source card has an empty
   `.video-wrapper`, so the gap under the flag is 10 px instead of 5 px from 730 px.
 - Empty cards (11) are dropped. The flag colour is always `#5A2A82` (4,074 of 4,074), so it is
@@ -42,7 +44,8 @@ bottom margin `30px - .45em` of the body font; 10 px top padding up to 480 px.
   with `{ids}` and `{components}`, keeps the authored order, builds the Products table and one
   Downloads & Documentation table per product. It has two tabs from 730 px and an accordion below
   (first panel open, a click on an open header closes it). It has Show Documents / Hide Documents
-  and opens `#dd` from the URL hash. With no data or an error it stays hidden.
+  and opens `#dd` from the URL hash. A click on a tab or on a header title sets the hash
+  (`pushState`, no jump), as the source's `href="#dd"` links do. With no data or an error it stays hidden.
 
 ## Measured (localhost:3520, integrated pages)
 

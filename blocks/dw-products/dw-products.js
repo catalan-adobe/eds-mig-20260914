@@ -125,9 +125,16 @@ function tabs(panels) {
     v.head.setAttribute('aria-expanded', open);
     v.tab.setAttribute('aria-selected', open);
   });
+  // as the source's links: the URL takes the panel's hash, without a jump to the panel
+  const mark = (v) => {
+    if (window.location.hash !== `#${v.id}`) window.history.pushState(null, '', `#${v.id}`);
+  };
   views.forEach((v) => {
-    v.tab.addEventListener('click', () => select(v));
-    v.head.addEventListener('click', () => select(v, true));
+    v.tab.addEventListener('click', () => { select(v); mark(v); });
+    v.head.addEventListener('click', (e) => {
+      select(v, true);
+      if (e.target.closest('.dw-panel-title')) mark(v);
+    });
   });
   select(views.find((v) => `#${v.id}` === window.location.hash) ?? views[0]);
   return element('div', 'dw-tabs', nav, content);
