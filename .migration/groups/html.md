@@ -17,8 +17,9 @@ Owner of `blocks/promo/`, `blocks/search-box/`, `blocks/table/` and the transfor
    `?playlistId=`). `form[id^=mktoForm_]`: `form` with the key row `form`. Only iframes:
    one `embed` each, with `W x H` when the source sets a size (300 x 150 as googleMap).
 4. A link around `.component-image` and `.component-text` (logo walls, success-story cards:
-   `/success-stories/view-all.html` 52, `/partners.html` 27): default content, image, then the
-   title as the link, then the description. A linked image would not survive in a block cell.
+   `/success-stories/view-all.html` 52, `/partners.html` 27): one `teasers logos` item (image,
+   then the title as the link and the description), merged by the column. The block makes the
+   whole card the link and darkens the image border on hover, as the source.
 5. Nothing visible (styles, scripts, chat styles): no section.
 6. Anything else: the importer's default content (tables become `table` blocks there), with the
    warning `one-off HTML written as default content`.
@@ -55,7 +56,7 @@ source box has one: the 389 boxes all hide an empty image column, so the transfo
 | Block | Variant | Source | Look |
 | --- | --- | --- | --- |
 | promo | (default) | `.pa` (389) | `#5a2a82` box, 40 px padding (30 up to 480), title 32 / 500, button `#80539c` 10 x 30 px, hover underlines, gradient rule 2 px below |
-| promo | `outline` | `#extraInfo` (30, zh-cn rail) | 1 px `#80539c` border, centred, title 0.8 of the `text` title size, yellow button with purple border, hover darkens |
+| promo | `outline` | `#extraInfo` (30, zh-cn rail) | links open in a new tab, 1 px `#80539c` border, centred, title 0.8 of the `text` title size, yellow button with purple border, hover darkens |
 | search-box | | `form[name=ipForm]` (249) | browser field, 100 % wide, one empty line below. Enter: target + `encodeURIComponent(query)` |
 | table | (default) | tables in text and in htmlTextOnly | the global `table, th, td` rules: 1 px `#ccc`, 8 px |
 | table | `striped` | the `table` component (161) | `.cmp-table`: shadow, `#e3e3e3` outline, striped rows, cells 18 x 24 px, width 200 / 25 % / 285 px per column (211.8 px in a `span-9`), at least 100 %, scrolls sideways |
@@ -98,3 +99,9 @@ source box has one: the 389 boxes all hide an empty image column, so the transfo
   (2 to 4 % per band at 1440: description 18 px and grey title in the source), `/partners.html`.
 - Tables inside htmlTextOnly (47) and in text use the default look; their inline widths and
   page styles are lost.
+
+## Search IP: encoded query
+
+The source's `IPRedirectKeys` appends the raw value to `http://www.synopsys.com/dw/ipsearch.php?p=`,
+so `&` and `+` in a query split or change it on the server. `search-box` encodes the query, as
+the contract asks. The URLs differ only for queries with `&`, `+`, `#` or `%`.

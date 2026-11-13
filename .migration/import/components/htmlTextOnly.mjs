@@ -71,19 +71,20 @@ function embeds(frames, ctx) {
 }
 
 /**
- * A card that is one link around an image and a text (logo walls, success stories): the image,
- * the title as the link, the description. A linked image would not survive in a block cell.
+ * A card that is one link around an image and a text (logo walls, success stories): a
+ * `teasers logos` item, which the column merges. The block makes the whole item the link.
  */
 function linkedCard(card, ctx) {
   const href = ctx.link(card.attr('href'));
   const img = card.find('img').first();
   const title = ctx.clean(card.find('.component-text .title').first(), { inline: true });
   const text = card.find('.component-text').children().not('.title');
-  return [
-    img.length && `<p>${ctx.image(img)}</p>`,
+  const cell = [
     title && (href ? `<p><a href="${href}">${title}</a></p>` : `<p>${title}</p>`),
     ctx.clean(text),
-  ].filter(Boolean);
+  ].filter(Boolean).join('');
+  const row = [img.length ? ctx.image(img) : '', cell];
+  return ctx.block('teasers', ['logos'], [row], { merge: true });
 }
 
 /** The block of a known shape, or null. */
