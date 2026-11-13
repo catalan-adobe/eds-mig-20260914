@@ -1053,9 +1053,3 @@
     padding-top: 0;
   }
 }
-
-/* the message when the domain lists cannot be read: the source sets this margin inline, so it
-   holds at every width */
-.form-panel form.mktoForm .form-loading-error .mktoErrorMsg {
-  margin-bottom: 10px;
-}

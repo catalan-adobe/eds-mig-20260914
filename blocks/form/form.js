@@ -8,7 +8,6 @@ const LEAD_API = 'https://api.synopsys.com/api/v1/lead';
 const KEYS = ['title', 'form', 'known-visitor-form', 'asset-type', 'campaign', 'content-url',
   'success', 'blocked-domains', 'domain-error', 'date', 'submit'];
 // Texts the source script holds, in English on every language.
-const LOADING_ERROR = 'Error while loading form!';
 const WORK_EMAIL = 'Please register with a valid work email.';
 const SUBMITTED = 'Your Form Has Been Submitted!';
 const REDIRECT_DELAY = 1500;
@@ -210,16 +209,6 @@ function domainChecks(form, config, all) {
   formEl.addEventListener('change', () => formEl.querySelector('.form-submitted')?.remove());
 }
 
-/** The source's message when the domain lists cannot be read. */
-function loadingError(form) {
-  const formEl = form.getFormElem()[0];
-  form.submittable(false);
-  const message = element('div', 'mktoError', element('div', 'mktoErrorMsg', LOADING_ERROR));
-  const row = element('div', 'mktoFormRow form-loading-error', message);
-  formEl.querySelector('.mktoFormRow')?.before(row);
-  formEl.querySelectorAll('.mktoButton').forEach((button) => { button.disabled = true; });
-}
-
 const hiddenFields = (config) => ({
   campaign_asset: config.campaign?.text ?? '',
   contentURL: config['content-url']?.text ?? '',
@@ -238,10 +227,9 @@ function setupForm(form, config, block) {
   });
   form.onSubmit(() => form.addHiddenFields({ mktoTrackingID: cookie('_mkto_trk') }));
   onSuccess(form, config.success, block);
-  domainLists().then((all) => domainChecks(form, config, all), () => {
-    // as the source: a form that blocks domains stays closed when their lists cannot be read
-    if (config['blocked-domains']) loadingError(form);
-  });
+  // the source's error message for unreadable lists never shows: its script calls the
+  // misspelt form.submitable() first and stops there; the checks run without the lists
+  domainLists().catch(() => ({})).then((all) => domainChecks(form, config, all));
   if (block.classList.contains('two-column')) {
     spanOddFields(formEl);
     formEl.addEventListener('change', (event) => {
@@ -319,13 +307,13 @@ async function loadGated(block, config, parts) {
 /**
  * A subscription form in the rail of an article, as the source's script: below 731 px the form
  * moves to the page's end, and the rail's contents list, the page's menu there, gets a link
- * to it with the label of the form's button.
+ * to it with the label of the form's button. Returns whether the form sits in such a rail.
  */
 function moveBelowContent(block, label) {
   const wrapper = block.parentElement;
   const contents = wrapper.closest('.section-col')?.querySelector('.toc ul');
   const main = wrapper.closest('main');
-  if (!contents || !main) return;
+  if (!contents || !main) return false;
   const home = element('div', 'form-home');
   const moved = element('div', 'section form-moved');
   moved.id = 'subscribe';
@@ -346,6 +334,24 @@ function moveBelowContent(block, label) {
   };
   mobile.addEventListener('change', place);
   place();
+  return true;
+}
+
+/**
+ * As the source's script, for a form in a rail with a contents list: the first class Marketo
+ * adds to the e-mail field (its check on a first focus) is taken off again, once.
+ */
+function skipFirstCheck(formEl) {
+  const email = formEl.querySelector('#Email');
+  if (!email) return;
+  const initial = new Set(email.classList);
+  const observer = new MutationObserver(() => {
+    const added = [...email.classList].find((name) => !initial.has(name));
+    if (!added) return;
+    email.classList.remove(added);
+    observer.disconnect();
+  });
+  observer.observe(email, { attributes: true, attributeFilter: ['class'] });
 }
 
 /** The blog subscription form: title, form, and the message that replaces it after a submit. */
@@ -366,7 +372,7 @@ async function loadSubscribe(block, config) {
     if (button && config.submit) button.textContent = config.submit.text;
     onSuccess(form, config.success, block);
     preventAutoFocus(formEl);
-    moveBelowContent(block, button?.textContent);
+    if (moveBelowContent(block, button?.textContent)) skipFirstCheck(formEl);
   });
 }
 

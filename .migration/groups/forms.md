@@ -70,7 +70,11 @@ source's three files as they are: the 28 lists of `Forms-Domains-List.json`, and
 - `block-list`: on submit, "Your Form Has Been Submitted!" in green, and nothing is sent.
 - `dmb-list-BIS` holds one empty entry. It is kept: the source matches it against an empty
   e-mail, so an empty submit shows the `domain-error` message instead of Marketo's own.
-- A sheet that cannot be read: "Error while loading form!" above the fields, submit disabled.
+- A sheet that cannot be read: no message, submit stays enabled, the checks run without the
+  lists (own domains only). The source's "Error while loading form!" never shows: its script
+  calls the misspelt `form.submitable(false)` first, which throws.
+- Subscribe form in a rail with contents: the first class Marketo adds to `#Email` (its check
+  on a first focus) is removed once, as the source's `fixMarketoFormInitialValidation`.
 
 The sheet was written once from the cache (`util/marketo-forms/*.json`) with `tools/da.mjs put`
 and `preview`. The importer does not write it.
