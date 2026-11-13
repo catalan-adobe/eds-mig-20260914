@@ -23,8 +23,24 @@ A row is one band of a panel: `label | cell … | styles`.
   the `site-content` bottoms below 730), `title-dark`, `title-large`, `center`, `right`, `rule`,
   `rich-text`, `image-pad-sm|md|lg`, `light-grey`, `white`, `w-3-9`, `w-9-3`, `w-4-8`, `w-8-4`,
   `divider`, `box-links`.
+- **Spacing of one cell**: `c2-top-sm`, `c1-bottom-xs`, … is the spacing of cell 2 (1, …),
+  inside it (`/verification/static-and-formal-verification/vc-formal.html`: the text beside
+  the video starts 30 px lower). The spacing of the cells' own components is always written
+  this way in a row of two or more cells, so that stacked cells keep it each below 730, and
+  beside a row spacing, which is the source's spacing of the band around the cells: the two
+  add up (`/zh-cn/ai/ai-chip-development.html`).
+- **Spacing inside a cell**: `gap-top-xs|sm|md` or `gap-bottom-xs|sm|md` puts the spacing of
+  the source's components of a cell before every title of a cell that is not its first child
+  (`/zh-cn/ai/ai-chip-development.html`: "相关产品" and "推荐资源", 30 px apart). `gap-top-*` is
+  40 px below 730, `gap-bottom-*` shrinks as `bottom-*` on `site-content` pages.
 - **`box-links`**: the lists of links of the row are drawn as the source's `boxLink`. One list
   alone in its row: two per row. An item with a list inside opens it (plus and minus).
+  `box-links (first)`: only the first list of each cell, when a plain list of links follows
+  it (`/ja-jp/ai.html`, "資料"); `cols-2` in it: the source's two columns, written column by
+  column, side by side from 730 and one after the other below.
+- **A separator alone** (a `text` with only its `hr`) is an empty row with `rule`.
+- **Images of one paragraph** sit side by side from 730, as a source row of equal image cells
+  (`/verification/emulation-prototyping/emulation/zebu-cloud-solution.html`, "Secure").
 - **A block inside a panel**: a style that names a block, `cards (cols-3)`, `columns (media)`,
   `accordion`, makes the row a row of that block. Rows that name the same block, one after
   the other, are one block. The tabs block builds it and loads it with `loadBlock`. Allowed:
@@ -33,7 +49,11 @@ A row is one band of a panel: `label | cell … | styles`.
 - **`cell columns (media, narrow, …)`**: in every cell of the row, each image paragraph and
   the text after it, up to the next image, is one `columns` block of that kind, drawn inside
   the cell with the source's 30 px top and 15 px bottom spacing (textImage2Column beside
-  another cell: `/events/ai-infra-summit.html`, first panel).
+  another cell: `/events/ai-infra-summit.html`, first panel). Also rows of an image and its
+  text of any width (`cell columns (w-8-4)`, `/company/responsible-business/environment.html`).
+- **`cell video (modal)`**: in every cell, each paragraph that is only a video link, with the
+  image paragraph before it as poster, is a `video` block of that kind
+  (`/verification/static-and-formal-verification/vc-formal.html`).
 
 ```html
 <div class="tabs vertical">
@@ -98,14 +118,9 @@ A row is one band of a panel: `label | cell … | styles`.
 
 ## Known gaps
 
-- A row has one spacing. Components of one cell that have their own spacing, beside another
-  filled cell, lose it: 77 warnings on 16 pages (`top spacing inside the cells of a row is
-  lost`, `bottom …`). Example: `/zh-cn/ai/ai-chip-development.html`, 50 px short at 1440.
-- A block inside a cell of a row with other filled cells becomes default content, except
-  image-and-text rows (`cell columns (…)`): `/verification/static-and-formal-verification/
-  vc-formal.html`.
-- Box links beside a plain list of links in one row are drawn as a list: 11 rows on
-  `/ja-jp/ai.html` and `/zh-cn/ai.html`.
+- Spacing inside a cell between components that do not start with a title is lost:
+  `/careers/global/europe-and-middle-east/portugal.html` (the one warning `spacing between
+  the sections of a cell is lost` left on the 358 pages with tabs).
 - The title of a panel is 24 px. One title of the site is not small
   (`/designware-ip/technical-bulletin.html`): it gets 24 px too. `zoom` is not drawn in a
   panel (12 images).
@@ -139,3 +154,20 @@ Not within 1 % on the sample pages, for the reasons above: the first tabs of
 
 Tab colours, borders, padding, hover, the open panel after each click, the hash and the
 accordion toggles are equal on both sites (one script, `bluespec` and `ai-chip-development`).
+
+## Rollout fixes (region `.component-floating-tabs` against `.tabs`, first tab)
+
+| Page | 1440 | 768 | 375 |
+| --- | ---: | ---: | ---: |
+| `/ja-jp/ai.html` box links beside a list, gaps | 0.00 % | 0.38 % | 0.19 % |
+| `/zh-cn/ai.html` the same | 0.00 % | 0.34 % | 1.60 % |
+| `/zh-cn/ai/ai-chip-development.html` band and cell spacing, gaps | 0.00 % | 0.00 % | 0.00 % |
+| `/zh-cn/automotive.html` the same | 0.00 % | 0.00 % | 0.00 % |
+| `/verification/static-and-formal-verification/vc-formal.html` video in a cell | 0.39 % | | 0.01 % |
+| `/company/responsible-business/environment.html` `cell columns (w-8-4)` | 0.92 % | | 1.38 % |
+
+Left, outside this block: `/events/signoff-conf/proceedings-2024.html` 25 px (a trailing
+`<br><br>` of a text), `/zh-cn/multi-die-system.html` (a `<br>` in a `ul`, a `p` in an
+`li`), `/solutions/silicon-lifecycle-management/environmental-monitors/slm-pvt-monitor-ip.html`
+15 px (an image paragraph in a text cell keeps its 24 px margin, `image-pad-sm` of one
+component of a cell, an empty title before a caption).

@@ -70,6 +70,26 @@
 .tabs .tabs-row.bottom-xs { --bottom: var(--space-xs); }
 .tabs .tabs-row.bottom-sm { --bottom: var(--space-sm); }
 .tabs .tabs-row.bottom-md { --bottom: var(--space-md); }
+.tabs .tabs-row:is(.gap-top-xs, .gap-top-sm, .gap-top-md) { --gap: 40px; }
+.tabs .tabs-row.gap-bottom-xs { --gap: var(--space-xs); }
+.tabs .tabs-row.gap-bottom-sm { --gap: var(--space-sm); }
+.tabs .tabs-row.gap-bottom-md { --gap: var(--space-md); }
+.tabs .tabs-cell:is(.cell-top-xs, .cell-top-sm, .cell-top-md) { padding-top: 40px; }
+.tabs .tabs-cell.cell-bottom-xs { padding-bottom: var(--space-xs); }
+.tabs .tabs-cell.cell-bottom-sm { padding-bottom: var(--space-sm); }
+.tabs .tabs-cell.cell-bottom-md { padding-bottom: var(--space-md); }
+
+/* the spacing between two components of one cell of the source, before the second's title */
+.tabs .tabs-row[class*='gap-'] > .tabs-cell > :is(h1, h2, h3, h4, h5, h6):not(:first-child) {
+  padding-top: var(--gap);
+}
+
+/* the text of the source's `text` keeps 24 px below it up to 730, none from 730 */
+.tabs .tabs-row[class*='gap-'] > .tabs-cell
+  > :not(.tabs-box-links):has(+ :is(h1, h2, h3, h4, h5, h6)) {
+  margin-bottom: 24px;
+}
+
 .tabs .tabs-row.title-large { --title: var(--title-size-large); }
 .tabs .tabs-row.title-dark { --title-color: var(--color-text); }
 .tabs .tabs-row.light-grey { background-color: var(--color-bg-light); }
@@ -108,16 +128,27 @@
   width: 100%;
 }
 
+/* images of one paragraph: a row of images, stacked below 730 */
+.tabs .tabs-cell > p:has(> picture + picture) {
+  display: grid;
+}
+
+.tabs .tabs-cell > p:has(> picture + picture) img {
+  display: block;
+  width: 100%;
+}
+
 .tabs .tabs-row.image-pad-sm .tabs-image img { padding: 0 5px; }
 .tabs .tabs-row.image-pad-md .tabs-image img { padding: 0 25px; }
 .tabs .tabs-row.image-pad-lg .tabs-image img { padding: 0 100px; }
 
-/* an image-and-text row inside a cell: the source's textImage2Column with its 30 px top and
-   15 px bottom spacing, which below 730 are its own padding. Not the cell's text line height */
-.tabs .tabs-cell > .columns-wrapper {
+/* a block inside a cell has no spacing of its own */
+.tabs .tabs-cell > :is(.columns-wrapper, .video-wrapper) {
   margin: 0;
 }
 
+/* an image-and-text row inside a cell: the source's textImage2Column with its 30 px top and
+   15 px bottom spacing, which below 730 are its own padding. Not the cell's text line height */
 .tabs .tabs-cell .columns.narrow {
   padding: var(--space-sm) 0 var(--space-xs);
   line-height: var(--line-height-body);
@@ -231,6 +262,10 @@
   ) .tabs {
     & .tabs-row.bottom-sm { --bottom: 0px; }
     & .tabs-row.bottom-md { --bottom: 10px; }
+    & .tabs-row.gap-bottom-sm { --gap: 0px; }
+    & .tabs-row.gap-bottom-md { --gap: 10px; }
+    & .tabs-cell.cell-bottom-sm { padding-bottom: 0; }
+    & .tabs-cell.cell-bottom-md { padding-bottom: 10px; }
   }
 }
 
@@ -289,6 +324,17 @@
   .tabs .tabs-row.top-xs { --top: var(--space-xs); }
   .tabs .tabs-row.top-sm { --top: var(--space-sm); }
   .tabs .tabs-row.top-md { --top: var(--space-md); }
+  .tabs .tabs-row.gap-top-xs { --gap: var(--space-xs); }
+  .tabs .tabs-row.gap-top-sm { --gap: var(--space-sm); }
+  .tabs .tabs-row.gap-top-md { --gap: var(--space-md); }
+  .tabs .tabs-cell.cell-top-xs { padding-top: var(--space-xs); }
+  .tabs .tabs-cell.cell-top-sm { padding-top: var(--space-sm); }
+  .tabs .tabs-cell.cell-top-md { padding-top: var(--space-md); }
+
+  .tabs .tabs-row[class*='gap-'] > .tabs-cell
+    > :not(.tabs-box-links):has(+ :is(h1, h2, h3, h4, h5, h6)) {
+    margin-bottom: 0;
+  }
 
   /* cells side by side: the source's 12 columns with a 30 px gutter */
   .tabs .tabs-row {
@@ -337,15 +383,27 @@
     border-left: 1px solid var(--color-border);
   }
 
+  .tabs .tabs-cell > p:has(> picture + picture) {
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    column-gap: var(--gutter);
+  }
+
   /* link lists: the icon first, two links per row when the list has the row for itself */
   .tabs .tabs-box-links > li {
     max-width: 342px;
   }
 
-  .tabs .tabs-cell:only-child > .tabs-box-links {
+  .tabs .tabs-cell:only-child > .tabs-box-links,
+  .tabs .tabs-box-links.cols-2 {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     column-gap: var(--gutter);
+  }
+
+  .tabs .tabs-box-links.cols-2 {
+    grid-template-rows: repeat(var(--rows), auto);
+    grid-auto-flow: column;
   }
 
   .tabs .tabs-box-links > li > :is(a, button) {

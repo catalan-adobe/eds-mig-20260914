@@ -2,19 +2,22 @@
  * Tabs: the source's floating tabs, horizontal or vertical, an accordion below 730.
  * A row is one band of a panel: label | cells side by side | optional styles. A row with a
  * label starts a panel; rows without one continue it. The style `box-links` draws the lists
- * of links of a row as box links. A style that names a block, as `cards (cols-3)`, makes the
+ * of links of a row as box links; `box-links (first, cols-2)` only the first list of each cell,
+ * in two columns. A style that names a block, as `cards (cols-3)`, makes the
  * row a row of that block: it is loaded inside the panel. `cell columns (media, narrow)` draws,
- * in every cell, each image and the text after it as one such block.
+ * in every cell, each image and the text after it as one such block; `cell video (modal)` each
+ * paragraph that is only a video link. `c2-top-sm` is the spacing
+ * of one cell; `gap-top-sm` the spacing before every title of a cell but its first child.
  */
 import { decorateBlock, loadBlock } from '../../scripts/aem.js';
 
-const STYLE = new RegExp(`^(${['(top|bottom)-(xs|sm|md)', 'w-(3-9|9-3|4-8|8-4)',
+const STYLE = new RegExp(`^(${['(c\\d+-|gap-)?(top|bottom)-(xs|sm|md)', 'w-(3-9|9-3|4-8|8-4)',
   'image-pad-(sm|md|lg)', 'title-(dark|small|large)', 'center', 'right', 'rule', 'rich-text',
-  'light-grey', 'white', 'divider', 'box-links'].join('|')})$`);
+  'light-grey', 'white', 'divider', 'box-links( \\((first|cols-2)(, cols-2)?\\))?'].join('|')})$`);
 const NESTED = new RegExp(`^(${['accordion', 'cards', 'carousel', 'columns', 'content-tile',
   'embed', 'key-benefits', 'mosaic', 'promo', 'quote', 'table', 'teasers', 'video']
   .join('|')})( \\(([a-z0-9-]+(, )?)+\\))?$`);
-const CELL = /^cell (columns( \(([a-z0-9-]+(, )?)+\))?)$/;
+const CELL = /^cell ((columns|video)( \(([a-z0-9-]+(, )?)+\))?)$/;
 const NEXT = {
   ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1,
 };
@@ -89,32 +92,67 @@ function decorateBoxLinks(list) {
   });
 }
 
-/** Each image paragraph of the cell and what follows it, up to the next one, as a block. */
-function cellBlocks(cell, name) {
-  const isImage = (el) => el.tagName === 'P' && !el.textContent.trim() && el.querySelector('img');
+/** A block of the cell, in a wrapper of its own: the block is not the cell's only content. */
+function wrap(node, name, ...cells) {
+  const block = element('div', name.replace(/[(),]/g, ''), element('div', '', ...cells));
+  block.dataset.nested = name;
+  node.replaceWith(element('div', '', block));
+}
+
+/** Each image of the cell and what follows it, up to the next image, as a block. */
+function cellColumns(cell, name) {
+  // an image alone in its cell comes without a paragraph
+  const isImage = (el) => el.tagName === 'PICTURE'
+    || (el.tagName === 'P' && !el.textContent.trim() && el.querySelector('img'));
   [...cell.children].filter(isImage).forEach((image) => {
     const text = element('div', '');
     while (image.nextElementSibling && !isImage(image.nextElementSibling)) {
       text.append(image.nextElementSibling);
     }
-    const media = element('div', '', ...image.childNodes);
-    const block = element('div', name.replace(/[(),]/g, ''), element('div', '', media, text));
-    block.dataset.nested = name;
-    // a wrapper of its own: the block is not the row's only content
-    image.replaceWith(element('div', '', block));
+    const spot = element('div', '');
+    image.replaceWith(spot);
+    const media = image.tagName === 'P' ? [...image.childNodes] : [image];
+    wrap(spot, name, element('div', '', ...media), text);
+  });
+}
+
+/** Each paragraph that is only a link to its own URL, with the image paragraph before it. */
+function cellVideos(cell, name) {
+  [...cell.querySelectorAll(':scope > p')].forEach((p) => {
+    const link = p.querySelector(':scope > a:only-child');
+    if (!link || link.textContent.trim() !== link.href || p.textContent.trim() !== link.href) {
+      return;
+    }
+    const poster = p.previousElementSibling;
+    const image = poster?.tagName === 'P' && !poster.textContent.trim()
+      && poster.querySelector('img');
+    const media = image ? [poster] : [];
+    wrap(p, name, element('div', '', ...media, element('p', '', link)));
   });
 }
 
 function decorateCell(cell, styles, inCell) {
   cell.className = 'tabs-cell';
-  if (inCell) cellBlocks(cell, inCell.slice('cell '.length));
+  inCell.map((word) => word.slice('cell '.length)).forEach((name) => {
+    if (name.startsWith('video')) cellVideos(cell, name);
+    else cellColumns(cell, name);
+  });
   const image = !cell.textContent.trim() && cell.querySelector('picture, img');
   if (image) cell.classList.add('tabs-image');
   else if (!styles.includes('rich-text')) {
     cell.classList.add('text-content');
     cell.querySelectorAll(':scope > h2').forEach((title) => title.classList.add('title'));
   }
-  if (styles.includes('box-links')) cell.querySelectorAll(':scope > ul').forEach(decorateBoxLinks);
+  const links = styles.find((style) => style.startsWith('box-links'));
+  if (!links) return;
+  const lists = [...cell.querySelectorAll(':scope > ul')];
+  (links.includes('first') ? lists.slice(0, 1) : lists).forEach((list) => {
+    decorateBoxLinks(list);
+    if (!links.includes('cols-2') || !list.matches('.tabs-box-links')) return;
+    // the links come column by column, as the source stacks its two columns below 730
+    list.classList.add('cols-2');
+    list.style.setProperty('--rows', Math.ceil(list.children.length / 2));
+  });
 }
 
 /** The panels of the block: { label, id, rows }, a row being its cells and its styles. */
@@ -126,7 +164,7 @@ function readPanels(block) {
     const words = takeStyles(cells);
     const styles = words.filter((word) => STYLE.test(word));
     const nested = words.find((word) => NESTED.test(word));
-    const inCell = words.find((word) => CELL.test(word));
+    const inCell = words.filter((word) => CELL.test(word));
     const text = label.textContent.trim();
     if (text || !panels.length) {
       const hash = label.querySelector('a[href^="#"]')?.getAttribute('href').slice(1);
@@ -139,7 +177,10 @@ function readPanels(block) {
       return;
     }
     cells.forEach((cell) => decorateCell(cell, styles, inCell));
-    const band = element('div', ['tabs-row', ...styles].join(' '), ...cells);
+    styles.map((style) => style.match(/^c(\d+)-(.+)$/)).filter(Boolean)
+      .forEach(([, n, edge]) => cells[n - 1]?.classList.add(`cell-${edge}`));
+    const band = element('div', ['tabs-row', ...styles.map((style) => style.replace(/[(),]/g, ''))]
+      .join(' '), ...cells);
     band.style.setProperty('--cells', cells.length);
     band.style.setProperty('--span', Math.floor(12 / Math.max(1, cells.length)));
     panel.rows.push(band);

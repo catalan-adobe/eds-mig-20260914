@@ -17,7 +17,7 @@ const NESTED = ['accordion', 'cards', 'carousel', 'columns', 'content-tile', 'em
 const LINK = /^(?:<p>)?(<a [^>]*>(?:(?!<\/a>)[\s\S])*<\/a>)(?:<\/p>)?$/;
 // a box link that opens a list of links: its label, then the list
 const MENU = /^<p>((?:(?!<\/p>)[\s\S])*)<\/p>(<ul>[\s\S]*<\/ul>)$/;
-const LINK_LIST = /^<ul>(<li><a [^>]*>[^<]*<\/a><\/li>)+<\/ul>$/;
+const LINK_LIST = /^<ul>(<li><a [^>]*>(?:(?!<\/a>)[\s\S])*<\/a><\/li>)+<\/ul>$/;
 const slug = (text) => text.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, '-').replace(/^-|-$/g, '');
 const isBlock = (part) => typeof part !== 'string';
 const isBoxLinks = (part) => isBlock(part) && part.name === 'box-links';
@@ -26,6 +26,13 @@ const token = (b, more = []) => (b.variants.length + more.length
   ? `${b.name} (${[...b.variants, ...more].join(', ')})` : b.name);
 const isNarrow = (part) => isBlock(part) && part.name === 'columns'
   && part.variants.includes('narrow');
+const IMAGE = /^<p><img [^>]*><\/p>$/;
+// rows of an image and its text: the tabs block draws them in their cell (`cell columns`)
+const isImageText = (part) => isNarrow(part) || (isBlock(part) && part.name === 'columns'
+  && part.rows.every((row) => row.length === 2 && IMAGE.test(row[0]) && !/<img/.test(row[1])));
+// a text alone: its content is all it shows
+const isText = (part) => isBlock(part) && part.name === 'columns' && part.rows.length === 1
+  && part.rows[0].length === 1 && !/<img/.test(part.rows[0][0]);
 const number = (styles, prefix) => Number(styles.find((s) => s.startsWith(prefix))
   ?.slice(prefix.length) ?? 0);
 
@@ -44,24 +51,38 @@ function rowStyles(styles, ctx) {
   return styles.filter((s) => KEPT.test(s));
 }
 
-/** The links of a `box-links` block as lists: one list, or one per column from three on. */
-function boxLinks(block) {
-  const titles = block.rows.filter((row) => /<h\d/.test(row[0])).map((row) => row[0]);
-  const links = block.rows.filter((row) => !/<h\d/.test(row[0]))
+/**
+ * The links of a `box-links` block as lists: one list, or one per column from three on.
+ * `byColumn`: the links of two columns in the source's order, the first column first.
+ */
+function boxLinks(block, byColumn = false) {
+  const rows = block.rows.slice();
+  // the item merge pads the shorter column of links with an empty item
+  while (rows.length && rows.at(-1).every((cell) => !cell.trim())) rows.pop();
+  const titles = rows.filter((row) => /<h\d/.test(row[0])).map((row) => row[0]);
+  const links = rows.filter((row) => !/<h\d/.test(row[0]))
     .map((row) => (row.length === 1
       ? row[0].match(LINK)?.[1] ?? row[0].match(MENU)?.slice(1).join('') : null));
   if (!links.length || links.some((link) => !link)) return null;
   const cols = number(block.variants, 'cols-');
   const lists = Array.from({ length: cols > 2 ? cols : 1 }, () => []);
-  links.forEach((link, i) => lists[i % lists.length].push(`<li>${link}</li>`));
+  const order = byColumn && cols === 2
+    ? [...links.filter((_, i) => i % 2 === 0), ...links.filter((_, i) => i % 2)] : links;
+  order.forEach((link, i) => lists[i % lists.length].push(`<li>${link}</li>`));
   return { titles, cells: lists.map((items) => `<ul>${items.join('')}</ul>`) };
 }
 
 /** A block inside a cell as html: a cell cannot hold a block. */
-function flatBlock(block, ctx) {
-  const links = isBoxLinks(block) && boxLinks(block);
+function flatBlock(block, ctx, drawn = isNarrow, byColumn = false) {
+  const links = isBoxLinks(block) && boxLinks(block, byColumn);
   if (links) return links.titles.join('') + links.cells.join('');
-  if (!isNarrow(block)) ctx.warn(`${block.name} inside a panel becomes default content`);
+  // a row of equal cells of one image each: images of one paragraph sit side by side
+  const [row] = block.rows;
+  if (block.name === 'columns' && !block.variants.length && block.rows.length === 1
+    && row.length > 1 && row.every((cell) => IMAGE.test(cell))) {
+    return `<p>${row.map((cell) => cell.slice('<p>'.length, -'</p>'.length)).join('')}</p>`;
+  }
+  if (!drawn(block)) ctx.warn(`${block.name} inside a panel becomes default content`);
   return block.rows.flat().filter(Boolean)
     .map((cell) => (/^<(p|h\d|ul|ol|pre)\b/.test(cell) ? cell : `<p>${cell}</p>`)).join('');
 }
@@ -89,6 +110,8 @@ function sectionRows(section, ctx) {
     else html += flatBlock(part, ctx);
   });
   push([]);
+  // a separator alone: a row with nothing but its rule
+  if (!rows.length && styles.includes('rule')) rows.push({ cells: [''], styles });
   if (rows.length) {
     rows[0].styles.push(...edge(section.styles, 'top'));
     rows.at(-1).styles.push(...edge(section.styles, 'bottom'));
@@ -96,24 +119,79 @@ function sectionRows(section, ctx) {
   return rows;
 }
 
-const own = (s, side) => edge(s.styles.filter((style) => !style.startsWith('band-')), side);
+// an image-and-text row in a cell (`cell columns`) draws its own 30 px top and 15 px bottom
+const DRAWN = ['top-sm', 'bottom-xs'];
+const own = (s, side) => edge(s.styles.filter((style) => !style.startsWith('band-')
+  && !(s.content.some(isNarrow) && DRAWN.includes(style))), side);
 
-/** The spacing of one edge that the cells of a row share: a row has one spacing, not one a cell. */
-function sharedEdge(filled, side, ctx) {
+/**
+ * The spacing of one edge of the cells of a row: a row style when every filled cell has the
+ * same, else a style of each cell that has one (`c2-top-sm`).
+ */
+function cellEdge(cells, side) {
   const at = side === 'top' ? 0 : -1;
-  const outer = filled.map((cell) => own(cell.sections.at(at), side)[0]);
-  const shared = outer.every((style) => style && style === outer[0]) ? [outer[0]] : [];
-  const lost = filled.some((cell) => cell.sections
-    .some((s) => own(s, side).length && !(shared.length && s === cell.sections.at(at))));
-  if (lost) ctx.warn(`${side} spacing inside the cells of a row is lost`);
-  return shared;
+  const outer = cells.map((cell) => cell.sections.length
+    && own(cell.sections.at(at), side)[0]);
+  const filled = outer.filter((style, i) => cells[i].sections.length);
+  if (filled.length && filled.every((style) => style && style === filled[0])) return [filled[0]];
+  return outer.map((style, i) => style && `c${i + 1}-${style}`).filter(Boolean);
 }
 
-/** `box-links` when the lists of links of a row are box links, and all of them are. */
-function linkStyle(sections, ctx) {
-  const parts = sections.flatMap((s) => s.content);
+const TITLE = /^<h[1-6][ >]/;
+const textOf = (s) => s.content.map((part) => (isBlock(part) ? JSON.stringify(part.rows) : part))
+  .join('');
+
+/**
+ * The spacing between the sections of a cell, as `gap-top-sm` or `gap-bottom-sm`: one spacing
+ * before every title of the row's cells but their first child, each at the start of a section.
+ */
+function cellGaps(cells, ctx) {
+  const gaps = new Set();
+  let lost = false;
+  let other = false;
+  cells.forEach(({ sections }) => {
+    const titles = sections.map((s) => textOf(s).match(/<h[1-6][ >]/g)?.length ?? 0);
+    sections.slice(1).forEach((s, i) => {
+      const sides = [['bottom', sections[i]], ['top', s]]
+        .flatMap(([side, at]) => own(at, side).map((style) => `gap-${style}`));
+      const title = TITLE.test(textOf(s));
+      if (title && sides.length === 1) gaps.add(sides[0]);
+      else if (sides.length) lost = true;
+      other ||= titles[i + 1] > (title && sides.length === 1 ? 1 : 0);
+    });
+    other ||= titles[0] > (TITLE.test(textOf(sections[0])) ? 1 : 0);
+  });
+  if (lost || gaps.size > 1 || (gaps.size && other)) {
+    ctx.warn('spacing between the sections of a cell is lost');
+    return [];
+  }
+  return [...gaps];
+}
+
+/** The kinds of the lists of a cell, in order: `box`, `links` (only links) or `text`. */
+function listKinds(sections) {
+  return sections.flatMap((s) => s.content).flatMap((part) => {
+    if (isBoxLinks(part)) return boxLinks(part) ? ['box'] : [];
+    if (isBlock(part)) return [];
+    return (part.match(/<ul>(?:(?!<\/ul>)[\s\S])*<\/ul>/g) ?? [])
+      .map((list) => (LINK_LIST.test(list) ? 'links' : 'text'));
+  });
+}
+
+/**
+ * `box-links` when the lists of links of a row are box links, and all of them are;
+ * `box-links (first)` when each is the first list of its cell; `cols-2`: in two columns.
+ */
+function linkStyle(cells, ctx) {
+  const parts = cells.flatMap((cell) => cell.sections.flatMap((s) => s.content));
   if (!parts.some(isBoxLinks)) return [];
   if (!parts.some((part) => !isBlock(part) && LINK_LIST.test(part))) return ['box-links'];
+  const kinds = cells.map((cell) => listKinds(cell.sections));
+  const first = kinds.every((list) => !list.slice(1).includes('box'));
+  const cols = parts.filter(isBoxLinks).map((b) => number(b.variants, 'cols-'));
+  if (first && cols.every((n) => n <= 2 && n === cols[0])) {
+    return [`box-links (${['first', cols.includes(2) && 'cols-2'].filter(Boolean).join(', ')})`];
+  }
   ctx.warn('box links beside a list of links in one row are drawn as a list');
   return [];
 }
@@ -123,9 +201,9 @@ function linkStyle(sections, ctx) {
  * (textImage2Column) of one look: the tabs block draws them inside their cell.
  */
 function cellBlock(sections, ctx) {
-  const holders = sections.filter((s) => s.content.some(isNarrow));
-  const blocks = holders.flatMap((s) => s.content.filter(isNarrow));
-  const others = sections.flatMap((s) => s.content.filter((part) => !isNarrow(part)));
+  const holders = sections.filter((s) => s.content.some(isImageText));
+  const blocks = holders.flatMap((s) => s.content.filter(isImageText));
+  const others = sections.flatMap((s) => s.content.filter((part) => !isImageText(part)));
   const alike = blocks.every((b) => token(b) === token(blocks[0]));
   if (!blocks.length) return [];
   if (!alike || others.some((part) => /<img/.test(JSON.stringify(part)))) {
@@ -134,6 +212,14 @@ function cellBlock(sections, ctx) {
   }
   const small = holders.every((s) => s.styles.includes('title-small'));
   return [`cell ${token(blocks[0])}`, small && 'title-small'];
+}
+
+/** `cell video (…)` when the videos of a row are of one kind: the tabs block draws them. */
+function cellVideo(sections) {
+  const videos = sections.flatMap((s) => s.content
+    .filter((part) => isBlock(part) && part.name === 'video'));
+  const alike = videos.every((b) => token(b) === token(videos[0]));
+  return videos.length && alike ? [`cell ${token(videos[0])}`] : [];
 }
 
 /** One row of cells of the source as one row: a cell is { width, sections }. */
@@ -145,20 +231,31 @@ function gridRow(cells, head, ctx) {
   const widths = cells.map((cell) => cell.width).join();
   const equal = cells.every((cell) => cell.width === cells[0].width);
   if (!equal && !WIDTHS.includes(widths)) ctx.warn(`row ${widths} has no width style`);
-  const spacing = (side) => edge([
-    ...head.styles.filter((style) => style.startsWith(`band-${side}-`)),
-    ...sharedEdge(filled, side, ctx),
-  ], side);
+  // the band's spacing is outside the cells, theirs inside: both count
+  const spacing = (side) => {
+    const band = edge(head.styles.filter((style) => style.startsWith(`band-${side}-`)), side);
+    const cell = cellEdge(cells, side);
+    const [shared] = cell.filter((style) => !style.startsWith('c'));
+    if (!shared) return [...band, ...cell];
+    // cells stacked below 730 keep their own spacing each
+    if (!band.length && filled.length < 2) return [shared];
+    return [...band, ...cells.map((c, i) => c.sections.length && `c${i + 1}-${shared}`)];
+  };
+  const inCell = [...cellBlock(all, ctx), ...cellVideo(all)];
+  const links = linkStyle(filled, ctx);
+  const byColumn = links.some((style) => style.includes('cols-2'));
+  const drawn = (b) => isNarrow(b) || isText(b) || inCell.includes(`cell ${token(b)}`);
   const styles = [
     every(titled, 'title-dark') && 'title-dark',
     ...['rich-text', 'center', 'light-grey', 'white'].filter((style) => every(all, style)),
-    ...linkStyle(all, ctx),
-    ...cellBlock(all, ctx),
+    ...links,
+    ...inCell,
     !equal && WIDTHS.includes(widths) && `w-${widths.replaceAll(',', '-')}`,
     head.styles.includes('divider') && 'divider',
-    ...spacing('top'), ...spacing('bottom'),
+    ...spacing('top'), ...spacing('bottom'), ...cellGaps(filled, ctx),
   ].filter(Boolean);
-  const html = (s) => s.content.map((part) => (isBlock(part) ? flatBlock(part, ctx) : part))
+  const html = (s) => s.content
+    .map((part) => (isBlock(part) ? flatBlock(part, ctx, drawn, byColumn) : part))
     .join('');
   return { cells: cells.map((cell) => cell.sections.map(html).join('')), styles };
 }
