@@ -20,7 +20,11 @@ const TMP = join(tmpdir(), 'f52-synopsys');
 export const PAUSE_MS = 2000;
 
 /** Source path (/a/b.html, /) to the web path of its migrated twin. */
-export const targetPath = (page) => PREFIX + page.replace(/\.html$/, '');
+// in a segment, runs of other characters than letters, digits and hyphens are one hyphen: the
+// importer's webSafe() (the preview service refuses `locations_austin`)
+const webSafe = (path) => path.split('/').map((segment) => segment
+  .replace(/[^A-Za-z0-9\u0080-\uffff%-]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')).join('/');
+export const targetPath = (page) => PREFIX + webSafe(page.replace(/\.html$/, ''));
 export const targetUrl = (base, page) => base + targetPath(page);
 
 // Runs inside playwright-cli (no Node globals: no URL, no require). One route per session.
@@ -33,9 +37,28 @@ const SETUP = `async (page, gateway) => {
   await ctx.route('**/*', async (route) => {
     const req = route.request();
     const href = req.url();
+    // a Marketo form descriptor is cached once per form: its URL carries the page and a callback
+    // (and munchkinId, which is no tracker)
+    const form = href.match(/^https?:\\/\\/online\\.synopsys\\.com\\/index\\.php\\/form\\/getForm\\?.*\\bform=(\\d+).*\\bcallback=([\\w$.]+)/);
+    if (form && req.method() === 'GET') {
+      const url = state.gateway + '/index.php/form/getForm?munchkinId=367-MRV-360&form=' + form[1]
+        + '&url=https%3A%2F%2Fwww.synopsys.com%2F&callback=cb&_origin=https://online.synopsys.com';
+      const res = await route.fetch({ url }).catch(() => null);
+      if (!res) return route.abort();
+      if (res.status() === 504) { state.missed.push(state.gateway + ' ' + href); return route.abort(); }
+      const body = (await res.text()).replace(/^\\s*cb\\(/, form[2] + '(');
+      const origin = req.headers().origin;
+      const cors = origin
+        ? { 'access-control-allow-origin': origin, 'access-control-allow-credentials': 'true' } : {};
+      return route.fulfill({
+        status: 200, contentType: 'application/javascript', headers: cors, body,
+      });
+    }
     if (TRACKERS.test(href)) return route.abort();
     const m = href.match(/^(https?:\\/\\/([^/:]+))(\\/[^?#]*)?(\\?[^#]*)?/);
-    if (!m || !/(^|\\.)synopsys\\.com$/.test(m[2]) || req.method() !== 'GET') return route.fallback();
+    if (!m || !/(^|\\.)synopsys\\.com$/.test(m[2])) return route.fallback();
+    // nothing but a cached GET may reach the source: a POST (the dw-products API) is not sent
+    if (req.method() !== 'GET') return route.abort();
     let query = m[4] || '';
     if (!/[?&]_origin=/.test(query)) query += (query ? '&' : '?') + '_origin=' + m[1];
     const gateway = state.gateway;
@@ -64,6 +87,10 @@ const HELPERS = `{
     await page.setViewportSize({ width, height });
     const response = await page.goto(url, { waitUntil: 'load', timeout: 60000 });
     await page.addStyleTag({ content: '${HIDE_CSS}' });
+    // an EDS page decorates its lazy sections after load: the scroll pass must come after it
+    await page.waitForFunction(() => !document.querySelector(
+      'main .section[data-section-status]:not([data-section-status="loaded"])',
+    ), null, { timeout: 15000 }).catch(() => {});
     await page.evaluate(async () => {
       for (let y = 0; y < document.documentElement.scrollHeight; y += 600) {
         window.scrollTo(0, y);
@@ -71,6 +98,23 @@ const HELPERS = `{
       }
       window.scrollTo(0, 0);
       await document.fonts.ready;
+      // the lazy images the scroll pass brought into view
+      await Promise.all([...document.images].filter((img) => img.currentSrc && !img.complete)
+        .map((img) => new Promise((r) => {
+          img.addEventListener('load', r);
+          img.addEventListener('error', r);
+          setTimeout(r, 5000);
+        })));
+      // the source's slick carousels back on their first slide, where the target's stand
+      const $ = window.jQuery;
+      if ($ && $.fn && $.fn.slick) {
+        $('.slick-initialized').each((i, el) => {
+          try {
+            $(el).slick('slickPause');
+            if ($(el).slick('slickCurrentSlide') !== 0) $(el).slick('slickGoTo', 0, true);
+          } catch (e) { /* not a slider any more */ }
+        });
+      }
     });
     await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
     await page.waitForTimeout(800);

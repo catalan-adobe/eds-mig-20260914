@@ -12,17 +12,31 @@ import {
 
 const sleep = (ms) => new Promise((r) => { setTimeout(r, ms); });
 
-function viaGateway(gateway, url) {
+// The query goes through as written: `$responsive$` is an image preset, and the cache the
+// browser filled is keyed by the written URL. `legacy` is the re-encoded form
+// (`%24responsive%24=`) under which this tool cached its downloads before.
+function viaGateway(gateway, url, { legacy = false } = {}) {
   const u = new URL(url);
   if (!/(^|\.)synopsys\.com$/.test(u.hostname)) throw new Error(`not a source URL: ${url}`);
-  u.searchParams.set('_origin', u.origin);
-  return fetch(`${gateway}${u.pathname}${u.search}`, { redirect: 'manual' });
+  const raw = url.match(/\?[^#]*/)?.[0] ?? '';
+  if (legacy) u.searchParams.set('_origin', u.origin);
+  const query = legacy ? u.search : `${raw}${raw ? '&' : '?'}_origin=${u.origin}`;
+  return fetch(`${gateway}${u.pathname}${query}`, {
+    // webp keeps the transparency of an image the image server would else flatten to JPEG
+    redirect: 'manual', headers: { accept: 'image/webp,image/*,*/*;q=0.8' },
+  });
 }
+
+/** The image server's answer for an asset it does not have: no sign of bot protection. */
+const isMissingImage = (url, status, body) => status === 403
+  && new URL(url).hostname === 'images.synopsys.com' && body.toString() === 'Unable to find image';
 
 /** Returns { status, type, location, body }. Throws when the source shows bot protection. */
 export async function getSource(url) {
   let res = await viaGateway(OFFLINE, url);
-  if (res.status === 504) {
+  if (res.status === 504) res = await viaGateway(OFFLINE, url, { legacy: true });
+  const fetched = res.status === 504;
+  if (fetched) {
     if (existsSync(STOP)) throw new Error(`${STOP} exists: the source answered with a bot check; nothing is fetched`);
     // the image CDN has its own queue, so a long image download does not hold up page loads
     const cdn = new URL(url).hostname === 'images.synopsys.com';
@@ -34,16 +48,17 @@ export async function getSource(url) {
     } finally {
       unlock(lock);
     }
-    if ([403, 429, 503].includes(res.status)) {
-      writeFileSync(STOP, `${new Date().toISOString()}\n${res.status} ${url}\n`);
-      throw new Error(`bot protection or throttling: ${res.status} ${url}. Wrote ${STOP}; stop and report it.`);
-    }
+  }
+  const body = Buffer.from(await res.arrayBuffer());
+  if (fetched && [403, 429, 503].includes(res.status) && !isMissingImage(url, res.status, body)) {
+    writeFileSync(STOP, `${new Date().toISOString()}\n${res.status} ${url}\n`);
+    throw new Error(`bot protection or throttling: ${res.status} ${url}. Wrote ${STOP}; stop and report it.`);
   }
   return {
     status: res.status,
     type: res.headers.get('content-type'),
     location: res.headers.get('location'),
-    body: Buffer.from(await res.arrayBuffer()),
+    body,
   };
 }
 
