@@ -88,17 +88,26 @@ async function brightcovePoster(account, name, id) {
   return (await response.json()).poster;
 }
 
-/** The thumbnail of a video card: a button that opens the player in the modal. */
-function player(href, picture) {
+/**
+ * The thumbnail of a video card: a button that opens the player in the modal, or, when the
+ * link ends with `#inline`, plays it in its place.
+ */
+function player(link, picture) {
+  const inline = link.hash === '#inline';
+  const href = link.href.replace(/#.*$/, '');
   const button = element('button', 'cards-play', picture, icon('play'));
   button.type = 'button';
   button.setAttribute('aria-label', 'Play video');
   button.addEventListener('click', async () => {
-    const { default: openModal } = await import('../../scripts/modal.js');
-    const frame = element('iframe');
+    const frame = element('iframe', 'cards-player');
     frame.src = `${href}${href.includes('?') ? '&' : '?'}autoplay=true`;
     frame.allow = 'autoplay; fullscreen; encrypted-media';
     frame.title = 'Video player';
+    if (inline) {
+      button.replaceWith(frame);
+      return;
+    }
+    const { default: openModal } = await import('../../scripts/modal.js');
     openModal(frame);
   });
   const [, account, name, id] = href.match(BRIGHTCOVE) ?? [];
@@ -118,7 +127,7 @@ function media(cell) {
   const picture = cell?.querySelector('picture, img');
   const video = cell?.querySelector('a[href]');
   if (!picture && !video) return null;
-  return element('div', 'cards-media', video ? player(video.href, picture) : picture);
+  return element('div', 'cards-media', video ? player(video, picture) : picture);
 }
 
 function assetCard([first, second]) {

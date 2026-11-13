@@ -11,7 +11,7 @@ One row per card. The kind is a block class; no class is the asset card.
 | Kind | Cell 1 | Cell 2 | Cell 3 |
 | --- | --- | --- | --- |
 | asset (default) | image, or empty | label, date (paragraphs before the heading), `h4` title, description, last paragraph with only a link = call to action | |
-| video (a row, not a class) | thumbnail paragraph (optional), then a paragraph with the player link | as asset | |
+| video (a row, not a class) | thumbnail paragraph (optional), then a paragraph with the player link (ending with `#inline` when it plays in the card) | as asset | |
 | `solution` | image | `h4`, text, link ending with `:chevron-right:` | |
 | `agenda` | date and hours (two paragraphs), or one text, or empty | type (paragraph before the heading), `h4`, speakers `<ul>` (`Name, Company`), description | line colour |
 | `event` | image | `h4` name, then type, place, date paragraphs, link | |
@@ -48,7 +48,9 @@ Behaviour:
   in a new tab, as in the source. A card the source sets to open in a new tab (`data-new-tab`)
   has a link whose href ends with `#_blank`: the block removes the hash and opens a new tab. Hover changes the link colour only (the source has no card
   hover). A card link without a label (its text is its URL) moves into the title.
-- Video card: the thumbnail is a button that opens the player (`scripts/modal.js`). Its play
+- Video card: the thumbnail is a button that opens the player (`scripts/modal.js`). A link
+  ending with `#inline` (the source's `data-mode="inline"`, 4 cards on 3 pages) plays the
+  player in place of the thumbnail instead, at the same 16:9 size. Its play
   button grows from 64 to 68 px on hover, as the source's. Without an
   authored thumbnail (221 of 249) the block reads the poster from Brightcove's playback API, as
   the source's player does.
@@ -151,5 +153,4 @@ shows the same offset before and after every card block on them.
 - **A label without a link** (2 cards) is kept as the description text. The source prints it
   below the description box, 18 px.
 - **Solution card below 375 px**: the source lifts the image by 20 % on hover. Not built.
-- **Inline video cards** (4): they play in the modal, as the other 245.
 - The `tooltiptext` of an agenda title: no agenda card of the fetched pages has one.

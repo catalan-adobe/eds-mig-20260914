@@ -25,13 +25,16 @@ function action(card, anchor, ctx) {
   return para(href ? `<a href="${href}${blank}">${href}</a>` : cta);
 }
 
-/** Cell 1 of an asset card: its image, or the video thumbnail and the video link. */
+/**
+ * Cell 1 of an asset card: its image, or the video thumbnail and the video link. A video the
+ * source plays in the card, not in its dialog (`data-mode="inline"`), has a link ending with
+ * `#inline`.
+ */
 function media(card, ctx) {
   const video = card.find('.cmp-video').first();
   if (!video.length) return ctx.image(card.find('.cmp-image img').first());
   ctx.drop(video.find('.modal-template'), 'video dialog: built by the block');
-  if (video.attr('data-mode') === 'inline') ctx.warn('inline video card plays in the modal');
-  const href = ctx.video(video);
+  const href = `${ctx.video(video)}${video.attr('data-mode') === 'inline' ? '#inline' : ''}`;
   return [para(ctx.image(video.find('img').first())), para(`<a href="${href}">${href}</a>`)];
 }
 
