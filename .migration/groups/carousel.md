@@ -27,9 +27,13 @@ Item carousels (CONTRACT a, rule 4):
 - `cols-N`: for a `card-carousel` the cells of its first row, as the source's script. Else the
   cells of the first slide, times `data-slides-to-show`.
 - `carousel` is added only when there are more items than `cols-N`.
-- Added with `carousel`: `no-mobile` (`mobile-no-carousel`), `autoplay` (`data-autoplay`, 6 s),
-  `autoplay-N` (another `data-autoplayspeed`, in seconds).
-- A `text` beside a quote in a slide (5 pages) follows the block as its own section.
+- Added with `carousel`: `no-mobile` (`mobile-no-carousel`), `center` (`mobile-center-mode`:
+  below 730 one slide in the centre, 50 px of its neighbours at the edges, no arrows),
+  `autoplay` (`data-autoplay`, 6 s), `autoplay-N` (another `data-autoplayspeed`, in seconds).
+- `rows` (one slide, a row of cards, per view) only when the `contentCarousel` shows one slide
+  (`data-slides-to-show` 1). With 3 (1 page) the slides are single cards: `cards cols-3 carousel`.
+- A `text` beside a quote in a slide (5 pages) follows the block as its own section. In the
+  source it is in the slide, under the quote; see Known gaps.
 - The spacing below the items of a slide stays below the block (`bottom-*`).
 
 ## carousel
@@ -55,6 +59,7 @@ Row = one slide. Cells = the cells of the slide's `column` or `cardContainer`, o
 | `heading-black` | `span.text-color-black` in most `h3` to `h6` of the slides | those headings `#3c3c3c` |
 | `image-pad-sm`, `-md`, `-lg` | `horizontal-padding-*` of the images | 5 / 25 / 100 px |
 | `media` | `imageTextCta` | second cell first below 730, 24 px below image and text |
+| `mosaic` | cells of `mosaicCardVideoImage` | a cell is a white card with a shadow, image at the top: 200 / 280 / 400 px high (below 730 / from 730 / from 1200), 20 px apart and 5 px over the slider's edges from 730 |
 | `slide-top-*`, `slide-bottom-*` | spacing of the component in every slide | padding of the slide |
 | `autoplay`, `autoplay-N` | `data-autoplay` | 6 s or N s, pauses on hover and focus |
 | `no-mobile` | `mobile-no-carousel` | slides stack below 730 |
@@ -66,7 +71,8 @@ In a cell the block also:
 
 - makes an image the link of the paragraph that follows it (text = its URL), as `global` does
 - draws an SVG image 140 px high up to 730 (the source's `.img-responsive.svg`)
-- turns a paragraph with only a Brightcove player link into a video: the image before it as
+- turns a paragraph with only a Brightcove player link into a video (a `video modal` or a
+  `mosaic` card in a slide is written this way, without an importer warning): the image before it as
   poster, else the video's own poster, a round play button, the player in the modal.
 
 Behaviour (source: slick, `infinite`, `dots`): previous and next wrap, dots, swipe, arrow keys.
@@ -118,6 +124,7 @@ never pauses, as the source. Logos in view: 2 below 320, 3, 4 from 768, 5 from 9
 | default `w-4-8`, image and texts, `/cloud` | 4.52 % | 1.39 % | 1.81 % |
 | `fade`, images, `/implementation-and-signoff/signoff/primeclosure`, first / next | 0.10 / 0.06 % | 0.38 / 0.26 % | 0.64 / 0.40 % |
 | `fade`, videos, the same page, first / next | 0.65 / 0.62 % | 1.18 / 1.39 % | 0.25 / 0.26 % |
+| `mosaic`, `/implementation-and-signoff/physical-implementation/fusion-compiler/videos` (page) | 0.03 % | 0.81 % | 1.48 % |
 | `fade media`, `/services/design-services` | 0.01 % | 0.02 % | 0.03 % |
 | `fade title-small title-dark`, `/ai/ai-powered-eda`, first / next | 0.72 / 0.07 % | 1.67 / 1.10 % | 0.02 / 0.02 % |
 | `images`, `/converge/newsroom`, first / next twice / previous | 0.85 / 1.02 / 1.24 % | 0.60 / 0.67 / 0.78 % | 0.16 / 0.10 / 0.30 % |
@@ -143,11 +150,17 @@ outside, focus back on the expand button).
 - Spacing between two components in one cell is not carried (`/cloud`: 8 px text offset at
   1440, 27 px shorter at 768, 19 px at 375).
 - `image-pad-*` is one value for the block (`/ai/ai-powered-eda` mixes none, sm and md).
-- A video in a slide plays in the modal with the play button of the source. Its mode
-  (`inline`) and the `mosaicCardVideoImage` in slides (3 pages) depend on the `mosaic`
-  transform of the `tiles` group: until it exists the slide holds the fallback text.
-- `mobile-center-mode` (1 page, `/zh-cn/designware-ip/ip-market-segments/automotive`) is not
-  migrated: importer warning.
+- A video in a slide plays in the modal with the play button of the source. All videos in
+  slides are `data-mode="modal"`; an inline one would still warn.
+- `center` (1 page, `/zh-cn/designware-ip/ip-market-segments/automotive`) is drawn by the
+  `cards` block: requested from its owner. Until then the cards slide one per view below 600.
+- The footnote `text` beside a quote (5 pages, `/verification/emulation-prototyping/*`) sits in
+  the source's slide 2 under the quote, hidden at rest; the slider is as high as that slide. It
+  needs a fifth cell of `quote` (requested from its owner, test page
+  `/f52-synopsys-1211-02/drafts/fix-tail1-carousel/quote-note`). Until then it follows the block.
+- `/ai/ai-powered-eda`: the three images of the slides have no, `sm` and `md` padding. A cell
+  cannot carry it, so none is used: slide 1 is 5 px higher at 1440 (page 0.18 %), its logo
+  10 px wider at 375.
 - An empty `contentCarousel` (2 pages) is dropped. Its 104 px (15 + 29 + 60) become
   `band-top-md` on the next section: 44 px less on
   `/zh-cn/designware-ip/interface-ip/die-to-die/ucie`.

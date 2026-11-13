@@ -199,6 +199,24 @@
   transition: none;
 }
 
+/* `mosaic`: a cell is a card of the source's mosaicCardVideoImage, its image at the top */
+.carousel[data-block-name='carousel'].mosaic .carousel-slide {
+  display: grid;
+  gap: 30px;
+  padding: 16px 0 15px;
+}
+
+.carousel[data-block-name='carousel'].mosaic .carousel-cell:has(*) {
+  height: 200px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 1px 7px 0 rgb(0 0 0 / 15%);
+}
+
+.carousel[data-block-name='carousel'].mosaic .carousel-cell:has(*):hover {
+  box-shadow: 0 1px 7px 0 rgb(0 0 0 / 30%);
+}
+
 /* `fade` (the source's core carousel): the slides lie on each other, the arrows sit lower */
 .carousel[data-block-name='carousel'].fade .slider {
   padding-bottom: 24px;
@@ -531,6 +549,24 @@
     grid-template-columns: calc((100% + 30px) * var(--first) / 12 - 30px) minmax(0, 1fr);
   }
 
+  /* the source's cards overhang the slider by 5 px on each side */
+  .carousel[data-block-name='carousel'].mosaic .carousel-slide {
+    gap: 20px;
+    padding: 11px 0 10px;
+  }
+
+  .carousel[data-block-name='carousel'].mosaic .carousel-cell:has(*) {
+    height: 280px;
+  }
+
+  .carousel[data-block-name='carousel'].mosaic .carousel-cell:first-child {
+    margin-left: -5px;
+  }
+
+  .carousel[data-block-name='carousel'].mosaic .carousel-cell:last-child {
+    margin-right: -5px;
+  }
+
   .carousel[data-block-name='carousel'] .slider-prev,
   .carousel[data-block-name='carousel'] .slider-next {
     top: 50%;
@@ -635,6 +671,12 @@
 
   .carousel[data-block-name='carousel'] .carousel-zoom .carousel-stage .slider-next {
     right: 32px;
+  }
+}
+
+@media (width >= 1200px) {
+  .carousel[data-block-name='carousel'].mosaic .carousel-cell:has(*) {
+    height: 400px;
   }
 }
 

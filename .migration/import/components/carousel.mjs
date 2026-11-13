@@ -93,9 +93,13 @@ function itemCarousel(slides, ctx, variants, { perView = 1, inView, rows } = {})
   return [...merged, ...after];
 }
 
-/** Sections as the html of one cell. A block in it becomes default content. */
+/** Blocks the block `carousel` draws from their content: video in a modal, mosaic card. */
+const isDrawn = (b) => b.name === 'mosaic' || (b.name === 'video' && b.variants.includes('modal'));
+
+/** Sections as the html of one cell. Another block in it becomes default content. */
 function cellHtml(sections, ctx, used) {
-  const blocks = sections.flatMap((s) => s.content).filter(isBlock).map((b) => b.name);
+  const blocks = sections.flatMap((s) => s.content).filter((b) => isBlock(b) && !isDrawn(b))
+    .map((b) => b.name);
   if (blocks.length) ctx.warn(`${[...new Set(blocks)].join(', ')} in a slide: default content`);
   used.push(...sections);
   return ctx.flat(sections);
@@ -197,8 +201,12 @@ export function slideSections(slides, ctx, { variants = [], look = [], ...view }
     ? `w-${widths[0].replace(',', '-')}` : '';
   // an image beside a text (the source's imageTextCta) stacks in reverse below 730
   const media = rows.every((row) => row.media) && 'media';
+  // cells of mosaic cards (the source's cardContainer of mosaicCardVideoImage)
+  const parts = used.flatMap((section) => section.content);
+  const mosaic = parts.length && parts.every((part) => isBlock(part) && part.name === 'mosaic')
+    && 'mosaic';
   const names = [
-    ...look, width, media, ...contentLook(used, ctx), ...headingLook(filled, ctx.$),
+    ...look, width, media, mosaic, ...contentLook(used, ctx), ...headingLook(filled, ctx.$),
     ...slideSpace(rows), ...variants,
   ];
   const block = ctx.block('carousel', names, rows.map((row) => row.cells));
