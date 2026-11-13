@@ -51,7 +51,7 @@ function mediaCell(col, ctx) {
 /**
  * The empty paragraphs of the source's editor at the edges of a text. They are blank lines
  * that move the text and the buttons, and the pipeline drops an empty paragraph: block
- * variants keep them.
+ * variants keep them, up to two after the text.
  */
 function blankLines(text, ctx) {
   const { $ } = ctx;
@@ -59,8 +59,10 @@ function blankLines(text, ctx) {
   const blank = (n) => n?.name === 'p' && !$(n).text().replace(/\u00a0/g, ' ').trim()
     && !$(n).find('img, iframe').length;
   if (parts.every(blank)) return [];
-  if (blank(parts.at(-1)) && blank(parts.at(-2))) ctx.warn('two blank lines after the text: one');
-  return [blank(parts[0]) && 'blank-before', blank(parts.at(-1)) && 'blank-after'];
+  const two = blank(parts.at(-1)) && blank(parts.at(-2));
+  if (two && blank(parts.at(-3))) ctx.warn('three blank lines after the text: two');
+  return [blank(parts[0]) && 'blank-before', blank(parts.at(-1)) && 'blank-after',
+    two && 'blank-after-2'];
 }
 
 export default function imageTextCta(el, ctx) {

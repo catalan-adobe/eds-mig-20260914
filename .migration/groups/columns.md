@@ -80,6 +80,7 @@ is always under the text, as in the source.
 | `video-modal` | `data-mode="modal"`: the video opens in the modal | 45 |
 | `subtitle-purple` | a subtitle without a colour of its own | 8 |
 | `blank-before`, `blank-after` | an empty paragraph at the start or the end of the text: one line and its margin (35.6 px). The pipeline drops empty paragraphs | 13 |
+| `blank-after-2` | with `blank-after`: two empty paragraphs at the end of the text (71.2 px) | 1 |
 | `title-grey`, `title-light` | title colours `#3c3c3c`, `#80539c` | 15 (cards) |
 
 ### `media narrow` (`textImage2Column`, 141)
@@ -137,8 +138,8 @@ empty and dropped.
 - `imageAndLinks` is `columns media card`, not `columns media`: it has a title row above
   both cells and a box, which `media` cannot show.
 - `textImage2Column` has `w-6-6` and `w-8-4` beside `narrow`: 29 instances are not 4 | 8.
-- The variants `video-modal`, `subtitle-purple`, `blank-before`, `blank-after`, `title-grey`,
-  `title-light`, `svg-pad-*`, `image-pad-*`, `tight` are not in the contract. Each one is a
+- The variants `video-modal`, `subtitle-purple`, `blank-before`, `blank-after`, `blank-after-2`,
+  `title-grey`, `title-light`, `svg-pad-*`, `image-pad-*`, `tight` are not in the contract. Each one is a
   property of the source component that no section style carries.
 - A plain cell also draws the source's `downloads` (heading 20 / 20 / 26 px, not a title) and,
   up to 730, an SVG of an `image` 140 px high and centred (`.img-responsive.svg`).

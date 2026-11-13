@@ -152,6 +152,10 @@
   padding-bottom: calc(1.6em + 10px);
 }
 
+.columns.blank-after.blank-after-2 .columns-last {
+  padding-bottom: calc(3.2em + 20px);
+}
+
 /* the source's `svg-padding-*` */
 .columns.svg-pad-sm .columns-media img {
   padding: 0 25px;
