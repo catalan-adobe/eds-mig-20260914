@@ -432,6 +432,9 @@ header .header[data-block-status='loaded'] {
   width: 100%;
   max-width: 1900px;
   margin: 0 auto;
+
+  /* the source's `.site-wrapper` clips the closed search layer that the blur holds off-screen */
+  overflow-x: clip;
   transition: all 0.25s;
   background-color: rgb(255 255 255 / 80%);
   box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);

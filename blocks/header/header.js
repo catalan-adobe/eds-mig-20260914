@@ -573,7 +573,6 @@ function initMenus(top) {
   const list = morph.querySelector('.dropdown-list');
   const nav = top.querySelector('.main-nav');
   let timer;
-  let quiet = false;
   const open = (item) => {
     clearTimeout(timer);
     panels.openDesktop(item);
@@ -582,12 +581,13 @@ function initMenus(top) {
 
   top.querySelectorAll('.has-dropdown').forEach((item) => {
     item.addEventListener('mouseenter', () => DESKTOP.matches && open(item));
-    item.addEventListener('focusin', () => DESKTOP.matches && !quiet && open(item));
+    item.addEventListener('focusin', () => DESKTOP.matches && open(item));
     item.addEventListener('click', () => !DESKTOP.matches && panels.openMobile(item));
+    // as on the source, the keys open a level of the mobile menu but not a desktop panel
     item.addEventListener('keydown', (event) => {
-      if (!['Enter', ' ', 'ArrowDown'].includes(event.key)) return;
+      if (DESKTOP.matches || !['Enter', ' ', 'ArrowDown'].includes(event.key)) return;
       event.preventDefault();
-      if (!DESKTOP.matches) panels.openMobile(item);
+      panels.openMobile(item);
       (panels.panelOf(item)?.querySelector('a, button') ?? morph.querySelector('.back')).focus();
     });
   });
@@ -602,19 +602,7 @@ function initMenus(top) {
   morph.querySelector('.back').addEventListener('click', panels.close);
   initGroups(morph);
   initSwipe(morph, panels.close);
-  return {
-    close: panels.close,
-    escape() {
-      const item = top.querySelector('.has-dropdown.active');
-      if (!item) return false;
-      panels.close();
-      // focus returns to the menu item without opening its panel again
-      quiet = true;
-      item.firstElementChild.focus();
-      quiet = false;
-      return true;
-    },
-  };
+  return { close: panels.close };
 }
 
 /** The search layer, the mobile menu and the page lock they share. */
@@ -648,14 +636,9 @@ function initLayers(top, menus) {
     if (top.classList.contains('search-open') && !layer.contains(event.target)) setSearch(false);
   });
   document.addEventListener('keyup', (event) => {
-    if (event.key !== 'Escape') return;
-    if (top.classList.contains('search-open')) {
-      setSearch(false);
-      top.querySelector('.icon-search').focus();
-    } else if (!menus.escape() && !DESKTOP.matches && top.classList.contains('menu-open')) {
-      setMenu(false);
-      toggler.focus();
-    }
+    if (event.key !== 'Escape' || !top.classList.contains('search-open')) return;
+    setSearch(false);
+    top.querySelector('.icon-search').focus();
   });
   let settle;
   const reset = () => {
