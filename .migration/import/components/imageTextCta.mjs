@@ -24,6 +24,17 @@ export function titleLook(node, ctx, fallback = PURPLE) {
   };
 }
 
+/**
+ * Marks the links of `box` that the source opens in a new tab: their href ends with `#_blank`,
+ * which the columns block turns back into the target.
+ * @param {object} box cheerio of the component
+ */
+export function markNewTab(box) {
+  box.find('a[target="_blank"][href]').each((_, a) => {
+    if (!a.attribs.href.endsWith('#_blank')) a.attribs.href += '#_blank';
+  });
+}
+
 /** The media cell: an image, or a video as its poster (when authored) and its link. */
 function mediaCell(col, ctx) {
   const video = col.find('.cmp-video[data-video-id]').first();
@@ -55,6 +66,7 @@ function blankLines(text, ctx) {
 export default function imageTextCta(el, ctx) {
   const { $ } = ctx;
   const box = $(el).find('.component-imageTextCta').first();
+  markNewTab(box);
   const text = box.find('.text-col, .component-no-media').first();
   const heading = text.children('.title').first();
   const title = ctx.clean(heading, { inline: true });

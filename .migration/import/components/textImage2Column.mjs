@@ -1,12 +1,13 @@
 // An image beside a short text (title, text, link): block `columns media narrow`, image 4 and
 // text 8 wide unless the source says otherwise. The cell order is the side from 730.
-import { titleLook } from './imageTextCta.mjs';
+import { markNewTab, titleLook } from './imageTextCta.mjs';
 
 const WIDTH = { 6: 'w-6-6', 8: 'w-8-4' };
 
 export default function textImage2Column(el, ctx) {
   const { $ } = ctx;
   const box = $(el).find('.component-text-image-2-column').first();
+  markNewTab(box);
   const col = box.find('.img-col').first();
   const img = col.find('img').first();
   const image = ctx.image(img);

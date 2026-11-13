@@ -148,7 +148,9 @@ function decorateText(cell, row, block) {
   // the source opens the link from anywhere on the row
   row.classList.add('columns-linked');
   row.addEventListener('click', (event) => {
-    if (!event.target.closest('a')) window.location.assign(link.href);
+    if (event.target.closest('a')) return;
+    if (link.target === '_blank') window.open(link.href, '_blank');
+    else window.location.assign(link.href);
   });
 }
 
@@ -167,7 +169,17 @@ function spans(block, cells) {
   return cells.map(() => Math.floor(12 / count) || 1);
 }
 
+/** The importer marks a link the source opens in a new tab with the hash `#_blank`. */
+function openNewTabs(block) {
+  block.querySelectorAll('a[href$="#_blank"]').forEach((a) => {
+    a.href = a.getAttribute('href').replace(/#_blank$/, '');
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+  });
+}
+
 export default async function decorate(block) {
+  openNewTabs(block);
   const section = block.closest('.section');
   const media = block.classList.contains('media');
   const videos = [];

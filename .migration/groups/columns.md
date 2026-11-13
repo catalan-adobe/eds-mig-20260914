@@ -126,6 +126,10 @@ empty and dropped.
 - Buttons, call-to-action links and text links: the global hover. Compared with the source on
   `media` (primary, secondary), `narrow` (link, row pointer) and `card` (link): equal.
 - `media` video: click opens the modal (`video-modal`) or plays in place; Escape closes.
+- New tab: a link of `imageTextCta` or `textImage2Column` with `target="_blank"` is authored
+  with the hash `#_blank`; the block removes it and sets the target. A `narrow` row whose link
+  opens in a new tab opens it with `window.open` on a click anywhere in the row, as the
+  source's `data-new-tab`. Checked on `/ai/ai-chip-development.html` and `/support.html`.
 - Stacking at 729 / 730 / 731 px: equal to the source.
 
 ## What differs from the contract, and why
@@ -140,6 +144,11 @@ empty and dropped.
   up to 730, an SVG of an `image` 140 px high and centred (`.img-responsive.svg`).
 
 ## Known gaps
+
+- 24 of the 71 pages with a new-tab link in these components were not re-imported after the
+  `#_blank` change: their images are not in the cache and FETCH-STOP is set. They open the link
+  in the same tab until they are imported again: 16 `/zh-cn/china/events/*`, `/academic-research`,
+  `/solutions/silicon-lifecycle-management`, `/manufacturing/quantumatk/videos`, a few blogs.
 
 - Image heights differ by up to 0.5 px: the pipeline's renditions round the aspect ratio.
 - An SVG over 40 KB is a PNG after the import: in a plain cell it is full width below 731,
