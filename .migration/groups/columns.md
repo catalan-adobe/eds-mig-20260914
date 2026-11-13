@@ -139,8 +139,8 @@ empty and dropped.
   both cells and a box, which `media` cannot show.
 - `textImage2Column` has `w-6-6` and `w-8-4` beside `narrow`: 29 instances are not 4 | 8.
 - The variants `video-modal`, `subtitle-purple`, `blank-before`, `blank-after`, `blank-after-2`,
-  `title-grey`, `title-light`, `svg-pad-*`, `image-pad-*`, `tight` are not in the contract. Each one is a
-  property of the source component that no section style carries.
+  `title-grey`, `title-light`, `svg-pad-*`, `image-pad-*`, `tight` are not in the contract.
+  Each one is a property of the source component that no section style carries.
 - A plain cell also draws the source's `downloads` (heading 20 / 20 / 26 px, not a title) and,
   up to 730, an SVG of an `image` 140 px high and centred (`.img-responsive.svg`).
 
