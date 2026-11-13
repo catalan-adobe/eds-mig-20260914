@@ -39,6 +39,7 @@ if (window.trustedTypes && window.trustedTypes.createPolicy) {
 
 const ROW_STYLE = /^(band-(top|bottom)-(xs|sm|md)|divider|light-grey|white)$/;
 const ZOOM_LABEL = 'Click to see the detail';
+const TAG_LINK = /\/category\?tag=/;
 
 /**
  * load fonts.css and set a session storage flag
@@ -135,19 +136,23 @@ function decorateDefaultContent(main) {
     });
     const children = [...wrapper.children];
     const first = children[0];
+    const list = children.at(-1);
     if (children.every(isImageOnly)) {
       wrapper.classList.add('image');
       if (section.classList.contains('zoom')) decorateZoom(wrapper);
+    } else if (list.querySelector(':scope > li > a > .icon-download:first-child')) {
+      wrapper.classList.add('downloads');
     } else if (first.tagName === 'H2' && !section.matches('.rich-text, .no-title')) {
       first.classList.add('title');
     }
-    const list = children.at(-1);
     const heading = children.length === 2 && first.tagName === 'H5';
     if (list.tagName === 'UL' && (children.length === 1 || heading)
       && [...list.children].every((li) => li.children.length === 1
         && li.firstElementChild.tagName === 'A' && !li.querySelector('.icon')
         && li.textContent.trim() === li.firstElementChild.textContent.trim())) {
-      wrapper.classList.add('link-list');
+      // the tags of a post link to the category page: the source draws them as pills
+      const tags = [...list.querySelectorAll('a')].every((a) => TAG_LINK.test(a.href));
+      wrapper.classList.add(tags ? 'tag-list' : 'link-list');
     }
     children.filter((p) => p.tagName === 'P' && p.children.length && !p.textContent.trim()
       && [...p.children].every((a) => a.tagName === 'A' && a.querySelector(':scope > .icon')))
@@ -159,7 +164,8 @@ function decorateDefaultContent(main) {
  * The section grid of the contract: neighbouring sections with a `span-N` style become one
  * `div.section-row` of `div.section-col` columns. A `stack` section stays in the column of the
  * section before it. A row ends when its spans pass 12, or at a section with the style `row`.
- * The row takes the background, the `band-*` spacing and the `divider` of its first section.
+ * The row takes the background, the `band-*` spacing and the `divider` of its first section,
+ * a column the style `pinned` of its first section.
  * @param {HTMLElement} main The main container element
  */
 function buildSectionRows(main) {
@@ -189,6 +195,11 @@ function buildSectionRows(main) {
       width += size;
       col = document.createElement('div');
       col.className = ['section-col', span, offset].filter(Boolean).join(' ');
+      // the source's sticky left cell
+      if (section.classList.contains('pinned')) {
+        section.classList.remove('pinned');
+        col.classList.add('pinned');
+      }
       row.append(col);
       row.style.setProperty('--cols', row.children.length);
     }
@@ -205,8 +216,9 @@ export function decorateMain(main) {
   decorateIcons(main);
   decorateIconMasks(main);
   decorateSections(main);
-  main.querySelectorAll(':scope > .section[data-id]').forEach((section) => {
-    section.id = section.dataset.id;
+  // the anchor of the source, as written: the pipeline would rewrite an `Id` as a class name
+  main.querySelectorAll(':scope > .section[data-anchor]').forEach((section) => {
+    section.id = section.dataset.anchor;
   });
   buildSectionRows(main);
   decorateBlocks(main);

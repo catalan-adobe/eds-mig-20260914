@@ -25,7 +25,7 @@ function loadAuthorPhotos() {
   authorPhotos ??= fetch(`${languageRoot()}/data/index.json?sheet=authors&limit=1000`)
     .then((response) => (response.ok ? response.json() : { data: [] }))
     .then(({ data = [] }) => new Map(data.filter((row) => row.image)
-      .map((row) => [siteRoot() + row.path, row.image])))
+      .map((row) => [siteRoot() + row.path, siteRoot() + row.image])))
     .catch(() => new Map());
   return authorPhotos;
 }

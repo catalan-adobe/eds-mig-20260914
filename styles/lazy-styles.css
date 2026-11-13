@@ -1,7 +1,8 @@
 /* styles that can load after the largest contentful paint */
 
-/* modal of scripts/modal.js: the source's video and zoom modal */
-.modal {
+/* modal of scripts/modal.js: the source's video and zoom modal. `body >` keeps the rules off
+   a block with the variant `modal` */
+body > .modal {
   position: fixed;
   z-index: 1050;
   inset: 0;
@@ -50,8 +51,20 @@
   border: 0;
 }
 
+/* a player has the source's 15 px of `.modal-body` padding around its 16:9 box */
+.modal-body:has(> :is(iframe, video)) {
+  aspect-ratio: auto;
+  padding: 15px;
+}
+
 .modal-body > :is(iframe, video) {
-  height: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+}
+
+.modal-dialog:has(> .modal-body > :is(iframe, video)) > .modal-close {
+  top: -25px;
+  right: 15px;
 }
 
 body:has(> .modal) {

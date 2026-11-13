@@ -7,7 +7,7 @@
 /* Once loaded, the block's wrappers have no box: the utility bar then sticks to the viewport
    and the bar of a home page lies over the hero. Until then the page keeps the header's room. */
 .header-wrapper:has(> .header[data-block-status='loaded']),
-.header[data-block-status='loaded'] {
+header .header[data-block-status='loaded'] {
   display: contents;
 }
 

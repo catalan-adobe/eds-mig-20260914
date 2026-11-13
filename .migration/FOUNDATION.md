@@ -11,8 +11,12 @@ Files: `styles/styles.css` (eager), `styles/lazy-styles.css` (modal), `scripts/s
 - `:name:` arrives as `<span class="icon icon-name"></span>`, with the space before it removed.
 - The page metadata `json-ld` is written as `<script type="application/ld+json">` by the
   pipeline. `scripts.js` does nothing for it.
+- The importer writes a section's id as `Anchor` (the pipeline rewrites `Id` as a class name
+  and loses `1`): it arrives as `data-anchor="1"` and `scripts.js` sets `id` from it.
 - A local draft `.migration/drafts/<label>/x.plain.html` must be written the same way:
-  `<div class="top-md light-grey" id="overview">…</div>` per section.
+  `<div class="top-md light-grey" data-anchor="overview">…</div>` per section.
+- A local draft is served without a doctype: in quirks mode a percentage height resolves to
+  the window. Test a block that depends on one (a 16:9 player row) on a DA draft.
 
 ## Tokens (`:root` of `styles/styles.css`)
 
@@ -97,6 +101,15 @@ All of CONTRACT.md a). Notes:
   and its `fullWidth` variant), the page metadata `theme: site-content`.
 - `buttons-left` is supported too (the importer writes it).
 
+- `pinned` on the first section of a grid cell makes its column sticky from 730 (top 128 px):
+  the source's `two2575PinnedLeft` and `two3366PinnedLeft`.
+- A `fragment` block keeps the fragment's sections inside its host section
+  (`.section > .fragment-wrapper > .fragment > .section …`): the host keeps its id, background,
+  spacing and grid column. `.fragment-wrapper` has no width limit and no padding.
+- Default content also gets: `tag-list` (a list whose links all go to `…/category?tag=`: the
+  post's tags as pills) and `downloads` (a `downloads` list, with its heading).
+- `.section[id]` has `scroll-margin-top: var(--utility-height)`: only the utility bar sticks.
+
 ## Helpers
 
 ```js
@@ -116,6 +129,7 @@ import openModal from '../../scripts/modal.js';
   fade instead of a slide: `.x .slider-track { transform: none; }` and style
   `[aria-hidden='true']`.
 - `openModal(content)` shows the source's video and zoom modal (65 % wide from 730, 16:9,
-  close button, Escape, click outside). `content` is an `img`, `picture`, `iframe` or `video`.
+  close button, Escape, click outside; a player has the source's 15 px of padding around it).
+  Its rules are scoped to `body > .modal`, so a block may have the variant `modal`. `content` is an `img`, `picture`, `iframe` or `video`.
   It returns a function that closes it.
 - Third-party scripts: `loadScript` of `aem.js` only (CSP with `strict-dynamic`).

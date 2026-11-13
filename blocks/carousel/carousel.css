@@ -1,61 +1,64 @@
+/* Every rule is scoped to the block itself (`data-block-name`): `carousel` is also a variant
+   class of `hero`, `cards`, `teasers` and `quote`. */
+
 /* content slides (the source's content carousel): one slide in view, a row of cells in it */
-.carousel .carousel-cell {
+.carousel[data-block-name='carousel'] .carousel-cell {
   display: flow-root;
 }
 
-.carousel .slider-track {
+.carousel[data-block-name='carousel'] .slider-track {
   align-items: flex-start;
   transition-duration: 0.3s;
 }
 
-.carousel .slider-viewport {
+.carousel[data-block-name='carousel'] .slider-viewport {
   transition: height 0.3s;
 }
 
 /* the title of a text in a slide: the title styles of a section, as variants */
-.carousel.title-small {
+.carousel[data-block-name='carousel'].title-small {
   --title: var(--title-size-small);
 }
 
-.carousel.title-large {
+.carousel[data-block-name='carousel'].title-large {
   --title: var(--title-size-large);
 }
 
-.carousel.title-dark {
+.carousel[data-block-name='carousel'].title-dark {
   --title-color: var(--color-text);
 }
 
 /* the space the source's components have above and below them in every slide */
-.carousel.slide-top-xs .carousel-slide,
-.carousel.slide-top-sm .carousel-slide,
-.carousel.slide-top-md .carousel-slide {
+.carousel[data-block-name='carousel'].slide-top-xs .carousel-slide,
+.carousel[data-block-name='carousel'].slide-top-sm .carousel-slide,
+.carousel[data-block-name='carousel'].slide-top-md .carousel-slide {
   padding-top: 40px;
 }
 
-.carousel.slide-bottom-xs .carousel-slide {
+.carousel[data-block-name='carousel'].slide-bottom-xs .carousel-slide {
   padding-bottom: var(--space-xs);
 }
 
-.carousel.slide-bottom-sm .carousel-slide {
+.carousel[data-block-name='carousel'].slide-bottom-sm .carousel-slide {
   padding-bottom: var(--space-sm);
 }
 
-.carousel.slide-bottom-md .carousel-slide {
+.carousel[data-block-name='carousel'].slide-bottom-md .carousel-slide {
   padding-bottom: var(--space-md);
 }
 
 /* an image in a slide fills its cell */
-.carousel .carousel-image > p {
+.carousel[data-block-name='carousel'] .carousel-image > p {
   margin: 0;
 }
 
-.carousel .carousel-image img {
+.carousel[data-block-name='carousel'] .carousel-image img {
   display: block;
   width: 100%;
 }
 
-.carousel .slider-prev,
-.carousel .slider-next {
+.carousel[data-block-name='carousel'] .slider-prev,
+.carousel[data-block-name='carousel'] .slider-next {
   display: flex;
   position: absolute;
   z-index: 1;
@@ -73,18 +76,18 @@
   font-size: 18px;
 }
 
-.carousel .slider-next {
+.carousel[data-block-name='carousel'] .slider-next {
   right: -5px;
   left: auto;
 }
 
-.carousel .slider-prev:is(:hover, :focus),
-.carousel .slider-next:is(:hover, :focus) {
+.carousel[data-block-name='carousel'] .slider-prev:is(:hover, :focus),
+.carousel[data-block-name='carousel'] .slider-next:is(:hover, :focus) {
   background: var(--color-bg-light);
 }
 
-.carousel .slider-prev::before,
-.carousel .slider-next::before {
+.carousel[data-block-name='carousel'] .slider-prev::before,
+.carousel[data-block-name='carousel'] .slider-next::before {
   content: '';
   width: 0.625em;
   height: 1em;
@@ -92,11 +95,11 @@
   mask: url('../../icons/chevron-left-light.svg') center / contain no-repeat;
 }
 
-.carousel .slider-next::before {
+.carousel[data-block-name='carousel'] .slider-next::before {
   mask-image: url('../../icons/chevron-right-light.svg');
 }
 
-.carousel .slider-dots {
+.carousel[data-block-name='carousel'] .slider-dots {
   display: flex;
   justify-content: center;
   width: calc(100% - 112px);
@@ -104,7 +107,7 @@
   margin: 28px auto 0;
 }
 
-.carousel .slider-dot {
+.carousel[data-block-name='carousel'] .slider-dot {
   position: relative;
   flex: 0 1 50px;
   min-width: 0;
@@ -115,11 +118,11 @@
   background: none;
 }
 
-.carousel .slider-dot:last-child {
+.carousel[data-block-name='carousel'] .slider-dot:last-child {
   margin: 0;
 }
 
-.carousel .slider-dot::before {
+.carousel[data-block-name='carousel'] .slider-dot::before {
   content: '';
   position: absolute;
   bottom: 2.5px;
@@ -129,26 +132,26 @@
   border-bottom: 2px solid var(--color-border-light);
 }
 
-.carousel .slider-dot[aria-current]::before {
+.carousel[data-block-name='carousel'] .slider-dot[aria-current]::before {
   transition: 0.3s;
   border-color: var(--color-grey-dark);
 }
 
 /* a video in a slide (the source's .cmp-video): a 16:9 box, a round play button over it */
-.carousel .carousel-video {
+.carousel[data-block-name='carousel'] .carousel-video {
   position: relative;
   aspect-ratio: 16 / 9;
   overflow: hidden;
 }
 
-.carousel .carousel-video img {
+.carousel[data-block-name='carousel'] .carousel-video img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.carousel .carousel-play {
+.carousel[data-block-name='carousel'] .carousel-play {
   display: flex;
   position: absolute;
   inset: 0;
@@ -162,7 +165,7 @@
   font-size: 21px;
 }
 
-.carousel .carousel-play::before {
+.carousel[data-block-name='carousel'] .carousel-play::before {
   content: '';
   width: 64px;
   height: 64px;
@@ -172,7 +175,7 @@
 }
 
 /* Font Awesome's play icon: 384 x 512, as high as the font size */
-.carousel .carousel-play::after {
+.carousel[data-block-name='carousel'] .carousel-play::after {
   content: '';
   position: absolute;
   width: 0.75em;
@@ -181,50 +184,50 @@
   mask: url('../../icons/play.svg') center / contain no-repeat;
 }
 
-.carousel .carousel-play:hover {
+.carousel[data-block-name='carousel'] .carousel-play:hover {
   font-size: 24px;
 }
 
-.carousel .carousel-play:hover::before {
+.carousel[data-block-name='carousel'] .carousel-play:hover::before {
   width: 68px;
   height: 68px;
   transition: none;
 }
 
 /* `fade` (the source's core carousel): the slides lie on each other, the arrows sit lower */
-.carousel.fade .slider {
+.carousel[data-block-name='carousel'].fade .slider {
   padding-bottom: 24px;
 }
 
-.carousel.fade .slider-track {
+.carousel[data-block-name='carousel'].fade .slider-track {
   display: grid;
   align-items: start;
   transform: none;
 }
 
-.carousel.fade .carousel-slide {
+.carousel[data-block-name='carousel'].fade .carousel-slide {
   grid-area: 1 / 1;
   transition: opacity 0.2s linear, visibility 0.2s;
 }
 
-.carousel.fade .carousel-slide[aria-hidden='true'] {
+.carousel[data-block-name='carousel'].fade .carousel-slide[aria-hidden='true'] {
   visibility: hidden;
   opacity: 0;
 }
 
-.carousel.fade .slider-prev,
-.carousel.fade .slider-next {
+.carousel[data-block-name='carousel'].fade .slider-prev,
+.carousel[data-block-name='carousel'].fade .slider-next {
   bottom: 16px;
   left: 15px;
 }
 
-.carousel.fade .slider-next {
+.carousel[data-block-name='carousel'].fade .slider-next {
   right: 15px;
   left: auto;
 }
 
 /* `logos`: a strip that runs without end, one logo every five seconds */
-.carousel.logos {
+.carousel[data-block-name='carousel'].logos {
   --visible: 3;
   --logo-height: 80px;
   --logo-gap: 12px;
@@ -233,7 +236,7 @@
   overflow: hidden;
 }
 
-.carousel.logos .carousel-track {
+.carousel[data-block-name='carousel'].logos .carousel-track {
   display: flex;
   height: var(--logo-height);
   margin: 0;
@@ -242,12 +245,12 @@
   list-style: none;
 }
 
-.carousel.logos.reverse .carousel-track {
+.carousel[data-block-name='carousel'].logos.reverse .carousel-track {
   flex-direction: row-reverse;
   animation-name: carousel-logos-reverse;
 }
 
-.carousel.logos .carousel-logo {
+.carousel[data-block-name='carousel'].logos .carousel-logo {
   display: flex;
   flex: 0 0 calc(100% / var(--visible));
   align-items: center;
@@ -255,12 +258,12 @@
   padding: 0 var(--logo-gap);
 }
 
-.carousel.logos .carousel-logo a {
+.carousel[data-block-name='carousel'].logos .carousel-logo a {
   display: block;
   width: 100%;
 }
 
-.carousel.logos .carousel-logo img {
+.carousel[data-block-name='carousel'].logos .carousel-logo img {
   display: block;
   width: 100%;
   height: var(--logo-height);
@@ -280,46 +283,46 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .carousel.logos .carousel-track {
+  .carousel[data-block-name='carousel'].logos .carousel-track {
     animation-play-state: paused;
   }
 }
 
 /* the horizontal padding of the source's images, as variants */
-.carousel.image-pad-sm .carousel-image img {
+.carousel[data-block-name='carousel'].image-pad-sm .carousel-image img {
   padding: 0 5px;
 }
 
-.carousel.image-pad-md .carousel-image img {
+.carousel[data-block-name='carousel'].image-pad-md .carousel-image img {
   padding: 0 25px;
 }
 
-.carousel.image-pad-lg .carousel-image img {
+.carousel[data-block-name='carousel'].image-pad-lg .carousel-image img {
   padding: 0 100px;
 }
 
 /* `images`: one image in view with its caption, a counter, thumbnails below */
-.carousel.images .carousel-stage {
+.carousel[data-block-name='carousel'].images .carousel-stage {
   position: relative;
 }
 
-.carousel.images .carousel-stage .slider-track {
+.carousel[data-block-name='carousel'].images .carousel-stage .slider-track {
   transition: none;
 }
 
-.carousel.images .carousel-slide {
+.carousel[data-block-name='carousel'].images .carousel-slide {
   position: relative;
   background-color: var(--color-bg-light);
 }
 
-.carousel.images :is(.carousel-slide, .carousel-thumb) img {
+.carousel[data-block-name='carousel'].images :is(.carousel-slide, .carousel-thumb) img {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }
 
-.carousel.images .carousel-caption {
+.carousel[data-block-name='carousel'].images .carousel-caption {
   display: -webkit-box;
   position: absolute;
   bottom: 0;
@@ -335,7 +338,7 @@
   -webkit-line-clamp: 1;
 }
 
-.carousel.images .carousel-count {
+.carousel[data-block-name='carousel'].images .carousel-count {
   position: absolute;
   z-index: 1;
   top: 9.5%;
@@ -351,8 +354,8 @@
   user-select: none;
 }
 
-.carousel.images .carousel-expand,
-.carousel.images .carousel-download {
+.carousel[data-block-name='carousel'].images .carousel-expand,
+.carousel[data-block-name='carousel'].images .carousel-download {
   position: absolute;
   z-index: 1;
   top: 9.5%;
@@ -365,14 +368,14 @@
   mask: url('../../icons/expand.svg') center / contain no-repeat;
 }
 
-.carousel.images .carousel-download {
+.carousel[data-block-name='carousel'].images .carousel-download {
   width: 14px;
   height: 19px;
   mask-image: url('../../icons/arrow-down-to-line-regular.svg');
 }
 
-.carousel.images .carousel-stage .slider-prev,
-.carousel.images .carousel-stage .slider-next {
+.carousel[data-block-name='carousel'].images .carousel-stage .slider-prev,
+.carousel[data-block-name='carousel'].images .carousel-stage .slider-next {
   top: calc(50% - 12px);
   bottom: auto;
   left: 4.7%;
@@ -381,12 +384,12 @@
   font-size: 14px;
 }
 
-.carousel.images .carousel-stage .slider-next {
+.carousel[data-block-name='carousel'].images .carousel-stage .slider-next {
   right: 4.7%;
   left: auto;
 }
 
-.carousel.images .carousel-thumbs .carousel-thumb {
+.carousel[data-block-name='carousel'].images .carousel-thumbs .carousel-thumb {
   display: block;
   width: 100%;
   padding: 0;
@@ -394,19 +397,19 @@
   background: none;
 }
 
-.carousel.images .carousel-thumb img {
+.carousel[data-block-name='carousel'].images .carousel-thumb img {
   transition: 0.5s;
   opacity: 0.6;
 }
 
-.carousel.images .active img,
-.carousel.images .carousel-thumb img:hover {
+.carousel[data-block-name='carousel'].images .active img,
+.carousel[data-block-name='carousel'].images .carousel-thumb img:hover {
   transition: 0.1s;
   opacity: 1;
 }
 
 /* the dialog: the same gallery over the whole window */
-.carousel .carousel-zoom {
+.carousel[data-block-name='carousel'] .carousel-zoom {
   position: fixed;
   inset: 0;
   width: 100%;
@@ -420,13 +423,13 @@
   background: rgb(0 0 0 / 95%);
 }
 
-.carousel .carousel-zoom-body {
+.carousel[data-block-name='carousel'] .carousel-zoom-body {
   max-width: var(--container);
   margin: 0 auto;
   padding: 0 15px;
 }
 
-.carousel .carousel-close {
+.carousel[data-block-name='carousel'] .carousel-close {
   display: block;
   position: relative;
   top: -10px;
@@ -439,18 +442,18 @@
   mask: url('../../icons/xmark-light.svg') center / contain no-repeat;
 }
 
-.carousel .carousel-zoom .carousel-stage .slider-prev,
-.carousel .carousel-zoom .carousel-stage .slider-next {
+.carousel[data-block-name='carousel'] .carousel-zoom .carousel-stage .slider-prev,
+.carousel[data-block-name='carousel'] .carousel-zoom .carousel-stage .slider-next {
   top: 50%;
   left: 5%;
 }
 
-.carousel .carousel-zoom .carousel-stage .slider-next {
+.carousel[data-block-name='carousel'] .carousel-zoom .carousel-stage .slider-next {
   right: 5%;
   left: auto;
 }
 
-.carousel .carousel-zoom .carousel-thumbs {
+.carousel[data-block-name='carousel'] .carousel-zoom .carousel-thumbs {
   display: flex;
   flex-wrap: wrap;
   margin: 20px 0 0;
@@ -458,42 +461,42 @@
   list-style: none;
 }
 
-.carousel .carousel-zoom .carousel-thumbs > li {
+.carousel[data-block-name='carousel'] .carousel-zoom .carousel-thumbs > li {
   flex: 0 0 calc(100% / 3);
   margin-bottom: 23px;
   background: #000;
 }
 
 /* `media` (the source's imageTextCta): the space below its image and below its text */
-.carousel.media .carousel-image,
-.carousel.media .text-content > :not(.title, .button-wrapper):last-child,
-.carousel.media .text-content > :not(.title, .button-wrapper):has(+ .button-wrapper) {
+.carousel[data-block-name='carousel'].media .carousel-image,
+.carousel[data-block-name='carousel'].media .text-content > :not(.title, .button-wrapper):last-child,
+.carousel[data-block-name='carousel'].media .text-content > :not(.title, .button-wrapper):has(+ .button-wrapper) {
   margin-bottom: 24px;
 }
 
 @media (width < 320px) {
-  .carousel.logos {
+  .carousel[data-block-name='carousel'].logos {
     --visible: 2;
   }
 }
 
 @media (width >= 640px) {
-  .carousel .carousel-zoom .carousel-thumbs > li {
+  .carousel[data-block-name='carousel'] .carousel-zoom .carousel-thumbs > li {
     flex-basis: calc(100% / 6);
   }
 }
 
 @media (width >= 730px) {
-  .carousel:not(.images, .logos) {
+  .carousel[data-block-name='carousel']:not(.images, .logos) {
     padding: 0 40px;
   }
 
-  .carousel .slider-track {
+  .carousel[data-block-name='carousel'] .slider-track {
     align-items: center;
   }
 
   /* the cells of a slide: the source's grid of twelve with a 30 px gutter */
-  .carousel .carousel-slide {
+  .carousel[data-block-name='carousel'] .carousel-slide {
     --first: 6;
 
     display: grid;
@@ -502,29 +505,29 @@
     gap: 30px;
   }
 
-  .carousel.slide-top-xs .carousel-slide {
+  .carousel[data-block-name='carousel'].slide-top-xs .carousel-slide {
     padding-top: var(--space-xs);
   }
 
-  .carousel.slide-top-sm .carousel-slide {
+  .carousel[data-block-name='carousel'].slide-top-sm .carousel-slide {
     padding-top: var(--space-sm);
   }
 
-  .carousel.slide-top-md .carousel-slide {
+  .carousel[data-block-name='carousel'].slide-top-md .carousel-slide {
     padding-top: var(--space-md);
   }
 
-  .carousel.w-3-9 .carousel-slide { --first: 3; }
-  .carousel.w-4-8 .carousel-slide { --first: 4; }
-  .carousel.w-8-4 .carousel-slide { --first: 8; }
-  .carousel.w-9-3 .carousel-slide { --first: 9; }
+  .carousel[data-block-name='carousel'].w-3-9 .carousel-slide { --first: 3; }
+  .carousel[data-block-name='carousel'].w-4-8 .carousel-slide { --first: 4; }
+  .carousel[data-block-name='carousel'].w-8-4 .carousel-slide { --first: 8; }
+  .carousel[data-block-name='carousel'].w-9-3 .carousel-slide { --first: 9; }
 
-  .carousel:is(.w-3-9, .w-4-8, .w-8-4, .w-9-3) .carousel-slide {
+  .carousel[data-block-name='carousel']:is(.w-3-9, .w-4-8, .w-8-4, .w-9-3) .carousel-slide {
     grid-template-columns: calc((100% + 30px) * var(--first) / 12 - 30px) minmax(0, 1fr);
   }
 
-  .carousel .slider-prev,
-  .carousel .slider-next {
+  .carousel[data-block-name='carousel'] .slider-prev,
+  .carousel[data-block-name='carousel'] .slider-next {
     top: 50%;
     bottom: auto;
     left: -50px;
@@ -533,28 +536,28 @@
     font-size: 20px;
   }
 
-  .carousel .slider-next {
+  .carousel[data-block-name='carousel'] .slider-next {
     right: -50px;
     left: auto;
   }
 
-  .carousel.fade .slider {
+  .carousel[data-block-name='carousel'].fade .slider {
     padding: 0;
   }
 
-  .carousel.fade .slider-prev,
-  .carousel.fade .slider-next {
+  .carousel[data-block-name='carousel'].fade .slider-prev,
+  .carousel[data-block-name='carousel'].fade .slider-next {
     top: calc(50% - 36px);
     bottom: auto;
     left: -49px;
   }
 
-  .carousel.fade .slider-next {
+  .carousel[data-block-name='carousel'].fade .slider-next {
     right: -49px;
     left: auto;
   }
 
-  .carousel.images .carousel-caption {
+  .carousel[data-block-name='carousel'].images .carousel-caption {
     height: 100px;
     border-width: 24px;
     font-size: 16px;
@@ -562,30 +565,30 @@
     -webkit-line-clamp: 2;
   }
 
-  .carousel.images .carousel-expand {
+  .carousel[data-block-name='carousel'].images .carousel-expand {
     width: 21px;
     height: 24px;
   }
 
-  .carousel.images .carousel-stage .slider-prev,
-  .carousel.images .carousel-stage .slider-next {
+  .carousel[data-block-name='carousel'].images .carousel-stage .slider-prev,
+  .carousel[data-block-name='carousel'].images .carousel-stage .slider-next {
     font-size: 20.5px;
   }
 
-  .carousel .carousel-close {
+  .carousel[data-block-name='carousel'] .carousel-close {
     width: 22px;
     height: 30px;
   }
 
-  .carousel .carousel-zoom .carousel-thumbs {
+  .carousel[data-block-name='carousel'] .carousel-zoom .carousel-thumbs {
     margin-top: 40px;
   }
 
-  .carousel .carousel-zoom .carousel-thumbs > li {
+  .carousel[data-block-name='carousel'] .carousel-zoom .carousel-thumbs > li {
     margin-bottom: 44px;
   }
 
-  .carousel.logos {
+  .carousel[data-block-name='carousel'].logos {
     --logo-height: 100px;
     --logo-gap: 40px;
 
@@ -595,72 +598,72 @@
 
 /* the source's slider counts its logos by its own widths: 320, 768, 992 */
 @media (width >= 768px) {
-  .carousel.logos {
+  .carousel[data-block-name='carousel'].logos {
     --visible: 4;
   }
 }
 
 @media (width >= 992px) {
-  .carousel.images .carousel-count {
+  .carousel[data-block-name='carousel'].images .carousel-count {
     font-size: 24px;
   }
 
-  .carousel.images .carousel-download {
+  .carousel[data-block-name='carousel'].images .carousel-download {
     width: 18px;
     height: 24px;
   }
 
-  .carousel .carousel-close {
+  .carousel[data-block-name='carousel'] .carousel-close {
     top: -12px;
     right: -46px;
   }
 
-  .carousel.logos {
+  .carousel[data-block-name='carousel'].logos {
     --visible: 5;
   }
 }
 
 @media (width >= 1024px) {
-  .carousel .carousel-zoom .carousel-stage .slider-prev {
+  .carousel[data-block-name='carousel'] .carousel-zoom .carousel-stage .slider-prev {
     left: 32px;
   }
 
-  .carousel .carousel-zoom .carousel-stage .slider-next {
+  .carousel[data-block-name='carousel'] .carousel-zoom .carousel-stage .slider-next {
     right: 32px;
   }
 }
 
 @media (width >= 1400px) {
-  .carousel:not(.images, .logos) {
+  .carousel[data-block-name='carousel']:not(.images, .logos) {
     padding: 0;
   }
 
-  .carousel .slider-prev {
+  .carousel[data-block-name='carousel'] .slider-prev {
     left: -96px;
   }
 
-  .carousel .slider-next {
+  .carousel[data-block-name='carousel'] .slider-next {
     right: -96px;
   }
 
-  .carousel.fade .slider-prev {
+  .carousel[data-block-name='carousel'].fade .slider-prev {
     left: -95px;
   }
 
-  .carousel.fade .slider-next {
+  .carousel[data-block-name='carousel'].fade .slider-next {
     right: -95px;
   }
 }
 
 @media (height <= 750px) {
-  .carousel .carousel-zoom-body {
+  .carousel[data-block-name='carousel'] .carousel-zoom-body {
     max-width: 900px;
   }
 }
 
 /* the source's .img-responsive.svg */
 @media (width <= 730px) {
-  .carousel .carousel-image img[src*='.svg'] {
+  .carousel[data-block-name='carousel'] .carousel-image img[src*='.svg'] {
     width: auto;
     height: 140px;
     margin: 0 auto;
@@ -669,13 +672,13 @@
 
 @media (width < 730px) {
   /* `media` (the source's imageTextCta): the second cell comes first */
-  .carousel.media .carousel-slide {
+  .carousel[data-block-name='carousel'].media .carousel-slide {
     display: flex;
     flex-direction: column-reverse;
   }
 
   /* `no-mobile`: the slides follow each other */
-  .carousel.no-mobile .carousel-track {
+  .carousel[data-block-name='carousel'].no-mobile .carousel-track {
     display: block;
   }
 }

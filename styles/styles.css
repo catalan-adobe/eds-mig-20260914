@@ -456,8 +456,9 @@ main .icon img {
   padding-inline: 0;
 }
 
+/* only the utility bar sticks: the navigation bar scrolls away */
 .section[id] {
-  scroll-margin-top: var(--header-height);
+  scroll-margin-top: var(--utility-height);
 }
 
 :is(.section, .section-row).light-grey { background-color: var(--color-bg-light); }
@@ -544,8 +545,8 @@ main .icon img {
   padding: var(--band-top) max(var(--container-padding), var(--row-inset)) var(--band-bottom);
 }
 
-/* a row inside a column or a section (a fragment's row) has no inset of its own */
-:is(.section-col, .section) .section-row {
+/* a row inside a column has no inset of its own */
+.section-col .section-row {
   padding-inline: 0;
 }
 
@@ -568,6 +569,14 @@ main .icon img {
 
   .section-col {
     grid-column-end: span var(--span, 12);
+  }
+
+  /* the source's sticky left cell of an article (`two2575PinnedLeft`, `two3366PinnedLeft`) */
+  .section-col.pinned {
+    position: sticky;
+    z-index: 1;
+    top: 128px;
+    align-self: start;
   }
 
   .section-col.offset-3 { grid-column-start: 4; }
@@ -695,11 +704,32 @@ main .icon img {
   }
 }
 
+/* the source's `.img-responsive.svg`: an SVG image is 140 px high on a phone */
+@media (width <= 730px) {
+  .default-content-wrapper.image img[src*='.svg'] {
+    width: auto;
+    height: 140px;
+    margin: 0 auto;
+  }
+}
+
 /* the source's `dw-content-page` stretches images in a text on a phone */
 @media (width < 730px) {
   body.dw-content-page .section:not(.rich-text) > .default-content-wrapper img {
     display: block;
     width: 100%;
+  }
+}
+
+/* the source's `tocSictkyArticlesMobile`: on a phone, the fragments of an article with a table
+   of contents are indented */
+@media (width <= 730px) {
+  main:has(.article-hero):has(.toc) .section-row .fragment-wrapper {
+    margin-left: 15px;
+  }
+
+  main:has(.article-hero):has(.toc) .section-row .fragment-wrapper:has(.form.subscribe) {
+    margin-right: 15px;
   }
 }
 
@@ -742,7 +772,63 @@ main .icon img {
   font-size: 16px;
 }
 
+/* the tags of a post (`blogsDev`): pills that link to the category page */
+.default-content-wrapper.tag-list > ul {
+  margin: 0;
+  padding: 10px 0;
+  list-style: none;
+}
+
+.default-content-wrapper.tag-list > ul > li {
+  display: inline-block;
+  margin: 4px 2px;
+}
+
+.default-content-wrapper.tag-list > ul > li > a {
+  display: flex;
+  align-items: center;
+  height: 22px;
+  border: 1px solid var(--color-grey-dark);
+  border-radius: var(--radius);
+  padding: 0 8px;
+  color: var(--color-grey-dark);
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 100%;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+
+.default-content-wrapper.tag-list > ul > li > a:hover {
+  border-color: var(--color-text);
+  background-color: var(--color-text);
+  color: #fff;
+}
+
+@media (width >= 730px) {
+  .default-content-wrapper.tag-list > ul > li {
+    margin: 6px 3px;
+    font-size: 15px;
+  }
+}
+
 /* `downloads`: a list of links that start with the download icon */
+.default-content-wrapper.downloads > h2 {
+  margin: 20px 5px 15px;
+  color: var(--color-purple);
+  font-size: 20px;
+}
+
+.default-content-wrapper.downloads > h2 + ul {
+  padding-top: 0;
+}
+
+@media (width >= 1200px) {
+  .default-content-wrapper.downloads > h2 {
+    font-size: 26px;
+  }
+}
+
 .default-content-wrapper > ul:has(> li > a > .icon-download:first-child) {
   margin: 0;
   padding: 5px;
