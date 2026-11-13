@@ -59,6 +59,12 @@ web path collapses hyphens). `--cached` uses only thumbnails already in DA.
   the products, then the solutions, three shown and "N more...". Facet values are cleared from
   the breadbox ("Clear"), as on the source, which hides the facets' own clear button.
 
+## Behaviour (from the source's blogsDev script)
+
+- A page change scrolls the post list to its top minus `#topNav`'s height (80 px from 1130,
+  70 px below): `scroll-margin-top: var(--nav-height)` on `.listing-posts`.
+- The Topics panel closes on Escape (keyup) and on a click outside `.blog-nav`.
+
 ## Known gaps
 
 - The thumbnail copy hit the source's bot check (`FETCH-STOP`, 403 on images.synopsys.com at

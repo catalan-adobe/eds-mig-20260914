@@ -1,4 +1,10 @@
 /* posts of the author and category pages: the source's blogsDev list */
+
+/* a page change scrolls the list to just below the navigation bar, as the source does */
+.listing .listing-posts {
+  scroll-margin-top: var(--nav-height);
+}
+
 .listing .listing-post {
   display: flex;
   flex-flow: column wrap;

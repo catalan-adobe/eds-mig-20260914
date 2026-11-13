@@ -64,6 +64,12 @@ export default function decorate(block) {
   };
   topics.addEventListener('click', () => toggle(panel.hidden));
   close.addEventListener('click', () => toggle(false));
+  document.addEventListener('click', (e) => {
+    if (!panel.hidden && !block.contains(e.target)) toggle(false);
+  });
+  document.addEventListener('keyup', (e) => {
+    if (e.key === 'Escape' && !panel.hidden) toggle(false);
+  });
   bar.append(topics);
   block.append(element('div', 'blog-nav-holder', panel));
 }
