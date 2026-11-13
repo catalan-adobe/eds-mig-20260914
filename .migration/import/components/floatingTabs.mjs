@@ -24,6 +24,8 @@ const isBoxLinks = (part) => isBlock(part) && part.name === 'box-links';
 const isReal = (s) => s.content.length > 0 || s.styles.includes('rule');
 const token = (b, more = []) => (b.variants.length + more.length
   ? `${b.name} (${[...b.variants, ...more].join(', ')})` : b.name);
+const isNarrow = (part) => isBlock(part) && part.name === 'columns'
+  && part.variants.includes('narrow');
 const number = (styles, prefix) => Number(styles.find((s) => s.startsWith(prefix))
   ?.slice(prefix.length) ?? 0);
 
@@ -59,7 +61,7 @@ function boxLinks(block) {
 function flatBlock(block, ctx) {
   const links = isBoxLinks(block) && boxLinks(block);
   if (links) return links.titles.join('') + links.cells.join('');
-  ctx.warn(`${block.name} inside a panel becomes default content`);
+  if (!isNarrow(block)) ctx.warn(`${block.name} inside a panel becomes default content`);
   return block.rows.flat().filter(Boolean)
     .map((cell) => (/^<(p|h\d|ul|ol|pre)\b/.test(cell) ? cell : `<p>${cell}</p>`)).join('');
 }
@@ -116,6 +118,24 @@ function linkStyle(sections, ctx) {
   return [];
 }
 
+/**
+ * `cell columns (media, narrow, …)` when the images of a row are those of image-and-text rows
+ * (textImage2Column) of one look: the tabs block draws them inside their cell.
+ */
+function cellBlock(sections, ctx) {
+  const holders = sections.filter((s) => s.content.some(isNarrow));
+  const blocks = holders.flatMap((s) => s.content.filter(isNarrow));
+  const others = sections.flatMap((s) => s.content.filter((part) => !isNarrow(part)));
+  const alike = blocks.every((b) => token(b) === token(blocks[0]));
+  if (!blocks.length) return [];
+  if (!alike || others.some((part) => /<img/.test(JSON.stringify(part)))) {
+    ctx.warn('image-and-text rows in a cell become default content');
+    return [];
+  }
+  const small = holders.every((s) => s.styles.includes('title-small'));
+  return [`cell ${token(blocks[0])}`, small && 'title-small'];
+}
+
 /** One row of cells of the source as one row: a cell is { width, sections }. */
 function gridRow(cells, head, ctx) {
   const filled = cells.filter((cell) => cell.sections.length);
@@ -133,6 +153,7 @@ function gridRow(cells, head, ctx) {
     every(titled, 'title-dark') && 'title-dark',
     ...['rich-text', 'center', 'light-grey', 'white'].filter((style) => every(all, style)),
     ...linkStyle(all, ctx),
+    ...cellBlock(all, ctx),
     !equal && WIDTHS.includes(widths) && `w-${widths.replaceAll(',', '-')}`,
     head.styles.includes('divider') && 'divider',
     ...spacing('top'), ...spacing('bottom'),

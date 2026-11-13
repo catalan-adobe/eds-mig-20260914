@@ -112,6 +112,17 @@
 .tabs .tabs-row.image-pad-md .tabs-image img { padding: 0 25px; }
 .tabs .tabs-row.image-pad-lg .tabs-image img { padding: 0 100px; }
 
+/* an image-and-text row inside a cell: the source's textImage2Column with its 30 px top and
+   15 px bottom spacing, which below 730 are its own padding. Not the cell's text line height */
+.tabs .tabs-cell > .columns-wrapper {
+  margin: 0;
+}
+
+.tabs .tabs-cell .columns.narrow {
+  padding: var(--space-sm) 0 var(--space-xs);
+  line-height: var(--line-height-body);
+}
+
 /* the source's `boxLink`: a list of links, each with a round icon */
 .tabs .tabs-box-links {
   margin: 0;

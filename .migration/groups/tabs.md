@@ -30,6 +30,10 @@ A row is one band of a panel: `label | cell … | styles`.
   the other, are one block. The tabs block builds it and loads it with `loadBlock`. Allowed:
   `accordion`, `cards`, `carousel`, `columns`, `content-tile`, `embed`, `key-benefits`,
   `mosaic`, `promo`, `quote`, `table`, `teasers`, `video`.
+- **`cell columns (media, narrow, …)`**: in every cell of the row, each image paragraph and
+  the text after it, up to the next image, is one `columns` block of that kind, drawn inside
+  the cell with the source's 30 px top and 15 px bottom spacing (textImage2Column beside
+  another cell: `/events/ai-infra-summit.html`, first panel).
 
 ```html
 <div class="tabs vertical">
@@ -97,9 +101,9 @@ A row is one band of a panel: `label | cell … | styles`.
 - A row has one spacing. Components of one cell that have their own spacing, beside another
   filled cell, lose it: 77 warnings on 16 pages (`top spacing inside the cells of a row is
   lost`, `bottom …`). Example: `/zh-cn/ai/ai-chip-development.html`, 50 px short at 1440.
-- A block inside a cell of a row with other filled cells becomes default content: 17 rows on
-  5 pages (`/events/ai-infra-summit.html` first panel, `/verification/static-and-formal-
-  verification/vc-formal.html`).
+- A block inside a cell of a row with other filled cells becomes default content, except
+  image-and-text rows (`cell columns (…)`): `/verification/static-and-formal-verification/
+  vc-formal.html`.
 - Box links beside a plain list of links in one row are drawn as a list: 11 rows on
   `/ja-jp/ai.html` and `/zh-cn/ai.html`.
 - The title of a panel is 24 px. One title of the site is not small
@@ -118,6 +122,7 @@ A row is one band of a panel: `label | cell … | styles`.
 | `/partners/bluespec.html` horizontal, text beside image | 0.16 % | 0.12 % | 0.18 % |
 | the same, second tab (`columns (media)`) | 0.01 % | 0.00 % | 0.25 % |
 | `/designware-ip/interface-ip/ddr/ddr-universal-umctl2.html` one panel | 0.22 % | 0.00 % | 0.23 % |
+| `/events/ai-infra-summit.html` first tabs, speakers in a cell | 0.11 % | 0.11 % | 2.41 % |
 | `/events/ai-infra-summit.html` second tabs, vertical | 0.10 % | 0.76 % | 9.48 % |
 | `/solutions/multi-die-design.html` vertical, uneven box link columns | 0.00 % | 0.01 % | 0.01 % |
 | `/implementation-and-signoff/custom-design-platform.html` four tabs | 0.86 % | 1.81 % | 0.03 % |

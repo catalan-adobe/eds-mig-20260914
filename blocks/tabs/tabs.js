@@ -3,7 +3,8 @@
  * A row is one band of a panel: label | cells side by side | optional styles. A row with a
  * label starts a panel; rows without one continue it. The style `box-links` draws the lists
  * of links of a row as box links. A style that names a block, as `cards (cols-3)`, makes the
- * row a row of that block: it is loaded inside the panel.
+ * row a row of that block: it is loaded inside the panel. `cell columns (media, narrow)` draws,
+ * in every cell, each image and the text after it as one such block.
  */
 import { decorateBlock, loadBlock } from '../../scripts/aem.js';
 
@@ -13,6 +14,7 @@ const STYLE = new RegExp(`^(${['(top|bottom)-(xs|sm|md)', 'w-(3-9|9-3|4-8|8-4)',
 const NESTED = new RegExp(`^(${['accordion', 'cards', 'carousel', 'columns', 'content-tile',
   'embed', 'key-benefits', 'mosaic', 'promo', 'quote', 'table', 'teasers', 'video']
   .join('|')})( \\(([a-z0-9-]+(, )?)+\\))?$`);
+const CELL = /^cell (columns( \(([a-z0-9-]+(, )?)+\))?)$/;
 const NEXT = {
   ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1,
 };
@@ -32,7 +34,7 @@ function takeStyles(cells) {
   const last = cells.at(-1);
   const words = last?.textContent.split(/,(?![^(]*\))/).map((word) => word.trim()) ?? [];
   const plain = last && !last.querySelector(':scope > :not(p), :scope > p > *');
-  const known = words.every((word) => STYLE.test(word) || NESTED.test(word));
+  const known = words.every((word) => [STYLE, NESTED, CELL].some((re) => re.test(word)));
   if (cells.length < 2 || !plain || !known) return [];
   cells.pop();
   return words;
@@ -87,8 +89,25 @@ function decorateBoxLinks(list) {
   });
 }
 
-function decorateCell(cell, styles) {
+/** Each image paragraph of the cell and what follows it, up to the next one, as a block. */
+function cellBlocks(cell, name) {
+  const isImage = (el) => el.tagName === 'P' && !el.textContent.trim() && el.querySelector('img');
+  [...cell.children].filter(isImage).forEach((image) => {
+    const text = element('div', '');
+    while (image.nextElementSibling && !isImage(image.nextElementSibling)) {
+      text.append(image.nextElementSibling);
+    }
+    const media = element('div', '', ...image.childNodes);
+    const block = element('div', name.replace(/[(),]/g, ''), element('div', '', media, text));
+    block.dataset.nested = name;
+    // a wrapper of its own: the block is not the row's only content
+    image.replaceWith(element('div', '', block));
+  });
+}
+
+function decorateCell(cell, styles, inCell) {
   cell.className = 'tabs-cell';
+  if (inCell) cellBlocks(cell, inCell.slice('cell '.length));
   const image = !cell.textContent.trim() && cell.querySelector('picture, img');
   if (image) cell.classList.add('tabs-image');
   else if (!styles.includes('rich-text')) {
@@ -107,6 +126,7 @@ function readPanels(block) {
     const words = takeStyles(cells);
     const styles = words.filter((word) => STYLE.test(word));
     const nested = words.find((word) => NESTED.test(word));
+    const inCell = words.find((word) => CELL.test(word));
     const text = label.textContent.trim();
     if (text || !panels.length) {
       const hash = label.querySelector('a[href^="#"]')?.getAttribute('href').slice(1);
@@ -118,7 +138,7 @@ function readPanels(block) {
       if (band) panel.rows.push(band);
       return;
     }
-    cells.forEach((cell) => decorateCell(cell, styles));
+    cells.forEach((cell) => decorateCell(cell, styles, inCell));
     const band = element('div', ['tabs-row', ...styles].join(' '), ...cells);
     band.style.setProperty('--cells', cells.length);
     band.style.setProperty('--span', Math.floor(12 / Math.max(1, cells.length)));
@@ -130,7 +150,8 @@ function readPanels(block) {
 /** Loads the blocks inside the panels, as `aem.js` loads the blocks of a section. */
 function loadNested(block) {
   const section = block.closest('.section');
-  return Promise.all([...block.querySelectorAll('.tabs-row[data-nested] > div > div')].map((el) => {
+  const nested = '.tabs-row[data-nested] > div > div, .tabs-cell [data-nested]';
+  return Promise.all([...block.querySelectorAll(nested)].map((el) => {
     const had = [...(section?.classList ?? [])];
     decorateBlock(el);
     // `-container` is a class of the sections that hold the block themselves
