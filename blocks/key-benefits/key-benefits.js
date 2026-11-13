@@ -13,7 +13,11 @@ function keyBenefit(row) {
   const link = title?.querySelector('a[href]');
   const item = element(link ? 'a' : 'div', 'key-benefit');
   if (link) {
-    item.href = link.href;
+    item.href = link.href.replace(/#_blank$/, '');
+    if (link.hash === '#_blank') {
+      item.target = '_blank';
+      item.rel = 'noreferer noopener';
+    }
     link.replaceWith(...link.childNodes);
   }
   const head = element('div', 'key-benefit-head');

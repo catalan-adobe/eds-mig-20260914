@@ -24,6 +24,8 @@ paragraph, a link when the source item has an `href`), then the description.
 - An empty row leaves its place in the column empty.
 - A linked title makes the whole item the link. No visible hover or focus change (the source
   has none), only the pointer.
+- A link that ends with `#_blank` opens in a new tab (`target="_blank"`, as the source's
+  8 items with `target="_blank"`); the block drops the `#_blank` from the address.
 - Title and description are cut after two lines, as in the source.
 - 81 items have no description: the source keeps the 32 / 48 px below them, the block too.
 
