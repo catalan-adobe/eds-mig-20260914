@@ -1,0 +1,476 @@
+/*
+ * Tabs: the source's floating tabs (.component-floating-tabs). Values are the source's.
+ * Below 730 the panels are an accordion; from 730 a tab bar, or a tab column (vertical).
+ */
+.tabs {
+  --tabs-accent: #7921b0;
+  --tabs-active: var(--color-bg-light);
+}
+
+:is(.section, .section-row).light-grey .tabs {
+  --tabs-active: var(--color-bg-page);
+}
+
+.tabs .tabs-nav {
+  display: none;
+}
+
+.tabs .tabs-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* the panel's label below 730 */
+.tabs .tabs-header {
+  display: block;
+  position: relative;
+  border-left: 3px solid var(--tabs-accent);
+  padding: 10px 28px 10px 10px;
+  background-color: var(--tabs-active);
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.tabs .tabs-header::after {
+  content: '+';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.tabs .tabs-panel.active > .tabs-header::after {
+  content: '-';
+  font-size: 42px;
+}
+
+.tabs .tabs-body {
+  display: none;
+}
+
+.tabs .tabs-panel.active > .tabs-body {
+  display: block;
+}
+
+/* a row: one component of the source's panel, with its own spacing */
+.tabs .tabs-row {
+  --top: 0px;
+  --bottom: 0px;
+  --title: var(--title-size-small);
+  --title-color: var(--color-purple);
+
+  display: flow-root;
+  padding-top: var(--top);
+  padding-bottom: var(--bottom);
+}
+
+.tabs .tabs-row:is(.top-xs, .top-sm, .top-md) { --top: 40px; }
+.tabs .tabs-row.bottom-xs { --bottom: var(--space-xs); }
+.tabs .tabs-row.bottom-sm { --bottom: var(--space-sm); }
+.tabs .tabs-row.bottom-md { --bottom: var(--space-md); }
+.tabs .tabs-row:is(.gap-top-xs, .gap-top-sm, .gap-top-md) { --gap: 40px; }
+.tabs .tabs-row.gap-bottom-xs { --gap: var(--space-xs); }
+.tabs .tabs-row.gap-bottom-sm { --gap: var(--space-sm); }
+.tabs .tabs-row.gap-bottom-md { --gap: var(--space-md); }
+.tabs .tabs-cell:is(.cell-top-xs, .cell-top-sm, .cell-top-md) { padding-top: 40px; }
+.tabs .tabs-cell.cell-bottom-xs { padding-bottom: var(--space-xs); }
+.tabs .tabs-cell.cell-bottom-sm { padding-bottom: var(--space-sm); }
+.tabs .tabs-cell.cell-bottom-md { padding-bottom: var(--space-md); }
+
+/* the spacing between two components of one cell of the source, before the second's title */
+.tabs .tabs-row[class*='gap-'] > .tabs-cell > :is(h1, h2, h3, h4, h5, h6):not(:first-child) {
+  padding-top: var(--gap);
+}
+
+/* the text of the source's `text` keeps 24 px below it up to 730, none from 730 */
+.tabs .tabs-row[class*='gap-'] > .tabs-cell
+  > :not(.tabs-box-links):has(+ :is(h1, h2, h3, h4, h5, h6)) {
+  margin-bottom: 24px;
+}
+
+.tabs .tabs-row.title-large { --title: var(--title-size-large); }
+.tabs .tabs-row.title-dark { --title-color: var(--color-text); }
+.tabs .tabs-row.light-grey { background-color: var(--color-bg-light); }
+.tabs .tabs-row.white { background-color: var(--color-bg-page); }
+.tabs .tabs-row.center { text-align: center; }
+.tabs .tabs-row.right { text-align: right; }
+
+.tabs .tabs-row.center .button-wrapper {
+  justify-content: center;
+}
+
+.tabs .tabs-row.right .button-wrapper {
+  justify-content: right;
+}
+
+.tabs .tabs-row.rule::after {
+  content: '';
+  display: block;
+  grid-column: 1 / -1;
+  height: 1px;
+  margin: 20px 0;
+  background-color: var(--color-border);
+}
+
+.tabs .tabs-row.rich-text :is(ul, ol) {
+  padding-left: 20px;
+}
+
+/* the source's `image`: fills its column */
+.tabs .tabs-image > p {
+  margin: 0;
+}
+
+.tabs .tabs-image img {
+  display: block;
+  width: 100%;
+}
+
+/* images of one paragraph: a row of images, stacked below 730 */
+.tabs .tabs-cell > p:has(> picture + picture) {
+  display: grid;
+}
+
+.tabs .tabs-cell > p:has(> picture + picture) img {
+  display: block;
+  width: 100%;
+}
+
+.tabs .tabs-row.image-pad-sm .tabs-image img { padding: 0 5px; }
+.tabs .tabs-row.image-pad-md .tabs-image img { padding: 0 25px; }
+.tabs .tabs-row.image-pad-lg .tabs-image img { padding: 0 100px; }
+
+/* a block inside a cell has no spacing of its own */
+.tabs .tabs-cell > :is(.columns-wrapper, .video-wrapper) {
+  margin: 0;
+}
+
+/* an image-and-text row inside a cell: the source's textImage2Column with its 30 px top and
+   15 px bottom spacing, which below 730 are its own padding. Not the cell's text line height */
+.tabs .tabs-cell .columns.narrow {
+  padding: var(--space-sm) 0 var(--space-xs);
+  line-height: var(--line-height-body);
+}
+
+/* the source's `boxLink`: a list of links, each with a round icon */
+.tabs .tabs-box-links {
+  margin: 0;
+  padding: 0;
+  color: var(--color-text);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  list-style: none;
+}
+
+.tabs .tabs-box-links > li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.tabs .tabs-box-links > li > :is(a, button) {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: row-reverse;
+  align-items: center;
+  column-gap: 16px;
+  min-width: 0;
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+.tabs .tabs-box-links > li > button {
+  flex-basis: 100%;
+  border: 0;
+  padding: 0;
+  background: none;
+  color: inherit;
+  text-align: left;
+}
+
+.tabs .tabs-box-links > li > :is(a, button) > span {
+  display: -webkit-box;
+  flex: 1;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.tabs .tabs-box-links > li > :is(a, button)::before {
+  content: '';
+  flex: 0 0 36px;
+  height: 36px;
+  border-radius: 90%;
+  background-color: #f0f0f4;
+}
+
+.tabs .tabs-box-links > li > :is(a, button)::after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 8px);
+  right: 10px;
+  width: 16px;
+  height: 16px;
+  background-color: #555;
+  mask: url('../../icons/link.svg') center / 16px auto no-repeat;
+}
+
+.tabs .tabs-box-links > li > button::after {
+  mask-image: url('../../icons/plus.svg');
+}
+
+.tabs .tabs-box-links > li > button[aria-expanded='true']::after {
+  mask-image: url('../../icons/minus.svg');
+}
+
+.tabs .tabs-box-links > li > ul {
+  display: none;
+  flex: 0 0 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tabs .tabs-box-links > li > button[aria-expanded='true'] + ul {
+  display: block;
+}
+
+.tabs .tabs-box-links > li > ul > li {
+  margin: 16px 0 0;
+  font-weight: 300;
+}
+
+.tabs .tabs-box-links > li > ul a:hover {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+/* only pages whose root container is `.site-content` in the source shrink the bottom spacing */
+@media (width <= 730px) {
+  body:is(
+    .site-content,
+    .campaign-landing-page,
+    .contact-us-landing-page,
+    .video-landing-page,
+    .form,
+    .marketo-thankyou-page
+  ) .tabs {
+    & .tabs-row.bottom-sm { --bottom: 0px; }
+    & .tabs-row.bottom-md { --bottom: 10px; }
+    & .tabs-row.gap-bottom-sm { --gap: 0px; }
+    & .tabs-row.gap-bottom-md { --gap: 10px; }
+    & .tabs-cell.cell-bottom-sm { padding-bottom: 0; }
+    & .tabs-cell.cell-bottom-md { padding-bottom: 10px; }
+  }
+}
+
+@media (width >= 730px) {
+  .tabs {
+    margin: 20px 0;
+  }
+
+  .tabs .tabs-nav {
+    display: flex;
+  }
+
+  .tabs .tabs-nav > a {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1px;
+    border-bottom: 3px solid transparent;
+    padding: 20px 24px;
+    box-shadow: 0 1px 0 var(--color-grey-text);
+    color: var(--color-text);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .tabs .tabs-nav > a:is(.active, :hover) {
+    border-bottom-color: var(--tabs-accent);
+  }
+
+  .tabs .tabs-nav > a.active {
+    background-color: var(--tabs-active);
+  }
+
+  .tabs .tabs-content {
+    display: block;
+    padding-top: 30px;
+  }
+
+  .tabs .tabs-header {
+    display: none;
+  }
+
+  /* the source fades the panel in */
+  .tabs .tabs-panel.active > .tabs-body {
+    transition: opacity 0.4s ease-in;
+
+    @starting-style {
+      opacity: 0;
+    }
+  }
+
+  .tabs .tabs-row.top-xs { --top: var(--space-xs); }
+  .tabs .tabs-row.top-sm { --top: var(--space-sm); }
+  .tabs .tabs-row.top-md { --top: var(--space-md); }
+  .tabs .tabs-row.gap-top-xs { --gap: var(--space-xs); }
+  .tabs .tabs-row.gap-top-sm { --gap: var(--space-sm); }
+  .tabs .tabs-row.gap-top-md { --gap: var(--space-md); }
+  .tabs .tabs-cell.cell-top-xs { padding-top: var(--space-xs); }
+  .tabs .tabs-cell.cell-top-sm { padding-top: var(--space-sm); }
+  .tabs .tabs-cell.cell-top-md { padding-top: var(--space-md); }
+
+  .tabs .tabs-row[class*='gap-'] > .tabs-cell
+    > :not(.tabs-box-links):has(+ :is(h1, h2, h3, h4, h5, h6)) {
+    margin-bottom: 0;
+  }
+
+  /* cells side by side: the source's 12 columns with a 30 px gutter */
+  .tabs .tabs-row {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: var(--gutter);
+  }
+
+  .tabs .tabs-row > div {
+    grid-column-end: span var(--span, 12);
+    min-width: 0;
+  }
+
+  .tabs .tabs-row:is(.w-3-9, .w-4-8) > :first-child,
+  .tabs .tabs-row:is(.w-9-3, .w-8-4) > :last-child { --span: 4; }
+
+  .tabs .tabs-row.w-3-9 > :first-child,
+  .tabs .tabs-row.w-9-3 > :last-child { --span: 3; }
+
+  .tabs .tabs-row:is(.w-9-3, .w-8-4) > :first-child,
+  .tabs .tabs-row:is(.w-3-9, .w-4-8) > :last-child { --span: 8; }
+
+  .tabs .tabs-row.w-9-3 > :first-child,
+  .tabs .tabs-row.w-3-9 > :last-child { --span: 9; }
+
+  /* a divider takes 30 px, shared equally by the cells, with 15 px on each side of it */
+  .tabs .tabs-row.divider {
+    --divider-share: calc(var(--gutter) * (2 - 1 / var(--cells, 2)));
+
+    display: flex;
+    column-gap: calc(2 * var(--gutter));
+  }
+
+  .tabs .tabs-row.divider > .tabs-cell {
+    flex: 0 0 calc((100% + var(--gutter)) * var(--span, 12) / 12 - var(--divider-share));
+  }
+
+  .tabs .tabs-row.divider > .tabs-cell + .tabs-cell {
+    position: relative;
+  }
+
+  .tabs .tabs-row.divider > .tabs-cell + .tabs-cell::before {
+    content: '';
+    position: absolute;
+    inset: 0 auto 0 calc(0.5px - var(--gutter));
+    border-left: 1px solid var(--color-border);
+  }
+
+  .tabs .tabs-cell > p:has(> picture + picture) {
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    column-gap: var(--gutter);
+  }
+
+  /* link lists: the icon first, two links per row when the list has the row for itself */
+  .tabs .tabs-box-links > li {
+    max-width: 342px;
+  }
+
+  .tabs .tabs-cell:only-child > .tabs-box-links,
+  .tabs .tabs-box-links.cols-2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: var(--gutter);
+  }
+
+  .tabs .tabs-box-links.cols-2 {
+    grid-template-rows: repeat(var(--rows), auto);
+    grid-auto-flow: column;
+  }
+
+  .tabs .tabs-box-links > li > :is(a, button) {
+    flex-direction: row;
+    column-gap: 20px;
+  }
+
+  .tabs .tabs-box-links > li > :is(a, button) > span {
+    -webkit-line-clamp: 2;
+  }
+
+  .tabs .tabs-box-links > li > :is(a, button)::after {
+    right: auto;
+    left: 10px;
+  }
+
+  .tabs .tabs-box-links > li > ul {
+    padding-left: 56px;
+  }
+
+  /* a tab column on the left */
+  .tabs.vertical {
+    display: flex;
+  }
+
+  .tabs.vertical > .tabs-nav {
+    display: block;
+    flex: none;
+    width: 317px;
+    border-right: 1px solid var(--color-border);
+  }
+
+  .tabs.vertical > .tabs-nav > a {
+    display: flex;
+    position: relative;
+    margin: 0;
+    border-bottom: 0;
+    padding: 20px 32px 20px 16px;
+    box-shadow: none;
+    color: var(--color-grey-text);
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  .tabs.vertical > .tabs-nav > a::after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 9px);
+    right: 15px;
+    width: 10px;
+    height: 18px;
+    background-color: currentcolor;
+    mask: url('../../icons/chevron-right.svg') center / contain no-repeat;
+  }
+
+  .tabs.vertical > .tabs-nav > a:hover {
+    color: var(--color-text);
+  }
+
+  .tabs.vertical > .tabs-nav > a.active {
+    border-left: 3px solid var(--tabs-accent);
+    color: var(--color-text);
+  }
+
+  .tabs.vertical > .tabs-content {
+    flex: 1;
+    min-width: 0;
+    padding: 0 0 0 40px;
+  }
+}

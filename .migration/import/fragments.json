@@ -1,0 +1,517 @@
+{
+ "en|ai---customer-stories|ed4497aa7740": {
+  "path": "/fragments/ai-customer-stories",
+  "pages": 3,
+  "from": "/success-stories/neuchips-creates-ai-accelerator-chip-in-18-months.html"
+ },
+ "en|ai-cont-reading|23079693373a": {
+  "path": "/fragments/ai-cont-reading",
+  "pages": 8,
+  "from": "/glossary/what-is-an-ai-accelerator.html"
+ },
+ "en|aimlinlinepromo|114985b3a965": {
+  "path": "/fragments/aimlinlinepromo",
+  "pages": 26,
+  "from": "/glossary/what-is-an-ai-chip.html"
+ },
+ "en|aimlinlinepromo|242532c88cbd": {
+  "path": "/fragments/aimlinlinepromo-3",
+  "pages": 11,
+  "from": "/blogs/chip-design/ai-soc-design-for-better-chips.html"
+ },
+ "en|aimlinlinepromo|9f551c9c3c94": {
+  "path": "/fragments/aimlinlinepromo-5",
+  "pages": 3,
+  "from": "/glossary/what-is-power-optimization.html"
+ },
+ "en|aimlinlinepromo|a5701f5f2b3b": {
+  "path": "/fragments/aimlinlinepromo-2",
+  "pages": 20,
+  "from": "/glossary/what-is-an-ai-accelerator.html"
+ },
+ "en|aimlinlinepromo|e2e8bfafc374": {
+  "path": "/fragments/aimlinlinepromo-4",
+  "pages": 4,
+  "from": "/blogs/chip-design/ai-impact-on-low-power-chip-design.html"
+ },
+ "en|autoinlinepromo|1badf840336b": {
+  "path": "/fragments/autoinlinepromo-3",
+  "pages": 3,
+  "from": "/blogs/chip-design/software-defined-vehicles-blackberry-aws.html"
+ },
+ "en|autoinlinepromo|5c4391d50f76": {
+  "path": "/fragments/autoinlinepromo-2",
+  "pages": 4,
+  "from": "/glossary/what-is-autonomous-car.html"
+ },
+ "en|autoinlinepromo|7a1e300b1608": {
+  "path": "/fragments/autoinlinepromo-4",
+  "pages": 3,
+  "from": "/blogs/chip-design/electronics-digital-twin-automotive-innovation.html"
+ },
+ "en|autoinlinepromo|853dd1fbfe31": {
+  "path": "/fragments/autoinlinepromo-5",
+  "pages": 2,
+  "from": "/articles/automotive-embedded-storage-ufs.html"
+ },
+ "en|autoinlinepromo|c80cb14c98b4": {
+  "path": "/fragments/autoinlinepromo",
+  "pages": 42,
+  "from": "/glossary/what-is-adas.html"
+ },
+ "en|automotive-cont--reading|1573056fca23": {
+  "path": "/fragments/automotive-cont-reading",
+  "pages": 8,
+  "from": "/glossary/what-is-adas.html"
+ },
+ "en|automotive-xf|1ac42594022a": {
+  "path": "/fragments/automotive-xf",
+  "pages": 5,
+  "from": "/solutions/automotive.html"
+ },
+ "en|blog-sub-navigation|fecd3a1ae1d5": {
+  "path": "/fragments/blog-sub-navigation",
+  "pages": 1038,
+  "from": "/blogs/chip-design.html"
+ },
+ "en|blog-subscription-form|648b3b240fc6": {
+  "path": "/fragments/blog-subscription-form",
+  "pages": 842,
+  "from": "/blogs/chip-design/5g-vs-4g.html"
+ },
+ "en|bookend-edge-ai|6587c2dac7f4": {
+  "path": "/fragments/bookend-edge-ai",
+  "pages": 18,
+  "from": "/designware-ip/soc-infrastructure-ip/amba.html"
+ },
+ "en|bookend-promo---ai-solutions|ff49197511c8": {
+  "path": "/fragments/bookend-promo-ai-solutions",
+  "pages": 13,
+  "from": "/glossary/what-is-an-ai-accelerator.html"
+ },
+ "en|bookend-promo---automotive-solutions|597551e4b7e4": {
+  "path": "/fragments/bookend-promo-automotive-solutions",
+  "pages": 10,
+  "from": "/glossary/what-is-adas.html"
+ },
+ "en|bookend-promo---silicon-design|54451f5bf807": {
+  "path": "/fragments/bookend-promo-silicon-design",
+  "pages": 16,
+  "from": "/blogs/chip-design/exploring-transistor-architecture-for-the-5-nm-node-and-beyond.html"
+ },
+ "en|bookend-promo---verification|7eca0154a34d": {
+  "path": "/fragments/bookend-promo-verification",
+  "pages": 11,
+  "from": "/blogs/chip-design/zebu-innovation-advancing-emulation-technology-complex-soc-verification.html"
+ },
+ "en|cloud---customer-stories|f237d6748589": {
+  "path": "/fragments/cloud-customer-stories",
+  "pages": 8,
+  "from": "/success-stories/impar-leveraging-chip-design-verification-in-the-cloud.html"
+ },
+ "en|connect-with-the-virtual-prototyping-team|b7948d4b0532": {
+  "path": "/fragments/connect-with-the-virtual-prototyping-team",
+  "pages": 13,
+  "from": "/verification/virtual-prototyping/virtual-prototyping-solutions-for-arm.html"
+ },
+ "en|contact-security-ip-team|4613d3cf7d51": {
+  "path": "/fragments/contact-security-ip-team",
+  "pages": 31,
+  "from": "/resources/sram-puf-cryptographic-key-protection.html"
+ },
+ "en|contact-the-prototyping-team|a95da9242820": {
+  "path": "/fragments/contact-the-prototyping-team",
+  "pages": 11,
+  "from": "/verification/emulation-prototyping/emulation.html"
+ },
+ "en|contact-the-vip-team|7eb497619bd5": {
+  "path": "/fragments/contact-the-vip-team",
+  "pages": 74,
+  "from": "/verification/verification-ip/amba.html"
+ },
+ "en|contact-us---general|5e4a52341a0c": {
+  "path": "/fragments/contact-us-general-3",
+  "pages": 3,
+  "from": "/ai/agentic-ai.html"
+ },
+ "en|contact-us---general|b65b4ecea3dd": {
+  "path": "/fragments/contact-us-general",
+  "pages": 236,
+  "from": "/success-stories/view-all.html"
+ },
+ "en|contact-us---general|f634c415ad5d": {
+  "path": "/fragments/contact-us-general-2",
+  "pages": 6,
+  "from": "/ai/ai-chip-development.html"
+ },
+ "en|dw-resources|096ba0e9c0ed": {
+  "path": "/fragments/dw-resources",
+  "pages": 206,
+  "from": "/designware-ip/interface-ip/multi-protocol-6g-phy.html"
+ },
+ "en|dynamic-article-automotive|af1324ef0211": {
+  "path": "/fragments/dynamic-article-automotive",
+  "pages": 2,
+  "from": "/articles/iso-sae-21434-automotive-cybersecurity.html"
+ },
+ "en|dynamic-card-success-story-xf|ed4497aa7740": {
+  "path": "/fragments/dynamic-card-success-story-xf",
+  "pages": 9,
+  "from": "/success-stories/aws-leveraging-high-speed-interfaces-for-testing-monitoring.html"
+ },
+ "en|experience-fragment-delete|8d6a59fdeda6": {
+  "path": "/fragments/experience-fragment-delete",
+  "pages": 2,
+  "from": "/solutions/automotive.html"
+ },
+ "en|explore-multi-die-solutions|8d752f9550af": {
+  "path": "/fragments/explore-multi-die-solutions",
+  "pages": 26,
+  "from": "/glossary/what-are-chiplets.html"
+ },
+ "en|find-your-ip|92ee13eab10a": {
+  "path": "/fragments/find-your-ip",
+  "pages": 227,
+  "from": "/designware-ip/interface-ip/multi-protocol-6g-phy.html"
+ },
+ "en|foundation-ip|27a758228e1f": {
+  "path": "/fragments/foundation-ip",
+  "pages": 36,
+  "from": "/designware-ip/memories-logic-libraries/3dio.html"
+ },
+ "en|foundation-ip|486e62e3ece5": {
+  "path": "/fragments/foundation-ip-2",
+  "pages": 31,
+  "from": "/articles/selecting-standard-ip.html"
+ },
+ "en|general-cont--reading|67532f247c0b": {
+  "path": "/fragments/general-cont-reading",
+  "pages": 125,
+  "from": "/glossary/what-is-3dic.html"
+ },
+ "en|gurbir-singh|d7247d404854": {
+  "path": "/fragments/gurbir-singh",
+  "pages": 21,
+  "from": "/blogs/chip-design/top-cloud-architecture-design-principles-important-for-eda.html"
+ },
+ "en|in-line-experience----multiphysics-fusion|93104ac69467": {
+  "path": "/fragments/in-line-experience-multiphysics-fusion",
+  "pages": 8,
+  "from": "/blogs/chip-design/multiphysics-chip-design-challenges.html"
+ },
+ "en|in-line-experience-edge-ai|aedd5852d3c6": {
+  "path": "/fragments/in-line-experience-edge-ai",
+  "pages": 15,
+  "from": "/glossary/what-is-edge-ai.html"
+ },
+ "en|interface-ip|5ccd6e65e173": {
+  "path": "/fragments/interface-ip-4",
+  "pages": 26,
+  "from": "/designware-ip/interface-ip/cxl.html"
+ },
+ "en|interface-ip|81060fc6dd82": {
+  "path": "/fragments/interface-ip-2",
+  "pages": 109,
+  "from": "/articles/hdmi-fast-switching.html"
+ },
+ "en|interface-ip|8b99f06c962e": {
+  "path": "/fragments/interface-ip-3",
+  "pages": 29,
+  "from": "/designware-ip/interface-ip/cxl.html"
+ },
+ "en|interface-ip|dddcaa1c5216": {
+  "path": "/fragments/interface-ip",
+  "pages": 118,
+  "from": "/articles/hdmi-fast-switching.html"
+ },
+ "en|interoperability|4e5cc4819934": {
+  "path": "/fragments/interoperability",
+  "pages": 10,
+  "from": "/designware-ip/ip-market-segments/hpc.html"
+ },
+ "en|multi-die-blog-resource-promotion|46e16a04643a": {
+  "path": "/fragments/multi-die-blog-resource-promotion",
+  "pages": 36,
+  "from": "/glossary/what-is-3dic.html"
+ },
+ "en|multi-die-blog-resource-promotion|ffb0c3b0fae9": {
+  "path": "/fragments/multi-die-blog-resource-promotion-2",
+  "pages": 4,
+  "from": "/glossary/what-is-ai-chip-design.html"
+ },
+ "en|multi-die-cont--reading|7082ab6851ae": {
+  "path": "/fragments/multi-die-cont-reading",
+  "pages": 2,
+  "from": "/glossary/what-are-chiplets.html"
+ },
+ "en|multi-die-system-promotion|4600514d42c3": {
+  "path": "/fragments/multi-die-system-promotion",
+  "pages": 38,
+  "from": "/glossary/what-is-3dic.html"
+ },
+ "en|multi-die-system-promotion|6436a58614bf": {
+  "path": "/fragments/multi-die-system-promotion-2",
+  "pages": 17,
+  "from": "/articles/3dio-multi-die-integration.html"
+ },
+ "en|primary-promotion|67532f247c0b": {
+  "path": "/fragments/primary-promotion",
+  "pages": 2,
+  "from": "/blogs.html"
+ },
+ "en|processor-ip-banner|297c619cb4db": {
+  "path": "/fragments/processor-ip-banner",
+  "pages": 2,
+  "from": "/designware-ip/processor-solutions.html"
+ },
+ "en|promotion-band|8f087cbea247": {
+  "path": "/fragments/promotion-band",
+  "pages": 4,
+  "from": "/verification/simulation/testbench-quality-assurance.html"
+ },
+ "en|rail-promotion-ag-newsletter|675bdcc586bc": {
+  "path": "/fragments/rail-promotion-ag-newsletter",
+  "pages": 261,
+  "from": "/articles/design-verification-environment.html"
+ },
+ "en|rail|45b9a1813cb7": {
+  "path": "/fragments/rail-6",
+  "pages": 2,
+  "from": "/company/executive-briefing-center/ebc-hotels.html"
+ },
+ "en|rail|91e7a209c620": {
+  "path": "/fragments/rail-7",
+  "pages": 2,
+  "from": "/support/licensing-installation-computeplatforms/installation/archived-installation-guides.html"
+ },
+ "en|rail|9c7f3c889289": {
+  "path": "/fragments/rail-4",
+  "pages": 7,
+  "from": "/company/resources/synopsys-press/better-software-faster.html"
+ },
+ "en|rail|a19c2204ff1a": {
+  "path": "/fragments/rail-1",
+  "pages": 65,
+  "from": "/support/licensing-installation-computeplatforms/compute-platforms/release-specific-support.html"
+ },
+ "en|rail|a5eea19c4bd2": {
+  "path": "/fragments/rail-5",
+  "pages": 6,
+  "from": "/photonic-solutions/product-applications/photonic-integrated-circuits/pic-transparent-components.html"
+ },
+ "en|rail|f7188156592b": {
+  "path": "/fragments/rail-3",
+  "pages": 13,
+  "from": "/support/licensing-installation-computeplatforms/licensing/legacy-tool-support.html"
+ },
+ "en|rail|f9c162754893": {
+  "path": "/fragments/rail-2",
+  "pages": 20,
+  "from": "/company/contact-synopsys/office-locations/europe-middle-east.html"
+ },
+ "en|security-ip-promo-banner|ed53e78b1384": {
+  "path": "/fragments/security-ip-promo-banner",
+  "pages": 6,
+  "from": "/designware-ip/interface-ip.html"
+ },
+ "en|security-ip|4078a7eccce1": {
+  "path": "/fragments/security-ip-2",
+  "pages": 40,
+  "from": "/glossary/what-is-butterfly-puf.html"
+ },
+ "en|security-ip|f08ac93f6953": {
+  "path": "/fragments/security-ip",
+  "pages": 41,
+  "from": "/glossary/what-is-butterfly-puf.html"
+ },
+ "en|silicon-design---customer-stories|d4f225e3cc8f": {
+  "path": "/fragments/silicon-design-customer-stories",
+  "pages": 6,
+  "from": "/success-stories/aaroh-labs-advanced-node-semiconductor-designs.html"
+ },
+ "en|silicon-ip---customer-stories|7822c229c7d4": {
+  "path": "/fragments/silicon-ip-customer-stories",
+  "pages": 15,
+  "from": "/success-stories/orbbec-achieves-first-pass-silicon-success-for-3d-camera.html"
+ },
+ "en|silicon-ip-cont-reading|a23237b1741b": {
+  "path": "/fragments/silicon-ip-cont-reading",
+  "pages": 6,
+  "from": "/glossary/what-is-butterfly-puf.html"
+ },
+ "en|sipinlinepromo|c66d8b5232a5": {
+  "path": "/fragments/sipinlinepromo",
+  "pages": 52,
+  "from": "/glossary/what-is-serdes.html"
+ },
+ "en|sridhar-panchapakesan|69ded3e60ab4": {
+  "path": "/fragments/sridhar-panchapakesan",
+  "pages": 14,
+  "from": "/blogs/chip-design/what-is-elasticity-in-cloud-computing.html"
+ },
+ "en|stay-connected|1eb14d6058f7": {
+  "path": "/fragments/stay-connected",
+  "pages": 6,
+  "from": "/academic-research/students.html"
+ },
+ "en|sudesh-gadewar|5f67e5b65efc": {
+  "path": "/fragments/sudesh-gadewar",
+  "pages": 3,
+  "from": "/blogs/chip-design/what-is-cloud-security-framework.html"
+ },
+ "en|synopsys-cloud-boilerplate|bddb4095d690": {
+  "path": "/fragments/synopsys-cloud-boilerplate",
+  "pages": 67,
+  "from": "/blogs/chip-design/top-cloud-architecture-design-principles-important-for-eda.html"
+ },
+ "en|synopsys-ip-primary-right-rail|026e309a9216": {
+  "path": "/fragments/synopsys-ip-primary-right-rail",
+  "pages": 18,
+  "from": "/designware-ip/40ulp-process.html"
+ },
+ "en|talk-with-an-ip-expert---contact--us-band|37c7a3ccd21a": {
+  "path": "/fragments/talk-with-an-ip-expert-contact-us-band",
+  "pages": 285,
+  "from": "/designware-ip/interface-ip/multi-protocol-6g-phy.html"
+ },
+ "en|technical-bulletin|360059e654c6": {
+  "path": "/fragments/technical-bulletin",
+  "pages": 267,
+  "from": "/articles/design-verification-environment.html"
+ },
+ "en|try-synopsys-cloud---footer|a851bd52a9b2": {
+  "path": "/fragments/try-synopsys-cloud-footer",
+  "pages": 9,
+  "from": "/cloud/news.html"
+ },
+ "en|try-synopsys-cloud---promotion-band|a60d9602e502": {
+  "path": "/fragments/try-synopsys-cloud-promotion-band",
+  "pages": 101,
+  "from": "/cloud/design-in-the-cloud.html"
+ },
+ "en|try-synopsys-cloud---promotion-rail|feeb870bfdda": {
+  "path": "/fragments/try-synopsys-cloud-promotion-rail",
+  "pages": 94,
+  "from": "/cloud/news/byoc-on-google-cloud.html"
+ },
+ "en|venkata-ravella|1a12f0813fe2": {
+  "path": "/fragments/venkata-ravella",
+  "pages": 10,
+  "from": "/blogs/chip-design/comparing-cloud-on-premises-security-chip-design.html"
+ },
+ "en|verification---customer-stories|47dc47c1685c": {
+  "path": "/fragments/verification-customer-stories",
+  "pages": 11,
+  "from": "/success-stories/intelliprop-meets-design-schedule-for-memory-controller.html"
+ },
+ "en|vikram-bhatia|2729b1be5883": {
+  "path": "/fragments/vikram-bhatia",
+  "pages": 6,
+  "from": "/blogs/chip-design/fundamentals-of-cloud-computing-and-its-role-in-eda.html"
+ },
+ "en|wagner-nascimento|745a9f8aae79": {
+  "path": "/fragments/wagner-nascimento",
+  "pages": 7,
+  "from": "/blogs/chip-design/types-of-cloud-security-tools.html"
+ },
+ "ja-jp|contact-us---general|12c6fe8af9f8": {
+  "path": "/fragments/ja-jp/contact-us-general",
+  "pages": 11,
+  "from": "/ja-jp/silicon-design.html"
+ },
+ "ja-jp|rail|3f86237221d5": {
+  "path": "/fragments/ja-jp/rail-4",
+  "pages": 4,
+  "from": "/ja-jp/silicon/tcad/process-simulation.html"
+ },
+ "ja-jp|rail|3fff2d36a9a3": {
+  "path": "/fragments/ja-jp/rail-5",
+  "pages": 4,
+  "from": "/ja-jp/japan/events/vc-spyglass-rdc-webinar.html"
+ },
+ "ja-jp|rail|da40c65df039": {
+  "path": "/fragments/ja-jp/rail-2",
+  "pages": 16,
+  "from": "/ja-jp/japan/support/lynx.html"
+ },
+ "ja-jp|rail|db97fe66c133": {
+  "path": "/fragments/ja-jp/rail-3",
+  "pages": 7,
+  "from": "/ja-jp/implementation-and-signoff/rtl-synthesis-test/rtl-architect.html"
+ },
+ "ja-jp|rail|e3dc2771aa45": {
+  "path": "/fragments/ja-jp/rail-1",
+  "pages": 857,
+  "from": "/ja-jp/japan/press-releases/2017-releases.html"
+ },
+ "zh-cn|contact-us---general|af3abfaaecec": {
+  "path": "/fragments/zh-cn/contact-us-general",
+  "pages": 3,
+  "from": "/zh-cn/hpc-data-center.html"
+ },
+ "zh-cn|contact-us---general|b65b4ecea3dd": {
+  "path": "/fragments/zh-cn/contact-us-general-2",
+  "pages": 2,
+  "from": "/zh-cn/automotive/customers/mercedes-benz.html"
+ },
+ "zh-cn|rail-promotion-ag-newsletter|019ed08cfe4b": {
+  "path": "/fragments/zh-cn/rail-promotion-ag-newsletter",
+  "pages": 29,
+  "from": "/zh-cn/designware-ip/technical-bulletin/112g-ethernet-implementations.html"
+ },
+ "zh-cn|rail-promotion-ag-newsletter|675bdcc586bc": {
+  "path": "/fragments/zh-cn/rail-promotion-ag-newsletter-2",
+  "pages": 16,
+  "from": "/zh-cn/designware-ip/technical-bulletin/pcie-7-design-ai-bandwidth.html"
+ },
+ "zh-cn|rail|0c65f16a8a52": {
+  "path": "/fragments/zh-cn/rail-5",
+  "pages": 2,
+  "from": "/zh-cn/implementation-and-signoff/fpga-based-design/high-reliability.html"
+ },
+ "zh-cn|rail|6bb58d5eff5f": {
+  "path": "/fragments/zh-cn/rail-1",
+  "pages": 13,
+  "from": "/zh-cn/silicon/tcad/framework.html"
+ },
+ "zh-cn|rail|924f964b7df8": {
+  "path": "/fragments/zh-cn/rail-4",
+  "pages": 3,
+  "from": "/zh-cn/implementation-and-signoff/physical-implementation/fusion-compiler.html"
+ },
+ "zh-cn|rail|93b31ef830ae": {
+  "path": "/fragments/zh-cn/rail-3",
+  "pages": 4,
+  "from": "/zh-cn/silicon/mask-synthesis/proteus.html"
+ },
+ "zh-cn|rail|e9ffafd71de7": {
+  "path": "/fragments/zh-cn/rail-2",
+  "pages": 6,
+  "from": "/zh-cn/implementation-and-signoff/rtl-synthesis-test/rtl-architect.html"
+ },
+ "zh-cn|technical-bulletin|0765476b0768": {
+  "path": "/fragments/zh-cn/technical-bulletin",
+  "pages": 24,
+  "from": "/zh-cn/designware-ip/technical-bulletin/112g-ethernet-implementations.html"
+ },
+ "zh-cn|technical-bulletin|360059e654c6": {
+  "path": "/fragments/zh-cn/technical-bulletin-2",
+  "pages": 9,
+  "from": "/zh-cn/designware-ip/technical-bulletin/adas-ivi-socs-sdv-automotive-ip.html"
+ },
+ "zh-tw|rail|2db77e3574a9": {
+  "path": "/fragments/zh-tw/rail-3",
+  "pages": 14,
+  "from": "/zh-tw/taiwan/events/seminar/2019-testmax-workshop.html"
+ },
+ "zh-tw|rail|69aff1febc05": {
+  "path": "/fragments/zh-tw/rail-2",
+  "pages": 140,
+  "from": "/zh-tw/taiwan/press-releases/2022-press-release.html"
+ },
+ "zh-tw|rail|a5c4f9e5fe17": {
+  "path": "/fragments/zh-tw/rail-1",
+  "pages": 167,
+  "from": "/zh-tw/taiwan/blog/hpc-and-cloud-predictions-for-2021.html"
+ }
+}

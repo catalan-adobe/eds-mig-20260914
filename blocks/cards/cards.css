@@ -1,27 +1,1139 @@
-.cards > ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+/* The source's card family (component-assetcard and its relatives). One item per row; the grid
+   is the source's Bootstrap row: 30 px gutters, or 20 px in a card container (`tight`).
+   What changes with the width or the variant is a custom property, set on the block. */
+.cards {
+  --card-min-height: 0;
+  --text-display: -webkit-box;
+  --date-display: block;
+  --list-margin: 0;
+  --list-padding: 0;
+  --item-padding: 5px;
+}
+
+.cards:is(.cols-2, .cols-3) {
+  --card-min-height: 283px;
+}
+
+/* a card container: its cells' padding, and the 1 px of its empty title row */
+.cards.tight {
+  --list-padding: 16px 0 15px;
+}
+
+.cards:is(.solution, .event, .agenda, .cards-captions) {
+  --item-padding: 0;
+}
+
+.cards .cards-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  gap: 24px;
+  grid-template-columns: minmax(0, 1fr);
+  margin: var(--list-margin);
+  padding: var(--list-padding);
+  font-size: var(--body-font-size);
+  list-style: none;
 }
 
-.cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+.cards .cards-item {
+  min-width: 0;
+  padding: var(--item-padding);
 }
 
-.cards .cards-card-body {
-  margin: 16px;
+.cards .cards-card {
+  position: relative;
+  min-height: var(--card-min-height);
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: var(--shadow-card);
 }
 
-.cards .cards-card-image {
-  line-height: 0;
+.cards .cards-linked {
+  cursor: pointer;
 }
 
-.cards > ul > li img {
+/* icons the block draws itself */
+.cards .cards-icon-play {
+  --icon: url('../../icons/play.svg');
+}
+
+.cards .cards-icon-clock {
+  --icon: url('../../icons/clock.svg');
+}
+
+.cards .cards-icon-chevron-down {
+  --icon: url('../../icons/chevron-down.svg');
+
+  width: 0.875em;
+}
+
+.cards .cards-icon-chevron-up {
+  --icon: url('../../icons/chevron-up.svg');
+
+  width: 0.875em;
+}
+
+/* media: an image, or a video thumbnail with its play button */
+.cards .cards-media picture {
+  display: contents;
+}
+
+.cards .cards-media img {
+  display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: auto;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
+}
+
+.cards .cards-play {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: #000;
+  aspect-ratio: 16 / 9;
+}
+
+.cards .cards-player {
+  display: block;
+  width: 100%;
+  border: 0;
+  aspect-ratio: 16 / 9;
+}
+
+.cards .cards-play .icon {
+  box-sizing: content-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--play-width, 15.75px);
+  height: var(--play-height, 21px);
+  padding: var(--play-padding, 19.5px 22.125px);
+  transform: translate(-50%, -50%);
+  transition: var(--play-transition, all 0.1s ease-out);
+  border: 2px solid rgb(0 0 0 / 75%);
+  border-radius: 90px;
+  background-color: rgb(0 0 0 / 75%);
+  mask: none;
+}
+
+/* the source's button grows at once on hover and shrinks back in 0.1 s */
+.cards .cards-play:hover {
+  --play-width: 18px;
+  --play-height: 24px;
+  --play-padding: 20px 23px;
+  --play-transition: none;
+}
+
+.cards .cards-play .icon::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  mask: var(--icon) center / contain no-repeat;
+}
+
+/* asset card */
+.cards .cards-body {
+  padding: 32px 32px 53px;
+}
+
+.cards .cards-media + .cards-body {
+  padding-top: 20px;
+}
+
+.cards .cards-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 8px;
+}
+
+.cards .cards-label {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 0;
+  padding: 4px 8px;
+  border-radius: 3px;
+  background-color: var(--color-purple-mid);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  text-transform: uppercase;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.cards .cards-date {
+  display: var(--date-display);
+  flex-shrink: 0;
+  margin: 0 0 0 16px;
+  color: var(--color-grey-dark);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.5px;
+  text-align: right;
+}
+
+.cards .cards-copy {
+  height: 158px;
+  margin-top: 20px;
+}
+
+.cards .cards-title {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 0 0 20px;
+  color: var(--color-text);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.cards .cards-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cards .cards-text {
+  display: var(--text-display);
+  overflow: hidden;
+  margin: 0 0 32px;
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18px;
+  -webkit-line-clamp: var(--lines, 2);
+  -webkit-box-orient: vertical;
+}
+
+.cards .cards-text[hidden],
+.cards .cards-text ~ .cards-text {
+  display: none;
+}
+
+.cards .cards-action {
+  display: block;
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  margin: 0;
+  font-size: 16px;
+}
+
+.cards .cards-action a {
+  display: block;
+  color: var(--color-link);
+  font-size: inherit;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.cards .cards-action a:hover {
+  color: var(--color-link-hover);
+}
+
+.cards .cards-action .icon {
+  height: 12px;
+  margin-left: 0.25em;
+  vertical-align: -1.5px;
+  mask-image: url('../../icons/chevron-right-light.svg');
+}
+
+/* solution card: the text lies over the image and opens on hover */
+.cards.solution {
+  --card-min-height: 0;
+  --solution-top: 0;
+  --solution-side: auto;
+  --solution-width: 368px;
+  --solution-button: 8px 25px;
+}
+
+.cards.solution .cards-card {
+  max-width: var(--solution-width);
+  margin: var(--solution-top) var(--solution-right, var(--solution-side)) 0 var(--solution-side);
+  border-radius: 5px;
+  background: none;
+  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+  text-align: center;
+}
+
+.cards.solution .cards-cover {
+  --reveal: 1;
+  --lift: 15px;
+
+  display: block;
+  position: relative;
+  height: 434px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.cards.solution .cards-image {
+  height: 100%;
+}
+
+.cards.solution .cards-image picture {
+  display: contents;
+}
+
+.cards.solution .cards-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cards.solution .cards-shade {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  width: 100%;
+  height: 275px;
+  background: linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0 / 50%) 28%, #000 100%);
+}
+
+.cards.solution .cards-hover {
+  position: absolute;
+  z-index: 15;
+  bottom: var(--lift);
+  left: 50%;
+  width: 75%;
+  min-height: 179px;
+  transform: translate(-50%, 0);
+  transition: 1s;
+  font-weight: 400;
+  text-shadow: 0 0 6px #474747;
+}
+
+.cards.solution .cards-title {
+  height: 68px;
+  margin: 0;
+  transition: 0.3s;
+  color: inherit;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.4;
+  text-overflow: ellipsis;
+  text-shadow: 0 0 4px #474747;
+  -webkit-line-clamp: 2;
+}
+
+.cards.solution .cards-text {
+  height: 77px;
+  margin: 16px 0 4px;
+  transition: 0.3s;
+  opacity: var(--reveal);
+  color: inherit;
+  line-height: 1.6;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+}
+
+.cards.solution .cards-button {
+  display: inline-block;
+  margin: 4px;
+  padding: var(--solution-button);
+  transition: 0.3s;
+  opacity: var(--reveal);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.cards.solution .cards-button:hover {
+  text-decoration: underline;
+}
+
+.cards.solution .cards-button .icon {
+  height: 10px;
+  margin-left: 8px;
+  vertical-align: -1.25px;
+  mask-image: url('../../icons/chevron-right-light.svg');
+}
+
+/* event card */
+.cards.event {
+  --card-min-height: 0;
+}
+
+.cards.event .cards-card {
+  display: flex;
+  margin: 10px 0;
+  padding: 24px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 25%);
+}
+
+.cards.event .cards-media {
+  flex: none;
+  margin-right: 16px;
+}
+
+.cards.event .cards-media img {
+  width: 96px;
+  height: 100px;
+  border-radius: 5px;
+  aspect-ratio: auto;
+}
+
+.cards.event .cards-body {
+  flex: 1;
+  min-width: 0;
+  padding: 0;
+  color: var(--color-text);
+}
+
+.cards.event .cards-title {
+  height: 44px;
+  margin: 0 0 16px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+  -webkit-line-clamp: 2;
+}
+
+.cards.event .cards-details {
+  display: flex;
+  flex-direction: column;
+  min-height: 82px;
+  margin-bottom: 16px;
+  gap: 8px;
+}
+
+.cards.event .cards-details p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.cards.event .cards-action {
+  position: static;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.cards.event .cards-action a {
+  display: flex;
+  align-items: center;
+  height: 22.4px;
+  color: var(--color-text);
+  font-weight: 300;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.cards.event .cards-action a:hover {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+}
+
+.cards.event .cards-action .icon {
+  margin-left: 3px;
+}
+
+/* agenda card: the time beside the details; stacked on a phone and in a narrow column */
+.cards.agenda {
+  --card-min-height: 0;
+  --agenda-bg: #f7f7f7;
+  --agenda-type-bg: #fff;
+  --agenda-display: block;
+  --agenda-details: 12px 0 0;
+  --agenda-title-size: 20px;
+  --agenda-title-lines: 2;
+  --agenda-title-height: auto;
+  --agenda-speakers-height: auto;
+  --agenda-more-align: center;
+}
+
+.light-grey .cards.agenda {
+  --agenda-bg: #fff;
+  --agenda-type-bg: #f7f7f7;
+}
+
+.cards.agenda.cards-stacked {
+  --agenda-title-height: 60px;
+  --agenda-speakers-height: 96px;
+}
+
+.cards.agenda .cards-card {
+  background-color: var(--agenda-bg);
+  box-shadow: none;
+}
+
+.cards.agenda .cards-open {
+  --agenda-height: auto;
+  --agenda-title-height: auto;
+  --agenda-title-display: block;
+  --agenda-speakers-height: auto;
+  --agenda-speaker-display: block;
+  --agenda-speaker-gap: 5px;
+}
+
+.cards.agenda .cards-type {
+  display: var(--agenda-title-display, -webkit-box);
+  overflow: hidden;
+  margin: 0;
+  padding: 20px 0 5px;
+  background-color: var(--agenda-type-bg);
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.cards.agenda .cards-line {
+  height: 5px;
+  background-color: var(--color-purple-light);
+}
+
+.cards.agenda .cards-line-orange {
+  background-color: var(--color-orange);
+}
+
+.cards.agenda .cards-line-green {
+  background-color: var(--color-green);
+}
+
+.cards.agenda .cards-line-blue {
+  background-color: var(--color-blue);
+}
+
+.cards.agenda .cards-line-teal {
+  background-color: var(--color-teal);
+}
+
+.cards.agenda .cards-line-dark-turquoise {
+  background-color: #12788a;
+}
+
+.cards.agenda .cards-line-gray {
+  background-color: var(--color-grey-text);
+}
+
+.cards.agenda .cards-line-burnt-orange {
+  background-color: var(--color-orange-dark);
+}
+
+.cards.agenda .cards-line-black {
+  background-color: #3c3c3c;
+}
+
+.cards.agenda .cards-agenda {
+  display: var(--agenda-display);
+  padding: 0 20px;
+  text-align: left;
+}
+
+.cards.agenda .cards-time > * {
+  overflow: hidden;
+  margin: 0;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.6;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cards.agenda .cards-date {
+  padding: 12px 0 0 30px;
+  font-weight: 500;
+  text-align: left;
+  text-indent: -15px;
+}
+
+.cards.agenda .cards-date .icon {
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  padding-right: 15px;
+  vertical-align: -2px;
+  mask-origin: content-box;
+  mask-clip: content-box;
+}
+
+.cards.agenda .cards-hours {
+  padding: 2px 0 0 30px;
+  font-weight: 300;
+}
+
+.cards.agenda .cards-undated {
+  padding: 20px 0 0;
+  font-weight: 300;
+}
+
+.cards.agenda .cards-details {
+  min-width: 0;
+  padding: var(--agenda-details);
+}
+
+.cards.agenda .cards-title {
+  display: var(--agenda-title-display, -webkit-box);
+  height: var(--agenda-title-height);
+  margin: 0;
+  color: var(--color-purple);
+  font-size: var(--agenda-title-size);
+  font-weight: 300;
+  line-height: 1.4;
+  text-overflow: ellipsis;
+  overflow-wrap: anywhere;
+  -webkit-line-clamp: var(--agenda-title-lines);
+}
+
+.cards.agenda .cards-speakers {
+  height: var(--agenda-speakers-height);
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.cards.agenda .cards-speakers ul {
+  margin: 0 0 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.cards.agenda .cards-speakers li {
+  display: var(--agenda-speaker-display, none);
+  padding-bottom: var(--agenda-speaker-gap, 0);
+  line-height: 1.4;
+}
+
+.cards.agenda .cards-speakers li:first-child {
+  display: var(--agenda-speaker-display, -webkit-box);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.cards.agenda .cards-speaker span {
+  font-weight: 300;
+}
+
+.cards.agenda .cards-more {
+  padding-bottom: 20px;
+  text-align: var(--agenda-more-align);
+}
+
+.cards.agenda .cards-toggle {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--color-link);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.cards.agenda .cards-toggle:hover {
+  color: #1e4681;
+}
+
+.cards.agenda .cards-toggle[hidden] {
+  display: none;
+}
+
+.cards.agenda .cards-toggle .icon {
+  height: 14px;
+  vertical-align: -1.75px;
+}
+
+.cards.agenda .cards-description {
+  text-align: left;
+}
+
+.cards.agenda .cards-description > * {
+  line-height: 1.4;
+}
+
+/* quick card (component-card-a) */
+.cards.quick {
+  --card-min-height: 0;
+}
+
+/* the margins of two cards in one cell collapse */
+.cards.quick:not(.cols-2, .cols-3, .cols-4) .cards-item + .cards-item {
+  margin-top: -5px;
+}
+
+.cards.quick .cards-card {
+  border-bottom: 25px solid transparent;
+}
+
+.cards.quick .cards-card:hover {
+  box-shadow: var(--shadow-card-hover);
+}
+
+.cards.quick .cards-body {
+  padding: 25px 25px 0;
+}
+
+.cards.quick .cards-media img {
+  aspect-ratio: auto;
+}
+
+.cards.quick .cards-title {
+  display: block;
+  overflow: visible;
+  margin: 0 0 15px;
+  color: var(--color-purple);
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.cards.quick h5 {
+  margin: 0;
+  color: #2e3c4d;
+  font-size: 18px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* the source's second text box: 25 px below the first, 25 px above its heading */
+.cards.quick .cards-heading {
+  margin: 0 0 15px;
+  padding-top: 50px;
+  color: #2e3c4d;
+  font-size: 22px;
+}
+
+.cards.quick .cards-body > p {
+  margin: 0;
+  color: var(--color-grey-text);
+  font-size: var(--body-font-size);
+  line-height: 1.6;
+}
+
+/* the title of a quick-task list: a text title with the margins of the source's text box. It
+   stands under a card in a cell of a card container; the block of that card has the cell's
+   padding at its end, so the title starts that much higher and ends that much lower */
+.cards .cards-caption h2 {
+  margin: 1px 0 70px;
+  color: var(--color-text);
+  font-size: var(--title-size);
+  font-weight: 300;
+  line-height: 1.1;
+  text-align: center;
+}
+
+/* carousel: the source's slick, with its arrows on the row of the dots below 730 px. The block
+   renames its class `carousel` to `cards-sliding`, out of reach of the block `carousel` */
+.cards.cards-sliding .cards-list.slider-track {
+  /* slick gives every slide a whole number of pixels */
+  --slide-shift: round(up, calc(100% / var(--per-view, 1)), 1px);
+
+  display: flex;
+  column-gap: 0;
+}
+
+.cards.cards-sliding .slider {
+  padding-bottom: 24px;
+}
+
+.cards .slider-prev,
+.cards .slider-next {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  bottom: 16px;
+  left: 15px;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 1px solid var(--color-grey-dark);
+  border-radius: 20px;
+  background: #fff;
+  color: var(--color-grey-dark);
+  font-size: 18px;
+}
+
+.cards .slider-next {
+  right: 15px;
+  left: auto;
+}
+
+.cards .slider-prev:is(:hover, :focus),
+.cards .slider-next:is(:hover, :focus) {
+  background: var(--color-bg-light);
+}
+
+.cards .slider-prev::before,
+.cards .slider-next::before {
+  content: '';
+  width: 0.625em;
+  height: 1em;
+  background-color: currentcolor;
+  mask: url('../../icons/chevron-left-light.svg') center / contain no-repeat;
+}
+
+.cards .slider-next::before {
+  mask-image: url('../../icons/chevron-right-light.svg');
+}
+
+.cards .slider-dots {
+  display: flex;
+  justify-content: center;
+  width: calc(100% - 112px);
+  max-width: 342px;
+  margin: 28px auto 0;
+}
+
+.cards .slider-dot {
+  position: relative;
+  flex: 0 1 50px;
+  min-width: 0;
+  height: 8px;
+  margin: 0 8px 0 0;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+.cards .slider-dot:last-child {
+  margin: 0;
+}
+
+.cards .slider-dot::before {
+  content: '';
+  position: absolute;
+  bottom: 2.5px;
+  left: 0;
+  width: 100%;
+  transition: 0.5s;
+  border-bottom: 2px solid var(--color-border-light);
+}
+
+.cards .slider-dot[aria-current]::before {
+  transition: 0.3s;
+  border-color: var(--color-grey-dark);
+}
+
+@media (width <= 730px) {
+  .cards.cards-many .slider-dot {
+    margin: 0;
+  }
+}
+
+@media (width < 730px) {
+  /* a cell without a card is 1 px high in the source, and the cells are stacked here */
+  .cards .cards-list {
+    border-bottom: calc(var(--empty-cells, 0) * 1px) solid transparent;
+  }
+
+  /* the container's title row comes once, above its first cell */
+  .section-col:not(:first-child) > .section > div > .cards.tight:not(.cards-captions) {
+    --list-padding: 15px 0;
+  }
+
+  .cards.tight:not(.cols-1) .cards-list {
+    row-gap: 30px;
+  }
+
+  .cards.solution .cards-item:not(:first-child) {
+    --solution-top: 32px;
+  }
+
+  .cards.solution.tight .cards-item:not(:first-child) {
+    --solution-top: 0;
+  }
+
+  .cards.solution.tight.cols-3 .cards-item:not(:first-child),
+  .span-4:not(:first-child) > .section > div > .cards.solution.tight .cards-item {
+    --solution-top: 17px;
+  }
+}
+
+@media (width > 480px) {
+  .cards.event .cards-title {
+    height: 68px;
+    font-size: 24px;
+  }
+
+  .cards.event .cards-action {
+    font-size: 16px;
+  }
+
+  .cards.agenda {
+    --agenda-display: flex;
+    --agenda-details: 20px 0 20px 50px;
+    --agenda-title-size: 24px;
+    --agenda-more-align: left;
+  }
+
+  .cards.agenda.cards-stacked {
+    --agenda-display: block;
+    --agenda-details: 20px 0 0 5px;
+    --agenda-title-size: 20px;
+    --agenda-title-lines: 3;
+    --agenda-title-height: 84px;
+    --agenda-more-align: center;
+  }
+
+  .cards.agenda.cards-halves {
+    --agenda-title-lines: 2;
+    --agenda-title-height: 56px;
+  }
+
+  .cards.agenda .cards-agenda {
+    height: var(--agenda-height, auto);
+  }
+
+  .cards.agenda .cards-date {
+    padding: 20px 0 0 36px;
+  }
+
+  .cards.agenda .cards-hours {
+    padding: 0 0 0 36px;
+  }
+
+  .cards.agenda .cards-undated {
+    padding: 20px 0 0 2px;
+  }
+
+  .cards.agenda .cards-speakers {
+    padding: 20px 0;
+  }
+
+  .cards.agenda .cards-more {
+    padding-bottom: 30px;
+  }
+}
+
+@media (width >= 730px) {
+  /* an asset card in a quarter of the row has no room for its text and date */
+  .cards.cols-4:not(.solution, .agenda, .event, .quick),
+  .span-3 > .section > div > .cards:not(.solution, .agenda, .event, .quick) {
+    --text-display: none;
+    --date-display: none;
+  }
+
+  .cards.solution {
+    --solution-top: 15px;
+    --solution-side: 0;
+    --solution-width: none;
+    --solution-button: 8px 0;
+  }
+
+  .cards .cards-list {
+    column-gap: 30px;
+  }
+
+  .cards.cols-2 .cards-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cards.cols-3 .cards-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .cards.cols-4 .cards-list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .cards.tight {
+    --list-margin: 0 -5px;
+    --list-padding: 11px 0 10px;
+  }
+
+  .cards.tight .cards-list {
+    column-gap: 20px;
+  }
+
+  .cards.solution.cols-3 .cards-item:not(:nth-child(3n)) {
+    --solution-right: 2px;
+  }
+
+  .cards.solution.tight .cards-item:not(:last-child),
+  .section-col:not(:last-child) > .section > div > .cards.solution.tight .cards-item {
+    --solution-right: 12px;
+  }
+
+  .cards .cards-caption h2 {
+    margin: 14px 0 41px;
+  }
+
+  .cards.quick .cards-title {
+    margin-bottom: 10px;
+    font-size: 26px;
+  }
+
+  .cards.quick h5 {
+    font-size: 15px;
+  }
+
+  .cards.quick .cards-heading {
+    font-size: 20px;
+  }
+
+  .cards.quick.size-xxs .cards-card {
+    height: 290px;
+  }
+
+  .cards.quick.size-xs .cards-card {
+    height: 425px;
+  }
+
+  .cards.quick.size-sm .cards-card {
+    height: 510px;
+  }
+
+  .cards.quick.size-md .cards-card {
+    height: 550px;
+  }
+
+  .cards.quick.size-lg .cards-card {
+    height: 590px;
+  }
+
+  .cards.quick.size-xxl .cards-card {
+    height: 640px;
+  }
+
+  /* the arrows leave the row of the dots and sit beside the cards */
+  .cards.cards-sliding .slider {
+    padding: 0;
+  }
+
+  .cards.cards-sliding .slider-viewport {
+    margin: 0 40px;
+  }
+
+  .cards .slider-prev,
+  .cards .slider-next {
+    top: var(--arrow-top, calc(50% - 36px));
+    bottom: auto;
+    left: var(--arrow-side, -9px);
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .cards .slider-next {
+    right: var(--arrow-side, -9px);
+    left: auto;
+  }
+
+  /* a content carousel centres its arrows on the block, dots included */
+  .cards.cards-rows {
+    --arrow-top: 50%;
+    --arrow-side: -10px;
+  }
+
+  /* in a shared fragment the source's arrows are placed from the cards' own column */
+  .fragment .cards.cards-sliding:not(.cards-rows) {
+    --arrow-side: 6px;
+  }
+}
+
+@media (width >= 992px) {
+  .cards.solution {
+    --solution-top: 0;
+  }
+
+  .cards.event .cards-media {
+    margin-right: 24px;
+  }
+
+  .cards.event .cards-media img {
+    width: 214px;
+    height: 222px;
+  }
+
+  .cards.event .cards-details p {
+    font-size: 16px;
+  }
+
+  .cards.solution .cards-image img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: auto;
+    max-width: none;
+    height: 102%;
+    transform: translateX(-50%);
+  }
+
+  .cards.solution .cards-title {
+    display: block;
+    height: auto;
+  }
+}
+
+/* from 1025 px the text of a solution card waits for the pointer */
+@media (width > 1024px) {
+  .cards.solution {
+    --solution-button: 8px 25px;
+  }
+
+  .cards.solution .cards-cover {
+    --reveal: 0;
+    --lift: -25px;
+  }
+
+  .cards.solution .cards-cover:hover {
+    --reveal: 1;
+    --lift: 15px;
+  }
+
+  .cards.solution .cards-cover:hover :is(.cards-text, .cards-button) {
+    transition: 1s;
+  }
+}
+
+@media (width >= 1200px) {
+  .cards.quick .cards-title {
+    font-size: 30px;
+  }
+
+  .cards.quick h5 {
+    font-size: 18px;
+  }
+
+  .cards.quick .cards-heading {
+    font-size: 26px;
+  }
+
+  .cards.quick .cards-body > p {
+    font-size: 16px;
+  }
+}
+
+@media (width >= 1400px) {
+  .cards.cards-sliding .slider-viewport {
+    margin: 0;
+  }
+
+  .cards .slider-prev {
+    left: var(--arrow-side, -95px);
+  }
+
+  .cards .slider-next {
+    right: var(--arrow-side, -95px);
+  }
+
+  .cards.cards-rows {
+    --arrow-side: -96px;
+  }
+
+  .fragment .cards.cards-sliding:not(.cards-rows) {
+    --arrow-side: -80px;
+  }
+}
+
+/* the title of a quick-task list stands in a cell that another block has padded already */
+.cards.tight.cards-captions {
+  --list-margin: 0;
+  --list-padding: 0;
 }

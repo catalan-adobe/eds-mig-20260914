@@ -1,0 +1,88 @@
+.rail-card {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  font-size: var(--body-font-size);
+  line-height: var(--line-height-body);
+}
+
+.rail-card .rail-card-flag {
+  position: relative;
+  width: calc(100% - 8px);
+  margin-bottom: 10px;
+  background-color: var(--color-purple);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.rail-card .rail-card-label {
+  display: block;
+  padding: 5px 0 5px 25px;
+  font-size: 15px;
+  line-height: var(--line-height-body);
+  color: #fff;
+  text-decoration: none;
+}
+
+.rail-card a.rail-card-label:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.rail-card .rail-card-triangle {
+  position: absolute;
+  top: 0;
+  right: -8px;
+  width: 8px;
+  height: 100%;
+  background: linear-gradient(to right bottom, var(--color-purple) 50%, transparent 50%);
+}
+
+.rail-card .rail-card-links {
+  margin: 0 0 calc(30px - 0.45 * var(--body-font-size));
+  padding: 0;
+  list-style: none;
+}
+
+.rail-card .rail-card-links li {
+  margin: 0 0 25px;
+  font-size: var(--body-size);
+  line-height: var(--line-height-body);
+  color: var(--color-grey-text);
+}
+
+.rail-card .rail-card-links li:last-child {
+  margin-bottom: 0;
+}
+
+.rail-card .rail-card-links a {
+  color: var(--color-grey-text);
+  text-decoration: none;
+}
+
+.rail-card .rail-card-links a:hover {
+  color: #21252b;
+  text-decoration: underline;
+}
+
+.rail-card .rail-card-links strong {
+  font-weight: bold;
+  color: var(--color-purple);
+  text-transform: uppercase;
+}
+
+@media (width <= 480px) {
+  .rail-card {
+    padding-top: 10px;
+  }
+}
+
+@media (width >= 730px) {
+  .rail-card .rail-card-flag {
+    margin-bottom: 5px;
+  }
+
+  .rail-card.video .rail-card-flag {
+    margin-bottom: 10px;
+  }
+}

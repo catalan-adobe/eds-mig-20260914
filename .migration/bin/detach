@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Runs a long command so that it survives the shell (and the agent tool call) that starts it.
+#   detach <log file> <command> [args...]      then poll the log file
+set -euo pipefail
+log="$1"
+shift
+perl -MPOSIX -e 'POSIX::setsid(); exec @ARGV' "$@" </dev/null >>"$log" 2>&1 &
+echo "started (pid $!), log: $log"

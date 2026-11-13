@@ -1,0 +1,120 @@
+/* default: a table in authored text, with the source's global table rules */
+.table {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* the header block's rule for .header[data-block-status] would take the box of this variant */
+.table.header.block {
+  display: block;
+}
+
+/* striped: the source's table component (.cmp-table). Its 20 px bottom margin collapses with
+   the top margin of the next component: a next section with top spacing takes it (15 px less
+   than 20 only for top-xs from 730). */
+.table.striped {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  outline: 1px solid var(--color-border-light);
+  box-shadow: 0 4px 7px 0 rgb(0 0 0 / 25%);
+}
+
+.table.striped table {
+  width: calc(200px * var(--column-count));
+  min-width: 100%;
+  border: 0;
+  padding: 0;
+  table-layout: fixed;
+}
+
+.table.striped.auto-width table {
+  width: auto;
+}
+
+.table.striped tr {
+  background-color: #fff;
+}
+
+.table.striped tr:nth-of-type(odd) {
+  background-color: var(--color-bg-light);
+}
+
+.table.striped :is(th, td) {
+  border: 1px solid var(--color-border-light);
+  border-width: 0 1px;
+  padding: 18px 24px;
+  color: var(--color-text);
+}
+
+.table.striped th {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.table.striped th:first-child {
+  font-size: 14px;
+}
+
+.table.striped tr:first-child th {
+  font-size: 16px;
+}
+
+.table.striped td {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.table.sticky :is(th, td):first-child {
+  position: sticky;
+  left: 0;
+  background: inherit;
+}
+
+/* the source keeps a merged row's sticky first cell under the cell that spans into it */
+.table.sticky .merged-row :is(th, td):first-child {
+  position: relative;
+  z-index: -1;
+}
+
+.section:has(+ .section[class*='top-']) .table.striped {
+  margin-bottom: 0;
+}
+
+@media (width >= 730px) {
+  .section:has(+ .section.top-xs:not([class*='band-top-'])) .table.striped {
+    margin-bottom: 5px;
+  }
+}
+
+@media (width >= 730px) and (width <= 1200px) {
+  .table.striped table {
+    width: calc(25% * var(--column-count));
+  }
+}
+
+@media (width >= 1200px) {
+  .table.striped table {
+    width: calc(285px * var(--column-count));
+  }
+
+  /* the right column of the source's 25 | 75 layout (two2575Right) */
+  .span-9 .table.striped table {
+    width: calc(211.8px * var(--column-count));
+  }
+}
+
+@media (width >= 730px) {
+  :is(.span-3, .span-4, .span-6) .table.striped table {
+    width: 100%;
+  }
+}
+
+.table.striped.auto-width table,
+:is(.span-3, .span-4, .span-6) .table.striped.auto-width table {
+  width: auto;
+}
+
+.table.center :is(th, td),
+.table.center-first-row tr:first-child > * {
+  text-align: center;
+}

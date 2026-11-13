@@ -1,0 +1,5 @@
+/* the source hides the trail in the page at every width (`.site-wrapper .component-breadcrumb`):
+   the trail on screen is the one of the header's utility bar */
+main .breadcrumb-wrapper {
+  display: none;
+}

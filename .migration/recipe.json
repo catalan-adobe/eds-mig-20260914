@@ -1,0 +1,21 @@
+{
+  "probe": [
+    {
+      "url": "https://www.synopsys.com/",
+      "config": {
+        "browserName": "chromium",
+        "launchOptions": {}
+      },
+      "persistent": false,
+      "stealth": false
+    }
+  ],
+  "overlays": [
+    {
+      "rules": [
+        "#onetrust-consent-sdk { display:none!important }",
+        "div.onetrust-pc-dark-filter { display:none!important }"
+      ]
+    }
+  ]
+}

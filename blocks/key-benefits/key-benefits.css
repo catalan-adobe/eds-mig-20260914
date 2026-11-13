@@ -1,0 +1,58 @@
+/* the source's keyBenefits: a 50 px icon beside the title, the description below */
+.key-benefits .key-benefit {
+  display: block;
+  color: var(--color-text);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.key-benefits .key-benefit-head {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  margin-bottom: 16px;
+}
+
+.key-benefits .key-benefit-head img {
+  display: block;
+  width: 50px;
+  max-width: none;
+  height: 50px;
+}
+
+.key-benefits .key-benefit-title {
+  display: -webkit-box;
+  margin: 0;
+  overflow: hidden;
+  font-size: 20px;
+  line-height: 28px;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.key-benefits .key-benefit-description {
+  display: -webkit-box;
+  margin-bottom: 32px;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 25.6px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+@media (width >= 730px) {
+  .key-benefits {
+    display: flex;
+    gap: var(--gutter);
+  }
+
+  .key-benefits .key-benefits-column {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .key-benefits .key-benefit-description {
+    margin-bottom: 48px;
+  }
+}

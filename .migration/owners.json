@@ -1,0 +1,220 @@
+{
+  "groups": {
+    "header": {
+      "blocks": [
+        "header"
+      ],
+      "components": [
+        "topNav",
+        "subNavLeft",
+        "subNavRight",
+        "navList",
+        "subNavLinks",
+        "mediaLinkTile",
+        "topNavAd"
+      ]
+    },
+    "footer": {
+      "blocks": [
+        "footer"
+      ],
+      "components": [
+        "siteFooter",
+        "siteFooterChinese"
+      ]
+    },
+    "global": {
+      "blocks": [
+        "fragment"
+      ],
+      "components": [
+        "synopsysContainer",
+        "column",
+        "text",
+        "richTextEditor",
+        "html",
+        "image",
+        "interactiveImage",
+        "pageTitle",
+        "anchor",
+        "separator",
+        "callToAction",
+        "experiencefragment",
+        "pageList",
+        "list",
+        "downloads",
+        "socialLinks",
+        "ghost",
+        "factoid"
+      ]
+    },
+    "hero": {
+      "blocks": [
+        "hero"
+      ],
+      "components": [
+        "banner",
+        "interactiveBanner"
+      ]
+    },
+    "article": {
+      "blocks": [
+        "article-hero",
+        "author-profile",
+        "social-share",
+        "spotlight"
+      ],
+      "components": [
+        "blogBanner",
+        "authorProfile",
+        "socialShare",
+        "spotlight"
+      ]
+    },
+    "toc": {
+      "blocks": [
+        "toc",
+        "breadcrumb"
+      ],
+      "components": [
+        "tableOfContents",
+        "breadcrumb"
+      ]
+    },
+    "cards": {
+      "blocks": [
+        "cards"
+      ],
+      "components": [
+        "cards",
+        "product-card"
+      ]
+    },
+    "teasers": {
+      "blocks": [
+        "teasers"
+      ],
+      "components": [
+        "assetCard",
+        "dynamicCards",
+        "cardContainer",
+        "pressRelease",
+        "contentTypeListing"
+      ]
+    },
+    "items": {
+      "blocks": [
+        "key-benefits",
+        "box-links"
+      ],
+      "components": [
+        "keyBenefits",
+        "boxLink",
+        "boxLinkContainer"
+      ]
+    },
+    "columns": {
+      "blocks": [
+        "columns"
+      ],
+      "components": [
+        "imageTextCta",
+        "textImage2Column",
+        "imageAndLinks",
+        "featuredImageTextLinks"
+      ]
+    },
+    "tabs": {
+      "blocks": [
+        "tabs"
+      ],
+      "components": [
+        "floatingTabs"
+      ]
+    },
+    "accordion-quote": {
+      "blocks": [
+        "accordion",
+        "quote"
+      ],
+      "components": [
+        "faq",
+        "quote"
+      ]
+    },
+    "carousel": {
+      "blocks": [
+        "carousel"
+      ],
+      "components": [
+        "carousel",
+        "contentCarousel",
+        "logoCarousel"
+      ]
+    },
+    "media": {
+      "blocks": [
+        "video",
+        "embed"
+      ],
+      "components": [
+        "video",
+        "googleMap"
+      ]
+    },
+    "forms": {
+      "blocks": [
+        "form"
+      ],
+      "components": [
+        "marketoFormsContainer",
+        "mktoForm",
+        "subscriptionForm"
+      ]
+    },
+    "listing": {
+      "blocks": [
+        "listing",
+        "blog-nav"
+      ],
+      "components": [
+        "search",
+        "blogsDev"
+      ]
+    },
+    "html": {
+      "blocks": [
+        "promo",
+        "search-box",
+        "table"
+      ],
+      "components": [
+        "htmlTextOnly",
+        "table"
+      ]
+    },
+    "rail": {
+      "blocks": [
+        "rail-card",
+        "dw-products"
+      ],
+      "components": [
+        "rightRailItem",
+        "dwProductsDownloads"
+      ]
+    },
+    "tiles": {
+      "blocks": [
+        "mosaic",
+        "content-tile"
+      ],
+      "components": [
+        "mosaicCardContainer",
+        "mosaicCardColor",
+        "mosaicCardRTE",
+        "mosaicCardVideoImage",
+        "contentTile"
+      ]
+    }
+  }
+}

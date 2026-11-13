@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Blocks until none of the eight block steps that were running on Fable is active any more.
+#   wait-fable [max seconds, default 1200]
+#   exit 0: done · 3: still running, call it again · 1: the run is no longer running
+set -euo pipefail
+RUN="$HOME/.pi/workflows/projects/f52-synopsys-1211-02-2a9216e3370a/runs/synopsys-eds-migration-mwdjdkg1-upgr2y.json"
+FABLE='["group-hero","group-cards","group-teasers","group-columns","group-accordion-quote","group-carousel","group-media","group-forms"]'
+OBJ='if type == "string" then fromjson else . end'
+deadline=$(($(date +%s) + ${1:-1200}))
+clear_checks=0
+while :; do
+  # the run file is rewritten while it is read: a failed read is tried again
+  status=$(jq -r ".index | $OBJ | .status" "$RUN" 2>/dev/null) || { sleep 2; continue; }
+  left=$(jq -c --argjson f "$FABLE" ".summary | $OBJ | [.activeLabels[] | select(. as \$l | \$f | index(\$l))]" "$RUN" 2>/dev/null) || { sleep 2; continue; }
+  if [ "$status" != running ]; then echo "RUN IS $status (still active: $left)"; exit 1; fi
+  # two clear checks in a row: a step that is retried leaves the list for a moment
+  if [ "$left" = "[]" ]; then clear_checks=$((clear_checks + 1)); else clear_checks=0; fi
+  if [ "$clear_checks" -ge 2 ]; then echo "FABLE STEPS DONE"; exit 0; fi
+  if [ "$(date +%s)" -ge "$deadline" ]; then echo "STILL RUNNING $left"; exit 3; fi
+  sleep 20
+done

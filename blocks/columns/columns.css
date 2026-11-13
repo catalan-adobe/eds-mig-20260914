@@ -1,33 +1,362 @@
-.columns > div {
-  display: flex;
-  flex-direction: column;
+/*
+ * Rows of cells on the source's Bootstrap grid: 12 columns, 30 px gutter, stacked below 730.
+ * A plain cell is the default content of a section and takes its look from the global styles.
+ * `media` is the source's imageTextCta, `narrow` its textImage2Column, `card` its imageAndLinks.
+ */
+
+/* a cell keeps the margins of its content inside, as the source's container does */
+.columns > div > div {
+  display: flow-root;
+  min-width: 0;
+  min-height: 1px;
 }
 
-.columns img {
+/* an image component above a text in one cell */
+.columns .columns-image {
+  margin: 0;
+}
+
+.columns .columns-image img {
+  display: block;
   width: 100%;
 }
 
-.columns > div > div {
-  order: 1;
+/* the body of the text keeps the top margin it has as the first child of a `text` */
+.columns .text-content > .columns-image + :not(.columns-image, .title, .button-wrapper) {
+  margin-top: var(--text-margin-top);
 }
 
-.columns > div > .columns-img-col {
-  order: 0;
+/* the source's `.img-responsive.svg`: an SVG of an image component is 140 px high below 731 */
+@media (width <= 730px) {
+  .columns :is(.default-content-wrapper.image, .columns-image) img[src*='.svg'] {
+    width: auto;
+    height: 140px;
+    margin: 0 auto;
+  }
 }
 
-.columns > div > .columns-img-col img {
-  display: block;
+/* the source's downloads: 5 px of padding, of which the global list rule has the list's */
+.columns .columns-downloads > :is(h1, h2, h3, h4, h5, h6) {
+  margin: 20px 5px 10px;
+  font-size: 20px;
 }
 
-@media (width >= 900px) {
+@media (width >= 1200px) {
+  .columns .columns-downloads > :is(h1, h2, h3, h4, h5, h6) {
+    font-size: 26px;
+  }
+}
+
+.section.center .columns {
+  text-align: center;
+}
+
+.section.right .columns {
+  text-align: right;
+}
+
+/* the source's richTextEditor */
+.section.rich-text .columns :is(ul, ol) {
+  padding-left: 20px;
+}
+
+@media (width >= 730px) {
+  /* widths as Bootstrap computes them, so that a row also fits a column narrower than 330 px */
   .columns > div {
-    align-items: center;
-    flex-direction: unset;
-    gap: 24px;
+    --gap: var(--gutter);
+    --cell-inset: var(--gutter);
+
+    display: flex;
+    column-gap: var(--gap);
   }
 
   .columns > div > div {
-    flex: 1;
-    order: unset;
+    flex: 0 0 calc((100% + var(--gutter)) * var(--span, 12) / 12 - var(--cell-inset));
   }
+
+  /* a divider takes 30 px, shared by the cells, with 15 px of padding on each side of it:
+     the source's divider-spacing-small-30 */
+  .columns.divider > div {
+    --gap: calc(2 * var(--gutter));
+    --cell-inset: calc(var(--gutter) * (2 - 1 / var(--cols, 2)));
+  }
+
+  .columns.divider > div > div + div {
+    position: relative;
+  }
+
+  /* the line is as high as the source's cells: with the spacing of their components */
+  .columns.divider > div > div + div::before {
+    content: '';
+    position: absolute;
+    inset: calc(-1 * var(--top)) auto calc(-1 * var(--bottom)) calc(0.5px - var(--gutter));
+    border-left: 1px solid var(--color-border);
+  }
+}
+
+/* tight: the cells of the source's cardContainer have 10 px of padding from 730, 15 px below */
+.columns.tight > div > div {
+  padding-block: 15px;
+}
+
+@media (width >= 730px) {
+  .columns.tight > div {
+    --gutter: 20px;
+
+    margin-inline: -5px;
+  }
+
+  .columns.tight > div > div {
+    padding-block: 10px;
+  }
+}
+
+/* stacked cells keep the spacing each of them has as a component of the source */
+@media (width < 730px) {
+  .columns:not(.media) > div > div:not(:empty) ~ div:not(:empty) {
+    margin-top: calc(var(--bottom) + var(--top));
+  }
+}
+
+/* media: an image or a video beside a text */
+.columns.media .columns-media img {
+  display: block;
+  width: 100%;
+}
+
+.columns.media .columns-media {
+  margin-bottom: 24px;
+}
+
+.columns.media .subtitle {
+  margin: 16px 0 0;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+.columns.media.subtitle-purple .subtitle {
+  color: var(--color-purple);
+}
+
+.columns.media .subtitle + :not(.button-wrapper) {
+  margin-top: var(--text-margin-top);
+}
+
+/* a blank line of the source's editor before or after the text: a line and its margin */
+.columns.blank-before .columns-first {
+  padding-top: calc(1.6em + 10px);
+}
+
+.columns.blank-after .columns-last {
+  padding-bottom: calc(1.6em + 10px);
+}
+
+.columns.blank-after.blank-after-2 .columns-last {
+  padding-bottom: calc(3.2em + 20px);
+}
+
+/* the source's `svg-padding-*` */
+.columns.svg-pad-sm .columns-media img {
+  padding: 0 25px;
+}
+
+.columns.svg-pad-md .columns-media img {
+  padding: 0 50px;
+}
+
+.columns.svg-pad-lg .columns-media img {
+  padding: 0 100px;
+}
+
+.columns.title-grey :is(.title, h4) {
+  color: #3c3c3c;
+}
+
+.columns.title-light :is(.title, h4) {
+  color: var(--color-purple-light);
+}
+
+@media (width >= 730px) {
+  /* the source's button row is there without buttons too, with its margin */
+  .columns.media .text-content:not(:has(> .button-wrapper)) {
+    padding-bottom: 24px;
+  }
+}
+
+@media (width < 730px) {
+  /* below 730 the source shows the second cell first */
+  .columns.media > div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .columns.media > div > .columns-media:first-child + .text-content {
+    padding-bottom: 24px;
+  }
+}
+
+/* the source's `.img-responsive.svg` */
+@media (width <= 730px) {
+  .columns.media:not(.narrow, .card) .columns-media img[src*='.svg'] {
+    width: auto;
+    height: 140px;
+    margin: 0 auto;
+  }
+}
+
+/* narrow: image 4, text 8. Title, text and link are 15 px apart */
+.columns.narrow {
+  --title-scale: 1;
+  --title-lift: -0.15;
+}
+
+.title-small .columns.narrow {
+  --title-scale: 0.8;
+  --title-lift: -0.12;
+}
+
+.title-large .columns.narrow {
+  --title-scale: 1.2;
+}
+
+.columns.narrow .columns-media {
+  margin-bottom: 0;
+}
+
+.columns.narrow .columns-text {
+  padding-bottom: 15px;
+}
+
+.columns.narrow .columns-text:not(:has(> h4:first-child)) {
+  padding-top: 15px;
+}
+
+.columns.narrow .columns-text > * {
+  margin: 0;
+}
+
+.columns.narrow .columns-text > * + * {
+  margin-top: 15px;
+}
+
+.columns.narrow h4 {
+  color: var(--title-color);
+  font-size: calc(var(--heading-size-h4) * var(--title-scale));
+}
+
+.columns.narrow .columns-link {
+  font-size: var(--body-font-size);
+}
+
+.columns.narrow .columns-linked {
+  cursor: pointer;
+}
+
+/* from 730 the source lifts the title, also an empty one */
+@media (width >= 730px) {
+  .columns.narrow .columns-text > h4:first-child {
+    margin-top: calc(var(--title-lift) * 1em);
+  }
+
+  .columns.narrow .columns-text:not(:has(> h4:first-child)) {
+    padding-top: calc(15px + var(--title-lift) * var(--title-scale) * var(--heading-size-h4));
+  }
+}
+
+/* the source's own spacing applies up to 730, its grid stacks below 730. Up to 730 it also
+   replaces the spacing of the component (`.textImage2Column > .background-component`), in a
+   section and in the row of a tab panel */
+@media (width <= 730px) {
+  main .section.columns-container:has(> div > .columns.narrow),
+  .tabs .tabs-row:has(> div > .columns.narrow) {
+    --top: 0px;
+    --bottom: 0px;
+  }
+
+  .columns.narrow {
+    padding: 30px 0 15px;
+  }
+
+  .columns.narrow .columns-media {
+    margin-bottom: 15px;
+  }
+}
+
+@media (width < 730px) {
+  .columns.narrow > div {
+    flex-direction: column;
+  }
+
+  .columns.narrow .columns-media {
+    order: -1;
+  }
+
+  /* a narrow block without text keeps only the 15 px of its empty text */
+  .columns.narrow .columns-media:empty {
+    min-height: 0;
+  }
+}
+
+/* card: a title row above image and text, in a box */
+.columns.card {
+  padding: 15px 15px 20px 10px;
+  background-color: #fff;
+  box-shadow: var(--shadow-card);
+}
+
+.columns.card .columns-media {
+  margin-bottom: 0;
+}
+
+.columns.card h4 {
+  margin: 0 0 15px;
+  color: var(--title-color);
+  font-size: calc(var(--heading-size-h4) * var(--title-scale, 1));
+}
+
+.title-small .columns.card {
+  --title-scale: 0.8;
+}
+
+@media (width < 730px) {
+  .columns.card > div {
+    flex-direction: column;
+  }
+}
+
+@media (width >= 730px) {
+  .columns.card {
+    padding: 15px 25px 30px 30px;
+  }
+
+  .columns.card > :not(.columns-title) > .columns-text > :first-child {
+    margin-top: calc(-0.3 * var(--body-font-size));
+  }
+}
+
+/* the `modal` variant of the video block is also the class of the global modal dialog */
+.columns .video.modal {
+  position: static;
+  display: block;
+  background: none;
+}
+
+/* an image alone in its row: the source's featuredImageTextLinks */
+.columns.media .columns-media:only-child {
+  margin-bottom: 0;
+}
+
+/* the source's `horizontal-padding-*` of an image component: the section style, or the same
+   word as a variant */
+:is(.section.image-pad-sm .columns, .columns.image-pad-sm) :is(.image, .columns-image) img {
+  padding: 0 5px;
+}
+
+:is(.section.image-pad-md .columns, .columns.image-pad-md) :is(.image, .columns-image) img {
+  padding: 0 25px;
+}
+
+:is(.section.image-pad-lg .columns, .columns.image-pad-lg) :is(.image, .columns-image) img {
+  padding: 0 100px;
 }

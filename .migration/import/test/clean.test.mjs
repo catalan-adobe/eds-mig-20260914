@@ -1,0 +1,80 @@
+import assert from 'node:assert/strict';
+import { test } from 'node:test';
+import { load } from 'cheerio';
+import { createCleaner } from '../lib/clean.mjs';
+import { rewriteLink } from '../lib/links.mjs';
+
+function clean(html) {
+  const $ = load(`<div id="root">${html}</div>`);
+  const warnings = [];
+  const cleaner = createCleaner({
+    $,
+    link: (href) => rewriteLink(href, '/a.html'),
+    image: (node) => `<img src="${node.attribs.src}" alt="${node.attribs.alt ?? ''}">`,
+    warn: (message) => warnings.push(message),
+  });
+  return { html: cleaner.parts($('#root')[0]).join(''), warnings };
+}
+
+const cases = [
+  ['drops class, style, span and empty paragraphs',
+    '<p class="x" style="color:red"><span>Text</span> <b>bold</b> <i>it</i></p><p>&nbsp;</p>',
+    '<p>Text <strong>bold</strong> <em>it</em></p>'],
+  ['wraps loose text and keeps headings and lists',
+    'Loose<h3>Head</h3><ul><div><li>One</li><li><p>Two</p><ul><li>Deep</li></ul></li></div></ul>',
+    '<p>Loose</p><h3>Head</h3><ul><li>One</li><li>Two<ul><li>Deep</li></ul></li></ul>'],
+  ['primary and secondary buttons',
+    '<div class="buttons"><a class="component-button primary" href="/x.html">Go</a><a class="btn btn-secondary" href="/y.html"><span>More</span></a></div>',
+    '<p><strong><a href="/f52-synopsys-1211-02/x">Go</a></strong></p><p><em><a href="/f52-synopsys-1211-02/y">More</a></em></p>'],
+  ['call-to-action link with its icon',
+    '<a href="/x.html" class="cta-link"><span class="cta-text">Learn</span> <i class="arrow-icon fa-regular fa-chevron-right"></i></a>',
+    '<p><a href="/f52-synopsys-1211-02/x">Learn :chevron-right:</a></p>'],
+  ['a button with has-arrow',
+    '<a class="component-button primary has-arrow" href="/x.html">Go</a>',
+    '<p><strong><a href="/f52-synopsys-1211-02/x">Go :chevron-right:</a></strong></p>'],
+  ['a link in or around a component-button-gray span is a primary button',
+    '<p><span class="text-color-black"><span class="component-button-gray"><a href="/x.html">Go</a></span></span></p><p><a href="/y.html"><u><span class="component-button-purple">More</span></u></a></p>',
+    '<p><strong><a href="/f52-synopsys-1211-02/x">Go</a></strong></p><p><strong><a href="/f52-synopsys-1211-02/y">More</a></strong></p>'],
+  ['a Font Awesome inline SVG is its icon',
+    '<a href="/x.html" class="cta-link"><span>See</span> <svg class="cta-icon" data-prefix="far" data-icon="chevron-right"><path d=""></path></svg></a>',
+    '<p><a href="/f52-synopsys-1211-02/x">See :chevron-right:</a></p>'],
+  ['a bold link alone in a paragraph is not a button',
+    '<p><b><a href="/x.html">Body link</a></b></p>',
+    '<p><a href="/f52-synopsys-1211-02/x">Body link</a></p>'],
+  ['a link around bold text alone in a paragraph is not a button',
+    '<p><a href="/x.html"><b>Body link &gt;</b></a></p>',
+    '<p><a href="/f52-synopsys-1211-02/x">Body link &gt;</a></p>'],
+  ['a no-break space at the edge of a link moves out of it as a space',
+    '<p><a href="/x.html"><b>Name</b>&nbsp;</a>is head</p>',
+    '<p><a href="/f52-synopsys-1211-02/x"><strong>Name</strong></a> is head</p>'],
+  ['a no-break space beside an inline element is a plain space',
+    '<p>an&nbsp;<u>annual</u>&nbsp;course</p>',
+    '<p>an <u>annual</u> course</p>'],
+  ['lines written as bare divs are one paragraph',
+    '<div><b>Name</b></div><div><i>Role</i></div><div>Text</div><p>Next</p><div class="x">Box</div>',
+    '<p><strong>Name</strong><br><em>Role</em><br>Text</p><p>Next</p><p>Box</p>'],
+  ['a heading that is one element of body text size is a paragraph',
+    '<h2><b style="font-size: 14px">Small</b></h2><h2><b>Big</b></h2>',
+    '<p><strong>Small</strong></p><h2><strong>Big</strong></h2>'],
+  ['a linked image: image paragraph, then the link with its URL as text',
+    '<a href="/x.html"><img src="/a.png" alt="A"></a>',
+    '<p><img src="/a.png" alt="A"></p><p><a href="/f52-synopsys-1211-02/x">/f52-synopsys-1211-02/x</a></p>'],
+  ['a protected email becomes a mailto link',
+    '<p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2a43444c456a595344455a59535904494547">[email&#160;protected]</a></p>',
+    '<p><a href="mailto:info@synopsys.com">info@synopsys.com</a></p>'],
+  ['spaces at the edge of a link stay between the words',
+    '<p>see <a href="/x.html">this </a>page</p>',
+    '<p>see <a href="/f52-synopsys-1211-02/x">this</a> page</p>'],
+  ['no script, style, rule or form control',
+    '<p>a</p><script>x()</script><style>p{}</style><hr><input value="v"><p>b</p>',
+    '<p>a</p><p>b</p>'],
+];
+cases.forEach(([name, html, expected]) => {
+  test(`clean: ${name}`, () => assert.equal(clean(html).html, expected));
+});
+
+test('clean: an iframe is a link, with a warning', () => {
+  const { html, warnings } = clean('<iframe src="https://www.youtube.com/embed/x"></iframe>');
+  assert.equal(html, '<p><a href="https://www.youtube.com/embed/x">https://www.youtube.com/embed/x</a></p>');
+  assert.equal(warnings.length, 1);
+});

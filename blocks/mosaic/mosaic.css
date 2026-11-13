@@ -1,0 +1,226 @@
+/* the source's mosaic container: a Bootstrap row whose cells have 10 px of padding */
+.mosaic {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.mosaic .mosaic-item {
+  width: 100%;
+  padding: 10px;
+}
+
+/* a card on its own, outside a mosaic container, fills its column */
+.mosaic:not([class*='cols-'], [class*='w-']) {
+  margin: 0;
+}
+
+.mosaic:not([class*='cols-'], [class*='w-']) .mosaic-item {
+  padding: 0;
+}
+
+/* a wide cell after a narrow one does not float: only the narrow cell's padding parts them */
+@media (width < 730px) {
+  .mosaic.w-4-8 .mosaic-item:nth-child(even),
+  .mosaic.w-8-4 .mosaic-item:nth-child(odd):not(:first-child) {
+    margin-top: -10px;
+  }
+}
+
+@media (width >= 730px) {
+  .mosaic.cols-2 .mosaic-item {
+    width: 50%;
+  }
+
+  .mosaic.cols-4 .mosaic-item {
+    width: 25%;
+  }
+
+  .mosaic.cols-3 .mosaic-item,
+  .mosaic.w-8-4 .mosaic-item:nth-child(even),
+  .mosaic.w-4-8 .mosaic-item:nth-child(odd) {
+    width: calc(100% / 3);
+  }
+
+  .mosaic.w-8-4 .mosaic-item:nth-child(odd),
+  .mosaic.w-4-8 .mosaic-item:nth-child(even) {
+    width: calc(200% / 3);
+  }
+}
+
+/* a card: .component-mosaicCardColor, -RTEComponent, -VideoImage */
+.mosaic .mosaic-card {
+  position: relative;
+  display: block;
+  height: 280px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: var(--shadow-card);
+  color: var(--color-grey-text);
+  text-decoration: none;
+}
+
+.mosaic a.mosaic-card {
+  cursor: pointer;
+}
+
+.mosaic .mosaic-card:hover {
+  box-shadow: var(--shadow-card-hover);
+  text-decoration: none;
+}
+
+.mosaic .mosaic-card.on-dark {
+  color: #fff;
+}
+
+.mosaic .mosaic-body p {
+  margin: 0;
+  font-size: inherit;
+  overflow-wrap: anywhere;
+}
+
+/* colour card: the headline at the top, the footer at the bottom */
+.mosaic .mosaic-colour {
+  padding: 15px;
+}
+
+.mosaic .mosaic-colour .mosaic-headline {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 100%;
+  padding: 0 15px;
+  font-size: 26px;
+}
+
+.mosaic .mosaic-colour .mosaic-footer {
+  position: absolute;
+  bottom: 9px;
+  left: 0;
+  width: 100%;
+  padding: 0 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+/* rich text card */
+.mosaic.rich .mosaic-card {
+  height: auto;
+  padding: 25px 15px;
+  overflow-wrap: anywhere;
+}
+
+.mosaic.rich .mosaic-body :is(h1, h2, h3, h4, h5, h6) {
+  color: var(--mosaic-heading, inherit);
+  overflow-wrap: anywhere;
+}
+
+.mosaic.rich .mosaic-body :is(h1, h2, h3, h4, h5, h6):first-child {
+  margin-top: 0;
+}
+
+.mosaic.rich .mosaic-body :is(h1, h2, h3, h4, h5, h6):last-child {
+  margin-bottom: 0;
+}
+
+/* the source's lines are mostly div elements: the body size, no margin */
+.mosaic.rich .mosaic-body p {
+  font-size: var(--body-font-size);
+}
+
+.mosaic.rich .mosaic-body :is(p, ul, ol):last-child {
+  margin-bottom: 0;
+}
+
+.mosaic.rich .mosaic-body :is(ul, ol) {
+  padding-left: 20px;
+}
+
+.mosaic.rich .mosaic-card:not(.on-dark) .mosaic-body :is(p, ul, ol) {
+  color: var(--color-text);
+}
+
+/* video or image card: the media above its caption */
+.mosaic .mosaic-media-card {
+  height: 200px;
+}
+
+.mosaic .mosaic-media {
+  position: relative;
+  padding-bottom: 57.25%;
+}
+
+.mosaic .mosaic-media img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.mosaic .mosaic-media.mosaic-video {
+  padding: 0;
+}
+
+.mosaic .mosaic-media-card .mosaic-body {
+  padding: 10px 15px;
+  font-size: 26px;
+}
+
+@media (width >= 730px) {
+  .mosaic .mosaic-colour .mosaic-headline {
+    font-size: 22px;
+  }
+
+  .mosaic .mosaic-colour .mosaic-footer {
+    font-size: 14px;
+  }
+
+  .mosaic.rich .mosaic-card {
+    height: 280px;
+    padding: 15px 15px 0;
+    border-bottom: 15px solid transparent;
+  }
+
+  .mosaic .mosaic-media-card {
+    height: 280px;
+  }
+
+  .mosaic .mosaic-media-card .mosaic-body {
+    padding: 5px 15px;
+    font-size: 22px;
+  }
+}
+
+@media (width >= 1200px) {
+  .mosaic .mosaic-card,
+  .mosaic .mosaic-media-card {
+    height: 400px;
+  }
+
+  .mosaic .mosaic-colour {
+    padding: 20px;
+  }
+
+  .mosaic .mosaic-colour .mosaic-headline {
+    padding: 0 20px;
+    font-size: 34px;
+  }
+
+  .mosaic .mosaic-colour .mosaic-footer {
+    bottom: 12px;
+    padding: 0 20px;
+    font-size: 18px;
+  }
+
+  .mosaic.rich .mosaic-card {
+    height: 400px;
+    padding: 20px 20px 0;
+    border-bottom-width: 20px;
+  }
+
+  .mosaic .mosaic-media-card .mosaic-body {
+    padding: 5px 20px;
+    font-size: 34px;
+  }
+}

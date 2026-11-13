@@ -1,0 +1,112 @@
+/* the source's .cmp-video: a 16:9 box, the thumbnail over it, a round play button */
+.video .video-frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.video .video-frame > iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video .video-thumbnail {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  background: none;
+  font-size: 14px;
+}
+
+.video .video-thumbnail picture {
+  display: block;
+  height: 100%;
+}
+
+.video .video-thumbnail img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  object-fit: cover;
+}
+
+.video .video-poster {
+  position: absolute;
+  inset: 0;
+  background: #151b17 center / contain no-repeat;
+}
+
+.video .video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border: 2px solid #000000bf;
+  border-radius: 90px;
+  background: #000000bf;
+  color: #fff;
+  font-size: 21px;
+  transform: translate(-50%, -50%);
+  transition: all 0.1s ease-out;
+}
+
+/* Font Awesome's play icon: 384 x 512, as high as the font size */
+.video .video-play::before {
+  width: 0.75em;
+  height: 1em;
+  background-color: currentcolor;
+  content: '';
+  mask: url('../../icons/play.svg') center / contain no-repeat;
+}
+
+.video .video-thumbnail:hover .video-play {
+  width: 68px;
+  height: 68px;
+  font-size: 24px;
+  transition: none;
+}
+
+/* the playlist player: Brightcove draws the row of its videos into .vjs-playlist */
+.video.playlist .video-frame > .video-js {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* the source's playlist embed that fills its column: a white player, poster and row */
+.video.playlist:not(.narrow) :is(.video-js, .vjs-poster, .vjs-playlist) {
+  background-color: #fff;
+}
+
+/* its other embed: 768 px wide at 100:57, the row always 768 px */
+.video.playlist.narrow .video-frame {
+  max-width: 768px;
+  aspect-ratio: 100 / 57;
+}
+
+.video.playlist.narrow .vjs-playlist {
+  width: 768px;
+}
+
+.video.playlist.center :is(.video-frame, .vjs-playlist) {
+  margin-inline: auto;
+}
+
+/* the source's `* { font-family: Roboto }` reaches the player: zero specificity, as there */
+:where(.video.playlist :is(.video-js, .vjs-playlist) *) {
+  font-family: var(--font-family);
+}

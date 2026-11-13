@@ -1,0 +1,1192 @@
+/* The source's card-b family. The default is the flag card of `assetCard` in a `cardContainer`;
+   `post` (dynamicCards), `featured` (blogBanner), `logos` and `news` (pressRelease) change it. */
+
+/* stylelint-disable no-descending-specificity -- the rules keep the source's cascade: the card,
+   then one part per variant. Sorted by specificity, each variant would be spread over the file. */
+
+.teasers {
+  --teasers-cols: 1;
+  --teasers-heading: 22px;
+}
+
+.teasers.cols-2 {
+  --teasers-cols: 2;
+}
+
+.teasers.cols-3 {
+  --teasers-cols: 3;
+}
+
+.teasers.cols-4 {
+  --teasers-cols: 4;
+}
+
+/* a card container without a title keeps the 1 px of its empty title row */
+.teasers[class*='size-']:not(:has(> .teasers-title))::before {
+  content: '';
+  display: block;
+  height: 1px;
+}
+
+/* the title of the container */
+.teasers h2.teasers-title {
+  margin: 15px 0 45px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.teasers .teasers-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  padding: 0;
+  font-size: var(--body-font-size);
+  list-style: none;
+}
+
+.teasers .teasers-item {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 15px;
+}
+
+/* cards of a `column` row: the gutter of its cells */
+.teasers:not([class*='size-'], .post, .featured, .news) .teasers-item {
+  padding: 0 15px;
+}
+
+.teasers .teasers-card {
+  position: relative;
+  margin: 5px;
+  overflow: hidden;
+  border-bottom: 25px solid transparent;
+  background-color: #fff;
+  box-shadow: var(--shadow-card);
+}
+
+/* `stack-N`: the source's cards sit in grid columns of their own, so margins do not collapse */
+.teasers .teasers-card + .teasers-card:not(.ghost) {
+  margin-top: 10px;
+}
+
+.teasers .teasers-card:hover {
+  box-shadow: var(--shadow-card-hover);
+}
+
+.teasers .teasers-card.linked {
+  cursor: pointer;
+}
+
+.teasers .teasers-item > .teasers-card.ghost {
+  display: none;
+}
+
+.teasers .teasers-flag {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  padding: 5px 30px;
+  background-color: var(--color-purple);
+  color: #fff;
+  font-size: 15px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.teasers .teasers-flag::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -8px;
+  width: 8px;
+  height: 100%;
+  background: linear-gradient(to right bottom, var(--color-purple) 50%, transparent 50%);
+}
+
+.teasers .teasers-flag p {
+  margin: 0;
+  font-size: inherit;
+}
+
+.teasers .teasers-flag a {
+  color: #fff;
+}
+
+.teasers .teasers-media {
+  position: relative;
+  padding-bottom: 57.25%;
+}
+
+.teasers .teasers-media picture,
+.teasers .teasers-media > img {
+  position: absolute;
+  inset: 0;
+}
+
+.teasers .teasers-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.teasers .teasers-media.video {
+  padding-bottom: 56.25%;
+}
+
+.teasers .teasers-play {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+.teasers .teasers-play::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 64px;
+  height: 64px;
+  transform: translate(-50%, -50%);
+  transition: all 0.1s ease-out;
+  border: 2px solid #000000bf;
+  border-radius: 90px;
+  background: #000000bf;
+}
+
+.teasers .teasers-play::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 21px;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  mask: url('../../icons/play.svg') center / contain no-repeat;
+}
+
+.teasers .teasers-play:hover::before {
+  width: 68px;
+  height: 68px;
+  transition: none;
+}
+
+.teasers .teasers-play:hover::after {
+  width: 18px;
+  height: 24px;
+}
+
+.teasers .teasers-text {
+  padding: 25px 25px 0;
+}
+
+.teasers .teasers-flag + .teasers-text {
+  padding-top: 60px;
+}
+
+.teasers .teasers-text :is(h1, h2, h3, h4, h5, h6) {
+  margin: 0 0 15px;
+  color: var(--color-purple);
+  font-size: var(--teasers-heading);
+}
+
+/* h4 is the source's smaller title: smaller letters on the lines of the normal size */
+.teasers .teasers-text h4 > span {
+  font-size: 0.8em;
+}
+
+.teasers .teasers-text :is(h1, h2, h3, h4, h5, h6) a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.teasers .teasers-text p {
+  margin: 0 0 15px;
+  color: var(--color-grey-text);
+}
+
+.teasers .teasers-text p.teasers-cta {
+  margin: 0;
+  font-size: var(--body-font-size);
+  line-height: 1;
+}
+
+.teasers .teasers-cta a {
+  display: block;
+}
+
+/* the source's card always has a paragraph after its title, also an empty one: only a last
+   paragraph loses its margin */
+@media (width < 730px) {
+  .teasers .teasers-text > p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* a container has `cols-N` cells: stacked, each cell without a card keeps its padding */
+  .teasers.cols-2[class*='size-'] .teasers-item:last-child:nth-child(odd),
+  .teasers.cols-3[class*='size-'] .teasers-item:last-child:nth-child(3n + 2) {
+    margin-bottom: 30px;
+  }
+
+  .teasers.cols-3[class*='size-'] .teasers-item:last-child:nth-child(3n + 1) {
+    margin-bottom: 60px;
+  }
+}
+
+@media (width >= 730px) {
+  .teasers {
+    --teasers-heading: 20px;
+  }
+
+  .teasers h2.teasers-title {
+    font-size: 32px;
+  }
+
+  .teasers .teasers-item {
+    width: calc(100% / var(--teasers-cols));
+    padding: 10px;
+  }
+
+  .teasers .teasers-text {
+    padding: 25px;
+  }
+
+  .teasers.size-xxs .teasers-card {
+    height: 290px;
+  }
+
+  .teasers.size-xs .teasers-card {
+    height: 425px;
+  }
+
+  .teasers.size-sm .teasers-card {
+    height: 510px;
+  }
+
+  .teasers.size-md .teasers-card {
+    height: 550px;
+  }
+
+  .teasers.size-lg .teasers-card {
+    height: 590px;
+  }
+
+  .teasers.size-xxl .teasers-card {
+    height: 640px;
+  }
+}
+
+@media (width >= 1200px) {
+  .teasers {
+    --teasers-heading: 30px;
+  }
+
+  .teasers h2.teasers-title {
+    font-size: 44px;
+  }
+}
+
+/* post: a card of `dynamicCards` */
+.teasers.post .teasers-card {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 10px 0;
+  border: 0;
+}
+
+.teasers.post .teasers-text {
+  padding: 20px 32px;
+}
+
+.teasers.post .teasers-text a {
+  color: var(--color-text);
+}
+
+.teasers.post .teasers-text a:hover {
+  text-decoration: underline;
+}
+
+.teasers.post .teasers-meta {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.teasers.post .teasers-text p.teasers-label {
+  margin: 0;
+  padding: 4px 8px;
+  border-radius: 3px;
+  background-color: var(--color-purple-mid);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.teasers.post .teasers-label strong {
+  font-weight: inherit;
+}
+
+.teasers.post .teasers-text p.teasers-date {
+  margin: 0 0 0 2px;
+  padding-top: 2px;
+  color: var(--color-grey-dark);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: right;
+}
+
+.teasers.post .teasers-text .teasers-heading {
+  height: 42px;
+  margin: 0 0 20px;
+  color: var(--color-text);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.teasers.post .teasers-heading a {
+  display: -webkit-box;
+  overflow: hidden;
+  line-height: 1.2;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.teasers.post .teasers-authors {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  margin-bottom: 32px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 17px;
+}
+
+.teasers.post .teasers-text p.teasers-authors-names {
+  display: -webkit-box;
+  margin: 0;
+  overflow: hidden;
+  color: var(--color-text);
+  font-size: inherit;
+  line-height: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.teasers .teasers-avatars {
+  position: relative;
+  flex: none;
+  width: 36px;
+  height: 36px;
+  margin-right: 12px;
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+.teasers .teasers-avatars div {
+  position: absolute;
+  overflow: hidden;
+  background-color: var(--color-border);
+}
+
+.teasers .teasers-avatars img {
+  position: relative;
+  width: 100%;
+  max-width: none;
+}
+
+.teasers .teasers-avatars span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-grey-dark);
+  font-size: 9px;
+}
+
+.teasers .teasers-avatars.one div {
+  width: 100%;
+  height: 100%;
+}
+
+.teasers .teasers-avatars.one span {
+  font-size: 12px;
+}
+
+.teasers .teasers-avatars.two div {
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.teasers .teasers-avatars.two img {
+  left: -25%;
+  width: auto;
+  height: 100%;
+}
+
+.teasers .teasers-avatars.two div:first-child {
+  left: 0;
+}
+
+.teasers .teasers-avatars.two div:nth-child(2) {
+  left: 50%;
+  border-left: 1px solid #fff;
+}
+
+.teasers .teasers-avatars.two div:nth-child(2) img {
+  left: -50%;
+}
+
+.teasers .teasers-avatars.three img {
+  height: 100%;
+}
+
+.teasers .teasers-avatars.three div:first-child {
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 100%;
+}
+
+.teasers .teasers-avatars.three div:first-child img {
+  left: -25%;
+}
+
+.teasers .teasers-avatars.three div:first-child span {
+  left: 10px;
+}
+
+.teasers .teasers-avatars.three div:nth-child(2) {
+  top: 0;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  border-left: 1px solid #fff;
+}
+
+.teasers .teasers-avatars.three div:nth-child(3) {
+  top: 18px;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+
+.teasers.post .teasers-text p.teasers-tags {
+  display: -webkit-box;
+  height: 46px;
+  margin: 0;
+  overflow: hidden;
+  color: var(--color-grey-dark);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.teasers.post .teasers-tags strong {
+  font-weight: inherit;
+}
+
+.teasers.post .teasers-tags a {
+  color: var(--color-grey-dark);
+  font-weight: 300;
+}
+
+.teasers.post .teasers-text p.teasers-cta {
+  height: 32px;
+  margin: 32px 0 16px;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.teasers.post .teasers-cta a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.teasers.post .teasers-cta:hover a {
+  text-decoration: underline;
+}
+
+/* the source draws the light chevron of Font Awesome here */
+.teasers.post .teasers-cta .icon {
+  mask-image: url('../../icons/chevron-right-light.svg');
+}
+
+@media (width >= 730px) {
+  .teasers.post .teasers-list {
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .teasers.post .teasers-card {
+    margin: 15px 0;
+  }
+
+  .teasers.post .teasers-text .teasers-heading {
+    height: 66px;
+  }
+
+  .teasers.post .teasers-heading a {
+    -webkit-line-clamp: 3;
+  }
+}
+
+@media (width >= 730px) and (width <= 992px) {
+  .teasers.post .teasers-card {
+    line-height: 15px;
+  }
+
+  .teasers.post .teasers-text .teasers-heading {
+    font-size: 18px;
+  }
+
+  .teasers.post .teasers-authors,
+  .teasers.post .teasers-text p.teasers-date {
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  .teasers.post.carousel .teasers-text {
+    padding: 20px 16px;
+  }
+}
+
+@media (width > 992px) {
+  .teasers.post .teasers-text p.teasers-tags {
+    height: 66px;
+  }
+}
+
+/* carousel: the source's slick carousels. Flag cards: one per view, arrows beside the dots
+   below 730 px and beside the cards from 730 px. Posts: `cols-N` per view from 730 px; below
+   it one card in the centre with the edges of its neighbours, and no arrows. */
+.teasers.carousel .slider {
+  padding-bottom: 24px;
+  user-select: none;
+}
+
+.teasers.carousel .teasers-list {
+  /* slick rounds the width of a slide up to a whole pixel */
+  --slide-shift: round(up, calc((100% + var(--slider-gap)) / var(--per-view, 1)), 1px);
+
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.teasers.carousel .teasers-item {
+  position: relative;
+  width: auto;
+  padding: 0;
+}
+
+.teasers .slider-prev,
+.teasers .slider-next {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  bottom: 16px;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 1px solid var(--color-grey-dark);
+  border-radius: 20px;
+  background: #fff;
+  color: var(--color-grey-dark);
+}
+
+.teasers .slider-prev:is(:hover, :focus),
+.teasers .slider-next:is(:hover, :focus) {
+  outline: 0;
+  background: var(--color-bg-light);
+}
+
+.teasers .slider-prev::before,
+.teasers .slider-next::before {
+  content: '';
+  width: 11.25px;
+  height: 18px;
+  background-color: currentcolor;
+  mask: url('../../icons/chevron-left-light.svg') center / contain no-repeat;
+}
+
+.teasers .slider-next::before {
+  mask-image: url('../../icons/chevron-right-light.svg');
+}
+
+.teasers .slider-prev {
+  left: 15px;
+}
+
+.teasers .slider-next {
+  right: 15px;
+}
+
+.teasers .slider-dots {
+  display: flex;
+  justify-content: center;
+  width: calc(100% - 112px);
+  max-width: 342px;
+  margin: 28px auto 0;
+}
+
+.teasers .slider-dot {
+  position: relative;
+  flex: 0 1 50px;
+  min-width: 0;
+  height: 8px;
+  margin: 0 8px 0 0;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+.teasers .slider-dot:last-child {
+  margin: 0;
+}
+
+.teasers .slider-dot::before {
+  content: '';
+  position: absolute;
+  bottom: 2.5px;
+  left: 0;
+  width: 100%;
+  transition: 0.5s;
+  border-bottom: 2px solid var(--color-border-light);
+}
+
+.teasers .slider-dot[aria-current]::before {
+  transition: 0.3s;
+  border-color: var(--color-grey-dark);
+}
+
+.teasers.post.carousel .slider {
+  --slider-gap: 40px;
+
+  margin: 0 -15px;
+  padding-bottom: 0;
+}
+
+.teasers.post.carousel .slider-viewport {
+  padding: 0 70px;
+}
+
+.teasers.post .slider-prev,
+.teasers.post .slider-next {
+  display: none;
+}
+
+@media (width < 730px) {
+  .teasers.post.carousel .teasers-item > .teasers-card.ghost {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: calc(100% + var(--slider-gap));
+    width: 100%;
+  }
+
+  .teasers.post.carousel .teasers-item:last-child > .teasers-card.ghost {
+    right: auto;
+    left: calc(100% + var(--slider-gap));
+  }
+}
+
+@media (width >= 730px) {
+  .teasers.carousel .slider {
+    padding: 0 40px;
+  }
+
+  .teasers .slider-prev,
+  .teasers .slider-next {
+    top: calc(50% - 36px);
+    bottom: auto;
+    width: 40px;
+    height: 40px;
+  }
+
+  .teasers .slider-prev::before,
+  .teasers .slider-next::before {
+    width: 12.5px;
+    height: 20px;
+  }
+
+  .teasers .slider-prev {
+    left: -9px;
+  }
+
+  .teasers .slider-next {
+    right: -9px;
+  }
+
+  .teasers.post.carousel .slider {
+    margin: 0;
+    padding: 0 40px;
+  }
+
+  .teasers.post.carousel .slider-viewport {
+    padding: 0 20px;
+  }
+
+  .teasers.post .slider-prev,
+  .teasers.post .slider-next {
+    display: flex;
+    top: 50%;
+  }
+
+  .teasers.post .slider-prev {
+    left: 10px;
+  }
+
+  .teasers.post .slider-next {
+    right: 10px;
+  }
+}
+
+@media (width > 992px) {
+  .teasers.post .slider-prev {
+    left: -10px;
+  }
+
+  .teasers.post .slider-next {
+    right: -10px;
+  }
+}
+
+@media (width >= 1400px) {
+  .teasers.carousel .slider,
+  .teasers.post.carousel .slider {
+    padding: 0;
+  }
+
+  .teasers .slider-prev {
+    left: -95px;
+  }
+
+  .teasers .slider-next {
+    right: -95px;
+  }
+
+  .teasers.post .slider-prev {
+    left: -96px;
+  }
+
+  .teasers.post .slider-next {
+    right: -96px;
+  }
+}
+
+/* featured: the posts on top of a blog landing page. Two per row from 730 px, `cols-N`
+   (default four) from 992 px. Without `cols-N` the first post is the large banner. */
+.teasers.featured .teasers-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0 30px;
+  margin: 0;
+}
+
+.teasers.featured .teasers-item {
+  width: auto;
+  padding: 0;
+}
+
+.teasers.featured .teasers-card {
+  margin: 24px 0 0;
+  overflow: visible;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  color: var(--color-text);
+}
+
+.teasers.featured .teasers-media {
+  padding: 0;
+}
+
+.teasers.featured .teasers-media picture {
+  position: static;
+}
+
+.teasers.featured .teasers-media img {
+  height: auto;
+  aspect-ratio: 248 / 140;
+}
+
+.teasers.featured .teasers-text {
+  padding: 0;
+}
+
+.teasers.featured .teasers-text a {
+  color: inherit;
+}
+
+.teasers.featured .teasers-text p.teasers-date {
+  margin: 8px 0 0;
+  color: inherit;
+  font-size: 14px;
+  line-height: 100%;
+}
+
+.teasers.featured .teasers-text .teasers-heading {
+  margin: 8px 0 0;
+  overflow: hidden;
+  color: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.teasers.featured .teasers-heading a {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.teasers.featured .teasers-avatars {
+  display: none;
+}
+
+.teasers.featured .teasers-text p.teasers-authors-names {
+  margin: 8px 0 0;
+  color: inherit;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.teasers.featured .teasers-text p.teasers-tags {
+  margin: 8px 0 0;
+  color: var(--color-grey-dark);
+  font-size: 14px;
+  line-height: 160%;
+}
+
+.teasers.featured .teasers-tags strong {
+  font-weight: 400;
+}
+
+/* the large banner: below 730 px a post like the others, with its own type */
+.teasers.featured .large .teasers-card {
+  margin-top: 0;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.teasers.featured .large .teasers-text p.teasers-date {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.teasers.featured .large .teasers-slash {
+  padding: 0 3px;
+}
+
+.teasers.featured .large .teasers-authors {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  color: var(--color-grey-dark);
+}
+
+.teasers.featured .large .teasers-text p.teasers-authors-names {
+  margin: 0;
+  line-height: normal;
+}
+
+.teasers.featured .large .teasers-text p.teasers-tags {
+  margin-top: 10px;
+  overflow: hidden;
+  color: inherit;
+  line-height: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* a tag that does not fit is left out as a whole, as the source's list items are */
+.teasers.featured .large .teasers-tags a {
+  display: inline-block;
+}
+
+@media (width >= 730px) {
+  .teasers.featured .teasers-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .teasers.featured .teasers-text .teasers-heading {
+    font-size: 20px;
+  }
+
+  .teasers.featured .teasers-text p.teasers-tags {
+    margin-top: 11px;
+  }
+
+  .teasers.featured .teasers-item.large {
+    grid-column: 1 / -1;
+  }
+
+  .teasers.featured .large .teasers-card {
+    height: 484px;
+    color: #fff;
+  }
+
+  .teasers.featured .large .teasers-media {
+    position: absolute;
+    inset: 0;
+  }
+
+  .teasers.featured .large .teasers-media img {
+    height: 484px;
+    aspect-ratio: auto;
+  }
+
+  .teasers.featured .large .teasers-media::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgb(217 217 217 / 0%) 0,
+      rgb(32 32 32 / 60%) 34%,
+      #000 100%
+    );
+  }
+
+  .teasers.featured .large .teasers-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 880px;
+    padding: 0 100px 40px;
+  }
+
+  .teasers.featured .large .teasers-text .teasers-heading {
+    margin-top: 17px;
+    line-height: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .teasers.featured .large .teasers-heading a {
+    display: inline;
+  }
+
+  .teasers.featured .large .teasers-authors {
+    margin-top: 13px;
+    color: inherit;
+  }
+
+  .teasers.featured .large .teasers-avatars {
+    display: block;
+    margin-right: 16px;
+  }
+
+  .teasers.featured .large .teasers-text p.teasers-tags {
+    margin-top: 10px;
+  }
+
+  .teasers.featured .large .teasers-tags strong {
+    margin-right: 12px;
+  }
+}
+
+@media (width >= 992px) {
+  .teasers.featured .teasers-list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .teasers.featured[class*='cols-'] .teasers-list {
+    grid-template-columns: repeat(var(--teasers-cols), minmax(0, 1fr));
+  }
+}
+
+@media (width > 1200px) {
+  .teasers.featured .large .teasers-text {
+    padding: 0 0 40px 150px;
+  }
+}
+
+/* logos: a framed logo that links, with its name and text. The name is set as the source's
+   hand-written markup sets it: small letters on the line of a section title. */
+.teasers.logos .teasers-card {
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.teasers.logos .teasers-media {
+  padding: 0;
+  transition: 0.4s ease-out all;
+  border: 1px solid #d1d1d1;
+  background-color: #fff;
+}
+
+.teasers.logos .teasers-card:hover .teasers-media {
+  border-color: #000;
+}
+
+.teasers.logos .teasers-media picture {
+  position: static;
+}
+
+.teasers.logos .teasers-media img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* a logo without text sits in the frame of the source's partner logos */
+.teasers.logos .teasers-card:not(:has(.teasers-name ~ *)) .teasers-media {
+  aspect-ratio: 850 / 510;
+}
+
+.teasers.logos .teasers-card:not(:has(.teasers-name ~ *)) .teasers-media img {
+  height: 100%;
+}
+
+.teasers.logos .teasers-text {
+  padding: 0;
+}
+
+.teasers.logos .teasers-text p {
+  margin: 0;
+  color: #000;
+  font-size: 18px;
+}
+
+.teasers.logos .teasers-text p.teasers-name {
+  margin: 0 0 30px;
+  color: var(--color-purple);
+  font-size: var(--heading-size-h2);
+  line-height: 0.5;
+}
+
+.teasers.logos .teasers-name a {
+  color: var(--color-grey-text);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media (width >= 730px) {
+  .teasers.logos .teasers-text p.teasers-name {
+    margin: -10px 0 60px;
+    line-height: 1.1;
+  }
+
+  .teasers.logos .teasers-text p.teasers-name:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media (width >= 730px) and (width <= 800px) {
+  .teasers.logos .teasers-name a {
+    font-size: 16px;
+  }
+}
+
+/* news: the latest press releases, two per row with a line between them */
+.teasers.news .teasers-list {
+  margin: 0;
+}
+
+.teasers.news .teasers-item {
+  margin: 10px 0;
+  padding: 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.teasers.news .teasers-item:last-child {
+  border-bottom-width: 0;
+}
+
+.teasers.news .teasers-card {
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.teasers.news .teasers-text {
+  padding: 0;
+}
+
+.teasers.news .teasers-text p {
+  margin: 0 0 20px;
+  color: #000;
+  font-size: 14px;
+}
+
+.teasers.news .teasers-text p:has(a) {
+  overflow: hidden;
+  font-size: 16px;
+  text-overflow: ellipsis;
+}
+
+.teasers.news .teasers-text a {
+  color: var(--color-purple);
+  text-decoration: none;
+}
+
+@media (width >= 730px) {
+  .teasers.news .teasers-list {
+    margin-bottom: 30px;
+  }
+
+  .teasers.news .teasers-item {
+    position: relative;
+    width: calc(50% - 32px);
+    margin: 20px 0 0;
+  }
+
+  /* the line between the two releases of a row */
+  .teasers.news .teasers-item:nth-child(odd) {
+    margin-right: 61px;
+  }
+
+  .teasers.news .teasers-item:nth-child(odd)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -31px;
+    bottom: -1px;
+    width: 1px;
+    background: var(--color-border);
+  }
+
+  /* no line under the last row */
+  .teasers.news .teasers-item:nth-child(odd):nth-last-child(-n + 2),
+  .teasers.news .teasers-item:nth-child(odd):nth-last-child(-n + 2) ~ .teasers-item {
+    border-bottom-width: 0;
+  }
+
+  .teasers.news .teasers-item:nth-child(odd):nth-last-child(-n + 2)::after {
+    bottom: 0;
+  }
+}

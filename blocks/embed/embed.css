@@ -1,0 +1,18 @@
+/* an iframe sits on the text line of its box, as in the source */
+.embed iframe {
+  border: 0;
+}
+
+/* the source's .googleMap: 20 px around the map */
+.embed.map {
+  padding: 20px;
+}
+
+/* Spotify's embed code rounds its player */
+.embed iframe[src^='https://open.spotify.com/'] {
+  border-radius: 12px;
+}
+
+.embed:empty {
+  display: none;
+}
