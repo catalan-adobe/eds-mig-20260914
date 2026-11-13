@@ -65,6 +65,11 @@
   box-shadow: var(--shadow-card);
 }
 
+/* `stack-N`: the source's cards sit in grid columns of their own, so margins do not collapse */
+.teasers .teasers-card + .teasers-card:not(.ghost) {
+  margin-top: 10px;
+}
+
 .teasers .teasers-card:hover {
   box-shadow: var(--shadow-card-hover);
 }

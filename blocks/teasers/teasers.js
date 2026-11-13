@@ -297,7 +297,13 @@ export default function decorate(block) {
   const title = rows.find(isTitle)?.[0].firstElementChild;
   const cards = applyLimit(block, rows.filter((cells) => cells.length && !isTitle(cells))
     .map((cells) => (BUILD[kind] ?? flagCard)(cells)));
-  const list = element('ul', 'teasers-list', ...cards.map((c) => element('li', 'teasers-item', c)));
+  // `stack-N`: the source stacks N cards in each cell of its container
+  const stack = Number([...block.classList].find((c) => /^stack-\d$/.test(c))?.slice(6)) || 1;
+  const items = [];
+  for (let i = 0; i < cards.length; i += stack) {
+    items.push(element('li', 'teasers-item', ...cards.slice(i, i + stack)));
+  }
+  const list = element('ul', 'teasers-list', ...items);
   // without a column count the first featured post is the large banner
   if (kind === 'featured' && !columns) list.firstElementChild?.classList.add('large');
   if (kind === 'featured') [...list.children].forEach(spaceFeatured);

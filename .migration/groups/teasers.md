@@ -16,7 +16,7 @@ A row is one item. A row with one cell that holds only a heading is the title of
 | `logos` | cell 1 logo, cell 2 link, then optional text paragraphs | `htmlTextOnly` (group html) |
 | `news` | one cell: linked title, date | `pressRelease` |
 
-Other classes: `cols-N`, `size-xxs` … `size-xxl` (card height from 730), `carousel`,
+Other classes: `cols-N`, `size-xxs` … `size-xxl` (card height from 730), `carousel`, `stack-N`,
 `limit-N`.
 
 - Flag card title: `h4` is the source's smaller title (`text-size-smaller`, 314 of 400), `h3`
@@ -32,7 +32,15 @@ Other classes: `cols-N`, `size-xxs` … `size-xxl` (card height from 730), `caro
 
 - Cells that each hold one like item block become one block with `cols-N` and `size-*`. The
   title becomes the first row.
-- Cells of default content become a `columns` block. Anything else is the section grid.
+- Cells that each hold N like item blocks (N > 1, one card each, no section styles) become
+  one block with `stack-N`: rows in cell order, N cards in one item, 10 px apart
+  (`/ja-jp/japan/support.html`).
+- Cells of default content become a `columns` block when each cell is one section and all
+  have the same styles; the styles go on the block's section. Otherwise the section grid, which
+  keeps every section's styles. Inside a cell of another row (no grid possible) the `columns`
+  section gets the top of the first sections and the bottom of the last ones when equal, and
+  the other styles every text section has; the rest is lost, with a warning.
+- A section grid takes the container's band spacing on its first section (the row's).
 - A container is never joined with the next container. Two source containers are two blocks.
   Joined, the spacing between them and the padding of empty cells would be lost.
 - An empty cell is not written. Below 730 the block adds its 30 px from `cols-N` and the card
@@ -101,5 +109,10 @@ drag, no click after the drag), video modal with Escape, logo border on hover, n
 - `pressRelease`: the date is formatted in the importer's time zone. Five or more releases
   are three per row in the source, two here (not in the fetched pages).
 - `contentTypeListing` (1 page): heading only. Its list comes from a servlet of the source.
+- `cardContainer` cells of default content (columns block or section grid) have the 30 px
+  gutter of the grid. The source's `.card-col` has 10 px padding on all sides from 730 (15 px
+  below), a 20 px gutter, cells 5 px past the container, and a 1 px empty title row: 21 px
+  lower per container from 730, 31 px per stacked cell below. Requested from `global` /
+  `columns`. Spacing between two sections of one cell inside a nested row is lost.
 - A `teasers` block inside a fragment loses the band of the fragment's host section
   (`blocks/fragment/fragment.js` replaces the section).
