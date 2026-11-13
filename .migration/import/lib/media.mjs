@@ -34,9 +34,9 @@ export function sniff(body) {
 
 /** The largest candidate of a srcset with width descriptors, else undefined. */
 function largest(srcset = '') {
-  return srcset.split(/,(?=\s*\S+\s+\d+w)|,\s+/).map((c) => c.trim().split(/\s+/))
-    .filter(([url, width]) => url && /^\d+w$/.test(width ?? ''))
-    .sort((a, b) => parseInt(b[1], 10) - parseInt(a[1], 10))[0]?.[0];
+  // a candidate is a URL, a space and its width; the URL itself may hold commas
+  return [...srcset.matchAll(/(\S+)\s+(\d+)w\s*(?:,|$)/g)]
+    .sort((a, b) => Number(b[2]) - Number(a[2]))[0]?.[1];
 }
 
 /** The absolute URL of the rendition to copy for an <img> node or a URL; '' when none. */
@@ -65,7 +65,8 @@ function stemOf(url) {
   const last = decodeURIComponent(new URL(url).pathname.split('/').filter(Boolean).pop() ?? '');
   const stem = last.replace(/\.img[ow](\.\d+)*\.\w+$/, '').replace(/\.\w{2,5}$/, '');
   const name = stem.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-  return name.slice(0, 60) || 'image';
+  // no hyphen at the cut: with the hash's it would be two, which the web path folds into one
+  return name.slice(0, 60).replace(/-$/, '') || 'image';
 }
 
 async function download(url) {
@@ -98,6 +99,7 @@ export function createMedia({ dry = false, noUpload = false } = {}) {
   const manifest = readJson(MANIFEST);
   const fresh = {};
   const running = new Map();
+  const seen = new Map();
   const uploaded = new Set(Object.values(manifest).filter((e) => e.uploaded).map((e) => e.name));
 
   function save() {
@@ -133,6 +135,7 @@ export function createMedia({ dry = false, noUpload = false } = {}) {
    */
   async function resolve(url) {
     let entry = manifest[url];
+    if (!seen.has(url)) seen.set(url, entry ? 'present' : 'copied');
     if (!entry || (!entry.error && !entry.uploaded && !dry && !noUpload)) {
       if (dry) return { url: `${MEDIA_BASE}unfetched-${sha1(url).slice(0, 12)}`, pending: true };
       if (!running.has(url)) running.set(url, copy(url));
@@ -141,15 +144,26 @@ export function createMedia({ dry = false, noUpload = false } = {}) {
       } catch (e) {
         // not the image's fault (network, DA, a missing tool): nothing is recorded
         if (/bot|FETCH-STOP/i.test(e.message)) throw e;
+        seen.set(url, 'failed');
         return { error: e.message };
       }
       manifest[url] = entry;
       fresh[url] = entry;
       if (Object.keys(fresh).length >= 25) save();
     }
-    if (entry.error) return { error: entry.error };
+    if (entry.error) {
+      seen.set(url, 'failed');
+      return { error: entry.error };
+    }
     return { url: MEDIA_BASE + entry.name, note: entry.note };
   }
 
-  return { resolve, save };
+  /** How many distinct images this run asked for: { copied, present, failed }. */
+  function totals() {
+    const counts = { copied: 0, present: 0, failed: 0 };
+    seen.forEach((state) => { counts[state] += 1; });
+    return counts;
+  }
+
+  return { resolve, save, totals };
 }

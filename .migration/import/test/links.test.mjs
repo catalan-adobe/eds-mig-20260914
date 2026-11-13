@@ -11,6 +11,8 @@ const cases = [
   ['AEM content path, English', '/content/synopsys/en-us/newsroom.html', `${SITE}/newsroom`],
   ['AEM content path, Japanese', '/content/synopsys/ja-jp/japan.html', `${SITE}/ja-jp/japan`],
   ['home page', 'https://www.synopsys.com/', `${SITE}/`],
+  ['home page, AEM content path', '/content/synopsys/en-us.html', `${SITE}/`],
+  ['a path the preview refuses', '/support/training/locations/locations_austin.html', `${SITE}/support/training/locations/locations-austin`],
   ['query and anchor', '/contact-sales.html?cmp=x#form', `${SITE}/contact-sales?cmp=x#form`],
   ['doubled extension of the source', '/solutions/slm/avalon.html.html', `${SITE}/solutions/slm/avalon`],
   ['category selector', '/blogs/chip-design/category.5g-wireless.html', `${SITE}/blogs/chip-design/category?tag=5g-wireless`],
@@ -38,6 +40,7 @@ test('video link: Brightcove player of the account, YouTube watch page', () => {
   const attribs = { 'data-video-id': '6379238357112', 'data-provider': 'Brightcove', 'data-video-lang': '5748441669001' };
   assert.equal(videoLink(attribs), 'https://players.brightcove.net/5748441669001/rka4xWwYG_default/index.html?videoId=6379238357112');
   assert.equal(videoLink({ ...attribs, 'data-player-id': 'abc' }), 'https://players.brightcove.net/5748441669001/abc_default/index.html?videoId=6379238357112');
+  assert.equal(videoLink({ ...attribs, 'data-video-lang': '6024607096001' }), 'https://players.brightcove.net/6024607096001/k9ROJJb3q_default/index.html?videoId=6379238357112');
   assert.equal(videoLink({ 'data-video-id': 'dQw4', 'data-provider': 'YouTube' }), 'https://www.youtube.com/watch?v=dQw4');
   assert.equal(videoLink({}), '');
 });

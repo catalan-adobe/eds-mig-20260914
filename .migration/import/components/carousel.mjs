@@ -55,7 +55,7 @@ function render(components, slide, ctx) {
  * One item block with the variant `carousel` when every slide holds only items. A `text`
  * beside a quote (a footnote) follows the block as a section of its own.
  */
-function itemCarousel(slides, ctx, variants, { perView = 1, inView } = {}) {
+function itemCarousel(slides, ctx, variants, { perView = 1, inView, rows } = {}) {
   const parts = slides.map((slide) => leaves(slide));
   const names = [...new Set(parts.flat().map(componentName))];
   const kinds = names.filter((name) => ITEMS[name]);
@@ -78,6 +78,11 @@ function itemCarousel(slides, ctx, variants, { perView = 1, inView } = {}) {
     ...(total > count ? ['carousel', ...variants] : []),
   ].filter(Boolean);
   const merged = ctx.merge(sections, ...extra);
+  // a content carousel shows one slide, a row of cards, per view: the `rows` look of `cards`
+  if (rows) {
+    merged.flatMap((s) => s.content).filter((b) => isBlock(b) && b.name === 'cards'
+      && b.variants.includes('carousel')).forEach((b) => b.variants.push('rows'));
+  }
   const last = merged.at(-1);
   if (below && !last.styles.some((style) => style.startsWith('bottom-'))) {
     last.styles.push(`bottom-${below}`);
@@ -165,6 +170,7 @@ function slideSpace(rows) {
  * @param {string[]} [options.look] variants of the block `carousel` only: fade
  * @param {number} [options.perView] slides in view: the items in view are that many slides
  * @param {number} [options.inView] items in view, when the source sets them itself
+ * @param {boolean} [options.rows] a content carousel: its `cards` move a slide at a time
  */
 export function slideSections(slides, ctx, { variants = [], look = [], ...view } = {}) {
   const filled = slides.filter((slide) => isFilled(ctx.$, slide));
@@ -215,5 +221,5 @@ export default function carousel(el, ctx) {
   // a card carousel shows as many cards as its first row has cells, as the source's script
   const firstRow = box.find('.column')[0] ?? box.find('.cardContainer')[0];
   const inView = type === 'card-carousel' && firstRow ? cellsOf($, firstRow).length : 0;
-  return slideSections(slides, ctx, { look: ['fade'], inView });
+  return slideSections(slides, ctx, { look: ['fade'], inView, rows: type === 'content-carousel' });
 }

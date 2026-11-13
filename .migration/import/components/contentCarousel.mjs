@@ -10,5 +10,7 @@ export default function contentCarousel(el, ctx) {
   if (box.hasClass('mobile-center-mode')) ctx.warn('mobile-center-mode is not migrated');
   const variants = [box.hasClass('mobile-no-carousel') && 'no-mobile', autoplay].filter(Boolean);
   const perView = Number(box.attr('data-slides-to-show') ?? 1) || 1;
-  return slideSections(box.children('.carousel-slide').toArray(), ctx, { variants, perView });
+  return slideSections(box.children('.carousel-slide').toArray(), ctx, {
+    variants, perView, rows: true,
+  });
 }

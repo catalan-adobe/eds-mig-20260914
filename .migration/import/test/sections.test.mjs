@@ -16,8 +16,9 @@ const anchor = (id) => grid('anchor', `<div id="${id}" class="component-anchor">
 const column = (cells, wrap = '') => grid('column', `<div class="background-component ${wrap}">
   <section class="component-column row">${cells.map(([cls, inner]) => `<div class="col-xs-12 ${cls}">
   <div class="aem-Grid">${inner}</div></div>`).join('')}</section></div>`);
+const topnav = '<div class="experiencefragment"><div class="cmp-experiencefragment cmp-experiencefragment--topnav"></div></div>';
 const page = (inner) => `<html><head><title>T</title></head><body data-template="Content Page_Template">
-  <div class="site-wrapper"><div class="root synopsysContainer"><div class="aem-Grid">${inner}</div></div></div></body></html>`;
+  ${topnav}<div class="site-wrapper"><div class="root synopsysContainer"><div class="aem-Grid">${inner}</div></div></div></body></html>`;
 
 async function build(inner, registry = { lookup: () => undefined }) {
   const env = { transforms: await loadTransforms(), registry, built: new Set() };
@@ -49,6 +50,27 @@ test('an empty section at the end stays for the parent, and goes at the top leve
   assert.equal(settle(list, { last: true }).length, 1);
 });
 
+test('dropped spacing: top above the next section, bottom below the one before', () => {
+  const run = (dropped, last = []) => settle([section('<p>a</p>'),
+    ...dropped.map((list) => section([], { styles: list })), section('<p>b</p>', { styles: last })])
+    .map((s) => s.styles.join(' '));
+  assert.deepEqual(run([['top-sm', 'bottom-sm']]), ['band-bottom-sm', 'band-top-sm']);
+  assert.deepEqual(run([['bottom-md'], ['bottom-md']]), ['band-bottom-md', 'band-top-md']);
+  assert.deepEqual(run([['top-md'], ['top-md']]), ['band-bottom-md', 'band-top-md']);
+  assert.deepEqual(run([['top-xs']]), ['', 'band-top-xs']);
+  // the space goes where the background is the dropped component's own
+  assert.deepEqual(run([['top-sm', 'bottom-sm']], ['light-grey']), ['band-bottom-md', 'light-grey']);
+  const grey = run([['light-grey', 'top-sm', 'bottom-sm']], ['light-grey']);
+  assert.deepEqual(grey, ['', 'light-grey band-top-md']);
+});
+
+test('dropped spacing after a grid row goes below the row, on its first section', async () => {
+  const doc = await build(column([['col-sm-6', text('', '<p>a</p>')],
+    ['col-sm-6', text('', '<p>b</p>', 'vert-pad-top-sm')]])
+    + text('', '', 'vert-pad-bottom-md') + text('', '<p>c</p>', 'light-grey-bg'));
+  assert.deepEqual(styles(doc), ['span-6 band-bottom-md', 'span-6 top-sm', 'light-grey']);
+});
+
 test('a section with only a rule is kept', () => {
   assert.equal(settle([section([], { styles: ['rule'] })], { last: true }).length, 1);
 });
@@ -59,6 +81,13 @@ test('item merge joins neighbours with the same class list', () => {
   assert.deepEqual(merged.map((s) => s.content[0].rows?.length ?? 0), [2, 1, 0, 1]);
   const withVariant = mergeItems([item('a'), item('b')], ['carousel']);
   assert.deepEqual(withVariant[0].content[0].variants, ['carousel']);
+});
+
+test('item merge keeps a new grid column and band spacing apart', () => {
+  const item = (list) => section(block('cards', [], [['x']], { merge: true }), { styles: list });
+  assert.equal(mergeItems([item(['span-4']), item(['span-4'])]).length, 2);
+  assert.equal(mergeItems([item(['band-top-md']), item(['band-top-md'])]).length, 2);
+  assert.equal(mergeItems([item(['top-sm']), item(['top-sm'])]).length, 1);
 });
 
 test('item merge leaves blocks alone that are not items', () => {
@@ -85,7 +114,7 @@ test('the document has one div per section, section metadata and the metadata bl
   );
   assert.match(html, /^<body><header><\/header><main>\n<div>\n<h1>T<\/h1>\n<\/div>\n<div>/);
   assert.match(html, /<div class="cards cols-3">\n<div><div>a<\/div><div>b<\/div><\/div>\n<\/div>/);
-  assert.match(html, /<div><div>Style<\/div><div>top-sm<\/div><\/div>\n<div><div>Id<\/div><div>x<\/div><\/div>/);
+  assert.match(html, /<div><div>Style<\/div><div>top-sm<\/div><\/div>\n<div><div>Anchor<\/div><div>x<\/div><\/div>/);
   assert.match(html, /<div class="metadata">\n<div><div>title<\/div><div>T<\/div><\/div>\n<\/div>\n<\/div>\n<\/main>/);
 });
 
@@ -120,6 +149,24 @@ test('page: cells that differ use the section grid with span, stack and offset',
   ], 'vert-pad-top-md') + column([['col-sm-3', ''], ['col-sm-6', text('', '<p>c</p>')]]));
   assert.deepEqual(styles(doc), [
     'span-9 band-top-md', 'span-9 stack top-sm', 'span-3 title-small title-dark', 'span-6 offset-3']);
+});
+
+test('page: a row after a row that is not full starts with the style row', async () => {
+  const half = () => column([['col-sm-6', text('', '<p>a</p>') + text('', '<p>b</p>', 'vert-pad-top-sm')],
+    ['col-sm-6', '']]);
+  const doc = await build(half() + half());
+  assert.deepEqual(styles(doc), ['span-6', 'span-6 stack top-sm', 'span-6 row', 'span-6 stack top-sm']);
+});
+
+test('page: cells that hold cols-M blocks merge into cols-(M x cells), in reading order', async () => {
+  const benefit = (name) => grid('keyBenefits', `<section class="cmp-key-benefits">
+    <div class="cmp-key-benefits__title">${name}</div></section>`);
+  const pair = (a, b) => column([['col-sm-6', benefit(a)], ['col-sm-6', benefit(b)]]);
+  const doc = await build(column([['col-sm-6', pair('a', 'b') + pair('e', 'f')],
+    ['col-sm-6', pair('c', 'd') + pair('g', 'h')]]));
+  const [only] = doc.sections[0].content;
+  assert.deepEqual([only.name, ...only.variants], ['key-benefits', 'cols-4']);
+  assert.equal(only.rows.map((row) => row.join('').replace(/<[^>]+>/g, '')).join(''), 'abcdefgh');
 });
 
 test('page: a component without a transform is default content, with a warning', async () => {

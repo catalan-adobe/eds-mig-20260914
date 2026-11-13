@@ -141,27 +141,40 @@ cell html when a block cannot hold blocks.
 
 - Every component is one section. `anchor` returns an empty section with an id. An empty
   section is dropped: its id goes to the next section, its spacing too, as `band-top-*`
-  (the sum of its paddings: up to 22 px `xs`, up to 45 px `sm`, else `md`).
+  (the sum of its paddings: up to 22 px `xs`, up to 45 px `sm`, else `md`). What one band
+  cannot hold (two empty components of 60 px) goes to the section before, as `band-bottom-*`.
+- The id is written as the section metadata `Anchor`, not `Id`: the pipeline rewrites an `Id`
+  as a class name (`1` is lost, `What's New` becomes `what-s-new`) and keeps `Anchor` as
+  `data-anchor`. `scripts.js` sets the section's `id` from it.
+- Item merge does not join a section that starts a grid column (`span-N` without `stack`),
+  nor two sections with band spacing between them.
 - `column` decides in this order: one cell is transparent (its background and spacing become
-  the band of its sections); like item blocks in cells of equal width merge (`cols-N`); cells
-  that each hold one default-content section with equal styles become a `columns` block
-  (`w-3-9`, `w-9-3`, `w-4-8`, `w-8-4`, `divider`); everything else is the section grid.
+  the band of its sections); like item blocks in cells of equal width merge (`cols-N`, and
+  `cols-(M x N)` when the cells hold `cols-M` blocks); cells that each hold one
+  default-content section with equal styles become a `columns` block (`w-3-9`, `w-9-3`,
+  `w-4-8`, `w-8-4`, `divider`); everything else is the section grid. Cells that each hold
+  several `cards` use the grid: below 730 the source shows cell after cell.
 - Section grid: each section of a cell gets `span-N`, the later ones of a cell `stack`, empty
   cells before a filled one `offset-N`. The first section of the row carries the row's
-  background, `band-top-*`, `band-bottom-*` and `divider`.
+  background, `band-top-*`, `band-bottom-*` and `divider`. The first section of a sticky left
+  cell (`two2575PinnedLeft`, `two3366PinnedLeft`) gets `pinned`.
 - A row inside the cell of another row cannot be a grid (sections do not nest). It becomes a
   `columns` block when its cells are default content (their own styles are lost, with a
-  warning), else its cells are stacked (warning).
+  warning; one image padding stays as the variant `image-pad-*`), else its cells are stacked
+  (warning). `box-links` and `key-benefits` cells of unequal counts merge there, the shorter
+  cell padded with empty rows.
 - When two bands meet on one edge of a section the larger one stays.
-- The contract has no style that ends a grid row. A row that is not full (`9 | empty`)
-  followed by a row whose first cell still fits (`3 | 9`) would join it: the report warns
-  (`section grid: N rows follow a row that is not full`). 3 pages of the site have it.
+- A row that is not full (`9 | empty`) followed by a row whose first cell still fits
+  (`3 | 9`) would join it: the first section of that second row gets the style `row`, which
+  starts a new row.
 
 ## Links
 
 | Source href | Result |
 | --- | --- |
 | `/a/b.html`, `https://www.synopsys.com/a/b.html`, relative | `/f52-synopsys-1211-02/a/b` (query and anchor kept) |
+| `/`, `/content/synopsys/en-us.html` | `/f52-synopsys-1211-02/` |
+| a path the preview refuses (`/a/locations_austin.html`, `-(miet)-`: 33 pages) | runs of other ASCII characters than letters, digits and hyphens are one hyphen, in the DA path and in links (`webSafe` of `lib/config.mjs`) |
 | `/ja-jp/x.html`, `/content/synopsys/ja-jp/x.html` | `/f52-synopsys-1211-02/ja-jp/x` (`/content/synopsys/en-us/` has no folder) |
 | `…/category.<tag>.html` | `…/category?tag=<tag>` |
 | a path with another extension (`.pdf`, `.zip`, `.php`, `.cgi`), `/content/dam/…` | `https://www.synopsys.com/…` |
@@ -184,7 +197,11 @@ cell html when a block cannot hold blocks.
   converts such an SVG to a PNG with `rsvg-convert` (2000 px wide, or the SVG's own `width`)
   and writes a warning with the URL and size into the report. `rsvg-convert` is the one
   program the importer needs besides Node (`brew install librsvg`).
-- An image the source does not deliver (404, no image bytes) is left out, with a warning.
+- An image the source does not deliver (404, no image bytes) is left out, with a warning. Its
+  alt text is not asked for by the check.
+- A run that is not `--dry` ends with `images: N copied, N already present, N failed`. When
+  the source tools report a bot check, the run saves what it has, prints one `FETCH-STOP`
+  line and exits with code 1.
 - `--dry` loads nothing: an image that is not in the manifest yet gets a placeholder URL
   (`…/media/unfetched-<hash>`) and the report counts it as `mediaPending`.
 

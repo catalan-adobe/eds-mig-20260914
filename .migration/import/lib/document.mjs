@@ -3,6 +3,7 @@
 import {
   SITE, languageRoot,
 } from './config.mjs';
+import { paragraphs, widths } from '../components/table.mjs';
 import { createCleaner, escapeAttr, escapeHtml } from './clean.mjs';
 import { rewriteLink, videoLink } from './links.mjs';
 import { pickSource } from './media.mjs';
@@ -45,7 +46,9 @@ function metadataRows(page, extra) {
     ['description', text(meta('description'))],
     ['image', image(meta('og:image'))],
     ['template', text(page.template)],
-    ['nav', page.chrome.includes('landing-page-topnav') ? `${SITE}/nav-landing` : ''],
+    ['theme', $('.synopsysContainer.site-content').length ? 'site-content' : ''],
+    ['nav', page.nav ?? ''],
+    ['breadcrumb', text(page.breadcrumb ?? '')],
     ['footer', page.chrome.includes('landing-page-footer') ? `${SITE}/footer-landing`
       : BLOG_FOOTER[page.lang]?.test(page.template) && `${languageRoot(page.lang)}/footer-blog`],
     ['content-type', text(meta('searchContentType'))],
@@ -78,9 +81,11 @@ function helpers(page, warn) {
   const cleaner = createCleaner({
     $, link, image, warn,
   });
+  // a table in a text: the default look, with the variants the table block reads
   const table = (node) => {
     const header = $(node).find('thead, th').length ? ['header'] : [];
-    return block('table', header, cleaner.rows(node));
+    const variants = [...header, ...widths(node, { $ }), ...paragraphs(node, { $ })];
+    return block('table', variants, cleaner.rows(node));
   };
   return {
     link, image, cleaner, table,
@@ -194,8 +199,8 @@ export function buildDocument(page, env, { root = page.root, fragment } = {}) {
   const sections = settle(children(root), { last: true });
   Object.entries(report.fallbacks)
     .forEach(([name, n]) => warn(`${name}: no transform, ${n} as default content`));
-  const glued = rowConflicts(sections).length;
-  if (glued) warn(`section grid: ${glued} rows follow a row that is not full and would join it`);
+  // a row that is not full would take in the first cell of the row after it
+  rowConflicts(sections).forEach((i) => sections[i].styles.push('row'));
   Object.assign(report, {
     blocks: countBlocks(sections), sections: sections.length, excluded: doc.source.excluded,
   });

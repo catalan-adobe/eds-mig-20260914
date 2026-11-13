@@ -5,6 +5,7 @@ export default function callToAction(el, ctx) {
   const content = ctx.content(box);
   const align = (box.find('.buttons').attr('class') ?? '').match(/align-(center|right)/)?.[1];
   const lone = content.every((part) => /^<p><(strong|em)><a /.test(part));
-  const styles = [...ctx.styles(el), ...(align ? [lone ? align : `buttons-${align}`] : [])];
+  const look = box.find('.wrapper').first().hasClass('fullWidth') ? 'cta-full' : 'cta';
+  const styles = [...ctx.styles(el), look, ...(align ? [lone ? align : `buttons-${align}`] : [])];
   return ctx.section(content, { styles });
 }

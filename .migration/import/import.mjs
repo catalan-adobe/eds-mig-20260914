@@ -13,7 +13,7 @@ import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { load } from 'cheerio';
 import {
-  M, OUT, SITE, daPathOf, languageOf,
+  M, OUT, SITE, daPathOf, languageOf, webSafe,
 } from './lib/config.mjs';
 import {
   MIN_RECALL, outputText, recall, selfCheck,
@@ -121,7 +121,11 @@ function check(doc, built, env) {
   const { report } = doc;
   const images = doc.source.images().map((i) => ({ ...i, url: pickSource(i.el, doc.page) }))
     .filter((i) => i.url);
-  let failures = selfCheck(built.html, { blocks: env.blocks, alts: images.map((i) => i.alt) });
+  // an image the source does not deliver takes its alt text with it
+  const gone = new Set(report.warnings.filter((w) => w.startsWith('image dropped'))
+    .map((w) => w.slice(w.lastIndexOf(': ') + 2)));
+  const alts = images.filter((i) => !gone.has(i.url)).map((i) => i.alt);
+  let failures = selfCheck(built.html, { blocks: env.blocks, alts });
   const content = recall(doc.source.text(), outputText(built.html));
   if (!content.words && !images.length && failures.join() === 'empty main') {
     report.warnings.push('the source has no content: the document is empty too');
@@ -220,7 +224,7 @@ async function createEnv(flags) {
     transforms: await loadTransforms(),
     registry: loadRegistry(),
     built: new Set(),
-    known: new Set(fetchedPages({ all: true }).map((p) => p.replace(/\.html$/, ''))),
+    known: new Set(fetchedPages({ all: true }).map((p) => webSafe(p.replace(/\.html$/, '')))),
     media: createMedia({ dry: flags.has('dry') }),
     blocks: new Set(['metadata', 'section-metadata', ...blocks]),
   };
@@ -245,16 +249,28 @@ async function main() {
   const paths = wanted.filter((p) => !NOT_MIGRATED.test(p));
   const env = await createEnv(flags);
   const counts = {};
-  for (let i = 0; i < paths.length; i += BATCH) {
-    // eslint-disable-next-line no-await-in-loop
-    const results = await runBatch(paths.slice(i, i + BATCH), env, flags);
-    results.forEach((result) => {
-      counts[result[1].status] = (counts[result[1].status] ?? 0) + 1;
-      print(result);
-    });
+  let stopped = '';
+  for (let i = 0; i < paths.length && !stopped; i += BATCH) {
+    try {
+      // eslint-disable-next-line no-await-in-loop
+      const results = await runBatch(paths.slice(i, i + BATCH), env, flags);
+      results.forEach((result) => {
+        counts[result[1].status] = (counts[result[1].status] ?? 0) + 1;
+        print(result);
+      });
+    } catch (e) {
+      if (!/bot protection|FETCH-STOP/.test(e.message)) throw e;
+      env.media.save();
+      stopped = `FETCH-STOP: ${e.message.split('\n')[0]}. Stopped in the batch of page ${i + 1}`;
+    }
   }
   console.log(Object.entries(counts).map(([s, n]) => `${n} ${s}`).join(', '), `-> ${REPORT}`);
-  if (counts.failed || counts.error) process.exitCode = 1;
+  if (!flags.has('dry')) {
+    const { copied, present, failed } = env.media.totals();
+    console.log(`images: ${copied} copied, ${present} already present, ${failed} failed`);
+  }
+  if (stopped) console.log(stopped);
+  if (counts.failed || counts.error || stopped) process.exitCode = 1;
 }
 
 await main();

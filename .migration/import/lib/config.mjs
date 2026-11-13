@@ -22,8 +22,22 @@ export function languageOf(path) {
 /** The web path of a language's root: SITE for English, SITE + '/ja-jp' for Japanese. */
 export const languageRoot = (lang) => SITE + (lang === 'en' ? '' : `/${lang}`);
 
+/**
+ * A path the preview service accepts: in every segment, runs of ASCII characters other than
+ * letters, digits and hyphens become one hyphen (`locations_austin`, `-(miet)-and`). 33 pages
+ * need it.
+ */
+export function webSafe(path) {
+  return path.split('/').map((segment) => {
+    const [, name, extension = ''] = segment.match(/^(.*?)(\.html)?$/);
+    return name.replace(/[^A-Za-z0-9\u0080-\uffff%-]+/g, '-').replace(/-+/g, '-')
+      .replace(/^-|-$/g, '')
+      + extension;
+  }).join('/');
+}
+
 /** Source path (/a/b.html, /) to the DA path under the folder (/a/b.html, /index.html). */
-export const daPathOf = (path) => (path === '/' ? '/index.html' : path);
+export const daPathOf = (path) => (path === '/' ? '/index.html' : webSafe(path));
 
 /** DA path under the folder to the web path under the folder (/a/b, /index). */
 export const webPathOf = (daPath) => daPath.replace(/\.html$/, '');

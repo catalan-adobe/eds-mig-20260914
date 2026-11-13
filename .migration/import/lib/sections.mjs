@@ -44,6 +44,9 @@ function addStyle(target, style) {
 }
 export const addStyles = (target, styles) => styles.forEach((s) => addStyle(target, s));
 
+const startsColumn = (s) => s.styles.some((x) => /^span-\d+$/.test(x))
+  && !s.styles.includes('stack');
+
 /**
  * Item merge: neighbouring sections that hold one mergeable block with the same class list
  * become one section. `variants` are added to every merged or mergeable block.
@@ -55,8 +58,11 @@ export function mergeItems(sections, variants = []) {
     const a = last && onlyBlock(last);
     const b = onlyBlock(next);
     const other = (s) => without(s.styles, /^(top|bottom)-/).join();
+    // a new grid column, and band spacing between the two, keep them apart
+    const apart = startsColumn(next) || next.styles.some((s) => /^band-top-/.test(s))
+      || last?.styles.some((s) => /^band-bottom-/.test(s));
     const same = a && b && a.merge && b.merge && classList(a) === classList(b) && !next.id
-      && other(last) === other(next);
+      && !apart && other(last) === other(next);
     if (!same) {
       out.push(next);
       return;
@@ -72,12 +78,52 @@ export function mergeItems(sections, variants = []) {
   return out;
 }
 
-/** The band style that stands for the vertical padding of a dropped, empty component. */
-function bandOf(styles) {
-  const px = styles.map((s) => s.match(/^(?:band-)?(?:top|bottom)-(\w+)$/)).filter(Boolean)
-    .reduce((sum, m) => sum + (SPACE_PX[m[1]] ?? 0), 0);
-  if (!px) return [];
-  return [`band-top-${SIZES.findLast((size) => SPACE_PX[size] <= px) ?? 'xs'}`];
+// white is the page's own colour
+const backgroundOf = (styles) => (styles.includes('light-grey') ? 'light-grey' : '');
+const isSpan = (style) => /^span-\d+$/.test(style);
+
+/** The section whose `band-bottom-*` ends what `out` holds: the last one, or its row's first. */
+function bandHolder(out) {
+  const last = out.at(-1);
+  if (!last?.styles.some(isSpan)) return last;
+  for (let i = out.length - 1; i >= 0 && out[i].styles.some(isSpan); i -= 1) {
+    if (out[i].rowStart) return out[i];
+  }
+  return last;
+}
+
+/**
+ * The band styles that stand for the vertical padding of dropped, empty components (`styles`):
+ * `top` above the next section, `bottom` below the section before. The space goes where the
+ * background is the dropped components' own: between two such sections their top padding goes
+ * above and their bottom padding below (the two differ below 730). What one band cannot hold
+ * moves to the other side; an edge that has a band already takes none.
+ */
+function bandsOf(styles, before, next) {
+  const sum = (side) => styles.map((s) => s.match(new RegExp(`^(?:band-)?${side}-(\\w+)$`)))
+    .filter(Boolean).reduce((px, m) => px + (SPACE_PX[m[1]] ?? 0), 0);
+  const [top, bottom] = [sum('top'), sum('bottom')];
+  const total = top + bottom;
+  if (!total) return {};
+  const own = backgroundOf(styles);
+  // an edge that has a band already would lose the smaller of the two
+  const free = (s, edge) => !s.styles.some((x) => x.startsWith(`band-${edge}-`));
+  const canBefore = !!before && free(before, 'bottom');
+  const canNext = free(next, 'top');
+  const likeBefore = canBefore && backgroundOf(before.styles) === own;
+  const likeNext = canNext && backgroundOf(next.styles) === own;
+  const most = SPACE_PX.md;
+  let below = 0;
+  if (likeBefore) below = likeNext ? bottom : total;
+  else if (!likeNext && !canNext && canBefore) below = total;
+  let above = total - below;
+  if (above > most && canBefore) [above, below] = [most, below + above - most];
+  if (below > most) [above, below] = [above + below - most, most];
+  const pick = (px) => SIZES.findLast((size) => SPACE_PX[size] <= px);
+  return {
+    top: above > 0 ? `band-top-${pick(above) ?? 'xs'}` : undefined,
+    bottom: pick(below) && `band-bottom-${pick(below)}`,
+  };
 }
 
 /**
@@ -94,7 +140,10 @@ export function settle(sections, { last = false } = {}) {
     }
     if (carry) {
       s.id ??= carry.id;
-      addStyles(s, bandOf(carry.styles));
+      const before = bandHolder(out);
+      const { top, bottom } = bandsOf(carry.styles, before, s);
+      if (top) addStyle(s, top);
+      if (bottom) addStyle(before, bottom);
       carry = null;
     }
     out.push(s);
@@ -155,7 +204,8 @@ const blockHtml = (b) => `<div class="${classList(b)}">${
 function sectionHtml(s, extra = '') {
   const rows = [];
   if (s.styles.length) rows.push(['Style', s.styles.join(', ')]);
-  if (s.id) rows.push(['Id', s.id]);
+  // the pipeline keeps `Anchor` as written (data-anchor); it rewrites `Id` as a class name
+  if (s.id) rows.push(['Anchor', s.id]);
   const meta = rows.length ? [blockHtml(block('section-metadata', [], rows))] : [];
   const parts = [...s.content.map((p) => (isBlock(p) ? blockHtml(p) : p)), ...meta];
   return `<div>\n${parts.join('\n')}${extra ? `\n${extra}` : ''}\n</div>`;

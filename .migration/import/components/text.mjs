@@ -27,5 +27,7 @@ export default function text(el, ctx) {
   }
   if (box.children('hr.separator').length) styles.push('rule');
   const rest = box.children().not(heading).toArray().flatMap((node) => ctx.content(node));
+  // without a title, a body that starts with an h2 keeps the heading look
+  if (!title && /^<h2[ >]/.test(rest[0] ?? '')) styles.push('no-title');
   return ctx.section([title && `<h2>${title}</h2>`, ...rest], { styles });
 }

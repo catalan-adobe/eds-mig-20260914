@@ -2,6 +2,7 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { load } from 'cheerio';
+import { breadcrumb, navPath } from '../chrome/header.mjs';
 import { PAGES, languageOf } from './config.mjs';
 
 const CHROME = ['topnav', 'footer', 'landing-page-topnav', 'landing-page-footer'];
@@ -56,14 +57,17 @@ export function fragmentName(el, $) {
 export const slug = (text) => text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
 /**
- * Loads a source page. Returns { $, root, path, lang, template, chrome } with the header and
- * footer fragments removed; `chrome` lists the names of the removed ones.
+ * Loads a source page. Returns { $, root, path, lang, template, chrome, nav, breadcrumb } with
+ * the header and footer fragments removed; `chrome` lists the names of the removed ones, `nav`
+ * and `breadcrumb` are the page metadata the header reads (chrome/header.mjs).
  */
 export function loadPage(path, html) {
   const file = join(PAGES, path === '/' ? 'index.html' : path);
   if (html === undefined && !existsSync(file)) throw new Error(`no fetched page: ${file}`);
   const $ = load(html ?? readFileSync(file, 'utf8'));
   const chrome = [];
+  const lang = languageOf(path);
+  const header = { nav: navPath($, lang), breadcrumb: breadcrumb($) };
   $('.experiencefragment').each((_, el) => {
     const name = fragmentName(el, $);
     if (!CHROME.includes(name)) return;
@@ -73,6 +77,6 @@ export function loadPage(path, html) {
   const root = $('.site-wrapper > .root')[0] ?? $('body')[0];
   const template = slug($('body').attr('data-template') ?? '');
   return {
-    $, root, path, lang: languageOf(path), template, chrome,
+    $, root, path, lang, template, chrome, ...header,
   };
 }

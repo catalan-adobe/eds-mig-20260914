@@ -6,7 +6,10 @@ const WIDTHS = {
 };
 const SPANS = [3, 4, 6, 8, 9];
 const OFFSETS = [3, 4, 6];
-const LAYOUT = /^(span|offset)-\d+$|^stack$|^divider$/;
+const LAYOUT = /^(span|offset)-\d+$|^stack$|^divider$|^pinned$/;
+const IMAGE_PAD = /^image-pad-\w+$/;
+// the source's sticky left cells (`two2575PinnedLeft`, `two3366PinnedLeft`)
+const PINNED = /PinnedLeft\b/;
 const CELL_ONLY = /^(zoom|rule|image-pad-\w+)$/;
 const TITLE = /^title-/;
 const isReal = (s) => s.content.length > 0 || s.styles.includes('rule');
@@ -23,16 +26,36 @@ function cellSections(cell, ctx) {
   return [...ctx.children(cell), ...(shared ? [ctx.section(shared)] : [])];
 }
 
-/** One merged block when every filled cell holds one block of the same kind and size. */
-function likeItems(cells, filled, ctx) {
+// item blocks that leave the slot of an empty row empty: cells of unequal counts can merge
+const PADDED = ['box-links', 'key-benefits'];
+
+/**
+ * One merged block when every filled cell holds one block of the same kind and size, rows in
+ * reading order. Cells that already hold `cols-M` blocks (a row inside each cell) give
+ * `cols-(M x cells)`. `nested` (no grid possible): shorter cells are padded with empty rows.
+ */
+function likeItems(cells, filled, ctx, nested) {
   const blocks = filled.map((c) => (c.real.length === 1 && c.real[0].content.length === 1
     ? c.real[0].content[0] : null));
   const [first] = blocks;
   const alike = blocks.every((b) => b?.merge && b.name === first.name
-    && b.variants.join() === first.variants.join() && b.rows.length === first.rows.length);
+    && b.variants.join() === first.variants.join());
   if (!alike || !same(cells.map((c) => [c.width]))) return null;
-  const rows = first.rows.flatMap((_, r) => blocks.map((b) => b.rows[r]));
-  const variants = [...first.variants, `cols-${cells.length}`];
+  const count = Math.max(...blocks.map((b) => b.rows.length));
+  const even = blocks.every((b) => b.rows.length === count);
+  if (!even && !(nested && PADDED.includes(first.name))) return null;
+  const inner = Number(first.variants.find((v) => /^cols-\d+$/.test(v))?.slice(5) ?? 1);
+  // below 730 the source shows cell after cell: cards of several rows keep their cells
+  if (first.name === 'cards' && count > 1 && inner === 1 && !nested) return null;
+  if (inner > 1 && (count % inner || filled.length !== cells.length)) return null;
+  const rows = [];
+  for (let r = 0; r < count; r += inner) {
+    blocks.forEach((b) => {
+      for (let i = r; i < r + inner; i += 1) rows.push(b.rows[i] ?? ['']);
+    });
+  }
+  const variants = [...first.variants.filter((v) => !/^cols-\d+$/.test(v)),
+    `cols-${cells.length * inner}`];
   const merged = ctx.block(first.name, variants, rows, { merge: true });
   return ctx.section(merged, { styles: filled[0].real[0].styles, id: filled[0].real[0].id });
 }
@@ -55,8 +78,11 @@ function columnsBlock(cells, filled, ctx, { divider, forced }) {
   if (!equal && !forced) return null;
   if (!equal) ctx.warn('row inside a cell: its sections lose their own styles');
   const styles = equal ? [...new Set(sections.flatMap((s) => s.styles))] : [];
+  // one image padding for the row's images is a variant the block reads
+  const pads = [...new Set(sections.flatMap((s) => s.styles.filter((x) => IMAGE_PAD.test(x))))];
+  const pad = !equal && pads.length === 1 && pads[0];
   const row = cells.map((c) => c.real.flatMap((s) => s.content).join(''));
-  const block = ctx.block('columns', [width, divider && 'divider'], [row]);
+  const block = ctx.block('columns', [width, divider && 'divider', pad], [row]);
   return ctx.section(block, { styles, id: sections[0].id });
 }
 
@@ -76,7 +102,8 @@ function grid(cells, ctx, { divider }) {
     let first = true;
     cell.sections.forEach((s) => {
       if (isReal(s)) {
-        const layout = [`span-${cell.width}`, first ? offset && `offset-${offset}` : 'stack'];
+        const layout = [`span-${cell.width}`, first ? offset && `offset-${offset}` : 'stack',
+          first && cell.pinned && 'pinned'];
         s.styles = [...layout.filter(Boolean), ...s.styles.filter((x) => !LAYOUT.test(x))];
         first = false;
       }
@@ -97,7 +124,10 @@ export default function column(el, ctx) {
   const cells = row.children('div').not('.snps-col-divider').toArray().map((cell) => {
     const sections = cellSections(cell, ctx);
     const width = Number((cell.attribs.class ?? '').match(/col-sm-(\d+)/)?.[1] ?? 12);
-    return { width, sections, real: sections.filter(isReal) };
+    const pinned = PINNED.test(cell.attribs.class ?? '');
+    return {
+      width, pinned, sections, real: sections.filter(isReal),
+    };
   });
   const filled = cells.filter((c) => c.real.length);
   if (cells.length <= 1 || !filled.length) return ctx.band(cells.flatMap((c) => c.sections), band);
@@ -105,7 +135,7 @@ export default function column(el, ctx) {
   const nested = $(el).parents('.component-column').toArray()
     .some((outer) => $(outer).children('div').not('.snps-col-divider').length > 1);
   const divider = row.hasClass('divider-row');
-  const one = likeItems(cells, filled, ctx)
+  const one = likeItems(cells, filled, ctx, nested)
     ?? (filled.length > 1 || nested
       ? columnsBlock(cells, filled, ctx, { divider, forced: nested }) : null);
   if (one) return ctx.band([one], band);

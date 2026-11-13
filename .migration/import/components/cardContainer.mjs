@@ -17,12 +17,13 @@ const onlyBlock = (cell) => (cell.length === 1 && cell[0].content.length === 1
   && !isHtml(cell[0].content[0]) ? cell[0].content[0] : null);
 
 /** One block of all cards when every filled cell holds one item block of the same kind. */
-function likeItems(filled, variants) {
+function likeItems(filled, variants, nested) {
   const blocks = filled.map(onlyBlock);
   const [first] = blocks;
   const alike = blocks.every((b) => b?.merge && b.name === first.name
     && b.variants.join() === first.variants.join() && b.rows.length === first.rows.length);
-  if (!alike) return null;
+  // below 730 the source shows cell after cell: cards of several rows keep their cells
+  if (!alike || (first.name === 'cards' && first.rows.length > 1 && !nested)) return null;
   first.rows = first.rows.flatMap((_, r) => blocks.map((b) => b.rows[r]));
   first.variants = [...new Set([...first.variants, ...variants])];
   return filled[0][0];
@@ -34,7 +35,7 @@ function grid(cells, span) {
   const sections = cells.flatMap((cell) => {
     if (!cell.length) offset += span;
     cell.forEach((s, i) => {
-      const place = i ? ['stack'] : [`span-${span}`, offset && `offset-${offset}`];
+      const place = [`span-${span}`, i ? 'stack' : offset && `offset-${offset}`];
       s.styles = [...place.filter(Boolean), ...s.styles];
       if (!i) offset = 0;
     });
@@ -47,7 +48,9 @@ function grid(cells, span) {
 function layout(cells, variants, el, ctx) {
   const filled = cells.filter((cell) => cell.length);
   if (cells.length === 1) return ctx.merge(cells[0], ...variants);
-  const merged = likeItems(filled, variants);
+  const nested = ctx.$(el).parents('.component-column, .carousel-slide').toArray()
+    .some((outer) => ctx.$(outer).children('div').not('.snps-col-divider').length > 1);
+  const merged = likeItems(filled, variants, nested || 12 % cells.length > 0);
   if (merged) return [merged];
   const sections = filled.flat();
   if (sections.every((s) => s.content.every(isHtml) && !s.id)) {
@@ -55,8 +58,6 @@ function layout(cells, variants, el, ctx) {
     const row = cells.map((cell) => cell.flatMap((s) => s.content).join(''));
     return [ctx.section(ctx.block('columns', [], [row]))];
   }
-  const nested = ctx.$(el).parents('.component-column, .carousel-slide').toArray()
-    .some((outer) => ctx.$(outer).children('div').not('.snps-col-divider').length > 1);
   if (nested || 12 % cells.length) {
     ctx.warn(`${cells.length} cells with blocks inside a cell: they are stacked`);
     return sections;

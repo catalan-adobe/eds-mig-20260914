@@ -58,13 +58,28 @@ function wrap(tag, html) {
   }).join(PARA);
 }
 
+// the pipeline adds a space to a no-break space beside an inline element: a plain one stays one
+const INLINE = '(?:strong|em|u|a|sub|sup|code|del)';
+const NBSP_BEFORE = new RegExp(`&nbsp;(?=<${INLINE}\\b)`, 'g');
+const NBSP_AFTER = new RegExp(`(</${INLINE}>)&nbsp;`, 'g');
+
+/**
+ * A bold or italic link alone in a paragraph would become a button: it is body text. The
+ * emphasis goes, around the link (<b><a>) and inside it (<a><b>, which DA turns around).
+ */
+function plainLoneLink(piece) {
+  const around = piece.match(/^<(strong|em)>(<a [^>]*>[\s\S]*<\/a>)<\/\1>$/);
+  if (around) return /<\/a>[\s\S]*<a /.test(around[2]) ? piece : around[2];
+  const inside = piece.match(/^(<a [^>]*>)<(strong|em)>([\s\S]*)<\/\2><\/a>$/);
+  const single = inside && !inside[3].includes(`</${inside[2]}>`) && !inside[3].includes('</a>');
+  return single ? `${inside[1]}${inside[3]}</a>` : piece;
+}
+
 /** Splits inline html at its paragraph breaks; drops what is empty. */
 function paragraphs(html) {
   return html.split(PARA).map(trimEdges).filter(hasContent).map((piece) => {
     if (piece.startsWith(BUTTON)) return piece.slice(1);
-    // a bold or italic link alone in a paragraph would become a button: it is body text
-    const lone = piece.match(/^<(strong|em)>(<a [^>]*>[\s\S]*<\/a>)<\/\1>$/);
-    return lone && !/<\/a>[\s\S]*<a /.test(lone[2]) ? lone[2] : piece;
+    return plainLoneLink(piece).replace(NBSP_BEFORE, ' ').replace(NBSP_AFTER, '$1 ');
   });
 }
 
@@ -80,13 +95,14 @@ function phrases(env) {
     const href = email ? `mailto:${decodeEmail(email)}` : env.link(node.attribs.href);
     if (!href) return html;
     const images = html.match(/<img\b[^>]*>/g) ?? [];
-    let text = collapse(html.replace(/<img\b[^>]*>/g, '').replaceAll(PARA, ' ')
-      .replaceAll(BUTTON, '').replace(/<br>/g, ' ')).trim();
+    let text = trimEdges(collapse(html.replace(/<img\b[^>]*>/g, '').replaceAll(PARA, ' ')
+      .replaceAll(BUTTON, '').replace(/<br>/g, ' ')));
     text = text.replace(/(\S)(:[a-z0-9-]+:)$/, '$1 $2');
     const cls = classesOf(node);
     if (cls.includes('has-arrow') && !/:[a-z0-9-]+:$/.test(text)) text += ' :chevron-right:';
     // spaces at the edges of the link text separate words: they move outside of the link
-    const [before, after] = [/^\s/.test(html) ? ' ' : '', /\s$/.test(html) ? ' ' : ''];
+    const [before, after] = [/^(\s|&nbsp;)/.test(html) ? ' ' : '',
+      /(\s|&nbsp;)$/.test(html) ? ' ' : ''];
     const a = `${before}<a href="${escapeAttr(href)}">${text || escapeHtml(href)}</a>${after}`;
     if (images.length) return `${PARA}${images.join('')}${PARA}${a}${PARA}`;
     if (!text) return before || after;
@@ -144,6 +160,27 @@ function phrases(env) {
   return { inner, inline, list };
 }
 
+/** A heading whose whole content is one element with a font size of body text: a paragraph. */
+function isSmallPrint(node) {
+  const filled = node.children.filter((c) => c.type === 'tag' || c.data?.trim());
+  const size = filled.length === 1 && filled[0].type === 'tag'
+    && (filled[0].attribs.style ?? '').match(/font-size:\s*(\d+)px/)?.[1];
+  return !!size && Number(size) <= 18;
+}
+
+/** A line of text the author wrote as a bare <div>: the source draws it without a margin. */
+const isLine = (node, $) => node?.name === 'div' && !Object.keys(node.attribs).length
+  && !$(node).find(`${BLOCKS},img`).length;
+
+function previousElement(node) {
+  let { prev } = node;
+  while (prev && prev.type !== 'tag') {
+    if (prev.type === 'text' && prev.data.trim()) return null;
+    prev = prev.prev;
+  }
+  return prev;
+}
+
 /**
  * The parts of an element: html strings, and for each element that `options.stop(node)`
  * or `options.table(node)` claims, what that function returns.
@@ -160,6 +197,12 @@ function blockParts(root, options, env, { inner, inline, list }) {
     if (part) out.push(part);
   };
   const heading = (node) => {
+    if (isSmallPrint(node)) {
+      flush();
+      buffer = inner(node);
+      flush();
+      return;
+    }
     const html = inner(node).replaceAll(PARA, ' ').replaceAll(BUTTON, '');
     const text = trimEdges(html.replace(/<img\b[^>]*>/g, ''));
     push(hasContent(text) ? `<${node.name}>${text}</${node.name}>` : '');
@@ -187,6 +230,20 @@ function blockParts(root, options, env, { inner, inline, list }) {
   EMBED.forEach((name) => { handlers[name] = embed; });
   const isPhrase = (node) => PHRASE.has(node.name)
     && (node.name === 'a' || !env.$(node).find(BLOCKS).length);
+  // the last bare <div> line and the index of its paragraph: the next line joins it with <br>
+  let line = null;
+  const lineOf = (node) => {
+    flush();
+    const joins = line && line.node === previousElement(node) && line.index === out.length - 1;
+    const start = out.length;
+    buffer = inner(node);
+    flush();
+    if (out.length !== start + 1 || !out[start].startsWith('<p>')) line = null;
+    else if (joins) {
+      out[start - 1] = `${out[start - 1].slice(0, -4)}<br>${out.pop().slice(3)}`;
+      line = { node, index: start - 1 };
+    } else line = { node, index: start };
+  };
   const visit = (node) => {
     if (node.type === 'text') buffer += escapeHtml(collapse(node.data));
     if (node.type !== 'tag' || SKIP.has(node.name)) return;
@@ -194,6 +251,7 @@ function blockParts(root, options, env, { inner, inline, list }) {
     if (claimed) push(claimed);
     else if (handlers[node.name]) handlers[node.name](node);
     else if (isPhrase(node)) buffer += inline(node);
+    else if (isLine(node, env.$)) lineOf(node);
     else {
       // a block starts and ends a paragraph; a phrase element around blocks does not
       const paragraph = !PHRASE.has(node.name);

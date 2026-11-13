@@ -1,10 +1,15 @@
 // Link rewriting: internal pages move under the site folder, everything else keeps its target.
-import { SITE, SOURCE_ORIGIN } from './config.mjs';
+import { SITE, SOURCE_ORIGIN, webSafe } from './config.mjs';
 
 const INTERNAL = new Set(['www.synopsys.com', 'synopsys.com']);
 const AEM_CONTENT = /^\/content\/synopsys\/([a-z]{2}-[a-z]{2})(?=[/.]|$)/;
 const KEEP = /^(mailto:|tel:|sms:|#)/i;
 const EMAIL_PROTECTION = /\/cdn-cgi\/l\/email-protection#([0-9a-f]+)$/i;
+
+// the Brightcove player of each account, as the source's player script chooses it
+const PLAYERS = {
+  5748441669001: 'rka4xWwYG', 6024607096001: 'k9ROJJb3q', 6261315296001: 'jj9Z5xaG4z',
+};
 
 /**
  * The link of a source video, from the attributes of its [data-video-id] element
@@ -12,7 +17,7 @@ const EMAIL_PROTECTION = /\/cdn-cgi\/l\/email-protection#([0-9a-f]+)$/i;
  */
 export function videoLink({
   'data-video-id': id, 'data-provider': provider, 'data-video-lang': account,
-  'data-player-id': player = 'rka4xWwYG',
+  'data-player-id': player = PLAYERS[account] ?? PLAYERS[5748441669001],
 } = {}) {
   if (!id) return '';
   if (/youtube/i.test(provider ?? '')) return `https://www.youtube.com/watch?v=${id}`;
@@ -66,5 +71,7 @@ export function rewriteLink(href, pagePath = '/') {
     search = `?tag=${category[2]}${search ? `&${search.slice(1)}` : ''}`;
   }
   if (path.length > 1) path = path.replace(/\/$/, '');
-  return SITE + path + search + url.hash;
+  path = webSafe(path);
+  // the home page is the folder itself, with its slash
+  return SITE + (path || '/') + search + url.hash;
 }

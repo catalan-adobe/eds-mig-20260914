@@ -33,7 +33,7 @@ function alignment(node, ctx) {
 }
 
 /** The `w-…` variant of a table whose first-row cells have authored widths. */
-function widths(node, ctx) {
+export function widths(node, ctx) {
   const cells = ctx.$(node).find('tr').first().children('td, th')
     .toArray();
   const tokens = cells.map((cell) => {
@@ -44,7 +44,7 @@ function widths(node, ctx) {
 }
 
 /** `paragraphs` when at least half of the filled cells hold <p> elements. */
-function paragraphs(node, ctx) {
+export function paragraphs(node, ctx) {
   const cells = ctx.$(node).find('td, th').toArray().filter((c) => ctx.$(c).text().trim());
   const withP = cells.filter((c) => ctx.$(c).children('p').length).length;
   return cells.length && withP * 2 >= cells.length ? ['paragraphs'] : [];
