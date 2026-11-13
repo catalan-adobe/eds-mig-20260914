@@ -19,12 +19,15 @@ const isLinkOnly = (p) => p?.matches('p') && p.children.length === 1
   && p.textContent.trim() === p.firstElementChild.textContent.trim();
 const pathOf = (link) => new URL(link.href, window.location.href).pathname;
 
+// the author page shows this placeholder when an author has no photo; a post shows the initials
+const PLACEHOLDER = /\/generic-headshot\b/;
+
 /** The author photos of the language's index, by author page path; empty when there is none. */
 let authorPhotos;
 function loadAuthorPhotos() {
   authorPhotos ??= fetch(`${languageRoot()}/data/index.json?sheet=authors&limit=1000`)
     .then((response) => (response.ok ? response.json() : { data: [] }))
-    .then(({ data = [] }) => new Map(data.filter((row) => row.image)
+    .then(({ data = [] }) => new Map(data.filter((row) => row.image && !PLACEHOLDER.test(row.image))
       .map((row) => [siteRoot() + row.path, siteRoot() + row.image])))
     .catch(() => new Map());
   return authorPhotos;
@@ -115,13 +118,7 @@ function flagCard(cells) {
     const small = text.querySelector('h4');
     if (small) small.replaceChildren(element('span', '', ...small.childNodes));
     item.append(text);
-    const link = [...text.querySelectorAll('a[href]')].at(-1);
-    // the source opens some cards in a new tab: here the links to other sites do
-    if (link && link.hostname !== window.location.hostname) {
-      link.target = '_blank';
-      link.rel = 'noopener';
-    }
-    linkItem(item, link);
+    linkItem(item, [...text.querySelectorAll('a[href]')].at(-1));
   }
   return item;
 }
@@ -268,7 +265,29 @@ function applyLimit(block, items) {
   return items.filter((item) => !own(item)).slice(0, limit);
 }
 
+/** As slick: a drag never starts a native image or link drag, and never ends in a click. */
+function dragOnly(viewport) {
+  let startX = 0;
+  viewport.addEventListener('dragstart', (e) => e.preventDefault());
+  viewport.addEventListener('pointerdown', (e) => { startX = e.clientX; });
+  viewport.addEventListener('click', (e) => {
+    if (!e.detail || Math.abs(e.clientX - startX) < 10) return;
+    e.preventDefault();
+    e.stopPropagation();
+  }, true);
+}
+
+/** The importer marks a link the source opens in a new tab with the hash `#_blank`. */
+function openNewTabs(block) {
+  block.querySelectorAll('a[href$="#_blank"]').forEach((a) => {
+    a.href = a.getAttribute('href').replace(/#_blank$/, '');
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+  });
+}
+
 export default function decorate(block) {
+  openNewTabs(block);
   const kind = KINDS.find((k) => block.classList.contains(k));
   const columns = Number([...block.classList].find((c) => /^cols-\d$/.test(c))?.slice(5)) || 0;
   const rows = [...block.children].map((row) => [...row.children]);
@@ -299,4 +318,5 @@ export default function decorate(block) {
     list.lastElementChild.append(ghost(cards[0]));
   }
   createSlider(list, { perView: { 0: 1, 730: columns || 1 } });
+  dragOnly(list.parentElement);
 }

@@ -83,16 +83,17 @@ other four sample pages the bands with `teasers` are shifted by blocks above the
 inside the block.
 
 States, one script on both sites: card hover shadow, card click, title, tag and link hover,
-arrows, dots, swipe below 730, video modal with Escape, logo border on hover. All equal,
-except the new tab below.
+arrows, dots, swipe below 730, mouse drag from 730 (also from an image or a link: no native
+drag, no click after the drag), video modal with Escape, logo border on hover, new tab.
 
 ## Known gaps
 
-- Author photos need the index sheet `authors` (group listing). It did not exist when this
-  was written, so every author shows initials. With the sheet mocked from the source's photos
-  the glossary carousel is at 0.01 / 0.02 / 1.61 %.
-- New tab: the source opens 166 cards with an internal link in a new tab (`data-new-tab`).
-  The block opens links to other sites in a new tab and internal links in the same tab.
+- Author photos come from the index sheet `authors`. Its `generic-headshot` image is the
+  author page's placeholder: the block shows the initials instead, as `dynamicCards` does.
+- New tab: `assetCard` ends a link with `#_blank` when the source opens it in a new tab
+  (`data-new-tab` on the card, `target` on a link). The block sets the target from it.
+- A mouse drag that leaves the carousel before the button is released is lost:
+  `scripts/slider.js` listens for `pointerup` on the viewport only. Slick ends it on leave.
 - An empty `cardContainer` is dropped (3 pages). `/photonic-solutions/resources.html` loses
   21 px from 730 and 91 px below it.
 - `logos` is measured on a draft only (`drafts/group-teasers/logos`): boxes equal to 0.01 px.

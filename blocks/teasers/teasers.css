@@ -577,6 +577,7 @@
    it one card in the centre with the edges of its neighbours, and no arrows. */
 .teasers.carousel .slider {
   padding-bottom: 24px;
+  user-select: none;
 }
 
 .teasers.carousel .teasers-list {

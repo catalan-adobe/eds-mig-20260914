@@ -1,6 +1,7 @@
 // A flag card (component-card-b): one `teasers` row. Cell 1 is the flag, cell 2 the image or
 // the video, cell 3 the title, the text and the link. `h4` is the source's smaller title size
-// (text-size-smaller), `h3` its normal size.
+// (text-size-smaller), `h3` its normal size. A link the source opens in a new tab ends with
+// `#_blank`.
 const para = (html) => (html ? `<p>${html}</p>` : '');
 // the source's player script picks the Brightcove player by account; the importer's video link
 // names the English one for every account
@@ -24,8 +25,13 @@ export default function assetCard(el, ctx) {
   const body = card.children('.card-text').first();
   const heading = body.children('.heading').first();
   const level = heading.find('.text-size-smaller').length ? 'h4' : 'h3';
+  const blank = card.attr('data-new-tab') === 'true' ? '#_blank' : '';
+  body.find('a[target="_blank"][href]').each((_, a) => {
+    if (!a.attribs.href.endsWith('#_blank')) a.attribs.href += '#_blank';
+  });
   const action = ctx.clean(body.children('a'), { inline: true }).trim();
-  const href = ctx.link(card.attr('data-link'));
+  const link = ctx.link(card.attr('data-link'));
+  const href = link && link + blank;
   let title = ctx.clean(heading, { inline: true });
   // a card without a visible link is still a link as a whole: the title carries it
   if (title && href && !/<a /.test(action)) title = `<a href="${href}">${title}</a>`;
