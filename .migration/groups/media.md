@@ -104,6 +104,9 @@ open, Escape, close button, playlist item click.
 
 - Modal: the source's 16:9 box is 906 x 510 at 1440 (15 px `.modal-body` padding), the shared
   modal's is 936 x 527. Global's file.
+- Modal close button hover and focus: the source keeps opacity 0.85 (`.modal--video .close`
+  beats Bootstrap's `.close:hover`), the shared modal fades to 0.5
+  (`styles/lazy-styles.css` `.modal-close:is(:hover, :focus)`). Global's file.
 - Playing video: the iframe player keeps its share button in the title bar and its own font.
   The source moves the button into the control bar and has Roboto from a `*` rule.
 - A map in a 6 | 6 row inside a 9 | 3 row (`/ja-jp/japan/company/company-profile`,
