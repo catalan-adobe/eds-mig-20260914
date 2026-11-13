@@ -66,5 +66,10 @@ Pinned clone in `vendor/adobe-skills` (commit `ae781eb`). The `web` on PATH is o
 ## State
 
 - [x] Recon, gateway, DA pipeline check, toolkit, brief
-- [ ] Workflow `synopsys_eds_migration` (script: `workflow.js`): contract, foundation, blocks,
+- [x] Workflow `synopsys_eds_migration` (script: `workflow.js`): contract, foundation, blocks,
       visual QA rounds, rollout of all pages, wrap-up with report and pull request
+- [x] Final import of all 6,811 pages: 3,042 previewed and answering 200, 3,769 not previewed.
+- [ ] 3,769 pages and 10 fragments wait for images. `source/FETCH-STOP` exists since
+      2026-11-12 23:19 UTC (403 bot check). Clear it, then run `import.mjs --all` again.
+- [ ] Done criteria are not met: the median page diff is 4.67 % at 1440 on the representative
+      pages. Remaining differences and open requests are in `REPORT.md`.
